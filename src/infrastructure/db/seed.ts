@@ -1,5 +1,6 @@
 import crypto from 'crypto';
 import { prisma } from './prisma';
+import { redis } from '../cache/redis';
 import {
   VerifiedUnitPayloadSchema,
   VerifiedEquipmentPayloadSchema,
@@ -62,34 +63,17 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
     },
   });
 
-  // 3. Upsert Units & TierEntries
+  // 2b. Purge any stale/unverified records for this game before inserting the verified payload
+  await prisma.tierEntry.deleteMany({ where: { gameId: game.id } });
+  await prisma.unit.deleteMany({ where: { gameId: game.id } });
+  await prisma.equipment.deleteMany({ where: { gameId: game.id } });
+  await prisma.bossEncounter.deleteMany({ where: { gameId: game.id } });
+  await prisma.bannerSchedule.deleteMany({ where: { gameId: game.id } });
+
+  // 3. Insert Verified Units & TierEntries
   for (const u of validatedUnits) {
-    const unitRecord = await prisma.unit.upsert({
-      where: {
-        gameId_slug: { gameId: game.id, slug: u.slug },
-      },
-      update: {
-        externalId: u.externalId,
-        nameEn: u.nameEn,
-        nameOriginal: u.nameOriginal,
-        styleOrTitle: u.styleOrTitle,
-        rarity: u.rarity,
-        role: u.role,
-        element: u.element,
-        attackType: u.attackType,
-        imageUrl: u.imageUrl,
-        releaseDateAsian: new Date(u.releaseDateAsian),
-        releaseDateGlobal: u.releaseDateGlobal ? new Date(u.releaseDateGlobal) : null,
-        isReleasedGlobal: u.isReleasedGlobal,
-        longevityMonths: u.longevityMonths,
-        recommendedDupes: u.recommendedDupes,
-        baseStats: u.baseStats,
-        skills: u.skills,
-        passives: u.passives,
-        synergyUnitSlugs: u.synergyUnitSlugs,
-        sourceUrl: u.sourceUrl,
-      },
-      create: {
+    const unitRecord = await prisma.unit.create({
+      data: {
         gameId: game.id,
         externalId: u.externalId,
         slug: u.slug,
@@ -121,23 +105,8 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
     ];
 
     for (const tc of tierConfigs) {
-      await prisma.tierEntry.upsert({
-        where: {
-          gameId_unitId_category_serverScope: {
-            gameId: game.id,
-            unitId: unitRecord.id,
-            category: tc.category,
-            serverScope: 'ASIAN_FUTURE',
-          },
-        },
-        update: {
-          tierRank: tc.rank,
-          roleColumn: u.roleColumn,
-          numericScore: u.numericScore,
-          summaryVerdict: u.summaryVerdict,
-          longevityNote: u.longevityNote,
-        },
-        create: {
+      await prisma.tierEntry.create({
+        data: {
           gameId: game.id,
           unitId: unitRecord.id,
           category: tc.category,
@@ -151,23 +120,8 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
       });
 
       if (u.isReleasedGlobal) {
-        await prisma.tierEntry.upsert({
-          where: {
-            gameId_unitId_category_serverScope: {
-              gameId: game.id,
-              unitId: unitRecord.id,
-              category: tc.category,
-              serverScope: 'GLOBAL_CURRENT',
-            },
-          },
-          update: {
-            tierRank: tc.rank,
-            roleColumn: u.roleColumn,
-            numericScore: u.numericScore,
-            summaryVerdict: u.summaryVerdict,
-            longevityNote: u.longevityNote,
-          },
-          create: {
+        await prisma.tierEntry.create({
+          data: {
             gameId: game.id,
             unitId: unitRecord.id,
             category: tc.category,
@@ -183,28 +137,10 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
     }
   }
 
-  // 4. Upsert Equipments (Weapons / Support Cards / Orbs / Tarots)
+  // 4. Insert Verified Equipments (Weapons / Support Cards / Orbs / Tarots)
   for (const eq of validatedEquipments) {
-    await prisma.equipment.upsert({
-      where: {
-        gameId_slug: { gameId: game.id, slug: eq.slug },
-      },
-      update: {
-        externalId: eq.externalId,
-        nameEn: eq.nameEn,
-        category: eq.category,
-        subType: eq.subType,
-        rarity: eq.rarity,
-        imageUrl: eq.imageUrl,
-        tierRank: eq.tierRank,
-        score: eq.score,
-        recommendedDupes: eq.recommendedDupes,
-        stats: eq.stats,
-        effectSummary: eq.effectSummary,
-        bestHolderSlugs: eq.bestHolderSlugs,
-        sourceUrl: eq.sourceUrl,
-      },
-      create: {
+    await prisma.equipment.create({
+      data: {
         gameId: game.id,
         externalId: eq.externalId,
         slug: eq.slug,
@@ -224,27 +160,10 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
     });
   }
 
-  // 5. Upsert Boss Encounters & Strategy Guides
+  // 5. Insert Verified Boss Encounters & Strategy Guides
   for (const boss of validatedBosses) {
-    await prisma.bossEncounter.upsert({
-      where: {
-        gameId_slug: { gameId: game.id, slug: boss.slug },
-      },
-      update: {
-        nameEn: boss.nameEn,
-        modeName: boss.modeName,
-        difficultyLabel: boss.difficultyLabel,
-        imageUrl: boss.imageUrl,
-        hpStat: boss.hpStat,
-        shieldOrDpStat: boss.shieldOrDpStat,
-        weaknesses: boss.weaknesses,
-        resistances: boss.resistances,
-        attackPatterns: boss.attackPatterns,
-        strategySteps: boss.strategySteps,
-        recommendedUnitSlugs: boss.recommendedUnitSlugs,
-        sourceUrl: boss.sourceUrl,
-      },
-      create: {
+    await prisma.bossEncounter.create({
+      data: {
         gameId: game.id,
         slug: boss.slug,
         nameEn: boss.nameEn,
@@ -263,28 +182,10 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
     });
   }
 
-  // 6. Upsert Future Banner Schedules
+  // 6. Insert Verified Future Banner Schedules
   for (const bn of validatedBanners) {
-    await prisma.bannerSchedule.upsert({
-      where: {
-        gameId_slug: { gameId: game.id, slug: bn.slug },
-      },
-      update: {
-        bannerTitle: bn.bannerTitle,
-        bannerType: bn.bannerType,
-        imageUrl: bn.imageUrl,
-        featuredNames: bn.featuredNames,
-        featuredUnitSlugs: bn.featuredUnitSlugs,
-        asianStartDate: new Date(bn.asianStartDate),
-        asianEndDate: new Date(bn.asianEndDate),
-        estGlobalStartDate: new Date(bn.estGlobalStartDate),
-        estGlobalEndDate: new Date(bn.estGlobalEndDate),
-        pullVerdict: bn.pullVerdict,
-        verdictReasoning: bn.verdictReasoning,
-        pityCurrencyCost: bn.pityCurrencyCost,
-        sourceUrl: bn.sourceUrl,
-      },
-      create: {
+    await prisma.bannerSchedule.create({
+      data: {
         gameId: game.id,
         slug: bn.slug,
         bannerTitle: bn.bannerTitle,
@@ -344,6 +245,12 @@ export async function runFullSeed() {
   for (const b of bundles) {
     const res = await syncGameBundle(b);
     results.push(res);
+  }
+  try {
+    await redis.flushall();
+    console.log('Redis L2 cache flushed after verified re-seed.');
+  } catch (e) {
+    console.warn('Redis flush warning:', e);
   }
   return results;
 }
