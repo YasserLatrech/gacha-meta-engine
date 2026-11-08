@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getGameHubData } from '../../../../application/services/meta-query.service';
 import { SiteHeader } from '../../../../components/SiteHeader';
+import { SiteFooter } from '../../../../components/SiteFooter';
 import { AdSlot } from '../../../../components/AdSlot';
 import {
   getGameAppIconUrl,
@@ -46,8 +47,22 @@ export default async function UnitDetailPage({
   const recommendedGears = hub.equipments.filter((eq) =>
     eq.bestHolderSlugs.includes(unit.slug)
   );
+  const distinctSlotGears: typeof recommendedGears = [];
+  const seenSubTypes = new Set<string>();
+  for (const eq of recommendedGears) {
+    if (!seenSubTypes.has(eq.subType)) {
+      seenSubTypes.add(eq.subType);
+      distinctSlotGears.push(eq);
+    }
+  }
+  for (const eq of recommendedGears) {
+    if (distinctSlotGears.length >= 4) break;
+    if (!distinctSlotGears.some((d) => d.slug === eq.slug)) {
+      distinctSlotGears.push(eq);
+    }
+  }
   const displayGears =
-    recommendedGears.length > 0 ? recommendedGears : hub.equipments.slice(0, 3);
+    distinctSlotGears.length > 0 ? distinctSlotGears.slice(0, 4) : hub.equipments.slice(0, 3);
 
   const featuredBanners = hub.banners.filter((bn) =>
     bn.featuredUnitSlugs.includes(unit.slug)
@@ -931,6 +946,7 @@ export default async function UnitDetailPage({
           </aside>
         </div>
       </main>
+      <SiteFooter />
     </>
   );
 }

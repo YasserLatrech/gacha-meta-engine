@@ -18,6 +18,7 @@ import {
   getSkillConceptIconUrl,
 } from '../domain/constants/game-visuals';
 import { AdSlot } from './AdSlot';
+import { SiteFooter } from './SiteFooter';
 
 export type WikiTabKey = 'tier-list' | 'weapons' | 'bosses' | 'banners' | 'compare';
 
@@ -44,6 +45,36 @@ export function GameWikiClient({
   const [tierCategory, setTierCategory] = useState<'OVERALL' | 'REROLL' | 'BOSS_RAID'>('OVERALL');
   const [selectedElement, setSelectedElement] = useState<string>('ALL');
   const [unitSearch, setUnitSearch] = useState<string>('');
+  const [showSavedOnly, setShowSavedOnly] = useState<boolean>(false);
+  const [savedSlugs, setSavedSlugs] = useState<string[]>([]);
+
+  // Equipment Filters
+  const [equipSearch, setEquipSearch] = useState<string>('');
+  const [equipTierFilter, setEquipTierFilter] = useState<string>('ALL');
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem('gachacrest_watchlist');
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) setSavedSlugs(parsed);
+      }
+    } catch {
+      // Ignore storage access errors
+    }
+  }, []);
+
+  const toggleSaveUnit = (slug: string) => {
+    setSavedSlugs((prev) => {
+      const next = prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug];
+      try {
+        localStorage.setItem('gachacrest_watchlist', JSON.stringify(next));
+      } catch {
+        // Ignore storage write errors
+      }
+      return next;
+    });
+  };
 
   // Pull Savings Calculator State
   const [currentCurrency, setCurrentCurrency] = useState<number>(
@@ -73,6 +104,7 @@ export function GameWikiClient({
   const filteredUnits = useMemo(() => {
     return hub.units.filter((u) => {
       if (serverScope === 'GLOBAL_CURRENT' && !u.isReleasedGlobal) return false;
+      if (showSavedOnly && !savedSlugs.includes(u.slug)) return false;
       if (selectedElement !== 'ALL' && u.element !== selectedElement) return false;
       if (unitSearch.trim()) {
         const q = unitSearch.toLowerCase();
@@ -87,7 +119,22 @@ export function GameWikiClient({
       }
       return true;
     });
-  }, [hub.units, serverScope, selectedElement, unitSearch]);
+  }, [hub.units, serverScope, showSavedOnly, savedSlugs, selectedElement, unitSearch]);
+
+  const filteredEquipments = useMemo(() => {
+    return hub.equipments.filter((eq) => {
+      if (equipTierFilter !== 'ALL' && eq.tierRank !== equipTierFilter) return false;
+      if (equipSearch.trim()) {
+        const q = equipSearch.toLowerCase();
+        const matchName =
+          eq.nameEn.toLowerCase().includes(q) ||
+          eq.subType.toLowerCase().includes(q) ||
+          eq.effectSummary.toLowerCase().includes(q);
+        if (!matchName) return false;
+      }
+      return true;
+    });
+  }, [hub.equipments, equipTierFilter, equipSearch]);
 
   const getUnitTierRank = (u: HydratedGameHub['units'][number]): string => {
     if (tierCategory === 'REROLL') return u.tiers.rerollAsian;
@@ -987,6 +1034,25 @@ export function GameWikiClient({
                         </button>
                       );
                     })}
+                    <button
+                      type="button"
+                      onClick={() => setShowSavedOnly((v) => !v)}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        padding: '4px 9px',
+                        fontSize: '11px',
+                        fontWeight: 900,
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        border: '1.5px solid var(--amber-primary)',
+                        background: showSavedOnly ? 'var(--amber-primary)' : 'var(--bg-surface)',
+                        color: showSavedOnly ? '#FFF' : 'var(--amber-primary)',
+                      }}
+                    >
+                      <span>★ Saved ({savedSlugs.filter((s) => hub.units.some((u) => u.slug === s)).length})</span>
+                    </button>
                   </div>
 
                   <input
@@ -1006,6 +1072,50 @@ export function GameWikiClient({
                   />
                 </div>
               </section>
+
+              {filteredUnits.length === 0 && (
+                <section
+                  style={{
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border-main)',
+                    borderRadius: '6px',
+                    padding: '24px 16px',
+                    textAlign: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    gap: '10px',
+                  }}
+                >
+                  <div style={{ fontSize: '14px', fontWeight: 900, color: 'var(--text-main)' }}>
+                    No characters match your current filter selection.
+                  </div>
+                  <div style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>
+                    Try clearing your search query, switching Element filter back to All Elements, or disabling the ★ Saved filter.
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedElement('ALL');
+                      setUnitSearch('');
+                      setShowSavedOnly(false);
+                      setServerScope('ASIAN_FUTURE');
+                    }}
+                    style={{
+                      padding: '7px 14px',
+                      background: 'var(--accent-primary)',
+                      color: '#FFF',
+                      border: 'none',
+                      borderRadius: '4px',
+                      fontSize: '11.5px',
+                      fontWeight: 900,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    Reset All Filters
+                  </button>
+                </section>
+              )}
 
               {/* 2D ROLE-COLUMN TIER MATRIX WITH LARGER 78x78 PORTRAITS */}
               <section
@@ -1596,6 +1706,8 @@ export function GameWikiClient({
                           paddingTop: '4px',
                           borderTop: '1px solid var(--border-subtle)',
                           fontSize: '11px',
+                          flexWrap: 'wrap',
+                          gap: '8px',
                         }}
                       >
                         <Link
@@ -1604,25 +1716,43 @@ export function GameWikiClient({
                         >
                           Open Full Build, Passives &amp; Team Synergies &rarr;
                         </Link>
-                        <button
-                          type="button"
-                          onClick={() => {
-                            setUnitASlug(u.slug);
-                            setActiveTab('compare');
-                          }}
-                          style={{
-                            background: 'var(--bg-surface)',
-                            border: '1px solid var(--border-main)',
-                            padding: '3px 8px',
-                            borderRadius: '3px',
-                            fontSize: '10.5px',
-                            fontWeight: 800,
-                            cursor: 'pointer',
-                            color: 'var(--text-main)',
-                          }}
-                        >
-                          Compare Stats vs Another Unit
-                        </button>
+                        <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                          <button
+                            type="button"
+                            onClick={() => toggleSaveUnit(u.slug)}
+                            style={{
+                              background: savedSlugs.includes(u.slug) ? 'var(--amber-bg)' : 'var(--bg-surface)',
+                              border: '1px solid var(--amber-primary)',
+                              padding: '3px 8px',
+                              borderRadius: '3px',
+                              fontSize: '10.5px',
+                              fontWeight: 900,
+                              cursor: 'pointer',
+                              color: 'var(--amber-primary)',
+                            }}
+                          >
+                            {savedSlugs.includes(u.slug) ? '★ Saved' : '☆ Save Unit'}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setUnitASlug(u.slug);
+                              setActiveTab('compare');
+                            }}
+                            style={{
+                              background: 'var(--bg-surface)',
+                              border: '1px solid var(--border-main)',
+                              padding: '3px 8px',
+                              borderRadius: '3px',
+                              fontSize: '10.5px',
+                              fontWeight: 800,
+                              cursor: 'pointer',
+                              color: 'var(--text-main)',
+                            }}
+                          >
+                            Compare Stats vs Another Unit
+                          </button>
+                        </div>
                       </div>
                     </article>
                   );
@@ -1646,18 +1776,65 @@ export function GameWikiClient({
                 gap: '12px',
               }}
             >
-              <h2
+              <div
                 style={{
-                  fontSize: '13.5px',
-                  fontWeight: 900,
-                  borderLeft: '4px solid var(--accent-primary)',
-                  paddingLeft: '8px',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  gap: '10px',
                 }}
               >
-                RANKED WEAPON, SUPPORT CARD, ORB &amp; ARCANA TIER LIST ({hub.equipments.length})
-              </h2>
+                <h2
+                  style={{
+                    fontSize: '13.5px',
+                    fontWeight: 900,
+                    borderLeft: '4px solid var(--accent-primary)',
+                    paddingLeft: '8px',
+                  }}
+                >
+                  RANKED WEAPON, SUPPORT CARD, ORB &amp; ARCANA TIER LIST ({filteredEquipments.length} / {hub.equipments.length})
+                </h2>
 
-              {/* VISUAL TIER MATRIX FOR WEAPONS / SUPPORT CARDS / ARCANAS */}
+                <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                  {(['ALL', 'SSS', 'SS', 'S', 'A'] as const).map((tr) => (
+                    <button
+                      key={tr}
+                      type="button"
+                      onClick={() => setEquipTierFilter(tr)}
+                      style={{
+                        padding: '4px 9px',
+                        fontSize: '11px',
+                        fontWeight: 900,
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        border: '1px solid var(--border-main)',
+                        background: equipTierFilter === tr ? 'var(--accent-primary)' : 'var(--bg-subtle)',
+                        color: equipTierFilter === tr ? '#FFF' : 'var(--text-main)',
+                      }}
+                    >
+                      {tr === 'ALL' ? 'All Tiers' : `${tr} Tier`}
+                    </button>
+                  ))}
+                  <input
+                    type="search"
+                    value={equipSearch}
+                    onChange={(e) => setEquipSearch(e.target.value)}
+                    placeholder="Search weapon, card, stat or effect..."
+                    style={{
+                      padding: '5px 10px',
+                      fontSize: '11px',
+                      border: '1px solid var(--border-main)',
+                      borderRadius: '3px',
+                      background: 'var(--bg-subtle)',
+                      color: 'var(--text-main)',
+                      width: '230px',
+                    }}
+                  />
+                </div>
+              </div>
+
+              {/* VISUAL TIER MATRIX FOR WEAPONS / SUPPORT CARDS / ARCANAS (CLICK TO JUMP) */}
               <table
                 style={{
                   width: '100%',
@@ -1667,7 +1844,7 @@ export function GameWikiClient({
               >
                 <tbody>
                   {tierRanksOrder.map((rank) => {
-                    const gearsInTier = hub.equipments.filter((e) => e.tierRank === rank);
+                    const gearsInTier = filteredEquipments.filter((e) => e.tierRank === rank);
                     if (gearsInTier.length === 0) return null;
                     const badgeBg =
                       rank === 'SSS'
@@ -1701,14 +1878,16 @@ export function GameWikiClient({
                         <td style={{ padding: '10px' }}>
                           <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                             {gearsInTier.map((eq) => (
-                              <div
+                              <a
                                 key={eq.slug}
+                                href={`#equip-${eq.slug}`}
                                 style={{
                                   width: '86px',
                                   display: 'flex',
                                   flexDirection: 'column',
                                   alignItems: 'center',
                                   gap: '4px',
+                                  textDecoration: 'none',
                                 }}
                               >
                                 <img
@@ -1736,7 +1915,7 @@ export function GameWikiClient({
                                 >
                                   {eq.nameEn}
                                 </span>
-                              </div>
+                              </a>
                             ))}
                           </div>
                         </td>
@@ -1746,9 +1925,44 @@ export function GameWikiClient({
                 </tbody>
               </table>
 
-              {hub.equipments.map((eq) => (
+              {filteredEquipments.length === 0 && (
+                <div
+                  style={{
+                    padding: '20px',
+                    textAlign: 'center',
+                    background: 'var(--bg-subtle)',
+                    borderRadius: '6px',
+                    border: '1px solid var(--border-main)',
+                  }}
+                >
+                  <div style={{ fontSize: '13px', fontWeight: 900 }}>No equipment matches your active search or tier filter.</div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setEquipSearch('');
+                      setEquipTierFilter('ALL');
+                    }}
+                    style={{
+                      marginTop: '8px',
+                      padding: '6px 12px',
+                      background: 'var(--accent-primary)',
+                      color: '#FFF',
+                      border: 'none',
+                      borderRadius: '4px',
+                      fontSize: '11px',
+                      fontWeight: 900,
+                      cursor: 'pointer',
+                    }}
+                  >
+                    Reset Equipment Filters
+                  </button>
+                </div>
+              )}
+
+              {filteredEquipments.map((eq) => (
                 <article
                   key={eq.slug}
+                  id={`equip-${eq.slug}`}
                   style={{
                     border: '1px solid var(--border-main)',
                     borderRadius: '6px',
@@ -2951,6 +3165,122 @@ export function GameWikiClient({
               </div>
             </section>
           )}
+
+          {/* GACHACREST TIER RATING METHODOLOGY & FREQUENTLY ASKED QUESTIONS (SEO / GEO AUTHORITY) */}
+          <section
+            style={{
+              background: 'var(--bg-surface)',
+              border: '1px solid var(--border-main)',
+              borderRadius: '4px',
+              padding: '14px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '12px',
+              marginTop: '6px',
+            }}
+          >
+            <h2
+              style={{
+                fontSize: '13.5px',
+                fontWeight: 900,
+                borderLeft: '4px solid var(--accent-primary)',
+                paddingLeft: '8px',
+              }}
+            >
+              GACHACREST TIER RATING METHODOLOGY &amp; {hub.name.toUpperCase()} FAQ
+            </h2>
+
+            <div
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+                gap: '8px',
+              }}
+            >
+              <div
+                style={{
+                  background: 'var(--accent-bg)',
+                  border: '1px solid var(--accent-border)',
+                  borderRadius: '4px',
+                  padding: '9px 10px',
+                }}
+              >
+                <div className="mono" style={{ fontSize: '11.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                  SSS TIER (9.5 – 10.0) • APEX META
+                </div>
+                <p style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '3px', lineHeight: 1.4 }}>
+                  Meta-defining units and gear that compress multiple roles, enable 1-turn endgame boss clears, and hold 12+ months of longevity.
+                </p>
+              </div>
+              <div
+                style={{
+                  background: 'var(--amber-bg)',
+                  border: '1px solid var(--border-main)',
+                  borderRadius: '4px',
+                  padding: '9px 10px',
+                }}
+              >
+                <div className="mono" style={{ fontSize: '11.5px', fontWeight: 900, color: 'var(--amber-primary)' }}>
+                  SS TIER (9.0 – 9.4) • CORE STAPLE
+                </div>
+                <p style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '3px', lineHeight: 1.4 }}>
+                  Best-in-slot elemental or distance specialists required for high-score clear rotations and multi-squad endgame raids.
+                </p>
+              </div>
+              <div
+                style={{
+                  background: 'var(--bg-subtle)',
+                  border: '1px solid var(--border-main)',
+                  borderRadius: '4px',
+                  padding: '9px 10px',
+                }}
+              >
+                <div className="mono" style={{ fontSize: '11.5px', fontWeight: 900, color: 'var(--text-main)' }}>
+                  S &amp; A TIER (8.0 – 8.9) • SPECIALIST
+                </div>
+                <p style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '3px', lineHeight: 1.4 }}>
+                  Strong elemental counters, secondary squad fillers, and high-value F2P options that perform reliably when paired with SSS buffers.
+                </p>
+              </div>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '10px' }}>
+              <div
+                style={{
+                  background: 'var(--bg-subtle)',
+                  border: '1px solid var(--border-main)',
+                  borderRadius: '4px',
+                  padding: '10px',
+                }}
+              >
+                <h3 style={{ fontSize: '12px', fontWeight: 900, color: 'var(--text-main)' }}>
+                  Who is the #1 best character to reroll or pull in {hub.name}?
+                </h3>
+                <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.45 }}>
+                  Currently, <strong>{hub.units[0]?.nameEn}</strong> ({hub.units[0]?.tiers.overallAsian.numericScore.toFixed(1)}/10 SSS) and{' '}
+                  <strong>{hub.units[1]?.nameEn}</strong> ({hub.units[1]?.tiers.overallAsian.numericScore.toFixed(1)}/10 SSS) rank at the top of the{' '}
+                  {hub.name} meta due to unmatched burst scaling and role compression.
+                </p>
+              </div>
+              <div
+                style={{
+                  background: 'var(--bg-subtle)',
+                  border: '1px solid var(--border-main)',
+                  borderRadius: '4px',
+                  padding: '10px',
+                }}
+              >
+                <h3 style={{ fontSize: '12px', fontWeight: 900, color: 'var(--text-main)' }}>
+                  How much {hub.currencyName} is required for hard pity in {hub.name}?
+                </h3>
+                <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.45 }}>
+                  Hard pity / spark requires <strong>{hub.pityThreshold} pulls</strong> (
+                  <strong>{(hub.pityThreshold * hub.pullCostSingle).toLocaleString()} {hub.currencyName}</strong> at {hub.pullCostSingle}{' '}
+                  {hub.currencyName} per single pull). F2P players earn approximately {hub.monthlyF2pIncome.toLocaleString()} {hub.currencyName}/month.
+                </p>
+              </div>
+            </div>
+          </section>
         </main>
 
         {/* ================= RIGHT COLUMN: WIDE HD UPCOMING BANNERS + STICKY 300x600 AD ================= */}
@@ -3101,6 +3431,8 @@ export function GameWikiClient({
           />
         </aside>
       </div>
+
+      <SiteFooter />
 
       {/* MOBILE STICKY FOOTER AD (320x50) */}
       <div className="mobile-sticky-ad" data-ad-slot="mobile-sticky-320x50">
