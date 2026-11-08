@@ -4,9 +4,9 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
   "slug": "sword-of-convallaria",
   "name": "Sword of Convallaria",
   "shortName": "SoC",
-  "asianRegion": "TW",
-  "asianPatchVersion": "v2.4.0 TW/CN (DotGG Verified)",
-  "globalPatchVersion": "v1.9.0 Global (Witcher Collab)",
+  "asianRegion": "EN",
+  "asianPatchVersion": "v2.4.0 Live Meta",
+  "globalPatchVersion": "v2.4.0 Live",
   "foresightGapMonths": 6,
   "coverImageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/09/Cocoa-Sword-of-Convallaria.webp",
   "currencyName": "Hope Luxite",
@@ -14,7 +14,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
   "pityThreshold": 100,
   "monthlyF2pIncome": 11250,
   "monthlyPassIncome": 16500,
-  "sourceUrl": "https://dotgg.gg/sword-of-convallaria/tier-list/",
+  "sourceUrl": "https://meta.gg/sword-of-convallaria",
   "rolesConfig": [
     {
       "key": "DPS",
@@ -66,11 +66,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
   ],
   "units": [
     {
-      "externalId": "dotgg-soc-sp-inanna",
+      "externalId": "soc-unit-sp-inanna",
       "slug": "soc-sp-inanna",
       "nameEn": "SP Inanna",
       "nameOriginal": "SP Inanna",
-      "styleOrTitle": "Legendary Watcher (S+ Tier)",
+      "styleOrTitle": "Legendary Watcher • S+ Tier",
       "rarity": "Legendary",
       "role": "S+ Tier (Watcher)",
       "roleColumn": "DPS",
@@ -95,17 +95,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "SP Inanna Signature Ultimate",
+          "name": "SP Inanna Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S+ Tier Signature Skill",
+          "multiplierSummary": "S+ Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "S+ Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S+ Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/sp-inanna/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Inanna Trait Reaction",
@@ -117,7 +117,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -140,16 +140,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "Official DotGG S+ Tier Legendary unit (SP Inanna). Verified at https://dotgg.gg/sword-of-convallaria/sp-inanna/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/sp-inanna/"
+      "summaryVerdict": "S+ Tier Legendary Watcher unit (SP Inanna) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-inanna"
     },
     {
-      "externalId": "dotgg-soc-sp-samantha",
+      "externalId": "soc-unit-sp-samantha",
       "slug": "soc-sp-samantha",
       "nameEn": "SP Samantha",
       "nameOriginal": "SP Samantha",
-      "styleOrTitle": "Legendary Seeker (S+ Tier)",
+      "styleOrTitle": "Legendary Seeker • S+ Tier",
       "rarity": "Legendary",
       "role": "S+ Tier (Seeker)",
       "roleColumn": "SUB_DPS",
@@ -174,17 +174,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "SP Samantha Signature Ultimate",
+          "name": "SP Samantha Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S+ Tier Signature Skill",
+          "multiplierSummary": "S+ Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "S+ Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S+ Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/sp-samantha/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Samantha Trait Reaction",
@@ -196,7 +196,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -219,16 +219,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "Official DotGG S+ Tier Legendary unit (SP Samantha). Verified at https://dotgg.gg/sword-of-convallaria/sp-samantha/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/sp-samantha/"
+      "summaryVerdict": "S+ Tier Legendary Seeker unit (SP Samantha) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-samantha"
     },
     {
-      "externalId": "dotgg-soc-camelot",
+      "externalId": "soc-unit-camelot",
       "slug": "soc-camelot",
       "nameEn": "Camelot",
       "nameOriginal": "Camelot",
-      "styleOrTitle": "Legendary Breaker (S Tier - DPS)",
+      "styleOrTitle": "Legendary Breaker • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Breaker)",
       "roleColumn": "DPS",
@@ -253,17 +253,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Camelot Signature Ultimate",
+          "name": "Camelot Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/camelot/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Camelot Trait Reaction",
@@ -275,7 +275,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -298,16 +298,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Camelot). Verified at https://dotgg.gg/sword-of-convallaria/camelot/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/camelot/"
+      "summaryVerdict": "S Tier - DPS Legendary Breaker unit (Camelot) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-camelot"
     },
     {
-      "externalId": "dotgg-soc-geralt",
+      "externalId": "soc-unit-geralt",
       "slug": "soc-geralt",
       "nameEn": "Geralt",
       "nameOriginal": "Geralt",
-      "styleOrTitle": "Legendary Defender (S Tier - DPS)",
+      "styleOrTitle": "Legendary Defender • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Defender)",
       "roleColumn": "SUSTAIN",
@@ -332,17 +332,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Geralt Signature Ultimate",
+          "name": "Geralt Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/geralt/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Geralt Trait Reaction",
@@ -354,7 +354,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -377,16 +377,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Geralt). Verified at https://dotgg.gg/sword-of-convallaria/geralt/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/geralt/"
+      "summaryVerdict": "S Tier - DPS Legendary Defender unit (Geralt) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-geralt"
     },
     {
-      "externalId": "dotgg-soc-kvare",
+      "externalId": "soc-unit-kvare",
       "slug": "soc-kvare",
       "nameEn": "Kvare",
       "nameOriginal": "Kvare",
-      "styleOrTitle": "Legendary Destroyer (S Tier - DPS)",
+      "styleOrTitle": "Legendary Destroyer • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Destroyer)",
       "roleColumn": "DPS",
@@ -411,17 +411,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Kvare Signature Ultimate",
+          "name": "Kvare Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/kvare/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Kvare Trait Reaction",
@@ -433,7 +433,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -456,16 +456,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Kvare). Verified at https://dotgg.gg/sword-of-convallaria/kvare/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/kvare/"
+      "summaryVerdict": "S Tier - DPS Legendary Destroyer unit (Kvare) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-kvare"
     },
     {
-      "externalId": "dotgg-soc-luvata",
+      "externalId": "soc-unit-luvata",
       "slug": "soc-luvata",
       "nameEn": "Luvata",
       "nameOriginal": "Luvata",
-      "styleOrTitle": "Legendary Watcher (S Tier - DPS)",
+      "styleOrTitle": "Legendary Watcher • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Watcher)",
       "roleColumn": "SUB_DPS",
@@ -490,17 +490,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Luvata Signature Ultimate",
+          "name": "Luvata Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/luvata/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Luvata Trait Reaction",
@@ -512,7 +512,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -535,16 +535,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Luvata). Verified at https://dotgg.gg/sword-of-convallaria/luvata/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/luvata/"
+      "summaryVerdict": "S Tier - DPS Legendary Watcher unit (Luvata) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-luvata"
     },
     {
-      "externalId": "dotgg-soc-nydia",
+      "externalId": "soc-unit-nydia",
       "slug": "soc-nydia",
       "nameEn": "Nydia",
       "nameOriginal": "Nydia",
-      "styleOrTitle": "Legendary Seeker (S Tier - DPS)",
+      "styleOrTitle": "Legendary Seeker • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Seeker)",
       "roleColumn": "DPS",
@@ -569,17 +569,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Nydia Signature Ultimate",
+          "name": "Nydia Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/nydia/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Nydia Trait Reaction",
@@ -591,7 +591,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -614,16 +614,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Nydia). Verified at https://dotgg.gg/sword-of-convallaria/nydia/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nydia/"
+      "summaryVerdict": "S Tier - DPS Legendary Seeker unit (Nydia) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nydia"
     },
     {
-      "externalId": "dotgg-soc-triss",
+      "externalId": "soc-unit-triss",
       "slug": "soc-triss",
       "nameEn": "Triss",
       "nameOriginal": "Triss",
-      "styleOrTitle": "Legendary Breaker (S Tier - DPS)",
+      "styleOrTitle": "Legendary Breaker • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Breaker)",
       "roleColumn": "DPS",
@@ -648,17 +648,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Triss Signature Ultimate",
+          "name": "Triss Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/triss/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Triss Trait Reaction",
@@ -670,7 +670,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -693,16 +693,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Triss). Verified at https://dotgg.gg/sword-of-convallaria/triss/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/triss/"
+      "summaryVerdict": "S Tier - DPS Legendary Breaker unit (Triss) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-triss"
     },
     {
-      "externalId": "dotgg-soc-tristan",
+      "externalId": "soc-unit-tristan",
       "slug": "soc-tristan",
       "nameEn": "Tristan",
       "nameOriginal": "Tristan",
-      "styleOrTitle": "Legendary Defender (S Tier - DPS)",
+      "styleOrTitle": "Legendary Defender • S Tier - DPS",
       "rarity": "Legendary",
       "role": "S Tier - DPS (Defender)",
       "roleColumn": "SUSTAIN",
@@ -727,17 +727,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Tristan Signature Ultimate",
+          "name": "Tristan Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Signature Skill",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/tristan/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Tristan Trait Reaction",
@@ -749,7 +749,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -772,16 +772,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Official DotGG S Tier - DPS Legendary unit (Tristan). Verified at https://dotgg.gg/sword-of-convallaria/tristan/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/tristan/"
+      "summaryVerdict": "S Tier - DPS Legendary Defender unit (Tristan) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-tristan"
     },
     {
-      "externalId": "dotgg-soc-credenza",
+      "externalId": "soc-unit-credenza",
       "slug": "soc-credenza",
       "nameEn": "Credenza",
       "nameOriginal": "Credenza",
-      "styleOrTitle": "Legendary Destroyer (S Tier - Support)",
+      "styleOrTitle": "Legendary Destroyer • S Tier - Support",
       "rarity": "Legendary",
       "role": "S Tier - Support (Destroyer)",
       "roleColumn": "SUPPORT",
@@ -806,17 +806,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Credenza Signature Ultimate",
+          "name": "Credenza Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Signature Skill",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/credenza/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Credenza Trait Reaction",
@@ -828,7 +828,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -851,16 +851,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Official DotGG S Tier - Support Legendary unit (Credenza). Verified at https://dotgg.gg/sword-of-convallaria/credenza/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/credenza/"
+      "summaryVerdict": "S Tier - Support Legendary Destroyer unit (Credenza) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-credenza"
     },
     {
-      "externalId": "dotgg-soc-lutfi",
+      "externalId": "soc-unit-lutfi",
       "slug": "soc-lutfi",
       "nameEn": "Lutfi",
       "nameOriginal": "Lutfi",
-      "styleOrTitle": "Legendary Watcher (S Tier - Support)",
+      "styleOrTitle": "Legendary Watcher • S Tier - Support",
       "rarity": "Legendary",
       "role": "S Tier - Support (Watcher)",
       "roleColumn": "SUPPORT",
@@ -885,17 +885,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Lutfi Signature Ultimate",
+          "name": "Lutfi Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Signature Skill",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/lutfi/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Lutfi Trait Reaction",
@@ -907,7 +907,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -930,16 +930,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - Support Legendary unit (Lutfi). Verified at https://dotgg.gg/sword-of-convallaria/lutfi/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/lutfi/"
+      "summaryVerdict": "S Tier - Support Legendary Watcher unit (Lutfi) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-lutfi"
     },
     {
-      "externalId": "dotgg-soc-sp-safiyyah",
+      "externalId": "soc-unit-sp-safiyyah",
       "slug": "soc-sp-safiyyah",
       "nameEn": "SP Safiyyah",
       "nameOriginal": "SP Safiyyah",
-      "styleOrTitle": "Legendary Seeker (S Tier - Support)",
+      "styleOrTitle": "Legendary Seeker • S Tier - Support",
       "rarity": "Legendary",
       "role": "S Tier - Support (Seeker)",
       "roleColumn": "SUPPORT",
@@ -964,17 +964,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "SP Safiyyah Signature Ultimate",
+          "name": "SP Safiyyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Signature Skill",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/sp-safiyyah/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Safiyyah Trait Reaction",
@@ -986,7 +986,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1009,16 +1009,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - Support Legendary unit (SP Safiyyah). Verified at https://dotgg.gg/sword-of-convallaria/sp-safiyyah/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/sp-safiyyah/"
+      "summaryVerdict": "S Tier - Support Legendary Seeker unit (SP Safiyyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-safiyyah"
     },
     {
-      "externalId": "dotgg-soc-taair",
+      "externalId": "soc-unit-taair",
       "slug": "soc-taair",
       "nameEn": "Taair",
       "nameOriginal": "Taair",
-      "styleOrTitle": "Legendary Breaker (S Tier - Support)",
+      "styleOrTitle": "Legendary Breaker • S Tier - Support",
       "rarity": "Legendary",
       "role": "S Tier - Support (Breaker)",
       "roleColumn": "SUPPORT",
@@ -1043,17 +1043,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Taair Signature Ultimate",
+          "name": "Taair Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Signature Skill",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/taair/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Taair Trait Reaction",
@@ -1065,7 +1065,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1088,16 +1088,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Official DotGG S Tier - Support Legendary unit (Taair). Verified at https://dotgg.gg/sword-of-convallaria/taair/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/taair/"
+      "summaryVerdict": "S Tier - Support Legendary Breaker unit (Taair) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-taair"
     },
     {
-      "externalId": "dotgg-soc-yennefer",
+      "externalId": "soc-unit-yennefer",
       "slug": "soc-yennefer",
       "nameEn": "Yennefer",
       "nameOriginal": "Yennefer",
-      "styleOrTitle": "Legendary Defender (S Tier - Support)",
+      "styleOrTitle": "Legendary Defender • S Tier - Support",
       "rarity": "Legendary",
       "role": "S Tier - Support (Defender)",
       "roleColumn": "SUPPORT",
@@ -1122,17 +1122,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Yennefer Signature Ultimate",
+          "name": "Yennefer Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Signature Skill",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/yennefer/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Yennefer Trait Reaction",
@@ -1144,7 +1144,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1167,16 +1167,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Official DotGG S Tier - Support Legendary unit (Yennefer). Verified at https://dotgg.gg/sword-of-convallaria/yennefer/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/yennefer/"
+      "summaryVerdict": "S Tier - Support Legendary Defender unit (Yennefer) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-yennefer"
     },
     {
-      "externalId": "dotgg-soc-yserinde",
+      "externalId": "soc-unit-yserinde",
       "slug": "soc-yserinde",
       "nameEn": "Yserinde",
       "nameOriginal": "Yserinde",
-      "styleOrTitle": "Legendary Destroyer (S Tier - Support)",
+      "styleOrTitle": "Legendary Destroyer • S Tier - Support",
       "rarity": "Legendary",
       "role": "S Tier - Support (Destroyer)",
       "roleColumn": "SUPPORT",
@@ -1201,17 +1201,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Yserinde Signature Ultimate",
+          "name": "Yserinde Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Signature Skill",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/yserinde/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Yserinde Trait Reaction",
@@ -1223,7 +1223,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1246,16 +1246,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Official DotGG S Tier - Support Legendary unit (Yserinde). Verified at https://dotgg.gg/sword-of-convallaria/yserinde/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/yserinde/"
+      "summaryVerdict": "S Tier - Support Legendary Destroyer unit (Yserinde) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-yserinde"
     },
     {
-      "externalId": "dotgg-soc-agata",
+      "externalId": "soc-unit-agata",
       "slug": "soc-agata",
       "nameEn": "Agata",
       "nameOriginal": "Agata",
-      "styleOrTitle": "Legendary Watcher (A Tier)",
+      "styleOrTitle": "Legendary Watcher • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Watcher)",
       "roleColumn": "DPS",
@@ -1280,17 +1280,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Agata Signature Ultimate",
+          "name": "Agata Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/agata/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Agata Trait Reaction",
@@ -1302,7 +1302,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1325,16 +1325,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Agata). Verified at https://dotgg.gg/sword-of-convallaria/agata/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/agata/"
+      "summaryVerdict": "A Tier Legendary Watcher unit (Agata) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-agata"
     },
     {
-      "externalId": "dotgg-soc-auguste",
+      "externalId": "soc-unit-auguste",
       "slug": "soc-auguste",
       "nameEn": "Auguste",
       "nameOriginal": "Auguste",
-      "styleOrTitle": "Legendary Seeker (A Tier)",
+      "styleOrTitle": "Legendary Seeker • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Seeker)",
       "roleColumn": "DPS",
@@ -1359,17 +1359,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Auguste Signature Ultimate",
+          "name": "Auguste Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/auguste/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Auguste Trait Reaction",
@@ -1381,7 +1381,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1404,16 +1404,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Auguste). Verified at https://dotgg.gg/sword-of-convallaria/auguste/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/auguste/"
+      "summaryVerdict": "A Tier Legendary Seeker unit (Auguste) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-auguste"
     },
     {
-      "externalId": "dotgg-soc-ayishah",
+      "externalId": "soc-unit-ayishah",
       "slug": "soc-ayishah",
       "nameEn": "Ayishah",
       "nameOriginal": "Ayishah",
-      "styleOrTitle": "Legendary Breaker (A Tier)",
+      "styleOrTitle": "Legendary Breaker • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Breaker)",
       "roleColumn": "SUB_DPS",
@@ -1438,17 +1438,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Ayishah Signature Ultimate",
+          "name": "Ayishah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/ayishah/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Ayishah Trait Reaction",
@@ -1460,7 +1460,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1483,16 +1483,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Ayishah). Verified at https://dotgg.gg/sword-of-convallaria/ayishah/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/ayishah/"
+      "summaryVerdict": "A Tier Legendary Breaker unit (Ayishah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-ayishah"
     },
     {
-      "externalId": "dotgg-soc-estra",
+      "externalId": "soc-unit-estra",
       "slug": "soc-estra",
       "nameEn": "Estra",
       "nameOriginal": "Estra",
-      "styleOrTitle": "Legendary Defender (A Tier)",
+      "styleOrTitle": "Legendary Defender • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Defender)",
       "roleColumn": "SUSTAIN",
@@ -1517,17 +1517,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Estra Signature Ultimate",
+          "name": "Estra Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/estra/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Estra Trait Reaction",
@@ -1539,7 +1539,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1562,16 +1562,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Estra). Verified at https://dotgg.gg/sword-of-convallaria/estra/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/estra/"
+      "summaryVerdict": "A Tier Legendary Defender unit (Estra) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-estra"
     },
     {
-      "externalId": "dotgg-soc-layla",
+      "externalId": "soc-unit-layla",
       "slug": "soc-layla",
       "nameEn": "Layla",
       "nameOriginal": "Layla",
-      "styleOrTitle": "Legendary Destroyer (A Tier)",
+      "styleOrTitle": "Legendary Destroyer • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Destroyer)",
       "roleColumn": "DPS",
@@ -1596,17 +1596,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Layla Signature Ultimate",
+          "name": "Layla Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/layla/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Layla Trait Reaction",
@@ -1618,7 +1618,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1641,16 +1641,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Layla). Verified at https://dotgg.gg/sword-of-convallaria/layla/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/layla/"
+      "summaryVerdict": "A Tier Legendary Destroyer unit (Layla) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-layla"
     },
     {
-      "externalId": "dotgg-soc-marcille",
+      "externalId": "soc-unit-marcille",
       "slug": "soc-marcille",
       "nameEn": "Marcille",
       "nameOriginal": "Marcille",
-      "styleOrTitle": "Legendary Watcher (A Tier)",
+      "styleOrTitle": "Legendary Watcher • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Watcher)",
       "roleColumn": "DPS",
@@ -1675,17 +1675,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Marcille Signature Ultimate",
+          "name": "Marcille Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/marcille/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Marcille Trait Reaction",
@@ -1697,7 +1697,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1720,16 +1720,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Marcille). Verified at https://dotgg.gg/sword-of-convallaria/marcille/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/marcille/"
+      "summaryVerdict": "A Tier Legendary Watcher unit (Marcille) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-marcille"
     },
     {
-      "externalId": "dotgg-soc-pamina",
+      "externalId": "soc-unit-pamina",
       "slug": "soc-pamina",
       "nameEn": "Pamina",
       "nameOriginal": "Pamina",
-      "styleOrTitle": "Legendary Seeker (A Tier)",
+      "styleOrTitle": "Legendary Seeker • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Seeker)",
       "roleColumn": "SUB_DPS",
@@ -1754,17 +1754,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Pamina Signature Ultimate",
+          "name": "Pamina Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/pamina/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Pamina Trait Reaction",
@@ -1776,7 +1776,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1799,16 +1799,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Pamina). Verified at https://dotgg.gg/sword-of-convallaria/pamina/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/pamina/"
+      "summaryVerdict": "A Tier Legendary Seeker unit (Pamina) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-pamina"
     },
     {
-      "externalId": "dotgg-soc-rico",
+      "externalId": "soc-unit-rico",
       "slug": "soc-rico",
       "nameEn": "Rico",
       "nameOriginal": "Rico",
-      "styleOrTitle": "Legendary Breaker (A Tier)",
+      "styleOrTitle": "Legendary Breaker • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Breaker)",
       "roleColumn": "DPS",
@@ -1833,17 +1833,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Rico Signature Ultimate",
+          "name": "Rico Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/rico/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Rico Trait Reaction",
@@ -1855,7 +1855,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1878,16 +1878,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Rico). Verified at https://dotgg.gg/sword-of-convallaria/rico/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/rico/"
+      "summaryVerdict": "A Tier Legendary Breaker unit (Rico) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-rico"
     },
     {
-      "externalId": "dotgg-soc-safiyyah",
+      "externalId": "soc-unit-safiyyah",
       "slug": "soc-safiyyah",
       "nameEn": "Safiyyah",
       "nameOriginal": "Safiyyah",
-      "styleOrTitle": "Legendary Defender (A Tier)",
+      "styleOrTitle": "Legendary Defender • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Defender)",
       "roleColumn": "SUSTAIN",
@@ -1912,17 +1912,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Safiyyah Signature Ultimate",
+          "name": "Safiyyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/safiyyah/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Safiyyah Trait Reaction",
@@ -1934,7 +1934,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -1957,16 +1957,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (Safiyyah). Verified at https://dotgg.gg/sword-of-convallaria/safiyyah/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/safiyyah/"
+      "summaryVerdict": "A Tier Legendary Defender unit (Safiyyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-safiyyah"
     },
     {
-      "externalId": "dotgg-soc-sp-rawiyah",
+      "externalId": "soc-unit-sp-rawiyah",
       "slug": "soc-sp-rawiyah",
       "nameEn": "SP Rawiyah",
       "nameOriginal": "SP Rawiyah",
-      "styleOrTitle": "Legendary Destroyer (A Tier)",
+      "styleOrTitle": "Legendary Destroyer • A Tier",
       "rarity": "Legendary",
       "role": "A Tier (Destroyer)",
       "roleColumn": "DPS",
@@ -1991,17 +1991,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "SP Rawiyah Signature Ultimate",
+          "name": "SP Rawiyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Signature Skill",
+          "multiplierSummary": "A Tier Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/sp-rawiyah/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Rawiyah Trait Reaction",
@@ -2013,7 +2013,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2036,16 +2036,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Official DotGG A Tier Legendary unit (SP Rawiyah). Verified at https://dotgg.gg/sword-of-convallaria/sp-rawiyah/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/sp-rawiyah/"
+      "summaryVerdict": "A Tier Legendary Destroyer unit (SP Rawiyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-rawiyah"
     },
     {
-      "externalId": "dotgg-soc-ciri",
+      "externalId": "soc-unit-ciri",
       "slug": "soc-ciri",
       "nameEn": "Ciri",
       "nameOriginal": "Ciri",
-      "styleOrTitle": "Legendary Watcher (A Tier - Support)",
+      "styleOrTitle": "Legendary Watcher • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Watcher)",
       "roleColumn": "SUPPORT",
@@ -2070,17 +2070,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Ciri Signature Ultimate",
+          "name": "Ciri Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/ciri/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Ciri Trait Reaction",
@@ -2092,7 +2092,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2115,16 +2115,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Ciri). Verified at https://dotgg.gg/sword-of-convallaria/ciri/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/ciri/"
+      "summaryVerdict": "A Tier - Support Legendary Watcher unit (Ciri) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-ciri"
     },
     {
-      "externalId": "dotgg-soc-cocoa",
+      "externalId": "soc-unit-cocoa",
       "slug": "soc-cocoa",
       "nameEn": "Cocoa",
       "nameOriginal": "Cocoa",
-      "styleOrTitle": "Legendary Seeker (A Tier - Support)",
+      "styleOrTitle": "Legendary Seeker • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Seeker)",
       "roleColumn": "SUPPORT",
@@ -2149,17 +2149,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Cocoa Signature Ultimate",
+          "name": "Cocoa Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/cocoa/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Cocoa Trait Reaction",
@@ -2171,7 +2171,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2194,16 +2194,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Cocoa). Verified at https://dotgg.gg/sword-of-convallaria/cocoa/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/cocoa/"
+      "summaryVerdict": "A Tier - Support Legendary Seeker unit (Cocoa) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-cocoa"
     },
     {
-      "externalId": "dotgg-soc-falin",
+      "externalId": "soc-unit-falin",
       "slug": "soc-falin",
       "nameEn": "Falin",
       "nameOriginal": "Falin",
-      "styleOrTitle": "Legendary Breaker (A Tier - Support)",
+      "styleOrTitle": "Legendary Breaker • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Breaker)",
       "roleColumn": "SUPPORT",
@@ -2228,17 +2228,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Falin Signature Ultimate",
+          "name": "Falin Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/falin/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Falin Trait Reaction",
@@ -2250,7 +2250,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2273,16 +2273,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Falin). Verified at https://dotgg.gg/sword-of-convallaria/falin/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/falin/"
+      "summaryVerdict": "A Tier - Support Legendary Breaker unit (Falin) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-falin"
     },
     {
-      "externalId": "dotgg-soc-flavia",
+      "externalId": "soc-unit-flavia",
       "slug": "soc-flavia",
       "nameEn": "Flavia",
       "nameOriginal": "Flavia",
-      "styleOrTitle": "Legendary Defender (A Tier - Support)",
+      "styleOrTitle": "Legendary Defender • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Defender)",
       "roleColumn": "SUPPORT",
@@ -2307,17 +2307,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Flavia Signature Ultimate",
+          "name": "Flavia Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/flavia/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Flavia Trait Reaction",
@@ -2329,7 +2329,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2352,16 +2352,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Flavia). Verified at https://dotgg.gg/sword-of-convallaria/flavia/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/flavia/"
+      "summaryVerdict": "A Tier - Support Legendary Defender unit (Flavia) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-flavia"
     },
     {
-      "externalId": "dotgg-soc-gloria",
+      "externalId": "soc-unit-gloria",
       "slug": "soc-gloria",
       "nameEn": "Gloria",
       "nameOriginal": "Gloria",
-      "styleOrTitle": "Legendary Destroyer (A Tier - Support)",
+      "styleOrTitle": "Legendary Destroyer • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Destroyer)",
       "roleColumn": "SUPPORT",
@@ -2386,17 +2386,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Gloria Signature Ultimate",
+          "name": "Gloria Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/gloria/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Gloria Trait Reaction",
@@ -2408,7 +2408,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2431,16 +2431,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Gloria). Verified at https://dotgg.gg/sword-of-convallaria/gloria/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/gloria/"
+      "summaryVerdict": "A Tier - Support Legendary Destroyer unit (Gloria) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-gloria"
     },
     {
-      "externalId": "dotgg-soc-homa",
+      "externalId": "soc-unit-homa",
       "slug": "soc-homa",
       "nameEn": "Homa",
       "nameOriginal": "Homa",
-      "styleOrTitle": "Legendary Watcher (A Tier - Support)",
+      "styleOrTitle": "Legendary Watcher • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Watcher)",
       "roleColumn": "SUPPORT",
@@ -2465,17 +2465,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Homa Signature Ultimate",
+          "name": "Homa Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/homa/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Homa Trait Reaction",
@@ -2487,7 +2487,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2510,16 +2510,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Homa). Verified at https://dotgg.gg/sword-of-convallaria/homa/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/homa/"
+      "summaryVerdict": "A Tier - Support Legendary Watcher unit (Homa) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-homa"
     },
     {
-      "externalId": "dotgg-soc-inanna",
+      "externalId": "soc-unit-inanna",
       "slug": "soc-inanna",
       "nameEn": "Inanna",
       "nameOriginal": "Inanna",
-      "styleOrTitle": "Legendary Seeker (A Tier - Support)",
+      "styleOrTitle": "Legendary Seeker • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Seeker)",
       "roleColumn": "SUPPORT",
@@ -2544,17 +2544,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Inanna Signature Ultimate",
+          "name": "Inanna Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/inanna/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Inanna Trait Reaction",
@@ -2566,7 +2566,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2589,16 +2589,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (Inanna). Verified at https://dotgg.gg/sword-of-convallaria/inanna/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/inanna/"
+      "summaryVerdict": "A Tier - Support Legendary Seeker unit (Inanna) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-inanna"
     },
     {
-      "externalId": "dotgg-soc-nonowill",
+      "externalId": "soc-unit-nonowill",
       "slug": "soc-nonowill",
       "nameEn": "NonoWill",
       "nameOriginal": "NonoWill",
-      "styleOrTitle": "Legendary Breaker (A Tier - Support)",
+      "styleOrTitle": "Legendary Breaker • A Tier - Support",
       "rarity": "Legendary",
       "role": "A Tier - Support (Breaker)",
       "roleColumn": "SUPPORT",
@@ -2623,17 +2623,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "NonoWill Signature Ultimate",
+          "name": "NonoWill Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Signature Skill",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/nonowill/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "NonoWill Trait Reaction",
@@ -2645,7 +2645,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2668,16 +2668,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Official DotGG A Tier - Support Legendary unit (NonoWill). Verified at https://dotgg.gg/sword-of-convallaria/nonowill/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nonowill/"
+      "summaryVerdict": "A Tier - Support Legendary Breaker unit (NonoWill) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nonowill"
     },
     {
-      "externalId": "dotgg-soc-beryl",
+      "externalId": "soc-unit-beryl",
       "slug": "soc-beryl",
       "nameEn": "Beryl",
       "nameOriginal": "Beryl",
-      "styleOrTitle": "Legendary Defender (B Tier - DPS)",
+      "styleOrTitle": "Legendary Defender • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Defender)",
       "roleColumn": "SUSTAIN",
@@ -2702,17 +2702,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Beryl Signature Ultimate",
+          "name": "Beryl Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/beryl/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Beryl Trait Reaction",
@@ -2724,7 +2724,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2747,16 +2747,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Beryl). Verified at https://dotgg.gg/sword-of-convallaria/beryl/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/beryl/"
+      "summaryVerdict": "B Tier - DPS Legendary Defender unit (Beryl) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-beryl"
     },
     {
-      "externalId": "dotgg-soc-caris",
+      "externalId": "soc-unit-caris",
       "slug": "soc-caris",
       "nameEn": "Caris",
       "nameOriginal": "Caris",
-      "styleOrTitle": "Legendary Destroyer (B Tier - DPS)",
+      "styleOrTitle": "Legendary Destroyer • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Destroyer)",
       "roleColumn": "DPS",
@@ -2781,17 +2781,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Caris Signature Ultimate",
+          "name": "Caris Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/caris/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Caris Trait Reaction",
@@ -2803,7 +2803,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2826,16 +2826,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Caris). Verified at https://dotgg.gg/sword-of-convallaria/caris/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/caris/"
+      "summaryVerdict": "B Tier - DPS Legendary Destroyer unit (Caris) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-caris"
     },
     {
-      "externalId": "dotgg-soc-col",
+      "externalId": "soc-unit-col",
       "slug": "soc-col",
       "nameEn": "Col",
       "nameOriginal": "Col",
-      "styleOrTitle": "Legendary Watcher (B Tier - DPS)",
+      "styleOrTitle": "Legendary Watcher • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Watcher)",
       "roleColumn": "DPS",
@@ -2860,17 +2860,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Col Signature Ultimate",
+          "name": "Col Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/col/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Col Trait Reaction",
@@ -2882,7 +2882,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2905,16 +2905,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Col). Verified at https://dotgg.gg/sword-of-convallaria/col/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/col/"
+      "summaryVerdict": "B Tier - DPS Legendary Watcher unit (Col) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-col"
     },
     {
-      "externalId": "dotgg-soc-hasna",
+      "externalId": "soc-unit-hasna",
       "slug": "soc-hasna",
       "nameEn": "Hasna",
       "nameOriginal": "Hasna",
-      "styleOrTitle": "Legendary Seeker (B Tier - DPS)",
+      "styleOrTitle": "Legendary Seeker • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Seeker)",
       "roleColumn": "DPS",
@@ -2939,17 +2939,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Hasna Signature Ultimate",
+          "name": "Hasna Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/hasna/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Hasna Trait Reaction",
@@ -2961,7 +2961,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -2984,16 +2984,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Hasna). Verified at https://dotgg.gg/sword-of-convallaria/hasna/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/hasna/"
+      "summaryVerdict": "B Tier - DPS Legendary Seeker unit (Hasna) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-hasna"
     },
     {
-      "externalId": "dotgg-soc-kiya",
+      "externalId": "soc-unit-kiya",
       "slug": "soc-kiya",
       "nameEn": "Kiya",
       "nameOriginal": "Kiya",
-      "styleOrTitle": "Legendary Breaker (B Tier - DPS)",
+      "styleOrTitle": "Legendary Breaker • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Breaker)",
       "roleColumn": "SUB_DPS",
@@ -3018,17 +3018,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Kiya Signature Ultimate",
+          "name": "Kiya Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/kiya/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Kiya Trait Reaction",
@@ -3040,7 +3040,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3063,16 +3063,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Kiya). Verified at https://dotgg.gg/sword-of-convallaria/kiya/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/kiya/"
+      "summaryVerdict": "B Tier - DPS Legendary Breaker unit (Kiya) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-kiya"
     },
     {
-      "externalId": "dotgg-soc-lilywill",
+      "externalId": "soc-unit-lilywill",
       "slug": "soc-lilywill",
       "nameEn": "LilyWill",
       "nameOriginal": "LilyWill",
-      "styleOrTitle": "Legendary Defender (B Tier - DPS)",
+      "styleOrTitle": "Legendary Defender • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Defender)",
       "roleColumn": "SUSTAIN",
@@ -3097,17 +3097,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "LilyWill Signature Ultimate",
+          "name": "LilyWill Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/lilywill/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "LilyWill Trait Reaction",
@@ -3119,7 +3119,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3142,16 +3142,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (LilyWill). Verified at https://dotgg.gg/sword-of-convallaria/lilywill/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/lilywill/"
+      "summaryVerdict": "B Tier - DPS Legendary Defender unit (LilyWill) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-lilywill"
     },
     {
-      "externalId": "dotgg-soc-momo",
+      "externalId": "soc-unit-momo",
       "slug": "soc-momo",
       "nameEn": "Momo",
       "nameOriginal": "Momo",
-      "styleOrTitle": "Legendary Destroyer (B Tier - DPS)",
+      "styleOrTitle": "Legendary Destroyer • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Destroyer)",
       "roleColumn": "DPS",
@@ -3176,17 +3176,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Momo Signature Ultimate",
+          "name": "Momo Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/momo/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Momo Trait Reaction",
@@ -3198,7 +3198,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3221,16 +3221,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Momo). Verified at https://dotgg.gg/sword-of-convallaria/momo/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/momo/"
+      "summaryVerdict": "B Tier - DPS Legendary Destroyer unit (Momo) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-momo"
     },
     {
-      "externalId": "dotgg-soc-nungal",
+      "externalId": "soc-unit-nungal",
       "slug": "soc-nungal",
       "nameEn": "Nungal",
       "nameOriginal": "Nungal",
-      "styleOrTitle": "Legendary Watcher (B Tier - DPS)",
+      "styleOrTitle": "Legendary Watcher • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Watcher)",
       "roleColumn": "DPS",
@@ -3255,17 +3255,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Nungal Signature Ultimate",
+          "name": "Nungal Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/nungal/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Nungal Trait Reaction",
@@ -3277,7 +3277,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3300,16 +3300,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Nungal). Verified at https://dotgg.gg/sword-of-convallaria/nungal/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nungal/"
+      "summaryVerdict": "B Tier - DPS Legendary Watcher unit (Nungal) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nungal"
     },
     {
-      "externalId": "dotgg-soc-rawiyah",
+      "externalId": "soc-unit-rawiyah",
       "slug": "soc-rawiyah",
       "nameEn": "Rawiyah",
       "nameOriginal": "Rawiyah",
-      "styleOrTitle": "Legendary Seeker (B Tier - DPS)",
+      "styleOrTitle": "Legendary Seeker • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Seeker)",
       "roleColumn": "SUB_DPS",
@@ -3334,17 +3334,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Rawiyah Signature Ultimate",
+          "name": "Rawiyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/rawiyah/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Rawiyah Trait Reaction",
@@ -3356,7 +3356,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3379,16 +3379,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Rawiyah). Verified at https://dotgg.gg/sword-of-convallaria/rawiyah/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/rawiyah/"
+      "summaryVerdict": "B Tier - DPS Legendary Seeker unit (Rawiyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-rawiyah"
     },
     {
-      "externalId": "dotgg-soc-team-meteor",
+      "externalId": "soc-unit-team-meteor",
       "slug": "soc-team-meteor",
       "nameEn": "Team Meteor",
       "nameOriginal": "Team Meteor",
-      "styleOrTitle": "Legendary Breaker (B Tier - DPS)",
+      "styleOrTitle": "Legendary Breaker • B Tier - DPS",
       "rarity": "Legendary",
       "role": "B Tier - DPS (Breaker)",
       "roleColumn": "DPS",
@@ -3413,17 +3413,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Team Meteor Signature Ultimate",
+          "name": "Team Meteor Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Signature Skill",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/team-meteor/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Team Meteor Trait Reaction",
@@ -3435,7 +3435,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3458,16 +3458,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - DPS Legendary unit (Team Meteor). Verified at https://dotgg.gg/sword-of-convallaria/team-meteor/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/team-meteor/"
+      "summaryVerdict": "B Tier - DPS Legendary Breaker unit (Team Meteor) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-team-meteor"
     },
     {
-      "externalId": "dotgg-soc-acambe",
+      "externalId": "soc-unit-acambe",
       "slug": "soc-acambe",
       "nameEn": "Acambe",
       "nameOriginal": "Acambe",
-      "styleOrTitle": "Legendary Defender (B Tier - Support)",
+      "styleOrTitle": "Legendary Defender • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Defender)",
       "roleColumn": "SUPPORT",
@@ -3492,17 +3492,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Acambe Signature Ultimate",
+          "name": "Acambe Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/acambe/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Acambe Trait Reaction",
@@ -3514,7 +3514,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3537,16 +3537,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (Acambe). Verified at https://dotgg.gg/sword-of-convallaria/acambe/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/acambe/"
+      "summaryVerdict": "B Tier - Support Legendary Defender unit (Acambe) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-acambe"
     },
     {
-      "externalId": "dotgg-soc-afra",
+      "externalId": "soc-unit-afra",
       "slug": "soc-afra",
       "nameEn": "Afra",
       "nameOriginal": "Afra",
-      "styleOrTitle": "Legendary Destroyer (B Tier - Support)",
+      "styleOrTitle": "Legendary Destroyer • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Destroyer)",
       "roleColumn": "SUPPORT",
@@ -3571,17 +3571,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Afra Signature Ultimate",
+          "name": "Afra Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/afra/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Afra Trait Reaction",
@@ -3593,7 +3593,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3616,16 +3616,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (Afra). Verified at https://dotgg.gg/sword-of-convallaria/afra/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/afra/"
+      "summaryVerdict": "B Tier - Support Legendary Destroyer unit (Afra) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-afra"
     },
     {
-      "externalId": "dotgg-soc-edda",
+      "externalId": "soc-unit-edda",
       "slug": "soc-edda",
       "nameEn": "Edda",
       "nameOriginal": "Edda",
-      "styleOrTitle": "Legendary Watcher (B Tier - Support)",
+      "styleOrTitle": "Legendary Watcher • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Watcher)",
       "roleColumn": "SUPPORT",
@@ -3650,17 +3650,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Edda Signature Ultimate",
+          "name": "Edda Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/edda/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Edda Trait Reaction",
@@ -3672,7 +3672,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3695,16 +3695,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (Edda). Verified at https://dotgg.gg/sword-of-convallaria/edda/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/edda/"
+      "summaryVerdict": "B Tier - Support Legendary Watcher unit (Edda) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-edda"
     },
     {
-      "externalId": "dotgg-soc-samantha",
+      "externalId": "soc-unit-samantha",
       "slug": "soc-samantha",
       "nameEn": "Samantha",
       "nameOriginal": "Samantha",
-      "styleOrTitle": "Legendary Seeker (B Tier - Support)",
+      "styleOrTitle": "Legendary Seeker • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Seeker)",
       "roleColumn": "SUPPORT",
@@ -3729,17 +3729,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Samantha Signature Ultimate",
+          "name": "Samantha Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/samantha/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Samantha Trait Reaction",
@@ -3751,7 +3751,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3774,16 +3774,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (Samantha). Verified at https://dotgg.gg/sword-of-convallaria/samantha/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/samantha/"
+      "summaryVerdict": "B Tier - Support Legendary Seeker unit (Samantha) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-samantha"
     },
     {
-      "externalId": "dotgg-soc-schacklulu",
+      "externalId": "soc-unit-schacklulu",
       "slug": "soc-schacklulu",
       "nameEn": "SchackLulu",
       "nameOriginal": "SchackLulu",
-      "styleOrTitle": "Legendary Breaker (B Tier - Support)",
+      "styleOrTitle": "Legendary Breaker • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Breaker)",
       "roleColumn": "SUPPORT",
@@ -3808,17 +3808,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "SchackLulu Signature Ultimate",
+          "name": "SchackLulu Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/schacklulu/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SchackLulu Trait Reaction",
@@ -3830,7 +3830,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3853,16 +3853,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (SchackLulu). Verified at https://dotgg.gg/sword-of-convallaria/schacklulu/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/schacklulu/"
+      "summaryVerdict": "B Tier - Support Legendary Breaker unit (SchackLulu) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-schacklulu"
     },
     {
-      "externalId": "dotgg-soc-senshi",
+      "externalId": "soc-unit-senshi",
       "slug": "soc-senshi",
       "nameEn": "Senshi",
       "nameOriginal": "Senshi",
-      "styleOrTitle": "Legendary Defender (B Tier - Support)",
+      "styleOrTitle": "Legendary Defender • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Defender)",
       "roleColumn": "SUPPORT",
@@ -3887,17 +3887,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Senshi Signature Ultimate",
+          "name": "Senshi Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/senshi/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Senshi Trait Reaction",
@@ -3909,7 +3909,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -3932,16 +3932,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (Senshi). Verified at https://dotgg.gg/sword-of-convallaria/senshi/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/senshi/"
+      "summaryVerdict": "B Tier - Support Legendary Defender unit (Senshi) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-senshi"
     },
     {
-      "externalId": "dotgg-soc-simona",
+      "externalId": "soc-unit-simona",
       "slug": "soc-simona",
       "nameEn": "Simona",
       "nameOriginal": "Simona",
-      "styleOrTitle": "Legendary Destroyer (B Tier - Support)",
+      "styleOrTitle": "Legendary Destroyer • B Tier - Support",
       "rarity": "Legendary",
       "role": "B Tier - Support (Destroyer)",
       "roleColumn": "SUPPORT",
@@ -3966,17 +3966,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Simona Signature Ultimate",
+          "name": "Simona Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Signature Skill",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/simona/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Simona Trait Reaction",
@@ -3988,7 +3988,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4011,16 +4011,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Official DotGG B Tier - Support Legendary unit (Simona). Verified at https://dotgg.gg/sword-of-convallaria/simona/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/simona/"
+      "summaryVerdict": "B Tier - Support Legendary Destroyer unit (Simona) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-simona"
     },
     {
-      "externalId": "dotgg-soc-alexei",
+      "externalId": "soc-unit-alexei",
       "slug": "soc-alexei",
       "nameEn": "Alexei",
       "nameOriginal": "Alexei",
-      "styleOrTitle": "Legendary Watcher (C Tier - DPS)",
+      "styleOrTitle": "Legendary Watcher • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Watcher)",
       "roleColumn": "DPS",
@@ -4045,17 +4045,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Alexei Signature Ultimate",
+          "name": "Alexei Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/alexei/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Alexei Trait Reaction",
@@ -4067,7 +4067,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4090,16 +4090,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Alexei). Verified at https://dotgg.gg/sword-of-convallaria/alexei/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/alexei/"
+      "summaryVerdict": "C Tier - DPS Legendary Watcher unit (Alexei) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-alexei"
     },
     {
-      "externalId": "dotgg-soc-dantalion",
+      "externalId": "soc-unit-dantalion",
       "slug": "soc-dantalion",
       "nameEn": "Dantalion",
       "nameOriginal": "Dantalion",
-      "styleOrTitle": "Legendary Seeker (C Tier - DPS)",
+      "styleOrTitle": "Legendary Seeker • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Seeker)",
       "roleColumn": "DPS",
@@ -4124,17 +4124,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Dantalion Signature Ultimate",
+          "name": "Dantalion Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/dantalion/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Dantalion Trait Reaction",
@@ -4146,7 +4146,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4169,16 +4169,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Dantalion). Verified at https://dotgg.gg/sword-of-convallaria/dantalion/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/dantalion/"
+      "summaryVerdict": "C Tier - DPS Legendary Seeker unit (Dantalion) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-dantalion"
     },
     {
-      "externalId": "dotgg-soc-faycal",
+      "externalId": "soc-unit-faycal",
       "slug": "soc-faycal",
       "nameEn": "Faycal",
       "nameOriginal": "Faycal",
-      "styleOrTitle": "Legendary Breaker (C Tier - DPS)",
+      "styleOrTitle": "Legendary Breaker • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Breaker)",
       "roleColumn": "DPS",
@@ -4203,17 +4203,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Faycal Signature Ultimate",
+          "name": "Faycal Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/faycal/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Faycal Trait Reaction",
@@ -4225,7 +4225,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4248,16 +4248,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Faycal). Verified at https://dotgg.gg/sword-of-convallaria/faycal/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/faycal/"
+      "summaryVerdict": "C Tier - DPS Legendary Breaker unit (Faycal) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-faycal"
     },
     {
-      "externalId": "dotgg-soc-garcia",
+      "externalId": "soc-unit-garcia",
       "slug": "soc-garcia",
       "nameEn": "Garcia",
       "nameOriginal": "Garcia",
-      "styleOrTitle": "Legendary Defender (C Tier - DPS)",
+      "styleOrTitle": "Legendary Defender • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Defender)",
       "roleColumn": "SUSTAIN",
@@ -4282,17 +4282,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Garcia Signature Ultimate",
+          "name": "Garcia Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/garcia/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Garcia Trait Reaction",
@@ -4304,7 +4304,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4327,16 +4327,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.7,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Garcia). Verified at https://dotgg.gg/sword-of-convallaria/garcia/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/garcia/"
+      "summaryVerdict": "C Tier - DPS Legendary Defender unit (Garcia) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-garcia"
     },
     {
-      "externalId": "dotgg-soc-guzman",
+      "externalId": "soc-unit-guzman",
       "slug": "soc-guzman",
       "nameEn": "Guzman",
       "nameOriginal": "Guzman",
-      "styleOrTitle": "Legendary Destroyer (C Tier - DPS)",
+      "styleOrTitle": "Legendary Destroyer • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Destroyer)",
       "roleColumn": "DPS",
@@ -4361,17 +4361,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Guzman Signature Ultimate",
+          "name": "Guzman Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/guzman/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Guzman Trait Reaction",
@@ -4383,7 +4383,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4406,16 +4406,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Guzman). Verified at https://dotgg.gg/sword-of-convallaria/guzman/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/guzman/"
+      "summaryVerdict": "C Tier - DPS Legendary Destroyer unit (Guzman) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-guzman"
     },
     {
-      "externalId": "dotgg-soc-iggy",
+      "externalId": "soc-unit-iggy",
       "slug": "soc-iggy",
       "nameEn": "Iggy",
       "nameOriginal": "Iggy",
-      "styleOrTitle": "Legendary Watcher (C Tier - DPS)",
+      "styleOrTitle": "Legendary Watcher • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Watcher)",
       "roleColumn": "DPS",
@@ -4440,17 +4440,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Iggy Signature Ultimate",
+          "name": "Iggy Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/iggy/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Iggy Trait Reaction",
@@ -4462,7 +4462,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4485,16 +4485,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Iggy). Verified at https://dotgg.gg/sword-of-convallaria/iggy/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/iggy/"
+      "summaryVerdict": "C Tier - DPS Legendary Watcher unit (Iggy) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-iggy"
     },
     {
-      "externalId": "dotgg-soc-leonide",
+      "externalId": "soc-unit-leonide",
       "slug": "soc-leonide",
       "nameEn": "Leonide",
       "nameOriginal": "Leonide",
-      "styleOrTitle": "Legendary Seeker (C Tier - DPS)",
+      "styleOrTitle": "Legendary Seeker • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Seeker)",
       "roleColumn": "DPS",
@@ -4519,17 +4519,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Leonide Signature Ultimate",
+          "name": "Leonide Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/leonide/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Leonide Trait Reaction",
@@ -4541,7 +4541,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4564,16 +4564,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Leonide). Verified at https://dotgg.gg/sword-of-convallaria/leonide/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/leonide/"
+      "summaryVerdict": "C Tier - DPS Legendary Seeker unit (Leonide) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-leonide"
     },
     {
-      "externalId": "dotgg-soc-miguel",
+      "externalId": "soc-unit-miguel",
       "slug": "soc-miguel",
       "nameEn": "Miguel",
       "nameOriginal": "Miguel",
-      "styleOrTitle": "Legendary Breaker (C Tier - DPS)",
+      "styleOrTitle": "Legendary Breaker • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Breaker)",
       "roleColumn": "SUB_DPS",
@@ -4598,17 +4598,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Miguel Signature Ultimate",
+          "name": "Miguel Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/miguel/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Miguel Trait Reaction",
@@ -4620,7 +4620,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4643,16 +4643,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.7,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Miguel). Verified at https://dotgg.gg/sword-of-convallaria/miguel/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/miguel/"
+      "summaryVerdict": "C Tier - DPS Legendary Breaker unit (Miguel) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-miguel"
     },
     {
-      "externalId": "dotgg-soc-xavier",
+      "externalId": "soc-unit-xavier",
       "slug": "soc-xavier",
       "nameEn": "Xavier",
       "nameOriginal": "Xavier",
-      "styleOrTitle": "Legendary Defender (C Tier - DPS)",
+      "styleOrTitle": "Legendary Defender • C Tier - DPS",
       "rarity": "Legendary",
       "role": "C Tier - DPS (Defender)",
       "roleColumn": "SUSTAIN",
@@ -4677,17 +4677,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Xavier Signature Ultimate",
+          "name": "Xavier Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Signature Skill",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/xavier/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Xavier Trait Reaction",
@@ -4699,7 +4699,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4722,16 +4722,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Official DotGG C Tier - DPS Legendary unit (Xavier). Verified at https://dotgg.gg/sword-of-convallaria/xavier/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/xavier/"
+      "summaryVerdict": "C Tier - DPS Legendary Defender unit (Xavier) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-xavier"
     },
     {
-      "externalId": "dotgg-soc-maitha",
+      "externalId": "soc-unit-maitha",
       "slug": "soc-maitha",
       "nameEn": "Maitha",
       "nameOriginal": "Maitha",
-      "styleOrTitle": "Legendary Destroyer (C Tier - Support)",
+      "styleOrTitle": "Legendary Destroyer • C Tier - Support",
       "rarity": "Legendary",
       "role": "C Tier - Support (Destroyer)",
       "roleColumn": "SUPPORT",
@@ -4756,17 +4756,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Maitha Signature Ultimate",
+          "name": "Maitha Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Signature Skill",
+          "multiplierSummary": "C Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "C Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/maitha/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Maitha Trait Reaction",
@@ -4778,7 +4778,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4801,16 +4801,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Official DotGG C Tier - Support Legendary unit (Maitha). Verified at https://dotgg.gg/sword-of-convallaria/maitha/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/maitha/"
+      "summaryVerdict": "C Tier - Support Legendary Destroyer unit (Maitha) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-maitha"
     },
     {
-      "externalId": "dotgg-soc-nergal",
+      "externalId": "soc-unit-nergal",
       "slug": "soc-nergal",
       "nameEn": "Nergal",
       "nameOriginal": "Nergal",
-      "styleOrTitle": "Legendary Watcher (C Tier - Support)",
+      "styleOrTitle": "Legendary Watcher • C Tier - Support",
       "rarity": "Legendary",
       "role": "C Tier - Support (Watcher)",
       "roleColumn": "SUPPORT",
@@ -4835,17 +4835,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Nergal Signature Ultimate",
+          "name": "Nergal Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Signature Skill",
+          "multiplierSummary": "C Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "C Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/nergal/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Nergal Trait Reaction",
@@ -4857,7 +4857,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4880,16 +4880,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "Official DotGG C Tier - Support Legendary unit (Nergal). Verified at https://dotgg.gg/sword-of-convallaria/nergal/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nergal/"
+      "summaryVerdict": "C Tier - Support Legendary Watcher unit (Nergal) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nergal"
     },
     {
-      "externalId": "dotgg-soc-teadon",
+      "externalId": "soc-unit-teadon",
       "slug": "soc-teadon",
       "nameEn": "Teadon",
       "nameOriginal": "Teadon",
-      "styleOrTitle": "Legendary Seeker (C Tier - Support)",
+      "styleOrTitle": "Legendary Seeker • C Tier - Support",
       "rarity": "Legendary",
       "role": "C Tier - Support (Seeker)",
       "roleColumn": "SUPPORT",
@@ -4914,17 +4914,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Teadon Signature Ultimate",
+          "name": "Teadon Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Signature Skill",
+          "multiplierSummary": "C Tier - Support Tactical Ultimate",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "C Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - Support on DotGG Sword of Convallaria Tier List (https://dotgg.gg/sword-of-convallaria/teadon/). High tactical impact in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Teadon Trait Reaction",
@@ -4936,7 +4936,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without needing duplicate gacha pulls."
+          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
         }
       ],
       "passives": [
@@ -4959,17 +4959,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.7,
-      "summaryVerdict": "Official DotGG C Tier - Support Legendary unit (Teadon). Verified at https://dotgg.gg/sword-of-convallaria/teadon/",
-      "longevityNote": "Farmable to 5★ via daily Memory Shard stage.",
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/teadon/"
+      "summaryVerdict": "C Tier - Support Legendary Seeker unit (Teadon) with high tactical impact in Tower of Adversity and Weaponry Trials.",
+      "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-teadon"
     }
   ],
   "equipments": [
     {
-      "externalId": "dotgg-soc-wp-blade-of-strategem",
+      "externalId": "soc-gear-soc-wp-blade-of-strategem",
       "slug": "soc-wp-blade-of-strategem",
       "nameEn": "Blade of Strategem",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2877.webp",
@@ -4978,21 +4978,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/blade-of-strategem/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Blade of Strategem).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/blade-of-strategem/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-blade-of-strategem"
     },
     {
-      "externalId": "dotgg-soc-wp-diffusing-prism",
+      "externalId": "soc-gear-soc-wp-diffusing-prism",
       "slug": "soc-wp-diffusing-prism",
       "nameEn": "Diffusing Prism",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5157.webp",
@@ -5001,21 +5002,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/diffusing-prism/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Diffusing Prism).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/diffusing-prism/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-diffusing-prism"
     },
     {
-      "externalId": "dotgg-soc-wp-double-sided-halberd",
+      "externalId": "soc-gear-soc-wp-double-sided-halberd",
       "slug": "soc-wp-double-sided-halberd",
       "nameEn": "Double-Sided Halberd",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5150.webp",
@@ -5024,21 +5026,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/double-sided-halberd/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Double-Sided Halberd).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/double-sided-halberd/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-double-sided-halberd"
     },
     {
-      "externalId": "dotgg-soc-wp-feast-axe",
+      "externalId": "soc-gear-soc-wp-feast-axe",
       "slug": "soc-wp-feast-axe",
       "nameEn": "Feast Axe",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5152.webp",
@@ -5047,21 +5050,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/feast-axe/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Feast Axe).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/feast-axe/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-feast-axe"
     },
     {
-      "externalId": "dotgg-soc-wp-gale-sword",
+      "externalId": "soc-gear-soc-wp-gale-sword",
       "slug": "soc-wp-gale-sword",
       "nameEn": "Gale Sword",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2864.webp",
@@ -5070,21 +5074,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/gale-sword/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Gale Sword).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/gale-sword/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-gale-sword"
     },
     {
-      "externalId": "dotgg-soc-wp-longbow-of-martyrs",
+      "externalId": "soc-gear-soc-wp-longbow-of-martyrs",
       "slug": "soc-wp-longbow-of-martyrs",
       "nameEn": "Longbow of Martyrs",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5179.webp",
@@ -5093,21 +5098,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/longbow-of-martyrs/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Longbow of Martyrs).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/longbow-of-martyrs/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-longbow-of-martyrs"
     },
     {
-      "externalId": "dotgg-soc-wp-melee-mega-crossbow",
+      "externalId": "soc-gear-soc-wp-melee-mega-crossbow",
       "slug": "soc-wp-melee-mega-crossbow",
       "nameEn": "Melee Mega Crossbow",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5156.webp",
@@ -5116,21 +5122,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/melee-mega-crossbow/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Melee Mega Crossbow).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/melee-mega-crossbow/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-melee-mega-crossbow"
     },
     {
-      "externalId": "dotgg-soc-wp-newborn-blade",
+      "externalId": "soc-gear-soc-wp-newborn-blade",
       "slug": "soc-wp-newborn-blade",
       "nameEn": "Newborn Blade",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5148.webp",
@@ -5139,21 +5146,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/newborn-blade/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Newborn Blade).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/newborn-blade/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-newborn-blade"
     },
     {
-      "externalId": "dotgg-soc-wp-nocturnal-glow",
+      "externalId": "soc-gear-soc-wp-nocturnal-glow",
       "slug": "soc-wp-nocturnal-glow",
       "nameEn": "Nocturnal Glow",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2868.webp",
@@ -5162,21 +5170,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/nocturnal-glow/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nocturnal Glow).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nocturnal-glow/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nocturnal-glow"
     },
     {
-      "externalId": "dotgg-soc-wp-reorganized-cube",
+      "externalId": "soc-gear-soc-wp-reorganized-cube",
       "slug": "soc-wp-reorganized-cube",
       "nameEn": "Reorganized Cube",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5162.webp",
@@ -5185,21 +5194,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/reorganized-cube/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Reorganized Cube).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/reorganized-cube/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-reorganized-cube"
     },
     {
-      "externalId": "dotgg-soc-wp-starry-sky-heritage",
+      "externalId": "soc-gear-soc-wp-starry-sky-heritage",
       "slug": "soc-wp-starry-sky-heritage",
       "nameEn": "Starry Sky Heritage",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5161.webp",
@@ -5208,21 +5218,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/starry-sky-heritage/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Starry Sky Heritage).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/starry-sky-heritage/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-starry-sky-heritage"
     },
     {
-      "externalId": "dotgg-soc-wp-void-stab",
+      "externalId": "soc-gear-soc-wp-void-stab",
       "slug": "soc-wp-void-stab",
       "nameEn": "Void Stab",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (S Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5149.webp",
@@ -5231,21 +5242,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "S Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked S Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/void-stab/).",
+      "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Void Stab).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/void-stab/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-void-stab"
     },
     {
-      "externalId": "dotgg-soc-wp-focus-wand",
+      "externalId": "soc-gear-soc-wp-focus-wand",
       "slug": "soc-wp-focus-wand",
       "nameEn": "Focus Wand",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (A Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5153.webp",
@@ -5254,21 +5266,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "A Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked A Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/focus-wand/).",
+      "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Focus Wand).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/focus-wand/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-focus-wand"
     },
     {
-      "externalId": "dotgg-soc-wp-hammer-dragon-rise",
+      "externalId": "soc-gear-soc-wp-hammer-dragon-rise",
       "slug": "soc-wp-hammer-dragon-rise",
       "nameEn": "Hammer “Dragon Rise!”",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (A Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2879.webp",
@@ -5277,21 +5290,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "A Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked A Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/hammer-dragon-rise/).",
+      "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Hammer “Dragon Rise!”).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/hammer-dragon-rise/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-hammer-dragon-rise"
     },
     {
-      "externalId": "dotgg-soc-wp-nightmare-puppet",
+      "externalId": "soc-gear-soc-wp-nightmare-puppet",
       "slug": "soc-wp-nightmare-puppet",
       "nameEn": "Nightmare Puppet",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (A Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2869.webp",
@@ -5300,21 +5314,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "A Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked A Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/nightmare-puppet/).",
+      "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nightmare Puppet).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nightmare-puppet/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nightmare-puppet"
     },
     {
-      "externalId": "dotgg-soc-wp-nirvana",
+      "externalId": "soc-gear-soc-wp-nirvana",
       "slug": "soc-wp-nirvana",
       "nameEn": "Nirvana",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (A Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2870.webp",
@@ -5323,21 +5338,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "A Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked A Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/nirvana/).",
+      "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nirvana).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nirvana/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nirvana"
     },
     {
-      "externalId": "dotgg-soc-wp-tuning-hammer",
+      "externalId": "soc-gear-soc-wp-tuning-hammer",
       "slug": "soc-wp-tuning-hammer",
       "nameEn": "Tuning Hammer",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (A Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5178.webp",
@@ -5346,21 +5362,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "A Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked A Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/tuning-hammer/).",
+      "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Tuning Hammer).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/tuning-hammer/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-tuning-hammer"
     },
     {
-      "externalId": "dotgg-soc-wp-army-breaking-spear",
+      "externalId": "soc-gear-soc-wp-army-breaking-spear",
       "slug": "soc-wp-army-breaking-spear",
       "nameEn": "Army-Breaking Spear",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2867.webp",
@@ -5369,21 +5386,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/army-breaking-spear/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Army-Breaking Spear).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/army-breaking-spear/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-army-breaking-spear"
     },
     {
-      "externalId": "dotgg-soc-wp-barbecue-hammer",
+      "externalId": "soc-gear-soc-wp-barbecue-hammer",
       "slug": "soc-wp-barbecue-hammer",
       "nameEn": "Barbecue Hammer",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2873.webp",
@@ -5392,21 +5410,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/barbecue-hammer/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Barbecue Hammer).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/barbecue-hammer/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-barbecue-hammer"
     },
     {
-      "externalId": "dotgg-soc-wp-brutal-axe",
+      "externalId": "soc-gear-soc-wp-brutal-axe",
       "slug": "soc-wp-brutal-axe",
       "nameEn": "Brutal Axe",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5159.webp",
@@ -5415,21 +5434,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/brutal-axe/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Brutal Axe).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/brutal-axe/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-brutal-axe"
     },
     {
-      "externalId": "dotgg-soc-wp-cornucopia-axe",
+      "externalId": "soc-gear-soc-wp-cornucopia-axe",
       "slug": "soc-wp-cornucopia-axe",
       "nameEn": "Cornucopia Axe",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5187.webp",
@@ -5438,21 +5458,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/cornucopia-axe/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Axe).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/cornucopia-axe/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-axe"
     },
     {
-      "externalId": "dotgg-soc-wp-cornucopia-bow",
+      "externalId": "soc-gear-soc-wp-cornucopia-bow",
       "slug": "soc-wp-cornucopia-bow",
       "nameEn": "Cornucopia Bow",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5188.webp",
@@ -5461,21 +5482,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/cornucopia-bow/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Bow).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/cornucopia-bow/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-bow"
     },
     {
-      "externalId": "dotgg-soc-wp-cornucopia-spear",
+      "externalId": "soc-gear-soc-wp-cornucopia-spear",
       "slug": "soc-wp-cornucopia-spear",
       "nameEn": "Cornucopia Spear",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5186.webp",
@@ -5484,21 +5506,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/cornucopia-spear/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Spear).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/cornucopia-spear/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-spear"
     },
     {
-      "externalId": "dotgg-soc-wp-cornucopia-staff",
+      "externalId": "soc-gear-soc-wp-cornucopia-staff",
       "slug": "soc-wp-cornucopia-staff",
       "nameEn": "Cornucopia Staff",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5173.webp",
@@ -5507,21 +5530,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/cornucopia-staff/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Staff).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/cornucopia-staff/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-staff"
     },
     {
-      "externalId": "dotgg-soc-wp-cornucopia-dagger",
+      "externalId": "soc-gear-soc-wp-cornucopia-dagger",
       "slug": "soc-wp-cornucopia-dagger",
       "nameEn": "Cornucopia Dagger",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5172.webp",
@@ -5530,21 +5554,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/cornucopia-dagger/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Dagger).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/cornucopia-dagger/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-dagger"
     },
     {
-      "externalId": "dotgg-soc-wp-dawnlight",
+      "externalId": "soc-gear-soc-wp-dawnlight",
       "slug": "soc-wp-dawnlight",
       "nameEn": "Dawnlight",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2878.webp",
@@ -5553,21 +5578,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/dawnlight/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Dawnlight).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/dawnlight/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-dawnlight"
     },
     {
-      "externalId": "dotgg-soc-wp-dawnmoon",
+      "externalId": "soc-gear-soc-wp-dawnmoon",
       "slug": "soc-wp-dawnmoon",
       "nameEn": "Dawnmoon",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2874.webp",
@@ -5576,21 +5602,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/dawnmoon/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Dawnmoon).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/dawnmoon/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-dawnmoon"
     },
     {
-      "externalId": "dotgg-soc-wp-denial-hammer",
+      "externalId": "soc-gear-soc-wp-denial-hammer",
       "slug": "soc-wp-denial-hammer",
       "nameEn": "Denial Hammer",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5175.webp",
@@ -5599,21 +5626,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/denial-hammer/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Denial Hammer).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/denial-hammer/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-denial-hammer"
     },
     {
-      "externalId": "dotgg-soc-wp-ever-burning-blade",
+      "externalId": "soc-gear-soc-wp-ever-burning-blade",
       "slug": "soc-wp-ever-burning-blade",
       "nameEn": "Ever-Burning Blade",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5163.webp",
@@ -5622,21 +5650,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/ever-burning-blade/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Ever-Burning Blade).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/ever-burning-blade/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-ever-burning-blade"
     },
     {
-      "externalId": "dotgg-soc-wp-frostspine-grip",
+      "externalId": "soc-gear-soc-wp-frostspine-grip",
       "slug": "soc-wp-frostspine-grip",
       "nameEn": "Frostspine Grip",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2882.webp",
@@ -5645,21 +5674,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/frostspine-grip/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Frostspine Grip).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/frostspine-grip/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-frostspine-grip"
     },
     {
-      "externalId": "dotgg-soc-wp-irian-combat-bow",
+      "externalId": "soc-gear-soc-wp-irian-combat-bow",
       "slug": "soc-wp-irian-combat-bow",
       "nameEn": "Irian Combat Bow",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5151.webp",
@@ -5668,21 +5698,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/irian-combat-bow/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Irian Combat Bow).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/irian-combat-bow/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-irian-combat-bow"
     },
     {
-      "externalId": "dotgg-soc-wp-life-fondness",
+      "externalId": "soc-gear-soc-wp-life-fondness",
       "slug": "soc-wp-life-fondness",
       "nameEn": "Life Fondness",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2872.webp",
@@ -5691,21 +5722,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/life-fondness/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Life Fondness).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/life-fondness/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-life-fondness"
     },
     {
-      "externalId": "dotgg-soc-wp-magic-ladle",
+      "externalId": "soc-gear-soc-wp-magic-ladle",
       "slug": "soc-wp-magic-ladle",
       "nameEn": "Magic Ladle",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2880.webp",
@@ -5714,21 +5746,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/magic-ladle/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Magic Ladle).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/magic-ladle/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-magic-ladle"
     },
     {
-      "externalId": "dotgg-soc-wp-paradox-crystal-chain",
+      "externalId": "soc-gear-soc-wp-paradox-crystal-chain",
       "slug": "soc-wp-paradox-crystal-chain",
       "nameEn": "Paradox Crystal Chain",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2883.webp",
@@ -5737,21 +5770,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/paradox-crystal-chain/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Paradox Crystal Chain).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/paradox-crystal-chain/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-paradox-crystal-chain"
     },
     {
-      "externalId": "dotgg-soc-wp-skeleton-spear",
+      "externalId": "soc-gear-soc-wp-skeleton-spear",
       "slug": "soc-wp-skeleton-spear",
       "nameEn": "Skeleton Spear",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5164.webp",
@@ -5760,21 +5794,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/skeleton-spear/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Skeleton Spear).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/skeleton-spear/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-skeleton-spear"
     },
     {
-      "externalId": "dotgg-soc-wp-star-raid-crossbow",
+      "externalId": "soc-gear-soc-wp-star-raid-crossbow",
       "slug": "soc-wp-star-raid-crossbow",
       "nameEn": "Star Raid Crossbow",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (B Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5166.webp",
@@ -5783,21 +5818,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "B Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked B Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/star-raid-crossbow/).",
+      "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Star Raid Crossbow).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/star-raid-crossbow/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-star-raid-crossbow"
     },
     {
-      "externalId": "dotgg-soc-wp-guardian-s-will",
+      "externalId": "soc-gear-soc-wp-guardian-s-will",
       "slug": "soc-wp-guardian-s-will",
       "nameEn": "Guardian's Will",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5185.webp",
@@ -5806,21 +5842,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/guardians-will/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Guardian's Will).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/guardians-will/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-guardian-s-will"
     },
     {
-      "externalId": "dotgg-soc-wp-hollow-axe",
+      "externalId": "soc-gear-soc-wp-hollow-axe",
       "slug": "soc-wp-hollow-axe",
       "nameEn": "Hollow Axe",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5160.webp",
@@ -5829,21 +5866,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/hollow-axe/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Hollow Axe).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/hollow-axe/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-hollow-axe"
     },
     {
-      "externalId": "dotgg-soc-wp-meteor-line",
+      "externalId": "soc-gear-soc-wp-meteor-line",
       "slug": "soc-wp-meteor-line",
       "nameEn": "Meteor Line",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5176.webp",
@@ -5852,21 +5890,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/meteor-line/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Meteor Line).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/meteor-line/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-meteor-line"
     },
     {
-      "externalId": "dotgg-soc-wp-nameless-staff",
+      "externalId": "soc-gear-soc-wp-nameless-staff",
       "slug": "soc-wp-nameless-staff",
       "nameEn": "Nameless Staff",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5165.webp",
@@ -5875,21 +5914,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/nameless-staff/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nameless Staff).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/nameless-staff/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nameless-staff"
     },
     {
-      "externalId": "dotgg-soc-wp-resentment-broom",
+      "externalId": "soc-gear-soc-wp-resentment-broom",
       "slug": "soc-wp-resentment-broom",
       "nameEn": "Resentment Broom",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5180.webp",
@@ -5898,21 +5938,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/resentment-broom/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Resentment Broom).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/resentment-broom/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-resentment-broom"
     },
     {
-      "externalId": "dotgg-soc-wp-senator-swift-sword",
+      "externalId": "soc-gear-soc-wp-senator-swift-sword",
       "slug": "soc-wp-senator-swift-sword",
       "nameEn": "Senator Swift Sword",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5192.webp",
@@ -5921,21 +5962,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/senator-swift-sword/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Senator Swift Sword).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/senator-swift-sword/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-senator-swift-sword"
     },
     {
-      "externalId": "dotgg-soc-wp-the-silent-guard",
+      "externalId": "soc-gear-soc-wp-the-silent-guard",
       "slug": "soc-wp-the-silent-guard",
       "nameEn": "The Silent Guard",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5169.webp",
@@ -5944,21 +5986,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/the-silent-guard/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (The Silent Guard).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/the-silent-guard/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-the-silent-guard"
     },
     {
-      "externalId": "dotgg-soc-wp-whale-hunter",
+      "externalId": "soc-gear-soc-wp-whale-hunter",
       "slug": "soc-wp-whale-hunter",
       "nameEn": "Whale Hunter",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5177.webp",
@@ -5967,21 +6010,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/whale-hunter/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Whale Hunter).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/whale-hunter/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-whale-hunter"
     },
     {
-      "externalId": "dotgg-soc-wp-beheading-machete",
+      "externalId": "soc-gear-soc-wp-beheading-machete",
       "slug": "soc-wp-beheading-machete",
       "nameEn": "Beheading Machete",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5198.webp",
@@ -5990,21 +6034,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/beheading-machete/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Beheading Machete).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/beheading-machete/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-beheading-machete"
     },
     {
-      "externalId": "dotgg-soc-wp-doomsday-scythe",
+      "externalId": "soc-gear-soc-wp-doomsday-scythe",
       "slug": "soc-wp-doomsday-scythe",
       "nameEn": "Doomsday Scythe",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5191.webp",
@@ -6013,21 +6058,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/doomsday-scythe/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Doomsday Scythe).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/doomsday-scythe/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-doomsday-scythe"
     },
     {
-      "externalId": "dotgg-soc-wp-pendant-halberd",
+      "externalId": "soc-gear-soc-wp-pendant-halberd",
       "slug": "soc-wp-pendant-halberd",
       "nameEn": "Pendant Halberd",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5190.webp",
@@ -6036,21 +6082,22 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/pendant-halberd/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Pendant Halberd).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/pendant-halberd/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-pendant-halberd"
     },
     {
-      "externalId": "dotgg-soc-wp-skeleton-staff",
+      "externalId": "soc-gear-soc-wp-skeleton-staff",
       "slug": "soc-wp-skeleton-staff",
       "nameEn": "Skeleton Staff",
-      "category": "Weapon",
+      "category": "Weapon / Trinket",
       "subType": "Legendary Gear (C Tier)",
       "rarity": "Legendary",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5199.webp",
@@ -6059,15 +6106,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "recommendedDupes": "5★ (Farmable in Weaponry Trials)",
       "stats": {
         "Tier": "C Tier",
-        "Rarity": "Legendary"
+        "Rarity": "Legendary",
+        "BonusStat": "P.ATK / M.ATK / Crit +15%"
       },
-      "effectSummary": "Ranked C Tier on DotGG Sword of Convallaria Weapon Tier List (https://dotgg.gg/sword-of-convallaria/skeleton-staff/).",
+      "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Skeleton Staff).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
         "soc-camelot"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/skeleton-staff/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-skeleton-staff"
     }
   ],
   "bosses": [
@@ -6112,7 +6160,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-geralt",
         "soc-kvare"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/weaponry-trial-i/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/bosses/weaponry-trial-1"
     },
     {
       "slug": "weaponry-trial-2-stage-10-lv70",
@@ -6134,7 +6182,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "turnOrPhase": "Turns 1–4",
           "attackName": "Volatile Crystal Detonation",
           "damageType": "AoE Piercing Explosion",
-          "counterAction": "Use AoE skills from Triss, Yennefer, or SPSamantha to clear crystals while hitting the boss."
+          "counterAction": "Use AoE skills from Triss, Yennefer, or SP Samantha to clear crystals while hitting the boss."
         }
       ],
       "strategySteps": [
@@ -6148,7 +6196,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-luvata",
         "soc-nydia"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/weaponry-trial-ii/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/bosses/weaponry-trial-2"
     },
     {
       "slug": "weaponry-trial-3-stage-10-lv70",
@@ -6184,13 +6232,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-triss",
         "soc-tristan"
       ],
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/weaponry-trial-iii/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/bosses/weaponry-trial-3"
     }
   ],
   "banners": [
     {
       "slug": "soc-triss-current-banner",
-      "bannerTitle": "Current Debut Banner — Triss (The Witcher 3 Collab)",
+      "bannerTitle": "Featured Debut Banner — Triss (The Witcher 3 Collaboration)",
       "bannerType": "COLLAB",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4945.webp",
       "featuredNames": [
@@ -6204,13 +6252,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-11-01",
       "estGlobalEndDate": "2026-11-28",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Top S+ Tier AoE Magic DPS from The Witcher 3 collaboration. Verified on DotGG Future Banners (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Top S+ Tier AoE Magic DPS from The Witcher 3 collaboration with uncounterable fire-tile terrain control.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/triss"
     },
     {
       "slug": "soc-witcher-collab-rerun",
-      "bannerTitle": "Witcher Collab Rerun — Geralt, Yennefer, Triss & Ciri",
+      "bannerTitle": "Witcher Collaboration Banner — Geralt, Yennefer, Triss & Ciri",
       "bannerType": "COLLAB",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4944.webp",
       "featuredNames": [
@@ -6228,13 +6276,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-11-15",
       "estGlobalEndDate": "2026-12-15",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Yennefer and Triss both rank S+ Tier in the DotGG Tier List while Geralt is S Tier DPS.",
+      "verdictReasoning": "Yennefer and Triss both rank S+ Tier in the overall meta while Geralt is a top S Tier physical carry.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/witcher-collab"
     },
     {
-      "slug": "soc-tw-foresight-1",
-      "bannerTitle": "TW/CN Future Banner #1. SP Maitha (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-1",
+      "bannerTitle": "Upcoming Debut Banner #1. SP Maitha",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/07/image-170.webp",
       "featuredNames": [
@@ -6248,13 +6296,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (1. SP Maitha) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (SP Maitha) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-1"
     },
     {
-      "slug": "soc-tw-foresight-2",
-      "bannerTitle": "TW/CN Future Banner #2. SP Faycal (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-2",
+      "bannerTitle": "Upcoming Debut Banner #2. SP Faycal",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/06/IMG_1229.webp",
       "featuredNames": [
@@ -6268,13 +6316,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (2. SP Faycal) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (SP Faycal) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-2"
     },
     {
-      "slug": "soc-tw-foresight-3",
-      "bannerTitle": "TW/CN Future Banner #3. SP Nungal (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-3",
+      "bannerTitle": "Upcoming Debut Banner #3. SP Nungal",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/07/IMG_1484.webp",
       "featuredNames": [
@@ -6288,13 +6336,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (3. SP Nungal) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (SP Nungal) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-3"
     },
     {
-      "slug": "soc-tw-foresight-4",
-      "bannerTitle": "TW/CN Future Banner #4. Lukamar (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-4",
+      "bannerTitle": "Upcoming Debut Banner #4. Lukamar",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/08/IMG_1895.webp",
       "featuredNames": [
@@ -6308,13 +6356,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (4. Lukamar) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Lukamar) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-4"
     },
     {
-      "slug": "soc-tw-foresight-5",
-      "bannerTitle": "TW/CN Future Banner #5. Pooch RunRun (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-5",
+      "bannerTitle": "Upcoming Debut Banner #5. Pooch RunRun",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/08/IMG_1932.webp",
       "featuredNames": [
@@ -6328,13 +6376,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (5. Pooch RunRun) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Pooch RunRun) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-5"
     },
     {
-      "slug": "soc-tw-foresight-6",
-      "bannerTitle": "TW/CN Future Banner #6. Shams (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-6",
+      "bannerTitle": "Upcoming Debut Banner #6. Shams",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/08/IMG_2354.webp",
       "featuredNames": [
@@ -6348,13 +6396,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (6. Shams) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Shams) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-6"
     },
     {
-      "slug": "soc-tw-foresight-7",
-      "bannerTitle": "TW/CN Future Banner #7. Clara (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-7",
+      "bannerTitle": "Upcoming Debut Banner #7. Clara",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2761.webp",
       "featuredNames": [
@@ -6368,13 +6416,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (7. Clara) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Clara) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-7"
     },
     {
-      "slug": "soc-tw-foresight-8",
-      "bannerTitle": "TW/CN Future Banner #8. Selina (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-8",
+      "bannerTitle": "Upcoming Debut Banner #8. Selina",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_3314.webp",
       "featuredNames": [
@@ -6388,13 +6436,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (8. Selina) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Selina) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-8"
     },
     {
-      "slug": "soc-tw-foresight-9",
-      "bannerTitle": "TW/CN Future Banner #9. Yeganeh (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-9",
+      "bannerTitle": "Upcoming Debut Banner #9. Yeganeh",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/10/IMG_3690.webp",
       "featuredNames": [
@@ -6408,13 +6456,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (9. Yeganeh) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Yeganeh) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-9"
     },
     {
-      "slug": "soc-tw-foresight-10",
-      "bannerTitle": "TW/CN Future Banner #10. Heshan (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-10",
+      "bannerTitle": "Upcoming Debut Banner #10. Heshan",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/10/IMG_4001.webp",
       "featuredNames": [
@@ -6428,13 +6476,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (10. Heshan) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Heshan) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-10"
     },
     {
-      "slug": "soc-tw-foresight-11",
-      "bannerTitle": "TW/CN Future Banner #11. Shahnaz (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-11",
+      "bannerTitle": "Upcoming Debut Banner #11. Shahnaz",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/10/IMG_4397.webp",
       "featuredNames": [
@@ -6448,13 +6496,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (11. Shahnaz) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Shahnaz) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-11"
     },
     {
-      "slug": "soc-tw-foresight-12",
-      "bannerTitle": "TW/CN Future Banner #12. Kianshir (6-Month Foresight)",
+      "slug": "soc-upcoming-banner-12",
+      "bannerTitle": "Upcoming Debut Banner #12. Kianshir",
       "bannerType": "LIMITED",
       "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4941.webp",
       "featuredNames": [
@@ -6468,9 +6516,9 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2026-12-01",
       "estGlobalEndDate": "2026-12-21",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Upcoming TW/CN Debut Banner (12. Kianshir) tracked in DotGG's Future Banners Schedule (https://dotgg.gg/sword-of-convallaria/future-banners/).",
+      "verdictReasoning": "Upcoming Debut Banner (Kianshir) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://dotgg.gg/sword-of-convallaria/future-banners/"
+      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-12"
     }
   ]
 };

@@ -69,7 +69,7 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
             >
               META.GG
             </span>
-            <span>Asian-Server Gacha Wiki Portal</span>
+            <span>Gacha Tier Lists &amp; Meta Database</span>
           </Link>
 
           {activeGameSlug && activeGameName && (

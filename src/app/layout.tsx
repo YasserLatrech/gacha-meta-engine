@@ -3,11 +3,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'META.GG — Asian-Server Gacha Tier Lists, Foresight & Encyclopedic Database',
-    template: '%s | META.GG Asian-Server Gacha Wiki',
+    default: 'META.GG — Gacha Tier Lists, Character Builds & Meta Database',
+    template: '%s | META.GG Gacha Wiki & Meta Database',
   },
   description:
-    'Verified Japanese (JP), Chinese (CN), and Taiwanese (TW) gacha game tier lists, raw skill multipliers, boss raid strategy guides, and pull savings calculators for Heaven Burns Red, Uma Musume, and Sword of Convallaria.',
+    'Complete English gacha game tier lists, character builds, support card and weapon rankings, boss raid strategy guides, and pull calculators for Star Savior, Heaven Burns Red, Uma Musume, and Sword of Convallaria.',
 };
 
 export default function RootLayout({

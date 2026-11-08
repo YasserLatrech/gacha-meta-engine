@@ -17,8 +17,8 @@ export async function generateMetadata({
   if (!hub) return { title: 'Game Not Found' };
 
   return {
-    title: `${hub.name} Tier List, ${hub.asianRegion} Future Banners, Weapons & Boss Raid Wiki`,
-    description: `Complete ${hub.name} encyclopedic wiki synced with ${hub.asianPatchVersion} (+${hub.foresightGapMonths} months ahead of Global). Verified SSS/SS character tier lists, weapon/support card ranks, boss raid guides, and ${hub.currencyName} pull calculator.`,
+    title: `${hub.name} Tier List, Character Builds, Weapons & Boss Raid Wiki`,
+    description: `Complete ${hub.name} encyclopedic wiki (${hub.globalPatchVersion}). SSS/SS character tier lists, weapon and support card rankings, boss raid guides, and ${hub.currencyName} pull calculator.`,
   };
 }
 
@@ -36,12 +36,12 @@ export default async function GameHubPage({
   const datasetJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: `${hub.name} Verified ${hub.asianRegion} Tier List & Skill Multiplier Database`,
-    description: `Verified character stats, skill multipliers, weapon rankings, boss strategies, and ${hub.asianRegion}-to-Global banner schedules for ${hub.name}.`,
-    version: hub.asianPatchVersion,
+    name: `${hub.name} Character Tier List & Skill Multiplier Database`,
+    description: `Character stats, skill multipliers, weapon rankings, boss strategies, and banner schedules for ${hub.name}.`,
+    version: hub.globalPatchVersion,
     keywords: [
       `${hub.name} tier list`,
-      `${hub.name} future banners`,
+      `${hub.name} upcoming banners`,
       `${hub.name} boss guide`,
       `${hub.name} ${hub.currencyName} calculator`,
     ],
@@ -56,9 +56,9 @@ export default async function GameHubPage({
       <SiteHeader
         activeGameSlug={hub.slug}
         activeGameName={hub.name}
-        breadcrumbLeaf="Tier List, Weapons, Bosses & Foresight"
+        breadcrumbLeaf="Tier List, Weapons, Bosses & Banners"
       />
-      <Suspense fallback={<div className="portal-container">Loading verified wiki data...</div>}>
+      <Suspense fallback={<div className="portal-container">Loading wiki database...</div>}>
         <GameWikiClient hub={hub} />
       </Suspense>
     </>

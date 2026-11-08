@@ -6,7 +6,7 @@ import Link from 'next/link';
 export interface SearchableItem {
   gameSlug: string;
   gameShortName: string;
-  category: 'Character' | 'Weapon / Card' | 'Boss Raid' | 'Future Banner';
+  category: 'Character' | 'Weapon / Card' | 'Boss Raid' | 'Upcoming Banner' | 'Future Banner';
   title: string;
   subtitle: string;
   href: string;

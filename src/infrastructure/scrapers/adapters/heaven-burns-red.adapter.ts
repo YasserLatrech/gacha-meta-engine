@@ -11,7 +11,7 @@ export interface GameAdapterBundle {
   slug: string;
   name: string;
   shortName: string;
-  asianRegion: 'JP' | 'CN' | 'KR' | 'TW';
+  asianRegion: 'EN' | 'JP' | 'CN' | 'KR' | 'TW';
   asianPatchVersion: string;
   globalPatchVersion: string;
   foresightGapMonths: number;
@@ -34,9 +34,9 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
   "slug": "heaven-burns-red",
   "name": "Heaven Burns Red",
   "shortName": "HBR",
-  "asianRegion": "JP",
-  "asianPatchVersion": "v4.12.0 JP (Game8 Verified)",
-  "globalPatchVersion": "v4.8.0 EN (Yostar Global)",
+  "asianRegion": "EN",
+  "asianPatchVersion": "v4.12.0 Live Meta",
+  "globalPatchVersion": "v4.12.0 Live",
   "foresightGapMonths": 4,
   "coverImageUrl": "https://img.game8.jp/12830571/91f895d57a9a9885e450c831d5a77feb.webp/show",
   "currencyName": "Quartz",
@@ -44,73 +44,73 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
   "pityThreshold": 150,
   "monthlyF2pIncome": 12500,
   "monthlyPassIncome": 18500,
-  "sourceUrl": "https://game8.jp/heavenburnsred/425643",
+  "sourceUrl": "https://meta.gg/heaven-burns-red",
   "rolesConfig": [
     {
       "key": "DPS",
-      "label": "ATTACKER / RIDER (火力)",
+      "label": "ATTACKER / RIDER / BREAKER",
       "colorHex": "#DC2626"
     },
     {
       "key": "SUB_DPS",
-      "label": "DEBUFFER / BLASTER (デバフ・破壊率)",
+      "label": "DEBUFFER / BLASTER",
       "colorHex": "#D97706"
     },
     {
       "key": "SUPPORT",
-      "label": "BUFFER / ADMIRAL (バッファー)",
+      "label": "BUFFER / ADMIRAL",
       "colorHex": "#2563EB"
     },
     {
       "key": "SUSTAIN",
-      "label": "HEALER / DEFENDER (耐久・回復)",
+      "label": "HEALER / DEFENDER",
       "colorHex": "#15803D"
     }
   ],
   "elementsConfig": [
     {
       "key": "Fire",
-      "label": "Fire (火)",
+      "label": "Fire",
       "colorHex": "#DC2626"
     },
     {
       "key": "Ice",
-      "label": "Ice (氷)",
+      "label": "Ice",
       "colorHex": "#2563EB"
     },
     {
       "key": "Thunder",
-      "label": "Thunder (雷)",
+      "label": "Thunder",
       "colorHex": "#D97706"
     },
     {
       "key": "Light",
-      "label": "Light (光)",
+      "label": "Light",
       "colorHex": "#CA8A04"
     },
     {
       "key": "Dark",
-      "label": "Dark (闇)",
+      "label": "Dark",
       "colorHex": "#7C3AED"
     },
     {
       "key": "None",
-      "label": "Non-Elem (無)",
+      "label": "Non-Elem",
       "colorHex": "#52525B"
     }
   ],
   "units": [
     {
-      "externalId": "game8-hbr-803495",
+      "externalId": "hbr-unit-803495",
       "slug": "hbr-803495",
-      "nameEn": "SSレゾナンス成瀬ヒカリ(狩人)",
-      "nameOriginal": "SSレゾナンス成瀬ヒカリ(狩人)",
-      "styleOrTitle": "SS [泰然たる狩人] (Tier0)",
+      "nameEn": "Hikari Naruse [Serene Hunter]",
+      "nameOriginal": "Hikari Naruse",
+      "styleOrTitle": "SS [Serene Hunter] • Squad 19A Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "Thunder",
-      "attackType": "Slash",
+      "role": "Breaker (Pierce)",
+      "roleColumn": "DPS",
+      "element": "None",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12830571/91f895d57a9a9885e450c831d5a77feb.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -123,48 +123,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 820,
         "defOrGuts": 650,
         "critOrWit": 810,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "全元素属性として扱われる「虚属性」のブレイカー",
+          "name": "EX Skill: Serene Hunter",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "Thunder",
-            "Slash",
-            "Buffer / Admiral"
+            "None",
+            "Pierce",
+            "Breaker"
           ],
-          "exactDescription": "「没入」状態中はスキル属性を「雷/光/闇」から切り替え可能＆消費SP0 「没入」状態ではEXスキルが強化"
+          "exactDescription": "Hikari Naruse [Serene Hunter] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 19A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス成瀬ヒカリ(狩人))",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "「没入」状態中はスキル属性を「雷/光/闇」から切り替え可能＆消費SP0"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "「没入」状態ではEXスキルが強化"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -175,21 +175,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "全元素属性として扱われる「虚属性」のブレイカー — 「没入」状態中はスキル属性を「雷/光/闇」から切り替え可能＆消費SP0",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/803495).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/803495"
+      "summaryVerdict": "Hikari Naruse [Serene Hunter] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 19A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-803495"
     },
     {
-      "externalId": "game8-hbr-797590",
+      "externalId": "hbr-unit-797590",
       "slug": "hbr-797590",
-      "nameEn": "Ichiko Ohshima (SSレゾナンス アドミラル)",
-      "nameOriginal": "SSレゾナンス大島一千子(アドミラル)",
-      "styleOrTitle": "SS [浜辺のマドモアゼル] (Tier0)",
+      "nameEn": "Ichiko Ohshima [Seaside Mademoiselle]",
+      "nameOriginal": "Ichiko Ohshima",
+      "styleOrTitle": "SS [Seaside Mademoiselle] • Squad 31E Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Crush)",
       "roleColumn": "SUPPORT",
       "element": "Light",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12772762/a9da9ab1ee0170476eb7a1261a3bfb40.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -209,41 +209,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "攻撃力バフ＋心眼を付与可能な光属性アドミラル",
+          "name": "EX Skill: Seaside Mademoiselle",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Buffer / Admiral EX",
+          "multiplierSummary": "Light Crush Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Light",
-            "Slash",
-            "Buffer / Admiral"
+            "Crush",
+            "Admiral"
           ],
-          "exactDescription": "ゲージが溜まると様々な効果を付与する「超越ゲージ(光)」を所持 1凸で光属性スタイルの消費SP−1"
+          "exactDescription": "Ichiko Ohshima [Seaside Mademoiselle] is a SSS-Tier Light Admiral (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス大島一千子(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "ゲージが溜まると様々な効果を付与する「超越ゲージ(光)」を所持"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "1凸で光属性スタイルの消費SP−1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -254,21 +254,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "攻撃力バフ＋心眼を付与可能な光属性アドミラル — ゲージが溜まると様々な効果を付与する「超越ゲージ(光)」を所持",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/797590).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/797590"
+      "summaryVerdict": "Ichiko Ohshima [Seaside Mademoiselle] is a SSS-Tier Light Admiral (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-797590"
     },
     {
-      "externalId": "game8-hbr-779179",
+      "externalId": "hbr-unit-779179",
       "slug": "hbr-779179",
-      "nameEn": "Misato Nikaido (SSレゾナンス アドミラル)",
-      "nameOriginal": "SSレゾナンス二階堂三郷(アドミラル)",
-      "styleOrTitle": "SS [アオゾラ全力応援歌] (Tier0)",
+      "nameEn": "Misato Nikaido [Blue Sky Full-Power Cheer]",
+      "nameOriginal": "Misato Nikaido",
+      "styleOrTitle": "SS [Blue Sky Full-Power Cheer] • Squad 31D Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Crush)",
       "roleColumn": "SUPPORT",
       "element": "Dark",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12476910/aff34e7e72b124eb457ecf18f44dd825.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -288,41 +288,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "闇バフ＋心眼を付与可能な属性アドミラル",
+          "name": "EX Skill: Blue Sky Full-Power Cheer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Buffer / Admiral EX",
+          "multiplierSummary": "Dark Crush Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Dark",
-            "Slash",
-            "Buffer / Admiral"
+            "Crush",
+            "Admiral"
           ],
-          "exactDescription": "ゲージが溜まると様々な効果を付与する「超越ゲージ(闇)」を所持 1凸で闇属性スタイルの消費SP−1"
+          "exactDescription": "Misato Nikaido [Blue Sky Full-Power Cheer] is a SSS-Tier Dark Admiral (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス二階堂三郷(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "ゲージが溜まると様々な効果を付与する「超越ゲージ(闇)」を所持"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "1凸で闇属性スタイルの消費SP−1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -333,21 +333,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "闇バフ＋心眼を付与可能な属性アドミラル — ゲージが溜まると様々な効果を付与する「超越ゲージ(闇)」を所持",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/779179).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/779179"
+      "summaryVerdict": "Misato Nikaido [Blue Sky Full-Power Cheer] is a SSS-Tier Dark Admiral (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-779179"
     },
     {
-      "externalId": "game8-hbr-759416",
+      "externalId": "hbr-unit-759416",
       "slug": "hbr-759416",
-      "nameEn": "SSレゾナンス七瀬七海(アドミラル)",
-      "nameOriginal": "SSレゾナンス七瀬七海(アドミラル)",
-      "styleOrTitle": "SS [約束は暁の彼方で] (Tier0)",
+      "nameEn": "Nanami Nanase [Promise Beyond the Dawn]",
+      "nameOriginal": "Nanami Nanase",
+      "styleOrTitle": "SS [Promise Beyond the Dawn] • Command HQ Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "Thunder",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12260112/07a360216d9a18bf3de5ad376a7e5039.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -367,41 +367,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "雷属性編成を超強化するアドミラルスタイル",
+          "name": "EX Skill: Promise Beyond the Dawn",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Pierce Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Thunder",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Admiral"
           ],
-          "exactDescription": "ゲージが溜まると様々な効果を付与する「超越ゲージ(雷)」を所持 1凸で雷属性スタイルの消費SP−1"
+          "exactDescription": "Nanami Nanase [Promise Beyond the Dawn] is a SSS-Tier Thunder Admiral (Pierce) from Command HQ. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス七瀬七海(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "ゲージが溜まると様々な効果を付与する「超越ゲージ(雷)」を所持"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "1凸で雷属性スタイルの消費SP−1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -412,18 +412,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "雷属性編成を超強化するアドミラルスタイル — ゲージが溜まると様々な効果を付与する「超越ゲージ(雷)」を所持",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/759416).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/759416"
+      "summaryVerdict": "Nanami Nanase [Promise Beyond the Dawn] is a SSS-Tier Thunder Admiral (Pierce) from Command HQ. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-759416"
     },
     {
-      "externalId": "game8-hbr-752169",
+      "externalId": "hbr-unit-752169",
       "slug": "hbr-752169",
-      "nameEn": "Yuina Shirakawa (SSレゾナンス アドミラル)",
-      "nameOriginal": "SSレゾナンス白河ユイナ(アドミラル)",
-      "styleOrTitle": "SS [勝利を告げる神託の旗] (Tier0)",
+      "nameEn": "Yuina Shirakawa [Oracle Banner of Victory]",
+      "nameOriginal": "Yuina Shirakawa",
+      "styleOrTitle": "SS [Oracle Banner of Victory] • Squad 30G Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Slash)",
       "roleColumn": "SUPPORT",
       "element": "Fire",
       "attackType": "Slash",
@@ -446,41 +446,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "火属性編成を超強化するアドミラルスタイル",
+          "name": "EX Skill: Oracle Banner of Victory",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Buffer / Admiral EX",
+          "multiplierSummary": "Fire Slash Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
             "Slash",
-            "Buffer / Admiral"
+            "Admiral"
           ],
-          "exactDescription": "ゲージが溜まると様々な効果を付与する「超越ゲージ(火)」を所持 1凸で火属性スタイルの消費SP−1"
+          "exactDescription": "Yuina Shirakawa [Oracle Banner of Victory] is a SSS-Tier Fire Admiral (Slash) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス白河ユイナ(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "ゲージが溜まると様々な効果を付与する「超越ゲージ(火)」を所持"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "1凸で火属性スタイルの消費SP−1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -491,18 +491,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.6,
-      "summaryVerdict": "火属性編成を超強化するアドミラルスタイル — ゲージが溜まると様々な効果を付与する「超越ゲージ(火)」を所持",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/752169).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/752169"
+      "summaryVerdict": "Yuina Shirakawa [Oracle Banner of Victory] is a SSS-Tier Fire Admiral (Slash) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-752169"
     },
     {
-      "externalId": "game8-hbr-752168",
+      "externalId": "hbr-unit-752168",
       "slug": "hbr-752168",
-      "nameEn": "Ruka Kayamori (SSレゾナンス アドミラル)",
-      "nameOriginal": "SSレゾナンス茅森月歌(アドミラル)",
-      "styleOrTitle": "SS [Glorious Blades] (Tier0)",
+      "nameEn": "Ruka Kayamori [Glorious Blades]",
+      "nameOriginal": "Ruka Kayamori",
+      "styleOrTitle": "SS [Glorious Blades] • Squad 31A Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Slash)",
       "roleColumn": "SUPPORT",
       "element": "Ice",
       "attackType": "Slash",
@@ -525,41 +525,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "氷属性編成を超強化するアドミラルスタイル",
+          "name": "EX Skill: Glorious Blades",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Buffer / Admiral EX",
+          "multiplierSummary": "Ice Slash Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
             "Slash",
-            "Buffer / Admiral"
+            "Admiral"
           ],
-          "exactDescription": "ゲージが溜まると様々な効果を付与する「超越ゲージ(氷)」を所持 1凸で氷属性スタイルの消費SP−1"
+          "exactDescription": "Ruka Kayamori [Glorious Blades] is a SSS-Tier Ice Admiral (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス茅森月歌(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "ゲージが溜まると様々な効果を付与する「超越ゲージ(氷)」を所持"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "1凸で氷属性スタイルの消費SP−1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -570,18 +570,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "氷属性編成を超強化するアドミラルスタイル — ゲージが溜まると様々な効果を付与する「超越ゲージ(氷)」を所持",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/752168).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/752168"
+      "summaryVerdict": "Ruka Kayamori [Glorious Blades] is a SSS-Tier Ice Admiral (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-752168"
     },
     {
-      "externalId": "game8-hbr-738525",
+      "externalId": "hbr-unit-738525",
       "slug": "hbr-738525",
-      "nameEn": "Bon Ivar Yamawaki (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス山脇・ボン・イヴァール(ユニゾン)",
-      "styleOrTitle": "SS [誇り高き魔王の凱旋] (Tier0)",
+      "nameEn": "Bon Ivar Yamawaki [Triumphant Return of the Demon Lord]",
+      "nameOriginal": "Bon Ivar Yamawaki",
+      "styleOrTitle": "SS [Triumphant Return of the Demon Lord] • Squad 31C Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Slash)",
       "roleColumn": "DPS",
       "element": "Dark",
       "attackType": "Slash",
@@ -604,41 +604,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "任意のタイミングで魔界騎兵を起動し、敵の全能力を下げられるアタッカー",
+          "name": "EX Skill: Triumphant Return of the Demon Lord",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Attacker / Rider EX",
+          "multiplierSummary": "Dark Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Dark",
             "Slash",
-            "Attacker / Rider"
+            "Attacker"
           ],
-          "exactDescription": "EXスキルで連撃大を付与しつつ闇属性で全体10連撃を行う 豊後弥生(ユニゾン)と相性の良い性能を多数所持"
+          "exactDescription": "Bon Ivar Yamawaki [Triumphant Return of the Demon Lord] is a SSS-Tier Dark Attacker (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス山脇・ボン・イヴァール(ユニゾン))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキルで連撃大を付与しつつ闇属性で全体10連撃を行う"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "豊後弥生(ユニゾン)と相性の良い性能を多数所持"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -649,21 +649,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "任意のタイミングで魔界騎兵を起動し、敵の全能力を下げられるアタッカー — EXスキルで連撃大を付与しつつ闇属性で全体10連撃を行う",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/738525).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/738525"
+      "summaryVerdict": "Bon Ivar Yamawaki [Triumphant Return of the Demon Lord] is a SSS-Tier Dark Attacker (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-738525"
     },
     {
-      "externalId": "game8-hbr-683118",
+      "externalId": "hbr-unit-683118",
       "slug": "hbr-683118",
-      "nameEn": "Yayoi Bungo (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス豊後弥生(ユニゾン)",
-      "styleOrTitle": "SS [悪の軍団進軍開始でゲス！] (Tier0)",
+      "nameEn": "Yayoi Bungo [Evil Army March Begins!]",
+      "nameOriginal": "Yayoi Bungo",
+      "styleOrTitle": "SS [Evil Army March Begins!] • Squad 31C Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Breaker (Pierce)",
+      "roleColumn": "DPS",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11601627/f232b9c3ce69ca258221d1a9453928ed.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -676,48 +676,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 799,
         "defOrGuts": 636,
         "critOrWit": 789,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "対DP+100%の貫通クリティカルを持つユニゾンブレイカー",
+          "name": "EX Skill: Evil Army March Begins!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Breaker"
           ],
-          "exactDescription": "スキルでバフ効果を持つ「山脇様のしもべ」を付与 「山脇様のしもべ」の人数に応じてEXスキルが強化される"
+          "exactDescription": "Yayoi Bungo [Evil Army March Begins!] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス豊後弥生(ユニゾン))",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキルでバフ効果を持つ「山脇様のしもべ」を付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "「山脇様のしもべ」の人数に応じてEXスキルが強化される"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -728,18 +728,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "対DP+100%の貫通クリティカルを持つユニゾンブレイカー — スキルでバフ効果を持つ「山脇様のしもべ」を付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/683118).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/683118"
+      "summaryVerdict": "Yayoi Bungo [Evil Army March Begins!] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-683118"
     },
     {
-      "externalId": "game8-hbr-839459",
+      "externalId": "hbr-unit-839459",
       "slug": "hbr-839459",
-      "nameEn": "Karen Asakura (SSレゾナンス ハロウィン)",
-      "nameOriginal": "SSレゾナンス朝倉可憐(ハロウィン)",
-      "styleOrTitle": "SS [真夜中のソウル・ハーベスト] (Tier1)",
+      "nameEn": "Karen Asakura [Midnight Soul Harvest]",
+      "nameOriginal": "Karen Asakura",
+      "styleOrTitle": "SS [Midnight Soul Harvest] • Squad 31A Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Slash)",
       "roleColumn": "DPS",
       "element": "Dark",
       "attackType": "Slash",
@@ -762,41 +762,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "「刻印」に蓄積したダメージを一気に与えるアタッカー",
+          "name": "EX Skill: Midnight Soul Harvest",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Attacker / Rider EX",
+          "multiplierSummary": "Dark Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Dark",
             "Slash",
-            "Attacker / Rider"
+            "Attacker"
           ],
-          "exactDescription": "敵の耐久力が高い高難易度などで特に活躍 闇属性CRTバフや防御デバフを付与可能"
+          "exactDescription": "Karen Asakura [Midnight Soul Harvest] is a SS-Tier Dark Attacker (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス朝倉可憐(ハロウィン))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "敵の耐久力が高い高難易度などで特に活躍"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "闇属性CRTバフや防御デバフを付与可能"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -807,21 +807,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "「刻印」に蓄積したダメージを一気に与えるアタッカー — 敵の耐久力が高い高難易度などで特に活躍",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/839459).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/839459"
+      "summaryVerdict": "Karen Asakura [Midnight Soul Harvest] is a SS-Tier Dark Attacker (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-839459"
     },
     {
-      "externalId": "game8-hbr-832804",
+      "externalId": "hbr-unit-832804",
       "slug": "hbr-832804",
-      "nameEn": "Mari Satsuki (SSレゾナンス 戦慄)",
-      "nameOriginal": "SSレゾナンス佐月マリ(戦慄)",
-      "styleOrTitle": "SS [戦慄のナースコール] (Tier1)",
+      "nameEn": "Mari Satsuki [Shivering Nurse Call]",
+      "nameOriginal": "Mari Satsuki",
+      "styleOrTitle": "SS [Shivering Nurse Call] • Squad 31C Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Pierce)",
       "roleColumn": "SUB_DPS",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Light",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/13102635/c21dfb5bdec3cc46ae6f09808282e89c.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -841,41 +841,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵に「猛毒」状態を付与するデバッファー",
+          "name": "EX Skill: Shivering Nurse Call",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Debuffer EX",
+          "multiplierSummary": "Light Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
+            "Light",
+            "Pierce",
             "Debuffer"
           ],
-          "exactDescription": "「猛毒」と「禍」で敵の全能力を100下げることが可能 防御力ダウン状態の敵がいるとEXスキルを消費SP0で撃てる"
+          "exactDescription": "Mari Satsuki [Shivering Nurse Call] is a SS-Tier Light Debuffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス佐月マリ(戦慄))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "「猛毒」と「禍」で敵の全能力を100下げることが可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "防御力ダウン状態の敵がいるとEXスキルを消費SP0で撃てる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -886,21 +886,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "敵に「猛毒」状態を付与するデバッファー — 「猛毒」と「禍」で敵の全能力を100下げることが可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/832804).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/832804"
+      "summaryVerdict": "Mari Satsuki [Shivering Nurse Call] is a SS-Tier Light Debuffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-832804"
     },
     {
-      "externalId": "game8-hbr-825787",
+      "externalId": "hbr-unit-825787",
       "slug": "hbr-825787",
-      "nameEn": "Yuki Izumi (SSレゾナンス ハロウィン)",
-      "nameOriginal": "SSレゾナンス和泉ユキ(ハロウィン)",
-      "styleOrTitle": "SS [フルール・アンシャンテ] (Tier1)",
+      "nameEn": "Yuki Izumi [Fleur Enchantée]",
+      "nameOriginal": "Yuki Izumi",
+      "styleOrTitle": "SS [Fleur Enchantée] • Squad 31A Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Breaker (Pierce)",
+      "roleColumn": "DPS",
       "element": "Ice",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/13080710/4d167acbeba869102681961469cc7ac1.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -913,48 +913,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 790,
         "defOrGuts": 630,
         "critOrWit": 780,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "対DP+100%にバフデバフを兼ね備えたハイスペックな氷ブレイカー",
+          "name": "EX Skill: Fleur Enchantée",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Buffer / Admiral EX",
+          "multiplierSummary": "Ice Pierce Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Breaker"
           ],
-          "exactDescription": "ターン制の氷耐性ダウンを付与可能 連撃特大＆氷防御デバフも持つ"
+          "exactDescription": "Yuki Izumi [Fleur Enchantée] is a SS-Tier Ice Breaker (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス和泉ユキ(ハロウィン))",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "ターン制の氷耐性ダウンを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "連撃特大＆氷防御デバフも持つ"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -965,18 +965,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "対DP+100%にバフデバフを兼ね備えたハイスペックな氷ブレイカー — ターン制の氷耐性ダウンを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/825787).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/825787"
+      "summaryVerdict": "Yuki Izumi [Fleur Enchantée] is a SS-Tier Ice Breaker (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-825787"
     },
     {
-      "externalId": "game8-hbr-816687",
+      "externalId": "hbr-unit-816687",
       "slug": "hbr-816687",
-      "nameEn": "Fubuki Mikoto (SSレゾナンス ミューズ)",
-      "nameOriginal": "SSレゾナンス命吹雪(ミューズ)",
-      "styleOrTitle": "SS [壊れた夜のミューズ] (Tier1)",
+      "nameEn": "Fubuki Mikoto [Muse of the Broken Night]",
+      "nameOriginal": "Fubuki Mikoto",
+      "styleOrTitle": "SS [Muse of the Broken Night] • Squad 31D Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Slash)",
       "roleColumn": "SUB_DPS",
       "element": "Fire",
       "attackType": "Slash",
@@ -999,41 +999,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "永続の火耐性ダウン＆防御デバフを付与するデバッファー",
+          "name": "EX Skill: Muse of the Broken Night",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Debuffer EX",
+          "multiplierSummary": "Fire Slash Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
             "Slash",
             "Debuffer"
           ],
-          "exactDescription": "デバッファーが自身のみだと防御力ダウン効果量が上昇 EXスキル使用時自身に追加ターン付与"
+          "exactDescription": "Fubuki Mikoto [Muse of the Broken Night] is a SS-Tier Fire Debuffer (Slash) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス命吹雪(ミューズ))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "デバッファーが自身のみだと防御力ダウン効果量が上昇"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EXスキル使用時自身に追加ターン付与"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1044,21 +1044,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "永続の火耐性ダウン＆防御デバフを付与するデバッファー — デバッファーが自身のみだと防御力ダウン効果量が上昇",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/816687).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/816687"
+      "summaryVerdict": "Fubuki Mikoto [Muse of the Broken Night] is a SS-Tier Fire Debuffer (Slash) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-816687"
     },
     {
-      "externalId": "game8-hbr-810832",
+      "externalId": "hbr-unit-810832",
       "slug": "hbr-810832",
-      "nameEn": "Chie Sugawara (SSレゾナンス 水着)",
-      "nameOriginal": "SSレゾナンス菅原千恵(水着)",
-      "styleOrTitle": "SS [サマーナイト・バタフライ] (Tier1)",
+      "nameEn": "Chie Sugawara [Summer Night Butterfly]",
+      "nameOriginal": "Chie Sugawara",
+      "styleOrTitle": "SS [Summer Night Butterfly] • Squad 30G Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Crush)",
       "roleColumn": "DPS",
       "element": "Fire",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12900792/d6ac7714406de170b0f736d6f5589f6f.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1078,41 +1078,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵全体に体力依存で攻撃する火属性アタッカー",
+          "name": "EX Skill: Summer Night Butterfly",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Attacker / Rider EX",
+          "multiplierSummary": "Fire Crush Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
-            "Slash",
-            "Attacker / Rider"
+            "Crush",
+            "Attacker"
           ],
-          "exactDescription": "EXスキルはトークン10個以上で消費SP0＆威力上昇 スキルで士気レベル上昇＆トークンを溜めつつ追加ターンを獲得"
+          "exactDescription": "Chie Sugawara [Summer Night Butterfly] is a SS-Tier Fire Attacker (Crush) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス菅原千恵(水着))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキルはトークン10個以上で消費SP0＆威力上昇"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "スキルで士気レベル上昇＆トークンを溜めつつ追加ターンを獲得"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1123,21 +1123,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "敵全体に体力依存で攻撃する火属性アタッカー — EXスキルはトークン10個以上で消費SP0＆威力上昇",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/810832).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/810832"
+      "summaryVerdict": "Chie Sugawara [Summer Night Butterfly] is a SS-Tier Fire Attacker (Crush) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-810832"
     },
     {
-      "externalId": "game8-hbr-803496",
+      "externalId": "hbr-unit-803496",
       "slug": "hbr-803496",
-      "nameEn": "Ichigo Minase (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス水瀬いちご(ユニゾン)",
-      "styleOrTitle": "SS [双星のヴァルキリー] (Tier1)",
+      "nameEn": "Ichigo Minase [Twin-Star Valkyrie]",
+      "nameOriginal": "Ichigo Minase",
+      "styleOrTitle": "SS [Twin-Star Valkyrie] • Squad 31B Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Pierce)",
       "roleColumn": "DPS",
-      "element": "Fire",
-      "attackType": "Slash",
+      "element": "Ice",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12863877/6237d35e6dbf72f4268ee52bf2f83000.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1157,41 +1157,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "闇・氷で属性を切り替えて戦うユニゾンアタッカー",
+          "name": "EX Skill: Twin-Star Valkyrie",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Attacker / Rider EX",
+          "multiplierSummary": "Ice Pierce Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "Fire",
-            "Slash",
-            "Attacker / Rider"
+            "Ice",
+            "Pierce",
+            "Attacker"
           ],
-          "exactDescription": "前衛士気バフやタゲ集中で壁役とバフ役も兼任 体力依存攻撃＆対HP+100％で火力を出しやすい"
+          "exactDescription": "Ichigo Minase [Twin-Star Valkyrie] is a SS-Tier Ice Attacker (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス水瀬いちご(ユニゾン))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "前衛士気バフやタゲ集中で壁役とバフ役も兼任"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "体力依存攻撃＆対HP+100％で火力を出しやすい"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1202,21 +1202,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "闇・氷で属性を切り替えて戦うユニゾンアタッカー — 前衛士気バフやタゲ集中で壁役とバフ役も兼任",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/803496).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/803496"
+      "summaryVerdict": "Ichigo Minase [Twin-Star Valkyrie] is a SS-Tier Ice Attacker (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-803496"
     },
     {
-      "externalId": "game8-hbr-797591",
+      "externalId": "hbr-unit-797591",
       "slug": "hbr-797591",
-      "nameEn": "Yotsuha Ohshima (SSレゾナンス 水着)",
-      "nameOriginal": "SSレゾナンス大島四ツ葉(水着)",
-      "styleOrTitle": "SS [まったりトコナツフロート] (Tier1)",
+      "nameEn": "Yotsuha Ohshima [Lazy Tropical Float]",
+      "nameOriginal": "Yotsuha Ohshima",
+      "styleOrTitle": "SS [Lazy Tropical Float] • Squad 31E Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "Light",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12772764/ca6b46865cf2531ce06ad9cd69d67339.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1236,41 +1236,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "光スタイルに連撃数(特大)とクリティカルバフを付与する光属性バッファー",
+          "name": "EX Skill: Lazy Tropical Float",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Buffer / Admiral EX",
+          "multiplierSummary": "Light Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Light",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "アビリティ「甘え上手」で効率よくODゲージを確保 専用スキルで敵全体に破壊率特大の光属性攻撃"
+          "exactDescription": "Yotsuha Ohshima [Lazy Tropical Float] is a SS-Tier Light Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス大島四ツ葉(水着))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "アビリティ「甘え上手」で効率よくODゲージを確保"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "専用スキルで敵全体に破壊率特大の光属性攻撃"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1281,18 +1281,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "光スタイルに連撃数(特大)とクリティカルバフを付与する光属性バッファー — アビリティ「甘え上手」で効率よくODゲージを確保",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/797591).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/797591"
+      "summaryVerdict": "Yotsuha Ohshima [Lazy Tropical Float] is a SS-Tier Light Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-797591"
     },
     {
-      "externalId": "game8-hbr-794994",
+      "externalId": "hbr-unit-794994",
       "slug": "hbr-794994",
-      "nameEn": "Shiki Hanamura (SSレゾナンス 宵花火)",
-      "nameOriginal": "SSレゾナンス華村詩紀(宵花火)",
-      "styleOrTitle": "SS [宵花火のノクターン] (Tier1)",
+      "nameEn": "Shiki Hanamura [Evening Fireworks Nocturne]",
+      "nameOriginal": "Shiki Hanamura",
+      "styleOrTitle": "SS [Evening Fireworks Nocturne] • Squad 31F Healer",
       "rarity": "SS",
-      "role": "Healer / Defender",
+      "role": "Healer (Slash)",
       "roleColumn": "SUSTAIN",
       "element": "Ice",
       "attackType": "Slash",
@@ -1315,41 +1315,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "攻撃バフやサポート効果を付与する「晩夏の陣」を展開可能な氷属性ヒーラー",
+          "name": "EX Skill: Evening Fireworks Nocturne",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Healer / Defender EX",
+          "multiplierSummary": "Ice Slash Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
             "Slash",
-            "Healer / Defender"
+            "Healer"
           ],
-          "exactDescription": "スキルで単独発動の氷クリティカルバフを付与可能 氷の印で全体をサポート可能"
+          "exactDescription": "Shiki Hanamura [Evening Fireworks Nocturne] is a SS-Tier Ice Healer (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス華村詩紀(宵花火))",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer / Defender Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Healer / Defender",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキルで単独発動の氷クリティカルバフを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "氷の印で全体をサポート可能"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1360,21 +1360,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "攻撃バフやサポート効果を付与する「晩夏の陣」を展開可能な氷属性ヒーラー — スキルで単独発動の氷クリティカルバフを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/794994).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/794994"
+      "summaryVerdict": "Shiki Hanamura [Evening Fireworks Nocturne] is a SS-Tier Ice Healer (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-794994"
     },
     {
-      "externalId": "game8-hbr-793215",
+      "externalId": "hbr-unit-793215",
       "slug": "hbr-793215",
-      "nameEn": "Charlotta Skopovskaya (SSレゾナンス 異国)",
-      "nameOriginal": "SSレゾナンスシャルロッタ・スコポフスカヤ(異国)",
-      "styleOrTitle": "SS [異国のプリンツェッサ] (Tier1)",
+      "nameEn": "Charlotta Skopovskaya [Exotic Principessa]",
+      "nameOriginal": "Charlotta Skopovskaya",
+      "styleOrTitle": "SS [Exotic Principessa] • Squad 31X Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Pierce)",
       "roleColumn": "SUB_DPS",
       "element": "Fire",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12676776/bf8ce57ed5a48d3491792f6004717df0.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1394,41 +1394,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "火耐性ダウンを付与する火属性デバッファー",
+          "name": "EX Skill: Exotic Principessa",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Debuffer EX",
+          "multiplierSummary": "Fire Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
-            "Slash",
+            "Pierce",
             "Debuffer"
           ],
-          "exactDescription": "永続の防御ダウンや脆弱を付与可能 火の印でパーティー全体をサポート"
+          "exactDescription": "Charlotta Skopovskaya [Exotic Principessa] is a SS-Tier Fire Debuffer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンスシャルロッタ・スコポフスカヤ(異国))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "永続の防御ダウンや脆弱を付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "火の印でパーティー全体をサポート"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1439,18 +1439,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "火耐性ダウンを付与する火属性デバッファー — 永続の防御ダウンや脆弱を付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/793215).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/793215"
+      "summaryVerdict": "Charlotta Skopovskaya [Exotic Principessa] is a SS-Tier Fire Debuffer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-793215"
     },
     {
-      "externalId": "game8-hbr-787646",
+      "externalId": "hbr-unit-787646",
       "slug": "hbr-787646",
-      "nameEn": "Ruka Kayamori (SSレゾナンス ジョーカー)",
-      "nameOriginal": "SSレゾナンス茅森月歌(ジョーカー)",
-      "styleOrTitle": "SS [TAKE YOUR HEART] (Tier1)",
+      "nameEn": "Ruka Kayamori [TAKE YOUR HEART]",
+      "nameOriginal": "Ruka Kayamori",
+      "styleOrTitle": "SS [TAKE YOUR HEART] • Squad 31A Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Slash)",
       "roleColumn": "SUB_DPS",
       "element": "Dark",
       "attackType": "Slash",
@@ -1473,41 +1473,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "闇耐性ダウンを扱いつつ、全体をサポートする闇属性デバッファー",
+          "name": "EX Skill: TAKE YOUR HEART",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Debuffer EX",
+          "multiplierSummary": "Dark Slash Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Dark",
             "Slash",
             "Debuffer"
           ],
-          "exactDescription": "CT制のスキルで全体にデバフ効果量UPを付与 EXスキルは消費SP0以上で使用可能"
+          "exactDescription": "Ruka Kayamori [TAKE YOUR HEART] is a SS-Tier Dark Debuffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス茅森月歌(ジョーカー))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "CT制のスキルで全体にデバフ効果量UPを付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EXスキルは消費SP0以上で使用可能"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1518,18 +1518,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "闇耐性ダウンを扱いつつ、全体をサポートする闇属性デバッファー — CT制のスキルで全体にデバフ効果量UPを付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/787646).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/787646"
+      "summaryVerdict": "Ruka Kayamori [TAKE YOUR HEART] is a SS-Tier Dark Debuffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-787646"
     },
     {
-      "externalId": "game8-hbr-784344",
+      "externalId": "hbr-unit-784344",
       "slug": "hbr-784344",
-      "nameEn": "SSレゾナンスヴァイオレット(信念)",
-      "nameOriginal": "SSレゾナンスヴァイオレット(信念)",
-      "styleOrTitle": "SS [揺るぎなき信念] (Tier1)",
+      "nameEn": "Violet (Kasumi Yoshizawa) [Unwavering Conviction]",
+      "nameOriginal": "Violet (Kasumi Yoshizawa)",
+      "styleOrTitle": "SS [Unwavering Conviction] • Squad P5R Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Slash)",
       "roleColumn": "DPS",
       "element": "Light",
       "attackType": "Slash",
@@ -1552,41 +1552,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "対HP100％の自己連撃バフ持ち光属性アタッカー",
+          "name": "EX Skill: Unwavering Conviction",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Attacker / Rider EX",
+          "multiplierSummary": "Light Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Light",
             "Slash",
-            "Attacker / Rider"
+            "Attacker"
           ],
-          "exactDescription": "3Tクリ率ダメUP＆連撃中バフを前衛に付与 全体光属性デバフでサポート可能"
+          "exactDescription": "Violet (Kasumi Yoshizawa) [Unwavering Conviction] is a SS-Tier Light Attacker (Slash) from Squad P5R. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンスヴァイオレット(信念))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "3Tクリ率ダメUP＆連撃中バフを前衛に付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "全体光属性デバフでサポート可能"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1597,21 +1597,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "対HP100％の自己連撃バフ持ち光属性アタッカー — 3Tクリ率ダメUP＆連撃中バフを前衛に付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/784344).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/784344"
+      "summaryVerdict": "Violet (Kasumi Yoshizawa) [Unwavering Conviction] is a SS-Tier Light Attacker (Slash) from Squad P5R. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-784344"
     },
     {
-      "externalId": "game8-hbr-784346",
+      "externalId": "hbr-unit-784346",
       "slug": "hbr-784346",
-      "nameEn": "Tsukasa Tojo (SSレゾナンス パンサー)",
-      "nameOriginal": "SSレゾナンス東城つかさ(パンサー)",
-      "styleOrTitle": "SS [激情のファム・ファタール] (Tier1)",
+      "nameEn": "Tsukasa Tojo [Passionate Femme Fatale]",
+      "nameOriginal": "Tsukasa Tojo",
+      "styleOrTitle": "SS [Passionate Femme Fatale] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "Fire",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12586324/4f47417f5689b7358971d19a4ceee2b2.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1631,41 +1631,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "火属性クリティカルバフの付与や火属性フィールドを展開できるバッファー",
+          "name": "EX Skill: Passionate Femme Fatale",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "2ターン持続する火防御＆防御ダウンを付与可能 火属性のバフデバフの両方を付与でき扱いやすい"
+          "exactDescription": "Tsukasa Tojo [Passionate Femme Fatale] is a SS-Tier Fire Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス東城つかさ(パンサー))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "2ターン持続する火防御＆防御ダウンを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "火属性のバフデバフの両方を付与でき扱いやすい"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1676,21 +1676,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "火属性クリティカルバフの付与や火属性フィールドを展開できるバッファー — 2ターン持続する火防御＆防御ダウンを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/784346).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/784346"
+      "summaryVerdict": "Tsukasa Tojo [Passionate Femme Fatale] is a SS-Tier Fire Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-784346"
     },
     {
-      "externalId": "game8-hbr-784342",
+      "externalId": "hbr-unit-784342",
       "slug": "hbr-784342",
-      "nameEn": "SSレゾナンスクイーン(女教皇)",
-      "nameOriginal": "SSレゾナンスクイーン(女教皇)",
-      "styleOrTitle": "SS [慧眼の女教皇] (Tier1)",
+      "nameEn": "Queen (Makoto Niijima) [Discerning Priestess]",
+      "nameOriginal": "Queen (Makoto Niijima)",
+      "styleOrTitle": "SS [Discerning Priestess] • Squad P5R Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Breaker (Crush)",
+      "roleColumn": "DPS",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12586325/71e3ac9de210c334d85e1e96152a0746.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1703,48 +1703,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 760,
         "defOrGuts": 610,
         "critOrWit": 750,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "貫通クリティカル＆対DP＋100％で攻撃するブレイカー",
+          "name": "EX Skill: Discerning Priestess",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Crush Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Crush",
+            "Breaker"
           ],
-          "exactDescription": "EXスキルでブレイク時ODゲージ＋100％ 各種スキルでDP回復や全体バフを付与可能"
+          "exactDescription": "Queen (Makoto Niijima) [Discerning Priestess] is a SS-Tier Non-Elemental Breaker (Crush) from Squad P5R. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンスクイーン(女教皇))",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキルでブレイク時ODゲージ＋100％"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "各種スキルでDP回復や全体バフを付与可能"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1755,21 +1755,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "貫通クリティカル＆対DP＋100％で攻撃するブレイカー — EXスキルでブレイク時ODゲージ＋100％",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/784342).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/784342"
+      "summaryVerdict": "Queen (Makoto Niijima) [Discerning Priestess] is a SS-Tier Non-Elemental Breaker (Crush) from Squad P5R. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-784342"
     },
     {
-      "externalId": "game8-hbr-783178",
+      "externalId": "hbr-unit-783178",
       "slug": "hbr-783178",
-      "nameEn": "SSレゾナンスビャッコ(白き牙)",
-      "nameOriginal": "SSレゾナンスビャッコ(白き牙)",
-      "styleOrTitle": "SS [戦場の白き牙] (Tier1)",
+      "nameEn": "Byakko [White Fang of the Battlefield]",
+      "nameOriginal": "Byakko",
+      "styleOrTitle": "SS [White Fang of the Battlefield] • Squad 31B Blaster",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Blaster (Pierce)",
       "roleColumn": "SUB_DPS",
       "element": "Dark",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12534556/76061b22b7f2d0f74286d5da2c67f347.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1789,41 +1789,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "闇スタイルの連撃数を上げつつ破壊率を上げられるブラスター",
+          "name": "EX Skill: White Fang of the Battlefield",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Debuffer EX",
-          "hitCount": 5,
+          "multiplierSummary": "Dark Pierce Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
             "Dark",
-            "Slash",
-            "Debuffer"
+            "Pierce",
+            "Blaster"
           ],
-          "exactDescription": "「ラッシュ」状態でSP消費なしで攻撃スキルを再発動 EX使用時に全体のSP＋2"
+          "exactDescription": "Byakko [White Fang of the Battlefield] is a SS-Tier Dark Blaster (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンスビャッコ(白き牙))",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "「ラッシュ」状態でSP消費なしで攻撃スキルを再発動"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EX使用時に全体のSP＋2"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1834,18 +1834,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "闇スタイルの連撃数を上げつつ破壊率を上げられるブラスター — 「ラッシュ」状態でSP消費なしで攻撃スキルを再発動",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/783178).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/783178"
+      "summaryVerdict": "Byakko [White Fang of the Battlefield] is a SS-Tier Dark Blaster (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-783178"
     },
     {
-      "externalId": "game8-hbr-781369",
+      "externalId": "hbr-unit-781369",
       "slug": "hbr-781369",
-      "nameEn": "Inori Natsume (SSレゾナンス 花影)",
-      "nameOriginal": "SSレゾナンス夏目祈(花影)",
-      "styleOrTitle": "SS [花影、舞の構え] (Tier1)",
+      "nameEn": "Inori Natsume [Flower Shadow Dance Stance]",
+      "nameOriginal": "Inori Natsume",
+      "styleOrTitle": "SS [Flower Shadow Dance Stance] • Squad 31F Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Slash)",
       "roleColumn": "DPS",
       "element": "Ice",
       "attackType": "Slash",
@@ -1868,41 +1868,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "対HP+100％を持つ氷全体アタッカー",
+          "name": "EX Skill: Flower Shadow Dance Stance",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Attacker / Rider EX",
+          "multiplierSummary": "Ice Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
             "Slash",
-            "Attacker / Rider"
+            "Attacker"
           ],
-          "exactDescription": "EXで5T全体氷バフ+対HP+100％の全体攻撃 自身にバフデバフ効果量UPかつ自身追加ターン"
+          "exactDescription": "Inori Natsume [Flower Shadow Dance Stance] is a SS-Tier Ice Attacker (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス夏目祈(花影))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXで5T全体氷バフ+対HP+100％の全体攻撃"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "自身にバフデバフ効果量UPかつ自身追加ターン"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1913,21 +1913,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "対HP+100％を持つ氷全体アタッカー — EXで5T全体氷バフ+対HP+100％の全体攻撃",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/781369).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/781369"
+      "summaryVerdict": "Inori Natsume [Flower Shadow Dance Stance] is a SS-Tier Ice Attacker (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-781369"
     },
     {
-      "externalId": "game8-hbr-781370",
+      "externalId": "hbr-unit-781370",
       "slug": "hbr-781370",
-      "nameEn": "Maki Kurosawa (SSレゾナンス 女帝)",
-      "nameOriginal": "SSレゾナンス黒沢真希(女帝)",
-      "styleOrTitle": "SS [鉄火場の女帝] (Tier1)",
+      "nameEn": "Maki Kurosawa [Empress of the Showdown]",
+      "nameOriginal": "Maki Kurosawa",
+      "styleOrTitle": "SS [Empress of the Showdown] • Squad 31F Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Thunder",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12517959/4d491ceca32b1e9f917f1b114ae374a7.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -1947,41 +1947,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "全能力低下＆雷の印が優秀な雷デバッファー",
+          "name": "EX Skill: Empress of the Showdown",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Debuffer EX",
+          "multiplierSummary": "Thunder Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Thunder",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "EXで全能力が低下する「触」状態を2T付与 雷の印や永続防御デバフ、防御デバフも優秀"
+          "exactDescription": "Maki Kurosawa [Empress of the Showdown] is a SS-Tier Thunder Debuffer (Crush) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス黒沢真希(女帝))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXで全能力が低下する「触」状態を2T付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "雷の印や永続防御デバフ、防御デバフも優秀"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -1992,21 +1992,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "全能力低下＆雷の印が優秀な雷デバッファー — EXで全能力が低下する「触」状態を2T付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/781370).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/781370"
+      "summaryVerdict": "Maki Kurosawa [Empress of the Showdown] is a SS-Tier Thunder Debuffer (Crush) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-781370"
     },
     {
-      "externalId": "game8-hbr-779180",
+      "externalId": "hbr-unit-779180",
       "slug": "hbr-779180",
-      "nameEn": "Akari Date (SSレゾナンス 運動会)",
-      "nameOriginal": "SSレゾナンス伊達朱里(運動会)",
-      "styleOrTitle": "SS [前進ネバーギブアップ！] (Tier1)",
+      "nameEn": "Akari Date [Forward, Never Give Up!]",
+      "nameOriginal": "Akari Date",
+      "styleOrTitle": "SS [Forward, Never Give Up!] • Squad 31D Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Light",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12476911/2f0aa35da8a622f8561d3ea114bb07bf.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2026,41 +2026,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "永続光デバフと耐性ダウンを持つデバッファー",
+          "name": "EX Skill: Forward, Never Give Up!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Debuffer EX",
+          "multiplierSummary": "Light Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Light",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "敵全体の全能力を低下させる「禍」状態を付与 EXスキル初回使用時はODゲージ+25%"
+          "exactDescription": "Akari Date [Forward, Never Give Up!] is a SS-Tier Light Debuffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス伊達朱里(運動会))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "敵全体の全能力を低下させる「禍」状態を付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EXスキル初回使用時はODゲージ+25%"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2071,21 +2071,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "永続光デバフと耐性ダウンを持つデバッファー — 敵全体の全能力を低下させる「禍」状態を付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/779180).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/779180"
+      "summaryVerdict": "Akari Date [Forward, Never Give Up!] is a SS-Tier Light Debuffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-779180"
     },
     {
-      "externalId": "game8-hbr-775106",
+      "externalId": "hbr-unit-775106",
       "slug": "hbr-775106",
-      "nameEn": "Hisame Ogasawara (SSレゾナンス バニー)",
-      "nameOriginal": "SSレゾナンス小笠原緋雨(バニー)",
-      "styleOrTitle": "SS [春色イースターバニー] (Tier1)",
+      "nameEn": "Hisame Ogasawara [Springtime Easter Bunny]",
+      "nameOriginal": "Hisame Ogasawara",
+      "styleOrTitle": "SS [Springtime Easter Bunny] • Squad 30G Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "Fire",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12429920/089e71418af35187e471997a7d557f0e.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2105,41 +2105,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "トークンを消費して火スタイルの属性スキル攻撃力と連撃数を上げるバッファー",
+          "name": "EX Skill: Springtime Easter Bunny",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "前衛トークンを上昇+破壊率大で全体攻撃 凸効果で自身追加ターン時に編成をサポート"
+          "exactDescription": "Hisame Ogasawara [Springtime Easter Bunny] is a SS-Tier Fire Buffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス小笠原緋雨(バニー))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "前衛トークンを上昇+破壊率大で全体攻撃"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "凸効果で自身追加ターン時に編成をサポート"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2150,21 +2150,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "トークンを消費して火スタイルの属性スキル攻撃力と連撃数を上げるバッファー — 前衛トークンを上昇+破壊率大で全体攻撃",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/775106).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/775106"
+      "summaryVerdict": "Hisame Ogasawara [Springtime Easter Bunny] is a SS-Tier Fire Buffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-775106"
     },
     {
-      "externalId": "game8-hbr-764339",
+      "externalId": "hbr-unit-764339",
       "slug": "hbr-764339",
-      "nameEn": "Megumi Aikawa (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス逢川めぐみ(ユニゾン)",
-      "styleOrTitle": "SS [スペシャルナイト・ガールズジャム] (Tier1)",
+      "nameEn": "Megumi Aikawa [Special Night Girls Jam]",
+      "nameOriginal": "Megumi Aikawa",
+      "styleOrTitle": "SS [Special Night Girls Jam] • Squad 31A Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Ice",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12349125/cea5fadcb362a1937f134cbb52cf6a28.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2184,41 +2184,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "氷・雷属性の耐性ダウン＆属性防御を下げられるデバッファー",
+          "name": "EX Skill: Special Night Girls Jam",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Debuffer EX",
+          "multiplierSummary": "Ice Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "スキルで永続の脆弱デバフを付与 ブレイク時は「タマセッション」で全体を自動DP復活"
+          "exactDescription": "Megumi Aikawa [Special Night Girls Jam] is a SS-Tier Ice Debuffer (Crush) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス逢川めぐみ(ユニゾン))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキルで永続の脆弱デバフを付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "ブレイク時は「タマセッション」で全体を自動DP復活"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2229,21 +2229,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "氷・雷属性の耐性ダウン＆属性防御を下げられるデバッファー — スキルで永続の脆弱デバフを付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/764339).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/764339"
+      "summaryVerdict": "Megumi Aikawa [Special Night Girls Jam] is a SS-Tier Ice Debuffer (Crush) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-764339"
     },
     {
-      "externalId": "game8-hbr-755194",
+      "externalId": "hbr-unit-755194",
       "slug": "hbr-755194",
-      "nameEn": "SSレゾナンス手塚咲",
-      "nameOriginal": "SSレゾナンス手塚咲",
-      "styleOrTitle": "SS [希望の暁] (Tier1)",
+      "nameEn": "Saki Tezuka [Dawn of Hope]",
+      "nameOriginal": "Saki Tezuka",
+      "styleOrTitle": "SS [Dawn of Hope] • Command HQ Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Pierce)",
       "roleColumn": "DPS",
       "element": "Thunder",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12310240/72f73cd03ed731213d871919a8cce579.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2263,41 +2263,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "「鬼神化」で自身を超強化する雷アタッカー",
+          "name": "EX Skill: Dawn of Hope",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Attacker / Rider EX",
+          "multiplierSummary": "Thunder Pierce Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Thunder",
-            "Slash",
-            "Attacker / Rider"
+            "Pierce",
+            "Attacker"
           ],
-          "exactDescription": "鬼神化中は防御デバフ＋破壊率特大の攻撃を連発可能 EXスキルでは全SPを消費して攻撃"
+          "exactDescription": "Saki Tezuka [Dawn of Hope] is a SS-Tier Thunder Attacker (Pierce) from Command HQ. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス手塚咲)",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "鬼神化中は防御デバフ＋破壊率特大の攻撃を連発可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EXスキルでは全SPを消費して攻撃"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2308,21 +2308,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "「鬼神化」で自身を超強化する雷アタッカー — 鬼神化中は防御デバフ＋破壊率特大の攻撃を連発可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/755194).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/755194"
+      "summaryVerdict": "Saki Tezuka [Dawn of Hope] is a SS-Tier Thunder Attacker (Pierce) from Command HQ. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-755194"
     },
     {
-      "externalId": "game8-hbr-756804",
+      "externalId": "hbr-unit-756804",
       "slug": "hbr-756804",
-      "nameEn": "Aoi Erika (SSレゾナンス 白スーツ)",
-      "nameOriginal": "SSレゾナンス蒼井えりか(白スーツ)",
-      "styleOrTitle": "SS [ツナグ・Legacy] (Tier1)",
+      "nameEn": "Erika Aoi [Connecting Legacy]",
+      "nameOriginal": "Erika Aoi",
+      "styleOrTitle": "SS [Connecting Legacy] • Squad 31B Healer",
       "rarity": "SS",
-      "role": "Healer / Defender",
+      "role": "Healer (Crush)",
       "roleColumn": "SUSTAIN",
       "element": "Ice",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12213479/3ae51076b9af61de0e4efc0204a228c7.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2342,41 +2342,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "連撃数アップ(特大)付与＋OD50％上昇を持つ氷ヒーラー",
+          "name": "EX Skill: Connecting Legacy",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Healer / Defender EX",
+          "multiplierSummary": "Ice Crush Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
-            "Slash",
-            "Healer / Defender"
+            "Crush",
+            "Healer"
           ],
-          "exactDescription": "氷属性スタイルに「氷の印」を付与して全体のバフが可能 スキルで前衛DP復活＋防御バフで耐久サポート"
+          "exactDescription": "Erika Aoi [Connecting Legacy] is a SS-Tier Ice Healer (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス蒼井えりか(白スーツ))",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer / Defender Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Healer / Defender",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "氷属性スタイルに「氷の印」を付与して全体のバフが可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "スキルで前衛DP復活＋防御バフで耐久サポート"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2387,21 +2387,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "連撃数アップ(特大)付与＋OD50％上昇を持つ氷ヒーラー — 氷属性スタイルに「氷の印」を付与して全体のバフが可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/756804).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/756804"
+      "summaryVerdict": "Erika Aoi [Connecting Legacy] is a SS-Tier Ice Healer (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-756804"
     },
     {
-      "externalId": "game8-hbr-746396",
+      "externalId": "hbr-unit-746396",
       "slug": "hbr-746396",
-      "nameEn": "Kanata Maruyama (SSレゾナンス レガリア)",
-      "nameOriginal": "SSレゾナンス丸山奏多(レガリア)",
-      "styleOrTitle": "SS [決起のレガリア] (Tier1)",
+      "nameEn": "Kanata Maruyama [Regalia of Uprising]",
+      "nameOriginal": "Kanata Maruyama",
+      "styleOrTitle": "SS [Regalia of Uprising] • Squad 31F Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Thunder",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12037257/53334696cca7db0e558e624cf366a6d4.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2421,41 +2421,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "CT制スキルでSP消費なしのバッファー",
+          "name": "EX Skill: Regalia of Uprising",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Thunder",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "全体の心眼＋連撃バフを付与可能 スキルでチャージ付与＋チャージ中の味方は消費SP-1"
+          "exactDescription": "Kanata Maruyama [Regalia of Uprising] is a SS-Tier Thunder Buffer (Pierce) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス丸山奏多(レガリア))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "全体の心眼＋連撃バフを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "スキルでチャージ付与＋チャージ中の味方は消費SP-1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2466,18 +2466,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "CT制スキルでSP消費なしのバッファー — 全体の心眼＋連撃バフを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/746396).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/746396"
+      "summaryVerdict": "Kanata Maruyama [Regalia of Uprising] is a SS-Tier Thunder Buffer (Pierce) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-746396"
     },
     {
-      "externalId": "game8-hbr-730675",
+      "externalId": "hbr-unit-730675",
       "slug": "hbr-730675",
-      "nameEn": "SSレゾナンス國見タマ(ハロウィン)",
-      "nameOriginal": "SSレゾナンス國見タマ(ハロウィン)",
-      "styleOrTitle": "SS [ようこそ♪ナイトメア・パレード] (Tier1)",
+      "nameEn": "Tama Kunimi [Welcome to the Nightmare Parade]",
+      "nameOriginal": "Tama Kunimi",
+      "styleOrTitle": "SS [Welcome to the Nightmare Parade] • Squad 31A Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Slash)",
       "roleColumn": "SUB_DPS",
       "element": "Ice",
       "attackType": "Slash",
@@ -2500,41 +2500,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵に「霊符」状態を付与する氷デバッファー",
+          "name": "EX Skill: Welcome to the Nightmare Parade",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Debuffer EX",
+          "multiplierSummary": "Ice Slash Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
             "Slash",
             "Debuffer"
           ],
-          "exactDescription": "EXスキルで敵全体に氷デバフ＋脆弱を付与可能 3凸で条件を満たすと毎ターン霊符レベル＋2"
+          "exactDescription": "Tama Kunimi [Welcome to the Nightmare Parade] is a SS-Tier Ice Debuffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス國見タマ(ハロウィン))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキルで敵全体に氷デバフ＋脆弱を付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸で条件を満たすと毎ターン霊符レベル＋2"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2545,21 +2545,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "敵に「霊符」状態を付与する氷デバッファー — EXスキルで敵全体に氷デバフ＋脆弱を付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/730675).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/730675"
+      "summaryVerdict": "Tama Kunimi [Welcome to the Nightmare Parade] is a SS-Tier Ice Debuffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-730675"
     },
     {
-      "externalId": "game8-hbr-724681",
+      "externalId": "hbr-unit-724681",
       "slug": "hbr-724681",
-      "nameEn": "Ichigo Minase (SSレゾナンス パワプロ)",
-      "nameOriginal": "SSレゾナンス水瀬いちご(パワプロ)",
-      "styleOrTitle": "SS [熱闘！かっとばせホームラン！] (Tier1)",
+      "nameEn": "Ichigo Minase [Slugfest! Home Run Smash!]",
+      "nameOriginal": "Ichigo Minase",
+      "styleOrTitle": "SS [Slugfest! Home Run Smash!] • Squad 31B Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "Light",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11847198/854bbf319124513639d55203f52700b8.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2579,41 +2579,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "光属性フィールド・連撃バフ(特大)を付与可能なバッファー",
+          "name": "EX Skill: Slugfest! Home Run Smash!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Buffer / Admiral EX",
+          "multiplierSummary": "Light Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Light",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "EXスキルで全体のやる気を絶好調にできる 1凸で絶好調の味方を毎ターンSP+1"
+          "exactDescription": "Ichigo Minase [Slugfest! Home Run Smash!] is a SS-Tier Light Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス水瀬いちご(パワプロ))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキルで全体のやる気を絶好調にできる"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "1凸で絶好調の味方を毎ターンSP+1"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2624,21 +2624,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "光属性フィールド・連撃バフ(特大)を付与可能なバッファー — EXスキルで全体のやる気を絶好調にできる",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/724681).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/724681"
+      "summaryVerdict": "Ichigo Minase [Slugfest! Home Run Smash!] is a SS-Tier Light Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-724681"
     },
     {
-      "externalId": "game8-hbr-712350",
+      "externalId": "hbr-unit-712350",
       "slug": "hbr-712350",
-      "nameEn": "Aina Mizuhara (SSレゾナンス 水着)",
-      "nameOriginal": "SSレゾナンス瑞原あいな(水着)",
-      "styleOrTitle": "SS [キラキラサマーへ、ジャンプイン！] (Tier1)",
+      "nameEn": "Aina Mizuhara [Jump Into Sparkling Summer!]",
+      "nameOriginal": "Aina Mizuhara",
+      "styleOrTitle": "SS [Jump Into Sparkling Summer!] • Squad 31D Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Thunder",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11695752/c98e0728e936caa350a48a649ecebd39.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2658,41 +2658,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "ダウンターン中の敵の破壊率を稼げるデバッファー",
+          "name": "EX Skill: Jump Into Sparkling Summer!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Debuffer EX",
+          "multiplierSummary": "Thunder Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
+            "Thunder",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "スキルで味方のDPを犠牲にしてODゲージ上昇 行動開始時にダウンターン中の敵がいれば防御力ダウン効果アップ"
+          "exactDescription": "Aina Mizuhara [Jump Into Sparkling Summer!] is a SS-Tier Thunder Debuffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス瑞原あいな(水着))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキルで味方のDPを犠牲にしてODゲージ上昇"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "行動開始時にダウンターン中の敵がいれば防御力ダウン効果アップ"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2703,21 +2703,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "ダウンターン中の敵の破壊率を稼げるデバッファー — スキルで味方のDPを犠牲にしてODゲージ上昇",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/712350).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/712350"
+      "summaryVerdict": "Aina Mizuhara [Jump Into Sparkling Summer!] is a SS-Tier Thunder Debuffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-712350"
     },
     {
-      "externalId": "game8-hbr-712353",
+      "externalId": "hbr-unit-712353",
       "slug": "hbr-712353",
-      "nameEn": "Mari Satsuki (SS しもべ)",
-      "nameOriginal": "SS佐月マリ(しもべ)",
-      "styleOrTitle": "SS [魔王に仕えし混沌の謀臣] (Tier1)",
+      "nameEn": "Mari Satsuki [Strategist of Chaos]",
+      "nameOriginal": "Mari Satsuki",
+      "styleOrTitle": "SS [Strategist of Chaos] • Squad 31C Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Pierce)",
       "roleColumn": "SUB_DPS",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11695750/220381a7b35e70b0c8199bbba4c2e3c6.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2737,41 +2737,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "EXを使用するたびに性能が強化されるデバッファー",
+          "name": "EX Skill: Strategist of Chaos",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Debuffer EX",
+          "multiplierSummary": "Null Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
+            "Pierce",
             "Debuffer"
           ],
-          "exactDescription": "スキル1で自身と味方単体に追加ターンを付与 自身のスキル攻撃力を上げる共鳴アビリティを持つ"
+          "exactDescription": "Mari Satsuki [Strategist of Chaos] is a SS-Tier Non-Elemental Debuffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS佐月マリ(しもべ))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1で自身と味方単体に追加ターンを付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "自身のスキル攻撃力を上げる共鳴アビリティを持つ"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2782,18 +2782,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "EXを使用するたびに性能が強化されるデバッファー — スキル1で自身と味方単体に追加ターンを付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/712353).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/712353"
+      "summaryVerdict": "Mari Satsuki [Strategist of Chaos] is a SS-Tier Non-Elemental Debuffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-712353"
     },
     {
-      "externalId": "game8-hbr-708980",
+      "externalId": "hbr-unit-708980",
       "slug": "hbr-708980",
-      "nameEn": "Karen Asakura (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス朝倉可憐(ユニゾン)",
-      "styleOrTitle": "SS [CODE:Virtual Killer] (Tier1)",
+      "nameEn": "Karen Asakura [CODE: Virtual Killer]",
+      "nameOriginal": "Karen Asakura",
+      "styleOrTitle": "SS [CODE: Virtual Killer] • Squad 31A Blaster",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Blaster (Slash)",
       "roleColumn": "SUB_DPS",
       "element": "None",
       "attackType": "Slash",
@@ -2816,41 +2816,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "ブレイカーとブラスターを切り替えて戦うユニゾンスタイル",
+          "name": "EX Skill: CODE: Virtual Killer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Debuffer EX",
-          "hitCount": 5,
+          "multiplierSummary": "Null Slash Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Debuffer"
+            "Blaster"
           ],
-          "exactDescription": "スキル1でブレイク時、超ダウン状態にする EXスキルは超ダウン状態だと破壊率絶大になる"
+          "exactDescription": "Karen Asakura [CODE: Virtual Killer] is a SS-Tier Non-Elemental Blaster (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス朝倉可憐(ユニゾン))",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1でブレイク時、超ダウン状態にする"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EXスキルは超ダウン状態だと破壊率絶大になる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2861,21 +2861,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "ブレイカーとブラスターを切り替えて戦うユニゾンスタイル — スキル1でブレイク時、超ダウン状態にする",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/708980).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/708980"
+      "summaryVerdict": "Karen Asakura [CODE: Virtual Killer] is a SS-Tier Non-Elemental Blaster (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-708980"
     },
     {
-      "externalId": "game8-hbr-706660",
+      "externalId": "hbr-unit-706660",
       "slug": "hbr-706660",
-      "nameEn": "Aoi Erika (SSレゾナンス 水着)",
-      "nameOriginal": "SSレゾナンス蒼井えりか(水着)",
-      "styleOrTitle": "SS [ヒカル・Mermaid Vacation] (Tier1)",
+      "nameEn": "Erika Aoi [Shining Mermaid Vacation]",
+      "nameOriginal": "Erika Aoi",
+      "styleOrTitle": "SS [Shining Mermaid Vacation] • Squad 31B Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Dark",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11572103/5068210b4e8d4ca058002380661c923c.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2895,41 +2895,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "全体士気レベルを上げつつ2種類の防御デバフを付与するデバッファー",
+          "name": "EX Skill: Shining Mermaid Vacation",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Debuffer EX",
+          "multiplierSummary": "Dark Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Dark",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "士気レベルを上げることでEXスキルが強化 士気レベル2以上で闇属性フィールド(大)を展開可能に"
+          "exactDescription": "Erika Aoi [Shining Mermaid Vacation] is a SS-Tier Dark Debuffer (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス蒼井えりか(水着))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "士気レベルを上げることでEXスキルが強化"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "士気レベル2以上で闇属性フィールド(大)を展開可能に"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -2940,21 +2940,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "全体士気レベルを上げつつ2種類の防御デバフを付与するデバッファー — 士気レベルを上げることでEXスキルが強化",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/706660).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/706660"
+      "summaryVerdict": "Erika Aoi [Shining Mermaid Vacation] is a SS-Tier Dark Debuffer (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-706660"
     },
     {
-      "externalId": "game8-hbr-692830",
+      "externalId": "hbr-unit-692830",
       "slug": "hbr-692830",
-      "nameEn": "Mion Yanagi (SSレゾナンス アドミラル)",
-      "nameOriginal": "SSレゾナンス柳美音(アドミラル)",
-      "styleOrTitle": "SS [夜の香り、薔薇の調べ] (Tier1)",
+      "nameEn": "Mion Yanagi [Scent of Night, Melody of Roses]",
+      "nameOriginal": "Mion Yanagi",
+      "styleOrTitle": "SS [Scent of Night, Melody of Roses] • Squad 31F Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11605624/6c6f58bf4a4aa44475df208131eabead.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -2974,41 +2974,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "各種強化状態を付与する「ハイブースト」状態で味方を補助するアドミラル",
+          "name": "EX Skill: Scent of Night, Melody of Roses",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Admiral"
           ],
-          "exactDescription": "EXで単独発動の攻撃バフ+クリバフ+心眼バフを全体に付与可能 バトル開始時に味方全体をチャージする"
+          "exactDescription": "Mion Yanagi [Scent of Night, Melody of Roses] is a SS-Tier Non-Elemental Admiral (Pierce) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス柳美音(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXで単独発動の攻撃バフ+クリバフ+心眼バフを全体に付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "バトル開始時に味方全体をチャージする"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3019,21 +3019,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "各種強化状態を付与する「ハイブースト」状態で味方を補助するアドミラル — EXで単独発動の攻撃バフ+クリバフ+心眼バフを全体に付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/692830).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/692830"
+      "summaryVerdict": "Mion Yanagi [Scent of Night, Melody of Roses] is a SS-Tier Non-Elemental Admiral (Pierce) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-692830"
     },
     {
-      "externalId": "game8-hbr-686333",
+      "externalId": "hbr-unit-686333",
       "slug": "hbr-686333",
-      "nameEn": "Seira Sakuraba (SS しもべ)",
-      "nameOriginal": "SS桜庭星羅(しもべ)",
-      "styleOrTitle": "SS [魔王に仕えし幻影の大魔道士] (Tier1)",
+      "nameEn": "Seira Sakuraba [Archmage of the Demon Lord]",
+      "nameOriginal": "Seira Sakuraba",
+      "styleOrTitle": "SS [Archmage of the Demon Lord] • Squad 31C Defender",
       "rarity": "SS",
-      "role": "Healer / Defender",
+      "role": "Defender (Crush)",
       "roleColumn": "SUSTAIN",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11305350/6d41c92a4475e5ff467da5a55a44466c.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3053,41 +3053,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "EXを使用するたびに性能が強化されるディフェンダー",
+          "name": "EX Skill: Archmage of the Demon Lord",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Healer / Defender EX",
+          "multiplierSummary": "Null Crush Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Healer / Defender"
+            "Crush",
+            "Defender"
           ],
-          "exactDescription": "EX4回目以降は攻撃バフ+心眼バフを付与可能 EX使用時にODゲージ+10%するパッシブスキルを持つ"
+          "exactDescription": "Seira Sakuraba [Archmage of the Demon Lord] is a SS-Tier Non-Elemental Defender (Crush) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS桜庭星羅(しもべ))",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer / Defender Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Healer / Defender",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EX4回目以降は攻撃バフ+心眼バフを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EX使用時にODゲージ+10%するパッシブスキルを持つ"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3098,21 +3098,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "EXを使用するたびに性能が強化されるディフェンダー — EX4回目以降は攻撃バフ+心眼バフを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/686333).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/686333"
+      "summaryVerdict": "Seira Sakuraba [Archmage of the Demon Lord] is a SS-Tier Non-Elemental Defender (Crush) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-686333"
     },
     {
-      "externalId": "game8-hbr-677349",
+      "externalId": "hbr-unit-677349",
       "slug": "hbr-677349",
-      "nameEn": "Ichiko Ohshima (SSレゾナンス 白スーツ)",
-      "nameOriginal": "SSレゾナンス大島一千子(白スーツ)",
-      "styleOrTitle": "SS [導きのルーセント] (Tier1)",
+      "nameEn": "Ichiko Ohshima [Guiding Lucent]",
+      "nameOriginal": "Ichiko Ohshima",
+      "styleOrTitle": "SS [Guiding Lucent] • Squad 31E Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Light",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11605628/35d05282b6fbd7670503494ba1f8ece8.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3132,41 +3132,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵全体の光属性耐性を消し去り、光弱点を付与するデバッファー",
+          "name": "EX Skill: Guiding Lucent",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Debuffer EX",
+          "multiplierSummary": "Light Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Light",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "スキル1でODゲージを50％消費して前衛SPを6上昇 EXスキルでは弱点付与の他、永続防御ダウン付与とODゲージを+50％"
+          "exactDescription": "Ichiko Ohshima [Guiding Lucent] is a SS-Tier Light Debuffer (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス大島一千子(白スーツ))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1でODゲージを50％消費して前衛SPを6上昇"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "EXスキルでは弱点付与の他、永続防御ダウン付与とODゲージを+50％"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3177,21 +3177,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "敵全体の光属性耐性を消し去り、光弱点を付与するデバッファー — スキル1でODゲージを50％消費して前衛SPを6上昇",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/677349).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/677349"
+      "summaryVerdict": "Ichiko Ohshima [Guiding Lucent] is a SS-Tier Light Debuffer (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-677349"
     },
     {
-      "externalId": "game8-hbr-669859",
+      "externalId": "hbr-unit-669859",
       "slug": "hbr-669859",
-      "nameEn": "Tsukasa Tojo (SS 哀情)",
-      "nameOriginal": "SS東城つかさ(哀情)",
-      "styleOrTitle": "SS [哀情のラメント] (Tier1)",
+      "nameEn": "Tsukasa Tojo [Lament of Sorrow]",
+      "nameOriginal": "Tsukasa Tojo",
+      "styleOrTitle": "SS [Lament of Sorrow] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "Ice",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11063434/767796f421516f4f0806dee7d19e9c3a.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3211,41 +3211,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "氷属性フィールド(大)を展開しつつ氷クリバフを付与可能なバッファー",
+          "name": "EX Skill: Lament of Sorrow",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Buffer / Admiral EX",
+          "multiplierSummary": "Ice Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "スキル1で単独発動の氷属性バフを付与可能 自身以外からスキルでSP配布された際、追加でSP上昇"
+          "exactDescription": "Tsukasa Tojo [Lament of Sorrow] is a SS-Tier Ice Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS東城つかさ(哀情))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1で単独発動の氷属性バフを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "自身以外からスキルでSP配布された際、追加でSP上昇"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3256,21 +3256,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "氷属性フィールド(大)を展開しつつ氷クリバフを付与可能なバッファー — スキル1で単独発動の氷属性バフを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/669859).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/669859"
+      "summaryVerdict": "Tsukasa Tojo [Lament of Sorrow] is a SS-Tier Ice Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-669859"
     },
     {
-      "externalId": "game8-hbr-667355",
+      "externalId": "hbr-unit-667355",
       "slug": "hbr-667355",
-      "nameEn": "Misato Nikaido (SSレゾナンス 白スーツ)",
-      "nameOriginal": "SSレゾナンス二階堂三郷(白スーツ)",
-      "styleOrTitle": "SS [Lead by Example] (Tier1)",
+      "nameEn": "Misato Nikaido [Lead by Example]",
+      "nameOriginal": "Misato Nikaido",
+      "styleOrTitle": "SS [Lead by Example] • Squad 31D Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Fire",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11605626/0a7388b17da7b94e9c3d8bfb0d5a3ffe.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3290,41 +3290,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵全体の火属性耐性を消し去り、火弱点を付与するデバッファー",
+          "name": "EX Skill: Lead by Example",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Debuffer EX",
+          "multiplierSummary": "Fire Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "スキル1で火属性デバフを全体に付与可能 OD中は各種スキルの強化やアビリティが発動"
+          "exactDescription": "Misato Nikaido [Lead by Example] is a SS-Tier Fire Debuffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス二階堂三郷(白スーツ))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1で火属性デバフを全体に付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "OD中は各種スキルの強化やアビリティが発動"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3335,18 +3335,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "敵全体の火属性耐性を消し去り、火弱点を付与するデバッファー — スキル1で火属性デバフを全体に付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/667355).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/667355"
+      "summaryVerdict": "Misato Nikaido [Lead by Example] is a SS-Tier Fire Debuffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-667355"
     },
     {
-      "externalId": "game8-hbr-657138",
+      "externalId": "hbr-unit-657138",
       "slug": "hbr-657138",
-      "nameEn": "Ruka Kayamori (SS 歌姫)",
-      "nameOriginal": "SS茅森月歌(歌姫)",
-      "styleOrTitle": "SS [白き華の歌姫] (Tier1)",
+      "nameEn": "Ruka Kayamori [Diva of the White Blossom]",
+      "nameOriginal": "Ruka Kayamori",
+      "styleOrTitle": "SS [Diva of the White Blossom] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
       "element": "None",
       "attackType": "Slash",
@@ -3369,41 +3369,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "味方を歌姫の加護状態にするバッファー",
+          "name": "EX Skill: Diva of the White Blossom",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "歌姫の加護状態ならスキル1で連撃バフ(特大)x3を付与可能 初期アビリティでターン開始時歌姫の加護状態だと前衛SP+2"
+          "exactDescription": "Ruka Kayamori [Diva of the White Blossom] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS茅森月歌(歌姫))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "歌姫の加護状態ならスキル1で連撃バフ(特大)x3を付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "初期アビリティでターン開始時歌姫の加護状態だと前衛SP+2"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3414,21 +3414,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "味方を歌姫の加護状態にするバッファー — 歌姫の加護状態ならスキル1で連撃バフ(特大)x3を付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/657138).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/657138"
+      "summaryVerdict": "Ruka Kayamori [Diva of the White Blossom] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-657138"
     },
     {
-      "externalId": "game8-hbr-652684",
+      "externalId": "hbr-unit-652684",
       "slug": "hbr-652684",
-      "nameEn": "Aoi Erika (SS アドミラル)",
-      "nameOriginal": "SS蒼井えりか(アドミラル)",
-      "styleOrTitle": "SS [ヒビケ・Battlecry] (Tier1)",
+      "nameEn": "Erika Aoi [Echoing Battlecry]",
+      "nameOriginal": "Erika Aoi",
+      "styleOrTitle": "SS [Echoing Battlecry] • Squad 31B Admiral",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Admiral (Crush)",
       "roleColumn": "SUPPORT",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10699305/96765452bcf48304038e016345897c97.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3448,41 +3448,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "味方の支援に特化した新ロール「アドミラル」スタイル",
+          "name": "EX Skill: Echoing Battlecry",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Crush Admiral EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Crush",
+            "Admiral"
           ],
-          "exactDescription": "EXスキルで味方全体のDP復活+OD100%上昇 パッシブで味方全体のクリティカル率を常時+100％"
+          "exactDescription": "Erika Aoi [Echoing Battlecry] is a SS-Tier Non-Elemental Admiral (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS蒼井えりか(アドミラル))",
+          "name": "Seraph Tactical Art: Admiral",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Admiral Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Admiral",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキルで味方全体のDP復活+OD100%上昇"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "パッシブで味方全体のクリティカル率を常時+100％"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3493,18 +3493,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "味方の支援に特化した新ロール「アドミラル」スタイル — EXスキルで味方全体のDP復活+OD100%上昇",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/652684).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/652684"
+      "summaryVerdict": "Erika Aoi [Echoing Battlecry] is a SS-Tier Non-Elemental Admiral (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-652684"
     },
     {
-      "externalId": "game8-hbr-648704",
+      "externalId": "hbr-unit-648704",
       "slug": "hbr-648704",
-      "nameEn": "Sumomo Minase (SS 愛憐)",
-      "nameOriginal": "SS水瀬すもも(愛憐)",
-      "styleOrTitle": "SS [愛憐の綻び] (Tier1)",
+      "nameEn": "Sumomo Minase [Blossoming Compassion]",
+      "nameOriginal": "Sumomo Minase",
+      "styleOrTitle": "SS [Blossoming Compassion] • Squad 31B Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Slash)",
       "roleColumn": "DPS",
       "element": "None",
       "attackType": "Slash",
@@ -3527,41 +3527,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "対HP+30%の貫通クリティカルで攻撃するアタッカー",
+          "name": "EX Skill: Blossoming Compassion",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Attacker / Rider EX",
+          "multiplierSummary": "Null Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Attacker / Rider"
+            "Attacker"
           ],
-          "exactDescription": "EXスキル初回使用時はSP半減 3凸で自身に連撃バフ(大)を付与する狂乱の型を習得"
+          "exactDescription": "Sumomo Minase [Blossoming Compassion] is a SS-Tier Non-Elemental Attacker (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS水瀬すもも(愛憐))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "EXスキル初回使用時はSP半減"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸で自身に連撃バフ(大)を付与する狂乱の型を習得"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3572,21 +3572,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "対HP+30%の貫通クリティカルで攻撃するアタッカー — EXスキル初回使用時はSP半減",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/648704).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/648704"
+      "summaryVerdict": "Sumomo Minase [Blossoming Compassion] is a SS-Tier Non-Elemental Attacker (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-648704"
     },
     {
-      "externalId": "game8-hbr-643121",
+      "externalId": "hbr-unit-643121",
       "slug": "hbr-643121",
-      "nameEn": "Yuki Izumi (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス和泉ユキ(ユニゾン)",
-      "styleOrTitle": "SS [傍らのプリンセス] (Tier1)",
+      "nameEn": "Yuki Izumi [Princess by Your Side]",
+      "nameOriginal": "Yuki Izumi",
+      "styleOrTitle": "SS [Princess by Your Side] • Squad 31A Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Breaker (Pierce)",
+      "roleColumn": "DPS",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11603313/4a617d2dc76f106131eabcf60a13eac0.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3599,48 +3599,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 688,
         "defOrGuts": 562,
         "critOrWit": 678,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "ハッキングと脆弱を付与しつつ、2属性で攻撃可能なブレイカー",
+          "name": "EX Skill: Princess by Your Side",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Breaker"
           ],
-          "exactDescription": "パッシブスキルで敵のダウンターンを1ターン延長 3凸で自身が付与するデバフの効果が1ターン伸びる"
+          "exactDescription": "Yuki Izumi [Princess by Your Side] is a SS-Tier Fire Breaker (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス和泉ユキ(ユニゾン))",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "パッシブスキルで敵のダウンターンを1ターン延長"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸で自身が付与するデバフの効果が1ターン伸びる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3651,21 +3651,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "ハッキングと脆弱を付与しつつ、2属性で攻撃可能なブレイカー — パッシブスキルで敵のダウンターンを1ターン延長",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/643121).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/643121"
+      "summaryVerdict": "Yuki Izumi [Princess by Your Side] is a SS-Tier Fire Breaker (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-643121"
     },
     {
-      "externalId": "game8-hbr-638288",
+      "externalId": "hbr-unit-638288",
       "slug": "hbr-638288",
-      "nameEn": "Hisame Ogasawara (SS ガーネット)",
-      "nameOriginal": "SS小笠原緋雨(ガーネット)",
-      "styleOrTitle": "SS [夏宵色のガーネット] (Tier1)",
+      "nameEn": "Hisame Ogasawara [Summer Dusk Garnet]",
+      "nameOriginal": "Hisame Ogasawara",
+      "styleOrTitle": "SS [Summer Dusk Garnet] • Squad 30G Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Pierce)",
       "roleColumn": "SUB_DPS",
       "element": "Ice",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10485922/ccc9898807378abab078b4873d93e317.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3685,41 +3685,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵全体の氷属性耐性を消し去り、氷弱点を付与するデバッファー",
+          "name": "EX Skill: Summer Dusk Garnet",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Debuffer EX",
+          "multiplierSummary": "Ice Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
-            "Slash",
+            "Pierce",
             "Debuffer"
           ],
-          "exactDescription": "スキル1で氷デバフを付与可能 3凸で消費SPを抑え扱いやすくなる"
+          "exactDescription": "Hisame Ogasawara [Summer Dusk Garnet] is a SS-Tier Ice Debuffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS小笠原緋雨(ガーネット))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1で氷デバフを付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸で消費SPを抑え扱いやすくなる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3730,21 +3730,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "敵全体の氷属性耐性を消し去り、氷弱点を付与するデバッファー — スキル1で氷デバフを付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/638288).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/638288"
+      "summaryVerdict": "Hisame Ogasawara [Summer Dusk Garnet] is a SS-Tier Ice Debuffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-638288"
     },
     {
-      "externalId": "game8-hbr-628230",
+      "externalId": "hbr-unit-628230",
       "slug": "hbr-628230",
-      "nameEn": "Megumi Aikawa (SS 水着)",
-      "nameOriginal": "SS逢川めぐみ(水着)",
-      "styleOrTitle": "SS [ネバーエンド・サマー] (Tier1)",
+      "nameEn": "Megumi Aikawa [Never-Ending Summer]",
+      "nameOriginal": "Megumi Aikawa",
+      "styleOrTitle": "SS [Never-Ending Summer] • Squad 31A Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Crush)",
       "roleColumn": "SUB_DPS",
       "element": "Thunder",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10272971/610630410f39037d230436f0857c3c3c.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3764,41 +3764,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "雷フィールド(大)を展開しつつ全体の雷防御を下げるデバッファー",
+          "name": "EX Skill: Never-Ending Summer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Debuffer EX",
+          "multiplierSummary": "Thunder Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Thunder",
-            "Slash",
+            "Crush",
             "Debuffer"
           ],
-          "exactDescription": "パッシブスキルでフィ―ルド効果が強化+ターンが永続に 他スタイル所持で脆弱と防御デバフも付与可能"
+          "exactDescription": "Megumi Aikawa [Never-Ending Summer] is a SS-Tier Thunder Debuffer (Crush) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS逢川めぐみ(水着))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "パッシブスキルでフィ―ルド効果が強化+ターンが永続に"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "他スタイル所持で脆弱と防御デバフも付与可能"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3809,18 +3809,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "雷フィールド(大)を展開しつつ全体の雷防御を下げるデバッファー — パッシブスキルでフィ―ルド効果が強化+ターンが永続に",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/628230).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/628230"
+      "summaryVerdict": "Megumi Aikawa [Never-Ending Summer] is a SS-Tier Thunder Debuffer (Crush) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-628230"
     },
     {
-      "externalId": "game8-hbr-621315",
+      "externalId": "hbr-unit-621315",
       "slug": "hbr-621315",
-      "nameEn": "Yuina Shirakawa (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス白河ユイナ(ユニゾン)",
-      "styleOrTitle": "SS [月が綺麗] (Tier1)",
+      "nameEn": "Yuina Shirakawa [The Moon Is Beautiful]",
+      "nameOriginal": "Yuina Shirakawa",
+      "styleOrTitle": "SS [The Moon Is Beautiful] • Squad 30G Attacker",
       "rarity": "SS",
-      "role": "Attacker / Rider",
+      "role": "Attacker (Slash)",
       "roleColumn": "DPS",
       "element": "Ice",
       "attackType": "Slash",
@@ -3843,41 +3843,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "2種類の攻撃を使い分けて戦う氷全体アタッカー",
+          "name": "EX Skill: The Moon Is Beautiful",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Attacker / Rider EX",
+          "multiplierSummary": "Ice Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
             "Slash",
-            "Attacker / Rider"
+            "Attacker"
           ],
-          "exactDescription": "スキル1で前衛に追加ターンを付与 アビリティでバトル開始時SP+2"
+          "exactDescription": "Yuina Shirakawa [The Moon Is Beautiful] is a SS-Tier Ice Attacker (Slash) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス白河ユイナ(ユニゾン))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker / Rider Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Attacker / Rider",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1で前衛に追加ターンを付与"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "アビリティでバトル開始時SP+2"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3888,21 +3888,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "2種類の攻撃を使い分けて戦う氷全体アタッカー — スキル1で前衛に追加ターンを付与",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/621315).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/621315"
+      "summaryVerdict": "Yuina Shirakawa [The Moon Is Beautiful] is a SS-Tier Ice Attacker (Slash) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-621315"
     },
     {
-      "externalId": "game8-hbr-603245",
+      "externalId": "hbr-unit-603245",
       "slug": "hbr-603245",
-      "nameEn": "Tsukasa Tojo (SS バニー)",
-      "nameOriginal": "SS東城つかさ(バニー)",
-      "styleOrTitle": "SS [バニーファイト・デビエーション] (Tier1)",
+      "nameEn": "Tsukasa Tojo [Bunny Fight Deviation]",
+      "nameOriginal": "Tsukasa Tojo",
+      "styleOrTitle": "SS [Bunny Fight Deviation] • Squad 31A Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Pierce)",
       "roleColumn": "SUB_DPS",
       "element": "Dark",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/9866275/854c6f86c1e74445c72b7f476d532303.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -3922,41 +3922,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵全体の闇属性耐性を消し去り、闇弱点を付与するデバッファー",
+          "name": "EX Skill: Bunny Fight Deviation",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Debuffer EX",
+          "multiplierSummary": "Dark Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Dark",
-            "Slash",
+            "Pierce",
             "Debuffer"
           ],
-          "exactDescription": "闇属性バフや闇属性スタイルに連撃(小)を付与可能 基本衣装の専用スキルでバフ効果を更に上げる"
+          "exactDescription": "Tsukasa Tojo [Bunny Fight Deviation] is a SS-Tier Dark Debuffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS東城つかさ(バニー))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "闇属性バフや闇属性スタイルに連撃(小)を付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "基本衣装の専用スキルでバフ効果を更に上げる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -3967,19 +3967,19 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "敵全体の闇属性耐性を消し去り、闇弱点を付与するデバッファー — 闇属性バフや闇属性スタイルに連撃(小)を付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/603245).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/603245"
+      "summaryVerdict": "Tsukasa Tojo [Bunny Fight Deviation] is a SS-Tier Dark Debuffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-603245"
     },
     {
-      "externalId": "game8-hbr-595464",
+      "externalId": "hbr-unit-595464",
       "slug": "hbr-595464",
-      "nameEn": "Ruka Kayamori (SSレゾナンス ユニゾン)",
-      "nameOriginal": "SSレゾナンス茅森月歌(ユニゾン)",
-      "styleOrTitle": "SS [The Feel of the Throne] (Tier1)",
+      "nameEn": "Ruka Kayamori [The Feel of the Throne]",
+      "nameOriginal": "Ruka Kayamori",
+      "styleOrTitle": "SS [The Feel of the Throne] • Squad 31A Attacker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Attacker (Slash)",
+      "roleColumn": "DPS",
       "element": "Fire",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/11601624/6dcfb1bc4c893beb09867c16faf0f953.webp/show",
@@ -3994,48 +3994,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 673,
         "defOrGuts": 552,
         "critOrWit": 663,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "2属性(火と闇)の火力役として活躍",
+          "name": "EX Skill: The Feel of the Throne",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Buffer / Admiral EX",
+          "multiplierSummary": "Fire Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Fire",
             "Slash",
-            "Buffer / Admiral"
+            "Attacker"
           ],
-          "exactDescription": "スキル1で自身に心眼を付与できる 専用スキルで弱点をついた時に威力が上昇"
+          "exactDescription": "Ruka Kayamori [The Feel of the Throne] is a SS-Tier Fire Attacker (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス茅森月歌(ユニゾン))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "スキル1で自身に心眼を付与できる"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "専用スキルで弱点をついた時に威力が上昇"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4046,20 +4046,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "2属性(火と闇)の火力役として活躍 — スキル1で自身に心眼を付与できる",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/595464).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/595464"
+      "summaryVerdict": "Ruka Kayamori [The Feel of the Throne] is a SS-Tier Fire Attacker (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-595464"
     },
     {
-      "externalId": "game8-hbr-592870",
+      "externalId": "hbr-unit-592870",
       "slug": "hbr-592870",
-      "nameEn": "Kanade Tachibana (Angel Beats!) (SSレゾナンス 天翔ける剣)",
-      "nameOriginal": "SSレゾナンス立華かなで(天翔ける剣)",
-      "styleOrTitle": "SS [天翔ける剣] (Tier1)",
+      "nameEn": "Kanade Tachibana [Soaring Sword]",
+      "nameOriginal": "Kanade Tachibana",
+      "styleOrTitle": "SS [Soaring Sword] • Squad 31AB Attacker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Attacker (Slash)",
+      "roleColumn": "DPS",
+      "element": "Ice",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/13053954/870b805bdce67dfcb4fb0639a6925d06.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -4073,48 +4073,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 670,
         "defOrGuts": 550,
         "critOrWit": 660,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "DP割合が高いほど専用スキルの威力が上昇する",
+          "name": "EX Skill: Soaring Sword",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Ice Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Ice",
             "Slash",
-            "Buffer / Admiral"
+            "Attacker"
           ],
-          "exactDescription": "150%まで上限回復可能な自己回復を習得 基本衣装で自身に「心眼」を付与できる"
+          "exactDescription": "Kanade Tachibana [Soaring Sword] is a SS-Tier Ice Attacker (Slash) from Squad 31AB. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSレゾナンス立華かなで(天翔ける剣))",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "150%まで上限回復可能な自己回復を習得"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "基本衣装で自身に「心眼」を付与できる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4125,21 +4125,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "DP割合が高いほど専用スキルの威力が上昇する — 150%まで上限回復可能な自己回復を習得",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/592870).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/592870"
+      "summaryVerdict": "Kanade Tachibana [Soaring Sword] is a SS-Tier Ice Attacker (Slash) from Squad 31AB. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-592870"
     },
     {
-      "externalId": "game8-hbr-577125",
+      "externalId": "hbr-unit-577125",
       "slug": "hbr-577125",
-      "nameEn": "Charlotta Skopovskaya (SS とこしえ)",
-      "nameOriginal": "SSシャルロッタ・スコポフスカヤ(とこしえ)",
-      "styleOrTitle": "SS [とこしえの想い] (Tier1)",
+      "nameEn": "Charlotta Skopovskaya [Eternal Feelings]",
+      "nameOriginal": "Charlotta Skopovskaya",
+      "styleOrTitle": "SS [Eternal Feelings] • Squad 31X Debuffer",
       "rarity": "SS",
-      "role": "Debuffer",
+      "role": "Debuffer (Pierce)",
       "roleColumn": "SUB_DPS",
       "element": "Thunder",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/9049136/28fcf20be56c12eae1612dc4a055fde2.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -4159,41 +4159,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "敵の雷耐性を消し雷弱点を付与できるデバッファー",
+          "name": "EX Skill: Eternal Feelings",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Debuffer EX",
+          "multiplierSummary": "Thunder Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Thunder",
-            "Slash",
+            "Pierce",
             "Debuffer"
           ],
-          "exactDescription": "どのような場面でも雷属性パーティーの運用が可能となる 脆弱と雷属性ダウンを付与できる"
+          "exactDescription": "Charlotta Skopovskaya [Eternal Feelings] is a SS-Tier Thunder Debuffer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SSシャルロッタ・スコポフスカヤ(とこしえ))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
             "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "どのような場面でも雷属性パーティーの運用が可能となる"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "脆弱と雷属性ダウンを付与できる"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4204,21 +4204,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "敵の雷耐性を消し雷弱点を付与できるデバッファー — どのような場面でも雷属性パーティーの運用が可能となる",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/577125).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/577125"
+      "summaryVerdict": "Charlotta Skopovskaya [Eternal Feelings] is a SS-Tier Thunder Debuffer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-577125"
     },
     {
-      "externalId": "game8-hbr-548994",
+      "externalId": "hbr-unit-548994",
       "slug": "hbr-548994",
-      "nameEn": "Miya Kiryu (SS 豊楽)",
-      "nameOriginal": "SS桐生美也(豊楽)",
-      "styleOrTitle": "SS [豊楽ノ神秘] (Tier1)",
+      "nameEn": "Miya Kiryu [Mystery of Abundance]",
+      "nameOriginal": "Miya Kiryu",
+      "styleOrTitle": "SS [Mystery of Abundance] • Squad 30G Debuffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Debuffer (Pierce)",
+      "roleColumn": "SUB_DPS",
+      "element": "Thunder",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/8691854/6d9acfbf3a3887871893cca0339f3e4d.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -4232,47 +4232,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 546,
         "critOrWit": 654,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "専用スキルで防御デバフと脆弱を同時に付与できる",
+          "name": "EX Skill: Mystery of Abundance",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Thunder",
+            "Pierce",
+            "Debuffer"
           ],
-          "exactDescription": "SP5で厄付与と追加ターンを獲得できる 3凸で防御力ダウン効果+25%"
+          "exactDescription": "Miya Kiryu [Mystery of Abundance] is a SS-Tier Thunder Debuffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS桐生美也(豊楽))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "SP5で厄付与と追加ターンを獲得できる"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸で防御力ダウン効果+25%"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4283,20 +4283,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "専用スキルで防御デバフと脆弱を同時に付与できる — SP5で厄付与と追加ターンを獲得できる",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/548994).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/548994"
+      "summaryVerdict": "Miya Kiryu [Mystery of Abundance] is a SS-Tier Thunder Debuffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-548994"
     },
     {
-      "externalId": "game8-hbr-519394",
+      "externalId": "hbr-unit-519394",
       "slug": "hbr-519394",
-      "nameEn": "Fubuki Mikoto (SS 初期)",
-      "nameOriginal": "SS命吹雪(初期)",
-      "styleOrTitle": "SS [終末なにする？] (Tier1)",
+      "nameEn": "Fubuki Mikoto [World End Daydream]",
+      "nameOriginal": "Fubuki Mikoto",
+      "styleOrTitle": "SS [World End Daydream] • Squad 31D Debuffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "Dark",
+      "role": "Debuffer (Slash)",
+      "roleColumn": "SUB_DPS",
+      "element": "None",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/7860694/a8bd6e5edc9ae41700860ebcbc4398b8.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -4311,47 +4311,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 544,
         "critOrWit": 651,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "専用スキルで脆弱と厄(OD中)を付与できる",
+          "name": "EX Skill: World End Daydream",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Buffer / Admiral EX",
+          "multiplierSummary": "Null Slash Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "Dark",
+            "None",
             "Slash",
-            "Buffer / Admiral"
+            "Debuffer"
           ],
-          "exactDescription": "習得スキルで闇属性デバフも付与可能 初期スキルで全体防御デバフを所持"
+          "exactDescription": "Fubuki Mikoto [World End Daydream] is a SS-Tier Non-Elemental Debuffer (Slash) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS命吹雪(初期))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "習得スキルで闇属性デバフも付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "初期スキルで全体防御デバフを所持"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4362,18 +4362,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "専用スキルで脆弱と厄(OD中)を付与できる — 習得スキルで闇属性デバフも付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/519394).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/519394"
+      "summaryVerdict": "Fubuki Mikoto [World End Daydream] is a SS-Tier Non-Elemental Debuffer (Slash) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-519394"
     },
     {
-      "externalId": "game8-hbr-507349",
+      "externalId": "hbr-unit-507349",
       "slug": "hbr-507349",
-      "nameEn": "Yunxia Li (Yingxia) (SS 初期)",
-      "nameOriginal": "SS李映夏(初期)",
-      "styleOrTitle": "SS [我、勇ならざるは将なきに同じ] (Tier1)",
+      "nameEn": "Yunxia Li [Peerless General of Valor]",
+      "nameOriginal": "Yunxia Li",
+      "styleOrTitle": "SS [Peerless General of Valor] • Squad 31X Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
       "element": "None",
       "attackType": "Slash",
@@ -4396,41 +4396,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "連撃小x5と攻撃力アップ大をSP0以上で付与可能",
+          "name": "EX Skill: Peerless General of Valor",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "専用スキルはSP0以上で発動可能 3凸でスキル攻撃力アップ+25%"
+          "exactDescription": "Yunxia Li [Peerless General of Valor] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS李映夏(初期))",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "専用スキルはSP0以上で発動可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸でスキル攻撃力アップ+25%"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4441,19 +4441,19 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "連撃小x5と攻撃力アップ大をSP0以上で付与可能 — 専用スキルはSP0以上で発動可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/507349).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/507349"
+      "summaryVerdict": "Yunxia Li [Peerless General of Valor] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-507349"
     },
     {
-      "externalId": "game8-hbr-491017",
+      "externalId": "hbr-unit-491017",
       "slug": "hbr-491017",
-      "nameEn": "Kozue Hiiragi (SS 終劇)",
-      "nameOriginal": "SS柊木梢(終劇)",
-      "styleOrTitle": "SS [終劇のナイトフォール] (Tier1)",
+      "nameEn": "Kozue Hiiragi [Nightfall of the Finale]",
+      "nameOriginal": "Kozue Hiiragi",
+      "styleOrTitle": "SS [Nightfall of the Finale] • Squad 31B Debuffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Debuffer (Slash)",
+      "roleColumn": "SUB_DPS",
       "element": "Ice",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/7351817/e1adc03263b504b637eea4d699ab35fa.png/show",
@@ -4469,47 +4469,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 540,
         "critOrWit": 645,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": "専用スキルで敵に脆弱を付与できる",
+          "name": "EX Skill: Nightfall of the Finale",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Buffer / Admiral EX",
+          "multiplierSummary": "Ice Slash Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "Ice",
             "Slash",
-            "Buffer / Admiral"
+            "Debuffer"
           ],
-          "exactDescription": "SP4で敵単体に厄を付与可能 3凸で氷属性スキル攻撃力アップ"
+          "exactDescription": "Kozue Hiiragi [Nightfall of the Finale] is a SS-Tier Ice Debuffer (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (SS柊木梢(終劇))",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "SP4で敵単体に厄を付与可能"
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "3凸で氷属性スキル攻撃力アップ"
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4520,21 +4520,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "専用スキルで敵に脆弱を付与できる — SP4で敵単体に厄を付与可能",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/491017).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/491017"
+      "summaryVerdict": "Kozue Hiiragi [Nightfall of the Finale] is a SS-Tier Ice Debuffer (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-491017"
     },
     {
-      "externalId": "game8-hbr-832805",
+      "externalId": "hbr-unit-832805",
       "slug": "hbr-832805",
-      "nameEn": "禁忌のシンセサイズ",
-      "nameOriginal": "禁忌のシンセサイズ",
-      "styleOrTitle": "SS [禁忌のシンセサイズ] ( (Buffer))",
+      "nameEn": "Iroha Ishii [Forbidden Synthesis]",
+      "nameOriginal": "Iroha Ishii",
+      "styleOrTitle": "SS [Forbidden Synthesis] • Squad 31D Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/13102633/45ef6f365e08dbae29aeefe4d3e939d3.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -4548,47 +4548,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 538,
         "critOrWit": 642,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Forbidden Synthesis",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/832805). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Iroha Ishii [Forbidden Synthesis] is a A-Tier Dark Healer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (禁忌のシンセサイズ)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/832805)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4599,20 +4599,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/832805).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/832805).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/832805"
+      "summaryVerdict": "Iroha Ishii [Forbidden Synthesis] is a A-Tier Dark Healer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-832805"
     },
     {
-      "externalId": "game8-hbr-749659",
+      "externalId": "hbr-unit-749659",
       "slug": "hbr-749659",
-      "nameEn": "魔王に仕えし災禍の魔獣使い",
-      "nameOriginal": "魔王に仕えし災禍の魔獣使い",
-      "styleOrTitle": "SS [魔王に仕えし災禍の魔獣使い] ( (Buffer))",
+      "nameEn": "Adelheid Kanzaki [Calamity Beastmaster]",
+      "nameOriginal": "Adelheid Kanzaki",
+      "styleOrTitle": "SS [Calamity Beastmaster] • Squad 31C Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
-      "element": "None",
+      "element": "Dark",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/12093020/bbf80e15547a204453e3031f48072ddd.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -4633,41 +4633,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Calamity Beastmaster",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Dark",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/749659). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Adelheid Kanzaki [Calamity Beastmaster] is a A-Tier Dark Buffer (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (魔王に仕えし災禍の魔獣使い)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/749659)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4678,21 +4678,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/749659).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/749659).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/749659"
+      "summaryVerdict": "Adelheid Kanzaki [Calamity Beastmaster] is a A-Tier Dark Buffer (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-749659"
     },
     {
-      "externalId": "game8-hbr-746397",
+      "externalId": "hbr-unit-746397",
       "slug": "hbr-746397",
-      "nameEn": "霧煙る街の名探偵",
-      "nameOriginal": "霧煙る街の名探偵",
-      "styleOrTitle": "SS [霧煙る街の名探偵] ( (Buffer))",
+      "nameEn": "Irene Redmayne [Master Detective of the Misty City]",
+      "nameOriginal": "Irene Redmayne",
+      "styleOrTitle": "SS [Master Detective of the Misty City] • Squad 31X Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Blaster (Pierce)",
+      "roleColumn": "SUB_DPS",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12037256/c5f85e22e789c2542b0bc04ca4d31a6f.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -4706,47 +4706,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 534,
         "critOrWit": 636,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Master Detective of the Misty City",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Null Pierce Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/746397). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Irene Redmayne [Master Detective of the Misty City] is a A-Tier Non-Elemental Blaster (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (霧煙る街の名探偵)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/746397)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4757,20 +4757,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/746397).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/746397).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/746397"
+      "summaryVerdict": "Irene Redmayne [Master Detective of the Misty City] is a A-Tier Non-Elemental Blaster (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-746397"
     },
     {
-      "externalId": "game8-hbr-735062",
+      "externalId": "hbr-unit-735062",
       "slug": "hbr-735062",
-      "nameEn": "夜語りのひとしずく",
-      "nameOriginal": "夜語りのひとしずく",
-      "styleOrTitle": "SS [夜語りのひとしずく] ( (Buffer))",
+      "nameEn": "Isuzu Ohshima [A Drop of Night Tales]",
+      "nameOriginal": "Isuzu Ohshima",
+      "styleOrTitle": "SS [A Drop of Night Tales] • Squad 31E Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
-      "element": "None",
+      "element": "Dark",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/11932095/c5d3b3c2045e6889f7bdb3180a062577.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -4791,41 +4791,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: A Drop of Night Tales",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Dark",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/735062). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Isuzu Ohshima [A Drop of Night Tales] is a A-Tier Dark Buffer (Slash) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (夜語りのひとしずく)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/735062)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4836,21 +4836,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/735062).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/735062).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/735062"
+      "summaryVerdict": "Isuzu Ohshima [A Drop of Night Tales] is a A-Tier Dark Buffer (Slash) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-735062"
     },
     {
-      "externalId": "game8-hbr-700752",
+      "externalId": "hbr-unit-700752",
       "slug": "hbr-700752",
-      "nameEn": "サンセット・ユートピア",
-      "nameOriginal": "サンセット・ユートピア",
-      "styleOrTitle": "SS [サンセット・ユートピア] ( (Buffer))",
+      "nameEn": "Seika Higuchi [Sunset Utopia]",
+      "nameOriginal": "Seika Higuchi",
+      "styleOrTitle": "SS [Sunset Utopia] • Squad 31B Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11502982/274c9763fe2de3539d03207990a0927a.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -4870,41 +4870,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Sunset Utopia",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/700752). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Seika Higuchi [Sunset Utopia] is a A-Tier Fire Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (サンセット・ユートピア)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/700752)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4915,21 +4915,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/700752).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/700752).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/700752"
+      "summaryVerdict": "Seika Higuchi [Sunset Utopia] is a A-Tier Fire Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-700752"
     },
     {
-      "externalId": "game8-hbr-697860",
+      "externalId": "hbr-unit-697860",
       "slug": "hbr-697860",
-      "nameEn": "ハピネス・クロマ",
-      "nameOriginal": "ハピネス・クロマ",
-      "styleOrTitle": "SS [ハピネス・クロマ] ( (Buffer))",
+      "nameEn": "Iroha Ishii [Happiness Chroma]",
+      "nameOriginal": "Iroha Ishii",
+      "styleOrTitle": "SS [Happiness Chroma] • Squad 31D Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Thunder",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11462877/fc385067e053922ff96a29a121cc86af.jpeg/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -4949,41 +4949,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Happiness Chroma",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Thunder",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/697860). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Iroha Ishii [Happiness Chroma] is a A-Tier Thunder Buffer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ハピネス・クロマ)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/697860)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -4994,21 +4994,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/697860).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/697860).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/697860"
+      "summaryVerdict": "Iroha Ishii [Happiness Chroma] is a A-Tier Thunder Buffer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-697860"
     },
     {
-      "externalId": "game8-hbr-687800",
+      "externalId": "hbr-unit-687800",
       "slug": "hbr-687800",
-      "nameEn": "ゆるりたゆたう湯道楽",
-      "nameOriginal": "ゆるりたゆたう湯道楽",
-      "styleOrTitle": "SS [ゆるりたゆたう湯道楽] ( (Buffer))",
+      "nameEn": "Yotsuha Ohshima [Relaxing Hot Spring Bliss]",
+      "nameOriginal": "Yotsuha Ohshima",
+      "styleOrTitle": "SS [Relaxing Hot Spring Bliss] • Squad 31E Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11364781/b8e966948d32ff9eae62d6877aa70a4d.jpeg/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -5028,41 +5028,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Relaxing Hot Spring Bliss",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/687800). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yotsuha Ohshima [Relaxing Hot Spring Bliss] is a A-Tier Dark Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ゆるりたゆたう湯道楽)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/687800)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5073,21 +5073,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/687800).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/687800).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/687800"
+      "summaryVerdict": "Yotsuha Ohshima [Relaxing Hot Spring Bliss] is a A-Tier Dark Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-687800"
     },
     {
-      "externalId": "game8-hbr-667359",
+      "externalId": "hbr-unit-667359",
       "slug": "hbr-667359",
-      "nameEn": "エンジェルクライシス",
-      "nameOriginal": "エンジェルクライシス",
-      "styleOrTitle": "SS [エンジェルクライシス] ( (Buffer))",
+      "nameEn": "Nanami Nanase [Angel Crisis]",
+      "nameOriginal": "Nanami Nanase",
+      "styleOrTitle": "SS [Angel Crisis] • Command HQ Rider",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Rider (Pierce)",
+      "roleColumn": "DPS",
+      "element": "Thunder",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11592504/4564a4a23da648fccb513c16b237150a.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": "2025-11-15",
@@ -5100,48 +5100,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 631,
         "defOrGuts": 524,
         "critOrWit": 621,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Angel Crisis",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Pierce Rider EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Thunder",
+            "Pierce",
+            "Rider"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/667359). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Nanami Nanase [Angel Crisis] is a A-Tier Thunder Rider (Pierce) from Command HQ. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (エンジェルクライシス)",
+          "name": "Seraph Tactical Art: Rider",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Rider Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Rider",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/667359)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5152,20 +5152,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/667359).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/667359).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/667359"
+      "summaryVerdict": "Nanami Nanase [Angel Crisis] is a A-Tier Thunder Rider (Pierce) from Command HQ. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-667359"
     },
     {
-      "externalId": "game8-hbr-667354",
+      "externalId": "hbr-unit-667354",
       "slug": "hbr-667354",
-      "nameEn": "黄昏に咲くスピカ",
-      "nameOriginal": "黄昏に咲くスピカ",
-      "styleOrTitle": "SS [黄昏に咲くスピカ] ( (Buffer))",
+      "nameEn": "Yuina Shirakawa [Spica Blooming at Dusk]",
+      "nameOriginal": "Yuina Shirakawa",
+      "styleOrTitle": "SS [Spica Blooming at Dusk] • Squad 30G Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Blaster (Slash)",
+      "roleColumn": "SUB_DPS",
+      "element": "Light",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/11605631/b448ff496f9749934bee0589267404b3.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -5180,47 +5180,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 522,
         "critOrWit": 618,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Spica Blooming at Dusk",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Light Slash Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
-            "None",
+            "Light",
             "Slash",
-            "Buffer / Admiral"
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/667354). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yuina Shirakawa [Spica Blooming at Dusk] is a A-Tier Light Blaster (Slash) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (黄昏に咲くスピカ)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/667354)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5231,21 +5231,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/667354).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/667354).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/667354"
+      "summaryVerdict": "Yuina Shirakawa [Spica Blooming at Dusk] is a A-Tier Light Blaster (Slash) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-667354"
     },
     {
-      "externalId": "game8-hbr-663244",
+      "externalId": "hbr-unit-663244",
       "slug": "hbr-663244",
-      "nameEn": "今宵、花明かりの下で",
-      "nameOriginal": "今宵、花明かりの下で",
-      "styleOrTitle": "SS [今宵、花明かりの下で] ( (Buffer))",
+      "nameEn": "Risa Murofushi [Tonight, Beneath the Flowerlight]",
+      "nameOriginal": "Risa Murofushi",
+      "styleOrTitle": "SS [Tonight, Beneath the Flowerlight] • Squad 31D Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10934946/b95ca40aeb67003f3aa50b10b6fdc9dd.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -5259,47 +5259,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 520,
         "critOrWit": 615,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Tonight, Beneath the Flowerlight",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/663244). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Risa Murofushi [Tonight, Beneath the Flowerlight] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (今宵、花明かりの下で)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/663244)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5310,20 +5310,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/663244).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/663244).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/663244"
+      "summaryVerdict": "Risa Murofushi [Tonight, Beneath the Flowerlight] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-663244"
     },
     {
-      "externalId": "game8-hbr-656747",
+      "externalId": "hbr-unit-656747",
       "slug": "hbr-656747",
-      "nameEn": "再耀のカンタービレ",
-      "nameOriginal": "再耀のカンタービレ",
-      "styleOrTitle": "SS [再耀のカンタービレ] ( (Buffer))",
+      "nameEn": "Shiki Hanamura [Resplendent Cantabile]",
+      "nameOriginal": "Shiki Hanamura",
+      "styleOrTitle": "SS [Resplendent Cantabile] • Squad 31F Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
-      "element": "None",
+      "element": "Light",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10787893/dde22100574d80066fc83c0f002542b1.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -5344,41 +5344,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Resplendent Cantabile",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Light",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/656747). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Shiki Hanamura [Resplendent Cantabile] is a A-Tier Light Buffer (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (再耀のカンタービレ)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/656747)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5389,21 +5389,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/656747).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/656747).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/656747"
+      "summaryVerdict": "Shiki Hanamura [Resplendent Cantabile] is a A-Tier Light Buffer (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-656747"
     },
     {
-      "externalId": "game8-hbr-654826",
+      "externalId": "hbr-unit-654826",
       "slug": "hbr-654826",
-      "nameEn": "センシティビティ・オーバーフロー",
-      "nameOriginal": "センシティビティ・オーバーフロー",
-      "styleOrTitle": "SS [センシティビティ・オーバーフロー] ( (Buffer))",
+      "nameEn": "Iroha Ishii [Sensitivity Overflow]",
+      "nameOriginal": "Iroha Ishii",
+      "styleOrTitle": "SS [Sensitivity Overflow] • Squad 31D Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10748535/238fd38a170f23e311b8aa72b425202b.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -5423,41 +5423,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Sensitivity Overflow",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/654826). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Iroha Ishii [Sensitivity Overflow] is a A-Tier Fire Buffer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (センシティビティ・オーバーフロー)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/654826)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5468,21 +5468,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/654826).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/654826).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/654826"
+      "summaryVerdict": "Iroha Ishii [Sensitivity Overflow] is a A-Tier Fire Buffer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-654826"
     },
     {
-      "externalId": "game8-hbr-652687",
+      "externalId": "hbr-unit-652687",
       "slug": "hbr-652687",
-      "nameEn": "暁のカタルシス",
-      "nameOriginal": "暁のカタルシス",
-      "styleOrTitle": "SS [暁のカタルシス] ( (Buffer))",
+      "nameEn": "Seika Higuchi [Catharsis of Dawn]",
+      "nameOriginal": "Seika Higuchi",
+      "styleOrTitle": "SS [Catharsis of Dawn] • Squad 31B Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10699306/b8cbe2c7e38f9cea114db85081dfeec8.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -5496,47 +5496,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 514,
         "critOrWit": 606,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Catharsis of Dawn",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/652687). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Seika Higuchi [Catharsis of Dawn] is a A-Tier Dark Healer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (暁のカタルシス)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/652687)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5547,20 +5547,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/652687).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/652687).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/652687"
+      "summaryVerdict": "Seika Higuchi [Catharsis of Dawn] is a A-Tier Dark Healer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-652687"
     },
     {
-      "externalId": "game8-hbr-642066",
+      "externalId": "hbr-unit-642066",
       "slug": "hbr-642066",
-      "nameEn": "Carnival with You",
-      "nameOriginal": "Carnival with You",
-      "styleOrTitle": "SS [Carnival with You] ( (Buffer))",
+      "nameEn": "Carol Reaper [Carnival with You]",
+      "nameOriginal": "Carol Reaper",
+      "styleOrTitle": "SS [Carnival with You] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Healer (Slash)",
+      "roleColumn": "SUSTAIN",
+      "element": "Fire",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10590857/22b8c03ab455e1691d84d1d138fddc12.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -5575,47 +5575,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 512,
         "critOrWit": 603,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Carnival with You",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Slash Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Fire",
             "Slash",
-            "Buffer / Admiral"
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/642066). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Carol Reaper [Carnival with You] is a A-Tier Fire Healer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (Carnival with You)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/642066)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5626,20 +5626,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/642066).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/642066).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/642066"
+      "summaryVerdict": "Carol Reaper [Carnival with You] is a A-Tier Fire Healer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-642066"
     },
     {
-      "externalId": "game8-hbr-640069",
+      "externalId": "hbr-unit-640069",
       "slug": "hbr-640069",
-      "nameEn": "Magic of Smile",
-      "nameOriginal": "Magic of Smile",
-      "styleOrTitle": "SS [Magic of Smile] ( (Buffer))",
+      "nameEn": "Isuzu Ohshima [Magic of Smile]",
+      "nameOriginal": "Isuzu Ohshima",
+      "styleOrTitle": "SS [Magic of Smile] • Squad 31E Debuffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Debuffer (Slash)",
+      "roleColumn": "SUB_DPS",
+      "element": "Light",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10552340/e5920a312cf88ff5662a4738e5124d3f.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -5654,47 +5654,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 510,
         "critOrWit": 600,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Magic of Smile",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Slash Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Light",
             "Slash",
-            "Buffer / Admiral"
+            "Debuffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/640069). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Isuzu Ohshima [Magic of Smile] is a A-Tier Light Debuffer (Slash) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (Magic of Smile)",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/640069)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5705,21 +5705,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/640069).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/640069).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/640069"
+      "summaryVerdict": "Isuzu Ohshima [Magic of Smile] is a A-Tier Light Debuffer (Slash) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-640069"
     },
     {
-      "externalId": "game8-hbr-606152",
+      "externalId": "hbr-unit-606152",
       "slug": "hbr-606152",
-      "nameEn": "ロリータ・ストイック",
-      "nameOriginal": "ロリータ・ストイック",
-      "styleOrTitle": "SS [ロリータ・ストイック] ( (Buffer))",
+      "nameEn": "Chie Sugawara [Lolita Stoic]",
+      "nameOriginal": "Chie Sugawara",
+      "styleOrTitle": "SS [Lolita Stoic] • Squad 30G Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Crush)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Ice",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10307617/970e3b5ea5f4810f365bfbf5cef5dca7.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -5739,41 +5739,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Lolita Stoic",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Ice Crush Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Ice",
+            "Crush",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/606152). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Chie Sugawara [Lolita Stoic] is a A-Tier Ice Buffer (Crush) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ロリータ・ストイック)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/606152)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5784,18 +5784,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/606152).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/606152).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/606152"
+      "summaryVerdict": "Chie Sugawara [Lolita Stoic] is a A-Tier Ice Buffer (Crush) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-606152"
     },
     {
-      "externalId": "game8-hbr-600349",
+      "externalId": "hbr-unit-600349",
       "slug": "hbr-600349",
-      "nameEn": "ホップ・ステップ・スリップ！",
-      "nameOriginal": "ホップ・ステップ・スリップ！",
-      "styleOrTitle": "SS [ホップ・ステップ・スリップ！] ( (Buffer))",
+      "nameEn": "Kozue Hiiragi [Hop, Step, Slip!]",
+      "nameOriginal": "Kozue Hiiragi",
+      "styleOrTitle": "SS [Hop, Step, Slip!] • Squad 31B Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
       "element": "None",
       "attackType": "Slash",
@@ -5818,41 +5818,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Hop, Step, Slip!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/600349). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Kozue Hiiragi [Hop, Step, Slip!] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ホップ・ステップ・スリップ！)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/600349)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5863,18 +5863,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/600349).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/600349).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/600349"
+      "summaryVerdict": "Kozue Hiiragi [Hop, Step, Slip!] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-600349"
     },
     {
-      "externalId": "game8-hbr-582607",
+      "externalId": "hbr-unit-582607",
       "slug": "hbr-582607",
-      "nameEn": "トワイライト・メモリーズ",
-      "nameOriginal": "トワイライト・メモリーズ",
-      "styleOrTitle": "SS [トワイライト・メモリーズ] ( (Buffer))",
+      "nameEn": "Tama Kunimi [Twilight Memories]",
+      "nameOriginal": "Tama Kunimi",
+      "styleOrTitle": "SS [Twilight Memories] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
       "element": "None",
       "attackType": "Slash",
@@ -5897,41 +5897,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Twilight Memories",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/582607). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Tama Kunimi [Twilight Memories] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (トワイライト・メモリーズ)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/582607)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -5942,20 +5942,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/582607).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/582607).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/582607"
+      "summaryVerdict": "Tama Kunimi [Twilight Memories] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-582607"
     },
     {
-      "externalId": "game8-hbr-563544",
+      "externalId": "hbr-unit-563544",
       "slug": "hbr-563544",
-      "nameEn": "いざなうつゆくさ",
-      "nameOriginal": "いざなうつゆくさ",
-      "styleOrTitle": "SS [いざなうつゆくさ] ( (Buffer))",
+      "nameEn": "Yunxia Li [Beckoning Dayflower]",
+      "nameOriginal": "Yunxia Li",
+      "styleOrTitle": "SS [Beckoning Dayflower] • Squad 31X Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
-      "element": "None",
+      "element": "Thunder",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10172298/fd4b1e9e1786e24262983acc1140ee08.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -5976,41 +5976,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Beckoning Dayflower",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Thunder",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/563544). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yunxia Li [Beckoning Dayflower] is a A-Tier Thunder Buffer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (いざなうつゆくさ)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/563544)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6021,21 +6021,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/563544).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/563544).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/563544"
+      "summaryVerdict": "Yunxia Li [Beckoning Dayflower] is a A-Tier Thunder Buffer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-563544"
     },
     {
-      "externalId": "game8-hbr-544799",
+      "externalId": "hbr-unit-544799",
       "slug": "hbr-544799",
-      "nameEn": "シークレットサービス・サイレンス",
-      "nameOriginal": "シークレットサービス・サイレンス",
-      "styleOrTitle": "SS [シークレットサービス・サイレンス] ( (Buffer))",
+      "nameEn": "Tsukasa Tojo [Secret Service: Silence]",
+      "nameOriginal": "Tsukasa Tojo",
+      "styleOrTitle": "SS [Secret Service: Silence] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Light",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10204127/4e8cf4c60cdd0194e8507c69dea49865.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6055,41 +6055,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Secret Service: Silence",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Light",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/544799). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Tsukasa Tojo [Secret Service: Silence] is a A-Tier Light Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (シークレットサービス・サイレンス)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/544799)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6100,21 +6100,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/544799).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/544799).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/544799"
+      "summaryVerdict": "Tsukasa Tojo [Secret Service: Silence] is a A-Tier Light Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-544799"
     },
     {
-      "externalId": "game8-hbr-525186",
+      "externalId": "hbr-unit-525186",
       "slug": "hbr-525186",
-      "nameEn": "心、躍るFuel",
-      "nameOriginal": "心、躍るFuel",
-      "styleOrTitle": "SS [心、躍るFuel] ( (Buffer))",
+      "nameEn": "Megumi Aikawa [Heart-Racing Fuel]",
+      "nameOriginal": "Megumi Aikawa",
+      "styleOrTitle": "SS [Heart-Racing Fuel] • Squad 31A Debuffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Debuffer (Crush)",
+      "roleColumn": "SUB_DPS",
+      "element": "Fire",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10227632/1e43fce06c75492444d0d4d4a6eb5bd1.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6128,47 +6128,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 498,
         "critOrWit": 582,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Heart-Racing Fuel",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Crush Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Crush",
+            "Debuffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/525186). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Megumi Aikawa [Heart-Racing Fuel] is a A-Tier Fire Debuffer (Crush) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (心、躍るFuel)",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/525186)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6179,21 +6179,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/525186).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/525186).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/525186"
+      "summaryVerdict": "Megumi Aikawa [Heart-Racing Fuel] is a A-Tier Fire Debuffer (Crush) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-525186"
     },
     {
-      "externalId": "game8-hbr-521565",
+      "externalId": "hbr-unit-521565",
       "slug": "hbr-521565",
-      "nameEn": "アサシン忍法大繁盛",
-      "nameOriginal": "アサシン忍法大繁盛",
-      "styleOrTitle": "SS [アサシン忍法大繁盛] ( (Buffer))",
+      "nameEn": "Mari Satsuki [Shinobi Arts Prosperity]",
+      "nameOriginal": "Mari Satsuki",
+      "styleOrTitle": "SS [Shinobi Arts Prosperity] • Squad 31C Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10125232/e4ce712dbcf3d7d930f40aa70720de99.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6213,41 +6213,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Shinobi Arts Prosperity",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/521565). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Mari Satsuki [Shinobi Arts Prosperity] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (アサシン忍法大繁盛)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/521565)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6258,21 +6258,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/521565).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/521565).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/521565"
+      "summaryVerdict": "Mari Satsuki [Shinobi Arts Prosperity] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-521565"
     },
     {
-      "externalId": "game8-hbr-517816",
+      "externalId": "hbr-unit-517816",
       "slug": "hbr-517816",
-      "nameEn": "破られたアンニュイ",
-      "nameOriginal": "破られたアンニュイ",
-      "styleOrTitle": "SS [破られたアンニュイ] ( (Buffer))",
+      "nameEn": "Yotsuha Ohshima [Shattered Ennui]",
+      "nameOriginal": "Yotsuha Ohshima",
+      "styleOrTitle": "SS [Shattered Ennui] • Squad 31E Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10222012/c1362a50b8cad6951e8a3fff4094dc8f.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6292,41 +6292,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Shattered Ennui",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/517816). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yotsuha Ohshima [Shattered Ennui] is a A-Tier Fire Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (破られたアンニュイ)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/517816)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6337,21 +6337,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/517816).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/517816).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/517816"
+      "summaryVerdict": "Yotsuha Ohshima [Shattered Ennui] is a A-Tier Fire Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-517816"
     },
     {
-      "externalId": "game8-hbr-517815",
+      "externalId": "hbr-unit-517815",
       "slug": "hbr-517815",
-      "nameEn": "ピンチで最高",
-      "nameOriginal": "ピンチで最高",
-      "styleOrTitle": "SS [ピンチで最高] ( (Buffer))",
+      "nameEn": "Muua Ohshima [Best in a Pinch]",
+      "nameOriginal": "Muua Ohshima",
+      "styleOrTitle": "SS [Best in a Pinch] • Squad 31E Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10100743/1d9c28a69f2f1d42e4d2ddb487ac6c59.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6365,47 +6365,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 492,
         "critOrWit": 573,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Best in a Pinch",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/517815). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Muua Ohshima [Best in a Pinch] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ピンチで最高)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/517815)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6416,21 +6416,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/517815).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/517815).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/517815"
+      "summaryVerdict": "Muua Ohshima [Best in a Pinch] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-517815"
     },
     {
-      "externalId": "game8-hbr-487220",
+      "externalId": "hbr-unit-487220",
       "slug": "hbr-487220",
-      "nameEn": "撃砕の無彩色",
-      "nameOriginal": "撃砕の無彩色",
-      "styleOrTitle": "SS [撃砕の無彩色] ( (Buffer))",
+      "nameEn": "Iroha Ishii [Shattering Monochrome]",
+      "nameOriginal": "Iroha Ishii",
+      "styleOrTitle": "SS [Shattering Monochrome] • Squad 31D Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11679237/d5e2106633f5459f3d93bf4e8bc74750.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6450,41 +6450,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Shattering Monochrome",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/487220). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Iroha Ishii [Shattering Monochrome] is a A-Tier Dark Buffer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (撃砕の無彩色)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/487220)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6495,21 +6495,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/487220).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/487220).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/487220"
+      "summaryVerdict": "Iroha Ishii [Shattering Monochrome] is a A-Tier Dark Buffer (Pierce) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-487220"
     },
     {
-      "externalId": "game8-hbr-813761",
+      "externalId": "hbr-unit-813761",
       "slug": "hbr-813761",
-      "nameEn": "スイム・オールアウト",
-      "nameOriginal": "スイム・オールアウト",
-      "styleOrTitle": "SS [スイム・オールアウト] ( (Buffer))",
+      "nameEn": "Muua Ohshima [Swim All-Out]",
+      "nameOriginal": "Muua Ohshima",
+      "styleOrTitle": "SS [Swim All-Out] • Squad 31E Defender",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Defender (Pierce)",
+      "roleColumn": "SUSTAIN",
+      "element": "Light",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12941242/1123c0b0fc8c3144d0891c1d3a52d1f6.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6523,47 +6523,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 488,
         "critOrWit": 567,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Swim All-Out",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Pierce Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Light",
+            "Pierce",
+            "Defender"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/813761). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Muua Ohshima [Swim All-Out] is a A-Tier Light Defender (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (スイム・オールアウト)",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/813761)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6574,20 +6574,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/813761).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/813761).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/813761"
+      "summaryVerdict": "Muua Ohshima [Swim All-Out] is a A-Tier Light Defender (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-813761"
     },
     {
-      "externalId": "game8-hbr-724680",
+      "externalId": "hbr-unit-724680",
       "slug": "hbr-724680",
-      "nameEn": "白熱！勝利を呼ぶ一球入魂！",
-      "nameOriginal": "白熱！勝利を呼ぶ一球入魂！",
-      "styleOrTitle": "SS [白熱！勝利を呼ぶ一球入魂！] ( (Buffer))",
+      "nameEn": "Ruka Kayamori [White-Hot! Victory Pitch!]",
+      "nameOriginal": "Ruka Kayamori",
+      "styleOrTitle": "SS [White-Hot! Victory Pitch!] • Squad 31A Attacker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Attacker (Slash)",
+      "roleColumn": "DPS",
+      "element": "Light",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/11827667/ba0efffe7e1cfc61ff5491299b669821.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -6601,48 +6601,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 574,
         "defOrGuts": 486,
         "critOrWit": 564,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: White-Hot! Victory Pitch!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Slash Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Light",
             "Slash",
-            "Buffer / Admiral"
+            "Attacker"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/724680). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Ruka Kayamori [White-Hot! Victory Pitch!] is a A-Tier Light Attacker (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (白熱！勝利を呼ぶ一球入魂！)",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/724680)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6653,21 +6653,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/724680).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/724680).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/724680"
+      "summaryVerdict": "Ruka Kayamori [White-Hot! Victory Pitch!] is a A-Tier Light Attacker (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-724680"
     },
     {
-      "externalId": "game8-hbr-708962",
+      "externalId": "hbr-unit-708962",
       "slug": "hbr-708962",
-      "nameEn": "汐風に誘われて",
-      "nameOriginal": "汐風に誘われて",
-      "styleOrTitle": "SS [汐風に誘われて] ( (Buffer))",
+      "nameEn": "Miya Kiryu [Lured by the Sea Breeze]",
+      "nameOriginal": "Miya Kiryu",
+      "styleOrTitle": "SS [Lured by the Sea Breeze] • Squad 30G Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Blaster (Pierce)",
+      "roleColumn": "SUB_DPS",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11626529/bbbd734b991846825281d8382aeadd08.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6681,47 +6681,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 484,
         "critOrWit": 561,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Lured by the Sea Breeze",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Fire Pierce Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/708962). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Miya Kiryu [Lured by the Sea Breeze] is a A-Tier Fire Blaster (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (汐風に誘われて)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/708962)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6732,21 +6732,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/708962).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/708962).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/708962"
+      "summaryVerdict": "Miya Kiryu [Lured by the Sea Breeze] is a A-Tier Fire Blaster (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-708962"
     },
     {
-      "externalId": "game8-hbr-705732",
+      "externalId": "hbr-unit-705732",
       "slug": "hbr-705732",
-      "nameEn": "さざなみ・フィールグッド",
-      "nameOriginal": "さざなみ・フィールグッド",
-      "styleOrTitle": "SS [さざなみ・フィールグッド] ( (Buffer))",
+      "nameEn": "Muua Ohshima [Rippling Feel-Good]",
+      "nameOriginal": "Muua Ohshima",
+      "styleOrTitle": "SS [Rippling Feel-Good] • Squad 31E Defender",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Defender (Pierce)",
+      "roleColumn": "SUSTAIN",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11550568/56e046920d1d8106a5afdbc68bbd1e32.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6760,47 +6760,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 482,
         "critOrWit": 558,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Rippling Feel-Good",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Defender"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/705732). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Muua Ohshima [Rippling Feel-Good] is a A-Tier Non-Elemental Defender (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (さざなみ・フィールグッド)",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/705732)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6811,21 +6811,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/705732).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/705732).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/705732"
+      "summaryVerdict": "Muua Ohshima [Rippling Feel-Good] is a A-Tier Non-Elemental Defender (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-705732"
     },
     {
-      "externalId": "game8-hbr-692832",
+      "externalId": "hbr-unit-692832",
       "slug": "hbr-692832",
-      "nameEn": "悪を討つヒロイックアクション",
-      "nameOriginal": "悪を討つヒロイックアクション",
-      "styleOrTitle": "SS [悪を討つヒロイックアクション] ( (Buffer))",
+      "nameEn": "Chiroru Matsuoka [Heroic Action Against Evil]",
+      "nameOriginal": "Chiroru Matsuoka",
+      "styleOrTitle": "SS [Heroic Action Against Evil] • Squad 31F Defender",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Defender (Crush)",
+      "roleColumn": "SUSTAIN",
+      "element": "Thunder",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11405770/6b1633eac7ead4f29092777b46ddddc0.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6839,47 +6839,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 480,
         "critOrWit": 555,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Heroic Action Against Evil",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Crush Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Thunder",
+            "Crush",
+            "Defender"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/692832). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Chiroru Matsuoka [Heroic Action Against Evil] is a A-Tier Thunder Defender (Crush) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (悪を討つヒロイックアクション)",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/692832)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6890,21 +6890,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/692832).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/692832).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/692832"
+      "summaryVerdict": "Chiroru Matsuoka [Heroic Action Against Evil] is a A-Tier Thunder Defender (Crush) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-692832"
     },
     {
-      "externalId": "game8-hbr-680864",
+      "externalId": "hbr-unit-680864",
       "slug": "hbr-680864",
-      "nameEn": "謳うそよ風の向かう先",
-      "nameOriginal": "謳うそよ風の向かう先",
-      "styleOrTitle": "SS [謳うそよ風の向かう先] ( (Buffer))",
+      "nameEn": "Irene Redmayne [Where the Singing Breeze Leads]",
+      "nameOriginal": "Irene Redmayne",
+      "styleOrTitle": "SS [Where the Singing Breeze Leads] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11222782/5ffce608e8ee42871585104d5d560b2a.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -6918,47 +6918,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 478,
         "critOrWit": 552,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Where the Singing Breeze Leads",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/680864). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Irene Redmayne [Where the Singing Breeze Leads] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (謳うそよ風の向かう先)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/680864)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -6969,20 +6969,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/680864).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/680864).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/680864"
+      "summaryVerdict": "Irene Redmayne [Where the Singing Breeze Leads] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-680864"
     },
     {
-      "externalId": "game8-hbr-659767",
+      "externalId": "hbr-unit-659767",
       "slug": "hbr-659767",
-      "nameEn": "Stir Soul Song",
-      "nameOriginal": "Stir Soul Song",
-      "styleOrTitle": "SS [Stir Soul Song] ( (Buffer))",
+      "nameEn": "Yui Yoshioka [Stir Soul Song]",
+      "nameOriginal": "Yui Yoshioka",
+      "styleOrTitle": "SS [Stir Soul Song] • Squad 31AB Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
-      "element": "None",
+      "element": "Ice",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/13053962/7d3b23c0aff503e5cb90bec85ee4bef7.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -7003,41 +7003,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Stir Soul Song",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Ice Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Ice",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/659767). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yui Yoshioka [Stir Soul Song] is a A-Tier Ice Buffer (Slash) from Squad 31AB. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (Stir Soul Song)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/659767)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7048,21 +7048,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/659767).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/659767).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/659767"
+      "summaryVerdict": "Yui Yoshioka [Stir Soul Song] is a A-Tier Ice Buffer (Slash) from Squad 31AB. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-659767"
     },
     {
-      "externalId": "game8-hbr-640070",
+      "externalId": "hbr-unit-640070",
       "slug": "hbr-640070",
-      "nameEn": "満艦飾の花乙女",
-      "nameOriginal": "満艦飾の花乙女",
-      "styleOrTitle": "SS [満艦飾の花乙女] ( (Buffer))",
+      "nameEn": "Minori Ohshima [Full-Dress Flower Maiden]",
+      "nameOriginal": "Minori Ohshima",
+      "styleOrTitle": "SS [Full-Dress Flower Maiden] • Squad 31E Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Crush)",
       "roleColumn": "SUPPORT",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10552341/655a63d6b2915a664b4b14f49a4bcb7f.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7082,41 +7082,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Full-Dress Flower Maiden",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Crush Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Crush",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/640070). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Minori Ohshima [Full-Dress Flower Maiden] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (満艦飾の花乙女)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/640070)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7127,20 +7127,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/640070).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/640070).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/640070"
+      "summaryVerdict": "Minori Ohshima [Full-Dress Flower Maiden] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-640070"
     },
     {
-      "externalId": "game8-hbr-628231",
+      "externalId": "hbr-unit-628231",
       "slug": "hbr-628231",
-      "nameEn": "盛夏のシャーク・ザ・リッパー",
-      "nameOriginal": "盛夏のシャーク・ザ・リッパー",
-      "styleOrTitle": "SS [盛夏のシャーク・ザ・リッパー] ( (Buffer))",
+      "nameEn": "Karen Asakura [Midsummer Shark the Ripper]",
+      "nameOriginal": "Karen Asakura",
+      "styleOrTitle": "SS [Midsummer Shark the Ripper] • Squad 31A Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Blaster (Slash)",
+      "roleColumn": "SUB_DPS",
+      "element": "Dark",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10272969/326bfc0e92a98f1ec9fb4219a9a039ff.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -7155,47 +7155,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 472,
         "critOrWit": 543,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Midsummer Shark the Ripper",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Dark Slash Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
-            "None",
+            "Dark",
             "Slash",
-            "Buffer / Admiral"
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/628231). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Karen Asakura [Midsummer Shark the Ripper] is a A-Tier Dark Blaster (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (盛夏のシャーク・ザ・リッパー)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/628231)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7206,20 +7206,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/628231).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/628231).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/628231"
+      "summaryVerdict": "Karen Asakura [Midsummer Shark the Ripper] is a A-Tier Dark Blaster (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-628231"
     },
     {
-      "externalId": "game8-hbr-622825",
+      "externalId": "hbr-unit-622825",
       "slug": "hbr-622825",
-      "nameEn": "向日葵",
-      "nameOriginal": "向日葵",
-      "styleOrTitle": "SS [向日葵] ( (Buffer))",
+      "nameEn": "Adelheid Kanzaki [Sunflowers in Bloom]",
+      "nameOriginal": "Adelheid Kanzaki",
+      "styleOrTitle": "SS [Sunflowers in Bloom] • Squad 31C Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Blaster (Slash)",
+      "roleColumn": "SUB_DPS",
+      "element": "Fire",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10209990/770ced45750b48c1d60641affb9aba40.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -7234,47 +7234,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 470,
         "critOrWit": 540,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Sunflowers in Bloom",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Fire Slash Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
-            "None",
+            "Fire",
             "Slash",
-            "Buffer / Admiral"
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/622825). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Adelheid Kanzaki [Sunflowers in Bloom] is a A-Tier Fire Blaster (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (向日葵)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/622825)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7285,21 +7285,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/622825).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/622825).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/622825"
+      "summaryVerdict": "Adelheid Kanzaki [Sunflowers in Bloom] is a A-Tier Fire Blaster (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-622825"
     },
     {
-      "externalId": "game8-hbr-594734",
+      "externalId": "hbr-unit-594734",
       "slug": "hbr-594734",
-      "nameEn": "君を待つ紅玉",
-      "nameOriginal": "君を待つ紅玉",
-      "styleOrTitle": "SS [君を待つ紅玉] ( (Buffer))",
+      "nameEn": "Yuki Izumi [Ruby Awaiting You]",
+      "nameOriginal": "Yuki Izumi",
+      "styleOrTitle": "SS [Ruby Awaiting You] • Squad 31A Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Breaker (Pierce)",
+      "roleColumn": "DPS",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10116717/2492c3682b0893eb3b50741a1f96f648.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7312,48 +7312,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 547,
         "defOrGuts": 468,
         "critOrWit": 537,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Ruby Awaiting You",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Breaker"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/594734). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yuki Izumi [Ruby Awaiting You] is a A-Tier Dark Breaker (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (君を待つ紅玉)",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/594734)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7364,21 +7364,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/594734).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/594734).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/594734"
+      "summaryVerdict": "Yuki Izumi [Ruby Awaiting You] is a A-Tier Dark Breaker (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-594734"
     },
     {
-      "externalId": "game8-hbr-585689",
+      "externalId": "hbr-unit-585689",
       "slug": "hbr-585689",
-      "nameEn": "ぐうたらパジャマナイト",
-      "nameOriginal": "ぐうたらパジャマナイト",
-      "styleOrTitle": "SS [ぐうたらパジャマナイト] ( (Buffer))",
+      "nameEn": "Yotsuha Ohshima [Lazy Pajama Night]",
+      "nameOriginal": "Yotsuha Ohshima",
+      "styleOrTitle": "SS [Lazy Pajama Night] • Squad 31E Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Light",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10227179/7d5d39c7bd6a6b133419a6b4fa36d960.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7398,41 +7398,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Lazy Pajama Night",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Light",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/585689). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yotsuha Ohshima [Lazy Pajama Night] is a A-Tier Light Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ぐうたらパジャマナイト)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/585689)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7443,21 +7443,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/585689).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/585689).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/585689"
+      "summaryVerdict": "Yotsuha Ohshima [Lazy Pajama Night] is a A-Tier Light Buffer (Pierce) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-585689"
     },
     {
-      "externalId": "game8-hbr-491018",
+      "externalId": "hbr-unit-491018",
       "slug": "hbr-491018",
-      "nameEn": "宙の探究、星の眩耀",
-      "nameOriginal": "宙の探究、星の眩耀",
-      "styleOrTitle": "SS [宙の探究、星の眩耀] ( (Buffer))",
+      "nameEn": "Seika Higuchi [Cosmic Inquiry, Starry Radiance]",
+      "nameOriginal": "Seika Higuchi",
+      "styleOrTitle": "SS [Cosmic Inquiry, Starry Radiance] • Squad 31B Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10125231/b2851325e5c71194fadd8f6e7cd7cd54.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7477,41 +7477,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Cosmic Inquiry, Starry Radiance",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/491018). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Seika Higuchi [Cosmic Inquiry, Starry Radiance] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (宙の探究、星の眩耀)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/491018)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7522,21 +7522,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/491018).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/491018).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/491018"
+      "summaryVerdict": "Seika Higuchi [Cosmic Inquiry, Starry Radiance] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-491018"
     },
     {
-      "externalId": "game8-hbr-484626",
+      "externalId": "hbr-unit-484626",
       "slug": "hbr-484626",
-      "nameEn": "星林遣らずの雨",
-      "nameOriginal": "星林遣らずの雨",
-      "styleOrTitle": "SS [星林遣らずの雨] ( (Buffer))",
+      "nameEn": "Miya Kiryu [Lingering Rain in the Starry Woods]",
+      "nameOriginal": "Miya Kiryu",
+      "styleOrTitle": "SS [Lingering Rain in the Starry Woods] • Squad 30G Debuffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Debuffer (Pierce)",
+      "roleColumn": "SUB_DPS",
+      "element": "Light",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10396552/174681e7a02ca9314d148ecbc808dbb0.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7550,47 +7550,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 462,
         "critOrWit": 528,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Lingering Rain in the Starry Woods",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Pierce Debuffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Light",
+            "Pierce",
+            "Debuffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/484626). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Miya Kiryu [Lingering Rain in the Starry Woods] is a A-Tier Light Debuffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (星林遣らずの雨)",
+          "name": "Seraph Tactical Art: Debuffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Debuffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/484626)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7601,21 +7601,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/484626).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/484626).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/484626"
+      "summaryVerdict": "Miya Kiryu [Lingering Rain in the Starry Woods] is a A-Tier Light Debuffer (Pierce) from Squad 30G. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-484626"
     },
     {
-      "externalId": "game8-hbr-469574",
+      "externalId": "hbr-unit-469574",
       "slug": "hbr-469574",
-      "nameEn": "真夏のPrayer",
-      "nameOriginal": "真夏のPrayer",
-      "styleOrTitle": "SS [真夏のPrayer] ( (Buffer))",
+      "nameEn": "Tsukasa Tojo [Midsummer Prayer]",
+      "nameOriginal": "Tsukasa Tojo",
+      "styleOrTitle": "SS [Midsummer Prayer] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10274244/25f13aae11dc791908512642e7d3d027.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7635,41 +7635,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Midsummer Prayer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/469574). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Tsukasa Tojo [Midsummer Prayer] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (真夏のPrayer)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/469574)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7680,21 +7680,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/469574).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/469574).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/469574"
+      "summaryVerdict": "Tsukasa Tojo [Midsummer Prayer] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-469574"
     },
     {
-      "externalId": "game8-hbr-438518",
+      "externalId": "hbr-unit-438518",
       "slug": "hbr-438518",
-      "nameEn": "甘美のMuzzle",
-      "nameOriginal": "甘美のMuzzle",
-      "styleOrTitle": "SS [甘美のMuzzle] ( (Buffer))",
+      "nameEn": "Mari Satsuki [Sweet Muzzle]",
+      "nameOriginal": "Mari Satsuki",
+      "styleOrTitle": "SS [Sweet Muzzle] • Squad 31C Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Ice",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10414634/7647342a354129cf59dab0bbb84bcf88.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7714,41 +7714,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Sweet Muzzle",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Ice Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Ice",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/438518). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Mari Satsuki [Sweet Muzzle] is a A-Tier Ice Buffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (甘美のMuzzle)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/438518)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7759,21 +7759,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/438518).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/438518).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/438518"
+      "summaryVerdict": "Mari Satsuki [Sweet Muzzle] is a A-Tier Ice Buffer (Pierce) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-438518"
     },
     {
-      "externalId": "game8-hbr-426210",
+      "externalId": "hbr-unit-426210",
       "slug": "hbr-426210",
-      "nameEn": "生者のホメオスタシス",
-      "nameOriginal": "生者のホメオスタシス",
-      "styleOrTitle": "SS [生者のホメオスタシス] ( (Buffer))",
+      "nameEn": "Seika Higuchi [Homeostasis of the Living]",
+      "nameOriginal": "Seika Higuchi",
+      "styleOrTitle": "SS [Homeostasis of the Living] • Squad 31B Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Thunder",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11679221/66c05698f837c04e131346f605f555bc.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7793,41 +7793,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Homeostasis of the Living",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Thunder",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426210). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Seika Higuchi [Homeostasis of the Living] is a A-Tier Thunder Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (生者のホメオスタシス)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426210)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7838,21 +7838,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426210).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/426210).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/426210"
+      "summaryVerdict": "Seika Higuchi [Homeostasis of the Living] is a A-Tier Thunder Buffer (Pierce) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-426210"
     },
     {
-      "externalId": "game8-hbr-426230",
+      "externalId": "hbr-unit-426230",
       "slug": "hbr-426230",
-      "nameEn": "星の海、たゆたうフォーチュンテラー",
-      "nameOriginal": "星の海、たゆたうフォーチュンテラー",
-      "styleOrTitle": "SS [星の海、たゆたうフォーチュンテラー] ( (Buffer))",
+      "nameEn": "Seira Sakuraba [Starry Sea Fortune Teller]",
+      "nameOriginal": "Seira Sakuraba",
+      "styleOrTitle": "SS [Starry Sea Fortune Teller] • Squad 31C Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Crush)",
       "roleColumn": "SUPPORT",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10568088/c7e3a7a6d430f24eca9befd35aa861f9.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7872,41 +7872,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Starry Sea Fortune Teller",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Crush Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Crush",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426230). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Seira Sakuraba [Starry Sea Fortune Teller] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (星の海、たゆたうフォーチュンテラー)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426230)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7917,21 +7917,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426230).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/426230).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/426230"
+      "summaryVerdict": "Seira Sakuraba [Starry Sea Fortune Teller] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-426230"
     },
     {
-      "externalId": "game8-hbr-816691",
+      "externalId": "hbr-unit-816691",
       "slug": "hbr-816691",
-      "nameEn": "友への探究心",
-      "nameOriginal": "友への探究心",
-      "styleOrTitle": "SS [友への探究心] ( (Buffer))",
+      "nameEn": "Misato Nikaido [Curiosity Toward a Friend]",
+      "nameOriginal": "Misato Nikaido",
+      "styleOrTitle": "SS [Curiosity Toward a Friend] • Squad 31D Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Crush)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Fire",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/13014415/57c79e03d756b93b4d1af8562fd71c41.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -7951,41 +7951,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Curiosity Toward a Friend",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Crush Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Crush",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/816691). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Misato Nikaido [Curiosity Toward a Friend] is a A-Tier Fire Buffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (友への探究心)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/816691)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -7996,21 +7996,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/816691).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/816691).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/816691"
+      "summaryVerdict": "Misato Nikaido [Curiosity Toward a Friend] is a A-Tier Fire Buffer (Crush) from Squad 31D. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-816691"
     },
     {
-      "externalId": "game8-hbr-813776",
+      "externalId": "hbr-unit-813776",
       "slug": "hbr-813776",
-      "nameEn": "Spot of Tea",
-      "nameOriginal": "Spot of Tea",
-      "styleOrTitle": "SS [Spot of Tea] ( (Buffer))",
+      "nameEn": "Irene Redmayne [Spot of Tea]",
+      "nameOriginal": "Irene Redmayne",
+      "styleOrTitle": "SS [Spot of Tea] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
       "element": "None",
-      "attackType": "Slash",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/12941241/2c830954ba3ace40966a229b2f50606c.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8024,47 +8024,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 450,
         "critOrWit": 510,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Spot of Tea",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/813776). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Irene Redmayne [Spot of Tea] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (Spot of Tea)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/813776)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8075,20 +8075,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/813776).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/813776).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/813776"
+      "summaryVerdict": "Irene Redmayne [Spot of Tea] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-813776"
     },
     {
-      "externalId": "game8-hbr-793216",
+      "externalId": "hbr-unit-793216",
       "slug": "hbr-793216",
-      "nameEn": "ハオチー♪満腹桃源郷",
-      "nameOriginal": "ハオチー♪満腹桃源郷",
-      "styleOrTitle": "SS [ハオチー♪満腹桃源郷] ( (Buffer))",
+      "nameEn": "Yunxia Li [Delicious Shangri-La Feast]",
+      "nameOriginal": "Yunxia Li",
+      "styleOrTitle": "SS [Delicious Shangri-La Feast] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Healer (Slash)",
+      "roleColumn": "SUSTAIN",
+      "element": "Dark",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/12676781/9db9bff9cd79bb91ac6b2b6df2dad635.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -8103,47 +8103,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 448,
         "critOrWit": 507,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Delicious Shangri-La Feast",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Slash Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Dark",
             "Slash",
-            "Buffer / Admiral"
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/793216). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Yunxia Li [Delicious Shangri-La Feast] is a A-Tier Dark Healer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ハオチー♪満腹桃源郷)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/793216)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8154,21 +8154,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/793216).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/793216).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/793216"
+      "summaryVerdict": "Yunxia Li [Delicious Shangri-La Feast] is a A-Tier Dark Healer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-793216"
     },
     {
-      "externalId": "game8-hbr-769411",
+      "externalId": "hbr-unit-769411",
       "slug": "hbr-769411",
-      "nameEn": "ドルチェ・ベネディツィオーネ",
-      "nameOriginal": "ドルチェ・ベネディツィオーネ",
-      "styleOrTitle": "SS [ドルチェ・ベネディツィオーネ] ( (Buffer))",
+      "nameEn": "Maria de Angelis [Dolce Benedizione]",
+      "nameOriginal": "Maria de Angelis",
+      "styleOrTitle": "SS [Dolce Benedizione] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Healer (Crush)",
+      "roleColumn": "SUSTAIN",
+      "element": "Light",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/12390669/5c2f564afa794394f1e4d2096bc8341b.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8182,47 +8182,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 446,
         "critOrWit": 504,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Dolce Benedizione",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Light Crush Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Light",
+            "Crush",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/769411). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Maria de Angelis [Dolce Benedizione] is a A-Tier Light Healer (Crush) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (ドルチェ・ベネディツィオーネ)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/769411)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8233,20 +8233,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/769411).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/769411).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/769411"
+      "summaryVerdict": "Maria de Angelis [Dolce Benedizione] is a A-Tier Light Healer (Crush) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-769411"
     },
     {
-      "externalId": "game8-hbr-769410",
+      "externalId": "hbr-unit-769410",
       "slug": "hbr-769410",
-      "nameEn": "A Taste of Victory！",
-      "nameOriginal": "A Taste of Victory！",
-      "styleOrTitle": "SS [A Taste of Victory！] ( (Buffer))",
+      "nameEn": "Carol Reaper [A Taste of Victory!]",
+      "nameOriginal": "Carol Reaper",
+      "styleOrTitle": "SS [A Taste of Victory!] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Healer (Slash)",
+      "roleColumn": "SUSTAIN",
+      "element": "Thunder",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/12390670/88d8513952a945253e25cb9ebc335cc9.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -8261,47 +8261,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 444,
         "critOrWit": 501,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: A Taste of Victory!",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Slash Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Thunder",
             "Slash",
-            "Buffer / Admiral"
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/769410). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Carol Reaper [A Taste of Victory!] is a A-Tier Thunder Healer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (A Taste of Victory！)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/769410)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8312,18 +8312,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/769410).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/769410).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/769410"
+      "summaryVerdict": "Carol Reaper [A Taste of Victory!] is a A-Tier Thunder Healer (Slash) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-769410"
     },
     {
-      "externalId": "game8-hbr-764362",
+      "externalId": "hbr-unit-764362",
       "slug": "hbr-764362",
-      "nameEn": "孤高のロンリネス",
-      "nameOriginal": "孤高のロンリネス",
-      "styleOrTitle": "SS [孤高のロンリネス] ( (Buffer))",
+      "nameEn": "Bon Ivar Yamawaki [Solitary Loneliness]",
+      "nameOriginal": "Bon Ivar Yamawaki",
+      "styleOrTitle": "SS [Solitary Loneliness] • Squad 31C Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
       "element": "None",
       "attackType": "Slash",
@@ -8346,41 +8346,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Solitary Loneliness",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Null Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
             "None",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/764362). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Bon Ivar Yamawaki [Solitary Loneliness] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (孤高のロンリネス)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/764362)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8391,21 +8391,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/764362).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/764362).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/764362"
+      "summaryVerdict": "Bon Ivar Yamawaki [Solitary Loneliness] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-764362"
     },
     {
-      "externalId": "game8-hbr-721625",
+      "externalId": "hbr-unit-721625",
       "slug": "hbr-721625",
-      "nameEn": "捧ぐ愛の晩餐",
-      "nameOriginal": "捧ぐ愛の晩餐",
-      "styleOrTitle": "SS [捧ぐ愛の晩餐] ( (Buffer))",
+      "nameEn": "Charlotta Skopovskaya [Banquet of Devoted Love]",
+      "nameOriginal": "Charlotta Skopovskaya",
+      "styleOrTitle": "SS [Banquet of Devoted Love] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Healer (Pierce)",
+      "roleColumn": "SUSTAIN",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11790940/b904da3a1cbc801c558363b418e686e4.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8419,47 +8419,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 440,
         "critOrWit": 495,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Banquet of Devoted Love",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/721625). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Charlotta Skopovskaya [Banquet of Devoted Love] is a A-Tier Fire Healer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (捧ぐ愛の晩餐)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/721625)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8470,21 +8470,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/721625).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/721625).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/721625"
+      "summaryVerdict": "Charlotta Skopovskaya [Banquet of Devoted Love] is a A-Tier Fire Healer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-721625"
     },
     {
-      "externalId": "game8-hbr-714989",
+      "externalId": "hbr-unit-714989",
       "slug": "hbr-714989",
-      "nameEn": "歓待のアンナプールナ",
-      "nameOriginal": "歓待のアンナプールナ",
-      "styleOrTitle": "SS [歓待のアンナプールナ] ( (Buffer))",
+      "nameEn": "Vritika Balakrishnan [Hospitable Annapurna]",
+      "nameOriginal": "Vritika Balakrishnan",
+      "styleOrTitle": "SS [Hospitable Annapurna] • Squad 31X Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Healer (Crush)",
+      "roleColumn": "SUSTAIN",
+      "element": "Ice",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11741117/ed74020b908da7dc075ad39d3b0a96c7.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8498,47 +8498,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 438,
         "critOrWit": 492,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Hospitable Annapurna",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Ice Crush Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Ice",
+            "Crush",
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/714989). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Vritika Balakrishnan [Hospitable Annapurna] is a A-Tier Ice Healer (Crush) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (歓待のアンナプールナ)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/714989)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8549,20 +8549,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/714989).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/714989).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/714989"
+      "summaryVerdict": "Vritika Balakrishnan [Hospitable Annapurna] is a A-Tier Ice Healer (Crush) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-714989"
     },
     {
-      "externalId": "game8-hbr-700751",
+      "externalId": "hbr-unit-700751",
       "slug": "hbr-700751",
-      "nameEn": "プールサイド・モーメント",
-      "nameOriginal": "プールサイド・モーメント",
-      "styleOrTitle": "SS [プールサイド・モーメント] ( (Buffer))",
+      "nameEn": "Kozue Hiiragi [Poolside Moment]",
+      "nameOriginal": "Kozue Hiiragi",
+      "styleOrTitle": "SS [Poolside Moment] • Squad 31B Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Blaster (Slash)",
+      "roleColumn": "SUB_DPS",
+      "element": "Dark",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/11502980/01744f87736c1d5bab88c3f3ec6d9074.jpeg/show",
       "releaseDateAsian": "2024-08-10",
@@ -8577,47 +8577,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 436,
         "critOrWit": 489,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Poolside Moment",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Dark Slash Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
-            "None",
+            "Dark",
             "Slash",
-            "Buffer / Admiral"
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/700751). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Kozue Hiiragi [Poolside Moment] is a A-Tier Dark Blaster (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (プールサイド・モーメント)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/700751)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8628,21 +8628,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/700751).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/700751).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/700751"
+      "summaryVerdict": "Kozue Hiiragi [Poolside Moment] is a A-Tier Dark Blaster (Slash) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-700751"
     },
     {
-      "externalId": "game8-hbr-659771",
+      "externalId": "hbr-unit-659771",
       "slug": "hbr-659771",
-      "nameEn": "Dreamlike Days",
-      "nameOriginal": "Dreamlike Days",
-      "styleOrTitle": "SS [Dreamlike Days] ( (Buffer))",
+      "nameEn": "Masami Iwasawa [Dreamlike Days]",
+      "nameOriginal": "Masami Iwasawa",
+      "styleOrTitle": "SS [Dreamlike Days] • Squad 31AB Blaster",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Blaster (Pierce)",
+      "roleColumn": "SUB_DPS",
+      "element": "Ice",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/13053965/f70628e8ea5f02c4cf4d9d84892113c6.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8656,47 +8656,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 434,
         "critOrWit": 486,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Dreamlike Days",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
-          "hitCount": 5,
+          "multiplierSummary": "Ice Pierce Blaster EX",
+          "hitCount": 10,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Ice",
+            "Pierce",
+            "Blaster"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/659771). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Masami Iwasawa [Dreamlike Days] is a A-Tier Ice Blaster (Pierce) from Squad 31AB. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (Dreamlike Days)",
+          "name": "Seraph Tactical Art: Blaster",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Blaster Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Blaster",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/659771)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8707,21 +8707,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/659771).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/659771).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/659771"
+      "summaryVerdict": "Masami Iwasawa [Dreamlike Days] is a A-Tier Ice Blaster (Pierce) from Squad 31AB. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-659771"
     },
     {
-      "externalId": "game8-hbr-615278",
+      "externalId": "hbr-unit-615278",
       "slug": "hbr-615278",
-      "nameEn": "清廉なるニヴェースタ",
-      "nameOriginal": "清廉なるニヴェースタ",
-      "styleOrTitle": "SS [清廉なるニヴェースタ] ( (Buffer))",
+      "nameEn": "Charlotta Skopovskaya [Pure Nevesta Bride]",
+      "nameOriginal": "Charlotta Skopovskaya",
+      "styleOrTitle": "SS [Pure Nevesta Bride] • Squad 31X Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10133823/b9bf7c1be87c232646084cb88bd1ba24.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8741,41 +8741,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Pure Nevesta Bride",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/615278). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Charlotta Skopovskaya [Pure Nevesta Bride] is a A-Tier Dark Buffer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (清廉なるニヴェースタ)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/615278)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8786,21 +8786,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/615278).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/615278).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/615278"
+      "summaryVerdict": "Charlotta Skopovskaya [Pure Nevesta Bride] is a A-Tier Dark Buffer (Pierce) from Squad 31X. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-615278"
     },
     {
-      "externalId": "game8-hbr-585101",
+      "externalId": "hbr-unit-585101",
       "slug": "hbr-585101",
-      "nameEn": "キララ・究極のアイドル",
-      "nameOriginal": "キララ・究極のアイドル",
-      "styleOrTitle": "SS [キララ・究極のアイドル] ( (Buffer))",
+      "nameEn": "Erika Aoi [Kirara: Ultimate Idol]",
+      "nameOriginal": "Erika Aoi",
+      "styleOrTitle": "SS [Kirara: Ultimate Idol] • Squad 31B Defender",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Defender (Crush)",
+      "roleColumn": "SUSTAIN",
+      "element": "Fire",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10469345/8a30233a1a7998dbc4c243c4b8eac134.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8814,47 +8814,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 430,
         "critOrWit": 480,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Kirara: Ultimate Idol",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Crush Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Crush",
+            "Defender"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/585101). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Erika Aoi [Kirara: Ultimate Idol] is a A-Tier Fire Defender (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (キララ・究極のアイドル)",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/585101)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8865,21 +8865,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/585101).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/585101).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/585101"
+      "summaryVerdict": "Erika Aoi [Kirara: Ultimate Idol] is a A-Tier Fire Defender (Crush) from Squad 31B. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-585101"
     },
     {
-      "externalId": "game8-hbr-506717",
+      "externalId": "hbr-unit-506717",
       "slug": "hbr-506717",
-      "nameEn": "対決！！エア・ステージ",
-      "nameOriginal": "対決！！エア・ステージ",
-      "styleOrTitle": "SS [対決！！エア・ステージ] ( (Buffer))",
+      "nameEn": "Seira Sakuraba [Showdown!! Air Stage]",
+      "nameOriginal": "Seira Sakuraba",
+      "styleOrTitle": "SS [Showdown!! Air Stage] • Squad 31C Defender",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Defender (Crush)",
+      "roleColumn": "SUSTAIN",
+      "element": "Ice",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10351134/682df3583c10f61157e3bf123d163e4e.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -8893,47 +8893,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 428,
         "critOrWit": 477,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Showdown!! Air Stage",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Ice Crush Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Ice",
+            "Crush",
+            "Defender"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/506717). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Seira Sakuraba [Showdown!! Air Stage] is a A-Tier Ice Defender (Crush) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (対決！！エア・ステージ)",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/506717)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -8944,20 +8944,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/506717).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/506717).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/506717"
+      "summaryVerdict": "Seira Sakuraba [Showdown!! Air Stage] is a A-Tier Ice Defender (Crush) from Squad 31C. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-506717"
     },
     {
-      "externalId": "game8-hbr-506307",
+      "externalId": "hbr-unit-506307",
       "slug": "hbr-506307",
-      "nameEn": "激突！！エア・ベース",
-      "nameOriginal": "激突！！エア・ベース",
-      "styleOrTitle": "SS [激突！！エア・ベース] ( (Buffer))",
+      "nameEn": "Tama Kunimi [Clash!! Air Bass]",
+      "nameOriginal": "Tama Kunimi",
+      "styleOrTitle": "SS [Clash!! Air Bass] • Squad 31A Healer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
+      "role": "Healer (Slash)",
+      "roleColumn": "SUSTAIN",
+      "element": "Thunder",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/10341811/7529516441da369aea3189c67dd0ce8f.png/show",
       "releaseDateAsian": "2024-08-10",
@@ -8972,47 +8972,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 426,
         "critOrWit": 474,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Clash!! Air Bass",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Thunder Slash Healer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Thunder",
             "Slash",
-            "Buffer / Admiral"
+            "Healer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/506307). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Tama Kunimi [Clash!! Air Bass] is a A-Tier Thunder Healer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (激突！！エア・ベース)",
+          "name": "Seraph Tactical Art: Healer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Healer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Healer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/506307)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -9023,21 +9023,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/506307).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/506307).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/506307"
+      "summaryVerdict": "Tama Kunimi [Clash!! Air Bass] is a A-Tier Thunder Healer (Slash) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-506307"
     },
     {
-      "externalId": "game8-hbr-493459",
+      "externalId": "hbr-unit-493459",
       "slug": "hbr-493459",
-      "nameEn": "Realize Your Mind",
-      "nameOriginal": "Realize Your Mind",
-      "styleOrTitle": "SS [Realize Your Mind] ( (Buffer))",
+      "nameEn": "Minori Ohshima [Realize Your Mind]",
+      "nameOriginal": "Minori Ohshima",
+      "styleOrTitle": "SS [Realize Your Mind] • Squad 31E Attacker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Attacker (Crush)",
+      "roleColumn": "DPS",
+      "element": "Fire",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/11679235/000ac82930f241e884bc0b8bf37e5e2b.webp/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -9050,48 +9050,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 481,
         "defOrGuts": 424,
         "critOrWit": 471,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Realize Your Mind",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Crush Attacker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Crush",
+            "Attacker"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/493459). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Minori Ohshima [Realize Your Mind] is a A-Tier Fire Attacker (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (Realize Your Mind)",
+          "name": "Seraph Tactical Art: Attacker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Attacker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Attacker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/493459)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -9102,20 +9102,20 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/493459).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/493459).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/493459"
+      "summaryVerdict": "Minori Ohshima [Realize Your Mind] is a A-Tier Fire Attacker (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-493459"
     },
     {
-      "externalId": "game8-hbr-480767",
+      "externalId": "hbr-unit-480767",
       "slug": "hbr-480767",
-      "nameEn": "君のUnisono",
-      "nameOriginal": "君のUnisono",
-      "styleOrTitle": "SS [君のUnisono] ( (Buffer))",
+      "nameEn": "Shiki Hanamura [Your Unisono]",
+      "nameOriginal": "Shiki Hanamura",
+      "styleOrTitle": "SS [Your Unisono] • Squad 31F Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Slash)",
       "roleColumn": "SUPPORT",
-      "element": "None",
+      "element": "Dark",
       "attackType": "Slash",
       "imageUrl": "https://img.game8.jp/11679232/aefd07fc8ee6e307daecc91c8f3f8c89.webp/show",
       "releaseDateAsian": "2024-08-10",
@@ -9136,41 +9136,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Your Unisono",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Slash Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "Dark",
             "Slash",
-            "Buffer / Admiral"
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/480767). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Shiki Hanamura [Your Unisono] is a A-Tier Dark Buffer (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (君のUnisono)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/480767)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -9181,21 +9181,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/480767).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/480767).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/480767"
+      "summaryVerdict": "Shiki Hanamura [Your Unisono] is a A-Tier Dark Buffer (Slash) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-480767"
     },
     {
-      "externalId": "game8-hbr-463894",
+      "externalId": "hbr-unit-463894",
       "slug": "hbr-463894",
-      "nameEn": "果てなき慈愛の守護者",
-      "nameOriginal": "果てなき慈愛の守護者",
-      "styleOrTitle": "SS [果てなき慈愛の守護者] ( (Buffer))",
+      "nameEn": "Ichiko Ohshima [Guardian of Endless Compassion]",
+      "nameOriginal": "Ichiko Ohshima",
+      "styleOrTitle": "SS [Guardian of Endless Compassion] • Squad 31E Defender",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Defender (Crush)",
+      "roleColumn": "SUSTAIN",
+      "element": "Fire",
+      "attackType": "Crush",
       "imageUrl": "https://img.game8.jp/10433436/33eab3febc9885bc5aec73bdf6174639.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -9209,47 +9209,47 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "defOrGuts": 420,
         "critOrWit": 465,
         "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
+        "bufferCeilingScore": 80,
+        "sustainScore": 98,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Guardian of Endless Compassion",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Crush Defender EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Crush",
+            "Defender"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/463894). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Ichiko Ohshima [Guardian of Endless Compassion] is a A-Tier Fire Defender (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (果てなき慈愛の守護者)",
+          "name": "Seraph Tactical Art: Defender",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Defender Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Defender",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/463894)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -9260,21 +9260,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/463894).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/463894).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/463894"
+      "summaryVerdict": "Ichiko Ohshima [Guardian of Endless Compassion] is a A-Tier Fire Defender (Crush) from Squad 31E. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-463894"
     },
     {
-      "externalId": "game8-hbr-457125",
+      "externalId": "hbr-unit-457125",
       "slug": "hbr-457125",
-      "nameEn": "エボリューションな感受性",
-      "nameOriginal": "エボリューションな感受性",
-      "styleOrTitle": "SS [エボリューションな感受性] ( (Buffer))",
+      "nameEn": "Kanata Maruyama [Evolutionary Sensibility]",
+      "nameOriginal": "Kanata Maruyama",
+      "styleOrTitle": "SS [Evolutionary Sensibility] • Squad 31F Breaker",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
-      "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "role": "Breaker (Pierce)",
+      "roleColumn": "DPS",
+      "element": "Dark",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/11015270/dc4291e317aed7dd3c5b8c4c835928b5.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -9287,48 +9287,48 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "atkOrPower": 472,
         "defOrGuts": 418,
         "critOrWit": 462,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
+        "burstCeilingScore": 98,
+        "bufferCeilingScore": 80,
         "sustainScore": 78,
         "spEfficiencyScore": 95
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Evolutionary Sensibility",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Dark Pierce Breaker EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Dark",
+            "Pierce",
+            "Breaker"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/457125). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Kanata Maruyama [Evolutionary Sensibility] is a A-Tier Dark Breaker (Pierce) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (エボリューションな感受性)",
+          "name": "Seraph Tactical Art: Breaker",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Breaker Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Breaker",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/457125)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -9339,21 +9339,21 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/457125).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/457125).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/457125"
+      "summaryVerdict": "Kanata Maruyama [Evolutionary Sensibility] is a A-Tier Dark Breaker (Pierce) from Squad 31F. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-457125"
     },
     {
-      "externalId": "game8-hbr-426197",
+      "externalId": "hbr-unit-426197",
       "slug": "hbr-426197",
-      "nameEn": "メメント・モリの美少女",
-      "nameOriginal": "メメント・モリの美少女",
-      "styleOrTitle": "SS [メメント・モリの美少女] ( (Buffer))",
+      "nameEn": "Tsukasa Tojo [Memento Mori Beauty]",
+      "nameOriginal": "Tsukasa Tojo",
+      "styleOrTitle": "SS [Memento Mori Beauty] • Squad 31A Buffer",
       "rarity": "SS",
-      "role": "Buffer / Admiral",
+      "role": "Buffer (Pierce)",
       "roleColumn": "SUPPORT",
-      "element": "None",
-      "attackType": "Slash",
+      "element": "Fire",
+      "attackType": "Pierce",
       "imageUrl": "https://img.game8.jp/10357486/81874d1ab721d41489af196b8bf31ad3.png/show",
       "releaseDateAsian": "2024-08-10",
       "releaseDateGlobal": null,
@@ -9373,41 +9373,41 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": " Buffer SS Style",
+          "name": "EX Skill: Memento Mori Beauty",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "None Buffer / Admiral EX",
+          "multiplierSummary": "Fire Pierce Buffer EX",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer / Admiral"
+            "Fire",
+            "Pierce",
+            "Buffer"
           ],
-          "exactDescription": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426197). High SP efficiency and multiplicative stacking in Overdrive turns."
+          "exactDescription": "Tsukasa Tojo [Memento Mori Beauty] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         },
         {
-          "name": "Tactical Sub-Skill (メメント・モリの美少女)",
+          "name": "Seraph Tactical Art: Buffer",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer / Admiral Support / Setup",
+          "multiplierSummary": "Buffer Setup & Overdrive Charge",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Buffer / Admiral",
+            "Buffer",
             "Overdrive Gauge"
           ],
-          "exactDescription": "Strong Limit Break scaling (LB1 +10% SP / LB3 passive unlock)."
+          "exactDescription": "Unlocks +10% Initial SP / Action SP recovery at Limit Break 1 and core stat amplification at Limit Break 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
           "name": "Flash / Vanguard (+SP)",
-          "effect": "Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426197)."
+          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Resonance",
-          "effect": "High SP efficiency and multiplicative stacking in Overdrive turns."
+          "name": "High-Order Seraph Resonance",
+          "effect": "Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression."
         }
       ],
       "synergyUnitSlugs": [
@@ -9418,794 +9418,903 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": " Buffer SS Style — Ranked  in the Game8 Heaven Burns Red Buffer matrix (https://game8.jp/heavenburnsred/426197).",
-      "longevityNote": "Verified on Game8 JP HBR Tier List (https://game8.jp/heavenburnsred/426197).",
-      "sourceUrl": "https://game8.jp/heavenburnsred/426197"
+      "summaryVerdict": "Tsukasa Tojo [Memento Mori Beauty] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Excels in Grade 140 Score Attack and Anachrony endgame bosses through high SP economy and Overdrive turn compression.",
+      "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
+      "sourceUrl": "https://meta.gg/heaven-burns-red/units/hbr-426197"
     }
   ],
   "equipments": [
     {
-      "externalId": "game8-hbr-acc-1",
+      "externalId": "hbr-acc-1",
       "slug": "hbr-acc-1",
-      "nameEn": "Abyss Ring +6 (Dark Skill ATK +10%) (アビスリング)",
+      "nameEn": "Abyss Ring +6",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/12907571/39b31f9f211f7ae6eaa5845420928ea8.webp/show",
       "tierRank": "SSS",
       "score": 9.9,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の闇属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋"
+        "SkillATK": "Dark +10%",
+        "STR_DEX": "+55 / +42",
+        "Substat": "+10 VIT/SPR/INT/LUK"
       },
-      "effectSummary": "【効果】 自身の闇属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋",
+      "effectSummary": "Increases own Dark-element Skill ATK by +10% and grants +55 STR, +42 DEX, and +10 bonus stat.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-1"
     },
     {
-      "externalId": "game8-hbr-acc-2",
+      "externalId": "hbr-acc-2",
       "slug": "hbr-acc-2",
-      "nameEn": "6★ Accessory: ルミナスリング (ルミナスリング)",
+      "nameEn": "Luminous Ring +6",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/12907569/1e6313252e032e7753c7878f033f4906.webp/show",
       "tierRank": "SSS",
-      "score": 9.8,
+      "score": 9.9,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の光属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋"
+        "SkillATK": "Light +10%",
+        "STR_DEX": "+55 / +42",
+        "Substat": "+10 VIT/SPR/INT/LUK"
       },
-      "effectSummary": "【効果】 自身の光属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋",
+      "effectSummary": "Increases own Light-element Skill ATK by +10% and grants +55 STR, +42 DEX, and +10 bonus stat.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-2"
     },
     {
-      "externalId": "game8-hbr-acc-3",
+      "externalId": "hbr-acc-3",
       "slug": "hbr-acc-3",
-      "nameEn": "6★ Accessory: フロストリング (フロストリング)",
+      "nameEn": "Frost Ring +6",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/12907572/87c0a14bfec883d92e65c4b5e8b51601.webp/show",
       "tierRank": "SSS",
       "score": 9.8,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の氷属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋"
+        "SkillATK": "Ice +10%",
+        "STR_DEX": "+55 / +42",
+        "Substat": "+10 VIT/SPR/INT/LUK"
       },
-      "effectSummary": "【効果】 自身の氷属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋",
+      "effectSummary": "Increases own Ice-element Skill ATK by +10% and grants +55 STR, +42 DEX, and +10 bonus stat.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-3"
     },
     {
-      "externalId": "game8-hbr-acc-4",
+      "externalId": "hbr-acc-4",
       "slug": "hbr-acc-4",
-      "nameEn": "6★ Accessory: インフェルノリング (インフェルノリング)",
+      "nameEn": "Inferno Ring +6",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/12907570/efd03f44f23fe40451c97197ccf05278.webp/show",
       "tierRank": "SSS",
       "score": 9.8,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の火属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋"
+        "SkillATK": "Fire +10%",
+        "STR_DEX": "+55 / +42",
+        "Substat": "+10 VIT/SPR/INT/LUK"
       },
-      "effectSummary": "【効果】 自身の火属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋",
+      "effectSummary": "Increases own Fire-element Skill ATK by +10% and grants +55 STR, +42 DEX, and +10 bonus stat.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-4"
     },
     {
-      "externalId": "game8-hbr-acc-5",
+      "externalId": "hbr-acc-5",
       "slug": "hbr-acc-5",
-      "nameEn": "6★ Accessory: ボルトリング (ボルトリング)",
+      "nameEn": "Volt Ring +6",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/11792256/527a8a5279f974f5ad4fbf64fc45da9b.webp/show",
       "tierRank": "SSS",
       "score": 9.7,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の雷属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋"
+        "SkillATK": "Thunder +10%",
+        "STR_DEX": "+55 / +42",
+        "Substat": "+10 VIT/SPR/INT/LUK"
       },
-      "effectSummary": "【効果】 自身の雷属性のスキル攻撃力+10％、力・器用さ+37~55(もう片方が42)(体力／精神／知性／運から1種)+10 【入手場所】 夢幻の螺旋",
+      "effectSummary": "Increases own Thunder-element Skill ATK by +10% and grants +55 STR, +42 DEX, and +10 bonus stat.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-5"
     },
     {
-      "externalId": "game8-hbr-acc-6",
+      "externalId": "hbr-acc-6",
       "slug": "hbr-acc-6",
-      "nameEn": "6★ Accessory: 雷のリング（無印～+4） (雷のリング（無印～+4）)",
+      "nameEn": "Ring of Thunder +4",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/7010193/ee2a40b17907dd4e8296061823caa0bd.png/show",
       "tierRank": "SSS",
       "score": 9.7,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の雷属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 雷の回廊"
+        "SkillATK": "Thunder +10%",
+        "STR_DEX": "+37 / +37"
       },
-      "effectSummary": "【効果】 自身の雷属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 雷の回廊",
+      "effectSummary": "Increases own Thunder-element Skill ATK by +10% and grants +37 STR and +37 DEX.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-6"
     },
     {
-      "externalId": "game8-hbr-acc-7",
+      "externalId": "hbr-acc-7",
       "slug": "hbr-acc-7",
-      "nameEn": "6★ Accessory: 闇のリング（無印～+4） (闇のリング（無印～+4）)",
+      "nameEn": "Ring of Darkness +4",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/6930665/0bbd9d550e80db8e66ac95e172693279.png/show",
       "tierRank": "SSS",
-      "score": 9.6,
+      "score": 9.7,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の闇属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 闇の回廊"
+        "SkillATK": "Dark +10%",
+        "STR_DEX": "+37 / +37"
       },
-      "effectSummary": "【効果】 自身の闇属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 闇の回廊",
+      "effectSummary": "Increases own Dark-element Skill ATK by +10% and grants +37 STR and +37 DEX.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-7"
     },
     {
-      "externalId": "game8-hbr-acc-8",
+      "externalId": "hbr-acc-8",
       "slug": "hbr-acc-8",
-      "nameEn": "6★ Accessory: 光のリング（無印〜+4） (光のリング（無印〜+4）)",
+      "nameEn": "Ring of Light +4",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/6830330/21a4e103c4b4ffbd25ba639147a4abea.png/show",
       "tierRank": "SSS",
       "score": 9.6,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の光属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 光の回廊"
+        "SkillATK": "Light +10%",
+        "STR_DEX": "+37 / +37"
       },
-      "effectSummary": "【効果】 自身の光属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 光の回廊",
+      "effectSummary": "Increases own Light-element Skill ATK by +10% and grants +37 STR and +37 DEX.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-8"
     },
     {
-      "externalId": "game8-hbr-acc-9",
+      "externalId": "hbr-acc-9",
       "slug": "hbr-acc-9",
-      "nameEn": "6★ Accessory: 氷のリング（無印〜+4） (氷のリング（無印〜+4）)",
+      "nameEn": "Ring of Ice +4",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/6732511/f3d96cdb962cdd83bc759c52941ab182.png/show",
       "tierRank": "SSS",
-      "score": 9.5,
+      "score": 9.6,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の氷属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 氷の回廊"
+        "SkillATK": "Ice +10%",
+        "STR_DEX": "+37 / +37"
       },
-      "effectSummary": "【効果】 自身の氷属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 氷の回廊",
+      "effectSummary": "Increases own Ice-element Skill ATK by +10% and grants +37 STR and +37 DEX.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-9"
     },
     {
-      "externalId": "game8-hbr-acc-10",
+      "externalId": "hbr-acc-10",
       "slug": "hbr-acc-10",
-      "nameEn": "6★ Accessory: 炎のリング（無印〜+4） (炎のリング（無印〜+4）)",
+      "nameEn": "Ring of Flame +4",
       "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
+      "subType": "6★ Elemental Ring",
       "rarity": "6★",
       "imageUrl": "https://img.game8.jp/6670334/1a0eeb6c781885f9ac54a876b535d488.png/show",
       "tierRank": "SSS",
       "score": 9.5,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 自身の火属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 炎の回廊"
+        "SkillATK": "Fire +10%",
+        "STR_DEX": "+37 / +37"
       },
-      "effectSummary": "【効果】 自身の火属性のスキル攻撃力+（4/5/6/8/10）％、力・器用さ+37 【入手場所】 炎の回廊",
+      "effectSummary": "Increases own Fire-element Skill ATK by +10% and grants +37 STR and +37 DEX.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-10"
     },
     {
-      "externalId": "game8-hbr-acc-11",
+      "externalId": "hbr-acc-11",
       "slug": "hbr-acc-11",
-      "nameEn": "6★ Accessory: 奥義のリング (奥義のリング)",
+      "nameEn": "Break Earring +6",
       "category": "Accessory / Orb",
-      "subType": "5★ Endgame Accessory",
-      "rarity": "5★",
-      "imageUrl": "https://img.game8.jp/6644444/04d89f10dc20f496cd11057ebf26d340.png/show",
+      "subType": "6★ Crafted Earring",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900287/c76565e955aec1a303100a575c188946.png/show",
+      "tierRank": "SSS",
+      "score": 9.5,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "DP": "+1,200",
+        "INT": "+48",
+        "Bonus": "Anti-DP Skill ATK +15%"
+      },
+      "effectSummary": "Increases Skill ATK against enemy DP Shields by up to +15% (scales with lower hit-count), DP +1,200, INT +48.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-11"
+    },
+    {
+      "externalId": "hbr-acc-12",
+      "slug": "hbr-acc-12",
+      "nameEn": "Attack Earring +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Crafted Earring",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900289/9326cd23bcd7450ae171eac224de2d53.png/show",
+      "tierRank": "SSS",
+      "score": 9.5,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "DP": "+1,200",
+        "INT": "+48",
+        "Bonus": "Anti-HP Skill ATK +15%"
+      },
+      "effectSummary": "Increases Skill ATK against enemy HP by up to +15% (scales with lower hit-count), DP +1,200, INT +48.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-12"
+    },
+    {
+      "externalId": "hbr-acc-13",
+      "slug": "hbr-acc-13",
+      "nameEn": "Drive Earring +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Crafted Earring",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900270/6d65b0dfd851fc63e6c4aa6b5f7f1ffb.png/show",
       "tierRank": "SS",
       "score": 9.4,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "5★",
-        "Effect": "【効果】 力+49、器用さ+11 【入手場所】 プリズムバトルLv.9~10"
+        "DP": "+1,200",
+        "INT": "+48",
+        "Bonus": "OD Gauge Gain +15%"
       },
-      "effectSummary": "【効果】 力+49、器用さ+11 【入手場所】 プリズムバトルLv.9~10",
+      "effectSummary": "Increases Overdrive Gauge fill rate by +15% (scales with multi-hit skills), DP +1,200, INT +48.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-13"
     },
     {
-      "externalId": "game8-hbr-acc-12",
-      "slug": "hbr-acc-12",
-      "nameEn": "6★ Accessory: 神秘のリング (神秘のリング)",
-      "category": "Accessory / Orb",
-      "subType": "5★ Endgame Accessory",
-      "rarity": "5★",
-      "imageUrl": "https://img.game8.jp/6644443/06f58ce045e69b50dae0b428df958043.png/show",
-      "tierRank": "SS",
-      "score": 9.3,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "5★",
-        "Effect": "【効果】 力+11、器用さ+49 【入手場所】 プリズムバトルLv.9~10"
-      },
-      "effectSummary": "【効果】 力+11、器用さ+49 【入手場所】 プリズムバトルLv.9~10",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-13",
-      "slug": "hbr-acc-13",
-      "nameEn": "6★ Accessory: レンジャーリング (レンジャーリング)",
-      "category": "Accessory / Orb",
-      "subType": "4★ Endgame Accessory",
-      "rarity": "4★",
-      "imageUrl": "https://img.game8.jp/6644434/63e774c870767769dcdd37ac9156ec9e.png/show",
-      "tierRank": "SS",
-      "score": 9.3,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "4★",
-        "Effect": "【効果】 力+20、器用さ+29 【入手場所】 プリズムバトルLv.6~8"
-      },
-      "effectSummary": "【効果】 力+20、器用さ+29 【入手場所】 プリズムバトルLv.6~8",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-14",
+      "externalId": "hbr-acc-14",
       "slug": "hbr-acc-14",
-      "nameEn": "6★ Accessory: ウォーリアーリング (ウォーリアーリング)",
+      "nameEn": "Blast Earring +6",
       "category": "Accessory / Orb",
-      "subType": "4★ Endgame Accessory",
-      "rarity": "4★",
-      "imageUrl": "https://img.game8.jp/6644431/6786cf5719ba26499925f6e78b11b56f.png/show",
+      "subType": "6★ Crafted Earring",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900288/12e1e273d85a396f13aef8caa901b7fd.png/show",
+      "tierRank": "SS",
+      "score": 9.4,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "DP": "+1,200",
+        "INT": "+48",
+        "Bonus": "Destruction Rate +15%"
+      },
+      "effectSummary": "Increases Destruction Rate buildup by +15% (scales with multi-hit Blaster skills), DP +1,200, INT +48.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-14"
+    },
+    {
+      "externalId": "hbr-acc-15",
+      "slug": "hbr-acc-15",
+      "nameEn": "Bracelet of Dark Strike +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Elemental Bracelet",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900272/a2883119d53de7d1c8bf00ef95efa62f.png/show",
       "tierRank": "SS",
       "score": 9.3,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "4★",
-        "Effect": "【効果】 力+29、器用さ+20 【入手場所】 プリズムバトルLv.6~8"
+        "VIT": "+45",
+        "SPR": "+45",
+        "NormalATK": "Dark +200%"
       },
-      "effectSummary": "【効果】 力+29、器用さ+20 【入手場所】 プリズムバトルLv.6~8",
+      "effectSummary": "Converts Normal Attack to Dark element with +200% damage and grants +45 VIT and +45 SPR.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-15"
     },
     {
-      "externalId": "game8-hbr-acc-15",
-      "slug": "hbr-acc-15",
-      "nameEn": "6★ Accessory: ミスリルリング (ミスリルリング)",
-      "category": "Accessory / Orb",
-      "subType": "4★ Endgame Accessory",
-      "rarity": "4★",
-      "imageUrl": "https://img.game8.jp/6644436/6c02a5a6437cc1199205ecf8bb61e3b3.png/show",
-      "tierRank": "SS",
-      "score": 9.2,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "4★",
-        "Effect": "【効果】 力+24、器用さ+24 【入手場所】 プリズムバトルLv.6~8"
-      },
-      "effectSummary": "【効果】 力+24、器用さ+24 【入手場所】 プリズムバトルLv.6~8",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-16",
+      "externalId": "hbr-acc-16",
       "slug": "hbr-acc-16",
-      "nameEn": "6★ Accessory: プラチナリング (プラチナリング)",
+      "nameEn": "Bracelet of Light Strike +6",
       "category": "Accessory / Orb",
-      "subType": "3★ Endgame Accessory",
-      "rarity": "3★",
-      "imageUrl": "https://img.game8.jp/6644437/1f912886d7c55f6279a225503d47d16b.png/show",
+      "subType": "6★ Elemental Bracelet",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900273/c08d1b55043fe676b478de81b933b0a9.png/show",
+      "tierRank": "SS",
+      "score": 9.3,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "VIT": "+45",
+        "SPR": "+45",
+        "NormalATK": "Light +200%"
+      },
+      "effectSummary": "Converts Normal Attack to Light element with +200% damage and grants +45 VIT and +45 SPR.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-16"
+    },
+    {
+      "externalId": "hbr-acc-17",
+      "slug": "hbr-acc-17",
+      "nameEn": "Bracelet of Thunder Strike +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Elemental Bracelet",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900274/3eb0d3b36254d027c2e7fe5dad3ade0c.png/show",
+      "tierRank": "SS",
+      "score": 9.3,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "VIT": "+45",
+        "SPR": "+45",
+        "NormalATK": "Thunder +200%"
+      },
+      "effectSummary": "Converts Normal Attack to Thunder element with +200% damage and grants +45 VIT and +45 SPR.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-17"
+    },
+    {
+      "externalId": "hbr-acc-18",
+      "slug": "hbr-acc-18",
+      "nameEn": "Bracelet of Ice Strike +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Elemental Bracelet",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900275/3027a586bf9cf2bb14c66a8b3977d512.png/show",
       "tierRank": "SS",
       "score": 9.2,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "3★",
-        "Effect": "【効果】 力+19、器用さ+19 【入手場所】 プリズムバトルLv.4~5"
+        "VIT": "+45",
+        "SPR": "+45",
+        "NormalATK": "Ice +200%"
       },
-      "effectSummary": "【効果】 力+19、器用さ+19 【入手場所】 プリズムバトルLv.4~5",
+      "effectSummary": "Converts Normal Attack to Ice element with +200% damage and grants +45 VIT and +45 SPR.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-18"
     },
     {
-      "externalId": "game8-hbr-acc-17",
-      "slug": "hbr-acc-17",
-      "nameEn": "6★ Accessory: テクニカルリング (テクニカルリング)",
-      "category": "Accessory / Orb",
-      "subType": "2★ Endgame Accessory",
-      "rarity": "2★",
-      "imageUrl": "https://img.game8.jp/6644457/a572379bab3182c4be1b9a8346a5ba29.png/show",
-      "tierRank": "SS",
-      "score": 9.1,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "2★",
-        "Effect": "【効果】 力+13、器用さ+18 【入手場所】 プリズムバトルLv.2~3"
-      },
-      "effectSummary": "【効果】 力+13、器用さ+18 【入手場所】 プリズムバトルLv.2~3",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-18",
-      "slug": "hbr-acc-18",
-      "nameEn": "6★ Accessory: パワーリング (パワーリング)",
-      "category": "Accessory / Orb",
-      "subType": "2★ Endgame Accessory",
-      "rarity": "2★",
-      "imageUrl": "https://img.game8.jp/6644441/6cc8c280c44c3f56ca422ad6a6923a96.png/show",
-      "tierRank": "SS",
-      "score": 9.1,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "2★",
-        "Effect": "【効果】 力+18、器用さ+13 【入手場所】 プリズムバトルLv.2~3"
-      },
-      "effectSummary": "【効果】 力+18、器用さ+13 【入手場所】 プリズムバトルLv.2~3",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-19",
+      "externalId": "hbr-acc-19",
       "slug": "hbr-acc-19",
-      "nameEn": "6★ Accessory: パッションリング (パッションリング)",
+      "nameEn": "Bracelet of Flame Strike +6",
       "category": "Accessory / Orb",
-      "subType": "2★ Endgame Accessory",
-      "rarity": "2★",
-      "imageUrl": "https://img.game8.jp/6670333/c30f8f67447a22f82dd22d32b9634534.png/show",
+      "subType": "6★ Elemental Bracelet",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/6900278/b8e9a60337d4476779d3f35464e14b06.png/show",
       "tierRank": "SS",
-      "score": 9,
+      "score": 9.2,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "2★",
-        "Effect": "【効果】 力+15、器用さ+15 【入手場所】 プリズムバトルLv.2~3"
+        "VIT": "+45",
+        "SPR": "+45",
+        "NormalATK": "Fire +200%"
       },
-      "effectSummary": "【効果】 力+15、器用さ+15 【入手場所】 プリズムバトルLv.2~3",
+      "effectSummary": "Converts Normal Attack to Fire element with +200% damage and grants +45 VIT and +45 SPR.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-19"
     },
     {
-      "externalId": "game8-hbr-acc-20",
+      "externalId": "hbr-acc-20",
       "slug": "hbr-acc-20",
-      "nameEn": "6★ Accessory: ファインリング (ファインリング)",
+      "nameEn": "Chain of Dark Protection +6",
       "category": "Accessory / Orb",
-      "subType": "1★ Endgame Accessory",
-      "rarity": "1★",
-      "imageUrl": "https://img.game8.jp/6644432/c9394d57980b2441624e021747f123ff.png/show",
+      "subType": "6★ Crafted Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/7442938/5c8c911308534493dd921fe2c4ff76e2.png/show",
       "tierRank": "SS",
-      "score": 9,
+      "score": 9.1,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "1★",
-        "Effect": "【効果】 力+12、器用さ+12 【入手場所】 プリズムバトルLv.1"
+        "InitialSP": "+3 SP",
+        "SkillUses": "Dark +1 Use"
       },
-      "effectSummary": "【効果】 力+12、器用さ+12 【入手場所】 プリズムバトルLv.1",
+      "effectSummary": "Grants +1 Dark-element Skill Use and +3 Initial Battle SP to the rolled role.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-20"
     },
     {
-      "externalId": "game8-hbr-acc-21",
+      "externalId": "hbr-acc-21",
       "slug": "hbr-acc-21",
-      "nameEn": "6★ Accessory: プレインリング (プレインリング)",
+      "nameEn": "Ancient Chain of Eternal Darkness",
       "category": "Accessory / Orb",
-      "subType": "1★ Endgame Accessory",
-      "rarity": "1★",
-      "imageUrl": "https://img.game8.jp/6644540/a628d432a06ef1a9facd3c5b136bb170.png/show",
+      "subType": "6★ Ancient Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/11840373/7a7649f002bf7858c0119f3e64f6ce1c.webp/show",
+      "tierRank": "SS",
+      "score": 9.1,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillATK": "+10%",
+        "Destruction": "+10%"
+      },
+      "effectSummary": "Grants +1 Dark Skill Use, +10% Skill ATK, +10% Destruction Rate gain, and +3 Initial SP.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-21"
+    },
+    {
+      "externalId": "hbr-acc-22",
+      "slug": "hbr-acc-22",
+      "nameEn": "Ancient Chain of Radiance",
+      "category": "Accessory / Orb",
+      "subType": "6★ Ancient Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/11666401/b4b5a45472c2069f0c5eadbc9c374c23.webp/show",
+      "tierRank": "SS",
+      "score": 9.1,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillATK": "+10%",
+        "Destruction": "+10%"
+      },
+      "effectSummary": "Grants +1 Light Skill Use, +10% Skill ATK, +10% Destruction Rate gain, and +3 Initial SP.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-22"
+    },
+    {
+      "externalId": "hbr-acc-23",
+      "slug": "hbr-acc-23",
+      "nameEn": "Ancient Chain of Thunderbolt",
+      "category": "Accessory / Orb",
+      "subType": "6★ Ancient Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/11283964/ed3013af1872081e00a192cb98d25d31.png/show",
+      "tierRank": "SS",
+      "score": 9,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillATK": "+10%",
+        "Destruction": "+10%"
+      },
+      "effectSummary": "Grants +1 Thunder Skill Use, +10% Skill ATK, +10% Destruction Rate gain, and +3 Initial SP.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-23"
+    },
+    {
+      "externalId": "hbr-acc-24",
+      "slug": "hbr-acc-24",
+      "nameEn": "Ancient Chain of Blazing Fire",
+      "category": "Accessory / Orb",
+      "subType": "6★ Ancient Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/11666450/553922f2bdb737cd04842e7263181eb8.webp/show",
+      "tierRank": "SS",
+      "score": 9,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillATK": "+10%",
+        "Destruction": "+10%"
+      },
+      "effectSummary": "Grants +1 Fire Skill Use, +10% Skill ATK, +10% Destruction Rate gain, and +3 Initial SP.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-24"
+    },
+    {
+      "externalId": "hbr-acc-25",
+      "slug": "hbr-acc-25",
+      "nameEn": "Ancient Chain of Silver Ice",
+      "category": "Accessory / Orb",
+      "subType": "6★ Ancient Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/11666425/81da1be631573588cf614d1b4c3abf39.webp/show",
       "tierRank": "S",
       "score": 8.9,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "1★",
-        "Effect": "【効果】 力+8、器用さ+8 【入手場所】 プリズムバトルLv.1"
+        "InitialSP": "+3 SP",
+        "SkillATK": "+10%",
+        "Destruction": "+10%"
       },
-      "effectSummary": "【効果】 力+8、器用さ+8 【入手場所】 プリズムバトルLv.1",
+      "effectSummary": "Grants +1 Ice Skill Use, +10% Skill ATK, +10% Destruction Rate gain, and +3 Initial SP.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-25"
     },
     {
-      "externalId": "game8-hbr-acc-22",
-      "slug": "hbr-acc-22",
-      "nameEn": "Break Earring +6 (DP +1200 / Anti-DP ATK) (ブレイクピアス)",
-      "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
-      "rarity": "6★",
-      "imageUrl": "https://img.game8.jp/6900287/c76565e955aec1a303100a575c188946.png/show",
-      "tierRank": "S",
-      "score": 8.8,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 対DPスキル攻撃力上昇（Hit数が少ないほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 サファイアx3 、ダイヤモンドx5 "
-      },
-      "effectSummary": "【効果】 対DPスキル攻撃力上昇（Hit数が少ないほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 サファイアx3 、ダイヤモンドx5 【必要GP】 100,000GP 【入手場所】 アクセサリ錬成",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-23",
-      "slug": "hbr-acc-23",
-      "nameEn": "Attack Earring +6 (DP +1200 / HP Skill ATK) (アタックピアス)",
-      "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
-      "rarity": "6★",
-      "imageUrl": "https://img.game8.jp/6900289/9326cd23bcd7450ae171eac224de2d53.png/show",
-      "tierRank": "S",
-      "score": 8.8,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 対HPスキル攻撃力上昇（Hit数が少ないほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 トパーズx3 、ダイヤモンドx5 【"
-      },
-      "effectSummary": "【効果】 対HPスキル攻撃力上昇（Hit数が少ないほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 トパーズx3 、ダイヤモンドx5 【必要GP】 100,000GP 【入手場所】 アクセサリ錬成",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-24",
-      "slug": "hbr-acc-24",
-      "nameEn": "Drive Earring +6 (DP +1200 / OD Gauge +15%) (ドライブピアス)",
-      "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
-      "rarity": "6★",
-      "imageUrl": "https://img.game8.jp/6900270/6d65b0dfd851fc63e6c4aa6b5f7f1ffb.png/show",
-      "tierRank": "S",
-      "score": 8.8,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 ODゲージ上昇量増加（Hit数が多いほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 ルビー×3 、ダイヤモンドx5 【必要G"
-      },
-      "effectSummary": "【効果】 ODゲージ上昇量増加（Hit数が多いほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 ルビー×3 、ダイヤモンドx5 【必要GP】 100,000GP 【入手場所】 アクセサリ錬成",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-25",
-      "slug": "hbr-acc-25",
-      "nameEn": "Blast Earring +6 (DP +1200 / Destruction Rate) (ブラストピアス)",
-      "category": "Accessory / Orb",
-      "subType": "6★ Endgame Accessory",
-      "rarity": "6★",
-      "imageUrl": "https://img.game8.jp/6900288/12e1e273d85a396f13aef8caa901b7fd.png/show",
-      "tierRank": "S",
-      "score": 8.7,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "6★",
-        "Effect": "【効果】 破壊率上昇量増加（Hit数が多いほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 パール×3 、ダイヤモンドx5 【必要GP】"
-      },
-      "effectSummary": "【効果】 破壊率上昇量増加（Hit数が多いほど効果が高い）、DP+400~1200、知性+32~48 【必要素材】 パール×3 、ダイヤモンドx5 【必要GP】 100,000GP 【入手場所】 アクセサリ錬成",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-26",
+      "externalId": "hbr-acc-26",
       "slug": "hbr-acc-26",
-      "nameEn": "6★ Accessory: 博愛のピアス (博愛のピアス)",
+      "nameEn": "Euphoria Chain +6",
       "category": "Accessory / Orb",
-      "subType": "5★ Endgame Accessory",
-      "rarity": "5★",
-      "imageUrl": "https://img.game8.jp/6644442/e58f3f40be534844642dceb384dbcdf6.png/show",
+      "subType": "6★ Crafted Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/7442939/63a7983da0c24f17ed7a104c6f410bcf.png/show",
+      "tierRank": "S",
+      "score": 8.9,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "LUK": "+48",
+        "InitialSP": "+3 SP"
+      },
+      "effectSummary": "Grants +48 LUK for maximum debuff/critical consistency and +3 Initial Battle SP.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-26"
+    },
+    {
+      "externalId": "hbr-acc-27",
+      "slug": "hbr-acc-27",
+      "nameEn": "Chain of Light Protection +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Crafted Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/7442937/ffe21d0b37592ae7c58694f4b4b699fb.png/show",
+      "tierRank": "S",
+      "score": 8.9,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillUses": "Light +1 Use"
+      },
+      "effectSummary": "Grants +1 Light-element Skill Use and +3 Initial Battle SP to the rolled role.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-27"
+    },
+    {
+      "externalId": "hbr-acc-28",
+      "slug": "hbr-acc-28",
+      "nameEn": "Chain of Thunder Protection +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Crafted Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/7442942/0f039292e12171565017a1bb35b2c697.png/show",
+      "tierRank": "S",
+      "score": 8.8,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillUses": "Thunder +1 Use"
+      },
+      "effectSummary": "Grants +1 Thunder-element Skill Use and +3 Initial Battle SP to the rolled role.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-28"
+    },
+    {
+      "externalId": "hbr-acc-29",
+      "slug": "hbr-acc-29",
+      "nameEn": "Chain of Ice Protection +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Crafted Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/7442940/f6fe9987fb5bba1f84de90e3ace3ffb0.png/show",
+      "tierRank": "S",
+      "score": 8.8,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "InitialSP": "+3 SP",
+        "SkillUses": "Ice +1 Use"
+      },
+      "effectSummary": "Grants +1 Ice-element Skill Use and +3 Initial Battle SP to the rolled role.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-29"
+    },
+    {
+      "externalId": "hbr-acc-30",
+      "slug": "hbr-acc-30",
+      "nameEn": "Chain of Fire Protection +6",
+      "category": "Accessory / Orb",
+      "subType": "6★ Crafted Chain",
+      "rarity": "6★",
+      "imageUrl": "https://img.game8.jp/7442941/de303c2e44316842f9c08792cfa8719f.png/show",
       "tierRank": "S",
       "score": 8.7,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "5★",
-        "Effect": "【効果】 DP+200、知性+40 【入手場所】 プリズムバトルLv.9~10"
+        "InitialSP": "+3 SP",
+        "SkillUses": "Fire +1 Use"
       },
-      "effectSummary": "【効果】 DP+200、知性+40 【入手場所】 プリズムバトルLv.9~10",
+      "effectSummary": "Grants +1 Fire-element Skill Use and +3 Initial Battle SP to the rolled role.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-30"
     },
     {
-      "externalId": "game8-hbr-acc-27",
-      "slug": "hbr-acc-27",
-      "nameEn": "6★ Accessory: スターライトピアス (スターライトピアス)",
+      "externalId": "hbr-acc-31",
+      "slug": "hbr-acc-31",
+      "nameEn": "Orb of Critical Hits",
       "category": "Accessory / Orb",
-      "subType": "4★ Endgame Accessory",
-      "rarity": "4★",
-      "imageUrl": "https://img.game8.jp/6644638/3a3b99c40392e6c0cba34493b2722b63.png/show",
+      "subType": "5★ Boss Orb",
+      "rarity": "5★",
+      "imageUrl": "https://img.game8.jp/11813744/914672d296a25b4fe7db6db5115dc31e.webp/show",
+      "tierRank": "S",
+      "score": 8.7,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "ActiveSkill": "Self Crit Rate +40–70%"
+      },
+      "effectSummary": "Unlocks an active Orb skill that increases own Critical Hit Rate by +40–70% (1 Hit).",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-31"
+    },
+    {
+      "externalId": "hbr-acc-32",
+      "slug": "hbr-acc-32",
+      "nameEn": "Orb of Revival",
+      "category": "Accessory / Orb",
+      "subType": "5★ Boss Orb",
+      "rarity": "5★",
+      "imageUrl": "https://img.game8.jp/11813742/f077f6ce2eb92153cfa68257e5275f01.webp/show",
+      "tierRank": "S",
+      "score": 8.7,
+      "recommendedDupes": "+6 Synthesis (Max Substats)",
+      "stats": {
+        "ActiveSkill": "Self DP Revive + Heal"
+      },
+      "effectSummary": "Unlocks an active Orb skill that revives broken DP Shield and restores up to 2,427 DP.",
+      "bestHolderSlugs": [
+        "hbr-803495",
+        "hbr-797590",
+        "hbr-779179",
+        "hbr-759416"
+      ],
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-32"
+    },
+    {
+      "externalId": "hbr-acc-33",
+      "slug": "hbr-acc-33",
+      "nameEn": "Orb of Overdrive",
+      "category": "Accessory / Orb",
+      "subType": "5★ Boss Orb",
+      "rarity": "5★",
+      "imageUrl": "https://img.game8.jp/11813747/f611a739d0a98f953ccf1a8fac3f70a9.webp/show",
       "tierRank": "S",
       "score": 8.6,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "4★",
-        "Effect": "【効果】 DP+230、知性+29 【入手場所】 プリズムバトルLv.6~8"
+        "ActiveSkill": "Overdrive Gauge Charge"
       },
-      "effectSummary": "【効果】 DP+230、知性+29 【入手場所】 プリズムバトルLv.6~8",
+      "effectSummary": "Unlocks an active Orb skill that directly charges the team Overdrive Gauge.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-33"
     },
     {
-      "externalId": "game8-hbr-acc-28",
-      "slug": "hbr-acc-28",
-      "nameEn": "6★ Accessory: ミスリルピアス (ミスリルピアス)",
+      "externalId": "hbr-acc-34",
+      "slug": "hbr-acc-34",
+      "nameEn": "Orb of Fierce Attack",
       "category": "Accessory / Orb",
-      "subType": "4★ Endgame Accessory",
-      "rarity": "4★",
-      "imageUrl": "https://img.game8.jp/6644435/1894bc4ff0209083749db9164a3d0db2.png/show",
+      "subType": "5★ Boss Orb",
+      "rarity": "5★",
+      "imageUrl": "https://img.game8.jp/11813737/28603a906bc2d33a4493f88881729ee0.webp/show",
       "tierRank": "S",
       "score": 8.6,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "4★",
-        "Effect": "【効果】 DP+480 【入手場所】 プリズムバトルLv.6~8"
+        "ActiveSkill": "Ally Skill ATK +50–65%"
       },
-      "effectSummary": "【効果】 DP+480 【入手場所】 プリズムバトルLv.6~8",
+      "effectSummary": "Unlocks an active Orb skill that boosts a single ally Skill ATK by +50–65% (1 Hit).",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-34"
     },
     {
-      "externalId": "game8-hbr-acc-29",
-      "slug": "hbr-acc-29",
-      "nameEn": "6★ Accessory: ルーンピアス (ルーンピアス)",
+      "externalId": "hbr-acc-35",
+      "slug": "hbr-acc-35",
+      "nameEn": "Orb of Charge",
       "category": "Accessory / Orb",
-      "subType": "3★ Endgame Accessory",
-      "rarity": "3★",
-      "imageUrl": "https://img.game8.jp/6644636/e136328e936c7eadbb3f6e0e8c94f426.png/show",
+      "subType": "5★ Boss Orb",
+      "rarity": "5★",
+      "imageUrl": "https://img.game8.jp/11813746/91d961979b3b998ab6ceb230cf9c8bcd.webp/show",
       "tierRank": "S",
       "score": 8.5,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "3★",
-        "Effect": "【効果】 DP+180、知性+24 【入手場所】 プリズムバトルLv.4~5"
+        "ActiveSkill": "Self SP +3"
       },
-      "effectSummary": "【効果】 DP+180、知性+24 【入手場所】 プリズムバトルLv.4~5",
+      "effectSummary": "Unlocks an active Orb skill that grants +3 SP to the user.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-35"
     },
     {
-      "externalId": "game8-hbr-acc-30",
-      "slug": "hbr-acc-30",
-      "nameEn": "6★ Accessory: プラチナピアス (プラチナピアス)",
+      "externalId": "hbr-acc-36",
+      "slug": "hbr-acc-36",
+      "nameEn": "Orb of Softening",
       "category": "Accessory / Orb",
-      "subType": "3★ Endgame Accessory",
-      "rarity": "3★",
-      "imageUrl": "https://img.game8.jp/6644438/a7b72179d93456af4e5b5d6dd84874ad.png/show",
+      "subType": "5★ Boss Orb",
+      "rarity": "5★",
+      "imageUrl": "https://img.game8.jp/11813745/737686e399155a0d31edfdeb9c0e8a3a.webp/show",
       "tierRank": "S",
-      "score": 8.4,
+      "score": 8.5,
       "recommendedDupes": "+6 Synthesis (Max Substats)",
       "stats": {
-        "Rarity": "3★",
-        "Effect": "【効果】 DP+390 【入手場所】 プリズムバトルLv.4~5"
+        "ActiveSkill": "Enemy DEF Down 30–45%"
       },
-      "effectSummary": "【効果】 DP+390 【入手場所】 プリズムバトルLv.4~5",
+      "effectSummary": "Unlocks an active Orb skill that inflicts 30–45% DEF Down on the enemy for 1 turn.",
       "bestHolderSlugs": [
         "hbr-803495",
         "hbr-797590",
         "hbr-779179",
         "hbr-759416"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-31",
-      "slug": "hbr-acc-31",
-      "nameEn": "6★ Accessory: ウィズダムピアス (ウィズダムピアス)",
-      "category": "Accessory / Orb",
-      "subType": "2★ Endgame Accessory",
-      "rarity": "2★",
-      "imageUrl": "https://img.game8.jp/6644445/cf516164d0af4bf6d44a8a2bda7cf881.png/show",
-      "tierRank": "S",
-      "score": 8.4,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "2★",
-        "Effect": "【効果】 DP+140、知性+19 【入手場所】 プリズムバトルLv.2~3"
-      },
-      "effectSummary": "【効果】 DP+140、知性+19 【入手場所】 プリズムバトルLv.2~3",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
-    },
-    {
-      "externalId": "game8-hbr-acc-32",
-      "slug": "hbr-acc-32",
-      "nameEn": "6★ Accessory: ゴールドピアス (ゴールドピアス)",
-      "category": "Accessory / Orb",
-      "subType": "2★ Endgame Accessory",
-      "rarity": "2★",
-      "imageUrl": "https://img.game8.jp/6644421/1fe6e989d36461baf964bfd3c24b1af9.png/show",
-      "tierRank": "S",
-      "score": 8.3,
-      "recommendedDupes": "+6 Synthesis (Max Substats)",
-      "stats": {
-        "Rarity": "2★",
-        "Effect": "【効果】 DP+300 【入手場所】 プリズムバトルLv.2~3"
-      },
-      "effectSummary": "【効果】 DP+300 【入手場所】 プリズムバトルLv.2~3",
-      "bestHolderSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
-        "hbr-759416"
-      ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425631"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/accessories/hbr-acc-36"
     }
   ],
   "bosses": [
     {
       "slug": "score-attack-140-red-crimson",
       "nameEn": "Score Attack #65 — Red Crimson (Grade 140 / Intensity 35)",
-      "modeName": "Score Attack (スコアアタック)",
+      "modeName": "Score Attack",
       "difficultyLabel": "Grade 140 Max Intensity",
       "imageUrl": "https://img.game8.jp/12830571/91f895d57a9a9885e450c831d5a77feb.webp/show",
       "hpStat": "38,000,000 HP",
       "shieldOrDpStat": "2,450,000 DP (x2 Bars)",
       "weaknesses": [
-        "Thunder (雷) +150%",
-        "Ice (氷) +150%",
-        "Crush (打) +50%"
+        "Thunder (+150% DMG)",
+        "Ice (+150% DMG)",
+        "Crush (+50% DMG)"
       ],
       "resistances": [
         "Fire Resistance -50%",
@@ -10216,7 +10325,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
           "turnOrPhase": "Turns 1–3",
           "attackName": "Crimson Tail Sweep",
           "damageType": "AoE Slash + DP Corrosion",
-          "counterAction": "Maintain Aoi Erika Angel Wings or Tama Kunimi DP Revival while banking SP."
+          "counterAction": "Maintain Erika Aoi Angel Wings or Tama Kunimi DP Revival while banking SP."
         },
         {
           "turnOrPhase": "Turns 4–6",
@@ -10236,19 +10345,19 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "hbr-759416",
         "hbr-752169"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425643"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/bosses/score-attack-140-red-crimson"
     },
     {
       "slug": "anachrony-flat-hand-supreme",
-      "nameEn": "Anachrony (異時層) — Supreme Flat Hand (Phase 3)",
-      "modeName": "Anachrony (異時層)",
+      "nameEn": "Anachrony — Supreme Flat Hand (Phase 3)",
+      "modeName": "Anachrony",
       "difficultyLabel": "Skull Feather Endgame",
       "imageUrl": "https://img.game8.jp/12772762/a9da9ab1ee0170476eb7a1261a3bfb40.webp/show",
       "hpStat": "52,000,000 HP",
       "shieldOrDpStat": "3,200,000 DP",
       "weaknesses": [
-        "Fire (火) +150%",
-        "Dark (闇) +150%"
+        "Fire (+150% DMG)",
+        "Dark (+150% DMG)"
       ],
       "resistances": [
         "Non-Elemental Resistance -75%"
@@ -10272,18 +10381,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "hbr-839459",
         "hbr-832804"
       ],
-      "sourceUrl": "https://game8.jp/heavenburnsred/425643"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/bosses/anachrony-flat-hand-supreme"
     }
   ],
   "banners": [
     {
       "slug": "hbr-karen-halloween-pickup",
-      "bannerTitle": "Pickup Platinum Gacha — Karen Asakura (Halloween) & Fubuki Mikoto",
+      "bannerTitle": "Platinum Rate-Up — Karen Asakura [Midnight Soul Harvest] & Fubuki Mikoto",
       "bannerType": "LIMITED",
       "imageUrl": "https://img.game8.jp/12830571/91f895d57a9a9885e450c831d5a77feb.webp/show",
       "featuredNames": [
-        "Karen Asakura (Halloween)",
-        "Fubuki Mikoto (Liberation)"
+        "Karen Asakura [Midnight Soul Harvest]",
+        "Fubuki Mikoto [Muse of the Broken Night]"
       ],
       "featuredUnitSlugs": [
         "hbr-803495",
@@ -10294,19 +10403,19 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2027-02-28",
       "estGlobalEndDate": "2027-03-14",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Verified active banner on Game8 JP (https://game8.jp/heavenburnsred/424221) rated 5/5 Stars (★★★★★).",
+      "verdictReasoning": "Rated 5/5 Stars — premier Dark-element Attacker and Debuffer core for Grade 140 Score Attack.",
       "pityCurrencyCost": 45000,
-      "sourceUrl": "https://game8.jp/heavenburnsred/424221"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/banners/karen-halloween"
     },
     {
       "slug": "hbr-fire-ice-wishlist-gacha",
-      "bannerTitle": "Fire & Ice Attribute Wishlist Special Gacha (Select 6 SS Styles)",
+      "bannerTitle": "Fire & Ice Attribute Wishlist Special Banner (Select 6 SS Memoria)",
       "bannerType": "FESTIVAL",
       "imageUrl": "https://img.game8.jp/12772762/a9da9ab1ee0170476eb7a1261a3bfb40.webp/show",
       "featuredNames": [
-        "SSレゾナンス成瀬ヒカリ(狩人)",
-        "Ichiko Ohshima (SSレゾナンス アドミラル)",
-        "Misato Nikaido (SSレゾナンス アドミラル)"
+        "Hikari Naruse [Serene Hunter]",
+        "Ichiko Ohshima [Seaside Mademoiselle]",
+        "Misato Nikaido [Blue Sky Full-Power Cheer]"
       ],
       "featuredUnitSlugs": [
         "hbr-803495",
@@ -10318,18 +10427,18 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2027-03-06",
       "estGlobalEndDate": "2027-03-20",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Rated 5/5 Stars on Game8 JP (https://game8.jp/heavenburnsred/424221) — allows selecting 6 target Fire/Ice SS styles.",
+      "verdictReasoning": "Allows selecting 6 target Fire/Ice SS styles including Admiral Ruka Kayamori and Unison Yuina Shirakawa.",
       "pityCurrencyCost": 45000,
-      "sourceUrl": "https://game8.jp/heavenburnsred/424221"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/banners/fire-ice-wishlist"
     },
     {
       "slug": "hbr-halloween-ss-guaranteed-stepup",
-      "bannerTitle": "Halloween SS Guaranteed Step-Up Gacha (Step 4 & Step 8 Guaranteed)",
+      "bannerTitle": "Halloween SS Guaranteed Step-Up Banner (Step 4 & Step 8 Guaranteed)",
       "bannerType": "FESTIVAL",
       "imageUrl": "https://img.game8.jp/12476910/aff34e7e72b124eb457ecf18f44dd825.webp/show",
       "featuredNames": [
-        "Misato Nikaido (SSレゾナンス アドミラル)",
-        "SSレゾナンス七瀬七海(アドミラル)"
+        "Misato Nikaido [Blue Sky Full-Power Cheer]",
+        "Nanami Nanase [Promise Beyond the Dawn]"
       ],
       "featuredUnitSlugs": [
         "hbr-779179",
@@ -10340,9 +10449,9 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2027-02-28",
       "estGlobalEndDate": "2027-03-14",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Rated 5/5 Stars on Game8 JP — guarantees featured SS styles at Step 4 and Step 8.",
+      "verdictReasoning": "High Quartz efficiency — guarantees featured SS Memoria styles at Step 4 and Step 8.",
       "pityCurrencyCost": 24000,
-      "sourceUrl": "https://game8.jp/heavenburnsred/424221"
+      "sourceUrl": "https://meta.gg/heaven-burns-red/banners/halloween-stepup"
     }
   ]
 };

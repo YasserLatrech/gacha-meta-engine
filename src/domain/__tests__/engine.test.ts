@@ -5,7 +5,7 @@ import {
   compareUnitStats,
 } from '../calculators/engine';
 
-describe('Foresight Pull Savings & Pity Probability Engine', () => {
+describe('Pull Savings & Pity Probability Engine', () => {
   it('accurately computes HBR 45,000 Quartz spark guarantee and surplus', () => {
     const res = calculatePullSavings({
       currentCurrency: 24000,
@@ -48,7 +48,7 @@ describe('Foresight Pull Savings & Pity Probability Engine', () => {
   });
 });
 
-describe('Asian-Server Multi-Bucket Combat Damage Engine', () => {
+describe('Multi-Bucket Combat Damage Engine', () => {
   it('stacks 2x Skill ATK, 2x Crit DMG, Field Zone, 2x DEF Down, Fragile, and Multi-Hit multiplicatively', () => {
     const res = evaluateCombatMultiplier({
       basePotency: 12450,
@@ -110,9 +110,8 @@ describe('Side-by-Side Unit Statistical Comparator', () => {
   });
 });
 
-
-describe('Full-Page Scraped Asian Rosters & Authentic Image Verification', () => {
-  it('validates all 325 scraped units and 181 equipments across Star Savior, HBR, Uma Musume, and Sword of Convallaria', async () => {
+describe('Pure Official English Localization & Roster Verification', () => {
+  it('validates all 336 units and 216 equipments with 0 CJK characters and 0 forbidden external terms', async () => {
     const { starSaviorBundle } = await import('../../infrastructure/scrapers/adapters/star-savior.adapter');
     const { heavenBurnsRedBundle } = await import('../../infrastructure/scrapers/adapters/heaven-burns-red.adapter');
     const { umaMusumeBundle } = await import('../../infrastructure/scrapers/adapters/uma-musume.adapter');
@@ -122,14 +121,22 @@ describe('Full-Page Scraped Asian Rosters & Authentic Image Verification', () =>
     expect(starSaviorBundle.units.length).toBeGreaterThanOrEqual(55);
     expect(starSaviorBundle.equipments.length).toBeGreaterThanOrEqual(50);
     expect(heavenBurnsRedBundle.units.length).toBeGreaterThanOrEqual(115);
-    expect(heavenBurnsRedBundle.equipments.length).toBeGreaterThanOrEqual(30);
-    expect(umaMusumeBundle.units.length).toBeGreaterThanOrEqual(85);
-    expect(umaMusumeBundle.equipments.length).toBeGreaterThanOrEqual(45);
+    expect(heavenBurnsRedBundle.equipments.length).toBeGreaterThanOrEqual(35);
+    expect(umaMusumeBundle.units.length).toBeGreaterThanOrEqual(95);
+    expect(umaMusumeBundle.equipments.length).toBeGreaterThanOrEqual(75);
     expect(swordOfConvallariaBundle.units.length).toBeGreaterThanOrEqual(50);
-    expect(swordOfConvallariaBundle.equipments.length).toBeGreaterThanOrEqual(40);
+    expect(swordOfConvallariaBundle.equipments.length).toBeGreaterThanOrEqual(45);
     expect(swordOfConvallariaBundle.banners.length).toBeGreaterThanOrEqual(14);
 
+    const cjkRegex = /[\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\uFF00-\uFFEF\u4E00-\u9FAF\uAC00-\uD7AF]/;
+    const forbiddenWordsRegex = /\b(asian|game8|appmedia|scraped|foresight)\b/i;
+
     for (const bundle of [starSaviorBundle, heavenBurnsRedBundle, umaMusumeBundle, swordOfConvallariaBundle]) {
+      const jsonStr = JSON.stringify(bundle);
+      expect(jsonStr).not.toMatch(cjkRegex);
+      const textWithoutImageUrls = jsonStr.replace(/"(imageUrl|coverImageUrl)":"[^"]*"/g, '');
+      expect(textWithoutImageUrls).not.toMatch(forbiddenWordsRegex);
+
       for (const u of bundle.units) {
         expect(() => VerifiedUnitPayloadSchema.parse(u)).not.toThrow();
         expect(u.imageUrl).not.toContain('prydwen.gg');
