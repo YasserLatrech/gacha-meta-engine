@@ -15,6 +15,7 @@ import {
   getAttackTypeIconUrl,
   getStatConceptIconUrl,
   getSkillConceptIconUrl,
+  getSectionEmblemUrl,
 } from '../../../../domain/constants/game-visuals';
 
 export const dynamic = 'force-dynamic';
@@ -81,7 +82,7 @@ export default async function UnitDetailPage({
   const gameAppIcon = getGameAppIconUrl(hub.slug);
   const elemIcon = getElementIconUrl(hub.slug, unit.element, hub.units);
   const atkIcon = getAttackTypeIconUrl(hub.slug, unit.attackType, elemIcon);
-  const topEquipThumb = hub.equipments[0]?.imageUrl || gameAppIcon;
+  const topEquipThumb = getSectionEmblemUrl('weapons');
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -167,7 +168,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={hub.units[0]?.imageUrl || gameAppIcon}
+                  src={getSectionEmblemUrl('tier-list')}
                   alt="Strongest Tier List"
                   width={26}
                   height={26}
@@ -209,7 +210,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={hub.bosses[0]?.imageUrl || hub.coverImageUrl}
+                  src={getSectionEmblemUrl('bosses')}
                   alt="Boss and Raid Guides"
                   width={26}
                   height={26}
@@ -230,7 +231,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={hub.banners[0]?.imageUrl || hub.coverImageUrl}
+                  src={getSectionEmblemUrl('banners')}
                   alt="Upcoming Banners"
                   width={26}
                   height={26}
@@ -251,7 +252,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={hub.units[1]?.imageUrl || gameAppIcon}
+                  src={getSectionEmblemUrl('compare')}
                   alt="Stat Comparison Tool"
                   width={26}
                   height={26}

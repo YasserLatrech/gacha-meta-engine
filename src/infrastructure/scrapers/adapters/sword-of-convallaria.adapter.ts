@@ -83,53 +83,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ – 5★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4880,
-        "dpOrSpeed": 330,
-        "atkOrPower": 2120,
-        "defOrGuts": 940,
-        "critOrWit": 820,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3985,
+        "dpOrSpeed": 235,
+        "atkOrPower": 1660,
+        "defOrGuts": 685,
+        "critOrWit": 78,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 99,
+        "sustainScore": 99,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "SP Inanna Signature Skill",
+          "name": "Princess Prayer — Act Again & Sanctuary",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S+ Tier Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "2 NRG / 1 Turn CD",
+          "multiplierSummary": "Instant Turn Reset + ATK/M.ATK II (+20%) + 100% M.ATK AoE Heal",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "S+ Tier",
-            "Faction Aura"
+            "Act Again",
+            "NRG +2",
+            "Iria Leader Aura",
+            "AoE Heal"
           ],
-          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Grants target ally an immediate extra turn (Act Again), restores +2 NRG, applies ATK II & M.ATK II (+20%), and triggers Sanctuary healing across all allies within 3 tiles."
         },
         {
-          "name": "SP Inanna Trait Reaction",
+          "name": "Trait: Light of Iria Rebirth",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "Summons Royal Guard + End-of-Turn AoE Dispel & Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Watcher",
+            "Magical",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "At start of battle, summons an elite Royal Guard to take cover for allies. After any action, heals the 2 lowest-HP allies for 35% M.ATK and dispels 1 debuff."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for SP Inanna."
+          "unlockRank": "RK 7",
+          "name": "For Peace (Iria Faction Aura)",
+          "effect": "All Iria allies in battle gain +10% ATK, +20% DEF, +15% Crit DMG, and +12% extra damage when buffed."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Flight of the Princess (5★ Trait)",
+          "effect": "Increases healing output by +25% and grants Cooldown -1 to all allies within 3 tiles upon casting an Ultimate."
         }
       ],
       "synergyUnitSlugs": [
@@ -141,7 +143,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "SP Inanna is a SSS-Tier Legendary Watcher (Act-Again & Aura Support) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "SP Inanna (Watcher) is a SSS-Tier Act-Again & Aura Support centerpiece. Grants target ally an immediate extra turn (Act Again), restores +2 NRG, applies ATK II & M.ATK II (+20%), and triggers Sanctuary healing across all allies within 3 tiles.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-inanna"
     },
@@ -163,53 +165,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ – 5★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4862,
-        "dpOrSpeed": 328,
-        "atkOrPower": 2110,
-        "defOrGuts": 935,
-        "critOrWit": 816,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3900,
+        "dpOrSpeed": 206,
+        "atkOrPower": 2152,
+        "defOrGuts": 719,
+        "critOrWit": 83,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "SP Samantha Signature Skill",
+          "name": "Judgement of the Sacred Flame",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S+ Tier Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 0 Turn CD",
+          "multiplierSummary": "160% AoE Magical + Sacred Judgement Brand + Papal Aura",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Seeker",
-            "S+ Tier",
-            "Faction Aura"
+            "AoE Magic Carry",
+            "Papal States Aura",
+            "M.DEF Shred -30%",
+            "NRG Refund"
           ],
-          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Unleashes purifying Papal radiance in a 4-tile radius, dealing 160% Magical damage, inflicting -30% M.DEF II, and refunding +2 NRG when hitting 3 or more targets."
         },
         {
-          "name": "SP Samantha Trait Reaction",
+          "name": "Trait: Supreme Pontiff Verdict",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "+30% M.ATK + Auto-Resolve & Pre-emptive Holy Bolt",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Watcher",
+            "Magical",
+            "AoE Magic Carry"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases M.ATK by +30% and Critical Rate by +20%. Automatically fires a 90% Magical holy bolt at any enemy that attacks an ally within 4 tiles."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for SP Samantha."
+          "unlockRank": "RK 7",
+          "name": "Light of the Papal States (Aura)",
+          "effect": "All Papal States allies gain +10% ATK, +20% DEF, and +20% AoE damage when healthy."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Sacred Martyrdom (5★ Trait)",
+          "effect": "Grants unbreakable Resolve once per battle and resets all skill cooldowns when triggered."
         }
       ],
       "synergyUnitSlugs": [
@@ -221,7 +225,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "SP Samantha is a SSS-Tier Legendary Watcher (AoE Judgement Carry) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "SP Samantha (Watcher) is a SSS-Tier AoE Judgement Carry centerpiece. Unleashes purifying Papal radiance in a 4-tile radius, dealing 160% Magical damage, inflicting -30% M.DEF II, and refunding +2 NRG when hitting 3 or more targets.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-samantha"
     },
@@ -243,53 +247,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4844,
-        "dpOrSpeed": 326,
-        "atkOrPower": 2100,
-        "defOrGuts": 930,
-        "critOrWit": 812,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4620,
+        "dpOrSpeed": 212,
+        "atkOrPower": 2134,
+        "defOrGuts": 912,
+        "critOrWit": 84,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Camelot Signature Skill",
+          "name": "Camelot — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Breaker",
-            "S Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Camelot Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
-          "hitCount": 1,
-          "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
             "Breaker"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Camelot delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
+        },
+        {
+          "name": "Trait: Camelot Warlord Momentum",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
+          ],
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Camelot."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Camelot Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -301,7 +307,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Camelot is a SS-Tier Legendary Breaker (Vanguard Cleave Carry) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Camelot is a SS-Tier Breaker (Vanguard Cleave Carry) specialist in Sword of Convallaria. Camelot delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-camelot"
     },
@@ -323,53 +329,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4826,
-        "dpOrSpeed": 324,
-        "atkOrPower": 2090,
-        "defOrGuts": 925,
-        "critOrWit": 808,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3835,
+        "dpOrSpeed": 208,
+        "atkOrPower": 2026,
+        "defOrGuts": 697,
+        "critOrWit": 85,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Geralt Signature Skill",
+          "name": "Geralt — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Piercing)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Defender",
-            "S Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Watcher"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Geralt delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Geralt Trait Reaction",
+          "name": "Trait: Geralt Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Watcher",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Geralt."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Geralt Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -381,7 +389,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.2,
-      "summaryVerdict": "Geralt is a SS-Tier Legendary Watcher (Witcher Sign & Sword Carry) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Geralt is a SS-Tier Watcher (Witcher Sign & Sword Carry) specialist in Sword of Convallaria. Geralt delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-geralt"
     },
@@ -403,53 +411,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4808,
-        "dpOrSpeed": 322,
-        "atkOrPower": 2080,
-        "defOrGuts": 920,
-        "critOrWit": 804,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3920,
+        "dpOrSpeed": 209,
+        "atkOrPower": 2128,
+        "defOrGuts": 731,
+        "critOrWit": 92,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Kvare Signature Skill",
+          "name": "Abyssal Roster — Soul Harvest",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Piercing Magical + 3× Roster Corrosion DoT",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Destroyer",
-            "S Tier - DPS",
-            "Faction Aura"
+            "Piercing Magic",
+            "True HP Corrosion",
+            "Shield Bypass",
+            "Boss Killer"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Calls down dark Crimson Night bolts across a 3-tile zone, dealing 175% Magical damage that bypasses Physical shields and detonates all active Roster Corrosion stacks."
         },
         {
-          "name": "Kvare Trait Reaction",
+          "name": "Trait: Architect of Crimson Night",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "Ignores 40% M.DEF + Stacks True HP Corrosion",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "Destroyer",
+            "Piercing",
+            "Piercing Magic"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Every active attack inflicts 2 stacks of Roster Corrosion (12% Max HP Piercing damage at turn end) and ignores 40% of enemy M.DEF."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Kvare."
+          "unlockRank": "RK 7",
+          "name": "Nightfall Dominion",
+          "effect": "Increases Magical damage by +25% against enemies afflicted with 2 or more debuffs."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Immortal Schemer (5★ Trait)",
+          "effect": "Recovers +1 NRG whenever an enemy suffers Corrosion damage and heals 25% of damage dealt."
         }
       ],
       "synergyUnitSlugs": [
@@ -461,7 +471,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 9.4,
-      "summaryVerdict": "Kvare is a SS-Tier Legendary Destroyer (Piercing DoT & Burst Mage) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Kvare (Destroyer) is a SS-Tier Piercing DoT & Burst Mage centerpiece. Calls down dark Crimson Night bolts across a 3-tile zone, dealing 175% Magical damage that bypasses Physical shields and detonates all active Roster Corrosion stacks.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-kvare"
     },
@@ -483,53 +493,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4790,
-        "dpOrSpeed": 320,
-        "atkOrPower": 2070,
-        "defOrGuts": 915,
-        "critOrWit": 800,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3830,
+        "dpOrSpeed": 210,
+        "atkOrPower": 2020,
+        "defOrGuts": 695,
+        "critOrWit": 93,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Luvata Signature Skill",
+          "name": "Luvata — Cataclysmic Arcane Detonation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 1 Turn CD",
+          "multiplierSummary": "165% AoE Magical + -30% M.DEF Shred + Scorch Zone",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "S Tier - DPS",
-            "Faction Aura"
+            "AoE Magic Carry",
+            "M.DEF Shred -30%",
+            "Shield Piercer",
+            "Destroyer"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Luvata calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit."
         },
         {
-          "name": "Luvata Trait Reaction",
+          "name": "Trait: Luvata Astral Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+25% M.ATK + +1 NRG Recovery at 80%+ HP",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Destroyer",
+            "Magical Carry",
+            "NRG Regen"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases Magical Attack by +25% and recovers +1 bonus NRG at the start of turn whenever HP is above 80%."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Luvata."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Luvata Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -541,7 +553,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Luvata is a SS-Tier Legendary Destroyer (Ignite AoE Fire Mage) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Luvata is a SS-Tier Destroyer (Ignite AoE Fire Mage) specialist in Sword of Convallaria. Luvata calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-luvata"
     },
@@ -563,53 +575,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4772,
-        "dpOrSpeed": 318,
-        "atkOrPower": 2060,
-        "defOrGuts": 910,
-        "critOrWit": 796,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3915,
+        "dpOrSpeed": 261,
+        "atkOrPower": 2122,
+        "defOrGuts": 729,
+        "critOrWit": 98,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Nydia Signature Skill",
+          "name": "Nydia — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Seeker",
-            "S Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Nydia Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
-          "hitCount": 1,
-          "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
             "Seeker"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
+        },
+        {
+          "name": "Trait: Nydia Crimson Ambush",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Seeker",
+            "Flanker",
+            "Mobility"
+          ],
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Nydia."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Nydia Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -621,7 +635,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.2,
-      "summaryVerdict": "Nydia is a SS-Tier Legendary Seeker (Backline Dive Assassin) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Nydia is a SS-Tier Seeker (Backline Dive Assassin) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nydia"
     },
@@ -643,53 +657,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4754,
-        "dpOrSpeed": 316,
-        "atkOrPower": 2050,
-        "defOrGuts": 905,
-        "critOrWit": 792,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3825,
+        "dpOrSpeed": 212,
+        "atkOrPower": 2014,
+        "defOrGuts": 693,
+        "critOrWit": 95,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Triss Signature Skill",
+          "name": "Triss — Cataclysmic Arcane Detonation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 1 Turn CD",
+          "multiplierSummary": "165% AoE Magical + -30% M.DEF Shred + Scorch Zone",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "S Tier - DPS",
-            "Faction Aura"
+            "AoE Magic Carry",
+            "M.DEF Shred -30%",
+            "Shield Piercer",
+            "Destroyer"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Triss calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit."
         },
         {
-          "name": "Triss Trait Reaction",
+          "name": "Trait: Triss Astral Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+25% M.ATK + +1 NRG Recovery at 80%+ HP",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "Destroyer",
+            "Magical Carry",
+            "NRG Regen"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases Magical Attack by +25% and recovers +1 bonus NRG at the start of turn whenever HP is above 80%."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Triss."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Triss Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -701,7 +717,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Triss is a SS-Tier Legendary Destroyer (Firestorm AoE Sorceress) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Triss is a SS-Tier Destroyer (Firestorm AoE Sorceress) specialist in Sword of Convallaria. Triss calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-triss"
     },
@@ -723,53 +739,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4736,
-        "dpOrSpeed": 314,
-        "atkOrPower": 2040,
-        "defOrGuts": 900,
-        "critOrWit": 788,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3910,
+        "dpOrSpeed": 213,
+        "atkOrPower": 2116,
+        "defOrGuts": 727,
+        "critOrWit": 88,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Tristan Signature Skill",
+          "name": "Bursting Fury — Unchained Blitz",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 3 Turn CD",
+          "multiplierSummary": "220% Single-Target Physical + 4 turns Unyielding Berserk",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Defender",
-            "S Tier - DPS",
-            "Faction Aura"
+            "Armor Break",
+            "Unkillable Berserk",
+            "Instant Action",
+            "Boss Nuker"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Enters Unchained Fury (immune to fatal damage for 2 turns, +35% P.ATK, +30% Crit), then delivers a 220% Armor-Crushing blow that shatters 40% P.DEF."
         },
         {
-          "name": "Tristan Trait Reaction",
+          "name": "Trait: Blood of the Street Brawlers",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "Instant Action + +40% Missing-HP Multiplier",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Destroyer",
+            "Physical",
+            "Armor Break"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
+          "exactDescription": "Gains up to +40% P.ATK and +30% Crit DMG based on missing HP. Once per battle, surviving fatal damage grants an immediate bonus turn."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Tristan."
+          "unlockRank": "RK 7",
+          "name": "Shattering Knuckle",
+          "effect": "Ignores 30% of target DEF and disables enemy passive reaction skills for 2 turns."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Apex Brawler (5★ Trait)",
+          "effect": "Extends Unyielding Fury duration by +1 turn and restores 50% HP when Fury expires."
         }
       ],
       "synergyUnitSlugs": [
@@ -781,7 +799,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Tristan is a SS-Tier Legendary Destroyer (Undying Berserker Carry) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Tristan (Destroyer) is a SS-Tier Undying Berserker Carry centerpiece. Enters Unchained Fury (immune to fatal damage for 2 turns, +35% P.ATK, +30% Crit), then delivers a 220% Armor-Crushing blow that shatters 40% P.DEF.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-tristan"
     },
@@ -803,53 +821,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4718,
-        "dpOrSpeed": 312,
-        "atkOrPower": 2030,
-        "defOrGuts": 895,
-        "critOrWit": 784,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3977,
+        "dpOrSpeed": 244,
+        "atkOrPower": 1645,
+        "defOrGuts": 691,
+        "critOrWit": 79,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Credenza Signature Skill",
+          "name": "Credenza — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Destroyer",
-            "S Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Credenza Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Credenza channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Credenza Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Credenza."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Credenza Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -861,7 +881,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Credenza is a SS-Tier Legendary Watcher (Cooldown & NRG Battery) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Credenza is a SS-Tier Watcher (Cooldown & NRG Battery) specialist in Sword of Convallaria. Credenza channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-credenza"
     },
@@ -883,53 +903,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4700,
-        "dpOrSpeed": 310,
-        "atkOrPower": 2020,
-        "defOrGuts": 890,
-        "critOrWit": 780,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3905,
+        "dpOrSpeed": 265,
+        "atkOrPower": 2110,
+        "defOrGuts": 725,
+        "critOrWit": 95,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Lutfi Signature Skill",
+          "name": "Lutfi — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Piercing + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "S Tier - Support",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Lutfi Trait Reaction",
+          "name": "Trait: Lutfi Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Lutfi."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Piercing damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Lutfi Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -941,7 +963,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Lutfi is a SS-Tier Legendary Seeker (Tactical Debuff & Crit Seeker) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Lutfi is a SS-Tier Seeker (Tactical Debuff & Crit Seeker) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-lutfi"
     },
@@ -963,53 +985,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4682,
-        "dpOrSpeed": 308,
-        "atkOrPower": 2010,
-        "defOrGuts": 885,
-        "critOrWit": 776,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3973,
+        "dpOrSpeed": 246,
+        "atkOrPower": 1640,
+        "defOrGuts": 689,
+        "critOrWit": 81,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "SP Safiyyah Signature Skill",
+          "name": "SP Safiyyah — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Seeker",
-            "S Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "SP Safiyyah Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "SP Safiyyah channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: SP Safiyyah Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for SP Safiyyah."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened SP Safiyyah Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1021,7 +1045,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "SP Safiyyah is a SS-Tier Legendary Watcher (Assault Command Buffer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "SP Safiyyah is a SS-Tier Watcher (Assault Command Buffer) specialist in Sword of Convallaria. SP Safiyyah channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-safiyyah"
     },
@@ -1043,53 +1067,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4664,
-        "dpOrSpeed": 306,
-        "atkOrPower": 2000,
-        "defOrGuts": 880,
-        "critOrWit": 772,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4041,
+        "dpOrSpeed": 247,
+        "atkOrPower": 1725,
+        "defOrGuts": 723,
+        "critOrWit": 82,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Taair Signature Skill",
+          "name": "Caged Bird — Chronicle of Speed & NRG",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "2 NRG / 1 Turn CD",
+          "multiplierSummary": "Party SPD II (+150) + +2 NRG Battery + Shared DMG Link",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "S Tier - Support",
-            "Faction Aura"
+            "NRG Battery +2",
+            "SPD Manipulation",
+            "Damage Share Link",
+            "Dispel"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Links all allies within 4 tiles to share incoming single-target damage, grants SPD II (+150 Speed), restores +2 NRG, and dispels 2 debuffs."
         },
         {
-          "name": "Taair Trait Reaction",
+          "name": "Trait: Historian Scroll Seeds",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "Spawns Knowledge Scrolls + Zero-NRG Turn Advance",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "Watcher",
+            "Magical",
+            "NRG Battery +2"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Spawns Historical Scrolls on the map; picking them up allows Taair to cast instant-speed heals, NRG refills, and turn-order manipulation at 0 NRG cost."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Taair."
+          "unlockRank": "RK 7",
+          "name": "Wings of Knowledge",
+          "effect": "Grants +2 Movement and allows passing through enemy units without interruption."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Living Chronicle (5★ Trait)",
+          "effect": "Starts battle with 3 Knowledge Scrolls already stocked and +1 NRG recovery per turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1101,7 +1127,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Taair is a SS-Tier Legendary Watcher (Speed, NRG & Shared-DMG Support) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Taair (Watcher) is a SS-Tier Speed, NRG & Shared-DMG Support centerpiece. Links all allies within 4 tiles to share incoming single-target damage, grants SPD II (+150 Speed), restores +2 NRG, and dispels 2 debuffs.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-taair"
     },
@@ -1123,53 +1149,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4646,
-        "dpOrSpeed": 304,
-        "atkOrPower": 1990,
-        "defOrGuts": 875,
-        "critOrWit": 768,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3969,
+        "dpOrSpeed": 248,
+        "atkOrPower": 1635,
+        "defOrGuts": 687,
+        "critOrWit": 93,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Yennefer Signature Skill",
+          "name": "Yennefer — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Defender",
-            "S Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Yennefer Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Destroyer"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Yennefer channels Destroyer support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Yennefer Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Destroyer",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Yennefer."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Yennefer Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1181,7 +1209,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Yennefer is a SS-Tier Legendary Destroyer (Portal Utility & AoE Mage) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Yennefer is a SS-Tier Destroyer (Portal Utility & AoE Mage) specialist in Sword of Convallaria. Yennefer channels Destroyer support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-yennefer"
     },
@@ -1203,53 +1231,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 10,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4628,
-        "dpOrSpeed": 302,
-        "atkOrPower": 1980,
-        "defOrGuts": 870,
-        "critOrWit": 764,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3895,
+        "dpOrSpeed": 269,
+        "atkOrPower": 2098,
+        "defOrGuts": 721,
+        "critOrWit": 92,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Yserinde Signature Skill",
+          "name": "Yserinde — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Piercing + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Destroyer",
-            "S Tier - Support",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Yserinde Trait Reaction",
+          "name": "Trait: Yserinde Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Yserinde."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Piercing damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Yserinde Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1261,7 +1291,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Yserinde is a SS-Tier Legendary Seeker (Feather Trap & Dodge Seeker) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Yserinde is a SS-Tier Seeker (Feather Trap & Dodge Seeker) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-yserinde"
     },
@@ -1283,53 +1313,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4610,
-        "dpOrSpeed": 300,
-        "atkOrPower": 1970,
-        "defOrGuts": 865,
-        "critOrWit": 760,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3730,
+        "dpOrSpeed": 220,
+        "atkOrPower": 1840,
+        "defOrGuts": 660,
+        "critOrWit": 88,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Agata Signature Skill",
+          "name": "Agata — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Piercing Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Watcher",
-            "A Tier",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Agata Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
-          "hitCount": 1,
-          "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
             "Watcher"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Agata delivers a heavy 180% Piercing strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
+        },
+        {
+          "name": "Trait: Agata Warlord Momentum",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Shield Breaker",
+            "Act Again"
+          ],
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Agata."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases Piercing damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Agata Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1341,7 +1373,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Agata is a S-Tier Legendary Watcher (Wolf Queen Wound Bruiser) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Agata is a S-Tier Watcher (Wolf Queen Wound Bruiser) specialist in Sword of Convallaria. Agata delivers a heavy 180% Piercing strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-agata"
     },
@@ -1363,53 +1395,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4592,
-        "dpOrSpeed": 298,
-        "atkOrPower": 1960,
-        "defOrGuts": 860,
-        "critOrWit": 756,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4485,
+        "dpOrSpeed": 212,
+        "atkOrPower": 1942,
+        "defOrGuts": 841,
+        "critOrWit": 89,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Auguste Signature Skill",
+          "name": "Wrath — Supreme Devastation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "4 NRG / 2 Turn CD",
+          "multiplierSummary": "6-Hit 210% Physical Cleave + Instant Rage Act-Again",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Seeker",
-            "A Tier",
-            "Faction Aura"
+            "6-Stack Rage Act-Again",
+            "Armor Crush",
+            "Union Knight Carry",
+            "Physical Shield"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Consumes 6 stacks of Rage to trigger an immediate bonus action (Hassle), then unleashes a 6-hit 210% Physical cleave that ignores 35% DEF."
         },
         {
-          "name": "Auguste Trait Reaction",
+          "name": "Trait: Broken Blade of Wrath",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "Stacks Rage on Every Action → Instant Turn Reset",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Breaker",
+            "Physical",
+            "6-Stack Rage Act-Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Gains 2 stacks of Rage per attack or standby. Reaching 6 stacks immediately grants Act Again, +30% P.ATK, and a 35% P.ATK Physical Shield."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Auguste."
+          "unlockRank": "RK 7",
+          "name": "Wrath — Swift",
+          "effect": "Instant-cast strike that deals 70% Physical damage, generates +2 Rage stacks, and inflicts P.DEF -20%."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Unbridled Rage (5★ Trait)",
+          "effect": "Starts battle with 4 Rage stacks (triggers Act Again on Turn 1) and increases P.ATK by +20%."
         }
       ],
       "synergyUnitSlugs": [
@@ -1421,7 +1455,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Auguste is a S-Tier Legendary Breaker (Rage Act-Again Carry) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Auguste (Breaker) is a S-Tier Rage Act-Again Carry centerpiece. Consumes 6 stacks of Rage to trigger an immediate bonus action (Hassle), then unleashes a 6-hit 210% Physical cleave that ignores 35% DEF.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-auguste"
     },
@@ -1443,53 +1477,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4574,
-        "dpOrSpeed": 296,
-        "atkOrPower": 1950,
-        "defOrGuts": 855,
-        "critOrWit": 752,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5004,
+        "dpOrSpeed": 190,
+        "atkOrPower": 1316,
+        "defOrGuts": 917,
+        "critOrWit": 90,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Ayishah Signature Skill",
+          "name": "Ayishah — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Breaker",
-            "A Tier",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Ayishah Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Ayishah enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Ayishah Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Magical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Ayishah."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Ayishah Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1501,7 +1537,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 8.8,
-      "summaryVerdict": "Ayishah is a S-Tier Legendary Defender (Bodyguard Cover Tank) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Ayishah is a S-Tier Defender (Bodyguard Cover Tank) specialist in Sword of Convallaria. Ayishah enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-ayishah"
     },
@@ -1523,53 +1559,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4556,
-        "dpOrSpeed": 294,
-        "atkOrPower": 1940,
-        "defOrGuts": 850,
-        "critOrWit": 748,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3810,
+        "dpOrSpeed": 255,
+        "atkOrPower": 1936,
+        "defOrGuts": 692,
+        "critOrWit": 96,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Estra Signature Skill",
+          "name": "Estra — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Defender",
-            "A Tier",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Estra Trait Reaction",
+          "name": "Trait: Estra Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Estra."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Estra Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1581,7 +1619,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Estra is a S-Tier Legendary Seeker (Single-Target Boss Killer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Estra is a S-Tier Seeker (Single-Target Boss Killer) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-estra"
     },
@@ -1603,53 +1641,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4538,
-        "dpOrSpeed": 292,
-        "atkOrPower": 1930,
-        "defOrGuts": 845,
-        "critOrWit": 744,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4998,
+        "dpOrSpeed": 192,
+        "atkOrPower": 1312,
+        "defOrGuts": 914,
+        "critOrWit": 83,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Layla Signature Skill",
+          "name": "Layla — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Destroyer",
-            "A Tier",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Layla Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Layla enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Layla Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Magical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Layla."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Layla Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1661,7 +1701,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.7,
-      "summaryVerdict": "Layla is a S-Tier Legendary Defender (Alert Counter Tank) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Layla is a S-Tier Defender (Alert Counter Tank) specialist in Sword of Convallaria. Layla enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-layla"
     },
@@ -1683,53 +1723,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4520,
-        "dpOrSpeed": 290,
-        "atkOrPower": 1920,
-        "defOrGuts": 840,
-        "critOrWit": 740,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3805,
+        "dpOrSpeed": 209,
+        "atkOrPower": 1930,
+        "defOrGuts": 690,
+        "critOrWit": 92,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Marcille Signature Skill",
+          "name": "Marcille — Cataclysmic Arcane Detonation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 1 Turn CD",
+          "multiplierSummary": "165% AoE Magical + -30% M.DEF Shred + Scorch Zone",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "A Tier",
-            "Faction Aura"
+            "AoE Magic Carry",
+            "M.DEF Shred -30%",
+            "Shield Piercer",
+            "Destroyer"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Marcille calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit."
         },
         {
-          "name": "Marcille Trait Reaction",
+          "name": "Trait: Marcille Astral Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+25% M.ATK + +1 NRG Recovery at 80%+ HP",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Destroyer",
+            "Magical Carry",
+            "NRG Regen"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases Magical Attack by +25% and recovers +1 bonus NRG at the start of turn whenever HP is above 80%."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Marcille."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Marcille Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1741,7 +1783,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Marcille is a S-Tier Legendary Destroyer (Explosion AoE Mage) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Marcille is a S-Tier Destroyer (Explosion AoE Mage) specialist in Sword of Convallaria. Marcille calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-marcille"
     },
@@ -1763,53 +1805,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4502,
-        "dpOrSpeed": 288,
-        "atkOrPower": 1910,
-        "defOrGuts": 835,
-        "critOrWit": 736,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4385,
+        "dpOrSpeed": 217,
+        "atkOrPower": 1822,
+        "defOrGuts": 781,
+        "critOrWit": 85,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Pamina Signature Skill",
+          "name": "Pamina — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Seeker",
-            "A Tier",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Breaker"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Pamina delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Pamina Trait Reaction",
+          "name": "Trait: Pamina Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Pamina."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Pamina Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1821,7 +1865,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 8.8,
-      "summaryVerdict": "Pamina is a S-Tier Legendary Breaker (AoE Spear Taunt Breaker) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Pamina is a S-Tier Breaker (AoE Spear Taunt Breaker) specialist in Sword of Convallaria. Pamina delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-pamina"
     },
@@ -1843,53 +1887,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4484,
-        "dpOrSpeed": 286,
-        "atkOrPower": 1900,
-        "defOrGuts": 830,
-        "critOrWit": 732,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5094,
+        "dpOrSpeed": 195,
+        "atkOrPower": 1376,
+        "defOrGuts": 962,
+        "critOrWit": 86,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Rico Signature Skill",
+          "name": "Rico — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Breaker",
-            "A Tier",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Rico Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Rico enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Rico Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Physical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Rico."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Rico Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1901,7 +1947,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Rico is a S-Tier Legendary Defender (Knockback & Stun Tank) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Rico is a S-Tier Defender (Knockback & Stun Tank) specialist in Sword of Convallaria. Rico enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-rico"
     },
@@ -1923,53 +1969,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4466,
-        "dpOrSpeed": 284,
-        "atkOrPower": 1890,
-        "defOrGuts": 825,
-        "critOrWit": 728,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3710,
+        "dpOrSpeed": 260,
+        "atkOrPower": 1816,
+        "defOrGuts": 652,
+        "critOrWit": 94,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Safiyyah Signature Skill",
+          "name": "Shadowless Blade & Hanged Men Command",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "100% Dodge Stance + % Max HP Piercing Follow-Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Defender",
-            "A Tier",
-            "Faction Aura"
+            "% HP Boss Shred",
+            "100% Evasion Counter",
+            "Summon Assassin",
+            "Dispel + Vuln"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Summons an elite Hanged Men Blade Agent behind the enemy, marks the target with Hanged Men Brand, and enters Shadowless Blade stance (dodges all melee/ranged strikes and counters twice)."
         },
         {
-          "name": "Safiyyah Trait Reaction",
+          "name": "Trait: Mobile Squad Commander",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "36% Max HP Piercing Follow-Up on Marked Targets",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Seeker",
+            "Physical",
+            "% HP Boss Shred"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
+          "exactDescription": "Marks the closest enemy at turn start; every attack against a marked target triggers a follow-up slice dealing 36% of enemy Max HP as Piercing damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Safiyyah."
+          "unlockRank": "RK 7",
+          "name": "Tactical Adjustment",
+          "effect": "Instant skill: swaps weapon class advantage to counter the target and heals 25% HP."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Shadow Commander (5★ Trait)",
+          "effect": "Extends Hanged Men Brand range to 5 tiles and increases Piercing follow-up cap by +50%."
         }
       ],
       "synergyUnitSlugs": [
@@ -1981,7 +2029,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 8.7,
-      "summaryVerdict": "Safiyyah is a S-Tier Legendary Seeker (Hanged Men Summon & Dodge) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Safiyyah (Seeker) is a S-Tier Hanged Men Summon & Dodge centerpiece. Summons an elite Hanged Men Blade Agent behind the enemy, marks the target with Hanged Men Brand, and enters Shadowless Blade stance (dodges all melee/ranged strikes and counters twice).",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-safiyyah"
     },
@@ -2003,53 +2051,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4448,
-        "dpOrSpeed": 282,
-        "atkOrPower": 1880,
-        "defOrGuts": 820,
-        "critOrWit": 724,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3795,
+        "dpOrSpeed": 261,
+        "atkOrPower": 1918,
+        "defOrGuts": 686,
+        "critOrWit": 95,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "SP Rawiyah Signature Skill",
+          "name": "SP Rawiyah — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Destroyer",
-            "A Tier",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "SP Rawiyah Trait Reaction",
+          "name": "Trait: SP Rawiyah Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for SP Rawiyah."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened SP Rawiyah Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2061,7 +2111,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.9,
-      "summaryVerdict": "SP Rawiyah is a S-Tier Legendary Seeker (Multi-Turn Cleave Assassin) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "SP Rawiyah is a S-Tier Seeker (Multi-Turn Cleave Assassin) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-rawiyah"
     },
@@ -2083,53 +2133,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4430,
-        "dpOrSpeed": 280,
-        "atkOrPower": 1870,
-        "defOrGuts": 815,
-        "critOrWit": 720,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3705,
+        "dpOrSpeed": 262,
+        "atkOrPower": 1810,
+        "defOrGuts": 650,
+        "critOrWit": 96,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Ciri Signature Skill",
+          "name": "Ciri — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "A Tier - Support",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Ciri Trait Reaction",
+          "name": "Trait: Ciri Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Ciri."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Ciri Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2141,7 +2193,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "Ciri is a S-Tier Legendary Seeker (Blink Dash Flanker) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Ciri is a S-Tier Seeker (Blink Dash Flanker) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-ciri"
     },
@@ -2163,53 +2215,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4412,
-        "dpOrSpeed": 278,
-        "atkOrPower": 1860,
-        "defOrGuts": 810,
-        "critOrWit": 716,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5082,
+        "dpOrSpeed": 187,
+        "atkOrPower": 1368,
+        "defOrGuts": 956,
+        "critOrWit": 90,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Cocoa Signature Skill",
+          "name": "Snow Lotus Secret Potluck",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "AoE Heal + -1 NRG Cost & -1 Cooldown (Snow Lotus)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Seeker",
-            "A Tier - Support",
-            "Faction Aura"
+            "Vanguard Cover Tank",
+            "Snow Lotus CD -1",
+            "30% Crit Breakfast",
+            "Dispel"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Opens her Treasure Potluck to heal allies within 2 tiles, applying Snow Lotus (-1 NRG Cost and -1 Turn Cooldown on all skills) and +30% Crit Rate."
         },
         {
-          "name": "Cocoa Trait Reaction",
+          "name": "Trait: Treasure Box of Happiness",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "2-Tile Physical Cover + Auto-Heal & Breakfast Buffs",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Defender",
+            "Physical",
+            "Vanguard Cover Tank"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Automatically takes Physical attacks for allies within 2 tiles, reduces damage taken by -30%, and heals the ally for 25% of Cocoa Max HP."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Cocoa."
+          "unlockRank": "RK 7",
+          "name": "Iron Pot Stew",
+          "effect": "At the end of every turn, heals 2 nearby allies and dispels 2 random debuffs."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "100% Snow Lotus Guarantee (5★ Trait)",
+          "effect": "Increases proc rate of Snow Lotus (NRG -1 & Cooldown -1) from 30% at 1★ to 100% guaranteed at 5★."
         }
       ],
       "synergyUnitSlugs": [
@@ -2221,7 +2275,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Cocoa is a S-Tier Legendary Defender (Crit/NRG Lunchbox Tank Healer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Cocoa (Defender) is a S-Tier Crit/NRG Lunchbox Tank Healer centerpiece. Opens her Treasure Potluck to heal allies within 2 tiles, applying Snow Lotus (-1 NRG Cost and -1 Turn Cooldown on all skills) and +30% Crit Rate.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-cocoa"
     },
@@ -2243,53 +2297,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4394,
-        "dpOrSpeed": 276,
-        "atkOrPower": 1850,
-        "defOrGuts": 805,
-        "critOrWit": 712,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4974,
+        "dpOrSpeed": 188,
+        "atkOrPower": 1296,
+        "defOrGuts": 902,
+        "critOrWit": 82,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Falin Signature Skill",
+          "name": "Falin — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Breaker",
-            "A Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Falin Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Falin enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Falin Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Magical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Falin."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Falin Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2301,7 +2357,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Falin is a S-Tier Legendary Watcher (Barrier & Dispel Cleric) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Falin is a S-Tier Watcher (Barrier & Dispel Cleric) specialist in Sword of Convallaria. Falin enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-falin"
     },
@@ -2323,53 +2379,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4376,
-        "dpOrSpeed": 274,
-        "atkOrPower": 1840,
-        "defOrGuts": 800,
-        "critOrWit": 708,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5076,
+        "dpOrSpeed": 189,
+        "atkOrPower": 1364,
+        "defOrGuts": 953,
+        "critOrWit": 83,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Flavia Signature Skill",
+          "name": "Flavia — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Defender",
-            "A Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Flavia Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Flavia enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Flavia Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Magical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Flavia."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Flavia Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2381,7 +2439,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "Flavia is a S-Tier Legendary Watcher (Plant Summon & Field Healer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Flavia is a S-Tier Watcher (Plant Summon & Field Healer) specialist in Sword of Convallaria. Flavia enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-flavia"
     },
@@ -2403,53 +2461,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4358,
-        "dpOrSpeed": 272,
-        "atkOrPower": 1830,
-        "defOrGuts": 795,
-        "critOrWit": 704,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3862,
+        "dpOrSpeed": 249,
+        "atkOrPower": 1495,
+        "defOrGuts": 646,
+        "critOrWit": 83,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Gloria Signature Skill",
+          "name": "Longinus — Brilliance & Lance of Radiance",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "150% AoE Flag Throw + +1 Move & +2 NRG to All Allies",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Destroyer",
-            "A Tier - Support",
-            "Faction Aura"
+            "Union Leader Aura",
+            "Party NRG +1",
+            "Movement +1 Flag",
+            "Dual Stance"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Hurls the Flag of Justice to deal 150% AoE Physical damage, restoring +1 NRG to all allies within 4 tiles and switching Gloria into Sword of Justice stance."
         },
         {
-          "name": "Gloria Trait Reaction",
+          "name": "Trait: Vow of Justice",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": " Battle-Start Flag Aura (+12% ATK/DEF + +1 Move)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "Watcher",
+            "Physical",
+            "Union Leader Aura"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Raises the Flag of Justice at the start of battle, granting all allies +1 Movement, +12% ATK, and +12% DEF while the flag stands."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Gloria."
+          "unlockRank": "RK 7",
+          "name": "Vow of Chivalry (Union Leader Aura)",
+          "effect": "All Union allies gain +10% ATK, +20% DEF, and +15% damage when attacking from the front."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Radiant Flagbearer (5★ Trait)",
+          "effect": "Increases Flag of Justice aura radius to 5 tiles and grants Gloria +50% DEF penetration."
         }
       ],
       "synergyUnitSlugs": [
@@ -2461,7 +2521,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "Gloria is a S-Tier Legendary Watcher (Flag Aura & NRG Buffer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Gloria (Watcher) is a S-Tier Flag Aura & NRG Buffer centerpiece. Hurls the Flag of Justice to deal 150% AoE Physical damage, restoring +1 NRG to all allies within 4 tiles and switching Gloria into Sword of Justice stance.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-gloria"
     },
@@ -2483,53 +2543,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4340,
-        "dpOrSpeed": 270,
-        "atkOrPower": 1820,
-        "defOrGuts": 790,
-        "critOrWit": 700,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4450,
+        "dpOrSpeed": 235,
+        "atkOrPower": 1580,
+        "defOrGuts": 820,
+        "critOrWit": 84,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Homa Signature Skill",
+          "name": "Homa — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Watcher",
-            "A Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Homa Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Breaker"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Homa channels Breaker support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Homa Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Breaker",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Homa."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Homa Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2541,7 +2603,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Homa is a S-Tier Legendary Breaker (Baloor Follow-Up & PDEF Shred) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Homa is a S-Tier Breaker (Baloor Follow-Up & PDEF Shred) specialist in Sword of Convallaria. Homa channels Breaker support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-homa"
     },
@@ -2563,53 +2625,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4322,
-        "dpOrSpeed": 268,
-        "atkOrPower": 1810,
-        "defOrGuts": 785,
-        "critOrWit": 696,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3858,
+        "dpOrSpeed": 236,
+        "atkOrPower": 1490,
+        "defOrGuts": 644,
+        "critOrWit": 85,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Inanna Signature Skill",
+          "name": "Inanna — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Seeker",
-            "A Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Inanna Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Inanna channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Inanna Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Inanna."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Inanna Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2621,7 +2685,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.7,
-      "summaryVerdict": "Inanna is a S-Tier Legendary Watcher (Act-Again Princess Healer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Inanna is a S-Tier Watcher (Act-Again Princess Healer) specialist in Sword of Convallaria. Inanna channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-inanna"
     },
@@ -2643,53 +2707,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4304,
-        "dpOrSpeed": 266,
-        "atkOrPower": 1800,
-        "defOrGuts": 780,
-        "critOrWit": 692,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3926,
+        "dpOrSpeed": 269,
+        "atkOrPower": 1575,
+        "defOrGuts": 678,
+        "critOrWit": 96,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "NonoWill Signature Skill",
+          "name": "NonoWill — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Breaker",
-            "A Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "NonoWill Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Seeker"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "NonoWill channels Seeker support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: NonoWill Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Seeker",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for NonoWill."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened NonoWill Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2701,7 +2767,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "NonoWill is a S-Tier Legendary Seeker (Vulnerable III & AoE Veil) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "NonoWill is a S-Tier Seeker (Vulnerable III & AoE Veil) specialist in Sword of Convallaria. NonoWill channels Seeker support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nonowill"
     },
@@ -2723,53 +2789,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4286,
-        "dpOrSpeed": 264,
-        "atkOrPower": 1790,
-        "defOrGuts": 775,
-        "critOrWit": 688,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3685,
+        "dpOrSpeed": 206,
+        "atkOrPower": 1786,
+        "defOrGuts": 642,
+        "critOrWit": 89,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Beryl Signature Skill",
+          "name": "Chuu Chuu Chuu! & BOOOOM! Meteor",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 0 Turn CD",
+          "multiplierSummary": "3-Hit 195% Single-Target Fireball / 170% AoE Scorch",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Defender",
-            "B Tier - DPS",
-            "Faction Aura"
+            "3-Hit Boss Nuker",
+            "Self +1 NRG/Turn",
+            "Scorch Tile Burn",
+            "Aggression Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Fires 3 consecutive high-potency fireballs totaling 195% Magical damage against single bosses, or calls down a 170% AoE Meteor that leaves burning Scorch tiles."
         },
         {
-          "name": "Beryl Trait Reaction",
+          "name": "Trait: I Am a Genius!",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait / Instant)",
+          "multiplierSummary": "+24% M.ATK + Free +1 NRG Every Turn",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Destroyer",
+            "Magical",
+            "3-Hit Boss Nuker"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
+          "exactDescription": "Increases M.ATK by +24%. At the start of every turn, automatically recovers +1 extra NRG and gains a random Level II buff."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Beryl."
+          "unlockRank": "RK 7",
+          "name": "Wall of Flame",
+          "effect": "Ignites a 4-tile line of Scorch terrain that burns enemies for 20% Max HP and blocks infantry pathing."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Genius Sorceress (5★ Trait)",
+          "effect": "Guarantees +1 bonus NRG and 2 random Level II buffs at the start of every single turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2781,7 +2849,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.3,
-      "summaryVerdict": "Beryl is a A-Tier Legendary Destroyer (Chuu-Chuu Single/AoE Mage) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Beryl (Destroyer) is a A-Tier Chuu-Chuu Single/AoE Mage centerpiece. Fires 3 consecutive high-potency fireballs totaling 195% Magical damage against single bosses, or calls down a 170% AoE Meteor that leaves burning Scorch tiles.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-beryl"
     },
@@ -2803,53 +2871,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4268,
-        "dpOrSpeed": 262,
-        "atkOrPower": 1780,
-        "defOrGuts": 770,
-        "critOrWit": 684,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3922,
+        "dpOrSpeed": 239,
+        "atkOrPower": 1570,
+        "defOrGuts": 676,
+        "critOrWit": 90,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Caris Signature Skill",
+          "name": "Caris — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Destroyer",
-            "B Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Caris Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
             "Destroyer"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Caris channels Destroyer support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Caris Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Destroyer",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Caris."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Caris Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2861,7 +2931,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "B",
       "numericScore": 8.2,
-      "summaryVerdict": "Caris is a A-Tier Legendary Destroyer (Papal Laser & MDEF Shred) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Caris is a A-Tier Destroyer (Papal Laser & MDEF Shred) specialist in Sword of Convallaria. Caris channels Destroyer support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-caris"
     },
@@ -2883,53 +2953,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4250,
-        "dpOrSpeed": 260,
-        "atkOrPower": 1770,
-        "defOrGuts": 765,
-        "critOrWit": 680,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3680,
+        "dpOrSpeed": 272,
+        "atkOrPower": 1780,
+        "defOrGuts": 640,
+        "critOrWit": 92,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Col Signature Skill",
+          "name": "Col — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "B Tier - DPS",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Col Trait Reaction",
+          "name": "Trait: Col Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Col."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Col Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2941,7 +3013,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Col is a A-Tier Legendary Seeker (Reset-on-Kill Assassin) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Col is a A-Tier Seeker (Reset-on-Kill Assassin) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-col"
     },
@@ -2963,53 +3035,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4232,
-        "dpOrSpeed": 258,
-        "atkOrPower": 1760,
-        "defOrGuts": 760,
-        "critOrWit": 676,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3765,
+        "dpOrSpeed": 255,
+        "atkOrPower": 1882,
+        "defOrGuts": 674,
+        "critOrWit": 93,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Hasna Signature Skill",
+          "name": "Hasna — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Magical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Seeker",
-            "B Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Hasna Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
-          "hitCount": 1,
-          "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
             "Seeker"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Teleports behind the target to deliver a 175% Magical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
+        },
+        {
+          "name": "Trait: Hasna Crimson Ambush",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Seeker",
+            "Flanker",
+            "Mobility"
+          ],
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Hasna."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Hasna Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3021,7 +3095,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Hasna is a A-Tier Legendary Seeker (Fragrance Crit Assassin) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Hasna is a A-Tier Seeker (Fragrance Crit Assassin) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Magical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-hasna"
     },
@@ -3043,53 +3117,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4214,
+        "hpOrStamina": 3850,
         "dpOrSpeed": 256,
-        "atkOrPower": 1750,
-        "defOrGuts": 755,
-        "critOrWit": 672,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "atkOrPower": 1984,
+        "defOrGuts": 708,
+        "critOrWit": 94,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Kiya Signature Skill",
+          "name": "Kiya — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Piercing + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "B Tier - DPS",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Kiya Trait Reaction",
+          "name": "Trait: Kiya Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Kiya."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Piercing damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Kiya Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3101,7 +3177,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "S",
       "numericScore": 8.3,
-      "summaryVerdict": "Kiya is a A-Tier Legendary Seeker (Frostbite Backline Diver) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Kiya is a A-Tier Seeker (Frostbite Backline Diver) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-kiya"
     },
@@ -3123,53 +3199,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4196,
-        "dpOrSpeed": 254,
-        "atkOrPower": 1740,
-        "defOrGuts": 750,
-        "critOrWit": 668,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3760,
+        "dpOrSpeed": 211,
+        "atkOrPower": 1876,
+        "defOrGuts": 672,
+        "critOrWit": 84,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "LilyWill Signature Skill",
+          "name": "LilyWill — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Piercing Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Defender",
-            "B Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Watcher"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "LilyWill delivers a heavy 180% Piercing strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "LilyWill Trait Reaction",
+          "name": "Trait: LilyWill Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Watcher",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for LilyWill."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases Piercing damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened LilyWill Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3181,7 +3259,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "LilyWill is a A-Tier Legendary Watcher (Long-Range Highland Archer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "LilyWill is a A-Tier Watcher (Long-Range Highland Archer) specialist in Sword of Convallaria. LilyWill delivers a heavy 180% Piercing strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-lilywill"
     },
@@ -3203,53 +3281,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4178,
-        "dpOrSpeed": 252,
-        "atkOrPower": 1730,
-        "defOrGuts": 745,
-        "critOrWit": 664,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3845,
+        "dpOrSpeed": 212,
+        "atkOrPower": 1978,
+        "defOrGuts": 706,
+        "critOrWit": 95,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Momo Signature Skill",
+          "name": "Momo — Cataclysmic Arcane Detonation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 1 Turn CD",
+          "multiplierSummary": "165% AoE Piercing + -30% M.DEF Shred + Scorch Zone",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Destroyer",
-            "B Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Momo Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
-          "hitCount": 1,
-          "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "AoE Magic Carry",
+            "M.DEF Shred -30%",
+            "Shield Piercer",
             "Destroyer"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Momo calls down an arcane tempest across a 3-tile diamond, dealing 165% Piercing damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit."
+        },
+        {
+          "name": "Trait: Momo Astral Conduit",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+25% M.ATK + +1 NRG Recovery at 80%+ HP",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Destroyer",
+            "Magical Carry",
+            "NRG Regen"
+          ],
+          "exactDescription": "Increases Magical Attack by +25% and recovers +1 bonus NRG at the start of turn whenever HP is above 80%."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Momo."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases Piercing damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Momo Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3261,7 +3341,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 8.2,
-      "summaryVerdict": "Momo is a A-Tier Legendary Destroyer (Doom Waken Alert Controller) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Momo is a A-Tier Destroyer (Doom Waken Alert Controller) specialist in Sword of Convallaria. Momo calls down an arcane tempest across a 3-tile diamond, dealing 165% Piercing damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-momo"
     },
@@ -3283,53 +3363,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4160,
-        "dpOrSpeed": 250,
-        "atkOrPower": 1720,
-        "defOrGuts": 740,
-        "critOrWit": 660,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3755,
+        "dpOrSpeed": 213,
+        "atkOrPower": 1870,
+        "defOrGuts": 670,
+        "critOrWit": 88,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Nungal Signature Skill",
+          "name": "Nungal — Cataclysmic Arcane Detonation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
+          "spOrEnergyCost": "3 NRG / 1 Turn CD",
+          "multiplierSummary": "165% AoE Magical + -30% M.DEF Shred + Scorch Zone",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Watcher",
-            "B Tier - DPS",
-            "Faction Aura"
+            "AoE Magic Carry",
+            "M.DEF Shred -30%",
+            "Shield Piercer",
+            "Destroyer"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Nungal calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit."
         },
         {
-          "name": "Nungal Trait Reaction",
+          "name": "Trait: Nungal Astral Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+25% M.ATK + +1 NRG Recovery at 80%+ HP",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Destroyer",
+            "Magical Carry",
+            "NRG Regen"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases Magical Attack by +25% and recovers +1 bonus NRG at the start of turn whenever HP is above 80%."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Nungal."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Nungal Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3341,7 +3423,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Nungal is a A-Tier Legendary Destroyer (Cross-Map Magic Sniper) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Nungal is a A-Tier Destroyer (Cross-Map Magic Sniper) specialist in Sword of Convallaria. Nungal calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nungal"
     },
@@ -3363,53 +3445,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4142,
-        "dpOrSpeed": 248,
-        "atkOrPower": 1710,
-        "defOrGuts": 735,
-        "critOrWit": 656,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4510,
+        "dpOrSpeed": 223,
+        "atkOrPower": 1972,
+        "defOrGuts": 856,
+        "critOrWit": 87,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Rawiyah Signature Skill",
+          "name": "Rawiyah — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Seeker",
-            "B Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Breaker"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Rawiyah delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Rawiyah Trait Reaction",
+          "name": "Trait: Rawiyah Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Rawiyah."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Rawiyah Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3421,7 +3505,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.3,
-      "summaryVerdict": "Rawiyah is a A-Tier Legendary Breaker (Gale Knockback Bruiser) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Rawiyah is a A-Tier Breaker (Gale Knockback Bruiser) specialist in Sword of Convallaria. Rawiyah delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-rawiyah"
     },
@@ -3443,53 +3527,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4124,
-        "dpOrSpeed": 246,
-        "atkOrPower": 1700,
-        "defOrGuts": 730,
-        "critOrWit": 652,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4420,
+        "dpOrSpeed": 210,
+        "atkOrPower": 1864,
+        "defOrGuts": 802,
+        "critOrWit": 88,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Team Meteor Signature Skill",
+          "name": "Team Meteor — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Breaker",
-            "B Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Team Meteor Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
-          "hitCount": 1,
-          "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
             "Breaker"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Team Meteor delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
+        },
+        {
+          "name": "Trait: Team Meteor Warlord Momentum",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
+          ],
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Team Meteor."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Team Meteor Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3501,7 +3587,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Team Meteor is a A-Tier Legendary Breaker (Trio Combo Breaker) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Team Meteor is a A-Tier Breaker (Trio Combo Breaker) specialist in Sword of Convallaria. Team Meteor delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-team-meteor"
     },
@@ -3523,53 +3609,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4106,
-        "dpOrSpeed": 244,
-        "atkOrPower": 1690,
-        "defOrGuts": 725,
-        "critOrWit": 648,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3974,
+        "dpOrSpeed": 248,
+        "atkOrPower": 1635,
+        "defOrGuts": 702,
+        "critOrWit": 91,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Acambe Signature Skill",
+          "name": "Acambe — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Defender",
-            "B Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Acambe Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
+            "Destroyer"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Acambe channels Destroyer support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Acambe Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Destroyer",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Acambe."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Acambe Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3581,7 +3669,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Acambe is a A-Tier Legendary Destroyer (Shadow Assassin Summoner) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Acambe is a A-Tier Destroyer (Shadow Assassin Summoner) specialist in Sword of Convallaria. Acambe channels Destroyer support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-acambe"
     },
@@ -3603,53 +3691,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4088,
-        "dpOrSpeed": 242,
-        "atkOrPower": 1680,
-        "defOrGuts": 720,
-        "critOrWit": 644,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5028,
+        "dpOrSpeed": 193,
+        "atkOrPower": 1332,
+        "defOrGuts": 929,
+        "critOrWit": 90,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Afra Signature Skill",
+          "name": "Afra — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Destroyer",
-            "B Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Afra Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Afra enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Afra Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Magical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Afra."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Afra Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3661,7 +3751,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Afra is a A-Tier Legendary Watcher (Deer Totem Healer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Afra is a A-Tier Watcher (Deer Totem Healer) specialist in Sword of Convallaria. Afra enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-afra"
     },
@@ -3683,53 +3773,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4070,
-        "dpOrSpeed": 240,
-        "atkOrPower": 1670,
-        "defOrGuts": 715,
-        "critOrWit": 640,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3970,
+        "dpOrSpeed": 235,
+        "atkOrPower": 1630,
+        "defOrGuts": 700,
+        "critOrWit": 83,
+        "burstCeilingScore": 78,
+        "bufferCeilingScore": 96,
+        "sustainScore": 96,
+        "spEfficiencyScore": 98
       },
       "skills": [
         {
-          "name": "Edda Signature Skill",
+          "name": "Edda — Sacred Benediction & NRG Conduit",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Watcher",
-            "B Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Edda Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "Party +2 NRG + ATK/M.ATK II (+20%) + 90% M.ATK AoE Heal",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "NRG Battery +2",
+            "ATK/M.ATK II",
+            "AoE Dispel",
             "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Edda channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1."
+        },
+        {
+          "name": "Trait: Edda Tactical Overwatch",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Passive Trait)",
+          "multiplierSummary": "End-of-Turn Spot Heal + Buff Extension +1 Turn",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Healer",
+            "Buff Extension"
+          ],
+          "exactDescription": "At the end of every turn, heals the 2 lowest-HP allies within 3 tiles for 30% M.ATK and grants Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Edda."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases healing and buff range by +1 tile and grants DMG Up II (+20%) to healed allies."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Edda Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3741,7 +3833,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Edda is a A-Tier Legendary Watcher (Wine Barrel MDEF Shred & Box) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Edda is a A-Tier Watcher (Wine Barrel MDEF Shred & Box) specialist in Sword of Convallaria. Edda channels Watcher support aura across a 3-tile radius, restoring +2 NRG, dispelling 2 debuffs, and granting +20% ATK/M.ATK II and Cooldown -1.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-edda"
     },
@@ -3763,53 +3855,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4052,
-        "dpOrSpeed": 238,
-        "atkOrPower": 1660,
-        "defOrGuts": 710,
-        "critOrWit": 636,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5022,
+        "dpOrSpeed": 195,
+        "atkOrPower": 1328,
+        "defOrGuts": 926,
+        "critOrWit": 83,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Samantha Signature Skill",
+          "name": "Samantha — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Seeker",
-            "B Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Samantha Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Watcher"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Samantha enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Samantha Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Watcher",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Magical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Samantha."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Samantha Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3821,7 +3915,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Samantha is a A-Tier Legendary Watcher (Auto-Revive & Cross-Map Heal) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Samantha is a A-Tier Watcher (Auto-Revive & Cross-Map Heal) specialist in Sword of Convallaria. Samantha enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-samantha"
     },
@@ -3843,53 +3937,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4034,
-        "dpOrSpeed": 236,
-        "atkOrPower": 1650,
-        "defOrGuts": 705,
-        "critOrWit": 632,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3825,
+        "dpOrSpeed": 266,
+        "atkOrPower": 1954,
+        "defOrGuts": 698,
+        "critOrWit": 97,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "SchackLulu Signature Skill",
+          "name": "SchackLulu — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "B Tier - Support",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "SchackLulu Trait Reaction",
+          "name": "Trait: SchackLulu Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for SchackLulu."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened SchackLulu Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3901,7 +3997,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "SchackLulu is a A-Tier Legendary Seeker (Dance Multi-Hit Dancer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "SchackLulu is a A-Tier Seeker (Dance Multi-Hit Dancer) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-schacklulu"
     },
@@ -3923,53 +4019,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 4016,
-        "dpOrSpeed": 234,
-        "atkOrPower": 1640,
-        "defOrGuts": 700,
-        "critOrWit": 628,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5016,
+        "dpOrSpeed": 185,
+        "atkOrPower": 1324,
+        "defOrGuts": 923,
+        "critOrWit": 85,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Senshi Signature Skill",
+          "name": "Senshi — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Defender",
-            "B Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Senshi Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
             "Defender"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Senshi enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Senshi Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Physical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Senshi."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Senshi Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3981,7 +4079,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Senshi is a A-Tier Legendary Defender (Hotpot Healing Tank) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Senshi is a A-Tier Defender (Hotpot Healing Tank) specialist in Sword of Convallaria. Senshi enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-senshi"
     },
@@ -4003,53 +4101,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3998,
-        "dpOrSpeed": 232,
-        "atkOrPower": 1630,
-        "defOrGuts": 695,
-        "critOrWit": 624,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3820,
+        "dpOrSpeed": 206,
+        "atkOrPower": 1948,
+        "defOrGuts": 696,
+        "critOrWit": 86,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Simona Signature Skill",
+          "name": "Simona — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Magical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Destroyer",
-            "B Tier - Support",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Watcher"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Simona delivers a heavy 180% Magical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Simona Trait Reaction",
+          "name": "Trait: Simona Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "Watcher",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Simona."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Simona Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4061,7 +4161,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Simona is a A-Tier Legendary Watcher (Ice Wall & Shield Battlemage) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Simona is a A-Tier Watcher (Ice Wall & Shield Battlemage) specialist in Sword of Convallaria. Simona delivers a heavy 180% Magical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-simona"
     },
@@ -4083,53 +4183,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3980,
-        "dpOrSpeed": 230,
-        "atkOrPower": 1620,
-        "defOrGuts": 690,
-        "critOrWit": 620,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5010,
+        "dpOrSpeed": 187,
+        "atkOrPower": 1320,
+        "defOrGuts": 920,
+        "critOrWit": 87,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Alexei Signature Skill",
+          "name": "Alexei — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Watcher",
-            "C Tier - DPS",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Alexei Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Alexei enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Alexei Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Physical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Alexei."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Alexei Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4141,7 +4243,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Alexei is a B-Tier Legendary Defender (Unlimited Resolve Ice Tank) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Alexei is a B-Tier Defender (Unlimited Resolve Ice Tank) specialist in Sword of Convallaria. Alexei enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-alexei"
     },
@@ -4163,53 +4265,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3962,
-        "dpOrSpeed": 228,
-        "atkOrPower": 1610,
-        "defOrGuts": 685,
-        "critOrWit": 616,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3815,
+        "dpOrSpeed": 208,
+        "atkOrPower": 1942,
+        "defOrGuts": 694,
+        "critOrWit": 91,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Dantalion Signature Skill",
+          "name": "Dantalion — Cataclysmic Arcane Detonation",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 1 Turn CD",
+          "multiplierSummary": "165% AoE Magical + -30% M.DEF Shred + Scorch Zone",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Seeker",
-            "C Tier - DPS",
-            "Faction Aura"
+            "AoE Magic Carry",
+            "M.DEF Shred -30%",
+            "Shield Piercer",
+            "Destroyer"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Dantalion calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit."
         },
         {
-          "name": "Dantalion Trait Reaction",
+          "name": "Trait: Dantalion Astral Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+25% M.ATK + +1 NRG Recovery at 80%+ HP",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Destroyer",
+            "Magical Carry",
+            "NRG Regen"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases Magical Attack by +25% and recovers +1 bonus NRG at the start of turn whenever HP is above 80%."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Dantalion."
+          "unlockRank": "RK 7",
+          "name": "Destroyer Tactical Mastery",
+          "effect": "Increases Magical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Dantalion Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4221,7 +4325,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "C",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Dantalion is a B-Tier Legendary Destroyer (Iria Leader Aura Hybrid Carry) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Dantalion is a B-Tier Destroyer (Iria Leader Aura Hybrid Carry) specialist in Sword of Convallaria. Dantalion calls down an arcane tempest across a 3-tile diamond, dealing 165% Magical damage, ignoring 30% M.DEF, and refunding +1 NRG on Critical Hit.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-dantalion"
     },
@@ -4243,53 +4347,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3944,
-        "dpOrSpeed": 226,
-        "atkOrPower": 1600,
-        "defOrGuts": 680,
-        "critOrWit": 612,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3725,
+        "dpOrSpeed": 209,
+        "atkOrPower": 1834,
+        "defOrGuts": 658,
+        "critOrWit": 89,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Faycal Signature Skill",
+          "name": "Faycal — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Breaker",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Watcher"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Faycal delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Faycal Trait Reaction",
+          "name": "Trait: Faycal Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "Watcher",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Faycal."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Faycal Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4301,7 +4407,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "Faycal is a B-Tier Legendary Watcher (Alert Bow Overwatcher) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Faycal is a B-Tier Watcher (Alert Bow Overwatcher) specialist in Sword of Convallaria. Faycal delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-faycal"
     },
@@ -4323,53 +4429,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3926,
-        "dpOrSpeed": 224,
-        "atkOrPower": 1590,
-        "defOrGuts": 675,
-        "critOrWit": 608,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3810,
+        "dpOrSpeed": 272,
+        "atkOrPower": 1936,
+        "defOrGuts": 692,
+        "critOrWit": 96,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 94
       },
       "skills": [
         {
-          "name": "Garcia Signature Skill",
+          "name": "Garcia — Shadowstep Backstab Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "175% Backstab Physical + +35% Crit Rate + 3-Tile Retreat",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Defender",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Backline Assassin",
+            "Ignore Block",
+            "+35% Crit Burst",
+            "Seeker"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety."
         },
         {
-          "name": "Garcia Trait Reaction",
+          "name": "Trait: Garcia Crimson Ambush",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Instant)",
+          "multiplierSummary": "Jump Climb + +1 Movement + DEF Down II (-20%)",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Seeker",
+            "Flanker",
+            "Mobility"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
+          "exactDescription": "Grants +1 Movement and Jump Climb when starting turn unharmed; attacking from behind or side inflicts P.DEF -20% and Dodge Disable."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Garcia."
+          "unlockRank": "RK 7",
+          "name": "Seeker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Garcia Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4381,7 +4489,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 7.7,
-      "summaryVerdict": "Garcia is a B-Tier Legendary Seeker (Spinning Saw Executioner) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Garcia is a B-Tier Seeker (Spinning Saw Executioner) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-garcia"
     },
@@ -4403,53 +4511,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3908,
+        "hpOrStamina": 4390,
         "dpOrSpeed": 222,
-        "atkOrPower": 1580,
-        "defOrGuts": 670,
-        "critOrWit": 604,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "atkOrPower": 1828,
+        "defOrGuts": 784,
+        "critOrWit": 82,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Guzman Signature Skill",
+          "name": "Guzman — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Destroyer",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Breaker"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Guzman delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Guzman Trait Reaction",
+          "name": "Trait: Guzman Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Guzman."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Guzman Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4461,7 +4571,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "C",
       "numericScore": 7.6,
-      "summaryVerdict": "Guzman is a B-Tier Legendary Breaker (Calamity Revive Bruiser) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Guzman is a B-Tier Breaker (Calamity Revive Bruiser) specialist in Sword of Convallaria. Guzman delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-guzman"
     },
@@ -4483,53 +4593,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3890,
-        "dpOrSpeed": 220,
-        "atkOrPower": 1570,
-        "defOrGuts": 665,
-        "critOrWit": 600,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4475,
+        "dpOrSpeed": 223,
+        "atkOrPower": 1930,
+        "defOrGuts": 835,
+        "critOrWit": 83,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Iggy Signature Skill",
+          "name": "Iggy — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Watcher",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Breaker"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Iggy delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Iggy Trait Reaction",
+          "name": "Trait: Iggy Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Iggy."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Iggy Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4541,7 +4653,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "C",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Iggy is a B-Tier Legendary Breaker (Highland Leap Lancer) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Iggy is a B-Tier Breaker (Highland Leap Lancer) specialist in Sword of Convallaria. Iggy delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-iggy"
     },
@@ -4563,53 +4675,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3872,
-        "dpOrSpeed": 218,
-        "atkOrPower": 1560,
-        "defOrGuts": 660,
-        "critOrWit": 596,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4385,
+        "dpOrSpeed": 210,
+        "atkOrPower": 1822,
+        "defOrGuts": 781,
+        "critOrWit": 84,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Leonide Signature Skill",
+          "name": "Leonide — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Seeker",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Breaker"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Leonide delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Leonide Trait Reaction",
+          "name": "Trait: Leonide Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Leonide."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Leonide Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4621,7 +4735,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "Leonide is a B-Tier Legendary Breaker (Cavalry Charge Knockback) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Leonide is a B-Tier Breaker (Cavalry Charge Knockback) specialist in Sword of Convallaria. Leonide delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-leonide"
     },
@@ -4643,53 +4757,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3854,
-        "dpOrSpeed": 216,
-        "atkOrPower": 1550,
-        "defOrGuts": 655,
-        "critOrWit": 592,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 3800,
+        "dpOrSpeed": 214,
+        "atkOrPower": 1924,
+        "defOrGuts": 688,
+        "critOrWit": 85,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Miguel Signature Skill",
+          "name": "Miguel — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Breaker",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Watcher"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Miguel delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Miguel Trait Reaction",
+          "name": "Trait: Miguel Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Breaker"
+            "Watcher",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Miguel."
+          "unlockRank": "RK 7",
+          "name": "Watcher Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Miguel Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4701,7 +4817,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 7.7,
-      "summaryVerdict": "Miguel is a B-Tier Legendary Watcher (Bounty Fire Trap Hunter) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Miguel is a B-Tier Watcher (Bounty Fire Trap Hunter) specialist in Sword of Convallaria. Miguel delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-miguel"
     },
@@ -4723,53 +4839,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3836,
-        "dpOrSpeed": 214,
-        "atkOrPower": 1540,
-        "defOrGuts": 650,
-        "critOrWit": 588,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 79,
-        "sustainScore": 96,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4380,
+        "dpOrSpeed": 212,
+        "atkOrPower": 1816,
+        "defOrGuts": 778,
+        "critOrWit": 86,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 74,
+        "sustainScore": 79,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Xavier Signature Skill",
+          "name": "Xavier — Vanguard Armor-Shatter Cleave",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
-          "hitCount": 3,
+          "spOrEnergyCost": "3 NRG / 2 Turn CD",
+          "multiplierSummary": "180% Physical Strike + 100% Shield Break + Knockback 2",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Defender",
-            "C Tier - DPS",
-            "Faction Aura"
+            "Shield Breaker",
+            "Knockback Collision",
+            "Armor Shred",
+            "Breaker"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Xavier delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision."
         },
         {
-          "name": "Xavier Trait Reaction",
+          "name": "Trait: Xavier Warlord Momentum",
           "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "0 NRG (Trait)",
+          "multiplierSummary": "+20% ATK/DEF + Instant Act-Again on Kill",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Defender"
+            "Breaker",
+            "Shield Breaker",
+            "Act Again"
           ],
-          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
+          "exactDescription": "Increases P.ATK and P.DEF by +20%; defeating an enemy or breaking a boss shield restores +2 NRG and grants +2 Movement."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Xavier."
+          "unlockRank": "RK 7",
+          "name": "Breaker Tactical Mastery",
+          "effect": "Increases Physical damage by +20% and ignores 25% of target DEF/M.DEF during boss trials."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Xavier Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4781,7 +4899,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Xavier is a B-Tier Legendary Breaker (Turn-1 Speed AoE Sweeper) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Xavier is a B-Tier Breaker (Turn-1 Speed AoE Sweeper) specialist in Sword of Convallaria. Xavier delivers a heavy 180% Physical strike that instantly shatters enemy Physical Shields, inflicts -25% P.DEF II, and knocks the target back 2 tiles into terrain collision.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-xavier"
     },
@@ -4803,53 +4921,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3818,
-        "dpOrSpeed": 212,
-        "atkOrPower": 1530,
-        "defOrGuts": 645,
-        "critOrWit": 584,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5088,
+        "dpOrSpeed": 196,
+        "atkOrPower": 1372,
+        "defOrGuts": 959,
+        "critOrWit": 87,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Maitha Signature Skill",
+          "name": "Maitha — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Destroyer",
-            "C Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Maitha Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Destroyer"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Maitha enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Maitha Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Physical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Maitha."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Maitha Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4861,7 +4981,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.6,
-      "summaryVerdict": "Maitha is a B-Tier Legendary Defender (Come On Everybody Cover Tank) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Maitha is a B-Tier Defender (Come On Everybody Cover Tank) specialist in Sword of Convallaria. Maitha enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-maitha"
     },
@@ -4883,53 +5003,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3800,
-        "dpOrSpeed": 210,
-        "atkOrPower": 1520,
-        "defOrGuts": 640,
-        "critOrWit": 580,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 4980,
+        "dpOrSpeed": 185,
+        "atkOrPower": 1300,
+        "defOrGuts": 905,
+        "critOrWit": 88,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Nergal Signature Skill",
+          "name": "Nergal — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Watcher",
-            "C Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Nergal Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Watcher"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Nergal enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Nergal Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Physical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Nergal."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Nergal Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4941,7 +5063,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "Nergal is a B-Tier Legendary Defender (Alacrity Shield Vanguard) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Nergal is a B-Tier Defender (Alacrity Shield Vanguard) specialist in Sword of Convallaria. Nergal enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nergal"
     },
@@ -4963,53 +5085,55 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "longevityMonths": 7,
       "recommendedDupes": "1★ – 3★ Memory Shard",
       "baseStats": {
-        "hpOrStamina": 3782,
-        "dpOrSpeed": 208,
-        "atkOrPower": 1510,
-        "defOrGuts": 635,
-        "critOrWit": 576,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 98,
-        "sustainScore": 78,
-        "spEfficiencyScore": 93
+        "hpOrStamina": 5082,
+        "dpOrSpeed": 186,
+        "atkOrPower": 1368,
+        "defOrGuts": 956,
+        "critOrWit": 89,
+        "burstCeilingScore": 74,
+        "bufferCeilingScore": 85,
+        "sustainScore": 96,
+        "spEfficiencyScore": 90
       },
       "skills": [
         {
-          "name": "Teadon Signature Skill",
+          "name": "Teadon — Bastion Aegis & Guardian Counter",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Tactical Ultimate (Magic)",
-          "hitCount": 3,
-          "buffCategoryTags": [
-            "Seeker",
-            "C Tier - Support",
-            "Faction Aura"
-          ],
-          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
-        },
-        {
-          "name": "Teadon Trait Reaction",
-          "type": "ACTIVE",
-          "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
+          "spOrEnergyCost": "2 NRG / 2 Turn CD",
+          "multiplierSummary": "2-Tile Allied Cover + -35% DMG Taken + 40% HP Shield",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Memory Shard Farmable",
-            "Seeker"
+            "2-Tile Cover Tank",
+            "40% HP Shield",
+            "Counter Stance",
+            "Defender"
           ],
-          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
+          "exactDescription": "Teadon enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield."
+        },
+        {
+          "name": "Trait: Teadon Unyielding Fortress",
+          "type": "ACTIVE",
+          "spOrEnergyCost": "0 NRG (Reaction)",
+          "multiplierSummary": "Pre-emptive Counterstrike (110% P.DEF Scaling) + Knockback",
+          "hitCount": 1,
+          "buffCategoryTags": [
+            "Defender",
+            "Cover Tank",
+            "Counter"
+          ],
+          "exactDescription": "Reduces incoming AoE and Single-Target damage by -20% and counters melee attackers for 110% P.DEF-scaled Physical damage."
         }
       ],
       "passives": [
         {
-          "unlockRank": "3-Star",
-          "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Teadon."
+          "unlockRank": "RK 7",
+          "name": "Defender Tactical Mastery",
+          "effect": "Reduces damage taken from all directions by -15% and grants immunity to Knockback."
         },
         {
-          "unlockRank": "5-Star",
-          "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
+          "unlockRank": "5★ Trait",
+          "name": "Awakened Teadon Crest (5★)",
+          "effect": "Maximizes trait multiplier scaling, grants +1 starting NRG on Turn 1, and reduces signature skill cooldown by -1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -5021,7 +5145,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.7,
-      "summaryVerdict": "Teadon is a B-Tier Legendary Defender (Wide-Cone Alert Shielder) excelling in Tower of Adversity and Weaponry Trials.",
+      "summaryVerdict": "Teadon is a B-Tier Defender (Wide-Cone Alert Shielder) specialist in Sword of Convallaria. Teadon enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-teadon"
     }
@@ -6282,7 +6406,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial II (Lv.70 Stage 10) — Papal Executioner",
       "modeName": "Weaponry Trial II",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "/boss-soc-dragon.jpg",
+      "imageUrl": "/boss-soc-inquisitor.jpg",
       "hpStat": "280,000 HP",
       "shieldOrDpStat": "Summons Volatile Detonation Crystals",
       "weaknesses": [
@@ -6318,7 +6442,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial III (Lv.70 Stage 10) — Calamity Dragon",
       "modeName": "Weaponry Trial III",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "/boss-soc-dragon.jpg",
+      "imageUrl": "/boss-soc-colossus.jpg",
       "hpStat": "290,000 HP",
       "shieldOrDpStat": "Stacking ATK/DEF Dragon Scales",
       "weaknesses": [
