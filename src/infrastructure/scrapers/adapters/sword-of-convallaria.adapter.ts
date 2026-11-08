@@ -6124,7 +6124,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial I (Lv.70 Stage 10) — Judgement Tarot Boss",
       "modeName": "Weaponry Trial I",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2877.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/06/Sword-of-Convallaria-Weaponry-Trial-I-Guide-scaled.webp",
       "hpStat": "245,000 HP",
       "shieldOrDpStat": "Ignores 40% DEF on Judgment Ray",
       "weaknesses": [
@@ -6167,7 +6167,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial II (Lv.70 Stage 10) — Papal Executioner",
       "modeName": "Weaponry Trial II",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5157.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/Sword-of-Convallaria-Weaponry-Trial-II-Guide-scaled.webp",
       "hpStat": "268,000 HP",
       "shieldOrDpStat": "Summons Volatile Crystals",
       "weaknesses": [
@@ -6203,7 +6203,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial III (Lv.70 Stage 10) — Calamity Dragon",
       "modeName": "Weaponry Trial III",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_5150.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/Sword-of-Convallaria-Weaponry-Trial-III-Guide-scaled.webp",
       "hpStat": "290,000 HP",
       "shieldOrDpStat": "Stacking ATK/DEF Dragon Scales",
       "weaknesses": [

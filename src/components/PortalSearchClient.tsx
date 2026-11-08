@@ -10,6 +10,7 @@ export interface SearchableItem {
   title: string;
   subtitle: string;
   href: string;
+  imageUrl: string;
 }
 
 export function PortalSearchClient({ items }: { items: SearchableItem[] }) {
@@ -80,7 +81,7 @@ export function PortalSearchClient({ items }: { items: SearchableItem[] }) {
             background: 'var(--bg-surface)',
             border: '2px solid var(--border-strong)',
             borderRadius: '4px',
-            maxHeight: '340px',
+            maxHeight: '360px',
             overflowY: 'auto',
           }}
         >
@@ -93,29 +94,55 @@ export function PortalSearchClient({ items }: { items: SearchableItem[] }) {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
+                gap: '10px',
                 padding: '8px 12px',
                 borderBottom: '1px solid var(--border-subtle)',
                 fontSize: '12px',
               }}
             >
-              <div>
-                <span
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
+                <img
+                  src={item.imageUrl}
+                  alt={item.title}
+                  width={32}
+                  height={32}
                   style={{
-                    background: 'var(--accent-primary)',
-                    color: '#FFF',
-                    fontSize: '9.5px',
-                    fontWeight: 800,
-                    padding: '1px 5px',
-                    borderRadius: '2px',
-                    marginRight: '6px',
+                    width: '32px',
+                    height: '32px',
+                    borderRadius: '4px',
+                    objectFit: 'cover',
+                    border: '1px solid var(--border-main)',
+                    flexShrink: 0,
                   }}
-                >
-                  {item.gameShortName}
-                </span>
-                <strong style={{ color: 'var(--text-main)' }}>{item.title}</strong>
-                <span style={{ color: 'var(--text-muted)', marginLeft: '6px', fontSize: '11px' }}>
-                  {item.subtitle}
-                </span>
+                />
+                <div style={{ minWidth: 0 }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '5px', flexWrap: 'wrap' }}>
+                    <span
+                      style={{
+                        background: 'var(--accent-primary)',
+                        color: '#FFF',
+                        fontSize: '9.5px',
+                        fontWeight: 800,
+                        padding: '1px 5px',
+                        borderRadius: '2px',
+                      }}
+                    >
+                      {item.gameShortName}
+                    </span>
+                    <strong style={{ color: 'var(--text-main)' }}>{item.title}</strong>
+                  </div>
+                  <div
+                    style={{
+                      color: 'var(--text-muted)',
+                      fontSize: '11px',
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {item.subtitle}
+                  </div>
+                </div>
               </div>
               <span
                 className="mono"
@@ -127,6 +154,7 @@ export function PortalSearchClient({ items }: { items: SearchableItem[] }) {
                   padding: '2px 6px',
                   borderRadius: '2px',
                   border: '1px solid var(--border-main)',
+                  flexShrink: 0,
                 }}
               >
                 {item.category} &rarr;

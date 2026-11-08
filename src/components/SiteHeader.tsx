@@ -2,12 +2,20 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { getGameAppIconUrl } from '../domain/constants/game-visuals';
 
 interface SiteHeaderProps {
   activeGameSlug?: string;
   activeGameName?: string;
   breadcrumbLeaf?: string;
 }
+
+const HEADER_GAMES = [
+  { slug: 'star-savior', label: 'Star Savior' },
+  { slug: 'heaven-burns-red', label: 'Heaven Burns Red' },
+  { slug: 'uma-musume', label: 'Uma Musume' },
+  { slug: 'sword-of-convallaria', label: 'Sword of Convallaria' },
+];
 
 export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: SiteHeaderProps) {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -57,6 +65,19 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               fontSize: '15px',
             }}
           >
+            <img
+              src={getGameAppIconUrl(activeGameSlug || 'star-savior')}
+              alt="META.GG"
+              width={24}
+              height={24}
+              style={{
+                width: '24px',
+                height: '24px',
+                borderRadius: '4px',
+                objectFit: 'cover',
+                border: '1px solid var(--border-strong)',
+              }}
+            />
             <span
               style={{
                 background: 'var(--accent-primary)',
@@ -87,9 +108,28 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               <span>&rsaquo;</span>
               <Link
                 href={`/${activeGameSlug}`}
-                style={{ color: 'var(--text-secondary)', textDecoration: 'underline' }}
+                style={{
+                  color: 'var(--text-secondary)',
+                  textDecoration: 'underline',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                }}
               >
-                {activeGameName} Wiki
+                <img
+                  src={getGameAppIconUrl(activeGameSlug)}
+                  alt={activeGameName}
+                  width={18}
+                  height={18}
+                  style={{
+                    width: '18px',
+                    height: '18px',
+                    borderRadius: '3px',
+                    objectFit: 'cover',
+                    border: '1px solid var(--border-main)',
+                  }}
+                />
+                <span>{activeGameName} Wiki</span>
               </Link>
               {breadcrumbLeaf && (
                 <>
@@ -102,62 +142,43 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-          <Link
-            href="/star-savior"
-            style={{
-              fontSize: '11.5px',
-              fontWeight: 800,
-              padding: '4px 9px',
-              borderRadius: '3px',
-              border: '1px solid var(--border-main)',
-              background: activeGameSlug === 'star-savior' ? 'var(--accent-bg)' : 'var(--bg-subtle)',
-              color: activeGameSlug === 'star-savior' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-            }}
-          >
-            Star Savior
-          </Link>
-          <Link
-            href="/heaven-burns-red"
-            style={{
-              fontSize: '11.5px',
-              fontWeight: 800,
-              padding: '4px 9px',
-              borderRadius: '3px',
-              border: '1px solid var(--border-main)',
-              background: activeGameSlug === 'heaven-burns-red' ? 'var(--accent-bg)' : 'var(--bg-subtle)',
-              color: activeGameSlug === 'heaven-burns-red' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-            }}
-          >
-            Heaven Burns Red
-          </Link>
-          <Link
-            href="/uma-musume"
-            style={{
-              fontSize: '11.5px',
-              fontWeight: 800,
-              padding: '4px 9px',
-              borderRadius: '3px',
-              border: '1px solid var(--border-main)',
-              background: activeGameSlug === 'uma-musume' ? 'var(--accent-bg)' : 'var(--bg-subtle)',
-              color: activeGameSlug === 'uma-musume' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-            }}
-          >
-            Uma Musume
-          </Link>
-          <Link
-            href="/sword-of-convallaria"
-            style={{
-              fontSize: '11.5px',
-              fontWeight: 800,
-              padding: '4px 9px',
-              borderRadius: '3px',
-              border: '1px solid var(--border-main)',
-              background: activeGameSlug === 'sword-of-convallaria' ? 'var(--accent-bg)' : 'var(--bg-subtle)',
-              color: activeGameSlug === 'sword-of-convallaria' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-            }}
-          >
-            Sword of Convallaria
-          </Link>
+          {HEADER_GAMES.map((g) => (
+            <Link
+              key={g.slug}
+              href={`/${g.slug}`}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                fontSize: '11.5px',
+                fontWeight: 800,
+                padding: '4px 9px',
+                borderRadius: '4px',
+                border:
+                  activeGameSlug === g.slug
+                    ? '1px solid var(--accent-primary)'
+                    : '1px solid var(--border-main)',
+                background: activeGameSlug === g.slug ? 'var(--accent-bg)' : 'var(--bg-subtle)',
+                color: activeGameSlug === g.slug ? 'var(--accent-primary)' : 'var(--text-secondary)',
+              }}
+            >
+              <img
+                src={getGameAppIconUrl(g.slug)}
+                alt={g.label}
+                width={18}
+                height={18}
+                style={{
+                  width: '18px',
+                  height: '18px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                  flexShrink: 0,
+                }}
+              />
+              <span>{g.label}</span>
+            </Link>
+          ))}
 
           <button
             type="button"
@@ -167,8 +188,8 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               background: 'var(--bg-header)',
               color: '#FFFFFF',
               border: '1px solid var(--border-strong)',
-              borderRadius: '3px',
-              padding: '4px 10px',
+              borderRadius: '4px',
+              padding: '5px 10px',
               fontSize: '11px',
               fontWeight: 800,
             }}

@@ -124,7 +124,7 @@ async function ensureDatabaseSeeded() {
 }
 
 export async function getPortalOverview() {
-  return getCachedOrFetch('portal:overview:v1', 120, async () => {
+  return getCachedOrFetch('portal:overview:v2', 120, async () => {
     await ensureDatabaseSeeded();
     const games = await prisma.game.findMany({
       orderBy: { foresightGapMonths: 'desc' },
@@ -139,12 +139,19 @@ export async function getPortalOverview() {
           select: { slug: true, nameEn: true, category: true, tierRank: true, imageUrl: true },
         },
         bossEncounters: {
-          select: { slug: true, nameEn: true, modeName: true },
+          select: { slug: true, nameEn: true, modeName: true, imageUrl: true },
         },
         banners: {
           orderBy: { estGlobalStartDate: 'asc' },
-          take: 2,
-          select: { slug: true, bannerTitle: true, estGlobalStartDate: true, pullVerdict: true },
+          take: 3,
+          select: {
+            slug: true,
+            bannerTitle: true,
+            estGlobalStartDate: true,
+            pullVerdict: true,
+            imageUrl: true,
+            featuredNames: true,
+          },
         },
         syncLogs: {
           orderBy: { executedAt: 'desc' },
@@ -169,6 +176,7 @@ export async function getPortalOverview() {
       bosses: g.bossEncounters,
       upcomingBanners: g.banners.map((b) => ({
         ...b,
+        featuredNames: b.featuredNames as string[],
         estGlobalStartDate: b.estGlobalStartDate.toISOString().slice(0, 10),
       })),
       lastSyncChecksum: g.syncLogs[0]?.checksumHash ?? 'verified',
@@ -177,7 +185,7 @@ export async function getPortalOverview() {
 }
 
 export async function getGameHubData(gameSlug: string): Promise<HydratedGameHub | null> {
-  return getCachedOrFetch(`game:hub:${gameSlug}:v1`, 120, async () => {
+  return getCachedOrFetch(`game:hub:${gameSlug}:v2`, 120, async () => {
     await ensureDatabaseSeeded();
     const game = await prisma.game.findUnique({
       where: { slug: gameSlug },

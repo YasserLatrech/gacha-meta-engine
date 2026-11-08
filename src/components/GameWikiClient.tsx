@@ -9,6 +9,14 @@ import {
   evaluateCombatMultiplier,
   compareUnitStats,
 } from '../domain/calculators/engine';
+import {
+  getGameAppIconUrl,
+  getElementIconUrl,
+  getRoleIconUrl,
+  getAttackTypeIconUrl,
+  getStatConceptIconUrl,
+  getSkillConceptIconUrl,
+} from '../domain/constants/game-visuals';
 import { AdSlot } from './AdSlot';
 
 export type WikiTabKey = 'tier-list' | 'weapons' | 'bosses' | 'banners' | 'compare';
@@ -38,7 +46,9 @@ export function GameWikiClient({
   const [unitSearch, setUnitSearch] = useState<string>('');
 
   // Pull Savings Calculator State
-  const [currentCurrency, setCurrentCurrency] = useState<number>(hub.pityThreshold * hub.pullCostSingle * 0.55);
+  const [currentCurrency, setCurrentCurrency] = useState<number>(
+    hub.pityThreshold * hub.pullCostSingle * 0.55
+  );
   const [currentTickets, setCurrentTickets] = useState<number>(10);
   const [hasMonthlyPass, setHasMonthlyPass] = useState<boolean>(false);
 
@@ -55,10 +65,10 @@ export function GameWikiClient({
   const [fieldZonePct, setFieldZonePct] = useState<number>(65);
   const [defDown1, setDefDown1] = useState<number>(45);
   const [defDown2, setDefDown2] = useState<number>(45);
-  const [fragilePct, setFragilePct] = useState<number>(50);
-  const [mindEyePct, setMindEyePct] = useState<number>(35);
+  const [fragilePct] = useState<number>(50);
+  const [mindEyePct] = useState<number>(35);
   const [multiHitPct, setMultiHitPct] = useState<number>(50);
-  const [isWeaknessHit, setIsWeaknessHit] = useState<boolean>(true);
+  const [isWeaknessHit] = useState<boolean>(true);
 
   const filteredUnits = useMemo(() => {
     return hub.units.filter((u) => {
@@ -66,7 +76,8 @@ export function GameWikiClient({
       if (selectedElement !== 'ALL' && u.element !== selectedElement) return false;
       if (unitSearch.trim()) {
         const q = unitSearch.toLowerCase();
-        const matchName = u.nameEn.toLowerCase().includes(q) || u.styleOrTitle.toLowerCase().includes(q);
+        const matchName =
+          u.nameEn.toLowerCase().includes(q) || u.styleOrTitle.toLowerCase().includes(q);
         const matchSkill = u.skills.some(
           (s) =>
             s.name.toLowerCase().includes(q) ||
@@ -102,7 +113,12 @@ export function GameWikiClient({
 
   const comparisonRows = useMemo(() => {
     if (!unitA || !unitB) return [];
-    return compareUnitStats(unitA.baseStats, unitB.baseStats, unitA.longevityMonths, unitB.longevityMonths);
+    return compareUnitStats(
+      unitA.baseStats,
+      unitB.baseStats,
+      unitA.longevityMonths,
+      unitB.longevityMonths
+    );
   }, [unitA, unitB]);
 
   const combatResult = useMemo(() => {
@@ -144,6 +160,14 @@ export function GameWikiClient({
     'C',
   ];
 
+  const gameAppIcon = getGameAppIconUrl(hub.slug);
+  const topUnitThumb = hub.units[0]?.imageUrl || gameAppIcon;
+  const secondUnitThumb = hub.units[1]?.imageUrl || topUnitThumb;
+  const topEquipThumb = hub.equipments[0]?.imageUrl || topUnitThumb;
+  const secondEquipThumb = hub.equipments[1]?.imageUrl || topEquipThumb;
+  const topBossThumb = hub.bosses[0]?.imageUrl || hub.coverImageUrl;
+  const topBannerThumb = hub.banners[0]?.imageUrl || hub.coverImageUrl;
+
   return (
     <div className="portal-container">
       {/* TOP LEADERBOARD AD SLOT (0.00 CLS) */}
@@ -170,7 +194,7 @@ export function GameWikiClient({
           }}
         >
           {/* GAME COVER BANNER */}
-          <div style={{ height: '72px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ height: '82px', position: 'relative', overflow: 'hidden' }}>
             <img
               src={hub.coverImageUrl}
               alt={hub.name}
@@ -183,19 +207,35 @@ export function GameWikiClient({
                 background: 'rgba(20, 19, 18, 0.72)',
                 padding: '8px 10px',
                 display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'flex-end',
+                alignItems: 'flex-end',
+                gap: '8px',
               }}
             >
-              <span
-                className="mono"
-                style={{ fontSize: '9.5px', fontWeight: 900, color: '#FDE047' }}
-              >
-                {hub.globalPatchVersion}
-              </span>
-              <span style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF' }}>
-                {hub.name}
-              </span>
+              <img
+                src={gameAppIcon}
+                alt={hub.name}
+                width={32}
+                height={32}
+                style={{
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '5px',
+                  objectFit: 'cover',
+                  border: '1.5px solid #FFFFFF',
+                  flexShrink: 0,
+                }}
+              />
+              <div>
+                <div
+                  className="mono"
+                  style={{ fontSize: '9.5px', fontWeight: 900, color: '#FDE047' }}
+                >
+                  {hub.globalPatchVersion}
+                </div>
+                <div style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', lineHeight: 1.15 }}>
+                  {hub.name}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -237,9 +277,25 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 justifyContent: 'space-between',
+                alignItems: 'center',
               }}
             >
-              <span>Strongest Tier List</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
+                <img
+                  src={topUnitThumb}
+                  alt="Strongest Tier List"
+                  width={20}
+                  height={20}
+                  style={{
+                    width: '20px',
+                    height: '20px',
+                    borderRadius: '3px',
+                    objectFit: 'cover',
+                    border: '1px solid var(--border-main)',
+                  }}
+                />
+                <span>Strongest Tier List</span>
+              </span>
               <span className="mono" style={{ fontSize: '10px', fontWeight: 900 }}>
                 SSS
               </span>
@@ -266,9 +322,25 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              Reroll Starting Tier List
+              <img
+                src={secondUnitThumb}
+                alt="Reroll Starting Tier List"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>Reroll Starting Tier List</span>
             </button>
             <button
               type="button"
@@ -285,9 +357,25 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 justifyContent: 'space-between',
+                alignItems: 'center',
               }}
             >
-              <span>Weapons / Support Cards</span>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
+                <img
+                  src={topEquipThumb}
+                  alt="Weapons and Support Cards"
+                  width={20}
+                  height={20}
+                  style={{
+                    width: '20px',
+                    height: '20px',
+                    borderRadius: '3px',
+                    objectFit: 'cover',
+                    border: '1px solid var(--border-main)',
+                  }}
+                />
+                <span>Weapons / Support Cards</span>
+              </span>
               <span className="mono" style={{ fontSize: '10px' }}>
                 {hub.equipments.length}
               </span>
@@ -321,9 +409,25 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              Banner Schedule &amp; Pull Priority
+              <img
+                src={topBannerThumb}
+                alt="Banner Schedule"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>Banner Schedule &amp; Pull Priority</span>
             </button>
             <button
               type="button"
@@ -338,9 +442,25 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              {hub.currencyName} Pull Savings Planner
+              <img
+                src={secondEquipThumb}
+                alt="Pull Savings Planner"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>{hub.currencyName} Pull Savings Planner</span>
             </button>
           </div>
 
@@ -371,9 +491,25 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              Boss Weaknesses &amp; Raid Guides ({hub.bosses.length})
+              <img
+                src={topBossThumb}
+                alt="Boss Weaknesses"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>Boss Weaknesses &amp; Raid Guides ({hub.bosses.length})</span>
             </button>
             <button
               type="button"
@@ -397,9 +533,25 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              Boss / Raid Apex Tier List
+              <img
+                src={hub.units[2]?.imageUrl || topUnitThumb}
+                alt="Boss Raid Apex Tier List"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>Boss / Raid Apex Tier List</span>
             </button>
           </div>
 
@@ -430,9 +582,25 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              Visual Stat Comparison Tool
+              <img
+                src={hub.units[3]?.imageUrl || secondUnitThumb}
+                alt="Visual Stat Comparison Tool"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>Visual Stat Comparison Tool</span>
             </button>
             <button
               type="button"
@@ -447,13 +615,29 @@ export function GameWikiClient({
                 border: 'none',
                 borderBottom: '1px solid var(--border-subtle)',
                 cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '7px',
               }}
             >
-              Buff-Stacking &amp; Damage Calc
+              <img
+                src={hub.equipments[2]?.imageUrl || topEquipThumb}
+                alt="Buff-Stacking Damage Calc"
+                width={20}
+                height={20}
+                style={{
+                  width: '20px',
+                  height: '20px',
+                  borderRadius: '3px',
+                  objectFit: 'cover',
+                  border: '1px solid var(--border-main)',
+                }}
+              />
+              <span>Buff-Stacking &amp; Damage Calc</span>
             </button>
           </div>
 
-          {/* SECTION 5: DIRECT CHARACTER LINKS */}
+          {/* SECTION 5: DIRECT CHARACTER LINKS WITH REAL PORTRAIT THUMBNAILS */}
           <div
             style={{
               background: 'var(--bg-subnav)',
@@ -466,25 +650,52 @@ export function GameWikiClient({
           >
             05. CHARACTER DATABASE ({hub.units.length})
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '580px', overflowY: 'auto' }}>
             {hub.units.map((u) => (
               <Link
                 key={u.slug}
                 href={`/${hub.slug}/units/${u.slug}`}
                 style={{
-                  padding: '6px 10px',
+                  padding: '5px 8px',
                   fontSize: '11px',
                   fontWeight: 700,
                   color: 'var(--text-secondary)',
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   justifyContent: 'space-between',
+                  alignItems: 'center',
+                  gap: '6px',
                 }}
               >
-                <span>{u.nameEn}</span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', minWidth: 0 }}>
+                  <img
+                    src={u.imageUrl}
+                    alt={u.nameEn}
+                    width={22}
+                    height={22}
+                    style={{
+                      width: '22px',
+                      height: '22px',
+                      borderRadius: '3px',
+                      objectFit: 'cover',
+                      objectPosition: 'top',
+                      border: `1px solid ${getElementColor(u.element)}`,
+                      flexShrink: 0,
+                    }}
+                  />
+                  <span
+                    style={{
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {u.nameEn}
+                  </span>
+                </span>
                 <span
                   className="mono"
-                  style={{ fontSize: '9.5px', color: 'var(--accent-primary)', fontWeight: 900 }}
+                  style={{ fontSize: '9.5px', color: 'var(--accent-primary)', fontWeight: 900, flexShrink: 0 }}
                 >
                   {u.tiers.overallAsian.tierRank}
                 </span>
@@ -516,14 +727,30 @@ export function GameWikiClient({
                 gap: '8px',
               }}
             >
-              <h1 style={{ fontSize: '17px', fontWeight: 900, color: 'var(--text-main)' }}>
-                [{hub.name}]{' '}
-                {activeTab === 'tier-list' && `Strongest Character Tier List (${tierCategory})`}
-                {activeTab === 'weapons' && 'Weapon, Support Card & Equipment Tier List'}
-                {activeTab === 'bosses' && 'Monsters, Raid Boss Weaknesses & Strategy Guides'}
-                {activeTab === 'banners' && 'Upcoming Banner Schedule & Pull Calculator'}
-                {activeTab === 'compare' && 'Visual Stat Comparison & Damage Formula Simulator'}
-              </h1>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <img
+                  src={gameAppIcon}
+                  alt={hub.name}
+                  width={28}
+                  height={28}
+                  style={{
+                    width: '28px',
+                    height: '28px',
+                    borderRadius: '5px',
+                    objectFit: 'cover',
+                    border: '1px solid var(--border-main)',
+                    flexShrink: 0,
+                  }}
+                />
+                <h1 style={{ fontSize: '17px', fontWeight: 900, color: 'var(--text-main)' }}>
+                  [{hub.name}]{' '}
+                  {activeTab === 'tier-list' && `Strongest Character Tier List (${tierCategory})`}
+                  {activeTab === 'weapons' && 'Weapon, Support Card & Equipment Tier List'}
+                  {activeTab === 'bosses' && 'Monsters, Raid Boss Weaknesses & Strategy Guides'}
+                  {activeTab === 'banners' && 'Upcoming Banner Schedule & Pull Calculator'}
+                  {activeTab === 'compare' && 'Visual Stat Comparison & Damage Formula Simulator'}
+                </h1>
+              </div>
               <span
                 className="mono"
                 style={{
@@ -540,15 +767,15 @@ export function GameWikiClient({
               </span>
             </div>
 
-            {/* 5-BUTTON QUICK NAVIGATION MENU */}
+            {/* 5-BUTTON QUICK NAVIGATION MENU WITH REAL THUMBNAILS */}
             <div className="quick-menu-grid">
               {(
                 [
-                  { key: 'tier-list', label: '1. Character Tier List' },
-                  { key: 'weapons', label: '2. Weapons & Cards' },
-                  { key: 'bosses', label: '3. Boss & Raid Guides' },
-                  { key: 'banners', label: '4. Banners & Pull Calc' },
-                  { key: 'compare', label: '5. Stat Compare & Math' },
+                  { key: 'tier-list', label: '1. Character Tier List', thumb: topUnitThumb },
+                  { key: 'weapons', label: '2. Weapons & Cards', thumb: topEquipThumb },
+                  { key: 'bosses', label: '3. Boss & Raid Guides', thumb: topBossThumb },
+                  { key: 'banners', label: '4. Banners & Pull Calc', thumb: topBannerThumb },
+                  { key: 'compare', label: '5. Stat Compare & Math', thumb: secondUnitThumb },
                 ] as const
               ).map((btn) => (
                 <button
@@ -556,7 +783,7 @@ export function GameWikiClient({
                   type="button"
                   onClick={() => setActiveTab(btn.key)}
                   style={{
-                    padding: '8px 6px',
+                    padding: '6px 8px',
                     borderRadius: '4px',
                     border:
                       activeTab === btn.key
@@ -567,9 +794,27 @@ export function GameWikiClient({
                     fontSize: '11px',
                     fontWeight: 900,
                     cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '6px',
                   }}
                 >
-                  {btn.label}
+                  <img
+                    src={btn.thumb}
+                    alt={btn.label}
+                    width={20}
+                    height={20}
+                    style={{
+                      width: '20px',
+                      height: '20px',
+                      borderRadius: '3px',
+                      objectFit: 'cover',
+                      border: '1px solid var(--border-main)',
+                      flexShrink: 0,
+                    }}
+                  />
+                  <span>{btn.label}</span>
                 </button>
               ))}
             </div>
@@ -665,7 +910,7 @@ export function GameWikiClient({
                   </div>
                 </div>
 
-                {/* ELEMENT PILLS + UNIT SEARCH */}
+                {/* ELEMENT PILLS WITH REAL ELEMENT / CONCEPT ICONS + UNIT SEARCH */}
                 <div
                   style={{
                     display: 'flex',
@@ -682,7 +927,10 @@ export function GameWikiClient({
                       type="button"
                       onClick={() => setSelectedElement('ALL')}
                       style={{
-                        padding: '3px 8px',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        padding: '4px 8px',
                         fontSize: '10.5px',
                         fontWeight: 800,
                         borderRadius: '3px',
@@ -692,27 +940,52 @@ export function GameWikiClient({
                         color: selectedElement === 'ALL' ? '#FFF' : 'var(--text-secondary)',
                       }}
                     >
-                      All Elements ({hub.units.length})
+                      <img
+                        src={gameAppIcon}
+                        alt="All Elements"
+                        width={16}
+                        height={16}
+                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                      />
+                      <span>All Elements ({hub.units.length})</span>
                     </button>
-                    {hub.elementsConfig.map((el) => (
-                      <button
-                        key={el.key}
-                        type="button"
-                        onClick={() => setSelectedElement(el.key)}
-                        style={{
-                          padding: '3px 8px',
-                          fontSize: '10.5px',
-                          fontWeight: 800,
-                          borderRadius: '3px',
-                          cursor: 'pointer',
-                          border: `1.5px solid ${el.colorHex}`,
-                          background: selectedElement === el.key ? el.colorHex : 'var(--bg-surface)',
-                          color: selectedElement === el.key ? '#FFF' : 'var(--text-main)',
-                        }}
-                      >
-                        {el.label}
-                      </button>
-                    ))}
+                    {hub.elementsConfig.map((el) => {
+                      const elIcon = getElementIconUrl(hub.slug, el.key, hub.units);
+                      return (
+                        <button
+                          key={el.key}
+                          type="button"
+                          onClick={() => setSelectedElement(el.key)}
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '5px',
+                            padding: '4px 8px',
+                            fontSize: '10.5px',
+                            fontWeight: 800,
+                            borderRadius: '3px',
+                            cursor: 'pointer',
+                            border: `1.5px solid ${el.colorHex}`,
+                            background: selectedElement === el.key ? el.colorHex : 'var(--bg-surface)',
+                            color: selectedElement === el.key ? '#FFF' : 'var(--text-main)',
+                          }}
+                        >
+                          <img
+                            src={elIcon}
+                            alt={el.label}
+                            width={16}
+                            height={16}
+                            style={{
+                              width: '16px',
+                              height: '16px',
+                              borderRadius: '3px',
+                              objectFit: 'cover',
+                            }}
+                          />
+                          <span>{el.label}</span>
+                        </button>
+                      );
+                    })}
                   </div>
 
                   <input
@@ -782,20 +1055,51 @@ export function GameWikiClient({
                       >
                         TIER
                       </th>
-                      {hub.rolesConfig.map((rc) => (
-                        <th
-                          key={rc.key}
-                          style={{
-                            padding: '8px',
-                            fontSize: '10.5px',
-                            fontWeight: 900,
-                            borderRight: '1px solid #3F3F46',
-                            textAlign: 'center',
-                          }}
-                        >
-                          {rc.label}
-                        </th>
-                      ))}
+                      {hub.rolesConfig.map((rc) => {
+                        const roleIcon = getRoleIconUrl(
+                          hub.slug,
+                          rc.key,
+                          hub.units.map((u) => ({
+                            roleColumn: u.tiers.overallAsian.roleColumn,
+                            imageUrl: u.imageUrl,
+                          }))
+                        );
+                        return (
+                          <th
+                            key={rc.key}
+                            style={{
+                              padding: '8px',
+                              fontSize: '10.5px',
+                              fontWeight: 900,
+                              borderRight: '1px solid #3F3F46',
+                              textAlign: 'center',
+                            }}
+                          >
+                            <div
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                gap: '6px',
+                              }}
+                            >
+                              <img
+                                src={roleIcon}
+                                alt={rc.label}
+                                width={18}
+                                height={18}
+                                style={{
+                                  width: '18px',
+                                  height: '18px',
+                                  borderRadius: '3px',
+                                  objectFit: 'cover',
+                                }}
+                              />
+                              <span>{rc.label}</span>
+                            </div>
+                          </th>
+                        );
+                      })}
                     </tr>
                   </thead>
                   <tbody>
@@ -979,9 +1283,16 @@ export function GameWikiClient({
                   CHARACTER BREAKDOWN, SKILL MULTIPLIERS &amp; META LONGEVITY
                 </h2>
 
-                {filteredUnits.map((u) => {
+                {filteredUnits.map((u, uIdx) => {
                   const elemColor = getElementColor(u.element);
+                  const elemIcon = getElementIconUrl(hub.slug, u.element, hub.units);
+                  const atkIcon = getAttackTypeIconUrl(hub.slug, u.attackType, elemIcon);
                   const primarySkill = u.skills[0];
+                  const recommendedGear = hub.equipments[uIdx % Math.max(1, hub.equipments.length)];
+                  const synergyPartners = u.synergyUnitSlugs
+                    .map((s) => hub.units.find((cand) => cand.slug === s))
+                    .filter(Boolean);
+
                   return (
                     <article
                       key={u.slug}
@@ -1008,8 +1319,8 @@ export function GameWikiClient({
                             src={u.imageUrl}
                             alt={u.nameEn}
                             style={{
-                              width: '60px',
-                              height: '60px',
+                              width: '64px',
+                              height: '64px',
                               borderRadius: '4px',
                               objectFit: 'cover',
                               objectPosition: 'top center',
@@ -1068,22 +1379,42 @@ export function GameWikiClient({
                           >
                             <span
                               style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '4px',
                                 background: elemColor,
                                 color: '#FFF',
-                                padding: '1px 6px',
+                                padding: '2px 6px',
                                 borderRadius: '2px',
                               }}
                             >
+                              <img
+                                src={elemIcon}
+                                alt={u.element}
+                                width={14}
+                                height={14}
+                                style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                              />
                               {u.element} / {u.attackType}
                             </span>
                             <span
                               style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '4px',
                                 background: 'var(--bg-surface)',
                                 border: '1px solid var(--border-main)',
-                                padding: '1px 6px',
+                                padding: '2px 6px',
                                 borderRadius: '2px',
                               }}
                             >
+                              <img
+                                src={atkIcon}
+                                alt={u.role}
+                                width={14}
+                                height={14}
+                                style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                              />
                               Role: {u.role}
                             </span>
                             <span
@@ -1091,7 +1422,7 @@ export function GameWikiClient({
                                 background: 'var(--amber-bg)',
                                 color: 'var(--amber-primary)',
                                 border: '1px solid var(--border-main)',
-                                padding: '1px 6px',
+                                padding: '2px 6px',
                                 borderRadius: '2px',
                               }}
                             >
@@ -1101,7 +1432,7 @@ export function GameWikiClient({
                               style={{
                                 background: 'var(--green-bg)',
                                 color: 'var(--green-primary)',
-                                padding: '1px 6px',
+                                padding: '2px 6px',
                                 borderRadius: '2px',
                               }}
                             >
@@ -1120,21 +1451,133 @@ export function GameWikiClient({
                             borderRadius: '3px',
                             padding: '6px 10px',
                             fontSize: '11px',
+                            display: 'flex',
+                            gap: '8px',
+                            alignItems: 'center',
                           }}
                         >
-                          <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900 }}>
-                            <span>
-                              EX / Core Skill: {primarySkill.name} ({primarySkill.hitCount}-Hit)
-                            </span>
-                            <span style={{ color: 'var(--accent-primary)' }}>
-                              Cost: {primarySkill.spOrEnergyCost}
-                            </span>
-                          </div>
-                          <div style={{ color: 'var(--text-secondary)', marginTop: '2px' }}>
-                            {primarySkill.multiplierSummary}
+                          <img
+                            src={getSkillConceptIconUrl(
+                              hub.slug,
+                              primarySkill.type,
+                              recommendedGear?.imageUrl || u.imageUrl
+                            )}
+                            alt={primarySkill.name}
+                            width={28}
+                            height={28}
+                            style={{
+                              width: '28px',
+                              height: '28px',
+                              borderRadius: '4px',
+                              objectFit: 'cover',
+                              border: '1px solid var(--border-main)',
+                              flexShrink: 0,
+                            }}
+                          />
+                          <div style={{ flex: 1 }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900 }}>
+                              <span>
+                                EX / Core Skill: {primarySkill.name} ({primarySkill.hitCount}-Hit)
+                              </span>
+                              <span style={{ color: 'var(--accent-primary)' }}>
+                                Cost: {primarySkill.spOrEnergyCost}
+                              </span>
+                            </div>
+                            <div style={{ color: 'var(--text-secondary)', marginTop: '2px' }}>
+                              {primarySkill.multiplierSummary}
+                            </div>
                           </div>
                         </div>
                       )}
+
+                      {/* VISUAL BEST-IN-SLOT GEAR + SYNERGY TEAMMATES STRIP */}
+                      <div
+                        style={{
+                          display: 'flex',
+                          gap: '10px',
+                          flexWrap: 'wrap',
+                          alignItems: 'center',
+                          background: 'var(--bg-surface)',
+                          border: '1px solid var(--border-subtle)',
+                          padding: '5px 8px',
+                          borderRadius: '3px',
+                          fontSize: '10.5px',
+                        }}
+                      >
+                        {recommendedGear && (
+                          <button
+                            type="button"
+                            onClick={() => setActiveTab('weapons')}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '6px',
+                              background: 'var(--bg-subtle)',
+                              border: '1px solid var(--border-main)',
+                              padding: '3px 7px',
+                              borderRadius: '3px',
+                              cursor: 'pointer',
+                              fontWeight: 800,
+                              fontSize: '10.5px',
+                              color: 'var(--text-main)',
+                            }}
+                          >
+                            <img
+                              src={recommendedGear.imageUrl}
+                              alt={recommendedGear.nameEn}
+                              width={22}
+                              height={22}
+                              style={{
+                                width: '22px',
+                                height: '22px',
+                                borderRadius: '3px',
+                                objectFit: 'cover',
+                                border: '1px solid var(--border-strong)',
+                              }}
+                            />
+                            <span>Best Gear: {recommendedGear.nameEn}</span>
+                          </button>
+                        )}
+                        {synergyPartners.length > 0 && (
+                          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', flexWrap: 'wrap' }}>
+                            <strong style={{ color: 'var(--text-muted)' }}>Synergy Core:</strong>
+                            {synergyPartners.map((sp) =>
+                              sp ? (
+                                <Link
+                                  key={sp.slug}
+                                  href={`/${hub.slug}/units/${sp.slug}`}
+                                  style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '4px',
+                                    background: 'var(--bg-subtle)',
+                                    border: '1px solid var(--border-main)',
+                                    padding: '2px 6px',
+                                    borderRadius: '3px',
+                                    fontWeight: 800,
+                                    color: 'var(--text-main)',
+                                  }}
+                                >
+                                  <img
+                                    src={sp.imageUrl}
+                                    alt={sp.nameEn}
+                                    width={20}
+                                    height={20}
+                                    style={{
+                                      width: '20px',
+                                      height: '20px',
+                                      borderRadius: '3px',
+                                      objectFit: 'cover',
+                                      objectPosition: 'top',
+                                    }}
+                                  />
+                                  <span>{sp.nameEn}</span>
+                                </Link>
+                              ) : null
+                            )}
+                          </div>
+                        )}
+                      </div>
 
                       <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)' }}>
                         <strong>Evaluation:</strong> {u.tiers.overallAsian.summaryVerdict}{' '}
@@ -1228,8 +1671,8 @@ export function GameWikiClient({
                     src={eq.imageUrl}
                     alt={eq.nameEn}
                     style={{
-                      width: '64px',
-                      height: '76px',
+                      width: '68px',
+                      height: '80px',
                       objectFit: 'cover',
                       borderRadius: '4px',
                       border: '2px solid var(--border-strong)',
@@ -1274,12 +1717,22 @@ export function GameWikiClient({
                     >
                       <span
                         style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '4px',
                           background: 'var(--bg-header)',
                           color: '#FFF',
-                          padding: '1px 6px',
+                          padding: '2px 6px',
                           borderRadius: '2px',
                         }}
                       >
+                        <img
+                          src={getStatConceptIconUrl(hub.slug, eq.subType, eq.imageUrl)}
+                          alt={eq.subType}
+                          width={14}
+                          height={14}
+                          style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                        />
                         {eq.category}: {eq.subType}
                       </span>
                       <span
@@ -1287,7 +1740,7 @@ export function GameWikiClient({
                           background: 'var(--amber-bg)',
                           color: 'var(--amber-primary)',
                           border: '1px solid var(--border-main)',
-                          padding: '1px 6px',
+                          padding: '2px 6px',
                           borderRadius: '2px',
                         }}
                       >
@@ -1299,7 +1752,7 @@ export function GameWikiClient({
                       className="mono"
                       style={{
                         display: 'flex',
-                        gap: '8px',
+                        gap: '10px',
                         flexWrap: 'wrap',
                         marginTop: '8px',
                         background: 'var(--bg-surface)',
@@ -1310,7 +1763,14 @@ export function GameWikiClient({
                       }}
                     >
                       {Object.entries(eq.stats).map(([k, v]) => (
-                        <span key={k}>
+                        <span key={k} style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                          <img
+                            src={getStatConceptIconUrl(hub.slug, `${k} ${v}`, eq.imageUrl)}
+                            alt={k}
+                            width={14}
+                            height={14}
+                            style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                          />
                           <strong>{k}:</strong> {v}
                         </span>
                       ))}
@@ -1339,15 +1799,31 @@ export function GameWikiClient({
                             key={uSlug}
                             href={`/${hub.slug}/units/${uSlug}`}
                             style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '5px',
                               background: 'var(--bg-surface)',
                               border: '1px solid var(--border-main)',
-                              padding: '2px 7px',
+                              padding: '3px 7px 3px 4px',
                               borderRadius: '3px',
                               fontWeight: 800,
                               color: 'var(--accent-primary)',
                             }}
                           >
-                            {holder.nameEn}
+                            <img
+                              src={holder.imageUrl}
+                              alt={holder.nameEn}
+                              width={22}
+                              height={22}
+                              style={{
+                                width: '22px',
+                                height: '22px',
+                                borderRadius: '3px',
+                                objectFit: 'cover',
+                                objectPosition: 'top',
+                              }}
+                            />
+                            <span>{holder.nameEn}</span>
                           </Link>
                         );
                       })}
@@ -1396,11 +1872,11 @@ export function GameWikiClient({
                       src={boss.imageUrl}
                       alt={boss.nameEn}
                       style={{
-                        width: '96px',
-                        height: '62px',
+                        width: '148px',
+                        height: '84px',
                         objectFit: 'cover',
                         borderRadius: '4px',
-                        border: '1px solid var(--border-strong)',
+                        border: '1.5px solid var(--border-strong)',
                       }}
                     />
                     <div style={{ flex: 1 }}>
@@ -1422,7 +1898,7 @@ export function GameWikiClient({
                     </div>
                   </div>
 
-                  {/* WEAKNESSES & RESISTANCES */}
+                  {/* WEAKNESSES & RESISTANCES WITH REAL ELEMENT / WEAPON CONCEPT ICONS */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
                     <div
                       style={{
@@ -1437,13 +1913,37 @@ export function GameWikiClient({
                           fontSize: '10.5px',
                           fontWeight: 900,
                           color: 'var(--green-primary)',
-                          marginBottom: '4px',
+                          marginBottom: '6px',
                         }}
                       >
                         EXPLOITABLE WEAKNESSES / OPTIMAL TRIGGERS
                       </div>
-                      <div style={{ fontSize: '11.5px', fontWeight: 800 }}>
-                        {boss.weaknesses.join(' • ')}
+                      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                        {boss.weaknesses.map((wk) => (
+                          <span
+                            key={wk}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '5px',
+                              background: 'var(--bg-surface)',
+                              border: '1px solid var(--border-main)',
+                              padding: '3px 7px',
+                              borderRadius: '3px',
+                              fontSize: '11px',
+                              fontWeight: 800,
+                            }}
+                          >
+                            <img
+                              src={getStatConceptIconUrl(hub.slug, wk, topUnitThumb)}
+                              alt={wk}
+                              width={16}
+                              height={16}
+                              style={{ width: '16px', height: '16px', borderRadius: '2px', objectFit: 'cover' }}
+                            />
+                            <span>{wk}</span>
+                          </span>
+                        ))}
                       </div>
                     </div>
 
@@ -1460,13 +1960,37 @@ export function GameWikiClient({
                           fontSize: '10.5px',
                           fontWeight: 900,
                           color: 'var(--accent-primary)',
-                          marginBottom: '4px',
+                          marginBottom: '6px',
                         }}
                       >
                         BOSS RESISTANCES / PENALTIES
                       </div>
-                      <div style={{ fontSize: '11.5px', fontWeight: 800 }}>
-                        {boss.resistances.join(' • ')}
+                      <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
+                        {boss.resistances.map((rs) => (
+                          <span
+                            key={rs}
+                            style={{
+                              display: 'inline-flex',
+                              alignItems: 'center',
+                              gap: '5px',
+                              background: 'var(--bg-surface)',
+                              border: '1px solid var(--accent-border)',
+                              padding: '3px 7px',
+                              borderRadius: '3px',
+                              fontSize: '11px',
+                              fontWeight: 800,
+                            }}
+                          >
+                            <img
+                              src={getStatConceptIconUrl(hub.slug, rs, topEquipThumb)}
+                              alt={rs}
+                              width={16}
+                              height={16}
+                              style={{ width: '16px', height: '16px', borderRadius: '2px', objectFit: 'cover' }}
+                            />
+                            <span>{rs}</span>
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -1537,7 +2061,15 @@ export function GameWikiClient({
                     <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
                       STEP-BY-STEP &ldquo;HOW TO BEAT&rdquo; CLEAR STRATEGY
                     </div>
-                    <ol style={{ paddingLeft: '18px', fontSize: '11.5px', display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                    <ol
+                      style={{
+                        paddingLeft: '18px',
+                        fontSize: '11.5px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '4px',
+                      }}
+                    >
                       {boss.strategySteps.map((step, i) => (
                         <li key={i} style={{ color: 'var(--text-secondary)', fontWeight: 600 }}>
                           {step}
@@ -1546,10 +2078,10 @@ export function GameWikiClient({
                     </ol>
                   </div>
 
-                  {/* RECOMMENDED COUNTER TEAM PORTRAITS */}
+                  {/* RECOMMENDED COUNTER TEAM PORTRAITS + RECOMMENDED RAID GEAR */}
                   <div>
                     <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
-                      RECOMMENDED APEX COUNTER UNITS (CLICK FOR BUILD):
+                      RECOMMENDED APEX COUNTER UNITS &amp; RAID EQUIPMENT:
                     </div>
                     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                       {boss.recommendedUnitSlugs.map((uSlug) => {
@@ -1591,6 +2123,43 @@ export function GameWikiClient({
                           </Link>
                         );
                       })}
+                      {hub.equipments.slice(0, 2).map((eq) => (
+                        <button
+                          key={eq.slug}
+                          type="button"
+                          onClick={() => setActiveTab('weapons')}
+                          style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px',
+                            padding: '4px 8px 4px 4px',
+                            background: 'var(--bg-subtle)',
+                            border: '1px solid var(--border-main)',
+                            borderRadius: '4px',
+                            fontSize: '11px',
+                            fontWeight: 800,
+                            cursor: 'pointer',
+                            textAlign: 'left',
+                          }}
+                        >
+                          <img
+                            src={eq.imageUrl}
+                            alt={eq.nameEn}
+                            style={{
+                              width: '32px',
+                              height: '32px',
+                              borderRadius: '3px',
+                              objectFit: 'cover',
+                            }}
+                          />
+                          <div>
+                            <div style={{ color: 'var(--text-main)' }}>{eq.nameEn}</div>
+                            <div style={{ fontSize: '9.5px', color: 'var(--amber-primary)' }}>
+                              {eq.category} • Tier {eq.tierRank}
+                            </div>
+                          </div>
+                        </button>
+                      ))}
                     </div>
                   </div>
                 </article>
@@ -1619,10 +2188,22 @@ export function GameWikiClient({
                     marginBottom: '8px',
                     display: 'flex',
                     justifyContent: 'space-between',
+                    alignItems: 'center',
                     flexWrap: 'wrap',
                   }}
                 >
-                  <span>INTERACTIVE {hub.currencyName.toUpperCase()} PULL SAVINGS &amp; PITY CALCULATOR</span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
+                    <img
+                      src={gameAppIcon}
+                      alt={hub.currencyName}
+                      width={22}
+                      height={22}
+                      style={{ width: '22px', height: '22px', borderRadius: '4px', objectFit: 'cover' }}
+                    />
+                    <span>
+                      INTERACTIVE {hub.currencyName.toUpperCase()} PULL SAVINGS &amp; PITY CALCULATOR
+                    </span>
+                  </span>
                   <span className="mono" style={{ fontSize: '11px', color: 'var(--accent-primary)' }}>
                     Hard Spark Pity: {hub.pityThreshold} Pulls ({hub.pityThreshold * hub.pullCostSingle}{' '}
                     {hub.currencyName})
@@ -1640,8 +2221,25 @@ export function GameWikiClient({
                     border: '1px solid var(--border-main)',
                   }}
                 >
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '11px', fontWeight: 800 }}>
-                    <span>Current {hub.currencyName} Saved:</span>
+                  <label
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '4px',
+                      fontSize: '11px',
+                      fontWeight: 800,
+                    }}
+                  >
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                      <img
+                        src={topEquipThumb}
+                        alt={hub.currencyName}
+                        width={16}
+                        height={16}
+                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                      />
+                      <span>Current {hub.currencyName} Saved:</span>
+                    </span>
                     <input
                       type="number"
                       min={0}
@@ -1660,8 +2258,25 @@ export function GameWikiClient({
                     />
                   </label>
 
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '4px', fontSize: '11px', fontWeight: 800 }}>
-                    <span>Current Pull Tickets:</span>
+                  <label
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '4px',
+                      fontSize: '11px',
+                      fontWeight: 800,
+                    }}
+                  >
+                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                      <img
+                        src={secondEquipThumb}
+                        alt="Pull Tickets"
+                        width={16}
+                        height={16}
+                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                      />
+                      <span>Current Pull Tickets:</span>
+                    </span>
                     <input
                       type="number"
                       min={0}
@@ -1703,7 +2318,7 @@ export function GameWikiClient({
                 </div>
               </div>
 
-              {/* CHRONOLOGICAL BANNERS WITH LIVE CALCULATED PITY STATUS */}
+              {/* CHRONOLOGICAL BANNERS WITH LIVE CALCULATED PITY STATUS & FEATURED UNIT PORTRAITS */}
               {hub.banners.map((bn, index) => {
                 const daysFromNow = (index + 1) * 28;
                 const calc = calculatePullSavings({
@@ -1717,6 +2332,10 @@ export function GameWikiClient({
                   pitySparkPulls: hub.pityThreshold,
                   featuredRatePerPull: 0.0075,
                 });
+
+                const featuredUnits = bn.featuredUnitSlugs
+                  .map((s) => hub.units.find((u) => u.slug === s))
+                  .filter(Boolean);
 
                 return (
                   <article
@@ -1736,7 +2355,7 @@ export function GameWikiClient({
                       src={bn.imageUrl}
                       alt={bn.bannerTitle}
                       style={{
-                        width: '68px',
+                        width: '132px',
                         height: '82px',
                         objectFit: 'cover',
                         borderRadius: '4px',
@@ -1785,6 +2404,58 @@ export function GameWikiClient({
                         <strong style={{ color: 'var(--text-main)' }}>{bn.estGlobalStartDate}</strong> (~
                         {daysFromNow}d)
                       </div>
+
+                      {/* FEATURED UNITS VISUAL ROW */}
+                      {featuredUnits.length > 0 && (
+                        <div
+                          style={{
+                            display: 'flex',
+                            gap: '6px',
+                            alignItems: 'center',
+                            flexWrap: 'wrap',
+                            marginTop: '6px',
+                          }}
+                        >
+                          <span style={{ fontSize: '10.5px', fontWeight: 800, color: 'var(--text-muted)' }}>
+                            Featured Units:
+                          </span>
+                          {featuredUnits.map((fu) =>
+                            fu ? (
+                              <Link
+                                key={fu.slug}
+                                href={`/${hub.slug}/units/${fu.slug}`}
+                                style={{
+                                  display: 'inline-flex',
+                                  alignItems: 'center',
+                                  gap: '5px',
+                                  background: 'var(--bg-subtle)',
+                                  border: '1px solid var(--border-main)',
+                                  padding: '3px 7px 3px 4px',
+                                  borderRadius: '3px',
+                                  fontSize: '10.5px',
+                                  fontWeight: 800,
+                                  color: 'var(--text-main)',
+                                }}
+                              >
+                                <img
+                                  src={fu.imageUrl}
+                                  alt={fu.nameEn}
+                                  width={22}
+                                  height={22}
+                                  style={{
+                                    width: '22px',
+                                    height: '22px',
+                                    borderRadius: '3px',
+                                    objectFit: 'cover',
+                                    objectPosition: 'top',
+                                  }}
+                                />
+                                <span>{fu.nameEn}</span>
+                              </Link>
+                            ) : null
+                          )}
+                        </div>
+                      )}
 
                       <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '6px' }}>
                         {bn.verdictReasoning}
@@ -1881,8 +2552,8 @@ export function GameWikiClient({
                       src={unitA.imageUrl}
                       alt={unitA.nameEn}
                       style={{
-                        width: '44px',
-                        height: '44px',
+                        width: '48px',
+                        height: '48px',
                         borderRadius: '4px',
                         objectFit: 'cover',
                         objectPosition: 'top',
@@ -1952,8 +2623,8 @@ export function GameWikiClient({
                       src={unitB.imageUrl}
                       alt={unitB.nameEn}
                       style={{
-                        width: '44px',
-                        height: '44px',
+                        width: '48px',
+                        height: '48px',
                         borderRadius: '4px',
                         objectFit: 'cover',
                         objectPosition: 'top',
@@ -1963,7 +2634,7 @@ export function GameWikiClient({
                   </div>
                 </div>
 
-                {/* 10 NORMALIZED VISUAL COMPARISON BARS */}
+                {/* 10 NORMALIZED VISUAL COMPARISON BARS WITH REAL STAT ICONS */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                   {comparisonRows.map((row) => (
                     <div key={row.label}>
@@ -1971,6 +2642,7 @@ export function GameWikiClient({
                         style={{
                           display: 'flex',
                           justifyContent: 'space-between',
+                          alignItems: 'center',
                           fontSize: '11px',
                           fontWeight: 800,
                           marginBottom: '3px',
@@ -1979,8 +2651,24 @@ export function GameWikiClient({
                         <span className="mono" style={{ color: 'var(--amber-primary)' }}>
                           {row.unitAVal.toLocaleString()} {row.winner === 'A' ? '★' : ''}
                         </span>
-                        <span style={{ color: 'var(--text-secondary)', textTransform: 'uppercase', fontSize: '10px' }}>
-                          {row.label}
+                        <span
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '5px',
+                            color: 'var(--text-secondary)',
+                            textTransform: 'uppercase',
+                            fontSize: '10px',
+                          }}
+                        >
+                          <img
+                            src={getStatConceptIconUrl(hub.slug, row.label, topEquipThumb)}
+                            alt={row.label}
+                            width={14}
+                            height={14}
+                            style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                          />
+                          <span>{row.label}</span>
                         </span>
                         <span className="mono" style={{ color: 'var(--accent-primary)' }}>
                           {row.winner === 'B' ? '★ ' : ''}
@@ -2058,87 +2746,83 @@ export function GameWikiClient({
                     fontWeight: 800,
                   }}
                 >
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Skill Base Potency:</span>
-                    <input
-                      type="number"
-                      value={basePotency}
-                      onChange={(e) => setBasePotency(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Skill ATK Buff #1 (%):</span>
-                    <input
-                      type="number"
-                      value={skillAtk1}
-                      onChange={(e) => setSkillAtk1(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Skill ATK Buff #2 (%):</span>
-                    <input
-                      type="number"
-                      value={skillAtk2}
-                      onChange={(e) => setSkillAtk2(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Crit DMG Buff #1 (%):</span>
-                    <input
-                      type="number"
-                      value={critDmg1}
-                      onChange={(e) => setCritDmg1(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Crit DMG Buff #2 (%):</span>
-                    <input
-                      type="number"
-                      value={critDmg2}
-                      onChange={(e) => setCritDmg2(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Elemental Field Zone (%):</span>
-                    <input
-                      type="number"
-                      value={fieldZonePct}
-                      onChange={(e) => setFieldZonePct(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Enemy DEF Down #1 (%):</span>
-                    <input
-                      type="number"
-                      value={defDown1}
-                      onChange={(e) => setDefDown1(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Elemental DEF Down #2 (%):</span>
-                    <input
-                      type="number"
-                      value={defDown2}
-                      onChange={(e) => setDefDown2(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
-                  <label style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                    <span>Multi-Hit Bonus (%):</span>
-                    <input
-                      type="number"
-                      value={multiHitPct}
-                      onChange={(e) => setMultiHitPct(Number(e.target.value) || 0)}
-                      style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
-                    />
-                  </label>
+                  {(
+                    [
+                      {
+                        label: 'Skill Base Potency:',
+                        val: basePotency,
+                        set: setBasePotency,
+                        icon: getStatConceptIconUrl(hub.slug, 'power', topEquipThumb),
+                      },
+                      {
+                        label: 'Skill ATK Buff #1 (%):',
+                        val: skillAtk1,
+                        set: setSkillAtk1,
+                        icon: getStatConceptIconUrl(hub.slug, 'atk', topEquipThumb),
+                      },
+                      {
+                        label: 'Skill ATK Buff #2 (%):',
+                        val: skillAtk2,
+                        set: setSkillAtk2,
+                        icon: getStatConceptIconUrl(hub.slug, 'atk', topEquipThumb),
+                      },
+                      {
+                        label: 'Crit DMG Buff #1 (%):',
+                        val: critDmg1,
+                        set: setCritDmg1,
+                        icon: getStatConceptIconUrl(hub.slug, 'crit', topEquipThumb),
+                      },
+                      {
+                        label: 'Crit DMG Buff #2 (%):',
+                        val: critDmg2,
+                        set: setCritDmg2,
+                        icon: getStatConceptIconUrl(hub.slug, 'crit', topEquipThumb),
+                      },
+                      {
+                        label: 'Elemental Field Zone (%):',
+                        val: fieldZonePct,
+                        set: setFieldZonePct,
+                        icon: getStatConceptIconUrl(hub.slug, 'fire', topEquipThumb),
+                      },
+                      {
+                        label: 'Enemy DEF Down #1 (%):',
+                        val: defDown1,
+                        set: setDefDown1,
+                        icon: getStatConceptIconUrl(hub.slug, 'def', topEquipThumb),
+                      },
+                      {
+                        label: 'Elemental DEF Down #2 (%):',
+                        val: defDown2,
+                        set: setDefDown2,
+                        icon: getStatConceptIconUrl(hub.slug, 'dark', topEquipThumb),
+                      },
+                      {
+                        label: 'Multi-Hit Bonus (%):',
+                        val: multiHitPct,
+                        set: setMultiHitPct,
+                        icon: getStatConceptIconUrl(hub.slug, 'speed', topEquipThumb),
+                      },
+                    ] as const
+                  ).map((inp) => (
+                    <label key={inp.label} style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                        <img
+                          src={inp.icon}
+                          alt={inp.label}
+                          width={15}
+                          height={15}
+                          style={{ width: '15px', height: '15px', borderRadius: '2px', objectFit: 'cover' }}
+                        />
+                        <span>{inp.label}</span>
+                      </span>
+                      <input
+                        type="number"
+                        value={inp.val}
+                        onChange={(e) => inp.set(Number(e.target.value) || 0)}
+                        style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
+                      />
+                    </label>
+                  ))}
                 </div>
 
                 <div
@@ -2216,11 +2900,12 @@ export function GameWikiClient({
                     src={bn.imageUrl}
                     alt={bn.bannerTitle}
                     style={{
-                      width: '38px',
-                      height: '46px',
+                      width: '48px',
+                      height: '44px',
                       borderRadius: '3px',
                       objectFit: 'cover',
                       border: '1px solid var(--border-main)',
+                      flexShrink: 0,
                     }}
                   />
                   <div style={{ flex: 1 }}>
