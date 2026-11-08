@@ -5,6 +5,7 @@ import { SiteHeader } from '../components/SiteHeader';
 import { AdSlot } from '../components/AdSlot';
 import { PortalSearchClient, SearchableItem } from '../components/PortalSearchClient';
 import { getGameAppIconUrl } from '../domain/constants/game-visuals';
+import { GachaCrestMark } from '../components/GachaCrestLogo';
 
 export const dynamic = 'force-dynamic';
 
@@ -85,7 +86,7 @@ export default async function PortalHomePage() {
             border: '1px solid var(--border-main)',
             borderLeft: '4px solid var(--accent-primary)',
             borderRadius: '6px',
-            padding: '14px 16px',
+            padding: '13px 16px',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
@@ -93,48 +94,33 @@ export default async function PortalHomePage() {
             gap: '12px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <img
-              src="/gachacrest-logo.jpg"
-              alt="GachaCrest Brand Emblem"
-              width={56}
-              height={56}
-              style={{
-                width: '56px',
-                height: '56px',
-                borderRadius: '10px',
-                objectFit: 'cover',
-                border: '2px solid #F59E0B',
-                boxShadow: '0 4px 12px rgba(200, 30, 30, 0.25)',
-                flexShrink: 0,
-              }}
-            />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <GachaCrestMark size={44} />
             <div style={{ display: 'flex', alignItems: 'center' }}>
               {games.map((g, idx) => (
                 <img
                   key={g.slug}
                   src={getGameAppIconUrl(g.slug)}
                   alt={g.name}
-                  width={38}
-                  height={38}
+                  width={36}
+                  height={36}
                   style={{
-                    width: '38px',
-                    height: '38px',
-                    borderRadius: '8px',
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: '7px',
                     objectFit: 'cover',
                     border: '2px solid var(--bg-surface)',
                     marginLeft: idx === 0 ? '0' : '-8px',
-                    boxShadow: '0 2px 5px rgba(0,0,0,0.22)',
                   }}
                 />
               ))}
             </div>
             <div>
-              <h1 style={{ fontSize: '18.5px', fontWeight: 900 }}>
+              <h1 style={{ fontSize: '17.5px', fontWeight: 900 }}>
                 GachaCrest — Gacha Character Tier Lists, Builds &amp; Pull Codex
               </h1>
-              <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '2px', fontWeight: 600 }}>
-                GachaCrest indexes 336 verified characters, 216 weapons &amp; support cards, boss raid guides, and pull calculators across 4 games.
+              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '2px', fontWeight: 600 }}>
+                336 verified characters, 216 weapons &amp; support cards, boss raid guides, and pull calculators across 4 games.
               </p>
             </div>
           </div>
@@ -229,7 +215,6 @@ export default async function PortalHomePage() {
                         fontWeight: 900,
                         padding: '4px 9px',
                         borderRadius: '4px',
-                        boxShadow: '0 2px 6px rgba(0,0,0,0.35)',
                       }}
                     >
                       {g.counts.units} UNITS • {g.counts.equipments} ITEMS
@@ -246,7 +231,6 @@ export default async function PortalHomePage() {
                         background: 'rgba(20, 19, 18, 0.88)',
                         padding: '4px 8px',
                         borderRadius: '6px',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.45)',
                       }}
                     >
                       {g.units.slice(0, 4).map((u) => (
