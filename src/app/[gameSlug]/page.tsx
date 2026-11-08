@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   return {
     title: `${hub.name} Tier List, Character Builds, Weapons & Boss Raid Wiki`,
-    description: `Complete ${hub.name} encyclopedic wiki (${hub.globalPatchVersion}). SSS/SS character tier lists, weapon and support card rankings, boss raid guides, and ${hub.currencyName} pull calculator.`,
+    description: `GachaCrest ${hub.name} encyclopedic wiki (${hub.globalPatchVersion}). SSS/SS character tier lists, weapon and support card rankings, boss raid guides, and ${hub.currencyName} pull calculator.`,
   };
 }
 
@@ -36,10 +36,15 @@ export default async function GameHubPage({
   const datasetJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Dataset',
-    name: `${hub.name} Character Tier List & Skill Multiplier Database`,
-    description: `Character stats, skill multipliers, weapon rankings, boss strategies, and banner schedules for ${hub.name}.`,
+    name: `GachaCrest ${hub.name} Character Tier List & Skill Multiplier Database`,
+    description: `Character stats, skill multipliers, weapon rankings, boss strategies, and banner schedules for ${hub.name} on GachaCrest.`,
     version: hub.globalPatchVersion,
+    publisher: {
+      '@type': 'Organization',
+      name: 'GachaCrest',
+    },
     keywords: [
+      `GachaCrest ${hub.name}`,
       `${hub.name} tier list`,
       `${hub.name} upcoming banners`,
       `${hub.name} boss guide`,
@@ -58,7 +63,7 @@ export default async function GameHubPage({
         activeGameName={hub.name}
         breadcrumbLeaf="Tier List, Weapons, Bosses & Banners"
       />
-      <Suspense fallback={<div className="portal-container">Loading wiki database...</div>}>
+      <Suspense fallback={<div className="portal-container">Loading GachaCrest wiki database...</div>}>
         <GameWikiClient hub={hub} />
       </Suspense>
     </>

@@ -62,10 +62,11 @@ export default async function PortalHomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'META.GG Gacha Wiki & Meta Database',
-    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3005',
+    name: 'GachaCrest — Gacha Tier Lists, Builds & Pull Codex',
+    alternateName: ['GachaCrest', 'GachaCrest.gg'],
+    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gachacrest.gg',
     description:
-      'Multi-game gacha encyclopedic wiki featuring character tier lists, weapon and support card rankings, boss raid guides, and pull calculators.',
+      'GachaCrest is the multi-game gacha encyclopedic database featuring character tier lists, weapon and support card rankings, boss raid guides, and pull calculators.',
   };
 
   return (
@@ -83,7 +84,7 @@ export default async function PortalHomePage() {
             background: 'var(--bg-surface)',
             border: '1px solid var(--border-main)',
             borderLeft: '4px solid var(--accent-primary)',
-            borderRadius: '4px',
+            borderRadius: '6px',
             padding: '14px 16px',
             display: 'flex',
             justifyContent: 'space-between',
@@ -93,17 +94,32 @@ export default async function PortalHomePage() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <img
+              src="/gachacrest-logo.jpg"
+              alt="GachaCrest Brand Emblem"
+              width={56}
+              height={56}
+              style={{
+                width: '56px',
+                height: '56px',
+                borderRadius: '10px',
+                objectFit: 'cover',
+                border: '2px solid #F59E0B',
+                boxShadow: '0 4px 12px rgba(200, 30, 30, 0.25)',
+                flexShrink: 0,
+              }}
+            />
             <div style={{ display: 'flex', alignItems: 'center' }}>
               {games.map((g, idx) => (
                 <img
                   key={g.slug}
                   src={getGameAppIconUrl(g.slug)}
                   alt={g.name}
-                  width={40}
-                  height={40}
+                  width={38}
+                  height={38}
                   style={{
-                    width: '40px',
-                    height: '40px',
+                    width: '38px',
+                    height: '38px',
                     borderRadius: '8px',
                     objectFit: 'cover',
                     border: '2px solid var(--bg-surface)',
@@ -114,11 +130,11 @@ export default async function PortalHomePage() {
               ))}
             </div>
             <div>
-              <h1 style={{ fontSize: '18px', fontWeight: 900 }}>
-                Gacha Character Tier Lists, Builds &amp; Meta Database
+              <h1 style={{ fontSize: '18.5px', fontWeight: 900 }}>
+                GachaCrest — Gacha Character Tier Lists, Builds &amp; Pull Codex
               </h1>
               <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '2px', fontWeight: 600 }}>
-                Select a game below for pro character tier lists, weapon &amp; support card rankings, boss raid guides, and pull calculators.
+                GachaCrest indexes 336 verified characters, 216 weapons &amp; support cards, boss raid guides, and pull calculators across 4 games.
               </p>
             </div>
           </div>
@@ -152,10 +168,10 @@ export default async function PortalHomePage() {
                 paddingLeft: '8px',
               }}
             >
-              POPULAR GACHA WIKI HUBS (SELECT GAME)
+              GACHACREST WIKI HUBS (SELECT GAME)
             </h2>
             <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
-              100% Verified English Database • Complete Rosters &amp; Builds
+              GachaCrest Verified English Codex • Complete Rosters &amp; Builds
             </span>
           </div>
 
