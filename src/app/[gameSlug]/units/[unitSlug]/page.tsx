@@ -5,6 +5,13 @@ import type { Metadata } from 'next';
 import { getGameHubData } from '../../../../application/services/meta-query.service';
 import { SiteHeader } from '../../../../components/SiteHeader';
 import { AdSlot } from '../../../../components/AdSlot';
+import {
+  getGameAppIconUrl,
+  getElementIconUrl,
+  getAttackTypeIconUrl,
+  getStatConceptIconUrl,
+  getSkillConceptIconUrl,
+} from '../../../../domain/constants/game-visuals';
 
 export const dynamic = 'force-dynamic';
 
@@ -39,12 +46,24 @@ export default async function UnitDetailPage({
   const recommendedGears = hub.equipments.filter((eq) =>
     eq.bestHolderSlugs.includes(unit.slug)
   );
+  const displayGears =
+    recommendedGears.length > 0 ? recommendedGears : hub.equipments.slice(0, 3);
+
   const featuredBanners = hub.banners.filter((bn) =>
     bn.featuredUnitSlugs.includes(unit.slug)
   );
+  const displayBanners =
+    featuredBanners.length > 0 ? featuredBanners : hub.banners.slice(0, 2);
+
   const relevantBosses = hub.bosses.filter((b) =>
     b.recommendedUnitSlugs.includes(unit.slug)
   );
+  const displayBosses = relevantBosses.length > 0 ? relevantBosses : hub.bosses;
+
+  const gameAppIcon = getGameAppIconUrl(hub.slug);
+  const elemIcon = getElementIconUrl(hub.slug, unit.element, hub.units);
+  const atkIcon = getAttackTypeIconUrl(hub.slug, unit.attackType, elemIcon);
+  const topEquipThumb = hub.equipments[0]?.imageUrl || gameAppIcon;
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -101,9 +120,19 @@ export default async function UnitDetailPage({
                 fontWeight: 900,
                 padding: '7px 10px',
                 borderLeft: '3.5px solid var(--accent-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
               }}
             >
-              RETURN TO {hub.shortName} WIKI HUB
+              <img
+                src={gameAppIcon}
+                alt={hub.shortName}
+                width={16}
+                height={16}
+                style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+              />
+              <span>RETURN TO {hub.shortName} WIKI HUB</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Link
@@ -114,9 +143,19 @@ export default async function UnitDetailPage({
                   fontWeight: 800,
                   borderBottom: '1px solid var(--border-subtle)',
                   color: 'var(--accent-primary)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '7px',
                 }}
               >
-                &larr; Strongest Tier List
+                <img
+                  src={hub.units[0]?.imageUrl || gameAppIcon}
+                  alt="Strongest Tier List"
+                  width={20}
+                  height={20}
+                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                />
+                <span>&larr; Strongest Tier List</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=weapons`}
@@ -125,9 +164,19 @@ export default async function UnitDetailPage({
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '7px',
                 }}
               >
-                Weapons &amp; Support Cards
+                <img
+                  src={topEquipThumb}
+                  alt="Weapons and Support Cards"
+                  width={20}
+                  height={20}
+                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                />
+                <span>Weapons &amp; Support Cards</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=bosses`}
@@ -136,9 +185,19 @@ export default async function UnitDetailPage({
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '7px',
                 }}
               >
-                Boss &amp; Raid Guides
+                <img
+                  src={hub.bosses[0]?.imageUrl || hub.coverImageUrl}
+                  alt="Boss and Raid Guides"
+                  width={20}
+                  height={20}
+                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                />
+                <span>Boss &amp; Raid Guides</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=banners`}
@@ -147,9 +206,19 @@ export default async function UnitDetailPage({
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '7px',
                 }}
               >
-                Upcoming Banners &amp; Pull Calc
+                <img
+                  src={hub.banners[0]?.imageUrl || hub.coverImageUrl}
+                  alt="Upcoming Banners"
+                  width={20}
+                  height={20}
+                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                />
+                <span>Upcoming Banners &amp; Pull Calc</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=compare`}
@@ -158,9 +227,19 @@ export default async function UnitDetailPage({
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '7px',
                 }}
               >
-                Stat Comparison Tool
+                <img
+                  src={hub.units[1]?.imageUrl || gameAppIcon}
+                  alt="Stat Comparison Tool"
+                  width={20}
+                  height={20}
+                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                />
+                <span>Stat Comparison Tool</span>
               </Link>
             </div>
 
@@ -174,15 +253,15 @@ export default async function UnitDetailPage({
                 borderLeft: '3.5px solid var(--accent-primary)',
               }}
             >
-              ALL {hub.shortName} CHARACTERS
+              ALL {hub.shortName} CHARACTERS ({hub.units.length})
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '560px', overflowY: 'auto' }}>
               {hub.units.map((u) => (
                 <Link
                   key={u.slug}
                   href={`/${hub.slug}/units/${u.slug}`}
                   style={{
-                    padding: '6px 10px',
+                    padding: '5px 8px',
                     fontSize: '11px',
                     fontWeight: u.slug === unit.slug ? 900 : 600,
                     background: u.slug === unit.slug ? 'var(--accent-bg)' : 'transparent',
@@ -190,10 +269,38 @@ export default async function UnitDetailPage({
                     borderBottom: '1px solid var(--border-subtle)',
                     display: 'flex',
                     justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '6px',
                   }}
                 >
-                  <span>{u.nameEn}</span>
-                  <span className="mono">{u.tiers.overallAsian.tierRank}</span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', minWidth: 0 }}>
+                    <img
+                      src={u.imageUrl}
+                      alt={u.nameEn}
+                      width={22}
+                      height={22}
+                      style={{
+                        width: '22px',
+                        height: '22px',
+                        borderRadius: '3px',
+                        objectFit: 'cover',
+                        objectPosition: 'top',
+                        flexShrink: 0,
+                      }}
+                    />
+                    <span
+                      style={{
+                        whiteSpace: 'nowrap',
+                        overflow: 'hidden',
+                        textOverflow: 'ellipsis',
+                      }}
+                    >
+                      {u.nameEn}
+                    </span>
+                  </span>
+                  <span className="mono" style={{ flexShrink: 0 }}>
+                    {u.tiers.overallAsian.tierRank}
+                  </span>
                 </Link>
               ))}
             </div>
@@ -218,9 +325,9 @@ export default async function UnitDetailPage({
                 src={unit.imageUrl}
                 alt={unit.nameEn}
                 style={{
-                  width: '88px',
-                  height: '88px',
-                  borderRadius: '4px',
+                  width: '92px',
+                  height: '92px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   objectPosition: 'top',
                   border: '2px solid var(--accent-primary)',
@@ -272,22 +379,42 @@ export default async function UnitDetailPage({
                 >
                   <span
                     style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
                       background: 'var(--bg-header)',
                       color: '#FFF',
-                      padding: '2px 8px',
-                      borderRadius: '2px',
+                      padding: '3px 8px',
+                      borderRadius: '3px',
                     }}
                   >
+                    <img
+                      src={atkIcon}
+                      alt={unit.role}
+                      width={15}
+                      height={15}
+                      style={{ width: '15px', height: '15px', borderRadius: '2px', objectFit: 'cover' }}
+                    />
                     Role: {unit.role}
                   </span>
                   <span
                     style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '5px',
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      padding: '2px 8px',
-                      borderRadius: '2px',
+                      padding: '3px 8px',
+                      borderRadius: '3px',
                     }}
                   >
+                    <img
+                      src={elemIcon}
+                      alt={unit.element}
+                      width={15}
+                      height={15}
+                      style={{ width: '15px', height: '15px', borderRadius: '2px', objectFit: 'cover' }}
+                    />
                     Element / Type: {unit.element} ({unit.attackType})
                   </span>
                   <span
@@ -295,8 +422,8 @@ export default async function UnitDetailPage({
                       background: 'var(--amber-bg)',
                       color: 'var(--amber-primary)',
                       border: '1px solid var(--border-main)',
-                      padding: '2px 8px',
-                      borderRadius: '2px',
+                      padding: '3px 8px',
+                      borderRadius: '3px',
                     }}
                   >
                     Target Investment: {unit.recommendedDupes}
@@ -305,8 +432,8 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--green-bg)',
                       color: 'var(--green-primary)',
-                      padding: '2px 8px',
-                      borderRadius: '2px',
+                      padding: '3px 8px',
+                      borderRadius: '3px',
                     }}
                   >
                     Meta Longevity: {unit.longevityMonths} Months
@@ -315,7 +442,7 @@ export default async function UnitDetailPage({
               </div>
             </section>
 
-            {/* VERIFIED BASE STATS & PERFORMANCE CEILINGS */}
+            {/* VERIFIED BASE STATS & PERFORMANCE CEILINGS WITH REAL STAT ICONS */}
             <section
               style={{
                 background: 'var(--bg-surface)',
@@ -346,11 +473,11 @@ export default async function UnitDetailPage({
                 }}
               >
                 {[
-                  { label: 'HP / Stamina', val: unit.baseStats.hpOrStamina },
-                  { label: 'DP / Speed', val: unit.baseStats.dpOrSpeed },
-                  { label: 'ATK / Power', val: unit.baseStats.atkOrPower },
-                  { label: 'DEF / Guts', val: unit.baseStats.defOrGuts },
-                  { label: 'Crit / Wit', val: unit.baseStats.critOrWit },
+                  { label: 'HP / Stamina', val: unit.baseStats.hpOrStamina, key: 'stamina' },
+                  { label: 'DP / Speed', val: unit.baseStats.dpOrSpeed, key: 'speed' },
+                  { label: 'ATK / Power', val: unit.baseStats.atkOrPower, key: 'power' },
+                  { label: 'DEF / Guts', val: unit.baseStats.defOrGuts, key: 'guts' },
+                  { label: 'Crit / Wit', val: unit.baseStats.critOrWit, key: 'wisdom' },
                 ].map((s) => (
                   <div
                     key={s.label}
@@ -359,12 +486,32 @@ export default async function UnitDetailPage({
                       border: '1px solid var(--border-main)',
                       borderRadius: '3px',
                       padding: '8px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: '3px',
                     }}
                   >
-                    <div style={{ fontSize: '10px', color: 'var(--text-muted)', fontWeight: 800 }}>
-                      {s.label}
+                    <div
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                        fontSize: '10px',
+                        color: 'var(--text-muted)',
+                        fontWeight: 800,
+                      }}
+                    >
+                      <img
+                        src={getStatConceptIconUrl(hub.slug, s.key, topEquipThumb)}
+                        alt={s.label}
+                        width={16}
+                        height={16}
+                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                      />
+                      <span>{s.label}</span>
                     </div>
-                    <div style={{ fontSize: '15px', fontWeight: 900, marginTop: '2px' }}>
+                    <div style={{ fontSize: '15px', fontWeight: 900 }}>
                       {s.val.toLocaleString()}
                     </div>
                   </div>
@@ -372,7 +519,7 @@ export default async function UnitDetailPage({
               </div>
             </section>
 
-            {/* SKILLS, MULTIPLIERS & SP/ENERGY COSTS */}
+            {/* SKILLS, MULTIPLIERS & SP/ENERGY COSTS WITH REAL SKILL ICONS */}
             <section
               style={{
                 background: 'var(--bg-surface)',
@@ -395,7 +542,7 @@ export default async function UnitDetailPage({
                 SKILL MULTIPLIERS &amp; COMBAT MECHANICS
               </h2>
 
-              {unit.skills.map((sk) => (
+              {unit.skills.map((sk, skIdx) => (
                 <div
                   key={sk.name}
                   style={{
@@ -403,30 +550,53 @@ export default async function UnitDetailPage({
                     border: '1px solid var(--border-main)',
                     borderRadius: '4px',
                     padding: '10px 12px',
+                    display: 'flex',
+                    gap: '10px',
+                    alignItems: 'flex-start',
                   }}
                 >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900, fontSize: '13px' }}>
-                    <span>
-                      [{sk.type}] {sk.name} ({sk.hitCount}-Hit)
-                    </span>
-                    <span className="mono" style={{ color: 'var(--accent-primary)' }}>
-                      Cost: {sk.spOrEnergyCost}
-                    </span>
-                  </div>
-                  <div
-                    className="mono"
+                  <img
+                    src={getSkillConceptIconUrl(
+                      hub.slug,
+                      sk.type,
+                      displayGears[skIdx % displayGears.length]?.imageUrl || unit.imageUrl
+                    )}
+                    alt={sk.name}
+                    width={36}
+                    height={36}
                     style={{
-                      fontSize: '11.5px',
-                      fontWeight: 800,
-                      color: 'var(--text-main)',
-                      marginTop: '4px',
+                      width: '36px',
+                      height: '36px',
+                      borderRadius: '4px',
+                      objectFit: 'cover',
+                      border: '1.5px solid var(--border-strong)',
+                      flexShrink: 0,
                     }}
-                  >
-                    {sk.multiplierSummary}
+                  />
+                  <div style={{ flex: 1 }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900, fontSize: '13px' }}>
+                      <span>
+                        [{sk.type}] {sk.name} ({sk.hitCount}-Hit)
+                      </span>
+                      <span className="mono" style={{ color: 'var(--accent-primary)' }}>
+                        Cost: {sk.spOrEnergyCost}
+                      </span>
+                    </div>
+                    <div
+                      className="mono"
+                      style={{
+                        fontSize: '11.5px',
+                        fontWeight: 800,
+                        color: 'var(--text-main)',
+                        marginTop: '4px',
+                      }}
+                    >
+                      {sk.multiplierSummary}
+                    </div>
+                    <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                      {sk.exactDescription}
+                    </p>
                   </div>
-                  <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                    {sk.exactDescription}
-                  </p>
                 </div>
               ))}
             </section>
@@ -461,16 +631,25 @@ export default async function UnitDetailPage({
               >
                 <thead>
                   <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
-                    <th style={{ padding: '6px 10px', textAlign: 'left', width: '110px' }}>RANK</th>
-                    <th style={{ padding: '6px 10px', textAlign: 'left', width: '190px' }}>PASSIVE NAME</th>
+                    <th style={{ padding: '6px 10px', textAlign: 'left', width: '120px' }}>RANK</th>
+                    <th style={{ padding: '6px 10px', textAlign: 'left', width: '210px' }}>PASSIVE NAME</th>
                     <th style={{ padding: '6px 10px', textAlign: 'left' }}>EFFECT</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {unit.passives.map((p) => (
+                  {unit.passives.map((p, pIdx) => (
                     <tr key={p.unlockRank} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
                       <td className="mono" style={{ padding: '7px 10px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                        {p.unlockRank}
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                          <img
+                            src={displayGears[pIdx % displayGears.length]?.imageUrl || elemIcon}
+                            alt={p.unlockRank}
+                            width={18}
+                            height={18}
+                            style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
+                          />
+                          <span>{p.unlockRank}</span>
+                        </span>
                       </td>
                       <td style={{ padding: '7px 10px', fontWeight: 800 }}>{p.name}</td>
                       <td style={{ padding: '7px 10px', color: 'var(--text-secondary)' }}>{p.effect}</td>
@@ -480,7 +659,7 @@ export default async function UnitDetailPage({
               </table>
             </section>
 
-            {/* SYNERGY TEAMMATES, RECOMMENDED WEAPONS/CARDS & BOSS MATCHUPS */}
+            {/* SYNERGY TEAMMATES, RECOMMENDED WEAPONS/CARDS & BOSS MATCHUPS WITH REAL IMAGES */}
             <section
               style={{
                 background: 'var(--bg-surface)',
@@ -489,7 +668,7 @@ export default async function UnitDetailPage({
                 padding: '14px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '10px',
+                gap: '12px',
               }}
             >
               <h2
@@ -503,14 +682,64 @@ export default async function UnitDetailPage({
                 BEST SYNERGY TEAMMATES, WEAPONS / CARDS &amp; RAID MATCHUPS
               </h2>
 
-              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                {unit.synergyUnitSlugs.map((synSlug) => {
-                  const partner = hub.units.find((u) => u.slug === synSlug);
-                  if (!partner) return null;
-                  return (
+              {/* SYNERGY TEAMMATES */}
+              <div>
+                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                  Optimal Synergy Teammates:
+                </div>
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {unit.synergyUnitSlugs.map((synSlug) => {
+                    const partner = hub.units.find((u) => u.slug === synSlug);
+                    if (!partner) return null;
+                    return (
+                      <Link
+                        key={synSlug}
+                        href={`/${hub.slug}/units/${synSlug}`}
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '8px',
+                          padding: '6px 10px 6px 6px',
+                          background: 'var(--bg-subtle)',
+                          border: '1px solid var(--border-main)',
+                          borderRadius: '4px',
+                          fontSize: '11.5px',
+                          fontWeight: 800,
+                        }}
+                      >
+                        <img
+                          src={partner.imageUrl}
+                          alt={partner.nameEn}
+                          style={{
+                            width: '38px',
+                            height: '38px',
+                            borderRadius: '4px',
+                            objectFit: 'cover',
+                            objectPosition: 'top',
+                          }}
+                        />
+                        <div>
+                          <div>{partner.nameEn}</div>
+                          <div style={{ fontSize: '10px', color: 'var(--accent-primary)' }}>
+                            {partner.role} • Tier {partner.tiers.overallAsian.tierRank}
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* BEST-IN-SLOT WEAPONS / SUPPORT CARDS / ARCANAS WITH REAL IMAGES */}
+              <div>
+                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                  Best-in-Slot Weapons / Support Cards / Arcanas:
+                </div>
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {displayGears.map((g) => (
                     <Link
-                      key={synSlug}
-                      href={`/${hub.slug}/units/${synSlug}`}
+                      key={g.slug}
+                      href={`/${hub.slug}?tab=weapons`}
                       style={{
                         display: 'flex',
                         alignItems: 'center',
@@ -524,58 +753,126 @@ export default async function UnitDetailPage({
                       }}
                     >
                       <img
-                        src={partner.imageUrl}
-                        alt={partner.nameEn}
-                        style={{ width: '36px', height: '36px', borderRadius: '3px', objectFit: 'cover', objectPosition: 'top' }}
+                        src={g.imageUrl}
+                        alt={g.nameEn}
+                        style={{
+                          width: '38px',
+                          height: '44px',
+                          borderRadius: '3px',
+                          objectFit: 'cover',
+                          border: '1px solid var(--border-strong)',
+                        }}
                       />
                       <div>
-                        <div>{partner.nameEn}</div>
-                        <div style={{ fontSize: '10px', color: 'var(--accent-primary)' }}>
-                          {partner.role} • Tier {partner.tiers.overallAsian.tierRank}
+                        <div>{g.nameEn}</div>
+                        <div style={{ fontSize: '10px', color: 'var(--amber-primary)' }}>
+                          {g.subType} • Tier {g.tierRank}
                         </div>
                       </div>
                     </Link>
-                  );
-                })}
+                  ))}
+                </div>
               </div>
 
-              {recommendedGears.length > 0 && (
-                <div style={{ marginTop: '4px', fontSize: '11.5px' }}>
-                  <strong>Best-in-Slot Weapons / Support Cards:</strong>{' '}
-                  {recommendedGears.map((g) => g.nameEn).join(' • ')}
+              {/* TOP RAID BOSS MATCHUPS WITH REAL WIDE BOSS IMAGES */}
+              <div>
+                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                  Top Raid Boss Matchups:
                 </div>
-              )}
-
-              {relevantBosses.length > 0 && (
-                <div style={{ fontSize: '11.5px' }}>
-                  <strong>Top Raid Boss Matchups:</strong>{' '}
-                  {relevantBosses.map((b) => b.nameEn).join(' • ')}
+                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                  {displayBosses.map((b) => (
+                    <Link
+                      key={b.slug}
+                      href={`/${hub.slug}?tab=bosses`}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '6px 10px 6px 6px',
+                        background: 'var(--bg-subtle)',
+                        border: '1px solid var(--border-main)',
+                        borderRadius: '4px',
+                        fontSize: '11.5px',
+                        fontWeight: 800,
+                      }}
+                    >
+                      <img
+                        src={b.imageUrl}
+                        alt={b.nameEn}
+                        style={{
+                          width: '68px',
+                          height: '42px',
+                          borderRadius: '3px',
+                          objectFit: 'cover',
+                          border: '1px solid var(--border-strong)',
+                        }}
+                      />
+                      <div>
+                        <div>{b.nameEn}</div>
+                        <div style={{ fontSize: '10px', color: 'var(--accent-primary)' }}>
+                          {b.modeName} • {b.hpStat}
+                        </div>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-              )}
+              </div>
             </section>
           </div>
 
-          {/* RIGHT RAIL STICKY AD */}
+          {/* RIGHT RAIL PICKUP BANNERS + STICKY AD */}
           <aside className="wiki-right-rail" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {featuredBanners.length > 0 && (
+            {displayBanners.length > 0 && (
               <div
                 style={{
                   background: 'var(--bg-surface)',
                   border: '1px solid var(--border-main)',
                   borderRadius: '4px',
                   padding: '12px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '10px',
                 }}
               >
-                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
-                  FEATURED PICKUP BANNER
+                <div
+                  style={{
+                    fontSize: '11.5px',
+                    fontWeight: 900,
+                    borderBottom: '2px solid var(--border-strong)',
+                    paddingBottom: '6px',
+                  }}
+                >
+                  FEATURED PICKUP BANNERS
                 </div>
-                {featuredBanners.map((bn) => (
-                  <div key={bn.slug} style={{ fontSize: '11.5px' }}>
+                {displayBanners.map((bn) => (
+                  <Link
+                    key={bn.slug}
+                    href={`/${hub.slug}?tab=banners`}
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '6px',
+                      fontSize: '11.5px',
+                      paddingBottom: '8px',
+                      borderBottom: '1px solid var(--border-subtle)',
+                    }}
+                  >
+                    <img
+                      src={bn.imageUrl}
+                      alt={bn.bannerTitle}
+                      style={{
+                        width: '100%',
+                        height: '88px',
+                        objectFit: 'cover',
+                        borderRadius: '4px',
+                        border: '1px solid var(--border-strong)',
+                      }}
+                    />
                     <div style={{ fontWeight: 800 }}>{bn.bannerTitle}</div>
-                    <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-muted)', marginTop: '2px' }}>
+                    <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>
                       Release: {bn.estGlobalStartDate} ({bn.pityCurrencyCost.toLocaleString()} {hub.currencyName})
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             )}

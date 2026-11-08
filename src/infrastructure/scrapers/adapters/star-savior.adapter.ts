@@ -8,7 +8,7 @@ export const starSaviorBundle: GameAdapterBundle = {
   "asianPatchVersion": "v1.4.0 Live Meta",
   "globalPatchVersion": "v1.4.0 Live",
   "foresightGapMonths": 3,
-  "coverImageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
+  "coverImageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/203458_pemnt.webp",
   "currencyName": "Starlight Quartz",
   "pullCostSingle": 150,
   "pityThreshold": 200,
@@ -6134,7 +6134,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "nameEn": "Cosmo Gate Season Boss — Abyssal Sovereign",
       "modeName": "Cosmo Gate",
       "difficultyLabel": "Stage 10 Extreme",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
+      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/194558_4ycbe.webp",
       "hpStat": "48,000,000 HP",
       "shieldOrDpStat": "18 Toughness Gauge Bars",
       "weaknesses": [
@@ -6178,7 +6178,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "nameEn": "Void Singularity — Stella Eater",
       "modeName": "Void Singularity",
       "difficultyLabel": "Depth 15 Endgame",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/143855_iv9nt.webp",
+      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185913_8y3w2.webp",
       "hpStat": "32,500,000 HP",
       "shieldOrDpStat": "14 Toughness Gauge Bars",
       "weaknesses": [
@@ -6215,7 +6215,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "slug": "starsavior-bunny-frey-pickup",
       "bannerTitle": "Limited Rate-Up — Frey (Bunny) & Indomitable Masterpiece Arcana",
       "bannerType": "LIMITED",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
+      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/194558_4ycbe.webp",
       "featuredNames": [
         "Professor M",
         "Amora"
@@ -6237,7 +6237,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "slug": "starsavior-lugh-besta-pickup",
       "bannerTitle": "Order & Aegis Dual Rate-Up — Lugh & Besta",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/143855_iv9nt.webp",
+      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185913_8y3w2.webp",
       "featuredNames": [
         "Amora",
         "Smile (Swimsuit)"
@@ -6259,7 +6259,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "slug": "starsavior-arcana-pickup",
       "bannerTitle": "SSR Arcana Rate-Up — Death to the Flowers & Custom Special Training",
       "bannerType": "SUPPORT_CARD",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp",
+      "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/203458_pemnt.webp",
       "featuredNames": [
         "Arcana: Summer Night Sky",
         "Arcana: Battle-Hardened Mercenary"
