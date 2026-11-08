@@ -157,9 +157,9 @@ export function GameWikiClient({
         />
       </div>
 
-      {/* 3-COLUMN APPMEDIA WIKI STRUCTURE */}
+      {/* 3-COLUMN WIKI STRUCTURE */}
       <div className="wiki-layout-grid">
-        {/* ================= LEFT COLUMN: WIKI DIRECTORY SIDEBAR (サイドメニュー) ================= */}
+        {/* ================= LEFT COLUMN: WIKI DIRECTORY SIDEBAR ================= */}
         <aside
           className="wiki-left-sidebar"
           style={{
@@ -191,7 +191,7 @@ export function GameWikiClient({
                 className="mono"
                 style={{ fontSize: '9.5px', fontWeight: 900, color: '#FDE047' }}
               >
-                {hub.asianRegion} +{hub.foresightGapMonths} MO FORESIGHT
+                {hub.globalPatchVersion}
               </span>
               <span style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF' }}>
                 {hub.name}
@@ -294,7 +294,7 @@ export function GameWikiClient({
             </button>
           </div>
 
-          {/* SECTION 2: ASIAN SERVER FORESIGHT */}
+          {/* SECTION 2: BANNERS & PULL PLANNER */}
           <div
             style={{
               background: 'var(--bg-subnav)',
@@ -305,7 +305,7 @@ export function GameWikiClient({
               borderLeft: '3.5px solid var(--accent-primary)',
             }}
           >
-            02. {hub.asianRegion} FORESIGHT &amp; BANNERS
+            02. UPCOMING BANNERS &amp; PULL CALC
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <button
@@ -323,7 +323,7 @@ export function GameWikiClient({
                 cursor: 'pointer',
               }}
             >
-              {hub.asianRegion} &rarr; Global Banner Schedule
+              Banner Schedule &amp; Pull Priority
             </button>
             <button
               type="button"
@@ -464,7 +464,7 @@ export function GameWikiClient({
               borderLeft: '3.5px solid var(--accent-primary)',
             }}
           >
-            05. VERIFIED UNIT DATABASE ({hub.units.length})
+            05. CHARACTER DATABASE ({hub.units.length})
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {hub.units.map((u) => (
@@ -495,7 +495,7 @@ export function GameWikiClient({
 
         {/* ================= CENTER COLUMN: DEDICATED TOPIC ARTICLE ================= */}
         <main className="wiki-center-article" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          {/* APPMEDIA ARTICLE HEADER + QUICK MENU GRID (攻略メニュー) */}
+          {/* ARTICLE HEADER + QUICK MENU GRID */}
           <section
             style={{
               background: 'var(--bg-surface)',
@@ -521,7 +521,7 @@ export function GameWikiClient({
                 {activeTab === 'tier-list' && `Strongest Character Tier List (${tierCategory})`}
                 {activeTab === 'weapons' && 'Weapon, Support Card & Equipment Tier List'}
                 {activeTab === 'bosses' && 'Monsters, Raid Boss Weaknesses & Strategy Guides'}
-                {activeTab === 'banners' && `${hub.asianRegion} → Global Banner Schedule & Pull Calculator`}
+                {activeTab === 'banners' && 'Upcoming Banner Schedule & Pull Calculator'}
                 {activeTab === 'compare' && 'Visual Stat Comparison & Damage Formula Simulator'}
               </h1>
               <span
@@ -536,18 +536,18 @@ export function GameWikiClient({
                   fontWeight: 800,
                 }}
               >
-                Synced: {hub.asianPatchVersion} • SHA: {hub.lastSyncChecksum.slice(0, 8)}
+                Patch: {hub.globalPatchVersion}
               </span>
             </div>
 
-            {/* 5-BUTTON QUICK NAVIGATION MENU (攻略メニュー) */}
+            {/* 5-BUTTON QUICK NAVIGATION MENU */}
             <div className="quick-menu-grid">
               {(
                 [
                   { key: 'tier-list', label: '1. Character Tier List' },
                   { key: 'weapons', label: '2. Weapons & Cards' },
                   { key: 'bosses', label: '3. Boss & Raid Guides' },
-                  { key: 'banners', label: `4. ${hub.asianRegion} Banners & Calc` },
+                  { key: 'banners', label: '4. Banners & Pull Calc' },
                   { key: 'compare', label: '5. Stat Compare & Math' },
                 ] as const
               ).map((btn) => (
@@ -576,7 +576,7 @@ export function GameWikiClient({
           </section>
 
           {/* =====================================================================
-              TOPIC VIEW 1: APPMEDIA 2D ROLE-COLUMN TIER MATRIX & BREAKDOWN CARDS
+              TOPIC VIEW 1: 2D ROLE-COLUMN TIER MATRIX & BREAKDOWN CARDS
               ===================================================================== */}
           {activeTab === 'tier-list' && (
             <>
@@ -617,7 +617,7 @@ export function GameWikiClient({
                         color: serverScope === 'ASIAN_FUTURE' ? '#FFFFFF' : 'var(--text-secondary)',
                       }}
                     >
-                      {hub.asianRegion} Full Roster (+{hub.foresightGapMonths} Mo Foresight)
+                      All Units (Including Upcoming)
                     </button>
                     <button
                       type="button"
@@ -634,7 +634,7 @@ export function GameWikiClient({
                         color: serverScope === 'GLOBAL_CURRENT' ? '#FFFFFF' : 'var(--text-secondary)',
                       }}
                     >
-                      Global Released Only
+                      Currently Released
                     </button>
                   </div>
 
@@ -733,7 +733,7 @@ export function GameWikiClient({
                 </div>
               </section>
 
-              {/* 2D ROLE-COLUMN TIER MATRIX (EXACT APPMEDIA SSS / SS / S TABLE) */}
+              {/* 2D ROLE-COLUMN TIER MATRIX */}
               <section
                 style={{
                   background: 'var(--bg-surface)',
@@ -756,7 +756,7 @@ export function GameWikiClient({
                 >
                   <span>OVERALL TIER MATRIX BY ROLE (CLICK UNIT FOR FULL BUILD)</span>
                   <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                    Showing {filteredUnits.length} Verified Units
+                    Showing {filteredUnits.length} Characters
                   </span>
                 </div>
 
@@ -918,7 +918,7 @@ export function GameWikiClient({
                                                 padding: '0 3px',
                                               }}
                                             >
-                                              {hub.asianRegion}
+                                              UPCOMING
                                             </span>
                                           )}
                                         </div>
@@ -956,7 +956,7 @@ export function GameWikiClient({
                 description="Positioned between Tier Matrix and Detailed Character Breakdown Cards (0.00 CLS)"
               />
 
-              {/* APPMEDIA-STYLE CHARACTER EVALUATION BREAKDOWN CARDS (最強キャラの簡易紹介) */}
+              {/* CHARACTER EVALUATION BREAKDOWN CARDS */}
               <section
                 style={{
                   background: 'var(--bg-surface)',
@@ -976,7 +976,7 @@ export function GameWikiClient({
                     paddingLeft: '8px',
                   }}
                 >
-                  CHARACTER BREAKDOWN, VERIFIED SKILL MULTIPLIERS &amp; LONGEVITY
+                  CHARACTER BREAKDOWN, SKILL MULTIPLIERS &amp; META LONGEVITY
                 </h2>
 
                 {filteredUnits.map((u) => {
@@ -1138,7 +1138,7 @@ export function GameWikiClient({
 
                       <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)' }}>
                         <strong>Evaluation:</strong> {u.tiers.overallAsian.summaryVerdict}{' '}
-                        <strong>Foresight:</strong> {u.tiers.overallAsian.longevityNote}
+                        <strong>Meta Notes:</strong> {u.tiers.overallAsian.longevityNote}
                       </div>
 
                       <div
@@ -1207,7 +1207,7 @@ export function GameWikiClient({
                   paddingLeft: '8px',
                 }}
               >
-                RANKED WEAPON, SUPPORT CARD, ORB &amp; TAROT TIER LIST
+                RANKED WEAPON, SUPPORT CARD, ORB &amp; ARCANA TIER LIST
               </h2>
 
               {hub.equipments.map((eq) => (
@@ -1599,7 +1599,7 @@ export function GameWikiClient({
           )}
 
           {/* =====================================================================
-              TOPIC VIEW 4: FUTURE BANNERS & INTERACTIVE PULL SAVINGS CALCULATOR
+              TOPIC VIEW 4: UPCOMING BANNERS & INTERACTIVE PULL SAVINGS CALCULATOR
               ===================================================================== */}
           {activeTab === 'banners' && (
             <section style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
@@ -1781,7 +1781,7 @@ export function GameWikiClient({
                           fontWeight: 700,
                         }}
                       >
-                        {hub.asianRegion} Release: {bn.asianStartDate} | Est. Global Arrival:{' '}
+                        Debut Date: {bn.asianStartDate} | Target Banner Window:{' '}
                         <strong style={{ color: 'var(--text-main)' }}>{bn.estGlobalStartDate}</strong> (~
                         {daysFromNow}d)
                       </div>
@@ -2173,7 +2173,7 @@ export function GameWikiClient({
           )}
         </main>
 
-        {/* ================= RIGHT COLUMN: FORESIGHT BANNERS + STICKY 300x600 AD ================= */}
+        {/* ================= RIGHT COLUMN: UPCOMING BANNERS + STICKY 300x600 AD ================= */}
         <aside className="wiki-right-rail" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <div
             style={{
@@ -2194,9 +2194,9 @@ export function GameWikiClient({
                 justifyContent: 'space-between',
               }}
             >
-              <span>UPCOMING GLOBAL BANNERS</span>
+              <span>UPCOMING BANNERS</span>
               <span className="mono" style={{ color: 'var(--accent-primary)', fontSize: '10px' }}>
-                {hub.asianRegion} GAP
+                PRIORITY
               </span>
             </div>
 
@@ -2228,7 +2228,7 @@ export function GameWikiClient({
                       {bn.featuredNames[0]}
                     </div>
                     <div className="mono" style={{ fontSize: '9.5px', color: 'var(--text-muted)' }}>
-                      Est. GL: {bn.estGlobalStartDate}
+                      Release: {bn.estGlobalStartDate}
                     </div>
                     <span
                       style={{

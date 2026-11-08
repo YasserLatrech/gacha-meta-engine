@@ -46,9 +46,9 @@ export default async function PortalHomePage() {
       searchItems.push({
         gameSlug: g.slug,
         gameShortName: g.shortName,
-        category: 'Future Banner',
+        category: 'Upcoming Banner',
         title: bn.bannerTitle,
-        subtitle: `Est. Global: ${bn.estGlobalStartDate}`,
+        subtitle: `Release: ${bn.estGlobalStartDate}`,
         href: `/${g.slug}?tab=banners`,
       });
     }
@@ -57,10 +57,10 @@ export default async function PortalHomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'META.GG Asian-Server Gacha Wiki Portal',
+    name: 'META.GG Gacha Wiki & Meta Database',
     url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3005',
     description:
-      'Multi-game gacha encyclopedic wiki bridging the 6-month to 3.5-year gap between Asian (JP/CN/TW) servers and Global English releases.',
+      'Multi-game gacha encyclopedic wiki featuring character tier lists, weapon and support card rankings, boss raid guides, and pull calculators.',
   };
 
   return (
@@ -89,10 +89,10 @@ export default async function PortalHomePage() {
         >
           <div>
             <h1 style={{ fontSize: '18px', fontWeight: 900 }}>
-              Asian-Server Gacha Database &amp; Foresight Directory
+              Gacha Character Tier Lists, Builds &amp; Meta Database
             </h1>
             <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '2px', fontWeight: 600 }}>
-              Select a game wiki below for verified JP/CN/TW character tier lists, weapon/card rankings, boss raid guides, and pull calculators.
+              Select a game below for pro character tier lists, weapon &amp; support card rankings, boss raid guides, and pull calculators.
             </p>
           </div>
           <PortalSearchClient items={searchItems} />
@@ -107,7 +107,7 @@ export default async function PortalHomePage() {
           description="Fixed-dimension above-the-fold portal placement (0.00 CLS)"
         />
 
-        {/* SECTION 1: MULTI-GAME WIKI DIRECTORY CARDS (APPMEDIA PORTAL PATTERN) */}
+        {/* SECTION 1: MULTI-GAME WIKI DIRECTORY CARDS */}
         <section>
           <div
             style={{
@@ -128,7 +128,7 @@ export default async function PortalHomePage() {
               POPULAR GACHA WIKI HUBS (SELECT GAME)
             </h2>
             <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
-              100% Verified PostgreSQL Data • Zero Hardcoded Placeholders
+              100% Verified English Database • Complete Rosters &amp; Builds
             </span>
           </div>
 
@@ -174,7 +174,7 @@ export default async function PortalHomePage() {
                       borderRadius: '3px',
                     }}
                   >
-                    {g.asianRegion} +{g.foresightGapMonths} MO AHEAD
+                    {g.counts.units} UNITS • {g.counts.equipments} ITEMS
                   </span>
                   <span
                     className="mono"
@@ -190,7 +190,7 @@ export default async function PortalHomePage() {
                       borderRadius: '2px',
                     }}
                   >
-                    {g.asianPatchVersion}
+                    {g.globalPatchVersion}
                   </span>
                 </Link>
 
@@ -206,8 +206,8 @@ export default async function PortalHomePage() {
                       className="mono"
                       style={{ fontSize: '10.5px', color: 'var(--text-muted)', marginTop: '2px', fontWeight: 700 }}
                     >
-                      {g.counts.units} Verified Units • {g.counts.equipments} Weapons/Cards •{' '}
-                      {g.counts.bossEncounters} Raid Guides • {g.counts.banners} Future Banners
+                      {g.counts.units} Characters • {g.counts.equipments} Weapons/Cards •{' '}
+                      {g.counts.bossEncounters} Raid Guides • {g.counts.banners} Banners
                     </div>
                   </div>
 
@@ -278,7 +278,7 @@ export default async function PortalHomePage() {
                         textAlign: 'center',
                       }}
                     >
-                      Future Banners
+                      Upcoming Banners
                     </Link>
                     <Link
                       href={`/${g.slug}?tab=compare`}
@@ -317,7 +317,7 @@ export default async function PortalHomePage() {
           </div>
         </section>
 
-        {/* SECTION 2: LATEST META UPDATES & UPCOMING GLOBAL BANNER ALERTS */}
+        {/* SECTION 2: LATEST META UPDATES & UPCOMING BANNER ALERTS */}
         <section
           style={{
             display: 'grid',
@@ -343,7 +343,7 @@ export default async function PortalHomePage() {
                 marginBottom: '10px',
               }}
             >
-              LATEST VERIFIED META UPDATES &amp; BANNER ALERTS
+              LATEST META UPDATES &amp; BANNER ALERTS
             </h2>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -383,7 +383,7 @@ export default async function PortalHomePage() {
                     </div>
                     <div className="mono" style={{ fontSize: '11px', fontWeight: 800 }}>
                       <span style={{ color: 'var(--text-muted)', marginRight: '8px' }}>
-                        Est. GL: {bn.estGlobalStartDate}
+                        Release: {bn.estGlobalStartDate}
                       </span>
                       <span style={{ color: 'var(--accent-primary)' }}>
                         {bn.pullVerdict.replace('_', ' ')} &rarr;

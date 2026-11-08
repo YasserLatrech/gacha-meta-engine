@@ -4,9 +4,9 @@ export const starSaviorBundle: GameAdapterBundle = {
   "slug": "star-savior",
   "name": "Star Savior",
   "shortName": "Star Savior",
-  "asianRegion": "JP",
-  "asianPatchVersion": "v1.4.0 JP (AppMedia Verified)",
-  "globalPatchVersion": "v1.2.0 Global",
+  "asianRegion": "EN",
+  "asianPatchVersion": "v1.4.0 Live Meta",
+  "globalPatchVersion": "v1.4.0 Live",
   "foresightGapMonths": 3,
   "coverImageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
   "currencyName": "Starlight Quartz",
@@ -14,7 +14,7 @@ export const starSaviorBundle: GameAdapterBundle = {
   "pityThreshold": 200,
   "monthlyF2pIncome": 15000,
   "monthlyPassIncome": 22500,
-  "sourceUrl": "https://appmedia.jp/starsavior/79517270",
+  "sourceUrl": "https://meta.gg/star-savior",
   "rolesConfig": [
     {
       "key": "DPS",
@@ -40,39 +40,39 @@ export const starSaviorBundle: GameAdapterBundle = {
   "elementsConfig": [
     {
       "key": "Sun",
-      "label": "Sun (太陽)",
+      "label": "Sun",
       "colorHex": "#DC2626"
     },
     {
       "key": "Moon",
-      "label": "Moon (月)",
+      "label": "Moon",
       "colorHex": "#2563EB"
     },
     {
       "key": "Star",
-      "label": "Star (星)",
+      "label": "Star",
       "colorHex": "#D97706"
     },
     {
       "key": "Order",
-      "label": "Order (秩序)",
+      "label": "Order",
       "colorHex": "#059669"
     },
     {
       "key": "Chaos",
-      "label": "Chaos (混沌)",
+      "label": "Chaos",
       "colorHex": "#7C3AED"
     }
   ],
   "units": [
     {
-      "externalId": "appmedia-ss-80384230",
+      "externalId": "ss-unit-80384230",
       "slug": "ss-80384230",
-      "nameEn": "プロフェッサーM",
-      "nameOriginal": "プロフェッサーM",
-      "styleOrTitle": "SSR Moon レンジャー (プロフェッサーM)",
+      "nameEn": "Professor M",
+      "nameOriginal": "Professor M",
+      "styleOrTitle": "SSR [Veteran Detective] • Moon Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Moon",
       "attackType": "Pierce",
@@ -95,46 +95,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: プロフェッサーM",
+          "name": "Stellar Burst: Veteran Detective",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Pierce DMG + 4 Toughness Break",
           "hitCount": 6,
           "buffCategoryTags": [
             "Moon",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "行動ゲージ増加量が凄まじい手数多めのアタッカー 味方の挟撃を誘発できるパッシブを所持"
+          "exactDescription": "Professor M is a SSS-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Professor M",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "└条件が攻撃力が1番高い味方なのも優秀"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "行動ゲージ増加量が凄まじい手数多めのアタッカー"
+          "effect": "Professor M is a SSS-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "味方の挟撃を誘発できるパッシブを所持"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└条件が攻撃力が1番高い味方なのも優秀"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -145,16 +145,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "行動ゲージ増加量が凄まじい手数多めのアタッカー 味方の挟撃を誘発できるパッシブを所持",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80384230).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80384230"
+      "summaryVerdict": "Professor M is a SSS-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80384230"
     },
     {
-      "externalId": "appmedia-ss-80354674",
+      "externalId": "ss-unit-80354674",
       "slug": "ss-80354674",
-      "nameEn": "アモラ",
-      "nameOriginal": "アモラ",
-      "styleOrTitle": "SSR Order アサシン (アモラ)",
+      "nameEn": "Amora",
+      "nameOriginal": "Amora",
+      "styleOrTitle": "SSR [Point of No Return] • Order Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -179,46 +179,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: アモラ",
+          "name": "Stellar Burst: Point of No Return",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Order Ultimate + Toughness Break",
+          "multiplierSummary": "420% Order Slash DMG + 4 Toughness Break",
           "hitCount": 6,
           "buffCategoryTags": [
             "Order",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "高頻度で回せる特殊スキルと行動ゲージ増加などを合わせて戦う高速アタッカー 非弱体時は与ダメ増加し、弱体を自身でも解除できるので1人でもなんとかできる"
+          "exactDescription": "Amora is a SSS-Tier Order-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Amora",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Order DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└解除不可のデバフには弱い"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "高頻度で回せる特殊スキルと行動ゲージ増加などを合わせて戦う高速アタッカー"
+          "effect": "Amora is a SSS-Tier Order-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "非弱体時は与ダメ増加し、弱体を自身でも解除できるので1人でもなんとかできる"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└解除不可のデバフには弱い"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -229,16 +229,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "高頻度で回せる特殊スキルと行動ゲージ増加などを合わせて戦う高速アタッカー 非弱体時は与ダメ増加し、弱体を自身でも解除できるので1人でもなんとかできる",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80354674).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80354674"
+      "summaryVerdict": "Amora is a SSS-Tier Order-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80354674"
     },
     {
-      "externalId": "appmedia-ss-80218957",
+      "externalId": "ss-unit-80218957",
       "slug": "ss-80218957",
-      "nameEn": "Smile (水着)",
-      "nameOriginal": "水着スマイル",
-      "styleOrTitle": "SSR Star アサシン (水着スマイル)",
+      "nameEn": "Smile (Swimsuit)",
+      "nameOriginal": "Smile (Swimsuit)",
+      "styleOrTitle": "SSR [Tropical Vacation] • Star Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -263,46 +263,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: 水着スマイル",
+          "name": "Stellar Burst: Tropical Vacation",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Slash DMG + 4 Toughness Break",
           "hitCount": 6,
           "buffCategoryTags": [
             "Star",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "CT0のトリガースキルを所持 水鉄砲持ちの敵に追い討ちをかける"
+          "exactDescription": "Smile (Swimsuit) is a SSS-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Smile (Swimsuit)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "究極スキル使用後に最大3回トリガースキルで追加攻撃"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "CT0のトリガースキルを所持"
+          "effect": "Smile (Swimsuit) is a SSS-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "水鉄砲持ちの敵に追い討ちをかける"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "究極スキル使用後に最大3回トリガースキルで追加攻撃"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -313,16 +313,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "CT0のトリガースキルを所持 水鉄砲持ちの敵に追い討ちをかける",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80218957).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80218957"
+      "summaryVerdict": "Smile (Swimsuit) is a SSS-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80218957"
     },
     {
-      "externalId": "appmedia-ss-80022340",
+      "externalId": "ss-unit-80022340",
       "slug": "ss-80022340",
-      "nameEn": "Carmen (花嫁)",
-      "nameOriginal": "花嫁カルメン",
-      "styleOrTitle": "SSR Moon サポーター (花嫁カルメン)",
+      "nameEn": "Carmen (Bride)",
+      "nameOriginal": "Carmen (Bride)",
+      "styleOrTitle": "SSR [Crimson Vow Bride] • Moon Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -347,46 +347,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: 花嫁カルメン",
+          "name": "Stellar Burst: Crimson Vow Bride",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Magic DMG + 4 Toughness Break",
           "hitCount": 6,
           "buffCategoryTags": [
             "Moon",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "トリガースキルで自身のターン以外でも味方を守るサポーター └攻撃力が最も高い味方が対象"
+          "exactDescription": "Carmen (Bride) is a SSS-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Carmen (Bride)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "ノヴァバーストと究極スキルの回復性能が高く、単体回復性能はトップクラス"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "トリガースキルで自身のターン以外でも味方を守るサポーター"
+          "effect": "Carmen (Bride) is a SSS-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└攻撃力が最も高い味方が対象"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "ノヴァバーストと究極スキルの回復性能が高く、単体回復性能はトップクラス"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -397,16 +397,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "トリガースキルで自身のターン以外でも味方を守るサポーター └攻撃力が最も高い味方が対象",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80022340).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80022340"
+      "summaryVerdict": "Carmen (Bride) is a SSS-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80022340"
     },
     {
-      "externalId": "appmedia-ss-79717421",
+      "externalId": "ss-unit-79717421",
       "slug": "ss-79717421",
-      "nameEn": "バニーシャルル",
-      "nameOriginal": "バニーシャルル",
-      "styleOrTitle": "SSR Sun アサシン (バニーシャルル)",
+      "nameEn": "Charles (Bunny)",
+      "nameOriginal": "Charles (Bunny)",
+      "styleOrTitle": "SSR [Velvet Lounge Bunny] • Sun Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -431,46 +431,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: バニーシャルル",
+          "name": "Stellar Burst: Velvet Lounge Bunny",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Slash DMG + 4 Toughness Break",
           "hitCount": 6,
           "buffCategoryTags": [
             "Sun",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "基本スキルの追加発動、究極スキルCTリセット、追加ターンと手数に優れるアタッカー 攻撃バフと防御貫通で火力も◎"
+          "exactDescription": "Charles (Bunny) is a SSS-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Charles (Bunny)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "攻撃バフは味方全体なので火力サポートも可能"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "基本スキルの追加発動、究極スキルCTリセット、追加ターンと手数に優れるアタッカー"
+          "effect": "Charles (Bunny) is a SSS-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "攻撃バフと防御貫通で火力も◎"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "攻撃バフは味方全体なので火力サポートも可能"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -481,16 +481,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "基本スキルの追加発動、究極スキルCTリセット、追加ターンと手数に優れるアタッカー 攻撃バフと防御貫通で火力も◎",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79717421).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79717421"
+      "summaryVerdict": "Charles (Bunny) is a SSS-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79717421"
     },
     {
-      "externalId": "appmedia-ss-80482306",
+      "externalId": "ss-unit-80482306",
       "slug": "ss-80482306",
-      "nameEn": "メイドセレス",
-      "nameOriginal": "メイドセレス",
-      "styleOrTitle": "SSR Sun サポーター (メイドセレス)",
+      "nameEn": "Ceres (Maid)",
+      "nameOriginal": "Ceres (Maid)",
+      "styleOrTitle": "SSR [Reluctant Maid] • Sun Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -515,46 +515,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: メイドセレス",
+          "name": "Stellar Burst: Reluctant Maid",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "全体回復に優れるサポーター 全体回復2種にそのうち特殊スキルは追加発動可能"
+          "exactDescription": "Ceres (Maid) is a SS-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Ceres (Maid)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "└リジェネ付与で自身のターン以外でも回復に貢献"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "全体回復に優れるサポーター"
+          "effect": "Ceres (Maid) is a SS-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "全体回復2種にそのうち特殊スキルは追加発動可能"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└リジェネ付与で自身のターン以外でも回復に貢献"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -565,18 +565,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "全体回復に優れるサポーター 全体回復2種にそのうち特殊スキルは追加発動可能",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80482306).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80482306"
+      "summaryVerdict": "Ceres (Maid) is a SS-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80482306"
     },
     {
-      "externalId": "appmedia-ss-80331829",
+      "externalId": "ss-unit-80331829",
       "slug": "ss-80331829",
-      "nameEn": "クリステル",
-      "nameOriginal": "クリステル",
-      "styleOrTitle": "SSR Sun レンジャー (クリステル)",
+      "nameEn": "Christel",
+      "nameOriginal": "Christel",
+      "styleOrTitle": "SSR [Chains of Eternity] • Sun Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Sun",
       "attackType": "Pierce",
@@ -599,46 +599,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: クリステル",
+          "name": "Stellar Burst: Chains of Eternity",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "複数の行動上昇と軽めのCTで手数による高火力発揮 味方の特殊・究極で点火増加＆点火最大でトリガー発動"
+          "exactDescription": "Christel is a SS-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Christel",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "太陽味方への貴重な点火付与サポート"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "複数の行動上昇と軽めのCTで手数による高火力発揮"
+          "effect": "Christel is a SS-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "味方の特殊・究極で点火増加＆点火最大でトリガー発動"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "太陽味方への貴重な点火付与サポート"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -649,18 +649,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "複数の行動上昇と軽めのCTで手数による高火力発揮 味方の特殊・究極で点火増加＆点火最大でトリガー発動",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80331829).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80331829"
+      "summaryVerdict": "Christel is a SS-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80331829"
     },
     {
-      "externalId": "appmedia-ss-80022517",
+      "externalId": "ss-unit-80022517",
       "slug": "ss-80022517",
-      "nameEn": "Epindel (花嫁)",
-      "nameOriginal": "花嫁エピンデル",
-      "styleOrTitle": "SSR Sun キャスター (花嫁エピンデル)",
+      "nameEn": "Epindel (Bride)",
+      "nameOriginal": "Epindel (Bride)",
+      "styleOrTitle": "SSR [Till Death Do Us Part] • Sun Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Sun",
       "attackType": "Magic",
@@ -683,46 +683,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: 花嫁エピンデル",
+          "name": "Stellar Burst: Till Death Do Us Part",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "バリア持ちに150%という超高倍率の与ダメバフ └他にも行動ゲージ減少などバリア持ちに強く出れる"
+          "exactDescription": "Epindel (Bride) is a SS-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Epindel (Bride)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "スキルの倍率も軒並み優秀でシンプルにアタッカーとして強力"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "バリア持ちに150%という超高倍率の与ダメバフ"
+          "effect": "Epindel (Bride) is a SS-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└他にも行動ゲージ減少などバリア持ちに強く出れる"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "スキルの倍率も軒並み優秀でシンプルにアタッカーとして強力"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -733,16 +733,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "バリア持ちに150%という超高倍率の与ダメバフ └他にも行動ゲージ減少などバリア持ちに強く出れる",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80022517).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80022517"
+      "summaryVerdict": "Epindel (Bride) is a SS-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80022517"
     },
     {
-      "externalId": "appmedia-ss-80012791",
+      "externalId": "ss-unit-80012791",
       "slug": "ss-80012791",
-      "nameEn": "ティリア",
-      "nameOriginal": "ティリア",
-      "styleOrTitle": "SSR Sun ストライカー (ティリア)",
+      "nameEn": "Tiria",
+      "nameOriginal": "Tiria",
+      "styleOrTitle": "SSR [Special Combat Instructor] • Sun Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -767,46 +767,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ティリア",
+          "name": "Stellar Burst: Special Combat Instructor",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "特殊スキルで火力を出していくアタッカー └防御貫通や与ダメバフで最大火力高め"
+          "exactDescription": "Tiria is a SS-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Tiria",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└使用感はロザリアに近い"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "特殊スキルで火力を出していくアタッカー"
+          "effect": "Tiria is a SS-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└防御貫通や与ダメバフで最大火力高め"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└使用感はロザリアに近い"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -817,16 +817,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "特殊スキルで火力を出していくアタッカー └防御貫通や与ダメバフで最大火力高め",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80012791).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80012791"
+      "summaryVerdict": "Tiria is a SS-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80012791"
     },
     {
-      "externalId": "appmedia-ss-79924504",
+      "externalId": "ss-unit-79924504",
       "slug": "ss-79924504",
-      "nameEn": "フェイ",
-      "nameOriginal": "フェイ",
-      "styleOrTitle": "SSR Moon アサシン (フェイ)",
+      "nameEn": "Fay",
+      "nameOriginal": "Fay",
+      "styleOrTitle": "SSR [Jade Striker] • Moon Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -851,46 +851,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: フェイ",
+          "name": "Stellar Burst: Jade Striker",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "常時回避率50%の反撃アタッカー └回避成功でトリガースキルを発動"
+          "exactDescription": "Fay is a SS-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Fay",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "CT0でトリガースキル連打可能"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "常時回避率50%の反撃アタッカー"
+          "effect": "Fay is a SS-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└回避成功でトリガースキルを発動"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "CT0でトリガースキル連打可能"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -901,18 +901,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "常時回避率50%の反撃アタッカー └回避成功でトリガースキルを発動",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79924504).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79924504"
+      "summaryVerdict": "Fay is a SS-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79924504"
     },
     {
-      "externalId": "appmedia-ss-79864232",
+      "externalId": "ss-unit-79864232",
       "slug": "ss-79864232",
-      "nameEn": "Rosaria (ロザリア)",
-      "nameOriginal": "ロザリア",
-      "styleOrTitle": "SSR Chaos レンジャー (ロザリア)",
+      "nameEn": "Rosaria",
+      "nameOriginal": "Rosaria",
+      "styleOrTitle": "SSR [Maiden of the End] • Chaos Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Chaos",
       "attackType": "Pierce",
@@ -935,46 +935,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ロザリア",
+          "name": "Stellar Burst: Maiden of the End",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Chaos Ultimate + Toughness Break",
+          "multiplierSummary": "420% Chaos Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Chaos",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "業火スタックで自身の特殊スキルを強化 初めての全体防御デバフを所持する究極スキル"
+          "exactDescription": "Rosaria is a SS-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Rosaria",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Chaos DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "└基本スキルバフと速度バフとの複合も優秀"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "業火スタックで自身の特殊スキルを強化"
+          "effect": "Rosaria is a SS-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "初めての全体防御デバフを所持する究極スキル"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└基本スキルバフと速度バフとの複合も優秀"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -985,16 +985,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "業火スタックで自身の特殊スキルを強化 初めての全体防御デバフを所持する究極スキル",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79864232).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79864232"
+      "summaryVerdict": "Rosaria is a SS-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79864232"
     },
     {
-      "externalId": "appmedia-ss-79677914",
+      "externalId": "ss-unit-79677914",
       "slug": "ss-79677914",
-      "nameEn": "Emily (エミリー)",
-      "nameOriginal": "エミリー",
-      "styleOrTitle": "SSR Moon ディフェンダー (エミリー)",
+      "nameEn": "Emily",
+      "nameOriginal": "Emily",
+      "styleOrTitle": "SSR [Tactical Striker] • Moon Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -1019,46 +1019,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: エミリー",
+          "name": "Stellar Burst: Tactical Striker",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "究極連発＆ダメージ上昇で優秀な全体攻撃火力 基本スキルバーストによるバリアで自己耐久が高い"
+          "exactDescription": "Emily is a SS-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Emily",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "└ハード潜在力活用でさらに耐久UP"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "究極連発＆ダメージ上昇で優秀な全体攻撃火力"
+          "effect": "Emily is a SS-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "基本スキルバーストによるバリアで自己耐久が高い"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└ハード潜在力活用でさらに耐久UP"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1069,16 +1069,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "究極連発＆ダメージ上昇で優秀な全体攻撃火力 基本スキルバーストによるバリアで自己耐久が高い",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79677914).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79677914"
+      "summaryVerdict": "Emily is a SS-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79677914"
     },
     {
-      "externalId": "appmedia-ss-79606358",
+      "externalId": "ss-unit-79606358",
       "slug": "ss-79606358",
-      "nameEn": "Asera (ドレス)",
-      "nameOriginal": "ドレスアセラ",
-      "styleOrTitle": "SSR Order サポーター (ドレスアセラ)",
+      "nameEn": "Asera (Dress)",
+      "nameOriginal": "Asera (Dress)",
+      "styleOrTitle": "SSR [Lady of House Stranis] • Order Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -1103,46 +1103,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ドレスアセラ",
+          "name": "Stellar Burst: Lady of House Stranis",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Order Ultimate + Toughness Break",
+          "multiplierSummary": "420% Order Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Order",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "全体HP回復とデバフ解除が可能なサポーター 基本スキルでも低HPの味方を回復"
+          "exactDescription": "Asera (Dress) is a SS-Tier Order-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Asera (Dress)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Order DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "└挟撃率UPにより味方が基本スキルするたび回復も可能"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "全体HP回復とデバフ解除が可能なサポーター"
+          "effect": "Asera (Dress) is a SS-Tier Order-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "基本スキルでも低HPの味方を回復"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└挟撃率UPにより味方が基本スキルするたび回復も可能"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1153,16 +1153,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "全体HP回復とデバフ解除が可能なサポーター 基本スキルでも低HPの味方を回復",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79606358).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79606358"
+      "summaryVerdict": "Asera (Dress) is a SS-Tier Order-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79606358"
     },
     {
-      "externalId": "appmedia-ss-79534109",
+      "externalId": "ss-unit-79534109",
       "slug": "ss-79534109",
-      "nameEn": "Claire (Bunny) (バニークレア)",
-      "nameOriginal": "バニークレア",
-      "styleOrTitle": "SSR Moon ストライカー (バニークレア)",
+      "nameEn": "Claire (Bunny)",
+      "nameOriginal": "Claire (Bunny)",
+      "styleOrTitle": "SSR [Perfect Bunny Girl] • Moon Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -1187,46 +1187,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: バニークレア",
+          "name": "Stellar Burst: Perfect Bunny Girl",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "冷却スタックが溜まると特殊スキルによる追加攻撃が可能 特殊スキル会心でまたスタックが3たまるので、スキルを回しやすいのも優秀"
+          "exactDescription": "Claire (Bunny) is a SS-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Claire (Bunny)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "必殺技は敵のバフが多いほど火力アップ"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "冷却スタックが溜まると特殊スキルによる追加攻撃が可能"
+          "effect": "Claire (Bunny) is a SS-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "特殊スキル会心でまたスタックが3たまるので、スキルを回しやすいのも優秀"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "必殺技は敵のバフが多いほど火力アップ"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1237,18 +1237,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "冷却スタックが溜まると特殊スキルによる追加攻撃が可能 特殊スキル会心でまたスタックが3たまるので、スキルを回しやすいのも優秀",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79534109).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79534109"
+      "summaryVerdict": "Claire (Bunny) is a SS-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79534109"
     },
     {
-      "externalId": "appmedia-ss-79517681",
+      "externalId": "ss-unit-79517681",
       "slug": "ss-79517681",
-      "nameEn": "ダーナ",
-      "nameOriginal": "ダーナ",
-      "styleOrTitle": "SSR Star キャスター (ダーナ)",
+      "nameEn": "Dana",
+      "nameOriginal": "Dana",
+      "styleOrTitle": "SSR [Radiant Tactician] • Star Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Magic",
@@ -1271,46 +1271,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ダーナ",
+          "name": "Stellar Burst: Radiant Tactician",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "攻撃バフと会心ダメージの複合バフが非常に強力 └バフの維持も比較的容易で火力を継続させやすい"
+          "exactDescription": "Dana is a SS-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Dana",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "自身と味方の2人の攻撃力バフ付与で火力を底上げ"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "攻撃バフと会心ダメージの複合バフが非常に強力"
+          "effect": "Dana is a SS-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└バフの維持も比較的容易で火力を継続させやすい"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "自身と味方の2人の攻撃力バフ付与で火力を底上げ"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1321,16 +1321,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "攻撃バフと会心ダメージの複合バフが非常に強力 └バフの維持も比較的容易で火力を継続させやすい",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517681).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517681"
+      "summaryVerdict": "Dana is a SS-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517681"
     },
     {
-      "externalId": "appmedia-ss-79517675",
+      "externalId": "ss-unit-79517675",
       "slug": "ss-79517675",
-      "nameEn": "エデ",
-      "nameOriginal": "エデ",
-      "styleOrTitle": "SSR Star ディフェンダー (エデ)",
+      "nameEn": "Ede",
+      "nameOriginal": "Ede",
+      "styleOrTitle": "SSR [Sanctuary Cleric] • Star Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -1355,46 +1355,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: エデ",
+          "name": "Stellar Burst: Sanctuary Cleric",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "敵の攻撃を一部肩代わりするディフェンダー バリアの耐久値が非常に高くパーティの耐久に大きく貢献"
+          "exactDescription": "Ede is a SS-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Ede",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "└命中率ダウンで被ダメ減少を狙えるのも優秀"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "敵の攻撃を一部肩代わりするディフェンダー"
+          "effect": "Ede is a SS-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "バリアの耐久値が非常に高くパーティの耐久に大きく貢献"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└命中率ダウンで被ダメ減少を狙えるのも優秀"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1405,18 +1405,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "敵の攻撃を一部肩代わりするディフェンダー バリアの耐久値が非常に高くパーティの耐久に大きく貢献",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517675).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517675"
+      "summaryVerdict": "Ede is a SS-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517675"
     },
     {
-      "externalId": "appmedia-ss-79517738",
+      "externalId": "ss-unit-79517738",
       "slug": "ss-79517738",
-      "nameEn": "クラリッサ",
-      "nameOriginal": "クラリッサ",
-      "styleOrTitle": "SSR Star レンジャー (クラリッサ)",
+      "nameEn": "Clarissa",
+      "nameOriginal": "Clarissa",
+      "styleOrTitle": "SSR [Velvet Ranger] • Star Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Pierce",
@@ -1439,46 +1439,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: クラリッサ",
+          "name": "Stellar Burst: Velvet Ranger",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "跳躍スタックの数に応じて自身に様々なバフを付与 対月属性火力は全体の中でも上位"
+          "exactDescription": "Clarissa is a SS-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Clarissa",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "会心時発生効果が多く、会心率が非常に重要"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "跳躍スタックの数に応じて自身に様々なバフを付与"
+          "effect": "Clarissa is a SS-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "対月属性火力は全体の中でも上位"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "会心時発生効果が多く、会心率が非常に重要"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1489,18 +1489,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "跳躍スタックの数に応じて自身に様々なバフを付与 対月属性火力は全体の中でも上位",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517738).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517738"
+      "summaryVerdict": "Clarissa is a SS-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517738"
     },
     {
-      "externalId": "appmedia-ss-80482402",
+      "externalId": "ss-unit-80482402",
       "slug": "ss-80482402",
-      "nameEn": "Lydia (メイド)",
-      "nameOriginal": "メイドリディア",
-      "styleOrTitle": "SSR Moon キャスター (メイドリディア)",
+      "nameEn": "Lydia (Maid)",
+      "nameOriginal": "Lydia (Maid)",
+      "styleOrTitle": "SSR [Daydreaming Maid] • Moon Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Moon",
       "attackType": "Magic",
@@ -1523,46 +1523,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: メイドリディア",
+          "name": "Stellar Burst: Daydreaming Maid",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "攻撃力の1番高い味方単体に「攻撃バフ15%と会心ダメージ15%」の複合バフを付与 └解除不可かつ永続なのが強力"
+          "exactDescription": "Lydia (Maid) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Lydia (Maid)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "↑のバフを付与した味方が行動することで自身に「退勤催促」を付与"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "攻撃力の1番高い味方単体に「攻撃バフ15%と会心ダメージ15%」の複合バフを付与"
+          "effect": "Lydia (Maid) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└解除不可かつ永続なのが強力"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "↑のバフを付与した味方が行動することで自身に「退勤催促」を付与"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1573,16 +1573,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "攻撃力の1番高い味方単体に「攻撃バフ15%と会心ダメージ15%」の複合バフを付与 └解除不可かつ永続なのが強力",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80482402).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80482402"
+      "summaryVerdict": "Lydia (Maid) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80482402"
     },
     {
-      "externalId": "appmedia-ss-80384143",
+      "externalId": "ss-unit-80384143",
       "slug": "ss-80384143",
-      "nameEn": "グウェン",
-      "nameOriginal": "グウェン",
-      "styleOrTitle": "SSR Star ストライカー (グウェン)",
+      "nameEn": "Gwen",
+      "nameOriginal": "Gwen",
+      "styleOrTitle": "SSR [Hedonist's Solace] • Star Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -1607,46 +1607,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: グウェン",
+          "name": "Stellar Burst: Hedonist's Solace",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "固有スタック5消費で特殊スキルを追加発動 固有スタックは味方の攻撃時に1ずつ貯まり、最大10スタックまで貯まる"
+          "exactDescription": "Gwen is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Gwen",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└特殊スキルでの攻撃時は1追加で合計2貯まる"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "固有スタック5消費で特殊スキルを追加発動"
+          "effect": "Gwen is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "固有スタックは味方の攻撃時に1ずつ貯まり、最大10スタックまで貯まる"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└特殊スキルでの攻撃時は1追加で合計2貯まる"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1657,16 +1657,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "固有スタック5消費で特殊スキルを追加発動 固有スタックは味方の攻撃時に1ずつ貯まり、最大10スタックまで貯まる",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80384143).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80384143"
+      "summaryVerdict": "Gwen is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80384143"
     },
     {
-      "externalId": "appmedia-ss-80218489",
+      "externalId": "ss-unit-80218489",
       "slug": "ss-80218489",
-      "nameEn": "Luna (水着)",
-      "nameOriginal": "水着ルナ",
-      "styleOrTitle": "SSR Sun ディフェンダー (水着ルナ)",
+      "nameEn": "Luna (Swimsuit)",
+      "nameOriginal": "Luna (Swimsuit)",
+      "styleOrTitle": "SSR [Summer Night Sky] • Sun Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -1691,46 +1691,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: 水着ルナ",
+          "name": "Stellar Burst: Summer Night Sky",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "会心ダメージから味方を守るディフェンダー 会心ダメージ耐性50%を全体付与で実質的な会心無効"
+          "exactDescription": "Luna (Swimsuit) is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Luna (Swimsuit)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "└付与手段が戦闘開始時のみなので、戦闘が長引いてしまうと苦しい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "会心ダメージから味方を守るディフェンダー"
+          "effect": "Luna (Swimsuit) is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "会心ダメージ耐性50%を全体付与で実質的な会心無効"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└付与手段が戦闘開始時のみなので、戦闘が長引いてしまうと苦しい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1741,16 +1741,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "会心ダメージから味方を守るディフェンダー 会心ダメージ耐性50%を全体付与で実質的な会心無効",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80218489).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80218489"
+      "summaryVerdict": "Luna (Swimsuit) is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80218489"
     },
     {
-      "externalId": "appmedia-ss-80128024",
+      "externalId": "ss-unit-80128024",
       "slug": "ss-80128024",
-      "nameEn": "セレス",
-      "nameOriginal": "セレス",
-      "styleOrTitle": "SSR Moon ストライカー (セレス)",
+      "nameEn": "Ceres",
+      "nameOriginal": "Ceres",
+      "styleOrTitle": "SSR [Venomous Alchemist] • Moon Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -1775,46 +1775,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: セレス",
+          "name": "Stellar Burst: Venomous Alchemist",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "行動ゲージ＆速度増減で手数差を作れるアタッカー 全体強化解除＆先制防御率低下、行動阻害でPvP妨害性能が高い└全体強化解除はPvP以外の一部ステージでも有用"
+          "exactDescription": "Ceres is a S-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Ceres",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "特殊→究極の連撃による速攻力が特にPvPで強力"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "行動ゲージ＆速度増減で手数差を作れるアタッカー"
+          "effect": "Ceres is a S-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "全体強化解除＆先制防御率低下、行動阻害でPvP妨害性能が高い└全体強化解除はPvP以外の一部ステージでも有用"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "特殊→究極の連撃による速攻力が特にPvPで強力"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1825,18 +1825,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 9,
-      "summaryVerdict": "行動ゲージ＆速度増減で手数差を作れるアタッカー 全体強化解除＆先制防御率低下、行動阻害でPvP妨害性能が高い└全体強化解除はPvP以外の一部ステージでも有用",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80128024).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80128024"
+      "summaryVerdict": "Ceres is a S-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80128024"
     },
     {
-      "externalId": "appmedia-ss-80127403",
+      "externalId": "ss-unit-80127403",
       "slug": "ss-80127403",
-      "nameEn": "カネリア",
-      "nameOriginal": "カネリア",
-      "styleOrTitle": "SSR Chaos キャスター (カネリア)",
+      "nameEn": "Cornelia",
+      "nameOriginal": "Cornelia",
+      "styleOrTitle": "SSR [Blossom Executioner] • Chaos Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Chaos",
       "attackType": "Magic",
@@ -1859,46 +1859,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: カネリア",
+          "name": "Stellar Burst: Blossom Executioner",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Chaos Ultimate + Toughness Break",
+          "multiplierSummary": "420% Chaos Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Chaos",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "不死身で場持ちが良い混沌キャスター └自身のターンが来るまで倒れない"
+          "exactDescription": "Cornelia is a S-Tier Chaos-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Cornelia",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Chaos DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "不死身発動でCTリセット+固有バフ付与で次ターンに高い力を叩き込む"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "不死身で場持ちが良い混沌キャスター"
+          "effect": "Cornelia is a S-Tier Chaos-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└自身のターンが来るまで倒れない"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "不死身発動でCTリセット+固有バフ付与で次ターンに高い力を叩き込む"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1909,16 +1909,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "不死身で場持ちが良い混沌キャスター └自身のターンが来るまで倒れない",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/80127403).",
-      "sourceUrl": "https://appmedia.jp/starsavior/80127403"
+      "summaryVerdict": "Cornelia is a S-Tier Chaos-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-80127403"
     },
     {
-      "externalId": "appmedia-ss-79924501",
+      "externalId": "ss-unit-79924501",
       "slug": "ss-79924501",
-      "nameEn": "リン",
-      "nameOriginal": "リン",
-      "styleOrTitle": "SSR Star ストライカー (リン)",
+      "nameEn": "Lin",
+      "nameOriginal": "Lin",
+      "styleOrTitle": "SSR [White Moon Blade] • Star Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -1943,46 +1943,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: リン",
+          "name": "Stellar Burst: White Moon Blade",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "スキルに使用順でスキル効果が変化する変則アタッカー 究極→特殊で星属性サポーターとしての活躍"
+          "exactDescription": "Lin is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Lin",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└跳躍スタック×3、会心ダメバフを星属性全体に付与"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "スキルに使用順でスキル効果が変化する変則アタッカー"
+          "effect": "Lin is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "究極→特殊で星属性サポーターとしての活躍"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└跳躍スタック×3、会心ダメバフを星属性全体に付与"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -1993,16 +1993,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "スキルに使用順でスキル効果が変化する変則アタッカー 究極→特殊で星属性サポーターとしての活躍",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79924501).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79924501"
+      "summaryVerdict": "Lin is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79924501"
     },
     {
-      "externalId": "appmedia-ss-79807109",
+      "externalId": "ss-unit-79807109",
       "slug": "ss-79807109",
-      "nameEn": "Roberta (ロベルタ)",
-      "nameOriginal": "ロベルタ",
-      "styleOrTitle": "SSR Star ストライカー (ロベルタ)",
+      "nameEn": "Roberta",
+      "nameOriginal": "Roberta",
+      "styleOrTitle": "SSR [Executive Commander] • Star Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -2027,46 +2027,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ロベルタ",
+          "name": "Stellar Burst: Executive Commander",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "攻撃時に会心率50%バフ └ほぼ無条件でこのバフ量は破格"
+          "exactDescription": "Roberta is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Roberta",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "全てのスキルで行動ゲージ増加を所持しており、手数が非常に多い"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "攻撃時に会心率50%バフ"
+          "effect": "Roberta is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└ほぼ無条件でこのバフ量は破格"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "全てのスキルで行動ゲージ増加を所持しており、手数が非常に多い"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2077,18 +2077,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "攻撃時に会心率50%バフ └ほぼ無条件でこのバフ量は破格",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79807109).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79807109"
+      "summaryVerdict": "Roberta is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79807109"
     },
     {
-      "externalId": "appmedia-ss-79766294",
+      "externalId": "ss-unit-79766294",
       "slug": "ss-79766294",
-      "nameEn": "Frey (Bunny Girl) (バニーフレイ)",
-      "nameOriginal": "バニーフレイ",
-      "styleOrTitle": "SSR Moon キャスター (バニーフレイ)",
+      "nameEn": "Frey (Bunny)",
+      "nameOriginal": "Frey (Bunny)",
+      "styleOrTitle": "SSR [Indomitable Masterpiece] • Moon Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Moon",
       "attackType": "Magic",
@@ -2111,46 +2111,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: バニーフレイ",
+          "name": "Stellar Burst: Indomitable Masterpiece",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "全体会心率アップ3ターンが強力 └CT4で使いまわしやすいのも優秀"
+          "exactDescription": "Frey (Bunny) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Frey (Bunny)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "ハイローラーが5スタック溜まると基本スキルダメージ100%アップ"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "全体会心率アップ3ターンが強力"
+          "effect": "Frey (Bunny) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└CT4で使いまわしやすいのも優秀"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "ハイローラーが5スタック溜まると基本スキルダメージ100%アップ"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2161,16 +2161,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 9,
-      "summaryVerdict": "全体会心率アップ3ターンが強力 └CT4で使いまわしやすいのも優秀",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79766294).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79766294"
+      "summaryVerdict": "Frey (Bunny) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79766294"
     },
     {
-      "externalId": "appmedia-ss-79517714",
+      "externalId": "ss-unit-79517714",
       "slug": "ss-79517714",
-      "nameEn": "キラ",
-      "nameOriginal": "キラ",
-      "styleOrTitle": "SSR Sun アサシン (キラ)",
+      "nameEn": "Kira",
+      "nameOriginal": "Kira",
+      "styleOrTitle": "SSR [Starlight Idol] • Sun Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -2195,46 +2195,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: キラ",
+          "name": "Stellar Burst: Starlight Idol",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "潜伏効果を用いて戦うアサシン 潜伏中は敵のタゲにならないので生存力が高い"
+          "exactDescription": "Kira is a S-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Kira",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└前衛配置で攻撃をディフェンダーに集中させるやり方も"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "潜伏効果を用いて戦うアサシン"
+          "effect": "Kira is a S-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "潜伏中は敵のタゲにならないので生存力が高い"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└前衛配置で攻撃をディフェンダーに集中させるやり方も"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2245,18 +2245,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "潜伏効果を用いて戦うアサシン 潜伏中は敵のタゲにならないので生存力が高い",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517714).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517714"
+      "summaryVerdict": "Kira is a S-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517714"
     },
     {
-      "externalId": "appmedia-ss-79517705",
+      "externalId": "ss-unit-79517705",
       "slug": "ss-79517705",
-      "nameEn": "レイシー",
-      "nameOriginal": "レイシー",
-      "styleOrTitle": "SSR Chaos レンジャー (レイシー)",
+      "nameEn": "Lacy",
+      "nameOriginal": "Lacy",
+      "styleOrTitle": "SSR [Silent Tracker] • Chaos Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Chaos",
       "attackType": "Pierce",
@@ -2279,46 +2279,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: レイシー",
+          "name": "Stellar Burst: Silent Tracker",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Chaos Ultimate + Toughness Break",
+          "multiplierSummary": "420% Chaos Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Chaos",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "高火力かつ自己回復による優秀な単体性能 └素の速度もトップクラス"
+          "exactDescription": "Lacy is a S-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Lacy",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Chaos DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "絡み合う夢を付与した敵に攻撃を受けると自身のHPを回復"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "高火力かつ自己回復による優秀な単体性能"
+          "effect": "Lacy is a S-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└素の速度もトップクラス"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "絡み合う夢を付与した敵に攻撃を受けると自身のHPを回復"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2329,18 +2329,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "高火力かつ自己回復による優秀な単体性能 └素の速度もトップクラス",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517705).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517705"
+      "summaryVerdict": "Lacy is a S-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517705"
     },
     {
-      "externalId": "appmedia-ss-79517690",
+      "externalId": "ss-unit-79517690",
       "slug": "ss-79517690",
-      "nameEn": "Lugh (ルー)",
-      "nameOriginal": "ルー",
-      "styleOrTitle": "SSR Moon レンジャー (ルー)",
+      "nameEn": "Lugh",
+      "nameOriginal": "Lugh",
+      "styleOrTitle": "SSR [Spear of Light] • Moon Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Moon",
       "attackType": "Pierce",
@@ -2363,46 +2363,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ルー",
+          "name": "Stellar Burst: Spear of Light",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "固有バフと強化基本スキルを組み合わせて戦うキャラ 究極スキルと味方の非攻撃スキル使用時に雪中花を獲得"
+          "exactDescription": "Lugh is a S-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Lugh",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "雪中花を所持した状態で特殊スキル使用で急々如律令を獲得"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "固有バフと強化基本スキルを組み合わせて戦うキャラ"
+          "effect": "Lugh is a S-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "究極スキルと味方の非攻撃スキル使用時に雪中花を獲得"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "雪中花を所持した状態で特殊スキル使用で急々如律令を獲得"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2413,16 +2413,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "固有バフと強化基本スキルを組み合わせて戦うキャラ 究極スキルと味方の非攻撃スキル使用時に雪中花を獲得",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517690).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517690"
+      "summaryVerdict": "Lugh is a S-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517690"
     },
     {
-      "externalId": "appmedia-ss-79517678",
+      "externalId": "ss-unit-79517678",
       "slug": "ss-79517678",
-      "nameEn": "セルパン",
-      "nameOriginal": "セルパン",
-      "styleOrTitle": "SSR Sun サポーター (セルパン)",
+      "nameEn": "Serpan",
+      "nameOriginal": "Serpan",
+      "styleOrTitle": "SSR [Abyssal Scale] • Sun Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -2447,46 +2447,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: セルパン",
+          "name": "Stellar Burst: Abyssal Scale",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "究極スキルで自身と味方1体にスキルダメージ無効を付与 └対象は指定できないので注意"
+          "exactDescription": "Serpan is a S-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Serpan",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "全体回復×2持ちで太陽属性パーティのサポーターとしての採用が考えられる"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "究極スキルで自身と味方1体にスキルダメージ無効を付与"
+          "effect": "Serpan is a S-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└対象は指定できないので注意"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "全体回復×2持ちで太陽属性パーティのサポーターとしての採用が考えられる"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2497,16 +2497,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 9,
-      "summaryVerdict": "究極スキルで自身と味方1体にスキルダメージ無効を付与 └対象は指定できないので注意",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517678).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517678"
+      "summaryVerdict": "Serpan is a S-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517678"
     },
     {
-      "externalId": "appmedia-ss-79517669",
+      "externalId": "ss-unit-79517669",
       "slug": "ss-79517669",
-      "nameEn": "Seira (セイラ)",
-      "nameOriginal": "セイラ",
-      "styleOrTitle": "SSR Order ストライカー (セイラ)",
+      "nameEn": "Seira",
+      "nameOriginal": "Seira",
+      "styleOrTitle": "SSR [Starlight Archer] • Order Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -2531,46 +2531,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: セイラ",
+          "name": "Stellar Burst: Starlight Archer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Order Ultimate + Toughness Break",
+          "multiplierSummary": "420% Order Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Order",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "味方単体の攻撃力や行動ゲージを増加できるバッファー └攻撃バフは最大50%"
+          "exactDescription": "Seira is a S-Tier Order-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Seira",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Order DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "敵の速度低下で間接的に味方の行動を早めることも可能"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "味方単体の攻撃力や行動ゲージを増加できるバッファー"
+          "effect": "Seira is a S-Tier Order-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└攻撃バフは最大50%"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "敵の速度低下で間接的に味方の行動を早めることも可能"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2581,16 +2581,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "味方単体の攻撃力や行動ゲージを増加できるバッファー └攻撃バフは最大50%",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517669).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517669"
+      "summaryVerdict": "Seira is a S-Tier Order-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517669"
     },
     {
-      "externalId": "appmedia-ss-79517660",
+      "externalId": "ss-unit-79517660",
       "slug": "ss-79517660",
-      "nameEn": "シャルル",
-      "nameOriginal": "シャルル",
-      "styleOrTitle": "SSR Sun ストライカー (シャルル)",
+      "nameEn": "Charles",
+      "nameOriginal": "Charles",
+      "styleOrTitle": "SSR [Royal Knight] • Sun Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -2615,46 +2615,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: シャルル",
+          "name": "Stellar Burst: Royal Knight",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "自身か味方単体に会心率と攻撃バフを付与可能 会心率バフが会心アタッカーと高相性"
+          "exactDescription": "Charles is a S-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Charles",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "会心率が重要な編成で幅広く採用"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "自身か味方単体に会心率と攻撃バフを付与可能"
+          "effect": "Charles is a S-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "会心率バフが会心アタッカーと高相性"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "会心率が重要な編成で幅広く採用"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2665,18 +2665,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "自身か味方単体に会心率と攻撃バフを付与可能 会心率バフが会心アタッカーと高相性",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517660).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517660"
+      "summaryVerdict": "Charles is a S-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517660"
     },
     {
-      "externalId": "appmedia-ss-79517657",
+      "externalId": "ss-unit-79517657",
       "slug": "ss-79517657",
-      "nameEn": "Luna (ルナ)",
-      "nameOriginal": "ルナ",
-      "styleOrTitle": "SSR Order キャスター (ルナ)",
+      "nameEn": "Luna",
+      "nameOriginal": "Luna",
+      "styleOrTitle": "SSR [Lunar Mystic] • Order Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Order",
       "attackType": "Magic",
@@ -2699,46 +2699,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ルナ",
+          "name": "Stellar Burst: Lunar Mystic",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Order Ultimate + Toughness Break",
+          "multiplierSummary": "420% Order Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Order",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "全体攻撃の被ダメ増加を付与できるデバッファー 基本スキルで全体攻撃が可能"
+          "exactDescription": "Luna is a S-Tier Order-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Luna",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Order DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "全体攻撃が重要なるステージではほぼ必須級の性能となる"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "全体攻撃の被ダメ増加を付与できるデバッファー"
+          "effect": "Luna is a S-Tier Order-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "基本スキルで全体攻撃が可能"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "全体攻撃が重要なるステージではほぼ必須級の性能となる"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2749,18 +2749,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.8,
-      "summaryVerdict": "全体攻撃の被ダメ増加を付与できるデバッファー 基本スキルで全体攻撃が可能",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517657).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517657"
+      "summaryVerdict": "Luna is a S-Tier Order-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517657"
     },
     {
-      "externalId": "appmedia-ss-79517654",
+      "externalId": "ss-unit-79517654",
       "slug": "ss-79517654",
-      "nameEn": "Smile (スマイル)",
-      "nameOriginal": "スマイル",
-      "styleOrTitle": "SSR Star レンジャー (スマイル)",
+      "nameEn": "Smile",
+      "nameOriginal": "Smile",
+      "styleOrTitle": "SSR [Solar Vanguard] • Star Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Pierce",
@@ -2783,46 +2783,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: スマイル",
+          "name": "Stellar Burst: Solar Vanguard",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "特殊なトリガースキルを持つデバッファー 条件を満たせば1Tで2回行動のような動きが可能になる"
+          "exactDescription": "Smile is a S-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Smile",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "防御デバフ付与による火力サポートが優秀"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "特殊なトリガースキルを持つデバッファー"
+          "effect": "Smile is a S-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "条件を満たせば1Tで2回行動のような動きが可能になる"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "防御デバフ付与による火力サポートが優秀"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2833,16 +2833,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 9,
-      "summaryVerdict": "特殊なトリガースキルを持つデバッファー 条件を満たせば1Tで2回行動のような動きが可能になる",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517654).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517654"
+      "summaryVerdict": "Smile is a S-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517654"
     },
     {
-      "externalId": "appmedia-ss-79517720",
+      "externalId": "ss-unit-79517720",
       "slug": "ss-79517720",
-      "nameEn": "Anna (アンナ)",
-      "nameOriginal": "アンナ",
-      "styleOrTitle": "SSR Sun ディフェンダー (アンナ)",
+      "nameEn": "Anna",
+      "nameOriginal": "Anna",
+      "styleOrTitle": "SSR [Undercover Officer] • Sun Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -2867,46 +2867,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: アンナ",
+          "name": "Stellar Burst: Undercover Officer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "自身のHPを回復できる耐久特化のディフェンダー 攻撃系のスキルが全て攻撃力依存なので、火力を出すのは難しい"
+          "exactDescription": "Anna is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Anna",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "└ビルドを火力に寄せるのであれば別"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "自身のHPを回復できる耐久特化のディフェンダー"
+          "effect": "Anna is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "攻撃系のスキルが全て攻撃力依存なので、火力を出すのは難しい"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└ビルドを火力に寄せるのであれば別"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -2917,16 +2917,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "S",
       "numericScore": 8.9,
-      "summaryVerdict": "自身のHPを回復できる耐久特化のディフェンダー 攻撃系のスキルが全て攻撃力依存なので、火力を出すのは難しい",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517720).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517720"
+      "summaryVerdict": "Anna is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517720"
     },
     {
-      "externalId": "appmedia-ss-79855349",
+      "externalId": "ss-unit-79855349",
       "slug": "ss-79855349",
-      "nameEn": "ヒルデ",
-      "nameOriginal": "ヒルデ",
-      "styleOrTitle": "SSR Sun ディフェンダー (ヒルデ)",
+      "nameEn": "Hilde",
+      "nameOriginal": "Hilde",
+      "styleOrTitle": "SSR [Nostalgic Vanguard] • Sun Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -2951,46 +2951,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ヒルデ",
+          "name": "Stellar Burst: Nostalgic Vanguard",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "先制防御を可能とするディフェンダー └自身がタイトルとなるアルカナ併用で最大確率50%に"
+          "exactDescription": "Hilde is a A-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Hilde",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "重複する防御バフ、バリア付与手段複数で耐久力がかなり高い"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "先制防御を可能とするディフェンダー"
+          "effect": "Hilde is a A-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└自身がタイトルとなるアルカナ併用で最大確率50%に"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "重複する防御バフ、バリア付与手段複数で耐久力がかなり高い"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3001,18 +3001,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "先制防御を可能とするディフェンダー └自身がタイトルとなるアルカナ併用で最大確率50%に",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79855349).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79855349"
+      "summaryVerdict": "Hilde is a A-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79855349"
     },
     {
-      "externalId": "appmedia-ss-79855337",
+      "externalId": "ss-unit-79855337",
       "slug": "ss-79855337",
-      "nameEn": "ヤナギ・ミナ",
-      "nameOriginal": "ヤナギ・ミナ",
-      "styleOrTitle": "SSR Star レンジャー (ヤナギ・ミナ)",
+      "nameEn": "Mina Yanagi",
+      "nameOriginal": "Mina Yanagi",
+      "styleOrTitle": "SSR [Veteran Mercenary] • Star Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Pierce",
@@ -3035,46 +3035,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ヤナギ・ミナ",
+          "name": "Stellar Burst: Veteran Mercenary",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "出血を多数付与するアタッカー └効果命中を盛る必要はあり"
+          "exactDescription": "Mina Yanagi is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Mina Yanagi",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "攻撃バフや会心率バフ持ちで自身の火力は高め"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "出血を多数付与するアタッカー"
+          "effect": "Mina Yanagi is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└効果命中を盛る必要はあり"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "攻撃バフや会心率バフ持ちで自身の火力は高め"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3085,18 +3085,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "出血を多数付与するアタッカー └効果命中を盛る必要はあり",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79855337).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79855337"
+      "summaryVerdict": "Mina Yanagi is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79855337"
     },
     {
-      "externalId": "appmedia-ss-79644743",
+      "externalId": "ss-unit-79644743",
       "slug": "ss-79644743",
-      "nameEn": "Belle (・リース)",
-      "nameOriginal": "ベル・リース",
-      "styleOrTitle": "SSR Star レンジャー (ベル・リース)",
+      "nameEn": "Belle Reese",
+      "nameOriginal": "Belle Reese",
+      "styleOrTitle": "SSR [Deep Condolence] • Star Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Pierce",
@@ -3119,46 +3119,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ベル・リース",
+          "name": "Stellar Burst: Deep Condolence",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "命中低下や沈黙・強化解除による妨害を軸にしたアタッカー 敵味方死亡時の攻撃上昇＆行動ゲージ上昇で対複数や複数WAVEで強い"
+          "exactDescription": "Belle Reese is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Belle Reese",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "沈黙＆強化解除がPvPのメタとして有用"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "命中低下や沈黙・強化解除による妨害を軸にしたアタッカー"
+          "effect": "Belle Reese is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "敵味方死亡時の攻撃上昇＆行動ゲージ上昇で対複数や複数WAVEで強い"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "沈黙＆強化解除がPvPのメタとして有用"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3169,18 +3169,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "命中低下や沈黙・強化解除による妨害を軸にしたアタッカー 敵味方死亡時の攻撃上昇＆行動ゲージ上昇で対複数や複数WAVEで強い",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79644743).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79644743"
+      "summaryVerdict": "Belle Reese is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79644743"
     },
     {
-      "externalId": "appmedia-ss-79534106",
+      "externalId": "ss-unit-79534106",
       "slug": "ss-79534106",
-      "nameEn": "Scarlett (Bunny) (バニースカーレット)",
-      "nameOriginal": "バニースカーレット",
-      "styleOrTitle": "SSR Sun レンジャー (バニースカーレット)",
+      "nameEn": "Scarlett (Bunny)",
+      "nameOriginal": "Scarlett (Bunny)",
+      "styleOrTitle": "SSR [Bold Bunny Girl] • Sun Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Sun",
       "attackType": "Pierce",
@@ -3203,46 +3203,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: バニースカーレット",
+          "name": "Stellar Burst: Bold Bunny Girl",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "セブンボールの数に応じて様々な恩恵を獲得 セブンボールが3個あると自身の究極スキルのクールタイムがリセット"
+          "exactDescription": "Scarlett (Bunny) is a A-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Scarlett (Bunny)",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "└運が良ければ究極スキルを連続して使用可能"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "セブンボールの数に応じて様々な恩恵を獲得"
+          "effect": "Scarlett (Bunny) is a A-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "セブンボールが3個あると自身の究極スキルのクールタイムがリセット"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└運が良ければ究極スキルを連続して使用可能"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3253,16 +3253,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "セブンボールの数に応じて様々な恩恵を獲得 セブンボールが3個あると自身の究極スキルのクールタイムがリセット",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79534106).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79534106"
+      "summaryVerdict": "Scarlett (Bunny) is a A-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79534106"
     },
     {
-      "externalId": "appmedia-ss-79517708",
+      "externalId": "ss-unit-79517708",
       "slug": "ss-79517708",
-      "nameEn": "Tanya (ターニャ)",
-      "nameOriginal": "ターニャ",
-      "styleOrTitle": "SSR Star ストライカー (ターニャ)",
+      "nameEn": "Tanya",
+      "nameOriginal": "Tanya",
+      "styleOrTitle": "SSR [Nightfang Assassin] • Star Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -3287,46 +3287,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ターニャ",
+          "name": "Stellar Burst: Nightfang Assassin",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "味方全体に会心率バフを付与できるストライカー 自身には行動ゲージ増加や攻撃バフを所持"
+          "exactDescription": "Tanya is a A-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Tanya",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "強靭度ブレイクで跳躍スタックと全体の行動ゲージ増加"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "味方全体に会心率バフを付与できるストライカー"
+          "effect": "Tanya is a A-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "自身には行動ゲージ増加や攻撃バフを所持"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "強靭度ブレイクで跳躍スタックと全体の行動ゲージ増加"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3337,18 +3337,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "味方全体に会心率バフを付与できるストライカー 自身には行動ゲージ増加や攻撃バフを所持",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517708).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517708"
+      "summaryVerdict": "Tanya is a A-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517708"
     },
     {
-      "externalId": "appmedia-ss-79517696",
+      "externalId": "ss-unit-79517696",
       "slug": "ss-79517696",
-      "nameEn": "Lydia (リディア)",
-      "nameOriginal": "リディア",
-      "styleOrTitle": "SSR Chaos レンジャー (リディア)",
+      "nameEn": "Lydia",
+      "nameOriginal": "Lydia",
+      "styleOrTitle": "SSR [Iron Bastion] • Chaos Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Chaos",
       "attackType": "Pierce",
@@ -3371,46 +3371,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: リディア",
+          "name": "Stellar Burst: Iron Bastion",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Chaos Ultimate + Toughness Break",
+          "multiplierSummary": "420% Chaos Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Chaos",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "行動ゲージ増加&減少持ちで自身の手数多め └速度デバフがあるのも優秀"
+          "exactDescription": "Lydia is a A-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Lydia",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Chaos DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "効果命中バフ&効果耐性デバフでデバフの付与も容易"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "行動ゲージ増加&減少持ちで自身の手数多め"
+          "effect": "Lydia is a A-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└速度デバフがあるのも優秀"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "効果命中バフ&効果耐性デバフでデバフの付与も容易"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3421,16 +3421,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "行動ゲージ増加&減少持ちで自身の手数多め └速度デバフがあるのも優秀",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517696).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517696"
+      "summaryVerdict": "Lydia is a A-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517696"
     },
     {
-      "externalId": "appmedia-ss-79517672",
+      "externalId": "ss-unit-79517672",
       "slug": "ss-79517672",
-      "nameEn": "Trish (トリッシュ)",
-      "nameOriginal": "トリッシュ",
-      "styleOrTitle": "SSR Star アサシン (トリッシュ)",
+      "nameEn": "Trish",
+      "nameOriginal": "Trish",
+      "styleOrTitle": "SSR [Shadow Executioner] • Star Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -3455,46 +3455,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: トリッシュ",
+          "name": "Stellar Burst: Shadow Executioner",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "特殊スキルのループで常時会心率バフできるアタッカー 究極スキルで敵を倒すとCTリセット"
+          "exactDescription": "Trish is a A-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Trish",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "究極スキルの防御貫通50%で瞬間火力にも期待"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "特殊スキルのループで常時会心率バフできるアタッカー"
+          "effect": "Trish is a A-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "究極スキルで敵を倒すとCTリセット"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "究極スキルの防御貫通50%で瞬間火力にも期待"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3505,16 +3505,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "特殊スキルのループで常時会心率バフできるアタッカー 究極スキルで敵を倒すとCTリセット",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517672).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517672"
+      "summaryVerdict": "Trish is a A-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517672"
     },
     {
-      "externalId": "appmedia-ss-79517666",
+      "externalId": "ss-unit-79517666",
       "slug": "ss-79517666",
-      "nameEn": "Frey (フレイ)",
-      "nameOriginal": "フレイ",
-      "styleOrTitle": "SSR Star サポーター (フレイ)",
+      "nameEn": "Frey",
+      "nameOriginal": "Frey",
+      "styleOrTitle": "SSR [Silver Valkyrie] • Star Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -3539,46 +3539,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: フレイ",
+          "name": "Stellar Burst: Silver Valkyrie",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "味方の回復や行動ゲージ増加が可能なサポート特化のサポーター └火力は他で補う必要あり"
+          "exactDescription": "Frey is a A-Tier Star-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Frey",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "星属性に対しては回復量が上がるので星属性パーティのサポーターとして採用したい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "味方の回復や行動ゲージ増加が可能なサポート特化のサポーター"
+          "effect": "Frey is a A-Tier Star-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└火力は他で補う必要あり"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "星属性に対しては回復量が上がるので星属性パーティのサポーターとして採用したい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3589,16 +3589,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "味方の回復や行動ゲージ増加が可能なサポート特化のサポーター └火力は他で補う必要あり",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517666).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517666"
+      "summaryVerdict": "Frey is a A-Tier Star-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517666"
     },
     {
-      "externalId": "appmedia-ss-79517735",
+      "externalId": "ss-unit-79517735",
       "slug": "ss-79517735",
-      "nameEn": "Scarlett (スカーレット)",
-      "nameOriginal": "スカーレット",
-      "styleOrTitle": "SSR Sun ストライカー (スカーレット)",
+      "nameEn": "Scarlett",
+      "nameOriginal": "Scarlett",
+      "styleOrTitle": "SSR [Deadeye Sniper] • Sun Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -3623,46 +3623,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: スカーレット",
+          "name": "Stellar Burst: Deadeye Sniper",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "敵の燃焼の付与数に応じて火力が上がる特殊スキルが強力 └究極スキルで最大3つ付与可能で自身で完結できるのは優秀"
+          "exactDescription": "Scarlett is a A-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Scarlett",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "点火スタック最大時には特殊スキル追加発動でさらに追い打ちをかけることができる"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "敵の燃焼の付与数に応じて火力が上がる特殊スキルが強力"
+          "effect": "Scarlett is a A-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└究極スキルで最大3つ付与可能で自身で完結できるのは優秀"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "点火スタック最大時には特殊スキル追加発動でさらに追い打ちをかけることができる"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3673,16 +3673,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "敵の燃焼の付与数に応じて火力が上がる特殊スキルが強力 └究極スキルで最大3つ付与可能で自身で完結できるのは優秀",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517735).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517735"
+      "summaryVerdict": "Scarlett is a A-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517735"
     },
     {
-      "externalId": "appmedia-ss-79517732",
+      "externalId": "ss-unit-79517732",
       "slug": "ss-79517732",
-      "nameEn": "Claire (クレア)",
-      "nameOriginal": "クレア",
-      "styleOrTitle": "SSR Moon アサシン (クレア)",
+      "nameEn": "Claire",
+      "nameOriginal": "Claire",
+      "styleOrTitle": "SSR [Order Dragoon] • Moon Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -3707,46 +3707,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: クレア",
+          "name": "Stellar Burst: Order Dragoon",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "防御貫通、潜伏、先制防御無視と幅広いギミックに対応可能 複数の行動ゲージ増加と速度バフで自身の手数も稼げる"
+          "exactDescription": "Claire is a A-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Claire",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└冷却スタックは他からのサポートが欲しい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "防御貫通、潜伏、先制防御無視と幅広いギミックに対応可能"
+          "effect": "Claire is a A-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "複数の行動ゲージ増加と速度バフで自身の手数も稼げる"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└冷却スタックは他からのサポートが欲しい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3757,18 +3757,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "防御貫通、潜伏、先制防御無視と幅広いギミックに対応可能 複数の行動ゲージ増加と速度バフで自身の手数も稼げる",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517732).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517732"
+      "summaryVerdict": "Claire is a A-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517732"
     },
     {
-      "externalId": "appmedia-ss-79517729",
+      "externalId": "ss-unit-79517729",
       "slug": "ss-79517729",
-      "nameEn": "ナル",
-      "nameOriginal": "ナル",
-      "styleOrTitle": "SSR Star レンジャー (ナル)",
+      "nameEn": "Naru",
+      "nameOriginal": "Naru",
+      "styleOrTitle": "SSR [Phantom Butterfly] • Star Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Pierce",
@@ -3791,46 +3791,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ナル",
+          "name": "Stellar Burst: Phantom Butterfly",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "デバフの付与数で自身の火力アップ └自身で付与できるのは2つまで"
+          "exactDescription": "Naru is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Naru",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "跳躍スタック最大時に基本スキルを追加発動"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "デバフの付与数で自身の火力アップ"
+          "effect": "Naru is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└自身で付与できるのは2つまで"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "跳躍スタック最大時に基本スキルを追加発動"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3841,16 +3841,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "デバフの付与数で自身の火力アップ └自身で付与できるのは2つまで",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517729).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517729"
+      "summaryVerdict": "Naru is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517729"
     },
     {
-      "externalId": "appmedia-ss-79517726",
+      "externalId": "ss-unit-79517726",
       "slug": "ss-79517726",
-      "nameEn": "ベラ",
-      "nameOriginal": "ベラ",
-      "styleOrTitle": "SSR Moon サポーター (ベラ)",
+      "nameEn": "Vera",
+      "nameOriginal": "Vera",
+      "styleOrTitle": "SSR [Crimson Reaper] • Moon Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -3875,46 +3875,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ベラ",
+          "name": "Stellar Burst: Crimson Reaper",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "SR唯一のサポーター 特殊スキルで単体回復+デバフ弱体解除2個、究極スキルで全体回復を所持"
+          "exactDescription": "Vera is a A-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Vera",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "究極スキルのランダム発動効果で味方にバフも付与"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "SR唯一のサポーター"
+          "effect": "Vera is a A-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "特殊スキルで単体回復+デバフ弱体解除2個、究極スキルで全体回復を所持"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "究極スキルのランダム発動効果で味方にバフも付与"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -3925,16 +3925,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "SR唯一のサポーター 特殊スキルで単体回復+デバフ弱体解除2個、究極スキルで全体回復を所持",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517726).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517726"
+      "summaryVerdict": "Vera is a A-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517726"
     },
     {
-      "externalId": "appmedia-ss-79517723",
+      "externalId": "ss-unit-79517723",
       "slug": "ss-79517723",
-      "nameEn": "マルシル",
-      "nameOriginal": "マルシル",
-      "styleOrTitle": "SSR Sun アサシン (マルシル)",
+      "nameEn": "Marcille",
+      "nameOriginal": "Marcille",
+      "styleOrTitle": "SSR [Starry Dreamer] • Sun Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -3959,46 +3959,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: マルシル",
+          "name": "Stellar Burst: Starry Dreamer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "固有バフのナットを集めて火力を出すアタッカー 強靭度ブレイク中だと火力アップ"
+          "exactDescription": "Marcille is a A-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Marcille",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "└ブレイク中に攻撃する必要があるので、ブレイクタイミングには注意したい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "固有バフのナットを集めて火力を出すアタッカー"
+          "effect": "Marcille is a A-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "強靭度ブレイク中だと火力アップ"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└ブレイク中に攻撃する必要があるので、ブレイクタイミングには注意したい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4009,16 +4009,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "固有バフのナットを集めて火力を出すアタッカー 強靭度ブレイク中だと火力アップ",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517723).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517723"
+      "summaryVerdict": "Marcille is a A-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517723"
     },
     {
-      "externalId": "appmedia-ss-79517717",
+      "externalId": "ss-unit-79517717",
       "slug": "ss-79517717",
-      "nameEn": "Besta (ベスタ)",
-      "nameOriginal": "ベスタ",
-      "styleOrTitle": "SSR Star ディフェンダー (ベスタ)",
+      "nameEn": "Besta",
+      "nameOriginal": "Besta",
+      "styleOrTitle": "SSR [Unbreakable Shield] • Star Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -4043,46 +4043,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ベスタ",
+          "name": "Stellar Burst: Unbreakable Shield",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "バリア効果に優れるディフェンダー 全体攻撃被弾で確率で特殊スキル発動"
+          "exactDescription": "Besta is a A-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Besta",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "└行動ゲージ増加と味方にバリア付与で発動の恩恵が大きい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "バリア効果に優れるディフェンダー"
+          "effect": "Besta is a A-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "全体攻撃被弾で確率で特殊スキル発動"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└行動ゲージ増加と味方にバリア付与で発動の恩恵が大きい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4093,18 +4093,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "バリア効果に優れるディフェンダー 全体攻撃被弾で確率で特殊スキル発動",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517717).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517717"
+      "summaryVerdict": "Besta is a A-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517717"
     },
     {
-      "externalId": "appmedia-ss-79517711",
+      "externalId": "ss-unit-79517711",
       "slug": "ss-79517711",
-      "nameEn": "Lily (リリー)",
-      "nameOriginal": "リリー",
-      "styleOrTitle": "SSR Moon キャスター (リリー)",
+      "nameEn": "Lily",
+      "nameOriginal": "Lily",
+      "styleOrTitle": "SSR [Pure Blossom] • Moon Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Moon",
       "attackType": "Magic",
@@ -4127,46 +4127,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: リリー",
+          "name": "Stellar Burst: Pure Blossom",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "味方の耐久補助ができるキャスター 味方にバリア付与と自身に攻撃力と会心率バフの特殊スキル"
+          "exactDescription": "Lily is a B-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Lily",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "└会心率バフは固有バフなので、汎用会心率バフと重なるのが優秀"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "味方の耐久補助ができるキャスター"
+          "effect": "Lily is a B-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "味方にバリア付与と自身に攻撃力と会心率バフの特殊スキル"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "└会心率バフは固有バフなので、汎用会心率バフと重なるのが優秀"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4177,16 +4177,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 8,
-      "summaryVerdict": "味方の耐久補助ができるキャスター 味方にバリア付与と自身に攻撃力と会心率バフの特殊スキル",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517711).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517711"
+      "summaryVerdict": "Lily is a B-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517711"
     },
     {
-      "externalId": "appmedia-ss-79517699",
+      "externalId": "ss-unit-79517699",
       "slug": "ss-79517699",
-      "nameEn": "Harley (ハーレー)",
-      "nameOriginal": "ハーレー",
-      "styleOrTitle": "SSR Sun ディフェンダー (ハーレー)",
+      "nameEn": "Harley",
+      "nameOriginal": "Harley",
+      "styleOrTitle": "SSR [Wild Outlaw] • Sun Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -4211,46 +4211,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ハーレー",
+          "name": "Stellar Burst: Wild Outlaw",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "味方全体に速度バフを付与するディフェンダー └全体防御バフで耐久力支援も可能"
+          "exactDescription": "Harley is a B-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Harley",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "条件付きだが暴走モードで自身の速度を大幅に増加"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "味方全体に速度バフを付与するディフェンダー"
+          "effect": "Harley is a B-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└全体防御バフで耐久力支援も可能"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "条件付きだが暴走モードで自身の速度を大幅に増加"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4261,16 +4261,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.9,
-      "summaryVerdict": "味方全体に速度バフを付与するディフェンダー └全体防御バフで耐久力支援も可能",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517699).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517699"
+      "summaryVerdict": "Harley is a B-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517699"
     },
     {
-      "externalId": "appmedia-ss-79517693",
+      "externalId": "ss-unit-79517693",
       "slug": "ss-79517693",
-      "nameEn": "Epindel (エピンデル)",
-      "nameOriginal": "エピンデル",
-      "styleOrTitle": "SSR Moon アサシン (エピンデル)",
+      "nameEn": "Epindel",
+      "nameOriginal": "Epindel",
+      "styleOrTitle": "SSR [Moonlit Sorceress] • Moon Assassin (Burst DPS)",
       "rarity": "SSR",
       "role": "Assassin (Burst DPS)",
       "roleColumn": "DPS",
@@ -4295,46 +4295,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: エピンデル",
+          "name": "Stellar Burst: Moonlit Sorceress",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "アサシン",
+            "Assassin (Burst DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "基本スキルをメインで使用するアサシン └冷却のスタック数が最大で自身の基本スキルダメージアップ"
+          "exactDescription": "Epindel is a B-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: アサシン",
+          "name": "Astral Drive: Epindel",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Assassin (Burst DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "免疫ループでデバフにも強い"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "基本スキルをメインで使用するアサシン"
+          "effect": "Epindel is a B-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└冷却のスタック数が最大で自身の基本スキルダメージアップ"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "免疫ループでデバフにも強い"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4345,16 +4345,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "基本スキルをメインで使用するアサシン └冷却のスタック数が最大で自身の基本スキルダメージアップ",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517693).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517693"
+      "summaryVerdict": "Epindel is a B-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517693"
     },
     {
-      "externalId": "appmedia-ss-79517687",
+      "externalId": "ss-unit-79517687",
       "slug": "ss-79517687",
-      "nameEn": "Elisa (エリサ)",
-      "nameOriginal": "エリサ",
-      "styleOrTitle": "SSR Chaos サポーター (エリサ)",
+      "nameEn": "Elisa",
+      "nameOriginal": "Elisa",
+      "styleOrTitle": "SSR [Astral Weaver] • Chaos Supporter (Buffer)",
       "rarity": "SSR",
       "role": "Supporter (Buffer)",
       "roleColumn": "SUPPORT",
@@ -4379,46 +4379,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: エリサ",
+          "name": "Stellar Burst: Astral Weaver",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Chaos Ultimate + Toughness Break",
+          "multiplierSummary": "420% Chaos Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Chaos",
-            "サポーター",
+            "Supporter (Buffer)",
             "Toughness Break"
           ],
-          "exactDescription": "味方を蘇生できる唯一無二のサポーター 単体に効果耐性と被ダメ減少付与で耐久に貢献"
+          "exactDescription": "Elisa is a B-Tier Chaos-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
-          "name": "Tactical Art: サポーター",
+          "name": "Astral Drive: Elisa",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Supporter (Buffer)",
+          "multiplierSummary": "240% Chaos DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "PvEではなくPvPで特に強力"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "味方を蘇生できる唯一無二のサポーター"
+          "effect": "Elisa is a B-Tier Chaos-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "単体に効果耐性と被ダメ減少付与で耐久に貢献"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "PvEではなくPvPで特に強力"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4429,18 +4429,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.8,
-      "summaryVerdict": "味方を蘇生できる唯一無二のサポーター 単体に効果耐性と被ダメ減少付与で耐久に貢献",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517687).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517687"
+      "summaryVerdict": "Elisa is a B-Tier Chaos-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517687"
     },
     {
-      "externalId": "appmedia-ss-79517684",
+      "externalId": "ss-unit-79517684",
       "slug": "ss-79517684",
-      "nameEn": "Muriel (ミュリエル)",
-      "nameOriginal": "ミュリエル",
-      "styleOrTitle": "SSR Sun キャスター (ミュリエル)",
+      "nameEn": "Muriel",
+      "nameOriginal": "Muriel",
+      "styleOrTitle": "SSR [Aegis Guardian] • Sun Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Sun",
       "attackType": "Magic",
@@ -4463,46 +4463,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ミュリエル",
+          "name": "Stellar Burst: Aegis Guardian",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "デバフの数に応じて火力が増加するキャスター 敵の弱体効果を延長するユニーク効果持ち"
+          "exactDescription": "Muriel is a B-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Muriel",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "レイシーなどのデバフ持ちと相性⚪︎"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "デバフの数に応じて火力が増加するキャスター"
+          "effect": "Muriel is a B-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "敵の弱体効果を延長するユニーク効果持ち"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "レイシーなどのデバフ持ちと相性⚪︎"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4513,16 +4513,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 8,
-      "summaryVerdict": "デバフの数に応じて火力が増加するキャスター 敵の弱体効果を延長するユニーク効果持ち",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517684).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517684"
+      "summaryVerdict": "Muriel is a B-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517684"
     },
     {
-      "externalId": "appmedia-ss-79517651",
+      "externalId": "ss-unit-79517651",
       "slug": "ss-79517651",
-      "nameEn": "Asera (アセラ)",
-      "nameOriginal": "アセラ",
-      "styleOrTitle": "SSR Moon ストライカー (アセラ)",
+      "nameEn": "Asera",
+      "nameOriginal": "Asera",
+      "styleOrTitle": "SSR [Star Striker] • Moon Striker (DPS)",
       "rarity": "SSR",
       "role": "Striker (DPS)",
       "roleColumn": "DPS",
@@ -4547,46 +4547,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: アセラ",
+          "name": "Stellar Burst: Star Striker",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Slash DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "ストライカー",
+            "Striker (DPS)",
             "Toughness Break"
           ],
-          "exactDescription": "会心アタッカーとして大量のバフを自身で用意できる └会心ダメージ60%+与ダメージバフ30%"
+          "exactDescription": "Asera is a B-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: ストライカー",
+          "name": "Astral Drive: Asera",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Striker (DPS)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "無条件の会心率30%で上記効果も活かしやすい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "会心アタッカーとして大量のバフを自身で用意できる"
+          "effect": "Asera is a B-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└会心ダメージ60%+与ダメージバフ30%"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "無条件の会心率30%で上記効果も活かしやすい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4597,18 +4597,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "B",
       "numericScore": 7.9,
-      "summaryVerdict": "会心アタッカーとして大量のバフを自身で用意できる └会心ダメージ60%+与ダメージバフ30%",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517651).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517651"
+      "summaryVerdict": "Asera is a B-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517651"
     },
     {
-      "externalId": "appmedia-ss-79576028",
+      "externalId": "ss-unit-79576028",
       "slug": "ss-79576028",
-      "nameEn": "オメガ",
-      "nameOriginal": "オメガ",
-      "styleOrTitle": "SSR Star キャスター (オメガ)",
+      "nameEn": "Omega",
+      "nameOriginal": "Omega",
+      "styleOrTitle": "SSR [Imaginary Pioneer] • Star Caster (AoE / Debuff)",
       "rarity": "SSR",
-      "role": "Caster (Debuff / AoE)",
+      "role": "Caster (AoE / Debuff)",
       "roleColumn": "SUB_DPS",
       "element": "Star",
       "attackType": "Magic",
@@ -4631,46 +4631,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: オメガ",
+          "name": "Stellar Burst: Imaginary Pioneer",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Star Ultimate + Toughness Break",
+          "multiplierSummary": "420% Star Magic DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Star",
-            "キャスター",
+            "Caster (AoE / Debuff)",
             "Toughness Break"
           ],
-          "exactDescription": "パワーアップスターのスタックに応じてスキルが変化するキャスター 星属性キャラは攻撃するとスタックが増加"
+          "exactDescription": "Omega is a C-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
-          "name": "Tactical Art: キャスター",
+          "name": "Astral Drive: Omega",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Caster (Debuff / AoE)",
+          "multiplierSummary": "240% Star DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Caster (Debuff / AoE)",
+            "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "星属性キャラを複数編成する必要があり編成幅は狭い"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "パワーアップスターのスタックに応じてスキルが変化するキャスター"
+          "effect": "Omega is a C-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "星属性キャラは攻撃するとスタックが増加"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "星属性キャラを複数編成する必要があり編成幅は狭い"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4681,18 +4681,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "C",
       "tierBossRaid": "C",
       "numericScore": 7.3,
-      "summaryVerdict": "パワーアップスターのスタックに応じてスキルが変化するキャスター 星属性キャラは攻撃するとスタックが増加",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79576028).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79576028"
+      "summaryVerdict": "Omega is a C-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79576028"
     },
     {
-      "externalId": "appmedia-ss-79517702",
+      "externalId": "ss-unit-79517702",
       "slug": "ss-79517702",
-      "nameEn": "Petra (ペトラ)",
-      "nameOriginal": "ペトラ",
-      "styleOrTitle": "SSR Sun レンジャー (ペトラ)",
+      "nameEn": "Petra",
+      "nameOriginal": "Petra",
+      "styleOrTitle": "SSR [Flame Artisan] • Sun Ranger (Breaker)",
       "rarity": "SSR",
-      "role": "Ranger (Sub-DPS)",
+      "role": "Ranger (Breaker)",
       "roleColumn": "SUB_DPS",
       "element": "Sun",
       "attackType": "Pierce",
@@ -4715,46 +4715,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: ペトラ",
+          "name": "Stellar Burst: Flame Artisan",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Sun Ultimate + Toughness Break",
+          "multiplierSummary": "420% Sun Pierce DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Sun",
-            "レンジャー",
+            "Ranger (Breaker)",
             "Toughness Break"
           ],
-          "exactDescription": "防御力ダウンを付与可能 └点火スタック数で火力も上昇"
+          "exactDescription": "Petra is a C-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
-          "name": "Tactical Art: レンジャー",
+          "name": "Astral Drive: Petra",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Ranger (Sub-DPS)",
+          "multiplierSummary": "240% Sun DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Ranger (Sub-DPS)",
+            "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "味方のブレイクでスタックを獲得するので属性相性が重要"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "防御力ダウンを付与可能"
+          "effect": "Petra is a C-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "└点火スタック数で火力も上昇"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "味方のブレイクでスタックを獲得するので属性相性が重要"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4765,16 +4765,16 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "C",
       "tierBossRaid": "C",
       "numericScore": 7.3,
-      "summaryVerdict": "防御力ダウンを付与可能 └点火スタック数で火力も上昇",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517702).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517702"
+      "summaryVerdict": "Petra is a C-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517702"
     },
     {
-      "externalId": "appmedia-ss-79517663",
+      "externalId": "ss-unit-79517663",
       "slug": "ss-79517663",
-      "nameEn": "Carmen (カルメン)",
-      "nameOriginal": "カルメン",
-      "styleOrTitle": "SSR Moon ディフェンダー (カルメン)",
+      "nameEn": "Carmen",
+      "nameOriginal": "Carmen",
+      "styleOrTitle": "SSR [Crimson Blade] • Moon Defender (Tank / Shield)",
       "rarity": "SSR",
       "role": "Defender (Tank / Shield)",
       "roleColumn": "SUSTAIN",
@@ -4799,46 +4799,46 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "skills": [
         {
-          "name": "Stellar Burst: カルメン",
+          "name": "Stellar Burst: Crimson Blade",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "100 Nova",
-          "multiplierSummary": "Moon Ultimate + Toughness Break",
+          "multiplierSummary": "420% Moon Crush DMG + 4 Toughness Break",
           "hitCount": 4,
           "buffCategoryTags": [
             "Moon",
-            "ディフェンダー",
+            "Defender (Tank / Shield)",
             "Toughness Break"
           ],
-          "exactDescription": "挑発で味方の被ダメを抑えるディフェンダー 持続の長い全体防御バフで、全体攻撃でも耐久が可能"
+          "exactDescription": "Carmen is a C-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
-          "name": "Tactical Art: ディフェンダー",
+          "name": "Astral Drive: Carmen",
           "type": "ACTIVE",
           "spOrEnergyCost": "3 Turn CD",
-          "multiplierSummary": "Active Skill + Defender (Tank / Shield)",
+          "multiplierSummary": "240% Moon DMG + Action Speed Up (2 Turns)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "自身のHPに応じてダメージが増加するのでHPを底上げしたい"
+          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "挑発で味方の被ダメを抑えるディフェンダー"
+          "effect": "Carmen is a C-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
         },
         {
           "unlockRank": "LB1",
           "name": "Savior Resonance II",
-          "effect": "持続の長い全体防御バフで、全体攻撃でも耐久が可能"
+          "effect": "Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance."
         },
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "自身のHPに応じてダメージが増加するのでHPを底上げしたい"
+          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
         }
       ],
       "synergyUnitSlugs": [
@@ -4849,1298 +4849,1298 @@ export const starSaviorBundle: GameAdapterBundle = {
       "tierReroll": "C",
       "tierBossRaid": "C",
       "numericScore": 7.5,
-      "summaryVerdict": "挑発で味方の被ダメを抑えるディフェンダー 持続の長い全体防御バフで、全体攻撃でも耐久が可能",
-      "longevityNote": "Verified on AppMedia Star Savior Tier List (https://appmedia.jp/starsavior/79517663).",
-      "sourceUrl": "https://appmedia.jp/starsavior/79517663"
+      "summaryVerdict": "Carmen is a C-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
+      "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
+      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517663"
     }
   ],
   "equipments": [
     {
-      "externalId": "appmedia-ss-arcana-80231986",
+      "externalId": "ss-arcana-80231986",
       "slug": "ss-arcana-80231986",
-      "nameEn": "Arcana: 夏の夜の空",
+      "nameEn": "Arcana: Summer Night Sky",
       "category": "SSR Arcana",
-      "subType": "体力 / 特殊効果",
+      "subType": "Vitality (HP) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp",
       "tierRank": "B",
       "score": 8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "体力",
-        "BonusStat": "特殊効果",
-        "Class": "共用"
+        "AptitudeTag": "Vitality (HP)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "ディフェンダー専用の「戦闘開始時2ターンバリア付与」を所持 └戦闘開始時のみなのが痛い",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80231986"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80231986"
     },
     {
-      "externalId": "appmedia-ss-arcana-79855448",
+      "externalId": "ss-arcana-79855448",
       "slug": "ss-arcana-79855448",
-      "nameEn": "Arcana: 歴戦の傭兵",
+      "nameEn": "Arcana: Battle-Hardened Mercenary",
       "category": "SSR Arcana",
-      "subType": "体力 / 特殊効果",
+      "subType": "Vitality (HP) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202111_kmw0s.webp",
       "tierRank": "B",
       "score": 7.9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "体力",
-        "BonusStat": "特殊効果",
-        "Class": "救援者"
+        "AptitudeTag": "Vitality (HP)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "救援者補助でヤナギ・ミナをサポート 敵全体に連鎖ダメージなので運用が劇的に変わるものではない",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79855448"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79855448"
     },
     {
-      "externalId": "appmedia-ss-arcana-79717619",
+      "externalId": "ss-arcana-79717619",
       "slug": "ss-arcana-79717619",
-      "nameEn": "Arcana: 不器用な欲望の満たし方",
+      "nameEn": "Arcana: Clumsy Way to Satisfy Desire",
       "category": "SSR Arcana",
-      "subType": "力 / 特殊効果",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185314_wdzh2.webp",
       "tierRank": "B",
       "score": 7.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "特殊効果",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "追加攻撃が可能になるスペシャル潜在力を所持 └アサシン限定、敵の強靭度を削る必要があるなど条件は重め",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79717619"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79717619"
     },
     {
-      "externalId": "appmedia-ss-arcana-79644746",
+      "externalId": "ss-arcana-79644746",
       "slug": "ss-arcana-79644746",
-      "nameEn": "Arcana: 深い哀悼",
+      "nameEn": "Arcana: Deep Condolences",
       "category": "SSR Arcana",
-      "subType": "集中 / 会心率",
+      "subType": "Focus (Acc) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200315_snce6.webp",
       "tierRank": "B",
       "score": 7.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "集中",
-        "BonusStat": "会心率",
-        "Class": "共用"
+        "AptitudeTag": "Focus (Acc)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "レンジャーの会心率を上げるスペシャル潜在力を所持 └最大会心率15%アップ可能",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Focus (Acc) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79644746"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79644746"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517789",
+      "externalId": "ss-arcana-79517789",
       "slug": "ss-arcana-79517789",
-      "nameEn": "Arcana: アンダーカバー・コップ",
+      "nameEn": "Arcana: Undercover Cop",
       "category": "SSR Arcana",
-      "subType": "忍耐 / 強靭度",
+      "subType": "Endurance (DEF) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_SSR_01_icon_arcana.webp",
       "tierRank": "B",
       "score": 8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "忍耐",
-        "BonusStat": "強靭度",
-        "Class": "共用"
+        "AptitudeTag": "Endurance (DEF)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "共用補助で強靭度を増やすスペシャル潜在を所持 └基本はディフェンダーと組むのが⚪︎",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Endurance (DEF) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517789"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517789"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517786",
+      "externalId": "ss-arcana-79517786",
       "slug": "ss-arcana-79517786",
-      "nameEn": "Arcana: 満足のいく食事",
+      "nameEn": "Arcana: A Satisfying Meal",
       "category": "SSR Arcana",
-      "subType": "保護 / 強靭度",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
       "tierRank": "B",
       "score": 7.9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "保護",
-        "BonusStat": "強靭度",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "ディフェンダーの強靭度が増加するスペシャル潜在力を所持 固有効果の解放に限界突破が必要な点には注意",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517786"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517786"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517762",
+      "externalId": "ss-arcana-79517762",
       "slug": "ss-arcana-79517762",
-      "nameEn": "Arcana: 天の試練",
+      "nameEn": "Arcana: Heavenly Ordeal",
       "category": "SSR Arcana",
-      "subType": "忍耐 / 防御力",
+      "subType": "Endurance (DEF) • DEF %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_ELF_SSR_01_icon_arcana.webp",
       "tierRank": "B",
       "score": 7.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "忍耐",
-        "BonusStat": "防御力",
-        "Class": "共用"
+        "AptitudeTag": "Endurance (DEF)",
+        "BonusStat": "DEF %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "忍耐、防御力補助と防御に特化した性能 └現状防御力を優先したいキャラは少ない",
+      "effectSummary": "Grants DEF % training bonus and unlocks Endurance (DEF) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517762"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517762"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517750",
+      "externalId": "ss-arcana-79517750",
       "slug": "ss-arcana-79517750",
-      "nameEn": "Arcana: 姫、王位に就く",
+      "nameEn": "Arcana: The Princess Ascends the Throne",
       "category": "SSR Arcana",
-      "subType": "体力 / 特殊効果",
+      "subType": "Vitality (HP) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
       "tierRank": "B",
       "score": 7.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "体力",
-        "BonusStat": "特殊効果",
-        "Class": "共用"
+        "AptitudeTag": "Vitality (HP)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "サポーターの回復量増加のスペシャル潜在力を所持 └サポーターと相性がいい体力タグなのも嬉しい",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517750"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517750"
     },
     {
-      "externalId": "appmedia-ss-arcana-79534220",
+      "externalId": "ss-arcana-79534220",
       "slug": "ss-arcana-79534220",
-      "nameEn": "Arcana: 大胆かつ凄いバニーガール",
+      "nameEn": "Arcana: Bold and Daring Bunny Girl",
       "category": "SSR Arcana",
-      "subType": "力 / 効果命中",
+      "subType": "Power (STR) • Effect Hit %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105829_y0pco.webp",
       "tierRank": "C",
       "score": 7.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "効果命中",
-        "Class": "救援者"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "Effect Hit %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "全体的に力を上げやすい性能のアルカナ 効果命中アシストながら攻撃系の潜在力を複数獲得できる",
+      "effectSummary": "Grants Effect Hit % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79534220"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79534220"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517792",
+      "externalId": "ss-arcana-79517792",
       "slug": "ss-arcana-79517792",
-      "nameEn": "Arcana: 誰よりもプロフェッショナル",
+      "nameEn": "Arcana: More Professional Than Anyone",
       "category": "SSR Arcana",
-      "subType": "体力 / 特殊効果",
+      "subType": "Vitality (HP) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp",
       "tierRank": "C",
       "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "体力",
-        "BonusStat": "特殊効果",
-        "Class": "共用"
+        "AptitudeTag": "Vitality (HP)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "サポーターのHP回復量増加のスペシャル潜在力を所持 回復量が最大HP依存のキャラが多い関係上、体力タグなのも優秀",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517792"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517792"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517780",
+      "externalId": "ss-arcana-79517780",
       "slug": "ss-arcana-79517780",
-      "nameEn": "Arcana: 真実はいつも一つでしょう？",
+      "nameEn": "Arcana: There Is Always Only One Truth",
       "category": "SSR Arcana",
-      "subType": "集中 / 攻撃力",
+      "subType": "Focus (Acc) • ATK %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_DETECTIVE_WATSON_SSR_01_icon_arcana.webp",
       "tierRank": "C",
       "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "集中",
-        "BonusStat": "攻撃力",
-        "Class": "共用"
+        "AptitudeTag": "Focus (Acc)",
+        "BonusStat": "ATK %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "体力が下回ると攻撃力アップのスペシャル潜在力 └HP調整を工夫する点あり",
+      "effectSummary": "Grants ATK % training bonus and unlocks Focus (Acc) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517780"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517780"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517777",
+      "externalId": "ss-arcana-79517777",
       "slug": "ss-arcana-79517777",
-      "nameEn": "Arcana: 天ぷら名人",
+      "nameEn": "Arcana: Tempura Master",
       "category": "SSR Arcana",
-      "subType": "保護 / 特殊効果",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_GADGET_SSR_01_icon_arcana.webp",
       "tierRank": "C",
       "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "保護",
-        "BonusStat": "特殊効果",
-        "Class": "救援者"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "ユニーク潜在力を獲得可能 └ターニャ専用",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517777"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517777"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517765",
+      "externalId": "ss-arcana-79517765",
       "slug": "ss-arcana-79517765",
-      "nameEn": "Arcana: 見えない場所",
+      "nameEn": "Arcana: Unseen Place",
       "category": "SSR Arcana",
-      "subType": "集中 / 特殊効果",
+      "subType": "Focus (Acc) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_BEAMSWORD_SSR_01_icon_arcana.webp",
       "tierRank": "C",
       "score": 7.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "集中",
-        "BonusStat": "特殊効果",
-        "Class": "共用"
+        "AptitudeTag": "Focus (Acc)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "体力を回復できるスペシャル潜在力を所持 └耐久が間に合わない場合の保険として優秀",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Focus (Acc) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517765"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517765"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517756",
+      "externalId": "ss-arcana-79517756",
       "slug": "ss-arcana-79517756",
-      "nameEn": "Arcana: 友達との散歩",
+      "nameEn": "Arcana: A Walk with Friends",
       "category": "SSR Arcana",
-      "subType": "力 / 会心率",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_DRUID_SSR_01_icon_arcana.webp",
       "tierRank": "C",
       "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "会心率",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "力タグ、会心率補助と優秀なセットを所持 ターン開始時発動の会心率バフを所持",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517756"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517756"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517747",
+      "externalId": "ss-arcana-79517747",
       "slug": "ss-arcana-79517747",
-      "nameEn": "Arcana: ガラス越しの夜景",
+      "nameEn": "Arcana: Night View Through Glass",
       "category": "SSR Arcana",
-      "subType": "保護 / 特殊効果",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01_icon_arcana.webp",
       "tierRank": "C",
       "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "保護",
-        "BonusStat": "特殊効果",
-        "Class": "救援者"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "ユニーク潜在力を持つアルカナ └カルメン専用",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517747"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517747"
     },
     {
-      "externalId": "appmedia-ss-arcana-79893874",
+      "externalId": "ss-arcana-79893874",
       "slug": "ss-arcana-79893874",
-      "nameEn": "Arcana: 禁断の記録物Vol.1",
+      "nameEn": "Arcana: Forbidden Archives Vol. 1",
       "category": "SSR Arcana",
-      "subType": "体力 / -",
+      "subType": "Vitality (HP) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/182813_7ue9j.webp",
       "tierRank": "C",
-      "score": 8.8,
+      "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "体力",
-        "BonusStat": "-",
-        "Class": "-"
+        "AptitudeTag": "Vitality (HP)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "配布で誰でもレベル50まで強化可能 SSRながらスペシャル潜在力は獲得できない",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79893874"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79893874"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517840",
+      "externalId": "ss-arcana-79517840",
       "slug": "ss-arcana-79517840",
-      "nameEn": "Arcana: ラビットタウン",
+      "nameEn": "Arcana: Rabbit Town",
       "category": "SSR Arcana",
-      "subType": "忍耐 / -",
+      "subType": "Endurance (DEF) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_WRENCH_SR_01_icon_arcana.webp",
       "tierRank": "C",
-      "score": 9,
+      "score": 7.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "忍耐",
-        "BonusStat": "-",
-        "Class": "-"
+        "AptitudeTag": "Endurance (DEF)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "潜在力で防御力を上げられる └コンディション回復との選択肢になるので状況に応じて選択",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Endurance (DEF) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517840"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517840"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517825",
+      "externalId": "ss-arcana-79517825",
       "slug": "ss-arcana-79517825",
-      "nameEn": "Arcana: 準備、照準、発射",
+      "nameEn": "Arcana: Ready, Aim, Fire",
       "category": "SSR Arcana",
-      "subType": "力 / -",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_SNIPER_SR_01_icon_arcana.webp",
       "tierRank": "C",
-      "score": 8.9,
+      "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "-",
-        "Class": "-"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "潜在力で速度を上げられる イベントでスタミナ15減少持ち",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517825"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517825"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517816",
+      "externalId": "ss-arcana-79517816",
       "slug": "ss-arcana-79517816",
-      "nameEn": "Arcana: 獲物選び",
+      "nameEn": "Arcana: Choosing the Prey",
       "category": "SSR Arcana",
-      "subType": "力 / -",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_STELLAR_THIEF_SR_01_icon_arcana.webp",
       "tierRank": "C",
-      "score": 8.8,
+      "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "-",
-        "Class": "-"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "攻撃力の潜在力を複数所持 └アタッカーと相性⚪︎",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517816"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517816"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517813",
+      "externalId": "ss-arcana-79517813",
       "slug": "ss-arcana-79517813",
-      "nameEn": "Arcana: 幻影の蝶",
+      "nameEn": "Arcana: Phantom Butterfly",
       "category": "SSR Arcana",
-      "subType": "体力 / -",
+      "subType": "Vitality (HP) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NIGHTMARE_REAPER_SR_01_icon_arcana.webp",
       "tierRank": "C",
-      "score": 8.8,
+      "score": 7.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "体力",
-        "BonusStat": "-",
-        "Class": "-"
+        "AptitudeTag": "Vitality (HP)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "潜在力でHPを上げられる イベントでスタミナ回復やコンディション上昇を所持",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517813"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517813"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517807",
+      "externalId": "ss-arcana-79517807",
       "slug": "ss-arcana-79517807",
-      "nameEn": "Arcana: 掃除、思いがけない客人",
+      "nameEn": "Arcana: Cleaning & An Unexpected Guest",
       "category": "SSR Arcana",
-      "subType": "力 / -",
+      "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SPEAR_SR_01_icon_arcana.webp",
       "tierRank": "C",
-      "score": 9,
+      "score": 7.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "-",
-        "Class": "-"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit DMG %",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "潜在力で会心率を上げられる └力タグで相性⚪︎",
+      "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517807"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517807"
     },
     {
-      "externalId": "appmedia-ss-arcana-80139832",
+      "externalId": "ss-arcana-80139832",
       "slug": "ss-arcana-80139832",
-      "nameEn": "Arcana: 花々に死を",
+      "nameEn": "Arcana: Death to the Flowers",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
       "tierRank": "SS",
       "score": 9.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80139832"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80139832"
     },
     {
-      "externalId": "appmedia-ss-arcana-80012824",
+      "externalId": "ss-arcana-80012824",
       "slug": "ss-arcana-80012824",
-      "nameEn": "Arcana: 弱点補完カスタム特訓",
+      "nameEn": "Arcana: Weakness-Covering Custom Special Training",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
       "tierRank": "SS",
       "score": 9.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80012824"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80012824"
     },
     {
-      "externalId": "appmedia-ss-arcana-79941760",
+      "externalId": "ss-arcana-79941760",
       "slug": "ss-arcana-79941760",
-      "nameEn": "Arcana: 白い月のぬくもりは陽光のように",
+      "nameEn": "Arcana: Warmth of the White Moon",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
       "tierRank": "SS",
       "score": 9.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79941760"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79941760"
     },
     {
-      "externalId": "appmedia-ss-arcana-79766540",
+      "externalId": "ss-arcana-79766540",
       "slug": "ss-arcana-79766540",
-      "nameEn": "Arcana: 不屈の傑作",
+      "nameEn": "Arcana: Indomitable Masterpiece",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
       "tierRank": "SS",
       "score": 9.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79766540"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79766540"
     },
     {
-      "externalId": "appmedia-ss-arcana-79534223",
+      "externalId": "ss-arcana-79534223",
       "slug": "ss-arcana-79534223",
-      "nameEn": "Arcana: 完璧なバニーガール",
+      "nameEn": "Arcana: The Perfect Bunny Girl",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
       "tierRank": "SS",
       "score": 9.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79534223"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79534223"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517771",
+      "externalId": "ss-arcana-79517771",
       "slug": "ss-arcana-79517771",
-      "nameEn": "Arcana: メイド・バイ・ペトラ♡",
+      "nameEn": "Arcana: Made by Petra",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_BOMB_SSR_01_icon_arcana.webp",
       "tierRank": "SS",
       "score": 9.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517771"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517771"
     },
     {
-      "externalId": "appmedia-ss-arcana-80482327",
+      "externalId": "ss-arcana-80482327",
       "slug": "ss-arcana-80482327",
-      "nameEn": "Arcana: これが…服？",
+      "nameEn": "Arcana: Is This... Clothing?",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/192925_u7brs.webp",
       "tierRank": "S",
       "score": 8.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80482327"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80482327"
     },
     {
-      "externalId": "appmedia-ss-arcana-80400913",
+      "externalId": "ss-arcana-80400913",
       "slug": "ss-arcana-80400913",
-      "nameEn": "Arcana: 享楽者の慰み",
+      "nameEn": "Arcana: Hedonist's Consolation",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/194438_w92ck.webp",
       "tierRank": "S",
       "score": 9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80400913"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80400913"
     },
     {
-      "externalId": "appmedia-ss-arcana-80363578",
+      "externalId": "ss-arcana-80363578",
       "slug": "ss-arcana-80363578",
-      "nameEn": "Arcana: 帰路なき旅程",
+      "nameEn": "Arcana: Journey of No Return",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
       "tierRank": "S",
       "score": 8.9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80363578"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80363578"
     },
     {
-      "externalId": "appmedia-ss-arcana-80283517",
+      "externalId": "ss-arcana-80283517",
       "slug": "ss-arcana-80283517",
-      "nameEn": "Arcana: バカンスの準備はお買い物から！",
+      "nameEn": "Arcana: Vacation Prep Starts with Shopping!",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/170418_4q5sx.webp",
       "tierRank": "S",
       "score": 8.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80283517"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80283517"
     },
     {
-      "externalId": "appmedia-ss-arcana-79865537",
+      "externalId": "ss-arcana-79865537",
       "slug": "ss-arcana-79865537",
-      "nameEn": "Arcana: 終末は少女の顔をしている",
+      "nameEn": "Arcana: The End Wears a Maiden's Face",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
       "tierRank": "S",
       "score": 8.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79865537"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79865537"
     },
     {
-      "externalId": "appmedia-ss-arcana-79606361",
+      "externalId": "ss-arcana-79606361",
       "slug": "ss-arcana-79606361",
-      "nameEn": "Arcana: ストラニス家の令嬢",
+      "nameEn": "Arcana: Daughter of House Stranis",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
       "tierRank": "S",
       "score": 9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79606361"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79606361"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517795",
+      "externalId": "ss-arcana-79517795",
       "slug": "ss-arcana-79517795",
-      "nameEn": "Arcana: 星を見ながら夢を",
+      "nameEn": "Arcana: Dreaming Under the Stars",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NOA_OBSERVER_SSR_01_icon_arcana.webp",
       "tierRank": "S",
       "score": 8.9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517795"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517795"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517783",
+      "externalId": "ss-arcana-79517783",
       "slug": "ss-arcana-79517783",
-      "nameEn": "Arcana: キラくらい可愛い！",
+      "nameEn": "Arcana: As Cute as Kira!",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_SSR_01_icon_arcana.webp",
       "tierRank": "S",
       "score": 8.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517783"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517783"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517774",
+      "externalId": "ss-arcana-79517774",
       "slug": "ss-arcana-79517774",
-      "nameEn": "Arcana: ノーペイン、ノーゲイン",
+      "nameEn": "Arcana: No Pain, No Gain",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_INDEPENDENT_DRAGON_SSR_01_icon_arcana.webp",
       "tierRank": "S",
       "score": 8.8,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517774"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517774"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517744",
+      "externalId": "ss-arcana-79517744",
       "slug": "ss-arcana-79517744",
-      "nameEn": "Arcana: ある騎士の誓い",
+      "nameEn": "Arcana: A Knight's Oath",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp",
       "tierRank": "S",
       "score": 9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517744"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517744"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517741",
+      "externalId": "ss-arcana-79517741",
       "slug": "ss-arcana-79517741",
-      "nameEn": "Arcana: 静かな休息時間",
+      "nameEn": "Arcana: Quiet Rest",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01_icon_arcana.webp",
       "tierRank": "S",
       "score": 8.9,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517741"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517741"
     },
     {
-      "externalId": "appmedia-ss-arcana-80521390",
+      "externalId": "ss-arcana-80521390",
       "slug": "ss-arcana-80521390",
-      "nameEn": "Arcana: 過酷な試練",
+      "nameEn": "Arcana: Harsh Trial",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80521390"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80521390"
     },
     {
-      "externalId": "appmedia-ss-arcana-80498278",
+      "externalId": "ss-arcana-80498278",
       "slug": "ss-arcana-80498278",
-      "nameEn": "Arcana: 睡魔のお出かけ",
+      "nameEn": "Arcana: Sandman's Outing",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/190614_vbrik.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80498278"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80498278"
     },
     {
-      "externalId": "appmedia-ss-arcana-80444335",
+      "externalId": "ss-arcana-80444335",
       "slug": "ss-arcana-80444335",
-      "nameEn": "Arcana: 自称ベテラン探偵の捜査法",
+      "nameEn": "Arcana: Veteran Detective's Investigation Method",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/170800_jb9o5.webp",
       "tierRank": "A",
       "score": 8.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80444335"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80444335"
     },
     {
-      "externalId": "appmedia-ss-arcana-80331877",
+      "externalId": "ss-arcana-80331877",
       "slug": "ss-arcana-80331877",
-      "nameEn": "Arcana: 永遠なる束縛の連鎖",
+      "nameEn": "Arcana: Chains of Eternal Bondage",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/08/193327_txw73.webp",
       "tierRank": "A",
       "score": 8.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80331877"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80331877"
     },
     {
-      "externalId": "appmedia-ss-arcana-80210542",
+      "externalId": "ss-arcana-80210542",
       "slug": "ss-arcana-80210542",
-      "nameEn": "Arcana: 光を追え！",
+      "nameEn": "Arcana: Chase the Light!",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170551_o4b9x.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80210542"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80210542"
     },
     {
-      "externalId": "appmedia-ss-arcana-80191501",
+      "externalId": "ss-arcana-80191501",
       "slug": "ss-arcana-80191501",
-      "nameEn": "Arcana: 服毒の覚悟",
+      "nameEn": "Arcana: Resolve to Drink Poison",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80191501"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80191501"
     },
     {
-      "externalId": "appmedia-ss-arcana-80077855",
+      "externalId": "ss-arcana-80077855",
       "slug": "ss-arcana-80077855",
-      "nameEn": "Arcana: 死が二人を分かつまで",
+      "nameEn": "Arcana: Till Death Do Us Part",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170751_oeb4y.webp",
       "tierRank": "A",
       "score": 8.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80077855"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80077855"
     },
     {
-      "externalId": "appmedia-ss-arcana-80041744",
+      "externalId": "ss-arcana-80041744",
       "slug": "ss-arcana-80041744",
-      "nameEn": "Arcana: 気怠い午後の隙間",
+      "nameEn": "Arcana: Languid Afternoon Interlude",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132533_e9xba.webp",
       "tierRank": "A",
       "score": 8.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/80041744"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80041744"
     },
     {
-      "externalId": "appmedia-ss-arcana-79983016",
+      "externalId": "ss-arcana-79983016",
       "slug": "ss-arcana-79983016",
-      "nameEn": "Arcana: 今日の一歩",
+      "nameEn": "Arcana: Today's First Step",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173815_r9imk.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79983016"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79983016"
     },
     {
-      "externalId": "appmedia-ss-arcana-79855463",
+      "externalId": "ss-arcana-79855463",
       "slug": "ss-arcana-79855463",
-      "nameEn": "Arcana: ノスタルジアの逆襲",
+      "nameEn": "Arcana: Counterattack of Nostalgia",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202110_u9dqe.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79855463"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79855463"
     },
     {
-      "externalId": "appmedia-ss-arcana-79808948",
+      "externalId": "ss-arcana-79808948",
       "slug": "ss-arcana-79808948",
-      "nameEn": "Arcana: 書類の山に積もる責任感",
+      "nameEn": "Arcana: Responsibility Piled in Paperwork",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201813_3r618.webp",
       "tierRank": "A",
       "score": 8.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79808948"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79808948"
     },
     {
-      "externalId": "appmedia-ss-arcana-79576397",
+      "externalId": "ss-arcana-79576397",
       "slug": "ss-arcana-79576397",
-      "nameEn": "Arcana: 虚数の開拓者",
+      "nameEn": "Arcana: Imaginary Pioneer",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
       "tierRank": "A",
       "score": 8.4,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79576397"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79576397"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517768",
+      "externalId": "ss-arcana-79517768",
       "slug": "ss-arcana-79517768",
-      "nameEn": "Arcana: ボーン・トゥ・ビー・ワイルド",
+      "nameEn": "Arcana: Born to Be Wild",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WILD_HOG_SSR_01_icon_arcana.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517768"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517768"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517759",
+      "externalId": "ss-arcana-79517759",
       "slug": "ss-arcana-79517759",
-      "nameEn": "Arcana: 天の審判",
+      "nameEn": "Arcana: Heavenly Judgment",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
       "tierRank": "A",
       "score": 8.3,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517759"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517759"
     },
     {
-      "externalId": "appmedia-ss-arcana-79517753",
+      "externalId": "ss-arcana-79517753",
       "slug": "ss-arcana-79517753",
-      "nameEn": "Arcana: 楼閣の上、ガラスの月を迎えて",
+      "nameEn": "Arcana: Atop the Pavilion, Greeting the Glass Moon",
       "category": "SSR Arcana",
-      "subType": "力 / 攻撃力 / クリティカル",
+      "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_SWORDMASTER_SSR_01_icon_arcana.webp",
       "tierRank": "A",
       "score": 8.5,
       "recommendedDupes": "LB1+",
       "stats": {
-        "Tag": "力",
-        "BonusStat": "攻撃力 / クリティカル",
-        "Class": "共用"
+        "AptitudeTag": "Power (STR)",
+        "BonusStat": "ATK % / Crit Rate",
+        "ClassRestriction": "Universal (All Classes)"
       },
-      "effectSummary": "Top-ranked SSR Arcana on the AppMedia Star Savior Strongest Arcana Tier List. Grants unique Gold Potential skills during Savior training runs.",
+      "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
         "ss-80218957"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517753"
+      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517753"
     }
   ],
   "bosses": [
     {
       "slug": "cosmo-gate-abyssal-sovereign",
       "nameEn": "Cosmo Gate Season Boss — Abyssal Sovereign",
-      "modeName": "Cosmo Gate (コスモゲート)",
+      "modeName": "Cosmo Gate",
       "difficultyLabel": "Stage 10 Extreme",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
       "hpStat": "48,000,000 HP",
       "shieldOrDpStat": "18 Toughness Gauge Bars",
       "weaknesses": [
-        "Moon (月属性) +30%",
-        "Star (星属性) +30%",
-        "Toughness Break"
+        "Moon (+30% DMG)",
+        "Star (+30% DMG)",
+        "Multi-Hit Toughness Break"
       ],
       "resistances": [
         "Chaos Resistance +40%",
@@ -6155,14 +6155,14 @@ export const starSaviorBundle: GameAdapterBundle = {
         },
         {
           "turnOrPhase": "Turns 4–6",
-          "attackName": "Broken Stun Vulnerability Window",
-          "damageType": "Stunned (+50% Damage Taken)",
-          "counterAction": "Unleash Bunny Frey and Harley EX Ultimates with Dana Crit DMG buffs."
+          "attackName": "Broken Vulnerability Window",
+          "damageType": "Staggered (+50% Damage Taken)",
+          "counterAction": "Unleash Frey (Bunny) and Harley EX Ultimates stacked with Dana Crit DMG buffs."
         }
       ],
       "strategySteps": [
         "Bring at least 2 dedicated Toughness Breakers (Lugh, Rosaria, or Roberta) to break the 18-bar gauge before Turn 4.",
-        "Save Bunny Frey EX Ultimate and Dana buffs for the 2-turn Broken window to maximize score."
+        "Save Frey (Bunny) EX Ultimate and Dana buffs for the 2-turn Broken window to maximize raid score."
       ],
       "recommendedUnitSlugs": [
         "ss-80384230",
@@ -6171,19 +6171,19 @@ export const starSaviorBundle: GameAdapterBundle = {
         "ss-80022340",
         "ss-79717421"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517270"
+      "sourceUrl": "https://meta.gg/star-savior/bosses/cosmo-gate-abyssal-sovereign"
     },
     {
       "slug": "void-singularity-stella-eater",
       "nameEn": "Void Singularity — Stella Eater",
-      "modeName": "Void Singularity (虚空特異点)",
-      "difficultyLabel": "Depth 15",
+      "modeName": "Void Singularity",
+      "difficultyLabel": "Depth 15 Endgame",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/143855_iv9nt.webp",
       "hpStat": "32,500,000 HP",
       "shieldOrDpStat": "14 Toughness Gauge Bars",
       "weaknesses": [
-        "Sun (太陽属性) +30%",
-        "Order (秩序属性) +30%"
+        "Sun (+30% DMG)",
+        "Order (+30% DMG)"
       ],
       "resistances": [
         "Moon Resistance +30%"
@@ -6192,13 +6192,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "turnOrPhase": "Turns 1–4",
           "attackName": "Starlight Corrosion",
-          "damageType": "AoE Burn + Speed Down",
+          "damageType": "AoE Burn + Action Speed Down",
           "counterAction": "Protect allies with Besta Barrier + Immunity and counter-break with Order/Sun Strikers."
         }
       ],
       "strategySteps": [
         "Deploy Besta or Lydia in the front row to absorb Starlight Corrosion and maintain team-wide Barrier.",
-        "Focus single-target Order/Sun burst during Toughness Break."
+        "Focus single-target Order and Sun burst skills during the Toughness Break window."
       ],
       "recommendedUnitSlugs": [
         "ss-80218957",
@@ -6207,18 +6207,18 @@ export const starSaviorBundle: GameAdapterBundle = {
         "ss-80482306",
         "ss-80331829"
       ],
-      "sourceUrl": "https://appmedia.jp/starsavior/79517270"
+      "sourceUrl": "https://meta.gg/star-savior/bosses/void-singularity-stella-eater"
     }
   ],
   "banners": [
     {
       "slug": "starsavior-bunny-frey-pickup",
-      "bannerTitle": "Pickup Gacha — Frey (Bunny Girl) & Bold Bunny Arcana",
+      "bannerTitle": "Limited Rate-Up — Frey (Bunny) & Indomitable Masterpiece Arcana",
       "bannerType": "LIMITED",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
       "featuredNames": [
-        "プロフェッサーM",
-        "アモラ"
+        "Professor M",
+        "Amora"
       ],
       "featuredUnitSlugs": [
         "ss-80384230",
@@ -6229,18 +6229,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2027-02-01",
       "estGlobalEndDate": "2027-02-22",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Ranked SSS Tier 0 on AppMedia JP (https://appmedia.jp/starsavior/79517270). Unmatched AoE Moon-element damage and self-buffing economy.",
+      "verdictReasoning": "SSS Tier 0 Striker with unmatched AoE Moon-element burst damage, self-crit buffing, and extra-turn Nova economy.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://appmedia.jp/starsavior/79517270"
+      "sourceUrl": "https://meta.gg/star-savior/banners/bunny-frey"
     },
     {
       "slug": "starsavior-lugh-besta-pickup",
-      "bannerTitle": "Order & Toughness Pickup — Lugh & Besta Dual Rate-Up",
+      "bannerTitle": "Order & Aegis Dual Rate-Up — Lugh & Besta",
       "bannerType": "FESTIVAL",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/143855_iv9nt.webp",
       "featuredNames": [
-        "アモラ",
-        "Smile (水着)"
+        "Amora",
+        "Smile (Swimsuit)"
       ],
       "featuredUnitSlugs": [
         "ss-80354674",
@@ -6251,18 +6251,18 @@ export const starSaviorBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2027-02-15",
       "estGlobalEndDate": "2027-03-05",
       "pullVerdict": "MUST_PULL",
-      "verdictReasoning": "Both Lugh and Besta sit at the top of AppMedia SSS Tier 0 as the premier Toughness Breaker and Defender.",
+      "verdictReasoning": "Both Lugh and Besta sit at the top of SSS Tier 0 as the premier Toughness Breaker and team-wide Barrier Defender.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://appmedia.jp/starsavior/79517270"
+      "sourceUrl": "https://meta.gg/star-savior/banners/lugh-besta"
     },
     {
       "slug": "starsavior-arcana-pickup",
-      "bannerTitle": "Strongest Arcana Pickup — Death to Flowers & Custom Training",
+      "bannerTitle": "SSR Arcana Rate-Up — Death to the Flowers & Custom Special Training",
       "bannerType": "SUPPORT_CARD",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp",
       "featuredNames": [
-        "Arcana: 夏の夜の空",
-        "Arcana: 歴戦の傭兵"
+        "Arcana: Summer Night Sky",
+        "Arcana: Battle-Hardened Mercenary"
       ],
       "featuredUnitSlugs": [
         "ss-80384230",
@@ -6273,9 +6273,9 @@ export const starSaviorBundle: GameAdapterBundle = {
       "estGlobalStartDate": "2027-02-10",
       "estGlobalEndDate": "2027-02-28",
       "pullVerdict": "HIGH_VALUE",
-      "verdictReasoning": "Top-ranked SS/SSS Arcanas on AppMedia (https://appmedia.jp/starsavior/79518101) providing massive Power and Crit training multipliers.",
+      "verdictReasoning": "Top-ranked SSS/SS Arcanas providing the highest Power (STR) and Critical Damage training multipliers in the game.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://appmedia.jp/starsavior/79518101"
+      "sourceUrl": "https://meta.gg/star-savior/banners/arcana-pickup"
     }
   ]
 };

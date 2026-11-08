@@ -19,8 +19,8 @@ export async function generateMetadata({
   if (!hub || !unit) return { title: 'Unit Not Found' };
 
   return {
-    title: `${unit.nameEn} ${unit.styleOrTitle} — Build, Multipliers & ${hub.asianRegion} Tier Evaluation (${hub.name})`,
-    description: `Verified ${unit.nameEn} (${unit.styleOrTitle}) skill multipliers, SP/Energy cost, recommended ${unit.recommendedDupes}, best weapons/cards, and ${unit.longevityMonths}-month ${hub.asianRegion} meta longevity in ${hub.name}.`,
+    title: `${unit.nameEn} ${unit.styleOrTitle} — Build, Multipliers & Tier Evaluation (${hub.name})`,
+    description: `Complete ${unit.nameEn} (${unit.styleOrTitle}) skill multipliers, SP/Energy cost, recommended ${unit.recommendedDupes}, best weapons/cards, and ${unit.longevityMonths}-month meta longevity in ${hub.name}.`,
   };
 }
 
@@ -149,7 +149,7 @@ export default async function UnitDetailPage({
                   borderBottom: '1px solid var(--border-subtle)',
                 }}
               >
-                Future Banners &amp; Pull Calc
+                Upcoming Banners &amp; Pull Calc
               </Link>
               <Link
                 href={`/${hub.slug}?tab=compare`}
@@ -241,7 +241,7 @@ export default async function UnitDetailPage({
                       {unit.nameEn} — {unit.styleOrTitle}
                     </h1>
                     <div style={{ fontSize: '11.5px', color: 'var(--text-muted)', fontWeight: 700 }}>
-                      Original Name: {unit.nameOriginal} • Rarity: {unit.rarity}
+                      Character: {unit.nameOriginal} • Rarity: {unit.rarity}
                     </div>
                   </div>
                   <span
@@ -309,7 +309,7 @@ export default async function UnitDetailPage({
                       borderRadius: '2px',
                     }}
                   >
-                    {hub.asianRegion} Meta Longevity: {unit.longevityMonths} Months
+                    Meta Longevity: {unit.longevityMonths} Months
                   </span>
                 </div>
               </div>
@@ -333,7 +333,7 @@ export default async function UnitDetailPage({
                   marginBottom: '10px',
                 }}
               >
-                VERIFIED MAX-LEVEL STATS &amp; PERFORMANCE METRICS
+                MAX-LEVEL STATS &amp; PERFORMANCE METRICS
               </h2>
 
               <div
@@ -372,7 +372,7 @@ export default async function UnitDetailPage({
               </div>
             </section>
 
-            {/* VERIFIED SKILLS, MULTIPLIERS & SP/ENERGY COSTS */}
+            {/* SKILLS, MULTIPLIERS & SP/ENERGY COSTS */}
             <section
               style={{
                 background: 'var(--bg-surface)',
@@ -392,7 +392,7 @@ export default async function UnitDetailPage({
                   paddingLeft: '8px',
                 }}
               >
-                VERIFIED SKILL MULTIPLIERS &amp; EXACT MECHANICS
+                SKILL MULTIPLIERS &amp; COMBAT MECHANICS
               </h2>
 
               {unit.skills.map((sk) => (
@@ -463,7 +463,7 @@ export default async function UnitDetailPage({
                   <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
                     <th style={{ padding: '6px 10px', textAlign: 'left', width: '110px' }}>RANK</th>
                     <th style={{ padding: '6px 10px', textAlign: 'left', width: '190px' }}>PASSIVE NAME</th>
-                    <th style={{ padding: '6px 10px', textAlign: 'left' }}>VERIFIED EFFECT</th>
+                    <th style={{ padding: '6px 10px', textAlign: 'left' }}>EFFECT</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -573,7 +573,7 @@ export default async function UnitDetailPage({
                   <div key={bn.slug} style={{ fontSize: '11.5px' }}>
                     <div style={{ fontWeight: 800 }}>{bn.bannerTitle}</div>
                     <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-muted)', marginTop: '2px' }}>
-                      Est. Global: {bn.estGlobalStartDate} ({bn.pityCurrencyCost.toLocaleString()} {hub.currencyName})
+                      Release: {bn.estGlobalStartDate} ({bn.pityCurrencyCost.toLocaleString()} {hub.currencyName})
                     </div>
                   </div>
                 ))}
