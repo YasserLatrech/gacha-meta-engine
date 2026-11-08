@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getGameAppIconUrl } from '../domain/constants/game-visuals';
+import { GachaCrestWordmark } from './GachaCrestLogo';
 
 interface SiteHeaderProps {
   activeGameSlug?: string;
@@ -60,45 +61,9 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '10px',
-              fontWeight: 900,
-              fontSize: '15.5px',
             }}
           >
-            <img
-              src="/gachacrest-logo.jpg"
-              alt="GachaCrest Logo"
-              width={38}
-              height={38}
-              style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '7px',
-                objectFit: 'cover',
-                border: '1.5px solid #F59E0B',
-                boxShadow: '0 2px 8px rgba(200, 30, 30, 0.28)',
-              }}
-            />
-            <span
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                background: '#141413',
-                color: '#FFFFFF',
-                padding: '4px 9px',
-                borderRadius: '5px',
-                fontSize: '13px',
-                letterSpacing: '0.05em',
-                border: '1px solid #C81E1E',
-                gap: '2px',
-              }}
-            >
-              <span>GACHA</span>
-              <span style={{ color: '#FBBF24' }}>CREST</span>
-            </span>
-            <span style={{ fontSize: '14.5px', fontWeight: 900 }}>
-              Tier Lists, Builds &amp; Pull Codex
-            </span>
+            <GachaCrestWordmark showSubtitle={!activeGameSlug} />
           </Link>
 
           {activeGameSlug && activeGameName && (
