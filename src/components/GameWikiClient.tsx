@@ -382,9 +382,16 @@ export function GameWikiClient({
       unitA.baseStats,
       unitB.baseStats,
       unitA.longevityMonths,
-      unitB.longevityMonths
+      unitB.longevityMonths,
+      {
+        hpLabel: statConfig.hpOrStamina.label,
+        dpLabel: statConfig.dpOrSpeed.label,
+        atkLabel: statConfig.atkOrPower.label,
+        defLabel: statConfig.defOrGuts.label,
+        critLabel: statConfig.critOrWit.label,
+      }
     );
-  }, [unitA, unitB]);
+  }, [unitA, unitB, statConfig]);
 
   const combatResult = useMemo(() => {
     return evaluateCombatMultiplier({
@@ -1294,7 +1301,7 @@ export function GameWikiClient({
                         height={22}
                         style={{ width: '22px', height: '22px', borderRadius: '4px', objectFit: 'cover' }}
                       />
-                      <span>All Elements ({hub.units.length})</span>
+                      <span>{statConfig.filterAllLabel} ({hub.units.length})</span>
                     </button>
                     {hub.elementsConfig.map((el) => {
                       const elIcon = getElementIconUrl(hub.slug, el.key, hub.units);
@@ -1624,7 +1631,7 @@ export function GameWikiClient({
                         : 'SWEET-SPOT INVESTMENT (LB1 / 3★)'}
                   </span>
                   <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                    Showing {filteredUnits.length} Characters • Click &ldquo;⚡ Inspect&rdquo; or Portrait
+                    Showing {filteredUnits.length} Characters • Click &ldquo;+ Box&rdquo; to Track Owned or &ldquo;⚡ Inspect&rdquo; for Quick Build
                   </span>
                 </div>
 
@@ -1882,26 +1889,47 @@ export function GameWikiClient({
                                             {microTag}
                                           </span>
                                         )}
-                                        <button
-                                          type="button"
-                                          onClick={() =>
-                                            setQuickPeekSlug((prev) => (prev === u.slug ? null : u.slug))
-                                          }
-                                          className="mono"
-                                          style={{
-                                            fontSize: '8.5px',
-                                            fontWeight: 900,
-                                            padding: '2px 5px',
-                                            borderRadius: '3px',
-                                            border: '1px solid var(--border-main)',
-                                            background:
-                                              quickPeekSlug === u.slug ? 'var(--accent-primary)' : 'var(--bg-surface)',
-                                            color: quickPeekSlug === u.slug ? '#FFF' : 'var(--accent-primary)',
-                                            cursor: 'pointer',
-                                          }}
-                                        >
-                                          ⚡ Inspect
-                                        </button>
+                                        <div style={{ display: 'flex', gap: '3px', alignItems: 'center' }}>
+                                          <button
+                                            type="button"
+                                            onClick={() => toggleOwnedUnit(u.slug)}
+                                            className="mono"
+                                            title="Add or remove character in My Roster Box"
+                                            style={{
+                                              fontSize: '8px',
+                                              fontWeight: 900,
+                                              padding: '2px 4px',
+                                              borderRadius: '3px',
+                                              border: ownedDupe ? '1px solid #15803D' : '1px solid var(--border-main)',
+                                              background: ownedDupe ? '#DCFCE7' : 'var(--bg-surface)',
+                                              color: ownedDupe ? '#15803D' : 'var(--text-secondary)',
+                                              cursor: 'pointer',
+                                            }}
+                                          >
+                                            {ownedDupe ? `✓ ${ownedDupe}` : '+ Box'}
+                                          </button>
+                                          <button
+                                            type="button"
+                                            onClick={() =>
+                                              setQuickPeekSlug((prev) => (prev === u.slug ? null : u.slug))
+                                            }
+                                            className="mono"
+                                            title="Open Quick Build & Skill Tree Inspector"
+                                            style={{
+                                              fontSize: '8px',
+                                              fontWeight: 900,
+                                              padding: '2px 4px',
+                                              borderRadius: '3px',
+                                              border: '1px solid var(--border-main)',
+                                              background:
+                                                quickPeekSlug === u.slug ? 'var(--accent-primary)' : 'var(--bg-surface)',
+                                              color: quickPeekSlug === u.slug ? '#FFF' : 'var(--accent-primary)',
+                                              cursor: 'pointer',
+                                            }}
+                                          >
+                                            ⚡ Build
+                                          </button>
+                                        </div>
                                       </div>
                                     );
                                   })}
@@ -3388,9 +3416,11 @@ export function GameWikiClient({
                             fontWeight: 700,
                           }}
                         >
-                          Debut Date: {bn.asianStartDate} | Target Banner Window:{' '}
-                          <strong style={{ color: 'var(--text-main)' }}>{bn.estGlobalStartDate}</strong> (~
-                          {daysFromNow}d) • Pity Cost: {bn.pityCurrencyCost.toLocaleString()} {hub.currencyName}
+                          Banner Schedule:{' '}
+                          <strong style={{ color: 'var(--text-main)' }}>
+                            {bn.estGlobalStartDate} &ndash; {bn.estGlobalEndDate}
+                          </strong>{' '}
+                          (Starts in ~{daysFromNow}d) • Spark Pity: {bn.pityCurrencyCost.toLocaleString()} {hub.currencyName}
                         </div>
 
                         {/* INTERACTIVE BANNER PULL PLAN TOGGLE (DEDUCTS FROM SUBSEQUENT BANNERS) */}
@@ -4152,7 +4182,9 @@ export function GameWikiClient({
                 }}
               >
                 <span>
-                  ACTIVE SQUAD ({activeSquadUnits.length}/{statConfig.squadSize} SLOTS)
+                  {ownedCount === 0
+                    ? `META EXAMPLE TEAM (${activeSquadUnits.length}/${statConfig.squadSize})`
+                    : `MY ACTIVE SQUAD (${activeSquadUnits.length}/${statConfig.squadSize})`}
                 </span>
                 <span
                   className="mono"
