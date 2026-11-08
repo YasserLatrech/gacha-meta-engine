@@ -9,7 +9,7 @@ export interface PullSavingsInput {
   hasMonthlyPass: boolean;
   singlePullCost: number;
   pitySparkPulls: number;
-  featuredRatePerPull: number; // e.g., 0.0075 (0.75% rate-up)
+  featuredRatePerPull: number;
 }
 
 export interface PullSavingsResult {
@@ -77,12 +77,12 @@ export interface CombatSimulationResult {
 }
 
 /**
- * Evaluates exact Asian-server buff-stacking rules (up to 2 active buffs per category cap):
+ * Evaluates exact buff-stacking rules (up to 2 active buffs per category cap):
  * Final DMG = BasePotency * SkillATK * CritMult * FieldZone * DefDown * WeaknessFragile * MindEye * MultiHit
  */
 export function evaluateCombatMultiplier(input: CombatSimulationInput): CombatSimulationResult {
   const totalSkillAtkMult = 1 + (input.skillAtkBuff1Pct + input.skillAtkBuff2Pct) / 100;
-  const baseCritBonus = 0.50; // Base +50% Crit Damage on critical strike
+  const baseCritBonus = 0.50;
   const totalCritMult = 1 + baseCritBonus + (input.critDmgBuff1Pct + input.critDmgBuff2Pct) / 100;
   const totalFieldMult = 1 + input.elementalFieldZonePct / 100;
   const totalDefDownMult = 1 + (input.defDown1Pct + input.defDown2Pct) / 100;
@@ -124,7 +124,19 @@ export interface StatComparisonMetric {
   winner: 'A' | 'B' | 'TIE';
 }
 
-export function compareUnitStats(statsA: UnitBaseStats, statsB: UnitBaseStats, longevityA: number, longevityB: number): StatComparisonMetric[] {
+export function compareUnitStats(
+  statsA: UnitBaseStats,
+  statsB: UnitBaseStats,
+  longevityA: number,
+  longevityB: number,
+  statLabels?: {
+    hpLabel: string;
+    dpLabel: string;
+    atkLabel: string;
+    defLabel: string;
+    critLabel: string;
+  }
+): StatComparisonMetric[] {
   const buildRow = (label: string, a: number, b: number, maxRef: number): StatComparisonMetric => {
     const unitAPct = Math.min(100, Math.round((a / maxRef) * 100));
     const unitBPct = Math.min(100, Math.round((b / maxRef) * 100));
@@ -133,15 +145,15 @@ export function compareUnitStats(statsA: UnitBaseStats, statsB: UnitBaseStats, l
   };
 
   return [
-    buildRow('HP / Endurance Pool', statsA.hpOrStamina, statsB.hpOrStamina, Math.max(statsA.hpOrStamina, statsB.hpOrStamina, 1)),
-    buildRow('DP / Speed Rating', statsA.dpOrSpeed, statsB.dpOrSpeed, Math.max(statsA.dpOrSpeed, statsB.dpOrSpeed, 1)),
-    buildRow('ATK / Power Stat', statsA.atkOrPower, statsB.atkOrPower, Math.max(statsA.atkOrPower, statsB.atkOrPower, 1)),
-    buildRow('DEF / Guts Stat', statsA.defOrGuts, statsB.defOrGuts, Math.max(statsA.defOrGuts, statsB.defOrGuts, 1)),
-    buildRow('Crit / Wit Stat', statsA.critOrWit, statsB.critOrWit, Math.max(statsA.critOrWit, statsB.critOrWit, 1)),
+    buildRow(statLabels?.hpLabel || 'Max HP / Stamina', statsA.hpOrStamina, statsB.hpOrStamina, Math.max(statsA.hpOrStamina, statsB.hpOrStamina, 1)),
+    buildRow(statLabels?.dpLabel || 'SPD / Turn Rating', statsA.dpOrSpeed, statsB.dpOrSpeed, Math.max(statsA.dpOrSpeed, statsB.dpOrSpeed, 1)),
+    buildRow(statLabels?.atkLabel || 'ATK / Power Stat', statsA.atkOrPower, statsB.atkOrPower, Math.max(statsA.atkOrPower, statsB.atkOrPower, 1)),
+    buildRow(statLabels?.defLabel || 'DEF / Toughness', statsA.defOrGuts, statsB.defOrGuts, Math.max(statsA.defOrGuts, statsB.defOrGuts, 1)),
+    buildRow(statLabels?.critLabel || 'Crit / Wisdom', statsA.critOrWit, statsB.critOrWit, Math.max(statsA.critOrWit, statsB.critOrWit, 1)),
     buildRow('Burst DPS Ceiling (0-100)', statsA.burstCeilingScore, statsB.burstCeilingScore, 100),
     buildRow('Buff / Support Amplification', statsA.bufferCeilingScore, statsB.bufferCeilingScore, 100),
     buildRow('Sustain / Survival Score', statsA.sustainScore, statsB.sustainScore, 100),
     buildRow('SP / Energy Efficiency', statsA.spEfficiencyScore, statsB.spEfficiencyScore, 100),
-    buildRow('Asian Server Meta Longevity (Months)', longevityA, longevityB, 36),
+    buildRow('Endgame Meta Longevity (Months)', longevityA, longevityB, 36),
   ];
 }

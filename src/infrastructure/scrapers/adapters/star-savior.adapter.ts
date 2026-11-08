@@ -6203,7 +6203,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "nameEn": "Cosmo Gate Season Boss — Abyssal Sovereign",
       "modeName": "Cosmo Gate",
       "difficultyLabel": "Stage 10 Extreme",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
+      "imageUrl": "/boss-starsavior-void.jpg",
       "hpStat": "48,000,000 HP",
       "shieldOrDpStat": "18 Toughness Gauge Bars",
       "weaknesses": [
@@ -6235,10 +6235,10 @@ export const starSaviorBundle: GameAdapterBundle = {
       ],
       "recommendedUnitSlugs": [
         "ss-80384230",
-        "ss-80354674",
         "ss-80218957",
         "ss-80022340",
-        "ss-79717421"
+        "ss-79924504",
+        "ss-79677914"
       ],
       "sourceUrl": "https://gachacrest.gg/star-savior/bosses/cosmo-gate-abyssal-sovereign"
     },
@@ -6247,7 +6247,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "nameEn": "Void Singularity — Stella Eater",
       "modeName": "Void Singularity",
       "difficultyLabel": "Depth 15 Endgame",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
+      "imageUrl": "/boss-starsavior-void.jpg",
       "hpStat": "32,500,000 HP",
       "shieldOrDpStat": "14 Toughness Gauge Bars",
       "weaknesses": [
@@ -6270,11 +6270,11 @@ export const starSaviorBundle: GameAdapterBundle = {
         "Focus single-target Order and Sun burst skills during the Toughness Break window."
       ],
       "recommendedUnitSlugs": [
-        "ss-80218957",
-        "ss-80022340",
         "ss-79717421",
+        "ss-80354674",
         "ss-80482306",
-        "ss-80331829"
+        "ss-80331829",
+        "ss-79606358"
       ],
       "sourceUrl": "https://gachacrest.gg/star-savior/bosses/void-singularity-stella-eater"
     }

@@ -437,7 +437,7 @@ export default async function UnitDetailPage({
                       height={20}
                       style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
                     />
-                    Element / Type: {unit.element} ({unit.attackType})
+                    {getGameStatLabels(hub.slug).elementTypeBadgeLabel}: {unit.element} ({unit.attackType})
                   </span>
                   <span
                     style={{

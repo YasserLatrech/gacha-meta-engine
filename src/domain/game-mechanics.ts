@@ -16,6 +16,8 @@ export interface GameStatLabelConfig {
   critOrWit: { label: string; short: string; desc: string };
   dupeSystemName: string;
   squadSize: number;
+  filterAllLabel: string;
+  elementTypeBadgeLabel: string;
   dupeLabels: Record<DupeLevel, string>;
 }
 
@@ -27,9 +29,11 @@ export function getGameStatLabels(gameSlug: string): GameStatLabelConfig {
         dpOrSpeed: { label: 'STR / DEX', short: 'STR/DEX', desc: 'Primary offensive scaling for HP & DP multipliers' },
         atkOrPower: { label: 'VIT / SPR', short: 'VIT/SPR', desc: 'Defensive mitigation against Slash/Pierce/Crush' },
         defOrGuts: { label: 'INT (Potency)', short: 'INT', desc: 'Scales Skill ATK buff, heal, and debuff potency' },
-        critOrWit: { label: 'LUK (Crit/Debuff)', short: 'LUK', desc: 'governs Critical Hit rate and status accuracy' },
+        critOrWit: { label: 'LUK (Crit/Debuff)', short: 'LUK', desc: 'Governs Critical Hit rate and status accuracy' },
         dupeSystemName: 'Limit Break (LB0–LB4)',
         squadSize: 6,
+        filterAllLabel: 'All Elements',
+        elementTypeBadgeLabel: 'Element & Attack Type',
         dupeLabels: {
           LB0: 'LB0 (Base)',
           LB1: 'LB1 (+1 SP Vanguard)',
@@ -47,6 +51,8 @@ export function getGameStatLabels(gameSlug: string): GameStatLabelConfig {
         critOrWit: { label: 'Wisdom (Wit)', short: 'WIT', desc: 'Skill activation rate, positioning, and downhill speed' },
         dupeSystemName: 'Star / Limit Break (0LB–MLB)',
         squadSize: 6,
+        filterAllLabel: 'All Track Distances',
+        elementTypeBadgeLabel: 'Best Distance & Style',
         dupeLabels: {
           LB0: '3★ / 0LB (Base)',
           LB1: '1LB (Unlock Bonus)',
@@ -64,6 +70,8 @@ export function getGameStatLabels(gameSlug: string): GameStatLabelConfig {
         critOrWit: { label: 'MDEF / Crit', short: 'MDEF', desc: 'Magical defense and critical strike scaling' },
         dupeSystemName: 'Trait Awakening (1★–5★)',
         squadSize: 5,
+        filterAllLabel: 'All Tactical Classes',
+        elementTypeBadgeLabel: 'Tactical Class & DMG',
         dupeLabels: {
           LB0: '1★ (Base Pull)',
           LB1: '2★ (Stat Boost)',
@@ -81,6 +89,8 @@ export function getGameStatLabels(gameSlug: string): GameStatLabelConfig {
         critOrWit: { label: 'Crit DMG %', short: 'CDMG', desc: 'Critical hit damage amplification' },
         dupeSystemName: 'Star Resonance (S0–S5)',
         squadSize: 5,
+        filterAllLabel: 'All Astral Attributes',
+        elementTypeBadgeLabel: 'Astral Attribute & Type',
         dupeLabels: {
           LB0: 'S0 (Base)',
           LB1: 'S1 (Core Passive)',
@@ -181,43 +191,76 @@ export function computeInvestmentTier(
 export function getUnitMicroTags(gameSlug: string, unit: GameHubUnitDTO): string[] {
   const tags: string[] = [];
   if (gameSlug === 'heaven-burns-red') {
-    if (unit.role.includes('Admiral') || unit.role.includes('Buffer')) {
-      tags.push(`${unit.element === 'None' ? 'Crit' : unit.element} Zone/Buff`);
+    if (unit.role.includes('Admiral')) {
+      tags.push(`${unit.element === 'None' ? 'Crit' : unit.element} Zone & Aura`);
       tags.push('SP / Mind Eye');
+    } else if (unit.role.includes('Buffer')) {
+      tags.push(`${unit.element === 'None' ? 'Skill' : unit.element} ATK +85%`);
+      tags.push('Crit DMG Up');
     } else if (unit.role.includes('Blaster')) {
       tags.push('Destruction 600%');
       tags.push('Multi-Hit OD');
     } else if (unit.role.includes('Breaker')) {
-      tags.push('Anti-DP Nuke');
+      tags.push('DP Shield Break');
       tags.push(`${unit.element} Break`);
     } else if (unit.role.includes('Debuffer')) {
-      tags.push('DEF Down 45%');
-      tags.push('Fragile 50%');
-    } else if (unit.role.includes('Healer') || unit.role.includes('Defender')) {
-      tags.push('DP Revive/Heal');
-      tags.push('Vanguard Guard');
+      tags.push('DEF Down / Fragile');
+      tags.push('Weakness +50%');
+    } else if (unit.role.includes('Defender')) {
+      tags.push('AoE Provoke Tank');
+      tags.push('DMG Cut -40%');
+    } else if (unit.role.includes('Healer')) {
+      tags.push('DP Revive & Heal');
+      tags.push('Vanguard Sustain');
+    } else if (unit.role.includes('Rider')) {
+      tags.push('Multi-Target HP');
+      tags.push(`${unit.element} Sweep`);
     } else {
-      tags.push('HP +50% EX');
+      tags.push('HP +50% Finisher');
       tags.push(`${unit.element} Carry`);
     }
   } else if (gameSlug === 'uma-musume') {
-    tags.push(unit.element);
-    if (unit.tiers.overallAsian.roleColumn === 'DPS') tags.push('Final Leg Accel');
-    else if (unit.tiers.overallAsian.roleColumn === 'SUB_DPS') tags.push('Mid-Race Speed');
-    else if (unit.tiers.overallAsian.roleColumn === 'SUPPORT') tags.push('Inherit / Gold');
-    else tags.push('Stamina Recovery');
+    if (unit.tiers.overallAsian.roleColumn === 'DPS') {
+      tags.push('Front Escape Lead');
+      tags.push('Early-Leg Speed');
+    } else if (unit.tiers.overallAsian.roleColumn === 'SUB_DPS') {
+      tags.push('Pace Spurt Carry');
+      tags.push('Mid-Race Velocity');
+    } else if (unit.tiers.overallAsian.roleColumn === 'SUPPORT') {
+      tags.push('Final Corner Accel');
+      tags.push('Overtake Unique');
+    } else {
+      tags.push('Straightaway Spurt');
+      tags.push('End-Closer Nuke');
+    }
   } else if (gameSlug === 'sword-of-convallaria') {
-    tags.push(unit.element);
-    if (unit.tiers.overallAsian.roleColumn === 'DPS') tags.push('Burst Carry');
-    else if (unit.tiers.overallAsian.roleColumn === 'SUB_DPS') tags.push('Shield Break');
-    else if (unit.tiers.overallAsian.roleColumn === 'SUPPORT') tags.push('Aura / NRG +2');
-    else tags.push('Cover / Dispel');
+    if (unit.tiers.overallAsian.roleColumn === 'DPS') {
+      tags.push(unit.attackType === 'Magical' || unit.element === 'Destroyer' ? 'AoE Magic Carry' : 'Burst Strike Carry');
+      tags.push('Crit / Armor Pierce');
+    } else if (unit.tiers.overallAsian.roleColumn === 'SUB_DPS') {
+      tags.push('Backline Flanker');
+      tags.push('Shield Breaker');
+    } else if (unit.tiers.overallAsian.roleColumn === 'SUPPORT') {
+      tags.push('Act Again & NRG +2');
+      tags.push('Faction Aura');
+    } else {
+      tags.push('Vanguard Cover Tank');
+      tags.push('Team Dispel & Heal');
+    }
   } else {
-    tags.push(unit.element);
-    if (unit.tiers.overallAsian.roleColumn === 'DPS') tags.push('Overdrive Nuke');
-    else if (unit.tiers.overallAsian.roleColumn === 'SUB_DPS') tags.push('Break Gauge');
-    else if (unit.tiers.overallAsian.roleColumn === 'SUPPORT') tags.push('Action Advance');
-    else tags.push('Team Barrier');
+    if (unit.tiers.overallAsian.roleColumn === 'DPS') {
+      tags.push('Overdrive Burst');
+      tags.push('Crit Finisher');
+    } else if (unit.tiers.overallAsian.roleColumn === 'SUB_DPS') {
+      tags.push('Toughness Breaker');
+      tags.push('Multi-Hit Shred');
+    } else if (unit.tiers.overallAsian.roleColumn === 'SUPPORT') {
+      tags.push('Action Advance');
+      tags.push('Team Crit Buff');
+    } else {
+      tags.push('Team Barrier');
+      tags.push('Taunt Sustain');
+    }
   }
   return tags.slice(0, 2);
 }
@@ -393,7 +436,7 @@ export function getUnitDeepBuildGuide(gameSlug: string, unit: GameHubUnitDTO): U
           { label: 'Chaser (End)', grade: isChaser ? 'A' : isBetweener ? 'B' : 'G' },
         ],
       },
-      umaStatGrowth: isShort || isMile ? '+20% Speed / +10% Power' : isLong ? '+15% Speed / +15% Stamina' : '+15% Speed / +15% Wisdom',
+      umaStatGrowth: unit.passives[0]?.name || (isShort || isMile ? '+20% Speed / +10% Power Growth' : isLong ? '+15% Speed / +15% Stamina Growth' : '+15% Speed / +15% Wisdom Growth'),
       umaTargetStats:
         isLong
           ? '1700 SPD • 1250 STA (+1 Gold Recovery) • 1200 POW • 650 GUT • 1200 WIT'
@@ -758,9 +801,23 @@ export function autoBuildOptimalSquad(
   const chosen: GameHubUnitDTO[] = [];
   const pickRole = (roleCol: string, preferElem: boolean) => {
     if (chosen.length >= maxSlots) return;
-    let found = preferElem && targetElem
-      ? sorted.find((u) => u.tiers.overallAsian.roleColumn === roleCol && u.element === targetElem && !chosen.some((c) => c.slug === u.slug))
-      : undefined;
+    let found: GameHubUnitDTO | undefined;
+    if (gameSlug === 'sword-of-convallaria') {
+      // Prefer class diversity (Watcher, Destroyer, Seeker, Breaker, Defender) for Role Triangle Coverage
+      found = sorted.find(
+        (u) =>
+          u.tiers.overallAsian.roleColumn === roleCol &&
+          !chosen.some((c) => c.slug === u.slug) &&
+          !chosen.some((c) => c.element === u.element)
+      );
+    } else if (preferElem && targetElem) {
+      found = sorted.find(
+        (u) =>
+          u.tiers.overallAsian.roleColumn === roleCol &&
+          u.element === targetElem &&
+          !chosen.some((c) => c.slug === u.slug)
+      );
+    }
     if (!found) {
       found = sorted.find((u) => u.tiers.overallAsian.roleColumn === roleCol && !chosen.some((c) => c.slug === u.slug));
     }

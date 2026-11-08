@@ -10078,11 +10078,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
         "Hit 1,700+ Speed, 1,150+ Stamina, 1,250+ Power, 1,100+ Guts, and 1,250+ Wit using 2 Speed + 1 Stamina + 1 Power + 1 Wit + 1 Friend deck."
       ],
       "recommendedUnitSlugs": [
-        "uma-818827",
         "uma-811061",
-        "uma-794061",
-        "uma-785654",
-        "uma-780423"
+        "uma-755849",
+        "uma-780423",
+        "uma-712500",
+        "uma-697314"
       ],
       "sourceUrl": "https://gachacrest.gg/uma-musume/events/champions-meet-tokyo-2400m"
     },
@@ -10114,11 +10114,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
         "Inherit Long S Aptitude and Angling & Scheming / Monster for guaranteed late-race breakaway."
       ],
       "recommendedUnitSlugs": [
+        "uma-818827",
+        "uma-794061",
         "uma-785654",
-        "uma-780423",
-        "uma-775196",
-        "uma-755849",
-        "uma-758981"
+        "uma-708453",
+        "uma-641198"
       ],
       "sourceUrl": "https://gachacrest.gg/uma-musume/events/league-of-heroes-kyoto-3000m"
     }

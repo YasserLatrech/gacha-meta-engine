@@ -1,17 +1,17 @@
 import {
+  RoleColumnConfig,
+  ElementConfig,
   VerifiedUnitPayload,
   VerifiedEquipmentPayload,
   VerifiedBossPayload,
   VerifiedBannerPayload,
-  RoleColumnConfig,
-  ElementConfig,
 } from '../../../domain/schemas';
 
 export interface GameAdapterBundle {
   slug: string;
   name: string;
   shortName: string;
-  asianRegion: 'EN' | 'JP' | 'CN' | 'KR' | 'TW';
+  asianRegion: string;
   asianPatchVersion: string;
   globalPatchVersion: string;
   foresightGapMonths: number;
@@ -21,9 +21,9 @@ export interface GameAdapterBundle {
   pityThreshold: number;
   monthlyF2pIncome: number;
   monthlyPassIncome: number;
+  sourceUrl: string;
   rolesConfig: RoleColumnConfig[];
   elementsConfig: ElementConfig[];
-  sourceUrl: string;
   units: VerifiedUnitPayload[];
   equipments: VerifiedEquipmentPayload[];
   bosses: VerifiedBossPayload[];
@@ -10805,7 +10805,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Score Attack #65 — Red Crimson (Grade 140 / Intensity 35)",
       "modeName": "Score Attack",
       "difficultyLabel": "Grade 140 Max Intensity",
-      "imageUrl": "https://img.game8.jp/11992098/e661e00d9a8a130bb31ec2388d29af46.webp/original",
+      "imageUrl": "/boss-hbr-cancer.jpg",
       "hpStat": "38,000,000 HP",
       "shieldOrDpStat": "2,450,000 DP (x2 Bars)",
       "weaknesses": [
@@ -10836,11 +10836,11 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "Break DP with an AoE Blaster before unleashing your Rider/Attacker EX skill."
       ],
       "recommendedUnitSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179",
         "hbr-759416",
-        "hbr-752169"
+        "hbr-752168",
+        "hbr-825787",
+        "hbr-803496",
+        "hbr-794994"
       ],
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/bosses/score-attack-140-red-crimson"
     },
@@ -10849,7 +10849,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Anachrony — Supreme Flat Hand (Phase 3)",
       "modeName": "Anachrony",
       "difficultyLabel": "Skull Feather Endgame",
-      "imageUrl": "https://img.game8.jp/12830572/657cb47086a2ec7c4305c6b669715130.webp/original",
+      "imageUrl": "/boss-hbr-cancer.jpg",
       "hpStat": "52,000,000 HP",
       "shieldOrDpStat": "3,200,000 DP",
       "weaknesses": [
@@ -10872,11 +10872,11 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "Swap to Squad 2 on Phase 3 entry and execute an immediate 3-turn Overdrive one-shot."
       ],
       "recommendedUnitSlugs": [
-        "hbr-752168",
+        "hbr-779179",
+        "hbr-752169",
         "hbr-738525",
-        "hbr-683118",
         "hbr-839459",
-        "hbr-832804"
+        "hbr-816687"
       ],
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/bosses/anachrony-flat-hand-supreme"
     }
@@ -10910,14 +10910,14 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "bannerType": "FESTIVAL",
       "imageUrl": "https://img.game8.jp/12147007/fe45539d9f2d123641efee398f538e23.webp/original",
       "featuredNames": [
-        "Hikari Naruse [Serene Hunter]",
-        "Ichiko Ohshima [Seaside Mademoiselle]",
-        "Misato Nikaido [Blue Sky Full-Power Cheer]"
+        "Ruka Kayamori [Glorious Blades]",
+        "Yuina Shirakawa [Oracle Banner of Victory]",
+        "Yuki Izumi [Fleur Enchantée]"
       ],
       "featuredUnitSlugs": [
-        "hbr-803495",
-        "hbr-797590",
-        "hbr-779179"
+        "hbr-752168",
+        "hbr-752169",
+        "hbr-825787"
       ],
       "asianStartDate": "2026-11-06",
       "asianEndDate": "2026-11-20",
