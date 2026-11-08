@@ -60,22 +60,22 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '8px',
+              gap: '9px',
               fontWeight: 900,
-              fontSize: '15px',
+              fontSize: '15.5px',
             }}
           >
             <img
               src={getGameAppIconUrl(activeGameSlug || 'star-savior')}
               alt="META.GG"
-              width={24}
-              height={24}
+              width={30}
+              height={30}
               style={{
-                width: '24px',
-                height: '24px',
-                borderRadius: '4px',
+                width: '30px',
+                height: '30px',
+                borderRadius: '6px',
                 objectFit: 'cover',
-                border: '1px solid var(--border-strong)',
+                border: '1.5px solid var(--border-strong)',
               }}
             />
             <span
@@ -83,8 +83,8 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
                 background: 'var(--accent-primary)',
                 color: '#FFFFFF',
                 padding: '3px 8px',
-                borderRadius: '3px',
-                fontSize: '11.5px',
+                borderRadius: '4px',
+                fontSize: '12px',
                 letterSpacing: '0.04em',
               }}
             >
@@ -99,8 +99,8 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '6px',
-                fontSize: '12px',
+                gap: '7px',
+                fontSize: '12.5px',
                 color: 'var(--text-muted)',
                 fontWeight: 700,
               }}
@@ -113,18 +113,18 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
                   textDecoration: 'underline',
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '5px',
+                  gap: '6px',
                 }}
               >
                 <img
                   src={getGameAppIconUrl(activeGameSlug)}
                   alt={activeGameName}
-                  width={18}
-                  height={18}
+                  width={24}
+                  height={24}
                   style={{
-                    width: '18px',
-                    height: '18px',
-                    borderRadius: '3px',
+                    width: '24px',
+                    height: '24px',
+                    borderRadius: '4px',
                     objectFit: 'cover',
                     border: '1px solid var(--border-main)',
                   }}
@@ -149,14 +149,14 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '6px',
-                fontSize: '11.5px',
+                gap: '7px',
+                fontSize: '12px',
                 fontWeight: 800,
-                padding: '4px 9px',
-                borderRadius: '4px',
+                padding: '5px 10px',
+                borderRadius: '5px',
                 border:
                   activeGameSlug === g.slug
-                    ? '1px solid var(--accent-primary)'
+                    ? '1.5px solid var(--accent-primary)'
                     : '1px solid var(--border-main)',
                 background: activeGameSlug === g.slug ? 'var(--accent-bg)' : 'var(--bg-subtle)',
                 color: activeGameSlug === g.slug ? 'var(--accent-primary)' : 'var(--text-secondary)',
@@ -165,12 +165,12 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               <img
                 src={getGameAppIconUrl(g.slug)}
                 alt={g.label}
-                width={18}
-                height={18}
+                width={24}
+                height={24}
                 style={{
-                  width: '18px',
-                  height: '18px',
-                  borderRadius: '3px',
+                  width: '24px',
+                  height: '24px',
+                  borderRadius: '4px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                   flexShrink: 0,
@@ -188,9 +188,9 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               background: 'var(--bg-header)',
               color: '#FFFFFF',
               border: '1px solid var(--border-strong)',
-              borderRadius: '4px',
-              padding: '5px 10px',
-              fontSize: '11px',
+              borderRadius: '5px',
+              padding: '6px 11px',
+              fontSize: '11.5px',
               fontWeight: 800,
             }}
           >

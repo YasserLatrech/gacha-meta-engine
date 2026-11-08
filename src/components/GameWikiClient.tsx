@@ -47,7 +47,7 @@ export function GameWikiClient({
 
   // Pull Savings Calculator State
   const [currentCurrency, setCurrentCurrency] = useState<number>(
-    hub.pityThreshold * hub.pullCostSingle * 0.55
+    Math.round(hub.pityThreshold * hub.pullCostSingle * 0.55)
   );
   const [currentTickets, setCurrentTickets] = useState<number>(10);
   const [hasMonthlyPass, setHasMonthlyPass] = useState<boolean>(false);
@@ -194,18 +194,18 @@ export function GameWikiClient({
           }}
         >
           {/* GAME COVER BANNER */}
-          <div style={{ height: '82px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ height: '112px', position: 'relative', overflow: 'hidden' }}>
             <img
               src={hub.coverImageUrl}
               alt={hub.name}
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }}
             />
             <div
               style={{
                 position: 'absolute',
                 inset: 0,
-                background: 'rgba(20, 19, 18, 0.72)',
-                padding: '8px 10px',
+                background: 'linear-gradient(to top, rgba(20, 19, 18, 0.88) 0%, rgba(20, 19, 18, 0.25) 100%)',
+                padding: '10px',
                 display: 'flex',
                 alignItems: 'flex-end',
                 gap: '8px',
@@ -214,15 +214,16 @@ export function GameWikiClient({
               <img
                 src={gameAppIcon}
                 alt={hub.name}
-                width={32}
-                height={32}
+                width={38}
+                height={38}
                 style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '5px',
+                  width: '38px',
+                  height: '38px',
+                  borderRadius: '7px',
                   objectFit: 'cover',
-                  border: '1.5px solid #FFFFFF',
+                  border: '2px solid #FFFFFF',
                   flexShrink: 0,
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.4)',
                 }}
               />
               <div>
@@ -232,7 +233,7 @@ export function GameWikiClient({
                 >
                   {hub.globalPatchVersion}
                 </div>
-                <div style={{ fontSize: '13px', fontWeight: 900, color: '#FFFFFF', lineHeight: 1.15 }}>
+                <div style={{ fontSize: '13.5px', fontWeight: 900, color: '#FFFFFF', lineHeight: 1.15 }}>
                   {hub.name}
                 </div>
               </div>
@@ -280,16 +281,16 @@ export function GameWikiClient({
                 alignItems: 'center',
               }}
             >
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                 <img
                   src={topUnitThumb}
                   alt="Strongest Tier List"
-                  width={20}
-                  height={20}
+                  width={26}
+                  height={26}
                   style={{
-                    width: '20px',
-                    height: '20px',
-                    borderRadius: '3px',
+                    width: '26px',
+                    height: '26px',
+                    borderRadius: '5px',
                     objectFit: 'cover',
                     border: '1px solid var(--border-main)',
                   }}
@@ -324,18 +325,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={secondUnitThumb}
                 alt="Reroll Starting Tier List"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -360,16 +361,16 @@ export function GameWikiClient({
                 alignItems: 'center',
               }}
             >
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                 <img
                   src={topEquipThumb}
                   alt="Weapons and Support Cards"
-                  width={20}
-                  height={20}
+                  width={26}
+                  height={26}
                   style={{
-                    width: '20px',
-                    height: '20px',
-                    borderRadius: '3px',
+                    width: '26px',
+                    height: '26px',
+                    borderRadius: '5px',
                     objectFit: 'cover',
                     border: '1px solid var(--border-main)',
                   }}
@@ -411,18 +412,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={topBannerThumb}
                 alt="Banner Schedule"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -444,18 +445,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={secondEquipThumb}
                 alt="Pull Savings Planner"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -493,18 +494,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={topBossThumb}
                 alt="Boss Weaknesses"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -535,18 +536,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={hub.units[2]?.imageUrl || topUnitThumb}
                 alt="Boss Raid Apex Tier List"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -584,18 +585,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={hub.units[3]?.imageUrl || secondUnitThumb}
                 alt="Visual Stat Comparison Tool"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -617,18 +618,18 @@ export function GameWikiClient({
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={hub.equipments[2]?.imageUrl || topEquipThumb}
                 alt="Buff-Stacking Damage Calc"
-                width={20}
-                height={20}
+                width={26}
+                height={26}
                 style={{
-                  width: '20px',
-                  height: '20px',
-                  borderRadius: '3px',
+                  width: '26px',
+                  height: '26px',
+                  borderRadius: '5px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-main)',
                 }}
@@ -650,7 +651,7 @@ export function GameWikiClient({
           >
             05. CHARACTER DATABASE ({hub.units.length})
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '580px', overflowY: 'auto' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '620px', overflowY: 'auto' }}>
             {hub.units.map((u) => (
               <Link
                 key={u.slug}
@@ -667,19 +668,19 @@ export function GameWikiClient({
                   gap: '6px',
                 }}
               >
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', minWidth: 0 }}>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', minWidth: 0 }}>
                   <img
                     src={u.imageUrl}
                     alt={u.nameEn}
-                    width={22}
-                    height={22}
+                    width={30}
+                    height={30}
                     style={{
-                      width: '22px',
-                      height: '22px',
-                      borderRadius: '3px',
+                      width: '30px',
+                      height: '30px',
+                      borderRadius: '5px',
                       objectFit: 'cover',
                       objectPosition: 'top',
-                      border: `1px solid ${getElementColor(u.element)}`,
+                      border: `1.5px solid ${getElementColor(u.element)}`,
                       flexShrink: 0,
                     }}
                   />
@@ -727,22 +728,22 @@ export function GameWikiClient({
                 gap: '8px',
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <img
                   src={gameAppIcon}
                   alt={hub.name}
-                  width={28}
-                  height={28}
+                  width={36}
+                  height={36}
                   style={{
-                    width: '28px',
-                    height: '28px',
-                    borderRadius: '5px',
+                    width: '36px',
+                    height: '36px',
+                    borderRadius: '7px',
                     objectFit: 'cover',
                     border: '1px solid var(--border-main)',
                     flexShrink: 0,
                   }}
                 />
-                <h1 style={{ fontSize: '17px', fontWeight: 900, color: 'var(--text-main)' }}>
+                <h1 style={{ fontSize: '17.5px', fontWeight: 900, color: 'var(--text-main)' }}>
                   [{hub.name}]{' '}
                   {activeTab === 'tier-list' && `Strongest Character Tier List (${tierCategory})`}
                   {activeTab === 'weapons' && 'Weapon, Support Card & Equipment Tier List'}
@@ -758,7 +759,7 @@ export function GameWikiClient({
                   background: 'var(--accent-bg)',
                   color: 'var(--accent-primary)',
                   border: '1px solid var(--accent-border)',
-                  padding: '2px 8px',
+                  padding: '3px 8px',
                   borderRadius: '3px',
                   fontWeight: 800,
                 }}
@@ -767,7 +768,7 @@ export function GameWikiClient({
               </span>
             </div>
 
-            {/* 5-BUTTON QUICK NAVIGATION MENU WITH REAL THUMBNAILS */}
+            {/* 5-BUTTON QUICK NAVIGATION MENU WITH LARGER CRISP THUMBNAILS */}
             <div className="quick-menu-grid">
               {(
                 [
@@ -783,8 +784,8 @@ export function GameWikiClient({
                   type="button"
                   onClick={() => setActiveTab(btn.key)}
                   style={{
-                    padding: '6px 8px',
-                    borderRadius: '4px',
+                    padding: '7px 8px',
+                    borderRadius: '5px',
                     border:
                       activeTab === btn.key
                         ? '2px solid var(--accent-primary)'
@@ -797,18 +798,18 @@ export function GameWikiClient({
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    gap: '6px',
+                    gap: '7px',
                   }}
                 >
                   <img
                     src={btn.thumb}
                     alt={btn.label}
-                    width={20}
-                    height={20}
+                    width={32}
+                    height={32}
                     style={{
-                      width: '20px',
-                      height: '20px',
-                      borderRadius: '3px',
+                      width: '32px',
+                      height: '32px',
+                      borderRadius: '5px',
                       objectFit: 'cover',
                       border: '1px solid var(--border-main)',
                       flexShrink: 0,
@@ -922,18 +923,18 @@ export function GameWikiClient({
                     borderTop: '1px solid var(--border-subtle)',
                   }}
                 >
-                  <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                  <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
                     <button
                       type="button"
                       onClick={() => setSelectedElement('ALL')}
                       style={{
                         display: 'inline-flex',
                         alignItems: 'center',
-                        gap: '5px',
-                        padding: '4px 8px',
-                        fontSize: '10.5px',
+                        gap: '6px',
+                        padding: '4px 9px',
+                        fontSize: '11px',
                         fontWeight: 800,
-                        borderRadius: '3px',
+                        borderRadius: '4px',
                         cursor: 'pointer',
                         border: '1px solid var(--border-main)',
                         background: selectedElement === 'ALL' ? 'var(--bg-header)' : 'var(--bg-subtle)',
@@ -943,9 +944,9 @@ export function GameWikiClient({
                       <img
                         src={gameAppIcon}
                         alt="All Elements"
-                        width={16}
-                        height={16}
-                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                        width={22}
+                        height={22}
+                        style={{ width: '22px', height: '22px', borderRadius: '4px', objectFit: 'cover' }}
                       />
                       <span>All Elements ({hub.units.length})</span>
                     </button>
@@ -959,11 +960,11 @@ export function GameWikiClient({
                           style={{
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '5px',
-                            padding: '4px 8px',
-                            fontSize: '10.5px',
+                            gap: '6px',
+                            padding: '4px 9px',
+                            fontSize: '11px',
                             fontWeight: 800,
-                            borderRadius: '3px',
+                            borderRadius: '4px',
                             cursor: 'pointer',
                             border: `1.5px solid ${el.colorHex}`,
                             background: selectedElement === el.key ? el.colorHex : 'var(--bg-surface)',
@@ -973,12 +974,12 @@ export function GameWikiClient({
                           <img
                             src={elIcon}
                             alt={el.label}
-                            width={16}
-                            height={16}
+                            width={22}
+                            height={22}
                             style={{
-                              width: '16px',
-                              height: '16px',
-                              borderRadius: '3px',
+                              width: '22px',
+                              height: '22px',
+                              borderRadius: '4px',
                               objectFit: 'cover',
                             }}
                           />
@@ -994,7 +995,7 @@ export function GameWikiClient({
                     onChange={(e) => setUnitSearch(e.target.value)}
                     placeholder="Filter by character or buff tag (e.g. Crit, Field)..."
                     style={{
-                      padding: '4px 10px',
+                      padding: '5px 10px',
                       fontSize: '11px',
                       border: '1px solid var(--border-main)',
                       borderRadius: '3px',
@@ -1006,7 +1007,7 @@ export function GameWikiClient({
                 </div>
               </section>
 
-              {/* 2D ROLE-COLUMN TIER MATRIX */}
+              {/* 2D ROLE-COLUMN TIER MATRIX WITH LARGER 78x78 PORTRAITS */}
               <section
                 style={{
                   background: 'var(--bg-surface)',
@@ -1038,7 +1039,7 @@ export function GameWikiClient({
                     width: '100%',
                     borderCollapse: 'collapse',
                     border: '1px solid var(--border-main)',
-                    minWidth: '580px',
+                    minWidth: '620px',
                   }}
                 >
                   <thead>
@@ -1046,8 +1047,8 @@ export function GameWikiClient({
                       <th
                         style={{
                           width: '58px',
-                          padding: '8px',
-                          fontSize: '11px',
+                          padding: '9px 6px',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           borderRight: '1px solid #3F3F46',
                           textAlign: 'center',
@@ -1068,8 +1069,8 @@ export function GameWikiClient({
                           <th
                             key={rc.key}
                             style={{
-                              padding: '8px',
-                              fontSize: '10.5px',
+                              padding: '9px 8px',
+                              fontSize: '11px',
                               fontWeight: 900,
                               borderRight: '1px solid #3F3F46',
                               textAlign: 'center',
@@ -1080,18 +1081,18 @@ export function GameWikiClient({
                                 display: 'inline-flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                gap: '6px',
+                                gap: '7px',
                               }}
                             >
                               <img
                                 src={roleIcon}
                                 alt={rc.label}
-                                width={18}
-                                height={18}
+                                width={24}
+                                height={24}
                                 style={{
-                                  width: '18px',
-                                  height: '18px',
-                                  borderRadius: '3px',
+                                  width: '24px',
+                                  height: '24px',
+                                  borderRadius: '4px',
                                   objectFit: 'cover',
                                 }}
                               />
@@ -1147,7 +1148,7 @@ export function GameWikiClient({
                               <td
                                 key={rc.key}
                                 style={{
-                                  padding: '8px',
+                                  padding: '10px 8px',
                                   borderRight: '1px solid var(--border-subtle)',
                                   verticalAlign: 'top',
                                 }}
@@ -1155,7 +1156,7 @@ export function GameWikiClient({
                                 <div
                                   style={{
                                     display: 'flex',
-                                    gap: '8px',
+                                    gap: '10px',
                                     flexWrap: 'wrap',
                                     justifyContent: 'center',
                                   }}
@@ -1167,22 +1168,23 @@ export function GameWikiClient({
                                         key={u.slug}
                                         href={`/${hub.slug}/units/${u.slug}`}
                                         style={{
-                                          width: '68px',
+                                          width: '84px',
                                           display: 'flex',
                                           flexDirection: 'column',
                                           alignItems: 'center',
-                                          gap: '3px',
+                                          gap: '4px',
                                         }}
                                       >
                                         <div
                                           style={{
-                                            width: '60px',
-                                            height: '60px',
-                                            borderRadius: '4px',
+                                            width: '76px',
+                                            height: '76px',
+                                            borderRadius: '8px',
                                             overflow: 'hidden',
-                                            border: `2px solid ${elemColor}`,
+                                            border: `2.5px solid ${elemColor}`,
                                             position: 'relative',
                                             background: 'var(--bg-subtle)',
+                                            boxShadow: '0 2px 6px rgba(0,0,0,0.14)',
                                           }}
                                         >
                                           <img
@@ -1202,9 +1204,10 @@ export function GameWikiClient({
                                               right: 0,
                                               background: elemColor,
                                               color: '#FFF',
-                                              fontSize: '8.5px',
-                                              fontWeight: 800,
-                                              padding: '0 4px',
+                                              fontSize: '9px',
+                                              fontWeight: 900,
+                                              padding: '1px 5px',
+                                              borderTopLeftRadius: '4px',
                                             }}
                                           >
                                             {u.element}
@@ -1219,7 +1222,7 @@ export function GameWikiClient({
                                                 color: '#FDE047',
                                                 fontSize: '8px',
                                                 fontWeight: 900,
-                                                padding: '0 3px',
+                                                padding: '1px 4px',
                                               }}
                                             >
                                               UPCOMING
@@ -1228,7 +1231,7 @@ export function GameWikiClient({
                                         </div>
                                         <span
                                           style={{
-                                            fontSize: '10px',
+                                            fontSize: '10.5px',
                                             fontWeight: 800,
                                             color: 'var(--text-main)',
                                             textAlign: 'center',
@@ -1260,7 +1263,7 @@ export function GameWikiClient({
                 description="Positioned between Tier Matrix and Detailed Character Breakdown Cards (0.00 CLS)"
               />
 
-              {/* CHARACTER EVALUATION BREAKDOWN CARDS */}
+              {/* CHARACTER EVALUATION BREAKDOWN CARDS WITH LARGER 88x88 PORTRAITS */}
               <section
                 style={{
                   background: 'var(--bg-surface)',
@@ -1298,18 +1301,18 @@ export function GameWikiClient({
                       key={u.slug}
                       style={{
                         border: '1px solid var(--border-main)',
-                        borderRadius: '4px',
-                        padding: '10px 12px',
+                        borderRadius: '6px',
+                        padding: '12px',
                         background: 'var(--bg-subtle)',
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '8px',
+                        gap: '9px',
                       }}
                     >
                       <div
                         style={{
                           display: 'flex',
-                          gap: '12px',
+                          gap: '14px',
                           alignItems: 'center',
                           flexWrap: 'wrap',
                         }}
@@ -1319,12 +1322,13 @@ export function GameWikiClient({
                             src={u.imageUrl}
                             alt={u.nameEn}
                             style={{
-                              width: '64px',
-                              height: '64px',
-                              borderRadius: '4px',
+                              width: '88px',
+                              height: '88px',
+                              borderRadius: '8px',
                               objectFit: 'cover',
                               objectPosition: 'top center',
-                              border: `2px solid ${elemColor}`,
+                              border: `2.5px solid ${elemColor}`,
+                              boxShadow: '0 2px 6px rgba(0,0,0,0.16)',
                             }}
                           />
                         </Link>
@@ -1341,7 +1345,7 @@ export function GameWikiClient({
                             <Link
                               href={`/${hub.slug}/units/${u.slug}`}
                               style={{
-                                fontSize: '14px',
+                                fontSize: '15px',
                                 fontWeight: 900,
                                 color: 'var(--text-main)',
                                 textDecoration: 'underline',
@@ -1356,9 +1360,9 @@ export function GameWikiClient({
                                   background: 'var(--accent-bg)',
                                   color: 'var(--accent-primary)',
                                   border: '1px solid var(--accent-border)',
-                                  padding: '2px 7px',
-                                  borderRadius: '3px',
-                                  fontSize: '11px',
+                                  padding: '3px 8px',
+                                  borderRadius: '4px',
+                                  fontSize: '11.5px',
                                   fontWeight: 900,
                                 }}
                               >
@@ -1371,9 +1375,9 @@ export function GameWikiClient({
                             style={{
                               display: 'flex',
                               gap: '6px',
-                              marginTop: '4px',
+                              marginTop: '6px',
                               flexWrap: 'wrap',
-                              fontSize: '10.5px',
+                              fontSize: '11px',
                               fontWeight: 800,
                             }}
                           >
@@ -1381,19 +1385,19 @@ export function GameWikiClient({
                               style={{
                                 display: 'inline-flex',
                                 alignItems: 'center',
-                                gap: '4px',
+                                gap: '5px',
                                 background: elemColor,
                                 color: '#FFF',
-                                padding: '2px 6px',
-                                borderRadius: '2px',
+                                padding: '3px 7px',
+                                borderRadius: '3px',
                               }}
                             >
                               <img
                                 src={elemIcon}
                                 alt={u.element}
-                                width={14}
-                                height={14}
-                                style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                                width={18}
+                                height={18}
+                                style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                               />
                               {u.element} / {u.attackType}
                             </span>
@@ -1401,19 +1405,19 @@ export function GameWikiClient({
                               style={{
                                 display: 'inline-flex',
                                 alignItems: 'center',
-                                gap: '4px',
+                                gap: '5px',
                                 background: 'var(--bg-surface)',
                                 border: '1px solid var(--border-main)',
-                                padding: '2px 6px',
-                                borderRadius: '2px',
+                                padding: '3px 7px',
+                                borderRadius: '3px',
                               }}
                             >
                               <img
                                 src={atkIcon}
                                 alt={u.role}
-                                width={14}
-                                height={14}
-                                style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                                width={18}
+                                height={18}
+                                style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                               />
                               Role: {u.role}
                             </span>
@@ -1422,8 +1426,8 @@ export function GameWikiClient({
                                 background: 'var(--amber-bg)',
                                 color: 'var(--amber-primary)',
                                 border: '1px solid var(--border-main)',
-                                padding: '2px 6px',
-                                borderRadius: '2px',
+                                padding: '3px 7px',
+                                borderRadius: '3px',
                               }}
                             >
                               Target Dupes: {u.recommendedDupes}
@@ -1432,8 +1436,8 @@ export function GameWikiClient({
                               style={{
                                 background: 'var(--green-bg)',
                                 color: 'var(--green-primary)',
-                                padding: '2px 6px',
-                                borderRadius: '2px',
+                                padding: '3px 7px',
+                                borderRadius: '3px',
                               }}
                             >
                               Meta Longevity: {u.longevityMonths} Months
@@ -1448,11 +1452,11 @@ export function GameWikiClient({
                           style={{
                             background: 'var(--bg-surface)',
                             border: '1px solid var(--border-main)',
-                            borderRadius: '3px',
-                            padding: '6px 10px',
+                            borderRadius: '4px',
+                            padding: '8px 10px',
                             fontSize: '11px',
                             display: 'flex',
-                            gap: '8px',
+                            gap: '10px',
                             alignItems: 'center',
                           }}
                         >
@@ -1463,12 +1467,12 @@ export function GameWikiClient({
                               recommendedGear?.imageUrl || u.imageUrl
                             )}
                             alt={primarySkill.name}
-                            width={28}
-                            height={28}
+                            width={38}
+                            height={38}
                             style={{
-                              width: '28px',
-                              height: '28px',
-                              borderRadius: '4px',
+                              width: '38px',
+                              height: '38px',
+                              borderRadius: '6px',
                               objectFit: 'cover',
                               border: '1px solid var(--border-main)',
                               flexShrink: 0,
@@ -1499,9 +1503,9 @@ export function GameWikiClient({
                           alignItems: 'center',
                           background: 'var(--bg-surface)',
                           border: '1px solid var(--border-subtle)',
-                          padding: '5px 8px',
-                          borderRadius: '3px',
-                          fontSize: '10.5px',
+                          padding: '6px 10px',
+                          borderRadius: '4px',
+                          fontSize: '11px',
                         }}
                       >
                         {recommendedGear && (
@@ -1511,26 +1515,26 @@ export function GameWikiClient({
                             style={{
                               display: 'inline-flex',
                               alignItems: 'center',
-                              gap: '6px',
+                              gap: '7px',
                               background: 'var(--bg-subtle)',
                               border: '1px solid var(--border-main)',
-                              padding: '3px 7px',
-                              borderRadius: '3px',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
                               cursor: 'pointer',
                               fontWeight: 800,
-                              fontSize: '10.5px',
+                              fontSize: '11px',
                               color: 'var(--text-main)',
                             }}
                           >
                             <img
                               src={recommendedGear.imageUrl}
                               alt={recommendedGear.nameEn}
-                              width={22}
-                              height={22}
+                              width={32}
+                              height={32}
                               style={{
-                                width: '22px',
-                                height: '22px',
-                                borderRadius: '3px',
+                                width: '32px',
+                                height: '32px',
+                                borderRadius: '5px',
                                 objectFit: 'cover',
                                 border: '1px solid var(--border-strong)',
                               }}
@@ -1539,7 +1543,7 @@ export function GameWikiClient({
                           </button>
                         )}
                         {synergyPartners.length > 0 && (
-                          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', flexWrap: 'wrap' }}>
+                          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
                             <strong style={{ color: 'var(--text-muted)' }}>Synergy Core:</strong>
                             {synergyPartners.map((sp) =>
                               sp ? (
@@ -1549,11 +1553,11 @@ export function GameWikiClient({
                                   style={{
                                     display: 'inline-flex',
                                     alignItems: 'center',
-                                    gap: '4px',
+                                    gap: '6px',
                                     background: 'var(--bg-subtle)',
                                     border: '1px solid var(--border-main)',
-                                    padding: '2px 6px',
-                                    borderRadius: '3px',
+                                    padding: '3px 8px 3px 4px',
+                                    borderRadius: '4px',
                                     fontWeight: 800,
                                     color: 'var(--text-main)',
                                   }}
@@ -1561,12 +1565,12 @@ export function GameWikiClient({
                                   <img
                                     src={sp.imageUrl}
                                     alt={sp.nameEn}
-                                    width={20}
-                                    height={20}
+                                    width={30}
+                                    height={30}
                                     style={{
-                                      width: '20px',
-                                      height: '20px',
-                                      borderRadius: '3px',
+                                      width: '30px',
+                                      height: '30px',
+                                      borderRadius: '5px',
                                       objectFit: 'cover',
                                       objectPosition: 'top',
                                     }}
@@ -1639,7 +1643,7 @@ export function GameWikiClient({
                 padding: '12px 14px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '10px',
+                gap: '12px',
               }}
             >
               <h2
@@ -1650,19 +1654,108 @@ export function GameWikiClient({
                   paddingLeft: '8px',
                 }}
               >
-                RANKED WEAPON, SUPPORT CARD, ORB &amp; ARCANA TIER LIST
+                RANKED WEAPON, SUPPORT CARD, ORB &amp; ARCANA TIER LIST ({hub.equipments.length})
               </h2>
+
+              {/* VISUAL TIER MATRIX FOR WEAPONS / SUPPORT CARDS / ARCANAS */}
+              <table
+                style={{
+                  width: '100%',
+                  borderCollapse: 'collapse',
+                  border: '1px solid var(--border-main)',
+                }}
+              >
+                <tbody>
+                  {tierRanksOrder.map((rank) => {
+                    const gearsInTier = hub.equipments.filter((e) => e.tierRank === rank);
+                    if (gearsInTier.length === 0) return null;
+                    const badgeBg =
+                      rank === 'SSS'
+                        ? 'var(--accent-bg)'
+                        : rank === 'SS'
+                          ? 'var(--amber-bg)'
+                          : 'var(--bg-subtle)';
+                    const badgeColor =
+                      rank === 'SSS'
+                        ? 'var(--accent-primary)'
+                        : rank === 'SS'
+                          ? 'var(--amber-primary)'
+                          : 'var(--text-main)';
+                    return (
+                      <tr key={rank} style={{ borderBottom: '1px solid var(--border-main)' }}>
+                        <td
+                          style={{
+                            width: '62px',
+                            background: badgeBg,
+                            color: badgeColor,
+                            borderLeft: `4px solid ${badgeColor}`,
+                            borderRight: '1px solid var(--border-main)',
+                            fontWeight: 900,
+                            fontSize: '16px',
+                            textAlign: 'center',
+                            verticalAlign: 'middle',
+                          }}
+                        >
+                          {rank}
+                        </td>
+                        <td style={{ padding: '10px' }}>
+                          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+                            {gearsInTier.map((eq) => (
+                              <div
+                                key={eq.slug}
+                                style={{
+                                  width: '86px',
+                                  display: 'flex',
+                                  flexDirection: 'column',
+                                  alignItems: 'center',
+                                  gap: '4px',
+                                }}
+                              >
+                                <img
+                                  src={eq.imageUrl}
+                                  alt={eq.nameEn}
+                                  width={76}
+                                  height={76}
+                                  style={{
+                                    width: '76px',
+                                    height: '76px',
+                                    borderRadius: '8px',
+                                    objectFit: 'cover',
+                                    border: `2px solid ${badgeColor}`,
+                                    boxShadow: '0 2px 5px rgba(0,0,0,0.14)',
+                                  }}
+                                />
+                                <span
+                                  style={{
+                                    fontSize: '10px',
+                                    fontWeight: 800,
+                                    textAlign: 'center',
+                                    lineHeight: 1.15,
+                                    color: 'var(--text-main)',
+                                  }}
+                                >
+                                  {eq.nameEn}
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
 
               {hub.equipments.map((eq) => (
                 <article
                   key={eq.slug}
                   style={{
                     border: '1px solid var(--border-main)',
-                    borderRadius: '4px',
+                    borderRadius: '6px',
                     padding: '12px',
                     background: 'var(--bg-subtle)',
                     display: 'flex',
-                    gap: '12px',
+                    gap: '14px',
                     alignItems: 'flex-start',
                     flexWrap: 'wrap',
                   }}
@@ -1671,11 +1764,12 @@ export function GameWikiClient({
                     src={eq.imageUrl}
                     alt={eq.nameEn}
                     style={{
-                      width: '68px',
-                      height: '80px',
+                      width: '92px',
+                      height: '92px',
                       objectFit: 'cover',
-                      borderRadius: '4px',
+                      borderRadius: '8px',
                       border: '2px solid var(--border-strong)',
+                      boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
                     }}
                   />
                   <div style={{ flex: 1, minWidth: '240px' }}>
@@ -1688,16 +1782,16 @@ export function GameWikiClient({
                         gap: '6px',
                       }}
                     >
-                      <div style={{ fontSize: '14px', fontWeight: 900 }}>{eq.nameEn}</div>
+                      <div style={{ fontSize: '15px', fontWeight: 900 }}>{eq.nameEn}</div>
                       <span
                         className="mono"
                         style={{
                           background: 'var(--accent-bg)',
                           color: 'var(--accent-primary)',
                           border: '1px solid var(--accent-border)',
-                          padding: '2px 8px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '3px 8px',
+                          borderRadius: '4px',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                         }}
                       >
@@ -1709,9 +1803,9 @@ export function GameWikiClient({
                       style={{
                         display: 'flex',
                         gap: '6px',
-                        marginTop: '4px',
+                        marginTop: '5px',
                         flexWrap: 'wrap',
-                        fontSize: '10.5px',
+                        fontSize: '11px',
                         fontWeight: 800,
                       }}
                     >
@@ -1719,19 +1813,19 @@ export function GameWikiClient({
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
-                          gap: '4px',
+                          gap: '5px',
                           background: 'var(--bg-header)',
                           color: '#FFF',
-                          padding: '2px 6px',
-                          borderRadius: '2px',
+                          padding: '3px 7px',
+                          borderRadius: '3px',
                         }}
                       >
                         <img
                           src={getStatConceptIconUrl(hub.slug, eq.subType, eq.imageUrl)}
                           alt={eq.subType}
-                          width={14}
-                          height={14}
-                          style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                          width={16}
+                          height={16}
+                          style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
                         />
                         {eq.category}: {eq.subType}
                       </span>
@@ -1740,8 +1834,8 @@ export function GameWikiClient({
                           background: 'var(--amber-bg)',
                           color: 'var(--amber-primary)',
                           border: '1px solid var(--border-main)',
-                          padding: '2px 6px',
-                          borderRadius: '2px',
+                          padding: '3px 7px',
+                          borderRadius: '3px',
                         }}
                       >
                         Target Limit Break: {eq.recommendedDupes}
@@ -1752,24 +1846,24 @@ export function GameWikiClient({
                       className="mono"
                       style={{
                         display: 'flex',
-                        gap: '10px',
+                        gap: '12px',
                         flexWrap: 'wrap',
                         marginTop: '8px',
                         background: 'var(--bg-surface)',
                         border: '1px solid var(--border-main)',
-                        padding: '6px 8px',
-                        borderRadius: '3px',
-                        fontSize: '10.5px',
+                        padding: '6px 10px',
+                        borderRadius: '4px',
+                        fontSize: '11px',
                       }}
                     >
                       {Object.entries(eq.stats).map(([k, v]) => (
-                        <span key={k} style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
+                        <span key={k} style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
                           <img
                             src={getStatConceptIconUrl(hub.slug, `${k} ${v}`, eq.imageUrl)}
                             alt={k}
-                            width={14}
-                            height={14}
-                            style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                            width={16}
+                            height={16}
+                            style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
                           />
                           <strong>{k}:</strong> {v}
                         </span>
@@ -1787,7 +1881,7 @@ export function GameWikiClient({
                         alignItems: 'center',
                         flexWrap: 'wrap',
                         marginTop: '6px',
-                        fontSize: '10.5px',
+                        fontSize: '11px',
                       }}
                     >
                       <strong>Best Holders:</strong>
@@ -1801,11 +1895,11 @@ export function GameWikiClient({
                             style={{
                               display: 'inline-flex',
                               alignItems: 'center',
-                              gap: '5px',
+                              gap: '6px',
                               background: 'var(--bg-surface)',
                               border: '1px solid var(--border-main)',
-                              padding: '3px 7px 3px 4px',
-                              borderRadius: '3px',
+                              padding: '3px 8px 3px 4px',
+                              borderRadius: '4px',
                               fontWeight: 800,
                               color: 'var(--accent-primary)',
                             }}
@@ -1813,12 +1907,12 @@ export function GameWikiClient({
                             <img
                               src={holder.imageUrl}
                               alt={holder.nameEn}
-                              width={22}
-                              height={22}
+                              width={30}
+                              height={30}
                               style={{
-                                width: '22px',
-                                height: '22px',
-                                borderRadius: '3px',
+                                width: '30px',
+                                height: '30px',
+                                borderRadius: '5px',
                                 objectFit: 'cover',
                                 objectPosition: 'top',
                               }}
@@ -1851,7 +1945,7 @@ export function GameWikiClient({
                   style={{
                     background: 'var(--bg-surface)',
                     border: '1px solid var(--border-main)',
-                    borderRadius: '4px',
+                    borderRadius: '6px',
                     padding: '14px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -1861,10 +1955,10 @@ export function GameWikiClient({
                   <div
                     style={{
                       display: 'flex',
-                      gap: '12px',
+                      gap: '14px',
                       alignItems: 'center',
                       borderBottom: '2px solid var(--border-strong)',
-                      paddingBottom: '10px',
+                      paddingBottom: '12px',
                       flexWrap: 'wrap',
                     }}
                   >
@@ -1872,25 +1966,26 @@ export function GameWikiClient({
                       src={boss.imageUrl}
                       alt={boss.nameEn}
                       style={{
-                        width: '148px',
-                        height: '84px',
+                        width: '230px',
+                        height: '124px',
                         objectFit: 'cover',
-                        borderRadius: '4px',
-                        border: '1.5px solid var(--border-strong)',
+                        borderRadius: '7px',
+                        border: '2px solid var(--border-strong)',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
                       }}
                     />
                     <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: '15px', fontWeight: 900 }}>{boss.nameEn}</div>
-                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
+                      <div style={{ fontSize: '16px', fontWeight: 900 }}>{boss.nameEn}</div>
+                      <div style={{ fontSize: '11.5px', color: 'var(--text-muted)', fontWeight: 700, marginTop: '2px' }}>
                         {boss.modeName} • {boss.difficultyLabel}
                       </div>
                       <div
                         className="mono"
                         style={{
-                          fontSize: '11.5px',
+                          fontSize: '12px',
                           fontWeight: 900,
                           color: 'var(--accent-primary)',
-                          marginTop: '3px',
+                          marginTop: '4px',
                         }}
                       >
                         {boss.hpStat} | {boss.shieldOrDpStat}
@@ -1925,11 +2020,11 @@ export function GameWikiClient({
                             style={{
                               display: 'inline-flex',
                               alignItems: 'center',
-                              gap: '5px',
+                              gap: '6px',
                               background: 'var(--bg-surface)',
                               border: '1px solid var(--border-main)',
-                              padding: '3px 7px',
-                              borderRadius: '3px',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
                               fontSize: '11px',
                               fontWeight: 800,
                             }}
@@ -1937,9 +2032,9 @@ export function GameWikiClient({
                             <img
                               src={getStatConceptIconUrl(hub.slug, wk, topUnitThumb)}
                               alt={wk}
-                              width={16}
-                              height={16}
-                              style={{ width: '16px', height: '16px', borderRadius: '2px', objectFit: 'cover' }}
+                              width={20}
+                              height={20}
+                              style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
                             />
                             <span>{wk}</span>
                           </span>
@@ -1972,11 +2067,11 @@ export function GameWikiClient({
                             style={{
                               display: 'inline-flex',
                               alignItems: 'center',
-                              gap: '5px',
+                              gap: '6px',
                               background: 'var(--bg-surface)',
                               border: '1px solid var(--accent-border)',
-                              padding: '3px 7px',
-                              borderRadius: '3px',
+                              padding: '4px 8px',
+                              borderRadius: '4px',
                               fontSize: '11px',
                               fontWeight: 800,
                             }}
@@ -1984,9 +2079,9 @@ export function GameWikiClient({
                             <img
                               src={getStatConceptIconUrl(hub.slug, rs, topEquipThumb)}
                               alt={rs}
-                              width={16}
-                              height={16}
-                              style={{ width: '16px', height: '16px', borderRadius: '2px', objectFit: 'cover' }}
+                              width={20}
+                              height={20}
+                              style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
                             />
                             <span>{rs}</span>
                           </span>
@@ -2094,11 +2189,11 @@ export function GameWikiClient({
                             style={{
                               display: 'flex',
                               alignItems: 'center',
-                              gap: '6px',
-                              padding: '4px 8px 4px 4px',
+                              gap: '8px',
+                              padding: '5px 10px 5px 5px',
                               background: 'var(--bg-subtle)',
                               border: '1px solid var(--border-main)',
-                              borderRadius: '4px',
+                              borderRadius: '5px',
                               fontSize: '11px',
                               fontWeight: 800,
                             }}
@@ -2107,9 +2202,9 @@ export function GameWikiClient({
                               src={unit.imageUrl}
                               alt={unit.nameEn}
                               style={{
-                                width: '32px',
-                                height: '32px',
-                                borderRadius: '3px',
+                                width: '42px',
+                                height: '42px',
+                                borderRadius: '5px',
                                 objectFit: 'cover',
                                 objectPosition: 'top',
                               }}
@@ -2131,11 +2226,11 @@ export function GameWikiClient({
                           style={{
                             display: 'flex',
                             alignItems: 'center',
-                            gap: '6px',
-                            padding: '4px 8px 4px 4px',
+                            gap: '8px',
+                            padding: '5px 10px 5px 5px',
                             background: 'var(--bg-subtle)',
                             border: '1px solid var(--border-main)',
-                            borderRadius: '4px',
+                            borderRadius: '5px',
                             fontSize: '11px',
                             fontWeight: 800,
                             cursor: 'pointer',
@@ -2146,9 +2241,9 @@ export function GameWikiClient({
                             src={eq.imageUrl}
                             alt={eq.nameEn}
                             style={{
-                              width: '32px',
-                              height: '32px',
-                              borderRadius: '3px',
+                              width: '42px',
+                              height: '42px',
+                              borderRadius: '5px',
                               objectFit: 'cover',
                             }}
                           />
@@ -2196,9 +2291,9 @@ export function GameWikiClient({
                     <img
                       src={gameAppIcon}
                       alt={hub.currencyName}
-                      width={22}
-                      height={22}
-                      style={{ width: '22px', height: '22px', borderRadius: '4px', objectFit: 'cover' }}
+                      width={26}
+                      height={26}
+                      style={{ width: '26px', height: '26px', borderRadius: '5px', objectFit: 'cover' }}
                     />
                     <span>
                       INTERACTIVE {hub.currencyName.toUpperCase()} PULL SAVINGS &amp; PITY CALCULATOR
@@ -2234,9 +2329,9 @@ export function GameWikiClient({
                       <img
                         src={topEquipThumb}
                         alt={hub.currencyName}
-                        width={16}
-                        height={16}
-                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                        width={18}
+                        height={18}
+                        style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                       />
                       <span>Current {hub.currencyName} Saved:</span>
                     </span>
@@ -2271,9 +2366,9 @@ export function GameWikiClient({
                       <img
                         src={secondEquipThumb}
                         alt="Pull Tickets"
-                        width={16}
-                        height={16}
-                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                        width={18}
+                        height={18}
+                        style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                       />
                       <span>Current Pull Tickets:</span>
                     </span>
@@ -2318,7 +2413,7 @@ export function GameWikiClient({
                 </div>
               </div>
 
-              {/* CHRONOLOGICAL BANNERS WITH LIVE CALCULATED PITY STATUS & FEATURED UNIT PORTRAITS */}
+              {/* CHRONOLOGICAL BANNERS WITH WIDE HD BANNERS & FEATURED UNIT PORTRAITS */}
               {hub.banners.map((bn, index) => {
                 const daysFromNow = (index + 1) * 28;
                 const calc = calculatePullSavings({
@@ -2343,10 +2438,10 @@ export function GameWikiClient({
                     style={{
                       background: 'var(--bg-surface)',
                       border: '1px solid var(--border-main)',
-                      borderRadius: '4px',
+                      borderRadius: '6px',
                       padding: '12px 14px',
                       display: 'flex',
-                      gap: '12px',
+                      gap: '14px',
                       alignItems: 'flex-start',
                       flexWrap: 'wrap',
                     }}
@@ -2355,11 +2450,12 @@ export function GameWikiClient({
                       src={bn.imageUrl}
                       alt={bn.bannerTitle}
                       style={{
-                        width: '132px',
-                        height: '82px',
+                        width: '230px',
+                        height: '124px',
                         objectFit: 'cover',
-                        borderRadius: '4px',
+                        borderRadius: '7px',
                         border: '2px solid var(--border-strong)',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.16)',
                       }}
                     />
                     <div style={{ flex: 1, minWidth: '250px' }}>
@@ -2372,7 +2468,7 @@ export function GameWikiClient({
                           gap: '6px',
                         }}
                       >
-                        <div style={{ fontSize: '14px', fontWeight: 900 }}>{bn.bannerTitle}</div>
+                        <div style={{ fontSize: '15px', fontWeight: 900 }}>{bn.bannerTitle}</div>
                         <span
                           style={{
                             background:
@@ -2381,9 +2477,9 @@ export function GameWikiClient({
                               bn.pullVerdict === 'MUST_PULL'
                                 ? 'var(--green-primary)'
                                 : 'var(--amber-primary)',
-                            padding: '2px 8px',
-                            borderRadius: '3px',
-                            fontSize: '10.5px',
+                            padding: '3px 9px',
+                            borderRadius: '4px',
+                            fontSize: '11px',
                             fontWeight: 900,
                           }}
                         >
@@ -2416,7 +2512,7 @@ export function GameWikiClient({
                             marginTop: '6px',
                           }}
                         >
-                          <span style={{ fontSize: '10.5px', fontWeight: 800, color: 'var(--text-muted)' }}>
+                          <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--text-muted)' }}>
                             Featured Units:
                           </span>
                           {featuredUnits.map((fu) =>
@@ -2427,12 +2523,12 @@ export function GameWikiClient({
                                 style={{
                                   display: 'inline-flex',
                                   alignItems: 'center',
-                                  gap: '5px',
+                                  gap: '6px',
                                   background: 'var(--bg-subtle)',
                                   border: '1px solid var(--border-main)',
-                                  padding: '3px 7px 3px 4px',
-                                  borderRadius: '3px',
-                                  fontSize: '10.5px',
+                                  padding: '3px 8px 3px 4px',
+                                  borderRadius: '4px',
+                                  fontSize: '11px',
                                   fontWeight: 800,
                                   color: 'var(--text-main)',
                                 }}
@@ -2440,12 +2536,12 @@ export function GameWikiClient({
                                 <img
                                   src={fu.imageUrl}
                                   alt={fu.nameEn}
-                                  width={22}
-                                  height={22}
+                                  width={30}
+                                  height={30}
                                   style={{
-                                    width: '22px',
-                                    height: '22px',
-                                    borderRadius: '3px',
+                                    width: '30px',
+                                    height: '30px',
+                                    borderRadius: '5px',
                                     objectFit: 'cover',
                                     objectPosition: 'top',
                                   }}
@@ -2547,17 +2643,17 @@ export function GameWikiClient({
                     marginBottom: '12px',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <img
                       src={unitA.imageUrl}
                       alt={unitA.nameEn}
                       style={{
-                        width: '48px',
-                        height: '48px',
-                        borderRadius: '4px',
+                        width: '62px',
+                        height: '62px',
+                        borderRadius: '7px',
                         objectFit: 'cover',
                         objectPosition: 'top',
-                        border: '2px solid var(--amber-primary)',
+                        border: '2.5px solid var(--amber-primary)',
                       }}
                     />
                     <select
@@ -2597,7 +2693,7 @@ export function GameWikiClient({
                     VS
                   </span>
 
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <select
                       aria-label="Select Second Unit to Compare"
                       value={unitBSlug}
@@ -2623,12 +2719,12 @@ export function GameWikiClient({
                       src={unitB.imageUrl}
                       alt={unitB.nameEn}
                       style={{
-                        width: '48px',
-                        height: '48px',
-                        borderRadius: '4px',
+                        width: '62px',
+                        height: '62px',
+                        borderRadius: '7px',
                         objectFit: 'cover',
                         objectPosition: 'top',
-                        border: '2px solid var(--accent-primary)',
+                        border: '2.5px solid var(--accent-primary)',
                       }}
                     />
                   </div>
@@ -2664,9 +2760,9 @@ export function GameWikiClient({
                           <img
                             src={getStatConceptIconUrl(hub.slug, row.label, topEquipThumb)}
                             alt={row.label}
-                            width={14}
-                            height={14}
-                            style={{ width: '14px', height: '14px', borderRadius: '2px', objectFit: 'cover' }}
+                            width={18}
+                            height={18}
+                            style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                           />
                           <span>{row.label}</span>
                         </span>
@@ -2809,9 +2905,9 @@ export function GameWikiClient({
                         <img
                           src={inp.icon}
                           alt={inp.label}
-                          width={15}
-                          height={15}
-                          style={{ width: '15px', height: '15px', borderRadius: '2px', objectFit: 'cover' }}
+                          width={18}
+                          height={18}
+                          style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                         />
                         <span>{inp.label}</span>
                       </span>
@@ -2857,7 +2953,7 @@ export function GameWikiClient({
           )}
         </main>
 
-        {/* ================= RIGHT COLUMN: UPCOMING BANNERS + STICKY 300x600 AD ================= */}
+        {/* ================= RIGHT COLUMN: WIDE HD UPCOMING BANNERS + STICKY 300x600 AD ================= */}
         <aside className="wiki-right-rail" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           <div
             style={{
@@ -2873,7 +2969,7 @@ export function GameWikiClient({
                 fontWeight: 900,
                 borderBottom: '2px solid var(--border-strong)',
                 paddingBottom: '6px',
-                marginBottom: '8px',
+                marginBottom: '10px',
                 display: 'flex',
                 justifyContent: 'space-between',
               }}
@@ -2884,58 +2980,94 @@ export function GameWikiClient({
               </span>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {hub.banners.map((bn) => (
-                <div
-                  key={bn.slug}
-                  style={{
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'center',
-                    paddingBottom: '8px',
-                    borderBottom: '1px solid var(--border-subtle)',
-                  }}
-                >
-                  <img
-                    src={bn.imageUrl}
-                    alt={bn.bannerTitle}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {hub.banners.slice(0, 3).map((bn) => {
+                const featUnit = hub.units.find((u) => u.slug === bn.featuredUnitSlugs[0]);
+                return (
+                  <div
+                    key={bn.slug}
                     style={{
-                      width: '48px',
-                      height: '44px',
-                      borderRadius: '3px',
-                      objectFit: 'cover',
+                      background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      flexShrink: 0,
+                      borderRadius: '6px',
+                      overflow: 'hidden',
                     }}
-                  />
-                  <div style={{ flex: 1 }}>
-                    <div style={{ fontSize: '11px', fontWeight: 800, lineHeight: 1.25 }}>
-                      {bn.featuredNames[0]}
+                  >
+                    <div style={{ position: 'relative', height: '106px', overflow: 'hidden' }}>
+                      <img
+                        src={bn.imageUrl}
+                        alt={bn.bannerTitle}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          objectPosition: 'center 20%',
+                        }}
+                      />
+                      <span
+                        style={{
+                          position: 'absolute',
+                          top: '6px',
+                          right: '6px',
+                          background:
+                            bn.pullVerdict === 'MUST_PULL' ? '#15803D' : '#D97706',
+                          color: '#FFFFFF',
+                          fontSize: '9.5px',
+                          fontWeight: 900,
+                          padding: '2px 6px',
+                          borderRadius: '3px',
+                          boxShadow: '0 1px 4px rgba(0,0,0,0.4)',
+                        }}
+                      >
+                        {bn.pullVerdict.replace('_', ' ')}
+                      </span>
                     </div>
-                    <div className="mono" style={{ fontSize: '9.5px', color: 'var(--text-muted)' }}>
-                      Release: {bn.estGlobalStartDate}
-                    </div>
-                    <span
+                    <div
                       style={{
-                        display: 'inline-block',
-                        marginTop: '2px',
-                        background:
-                          bn.pullVerdict === 'MUST_PULL' ? 'var(--green-bg)' : 'var(--amber-bg)',
-                        color:
-                          bn.pullVerdict === 'MUST_PULL'
-                            ? 'var(--green-primary)'
-                            : 'var(--amber-primary)',
-                        fontSize: '9px',
-                        fontWeight: 900,
-                        padding: '1px 5px',
-                        borderRadius: '2px',
+                        padding: '7px 8px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '7px',
                       }}
                     >
-                      {bn.pullVerdict.replace('_', ' ')}
-                    </span>
+                      {featUnit && (
+                        <img
+                          src={featUnit.imageUrl}
+                          alt={featUnit.nameEn}
+                          width={30}
+                          height={30}
+                          style={{
+                            width: '30px',
+                            height: '30px',
+                            borderRadius: '5px',
+                            objectFit: 'cover',
+                            objectPosition: 'top',
+                            border: '1px solid var(--border-strong)',
+                            flexShrink: 0,
+                          }}
+                        />
+                      )}
+                      <div style={{ minWidth: 0, flex: 1 }}>
+                        <div
+                          style={{
+                            fontSize: '11px',
+                            fontWeight: 900,
+                            lineHeight: 1.2,
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                          }}
+                        >
+                          {bn.featuredNames[0]}
+                        </div>
+                        <div className="mono" style={{ fontSize: '9.5px', color: 'var(--text-muted)', marginTop: '1px' }}>
+                          Release: {bn.estGlobalStartDate}
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
 
             <button
@@ -2943,12 +3075,12 @@ export function GameWikiClient({
               onClick={() => setActiveTab('banners')}
               style={{
                 width: '100%',
-                marginTop: '8px',
-                padding: '6px',
+                marginTop: '10px',
+                padding: '7px',
                 background: 'var(--bg-header)',
                 color: '#FFFFFF',
                 border: 'none',
-                borderRadius: '3px',
+                borderRadius: '4px',
                 fontSize: '11px',
                 fontWeight: 800,
                 cursor: 'pointer',

@@ -116,21 +116,21 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-subnav)',
                 color: '#FFF',
-                fontSize: '10.5px',
+                fontSize: '11px',
                 fontWeight: 900,
-                padding: '7px 10px',
+                padding: '8px 10px',
                 borderLeft: '3.5px solid var(--accent-primary)',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '6px',
+                gap: '7px',
               }}
             >
               <img
                 src={gameAppIcon}
                 alt={hub.shortName}
-                width={16}
-                height={16}
-                style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                width={20}
+                height={20}
+                style={{ width: '20px', height: '20px', borderRadius: '4px', objectFit: 'cover' }}
               />
               <span>RETURN TO {hub.shortName} WIKI HUB</span>
             </div>
@@ -138,106 +138,106 @@ export default async function UnitDetailPage({
               <Link
                 href={`/${hub.slug}?tab=tier-list`}
                 style={{
-                  padding: '7px 10px',
+                  padding: '8px 10px',
                   fontSize: '11.5px',
                   fontWeight: 800,
                   borderBottom: '1px solid var(--border-subtle)',
                   color: 'var(--accent-primary)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '7px',
+                  gap: '8px',
                 }}
               >
                 <img
                   src={hub.units[0]?.imageUrl || gameAppIcon}
                   alt="Strongest Tier List"
-                  width={20}
-                  height={20}
-                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                  width={26}
+                  height={26}
+                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
                 />
                 <span>&larr; Strongest Tier List</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=weapons`}
                 style={{
-                  padding: '7px 10px',
+                  padding: '8px 10px',
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '7px',
+                  gap: '8px',
                 }}
               >
                 <img
                   src={topEquipThumb}
                   alt="Weapons and Support Cards"
-                  width={20}
-                  height={20}
-                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                  width={26}
+                  height={26}
+                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
                 />
                 <span>Weapons &amp; Support Cards</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=bosses`}
                 style={{
-                  padding: '7px 10px',
+                  padding: '8px 10px',
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '7px',
+                  gap: '8px',
                 }}
               >
                 <img
                   src={hub.bosses[0]?.imageUrl || hub.coverImageUrl}
                   alt="Boss and Raid Guides"
-                  width={20}
-                  height={20}
-                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                  width={26}
+                  height={26}
+                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
                 />
                 <span>Boss &amp; Raid Guides</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=banners`}
                 style={{
-                  padding: '7px 10px',
+                  padding: '8px 10px',
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '7px',
+                  gap: '8px',
                 }}
               >
                 <img
                   src={hub.banners[0]?.imageUrl || hub.coverImageUrl}
                   alt="Upcoming Banners"
-                  width={20}
-                  height={20}
-                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                  width={26}
+                  height={26}
+                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
                 />
                 <span>Upcoming Banners &amp; Pull Calc</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=compare`}
                 style={{
-                  padding: '7px 10px',
+                  padding: '8px 10px',
                   fontSize: '11.5px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '7px',
+                  gap: '8px',
                 }}
               >
                 <img
                   src={hub.units[1]?.imageUrl || gameAppIcon}
                   alt="Stat Comparison Tool"
-                  width={20}
-                  height={20}
-                  style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                  width={26}
+                  height={26}
+                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
                 />
                 <span>Stat Comparison Tool</span>
               </Link>
@@ -255,13 +255,13 @@ export default async function UnitDetailPage({
             >
               ALL {hub.shortName} CHARACTERS ({hub.units.length})
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '560px', overflowY: 'auto' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '580px', overflowY: 'auto' }}>
               {hub.units.map((u) => (
                 <Link
                   key={u.slug}
                   href={`/${hub.slug}/units/${u.slug}`}
                   style={{
-                    padding: '5px 8px',
+                    padding: '6px 8px',
                     fontSize: '11px',
                     fontWeight: u.slug === unit.slug ? 900 : 600,
                     background: u.slug === unit.slug ? 'var(--accent-bg)' : 'transparent',
@@ -270,21 +270,22 @@ export default async function UnitDetailPage({
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    gap: '6px',
+                    gap: '7px',
                   }}
                 >
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', minWidth: 0 }}>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', minWidth: 0 }}>
                     <img
                       src={u.imageUrl}
                       alt={u.nameEn}
-                      width={22}
-                      height={22}
+                      width={30}
+                      height={30}
                       style={{
-                        width: '22px',
-                        height: '22px',
-                        borderRadius: '3px',
+                        width: '30px',
+                        height: '30px',
+                        borderRadius: '5px',
                         objectFit: 'cover',
                         objectPosition: 'top',
+                        border: '1px solid var(--border-main)',
                         flexShrink: 0,
                       }}
                     />
@@ -298,7 +299,7 @@ export default async function UnitDetailPage({
                       {u.nameEn}
                     </span>
                   </span>
-                  <span className="mono" style={{ flexShrink: 0 }}>
+                  <span className="mono" style={{ flexShrink: 0, fontWeight: 900 }}>
                     {u.tiers.overallAsian.tierRank}
                   </span>
                 </Link>
@@ -313,10 +314,10 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
-                padding: '14px',
+                borderRadius: '6px',
+                padding: '16px',
                 display: 'flex',
-                gap: '14px',
+                gap: '16px',
                 alignItems: 'center',
                 flexWrap: 'wrap',
               }}
@@ -324,13 +325,16 @@ export default async function UnitDetailPage({
               <img
                 src={unit.imageUrl}
                 alt={unit.nameEn}
+                width={116}
+                height={116}
                 style={{
-                  width: '92px',
-                  height: '92px',
-                  borderRadius: '5px',
+                  width: '116px',
+                  height: '116px',
+                  borderRadius: '8px',
                   objectFit: 'cover',
                   objectPosition: 'top',
-                  border: '2px solid var(--accent-primary)',
+                  border: '2.5px solid var(--accent-primary)',
+                  boxShadow: '0 4px 14px rgba(0,0,0,0.12)',
                 }}
               />
               <div style={{ flex: 1, minWidth: '240px' }}>
@@ -344,10 +348,10 @@ export default async function UnitDetailPage({
                   }}
                 >
                   <div>
-                    <h1 style={{ fontSize: '18px', fontWeight: 900 }}>
+                    <h1 style={{ fontSize: '19px', fontWeight: 900 }}>
                       {unit.nameEn} — {unit.styleOrTitle}
                     </h1>
-                    <div style={{ fontSize: '11.5px', color: 'var(--text-muted)', fontWeight: 700 }}>
+                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 700, marginTop: '2px' }}>
                       Character: {unit.nameOriginal} • Rarity: {unit.rarity}
                     </div>
                   </div>
@@ -357,9 +361,9 @@ export default async function UnitDetailPage({
                       background: 'var(--accent-bg)',
                       color: 'var(--accent-primary)',
                       border: '1.5px solid var(--accent-primary)',
-                      padding: '4px 10px',
-                      borderRadius: '3px',
-                      fontSize: '13px',
+                      padding: '5px 12px',
+                      borderRadius: '4px',
+                      fontSize: '14px',
                       fontWeight: 900,
                     }}
                   >
@@ -370,10 +374,10 @@ export default async function UnitDetailPage({
                 <div
                   style={{
                     display: 'flex',
-                    gap: '6px',
+                    gap: '8px',
                     flexWrap: 'wrap',
-                    marginTop: '8px',
-                    fontSize: '11px',
+                    marginTop: '10px',
+                    fontSize: '11.5px',
                     fontWeight: 800,
                   }}
                 >
@@ -381,19 +385,19 @@ export default async function UnitDetailPage({
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '5px',
+                      gap: '6px',
                       background: 'var(--bg-header)',
                       color: '#FFF',
-                      padding: '3px 8px',
-                      borderRadius: '3px',
+                      padding: '4px 10px',
+                      borderRadius: '4px',
                     }}
                   >
                     <img
                       src={atkIcon}
                       alt={unit.role}
-                      width={15}
-                      height={15}
-                      style={{ width: '15px', height: '15px', borderRadius: '2px', objectFit: 'cover' }}
+                      width={20}
+                      height={20}
+                      style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
                     />
                     Role: {unit.role}
                   </span>
@@ -401,19 +405,19 @@ export default async function UnitDetailPage({
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '5px',
+                      gap: '6px',
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      padding: '3px 8px',
-                      borderRadius: '3px',
+                      padding: '4px 10px',
+                      borderRadius: '4px',
                     }}
                   >
                     <img
                       src={elemIcon}
                       alt={unit.element}
-                      width={15}
-                      height={15}
-                      style={{ width: '15px', height: '15px', borderRadius: '2px', objectFit: 'cover' }}
+                      width={20}
+                      height={20}
+                      style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
                     />
                     Element / Type: {unit.element} ({unit.attackType})
                   </span>
@@ -422,8 +426,10 @@ export default async function UnitDetailPage({
                       background: 'var(--amber-bg)',
                       color: 'var(--amber-primary)',
                       border: '1px solid var(--border-main)',
-                      padding: '3px 8px',
-                      borderRadius: '3px',
+                      padding: '4px 10px',
+                      borderRadius: '4px',
+                      display: 'inline-flex',
+                      alignItems: 'center',
                     }}
                   >
                     Target Investment: {unit.recommendedDupes}
@@ -432,8 +438,10 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--green-bg)',
                       color: 'var(--green-primary)',
-                      padding: '3px 8px',
-                      borderRadius: '3px',
+                      padding: '4px 10px',
+                      borderRadius: '4px',
+                      display: 'inline-flex',
+                      alignItems: 'center',
                     }}
                   >
                     Meta Longevity: {unit.longevityMonths} Months
@@ -447,13 +455,13 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
+                borderRadius: '6px',
                 padding: '14px',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13px',
+                  fontSize: '13.5px',
                   fontWeight: 900,
                   borderLeft: '4px solid var(--accent-primary)',
                   paddingLeft: '8px',
@@ -484,20 +492,20 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      borderRadius: '3px',
-                      padding: '8px',
+                      borderRadius: '4px',
+                      padding: '9px 6px',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
-                      gap: '3px',
+                      gap: '4px',
                     }}
                   >
                     <div
                       style={{
                         display: 'inline-flex',
                         alignItems: 'center',
-                        gap: '4px',
-                        fontSize: '10px',
+                        gap: '5px',
+                        fontSize: '10.5px',
                         color: 'var(--text-muted)',
                         fontWeight: 800,
                       }}
@@ -505,13 +513,13 @@ export default async function UnitDetailPage({
                       <img
                         src={getStatConceptIconUrl(hub.slug, s.key, topEquipThumb)}
                         alt={s.label}
-                        width={16}
-                        height={16}
-                        style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                        width={22}
+                        height={22}
+                        style={{ width: '22px', height: '22px', borderRadius: '4px', objectFit: 'cover' }}
                       />
                       <span>{s.label}</span>
                     </div>
-                    <div style={{ fontSize: '15px', fontWeight: 900 }}>
+                    <div style={{ fontSize: '15.5px', fontWeight: 900 }}>
                       {s.val.toLocaleString()}
                     </div>
                   </div>
@@ -524,7 +532,7 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
+                borderRadius: '6px',
                 padding: '14px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -533,7 +541,7 @@ export default async function UnitDetailPage({
             >
               <h2
                 style={{
-                  fontSize: '13px',
+                  fontSize: '13.5px',
                   fontWeight: 900,
                   borderLeft: '4px solid var(--accent-primary)',
                   paddingLeft: '8px',
@@ -548,10 +556,10 @@ export default async function UnitDetailPage({
                   style={{
                     background: 'var(--bg-subtle)',
                     border: '1px solid var(--border-main)',
-                    borderRadius: '4px',
-                    padding: '10px 12px',
+                    borderRadius: '5px',
+                    padding: '12px',
                     display: 'flex',
-                    gap: '10px',
+                    gap: '12px',
                     alignItems: 'flex-start',
                   }}
                 >
@@ -562,19 +570,19 @@ export default async function UnitDetailPage({
                       displayGears[skIdx % displayGears.length]?.imageUrl || unit.imageUrl
                     )}
                     alt={sk.name}
-                    width={36}
-                    height={36}
+                    width={48}
+                    height={48}
                     style={{
-                      width: '36px',
-                      height: '36px',
-                      borderRadius: '4px',
+                      width: '48px',
+                      height: '48px',
+                      borderRadius: '6px',
                       objectFit: 'cover',
                       border: '1.5px solid var(--border-strong)',
                       flexShrink: 0,
                     }}
                   />
                   <div style={{ flex: 1 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900, fontSize: '13px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900, fontSize: '13.5px' }}>
                       <span>
                         [{sk.type}] {sk.name} ({sk.hitCount}-Hit)
                       </span>
@@ -585,7 +593,7 @@ export default async function UnitDetailPage({
                     <div
                       className="mono"
                       style={{
-                        fontSize: '11.5px',
+                        fontSize: '12px',
                         fontWeight: 800,
                         color: 'var(--text-main)',
                         marginTop: '4px',
@@ -606,13 +614,13 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
+                borderRadius: '6px',
                 padding: '14px',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13px',
+                  fontSize: '13.5px',
                   fontWeight: 900,
                   borderLeft: '4px solid var(--border-strong)',
                   paddingLeft: '8px',
@@ -631,28 +639,28 @@ export default async function UnitDetailPage({
               >
                 <thead>
                   <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
-                    <th style={{ padding: '6px 10px', textAlign: 'left', width: '120px' }}>RANK</th>
-                    <th style={{ padding: '6px 10px', textAlign: 'left', width: '210px' }}>PASSIVE NAME</th>
-                    <th style={{ padding: '6px 10px', textAlign: 'left' }}>EFFECT</th>
+                    <th style={{ padding: '7px 10px', textAlign: 'left', width: '130px' }}>RANK</th>
+                    <th style={{ padding: '7px 10px', textAlign: 'left', width: '210px' }}>PASSIVE NAME</th>
+                    <th style={{ padding: '7px 10px', textAlign: 'left' }}>EFFECT</th>
                   </tr>
                 </thead>
                 <tbody>
                   {unit.passives.map((p, pIdx) => (
                     <tr key={p.unlockRank} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-                      <td className="mono" style={{ padding: '7px 10px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
+                      <td className="mono" style={{ padding: '8px 10px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
                           <img
                             src={displayGears[pIdx % displayGears.length]?.imageUrl || elemIcon}
                             alt={p.unlockRank}
-                            width={18}
-                            height={18}
-                            style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
+                            width={24}
+                            height={24}
+                            style={{ width: '24px', height: '24px', borderRadius: '4px', objectFit: 'cover' }}
                           />
                           <span>{p.unlockRank}</span>
                         </span>
                       </td>
-                      <td style={{ padding: '7px 10px', fontWeight: 800 }}>{p.name}</td>
-                      <td style={{ padding: '7px 10px', color: 'var(--text-secondary)' }}>{p.effect}</td>
+                      <td style={{ padding: '8px 10px', fontWeight: 800 }}>{p.name}</td>
+                      <td style={{ padding: '8px 10px', color: 'var(--text-secondary)' }}>{p.effect}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -664,16 +672,16 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
+                borderRadius: '6px',
                 padding: '14px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '12px',
+                gap: '14px',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13px',
+                  fontSize: '13.5px',
                   fontWeight: 900,
                   borderLeft: '4px solid var(--accent-primary)',
                   paddingLeft: '8px',
@@ -684,10 +692,10 @@ export default async function UnitDetailPage({
 
               {/* SYNERGY TEAMMATES */}
               <div>
-                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '7px' }}>
                   Optimal Synergy Teammates:
                 </div>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '9px', flexWrap: 'wrap' }}>
                   {unit.synergyUnitSlugs.map((synSlug) => {
                     const partner = hub.units.find((u) => u.slug === synSlug);
                     if (!partner) return null;
@@ -698,29 +706,32 @@ export default async function UnitDetailPage({
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
-                          padding: '6px 10px 6px 6px',
+                          gap: '9px',
+                          padding: '6px 12px 6px 6px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
-                          borderRadius: '4px',
-                          fontSize: '11.5px',
+                          borderRadius: '5px',
+                          fontSize: '12px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={partner.imageUrl}
                           alt={partner.nameEn}
+                          width={48}
+                          height={48}
                           style={{
-                            width: '38px',
-                            height: '38px',
-                            borderRadius: '4px',
+                            width: '48px',
+                            height: '48px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             objectPosition: 'top',
+                            border: '1.5px solid var(--border-strong)',
                           }}
                         />
                         <div>
                           <div>{partner.nameEn}</div>
-                          <div style={{ fontSize: '10px', color: 'var(--accent-primary)' }}>
+                          <div style={{ fontSize: '10.5px', color: 'var(--accent-primary)' }}>
                             {partner.role} • Tier {partner.tiers.overallAsian.tierRank}
                           </div>
                         </div>
@@ -732,10 +743,10 @@ export default async function UnitDetailPage({
 
               {/* BEST-IN-SLOT WEAPONS / SUPPORT CARDS / ARCANAS WITH REAL IMAGES */}
               <div>
-                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '7px' }}>
                   Best-in-Slot Weapons / Support Cards / Arcanas:
                 </div>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '9px', flexWrap: 'wrap' }}>
                   {displayGears.map((g) => (
                     <Link
                       key={g.slug}
@@ -743,29 +754,31 @@ export default async function UnitDetailPage({
                       style={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '8px',
-                        padding: '6px 10px 6px 6px',
+                        gap: '9px',
+                        padding: '6px 12px 6px 6px',
                         background: 'var(--bg-subtle)',
                         border: '1px solid var(--border-main)',
-                        borderRadius: '4px',
-                        fontSize: '11.5px',
+                        borderRadius: '5px',
+                        fontSize: '12px',
                         fontWeight: 800,
                       }}
                     >
                       <img
                         src={g.imageUrl}
                         alt={g.nameEn}
+                        width={52}
+                        height={52}
                         style={{
-                          width: '38px',
-                          height: '44px',
-                          borderRadius: '3px',
+                          width: '52px',
+                          height: '52px',
+                          borderRadius: '6px',
                           objectFit: 'cover',
-                          border: '1px solid var(--border-strong)',
+                          border: '1.5px solid var(--border-strong)',
                         }}
                       />
                       <div>
                         <div>{g.nameEn}</div>
-                        <div style={{ fontSize: '10px', color: 'var(--amber-primary)' }}>
+                        <div style={{ fontSize: '10.5px', color: 'var(--amber-primary)' }}>
                           {g.subType} • Tier {g.tierRank}
                         </div>
                       </div>
@@ -776,10 +789,10 @@ export default async function UnitDetailPage({
 
               {/* TOP RAID BOSS MATCHUPS WITH REAL WIDE BOSS IMAGES */}
               <div>
-                <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '7px' }}>
                   Top Raid Boss Matchups:
                 </div>
-                <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '9px', flexWrap: 'wrap' }}>
                   {displayBosses.map((b) => (
                     <Link
                       key={b.slug}
@@ -787,29 +800,31 @@ export default async function UnitDetailPage({
                       style={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '8px',
-                        padding: '6px 10px 6px 6px',
+                        gap: '10px',
+                        padding: '6px 12px 6px 6px',
                         background: 'var(--bg-subtle)',
                         border: '1px solid var(--border-main)',
-                        borderRadius: '4px',
-                        fontSize: '11.5px',
+                        borderRadius: '5px',
+                        fontSize: '12px',
                         fontWeight: 800,
                       }}
                     >
                       <img
                         src={b.imageUrl}
                         alt={b.nameEn}
+                        width={112}
+                        height={62}
                         style={{
-                          width: '68px',
-                          height: '42px',
-                          borderRadius: '3px',
+                          width: '112px',
+                          height: '62px',
+                          borderRadius: '5px',
                           objectFit: 'cover',
-                          border: '1px solid var(--border-strong)',
+                          border: '1.5px solid var(--border-strong)',
                         }}
                       />
                       <div>
                         <div>{b.nameEn}</div>
-                        <div style={{ fontSize: '10px', color: 'var(--accent-primary)' }}>
+                        <div style={{ fontSize: '10.5px', color: 'var(--accent-primary)' }}>
                           {b.modeName} • {b.hpStat}
                         </div>
                       </div>
@@ -827,7 +842,7 @@ export default async function UnitDetailPage({
                 style={{
                   background: 'var(--bg-surface)',
                   border: '1px solid var(--border-main)',
-                  borderRadius: '4px',
+                  borderRadius: '6px',
                   padding: '12px',
                   display: 'flex',
                   flexDirection: 'column',
@@ -853,22 +868,50 @@ export default async function UnitDetailPage({
                       flexDirection: 'column',
                       gap: '6px',
                       fontSize: '11.5px',
-                      paddingBottom: '8px',
+                      paddingBottom: '10px',
                       borderBottom: '1px solid var(--border-subtle)',
                     }}
                   >
-                    <img
-                      src={bn.imageUrl}
-                      alt={bn.bannerTitle}
+                    <div
                       style={{
+                        position: 'relative',
                         width: '100%',
-                        height: '88px',
-                        objectFit: 'cover',
-                        borderRadius: '4px',
-                        border: '1px solid var(--border-strong)',
+                        height: '112px',
+                        borderRadius: '6px',
+                        overflow: 'hidden',
+                        border: '1.5px solid var(--border-strong)',
+                        background: '#111',
                       }}
-                    />
-                    <div style={{ fontWeight: 800 }}>{bn.bannerTitle}</div>
+                    >
+                      <img
+                        src={bn.imageUrl}
+                        alt={bn.bannerTitle}
+                        width={260}
+                        height={112}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                        }}
+                      />
+                      <span
+                        className="mono"
+                        style={{
+                          position: 'absolute',
+                          top: '6px',
+                          right: '6px',
+                          fontSize: '9.5px',
+                          fontWeight: 900,
+                          padding: '2px 7px',
+                          borderRadius: '4px',
+                          background: 'var(--accent-primary)',
+                          color: '#FFFFFF',
+                        }}
+                      >
+                        {bn.pullVerdict}
+                      </span>
+                    </div>
+                    <div style={{ fontWeight: 900, fontSize: '12px' }}>{bn.bannerTitle}</div>
                     <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>
                       Release: {bn.estGlobalStartDate} ({bn.pityCurrencyCost.toLocaleString()} {hub.currencyName})
                     </div>
