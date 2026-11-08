@@ -23,7 +23,7 @@ export const SkillSchema = z.object({
 });
 
 export const PassiveSchema = z.object({
-  unlockRank: z.string().min(1), // e.g. "LB0", "LB1", "LB3", "3-Star", "5-Star"
+  unlockRank: z.string().min(1),
   name: z.string().min(1),
   effect: z.string().min(1),
 });
@@ -39,6 +39,8 @@ export const UnitBaseStatsSchema = z.object({
   sustainScore: z.number().min(1).max(100),
   spEfficiencyScore: z.number().min(1).max(100),
 });
+
+export const TierRankEnum = z.enum(['SSS', 'SS', 'S', 'A', 'B', 'C']);
 
 export const VerifiedUnitPayloadSchema = z.object({
   externalId: z.string().min(1),
@@ -61,9 +63,9 @@ export const VerifiedUnitPayloadSchema = z.object({
   skills: z.array(SkillSchema).min(1),
   passives: z.array(PassiveSchema).min(1),
   synergyUnitSlugs: z.array(z.string()),
-  tierOverall: z.enum(['SSS', 'SS', 'S', 'A']),
-  tierReroll: z.enum(['SSS', 'SS', 'S', 'A']),
-  tierBossRaid: z.enum(['SSS', 'SS', 'S', 'A']),
+  tierOverall: TierRankEnum,
+  tierReroll: TierRankEnum,
+  tierBossRaid: TierRankEnum,
   numericScore: z.number().min(1).max(10),
   summaryVerdict: z.string().min(10),
   longevityNote: z.string().min(10),
@@ -78,7 +80,7 @@ export const VerifiedEquipmentPayloadSchema = z.object({
   subType: z.string().min(1),
   rarity: z.string().min(1),
   imageUrl: z.string().url(),
-  tierRank: z.enum(['SSS', 'SS', 'S', 'A']),
+  tierRank: TierRankEnum,
   score: z.number().min(1).max(10),
   recommendedDupes: z.string().min(1),
   stats: z.record(z.string(), z.union([z.string(), z.number()])),

@@ -109,3 +109,35 @@ describe('Side-by-Side Unit Statistical Comparator', () => {
     expect(rows[9]?.unitBVal).toBe(24);
   });
 });
+
+
+describe('Full-Page Scraped Asian Rosters & Authentic Image Verification', () => {
+  it('validates all 325 scraped units and 181 equipments across Star Savior, HBR, Uma Musume, and Sword of Convallaria', async () => {
+    const { starSaviorBundle } = await import('../../infrastructure/scrapers/adapters/star-savior.adapter');
+    const { heavenBurnsRedBundle } = await import('../../infrastructure/scrapers/adapters/heaven-burns-red.adapter');
+    const { umaMusumeBundle } = await import('../../infrastructure/scrapers/adapters/uma-musume.adapter');
+    const { swordOfConvallariaBundle } = await import('../../infrastructure/scrapers/adapters/sword-of-convallaria.adapter');
+    const { VerifiedUnitPayloadSchema, VerifiedEquipmentPayloadSchema } = await import('../schemas');
+
+    expect(starSaviorBundle.units.length).toBeGreaterThanOrEqual(55);
+    expect(starSaviorBundle.equipments.length).toBeGreaterThanOrEqual(50);
+    expect(heavenBurnsRedBundle.units.length).toBeGreaterThanOrEqual(115);
+    expect(heavenBurnsRedBundle.equipments.length).toBeGreaterThanOrEqual(30);
+    expect(umaMusumeBundle.units.length).toBeGreaterThanOrEqual(85);
+    expect(umaMusumeBundle.equipments.length).toBeGreaterThanOrEqual(45);
+    expect(swordOfConvallariaBundle.units.length).toBeGreaterThanOrEqual(50);
+    expect(swordOfConvallariaBundle.equipments.length).toBeGreaterThanOrEqual(40);
+    expect(swordOfConvallariaBundle.banners.length).toBeGreaterThanOrEqual(14);
+
+    for (const bundle of [starSaviorBundle, heavenBurnsRedBundle, umaMusumeBundle, swordOfConvallariaBundle]) {
+      for (const u of bundle.units) {
+        expect(() => VerifiedUnitPayloadSchema.parse(u)).not.toThrow();
+        expect(u.imageUrl).not.toContain('prydwen.gg');
+      }
+      for (const eq of bundle.equipments) {
+        expect(() => VerifiedEquipmentPayloadSchema.parse(eq)).not.toThrow();
+        expect(eq.imageUrl).not.toContain('prydwen.gg');
+      }
+    }
+  });
+});

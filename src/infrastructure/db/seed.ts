@@ -10,6 +10,7 @@ import {
 import { heavenBurnsRedBundle, GameAdapterBundle } from '../scrapers/adapters/heaven-burns-red.adapter';
 import { umaMusumeBundle } from '../scrapers/adapters/uma-musume.adapter';
 import { swordOfConvallariaBundle } from '../scrapers/adapters/sword-of-convallaria.adapter';
+import { starSaviorBundle } from '../scrapers/adapters/star-savior.adapter';
 
 export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
   gameSlug: string;
@@ -240,7 +241,7 @@ export async function syncGameBundle(bundle: GameAdapterBundle): Promise<{
 }
 
 export async function runFullSeed() {
-  const bundles = [heavenBurnsRedBundle, umaMusumeBundle, swordOfConvallariaBundle];
+  const bundles = [starSaviorBundle, heavenBurnsRedBundle, umaMusumeBundle, swordOfConvallariaBundle];
   const results = [];
   for (const b of bundles) {
     const res = await syncGameBundle(b);

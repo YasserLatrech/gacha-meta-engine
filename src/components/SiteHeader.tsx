@@ -103,6 +103,20 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
           <Link
+            href="/star-savior"
+            style={{
+              fontSize: '11.5px',
+              fontWeight: 800,
+              padding: '4px 9px',
+              borderRadius: '3px',
+              border: '1px solid var(--border-main)',
+              background: activeGameSlug === 'star-savior' ? 'var(--accent-bg)' : 'var(--bg-subtle)',
+              color: activeGameSlug === 'star-savior' ? 'var(--accent-primary)' : 'var(--text-secondary)',
+            }}
+          >
+            Star Savior
+          </Link>
+          <Link
             href="/heaven-burns-red"
             style={{
               fontSize: '11.5px',

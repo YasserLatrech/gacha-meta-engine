@@ -135,7 +135,14 @@ export function GameWikiClient({
     isWeaknessHit,
   ]);
 
-  const tierRanksOrder: Array<'SSS' | 'SS' | 'S' | 'A'> = ['SSS', 'SS', 'S', 'A'];
+  const tierRanksOrder: Array<'SSS' | 'SS' | 'S' | 'A' | 'B' | 'C'> = [
+    'SSS',
+    'SS',
+    'S',
+    'A',
+    'B',
+    'C',
+  ];
 
   return (
     <div className="portal-container">
