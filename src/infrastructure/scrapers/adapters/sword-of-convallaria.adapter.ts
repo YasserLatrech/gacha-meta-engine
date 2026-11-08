@@ -14,7 +14,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
   "pityThreshold": 100,
   "monthlyF2pIncome": 11250,
   "monthlyPassIncome": 16500,
-  "sourceUrl": "https://meta.gg/sword-of-convallaria",
+  "sourceUrl": "https://gachacrest.gg/sword-of-convallaria",
   "rolesConfig": [
     {
       "key": "DPS",
@@ -98,43 +98,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "SP Inanna Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S+ Tier Tactical Ultimate",
+          "multiplierSummary": "S+ Tier Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "S+ Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Inanna Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for SP Inanna."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for SP Inanna."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-lutfi",
+        "soc-luvata",
+        "soc-agata"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -142,7 +143,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 9.9,
       "summaryVerdict": "S+ Tier Legendary Watcher unit (SP Inanna) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-inanna"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-inanna"
     },
     {
       "externalId": "soc-unit-sp-samantha",
@@ -177,51 +178,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "SP Samantha Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S+ Tier Tactical Ultimate",
+          "multiplierSummary": "S+ Tier Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "S+ Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S+ Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Samantha Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for SP Samantha."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for SP Samantha."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-camelot",
-        "soc-geralt"
+        "soc-auguste",
+        "soc-cocoa",
+        "soc-nydia"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
+      "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
       "summaryVerdict": "S+ Tier Legendary Seeker unit (SP Samantha) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-samantha"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-samantha"
     },
     {
       "externalId": "soc-unit-camelot",
@@ -256,43 +258,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Camelot Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Camelot Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Camelot."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Camelot."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-geralt",
-        "soc-kvare"
+        "soc-taair",
+        "soc-ayishah",
+        "soc-triss"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -300,7 +303,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - DPS Legendary Breaker unit (Camelot) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-camelot"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-camelot"
     },
     {
       "externalId": "soc-unit-geralt",
@@ -335,51 +338,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Geralt Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Geralt Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Geralt."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Geralt."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-kvare",
-        "soc-luvata"
+        "soc-flavia",
+        "soc-tristan",
+        "soc-yennefer"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - DPS Legendary Defender unit (Geralt) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-geralt"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-geralt"
     },
     {
       "externalId": "soc-unit-kvare",
@@ -414,51 +418,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Kvare Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Kvare Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Kvare."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Kvare."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-luvata",
-        "soc-nydia"
+        "soc-credenza",
+        "soc-yserinde",
+        "soc-layla"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "S",
       "numericScore": 9.4,
       "summaryVerdict": "S Tier - DPS Legendary Destroyer unit (Kvare) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-kvare"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-kvare"
     },
     {
       "externalId": "soc-unit-luvata",
@@ -493,51 +498,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Luvata Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Luvata Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Luvata."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Luvata."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-nydia",
-        "soc-triss"
+        "soc-agata",
+        "soc-ciri",
+        "soc-sp-inanna"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.3,
       "summaryVerdict": "S Tier - DPS Legendary Watcher unit (Luvata) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-luvata"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-luvata"
     },
     {
       "externalId": "soc-unit-nydia",
@@ -572,51 +578,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Nydia Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Nydia Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Nydia."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Nydia."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-triss",
-        "soc-tristan"
+        "soc-sp-safiyyah",
+        "soc-sp-samantha",
+        "soc-auguste"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - DPS Legendary Seeker unit (Nydia) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nydia"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nydia"
     },
     {
       "externalId": "soc-unit-triss",
@@ -651,51 +658,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Triss Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Triss Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Triss."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Triss."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-tristan",
-        "soc-credenza"
+        "soc-falin",
+        "soc-kiya",
+        "soc-camelot"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - DPS Legendary Breaker unit (Triss) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-triss"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-triss"
     },
     {
       "externalId": "soc-unit-tristan",
@@ -730,43 +738,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Tristan Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "S Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "S Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Tristan Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Tristan."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Tristan."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-credenza",
-        "soc-lutfi"
+        "soc-yennefer",
+        "soc-geralt",
+        "soc-estra"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -774,7 +783,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "S Tier - DPS Legendary Defender unit (Tristan) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-tristan"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-tristan"
     },
     {
       "externalId": "soc-unit-credenza",
@@ -809,43 +818,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Credenza Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Credenza Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Credenza."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Credenza."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-lutfi",
-        "soc-sp-safiyyah"
+        "soc-layla",
+        "soc-kvare",
+        "soc-yserinde"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -853,7 +863,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "S Tier - Support Legendary Destroyer unit (Credenza) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-credenza"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-credenza"
     },
     {
       "externalId": "soc-unit-lutfi",
@@ -888,51 +898,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Lutfi Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Lutfi Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Lutfi."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Lutfi."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-sp-safiyyah",
-        "soc-taair"
+        "soc-sp-inanna",
+        "soc-luvata",
+        "soc-agata"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - Support Legendary Watcher unit (Lutfi) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-lutfi"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-lutfi"
     },
     {
       "externalId": "soc-unit-sp-safiyyah",
@@ -967,43 +978,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "SP Safiyyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Safiyyah Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for SP Safiyyah."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for SP Safiyyah."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-taair",
-        "soc-yennefer"
+        "soc-auguste",
+        "soc-pamina",
+        "soc-sp-samantha"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -1011,7 +1023,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - Support Legendary Seeker unit (SP Safiyyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-safiyyah"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-safiyyah"
     },
     {
       "externalId": "soc-unit-taair",
@@ -1046,51 +1058,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Taair Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Taair Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Taair."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Taair."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-yennefer",
-        "soc-yserinde"
+        "soc-camelot",
+        "soc-ayishah",
+        "soc-triss"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
       "summaryVerdict": "S Tier - Support Legendary Breaker unit (Taair) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-taair"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-taair"
     },
     {
       "externalId": "soc-unit-yennefer",
@@ -1125,43 +1138,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Yennefer Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Yennefer Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Yennefer."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Yennefer."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-yserinde",
-        "soc-agata"
+        "soc-tristan",
+        "soc-geralt",
+        "soc-estra"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -1169,7 +1183,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "S Tier - Support Legendary Defender unit (Yennefer) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-yennefer"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-yennefer"
     },
     {
       "externalId": "soc-unit-yserinde",
@@ -1204,51 +1218,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Yserinde Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "S Tier - Support Tactical Ultimate",
+          "multiplierSummary": "S Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "S Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked S Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Yserinde Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Yserinde."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Yserinde."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-agata",
-        "soc-auguste"
+        "soc-kvare",
+        "soc-credenza",
+        "soc-layla"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
       "summaryVerdict": "S Tier - Support Legendary Destroyer unit (Yserinde) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-yserinde"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-yserinde"
     },
     {
       "externalId": "soc-unit-agata",
@@ -1283,51 +1298,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Agata Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Agata Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Agata."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Agata."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-auguste",
-        "soc-ayishah"
+        "soc-ciri",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.7,
       "summaryVerdict": "A Tier Legendary Watcher unit (Agata) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-agata"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-agata"
     },
     {
       "externalId": "soc-unit-auguste",
@@ -1362,43 +1378,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Auguste Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Auguste Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Auguste."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Auguste."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-ayishah",
-        "soc-estra"
+        "soc-sp-safiyyah",
+        "soc-sp-samantha",
+        "soc-nydia"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1406,7 +1423,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "A Tier Legendary Seeker unit (Auguste) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-auguste"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-auguste"
     },
     {
       "externalId": "soc-unit-ayishah",
@@ -1441,51 +1458,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Ayishah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Ayishah Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Ayishah."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Ayishah."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-estra",
-        "soc-layla"
+        "soc-triss",
+        "soc-falin",
+        "soc-camelot"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "A Tier Legendary Breaker unit (Ayishah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-ayishah"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-ayishah"
     },
     {
       "externalId": "soc-unit-estra",
@@ -1520,43 +1538,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Estra Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Estra Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Estra."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Estra."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-layla",
-        "soc-marcille"
+        "soc-yennefer",
+        "soc-geralt",
+        "soc-tristan"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1564,7 +1583,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "A Tier Legendary Defender unit (Estra) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-estra"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-estra"
     },
     {
       "externalId": "soc-unit-layla",
@@ -1599,51 +1618,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Layla Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Layla Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Layla."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Layla."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-marcille",
-        "soc-pamina"
+        "soc-yserinde",
+        "soc-kvare",
+        "soc-credenza"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "A",
       "numericScore": 8.7,
       "summaryVerdict": "A Tier Legendary Destroyer unit (Layla) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-layla"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-layla"
     },
     {
       "externalId": "soc-unit-marcille",
@@ -1678,43 +1698,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Marcille Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Marcille Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Marcille."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Marcille."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-pamina",
-        "soc-rico"
+        "soc-lutfi",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1722,7 +1743,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "A Tier Legendary Watcher unit (Marcille) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-marcille"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-marcille"
     },
     {
       "externalId": "soc-unit-pamina",
@@ -1757,51 +1778,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Pamina Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Pamina Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Pamina."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Pamina."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-rico",
-        "soc-safiyyah"
+        "soc-auguste",
+        "soc-cocoa",
+        "soc-sp-samantha"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "A Tier Legendary Seeker unit (Pamina) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-pamina"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-pamina"
     },
     {
       "externalId": "soc-unit-rico",
@@ -1836,43 +1858,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Rico Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Rico Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Rico."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Rico."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-safiyyah",
-        "soc-sp-rawiyah"
+        "soc-taair",
+        "soc-ayishah",
+        "soc-camelot"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1880,7 +1903,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "A Tier Legendary Breaker unit (Rico) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-rico"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-rico"
     },
     {
       "externalId": "soc-unit-safiyyah",
@@ -1915,51 +1938,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Safiyyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Safiyyah Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Safiyyah."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Safiyyah."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-sp-rawiyah",
-        "soc-ciri"
+        "soc-flavia",
+        "soc-geralt",
+        "soc-tristan"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.7,
       "summaryVerdict": "A Tier Legendary Defender unit (Safiyyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-safiyyah"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-safiyyah"
     },
     {
       "externalId": "soc-unit-sp-rawiyah",
@@ -1994,51 +2018,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "SP Rawiyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier Tactical Ultimate",
+          "multiplierSummary": "A Tier Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "A Tier",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SP Rawiyah Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for SP Rawiyah."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for SP Rawiyah."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-ciri",
-        "soc-cocoa"
+        "soc-credenza",
+        "soc-kvare",
+        "soc-yserinde"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "A",
       "numericScore": 8.9,
       "summaryVerdict": "A Tier Legendary Destroyer unit (SP Rawiyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-sp-rawiyah"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-sp-rawiyah"
     },
     {
       "externalId": "soc-unit-ciri",
@@ -2073,43 +2098,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Ciri Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Ciri Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Ciri."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Ciri."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-cocoa",
-        "soc-falin"
+        "soc-agata",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2117,7 +2143,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "A Tier - Support Legendary Watcher unit (Ciri) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-ciri"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-ciri"
     },
     {
       "externalId": "soc-unit-cocoa",
@@ -2152,51 +2178,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Cocoa Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Cocoa Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Cocoa."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Cocoa."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-falin",
-        "soc-flavia"
+        "soc-nydia",
+        "soc-sp-samantha",
+        "soc-sp-safiyyah"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.7,
       "summaryVerdict": "A Tier - Support Legendary Seeker unit (Cocoa) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-cocoa"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-cocoa"
     },
     {
       "externalId": "soc-unit-falin",
@@ -2231,43 +2258,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Falin Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Falin Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Falin."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Falin."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-flavia",
-        "soc-gloria"
+        "soc-triss",
+        "soc-kiya",
+        "soc-camelot"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2275,7 +2303,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "A Tier - Support Legendary Breaker unit (Falin) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-falin"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-falin"
     },
     {
       "externalId": "soc-unit-flavia",
@@ -2310,51 +2338,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Flavia Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Flavia Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Flavia."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Flavia."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-gloria",
-        "soc-homa"
+        "soc-geralt",
+        "soc-tristan",
+        "soc-yennefer"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.9,
       "summaryVerdict": "A Tier - Support Legendary Defender unit (Flavia) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-flavia"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-flavia"
     },
     {
       "externalId": "soc-unit-gloria",
@@ -2389,43 +2418,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Gloria Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Gloria Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Gloria."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Gloria."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-homa",
-        "soc-inanna"
+        "soc-layla",
+        "soc-kvare",
+        "soc-credenza"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2433,7 +2463,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "A Tier - Support Legendary Destroyer unit (Gloria) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-gloria"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-gloria"
     },
     {
       "externalId": "soc-unit-homa",
@@ -2468,51 +2498,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Homa Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Homa Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Homa."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Homa."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-inanna",
-        "soc-nonowill"
+        "soc-sp-inanna",
+        "soc-luvata",
+        "soc-lutfi"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.7,
       "summaryVerdict": "A Tier - Support Legendary Watcher unit (Homa) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-homa"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-homa"
     },
     {
       "externalId": "soc-unit-inanna",
@@ -2547,43 +2578,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Inanna Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Inanna Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Inanna."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Inanna."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-nonowill",
-        "soc-beryl"
+        "soc-auguste",
+        "soc-pamina",
+        "soc-sp-samantha"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2591,7 +2623,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "A Tier - Support Legendary Seeker unit (Inanna) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-inanna"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-inanna"
     },
     {
       "externalId": "soc-unit-nonowill",
@@ -2626,51 +2658,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "NonoWill Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "A Tier - Support Tactical Ultimate",
+          "multiplierSummary": "A Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "A Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked A Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "NonoWill Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for NonoWill."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for NonoWill."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-beryl",
-        "soc-caris"
+        "soc-camelot",
+        "soc-ayishah",
+        "soc-triss"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.9,
       "summaryVerdict": "A Tier - Support Legendary Breaker unit (NonoWill) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nonowill"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nonowill"
     },
     {
       "externalId": "soc-unit-beryl",
@@ -2705,51 +2738,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Beryl Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Beryl Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Beryl."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Beryl."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-caris",
-        "soc-col"
+        "soc-flavia",
+        "soc-geralt",
+        "soc-tristan"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierBossRaid": "S",
       "numericScore": 8.3,
       "summaryVerdict": "B Tier - DPS Legendary Defender unit (Beryl) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-beryl"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-beryl"
     },
     {
       "externalId": "soc-unit-caris",
@@ -2784,51 +2818,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Caris Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Caris Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Caris."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Caris."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-col",
-        "soc-hasna"
+        "soc-credenza",
+        "soc-kvare",
+        "soc-yserinde"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierBossRaid": "B",
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - DPS Legendary Destroyer unit (Caris) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-caris"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-caris"
     },
     {
       "externalId": "soc-unit-col",
@@ -2863,51 +2898,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Col Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Col Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Col."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Col."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-hasna",
-        "soc-kiya"
+        "soc-ciri",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
+      "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - DPS Legendary Watcher unit (Col) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-col"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-col"
     },
     {
       "externalId": "soc-unit-hasna",
@@ -2942,43 +2978,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Hasna Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Hasna Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Hasna."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Hasna."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-kiya",
-        "soc-lilywill"
+        "soc-sp-safiyyah",
+        "soc-sp-samantha",
+        "soc-nydia"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -2986,7 +3023,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.4,
       "summaryVerdict": "B Tier - DPS Legendary Seeker unit (Hasna) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-hasna"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-hasna"
     },
     {
       "externalId": "soc-unit-kiya",
@@ -3021,51 +3058,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Kiya Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Kiya Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Kiya."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Kiya."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-lilywill",
-        "soc-momo"
+        "soc-triss",
+        "soc-falin",
+        "soc-camelot"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierReroll": "B",
+      "tierBossRaid": "S",
       "numericScore": 8.3,
       "summaryVerdict": "B Tier - DPS Legendary Breaker unit (Kiya) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-kiya"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-kiya"
     },
     {
       "externalId": "soc-unit-lilywill",
@@ -3100,43 +3138,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "LilyWill Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "LilyWill Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for LilyWill."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for LilyWill."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-momo",
-        "soc-nungal"
+        "soc-yennefer",
+        "soc-geralt",
+        "soc-tristan"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3144,7 +3183,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - DPS Legendary Defender unit (LilyWill) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-lilywill"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-lilywill"
     },
     {
       "externalId": "soc-unit-momo",
@@ -3179,51 +3218,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Momo Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Momo Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Momo."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Momo."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-nungal",
-        "soc-rawiyah"
+        "soc-yserinde",
+        "soc-kvare",
+        "soc-credenza"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierReroll": "B",
+      "tierBossRaid": "B",
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - DPS Legendary Destroyer unit (Momo) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-momo"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-momo"
     },
     {
       "externalId": "soc-unit-nungal",
@@ -3258,43 +3298,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Nungal Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Nungal Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Nungal."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Nungal."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-rawiyah",
-        "soc-team-meteor"
+        "soc-lutfi",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3302,7 +3343,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.4,
       "summaryVerdict": "B Tier - DPS Legendary Watcher unit (Nungal) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nungal"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nungal"
     },
     {
       "externalId": "soc-unit-rawiyah",
@@ -3337,51 +3378,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Rawiyah Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Rawiyah Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Rawiyah."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Rawiyah."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-team-meteor",
-        "soc-acambe"
+        "soc-auguste",
+        "soc-cocoa",
+        "soc-sp-samantha"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierBossRaid": "S",
       "numericScore": 8.3,
       "summaryVerdict": "B Tier - DPS Legendary Seeker unit (Rawiyah) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-rawiyah"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-rawiyah"
     },
     {
       "externalId": "soc-unit-team-meteor",
@@ -3416,43 +3458,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Team Meteor Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "B Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "B Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Team Meteor Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Team Meteor."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Team Meteor."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-acambe",
-        "soc-afra"
+        "soc-taair",
+        "soc-ayishah",
+        "soc-camelot"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3460,7 +3503,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - DPS Legendary Breaker unit (Team Meteor) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-team-meteor"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-team-meteor"
     },
     {
       "externalId": "soc-unit-acambe",
@@ -3495,43 +3538,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Acambe Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Acambe Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Acambe."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Acambe."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-afra",
-        "soc-edda"
+        "soc-tristan",
+        "soc-geralt",
+        "soc-yennefer"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3539,7 +3583,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - Support Legendary Defender unit (Acambe) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-acambe"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-acambe"
     },
     {
       "externalId": "soc-unit-afra",
@@ -3574,51 +3618,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Afra Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Afra Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Afra."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Afra."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-edda",
-        "soc-samantha"
+        "soc-kvare",
+        "soc-credenza",
+        "soc-yserinde"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
+      "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.4,
       "summaryVerdict": "B Tier - Support Legendary Destroyer unit (Afra) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-afra"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-afra"
     },
     {
       "externalId": "soc-unit-edda",
@@ -3653,43 +3698,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Edda Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Edda Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Edda."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Edda."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-samantha",
-        "soc-schacklulu"
+        "soc-agata",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3697,7 +3743,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.3,
       "summaryVerdict": "B Tier - Support Legendary Watcher unit (Edda) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-edda"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-edda"
     },
     {
       "externalId": "soc-unit-samantha",
@@ -3732,51 +3778,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Samantha Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Samantha Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Samantha."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Samantha."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-schacklulu",
-        "soc-senshi"
+        "soc-nydia",
+        "soc-sp-samantha",
+        "soc-sp-safiyyah"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
+      "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - Support Legendary Seeker unit (Samantha) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-samantha"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-samantha"
     },
     {
       "externalId": "soc-unit-schacklulu",
@@ -3811,43 +3858,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "SchackLulu Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "SchackLulu Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for SchackLulu."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for SchackLulu."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-senshi",
-        "soc-simona"
+        "soc-triss",
+        "soc-kiya",
+        "soc-camelot"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3855,7 +3903,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.2,
       "summaryVerdict": "B Tier - Support Legendary Breaker unit (SchackLulu) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-schacklulu"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-schacklulu"
     },
     {
       "externalId": "soc-unit-senshi",
@@ -3890,51 +3938,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Senshi Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Senshi Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Senshi."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Senshi."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-simona",
-        "soc-alexei"
+        "soc-geralt",
+        "soc-tristan",
+        "soc-yennefer"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
+      "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.4,
       "summaryVerdict": "B Tier - Support Legendary Defender unit (Senshi) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-senshi"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-senshi"
     },
     {
       "externalId": "soc-unit-simona",
@@ -3969,43 +4018,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Simona Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "B Tier - Support Tactical Ultimate",
+          "multiplierSummary": "B Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "B Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked B Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Simona Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Simona."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Simona."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-alexei",
-        "soc-dantalion"
+        "soc-layla",
+        "soc-kvare",
+        "soc-credenza"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -4013,7 +4063,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 8.3,
       "summaryVerdict": "B Tier - Support Legendary Destroyer unit (Simona) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-simona"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-simona"
     },
     {
       "externalId": "soc-unit-alexei",
@@ -4048,43 +4098,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Alexei Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Alexei Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Alexei."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Alexei."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-dantalion",
-        "soc-faycal"
+        "soc-lutfi",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4092,7 +4143,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 7.6,
       "summaryVerdict": "C Tier - DPS Legendary Watcher unit (Alexei) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-alexei"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-alexei"
     },
     {
       "externalId": "soc-unit-dantalion",
@@ -4127,51 +4178,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Dantalion Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Dantalion Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Dantalion."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Dantalion."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-faycal",
-        "soc-garcia"
+        "soc-cocoa",
+        "soc-pamina",
+        "soc-sp-samantha"
       ],
       "tierOverall": "B",
-      "tierReroll": "B",
+      "tierReroll": "C",
       "tierBossRaid": "B",
       "numericScore": 7.6,
       "summaryVerdict": "C Tier - DPS Legendary Seeker unit (Dantalion) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-dantalion"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-dantalion"
     },
     {
       "externalId": "soc-unit-faycal",
@@ -4206,43 +4258,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Faycal Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Faycal Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Faycal."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Faycal."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-garcia",
-        "soc-guzman"
+        "soc-taair",
+        "soc-ayishah",
+        "soc-camelot"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4250,7 +4303,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 7.8,
       "summaryVerdict": "C Tier - DPS Legendary Breaker unit (Faycal) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-faycal"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-faycal"
     },
     {
       "externalId": "soc-unit-garcia",
@@ -4285,51 +4338,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Garcia Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Garcia Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Piercing DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Garcia."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Garcia."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-guzman",
-        "soc-iggy"
+        "soc-flavia",
+        "soc-geralt",
+        "soc-tristan"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
-      "tierBossRaid": "B",
+      "tierBossRaid": "A",
       "numericScore": 7.7,
       "summaryVerdict": "C Tier - DPS Legendary Defender unit (Garcia) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-garcia"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-garcia"
     },
     {
       "externalId": "soc-unit-guzman",
@@ -4364,51 +4418,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Guzman Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Guzman Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Guzman."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Guzman."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-iggy",
-        "soc-leonide"
+        "soc-credenza",
+        "soc-kvare",
+        "soc-yserinde"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
-      "tierBossRaid": "B",
+      "tierBossRaid": "C",
       "numericScore": 7.6,
       "summaryVerdict": "C Tier - DPS Legendary Destroyer unit (Guzman) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-guzman"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-guzman"
     },
     {
       "externalId": "soc-unit-iggy",
@@ -4443,51 +4498,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Iggy Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Iggy Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Iggy."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Iggy."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-leonide",
-        "soc-miguel"
+        "soc-ciri",
+        "soc-luvata",
+        "soc-sp-inanna"
       ],
       "tierOverall": "B",
-      "tierReroll": "B",
+      "tierReroll": "C",
       "tierBossRaid": "B",
       "numericScore": 7.6,
       "summaryVerdict": "C Tier - DPS Legendary Watcher unit (Iggy) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-iggy"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-iggy"
     },
     {
       "externalId": "soc-unit-leonide",
@@ -4522,43 +4578,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Leonide Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Leonide Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Leonide."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Leonide."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-miguel",
-        "soc-xavier"
+        "soc-sp-safiyyah",
+        "soc-sp-samantha",
+        "soc-nydia"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4566,7 +4623,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 7.8,
       "summaryVerdict": "C Tier - DPS Legendary Seeker unit (Leonide) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-leonide"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-leonide"
     },
     {
       "externalId": "soc-unit-miguel",
@@ -4601,51 +4658,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Miguel Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Piercing)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Breaker",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Piercing multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Miguel Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Breaker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Grants an Instant Action movement boost, +25% Crit Rate, and 20% Armor Piercing before striking."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Miguel."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Piercing multiplier boost for Miguel."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-xavier",
-        "soc-maitha"
+        "soc-triss",
+        "soc-falin",
+        "soc-camelot"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
-      "tierBossRaid": "B",
+      "tierBossRaid": "A",
       "numericScore": 7.7,
       "summaryVerdict": "C Tier - DPS Legendary Breaker unit (Miguel) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-miguel"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-miguel"
     },
     {
       "externalId": "soc-unit-xavier",
@@ -4680,43 +4738,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Xavier Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - DPS Tactical Ultimate",
+          "multiplierSummary": "C Tier - DPS Tactical Ultimate (Physical)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Defender",
             "C Tier - DPS",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - DPS in the Sword of Convallaria Tactical Tier List. Delivers 185% Physical multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Xavier Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Defender"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Intercepts physical/magic attacks within 2 tiles, reduces damage taken by 30%, and counters with 110% Physical DMG."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Xavier."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Physical multiplier boost for Xavier."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-maitha",
-        "soc-nergal"
+        "soc-yennefer",
+        "soc-geralt",
+        "soc-tristan"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4724,7 +4783,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 7.6,
       "summaryVerdict": "C Tier - DPS Legendary Defender unit (Xavier) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-xavier"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-xavier"
     },
     {
       "externalId": "soc-unit-maitha",
@@ -4759,43 +4818,44 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Maitha Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Tactical Ultimate",
+          "multiplierSummary": "C Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Destroyer",
             "C Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Maitha Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Destroyer"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Maitha."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Maitha."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-nergal",
-        "soc-teadon"
+        "soc-layla",
+        "soc-kvare",
+        "soc-credenza"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4803,7 +4863,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 7.6,
       "summaryVerdict": "C Tier - Support Legendary Destroyer unit (Maitha) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-maitha"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-maitha"
     },
     {
       "externalId": "soc-unit-nergal",
@@ -4838,51 +4898,52 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Nergal Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Tactical Ultimate",
+          "multiplierSummary": "C Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Watcher",
             "C Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Nergal Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Watcher"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Nergal."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Nergal."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-teadon",
-        "soc-sp-inanna"
+        "soc-sp-inanna",
+        "soc-luvata",
+        "soc-lutfi"
       ],
       "tierOverall": "B",
-      "tierReroll": "B",
+      "tierReroll": "A",
       "tierBossRaid": "B",
       "numericScore": 7.8,
       "summaryVerdict": "C Tier - Support Legendary Watcher unit (Nergal) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-nergal"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nergal"
     },
     {
       "externalId": "soc-unit-teadon",
@@ -4917,42 +4978,43 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
           "name": "Teadon Signature Skill",
           "type": "EX_ULTIMATE",
           "spOrEnergyCost": "3 NRG",
-          "multiplierSummary": "C Tier - Support Tactical Ultimate",
+          "multiplierSummary": "C Tier - Support Tactical Ultimate (Magic)",
           "hitCount": 3,
           "buffCategoryTags": [
             "Seeker",
             "C Tier - Support",
             "Faction Aura"
           ],
-          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers top-tier turn efficiency in Tower of Adversity and Weaponry Trials."
+          "exactDescription": "Ranked C Tier - Support in the Sword of Convallaria Tactical Tier List. Delivers 185% Magic multiplier with high turn efficiency in Tower of Adversity and Weaponry Trials."
         },
         {
           "name": "Teadon Trait Reaction",
           "type": "ACTIVE",
           "spOrEnergyCost": "0 NRG",
-          "multiplierSummary": "1★ to 5★ Trait Scaling",
+          "multiplierSummary": "Instant Action + 1★–5★ Trait Scaling",
           "hitCount": 1,
           "buffCategoryTags": [
             "Memory Shard Farmable",
             "Seeker"
           ],
-          "exactDescription": "Scales from 1★ to 5★ via daily Memory Shard farming without requiring duplicate gacha pulls."
+          "exactDescription": "Restores +2 NRG to nearby allies, dispels 2 debuffs, and applies Level II Attribute Buffs for 2 turns."
         }
       ],
       "passives": [
         {
           "unlockRank": "3-Star",
           "name": "3★ Trait Power Spike",
-          "effect": "Unlocks core turn-economy and multiplier boost for Teadon."
+          "effect": "Unlocks core turn-economy (+1 NRG per turn) and +18% Magic multiplier boost for Teadon."
         },
         {
           "unlockRank": "5-Star",
           "name": "5★ Maximum Trait Mastery",
-          "effect": "Maximizes stat scaling and NRG recovery on every action."
+          "effect": "Maximizes stat scaling (+30% ATK/DEF) and resets skill cooldowns on critical or assistive actions."
         }
       ],
       "synergyUnitSlugs": [
-        "soc-sp-inanna",
+        "soc-auguste",
+        "soc-pamina",
         "soc-sp-samantha"
       ],
       "tierOverall": "B",
@@ -4961,7 +5023,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "numericScore": 7.7,
       "summaryVerdict": "C Tier - Support Legendary Seeker unit (Teadon) with high tactical impact in Tower of Adversity and Weaponry Trials.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/units/soc-teadon"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-teadon"
     }
   ],
   "equipments": [
@@ -4984,10 +5046,10 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Blade of Strategem).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-lilywill",
+        "soc-senshi"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-blade-of-strategem"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-blade-of-strategem"
     },
     {
       "externalId": "soc-gear-soc-wp-diffusing-prism",
@@ -5009,9 +5071,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "bestHolderSlugs": [
         "soc-sp-inanna",
         "soc-sp-samantha",
-        "soc-camelot"
+        "soc-auguste",
+        "soc-layla",
+        "soc-nonowill",
+        "soc-senshi",
+        "soc-simona"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-diffusing-prism"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-diffusing-prism"
     },
     {
       "externalId": "soc-gear-soc-wp-double-sided-halberd",
@@ -5032,10 +5098,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Double-Sided Halberd).",
       "bestHolderSlugs": [
         "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-camelot",
+        "soc-senshi",
+        "soc-alexei"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-double-sided-halberd"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-double-sided-halberd"
     },
     {
       "externalId": "soc-gear-soc-wp-feast-axe",
@@ -5055,11 +5122,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Feast Axe).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-geralt",
+        "soc-gloria",
+        "soc-dantalion"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-feast-axe"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-feast-axe"
     },
     {
       "externalId": "soc-gear-soc-wp-gale-sword",
@@ -5079,11 +5146,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Gale Sword).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
         "soc-sp-samantha",
-        "soc-camelot"
+        "soc-kvare",
+        "soc-lutfi",
+        "soc-ayishah",
+        "soc-beryl",
+        "soc-simona",
+        "soc-faycal",
+        "soc-xavier"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-gale-sword"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-gale-sword"
     },
     {
       "externalId": "soc-gear-soc-wp-longbow-of-martyrs",
@@ -5103,11 +5175,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Longbow of Martyrs).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-luvata",
+        "soc-momo",
+        "soc-garcia"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-longbow-of-martyrs"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-longbow-of-martyrs"
     },
     {
       "externalId": "soc-gear-soc-wp-melee-mega-crossbow",
@@ -5127,11 +5199,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Melee Mega Crossbow).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-nydia",
+        "soc-marcille",
+        "soc-guzman"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-melee-mega-crossbow"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-melee-mega-crossbow"
     },
     {
       "externalId": "soc-gear-soc-wp-newborn-blade",
@@ -5151,11 +5223,16 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Newborn Blade).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
         "soc-sp-samantha",
-        "soc-camelot"
+        "soc-camelot",
+        "soc-triss",
+        "soc-estra",
+        "soc-caris",
+        "soc-simona",
+        "soc-alexei",
+        "soc-iggy"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-newborn-blade"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-newborn-blade"
     },
     {
       "externalId": "soc-gear-soc-wp-nocturnal-glow",
@@ -5175,11 +5252,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nocturnal Glow).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-tristan",
+        "soc-homa",
+        "soc-leonide"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nocturnal-glow"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-nocturnal-glow"
     },
     {
       "externalId": "soc-gear-soc-wp-reorganized-cube",
@@ -5199,11 +5276,12 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Reorganized Cube).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-credenza",
+        "soc-sp-safiyyah",
+        "soc-miguel",
+        "soc-maitha"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-reorganized-cube"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-reorganized-cube"
     },
     {
       "externalId": "soc-gear-soc-wp-starry-sky-heritage",
@@ -5223,11 +5301,15 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Starry Sky Heritage).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-geralt",
+        "soc-lutfi",
+        "soc-layla",
+        "soc-col",
+        "soc-nungal",
+        "soc-dantalion",
+        "soc-xavier"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-starry-sky-heritage"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-starry-sky-heritage"
     },
     {
       "externalId": "soc-gear-soc-wp-void-stab",
@@ -5247,11 +5329,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked S Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Void Stab).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-sp-safiyyah",
+        "soc-pamina",
+        "soc-maitha"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-void-stab"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-void-stab"
     },
     {
       "externalId": "soc-gear-soc-wp-focus-wand",
@@ -5271,11 +5353,12 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Focus Wand).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-camelot",
+        "soc-taair",
+        "soc-alexei",
+        "soc-nergal"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-focus-wand"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-focus-wand"
     },
     {
       "externalId": "soc-gear-soc-wp-hammer-dragon-rise",
@@ -5295,11 +5378,15 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Hammer “Dragon Rise!”).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-kvare",
+        "soc-yennefer",
+        "soc-marcille",
+        "soc-inanna",
+        "soc-hasna",
+        "soc-faycal",
+        "soc-teadon"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-hammer-dragon-rise"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-hammer-dragon-rise"
     },
     {
       "externalId": "soc-gear-soc-wp-nightmare-puppet",
@@ -5319,11 +5406,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nightmare Puppet).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-taair",
+        "soc-yserinde",
+        "soc-nergal"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nightmare-puppet"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-nightmare-puppet"
     },
     {
       "externalId": "soc-gear-soc-wp-nirvana",
@@ -5343,11 +5430,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nirvana).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-agata",
+        "soc-rawiyah",
+        "soc-estra"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nirvana"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-nirvana"
     },
     {
       "externalId": "soc-gear-soc-wp-tuning-hammer",
@@ -5367,11 +5454,14 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked A Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Tuning Hammer).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-luvata",
+        "soc-auguste",
+        "soc-pamina",
+        "soc-rico",
+        "soc-kiya",
+        "soc-garcia"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-tuning-hammer"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-tuning-hammer"
     },
     {
       "externalId": "soc-gear-soc-wp-army-breaking-spear",
@@ -5391,11 +5481,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Army-Breaking Spear).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-geralt",
+        "soc-ayishah",
+        "soc-dantalion"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-army-breaking-spear"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-army-breaking-spear"
     },
     {
       "externalId": "soc-gear-soc-wp-barbecue-hammer",
@@ -5415,11 +5505,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Barbecue Hammer).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-estra",
+        "soc-nonowill",
+        "soc-pamina"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-barbecue-hammer"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-barbecue-hammer"
     },
     {
       "externalId": "soc-gear-soc-wp-brutal-axe",
@@ -5439,11 +5529,15 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Brutal Axe).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-nydia",
+        "soc-yennefer",
+        "soc-layla",
+        "soc-rico",
+        "soc-lilywill",
+        "soc-guzman",
+        "soc-teadon"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-brutal-axe"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-brutal-axe"
     },
     {
       "externalId": "soc-gear-soc-wp-cornucopia-axe",
@@ -5463,11 +5557,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Axe).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-marcille",
+        "soc-team-meteor",
+        "soc-safiyyah"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-axe"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-axe"
     },
     {
       "externalId": "soc-gear-soc-wp-cornucopia-bow",
@@ -5487,11 +5581,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Bow).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-pamina",
+        "soc-safiyyah",
+        "soc-sp-rawiyah"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-bow"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-bow"
     },
     {
       "externalId": "soc-gear-soc-wp-cornucopia-spear",
@@ -5511,11 +5605,15 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Spear).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-kvare",
+        "soc-triss",
+        "soc-rico",
+        "soc-safiyyah",
+        "soc-momo",
+        "soc-faycal",
+        "soc-iggy"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-spear"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-spear"
     },
     {
       "externalId": "soc-gear-soc-wp-cornucopia-staff",
@@ -5535,11 +5633,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Staff).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-safiyyah",
+        "soc-beryl",
+        "soc-cocoa"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-staff"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-staff"
     },
     {
       "externalId": "soc-gear-soc-wp-cornucopia-dagger",
@@ -5559,11 +5657,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Cornucopia Dagger).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-yserinde",
+        "soc-sp-rawiyah",
+        "soc-falin"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-dagger"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-cornucopia-dagger"
     },
     {
       "externalId": "soc-gear-soc-wp-dawnlight",
@@ -5583,11 +5681,14 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Dawnlight).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-tristan",
+        "soc-sp-rawiyah",
+        "soc-ciri",
+        "soc-nungal",
+        "soc-acambe",
+        "soc-leonide"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-dawnlight"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-dawnlight"
     },
     {
       "externalId": "soc-gear-soc-wp-dawnmoon",
@@ -5607,11 +5708,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Dawnmoon).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-sp-rawiyah",
+        "soc-cocoa",
+        "soc-gloria"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-dawnmoon"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-dawnmoon"
     },
     {
       "externalId": "soc-gear-soc-wp-denial-hammer",
@@ -5631,11 +5732,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Denial Hammer).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-luvata",
+        "soc-falin",
+        "soc-garcia"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-denial-hammer"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-denial-hammer"
     },
     {
       "externalId": "soc-gear-soc-wp-ever-burning-blade",
@@ -5655,11 +5756,14 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Ever-Burning Blade).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-credenza",
+        "soc-ciri",
+        "soc-flavia",
+        "soc-caris",
+        "soc-rawiyah",
+        "soc-miguel"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-ever-burning-blade"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-ever-burning-blade"
     },
     {
       "externalId": "soc-gear-soc-wp-frostspine-grip",
@@ -5679,11 +5783,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Frostspine Grip).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-agata",
+        "soc-gloria",
+        "soc-nonowill"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-frostspine-grip"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-frostspine-grip"
     },
     {
       "externalId": "soc-gear-soc-wp-irian-combat-bow",
@@ -5703,11 +5807,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Irian Combat Bow).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-homa",
+        "soc-afra",
+        "soc-beryl"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-irian-combat-bow"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-irian-combat-bow"
     },
     {
       "externalId": "soc-gear-soc-wp-life-fondness",
@@ -5727,11 +5831,14 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Life Fondness).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-lutfi",
+        "soc-ciri",
+        "soc-cocoa",
+        "soc-inanna",
+        "soc-team-meteor",
+        "soc-xavier"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-life-fondness"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-life-fondness"
     },
     {
       "externalId": "soc-gear-soc-wp-magic-ladle",
@@ -5751,11 +5858,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Magic Ladle).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-nydia",
+        "soc-nonowill",
+        "soc-guzman"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-magic-ladle"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-magic-ladle"
     },
     {
       "externalId": "soc-gear-soc-wp-paradox-crystal-chain",
@@ -5775,11 +5882,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Paradox Crystal Chain).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-beryl",
+        "soc-col",
+        "soc-hasna"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-paradox-crystal-chain"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-paradox-crystal-chain"
     },
     {
       "externalId": "soc-gear-soc-wp-skeleton-spear",
@@ -5799,11 +5906,14 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Skeleton Spear).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-sp-safiyyah",
+        "soc-auguste",
+        "soc-falin",
+        "soc-caris",
+        "soc-acambe",
+        "soc-maitha"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-skeleton-spear"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-skeleton-spear"
     },
     {
       "externalId": "soc-gear-soc-wp-star-raid-crossbow",
@@ -5823,11 +5933,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked B Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Star Raid Crossbow).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-col",
+        "soc-edda",
+        "soc-lilywill"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-star-raid-crossbow"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-star-raid-crossbow"
     },
     {
       "externalId": "soc-gear-soc-wp-guardian-s-will",
@@ -5847,11 +5957,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Guardian's Will).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-cocoa",
+        "soc-hasna",
+        "soc-momo"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-guardian-s-will"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-guardian-s-will"
     },
     {
       "externalId": "soc-gear-soc-wp-hollow-axe",
@@ -5871,11 +5981,15 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Hollow Axe).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-triss",
+        "soc-taair",
+        "soc-flavia",
+        "soc-kiya",
+        "soc-afra",
+        "soc-iggy",
+        "soc-nergal"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-hollow-axe"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-hollow-axe"
     },
     {
       "externalId": "soc-gear-soc-wp-meteor-line",
@@ -5895,11 +6009,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Meteor Line).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-hasna",
+        "soc-lilywill",
+        "soc-rawiyah"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-meteor-line"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-meteor-line"
     },
     {
       "externalId": "soc-gear-soc-wp-nameless-staff",
@@ -5919,11 +6033,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Nameless Staff).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-ayishah",
+        "soc-momo",
+        "soc-team-meteor"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-nameless-staff"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-nameless-staff"
     },
     {
       "externalId": "soc-gear-soc-wp-resentment-broom",
@@ -5943,11 +6057,14 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Resentment Broom).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-yennefer",
+        "soc-gloria",
+        "soc-nungal",
+        "soc-edda",
+        "soc-samantha",
+        "soc-teadon"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-resentment-broom"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-resentment-broom"
     },
     {
       "externalId": "soc-gear-soc-wp-senator-swift-sword",
@@ -5967,11 +6084,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Senator Swift Sword).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-falin",
+        "soc-rawiyah",
+        "soc-afra"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-senator-swift-sword"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-senator-swift-sword"
     },
     {
       "externalId": "soc-gear-soc-wp-the-silent-guard",
@@ -5991,11 +6108,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (The Silent Guard).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-tristan",
+        "soc-team-meteor",
+        "soc-leonide"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-the-silent-guard"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-the-silent-guard"
     },
     {
       "externalId": "soc-gear-soc-wp-whale-hunter",
@@ -6015,11 +6132,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Whale Hunter).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-yserinde",
+        "soc-homa",
+        "soc-kiya",
+        "soc-acambe",
+        "soc-samantha"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-whale-hunter"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-whale-hunter"
     },
     {
       "externalId": "soc-gear-soc-wp-beheading-machete",
@@ -6039,11 +6158,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Beheading Machete).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-estra",
+        "soc-afra",
+        "soc-schacklulu"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-beheading-machete"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-beheading-machete"
     },
     {
       "externalId": "soc-gear-soc-wp-doomsday-scythe",
@@ -6063,11 +6182,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Doomsday Scythe).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-edda",
+        "soc-schacklulu",
+        "soc-senshi"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-doomsday-scythe"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-doomsday-scythe"
     },
     {
       "externalId": "soc-gear-soc-wp-pendant-halberd",
@@ -6087,11 +6206,13 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Pendant Halberd).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-agata",
+        "soc-flavia",
+        "soc-inanna",
+        "soc-samantha",
+        "soc-schacklulu"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-pendant-halberd"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-pendant-halberd"
     },
     {
       "externalId": "soc-gear-soc-wp-skeleton-staff",
@@ -6111,11 +6232,11 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       },
       "effectSummary": "Ranked C Tier in the Sword of Convallaria Legendary Weapon & Trinket Tier List (Skeleton Staff).",
       "bestHolderSlugs": [
-        "soc-sp-inanna",
-        "soc-sp-samantha",
-        "soc-camelot"
+        "soc-credenza",
+        "soc-schacklulu",
+        "soc-miguel"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/weapons/soc-wp-skeleton-staff"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/weapons/soc-wp-skeleton-staff"
     }
   ],
   "bosses": [
@@ -6160,7 +6281,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-geralt",
         "soc-kvare"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/bosses/weaponry-trial-1"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/bosses/weaponry-trial-1"
     },
     {
       "slug": "weaponry-trial-2-stage-10-lv70",
@@ -6196,7 +6317,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-luvata",
         "soc-nydia"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/bosses/weaponry-trial-2"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/bosses/weaponry-trial-2"
     },
     {
       "slug": "weaponry-trial-3-stage-10-lv70",
@@ -6232,7 +6353,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-triss",
         "soc-tristan"
       ],
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/bosses/weaponry-trial-3"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/bosses/weaponry-trial-3"
     }
   ],
   "banners": [
@@ -6254,7 +6375,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Top S+ Tier AoE Magic DPS from The Witcher 3 collaboration with uncounterable fire-tile terrain control.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/triss"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/triss"
     },
     {
       "slug": "soc-witcher-collab-rerun",
@@ -6268,8 +6389,10 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "Ciri"
       ],
       "featuredUnitSlugs": [
+        "soc-geralt",
         "soc-yennefer",
-        "soc-triss"
+        "soc-triss",
+        "soc-ciri"
       ],
       "asianStartDate": "2026-01-09",
       "asianEndDate": "2026-02-06",
@@ -6278,7 +6401,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Yennefer and Triss both rank S+ Tier in the overall meta while Geralt is a top S Tier physical carry.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/witcher-collab"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/witcher-collab"
     },
     {
       "slug": "soc-upcoming-banner-1",
@@ -6289,7 +6412,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "SP Maitha"
       ],
       "featuredUnitSlugs": [
-        "soc-sp-samantha"
+        "soc-maitha"
       ],
       "asianStartDate": "2026-06-01",
       "asianEndDate": "2026-06-21",
@@ -6298,7 +6421,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (SP Maitha) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-1"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-1"
     },
     {
       "slug": "soc-upcoming-banner-2",
@@ -6309,7 +6432,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "SP Faycal"
       ],
       "featuredUnitSlugs": [
-        "soc-camelot"
+        "soc-faycal"
       ],
       "asianStartDate": "2026-06-02",
       "asianEndDate": "2026-06-21",
@@ -6318,7 +6441,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (SP Faycal) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-2"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-2"
     },
     {
       "slug": "soc-upcoming-banner-3",
@@ -6329,7 +6452,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "SP Nungal"
       ],
       "featuredUnitSlugs": [
-        "soc-geralt"
+        "soc-nungal"
       ],
       "asianStartDate": "2026-06-03",
       "asianEndDate": "2026-06-21",
@@ -6338,7 +6461,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (SP Nungal) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-3"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-3"
     },
     {
       "slug": "soc-upcoming-banner-4",
@@ -6358,7 +6481,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (Lukamar) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-4"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-4"
     },
     {
       "slug": "soc-upcoming-banner-5",
@@ -6378,7 +6501,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Pooch RunRun) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-5"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-5"
     },
     {
       "slug": "soc-upcoming-banner-6",
@@ -6398,7 +6521,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Shams) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-6"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-6"
     },
     {
       "slug": "soc-upcoming-banner-7",
@@ -6418,7 +6541,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Clara) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-7"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-7"
     },
     {
       "slug": "soc-upcoming-banner-8",
@@ -6438,7 +6561,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Selina) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-8"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-8"
     },
     {
       "slug": "soc-upcoming-banner-9",
@@ -6458,7 +6581,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Yeganeh) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-9"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-9"
     },
     {
       "slug": "soc-upcoming-banner-10",
@@ -6478,7 +6601,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Heshan) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-10"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-10"
     },
     {
       "slug": "soc-upcoming-banner-11",
@@ -6498,7 +6621,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Shahnaz) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-11"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-11"
     },
     {
       "slug": "soc-upcoming-banner-12",
@@ -6518,7 +6641,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Kianshir) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
-      "sourceUrl": "https://meta.gg/sword-of-convallaria/banners/upcoming-12"
+      "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/banners/upcoming-12"
     }
   ]
 };

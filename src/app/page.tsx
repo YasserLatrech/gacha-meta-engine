@@ -6,6 +6,7 @@ import { AdSlot } from '../components/AdSlot';
 import { PortalSearchClient, SearchableItem } from '../components/PortalSearchClient';
 import { getGameAppIconUrl } from '../domain/constants/game-visuals';
 import { GachaCrestMark } from '../components/GachaCrestLogo';
+import { SiteFooter } from '../components/SiteFooter';
 
 export const dynamic = 'force-dynamic';
 
@@ -627,7 +628,88 @@ export default async function PortalHomePage() {
             description="Pre-reserved homepage rectangle ad slot (0.00 CLS)"
           />
         </section>
+
+        {/* SECTION 3: GACHACREST TIER RATING METHODOLOGY & FREQUENTLY ASKED QUESTIONS */}
+        <section
+          style={{
+            background: 'var(--bg-surface)',
+            border: '1px solid var(--border-main)',
+            borderRadius: '4px',
+            padding: '16px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '12px',
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '14px',
+              fontWeight: 900,
+              borderLeft: '4px solid var(--accent-primary)',
+              paddingLeft: '8px',
+            }}
+          >
+            GACHACREST TIER LIST SCORING METHODOLOGY &amp; MULTI-GAME FAQ
+          </h2>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
+              gap: '10px',
+            }}
+          >
+            <div
+              style={{
+                background: 'var(--bg-subtle)',
+                border: '1px solid var(--border-main)',
+                borderRadius: '4px',
+                padding: '11px',
+              }}
+            >
+              <h3 style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                How does GachaCrest calculate SSS (9.5–10.0) Tier Rankings?
+              </h3>
+              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.5 }}>
+                Every character and weapon/card is evaluated across four weighted telemetry metrics: <strong>Burst &amp; Break Ceiling (35%)</strong>,{' '}
+                <strong>SP / Turn Economy (25%)</strong>, <strong>Role Compression &amp; Buff Stacking (25%)</strong>, and{' '}
+                <strong>Endgame Meta Longevity (15%)</strong>.
+              </p>
+            </div>
+            <div
+              style={{
+                background: 'var(--bg-subtle)',
+                border: '1px solid var(--border-main)',
+                borderRadius: '4px',
+                padding: '11px',
+              }}
+            >
+              <h3 style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                Who are the #1 Apex Meta units across all 4 games right now?
+              </h3>
+              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.5 }}>
+                In <strong>Star Savior</strong>: Frey (Bunny) &amp; Lugh. In <strong>Heaven Burns Red</strong>: Karen Asakura [Midnight Soul Harvest] &amp; Ruka Kayamori [Diva Suit]. In <strong>Uma Musume</strong>: Symboli Rudolf [Adamant Sovereign] &amp; Almond Eye. In <strong>Sword of Convallaria</strong>: SP Samantha &amp; Triss.
+              </p>
+            </div>
+            <div
+              style={{
+                background: 'var(--bg-subtle)',
+                border: '1px solid var(--border-main)',
+                borderRadius: '4px',
+                padding: '11px',
+              }}
+            >
+              <h3 style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                How do the Pity &amp; Spark Pull Calculators work?
+              </h3>
+              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.5 }}>
+                Each game wiki features a dedicated Pity Planner that calculates your exact pull readiness against hard pity (200 pulls in Star Savior &amp; Uma Musume, 150 in Heaven Burns Red, 100 in Sword of Convallaria) using your saved currency and monthly F2P income.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
+      <SiteFooter />
     </>
   );
 }

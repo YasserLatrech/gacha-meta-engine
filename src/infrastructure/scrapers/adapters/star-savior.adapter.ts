@@ -8,13 +8,13 @@ export const starSaviorBundle: GameAdapterBundle = {
   "asianPatchVersion": "v1.4.0 Live Meta",
   "globalPatchVersion": "v1.4.0 Live",
   "foresightGapMonths": 3,
-  "coverImageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132533_e9xba.webp",
+  "coverImageUrl": "/starsavior-cover.jpg",
   "currencyName": "Starlight Quartz",
   "pullCostSingle": 150,
   "pityThreshold": 200,
   "monthlyF2pIncome": 15000,
   "monthlyPassIncome": 22500,
-  "sourceUrl": "https://meta.gg/star-savior",
+  "sourceUrl": "https://gachacrest.gg/star-savior",
   "rolesConfig": [
     {
       "key": "DPS",
@@ -117,14 +117,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Moon Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Professor M is a SSS-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -134,12 +134,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79924504",
+        "ss-80022340",
+        "ss-79677914"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -147,7 +148,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.9,
       "summaryVerdict": "Professor M is a SSS-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80384230"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80384230"
     },
     {
       "externalId": "ss-unit-80354674",
@@ -201,14 +202,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Order Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Amora is a SSS-Tier Order-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Order-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -218,12 +219,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Order resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80218957",
-        "ss-80022340"
+        "ss-79606358",
+        "ss-79517657",
+        "ss-79517669"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -231,7 +233,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.8,
       "summaryVerdict": "Amora is a SSS-Tier Order-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80354674"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80354674"
     },
     {
       "externalId": "ss-unit-80218957",
@@ -285,14 +287,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Star Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Smile (Swimsuit) is a SSS-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -302,12 +304,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80022340",
-        "ss-79717421"
+        "ss-79517666",
+        "ss-79517681",
+        "ss-79517675"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -315,7 +318,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Smile (Swimsuit) is a SSS-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80218957"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80218957"
     },
     {
       "externalId": "ss-unit-80022340",
@@ -369,14 +372,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Carmen (Bride) is a SSS-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -386,12 +389,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79717421",
-        "ss-80482306"
+        "ss-79534109",
+        "ss-80482402",
+        "ss-79517663"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -399,7 +403,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Carmen (Bride) is a SSS-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80022340"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80022340"
     },
     {
       "externalId": "ss-unit-79717421",
@@ -453,14 +457,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Sun Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Charles (Bunny) is a SSS-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -470,20 +474,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
         "ss-80482306",
-        "ss-80331829"
+        "ss-80331829",
+        "ss-80218489"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
-      "tierBossRaid": "SSS",
+      "tierBossRaid": "SS",
       "numericScore": 9.9,
       "summaryVerdict": "Charles (Bunny) is a SSS-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79717421"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79717421"
     },
     {
       "externalId": "ss-unit-80482306",
@@ -537,14 +542,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Ceres (Maid) is a SS-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -554,12 +559,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80331829",
-        "ss-80022517"
+        "ss-80012791",
+        "ss-80022517",
+        "ss-79517720"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -567,7 +573,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "Ceres (Maid) is a SS-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80482306"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80482306"
     },
     {
       "externalId": "ss-unit-80331829",
@@ -621,14 +627,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Sun Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Christel is a SS-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -638,12 +644,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80022517",
-        "ss-80012791"
+        "ss-79717421",
+        "ss-80482306",
+        "ss-80218489"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -651,7 +658,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Christel is a SS-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80331829"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80331829"
     },
     {
       "externalId": "ss-unit-80022517",
@@ -705,14 +712,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Sun Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Epindel (Bride) is a SS-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -722,20 +729,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
         "ss-80012791",
-        "ss-79924504"
+        "ss-79517678",
+        "ss-79517720"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierReroll": "S",
+      "tierBossRaid": "SSS",
       "numericScore": 9.3,
       "summaryVerdict": "Epindel (Bride) is a SS-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80022517"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80022517"
     },
     {
       "externalId": "ss-unit-80012791",
@@ -789,14 +797,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Sun Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Tiria is a SS-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -806,12 +814,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79924504",
-        "ss-79864232"
+        "ss-80482306",
+        "ss-80331829",
+        "ss-80218489"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -819,7 +828,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.5,
       "summaryVerdict": "Tiria is a SS-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80012791"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80012791"
     },
     {
       "externalId": "ss-unit-79924504",
@@ -873,14 +882,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Moon Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Fay is a SS-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -890,20 +899,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79864232",
-        "ss-79677914"
+        "ss-79517726",
+        "ss-80482402",
+        "ss-79517663"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.4,
       "summaryVerdict": "Fay is a SS-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79924504"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79924504"
     },
     {
       "externalId": "ss-unit-79864232",
@@ -957,14 +967,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Chaos Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Rosaria is a SS-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Chaos-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -974,20 +984,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Chaos resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79677914",
-        "ss-79606358"
+        "ss-79517687",
+        "ss-80127403",
+        "ss-79517705"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
       "summaryVerdict": "Rosaria is a SS-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79864232"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79864232"
     },
     {
       "externalId": "ss-unit-79677914",
@@ -1041,14 +1052,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Emily is a SS-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1058,20 +1069,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79606358",
-        "ss-79534109"
+        "ss-79534109",
+        "ss-79517726",
+        "ss-80482402"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.3,
       "summaryVerdict": "Emily is a SS-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79677914"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79677914"
     },
     {
       "externalId": "ss-unit-79606358",
@@ -1125,14 +1137,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Asera (Dress) is a SS-Tier Order-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Order-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1142,20 +1154,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Order resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79534109",
-        "ss-79517681"
+        "ss-80354674",
+        "ss-79517657",
+        "ss-79517669"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
       "summaryVerdict": "Asera (Dress) is a SS-Tier Order-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79606358"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79606358"
     },
     {
       "externalId": "ss-unit-79534109",
@@ -1209,14 +1222,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Moon Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Claire (Bunny) is a SS-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1226,12 +1239,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517681",
-        "ss-79517675"
+        "ss-79517726",
+        "ss-80482402",
+        "ss-79517663"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -1239,7 +1253,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "Claire (Bunny) is a SS-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79534109"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79534109"
     },
     {
       "externalId": "ss-unit-79517681",
@@ -1293,14 +1307,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Dana is a SS-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1310,12 +1324,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517675",
-        "ss-79517738"
+        "ss-80218957",
+        "ss-79517666",
+        "ss-79517675"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -1323,7 +1338,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Dana is a SS-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517681"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517681"
     },
     {
       "externalId": "ss-unit-79517675",
@@ -1377,14 +1392,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Ede is a SS-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1394,20 +1409,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517738",
-        "ss-80482402"
+        "ss-80384143",
+        "ss-79517666",
+        "ss-79517738"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.3,
       "summaryVerdict": "Ede is a SS-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517675"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517675"
     },
     {
       "externalId": "ss-unit-79517738",
@@ -1461,14 +1477,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Clarissa is a SS-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1478,20 +1494,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80482402",
-        "ss-80384143"
+        "ss-80218957",
+        "ss-79517666",
+        "ss-79517675"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
       "summaryVerdict": "Clarissa is a SS-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517738"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517738"
     },
     {
       "externalId": "ss-unit-80482402",
@@ -1545,14 +1562,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Moon Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Lydia (Maid) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1562,20 +1579,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80384143",
-        "ss-80218489"
+        "ss-79534109",
+        "ss-79517726",
+        "ss-79517663"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.9,
       "summaryVerdict": "Lydia (Maid) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80482402"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80482402"
     },
     {
       "externalId": "ss-unit-80384143",
@@ -1629,14 +1647,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Star Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Gwen is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1646,12 +1664,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80218489",
-        "ss-80128024"
+        "ss-79517666",
+        "ss-79517681",
+        "ss-79517675"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1659,7 +1678,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Gwen is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80384143"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80384143"
     },
     {
       "externalId": "ss-unit-80218489",
@@ -1713,14 +1732,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Luna (Swimsuit) is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1730,20 +1749,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80128024",
-        "ss-80127403"
+        "ss-80012791",
+        "ss-79517678",
+        "ss-80022517"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Luna (Swimsuit) is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80218489"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80218489"
     },
     {
       "externalId": "ss-unit-80128024",
@@ -1797,14 +1817,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Moon Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Ceres is a S-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1814,12 +1834,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80127403",
-        "ss-79924501"
+        "ss-80022340",
+        "ss-80384230",
+        "ss-79677914"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1827,7 +1848,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Ceres is a S-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80128024"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80128024"
     },
     {
       "externalId": "ss-unit-80127403",
@@ -1881,14 +1902,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Chaos Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Cornelia is a S-Tier Chaos-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Chaos-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1898,20 +1919,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Chaos resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79924501",
-        "ss-79807109"
+        "ss-79517687",
+        "ss-79864232",
+        "ss-79517705"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.9,
       "summaryVerdict": "Cornelia is a S-Tier Chaos-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-80127403"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-80127403"
     },
     {
       "externalId": "ss-unit-79924501",
@@ -1965,14 +1987,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Star Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Lin is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -1982,12 +2004,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79807109",
-        "ss-79766294"
+        "ss-79517666",
+        "ss-79517681",
+        "ss-79517675"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -1995,7 +2018,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Lin is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79924501"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79924501"
     },
     {
       "externalId": "ss-unit-79807109",
@@ -2049,14 +2072,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Star Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Roberta is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2066,20 +2089,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79766294",
-        "ss-79517714"
+        "ss-79517666",
+        "ss-79517738",
+        "ss-79517717"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Roberta is a S-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79807109"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79807109"
     },
     {
       "externalId": "ss-unit-79766294",
@@ -2133,14 +2157,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Moon Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Frey (Bunny) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2150,12 +2174,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517714",
-        "ss-79517705"
+        "ss-79924504",
+        "ss-80022340",
+        "ss-79677914"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2163,7 +2188,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Frey (Bunny) is a S-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79766294"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79766294"
     },
     {
       "externalId": "ss-unit-79517714",
@@ -2217,14 +2242,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Sun Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Kira is a S-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2234,12 +2259,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517705",
-        "ss-79517690"
+        "ss-79517678",
+        "ss-80022517",
+        "ss-79517720"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2247,7 +2273,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "Kira is a S-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517714"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517714"
     },
     {
       "externalId": "ss-unit-79517705",
@@ -2301,14 +2327,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Chaos Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Lacy is a S-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Chaos-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2318,12 +2344,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Chaos resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517690",
-        "ss-79517678"
+        "ss-79517687",
+        "ss-79864232",
+        "ss-80127403"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2331,7 +2358,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Lacy is a S-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517705"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517705"
     },
     {
       "externalId": "ss-unit-79517690",
@@ -2385,14 +2412,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Moon Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Lugh is a S-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2402,20 +2429,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517678",
-        "ss-79517669"
+        "ss-79534109",
+        "ss-79517726",
+        "ss-79517663"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Lugh is a S-Tier Moon-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517690"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517690"
     },
     {
       "externalId": "ss-unit-79517678",
@@ -2469,14 +2497,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Serpan is a S-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2486,20 +2514,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517669",
-        "ss-79517660"
+        "ss-79717421",
+        "ss-80331829",
+        "ss-80218489"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 9,
       "summaryVerdict": "Serpan is a S-Tier Sun-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517678"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517678"
     },
     {
       "externalId": "ss-unit-79517669",
@@ -2553,14 +2582,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Order Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Seira is a S-Tier Order-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Order-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2570,20 +2599,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Order resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517660",
-        "ss-79517657"
+        "ss-79606358",
+        "ss-79517657",
+        "ss-80354674"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "A",
       "numericScore": 8.9,
       "summaryVerdict": "Seira is a S-Tier Order-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517669"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517669"
     },
     {
       "externalId": "ss-unit-79517660",
@@ -2637,14 +2667,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Sun Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Charles is a S-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2654,12 +2684,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517657",
-        "ss-79517654"
+        "ss-80482306",
+        "ss-80331829",
+        "ss-80218489"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2667,7 +2698,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Charles is a S-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517660"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517660"
     },
     {
       "externalId": "ss-unit-79517657",
@@ -2721,14 +2752,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Order Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Luna is a S-Tier Order-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Order-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2738,20 +2769,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Order resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517654",
-        "ss-79517720"
+        "ss-79517669",
+        "ss-79606358",
+        "ss-80354674"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Luna is a S-Tier Order-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Order elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517657"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517657"
     },
     {
       "externalId": "ss-unit-79517654",
@@ -2805,14 +2837,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Smile is a S-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2822,12 +2854,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517720",
-        "ss-79855349"
+        "ss-80218957",
+        "ss-79517666",
+        "ss-79517675"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -2835,7 +2868,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Smile is a S-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517654"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517654"
     },
     {
       "externalId": "ss-unit-79517720",
@@ -2889,14 +2922,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Anna is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2906,20 +2939,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79855349",
-        "ss-79855337"
+        "ss-80012791",
+        "ss-79517678",
+        "ss-80022517"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.9,
       "summaryVerdict": "Anna is a S-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517720"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517720"
     },
     {
       "externalId": "ss-unit-79855349",
@@ -2973,14 +3007,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Hilde is a A-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -2990,12 +3024,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79855337",
-        "ss-79644743"
+        "ss-79717421",
+        "ss-80482306",
+        "ss-80331829"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3003,7 +3038,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.3,
       "summaryVerdict": "Hilde is a A-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79855349"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79855349"
     },
     {
       "externalId": "ss-unit-79855337",
@@ -3057,14 +3092,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Mina Yanagi is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3074,20 +3109,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79644743",
-        "ss-79534106"
+        "ss-80384143",
+        "ss-79517666",
+        "ss-79517717"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierBossRaid": "S",
       "numericScore": 8.3,
       "summaryVerdict": "Mina Yanagi is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79855337"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79855337"
     },
     {
       "externalId": "ss-unit-79644743",
@@ -3141,14 +3177,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Belle Reese is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3158,12 +3194,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79534106",
-        "ss-79517708"
+        "ss-80218957",
+        "ss-79517666",
+        "ss-79517675"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3171,7 +3208,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.5,
       "summaryVerdict": "Belle Reese is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79644743"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79644743"
     },
     {
       "externalId": "ss-unit-79534106",
@@ -3225,14 +3262,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Sun Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Scarlett (Bunny) is a A-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3242,20 +3279,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517708",
-        "ss-79517696"
+        "ss-80012791",
+        "ss-79517678",
+        "ss-79517720"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierReroll": "B",
+      "tierBossRaid": "S",
       "numericScore": 8.4,
       "summaryVerdict": "Scarlett (Bunny) is a A-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79534106"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79534106"
     },
     {
       "externalId": "ss-unit-79517708",
@@ -3309,14 +3347,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Star Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Tanya is a A-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3326,12 +3364,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517696",
-        "ss-79517672"
+        "ss-79517666",
+        "ss-79517681",
+        "ss-79517675"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3339,7 +3378,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.3,
       "summaryVerdict": "Tanya is a A-Tier Star-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517708"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517708"
     },
     {
       "externalId": "ss-unit-79517696",
@@ -3393,14 +3432,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Chaos Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Lydia is a A-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Chaos-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3410,20 +3449,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Chaos resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517672",
-        "ss-79517666"
+        "ss-79517687",
+        "ss-79864232",
+        "ss-80127403"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierBossRaid": "S",
       "numericScore": 8.3,
       "summaryVerdict": "Lydia is a A-Tier Chaos-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517696"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517696"
     },
     {
       "externalId": "ss-unit-79517672",
@@ -3477,14 +3517,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Star Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Trish is a A-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3494,12 +3534,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
         "ss-79517666",
-        "ss-79517735"
+        "ss-79517681",
+        "ss-79517675"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3507,7 +3548,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.5,
       "summaryVerdict": "Trish is a A-Tier Star-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517672"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517672"
     },
     {
       "externalId": "ss-unit-79517666",
@@ -3561,14 +3602,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Frey is a A-Tier Star-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3578,12 +3619,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517735",
-        "ss-79517732"
+        "ss-80384143",
+        "ss-79517738",
+        "ss-79517717"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3591,7 +3633,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.4,
       "summaryVerdict": "Frey is a A-Tier Star-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517666"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517666"
     },
     {
       "externalId": "ss-unit-79517735",
@@ -3645,14 +3687,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Sun Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Scarlett is a A-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3662,12 +3704,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517732",
-        "ss-79517729"
+        "ss-80482306",
+        "ss-80331829",
+        "ss-80218489"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3675,7 +3718,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.3,
       "summaryVerdict": "Scarlett is a A-Tier Sun-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517735"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517735"
     },
     {
       "externalId": "ss-unit-79517732",
@@ -3729,14 +3772,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Moon Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Claire is a A-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3746,20 +3789,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517729",
-        "ss-79517726"
+        "ss-79517726",
+        "ss-80482402",
+        "ss-79517663"
       ],
       "tierOverall": "A",
-      "tierReroll": "A",
+      "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.3,
       "summaryVerdict": "Claire is a A-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517732"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517732"
     },
     {
       "externalId": "ss-unit-79517729",
@@ -3813,14 +3857,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Naru is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3830,12 +3874,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517726",
-        "ss-79517723"
+        "ss-80218957",
+        "ss-79517666",
+        "ss-79517675"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3843,7 +3888,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.5,
       "summaryVerdict": "Naru is a A-Tier Star-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517729"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517729"
     },
     {
       "externalId": "ss-unit-79517726",
@@ -3897,14 +3942,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Vera is a A-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3914,12 +3959,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517723",
-        "ss-79517717"
+        "ss-79534109",
+        "ss-80482402",
+        "ss-79517663"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -3927,7 +3973,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.4,
       "summaryVerdict": "Vera is a A-Tier Moon-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517726"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517726"
     },
     {
       "externalId": "ss-unit-79517723",
@@ -3981,14 +4027,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Sun Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Marcille is a A-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -3998,12 +4044,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517717",
-        "ss-79517711"
+        "ss-80482306",
+        "ss-80331829",
+        "ss-80218489"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
@@ -4011,7 +4058,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8.3,
       "summaryVerdict": "Marcille is a A-Tier Sun-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517723"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517723"
     },
     {
       "externalId": "ss-unit-79517717",
@@ -4065,14 +4112,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Besta is a A-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4082,20 +4129,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517711",
-        "ss-79517699"
+        "ss-80384143",
+        "ss-79517666",
+        "ss-79517738"
       ],
       "tierOverall": "A",
       "tierReroll": "A",
-      "tierBossRaid": "A",
+      "tierBossRaid": "S",
       "numericScore": 8.3,
       "summaryVerdict": "Besta is a A-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517717"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517717"
     },
     {
       "externalId": "ss-unit-79517711",
@@ -4149,14 +4197,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Moon Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Lily is a B-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4166,12 +4214,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517699",
-        "ss-79517693"
+        "ss-79924504",
+        "ss-80022340",
+        "ss-79677914"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4179,7 +4228,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 8,
       "summaryVerdict": "Lily is a B-Tier Moon-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517711"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517711"
     },
     {
       "externalId": "ss-unit-79517699",
@@ -4233,14 +4282,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Harley is a B-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4250,20 +4299,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517693",
-        "ss-79517687"
+        "ss-80012791",
+        "ss-79517678",
+        "ss-80022517"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
-      "tierBossRaid": "B",
+      "tierBossRaid": "A",
       "numericScore": 7.9,
       "summaryVerdict": "Harley is a B-Tier Sun-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517699"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517699"
     },
     {
       "externalId": "ss-unit-79517693",
@@ -4317,14 +4367,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Assassin (Burst DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Moon Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Epindel is a B-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4334,12 +4384,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517687",
-        "ss-79517684"
+        "ss-80022340",
+        "ss-80384230",
+        "ss-79677914"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4347,7 +4398,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 7.8,
       "summaryVerdict": "Epindel is a B-Tier Moon-attribute Assassin (Burst DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517693"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517693"
     },
     {
       "externalId": "ss-unit-79517687",
@@ -4401,14 +4452,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Supporter (Buffer)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Grants all allies +40% ATK, +25% Action Speed, and +20 Nova Energy at the start of the Broken window."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Elisa is a B-Tier Chaos-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Chaos-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4418,12 +4469,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Chaos resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517684",
-        "ss-79517651"
+        "ss-80127403",
+        "ss-79864232",
+        "ss-79517705"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4431,7 +4483,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 7.8,
       "summaryVerdict": "Elisa is a B-Tier Chaos-attribute Supporter (Buffer) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Chaos elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517687"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517687"
     },
     {
       "externalId": "ss-unit-79517684",
@@ -4485,14 +4537,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Sun Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Muriel is a B-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4502,20 +4554,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517651",
-        "ss-79576028"
+        "ss-79717421",
+        "ss-80482306",
+        "ss-80218489"
       ],
       "tierOverall": "B",
-      "tierReroll": "B",
+      "tierReroll": "C",
       "tierBossRaid": "B",
       "numericScore": 8,
       "summaryVerdict": "Muriel is a B-Tier Sun-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517684"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517684"
     },
     {
       "externalId": "ss-unit-79517651",
@@ -4569,14 +4622,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Striker (DPS)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deals 280% Moon Slash damage, grants +35% Critical Hit DMG for 2 turns, and advances own Action Bar by 25%."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Asera is a B-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4586,12 +4639,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79576028",
-        "ss-79517702"
+        "ss-79517726",
+        "ss-80482402",
+        "ss-79517663"
       ],
       "tierOverall": "B",
       "tierReroll": "B",
@@ -4599,7 +4653,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 7.9,
       "summaryVerdict": "Asera is a B-Tier Moon-attribute Striker (DPS) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517651"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517651"
     },
     {
       "externalId": "ss-unit-79576028",
@@ -4653,14 +4707,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Caster (AoE / Debuff)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Star Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Omega is a C-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Star-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4670,12 +4724,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Star resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517702",
-        "ss-79517663"
+        "ss-80218957",
+        "ss-79517666",
+        "ss-79517675"
       ],
       "tierOverall": "C",
       "tierReroll": "C",
@@ -4683,7 +4738,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 7.3,
       "summaryVerdict": "Omega is a C-Tier Star-attribute Caster (AoE / Debuff) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79576028"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79576028"
     },
     {
       "externalId": "ss-unit-79517702",
@@ -4737,14 +4792,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Ranger (Breaker)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Inflicts 30% Sun Resistance Down for 2 turns while shredding 3 extra Toughness Gauge bars on the primary target."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Petra is a C-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Sun-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4754,20 +4809,21 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Sun resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-79517663",
-        "ss-80384230"
+        "ss-80012791",
+        "ss-79517678",
+        "ss-79517720"
       ],
       "tierOverall": "C",
       "tierReroll": "C",
-      "tierBossRaid": "C",
+      "tierBossRaid": "B",
       "numericScore": 7.3,
       "summaryVerdict": "Petra is a C-Tier Sun-attribute Ranger (Breaker) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Sun elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517702"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517702"
     },
     {
       "externalId": "ss-unit-79517663",
@@ -4821,14 +4877,14 @@ export const starSaviorBundle: GameAdapterBundle = {
             "Defender (Tank / Shield)",
             "Action Speed"
           ],
-          "exactDescription": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "exactDescription": "Deploys a 35% Max HP Astral Barrier across the squad for 2 turns and cleanses 2 debuffs."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB0",
           "name": "Savior Resonance I",
-          "effect": "Carmen is a C-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters."
+          "effect": "Increases Moon-attribute damage dealt by +18% and initial Nova Energy by +20."
         },
         {
           "unlockRank": "LB1",
@@ -4838,12 +4894,13 @@ export const starSaviorBundle: GameAdapterBundle = {
         {
           "unlockRank": "LB3",
           "name": "Overdrive Core",
-          "effect": "Scales strongly with SSR Arcana training multipliers and Limit Break 1 (+15% Nova Efficiency)."
+          "effect": "Grants +15% Nova Efficiency and extends Moon resonance buffs by 1 turn."
         }
       ],
       "synergyUnitSlugs": [
-        "ss-80384230",
-        "ss-80354674"
+        "ss-79924504",
+        "ss-80022340",
+        "ss-80384230"
       ],
       "tierOverall": "C",
       "tierReroll": "C",
@@ -4851,7 +4908,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "numericScore": 7.5,
       "summaryVerdict": "Carmen is a C-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
-      "sourceUrl": "https://meta.gg/star-savior/units/ss-79517663"
+      "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517663"
     }
   ],
   "equipments": [
@@ -4874,10 +4931,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79855337",
+        "ss-79517735",
+        "ss-79517651"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80231986"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80231986"
     },
     {
       "externalId": "ss-arcana-79855448",
@@ -4899,9 +4957,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       "bestHolderSlugs": [
         "ss-80384230",
         "ss-80354674",
-        "ss-80218957"
+        "ss-80127403",
+        "ss-79517651",
+        "ss-79576028"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79855448"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79855448"
     },
     {
       "externalId": "ss-arcana-79717619",
@@ -4922,10 +4982,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
         "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80218957",
+        "ss-80384143",
+        "ss-79517651",
+        "ss-79517702"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79717619"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79717619"
     },
     {
       "externalId": "ss-arcana-79644746",
@@ -4945,11 +5007,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Focus (Acc) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80022340",
+        "ss-79517654",
+        "ss-79644743",
+        "ss-79517663"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79644746"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79644746"
     },
     {
       "externalId": "ss-arcana-79517789",
@@ -4969,11 +5032,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Endurance (DEF) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
         "ss-80354674",
-        "ss-80218957"
+        "ss-79717421",
+        "ss-79677914",
+        "ss-79576028"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517789"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517789"
     },
     {
       "externalId": "ss-arcana-79517786",
@@ -4993,11 +5057,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80482306",
+        "ss-80218489",
+        "ss-79517732"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517786"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517786"
     },
     {
       "externalId": "ss-arcana-79517762",
@@ -5017,11 +5081,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants DEF % training bonus and unlocks Endurance (DEF) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80331829",
+        "ss-79924501",
+        "ss-79534106"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517762"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517762"
     },
     {
       "externalId": "ss-arcana-79517750",
@@ -5041,11 +5105,13 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
         "ss-80354674",
-        "ss-80218957"
+        "ss-80218957",
+        "ss-80022517",
+        "ss-79576028",
+        "ss-79517702"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517750"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517750"
     },
     {
       "externalId": "ss-arcana-79534220",
@@ -5065,11 +5131,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants Effect Hit % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80012791",
+        "ss-80128024",
+        "ss-79517720"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79534220"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79534220"
     },
     {
       "externalId": "ss-arcana-79517792",
@@ -5089,11 +5155,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79924504",
+        "ss-79606358",
+        "ss-79517708"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517792"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517792"
     },
     {
       "externalId": "ss-arcana-79517780",
@@ -5113,11 +5179,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % training bonus and unlocks Focus (Acc) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80022340",
+        "ss-79864232",
+        "ss-79517729",
+        "ss-79517663"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517780"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517780"
     },
     {
       "externalId": "ss-arcana-79517777",
@@ -5137,11 +5204,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79677914",
+        "ss-80127403",
+        "ss-79807109"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517777"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517777"
     },
     {
       "externalId": "ss-arcana-79517765",
@@ -5161,11 +5228,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Focus (Acc) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80218957",
+        "ss-79606358",
+        "ss-79517696",
+        "ss-79517702"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517765"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517765"
     },
     {
       "externalId": "ss-arcana-79517756",
@@ -5185,11 +5253,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79717421",
+        "ss-79534109",
+        "ss-79855349"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517756"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517756"
     },
     {
       "externalId": "ss-arcana-79517747",
@@ -5209,11 +5277,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79534109",
+        "ss-79517681",
+        "ss-79924501"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517747"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517747"
     },
     {
       "externalId": "ss-arcana-79893874",
@@ -5233,11 +5301,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517675",
+        "ss-79517672",
+        "ss-79517726"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79893874"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79893874"
     },
     {
       "externalId": "ss-arcana-79517840",
@@ -5257,11 +5325,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Endurance (DEF) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80482306",
+        "ss-79517738",
+        "ss-79766294"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517840"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517840"
     },
     {
       "externalId": "ss-arcana-79517825",
@@ -5281,11 +5349,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80022340",
+        "ss-80482402",
+        "ss-79807109",
+        "ss-79517663"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517825"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517825"
     },
     {
       "externalId": "ss-arcana-79517816",
@@ -5305,11 +5374,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80384143",
+        "ss-79855337",
+        "ss-79517666"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517816"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517816"
     },
     {
       "externalId": "ss-arcana-79517813",
@@ -5329,11 +5398,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Vitality (HP) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80331829",
+        "ss-79517681",
+        "ss-80218489"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517813"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517813"
     },
     {
       "externalId": "ss-arcana-79517807",
@@ -5353,11 +5422,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit DMG % training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80128024",
+        "ss-79766294",
+        "ss-79517723"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517807"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517807"
     },
     {
       "externalId": "ss-arcana-80139832",
@@ -5377,11 +5446,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80127403",
+        "ss-79517714",
+        "ss-79517735"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80139832"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80139832"
     },
     {
       "externalId": "ss-arcana-80012824",
@@ -5401,11 +5470,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79717421",
+        "ss-80022517",
+        "ss-79924501"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80012824"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80012824"
     },
     {
       "externalId": "ss-arcana-79941760",
@@ -5425,11 +5494,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79807109",
+        "ss-79517714",
+        "ss-79644743"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79941760"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79941760"
     },
     {
       "externalId": "ss-arcana-79766540",
@@ -5449,11 +5518,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517675",
+        "ss-79766294",
+        "ss-79517732"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79766540"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79766540"
     },
     {
       "externalId": "ss-arcana-79534223",
@@ -5473,11 +5542,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80012791",
+        "ss-79517714",
+        "ss-79517717"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79534223"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79534223"
     },
     {
       "externalId": "ss-arcana-79517771",
@@ -5497,11 +5566,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517705",
+        "ss-79517669",
+        "ss-79517654"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517771"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517771"
     },
     {
       "externalId": "ss-arcana-80482327",
@@ -5521,11 +5590,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80482306",
+        "ss-79517690",
+        "ss-79517729"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80482327"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80482327"
     },
     {
       "externalId": "ss-arcana-80400913",
@@ -5545,11 +5614,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79924504",
+        "ss-79517678",
+        "ss-79534106"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80400913"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80400913"
     },
     {
       "externalId": "ss-arcana-80363578",
@@ -5569,11 +5638,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517738",
+        "ss-79517690",
+        "ss-79517669"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80363578"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80363578"
     },
     {
       "externalId": "ss-arcana-80283517",
@@ -5593,11 +5662,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517660",
+        "ss-79517726",
+        "ss-79517711"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80283517"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80283517"
     },
     {
       "externalId": "ss-arcana-79865537",
@@ -5617,11 +5686,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79864232",
+        "ss-79517690",
+        "ss-79517657"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79865537"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79865537"
     },
     {
       "externalId": "ss-arcana-79606361",
@@ -5641,11 +5710,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80331829",
+        "ss-79517678",
+        "ss-79517654"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79606361"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79606361"
     },
     {
       "externalId": "ss-arcana-79517795",
@@ -5665,11 +5734,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517720",
+        "ss-79517708",
+        "ss-79517723"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517795"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517795"
     },
     {
       "externalId": "ss-arcana-79517783",
@@ -5689,11 +5758,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79677914",
+        "ss-80482402",
+        "ss-79855349"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517783"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517783"
     },
     {
       "externalId": "ss-arcana-79517774",
@@ -5713,11 +5782,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517669",
+        "ss-79855337",
+        "ss-79517699"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517774"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517774"
     },
     {
       "externalId": "ss-arcana-79517744",
@@ -5737,11 +5806,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517678",
+        "ss-79644743",
+        "ss-79517717"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517744"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517744"
     },
     {
       "externalId": "ss-arcana-79517741",
@@ -5761,11 +5830,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80022517",
+        "ss-79606358",
+        "ss-79534106"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517741"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517741"
     },
     {
       "externalId": "ss-arcana-80521390",
@@ -5785,11 +5854,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517660",
+        "ss-79517708",
+        "ss-79517696"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80521390"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80521390"
     },
     {
       "externalId": "ss-arcana-80498278",
@@ -5809,11 +5878,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80384143",
+        "ss-79517696",
+        "ss-79517711"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80498278"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80498278"
     },
     {
       "externalId": "ss-arcana-80444335",
@@ -5833,11 +5902,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79534109",
+        "ss-79517672",
+        "ss-79517693"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80444335"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80444335"
     },
     {
       "externalId": "ss-arcana-80331877",
@@ -5857,11 +5926,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517669",
+        "ss-79517657",
+        "ss-79517666"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80331877"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80331877"
     },
     {
       "externalId": "ss-arcana-80210542",
@@ -5881,11 +5950,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80012791",
+        "ss-79517735",
+        "ss-79517699"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80210542"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80210542"
     },
     {
       "externalId": "ss-arcana-80191501",
@@ -5905,11 +5974,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517681",
+        "ss-79517672",
+        "ss-79517732"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80191501"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80191501"
     },
     {
       "externalId": "ss-arcana-80077855",
@@ -5929,11 +5998,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-80218489",
+        "ss-79517654",
+        "ss-79517729"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80077855"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80077855"
     },
     {
       "externalId": "ss-arcana-80041744",
@@ -5953,11 +6022,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517726",
+        "ss-79517693",
+        "ss-79517687"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-80041744"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-80041744"
     },
     {
       "externalId": "ss-arcana-79983016",
@@ -5977,11 +6046,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517675",
+        "ss-79517660",
+        "ss-79517723"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79983016"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79983016"
     },
     {
       "externalId": "ss-arcana-79855463",
@@ -6001,11 +6070,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79924504",
+        "ss-79517720",
+        "ss-79517717"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79855463"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79855463"
     },
     {
       "externalId": "ss-arcana-79808948",
@@ -6025,11 +6094,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517666",
+        "ss-79517711",
+        "ss-79517687"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79808948"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79808948"
     },
     {
       "externalId": "ss-arcana-79576397",
@@ -6049,11 +6118,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517738",
+        "ss-80128024",
+        "ss-79517699"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79576397"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79576397"
     },
     {
       "externalId": "ss-arcana-79517768",
@@ -6073,11 +6142,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79855349",
+        "ss-79517693",
+        "ss-79517684"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517768"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517768"
     },
     {
       "externalId": "ss-arcana-79517759",
@@ -6097,11 +6166,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517657",
+        "ss-79517687",
+        "ss-79517684"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517759"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517759"
     },
     {
       "externalId": "ss-arcana-79517753",
@@ -6121,11 +6190,11 @@ export const starSaviorBundle: GameAdapterBundle = {
       },
       "effectSummary": "Grants ATK % / Crit Rate training bonus and unlocks Power (STR) Gold Potential passives for Universal (All Classes) units during Savior Resonance runs.",
       "bestHolderSlugs": [
-        "ss-80384230",
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79864232",
+        "ss-80482402",
+        "ss-79517684"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/arcanas/ss-arcana-79517753"
+      "sourceUrl": "https://gachacrest.gg/star-savior/arcanas/ss-arcana-79517753"
     }
   ],
   "bosses": [
@@ -6171,7 +6240,7 @@ export const starSaviorBundle: GameAdapterBundle = {
         "ss-80022340",
         "ss-79717421"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/bosses/cosmo-gate-abyssal-sovereign"
+      "sourceUrl": "https://gachacrest.gg/star-savior/bosses/cosmo-gate-abyssal-sovereign"
     },
     {
       "slug": "void-singularity-stella-eater",
@@ -6207,7 +6276,7 @@ export const starSaviorBundle: GameAdapterBundle = {
         "ss-80482306",
         "ss-80331829"
       ],
-      "sourceUrl": "https://meta.gg/star-savior/bosses/void-singularity-stella-eater"
+      "sourceUrl": "https://gachacrest.gg/star-savior/bosses/void-singularity-stella-eater"
     }
   ],
   "banners": [
@@ -6217,12 +6286,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       "bannerType": "LIMITED",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185314_wdzh2.webp",
       "featuredNames": [
-        "Professor M",
-        "Amora"
+        "Frey (Bunny)",
+        "Dana"
       ],
       "featuredUnitSlugs": [
-        "ss-80384230",
-        "ss-80354674"
+        "ss-79766294",
+        "ss-79517681"
       ],
       "asianStartDate": "2026-11-01",
       "asianEndDate": "2026-11-22",
@@ -6231,7 +6300,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "SSS Tier 0 Striker with unmatched AoE Moon-element burst damage, self-crit buffing, and extra-turn Nova economy.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://meta.gg/star-savior/banners/bunny-frey"
+      "sourceUrl": "https://gachacrest.gg/star-savior/banners/bunny-frey"
     },
     {
       "slug": "starsavior-lugh-besta-pickup",
@@ -6239,12 +6308,12 @@ export const starSaviorBundle: GameAdapterBundle = {
       "bannerType": "FESTIVAL",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
       "featuredNames": [
-        "Amora",
-        "Smile (Swimsuit)"
+        "Lugh",
+        "Besta"
       ],
       "featuredUnitSlugs": [
-        "ss-80354674",
-        "ss-80218957"
+        "ss-79517690",
+        "ss-79517717"
       ],
       "asianStartDate": "2026-11-15",
       "asianEndDate": "2026-12-05",
@@ -6253,7 +6322,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Both Lugh and Besta sit at the top of SSS Tier 0 as the premier Toughness Breaker and team-wide Barrier Defender.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://meta.gg/star-savior/banners/lugh-besta"
+      "sourceUrl": "https://gachacrest.gg/star-savior/banners/lugh-besta"
     },
     {
       "slug": "starsavior-arcana-pickup",
@@ -6275,7 +6344,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Top-ranked SSS/SS Arcanas providing the highest Power (STR) and Critical Damage training multipliers in the game.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://meta.gg/star-savior/banners/arcana-pickup"
+      "sourceUrl": "https://gachacrest.gg/star-savior/banners/arcana-pickup"
     }
   ]
 };
