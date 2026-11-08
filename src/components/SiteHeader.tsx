@@ -60,37 +60,45 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
             style={{
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '9px',
+              gap: '10px',
               fontWeight: 900,
               fontSize: '15.5px',
             }}
           >
             <img
-              src={getGameAppIconUrl(activeGameSlug || 'star-savior')}
-              alt="META.GG"
-              width={30}
-              height={30}
+              src="/gachacrest-logo.jpg"
+              alt="GachaCrest Logo"
+              width={38}
+              height={38}
               style={{
-                width: '30px',
-                height: '30px',
-                borderRadius: '6px',
+                width: '38px',
+                height: '38px',
+                borderRadius: '7px',
                 objectFit: 'cover',
-                border: '1.5px solid var(--border-strong)',
+                border: '1.5px solid #F59E0B',
+                boxShadow: '0 2px 8px rgba(200, 30, 30, 0.28)',
               }}
             />
             <span
               style={{
-                background: 'var(--accent-primary)',
+                display: 'inline-flex',
+                alignItems: 'center',
+                background: '#141413',
                 color: '#FFFFFF',
-                padding: '3px 8px',
-                borderRadius: '4px',
-                fontSize: '12px',
-                letterSpacing: '0.04em',
+                padding: '4px 9px',
+                borderRadius: '5px',
+                fontSize: '13px',
+                letterSpacing: '0.05em',
+                border: '1px solid #C81E1E',
+                gap: '2px',
               }}
             >
-              META.GG
+              <span>GACHA</span>
+              <span style={{ color: '#FBBF24' }}>CREST</span>
             </span>
-            <span>Gacha Tier Lists &amp; Meta Database</span>
+            <span style={{ fontSize: '14.5px', fontWeight: 900 }}>
+              Tier Lists, Builds &amp; Pull Codex
+            </span>
           </Link>
 
           {activeGameSlug && activeGameName && (
