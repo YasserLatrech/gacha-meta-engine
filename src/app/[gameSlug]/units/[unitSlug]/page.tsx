@@ -6,6 +6,9 @@ import { getGameHubData } from '../../../../application/services/meta-query.serv
 import { SiteHeader } from '../../../../components/SiteHeader';
 import { SiteFooter } from '../../../../components/SiteFooter';
 import { AdSlot } from '../../../../components/AdSlot';
+import { UnitAccountActionsClient } from '../../../../components/UnitAccountActionsClient';
+import { UnitDeepBuildSection } from '../../../../components/UnitDeepBuildSection';
+import { getGameStatLabels } from '../../../../domain/game-mechanics';
 import {
   getGameAppIconUrl,
   getElementIconUrl,
@@ -495,15 +498,19 @@ export default async function UnitDetailPage({
                   textAlign: 'center',
                 }}
               >
-                {[
-                  { label: 'HP / Stamina', val: unit.baseStats.hpOrStamina, key: 'stamina' },
-                  { label: 'DP / Speed', val: unit.baseStats.dpOrSpeed, key: 'speed' },
-                  { label: 'ATK / Power', val: unit.baseStats.atkOrPower, key: 'power' },
-                  { label: 'DEF / Guts', val: unit.baseStats.defOrGuts, key: 'guts' },
-                  { label: 'Crit / Wit', val: unit.baseStats.critOrWit, key: 'wisdom' },
-                ].map((s) => (
+                {(() => {
+                  const statLabels = getGameStatLabels(hub.slug);
+                  return [
+                    { label: statLabels.hpOrStamina.label, desc: statLabels.hpOrStamina.desc, val: unit.baseStats.hpOrStamina, key: 'stamina' },
+                    { label: statLabels.dpOrSpeed.label, desc: statLabels.dpOrSpeed.desc, val: unit.baseStats.dpOrSpeed, key: 'speed' },
+                    { label: statLabels.atkOrPower.label, desc: statLabels.atkOrPower.desc, val: unit.baseStats.atkOrPower, key: 'power' },
+                    { label: statLabels.defOrGuts.label, desc: statLabels.defOrGuts.desc, val: unit.baseStats.defOrGuts, key: 'guts' },
+                    { label: statLabels.critOrWit.label, desc: statLabels.critOrWit.desc, val: unit.baseStats.critOrWit, key: 'wisdom' },
+                  ];
+                })().map((s) => (
                   <div
                     key={s.label}
+                    title={s.desc}
                     style={{
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
@@ -541,6 +548,9 @@ export default async function UnitDetailPage({
                 ))}
               </div>
             </section>
+
+            {/* GAME-SPECIFIC DEEP BUILD GUIDE (SKILL TREE / APTITUDE + EVENTS / BUFF MATRIX / BURST ROTATION) */}
+            <UnitDeepBuildSection gameSlug={hub.slug} unit={unit} />
 
             {/* SKILLS, MULTIPLIERS & SP/ENERGY COSTS WITH REAL SKILL ICONS */}
             <section
@@ -935,13 +945,10 @@ export default async function UnitDetailPage({
               </div>
             )}
 
-            <AdSlot
-              slotId={`unit-${unit.slug}-sidebar`}
-              label="UNIT PAGE STICKY AD"
-              dimensions="300×600"
-              minHeightPx={400}
-              sticky
-              description="Sticky right-rail unit guide placement (0.00 CLS)"
+            <UnitAccountActionsClient
+              gameSlug={hub.slug}
+              gameShortName={hub.shortName}
+              unit={unit}
             />
           </aside>
         </div>

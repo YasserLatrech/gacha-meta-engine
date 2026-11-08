@@ -620,13 +620,53 @@ export default async function PortalHomePage() {
             </div>
           </div>
 
-          <AdSlot
-            slotId="portal-home-infeed-300x250"
-            label="PORTAL SIDEBAR AD"
-            dimensions="300×250"
-            minHeightPx={250}
-            description="Pre-reserved homepage rectangle ad slot (0.00 CLS)"
-          />
+          <div
+            style={{
+              background: 'var(--bg-surface)',
+              border: '2px solid var(--accent-primary)',
+              borderRadius: '6px',
+              padding: '14px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <span
+                className="mono"
+                style={{
+                  background: 'var(--accent-primary)',
+                  color: '#FFF',
+                  fontSize: '10px',
+                  fontWeight: 900,
+                  padding: '2px 7px',
+                  borderRadius: '3px',
+                }}
+              >
+                LIVE ACCOUNT ENGINE
+              </span>
+              <span className="mono" style={{ fontSize: '10.5px', fontWeight: 900, color: '#15803D' }}>
+                ✓ AUTO-SAVED IN BROWSER
+              </span>
+            </div>
+            <h3 style={{ fontSize: '14px', fontWeight: 900 }}>
+              MY ROSTER BOX, LB DUPE TRACKER &amp; SQUAD SYNERGY AUDITOR
+            </h3>
+            <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+              Unlike static tier lists, GachaCrest adapts dynamically to your account investment:
+            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '11.5px' }}>
+              <div style={{ padding: '7px 9px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '4px' }}>
+                <strong style={{ color: 'var(--accent-primary)' }}>1. F2P LB0 vs. LB1 vs. MLB Tiers:</strong> Toggle how every character scales from Base 0-Dupe to Max Limit Break.
+              </div>
+              <div style={{ padding: '7px 9px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '4px' }}>
+                <strong style={{ color: 'var(--accent-primary)' }}>2. Game-Native Deep Builds:</strong> SoC Rank 1–11 Left/Right Skill Trees, Uma Career Event Choices &amp; HBR 8-Layer Buff Matrices.
+              </div>
+              <div style={{ padding: '7px 9px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '4px' }}>
+                <strong style={{ color: 'var(--accent-primary)' }}>3. Auto-Squad Builder &amp; Pull Ledger:</strong> Build optimal 6-unit teams from your owned box and track cumulative multi-banner pity.
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* SECTION 3: GACHACREST TIER RATING METHODOLOGY & FREQUENTLY ASKED QUESTIONS */}
