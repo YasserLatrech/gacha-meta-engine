@@ -8,7 +8,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
   "asianPatchVersion": "v2.4.0 Live Meta",
   "globalPatchVersion": "v2.4.0 Live",
   "foresightGapMonths": 6,
-  "coverImageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/09/Cocoa-Sword-of-Convallaria.webp",
+  "coverImageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/12/IMG_5806.webp",
   "currencyName": "Hope Luxite",
   "pullCostSingle": 150,
   "pityThreshold": 100,
@@ -6124,7 +6124,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial I (Lv.70 Stage 10) — Judgement Tarot Boss",
       "modeName": "Weaponry Trial I",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/06/Sword-of-Convallaria-Weaponry-Trial-I-Guide-scaled.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/09/Cocoa-Sword-of-Convallaria-1024x576.webp",
       "hpStat": "245,000 HP",
       "shieldOrDpStat": "Ignores 40% DEF on Judgment Ray",
       "weaknesses": [
@@ -6167,7 +6167,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial II (Lv.70 Stage 10) — Papal Executioner",
       "modeName": "Weaponry Trial II",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/Sword-of-Convallaria-Weaponry-Trial-II-Guide-scaled.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Garcia-Character-Guide-Sword-of-Convallaria-1024x576.webp",
       "hpStat": "268,000 HP",
       "shieldOrDpStat": "Summons Volatile Crystals",
       "weaknesses": [
@@ -6203,7 +6203,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial III (Lv.70 Stage 10) — Calamity Dragon",
       "modeName": "Weaponry Trial III",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/Sword-of-Convallaria-Weaponry-Trial-III-Guide-scaled.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Xavier-Sword-of-Convallaria-Character-Guide-1024x576.webp",
       "hpStat": "290,000 HP",
       "shieldOrDpStat": "Stacking ATK/DEF Dragon Scales",
       "weaknesses": [
@@ -6240,7 +6240,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-triss-current-banner",
       "bannerTitle": "Featured Debut Banner — Triss (The Witcher 3 Collaboration)",
       "bannerType": "COLLAB",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4945.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/12/IMG_5806.webp",
       "featuredNames": [
         "Triss"
       ],
@@ -6260,7 +6260,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-witcher-collab-rerun",
       "bannerTitle": "Witcher Collaboration Banner — Geralt, Yennefer, Triss & Ciri",
       "bannerType": "COLLAB",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4944.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Momo-Character-Guide-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "Geralt",
         "Yennefer",
@@ -6284,7 +6284,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-1",
       "bannerTitle": "Upcoming Debut Banner #1. SP Maitha",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/07/image-170.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/09/Cocoa-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "SP Maitha"
       ],
@@ -6294,7 +6294,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "asianStartDate": "2026-06-01",
       "asianEndDate": "2026-06-21",
       "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (SP Maitha) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6304,17 +6304,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-2",
       "bannerTitle": "Upcoming Debut Banner #2. SP Faycal",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/06/IMG_1229.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Garcia-Character-Guide-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "SP Faycal"
       ],
       "featuredUnitSlugs": [
         "soc-camelot"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-02",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-02",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (SP Faycal) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6324,17 +6324,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-3",
       "bannerTitle": "Upcoming Debut Banner #3. SP Nungal",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/07/IMG_1484.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Xavier-Sword-of-Convallaria-Character-Guide-1024x576.webp",
       "featuredNames": [
         "SP Nungal"
       ],
       "featuredUnitSlugs": [
         "soc-geralt"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-03",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-03",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (SP Nungal) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6344,17 +6344,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-4",
       "bannerTitle": "Upcoming Debut Banner #4. Lukamar",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/08/IMG_1895.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/image-144-1024x452.webp",
       "featuredNames": [
         "Lukamar"
       ],
       "featuredUnitSlugs": [
         "soc-kvare"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-04",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-04",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Upcoming Debut Banner (Lukamar) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6364,17 +6364,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-5",
       "bannerTitle": "Upcoming Debut Banner #5. Pooch RunRun",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/08/IMG_1932.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/12/IMG_5806.webp",
       "featuredNames": [
         "Pooch RunRun"
       ],
       "featuredUnitSlugs": [
         "soc-luvata"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-05",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-05",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Pooch RunRun) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6384,17 +6384,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-6",
       "bannerTitle": "Upcoming Debut Banner #6. Shams",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/08/IMG_2354.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Momo-Character-Guide-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "Shams"
       ],
       "featuredUnitSlugs": [
         "soc-nydia"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-06",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-06",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Shams) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6404,17 +6404,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-7",
       "bannerTitle": "Upcoming Debut Banner #7. Clara",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2761.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/09/Cocoa-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "Clara"
       ],
       "featuredUnitSlugs": [
         "soc-triss"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-07",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-07",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Clara) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6424,17 +6424,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-8",
       "bannerTitle": "Upcoming Debut Banner #8. Selina",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_3314.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Garcia-Character-Guide-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "Selina"
       ],
       "featuredUnitSlugs": [
         "soc-tristan"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-08",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-08",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Selina) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6444,17 +6444,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-9",
       "bannerTitle": "Upcoming Debut Banner #9. Yeganeh",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/10/IMG_3690.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Xavier-Sword-of-Convallaria-Character-Guide-1024x576.webp",
       "featuredNames": [
         "Yeganeh"
       ],
       "featuredUnitSlugs": [
         "soc-credenza"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-09",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-09",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Yeganeh) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6464,17 +6464,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-10",
       "bannerTitle": "Upcoming Debut Banner #10. Heshan",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/10/IMG_4001.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/image-144-1024x452.webp",
       "featuredNames": [
         "Heshan"
       ],
       "featuredUnitSlugs": [
         "soc-lutfi"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-10",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-10",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Heshan) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6484,17 +6484,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-11",
       "bannerTitle": "Upcoming Debut Banner #11. Shahnaz",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/10/IMG_4397.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/12/IMG_5806.webp",
       "featuredNames": [
         "Shahnaz"
       ],
       "featuredUnitSlugs": [
         "soc-sp-safiyyah"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-11",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-11",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Shahnaz) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,
@@ -6504,17 +6504,17 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-upcoming-banner-12",
       "bannerTitle": "Upcoming Debut Banner #12. Kianshir",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4941.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/08/Momo-Character-Guide-Sword-of-Convallaria-1024x576.webp",
       "featuredNames": [
         "Kianshir"
       ],
       "featuredUnitSlugs": [
         "soc-taair"
       ],
-      "asianStartDate": "2026-06-01",
+      "asianStartDate": "2026-06-12",
       "asianEndDate": "2026-06-21",
-      "estGlobalStartDate": "2026-12-01",
-      "estGlobalEndDate": "2026-12-21",
+      "estGlobalStartDate": "2026-12-12",
+      "estGlobalEndDate": "2026-12-28",
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Upcoming Debut Banner (Kianshir) on the Sword of Convallaria release schedule.",
       "pityCurrencyCost": 15000,

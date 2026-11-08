@@ -7,7 +7,7 @@ export const GAME_APP_ICONS: Record<string, string> = {
     'https://img.game8.jp/12147006/bc4ca37cc85728f6a6ee84eddbcf7ca7.webp/original',
   'uma-musume': 'https://img.game8.jp/5539221/3eca6d169e95d836495da419f1703d8f.png/original',
   'sword-of-convallaria':
-    'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/07/Sword-of-Convallaria-Icon-150x150.webp',
+    'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/07/Sword-of-Convallaria-Icon.webp',
 };
 
 const HBR_FIRE = 'https://img.game8.jp/12419023/39fa5ab24fb93da646fbb9cc4036f275.webp/original';

@@ -38,7 +38,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
   "asianPatchVersion": "v4.12.0 Live Meta",
   "globalPatchVersion": "v4.12.0 Live",
   "foresightGapMonths": 4,
-  "coverImageUrl": "https://img.game8.jp/11731235/3bdfd92c761d2df61eab6d6c6a570045.webp/original",
+  "coverImageUrl": "https://img.game8.jp/12147005/b11d4e6ac151c10c6292f99656586d39.webp/original",
   "currencyName": "Quartz",
   "pullCostSingle": 300,
   "pityThreshold": 150,
@@ -10308,7 +10308,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Score Attack #65 — Red Crimson (Grade 140 / Intensity 35)",
       "modeName": "Score Attack",
       "difficultyLabel": "Grade 140 Max Intensity",
-      "imageUrl": "https://img.game8.jp/10947951/d1d847f65ab6b174137e84638a9e9052.png/original",
+      "imageUrl": "https://img.game8.jp/11992098/e661e00d9a8a130bb31ec2388d29af46.webp/original",
       "hpStat": "38,000,000 HP",
       "shieldOrDpStat": "2,450,000 DP (x2 Bars)",
       "weaknesses": [
@@ -10352,7 +10352,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Anachrony — Supreme Flat Hand (Phase 3)",
       "modeName": "Anachrony",
       "difficultyLabel": "Skull Feather Endgame",
-      "imageUrl": "https://img.game8.jp/10947916/53bf9f1a758c9f9481c2852ff6ad265a.png/original",
+      "imageUrl": "https://img.game8.jp/12830572/657cb47086a2ec7c4305c6b669715130.webp/original",
       "hpStat": "52,000,000 HP",
       "shieldOrDpStat": "3,200,000 DP",
       "weaknesses": [
@@ -10389,7 +10389,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "slug": "hbr-karen-halloween-pickup",
       "bannerTitle": "Platinum Rate-Up — Karen Asakura [Midnight Soul Harvest] & Fubuki Mikoto",
       "bannerType": "LIMITED",
-      "imageUrl": "https://img.game8.jp/13146970/24e2f692f9fb7b88391787988484097b.webp/original",
+      "imageUrl": "https://img.game8.jp/13148096/f35ea4ee2d58b2d3e8df2bec88e06257.webp/original",
       "featuredNames": [
         "Karen Asakura [Midnight Soul Harvest]",
         "Fubuki Mikoto [Muse of the Broken Night]"
@@ -10411,7 +10411,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "slug": "hbr-fire-ice-wishlist-gacha",
       "bannerTitle": "Fire & Ice Attribute Wishlist Special Banner (Select 6 SS Memoria)",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://img.game8.jp/11783978/a2884bc1863a292bf6cb0ba4ae8f0f60.webp/original",
+      "imageUrl": "https://img.game8.jp/12147007/fe45539d9f2d123641efee398f538e23.webp/original",
       "featuredNames": [
         "Hikari Naruse [Serene Hunter]",
         "Ichiko Ohshima [Seaside Mademoiselle]",
@@ -10435,7 +10435,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "slug": "hbr-halloween-ss-guaranteed-stepup",
       "bannerTitle": "Halloween SS Guaranteed Step-Up Banner (Step 4 & Step 8 Guaranteed)",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://img.game8.jp/13146983/dedacd16e79a2e1326d63a9c4d6176b7.webp/original",
+      "imageUrl": "https://img.game8.jp/12476899/5431de4d1dd7c4c4bd552cdb825e929c.webp/original",
       "featuredNames": [
         "Misato Nikaido [Blue Sky Full-Power Cheer]",
         "Nanami Nanase [Promise Beyond the Dawn]"
