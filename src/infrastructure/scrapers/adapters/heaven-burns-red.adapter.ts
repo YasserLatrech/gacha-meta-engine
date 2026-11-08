@@ -118,53 +118,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5340,
-        "dpOrSpeed": 660,
-        "atkOrPower": 820,
-        "defOrGuts": 650,
-        "critOrWit": 810,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4970,
+        "dpOrSpeed": 5220,
+        "atkOrPower": 745,
+        "defOrGuts": 630,
+        "critOrWit": 655,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Serene Hunter",
+          "name": "EX Skill: Serene Hunter — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Non-Elemental Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
-            "None",
+            "DP Shield Break +50%",
+            "Non-Elemental",
             "Pierce",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Hikari Naruse [Serene Hunter] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 19A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Non-Elemental Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Non-Elemental Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Non-Elemental",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Non-Elemental Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases Non-Elemental Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -176,7 +178,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "Hikari Naruse [Serene Hunter] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 19A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Hikari Naruse [Serene Hunter] is a SSS-Tier Non-Elemental Breaker (Pierce) in Heaven Burns Red. Delivers a 4-hit Non-Elemental Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-803495"
     },
@@ -198,53 +200,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5328,
-        "dpOrSpeed": 658,
-        "atkOrPower": 817,
-        "defOrGuts": 648,
-        "critOrWit": 807,
-        "burstCeilingScore": 82,
+        "hpOrStamina": 5035,
+        "dpOrSpeed": 4922,
+        "atkOrPower": 606,
+        "defOrGuts": 656,
+        "critOrWit": 766,
+        "burstCeilingScore": 76,
         "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Seaside Mademoiselle",
+          "name": "EX Skill: Seaside Mademoiselle — Light Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Crush Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Light Field (+65%) + +85% Light Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Crush",
-            "Admiral"
+            "Light Field Zone",
+            "Light Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Ichiko Ohshima [Seaside Mademoiselle] is a SSS-Tier Light Admiral (Crush) from Squad 31E. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field."
+          "exactDescription": "Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Light"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -256,7 +260,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "Ichiko Ohshima [Seaside Mademoiselle] is a SSS-Tier Light Admiral (Crush) from Squad 31E. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field.",
+      "summaryVerdict": "Ichiko Ohshima [Seaside Mademoiselle] is a SSS-Tier Light Admiral (Crush) in Heaven Burns Red. Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-797590"
     },
@@ -278,53 +282,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5316,
-        "dpOrSpeed": 656,
-        "atkOrPower": 814,
-        "defOrGuts": 646,
-        "critOrWit": 804,
-        "burstCeilingScore": 82,
+        "hpOrStamina": 5100,
+        "dpOrSpeed": 4974,
+        "atkOrPower": 632,
+        "defOrGuts": 682,
+        "critOrWit": 792,
+        "burstCeilingScore": 76,
         "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Blue Sky Full-Power Cheer",
+          "name": "EX Skill: Blue Sky Full-Power Cheer — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Crush Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Crush",
-            "Admiral"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Misato Nikaido [Blue Sky Full-Power Cheer] is a SSS-Tier Dark Admiral (Crush) from Squad 31D. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -336,7 +342,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "Misato Nikaido [Blue Sky Full-Power Cheer] is a SSS-Tier Dark Admiral (Crush) from Squad 31D. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Misato Nikaido [Blue Sky Full-Power Cheer] is a SSS-Tier Dark Admiral (Crush) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-779179"
     },
@@ -358,53 +364,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5304,
-        "dpOrSpeed": 654,
-        "atkOrPower": 811,
-        "defOrGuts": 644,
-        "critOrWit": 801,
-        "burstCeilingScore": 82,
+        "hpOrStamina": 5015,
+        "dpOrSpeed": 4906,
+        "atkOrPower": 598,
+        "defOrGuts": 648,
+        "critOrWit": 758,
+        "burstCeilingScore": 76,
         "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Promise Beyond the Dawn",
+          "name": "EX Skill: Promise Beyond the Dawn — Thunder Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Thunder Field (+65%) + +85% Thunder Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Pierce",
-            "Admiral"
+            "Thunder Field Zone",
+            "Thunder Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Nanami Nanase [Promise Beyond the Dawn] is a SSS-Tier Thunder Admiral (Pierce) from Command HQ. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field."
+          "exactDescription": "Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Thunder"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -416,7 +424,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "Nanami Nanase [Promise Beyond the Dawn] is a SSS-Tier Thunder Admiral (Pierce) from Command HQ. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field.",
+      "summaryVerdict": "Nanami Nanase [Promise Beyond the Dawn] is a SSS-Tier Thunder Admiral (Pierce) in Heaven Burns Red. Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-759416"
     },
@@ -438,53 +446,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5292,
-        "dpOrSpeed": 652,
-        "atkOrPower": 808,
-        "defOrGuts": 642,
-        "critOrWit": 798,
-        "burstCeilingScore": 82,
+        "hpOrStamina": 5080,
+        "dpOrSpeed": 4958,
+        "atkOrPower": 624,
+        "defOrGuts": 674,
+        "critOrWit": 784,
+        "burstCeilingScore": 76,
         "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Oracle Banner of Victory",
+          "name": "EX Skill: Oracle Banner of Victory — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Slash Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Slash",
-            "Admiral"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yuina Shirakawa [Oracle Banner of Victory] is a SSS-Tier Fire Admiral (Slash) from Squad 30G. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -496,7 +506,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.6,
-      "summaryVerdict": "Yuina Shirakawa [Oracle Banner of Victory] is a SSS-Tier Fire Admiral (Slash) from Squad 30G. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Yuina Shirakawa [Oracle Banner of Victory] is a SSS-Tier Fire Admiral (Slash) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-752169"
     },
@@ -518,53 +528,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5280,
-        "dpOrSpeed": 650,
-        "atkOrPower": 805,
+        "hpOrStamina": 4995,
+        "dpOrSpeed": 4890,
+        "atkOrPower": 590,
         "defOrGuts": 640,
-        "critOrWit": 795,
-        "burstCeilingScore": 82,
+        "critOrWit": 750,
+        "burstCeilingScore": 76,
         "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Glorious Blades",
+          "name": "EX Skill: Glorious Blades — Ice Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Ice Field (+65%) + +85% Ice Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Slash",
-            "Admiral"
+            "Ice Field Zone",
+            "Ice Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Ruka Kayamori [Glorious Blades] is a SSS-Tier Ice Admiral (Slash) from Squad 31A. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field."
+          "exactDescription": "Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Ice"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -576,7 +588,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
-      "summaryVerdict": "Ruka Kayamori [Glorious Blades] is a SSS-Tier Ice Admiral (Slash) from Squad 31A. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field.",
+      "summaryVerdict": "Ruka Kayamori [Glorious Blades] is a SSS-Tier Ice Admiral (Slash) in Heaven Burns Red. Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-752168"
     },
@@ -598,53 +610,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5268,
-        "dpOrSpeed": 648,
-        "atkOrPower": 802,
-        "defOrGuts": 638,
-        "critOrWit": 792,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5060,
+        "dpOrSpeed": 4942,
+        "atkOrPower": 781,
+        "defOrGuts": 666,
+        "critOrWit": 691,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Triumphant Return of the Demon Lord",
+          "name": "EX Skill: Triumphant Return of the Demon Lord — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Dark Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Dark",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Bon Ivar Yamawaki [Triumphant Return of the Demon Lord] is a SSS-Tier Dark Attacker (Slash) from Squad 31C. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Dark Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Dark Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Dark Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Dark"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Dark Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -656,7 +670,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
-      "summaryVerdict": "Bon Ivar Yamawaki [Triumphant Return of the Demon Lord] is a SSS-Tier Dark Attacker (Slash) from Squad 31C. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Dark Field and Overdrive chains.",
+      "summaryVerdict": "Bon Ivar Yamawaki [Triumphant Return of the Demon Lord] is a SSS-Tier Dark Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Dark Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-738525"
     },
@@ -678,53 +692,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 18,
       "recommendedDupes": "LB1 (1 Dupe) / LB3",
       "baseStats": {
-        "hpOrStamina": 5256,
-        "dpOrSpeed": 646,
-        "atkOrPower": 799,
-        "defOrGuts": 636,
-        "critOrWit": 789,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4975,
+        "dpOrSpeed": 5224,
+        "atkOrPower": 747,
+        "defOrGuts": 632,
+        "critOrWit": 657,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Evil Army March Begins!",
+          "name": "EX Skill: Evil Army March Begins! — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Non-Elemental Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
-            "None",
+            "DP Shield Break +50%",
+            "Non-Elemental",
             "Pierce",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Yayoi Bungo [Evil Army March Begins!] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 31C. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Non-Elemental Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Non-Elemental Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Non-Elemental",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Non-Elemental Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases Non-Elemental Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -736,7 +752,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
-      "summaryVerdict": "Yayoi Bungo [Evil Army March Begins!] is a SSS-Tier Non-Elemental Breaker (Pierce) from Squad 31C. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Yayoi Bungo [Evil Army March Begins!] is a SSS-Tier Non-Elemental Breaker (Pierce) in Heaven Burns Red. Delivers a 4-hit Non-Elemental Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-683118"
     },
@@ -758,53 +774,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5244,
-        "dpOrSpeed": 644,
-        "atkOrPower": 796,
-        "defOrGuts": 634,
-        "critOrWit": 786,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4980,
+        "dpOrSpeed": 4866,
+        "atkOrPower": 733,
+        "defOrGuts": 638,
+        "critOrWit": 663,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Midnight Soul Harvest",
+          "name": "EX Skill: Midnight Soul Harvest — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Dark Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Dark",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Karen Asakura [Midnight Soul Harvest] is a SS-Tier Dark Attacker (Slash) from Squad 31A. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Dark Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Dark Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Dark Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Dark"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Dark Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -816,7 +834,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Karen Asakura [Midnight Soul Harvest] is a SS-Tier Dark Attacker (Slash) from Squad 31A. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Dark Field and Overdrive chains.",
+      "summaryVerdict": "Karen Asakura [Midnight Soul Harvest] is a SS-Tier Dark Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Dark Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-839459"
     },
@@ -838,53 +856,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5232,
-        "dpOrSpeed": 642,
-        "atkOrPower": 793,
-        "defOrGuts": 632,
-        "critOrWit": 783,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5045,
+        "dpOrSpeed": 4918,
+        "atkOrPower": 759,
+        "defOrGuts": 709,
+        "critOrWit": 779,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Shivering Nurse Call",
+          "name": "EX Skill: Shivering Nurse Call — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Light DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Light DEF Down",
+            "Fragile +50%",
             "Light",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Mari Satsuki [Shivering Nurse Call] is a SS-Tier Light Debuffer (Pierce) from Squad 31C. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Light Pierce damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Light"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Light debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -896,7 +917,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.2,
-      "summaryVerdict": "Mari Satsuki [Shivering Nurse Call] is a SS-Tier Light Debuffer (Pierce) from Squad 31C. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Mari Satsuki [Shivering Nurse Call] is a SS-Tier Light Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Light Pierce damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-832804"
     },
@@ -918,53 +939,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5220,
-        "dpOrSpeed": 640,
-        "atkOrPower": 790,
+        "hpOrStamina": 4960,
+        "dpOrSpeed": 5200,
+        "atkOrPower": 725,
         "defOrGuts": 630,
-        "critOrWit": 780,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "critOrWit": 655,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Fleur Enchantée",
+          "name": "EX Skill: Fleur Enchantée — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Pierce Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Ice Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DP Shield Break +50%",
             "Ice",
             "Pierce",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Yuki Izumi [Fleur Enchantée] is a SS-Tier Ice Breaker (Pierce) from Squad 31A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Ice Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Ice Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Ice",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Ice Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases Ice Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -976,7 +999,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "Yuki Izumi [Fleur Enchantée] is a SS-Tier Ice Breaker (Pierce) from Squad 31A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Yuki Izumi [Fleur Enchantée] is a SS-Tier Ice Breaker (Pierce) in Heaven Burns Red. Delivers a 4-hit Ice Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-825787"
     },
@@ -998,53 +1021,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5208,
-        "dpOrSpeed": 638,
-        "atkOrPower": 787,
-        "defOrGuts": 628,
-        "critOrWit": 777,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5025,
+        "dpOrSpeed": 4902,
+        "atkOrPower": 751,
+        "defOrGuts": 701,
+        "critOrWit": 771,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Muse of the Broken Night",
+          "name": "EX Skill: Muse of the Broken Night — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Slash Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Fire DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Fire DEF Down",
+            "Fragile +50%",
             "Fire",
-            "Slash",
-            "Debuffer"
+            "Slash"
           ],
-          "exactDescription": "Fubuki Mikoto [Muse of the Broken Night] is a SS-Tier Fire Debuffer (Slash) from Squad 31D. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Fire Slash damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Fire"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Fire debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1056,7 +1082,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.4,
-      "summaryVerdict": "Fubuki Mikoto [Muse of the Broken Night] is a SS-Tier Fire Debuffer (Slash) from Squad 31D. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Fubuki Mikoto [Muse of the Broken Night] is a SS-Tier Fire Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Fire Slash damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-816687"
     },
@@ -1078,53 +1104,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5196,
-        "dpOrSpeed": 636,
-        "atkOrPower": 784,
-        "defOrGuts": 626,
-        "critOrWit": 774,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4940,
+        "dpOrSpeed": 4834,
+        "atkOrPower": 717,
+        "defOrGuts": 622,
+        "critOrWit": 647,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Summer Night Butterfly",
+          "name": "EX Skill: Summer Night Butterfly — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Fire Crush (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Fire",
             "Crush",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Chie Sugawara [Summer Night Butterfly] is a SS-Tier Fire Attacker (Crush) from Squad 30G. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Fire Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Fire Crush nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Fire Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Fire"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Fire Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases Fire Crush skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -1136,7 +1164,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Chie Sugawara [Summer Night Butterfly] is a SS-Tier Fire Attacker (Crush) from Squad 30G. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Fire Field and Overdrive chains.",
+      "summaryVerdict": "Chie Sugawara [Summer Night Butterfly] is a SS-Tier Fire Attacker (Crush) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Fire Crush nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-810832"
     },
@@ -1158,53 +1186,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5184,
-        "dpOrSpeed": 634,
-        "atkOrPower": 781,
-        "defOrGuts": 624,
-        "critOrWit": 771,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5005,
+        "dpOrSpeed": 4886,
+        "atkOrPower": 743,
+        "defOrGuts": 648,
+        "critOrWit": 673,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Twin-Star Valkyrie",
+          "name": "EX Skill: Twin-Star Valkyrie — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Pierce Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Ice Pierce (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Ice",
             "Pierce",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Ichigo Minase [Twin-Star Valkyrie] is a SS-Tier Ice Attacker (Pierce) from Squad 31B. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Pierce nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Ice Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Ice"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Ice Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases Ice Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -1216,7 +1246,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Ichigo Minase [Twin-Star Valkyrie] is a SS-Tier Ice Attacker (Pierce) from Squad 31B. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains.",
+      "summaryVerdict": "Ichigo Minase [Twin-Star Valkyrie] is a SS-Tier Ice Attacker (Pierce) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Pierce nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-803496"
     },
@@ -1238,53 +1268,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5172,
-        "dpOrSpeed": 632,
-        "atkOrPower": 778,
-        "defOrGuts": 622,
-        "critOrWit": 768,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4920,
+        "dpOrSpeed": 4818,
+        "atkOrPower": 564,
+        "defOrGuts": 614,
+        "critOrWit": 704,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Lazy Tropical Float",
+          "name": "EX Skill: Lazy Tropical Float — Light Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Light Field (+65%) + +85% Light Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Pierce",
-            "Buffer"
+            "Light Field Zone",
+            "Light Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yotsuha Ohshima [Lazy Tropical Float] is a SS-Tier Light Buffer (Pierce) from Squad 31E. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field."
+          "exactDescription": "Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Light"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -1296,7 +1328,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Yotsuha Ohshima [Lazy Tropical Float] is a SS-Tier Light Buffer (Pierce) from Squad 31E. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field.",
+      "summaryVerdict": "Yotsuha Ohshima [Lazy Tropical Float] is a SS-Tier Light Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-797591"
     },
@@ -1318,53 +1350,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5160,
-        "dpOrSpeed": 630,
-        "atkOrPower": 775,
-        "defOrGuts": 620,
-        "critOrWit": 765,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5620,
+        "dpOrSpeed": 5755,
+        "atkOrPower": 590,
+        "defOrGuts": 745,
+        "critOrWit": 665,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Evening Fireworks Nocturne",
+          "name": "EX Skill: Evening Fireworks Nocturne — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Slash",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Ice"
           ],
-          "exactDescription": "Shiki Hanamura [Evening Fireworks Nocturne] is a SS-Tier Ice Healer (Slash) from Squad 31F. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -1376,7 +1410,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.5,
-      "summaryVerdict": "Shiki Hanamura [Evening Fireworks Nocturne] is a SS-Tier Ice Healer (Slash) from Squad 31F. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Shiki Hanamura [Evening Fireworks Nocturne] is a SS-Tier Ice Healer (Slash) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-794994"
     },
@@ -1398,53 +1432,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5148,
-        "dpOrSpeed": 628,
-        "atkOrPower": 772,
-        "defOrGuts": 618,
-        "critOrWit": 762,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5050,
+        "dpOrSpeed": 4922,
+        "atkOrPower": 761,
+        "defOrGuts": 711,
+        "critOrWit": 781,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Exotic Principessa",
+          "name": "EX Skill: Exotic Principessa — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Fire DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Fire DEF Down",
+            "Fragile +50%",
             "Fire",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Charlotta Skopovskaya [Exotic Principessa] is a SS-Tier Fire Debuffer (Pierce) from Squad 31X. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Fire Pierce damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Fire"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Fire debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1456,7 +1493,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Charlotta Skopovskaya [Exotic Principessa] is a SS-Tier Fire Debuffer (Pierce) from Squad 31X. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Charlotta Skopovskaya [Exotic Principessa] is a SS-Tier Fire Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Fire Pierce damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-793215"
     },
@@ -1478,53 +1515,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5136,
-        "dpOrSpeed": 626,
-        "atkOrPower": 769,
-        "defOrGuts": 616,
-        "critOrWit": 759,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4965,
+        "dpOrSpeed": 4854,
+        "atkOrPower": 727,
+        "defOrGuts": 677,
+        "critOrWit": 747,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: TAKE YOUR HEART",
+          "name": "EX Skill: TAKE YOUR HEART — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Dark DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Dark DEF Down",
+            "Fragile +50%",
             "Dark",
-            "Slash",
-            "Debuffer"
+            "Slash"
           ],
-          "exactDescription": "Ruka Kayamori [TAKE YOUR HEART] is a SS-Tier Dark Debuffer (Slash) from Squad 31A. Inflicts 45% Dark DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Dark Slash damage while simultaneously applying -45% Base DEF Down, -45% Dark Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Dark"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Dark debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -1536,7 +1576,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Ruka Kayamori [TAKE YOUR HEART] is a SS-Tier Dark Debuffer (Slash) from Squad 31A. Inflicts 45% Dark DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Ruka Kayamori [TAKE YOUR HEART] is a SS-Tier Dark Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Dark Slash damage while simultaneously applying -45% Base DEF Down, -45% Dark Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-787646"
     },
@@ -1558,53 +1598,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5124,
-        "dpOrSpeed": 624,
-        "atkOrPower": 766,
-        "defOrGuts": 614,
-        "critOrWit": 756,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5030,
+        "dpOrSpeed": 4906,
+        "atkOrPower": 753,
+        "defOrGuts": 658,
+        "critOrWit": 683,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Unwavering Conviction",
+          "name": "EX Skill: Unwavering Conviction — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Light Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Light",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Violet (Kasumi Yoshizawa) [Unwavering Conviction] is a SS-Tier Light Attacker (Slash) from Squad P5R. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Light Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Light Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Light Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Light"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Light Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases Light Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -1616,7 +1658,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Violet (Kasumi Yoshizawa) [Unwavering Conviction] is a SS-Tier Light Attacker (Slash) from Squad P5R. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Light Field and Overdrive chains.",
+      "summaryVerdict": "Violet (Kasumi Yoshizawa) [Unwavering Conviction] is a SS-Tier Light Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Light Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-784344"
     },
@@ -1638,53 +1680,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5112,
-        "dpOrSpeed": 622,
-        "atkOrPower": 763,
-        "defOrGuts": 612,
-        "critOrWit": 753,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4945,
+        "dpOrSpeed": 4838,
+        "atkOrPower": 574,
+        "defOrGuts": 624,
+        "critOrWit": 714,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Passionate Femme Fatale",
+          "name": "EX Skill: Passionate Femme Fatale — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Tsukasa Tojo [Passionate Femme Fatale] is a SS-Tier Fire Buffer (Pierce) from Squad 31A. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -1696,7 +1740,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Tsukasa Tojo [Passionate Femme Fatale] is a SS-Tier Fire Buffer (Pierce) from Squad 31A. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Tsukasa Tojo [Passionate Femme Fatale] is a SS-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-784346"
     },
@@ -1718,53 +1762,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5100,
-        "dpOrSpeed": 620,
-        "atkOrPower": 760,
-        "defOrGuts": 610,
-        "critOrWit": 750,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5010,
+        "dpOrSpeed": 5240,
+        "atkOrPower": 745,
+        "defOrGuts": 650,
+        "critOrWit": 675,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Discerning Priestess",
+          "name": "EX Skill: Discerning Priestess — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Crush Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Non-Elemental Crush (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
-            "None",
+            "DP Shield Break +50%",
+            "Non-Elemental",
             "Crush",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Queen (Makoto Niijima) [Discerning Priestess] is a SS-Tier Non-Elemental Breaker (Crush) from Squad P5R. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Non-Elemental Crush strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Non-Elemental Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Non-Elemental",
+            "Crush"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Non-Elemental Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases Non-Elemental Crush skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -1776,7 +1822,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "Queen (Makoto Niijima) [Discerning Priestess] is a SS-Tier Non-Elemental Breaker (Crush) from Squad P5R. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Queen (Makoto Niijima) [Discerning Priestess] is a SS-Tier Non-Elemental Breaker (Crush) in Heaven Burns Red. Delivers a 4-hit Non-Elemental Crush strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-784342"
     },
@@ -1798,53 +1844,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5088,
-        "dpOrSpeed": 618,
-        "atkOrPower": 757,
-        "defOrGuts": 608,
-        "critOrWit": 747,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4925,
+        "dpOrSpeed": 4822,
+        "atkOrPower": 711,
+        "defOrGuts": 616,
+        "critOrWit": 641,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: White Fang of the Battlefield",
+          "name": "EX Skill: White Fang of the Battlefield — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Dark Pierce + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Dark",
             "Pierce",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Byakko [White Fang of the Battlefield] is a SS-Tier Dark Blaster (Pierce) from Squad 31B. Stacks Destruction Rate up to 600%+ with 10 rapid Dark Pierce hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Dark Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Dark"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Dark debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -1856,7 +1905,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.4,
-      "summaryVerdict": "Byakko [White Fang of the Battlefield] is a SS-Tier Dark Blaster (Pierce) from Squad 31B. Stacks Destruction Rate up to 600%+ with 10 rapid Dark Pierce hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Byakko [White Fang of the Battlefield] is a SS-Tier Dark Blaster (Pierce) in Heaven Burns Red. Unleashes a 10-hit Dark Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-783178"
     },
@@ -1878,53 +1927,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5076,
-        "dpOrSpeed": 616,
-        "atkOrPower": 754,
-        "defOrGuts": 606,
-        "critOrWit": 744,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4990,
+        "dpOrSpeed": 4874,
+        "atkOrPower": 737,
+        "defOrGuts": 642,
+        "critOrWit": 667,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Flower Shadow Dance Stance",
+          "name": "EX Skill: Flower Shadow Dance Stance — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Ice Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Ice",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Inori Natsume [Flower Shadow Dance Stance] is a SS-Tier Ice Attacker (Slash) from Squad 31F. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Ice Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Ice"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Ice Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases Ice Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -1936,7 +1987,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Inori Natsume [Flower Shadow Dance Stance] is a SS-Tier Ice Attacker (Slash) from Squad 31F. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains.",
+      "summaryVerdict": "Inori Natsume [Flower Shadow Dance Stance] is a SS-Tier Ice Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-781369"
     },
@@ -1958,53 +2009,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5064,
-        "dpOrSpeed": 614,
-        "atkOrPower": 751,
-        "defOrGuts": 604,
-        "critOrWit": 741,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5055,
+        "dpOrSpeed": 4926,
+        "atkOrPower": 763,
+        "defOrGuts": 713,
+        "critOrWit": 783,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Empress of the Showdown",
+          "name": "EX Skill: Empress of the Showdown — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Thunder DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Thunder DEF Down",
+            "Fragile +50%",
             "Thunder",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Maki Kurosawa [Empress of the Showdown] is a SS-Tier Thunder Debuffer (Crush) from Squad 31F. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Thunder Crush damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Thunder"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Thunder debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2016,7 +2070,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Maki Kurosawa [Empress of the Showdown] is a SS-Tier Thunder Debuffer (Crush) from Squad 31F. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Maki Kurosawa [Empress of the Showdown] is a SS-Tier Thunder Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Thunder Crush damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-781370"
     },
@@ -2038,53 +2092,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5052,
-        "dpOrSpeed": 612,
-        "atkOrPower": 748,
-        "defOrGuts": 602,
-        "critOrWit": 738,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4970,
+        "dpOrSpeed": 4858,
+        "atkOrPower": 729,
+        "defOrGuts": 679,
+        "critOrWit": 749,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Forward, Never Give Up!",
+          "name": "EX Skill: Forward, Never Give Up! — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Light DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Light DEF Down",
+            "Fragile +50%",
             "Light",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Akari Date [Forward, Never Give Up!] is a SS-Tier Light Debuffer (Crush) from Squad 31D. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Light Crush damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Light"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Light debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2096,7 +2153,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Akari Date [Forward, Never Give Up!] is a SS-Tier Light Debuffer (Crush) from Squad 31D. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Akari Date [Forward, Never Give Up!] is a SS-Tier Light Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Light Crush damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-779180"
     },
@@ -2118,53 +2175,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5040,
-        "dpOrSpeed": 610,
-        "atkOrPower": 745,
-        "defOrGuts": 600,
-        "critOrWit": 735,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5035,
+        "dpOrSpeed": 4910,
+        "atkOrPower": 610,
+        "defOrGuts": 660,
+        "critOrWit": 750,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Springtime Easter Bunny",
+          "name": "EX Skill: Springtime Easter Bunny — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Hisame Ogasawara [Springtime Easter Bunny] is a SS-Tier Fire Buffer (Pierce) from Squad 30G. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -2176,7 +2235,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "Hisame Ogasawara [Springtime Easter Bunny] is a SS-Tier Fire Buffer (Pierce) from Squad 30G. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Hisame Ogasawara [Springtime Easter Bunny] is a SS-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-775106"
     },
@@ -2198,53 +2257,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5028,
-        "dpOrSpeed": 608,
-        "atkOrPower": 742,
-        "defOrGuts": 598,
-        "critOrWit": 732,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4950,
+        "dpOrSpeed": 4842,
+        "atkOrPower": 721,
+        "defOrGuts": 671,
+        "critOrWit": 741,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Special Night Girls Jam",
+          "name": "EX Skill: Special Night Girls Jam — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Ice DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Ice DEF Down",
+            "Fragile +50%",
             "Ice",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Megumi Aikawa [Special Night Girls Jam] is a SS-Tier Ice Debuffer (Crush) from Squad 31A. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Ice Crush damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Ice"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Ice debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2256,7 +2318,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Megumi Aikawa [Special Night Girls Jam] is a SS-Tier Ice Debuffer (Crush) from Squad 31A. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Megumi Aikawa [Special Night Girls Jam] is a SS-Tier Ice Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Ice Crush damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-764339"
     },
@@ -2278,53 +2340,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5016,
-        "dpOrSpeed": 606,
-        "atkOrPower": 739,
-        "defOrGuts": 596,
-        "critOrWit": 729,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5015,
+        "dpOrSpeed": 4894,
+        "atkOrPower": 747,
+        "defOrGuts": 652,
+        "critOrWit": 677,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Dawn of Hope",
+          "name": "EX Skill: Dawn of Hope — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Thunder Pierce (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Thunder",
             "Pierce",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Saki Tezuka [Dawn of Hope] is a SS-Tier Thunder Attacker (Pierce) from Command HQ. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Thunder Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Thunder Pierce nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Thunder Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Thunder"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Thunder Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases Thunder Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -2336,7 +2400,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Saki Tezuka [Dawn of Hope] is a SS-Tier Thunder Attacker (Pierce) from Command HQ. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Thunder Field and Overdrive chains.",
+      "summaryVerdict": "Saki Tezuka [Dawn of Hope] is a SS-Tier Thunder Attacker (Pierce) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Thunder Pierce nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-755194"
     },
@@ -2358,53 +2422,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 5004,
-        "dpOrSpeed": 604,
-        "atkOrPower": 736,
-        "defOrGuts": 594,
-        "critOrWit": 726,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5554,
+        "dpOrSpeed": 5700,
+        "atkOrPower": 568,
+        "defOrGuts": 723,
+        "critOrWit": 643,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Connecting Legacy",
+          "name": "EX Skill: Connecting Legacy — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Crush Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Crush",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Ice"
           ],
-          "exactDescription": "Erika Aoi [Connecting Legacy] is a SS-Tier Ice Healer (Crush) from Squad 31B. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -2416,7 +2482,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Erika Aoi [Connecting Legacy] is a SS-Tier Ice Healer (Crush) from Squad 31B. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Erika Aoi [Connecting Legacy] is a SS-Tier Ice Healer (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-756804"
     },
@@ -2438,53 +2504,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4992,
-        "dpOrSpeed": 602,
-        "atkOrPower": 733,
-        "defOrGuts": 592,
-        "critOrWit": 723,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4995,
+        "dpOrSpeed": 4878,
+        "atkOrPower": 594,
+        "defOrGuts": 644,
+        "critOrWit": 734,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Regalia of Uprising",
+          "name": "EX Skill: Regalia of Uprising — Thunder Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Thunder Field (+65%) + +85% Thunder Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Pierce",
-            "Buffer"
+            "Thunder Field Zone",
+            "Thunder Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Kanata Maruyama [Regalia of Uprising] is a SS-Tier Thunder Buffer (Pierce) from Squad 31F. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field."
+          "exactDescription": "Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Thunder"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -2496,7 +2564,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Kanata Maruyama [Regalia of Uprising] is a SS-Tier Thunder Buffer (Pierce) from Squad 31F. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field.",
+      "summaryVerdict": "Kanata Maruyama [Regalia of Uprising] is a SS-Tier Thunder Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-746396"
     },
@@ -2518,53 +2586,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4980,
-        "dpOrSpeed": 600,
-        "atkOrPower": 730,
-        "defOrGuts": 590,
-        "critOrWit": 720,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4910,
+        "dpOrSpeed": 4810,
+        "atkOrPower": 705,
+        "defOrGuts": 655,
+        "critOrWit": 725,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Welcome to the Nightmare Parade",
+          "name": "EX Skill: Welcome to the Nightmare Parade — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Ice DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Ice DEF Down",
+            "Fragile +50%",
             "Ice",
-            "Slash",
-            "Debuffer"
+            "Slash"
           ],
-          "exactDescription": "Tama Kunimi [Welcome to the Nightmare Parade] is a SS-Tier Ice Debuffer (Slash) from Squad 31A. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Ice Slash damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Ice"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Ice debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2576,7 +2647,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "Tama Kunimi [Welcome to the Nightmare Parade] is a SS-Tier Ice Debuffer (Slash) from Squad 31A. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Tama Kunimi [Welcome to the Nightmare Parade] is a SS-Tier Ice Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Ice Slash damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-730675"
     },
@@ -2598,53 +2669,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4968,
-        "dpOrSpeed": 598,
-        "atkOrPower": 727,
-        "defOrGuts": 588,
-        "critOrWit": 717,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4975,
+        "dpOrSpeed": 4862,
+        "atkOrPower": 586,
+        "defOrGuts": 636,
+        "critOrWit": 726,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Slugfest! Home Run Smash!",
+          "name": "EX Skill: Slugfest! Home Run Smash! — Light Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Light Field (+65%) + +85% Light Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Pierce",
-            "Buffer"
+            "Light Field Zone",
+            "Light Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Ichigo Minase [Slugfest! Home Run Smash!] is a SS-Tier Light Buffer (Pierce) from Squad 31B. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field."
+          "exactDescription": "Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Light"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -2656,7 +2729,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Ichigo Minase [Slugfest! Home Run Smash!] is a SS-Tier Light Buffer (Pierce) from Squad 31B. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field.",
+      "summaryVerdict": "Ichigo Minase [Slugfest! Home Run Smash!] is a SS-Tier Light Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-724681"
     },
@@ -2678,53 +2751,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4956,
-        "dpOrSpeed": 596,
-        "atkOrPower": 724,
-        "defOrGuts": 586,
-        "critOrWit": 714,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5040,
+        "dpOrSpeed": 4914,
+        "atkOrPower": 757,
+        "defOrGuts": 707,
+        "critOrWit": 777,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Jump Into Sparkling Summer!",
+          "name": "EX Skill: Jump Into Sparkling Summer! — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Thunder DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Thunder DEF Down",
+            "Fragile +50%",
             "Thunder",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Aina Mizuhara [Jump Into Sparkling Summer!] is a SS-Tier Thunder Debuffer (Crush) from Squad 31D. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Thunder Crush damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Thunder"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Thunder debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2736,7 +2812,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Aina Mizuhara [Jump Into Sparkling Summer!] is a SS-Tier Thunder Debuffer (Crush) from Squad 31D. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Aina Mizuhara [Jump Into Sparkling Summer!] is a SS-Tier Thunder Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Thunder Crush damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-712350"
     },
@@ -2758,53 +2834,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4944,
-        "dpOrSpeed": 594,
-        "atkOrPower": 721,
-        "defOrGuts": 584,
-        "critOrWit": 711,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4955,
+        "dpOrSpeed": 4846,
+        "atkOrPower": 723,
+        "defOrGuts": 673,
+        "critOrWit": 743,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Strategist of Chaos",
+          "name": "EX Skill: Strategist of Chaos — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Non-Elemental DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Debuffer"
+            "DEF Down -45%",
+            "Non-Elemental DEF Down",
+            "Fragile +50%",
+            "Non-Elemental",
+            "Pierce"
           ],
-          "exactDescription": "Mari Satsuki [Strategist of Chaos] is a SS-Tier Non-Elemental Debuffer (Pierce) from Squad 31C. Inflicts 45% Non-Elemental DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Non-Elemental Pierce damage while simultaneously applying -45% Base DEF Down, -45% Non-Elemental Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Non-Elemental"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Non-Elemental debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2816,7 +2895,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Mari Satsuki [Strategist of Chaos] is a SS-Tier Non-Elemental Debuffer (Pierce) from Squad 31C. Inflicts 45% Non-Elemental DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Mari Satsuki [Strategist of Chaos] is a SS-Tier Non-Elemental Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Non-Elemental Pierce damage while simultaneously applying -45% Base DEF Down, -45% Non-Elemental Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-712353"
     },
@@ -2838,53 +2917,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4932,
-        "dpOrSpeed": 592,
-        "atkOrPower": 718,
-        "defOrGuts": 582,
-        "critOrWit": 708,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5020,
+        "dpOrSpeed": 4898,
+        "atkOrPower": 749,
+        "defOrGuts": 654,
+        "critOrWit": 679,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: CODE: Virtual Killer",
+          "name": "EX Skill: CODE: Virtual Killer — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Non-Elemental Slash + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
-            "None",
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
+            "Non-Elemental",
             "Slash",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Karen Asakura [CODE: Virtual Killer] is a SS-Tier Non-Elemental Blaster (Slash) from Squad 31A. Stacks Destruction Rate up to 600%+ with 10 rapid Non-Elemental Slash hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Non-Elemental Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Non-Elemental"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Non-Elemental debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases Non-Elemental Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -2896,7 +2978,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Karen Asakura [CODE: Virtual Killer] is a SS-Tier Non-Elemental Blaster (Slash) from Squad 31A. Stacks Destruction Rate up to 600%+ with 10 rapid Non-Elemental Slash hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Karen Asakura [CODE: Virtual Killer] is a SS-Tier Non-Elemental Blaster (Slash) in Heaven Burns Red. Unleashes a 10-hit Non-Elemental Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-708980"
     },
@@ -2918,53 +3000,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4920,
-        "dpOrSpeed": 590,
+        "hpOrStamina": 4935,
+        "dpOrSpeed": 4830,
         "atkOrPower": 715,
-        "defOrGuts": 580,
-        "critOrWit": 705,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "defOrGuts": 665,
+        "critOrWit": 735,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Shining Mermaid Vacation",
+          "name": "EX Skill: Shining Mermaid Vacation — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Dark DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Dark DEF Down",
+            "Fragile +50%",
             "Dark",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Erika Aoi [Shining Mermaid Vacation] is a SS-Tier Dark Debuffer (Crush) from Squad 31B. Inflicts 45% Dark DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Dark Crush damage while simultaneously applying -45% Base DEF Down, -45% Dark Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Dark"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Dark debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -2976,7 +3061,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.5,
-      "summaryVerdict": "Erika Aoi [Shining Mermaid Vacation] is a SS-Tier Dark Debuffer (Crush) from Squad 31B. Inflicts 45% Dark DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Erika Aoi [Shining Mermaid Vacation] is a SS-Tier Dark Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Dark Crush damage while simultaneously applying -45% Base DEF Down, -45% Dark Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-706660"
     },
@@ -2998,53 +3083,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4908,
-        "dpOrSpeed": 588,
-        "atkOrPower": 712,
-        "defOrGuts": 578,
-        "critOrWit": 702,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5000,
+        "dpOrSpeed": 4882,
+        "atkOrPower": 596,
+        "defOrGuts": 646,
+        "critOrWit": 736,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Scent of Night, Melody of Roses",
+          "name": "EX Skill: Scent of Night, Melody of Roses — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Admiral"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Mion Yanagi [Scent of Night, Melody of Roses] is a SS-Tier Non-Elemental Admiral (Pierce) from Squad 31F. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -3056,7 +3143,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Mion Yanagi [Scent of Night, Melody of Roses] is a SS-Tier Non-Elemental Admiral (Pierce) from Squad 31F. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Mion Yanagi [Scent of Night, Melody of Roses] is a SS-Tier Non-Elemental Admiral (Pierce) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-692830"
     },
@@ -3078,53 +3165,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4896,
-        "dpOrSpeed": 586,
-        "atkOrPower": 709,
-        "defOrGuts": 576,
-        "critOrWit": 699,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5536,
+        "dpOrSpeed": 5685,
+        "atkOrPower": 562,
+        "defOrGuts": 717,
+        "critOrWit": 637,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Archmage of the Demon Lord",
+          "name": "EX Skill: Archmage of the Demon Lord — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Crush Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Crush",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Non-Elemental"
           ],
-          "exactDescription": "Seira Sakuraba [Archmage of the Demon Lord] is a SS-Tier Non-Elemental Defender (Crush) from Squad 31C. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -3136,7 +3225,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Seira Sakuraba [Archmage of the Demon Lord] is a SS-Tier Non-Elemental Defender (Crush) from Squad 31C. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Seira Sakuraba [Archmage of the Demon Lord] is a SS-Tier Non-Elemental Defender (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-686333"
     },
@@ -3158,53 +3247,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4884,
-        "dpOrSpeed": 584,
-        "atkOrPower": 706,
-        "defOrGuts": 574,
-        "critOrWit": 696,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4980,
+        "dpOrSpeed": 4866,
+        "atkOrPower": 733,
+        "defOrGuts": 683,
+        "critOrWit": 753,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Guiding Lucent",
+          "name": "EX Skill: Guiding Lucent — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Light DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Light DEF Down",
+            "Fragile +50%",
             "Light",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Ichiko Ohshima [Guiding Lucent] is a SS-Tier Light Debuffer (Crush) from Squad 31E. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Light Crush damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Light"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Light debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3216,7 +3308,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Ichiko Ohshima [Guiding Lucent] is a SS-Tier Light Debuffer (Crush) from Squad 31E. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Ichiko Ohshima [Guiding Lucent] is a SS-Tier Light Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Light Crush damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-677349"
     },
@@ -3238,53 +3330,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4872,
-        "dpOrSpeed": 582,
-        "atkOrPower": 703,
-        "defOrGuts": 572,
-        "critOrWit": 693,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5045,
+        "dpOrSpeed": 4918,
+        "atkOrPower": 614,
+        "defOrGuts": 664,
+        "critOrWit": 754,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Lament of Sorrow",
+          "name": "EX Skill: Lament of Sorrow — Ice Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Ice Field (+65%) + +85% Ice Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Pierce",
-            "Buffer"
+            "Ice Field Zone",
+            "Ice Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Tsukasa Tojo [Lament of Sorrow] is a SS-Tier Ice Buffer (Pierce) from Squad 31A. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field."
+          "exactDescription": "Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Ice"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -3296,7 +3390,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Tsukasa Tojo [Lament of Sorrow] is a SS-Tier Ice Buffer (Pierce) from Squad 31A. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field.",
+      "summaryVerdict": "Tsukasa Tojo [Lament of Sorrow] is a SS-Tier Ice Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-669859"
     },
@@ -3318,53 +3412,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4860,
-        "dpOrSpeed": 580,
-        "atkOrPower": 700,
-        "defOrGuts": 570,
-        "critOrWit": 690,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4960,
+        "dpOrSpeed": 4850,
+        "atkOrPower": 725,
+        "defOrGuts": 675,
+        "critOrWit": 745,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Lead by Example",
+          "name": "EX Skill: Lead by Example — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Fire DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Fire DEF Down",
+            "Fragile +50%",
             "Fire",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Misato Nikaido [Lead by Example] is a SS-Tier Fire Debuffer (Crush) from Squad 31D. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Fire Crush damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Fire"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Fire debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3376,7 +3473,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "Misato Nikaido [Lead by Example] is a SS-Tier Fire Debuffer (Crush) from Squad 31D. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Misato Nikaido [Lead by Example] is a SS-Tier Fire Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Fire Crush damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-667355"
     },
@@ -3398,53 +3495,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4848,
-        "dpOrSpeed": 578,
-        "atkOrPower": 697,
-        "defOrGuts": 568,
-        "critOrWit": 687,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5025,
+        "dpOrSpeed": 4902,
+        "atkOrPower": 606,
+        "defOrGuts": 656,
+        "critOrWit": 746,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Diva of the White Blossom",
+          "name": "EX Skill: Diva of the White Blossom — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Ruka Kayamori [Diva of the White Blossom] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31A. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -3456,7 +3555,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Ruka Kayamori [Diva of the White Blossom] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31A. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Ruka Kayamori [Diva of the White Blossom] is a SS-Tier Non-Elemental Buffer (Slash) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-657138"
     },
@@ -3478,53 +3577,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4836,
-        "dpOrSpeed": 576,
-        "atkOrPower": 694,
-        "defOrGuts": 566,
-        "critOrWit": 684,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4940,
+        "dpOrSpeed": 4834,
+        "atkOrPower": 572,
+        "defOrGuts": 622,
+        "critOrWit": 712,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Echoing Battlecry",
+          "name": "EX Skill: Echoing Battlecry — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Crush Admiral EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Crush",
-            "Admiral"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Erika Aoi [Echoing Battlecry] is a SS-Tier Non-Elemental Admiral (Crush) from Squad 31B. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Admiral",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Admiral Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Admiral",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -3536,7 +3637,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Erika Aoi [Echoing Battlecry] is a SS-Tier Non-Elemental Admiral (Crush) from Squad 31B. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Erika Aoi [Echoing Battlecry] is a SS-Tier Non-Elemental Admiral (Crush) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-652684"
     },
@@ -3558,53 +3659,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4824,
-        "dpOrSpeed": 574,
-        "atkOrPower": 691,
-        "defOrGuts": 564,
-        "critOrWit": 681,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5005,
+        "dpOrSpeed": 4886,
+        "atkOrPower": 743,
+        "defOrGuts": 648,
+        "critOrWit": 673,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Blossoming Compassion",
+          "name": "EX Skill: Blossoming Compassion — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Non-Elemental Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
-            "None",
+            "HP +50% Finisher",
+            "Non-Elemental",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Sumomo Minase [Blossoming Compassion] is a SS-Tier Non-Elemental Attacker (Slash) from Squad 31B. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Non-Elemental Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Non-Elemental Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Non-Elemental Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Non-Elemental"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Non-Elemental Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases Non-Elemental Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -3616,7 +3719,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Sumomo Minase [Blossoming Compassion] is a SS-Tier Non-Elemental Attacker (Slash) from Squad 31B. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Non-Elemental Field and Overdrive chains.",
+      "summaryVerdict": "Sumomo Minase [Blossoming Compassion] is a SS-Tier Non-Elemental Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Non-Elemental Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-648704"
     },
@@ -3638,53 +3741,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4812,
-        "dpOrSpeed": 572,
-        "atkOrPower": 688,
-        "defOrGuts": 562,
-        "critOrWit": 678,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4920,
+        "dpOrSpeed": 5168,
+        "atkOrPower": 709,
+        "defOrGuts": 614,
+        "critOrWit": 639,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Princess by Your Side",
+          "name": "EX Skill: Princess by Your Side — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Fire Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DP Shield Break +50%",
             "Fire",
             "Pierce",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Yuki Izumi [Princess by Your Side] is a SS-Tier Fire Breaker (Pierce) from Squad 31A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Fire Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Fire Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Fire",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Fire Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases Fire Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -3696,7 +3801,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 9.2,
-      "summaryVerdict": "Yuki Izumi [Princess by Your Side] is a SS-Tier Fire Breaker (Pierce) from Squad 31A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Yuki Izumi [Princess by Your Side] is a SS-Tier Fire Breaker (Pierce) in Heaven Burns Red. Delivers a 4-hit Fire Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-643121"
     },
@@ -3718,53 +3823,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4800,
-        "dpOrSpeed": 570,
-        "atkOrPower": 685,
-        "defOrGuts": 560,
-        "critOrWit": 675,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4985,
+        "dpOrSpeed": 4870,
+        "atkOrPower": 735,
+        "defOrGuts": 685,
+        "critOrWit": 755,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Summer Dusk Garnet",
+          "name": "EX Skill: Summer Dusk Garnet — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Ice DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Ice DEF Down",
+            "Fragile +50%",
             "Ice",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Hisame Ogasawara [Summer Dusk Garnet] is a SS-Tier Ice Debuffer (Pierce) from Squad 30G. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Ice Pierce damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Ice"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Ice debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3776,7 +3884,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.5,
-      "summaryVerdict": "Hisame Ogasawara [Summer Dusk Garnet] is a SS-Tier Ice Debuffer (Pierce) from Squad 30G. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Hisame Ogasawara [Summer Dusk Garnet] is a SS-Tier Ice Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Ice Pierce damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-638288"
     },
@@ -3798,53 +3906,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4788,
-        "dpOrSpeed": 568,
-        "atkOrPower": 682,
-        "defOrGuts": 558,
-        "critOrWit": 672,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5050,
+        "dpOrSpeed": 4922,
+        "atkOrPower": 761,
+        "defOrGuts": 711,
+        "critOrWit": 781,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Never-Ending Summer",
+          "name": "EX Skill: Never-Ending Summer — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Thunder DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Thunder DEF Down",
+            "Fragile +50%",
             "Thunder",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Megumi Aikawa [Never-Ending Summer] is a SS-Tier Thunder Debuffer (Crush) from Squad 31A. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Thunder Crush damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Thunder"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Thunder debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -3856,7 +3967,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
-      "summaryVerdict": "Megumi Aikawa [Never-Ending Summer] is a SS-Tier Thunder Debuffer (Crush) from Squad 31A. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Megumi Aikawa [Never-Ending Summer] is a SS-Tier Thunder Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Thunder Crush damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-628230"
     },
@@ -3878,53 +3989,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4776,
-        "dpOrSpeed": 566,
-        "atkOrPower": 679,
-        "defOrGuts": 556,
-        "critOrWit": 669,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4965,
+        "dpOrSpeed": 4854,
+        "atkOrPower": 727,
+        "defOrGuts": 632,
+        "critOrWit": 657,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: The Moon Is Beautiful",
+          "name": "EX Skill: The Moon Is Beautiful — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Ice Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Ice",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Yuina Shirakawa [The Moon Is Beautiful] is a SS-Tier Ice Attacker (Slash) from Squad 30G. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Ice Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Ice"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Ice Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases Ice Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -3936,7 +4049,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Yuina Shirakawa [The Moon Is Beautiful] is a SS-Tier Ice Attacker (Slash) from Squad 30G. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains.",
+      "summaryVerdict": "Yuina Shirakawa [The Moon Is Beautiful] is a SS-Tier Ice Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-621315"
     },
@@ -3958,53 +4071,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4764,
-        "dpOrSpeed": 564,
-        "atkOrPower": 676,
-        "defOrGuts": 554,
-        "critOrWit": 666,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5030,
+        "dpOrSpeed": 4906,
+        "atkOrPower": 753,
+        "defOrGuts": 703,
+        "critOrWit": 773,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Bunny Fight Deviation",
+          "name": "EX Skill: Bunny Fight Deviation — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Dark DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Dark DEF Down",
+            "Fragile +50%",
             "Dark",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Tsukasa Tojo [Bunny Fight Deviation] is a SS-Tier Dark Debuffer (Pierce) from Squad 31A. Inflicts 45% Dark DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Dark Pierce damage while simultaneously applying -45% Base DEF Down, -45% Dark Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Dark"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Dark debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4016,7 +4132,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Tsukasa Tojo [Bunny Fight Deviation] is a SS-Tier Dark Debuffer (Pierce) from Squad 31A. Inflicts 45% Dark DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Tsukasa Tojo [Bunny Fight Deviation] is a SS-Tier Dark Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Dark Pierce damage while simultaneously applying -45% Base DEF Down, -45% Dark Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-603245"
     },
@@ -4038,53 +4154,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4752,
-        "dpOrSpeed": 562,
-        "atkOrPower": 673,
-        "defOrGuts": 552,
-        "critOrWit": 663,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4945,
+        "dpOrSpeed": 4838,
+        "atkOrPower": 719,
+        "defOrGuts": 624,
+        "critOrWit": 649,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: The Feel of the Throne",
+          "name": "EX Skill: The Feel of the Throne — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Fire Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Fire",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Ruka Kayamori [The Feel of the Throne] is a SS-Tier Fire Attacker (Slash) from Squad 31A. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Fire Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Fire Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Fire Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Fire"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Fire Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases Fire Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -4096,7 +4214,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 9.2,
-      "summaryVerdict": "Ruka Kayamori [The Feel of the Throne] is a SS-Tier Fire Attacker (Slash) from Squad 31A. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Fire Field and Overdrive chains.",
+      "summaryVerdict": "Ruka Kayamori [The Feel of the Throne] is a SS-Tier Fire Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Fire Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-595464"
     },
@@ -4118,53 +4236,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4740,
-        "dpOrSpeed": 560,
-        "atkOrPower": 670,
-        "defOrGuts": 550,
-        "critOrWit": 660,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5010,
+        "dpOrSpeed": 4890,
+        "atkOrPower": 745,
+        "defOrGuts": 650,
+        "critOrWit": 675,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Soaring Sword",
+          "name": "EX Skill: Soaring Sword — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Ice Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Ice",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Kanade Tachibana [Soaring Sword] is a SS-Tier Ice Attacker (Slash) from Squad 31AB. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Ice Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Ice"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Ice Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases Ice Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -4176,7 +4296,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SS",
       "numericScore": 9.5,
-      "summaryVerdict": "Kanade Tachibana [Soaring Sword] is a SS-Tier Ice Attacker (Slash) from Squad 31AB. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Ice Field and Overdrive chains.",
+      "summaryVerdict": "Kanade Tachibana [Soaring Sword] is a SS-Tier Ice Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Ice Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-592870"
     },
@@ -4198,53 +4318,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4728,
-        "dpOrSpeed": 558,
-        "atkOrPower": 667,
-        "defOrGuts": 548,
-        "critOrWit": 657,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4925,
+        "dpOrSpeed": 4822,
+        "atkOrPower": 711,
+        "defOrGuts": 661,
+        "critOrWit": 731,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Eternal Feelings",
+          "name": "EX Skill: Eternal Feelings — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Thunder DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Thunder DEF Down",
+            "Fragile +50%",
             "Thunder",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Charlotta Skopovskaya [Eternal Feelings] is a SS-Tier Thunder Debuffer (Pierce) from Squad 31X. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Thunder Pierce damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Thunder"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Thunder debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4256,7 +4379,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.4,
-      "summaryVerdict": "Charlotta Skopovskaya [Eternal Feelings] is a SS-Tier Thunder Debuffer (Pierce) from Squad 31X. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Charlotta Skopovskaya [Eternal Feelings] is a SS-Tier Thunder Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Thunder Pierce damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-577125"
     },
@@ -4278,53 +4401,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4716,
-        "dpOrSpeed": 556,
-        "atkOrPower": 664,
-        "defOrGuts": 546,
-        "critOrWit": 654,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4990,
+        "dpOrSpeed": 4874,
+        "atkOrPower": 737,
+        "defOrGuts": 687,
+        "critOrWit": 757,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Mystery of Abundance",
+          "name": "EX Skill: Mystery of Abundance — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Thunder DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Thunder DEF Down",
+            "Fragile +50%",
             "Thunder",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Miya Kiryu [Mystery of Abundance] is a SS-Tier Thunder Debuffer (Pierce) from Squad 30G. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Thunder Pierce damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Thunder"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Thunder debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4336,7 +4462,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
-      "summaryVerdict": "Miya Kiryu [Mystery of Abundance] is a SS-Tier Thunder Debuffer (Pierce) from Squad 30G. Inflicts 45% Thunder DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Miya Kiryu [Mystery of Abundance] is a SS-Tier Thunder Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Thunder Pierce damage while simultaneously applying -45% Base DEF Down, -45% Thunder Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-548994"
     },
@@ -4358,53 +4484,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4704,
-        "dpOrSpeed": 554,
-        "atkOrPower": 661,
-        "defOrGuts": 544,
-        "critOrWit": 651,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5055,
+        "dpOrSpeed": 4926,
+        "atkOrPower": 763,
+        "defOrGuts": 713,
+        "critOrWit": 783,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: World End Daydream",
+          "name": "EX Skill: World End Daydream — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Non-Elemental DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Debuffer"
+            "DEF Down -45%",
+            "Non-Elemental DEF Down",
+            "Fragile +50%",
+            "Non-Elemental",
+            "Slash"
           ],
-          "exactDescription": "Fubuki Mikoto [World End Daydream] is a SS-Tier Non-Elemental Debuffer (Slash) from Squad 31D. Inflicts 45% Non-Elemental DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Non-Elemental Slash damage while simultaneously applying -45% Base DEF Down, -45% Non-Elemental Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Non-Elemental"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Non-Elemental debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4416,7 +4545,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.3,
-      "summaryVerdict": "Fubuki Mikoto [World End Daydream] is a SS-Tier Non-Elemental Debuffer (Slash) from Squad 31D. Inflicts 45% Non-Elemental DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Fubuki Mikoto [World End Daydream] is a SS-Tier Non-Elemental Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Non-Elemental Slash damage while simultaneously applying -45% Base DEF Down, -45% Non-Elemental Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-519394"
     },
@@ -4438,53 +4567,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4692,
-        "dpOrSpeed": 552,
-        "atkOrPower": 658,
-        "defOrGuts": 542,
-        "critOrWit": 648,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4970,
+        "dpOrSpeed": 4858,
+        "atkOrPower": 584,
+        "defOrGuts": 634,
+        "critOrWit": 724,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Peerless General of Valor",
+          "name": "EX Skill: Peerless General of Valor — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Yunxia Li [Peerless General of Valor] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31X. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -4496,7 +4627,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
-      "summaryVerdict": "Yunxia Li [Peerless General of Valor] is a SS-Tier Non-Elemental Buffer (Slash) from Squad 31X. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Yunxia Li [Peerless General of Valor] is a SS-Tier Non-Elemental Buffer (Slash) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-507349"
     },
@@ -4518,53 +4649,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 12,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4680,
-        "dpOrSpeed": 550,
-        "atkOrPower": 655,
-        "defOrGuts": 540,
-        "critOrWit": 645,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5035,
+        "dpOrSpeed": 4910,
+        "atkOrPower": 755,
+        "defOrGuts": 705,
+        "critOrWit": 775,
+        "burstCeilingScore": 95,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Nightfall of the Finale",
+          "name": "EX Skill: Nightfall of the Finale — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Ice DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Ice DEF Down",
+            "Fragile +50%",
             "Ice",
-            "Slash",
-            "Debuffer"
+            "Slash"
           ],
-          "exactDescription": "Kozue Hiiragi [Nightfall of the Finale] is a SS-Tier Ice Debuffer (Slash) from Squad 31B. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Ice Slash damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Ice"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Ice debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -4576,7 +4710,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "SSS",
       "numericScore": 9.5,
-      "summaryVerdict": "Kozue Hiiragi [Nightfall of the Finale] is a SS-Tier Ice Debuffer (Slash) from Squad 31B. Inflicts 45% Ice DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Kozue Hiiragi [Nightfall of the Finale] is a SS-Tier Ice Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Ice Slash damage while simultaneously applying -45% Base DEF Down, -45% Ice Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-491017"
     },
@@ -4598,53 +4732,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4668,
-        "dpOrSpeed": 548,
-        "atkOrPower": 652,
-        "defOrGuts": 538,
-        "critOrWit": 642,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5498,
+        "dpOrSpeed": 5640,
+        "atkOrPower": 556,
+        "defOrGuts": 691,
+        "critOrWit": 631,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Forbidden Synthesis",
+          "name": "EX Skill: Forbidden Synthesis — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Dark"
           ],
-          "exactDescription": "Iroha Ishii [Forbidden Synthesis] is a A-Tier Dark Healer (Pierce) from Squad 31D. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -4656,7 +4792,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Iroha Ishii [Forbidden Synthesis] is a A-Tier Dark Healer (Pierce) from Squad 31D. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Iroha Ishii [Forbidden Synthesis] is a A-Tier Dark Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-832805"
     },
@@ -4678,53 +4814,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4656,
-        "dpOrSpeed": 546,
-        "atkOrPower": 649,
-        "defOrGuts": 536,
-        "critOrWit": 639,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4955,
+        "dpOrSpeed": 4834,
+        "atkOrPower": 582,
+        "defOrGuts": 632,
+        "critOrWit": 702,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Calamity Beastmaster",
+          "name": "EX Skill: Calamity Beastmaster — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Slash",
-            "Buffer"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Adelheid Kanzaki [Calamity Beastmaster] is a A-Tier Dark Buffer (Slash) from Squad 31C. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -4736,7 +4874,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Adelheid Kanzaki [Calamity Beastmaster] is a A-Tier Dark Buffer (Slash) from Squad 31C. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Adelheid Kanzaki [Calamity Beastmaster] is a A-Tier Dark Buffer (Slash) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-749659"
     },
@@ -4758,53 +4896,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4644,
-        "dpOrSpeed": 544,
-        "atkOrPower": 646,
-        "defOrGuts": 534,
-        "critOrWit": 636,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4870,
+        "dpOrSpeed": 4766,
+        "atkOrPower": 673,
+        "defOrGuts": 598,
+        "critOrWit": 623,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Master Detective of the Misty City",
+          "name": "EX Skill: Master Detective of the Misty City — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Non-Elemental Pierce + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
-            "None",
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
+            "Non-Elemental",
             "Pierce",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Irene Redmayne [Master Detective of the Misty City] is a A-Tier Non-Elemental Blaster (Pierce) from Squad 31X. Stacks Destruction Rate up to 600%+ with 10 rapid Non-Elemental Pierce hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Non-Elemental Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Non-Elemental"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Non-Elemental debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases Non-Elemental Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -4816,7 +4957,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Irene Redmayne [Master Detective of the Misty City] is a A-Tier Non-Elemental Blaster (Pierce) from Squad 31X. Stacks Destruction Rate up to 600%+ with 10 rapid Non-Elemental Pierce hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Irene Redmayne [Master Detective of the Misty City] is a A-Tier Non-Elemental Blaster (Pierce) in Heaven Burns Red. Unleashes a 10-hit Non-Elemental Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-746397"
     },
@@ -4838,53 +4979,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4632,
-        "dpOrSpeed": 542,
-        "atkOrPower": 643,
-        "defOrGuts": 532,
-        "critOrWit": 633,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4935,
+        "dpOrSpeed": 4818,
+        "atkOrPower": 574,
+        "defOrGuts": 624,
+        "critOrWit": 694,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: A Drop of Night Tales",
+          "name": "EX Skill: A Drop of Night Tales — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Slash",
-            "Buffer"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Isuzu Ohshima [A Drop of Night Tales] is a A-Tier Dark Buffer (Slash) from Squad 31E. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -4896,7 +5039,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Isuzu Ohshima [A Drop of Night Tales] is a A-Tier Dark Buffer (Slash) from Squad 31E. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Isuzu Ohshima [A Drop of Night Tales] is a A-Tier Dark Buffer (Slash) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-735062"
     },
@@ -4918,53 +5061,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4620,
-        "dpOrSpeed": 540,
-        "atkOrPower": 640,
-        "defOrGuts": 530,
-        "critOrWit": 630,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4850,
+        "dpOrSpeed": 4750,
+        "atkOrPower": 540,
+        "defOrGuts": 590,
+        "critOrWit": 660,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Sunset Utopia",
+          "name": "EX Skill: Sunset Utopia — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Seika Higuchi [Sunset Utopia] is a A-Tier Fire Buffer (Pierce) from Squad 31B. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -4976,7 +5121,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Seika Higuchi [Sunset Utopia] is a A-Tier Fire Buffer (Pierce) from Squad 31B. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Seika Higuchi [Sunset Utopia] is a A-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-700752"
     },
@@ -4998,53 +5143,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4608,
-        "dpOrSpeed": 538,
-        "atkOrPower": 637,
-        "defOrGuts": 528,
-        "critOrWit": 627,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4915,
+        "dpOrSpeed": 4802,
+        "atkOrPower": 566,
+        "defOrGuts": 616,
+        "critOrWit": 686,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Happiness Chroma",
+          "name": "EX Skill: Happiness Chroma — Thunder Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Thunder Field (+65%) + +85% Thunder Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Pierce",
-            "Buffer"
+            "Thunder Field Zone",
+            "Thunder Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Iroha Ishii [Happiness Chroma] is a A-Tier Thunder Buffer (Pierce) from Squad 31D. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field."
+          "exactDescription": "Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Thunder"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5056,7 +5203,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Iroha Ishii [Happiness Chroma] is a A-Tier Thunder Buffer (Pierce) from Squad 31D. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field.",
+      "summaryVerdict": "Iroha Ishii [Happiness Chroma] is a A-Tier Thunder Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-697860"
     },
@@ -5078,53 +5225,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4596,
-        "dpOrSpeed": 536,
-        "atkOrPower": 634,
-        "defOrGuts": 526,
-        "critOrWit": 624,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4980,
+        "dpOrSpeed": 4854,
+        "atkOrPower": 592,
+        "defOrGuts": 642,
+        "critOrWit": 712,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Relaxing Hot Spring Bliss",
+          "name": "EX Skill: Relaxing Hot Spring Bliss — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Pierce",
-            "Buffer"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yotsuha Ohshima [Relaxing Hot Spring Bliss] is a A-Tier Dark Buffer (Pierce) from Squad 31E. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5136,7 +5285,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Yotsuha Ohshima [Relaxing Hot Spring Bliss] is a A-Tier Dark Buffer (Pierce) from Squad 31E. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Yotsuha Ohshima [Relaxing Hot Spring Bliss] is a A-Tier Dark Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-687800"
     },
@@ -5158,53 +5307,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4584,
-        "dpOrSpeed": 534,
-        "atkOrPower": 631,
-        "defOrGuts": 524,
-        "critOrWit": 621,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4895,
+        "dpOrSpeed": 5136,
+        "atkOrPower": 683,
+        "defOrGuts": 608,
+        "critOrWit": 633,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Angel Crisis",
+          "name": "EX Skill: Angel Crisis — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Rider EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Thunder Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DP Shield Break +50%",
             "Thunder",
             "Pierce",
-            "Rider"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Nanami Nanase [Angel Crisis] is a A-Tier Thunder Rider (Pierce) from Command HQ. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Thunder Field and Overdrive chains."
+          "exactDescription": "Delivers a 4-hit Thunder Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Rider",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Rider Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Thunder Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Rider",
-            "Overdrive Gauge"
+            "DP Break",
+            "Thunder",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Thunder Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases Thunder Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -5216,7 +5367,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Nanami Nanase [Angel Crisis] is a A-Tier Thunder Rider (Pierce) from Command HQ. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Thunder Field and Overdrive chains.",
+      "summaryVerdict": "Nanami Nanase [Angel Crisis] is a A-Tier Thunder Rider (Pierce) in Heaven Burns Red. Delivers a 4-hit Thunder Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-667359"
     },
@@ -5238,53 +5389,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4572,
-        "dpOrSpeed": 532,
-        "atkOrPower": 628,
-        "defOrGuts": 522,
-        "critOrWit": 618,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4960,
+        "dpOrSpeed": 4838,
+        "atkOrPower": 709,
+        "defOrGuts": 634,
+        "critOrWit": 659,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Spica Blooming at Dusk",
+          "name": "EX Skill: Spica Blooming at Dusk — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Slash Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Light Slash + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Light",
             "Slash",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Yuina Shirakawa [Spica Blooming at Dusk] is a A-Tier Light Blaster (Slash) from Squad 30G. Stacks Destruction Rate up to 600%+ with 10 rapid Light Slash hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Light Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Light"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Light debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases Light Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -5296,7 +5450,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Yuina Shirakawa [Spica Blooming at Dusk] is a A-Tier Light Blaster (Slash) from Squad 30G. Stacks Destruction Rate up to 600%+ with 10 rapid Light Slash hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Yuina Shirakawa [Spica Blooming at Dusk] is a A-Tier Light Blaster (Slash) in Heaven Burns Red. Unleashes a 10-hit Light Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-667354"
     },
@@ -5318,53 +5472,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4560,
-        "dpOrSpeed": 530,
-        "atkOrPower": 625,
-        "defOrGuts": 520,
-        "critOrWit": 615,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5480,
+        "dpOrSpeed": 5625,
+        "atkOrPower": 550,
+        "defOrGuts": 685,
+        "critOrWit": 625,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Tonight, Beneath the Flowerlight",
+          "name": "EX Skill: Tonight, Beneath the Flowerlight — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Non-Elemental"
           ],
-          "exactDescription": "Risa Murofushi [Tonight, Beneath the Flowerlight] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31D. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5376,7 +5532,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.5,
-      "summaryVerdict": "Risa Murofushi [Tonight, Beneath the Flowerlight] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31D. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Risa Murofushi [Tonight, Beneath the Flowerlight] is a A-Tier Non-Elemental Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-663244"
     },
@@ -5398,53 +5554,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4548,
-        "dpOrSpeed": 528,
-        "atkOrPower": 622,
-        "defOrGuts": 518,
-        "critOrWit": 612,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4940,
+        "dpOrSpeed": 4822,
+        "atkOrPower": 576,
+        "defOrGuts": 626,
+        "critOrWit": 696,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Resplendent Cantabile",
+          "name": "EX Skill: Resplendent Cantabile — Light Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Light Field (+65%) + +85% Light Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Slash",
-            "Buffer"
+            "Light Field Zone",
+            "Light Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Shiki Hanamura [Resplendent Cantabile] is a A-Tier Light Buffer (Slash) from Squad 31F. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field."
+          "exactDescription": "Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Light"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5456,7 +5614,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Shiki Hanamura [Resplendent Cantabile] is a A-Tier Light Buffer (Slash) from Squad 31F. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field.",
+      "summaryVerdict": "Shiki Hanamura [Resplendent Cantabile] is a A-Tier Light Buffer (Slash) in Heaven Burns Red. Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-656747"
     },
@@ -5478,53 +5636,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4536,
-        "dpOrSpeed": 526,
-        "atkOrPower": 619,
-        "defOrGuts": 516,
-        "critOrWit": 609,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4855,
+        "dpOrSpeed": 4754,
+        "atkOrPower": 542,
+        "defOrGuts": 592,
+        "critOrWit": 662,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Sensitivity Overflow",
+          "name": "EX Skill: Sensitivity Overflow — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Iroha Ishii [Sensitivity Overflow] is a A-Tier Fire Buffer (Pierce) from Squad 31D. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5536,7 +5696,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Iroha Ishii [Sensitivity Overflow] is a A-Tier Fire Buffer (Pierce) from Squad 31D. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Iroha Ishii [Sensitivity Overflow] is a A-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-654826"
     },
@@ -5558,53 +5718,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4524,
-        "dpOrSpeed": 524,
-        "atkOrPower": 616,
-        "defOrGuts": 514,
-        "critOrWit": 606,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5534,
+        "dpOrSpeed": 5670,
+        "atkOrPower": 568,
+        "defOrGuts": 703,
+        "critOrWit": 643,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Catharsis of Dawn",
+          "name": "EX Skill: Catharsis of Dawn — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Dark"
           ],
-          "exactDescription": "Seika Higuchi [Catharsis of Dawn] is a A-Tier Dark Healer (Pierce) from Squad 31B. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5616,7 +5778,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Seika Higuchi [Catharsis of Dawn] is a A-Tier Dark Healer (Pierce) from Squad 31B. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Seika Higuchi [Catharsis of Dawn] is a A-Tier Dark Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-652687"
     },
@@ -5638,53 +5800,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4512,
-        "dpOrSpeed": 522,
-        "atkOrPower": 613,
-        "defOrGuts": 512,
-        "critOrWit": 603,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5612,
+        "dpOrSpeed": 5735,
+        "atkOrPower": 594,
+        "defOrGuts": 729,
+        "critOrWit": 669,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Carnival with You",
+          "name": "EX Skill: Carnival with You — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Slash Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Slash",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Fire"
           ],
-          "exactDescription": "Carol Reaper [Carnival with You] is a A-Tier Fire Healer (Slash) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5696,7 +5860,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.2,
-      "summaryVerdict": "Carol Reaper [Carnival with You] is a A-Tier Fire Healer (Slash) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Carol Reaper [Carnival with You] is a A-Tier Fire Healer (Slash) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-642066"
     },
@@ -5718,53 +5882,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4500,
-        "dpOrSpeed": 520,
-        "atkOrPower": 610,
-        "defOrGuts": 510,
-        "critOrWit": 600,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4900,
+        "dpOrSpeed": 4790,
+        "atkOrPower": 685,
+        "defOrGuts": 655,
+        "critOrWit": 705,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Magic of Smile",
+          "name": "EX Skill: Magic of Smile — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Slash Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Light DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Light DEF Down",
+            "Fragile +50%",
             "Light",
-            "Slash",
-            "Debuffer"
+            "Slash"
           ],
-          "exactDescription": "Isuzu Ohshima [Magic of Smile] is a A-Tier Light Debuffer (Slash) from Squad 31E. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Light Slash damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Light"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Light debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -5776,7 +5943,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Isuzu Ohshima [Magic of Smile] is a A-Tier Light Debuffer (Slash) from Squad 31E. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Isuzu Ohshima [Magic of Smile] is a A-Tier Light Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Light Slash damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-640069"
     },
@@ -5798,53 +5965,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4488,
-        "dpOrSpeed": 518,
-        "atkOrPower": 607,
-        "defOrGuts": 508,
-        "critOrWit": 597,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4965,
+        "dpOrSpeed": 4842,
+        "atkOrPower": 586,
+        "defOrGuts": 636,
+        "critOrWit": 706,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Lolita Stoic",
+          "name": "EX Skill: Lolita Stoic — Ice Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Crush Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Ice Field (+65%) + +85% Ice Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Crush",
-            "Buffer"
+            "Ice Field Zone",
+            "Ice Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Chie Sugawara [Lolita Stoic] is a A-Tier Ice Buffer (Crush) from Squad 30G. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field."
+          "exactDescription": "Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Ice"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5856,7 +6025,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Chie Sugawara [Lolita Stoic] is a A-Tier Ice Buffer (Crush) from Squad 30G. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field.",
+      "summaryVerdict": "Chie Sugawara [Lolita Stoic] is a A-Tier Ice Buffer (Crush) in Heaven Burns Red. Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-606152"
     },
@@ -5878,53 +6047,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4476,
-        "dpOrSpeed": 516,
-        "atkOrPower": 604,
-        "defOrGuts": 506,
-        "critOrWit": 594,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4880,
+        "dpOrSpeed": 4774,
+        "atkOrPower": 552,
+        "defOrGuts": 602,
+        "critOrWit": 672,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Hop, Step, Slip!",
+          "name": "EX Skill: Hop, Step, Slip! — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Kozue Hiiragi [Hop, Step, Slip!] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31B. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -5936,7 +6107,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Kozue Hiiragi [Hop, Step, Slip!] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31B. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Kozue Hiiragi [Hop, Step, Slip!] is a A-Tier Non-Elemental Buffer (Slash) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-600349"
     },
@@ -5958,53 +6129,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4464,
-        "dpOrSpeed": 514,
-        "atkOrPower": 601,
-        "defOrGuts": 504,
-        "critOrWit": 591,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4945,
+        "dpOrSpeed": 4826,
+        "atkOrPower": 578,
+        "defOrGuts": 628,
+        "critOrWit": 698,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Twilight Memories",
+          "name": "EX Skill: Twilight Memories — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Tama Kunimi [Twilight Memories] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31A. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6016,7 +6189,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Tama Kunimi [Twilight Memories] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31A. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Tama Kunimi [Twilight Memories] is a A-Tier Non-Elemental Buffer (Slash) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-582607"
     },
@@ -6038,53 +6211,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4452,
-        "dpOrSpeed": 512,
-        "atkOrPower": 598,
-        "defOrGuts": 502,
-        "critOrWit": 588,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4860,
+        "dpOrSpeed": 4758,
+        "atkOrPower": 544,
+        "defOrGuts": 594,
+        "critOrWit": 664,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Beckoning Dayflower",
+          "name": "EX Skill: Beckoning Dayflower — Thunder Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Thunder Field (+65%) + +85% Thunder Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Slash",
-            "Buffer"
+            "Thunder Field Zone",
+            "Thunder Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yunxia Li [Beckoning Dayflower] is a A-Tier Thunder Buffer (Slash) from Squad 31X. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field."
+          "exactDescription": "Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Thunder"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6096,7 +6271,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Yunxia Li [Beckoning Dayflower] is a A-Tier Thunder Buffer (Slash) from Squad 31X. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field.",
+      "summaryVerdict": "Yunxia Li [Beckoning Dayflower] is a A-Tier Thunder Buffer (Slash) in Heaven Burns Red. Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-563544"
     },
@@ -6118,53 +6293,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4440,
-        "dpOrSpeed": 510,
-        "atkOrPower": 595,
-        "defOrGuts": 500,
-        "critOrWit": 585,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4925,
+        "dpOrSpeed": 4810,
+        "atkOrPower": 570,
+        "defOrGuts": 620,
+        "critOrWit": 690,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Secret Service: Silence",
+          "name": "EX Skill: Secret Service: Silence — Light Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Light Field (+65%) + +85% Light Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Pierce",
-            "Buffer"
+            "Light Field Zone",
+            "Light Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Tsukasa Tojo [Secret Service: Silence] is a A-Tier Light Buffer (Pierce) from Squad 31A. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field."
+          "exactDescription": "Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Light"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6176,7 +6353,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Tsukasa Tojo [Secret Service: Silence] is a A-Tier Light Buffer (Pierce) from Squad 31A. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field.",
+      "summaryVerdict": "Tsukasa Tojo [Secret Service: Silence] is a A-Tier Light Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-544799"
     },
@@ -6198,53 +6375,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4428,
-        "dpOrSpeed": 508,
-        "atkOrPower": 592,
-        "defOrGuts": 498,
-        "critOrWit": 582,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4990,
+        "dpOrSpeed": 4862,
+        "atkOrPower": 721,
+        "defOrGuts": 691,
+        "critOrWit": 741,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Heart-Racing Fuel",
+          "name": "EX Skill: Heart-Racing Fuel — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Fire DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Fire DEF Down",
+            "Fragile +50%",
             "Fire",
-            "Crush",
-            "Debuffer"
+            "Crush"
           ],
-          "exactDescription": "Megumi Aikawa [Heart-Racing Fuel] is a A-Tier Fire Debuffer (Crush) from Squad 31A. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Fire Crush damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Fire"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Fire debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -6256,7 +6436,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Megumi Aikawa [Heart-Racing Fuel] is a A-Tier Fire Debuffer (Crush) from Squad 31A. Inflicts 45% Fire DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Megumi Aikawa [Heart-Racing Fuel] is a A-Tier Fire Debuffer (Crush) in Heaven Burns Red. Strikes all enemies 4 times with Fire Crush damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-525186"
     },
@@ -6278,53 +6458,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4416,
-        "dpOrSpeed": 506,
-        "atkOrPower": 589,
-        "defOrGuts": 496,
-        "critOrWit": 579,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4905,
+        "dpOrSpeed": 4794,
+        "atkOrPower": 562,
+        "defOrGuts": 612,
+        "critOrWit": 682,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Shinobi Arts Prosperity",
+          "name": "EX Skill: Shinobi Arts Prosperity — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Mari Satsuki [Shinobi Arts Prosperity] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31C. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6336,7 +6518,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Mari Satsuki [Shinobi Arts Prosperity] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31C. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Mari Satsuki [Shinobi Arts Prosperity] is a A-Tier Non-Elemental Buffer (Pierce) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-521565"
     },
@@ -6358,53 +6540,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4404,
-        "dpOrSpeed": 504,
-        "atkOrPower": 586,
-        "defOrGuts": 494,
-        "critOrWit": 576,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4970,
+        "dpOrSpeed": 4846,
+        "atkOrPower": 588,
+        "defOrGuts": 638,
+        "critOrWit": 708,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Shattered Ennui",
+          "name": "EX Skill: Shattered Ennui — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yotsuha Ohshima [Shattered Ennui] is a A-Tier Fire Buffer (Pierce) from Squad 31E. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6416,7 +6600,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Yotsuha Ohshima [Shattered Ennui] is a A-Tier Fire Buffer (Pierce) from Squad 31E. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Yotsuha Ohshima [Shattered Ennui] is a A-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-517816"
     },
@@ -6438,53 +6622,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4392,
-        "dpOrSpeed": 502,
-        "atkOrPower": 583,
-        "defOrGuts": 492,
-        "critOrWit": 573,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5492,
+        "dpOrSpeed": 5635,
+        "atkOrPower": 554,
+        "defOrGuts": 689,
+        "critOrWit": 629,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Best in a Pinch",
+          "name": "EX Skill: Best in a Pinch — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Non-Elemental"
           ],
-          "exactDescription": "Muua Ohshima [Best in a Pinch] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6496,7 +6682,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.2,
-      "summaryVerdict": "Muua Ohshima [Best in a Pinch] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Muua Ohshima [Best in a Pinch] is a A-Tier Non-Elemental Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-517815"
     },
@@ -6518,53 +6704,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4380,
-        "dpOrSpeed": 500,
+        "hpOrStamina": 4950,
+        "dpOrSpeed": 4830,
         "atkOrPower": 580,
-        "defOrGuts": 490,
-        "critOrWit": 570,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "defOrGuts": 630,
+        "critOrWit": 700,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Shattering Monochrome",
+          "name": "EX Skill: Shattering Monochrome — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Pierce",
-            "Buffer"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Iroha Ishii [Shattering Monochrome] is a A-Tier Dark Buffer (Pierce) from Squad 31D. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6576,7 +6764,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Iroha Ishii [Shattering Monochrome] is a A-Tier Dark Buffer (Pierce) from Squad 31D. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Iroha Ishii [Shattering Monochrome] is a A-Tier Dark Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-487220"
     },
@@ -6598,53 +6786,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4368,
-        "dpOrSpeed": 498,
-        "atkOrPower": 577,
-        "defOrGuts": 488,
-        "critOrWit": 567,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5468,
+        "dpOrSpeed": 5615,
+        "atkOrPower": 546,
+        "defOrGuts": 681,
+        "critOrWit": 621,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Swim All-Out",
+          "name": "EX Skill: Swim All-Out — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Pierce",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Light"
           ],
-          "exactDescription": "Muua Ohshima [Swim All-Out] is a A-Tier Light Defender (Pierce) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6656,7 +6846,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.4,
-      "summaryVerdict": "Muua Ohshima [Swim All-Out] is a A-Tier Light Defender (Pierce) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Muua Ohshima [Swim All-Out] is a A-Tier Light Defender (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-813761"
     },
@@ -6678,53 +6868,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4356,
-        "dpOrSpeed": 496,
-        "atkOrPower": 574,
-        "defOrGuts": 486,
-        "critOrWit": 564,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4930,
+        "dpOrSpeed": 4814,
+        "atkOrPower": 697,
+        "defOrGuts": 622,
+        "critOrWit": 647,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: White-Hot! Victory Pitch!",
+          "name": "EX Skill: White-Hot! Victory Pitch! — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Slash Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Light Slash (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Light",
             "Slash",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Ruka Kayamori [White-Hot! Victory Pitch!] is a A-Tier Light Attacker (Slash) from Squad 31A. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Light Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Light Slash nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Light Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Light"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Light Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases Light Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -6736,7 +6928,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Ruka Kayamori [White-Hot! Victory Pitch!] is a A-Tier Light Attacker (Slash) from Squad 31A. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Light Field and Overdrive chains.",
+      "summaryVerdict": "Ruka Kayamori [White-Hot! Victory Pitch!] is a A-Tier Light Attacker (Slash) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Light Slash nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-724680"
     },
@@ -6758,53 +6950,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4344,
-        "dpOrSpeed": 494,
-        "atkOrPower": 571,
-        "defOrGuts": 484,
-        "critOrWit": 561,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4995,
+        "dpOrSpeed": 4866,
+        "atkOrPower": 723,
+        "defOrGuts": 648,
+        "critOrWit": 673,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Lured by the Sea Breeze",
+          "name": "EX Skill: Lured by the Sea Breeze — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Fire Pierce + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Fire",
             "Pierce",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Miya Kiryu [Lured by the Sea Breeze] is a A-Tier Fire Blaster (Pierce) from Squad 30G. Stacks Destruction Rate up to 600%+ with 10 rapid Fire Pierce hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Fire Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Fire"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Fire debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases Fire Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -6816,7 +7011,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.3,
-      "summaryVerdict": "Miya Kiryu [Lured by the Sea Breeze] is a A-Tier Fire Blaster (Pierce) from Squad 30G. Stacks Destruction Rate up to 600%+ with 10 rapid Fire Pierce hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Miya Kiryu [Lured by the Sea Breeze] is a A-Tier Fire Blaster (Pierce) in Heaven Burns Red. Unleashes a 10-hit Fire Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-708962"
     },
@@ -6838,53 +7033,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4332,
-        "dpOrSpeed": 492,
-        "atkOrPower": 568,
-        "defOrGuts": 482,
-        "critOrWit": 558,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5522,
+        "dpOrSpeed": 5660,
+        "atkOrPower": 564,
+        "defOrGuts": 699,
+        "critOrWit": 639,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Rippling Feel-Good",
+          "name": "EX Skill: Rippling Feel-Good — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Non-Elemental"
           ],
-          "exactDescription": "Muua Ohshima [Rippling Feel-Good] is a A-Tier Non-Elemental Defender (Pierce) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6896,7 +7093,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Muua Ohshima [Rippling Feel-Good] is a A-Tier Non-Elemental Defender (Pierce) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Muua Ohshima [Rippling Feel-Good] is a A-Tier Non-Elemental Defender (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-705732"
     },
@@ -6918,53 +7115,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4320,
-        "dpOrSpeed": 490,
-        "atkOrPower": 565,
-        "defOrGuts": 480,
-        "critOrWit": 555,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5600,
+        "dpOrSpeed": 5725,
+        "atkOrPower": 590,
+        "defOrGuts": 725,
+        "critOrWit": 665,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Heroic Action Against Evil",
+          "name": "EX Skill: Heroic Action Against Evil — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Crush Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Crush",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Thunder"
           ],
-          "exactDescription": "Chiroru Matsuoka [Heroic Action Against Evil] is a A-Tier Thunder Defender (Crush) from Squad 31F. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -6976,7 +7175,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.5,
-      "summaryVerdict": "Chiroru Matsuoka [Heroic Action Against Evil] is a A-Tier Thunder Defender (Crush) from Squad 31F. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Chiroru Matsuoka [Heroic Action Against Evil] is a A-Tier Thunder Defender (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-692832"
     },
@@ -6998,53 +7197,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4308,
-        "dpOrSpeed": 488,
-        "atkOrPower": 562,
-        "defOrGuts": 478,
-        "critOrWit": 552,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5498,
+        "dpOrSpeed": 5640,
+        "atkOrPower": 556,
+        "defOrGuts": 691,
+        "critOrWit": 631,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Where the Singing Breeze Leads",
+          "name": "EX Skill: Where the Singing Breeze Leads — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Non-Elemental"
           ],
-          "exactDescription": "Irene Redmayne [Where the Singing Breeze Leads] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7056,7 +7257,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Irene Redmayne [Where the Singing Breeze Leads] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Irene Redmayne [Where the Singing Breeze Leads] is a A-Tier Non-Elemental Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-680864"
     },
@@ -7078,53 +7279,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4296,
-        "dpOrSpeed": 486,
-        "atkOrPower": 559,
-        "defOrGuts": 476,
-        "critOrWit": 549,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4955,
+        "dpOrSpeed": 4834,
+        "atkOrPower": 582,
+        "defOrGuts": 632,
+        "critOrWit": 702,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Stir Soul Song",
+          "name": "EX Skill: Stir Soul Song — Ice Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Ice Field (+65%) + +85% Ice Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Slash",
-            "Buffer"
+            "Ice Field Zone",
+            "Ice Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yui Yoshioka [Stir Soul Song] is a A-Tier Ice Buffer (Slash) from Squad 31AB. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field."
+          "exactDescription": "Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Ice"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7136,7 +7339,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Yui Yoshioka [Stir Soul Song] is a A-Tier Ice Buffer (Slash) from Squad 31AB. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field.",
+      "summaryVerdict": "Yui Yoshioka [Stir Soul Song] is a A-Tier Ice Buffer (Slash) in Heaven Burns Red. Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-659767"
     },
@@ -7158,53 +7361,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4284,
-        "dpOrSpeed": 484,
-        "atkOrPower": 556,
-        "defOrGuts": 474,
-        "critOrWit": 546,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4870,
+        "dpOrSpeed": 4766,
+        "atkOrPower": 548,
+        "defOrGuts": 598,
+        "critOrWit": 668,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Full-Dress Flower Maiden",
+          "name": "EX Skill: Full-Dress Flower Maiden — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Crush Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Crush",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Minori Ohshima [Full-Dress Flower Maiden] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31E. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7216,7 +7421,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Minori Ohshima [Full-Dress Flower Maiden] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31E. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Minori Ohshima [Full-Dress Flower Maiden] is a A-Tier Non-Elemental Buffer (Crush) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-640070"
     },
@@ -7238,53 +7443,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4272,
-        "dpOrSpeed": 482,
-        "atkOrPower": 553,
-        "defOrGuts": 472,
-        "critOrWit": 543,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4935,
+        "dpOrSpeed": 4818,
+        "atkOrPower": 699,
+        "defOrGuts": 624,
+        "critOrWit": 649,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Midsummer Shark the Ripper",
+          "name": "EX Skill: Midsummer Shark the Ripper — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Dark Slash + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Dark",
             "Slash",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Karen Asakura [Midsummer Shark the Ripper] is a A-Tier Dark Blaster (Slash) from Squad 31A. Stacks Destruction Rate up to 600%+ with 10 rapid Dark Slash hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Dark Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Dark"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Dark debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -7296,7 +7504,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.2,
-      "summaryVerdict": "Karen Asakura [Midsummer Shark the Ripper] is a A-Tier Dark Blaster (Slash) from Squad 31A. Stacks Destruction Rate up to 600%+ with 10 rapid Dark Slash hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Karen Asakura [Midsummer Shark the Ripper] is a A-Tier Dark Blaster (Slash) in Heaven Burns Red. Unleashes a 10-hit Dark Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-628231"
     },
@@ -7318,53 +7526,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4260,
-        "dpOrSpeed": 480,
-        "atkOrPower": 550,
-        "defOrGuts": 470,
-        "critOrWit": 540,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4850,
+        "dpOrSpeed": 4750,
+        "atkOrPower": 665,
+        "defOrGuts": 590,
+        "critOrWit": 615,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Sunflowers in Bloom",
+          "name": "EX Skill: Sunflowers in Bloom — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Slash Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Fire Slash + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Fire",
             "Slash",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Adelheid Kanzaki [Sunflowers in Bloom] is a A-Tier Fire Blaster (Slash) from Squad 31C. Stacks Destruction Rate up to 600%+ with 10 rapid Fire Slash hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Fire Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Fire"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Fire debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases Fire Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -7376,7 +7587,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Adelheid Kanzaki [Sunflowers in Bloom] is a A-Tier Fire Blaster (Slash) from Squad 31C. Stacks Destruction Rate up to 600%+ with 10 rapid Fire Slash hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Adelheid Kanzaki [Sunflowers in Bloom] is a A-Tier Fire Blaster (Slash) in Heaven Burns Red. Unleashes a 10-hit Fire Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-622825"
     },
@@ -7398,53 +7609,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4248,
-        "dpOrSpeed": 478,
-        "atkOrPower": 547,
-        "defOrGuts": 468,
-        "critOrWit": 537,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4915,
+        "dpOrSpeed": 5152,
+        "atkOrPower": 691,
+        "defOrGuts": 616,
+        "critOrWit": 641,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Ruby Awaiting You",
+          "name": "EX Skill: Ruby Awaiting You — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Dark Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DP Shield Break +50%",
             "Dark",
             "Pierce",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Yuki Izumi [Ruby Awaiting You] is a A-Tier Dark Breaker (Pierce) from Squad 31A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Dark Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Dark Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Dark",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Dark Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -7456,7 +7669,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Yuki Izumi [Ruby Awaiting You] is a A-Tier Dark Breaker (Pierce) from Squad 31A. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Yuki Izumi [Ruby Awaiting You] is a A-Tier Dark Breaker (Pierce) in Heaven Burns Red. Delivers a 4-hit Dark Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-594734"
     },
@@ -7478,53 +7691,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4236,
-        "dpOrSpeed": 476,
-        "atkOrPower": 544,
-        "defOrGuts": 466,
-        "critOrWit": 534,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4980,
+        "dpOrSpeed": 4854,
+        "atkOrPower": 592,
+        "defOrGuts": 642,
+        "critOrWit": 712,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Lazy Pajama Night",
+          "name": "EX Skill: Lazy Pajama Night — Light Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Light Field (+65%) + +85% Light Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Pierce",
-            "Buffer"
+            "Light Field Zone",
+            "Light Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Yotsuha Ohshima [Lazy Pajama Night] is a A-Tier Light Buffer (Pierce) from Squad 31E. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field."
+          "exactDescription": "Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Light"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7536,7 +7751,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Yotsuha Ohshima [Lazy Pajama Night] is a A-Tier Light Buffer (Pierce) from Squad 31E. Applies 85% Light Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Light Zone Field.",
+      "summaryVerdict": "Yotsuha Ohshima [Lazy Pajama Night] is a A-Tier Light Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Light Field Zone (+65% Light damage) while applying +85% Light Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-585689"
     },
@@ -7558,53 +7773,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4224,
-        "dpOrSpeed": 474,
-        "atkOrPower": 541,
-        "defOrGuts": 464,
-        "critOrWit": 531,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4895,
+        "dpOrSpeed": 4786,
+        "atkOrPower": 558,
+        "defOrGuts": 608,
+        "critOrWit": 678,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Cosmic Inquiry, Starry Radiance",
+          "name": "EX Skill: Cosmic Inquiry, Starry Radiance — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Seika Higuchi [Cosmic Inquiry, Starry Radiance] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31B. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7616,7 +7833,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Seika Higuchi [Cosmic Inquiry, Starry Radiance] is a A-Tier Non-Elemental Buffer (Pierce) from Squad 31B. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Seika Higuchi [Cosmic Inquiry, Starry Radiance] is a A-Tier Non-Elemental Buffer (Pierce) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-491018"
     },
@@ -7638,53 +7855,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4212,
-        "dpOrSpeed": 472,
-        "atkOrPower": 538,
-        "defOrGuts": 462,
-        "critOrWit": 528,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4960,
+        "dpOrSpeed": 4838,
+        "atkOrPower": 709,
+        "defOrGuts": 679,
+        "critOrWit": 729,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 91,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Lingering Rain in the Starry Woods",
+          "name": "EX Skill: Lingering Rain in the Starry Woods — Calamity Exposure",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Pierce Debuffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "-45% DEF Down + -45% Light DEF Down + +50% Fragile (2 Turns)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DEF Down -45%",
+            "Light DEF Down",
+            "Fragile +50%",
             "Light",
-            "Pierce",
-            "Debuffer"
+            "Pierce"
           ],
-          "exactDescription": "Miya Kiryu [Lingering Rain in the Starry Woods] is a A-Tier Light Debuffer (Pierce) from Squad 30G. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive."
+          "exactDescription": "Strikes all enemies 4 times with Light Pierce damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns."
         },
         {
-          "name": "Seraph Tactical Art: Debuffer",
+          "name": "Enfeebling Piercer & OD Fill",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Debuffer Setup & Overdrive Charge",
+          "multiplierSummary": "-30% DEF Down + Attack Down II",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Debuffer",
-            "Overdrive Gauge"
+            "DEF Down",
+            "ATK Down",
+            "Light"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Light debuffs by 1 turn."
+          "exactDescription": "Maintains a secondary stack of -30% DEF Down to hit the 2× debuff cap during Overdrive Turn 3."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases debuff potency by +20% and extends DEF Down / Fragile duration by +1 turn."
         }
       ],
       "synergyUnitSlugs": [
@@ -7696,7 +7916,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "B",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Miya Kiryu [Lingering Rain in the Starry Woods] is a A-Tier Light Debuffer (Pierce) from Squad 30G. Inflicts 45% Light DEF Down and 50% Fragile (Weakness Damage Taken Up) for 2 turns during Overdrive.",
+      "summaryVerdict": "Miya Kiryu [Lingering Rain in the Starry Woods] is a A-Tier Light Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Light Pierce damage while simultaneously applying -45% Base DEF Down, -45% Light Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-484626"
     },
@@ -7718,53 +7938,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4200,
-        "dpOrSpeed": 470,
-        "atkOrPower": 535,
-        "defOrGuts": 460,
-        "critOrWit": 525,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4875,
+        "dpOrSpeed": 4770,
+        "atkOrPower": 550,
+        "defOrGuts": 600,
+        "critOrWit": 670,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Midsummer Prayer",
+          "name": "EX Skill: Midsummer Prayer — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Tsukasa Tojo [Midsummer Prayer] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7776,7 +7998,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Tsukasa Tojo [Midsummer Prayer] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Tsukasa Tojo [Midsummer Prayer] is a A-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-469574"
     },
@@ -7798,53 +8020,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4188,
-        "dpOrSpeed": 468,
-        "atkOrPower": 532,
-        "defOrGuts": 458,
-        "critOrWit": 522,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4940,
+        "dpOrSpeed": 4822,
+        "atkOrPower": 576,
+        "defOrGuts": 626,
+        "critOrWit": 696,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Sweet Muzzle",
+          "name": "EX Skill: Sweet Muzzle — Ice Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Ice Field (+65%) + +85% Ice Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Pierce",
-            "Buffer"
+            "Ice Field Zone",
+            "Ice Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Mari Satsuki [Sweet Muzzle] is a A-Tier Ice Buffer (Pierce) from Squad 31C. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field."
+          "exactDescription": "Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Ice"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7856,7 +8080,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Mari Satsuki [Sweet Muzzle] is a A-Tier Ice Buffer (Pierce) from Squad 31C. Applies 85% Ice Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Ice Zone Field.",
+      "summaryVerdict": "Mari Satsuki [Sweet Muzzle] is a A-Tier Ice Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Ice Field Zone (+65% Ice damage) while applying +85% Ice Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-438518"
     },
@@ -7878,53 +8102,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4176,
-        "dpOrSpeed": 466,
-        "atkOrPower": 529,
-        "defOrGuts": 456,
-        "critOrWit": 519,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4855,
+        "dpOrSpeed": 4754,
+        "atkOrPower": 542,
+        "defOrGuts": 592,
+        "critOrWit": 662,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Homeostasis of the Living",
+          "name": "EX Skill: Homeostasis of the Living — Thunder Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Thunder Field (+65%) + +85% Thunder Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Pierce",
-            "Buffer"
+            "Thunder Field Zone",
+            "Thunder Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Seika Higuchi [Homeostasis of the Living] is a A-Tier Thunder Buffer (Pierce) from Squad 31B. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field."
+          "exactDescription": "Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Thunder"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -7936,7 +8162,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Seika Higuchi [Homeostasis of the Living] is a A-Tier Thunder Buffer (Pierce) from Squad 31B. Applies 85% Thunder Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Thunder Zone Field.",
+      "summaryVerdict": "Seika Higuchi [Homeostasis of the Living] is a A-Tier Thunder Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Thunder Field Zone (+65% Thunder damage) while applying +85% Thunder Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-426210"
     },
@@ -7958,53 +8184,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4164,
-        "dpOrSpeed": 464,
-        "atkOrPower": 526,
-        "defOrGuts": 454,
-        "critOrWit": 516,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4920,
+        "dpOrSpeed": 4806,
+        "atkOrPower": 568,
+        "defOrGuts": 618,
+        "critOrWit": 688,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Starry Sea Fortune Teller",
+          "name": "EX Skill: Starry Sea Fortune Teller — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Crush Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Crush",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Seira Sakuraba [Starry Sea Fortune Teller] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31C. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8016,7 +8244,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Seira Sakuraba [Starry Sea Fortune Teller] is a A-Tier Non-Elemental Buffer (Crush) from Squad 31C. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Seira Sakuraba [Starry Sea Fortune Teller] is a A-Tier Non-Elemental Buffer (Crush) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-426230"
     },
@@ -8038,53 +8266,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4152,
-        "dpOrSpeed": 462,
-        "atkOrPower": 523,
-        "defOrGuts": 452,
-        "critOrWit": 513,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4985,
+        "dpOrSpeed": 4858,
+        "atkOrPower": 594,
+        "defOrGuts": 644,
+        "critOrWit": 714,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Curiosity Toward a Friend",
+          "name": "EX Skill: Curiosity Toward a Friend — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Crush",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Misato Nikaido [Curiosity Toward a Friend] is a A-Tier Fire Buffer (Crush) from Squad 31D. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8096,7 +8326,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Misato Nikaido [Curiosity Toward a Friend] is a A-Tier Fire Buffer (Crush) from Squad 31D. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Misato Nikaido [Curiosity Toward a Friend] is a A-Tier Fire Buffer (Crush) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-816691"
     },
@@ -8118,53 +8348,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4140,
-        "dpOrSpeed": 460,
-        "atkOrPower": 520,
-        "defOrGuts": 450,
-        "critOrWit": 510,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5510,
+        "dpOrSpeed": 5650,
+        "atkOrPower": 560,
+        "defOrGuts": 695,
+        "critOrWit": 635,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Spot of Tea",
+          "name": "EX Skill: Spot of Tea — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Non-Elemental"
           ],
-          "exactDescription": "Irene Redmayne [Spot of Tea] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8176,7 +8408,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Irene Redmayne [Spot of Tea] is a A-Tier Non-Elemental Healer (Pierce) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Irene Redmayne [Spot of Tea] is a A-Tier Non-Elemental Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-813776"
     },
@@ -8198,53 +8430,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4128,
-        "dpOrSpeed": 458,
-        "atkOrPower": 517,
-        "defOrGuts": 448,
-        "critOrWit": 507,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5588,
+        "dpOrSpeed": 5715,
+        "atkOrPower": 586,
+        "defOrGuts": 721,
+        "critOrWit": 661,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Delicious Shangri-La Feast",
+          "name": "EX Skill: Delicious Shangri-La Feast — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Slash",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Dark"
           ],
-          "exactDescription": "Yunxia Li [Delicious Shangri-La Feast] is a A-Tier Dark Healer (Slash) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8256,7 +8490,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.4,
-      "summaryVerdict": "Yunxia Li [Delicious Shangri-La Feast] is a A-Tier Dark Healer (Slash) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Yunxia Li [Delicious Shangri-La Feast] is a A-Tier Dark Healer (Slash) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-793216"
     },
@@ -8278,53 +8512,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4116,
-        "dpOrSpeed": 456,
-        "atkOrPower": 514,
-        "defOrGuts": 446,
-        "critOrWit": 504,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5486,
+        "dpOrSpeed": 5630,
+        "atkOrPower": 552,
+        "defOrGuts": 687,
+        "critOrWit": 627,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Dolce Benedizione",
+          "name": "EX Skill: Dolce Benedizione — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Light Crush Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Light",
-            "Crush",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Light"
           ],
-          "exactDescription": "Maria de Angelis [Dolce Benedizione] is a A-Tier Light Healer (Crush) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Light skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Light Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8336,7 +8572,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Maria de Angelis [Dolce Benedizione] is a A-Tier Light Healer (Crush) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Maria de Angelis [Dolce Benedizione] is a A-Tier Light Healer (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-769411"
     },
@@ -8358,53 +8594,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4104,
-        "dpOrSpeed": 454,
-        "atkOrPower": 511,
-        "defOrGuts": 444,
-        "critOrWit": 501,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5564,
+        "dpOrSpeed": 5695,
+        "atkOrPower": 578,
+        "defOrGuts": 713,
+        "critOrWit": 653,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: A Taste of Victory!",
+          "name": "EX Skill: A Taste of Victory! — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Slash Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Slash",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Thunder"
           ],
-          "exactDescription": "Carol Reaper [A Taste of Victory!] is a A-Tier Thunder Healer (Slash) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8416,7 +8654,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.3,
-      "summaryVerdict": "Carol Reaper [A Taste of Victory!] is a A-Tier Thunder Healer (Slash) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Carol Reaper [A Taste of Victory!] is a A-Tier Thunder Healer (Slash) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-769410"
     },
@@ -8438,53 +8676,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4092,
-        "dpOrSpeed": 452,
-        "atkOrPower": 508,
-        "defOrGuts": 442,
-        "critOrWit": 498,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4860,
+        "dpOrSpeed": 4758,
+        "atkOrPower": 544,
+        "defOrGuts": 594,
+        "critOrWit": 664,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Solitary Loneliness",
+          "name": "EX Skill: Solitary Loneliness — Absolute Crit & Skill Mastery",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Non-Elemental Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "+90% Skill ATK Up + +100% Crit Rate + 5-Hit Funnel",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "None",
-            "Slash",
-            "Buffer"
+            "Skill ATK Up",
+            "Crit Rate 100%",
+            "Crit DMG Up",
+            "Mind Eye"
           ],
-          "exactDescription": "Bon Ivar Yamawaki [Solitary Loneliness] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31C. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field."
+          "exactDescription": "Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Non-Elemental"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Non-Elemental skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Non-Elemental Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8496,7 +8736,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Bon Ivar Yamawaki [Solitary Loneliness] is a A-Tier Non-Elemental Buffer (Slash) from Squad 31C. Applies 85% Non-Elemental Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Non-Elemental Zone Field.",
+      "summaryVerdict": "Bon Ivar Yamawaki [Solitary Loneliness] is a A-Tier Non-Elemental Buffer (Slash) in Heaven Burns Red. Grants the main Attacker +90% Skill Attack Up, +100% Critical Rate, +75% Critical Damage, and a 5-hit Funnel multi-hit bonus.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-764362"
     },
@@ -8518,53 +8758,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4080,
-        "dpOrSpeed": 450,
-        "atkOrPower": 505,
-        "defOrGuts": 440,
-        "critOrWit": 495,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5540,
+        "dpOrSpeed": 5675,
+        "atkOrPower": 570,
+        "defOrGuts": 705,
+        "critOrWit": 645,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Banquet of Devoted Love",
+          "name": "EX Skill: Banquet of Devoted Love — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Fire"
           ],
-          "exactDescription": "Charlotta Skopovskaya [Banquet of Devoted Love] is a A-Tier Fire Healer (Pierce) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8576,7 +8818,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.5,
-      "summaryVerdict": "Charlotta Skopovskaya [Banquet of Devoted Love] is a A-Tier Fire Healer (Pierce) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Charlotta Skopovskaya [Banquet of Devoted Love] is a A-Tier Fire Healer (Pierce) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-721625"
     },
@@ -8598,53 +8840,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4068,
-        "dpOrSpeed": 448,
-        "atkOrPower": 502,
-        "defOrGuts": 438,
-        "critOrWit": 492,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5618,
+        "dpOrSpeed": 5740,
+        "atkOrPower": 596,
+        "defOrGuts": 731,
+        "critOrWit": 671,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Hospitable Annapurna",
+          "name": "EX Skill: Hospitable Annapurna — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Crush Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Crush",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Ice"
           ],
-          "exactDescription": "Vritika Balakrishnan [Hospitable Annapurna] is a A-Tier Ice Healer (Crush) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8656,7 +8900,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Vritika Balakrishnan [Hospitable Annapurna] is a A-Tier Ice Healer (Crush) from Squad 31X. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Vritika Balakrishnan [Hospitable Annapurna] is a A-Tier Ice Healer (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-714989"
     },
@@ -8678,53 +8922,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4056,
-        "dpOrSpeed": 446,
-        "atkOrPower": 499,
-        "defOrGuts": 436,
-        "critOrWit": 489,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4905,
+        "dpOrSpeed": 4794,
+        "atkOrPower": 687,
+        "defOrGuts": 612,
+        "critOrWit": 637,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Poolside Moment",
+          "name": "EX Skill: Poolside Moment — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Dark Slash + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Dark",
             "Slash",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Kozue Hiiragi [Poolside Moment] is a A-Tier Dark Blaster (Slash) from Squad 31B. Stacks Destruction Rate up to 600%+ with 10 rapid Dark Slash hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Dark Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Dark"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Dark debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Slash skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -8736,7 +8983,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.3,
-      "summaryVerdict": "Kozue Hiiragi [Poolside Moment] is a A-Tier Dark Blaster (Slash) from Squad 31B. Stacks Destruction Rate up to 600%+ with 10 rapid Dark Slash hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Kozue Hiiragi [Poolside Moment] is a A-Tier Dark Blaster (Slash) in Heaven Burns Red. Unleashes a 10-hit Dark Slash barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-700751"
     },
@@ -8758,53 +9005,56 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4044,
-        "dpOrSpeed": 444,
-        "atkOrPower": 496,
-        "defOrGuts": 434,
-        "critOrWit": 486,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4970,
+        "dpOrSpeed": 4846,
+        "atkOrPower": 713,
+        "defOrGuts": 638,
+        "critOrWit": 663,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Dreamlike Days",
+          "name": "EX Skill: Dreamlike Days — 10-Hit Destruction Storm",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Pierce Blaster EX",
+          "spOrEnergyCost": "13 SP",
+          "multiplierSummary": "10-Hit Ice Pierce + 4.5× Destruction Rate Cap (999%)",
           "hitCount": 10,
           "buffCategoryTags": [
+            "Destruction Rate 4.5x",
+            "10-Hit OD Gauge",
             "Ice",
             "Pierce",
-            "Blaster"
+            "Funnel"
           ],
-          "exactDescription": "Masami Iwasawa [Dreamlike Days] is a A-Tier Ice Blaster (Pierce) from Squad 31AB. Stacks Destruction Rate up to 600%+ with 10 rapid Ice Pierce hits and +4.5x Destruction multiplier."
+          "exactDescription": "Unleashes a 10-hit Ice Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge."
         },
         {
-          "name": "Seraph Tactical Art: Blaster",
+          "name": "Multi-Hit Overdrive Charger",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Blaster Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "6-Hit Rapid Barrage + Self Funnel +3 Hits",
+          "hitCount": 6,
           "buffCategoryTags": [
-            "Blaster",
-            "Overdrive Gauge"
+            "Destruction Rate",
+            "Multi-Hit OD",
+            "Ice"
           ],
-          "exactDescription": "Charges the team Overdrive Gauge by +25% while extending active Ice debuffs by 1 turn."
+          "exactDescription": "Generates +35% Overdrive gauge per cast and pre-stacks self Funnel before boss DP break."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases Ice Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -8816,7 +9066,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Masami Iwasawa [Dreamlike Days] is a A-Tier Ice Blaster (Pierce) from Squad 31AB. Stacks Destruction Rate up to 600%+ with 10 rapid Ice Pierce hits and +4.5x Destruction multiplier.",
+      "summaryVerdict": "Masami Iwasawa [Dreamlike Days] is a A-Tier Ice Blaster (Pierce) in Heaven Burns Red. Unleashes a 10-hit Ice Pierce barrage that rapidly drives post-break boss Destruction Rate from 100% to 600%+ in a single Overdrive turn while filling +85% OD gauge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-659771"
     },
@@ -8838,53 +9088,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4032,
-        "dpOrSpeed": 442,
-        "atkOrPower": 493,
-        "defOrGuts": 432,
-        "critOrWit": 483,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4885,
+        "dpOrSpeed": 4778,
+        "atkOrPower": 554,
+        "defOrGuts": 604,
+        "critOrWit": 674,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Pure Nevesta Bride",
+          "name": "EX Skill: Pure Nevesta Bride — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Pierce",
-            "Buffer"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Charlotta Skopovskaya [Pure Nevesta Bride] is a A-Tier Dark Buffer (Pierce) from Squad 31X. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8896,7 +9148,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Charlotta Skopovskaya [Pure Nevesta Bride] is a A-Tier Dark Buffer (Pierce) from Squad 31X. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Charlotta Skopovskaya [Pure Nevesta Bride] is a A-Tier Dark Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-615278"
     },
@@ -8918,53 +9170,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4020,
-        "dpOrSpeed": 440,
-        "atkOrPower": 490,
-        "defOrGuts": 430,
-        "critOrWit": 480,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5570,
+        "dpOrSpeed": 5700,
+        "atkOrPower": 580,
+        "defOrGuts": 715,
+        "critOrWit": 655,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Kirara: Ultimate Idol",
+          "name": "EX Skill: Kirara: Ultimate Idol — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Crush",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Fire"
           ],
-          "exactDescription": "Erika Aoi [Kirara: Ultimate Idol] is a A-Tier Fire Defender (Crush) from Squad 31B. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -8976,7 +9230,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.5,
-      "summaryVerdict": "Erika Aoi [Kirara: Ultimate Idol] is a A-Tier Fire Defender (Crush) from Squad 31B. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Erika Aoi [Kirara: Ultimate Idol] is a A-Tier Fire Defender (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-585101"
     },
@@ -8998,53 +9252,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 4008,
-        "dpOrSpeed": 438,
-        "atkOrPower": 487,
-        "defOrGuts": 428,
-        "critOrWit": 477,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5468,
+        "dpOrSpeed": 5615,
+        "atkOrPower": 546,
+        "defOrGuts": 681,
+        "critOrWit": 621,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Showdown!! Air Stage",
+          "name": "EX Skill: Showdown!! Air Stage — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Ice Crush Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Ice",
-            "Crush",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Ice"
           ],
-          "exactDescription": "Seira Sakuraba [Showdown!! Air Stage] is a A-Tier Ice Defender (Crush) from Squad 31C. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Ice skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Ice Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -9056,7 +9312,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.4,
-      "summaryVerdict": "Seira Sakuraba [Showdown!! Air Stage] is a A-Tier Ice Defender (Crush) from Squad 31C. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Seira Sakuraba [Showdown!! Air Stage] is a A-Tier Ice Defender (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-506717"
     },
@@ -9078,53 +9334,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 3996,
-        "dpOrSpeed": 436,
-        "atkOrPower": 484,
-        "defOrGuts": 426,
-        "critOrWit": 474,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5546,
+        "dpOrSpeed": 5680,
+        "atkOrPower": 572,
+        "defOrGuts": 707,
+        "critOrWit": 647,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Clash!! Air Bass",
+          "name": "EX Skill: Clash!! Air Bass — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Thunder Slash Healer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Thunder",
-            "Slash",
-            "Healer"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Thunder"
           ],
-          "exactDescription": "Tama Kunimi [Clash!! Air Bass] is a A-Tier Thunder Healer (Slash) from Squad 31A. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Healer",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Healer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Healer",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Thunder skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Thunder Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -9136,7 +9394,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Tama Kunimi [Clash!! Air Bass] is a A-Tier Thunder Healer (Slash) from Squad 31A. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Tama Kunimi [Clash!! Air Bass] is a A-Tier Thunder Healer (Slash) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-506307"
     },
@@ -9158,53 +9416,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 3984,
-        "dpOrSpeed": 434,
-        "atkOrPower": 481,
-        "defOrGuts": 424,
-        "critOrWit": 471,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4995,
+        "dpOrSpeed": 4866,
+        "atkOrPower": 723,
+        "defOrGuts": 648,
+        "critOrWit": 673,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Realize Your Mind",
+          "name": "EX Skill: Realize Your Mind — Apex HP Execution",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Attacker EX",
+          "spOrEnergyCost": "14 SP",
+          "multiplierSummary": "5-Hit Fire Crush (+50% HP Bonus • 14,250 Max Potency)",
           "hitCount": 5,
           "buffCategoryTags": [
+            "HP +50% Finisher",
             "Fire",
             "Crush",
-            "Attacker"
+            "Self Crit & Mind Eye"
           ],
-          "exactDescription": "Minori Ohshima [Realize Your Mind] is a A-Tier Fire Attacker (Crush) from Squad 31E. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Fire Field and Overdrive chains."
+          "exactDescription": "Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Fire Crush nuke with +50% bonus potency against enemy HP."
         },
         {
-          "name": "Seraph Tactical Art: Attacker",
+          "name": "Focused Charge & Self Funnel",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Attacker Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "Self +75% Fire Skill ATK + 3-Hit Funnel",
+          "hitCount": 2,
           "buffCategoryTags": [
-            "Attacker",
-            "Overdrive Gauge"
+            "Self Buff",
+            "Funnel",
+            "Fire"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Fire Critical Rate before unleashing EX Skill."
+          "exactDescription": "Pre-stacks Self Elemental Skill Attack Up and 3-Hit Funnel on the turn prior to Overdrive burst."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases Fire Crush skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -9216,7 +9476,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Minori Ohshima [Realize Your Mind] is a A-Tier Fire Attacker (Crush) from Squad 31E. Delivers 14,850 base potency against HP (+50% Multiplier) and scales with Fire Field and Overdrive chains.",
+      "summaryVerdict": "Minori Ohshima [Realize Your Mind] is a A-Tier Fire Attacker (Crush) in Heaven Burns Red. Pre-applies Self Mind Eye (+50% Weakness DMG) and Critical Rate Up, then unleashes a 5-hit Fire Crush nuke with +50% bonus potency against enemy HP.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-493459"
     },
@@ -9238,53 +9498,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 3972,
-        "dpOrSpeed": 432,
-        "atkOrPower": 478,
-        "defOrGuts": 422,
-        "critOrWit": 468,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4910,
+        "dpOrSpeed": 4798,
+        "atkOrPower": 564,
+        "defOrGuts": 614,
+        "critOrWit": 684,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Your Unisono",
+          "name": "EX Skill: Your Unisono — Dark Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Slash Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Dark Field (+65%) + +85% Dark Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Dark",
-            "Slash",
-            "Buffer"
+            "Dark Field Zone",
+            "Dark Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Shiki Hanamura [Your Unisono] is a A-Tier Dark Buffer (Slash) from Squad 31F. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field."
+          "exactDescription": "Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Dark"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -9296,7 +9558,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "S",
       "tierBossRaid": "A",
       "numericScore": 8.2,
-      "summaryVerdict": "Shiki Hanamura [Your Unisono] is a A-Tier Dark Buffer (Slash) from Squad 31F. Applies 85% Dark Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Dark Zone Field.",
+      "summaryVerdict": "Shiki Hanamura [Your Unisono] is a A-Tier Dark Buffer (Slash) in Heaven Burns Red. Deploys a permanent Large Dark Field Zone (+65% Dark damage) while applying +85% Dark Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-480767"
     },
@@ -9318,53 +9580,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 3960,
-        "dpOrSpeed": 430,
-        "atkOrPower": 475,
-        "defOrGuts": 420,
-        "critOrWit": 465,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 80,
-        "sustainScore": 98,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 5600,
+        "dpOrSpeed": 5725,
+        "atkOrPower": 590,
+        "defOrGuts": 725,
+        "critOrWit": 665,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 78,
+        "sustainScore": 97,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Guardian of Endless Compassion",
+          "name": "EX Skill: Guardian of Endless Compassion — Sanctuary Revival",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Crush Defender EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "11 SP (2 Uses)",
+          "multiplierSummary": "120% Party DP Overheal + Broken DP Revival + +35% DEF Up",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Crush",
-            "Defender"
+            "DP Revival",
+            "120% DP Overheal",
+            "Party DEF Up",
+            "Fire"
           ],
-          "exactDescription": "Ichiko Ohshima [Guardian of Endless Compassion] is a A-Tier Fire Defender (Crush) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns."
+          "exactDescription": "Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge."
         },
         {
-          "name": "Seraph Tactical Art: Defender",
+          "name": "Seraphic Barrier & SP Conduit",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Defender Setup & Overdrive Charge",
-          "hitCount": 3,
+          "spOrEnergyCost": "6 SP",
+          "multiplierSummary": "Frontline DP Restore + Debuff Immunity (1 Turn)",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Defender",
-            "Overdrive Gauge"
+            "DP Sustain",
+            "Debuff Cleanse",
+            "Sustain"
           ],
-          "exactDescription": "Grants Invulnerability Shield (1 Hit) or Overheal DP up to 130% capacity for high-intensity boss turns."
+          "exactDescription": "Heals frontline DP shields and cleanses all active DEF Down / Virus ailments before boss AoE phases."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -9376,7 +9640,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.5,
-      "summaryVerdict": "Ichiko Ohshima [Guardian of Endless Compassion] is a A-Tier Fire Defender (Crush) from Squad 31E. Restores 120% DP across the entire squad, revives broken DP shields, and grants +40% DEF Up for 2 turns.",
+      "summaryVerdict": "Ichiko Ohshima [Guardian of Endless Compassion] is a A-Tier Fire Defender (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-463894"
     },
@@ -9398,53 +9662,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 3948,
-        "dpOrSpeed": 428,
-        "atkOrPower": 472,
-        "defOrGuts": 418,
-        "critOrWit": 462,
-        "burstCeilingScore": 98,
-        "bufferCeilingScore": 80,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4890,
+        "dpOrSpeed": 5132,
+        "atkOrPower": 681,
+        "defOrGuts": 606,
+        "critOrWit": 631,
+        "burstCeilingScore": 91,
+        "bufferCeilingScore": 78,
+        "sustainScore": 80,
+        "spEfficiencyScore": 91
       },
       "skills": [
         {
-          "name": "EX Skill: Evolutionary Sensibility",
+          "name": "EX Skill: Evolutionary Sensibility — Shattering DP Finisher",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Dark Pierce Breaker EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "12 SP",
+          "multiplierSummary": "4-Hit Dark Pierce (+50% DP Break Bonus • 11,800 Potency)",
+          "hitCount": 4,
           "buffCategoryTags": [
+            "DP Shield Break +50%",
             "Dark",
             "Pierce",
-            "Breaker"
+            "Crit Rate Up"
           ],
-          "exactDescription": "Kanata Maruyama [Evolutionary Sensibility] is a A-Tier Dark Breaker (Pierce) from Squad 31F. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn."
+          "exactDescription": "Delivers a 4-hit Dark Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive."
         },
         {
-          "name": "Seraph Tactical Art: Breaker",
+          "name": "Shield-Crushing Volley",
           "type": "ACTIVE",
-          "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Breaker Setup & Overdrive Charge",
+          "spOrEnergyCost": "8 SP",
+          "multiplierSummary": "+30% DP Damage + Self Dark Skill ATK Up",
           "hitCount": 3,
           "buffCategoryTags": [
-            "Breaker",
-            "Overdrive Gauge"
+            "DP Break",
+            "Dark",
+            "Pierce"
           ],
-          "exactDescription": "Applies self Funnel (Extra Hit Count +50%) and +35% Dark Critical Rate before unleashing EX Skill."
+          "exactDescription": "Strikes all enemies for AoE DP damage while pre-buffing self Skill Attack."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Dark skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Dark Seraphic Mastery",
+          "effect": "Increases Dark Pierce skill damage and Critical Damage by +25% while on the frontline."
         }
       ],
       "synergyUnitSlugs": [
@@ -9456,7 +9722,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.4,
-      "summaryVerdict": "Kanata Maruyama [Evolutionary Sensibility] is a A-Tier Dark Breaker (Pierce) from Squad 31F. Delivers 13,200 base potency against DP Shields (+50% Anti-DP Multiplier) to shatter Grade 140 barriers in a single turn.",
+      "summaryVerdict": "Kanata Maruyama [Evolutionary Sensibility] is a A-Tier Dark Breaker (Pierce) in Heaven Burns Red. Delivers a 4-hit Dark Pierce strike with a +50% multiplier bonus against enemy DP Shields, instantly shattering Grade 140 boss barriers on Turn 1 of Overdrive.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-457125"
     },
@@ -9478,53 +9744,55 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "longevityMonths": 8,
       "recommendedDupes": "Base (LB0) / LB1",
       "baseStats": {
-        "hpOrStamina": 3936,
-        "dpOrSpeed": 426,
-        "atkOrPower": 469,
-        "defOrGuts": 416,
-        "critOrWit": 459,
-        "burstCeilingScore": 82,
-        "bufferCeilingScore": 99,
-        "sustainScore": 78,
-        "spEfficiencyScore": 95
+        "hpOrStamina": 4955,
+        "dpOrSpeed": 4834,
+        "atkOrPower": 582,
+        "defOrGuts": 632,
+        "critOrWit": 702,
+        "burstCeilingScore": 76,
+        "bufferCeilingScore": 96,
+        "sustainScore": 80,
+        "spEfficiencyScore": 96
       },
       "skills": [
         {
-          "name": "EX Skill: Memento Mori Beauty",
+          "name": "EX Skill: Memento Mori Beauty — Fire Field & Overdrive Encore",
           "type": "EX_ULTIMATE",
-          "spOrEnergyCost": "11 SP",
-          "multiplierSummary": "Fire Pierce Buffer EX",
-          "hitCount": 5,
+          "spOrEnergyCost": "10 SP",
+          "multiplierSummary": "Large Fire Field (+65%) + +85% Fire Skill ATK + +75% Crit DMG",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Fire",
-            "Pierce",
-            "Buffer"
+            "Fire Field Zone",
+            "Fire Skill ATK",
+            "Crit DMG Up",
+            "Funnel"
           ],
-          "exactDescription": "Tsukasa Tojo [Memento Mori Beauty] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field."
+          "exactDescription": "Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party."
         },
         {
-          "name": "Seraph Tactical Art: Buffer",
+          "name": "Tactical Encore & SP Battery",
           "type": "ACTIVE",
           "spOrEnergyCost": "7 SP",
-          "multiplierSummary": "Buffer Setup & Overdrive Charge",
-          "hitCount": 3,
+          "multiplierSummary": "+65% Skill ATK Up + Backline +2 SP Recovery",
+          "hitCount": 1,
           "buffCategoryTags": [
-            "Buffer",
-            "Overdrive Gauge"
+            "Skill ATK Up",
+            "SP Battery",
+            "Fire"
           ],
-          "exactDescription": "Grants Vanguard allies +5 SP recovery and Mind Eye (+50% Weakness Hit Multiplier) for 2 actions."
+          "exactDescription": "Stacks a second layer of Skill Attack Up (+65%) while accelerating backline SP generation by +2 SP."
         }
       ],
       "passives": [
         {
           "unlockRank": "LB1",
-          "name": "Flash / Vanguard (+SP)",
-          "effect": "Grants +1 SP at the start of turn when positioned in the Vanguard."
+          "name": "Limit Break 1: Vanguard SP Surge (+1 SP/Turn)",
+          "effect": "Recovers +1 additional SP at the start of every turn while in the frontline (+3 SP total per turn)."
         },
         {
           "unlockRank": "LB3",
-          "name": "High-Order Seraph Resonance",
-          "effect": "Increases Fire skill potency and buff/debuff effect by +25% while in the Front Line."
+          "name": "Limit Break 3: Fire Seraphic Mastery",
+          "effect": "Increases all party buff and DP healing potencies applied by this style by +25%."
         }
       ],
       "synergyUnitSlugs": [
@@ -9536,7 +9804,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "tierReroll": "A",
       "tierBossRaid": "A",
       "numericScore": 8.3,
-      "summaryVerdict": "Tsukasa Tojo [Memento Mori Beauty] is a A-Tier Fire Buffer (Pierce) from Squad 31A. Applies 85% Fire Skill ATK Up, +75% Critical Hit DMG, and deploys a Large Fire Zone Field.",
+      "summaryVerdict": "Tsukasa Tojo [Memento Mori Beauty] is a A-Tier Fire Buffer (Pierce) in Heaven Burns Red. Deploys a permanent Large Fire Field Zone (+65% Fire damage) while applying +85% Fire Skill Attack Up and +75% Critical Damage Up to the party.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-426197"
     }
@@ -10849,7 +11117,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Anachrony — Supreme Flat Hand (Phase 3)",
       "modeName": "Anachrony",
       "difficultyLabel": "Skull Feather Endgame",
-      "imageUrl": "/boss-hbr-cancer.jpg",
+      "imageUrl": "/boss-hbr-flathand.jpg",
       "hpStat": "52,000,000 HP",
       "shieldOrDpStat": "3,200,000 DP",
       "weaknesses": [
