@@ -92,23 +92,23 @@ export default async function PortalHomePage() {
             gap: '12px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
               {games.map((g, idx) => (
                 <img
                   key={g.slug}
                   src={getGameAppIconUrl(g.slug)}
                   alt={g.name}
-                  width={32}
-                  height={32}
+                  width={40}
+                  height={40}
                   style={{
-                    width: '32px',
-                    height: '32px',
-                    borderRadius: '6px',
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '8px',
                     objectFit: 'cover',
                     border: '2px solid var(--bg-surface)',
                     marginLeft: idx === 0 ? '0' : '-8px',
-                    boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
+                    boxShadow: '0 2px 5px rgba(0,0,0,0.22)',
                   }}
                 />
               ))}
@@ -174,7 +174,7 @@ export default async function PortalHomePage() {
                   style={{
                     background: 'var(--bg-surface)',
                     border: '1px solid var(--border-main)',
-                    borderRadius: '4px',
+                    borderRadius: '6px',
                     overflow: 'hidden',
                     display: 'flex',
                     flexDirection: 'column',
@@ -183,7 +183,7 @@ export default async function PortalHomePage() {
                   <Link
                     href={`/${g.slug}`}
                     style={{
-                      height: '132px',
+                      height: '185px',
                       position: 'relative',
                       overflow: 'hidden',
                       borderBottom: '1px solid var(--border-main)',
@@ -194,7 +194,12 @@ export default async function PortalHomePage() {
                     <img
                       src={g.coverImageUrl}
                       alt={g.name}
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center 20%',
+                      }}
                     />
                     <span
                       className="mono"
@@ -204,10 +209,11 @@ export default async function PortalHomePage() {
                         left: '8px',
                         background: 'var(--accent-primary)',
                         color: '#FFFFFF',
-                        fontSize: '10px',
+                        fontSize: '10.5px',
                         fontWeight: 900,
-                        padding: '3px 8px',
-                        borderRadius: '3px',
+                        padding: '4px 9px',
+                        borderRadius: '4px',
+                        boxShadow: '0 2px 6px rgba(0,0,0,0.35)',
                       }}
                     >
                       {g.counts.units} UNITS • {g.counts.equipments} ITEMS
@@ -216,14 +222,15 @@ export default async function PortalHomePage() {
                     <div
                       style={{
                         position: 'absolute',
-                        bottom: '6px',
+                        bottom: '8px',
                         left: '8px',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '4px',
-                        background: 'rgba(20, 19, 18, 0.82)',
-                        padding: '3px 6px',
-                        borderRadius: '4px',
+                        gap: '5px',
+                        background: 'rgba(20, 19, 18, 0.88)',
+                        padding: '4px 8px',
+                        borderRadius: '6px',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.45)',
                       }}
                     >
                       {g.units.slice(0, 4).map((u) => (
@@ -232,20 +239,20 @@ export default async function PortalHomePage() {
                           src={u.imageUrl}
                           alt={u.nameEn}
                           title={u.nameEn}
-                          width={22}
-                          height={22}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '22px',
-                            height: '22px',
-                            borderRadius: '3px',
+                            width: '36px',
+                            height: '36px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
-                            border: '1px solid rgba(255,255,255,0.4)',
+                            border: '1.5px solid rgba(255,255,255,0.7)',
                           }}
                         />
                       ))}
                       <span
                         className="mono"
-                        style={{ color: '#FFF', fontSize: '9px', fontWeight: 800, marginLeft: '2px' }}
+                        style={{ color: '#FFF', fontSize: '10px', fontWeight: 900, marginLeft: '3px' }}
                       >
                         SSS META
                       </span>
@@ -256,29 +263,29 @@ export default async function PortalHomePage() {
                         position: 'absolute',
                         bottom: '8px',
                         right: '8px',
-                        background: 'rgba(20, 19, 18, 0.88)',
+                        background: 'rgba(20, 19, 18, 0.9)',
                         color: '#FDE047',
-                        fontSize: '9.5px',
+                        fontSize: '10px',
                         fontWeight: 800,
-                        padding: '2px 6px',
-                        borderRadius: '2px',
+                        padding: '3px 7px',
+                        borderRadius: '4px',
                       }}
                     >
                       {g.globalPatchVersion}
                     </span>
                   </Link>
 
-                  <div style={{ padding: '12px', display: 'flex', flexDirection: 'column', gap: '8px', flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <div style={{ padding: '12px', display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                       <img
                         src={getGameAppIconUrl(g.slug)}
                         alt={g.name}
-                        width={28}
-                        height={28}
+                        width={40}
+                        height={40}
                         style={{
-                          width: '28px',
-                          height: '28px',
-                          borderRadius: '5px',
+                          width: '40px',
+                          height: '40px',
+                          borderRadius: '8px',
                           objectFit: 'cover',
                           border: '1px solid var(--border-main)',
                           flexShrink: 0,
@@ -287,7 +294,7 @@ export default async function PortalHomePage() {
                       <div>
                         <Link
                           href={`/${g.slug}`}
-                          style={{ fontSize: '15px', fontWeight: 900, color: 'var(--text-main)' }}
+                          style={{ fontSize: '16px', fontWeight: 900, color: 'var(--text-main)' }}
                         >
                           {g.name} Wiki
                         </Link>
@@ -315,25 +322,25 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px',
+                          gap: '8px',
                           background: 'var(--accent-bg)',
                           border: '1px solid var(--accent-border)',
                           color: 'var(--accent-primary)',
-                          padding: '5px 7px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '6px 8px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                         }}
                       >
                         <img
                           src={unitIcon}
                           alt="Character Tier List"
-                          width={20}
-                          height={20}
+                          width={34}
+                          height={34}
                           style={{
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '3px',
+                            width: '34px',
+                            height: '34px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--accent-border)',
                             flexShrink: 0,
@@ -346,25 +353,25 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px',
+                          gap: '8px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '5px 7px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '6px 8px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={equipIcon}
                           alt="Weapons and Cards"
-                          width={20}
-                          height={20}
+                          width={34}
+                          height={34}
                           style={{
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '3px',
+                            width: '34px',
+                            height: '34px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
                             flexShrink: 0,
@@ -377,25 +384,25 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px',
+                          gap: '8px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '5px 7px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '6px 8px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={bossIcon}
                           alt="Boss and Raid Guides"
-                          width={20}
-                          height={20}
+                          width={34}
+                          height={34}
                           style={{
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '3px',
+                            width: '34px',
+                            height: '34px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
                             flexShrink: 0,
@@ -408,25 +415,25 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px',
+                          gap: '8px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '5px 7px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '6px 8px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={bannerIcon}
                           alt="Upcoming Banners"
-                          width={20}
-                          height={20}
+                          width={34}
+                          height={34}
                           style={{
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '3px',
+                            width: '34px',
+                            height: '34px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
                             flexShrink: 0,
@@ -439,25 +446,25 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px',
+                          gap: '8px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '5px 7px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '6px 8px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={compareIcon}
                           alt="Stat Comparison"
-                          width={20}
-                          height={20}
+                          width={34}
+                          height={34}
                           style={{
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '3px',
+                            width: '34px',
+                            height: '34px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
                             flexShrink: 0,
@@ -470,25 +477,25 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '6px',
+                          gap: '8px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '5px 7px',
-                          borderRadius: '3px',
-                          fontSize: '11px',
+                          padding: '6px 8px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={calcIcon}
                           alt="Pull Calculator"
-                          width={20}
-                          height={20}
+                          width={34}
+                          height={34}
                           style={{
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '3px',
+                            width: '34px',
+                            height: '34px',
+                            borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
                             flexShrink: 0,
@@ -546,22 +553,22 @@ export default async function PortalHomePage() {
                       padding: '8px 10px',
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      borderRadius: '4px',
-                      fontSize: '12px',
+                      borderRadius: '5px',
+                      fontSize: '12.5px',
                       flexWrap: 'wrap',
-                      gap: '8px',
+                      gap: '10px',
                     }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <img
                         src={bn.imageUrl}
                         alt={bn.bannerTitle}
-                        width={64}
-                        height={36}
+                        width={132}
+                        height={70}
                         style={{
-                          width: '64px',
-                          height: '36px',
-                          borderRadius: '3px',
+                          width: '132px',
+                          height: '70px',
+                          borderRadius: '6px',
                           objectFit: 'cover',
                           border: '1px solid var(--border-main)',
                           flexShrink: 0,
@@ -573,32 +580,32 @@ export default async function PortalHomePage() {
                             style={{
                               display: 'inline-flex',
                               alignItems: 'center',
-                              gap: '4px',
+                              gap: '5px',
                               background: 'var(--bg-header)',
                               color: '#FFF',
-                              fontSize: '10px',
+                              fontSize: '10.5px',
                               fontWeight: 900,
-                              padding: '2px 6px',
-                              borderRadius: '2px',
+                              padding: '2px 7px',
+                              borderRadius: '3px',
                             }}
                           >
                             <img
                               src={getGameAppIconUrl(g.slug)}
                               alt={g.shortName}
-                              width={12}
-                              height={12}
-                              style={{ width: '12px', height: '12px', borderRadius: '2px', objectFit: 'cover' }}
+                              width={16}
+                              height={16}
+                              style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
                             />
                             [{g.shortName}]
                           </span>
                           <strong>{bn.bannerTitle}</strong>
                         </div>
-                        <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                        <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '3px', fontWeight: 600 }}>
                           Featured: {bn.featuredNames.join(', ')}
                         </div>
                       </div>
                     </div>
-                    <div className="mono" style={{ fontSize: '11px', fontWeight: 800 }}>
+                    <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800 }}>
                       <span style={{ color: 'var(--text-muted)', marginRight: '8px' }}>
                         Release: {bn.estGlobalStartDate}
                       </span>

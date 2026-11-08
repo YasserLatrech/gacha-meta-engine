@@ -8,7 +8,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
   "asianPatchVersion": "v4.2.0 Live Meta",
   "globalPatchVersion": "v4.2.0 Live",
   "foresightGapMonths": 18,
-  "coverImageUrl": "https://img.game8.jp/13129735/e00c21c7b25db828ec7e852256164e2b.webp/original",
+  "coverImageUrl": "https://img.game8.jp/11068193/4e1e094a995c5e3d5ca98382d0ba2333.jpeg/original",
   "currencyName": "Carats",
   "pullCostSingle": 150,
   "pityThreshold": 200,
@@ -9949,7 +9949,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "nameEn": "Champions Meet Classic — Tokyo Turf 2400m (Medium)",
       "modeName": "Champions Meet (Grade League)",
       "difficultyLabel": "Group A Finals",
-      "imageUrl": "https://img.game8.jp/9538669/de718736a83d4c9ccf184382124e52ca.png/original",
+      "imageUrl": "https://img.game8.jp/12527069/d4f114ad2c231bd6bc6831949dbdbb03.webp/original",
       "hpStat": "2400m Left-Handed (Spring / Sunny / Firm)",
       "shieldOrDpStat": "Target Stamina: 1,150 + 1 Gold Recovery",
       "weaknesses": [
@@ -9993,7 +9993,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "nameEn": "League of Heroes — Kyoto Turf 3000m (Long)",
       "modeName": "League of Heroes (12-Racer Format)",
       "difficultyLabel": "Platinum 4 Star Rank",
-      "imageUrl": "https://img.game8.jp/11508493/a721b47cd4652dc18c4d1e8d04dbfa07.png/original",
+      "imageUrl": "https://img.game8.jp/11971772/6f7caa91b73d9daacabf74b6fa8a5466.webp/original",
       "hpStat": "3000m Right-Handed Outer (Autumn / Firm)",
       "shieldOrDpStat": "Target Stamina: 1,350 + 2 Gold Recoveries",
       "weaknesses": [
@@ -10030,7 +10030,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "slug": "uma-almond-eye-anniversary",
       "bannerTitle": "Anniversary Spotlight — Almond Eye [The Changer] & SSR Support Card",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://img.game8.jp/13129735/e00c21c7b25db828ec7e852256164e2b.webp/original",
+      "imageUrl": "https://img.game8.jp/12905140/503197e23de1db203117832e7154203b.webp/original",
       "featuredNames": [
         "Almond Eye [The Changer]",
         "SSR Almond Eye [Gaze That Changes the World]"
@@ -10052,7 +10052,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "slug": "uma-forever-young-support-banner",
       "bannerTitle": "SSR Support Card Pickup — Forever Young [Innovator] & Efforia [As if Guided]",
       "bannerType": "SUPPORT_CARD",
-      "imageUrl": "https://img.game8.jp/13129736/136111b9b430446807213bfc06e28b83.webp/original",
+      "imageUrl": "https://img.game8.jp/12338045/ab8d5d66d8277868bb81f524879a7928.webp/original",
       "featuredNames": [
         "SSR Forever Young [Innovator]",
         "SSR Efforia [As if Guided]"
@@ -10074,7 +10074,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "slug": "uma-rudolf-epiphaneia-pickup",
       "bannerTitle": "Pretty Derby Trainee Pickup — Symboli Rudolf [Adamant Sovereign] & Epiphaneia",
       "bannerType": "LIMITED",
-      "imageUrl": "https://img.game8.jp/13132925/8640124b371db302c6d9f25deecbc846.webp/original",
+      "imageUrl": "https://img.game8.jp/12598774/d6caea63450533983b7e95b4c39b91ee.webp/original",
       "featuredNames": [
         "Symboli Rudolf [Adamant Sovereign]",
         "Epiphaneia [Fates Chosen Star]"
