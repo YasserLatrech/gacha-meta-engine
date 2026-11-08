@@ -83,14 +83,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1150,
-        "dpOrSpeed": 1220,
-        "atkOrPower": 1180,
-        "defOrGuts": 1010,
-        "critOrWit": 1190,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1275,
+        "dpOrSpeed": 1260,
+        "atkOrPower": 1200,
+        "defOrGuts": 1050,
+        "critOrWit": 1220,
+        "burstCeilingScore": 99,
         "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -108,23 +108,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Symboli Rudolf [Adamant Sovereign] is a SSS-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -163,13 +164,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1148,
-        "dpOrSpeed": 1218,
-        "atkOrPower": 1178,
-        "defOrGuts": 1009,
-        "critOrWit": 1188,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1136,
+        "dpOrSpeed": 1271,
+        "atkOrPower": 1211,
+        "defOrGuts": 1061,
+        "critOrWit": 1231,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 89,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -188,23 +189,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Epiphaneia [Fates Chosen Star] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -243,14 +245,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1146,
-        "dpOrSpeed": 1216,
-        "atkOrPower": 1176,
-        "defOrGuts": 1008,
-        "critOrWit": 1186,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1297,
+        "dpOrSpeed": 1282,
+        "atkOrPower": 1222,
+        "defOrGuts": 1072,
+        "critOrWit": 1242,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 90,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -268,23 +270,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Narita Top Road [Dragon Soup Supreme] is a SSS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -323,14 +326,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1144,
-        "dpOrSpeed": 1214,
-        "atkOrPower": 1174,
-        "defOrGuts": 1007,
-        "critOrWit": 1184,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1284,
+        "dpOrSpeed": 1269,
+        "atkOrPower": 1209,
+        "defOrGuts": 1059,
+        "critOrWit": 1229,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 91,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -348,23 +351,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Manhattan Cafe [Mystic Rose Bride] is a SSS-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -403,13 +407,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1142,
-        "dpOrSpeed": 1212,
-        "atkOrPower": 1172,
-        "defOrGuts": 1006,
-        "critOrWit": 1182,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1145,
+        "dpOrSpeed": 1280,
+        "atkOrPower": 1220,
+        "defOrGuts": 1070,
+        "critOrWit": 1240,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 92,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -428,23 +432,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Admire Groove [Glacial Queen] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -483,14 +488,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1140,
-        "dpOrSpeed": 1210,
-        "atkOrPower": 1170,
-        "defOrGuts": 1005,
-        "critOrWit": 1180,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 902,
+        "dpOrSpeed": 1307,
+        "atkOrPower": 1252,
+        "defOrGuts": 1127,
+        "critOrWit": 1227,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 93,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -508,23 +513,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Sakura Bakushin O [Spring Thunder Sprinter] is a SSS-Tier Short-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Unrestrained (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Corner Acceleration when leading",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Short"
+            "Short",
+            "Runner",
+            "Unrestrained"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Final Corner Acceleration when leading — triggers an uncatchable front-runner breakaway. Evolved at Awakening Lv.5 with bonus potency for Short G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
           "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -563,13 +569,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1138,
-        "dpOrSpeed": 1208,
-        "atkOrPower": 1168,
-        "defOrGuts": 1004,
-        "critOrWit": 1178,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1143,
+        "dpOrSpeed": 1278,
+        "atkOrPower": 1218,
+        "defOrGuts": 1068,
+        "critOrWit": 1238,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 94,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -588,23 +594,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Almond Eye [The Changer] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -643,14 +650,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1136,
-        "dpOrSpeed": 1206,
-        "atkOrPower": 1166,
-        "defOrGuts": 1003,
-        "critOrWit": 1176,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 900,
+        "dpOrSpeed": 1305,
+        "atkOrPower": 1250,
+        "defOrGuts": 1125,
+        "critOrWit": 1225,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 95,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -668,23 +675,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Taiki Shuttle [Baa Baa Patisserie] is a SSS-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -723,13 +731,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1134,
-        "dpOrSpeed": 1204,
-        "atkOrPower": 1164,
-        "defOrGuts": 1002,
-        "critOrWit": 1174,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1141,
+        "dpOrSpeed": 1276,
+        "atkOrPower": 1216,
+        "defOrGuts": 1066,
+        "critOrWit": 1236,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -748,23 +756,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Stay Gold [Sunlit Outsider] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -803,14 +812,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1132,
-        "dpOrSpeed": 1202,
-        "atkOrPower": 1162,
-        "defOrGuts": 1001,
-        "critOrWit": 1172,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 898,
+        "dpOrSpeed": 1263,
+        "atkOrPower": 1248,
+        "defOrGuts": 1053,
+        "critOrWit": 1223,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 97,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -828,23 +837,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Transcend [Dusk Neo-Kagura] is a SSS-Tier Dirt-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -883,14 +893,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1130,
-        "dpOrSpeed": 1200,
-        "atkOrPower": 1160,
-        "defOrGuts": 1000,
-        "critOrWit": 1170,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 909,
+        "dpOrSpeed": 1274,
+        "atkOrPower": 1259,
+        "defOrGuts": 1064,
+        "critOrWit": 1234,
+        "burstCeilingScore": 99,
         "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -908,23 +918,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Espoir City [Red Devil Gear] is a SSS-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -963,13 +974,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1128,
-        "dpOrSpeed": 1198,
-        "atkOrPower": 1158,
-        "defOrGuts": 999,
-        "critOrWit": 1168,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1126,
+        "dpOrSpeed": 1261,
+        "atkOrPower": 1201,
+        "defOrGuts": 1051,
+        "critOrWit": 1221,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 89,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -988,23 +999,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Still in Love [Scarlet Vow Attire] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1043,14 +1055,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1126,
-        "dpOrSpeed": 1196,
-        "atkOrPower": 1156,
-        "defOrGuts": 998,
-        "critOrWit": 1166,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1287,
+        "dpOrSpeed": 1272,
+        "atkOrPower": 1212,
+        "defOrGuts": 1062,
+        "critOrWit": 1232,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 90,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1068,23 +1080,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Cheval Grand [Summer Calm Navy Drop] is a SSS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1123,13 +1136,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1124,
-        "dpOrSpeed": 1194,
-        "atkOrPower": 1154,
-        "defOrGuts": 997,
-        "critOrWit": 1164,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1148,
+        "dpOrSpeed": 1283,
+        "atkOrPower": 1223,
+        "defOrGuts": 1073,
+        "critOrWit": 1243,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 91,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -1148,23 +1161,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Chrono Genesis [Genesis Chronicler] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1203,13 +1217,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1122,
-        "dpOrSpeed": 1192,
-        "atkOrPower": 1152,
-        "defOrGuts": 996,
-        "critOrWit": 1162,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1135,
+        "dpOrSpeed": 1270,
+        "atkOrPower": 1210,
+        "defOrGuts": 1060,
+        "critOrWit": 1230,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 92,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -1228,23 +1242,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Loves Only You [9927 Wishes] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1283,14 +1298,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1120,
-        "dpOrSpeed": 1190,
-        "atkOrPower": 1150,
-        "defOrGuts": 995,
-        "critOrWit": 1160,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 916,
+        "dpOrSpeed": 1281,
+        "atkOrPower": 1266,
+        "defOrGuts": 1071,
+        "critOrWit": 1241,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 93,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1308,23 +1323,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Smart Falcon [Luminous Twirler] is a SSS-Tier Dirt-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1363,14 +1379,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1118,
-        "dpOrSpeed": 1188,
-        "atkOrPower": 1148,
-        "defOrGuts": 994,
-        "critOrWit": 1158,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 903,
+        "dpOrSpeed": 1308,
+        "atkOrPower": 1253,
+        "defOrGuts": 1128,
+        "critOrWit": 1228,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 94,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1388,23 +1404,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Gran Alegria [Smile My Way!] is a SSS-Tier Mile-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1443,13 +1460,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1116,
-        "dpOrSpeed": 1186,
-        "atkOrPower": 1146,
-        "defOrGuts": 993,
-        "critOrWit": 1156,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1144,
+        "dpOrSpeed": 1279,
+        "atkOrPower": 1219,
+        "defOrGuts": 1069,
+        "critOrWit": 1239,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 95,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -1468,23 +1485,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Orfevre [Absolute Sovereign] is a SSS-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Lightning Step (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Chaser",
+            "Lightning Step"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1523,14 +1541,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1114,
-        "dpOrSpeed": 1184,
-        "atkOrPower": 1144,
-        "defOrGuts": 992,
-        "critOrWit": 1154,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 901,
+        "dpOrSpeed": 1306,
+        "atkOrPower": 1251,
+        "defOrGuts": 1126,
+        "critOrWit": 1226,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 96,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1548,23 +1566,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Aston Machan [Unmelting Sugar Confection] is a SSS-Tier Short-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Short"
+            "Short",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Short G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
           "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1603,14 +1622,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1112,
-        "dpOrSpeed": 1182,
-        "atkOrPower": 1142,
-        "defOrGuts": 991,
-        "critOrWit": 1152,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1292,
+        "dpOrSpeed": 1277,
+        "atkOrPower": 1217,
+        "defOrGuts": 1067,
+        "critOrWit": 1237,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 97,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1628,23 +1647,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Mayano Top Gun [Rockin MewMeow] is a SSS-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1683,12 +1703,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1110,
-        "dpOrSpeed": 1180,
-        "atkOrPower": 1140,
-        "defOrGuts": 990,
-        "critOrWit": 1150,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1129,
+        "dpOrSpeed": 1264,
+        "atkOrPower": 1204,
+        "defOrGuts": 1054,
+        "critOrWit": 1224,
+        "burstCeilingScore": 99,
         "bufferCeilingScore": 88,
         "sustainScore": 91,
         "spEfficiencyScore": 95
@@ -1708,23 +1728,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Gentildonna [Regina dei Fiori] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1763,14 +1784,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1108,
-        "dpOrSpeed": 1178,
-        "atkOrPower": 1138,
-        "defOrGuts": 989,
-        "critOrWit": 1148,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 910,
+        "dpOrSpeed": 1275,
+        "atkOrPower": 1260,
+        "defOrGuts": 1065,
+        "critOrWit": 1235,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 89,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1788,23 +1809,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Hokko Tarumae [Pastel Marine Locodol] is a SSS-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1843,14 +1865,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 14,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1106,
-        "dpOrSpeed": 1176,
-        "atkOrPower": 1136,
-        "defOrGuts": 988,
-        "critOrWit": 1146,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1277,
+        "dpOrSpeed": 1262,
+        "atkOrPower": 1202,
+        "defOrGuts": 1052,
+        "critOrWit": 1222,
+        "burstCeilingScore": 99,
+        "bufferCeilingScore": 90,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1868,23 +1890,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Kitasan Black [Blooming Wish Finale] is a SSS-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -1923,14 +1946,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1104,
-        "dpOrSpeed": 1174,
-        "atkOrPower": 1134,
-        "defOrGuts": 987,
-        "critOrWit": 1144,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1271,
+        "dpOrSpeed": 1256,
+        "atkOrPower": 1196,
+        "defOrGuts": 1046,
+        "critOrWit": 1216,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 91,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -1948,23 +1971,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Daiwa Scarlet [Gale-Force Royal Blue] is a SS-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Unrestrained (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Corner Acceleration when leading",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Runner",
+            "Unrestrained"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Final Corner Acceleration when leading — triggers an uncatchable front-runner breakaway. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2003,13 +2027,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1102,
-        "dpOrSpeed": 1172,
-        "atkOrPower": 1132,
-        "defOrGuts": 986,
-        "critOrWit": 1142,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1108,
+        "dpOrSpeed": 1243,
+        "atkOrPower": 1183,
+        "defOrGuts": 1033,
+        "critOrWit": 1203,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 92,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2028,23 +2052,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Seiun Sky [Seaside Whimsical Orange] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2083,13 +2108,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1100,
-        "dpOrSpeed": 1170,
-        "atkOrPower": 1130,
-        "defOrGuts": 985,
-        "critOrWit": 1140,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1119,
+        "dpOrSpeed": 1254,
+        "atkOrPower": 1194,
+        "defOrGuts": 1044,
+        "critOrWit": 1214,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 93,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2108,23 +2133,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Rulership [Monochrome GM] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2163,13 +2189,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1098,
-        "dpOrSpeed": 1168,
-        "atkOrPower": 1128,
-        "defOrGuts": 984,
-        "critOrWit": 1138,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1130,
+        "dpOrSpeed": 1265,
+        "atkOrPower": 1205,
+        "defOrGuts": 1055,
+        "critOrWit": 1225,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 94,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2188,23 +2214,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Fine Motion [Radiant Ramen Legend] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2243,13 +2270,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1096,
-        "dpOrSpeed": 1166,
-        "atkOrPower": 1126,
-        "defOrGuts": 983,
-        "critOrWit": 1136,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1117,
+        "dpOrSpeed": 1252,
+        "atkOrPower": 1192,
+        "defOrGuts": 1042,
+        "critOrWit": 1212,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 95,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2268,23 +2295,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Gentildonna [La Dama Perfetta] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2323,13 +2351,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1094,
-        "dpOrSpeed": 1164,
-        "atkOrPower": 1124,
-        "defOrGuts": 982,
-        "critOrWit": 1134,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1128,
+        "dpOrSpeed": 1263,
+        "atkOrPower": 1203,
+        "defOrGuts": 1053,
+        "critOrWit": 1223,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2348,23 +2376,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Jungle Pocket [Vermilion Cheer Leader] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2403,13 +2432,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1092,
-        "dpOrSpeed": 1162,
-        "atkOrPower": 1122,
-        "defOrGuts": 981,
-        "critOrWit": 1132,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1115,
+        "dpOrSpeed": 1250,
+        "atkOrPower": 1190,
+        "defOrGuts": 1040,
+        "critOrWit": 1210,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 97,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2428,23 +2457,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Victoire Pisa [Lueur Angelique] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2483,12 +2513,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1090,
-        "dpOrSpeed": 1160,
-        "atkOrPower": 1120,
-        "defOrGuts": 980,
-        "critOrWit": 1130,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1126,
+        "dpOrSpeed": 1261,
+        "atkOrPower": 1201,
+        "defOrGuts": 1051,
+        "critOrWit": 1221,
+        "burstCeilingScore": 96,
         "bufferCeilingScore": 88,
         "sustainScore": 91,
         "spEfficiencyScore": 95
@@ -2508,23 +2538,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Loves Only You [Love-Linked Aster] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2563,13 +2594,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1088,
-        "dpOrSpeed": 1158,
-        "atkOrPower": 1118,
-        "defOrGuts": 979,
-        "critOrWit": 1128,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1113,
+        "dpOrSpeed": 1248,
+        "atkOrPower": 1188,
+        "defOrGuts": 1038,
+        "critOrWit": 1208,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 89,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2588,23 +2619,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Kiseki [Miracle Author] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2643,14 +2675,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1086,
-        "dpOrSpeed": 1156,
-        "atkOrPower": 1116,
-        "defOrGuts": 978,
-        "critOrWit": 1126,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 894,
+        "dpOrSpeed": 1299,
+        "atkOrPower": 1244,
+        "defOrGuts": 1119,
+        "critOrWit": 1219,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 90,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -2668,23 +2700,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Bubble Gum Fellow [Dawn Radiance] is a SS-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2723,14 +2756,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1084,
-        "dpOrSpeed": 1154,
-        "atkOrPower": 1114,
-        "defOrGuts": 977,
-        "critOrWit": 1124,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1261,
+        "dpOrSpeed": 1246,
+        "atkOrPower": 1186,
+        "defOrGuts": 1036,
+        "critOrWit": 1206,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 91,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -2748,23 +2781,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Oguri Cap [Cinderella Gray] is a SS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2803,13 +2837,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1082,
-        "dpOrSpeed": 1152,
-        "atkOrPower": 1112,
-        "defOrGuts": 976,
-        "critOrWit": 1122,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1122,
+        "dpOrSpeed": 1257,
+        "atkOrPower": 1197,
+        "defOrGuts": 1047,
+        "critOrWit": 1217,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 92,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2828,23 +2862,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Buena Vista [Heroina Inocente] is a SS-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Masterful Gambit (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Chaser",
+            "Masterful Gambit"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2883,13 +2918,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1080,
-        "dpOrSpeed": 1150,
-        "atkOrPower": 1110,
-        "defOrGuts": 975,
-        "critOrWit": 1120,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1109,
+        "dpOrSpeed": 1244,
+        "atkOrPower": 1184,
+        "defOrGuts": 1034,
+        "critOrWit": 1204,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 93,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2908,23 +2943,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Satono Crown [Sunlit Island Blossom] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -2963,13 +2999,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1078,
-        "dpOrSpeed": 1148,
-        "atkOrPower": 1108,
-        "defOrGuts": 974,
-        "critOrWit": 1118,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1120,
+        "dpOrSpeed": 1255,
+        "atkOrPower": 1195,
+        "defOrGuts": 1045,
+        "critOrWit": 1215,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 94,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -2988,23 +3024,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Fusaichi Pandora [Assorted Cuteness] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3043,13 +3080,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1076,
-        "dpOrSpeed": 1146,
-        "atkOrPower": 1106,
-        "defOrGuts": 973,
-        "critOrWit": 1116,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1131,
+        "dpOrSpeed": 1266,
+        "atkOrPower": 1206,
+        "defOrGuts": 1056,
+        "critOrWit": 1226,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 95,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -3068,23 +3105,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Katsuragi Ace [Ink Dragon Masterpiece] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3123,13 +3161,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1074,
-        "dpOrSpeed": 1144,
-        "atkOrPower": 1104,
-        "defOrGuts": 972,
-        "critOrWit": 1114,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1118,
+        "dpOrSpeed": 1253,
+        "atkOrPower": 1193,
+        "defOrGuts": 1043,
+        "critOrWit": 1213,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -3148,23 +3186,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Admire Vega [Glacialis Vega] is a SS-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Lightning Step (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Chaser",
+            "Lightning Step"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3203,14 +3242,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1072,
-        "dpOrSpeed": 1142,
-        "atkOrPower": 1102,
-        "defOrGuts": 971,
-        "critOrWit": 1112,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1279,
+        "dpOrSpeed": 1264,
+        "atkOrPower": 1204,
+        "defOrGuts": 1054,
+        "critOrWit": 1224,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 97,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3228,23 +3267,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Biwa Hayahide [Engineered Victory] is a SS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3283,14 +3323,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1070,
-        "dpOrSpeed": 1140,
-        "atkOrPower": 1100,
-        "defOrGuts": 970,
-        "critOrWit": 1110,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 886,
+        "dpOrSpeed": 1291,
+        "atkOrPower": 1236,
+        "defOrGuts": 1111,
+        "critOrWit": 1211,
+        "burstCeilingScore": 96,
         "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3308,23 +3348,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Durandal [Chevalier Fidele] is a SS-Tier Mile-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Masterful Gambit (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Chaser",
+            "Masterful Gambit"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3363,14 +3404,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1068,
-        "dpOrSpeed": 1138,
-        "atkOrPower": 1098,
-        "defOrGuts": 969,
-        "critOrWit": 1108,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 897,
+        "dpOrSpeed": 1302,
+        "atkOrPower": 1247,
+        "defOrGuts": 1122,
+        "critOrWit": 1222,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 89,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3388,23 +3429,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Daiichi Ruby [Flowing Blue] is a SS-Tier Mile-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3443,13 +3485,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1066,
-        "dpOrSpeed": 1136,
-        "atkOrPower": 1096,
-        "defOrGuts": 968,
-        "critOrWit": 1106,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1114,
+        "dpOrSpeed": 1249,
+        "atkOrPower": 1189,
+        "defOrGuts": 1039,
+        "critOrWit": 1209,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 90,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -3468,23 +3510,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Mejiro Ramonu [Onyx Line] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3523,13 +3566,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1064,
-        "dpOrSpeed": 1134,
-        "atkOrPower": 1094,
-        "defOrGuts": 967,
-        "critOrWit": 1104,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1125,
+        "dpOrSpeed": 1260,
+        "atkOrPower": 1200,
+        "defOrGuts": 1050,
+        "critOrWit": 1220,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 91,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -3548,23 +3591,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Silence Suzuka [Emerald Among the Waves] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3603,14 +3647,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1062,
-        "dpOrSpeed": 1132,
-        "atkOrPower": 1092,
-        "defOrGuts": 966,
-        "critOrWit": 1102,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 882,
+        "dpOrSpeed": 1287,
+        "atkOrPower": 1232,
+        "defOrGuts": 1107,
+        "critOrWit": 1207,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 92,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3628,23 +3672,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Bamboo Memory [Ultra Marine] is a SS-Tier Short-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Short"
+            "Short",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Short G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
           "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3683,14 +3728,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1060,
-        "dpOrSpeed": 1130,
-        "atkOrPower": 1090,
-        "defOrGuts": 965,
-        "critOrWit": 1100,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 893,
+        "dpOrSpeed": 1298,
+        "atkOrPower": 1243,
+        "defOrGuts": 1118,
+        "critOrWit": 1218,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 93,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3708,23 +3753,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Ines Fujin [MELTY GIFT] is a SS-Tier Mile-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3763,13 +3809,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1058,
-        "dpOrSpeed": 1128,
-        "atkOrPower": 1088,
-        "defOrGuts": 964,
-        "critOrWit": 1098,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1110,
+        "dpOrSpeed": 1245,
+        "atkOrPower": 1185,
+        "defOrGuts": 1035,
+        "critOrWit": 1205,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 94,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -3788,23 +3834,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Kitasan Black [Auspicious Crane Headliner] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3843,14 +3890,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1056,
-        "dpOrSpeed": 1126,
-        "atkOrPower": 1086,
-        "defOrGuts": 963,
-        "critOrWit": 1096,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1271,
+        "dpOrSpeed": 1256,
+        "atkOrPower": 1196,
+        "defOrGuts": 1046,
+        "critOrWit": 1216,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 95,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3868,23 +3915,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Narita Brian [Hungry Wolf] is a SS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -3923,14 +3971,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1054,
-        "dpOrSpeed": 1124,
-        "atkOrPower": 1084,
-        "defOrGuts": 962,
-        "critOrWit": 1094,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 878,
+        "dpOrSpeed": 1283,
+        "atkOrPower": 1228,
+        "defOrGuts": 1103,
+        "critOrWit": 1203,
+        "burstCeilingScore": 96,
+        "bufferCeilingScore": 96,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -3948,23 +3996,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Taiki Shuttle [Wild Frontier] is a SS-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4003,13 +4052,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1052,
-        "dpOrSpeed": 1122,
-        "atkOrPower": 1082,
-        "defOrGuts": 961,
-        "critOrWit": 1092,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1101,
+        "dpOrSpeed": 1236,
+        "atkOrPower": 1176,
+        "defOrGuts": 1026,
+        "critOrWit": 1196,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 97,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4028,23 +4077,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Air Groove [Eternal Hecateia] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4083,12 +4133,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1050,
-        "dpOrSpeed": 1120,
-        "atkOrPower": 1080,
-        "defOrGuts": 960,
-        "critOrWit": 1090,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1112,
+        "dpOrSpeed": 1247,
+        "atkOrPower": 1187,
+        "defOrGuts": 1037,
+        "critOrWit": 1207,
+        "burstCeilingScore": 92,
         "bufferCeilingScore": 88,
         "sustainScore": 91,
         "spEfficiencyScore": 95
@@ -4108,23 +4158,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Phalaenopsis [Peerless Dawn] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4163,13 +4214,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1048,
-        "dpOrSpeed": 1118,
-        "atkOrPower": 1078,
-        "defOrGuts": 959,
-        "critOrWit": 1088,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1099,
+        "dpOrSpeed": 1234,
+        "atkOrPower": 1174,
+        "defOrGuts": 1024,
+        "critOrWit": 1194,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 89,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4188,23 +4239,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Fusaichi Pandora [Snatchin Hearts] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4243,13 +4295,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1046,
-        "dpOrSpeed": 1116,
-        "atkOrPower": 1076,
-        "defOrGuts": 958,
-        "critOrWit": 1086,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1110,
+        "dpOrSpeed": 1245,
+        "atkOrPower": 1185,
+        "defOrGuts": 1035,
+        "critOrWit": 1205,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 90,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4268,23 +4320,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Mejiro Bright [Seaside Elegance Chiffon] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4323,13 +4376,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1044,
-        "dpOrSpeed": 1114,
-        "atkOrPower": 1074,
-        "defOrGuts": 957,
-        "critOrWit": 1084,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1097,
+        "dpOrSpeed": 1232,
+        "atkOrPower": 1172,
+        "defOrGuts": 1022,
+        "critOrWit": 1192,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 91,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4348,23 +4401,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Fuji Kiseki [Blanche Etoile] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4403,13 +4457,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1042,
-        "dpOrSpeed": 1112,
-        "atkOrPower": 1072,
-        "defOrGuts": 956,
-        "critOrWit": 1082,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1108,
+        "dpOrSpeed": 1243,
+        "atkOrPower": 1183,
+        "defOrGuts": 1033,
+        "critOrWit": 1203,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 92,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4428,23 +4482,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Lucky Lilac [Unbreakable Regalia] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4483,14 +4538,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1040,
-        "dpOrSpeed": 1110,
-        "atkOrPower": 1070,
-        "defOrGuts": 955,
-        "critOrWit": 1080,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 865,
+        "dpOrSpeed": 1270,
+        "atkOrPower": 1215,
+        "defOrGuts": 1090,
+        "critOrWit": 1190,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 93,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -4508,23 +4563,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "North Flight [Azure Flash] is a S-Tier Mile-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Masterful Gambit (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Chaser",
+            "Masterful Gambit"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4563,14 +4619,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1038,
-        "dpOrSpeed": 1108,
-        "atkOrPower": 1068,
-        "defOrGuts": 954,
-        "critOrWit": 1078,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1256,
+        "dpOrSpeed": 1241,
+        "atkOrPower": 1181,
+        "defOrGuts": 1031,
+        "critOrWit": 1201,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 94,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -4588,23 +4644,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Sakura Laurel [Nouvelle Pousse] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4643,13 +4700,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1036,
-        "dpOrSpeed": 1106,
-        "atkOrPower": 1066,
-        "defOrGuts": 953,
-        "critOrWit": 1076,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1093,
+        "dpOrSpeed": 1228,
+        "atkOrPower": 1168,
+        "defOrGuts": 1018,
+        "critOrWit": 1188,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 95,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4668,23 +4725,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Ikuno Dictus [Orderly Stroll] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4723,13 +4781,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1034,
-        "dpOrSpeed": 1104,
-        "atkOrPower": 1064,
-        "defOrGuts": 952,
-        "critOrWit": 1074,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1104,
+        "dpOrSpeed": 1239,
+        "atkOrPower": 1179,
+        "defOrGuts": 1029,
+        "critOrWit": 1199,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4748,23 +4806,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Nakayama Festa [Festive Gambit] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4803,14 +4862,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1032,
-        "dpOrSpeed": 1102,
-        "atkOrPower": 1062,
-        "defOrGuts": 951,
-        "critOrWit": 1072,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 861,
+        "dpOrSpeed": 1226,
+        "atkOrPower": 1211,
+        "defOrGuts": 1016,
+        "critOrWit": 1186,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 97,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -4828,23 +4887,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Wonder Acute [Warm Lantern Hot Spring] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4883,12 +4943,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1030,
-        "dpOrSpeed": 1100,
-        "atkOrPower": 1060,
-        "defOrGuts": 950,
-        "critOrWit": 1070,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1102,
+        "dpOrSpeed": 1237,
+        "atkOrPower": 1177,
+        "defOrGuts": 1027,
+        "critOrWit": 1197,
+        "burstCeilingScore": 92,
         "bufferCeilingScore": 88,
         "sustainScore": 91,
         "spEfficiencyScore": 95
@@ -4908,23 +4968,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Tosen Jordan [Highkey Hallowed] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -4963,13 +5024,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1028,
-        "dpOrSpeed": 1098,
-        "atkOrPower": 1058,
-        "defOrGuts": 949,
-        "critOrWit": 1068,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1113,
+        "dpOrSpeed": 1248,
+        "atkOrPower": 1188,
+        "defOrGuts": 1038,
+        "critOrWit": 1208,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 89,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -4988,23 +5049,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Special Week [Eclat d Ete] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5043,13 +5105,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1026,
-        "dpOrSpeed": 1096,
-        "atkOrPower": 1056,
-        "defOrGuts": 948,
-        "critOrWit": 1066,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1100,
+        "dpOrSpeed": 1235,
+        "atkOrPower": 1175,
+        "defOrGuts": 1025,
+        "critOrWit": 1195,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 90,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -5068,23 +5130,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Rhein Kraft [Eternal Fairytale] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5123,13 +5186,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1024,
-        "dpOrSpeed": 1094,
-        "atkOrPower": 1054,
-        "defOrGuts": 947,
-        "critOrWit": 1064,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1111,
+        "dpOrSpeed": 1246,
+        "atkOrPower": 1186,
+        "defOrGuts": 1036,
+        "critOrWit": 1206,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 91,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -5148,23 +5211,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Ines Fujin [Hello Hello Island] is a S-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5203,14 +5267,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1022,
-        "dpOrSpeed": 1092,
-        "atkOrPower": 1052,
-        "defOrGuts": 946,
-        "critOrWit": 1062,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 868,
+        "dpOrSpeed": 1273,
+        "atkOrPower": 1218,
+        "defOrGuts": 1093,
+        "critOrWit": 1193,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 92,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -5228,23 +5292,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Verxina [Le Beau Sommet] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5283,14 +5348,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1020,
-        "dpOrSpeed": 1090,
-        "atkOrPower": 1050,
-        "defOrGuts": 945,
-        "critOrWit": 1060,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 879,
+        "dpOrSpeed": 1244,
+        "atkOrPower": 1229,
+        "defOrGuts": 1034,
+        "critOrWit": 1204,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 93,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -5308,23 +5373,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Copano Rickey [Radiant Fortune Regalia] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5363,14 +5429,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1018,
-        "dpOrSpeed": 1088,
-        "atkOrPower": 1048,
-        "defOrGuts": 944,
-        "critOrWit": 1058,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1246,
+        "dpOrSpeed": 1231,
+        "atkOrPower": 1171,
+        "defOrGuts": 1021,
+        "critOrWit": 1191,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 94,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -5388,23 +5454,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Mr. C.B. [Dazzling Kabuki Star] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Encroaching Shadow (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Straightaway Spurt Acceleration on late-race entry",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Chaser",
+            "Encroaching Shadow"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.45 m/s² Straightaway Spurt Acceleration on late-race entry — premier Chaser win condition. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5443,14 +5510,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1016,
-        "dpOrSpeed": 1086,
-        "atkOrPower": 1046,
-        "defOrGuts": 943,
-        "critOrWit": 1056,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1257,
+        "dpOrSpeed": 1242,
+        "atkOrPower": 1182,
+        "defOrGuts": 1032,
+        "critOrWit": 1202,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 95,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -5468,23 +5535,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Grass Wonder [Blue Flame Honor] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5523,13 +5591,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1014,
-        "dpOrSpeed": 1084,
-        "atkOrPower": 1044,
-        "defOrGuts": 942,
-        "critOrWit": 1054,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1094,
+        "dpOrSpeed": 1229,
+        "atkOrPower": 1169,
+        "defOrGuts": 1019,
+        "critOrWit": 1189,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -5548,23 +5616,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Narita Top Road [Celestial Road] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5603,13 +5672,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1012,
-        "dpOrSpeed": 1082,
-        "atkOrPower": 1042,
-        "defOrGuts": 941,
-        "critOrWit": 1052,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1105,
+        "dpOrSpeed": 1240,
+        "atkOrPower": 1180,
+        "defOrGuts": 1030,
+        "critOrWit": 1200,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 97,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -5628,23 +5697,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Bubble Gum Fellow [POPPING!] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5683,12 +5753,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1010,
-        "dpOrSpeed": 1080,
-        "atkOrPower": 1040,
-        "defOrGuts": 940,
-        "critOrWit": 1050,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1092,
+        "dpOrSpeed": 1227,
+        "atkOrPower": 1167,
+        "defOrGuts": 1017,
+        "critOrWit": 1187,
+        "burstCeilingScore": 92,
         "bufferCeilingScore": 88,
         "sustainScore": 91,
         "spEfficiencyScore": 95
@@ -5708,23 +5778,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Eishin Flash [Reines Platschern] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: On Your Left! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "On Your Left!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Final Leg Acceleration from 5th–9th position with +0.25 m/s target speed. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5763,13 +5834,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1008,
-        "dpOrSpeed": 1078,
-        "atkOrPower": 1038,
-        "defOrGuts": 939,
-        "critOrWit": 1048,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1103,
+        "dpOrSpeed": 1238,
+        "atkOrPower": 1178,
+        "defOrGuts": 1028,
+        "critOrWit": 1198,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 89,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -5788,23 +5859,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Jungle Pocket [Roar of the Monarch] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5843,14 +5915,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1006,
-        "dpOrSpeed": 1076,
-        "atkOrPower": 1036,
-        "defOrGuts": 938,
-        "critOrWit": 1046,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1240,
+        "dpOrSpeed": 1225,
+        "atkOrPower": 1165,
+        "defOrGuts": 1015,
+        "critOrWit": 1185,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 90,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -5868,23 +5940,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Super Creek [Merciful Rain Shadow] is a S-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -5923,14 +5996,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1004,
-        "dpOrSpeed": 1074,
-        "atkOrPower": 1034,
-        "defOrGuts": 937,
-        "critOrWit": 1044,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 871,
+        "dpOrSpeed": 1276,
+        "atkOrPower": 1221,
+        "defOrGuts": 1096,
+        "critOrWit": 1196,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 91,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -5948,23 +6021,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Rhein Kraft [Dream Successor] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6003,13 +6077,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1002,
-        "dpOrSpeed": 1072,
-        "atkOrPower": 1032,
-        "defOrGuts": 936,
-        "critOrWit": 1042,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1112,
+        "dpOrSpeed": 1247,
+        "atkOrPower": 1187,
+        "defOrGuts": 1037,
+        "critOrWit": 1207,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 92,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -6028,23 +6102,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Duramente [Red in Black] is a S-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Lightning Step (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Chaser",
+            "Lightning Step"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6083,14 +6158,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 1000,
-        "dpOrSpeed": 1070,
-        "atkOrPower": 1030,
-        "defOrGuts": 935,
-        "critOrWit": 1040,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1249,
+        "dpOrSpeed": 1234,
+        "atkOrPower": 1174,
+        "defOrGuts": 1024,
+        "critOrWit": 1194,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 93,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6108,23 +6183,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Mejiro Bright [Starlit Snow Lolita] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6163,14 +6239,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 998,
-        "dpOrSpeed": 1068,
-        "atkOrPower": 1028,
-        "defOrGuts": 934,
-        "critOrWit": 1038,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 880,
+        "dpOrSpeed": 1285,
+        "atkOrPower": 1230,
+        "defOrGuts": 1105,
+        "critOrWit": 1205,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 94,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6188,23 +6264,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "K.S. Miracle [Prism] is a S-Tier Short-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Short"
+            "Short",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Short courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Short G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
           "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6243,14 +6320,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 996,
-        "dpOrSpeed": 1066,
-        "atkOrPower": 1026,
-        "defOrGuts": 933,
-        "critOrWit": 1036,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1247,
+        "dpOrSpeed": 1232,
+        "atkOrPower": 1172,
+        "defOrGuts": 1022,
+        "critOrWit": 1192,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 95,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6268,23 +6345,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Gold Ship [La Mode 564] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Lightning Step (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Chaser",
+            "Lightning Step"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6323,13 +6401,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 994,
-        "dpOrSpeed": 1064,
-        "atkOrPower": 1024,
-        "defOrGuts": 932,
-        "critOrWit": 1034,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1108,
+        "dpOrSpeed": 1243,
+        "atkOrPower": 1183,
+        "defOrGuts": 1033,
+        "critOrWit": 1203,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -6348,23 +6426,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Neo Universe [Universe-Naut] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6403,14 +6482,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 992,
-        "dpOrSpeed": 1062,
-        "atkOrPower": 1022,
-        "defOrGuts": 931,
-        "critOrWit": 1032,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 865,
+        "dpOrSpeed": 1270,
+        "atkOrPower": 1215,
+        "defOrGuts": 1090,
+        "critOrWit": 1190,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 97,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6428,23 +6507,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Aston Machan [Flare] is a S-Tier Short-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Short"
+            "Short",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Short G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
           "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6483,14 +6563,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 990,
-        "dpOrSpeed": 1060,
-        "atkOrPower": 1020,
-        "defOrGuts": 930,
-        "critOrWit": 1030,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 876,
+        "dpOrSpeed": 1281,
+        "atkOrPower": 1226,
+        "defOrGuts": 1101,
+        "critOrWit": 1201,
+        "burstCeilingScore": 92,
         "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6508,23 +6588,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Seeking the Pearl [Rocket Star] is a S-Tier Short-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Short"
+            "Short",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Short courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Short G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
           "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6563,14 +6644,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 988,
-        "dpOrSpeed": 1058,
-        "atkOrPower": 1018,
-        "defOrGuts": 929,
-        "critOrWit": 1028,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 863,
+        "dpOrSpeed": 1228,
+        "atkOrPower": 1213,
+        "defOrGuts": 1018,
+        "critOrWit": 1188,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 89,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6588,23 +6669,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Copano Rickey [Yin-Yang Fortune Regalia] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6643,14 +6725,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 986,
-        "dpOrSpeed": 1056,
-        "atkOrPower": 1016,
-        "defOrGuts": 928,
-        "critOrWit": 1026,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1254,
+        "dpOrSpeed": 1239,
+        "atkOrPower": 1179,
+        "defOrGuts": 1029,
+        "critOrWit": 1199,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 90,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6668,23 +6750,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Gold Ship [Run! Splash! Launcher!!] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Masterful Gambit (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Chaser",
+            "Masterful Gambit"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Final Corner Acceleration + 3.5% Stamina Recovery when surging from the rear. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6723,14 +6806,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 984,
-        "dpOrSpeed": 1054,
-        "atkOrPower": 1014,
-        "defOrGuts": 927,
-        "critOrWit": 1024,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1241,
+        "dpOrSpeed": 1226,
+        "atkOrPower": 1166,
+        "defOrGuts": 1016,
+        "critOrWit": 1186,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 91,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6748,23 +6831,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Special Week [Supreme Commander of Japan] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6803,14 +6887,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 982,
-        "dpOrSpeed": 1052,
-        "atkOrPower": 1012,
-        "defOrGuts": 926,
-        "critOrWit": 1022,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 872,
+        "dpOrSpeed": 1277,
+        "atkOrPower": 1222,
+        "defOrGuts": 1097,
+        "critOrWit": 1197,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 92,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6828,23 +6912,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Nishino Flower [Tiered Petal] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6883,14 +6968,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 980,
-        "dpOrSpeed": 1050,
-        "atkOrPower": 1010,
-        "defOrGuts": 925,
-        "critOrWit": 1020,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1263,
+        "dpOrSpeed": 1248,
+        "atkOrPower": 1188,
+        "defOrGuts": 1038,
+        "critOrWit": 1208,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 93,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6908,23 +6993,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Seiun Sky [Soiree de Chaton] is a S-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Taking the Lead (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Early-Race Acceleration",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Runner",
+            "Taking the Lead"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Early-Race Acceleration — guarantees immediate 1st position out of the starting gate. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -6963,14 +7049,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 978,
-        "dpOrSpeed": 1048,
-        "atkOrPower": 1008,
-        "defOrGuts": 924,
-        "critOrWit": 1018,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1250,
+        "dpOrSpeed": 1235,
+        "atkOrPower": 1175,
+        "defOrGuts": 1025,
+        "critOrWit": 1195,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 94,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -6988,23 +7074,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Kitasan Black [Gilded Festival Mikoshi] is a S-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Unrestrained (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Final Corner Acceleration when leading",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Runner",
+            "Unrestrained"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.45 m/s² Final Corner Acceleration when leading — triggers an uncatchable front-runner breakaway. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7043,13 +7130,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 976,
-        "dpOrSpeed": 1046,
-        "atkOrPower": 1006,
-        "defOrGuts": 923,
-        "critOrWit": 1016,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1111,
+        "dpOrSpeed": 1246,
+        "atkOrPower": 1186,
+        "defOrGuts": 1036,
+        "critOrWit": 1206,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 95,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7068,23 +7155,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Seiun Sky [Blue Cloud Summing] is a S-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Escape Artist (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Runner Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity on Corners",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Runner",
+            "Escape Artist"
           ],
-          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
+          "exactDescription": "0.40 m/s Mid-Race Velocity on Corners — secures 1st-place rod lead before late-race entry. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7123,13 +7211,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 974,
-        "dpOrSpeed": 1044,
-        "atkOrPower": 1004,
-        "defOrGuts": 922,
-        "critOrWit": 1014,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1098,
+        "dpOrSpeed": 1233,
+        "atkOrPower": 1173,
+        "defOrGuts": 1023,
+        "critOrWit": 1193,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7148,23 +7236,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Special Week [Special Dreamer] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7203,13 +7292,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 972,
-        "dpOrSpeed": 1042,
-        "atkOrPower": 1002,
-        "defOrGuts": 921,
-        "critOrWit": 1012,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1109,
+        "dpOrSpeed": 1244,
+        "atkOrPower": 1184,
+        "defOrGuts": 1034,
+        "critOrWit": 1204,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 97,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7228,23 +7317,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Duramente [Claret Nosferatu] is a S-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Lightning Step (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Chaser",
+            "Lightning Step"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.40 m/s² Acceleration + Lane-Switch Velocity to bypass 12-racer traffic blocks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7283,14 +7373,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 970,
-        "dpOrSpeed": 1040,
-        "atkOrPower": 1000,
-        "defOrGuts": 920,
-        "critOrWit": 1010,
-        "burstCeilingScore": 97,
+        "hpOrStamina": 1246,
+        "dpOrSpeed": 1231,
+        "atkOrPower": 1171,
+        "defOrGuts": 1021,
+        "critOrWit": 1191,
+        "burstCeilingScore": 92,
         "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -7308,23 +7398,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Fenomeno [Indomitable Violet Flame] is a S-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Speed Star (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Final Corner Velocity + Stamina Restore",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Leader",
+            "Speed Star"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
+          "exactDescription": "0.40 m/s Final Corner Velocity + Stamina Restore — breaks out from 2nd–4th pace pack. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7363,14 +7454,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 968,
-        "dpOrSpeed": 1038,
-        "atkOrPower": 998,
-        "defOrGuts": 919,
-        "critOrWit": 1008,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 877,
+        "dpOrSpeed": 1242,
+        "atkOrPower": 1227,
+        "defOrGuts": 1032,
+        "critOrWit": 1202,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 89,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -7388,23 +7479,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Shinko Windy [Chomp-Chomp Scamp] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Dirt"
+            "Dirt",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Dirt G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+10% Speed / +20% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7443,13 +7535,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 966,
-        "dpOrSpeed": 1036,
-        "atkOrPower": 996,
-        "defOrGuts": 918,
-        "critOrWit": 1006,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1094,
+        "dpOrSpeed": 1229,
+        "atkOrPower": 1169,
+        "defOrGuts": 1019,
+        "critOrWit": 1189,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 90,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7468,23 +7560,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Curren Bouquetd'or [Floral Couture] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7523,13 +7616,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 964,
-        "dpOrSpeed": 1034,
-        "atkOrPower": 994,
-        "defOrGuts": 917,
-        "critOrWit": 1004,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1105,
+        "dpOrSpeed": 1240,
+        "atkOrPower": 1180,
+        "defOrGuts": 1030,
+        "critOrWit": 1200,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 91,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7548,23 +7641,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Red Desire [Divine Raiment] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: No Stopping Me! (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "No Stopping Me!"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration + Lateral Navigation when boxed behind runners. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7603,14 +7697,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 962,
-        "dpOrSpeed": 1032,
-        "atkOrPower": 992,
-        "defOrGuts": 916,
-        "critOrWit": 1002,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 862,
+        "dpOrSpeed": 1267,
+        "atkOrPower": 1212,
+        "defOrGuts": 1087,
+        "critOrWit": 1187,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 92,
+        "sustainScore": 86,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -7628,23 +7722,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Daring Heart [Daring Darling!] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Mile"
+            "Mile",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Mile G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Power Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7683,13 +7778,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 960,
-        "dpOrSpeed": 1030,
-        "atkOrPower": 990,
-        "defOrGuts": 915,
-        "critOrWit": 1000,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1103,
+        "dpOrSpeed": 1238,
+        "atkOrPower": 1178,
+        "defOrGuts": 1028,
+        "critOrWit": 1198,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 93,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7708,23 +7803,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Sounds of Earth [Sonata Alla Menta] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Monster (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Monster"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.45 m/s² Late-Race Acceleration when within 4 lengths of the leader on Long/Medium tracks. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7763,14 +7859,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 958,
-        "dpOrSpeed": 1028,
-        "atkOrPower": 988,
-        "defOrGuts": 914,
-        "critOrWit": 998,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
-        "sustainScore": 91,
+        "hpOrStamina": 1240,
+        "dpOrSpeed": 1225,
+        "atkOrPower": 1165,
+        "defOrGuts": 1015,
+        "critOrWit": 1185,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 94,
+        "sustainScore": 96,
         "spEfficiencyScore": 95
       },
       "skills": [
@@ -7788,23 +7884,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Dream Journey [Snow-White Dream Path] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Encroaching Shadow (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Chaser Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.45 m/s² Straightaway Spurt Acceleration on late-race entry",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Long"
+            "Long",
+            "Chaser",
+            "Encroaching Shadow"
           ],
-          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
+          "exactDescription": "0.45 m/s² Straightaway Spurt Acceleration on late-race entry — premier Chaser win condition. Evolved at Awakening Lv.5 with bonus potency for Long G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Stamina Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,300+ Stamina in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7843,13 +7940,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 956,
-        "dpOrSpeed": 1026,
-        "atkOrPower": 986,
-        "defOrGuts": 913,
-        "critOrWit": 996,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1101,
+        "dpOrSpeed": 1236,
+        "atkOrPower": 1176,
+        "defOrGuts": 1026,
+        "critOrWit": 1196,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 95,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7868,23 +7965,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Dantsu Flame [Center Spotlight] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Killer Tunes (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Leader Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Mid-Race Velocity",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Leader",
+            "Killer Tunes"
           ],
-          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
+          "exactDescription": "0.40 m/s Mid-Race Velocity — maintains high-tempo pace position behind the front-runner. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7923,13 +8021,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "longevityMonths": 9,
       "recommendedDupes": "3★ Base (4★–5★ via Goddess Statues)",
       "baseStats": {
-        "hpOrStamina": 954,
-        "dpOrSpeed": 1024,
-        "atkOrPower": 984,
-        "defOrGuts": 912,
-        "critOrWit": 994,
-        "burstCeilingScore": 97,
-        "bufferCeilingScore": 88,
+        "hpOrStamina": 1112,
+        "dpOrSpeed": 1247,
+        "atkOrPower": 1187,
+        "defOrGuts": 1037,
+        "critOrWit": 1207,
+        "burstCeilingScore": 92,
+        "bufferCeilingScore": 96,
         "sustainScore": 91,
         "spEfficiencyScore": 95
       },
@@ -7948,23 +8046,24 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "exactDescription": "Marvelous Sunday [Trick Ribbonetta] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks."
         },
         {
-          "name": "Awakening Lv.5 Evolved Skill",
+          "name": "Awakening Lv.5 Pink Skill: Professor of Curvature (Evolved)",
           "type": "TRAINING_EVENT",
-          "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
+          "spOrEnergyCost": "160 Skill Pts (Hint Lv.3)",
+          "multiplierSummary": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning.",
           "hitCount": 1,
           "buffCategoryTags": [
-            "Evolved Pink Skill",
-            "Medium"
+            "Medium",
+            "Betweener",
+            "Professor of Curvature"
           ],
-          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
+          "exactDescription": "0.40 m/s Corner Velocity + +60 Wisdom effective positioning. Evolved at Awakening Lv.5 with bonus potency for Medium G1 Champions Meet courses."
         }
       ],
       "passives": [
         {
           "unlockRank": "Stat Growth",
-          "name": "+20% Speed / +10% Power Growth",
-          "effect": "Ideal stat growth bonuses for reaching 1,750+ Speed and 1,300+ Wit in U.A.F. and Great Food Festival scenarios."
+          "name": "+15% Speed / +15% Wisdom Growth",
+          "effect": "Native trainee growth bonus optimized for hitting 1,750+ Speed and 1,250+ Power & Wit in U.A.F. and Great Food Festival scenarios."
         },
         {
           "unlockRank": "Aptitude",
@@ -7999,12 +8098,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.9,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Speed Support Card (Tokai Teio [Genius Utopia]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-818827",
         "uma-629749",
@@ -8026,12 +8125,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Speed Support Card (Air Groove [Heartfelt Kyoto Blossom]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-811061",
         "uma-584944",
@@ -8053,12 +8152,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Speed Support Card (Tap Dance City [Blade Flash Clash!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-794061",
         "uma-836268",
@@ -8080,12 +8179,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.7,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Speed Support Card (Satono Diamond [Eternal Vow, Eternal Brilliance]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-785654",
         "uma-802528",
@@ -8107,12 +8206,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.7,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Speed Support Card (Mr. C.B. [Where Sea and Sky Meet]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-780423",
         "uma-799891",
@@ -8134,12 +8233,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.9,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Speed Support Card (Efforia [As if Guided]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-775196",
         "uma-796335",
@@ -8161,12 +8260,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Stamina Support Card (Meisho Doto [Raging Wave Tenacity]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-818827",
         "uma-650313",
@@ -8186,12 +8285,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Stamina Support Card (Kiseki [Full-Color Summer]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-811061",
         "uma-639905",
@@ -8211,12 +8310,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.7,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Power Support Card (Mihono Bourbon [Inorganic Fighting Spirit]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-794061",
         "uma-602130",
@@ -8236,12 +8335,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.7,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Power Support Card (Mayano Top Gun [Time of Departure]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-785654",
         "uma-563273",
@@ -8261,12 +8360,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.9,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Guts Support Card (Aston Machan [Prime Lens Focus]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-780423",
         "uma-543421",
@@ -8286,12 +8385,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Wisdom Support Card (Forever Young [Innovator]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-818827",
         "uma-641198",
@@ -8314,12 +8413,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
       "stats": {
-        "SupportType": "Friend / Group",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "15% (MLB)",
+        "Specialty Priority": "+80",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SSS-Tier SSR Friend / Group Support Card (Azuma [Joyous Festival Celebration]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 15% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-811061",
         "uma-635115",
@@ -8342,12 +8441,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Speed Support Card (Almond Eye [Gaze That Changes the World]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-755849",
         "uma-785653",
@@ -8369,12 +8468,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Speed Support Card (Eishin Flash [Zirkus der Traume]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-758981",
         "uma-782228",
@@ -8396,12 +8495,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Speed Support Card (Matikanefukukitaru [Auspicious Valentine Chocolate]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-751219",
         "uma-771047",
@@ -8423,12 +8522,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Speed Support Card (Marche Lorraine [Echoing Duet of Victory]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-734203",
         "uma-768732",
@@ -8450,12 +8549,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Speed Support Card (Matikanetannhauser [Bound for a Warm Place]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-717556",
         "uma-757130",
@@ -8477,12 +8576,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Stamina Support Card (Fenomeno [Warm Noel]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-775196",
         "uma-538996",
@@ -8502,12 +8601,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Stamina Support Card (Sakura Chiyono O [Run Toward a Lively Future!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-755849",
         "uma-510277",
@@ -8527,12 +8626,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Power Support Card (Fine Motion [Graceful Sparkling Journey]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-758981",
         "uma-506211",
@@ -8552,12 +8651,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Power Support Card (Neo Universe [Star-Crossing Message]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-751219",
         "uma-504927",
@@ -8577,12 +8676,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Power Support Card (Agnes Digital [Brave Challenger of All]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-734203",
         "uma-376568",
@@ -8602,12 +8701,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Power Support Card (Gran Alegria [Smile Ever After]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-717556",
         "uma-818828",
@@ -8627,12 +8726,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Guts Support Card (Stay Gold [Whimsical Wandering Star]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-712500",
         "uma-815143",
@@ -8652,12 +8751,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Guts Support Card (Daring Tact [Pure Innocence in White]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-708453",
         "uma-807041",
@@ -8677,12 +8776,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Guts Support Card (Daring Heart [Steadfast Resolve in White]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-697314",
         "uma-802527",
@@ -8702,12 +8801,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Wisdom Support Card (Admire Groove [Frosty Bisque Doll]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-794061",
         "uma-629749",
@@ -8730,12 +8829,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Wisdom Support Card (Narita Brian [Evening Banquet]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-785654",
         "uma-584944",
@@ -8758,12 +8857,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Wisdom Support Card (Nice Nature [Hands Full of Kokura Love]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-780423",
         "uma-836268",
@@ -8785,12 +8884,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Wisdom Support Card (Win Variation [Waterside Principal]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-775196",
         "uma-802528",
@@ -8812,12 +8911,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "SS-Tier SSR Wisdom Support Card (Daring Tact [Spotless White Brilliance]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-755849",
         "uma-799891",
@@ -8839,12 +8938,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Speed Support Card (Smart Falcon [Wavefront Off-Shot]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-712500",
         "uma-754944",
@@ -8866,12 +8965,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Speed Support Card (Still in Love [Devilish Whispers]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-708453",
         "uma-749288",
@@ -8893,12 +8992,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Speed Support Card (Calstone Light O [Feline Sprinter]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-697314",
         "uma-744513",
@@ -8920,12 +9019,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Speed Support Card (Admire Groove [Ice Crystal Sanctuary]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-688549",
         "uma-708454",
@@ -8947,12 +9046,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Speed Support Card (Rhein Kraft [Unveiled Dream]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-685367",
         "uma-707016",
@@ -8973,12 +9072,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Speed Support Card (Dream Journey [Beckoning Dreamscape]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-675742",
         "uma-661550",
@@ -8999,12 +9098,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Stamina Support Card (Curren Bouquetd'or [Flora of Determination]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-688549",
         "uma-782230",
@@ -9024,12 +9123,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Stamina Support Card (Gold Ship [Runaway Reindeer Incident!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-685367",
         "uma-778574",
@@ -9049,12 +9148,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Stamina Support Card (Inari One [Hometown Brocade!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-675742",
         "uma-775195",
@@ -9074,12 +9173,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Stamina Support Card (Dantsu Flame [And the Curtain Rises]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-670452",
         "uma-751668",
@@ -9099,12 +9198,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Power Support Card (Vodka [Ballroom Tempest]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-666499",
         "uma-751669",
@@ -9124,12 +9223,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Power Support Card (Buena Vista [Luz de Ensueno]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-641198",
         "uma-746402",
@@ -9149,12 +9248,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Power Support Card (Tamamo Cross [Like White Lightning]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-635115",
         "uma-737336",
@@ -9174,12 +9273,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Power Support Card (Haru Urara [Friendly Gift Exchange]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-629749",
         "uma-727873",
@@ -9199,12 +9298,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Power Support Card (Symboli Kris S [COOL / CRAZY Buddy]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-584944",
         "uma-710376",
@@ -9224,12 +9323,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Guts Support Card (King Halo [Shopping for Myself]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-836268",
         "uma-707101",
@@ -9249,12 +9348,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Guts Support Card (Almond Eye [Summer Sky Chill Time]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-802528",
         "uma-705722",
@@ -9274,12 +9373,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Guts Support Card (Biko Pegasus [Bad-Boy Hero Arrives!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-799891",
         "uma-687349",
@@ -9299,12 +9398,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Guts Support Card (Fuji Kiseki [Magic from the Stage]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-796335",
         "uma-685368",
@@ -9324,12 +9423,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Guts Support Card (Curren Chan [Cutest in Your Heart]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-785653",
         "uma-661551",
@@ -9349,12 +9448,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Wisdom Support Card (Durandal [Tonight, For My Liege]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-758981",
         "uma-796335",
@@ -9376,12 +9475,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Wisdom Support Card (Daring Heart [Blooming Buds]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-751219",
         "uma-785653",
@@ -9403,12 +9502,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.8,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Wisdom Support Card (Ikuno Dictus [Even the Iron Maiden Smiles]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-734203",
         "uma-782228",
@@ -9430,12 +9529,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Wisdom Support Card (Symboli Rudolf [Soaring Cloud Calligraphy]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-717556",
         "uma-771047",
@@ -9457,12 +9556,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.9,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "S-Tier SSR Wisdom Support Card (Narita Taishin [Take Them Down!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-712500",
         "uma-768732",
@@ -9484,12 +9583,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Speed Support Card (El Condor Pasa [Soaring Ambition]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-670452",
         "uma-655283",
@@ -9510,12 +9609,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Speed Support Card (Vivlos [Alstroemeria Dream]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-666499",
         "uma-650313",
@@ -9536,12 +9635,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Speed Support Card (Meisho Doto [Indomitable Howl]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-641198",
         "uma-639905",
@@ -9562,12 +9661,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Speed",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Speed Support Card (Narita Brian [Roaring Apoyando]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-635115",
         "uma-602130",
@@ -9588,12 +9687,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Stamina Support Card (Duramente [Tranquillo]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-782228",
         "uma-659197",
@@ -9613,12 +9712,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Stamina Support Card (Mejiro Ryan [Thirst for Victory]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-771047",
         "uma-655284",
@@ -9638,12 +9737,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Stamina Support Card (Mejiro Bright [Spring Has Come]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-768732",
         "uma-643036",
@@ -9663,12 +9762,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Stamina Support Card (Hokko Tarumae [White Wings Return]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-757130",
         "uma-629750",
@@ -9688,12 +9787,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Stamina",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Stamina Support Card (Air Shakur [Cocoon]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-754944",
         "uma-614759",
@@ -9713,12 +9812,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Power",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Power Support Card (Mejiro Ardan [To the Sheltered Maiden]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-749288",
         "uma-606583",
@@ -9738,12 +9837,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Guts Support Card (Daiichi Ruby [Inseparable]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-744513",
         "uma-600193",
@@ -9763,12 +9862,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Guts Support Card (Blast Onepiece [Blast Off!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-708454",
         "uma-595542",
@@ -9788,12 +9887,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Guts Support Card (Hishi Amazon [Bared Fangs Refrain]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-707016",
         "uma-579403",
@@ -9813,12 +9912,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Guts Support Card (Fine Motion [History and Gastronomy]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-661550",
         "uma-554860",
@@ -9838,12 +9937,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Guts",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Guts Support Card (Orfevre [Simply Reigning]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-655283",
         "uma-547974",
@@ -9863,12 +9962,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Wisdom Support Card (Daiwa Scarlet [Scarlet Wind Blows]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-708453",
         "uma-757130",
@@ -9890,12 +9989,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Wisdom Support Card (Copano Rickey [Lucky Summertime]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-697314",
         "uma-754944",
@@ -9917,12 +10016,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Wisdom Support Card (Satono Diamond [Hundred-Blossom Wish]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-688549",
         "uma-749288",
@@ -9944,12 +10043,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.5,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Killer Tunes",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Wisdom Support Card (Mejiro McQueen [Home Run Queen!?]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Killer Tunes] (0.35 m/s High-Tempo Mid-Race Velocity + +2 Skill Hint Levels). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-685367",
         "uma-744513",
@@ -9971,12 +10070,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Wisdom",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Professor of Curvature",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Wisdom Support Card (Mejiro Ramonu [Radiant Splendor]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Professor of Curvature] (0.35 m/s Corner Velocity + +20 Speed Bonus). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-675742",
         "uma-708454",
@@ -9998,12 +10097,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.4,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Friend / Group",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Beeline Burst",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Friend / Group Support Card (Light Hello [from the GROUND UP]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Beeline Burst] (0.35 m/s Straightaway Velocity + +15% Training Effectiveness). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-670452",
         "uma-707016",
@@ -10025,12 +10124,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "score": 8.3,
       "recommendedDupes": "1LB – 3LB",
       "stats": {
-        "SupportType": "Friend / Group",
-        "FriendshipBonus": "35%",
-        "TrainingEffectiveness": "15%",
-        "SpecialtyPriority": "80"
+        "Gold Skill Hint": "Unstoppable",
+        "Training Eff.": "10% (MLB)",
+        "Specialty Priority": "+65",
+        "Race Bonus": "+10%"
       },
-      "effectSummary": "A-Tier SSR Friend / Group Support Card (Tazuna Hayakawa [Welcome to Tracen Academy!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
+      "effectSummary": "Grants Gold Skill [Unstoppable] (0.35 m/s Mid-Race Overtaking Velocity + +80 Specialty Priority). Delivers 10% Training Effectiveness, +80 Specialty Priority, and +2 Skill Hint Levels at MLB Lv 50.",
       "bestHolderSlugs": [
         "uma-666499",
         "uma-661550",
@@ -10047,7 +10146,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "nameEn": "Champions Meet Classic — Tokyo Turf 2400m (Medium)",
       "modeName": "Champions Meet (Grade League)",
       "difficultyLabel": "Group A Finals",
-      "imageUrl": "https://img.game8.jp/12527069/d4f114ad2c231bd6bc6831949dbdbb03.webp/original",
+      "imageUrl": "/course-uma-tokyo2400.jpg",
       "hpStat": "2400m Left-Handed (Spring / Sunny / Firm)",
       "shieldOrDpStat": "Target Stamina: 1,150 + 1 Gold Recovery",
       "weaknesses": [
@@ -10091,7 +10190,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "nameEn": "League of Heroes — Kyoto Turf 3000m (Long)",
       "modeName": "League of Heroes (12-Racer Format)",
       "difficultyLabel": "Platinum 4 Star Rank",
-      "imageUrl": "https://img.game8.jp/11971772/6f7caa91b73d9daacabf74b6fa8a5466.webp/original",
+      "imageUrl": "/course-uma-kyoto3000.jpg",
       "hpStat": "3000m Right-Handed Outer (Autumn / Firm)",
       "shieldOrDpStat": "Target Stamina: 1,350 + 2 Gold Recoveries",
       "weaknesses": [
