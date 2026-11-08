@@ -19,8 +19,21 @@ import {
 } from '../domain/constants/game-visuals';
 import { AdSlot } from './AdSlot';
 import { SiteFooter } from './SiteFooter';
+import { UnitDeepBuildSection } from './UnitDeepBuildSection';
+import {
+  InvestmentMode,
+  DupeLevel,
+  DUPE_LEVELS,
+  getGameStatLabels,
+  computeInvestmentTier,
+  getUnitMicroTags,
+  auditSquadSynergy,
+  autoBuildOptimalSquad,
+  getEquipmentLimitBreakTable,
+} from '../domain/game-mechanics';
 
 export type WikiTabKey = 'tier-list' | 'weapons' | 'bosses' | 'banners' | 'compare';
+export type BannerPlanMode = 'SPARK' | 'HALF' | 'SKIP';
 
 export function GameWikiClient({
   hub,
@@ -40,13 +53,29 @@ export function GameWikiClient({
     }
   }, [searchParams]);
 
-  // Tier List Filters
+  const statConfig = useMemo(() => getGameStatLabels(hub.slug), [hub.slug]);
+  const boxStorageKey = `gachacrest_box_${hub.slug}`;
+  const equipBoxStorageKey = `gachacrest_equip_box_${hub.slug}`;
+  const squadStorageKey = `gachacrest_squad_${hub.slug}`;
+  const bannerPlanStorageKey = `gachacrest_pull_plan_${hub.slug}`;
+
+  // Tier List Filters & Investment Mode
   const [serverScope, setServerScope] = useState<'ASIAN_FUTURE' | 'GLOBAL_CURRENT'>('ASIAN_FUTURE');
   const [tierCategory, setTierCategory] = useState<'OVERALL' | 'REROLL' | 'BOSS_RAID'>('OVERALL');
+  const [investmentMode, setInvestmentMode] = useState<InvestmentMode>('REC_LB1');
+  const [ownershipFilter, setOwnershipFilter] = useState<'ALL' | 'OWNED' | 'MISSING'>('ALL');
   const [selectedElement, setSelectedElement] = useState<string>('ALL');
   const [unitSearch, setUnitSearch] = useState<string>('');
   const [showSavedOnly, setShowSavedOnly] = useState<boolean>(false);
   const [savedSlugs, setSavedSlugs] = useState<string[]>([]);
+
+  // My Box / Roster & Dupes + Active Squad + Banner Pull Roadmap State
+  const [ownedBoxMap, setOwnedBoxMap] = useState<Record<string, DupeLevel>>({});
+  const [ownedEquipSlugs, setOwnedEquipSlugs] = useState<string[]>([]);
+  const [activeSquadSlugs, setActiveSquadSlugs] = useState<string[]>([]);
+  const [bannerPlanMap, setBannerPlanMap] = useState<Record<string, BannerPlanMode>>({});
+  const [quickPeekSlug, setQuickPeekSlug] = useState<string | null>(null);
+  const [backupNotice, setBackupNotice] = useState<string | null>(null);
 
   // Equipment Filters
   const [equipSearch, setEquipSearch] = useState<string>('');
@@ -59,10 +88,41 @@ export function GameWikiClient({
         const parsed = JSON.parse(raw);
         if (Array.isArray(parsed)) setSavedSlugs(parsed);
       }
+      const rawBox = localStorage.getItem(boxStorageKey);
+      if (rawBox) {
+        const parsedBox = JSON.parse(rawBox);
+        if (parsedBox && typeof parsedBox === 'object') setOwnedBoxMap(parsedBox);
+      }
+      const rawEqBox = localStorage.getItem(equipBoxStorageKey);
+      if (rawEqBox) {
+        const parsedEq = JSON.parse(rawEqBox);
+        if (Array.isArray(parsedEq)) setOwnedEquipSlugs(parsedEq);
+      }
+      const rawSquad = localStorage.getItem(squadStorageKey);
+      if (rawSquad) {
+        const parsedSq = JSON.parse(rawSquad);
+        if (Array.isArray(parsedSq) && parsedSq.length > 0) {
+          setActiveSquadSlugs(parsedSq);
+        } else {
+          // Initialize with a balanced starter squad so the user immediately sees the live Buff Matrix in action
+          const initialSquad = autoBuildOptimalSquad(hub.slug, hub.units).map((u) => u.slug);
+          setActiveSquadSlugs(initialSquad);
+        }
+      } else {
+        const initialSquad = autoBuildOptimalSquad(hub.slug, hub.units).map((u) => u.slug);
+        setActiveSquadSlugs(initialSquad);
+      }
+      const rawPlan = localStorage.getItem(bannerPlanStorageKey);
+      if (rawPlan) {
+        const parsedPlan = JSON.parse(rawPlan);
+        if (parsedPlan && typeof parsedPlan === 'object') setBannerPlanMap(parsedPlan);
+      } else if (hub.banners[0]) {
+        setBannerPlanMap({ [hub.banners[0].slug]: 'SPARK' });
+      }
     } catch {
       // Ignore storage access errors
     }
-  }, []);
+  }, [boxStorageKey, equipBoxStorageKey, squadStorageKey, bannerPlanStorageKey, hub.slug, hub.units, hub.banners]);
 
   const toggleSaveUnit = (slug: string) => {
     setSavedSlugs((prev) => {
@@ -74,6 +134,132 @@ export function GameWikiClient({
       }
       return next;
     });
+  };
+
+  const toggleOwnedUnit = (slug: string) => {
+    setOwnedBoxMap((prev) => {
+      const next = { ...prev };
+      if (next[slug]) {
+        delete next[slug];
+      } else {
+        next[slug] = 'LB0';
+      }
+      try {
+        localStorage.setItem(boxStorageKey, JSON.stringify(next));
+      } catch {
+        // Ignore
+      }
+      return next;
+    });
+  };
+
+  const setUnitDupeLevel = (slug: string, lv: DupeLevel) => {
+    setOwnedBoxMap((prev) => {
+      const next = { ...prev, [slug]: lv };
+      try {
+        localStorage.setItem(boxStorageKey, JSON.stringify(next));
+      } catch {
+        // Ignore
+      }
+      return next;
+    });
+  };
+
+  const toggleOwnedEquip = (slug: string) => {
+    setOwnedEquipSlugs((prev) => {
+      const next = prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug];
+      try {
+        localStorage.setItem(equipBoxStorageKey, JSON.stringify(next));
+      } catch {
+        // Ignore
+      }
+      return next;
+    });
+  };
+
+  const toggleSquadUnit = (slug: string) => {
+    setActiveSquadSlugs((prev) => {
+      let next: string[];
+      if (prev.includes(slug)) {
+        next = prev.filter((s) => s !== slug);
+      } else if (prev.length >= statConfig.squadSize) {
+        next = [...prev.slice(1), slug];
+      } else {
+        next = [...prev, slug];
+      }
+      try {
+        localStorage.setItem(squadStorageKey, JSON.stringify(next));
+      } catch {
+        // Ignore
+      }
+      return next;
+    });
+  };
+
+  const handleAutoBuildFromOwnedBox = () => {
+    const ownedUnits = hub.units.filter((u) => Boolean(ownedBoxMap[u.slug]));
+    const pool = ownedUnits.length >= 3 ? ownedUnits : hub.units.slice(0, 14);
+    if (ownedUnits.length < 3) {
+      // Seed a realistic 12-unit F2P starter box so the user sees immediate value
+      const seeded: Record<string, DupeLevel> = {};
+      hub.units.slice(0, 12).forEach((u, i) => {
+        seeded[u.slug] = i % 3 === 0 ? 'LB1' : 'LB0';
+      });
+      setOwnedBoxMap(seeded);
+      try {
+        localStorage.setItem(boxStorageKey, JSON.stringify(seeded));
+      } catch {
+        // Ignore
+      }
+    }
+    const built = autoBuildOptimalSquad(hub.slug, pool, selectedElement).map((u) => u.slug);
+    setActiveSquadSlugs(built);
+    try {
+      localStorage.setItem(squadStorageKey, JSON.stringify(built));
+    } catch {
+      // Ignore
+    }
+  };
+
+  const handleAutoBuildMetaApex = () => {
+    const built = autoBuildOptimalSquad(hub.slug, hub.units, selectedElement).map((u) => u.slug);
+    setActiveSquadSlugs(built);
+    try {
+      localStorage.setItem(squadStorageKey, JSON.stringify(built));
+    } catch {
+      // Ignore
+    }
+  };
+
+  const setBannerPlan = (bannerSlug: string, mode: BannerPlanMode) => {
+    setBannerPlanMap((prev) => {
+      const next = { ...prev, [bannerSlug]: mode };
+      try {
+        localStorage.setItem(bannerPlanStorageKey, JSON.stringify(next));
+      } catch {
+        // Ignore
+      }
+      return next;
+    });
+  };
+
+  const handleExportAccountJson = () => {
+    try {
+      const payload = {
+        game: hub.slug,
+        exportedAt: new Date().toISOString(),
+        ownedBoxMap,
+        ownedEquipSlugs,
+        activeSquadSlugs,
+        bannerPlanMap,
+      };
+      navigator.clipboard?.writeText(JSON.stringify(payload));
+      setBackupNotice('✓ Copied Box & Squad JSON to clipboard!');
+      setTimeout(() => setBackupNotice(null), 3500);
+    } catch {
+      setBackupNotice('✓ Account saved in browser storage');
+      setTimeout(() => setBackupNotice(null), 3500);
+    }
   };
 
   // Pull Savings Calculator State
@@ -105,6 +291,8 @@ export function GameWikiClient({
     return hub.units.filter((u) => {
       if (serverScope === 'GLOBAL_CURRENT' && !u.isReleasedGlobal) return false;
       if (showSavedOnly && !savedSlugs.includes(u.slug)) return false;
+      if (ownershipFilter === 'OWNED' && !ownedBoxMap[u.slug]) return false;
+      if (ownershipFilter === 'MISSING' && Boolean(ownedBoxMap[u.slug])) return false;
       if (selectedElement !== 'ALL' && u.element !== selectedElement) return false;
       if (unitSearch.trim()) {
         const q = unitSearch.toLowerCase();
@@ -119,7 +307,7 @@ export function GameWikiClient({
       }
       return true;
     });
-  }, [hub.units, serverScope, showSavedOnly, savedSlugs, selectedElement, unitSearch]);
+  }, [hub.units, serverScope, showSavedOnly, savedSlugs, ownershipFilter, ownedBoxMap, selectedElement, unitSearch]);
 
   const filteredEquipments = useMemo(() => {
     return hub.equipments.filter((eq) => {
@@ -136,7 +324,7 @@ export function GameWikiClient({
     });
   }, [hub.equipments, equipTierFilter, equipSearch]);
 
-  const getUnitTierRank = (u: HydratedGameHub['units'][number]): string => {
+  const getBaseUnitTierRank = (u: HydratedGameHub['units'][number]): string => {
     if (tierCategory === 'REROLL') return u.tiers.rerollAsian;
     if (tierCategory === 'BOSS_RAID') return u.tiers.bossRaidAsian;
     if (serverScope === 'GLOBAL_CURRENT' && u.tiers.overallGlobal) {
@@ -144,6 +332,36 @@ export function GameWikiClient({
     }
     return u.tiers.overallAsian.tierRank;
   };
+
+  const getUnitTierRank = (u: HydratedGameHub['units'][number]): string => {
+    const base = getBaseUnitTierRank(u);
+    return computeInvestmentTier(hub.slug, u, base, investmentMode).adjustedTier;
+  };
+
+  const activeSquadUnits = useMemo(
+    () =>
+      activeSquadSlugs
+        .map((s) => hub.units.find((u) => u.slug === s))
+        .filter((u): u is HydratedGameHub['units'][number] => Boolean(u)),
+    [activeSquadSlugs, hub.units]
+  );
+
+  const squadAudit = useMemo(
+    () => auditSquadSynergy(hub.slug, activeSquadUnits),
+    [hub.slug, activeSquadUnits]
+  );
+
+  const quickPeekUnit = useMemo(
+    () => (quickPeekSlug ? hub.units.find((u) => u.slug === quickPeekSlug) ?? null : null),
+    [quickPeekSlug, hub.units]
+  );
+
+  const ownedCount = useMemo(
+    () => hub.units.filter((u) => Boolean(ownedBoxMap[u.slug])).length,
+    [hub.units, ownedBoxMap]
+  );
+  const missingCount = hub.units.length - ownedCount;
+  const completionPct = hub.units.length > 0 ? Math.round((ownedCount / hub.units.length) * 100) : 0;
 
   const getElementColor = (elemKey: string): string => {
     return hub.elementsConfig.find((e) => e.key === elemKey)?.colorHex ?? '#52525B';
@@ -931,7 +1149,7 @@ export function GameWikiClient({
                     </button>
                   </div>
 
-                  <div style={{ display: 'flex', gap: '4px' }}>
+                  <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', alignItems: 'center' }}>
                     {(['OVERALL', 'REROLL', 'BOSS_RAID'] as const).map((cat) => (
                       <button
                         key={cat}
@@ -953,6 +1171,87 @@ export function GameWikiClient({
                         }}
                       >
                         {cat === 'OVERALL' ? 'Overall Tier' : cat === 'REROLL' ? 'Reroll' : 'Boss / Raid'}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* INVESTMENT LEVEL TOGGLE (F2P LB0 vs SWEET SPOT LB1 vs WHALE MLB) + MY BOX OWNERSHIP FILTERS */}
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
+                    gap: '8px',
+                    paddingTop: '6px',
+                    borderTop: '1px solid var(--border-subtle)',
+                  }}
+                >
+                  <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <span className="mono" style={{ fontSize: '10px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                      DUPE / INVESTMENT TIER:
+                    </span>
+                    {(
+                      [
+                        { key: 'F2P_LB0', label: 'F2P Base (0 Dupes / LB0)' },
+                        { key: 'REC_LB1', label: 'Sweet Spot (LB1 / 3★)' },
+                        { key: 'MAX_MLB', label: 'Max Whale (MLB / 5★)' },
+                      ] as const
+                    ).map((inv) => (
+                      <button
+                        key={inv.key}
+                        type="button"
+                        onClick={() => setInvestmentMode(inv.key)}
+                        style={{
+                          padding: '4px 9px',
+                          borderRadius: '4px',
+                          fontSize: '10.5px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                          border:
+                            investmentMode === inv.key
+                              ? '1.5px solid #1E40AF'
+                              : '1px solid var(--border-main)',
+                          background: investmentMode === inv.key ? '#DBEAFE' : 'var(--bg-subtle)',
+                          color: investmentMode === inv.key ? '#1E40AF' : 'var(--text-secondary)',
+                        }}
+                      >
+                        {inv.label}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <span className="mono" style={{ fontSize: '10px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                      MY ROSTER BOX:
+                    </span>
+                    {(
+                      [
+                        { key: 'ALL', label: `All (${hub.units.length})` },
+                        { key: 'OWNED', label: `✓ Owned Box (${ownedCount})` },
+                        { key: 'MISSING', label: `✗ Missing (${missingCount})` },
+                      ] as const
+                    ).map((f) => (
+                      <button
+                        key={f.key}
+                        type="button"
+                        onClick={() => setOwnershipFilter(f.key)}
+                        style={{
+                          padding: '4px 8px',
+                          borderRadius: '4px',
+                          fontSize: '10.5px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                          border:
+                            ownershipFilter === f.key
+                              ? '1.5px solid #15803D'
+                              : '1px solid var(--border-main)',
+                          background: ownershipFilter === f.key ? '#DCFCE7' : 'var(--bg-subtle)',
+                          color: ownershipFilter === f.key ? '#15803D' : 'var(--text-secondary)',
+                        }}
+                      >
+                        {f.label}
                       </button>
                     ))}
                   </div>
@@ -1099,6 +1398,8 @@ export function GameWikiClient({
                       setSelectedElement('ALL');
                       setUnitSearch('');
                       setShowSavedOnly(false);
+                      setOwnershipFilter('ALL');
+                      setInvestmentMode('REC_LB1');
                       setServerScope('ASIAN_FUTURE');
                     }}
                     style={{
@@ -1117,7 +1418,181 @@ export function GameWikiClient({
                 </section>
               )}
 
-              {/* 2D ROLE-COLUMN TIER MATRIX WITH LARGER 78x78 PORTRAITS */}
+              {/* INSTANT QUICK-PEEK BUILD INSPECTOR PANEL */}
+              {quickPeekUnit && (
+                <section
+                  style={{
+                    background: 'var(--bg-surface)',
+                    border: '2px solid var(--accent-primary)',
+                    borderRadius: '6px',
+                    padding: '14px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '12px',
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
+                  }}
+                >
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      flexWrap: 'wrap',
+                      gap: '10px',
+                      borderBottom: '1px solid var(--border-main)',
+                      paddingBottom: '10px',
+                    }}
+                  >
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+                      <img
+                        src={quickPeekUnit.imageUrl}
+                        alt={quickPeekUnit.nameEn}
+                        width={64}
+                        height={64}
+                        style={{
+                          width: '64px',
+                          height: '64px',
+                          borderRadius: '8px',
+                          objectFit: 'cover',
+                          objectPosition: 'top',
+                          border: `2.5px solid ${getElementColor(quickPeekUnit.element)}`,
+                        }}
+                      />
+                      <div>
+                        <div style={{ fontSize: '15.5px', fontWeight: 900 }}>
+                          ⚡ Quick Build Inspector: {quickPeekUnit.nameEn}
+                        </div>
+                        <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', fontWeight: 700 }}>
+                          {quickPeekUnit.styleOrTitle} • {quickPeekUnit.role} • Target: {quickPeekUnit.recommendedDupes}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
+                      <button
+                        type="button"
+                        onClick={() => toggleOwnedUnit(quickPeekUnit.slug)}
+                        style={{
+                          padding: '6px 10px',
+                          borderRadius: '4px',
+                          border: ownedBoxMap[quickPeekUnit.slug] ? '1.5px solid #15803D' : '1px solid var(--border-strong)',
+                          background: ownedBoxMap[quickPeekUnit.slug] ? '#DCFCE7' : 'var(--bg-subtle)',
+                          color: ownedBoxMap[quickPeekUnit.slug] ? '#15803D' : 'var(--text-main)',
+                          fontSize: '11px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {ownedBoxMap[quickPeekUnit.slug]
+                          ? `✓ Owned (${ownedBoxMap[quickPeekUnit.slug]})`
+                          : '+ Mark Owned'}
+                      </button>
+                      {DUPE_LEVELS.map((lv) => (
+                        <button
+                          key={lv}
+                          type="button"
+                          onClick={() => setUnitDupeLevel(quickPeekUnit.slug, lv)}
+                          className="mono"
+                          style={{
+                            padding: '5px 7px',
+                            borderRadius: '4px',
+                            fontSize: '10px',
+                            fontWeight: 900,
+                            border: '1px solid var(--border-main)',
+                            background: ownedBoxMap[quickPeekUnit.slug] === lv ? '#15803D' : 'var(--bg-subtle)',
+                            color: ownedBoxMap[quickPeekUnit.slug] === lv ? '#FFF' : 'var(--text-main)',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          {lv}
+                        </button>
+                      ))}
+                      <button
+                        type="button"
+                        onClick={() => toggleSquadUnit(quickPeekUnit.slug)}
+                        style={{
+                          padding: '6px 10px',
+                          borderRadius: '4px',
+                          border: '1px solid #1E40AF',
+                          background: activeSquadSlugs.includes(quickPeekUnit.slug) ? '#DBEAFE' : '#1E40AF',
+                          color: activeSquadSlugs.includes(quickPeekUnit.slug) ? '#1E40AF' : '#FFF',
+                          fontSize: '11px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {activeSquadSlugs.includes(quickPeekUnit.slug) ? '★ In Active Squad' : '+ Add to Squad'}
+                      </button>
+                      <Link
+                        href={`/${hub.slug}/units/${quickPeekUnit.slug}`}
+                        style={{
+                          padding: '6px 10px',
+                          borderRadius: '4px',
+                          background: 'var(--accent-primary)',
+                          color: '#FFF',
+                          fontSize: '11px',
+                          fontWeight: 900,
+                        }}
+                      >
+                        Full Page &rarr;
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => setQuickPeekSlug(null)}
+                        style={{
+                          padding: '6px 9px',
+                          borderRadius: '4px',
+                          border: '1px solid var(--border-main)',
+                          background: 'var(--bg-subtle)',
+                          fontSize: '11px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        ✕ Close
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* GAME-NATIVE STATS ROW INSIDE QUICK-PEEK */}
+                  <div
+                    className="mono"
+                    style={{
+                      display: 'grid',
+                      gridTemplateColumns: 'repeat(5, 1fr)',
+                      gap: '6px',
+                      textAlign: 'center',
+                    }}
+                  >
+                    {[
+                      { label: statConfig.hpOrStamina.label, val: quickPeekUnit.baseStats.hpOrStamina },
+                      { label: statConfig.dpOrSpeed.label, val: quickPeekUnit.baseStats.dpOrSpeed },
+                      { label: statConfig.atkOrPower.label, val: quickPeekUnit.baseStats.atkOrPower },
+                      { label: statConfig.defOrGuts.label, val: quickPeekUnit.baseStats.defOrGuts },
+                      { label: statConfig.critOrWit.label, val: quickPeekUnit.baseStats.critOrWit },
+                    ].map((st) => (
+                      <div
+                        key={st.label}
+                        style={{
+                          background: 'var(--bg-subtle)',
+                          border: '1px solid var(--border-main)',
+                          borderRadius: '4px',
+                          padding: '6px',
+                        }}
+                      >
+                        <div style={{ fontSize: '9.5px', color: 'var(--text-muted)', fontWeight: 800 }}>
+                          {st.label}
+                        </div>
+                        <div style={{ fontSize: '13.5px', fontWeight: 900 }}>{st.val.toLocaleString()}</div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <UnitDeepBuildSection gameSlug={hub.slug} unit={quickPeekUnit} />
+                </section>
+              )}
+
+              {/* 2D ROLE-COLUMN TIER MATRIX WITH LARGER 78x78 PORTRAITS, MICRO-TAGS & OWNED BADGES */}
               <section
                 style={{
                   background: 'var(--bg-surface)',
@@ -1136,11 +1611,20 @@ export function GameWikiClient({
                     marginBottom: '10px',
                     display: 'flex',
                     justifyContent: 'space-between',
+                    flexWrap: 'wrap',
+                    gap: '6px',
                   }}
                 >
-                  <span>OVERALL TIER MATRIX BY ROLE (CLICK UNIT FOR FULL BUILD)</span>
+                  <span>
+                    OVERALL TIER MATRIX BY ROLE —{' '}
+                    {investmentMode === 'F2P_LB0'
+                      ? 'F2P BASE (0 DUPES / LB0)'
+                      : investmentMode === 'MAX_MLB'
+                        ? 'MAX WHALE (MLB / 5★)'
+                        : 'SWEET-SPOT INVESTMENT (LB1 / 3★)'}
+                  </span>
                   <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                    Showing {filteredUnits.length} Characters
+                    Showing {filteredUnits.length} Characters • Click &ldquo;⚡ Inspect&rdquo; or Portrait
                   </span>
                 </div>
 
@@ -1273,84 +1757,152 @@ export function GameWikiClient({
                                 >
                                   {roleUnits.map((u) => {
                                     const elemColor = getElementColor(u.element);
+                                    const ownedDupe = ownedBoxMap[u.slug];
+                                    const microTag = getUnitMicroTags(hub.slug, u)[0];
                                     return (
-                                      <Link
+                                      <div
                                         key={u.slug}
-                                        href={`/${hub.slug}/units/${u.slug}`}
                                         style={{
-                                          width: '84px',
+                                          width: '88px',
                                           display: 'flex',
                                           flexDirection: 'column',
                                           alignItems: 'center',
-                                          gap: '4px',
+                                          gap: '3px',
                                         }}
                                       >
-                                        <div
+                                        <Link
+                                          href={`/${hub.slug}/units/${u.slug}`}
                                           style={{
-                                            width: '76px',
-                                            height: '76px',
-                                            borderRadius: '8px',
-                                            overflow: 'hidden',
-                                            border: `2.5px solid ${elemColor}`,
-                                            position: 'relative',
-                                            background: 'var(--bg-subtle)',
-                                            boxShadow: '0 2px 6px rgba(0,0,0,0.14)',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center',
+                                            gap: '3px',
                                           }}
                                         >
-                                          <img
-                                            src={u.imageUrl}
-                                            alt={u.nameEn}
+                                          <div
                                             style={{
-                                              width: '100%',
-                                              height: '100%',
-                                              objectFit: 'cover',
-                                              objectPosition: 'top center',
-                                            }}
-                                          />
-                                          <span
-                                            style={{
-                                              position: 'absolute',
-                                              bottom: 0,
-                                              right: 0,
-                                              background: elemColor,
-                                              color: '#FFF',
-                                              fontSize: '9px',
-                                              fontWeight: 900,
-                                              padding: '1px 5px',
-                                              borderTopLeftRadius: '4px',
+                                              width: '76px',
+                                              height: '76px',
+                                              borderRadius: '8px',
+                                              overflow: 'hidden',
+                                              border: ownedDupe ? '2.5px solid #15803D' : `2.5px solid ${elemColor}`,
+                                              position: 'relative',
+                                              background: 'var(--bg-subtle)',
+                                              boxShadow: '0 2px 6px rgba(0,0,0,0.14)',
                                             }}
                                           >
-                                            {u.element}
-                                          </span>
-                                          {!u.isReleasedGlobal && (
+                                            <img
+                                              src={u.imageUrl}
+                                              alt={u.nameEn}
+                                              style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover',
+                                                objectPosition: 'top center',
+                                              }}
+                                            />
                                             <span
                                               style={{
                                                 position: 'absolute',
-                                                top: 0,
-                                                left: 0,
-                                                background: '#18181B',
-                                                color: '#FDE047',
-                                                fontSize: '8px',
+                                                bottom: 0,
+                                                right: 0,
+                                                background: elemColor,
+                                                color: '#FFF',
+                                                fontSize: '8.5px',
                                                 fontWeight: 900,
                                                 padding: '1px 4px',
+                                                borderTopLeftRadius: '4px',
                                               }}
                                             >
-                                              UPCOMING
+                                              {u.element}
                                             </span>
-                                          )}
-                                        </div>
-                                        <span
+                                            {ownedDupe ? (
+                                              <span
+                                                className="mono"
+                                                style={{
+                                                  position: 'absolute',
+                                                  top: 0,
+                                                  left: 0,
+                                                  background: '#15803D',
+                                                  color: '#FFFFFF',
+                                                  fontSize: '8px',
+                                                  fontWeight: 900,
+                                                  padding: '1px 4px',
+                                                  borderBottomRightRadius: '4px',
+                                                }}
+                                              >
+                                                ✓ {ownedDupe}
+                                              </span>
+                                            ) : !u.isReleasedGlobal ? (
+                                              <span
+                                                style={{
+                                                  position: 'absolute',
+                                                  top: 0,
+                                                  left: 0,
+                                                  background: '#18181B',
+                                                  color: '#FDE047',
+                                                  fontSize: '8px',
+                                                  fontWeight: 900,
+                                                  padding: '1px 4px',
+                                                }}
+                                              >
+                                                UPCOMING
+                                              </span>
+                                            ) : null}
+                                          </div>
+                                          <span
+                                            style={{
+                                              fontSize: '10px',
+                                              fontWeight: 800,
+                                              color: 'var(--text-main)',
+                                              textAlign: 'center',
+                                              lineHeight: 1.15,
+                                            }}
+                                          >
+                                            {u.nameEn}
+                                          </span>
+                                        </Link>
+                                        {microTag && (
+                                          <span
+                                            className="mono"
+                                            style={{
+                                              fontSize: '8.5px',
+                                              fontWeight: 800,
+                                              color: 'var(--text-secondary)',
+                                              background: 'var(--bg-subtle)',
+                                              border: '1px solid var(--border-subtle)',
+                                              borderRadius: '3px',
+                                              padding: '1px 4px',
+                                              whiteSpace: 'nowrap',
+                                              maxWidth: '86px',
+                                              overflow: 'hidden',
+                                              textOverflow: 'ellipsis',
+                                            }}
+                                          >
+                                            {microTag}
+                                          </span>
+                                        )}
+                                        <button
+                                          type="button"
+                                          onClick={() =>
+                                            setQuickPeekSlug((prev) => (prev === u.slug ? null : u.slug))
+                                          }
+                                          className="mono"
                                           style={{
-                                            fontSize: '10.5px',
-                                            fontWeight: 800,
-                                            color: 'var(--text-main)',
-                                            textAlign: 'center',
-                                            lineHeight: 1.2,
+                                            fontSize: '8.5px',
+                                            fontWeight: 900,
+                                            padding: '2px 5px',
+                                            borderRadius: '3px',
+                                            border: '1px solid var(--border-main)',
+                                            background:
+                                              quickPeekSlug === u.slug ? 'var(--accent-primary)' : 'var(--bg-surface)',
+                                            color: quickPeekSlug === u.slug ? '#FFF' : 'var(--accent-primary)',
+                                            cursor: 'pointer',
                                           }}
                                         >
-                                          {u.nameEn}
-                                        </span>
-                                      </Link>
+                                          ⚡ Inspect
+                                        </button>
+                                      </div>
                                     );
                                   })}
                                 </div>
@@ -1703,7 +2255,7 @@ export function GameWikiClient({
                           display: 'flex',
                           justifyContent: 'space-between',
                           alignItems: 'center',
-                          paddingTop: '4px',
+                          paddingTop: '6px',
                           borderTop: '1px solid var(--border-subtle)',
                           fontSize: '11px',
                           flexWrap: 'wrap',
@@ -1714,9 +2266,61 @@ export function GameWikiClient({
                           href={`/${hub.slug}/units/${u.slug}`}
                           style={{ fontWeight: 900, color: 'var(--accent-primary)' }}
                         >
-                          Open Full Build, Passives &amp; Team Synergies &rarr;
+                          Open Full Build, Skill Tree &amp; Team Synergies &rarr;
                         </Link>
-                        <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                        <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
+                          <button
+                            type="button"
+                            onClick={() => toggleOwnedUnit(u.slug)}
+                            style={{
+                              background: ownedBoxMap[u.slug] ? '#DCFCE7' : 'var(--bg-surface)',
+                              border: ownedBoxMap[u.slug] ? '1.5px solid #15803D' : '1px solid var(--border-strong)',
+                              padding: '3px 8px',
+                              borderRadius: '3px',
+                              fontSize: '10.5px',
+                              fontWeight: 900,
+                              cursor: 'pointer',
+                              color: ownedBoxMap[u.slug] ? '#15803D' : 'var(--text-main)',
+                            }}
+                          >
+                            {ownedBoxMap[u.slug] ? `✓ Owned (${ownedBoxMap[u.slug]})` : '+ My Box'}
+                          </button>
+                          {DUPE_LEVELS.map((lv) => (
+                            <button
+                              key={lv}
+                              type="button"
+                              onClick={() => setUnitDupeLevel(u.slug, lv)}
+                              className="mono"
+                              style={{
+                                padding: '2px 5px',
+                                borderRadius: '3px',
+                                fontSize: '9.5px',
+                                fontWeight: 900,
+                                border: '1px solid var(--border-main)',
+                                background: ownedBoxMap[u.slug] === lv ? '#15803D' : 'var(--bg-surface)',
+                                color: ownedBoxMap[u.slug] === lv ? '#FFF' : 'var(--text-secondary)',
+                                cursor: 'pointer',
+                              }}
+                            >
+                              {lv}
+                            </button>
+                          ))}
+                          <button
+                            type="button"
+                            onClick={() => toggleSquadUnit(u.slug)}
+                            style={{
+                              background: activeSquadSlugs.includes(u.slug) ? '#DBEAFE' : 'var(--bg-header)',
+                              border: '1px solid #1E40AF',
+                              padding: '3px 8px',
+                              borderRadius: '3px',
+                              fontSize: '10.5px',
+                              fontWeight: 900,
+                              cursor: 'pointer',
+                              color: activeSquadSlugs.includes(u.slug) ? '#1E40AF' : '#FFF',
+                            }}
+                          >
+                            {activeSquadSlugs.includes(u.slug) ? '★ In Squad' : '+ Squad'}
+                          </button>
                           <button
                             type="button"
                             onClick={() => toggleSaveUnit(u.slug)}
@@ -1731,7 +2335,7 @@ export function GameWikiClient({
                               color: 'var(--amber-primary)',
                             }}
                           >
-                            {savedSlugs.includes(u.slug) ? '★ Saved' : '☆ Save Unit'}
+                            {savedSlugs.includes(u.slug) ? '★ Saved' : '☆ Watch'}
                           </button>
                           <button
                             type="button"
@@ -1750,7 +2354,7 @@ export function GameWikiClient({
                               color: 'var(--text-main)',
                             }}
                           >
-                            Compare Stats vs Another Unit
+                            Compare
                           </button>
                         </div>
                       </div>
@@ -2088,53 +2692,105 @@ export function GameWikiClient({
                       {eq.effectSummary}
                     </p>
 
+                    {/* LIMIT BREAK / DUPE BREAKPOINT SCALING TABLE */}
+                    <div
+                      style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
+                        gap: '6px',
+                        marginTop: '7px',
+                      }}
+                    >
+                      {getEquipmentLimitBreakTable(hub.slug, eq).map((lb) => (
+                        <div
+                          key={lb.stage}
+                          style={{
+                            background: 'var(--bg-surface)',
+                            border: '1px solid var(--border-main)',
+                            borderRadius: '4px',
+                            padding: '5px 8px',
+                            fontSize: '10px',
+                          }}
+                        >
+                          <div className="mono" style={{ fontWeight: 900, color: 'var(--accent-primary)' }}>
+                            {lb.stage}
+                          </div>
+                          <div style={{ fontWeight: 700, color: 'var(--text-main)', marginTop: '1px' }}>
+                            {lb.bonus}
+                          </div>
+                          <div style={{ color: 'var(--text-muted)', marginTop: '1px' }}>{lb.verdict}</div>
+                        </div>
+                      ))}
+                    </div>
+
                     <div
                       style={{
                         display: 'flex',
+                        justifyContent: 'space-between',
                         gap: '6px',
                         alignItems: 'center',
                         flexWrap: 'wrap',
-                        marginTop: '6px',
+                        marginTop: '8px',
                         fontSize: '11px',
                       }}
                     >
-                      <strong>Best Holders:</strong>
-                      {eq.bestHolderSlugs.map((uSlug) => {
-                        const holder = hub.units.find((u) => u.slug === uSlug);
-                        if (!holder) return null;
-                        return (
-                          <Link
-                            key={uSlug}
-                            href={`/${hub.slug}/units/${uSlug}`}
-                            style={{
-                              display: 'inline-flex',
-                              alignItems: 'center',
-                              gap: '6px',
-                              background: 'var(--bg-surface)',
-                              border: '1px solid var(--border-main)',
-                              padding: '3px 8px 3px 4px',
-                              borderRadius: '4px',
-                              fontWeight: 800,
-                              color: 'var(--accent-primary)',
-                            }}
-                          >
-                            <img
-                              src={holder.imageUrl}
-                              alt={holder.nameEn}
-                              width={30}
-                              height={30}
+                      <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                        <strong>Best Holders:</strong>
+                        {eq.bestHolderSlugs.map((uSlug) => {
+                          const holder = hub.units.find((u) => u.slug === uSlug);
+                          if (!holder) return null;
+                          return (
+                            <Link
+                              key={uSlug}
+                              href={`/${hub.slug}/units/${uSlug}`}
                               style={{
-                                width: '30px',
-                                height: '30px',
-                                borderRadius: '5px',
-                                objectFit: 'cover',
-                                objectPosition: 'top',
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '6px',
+                                background: 'var(--bg-surface)',
+                                border: '1px solid var(--border-main)',
+                                padding: '3px 8px 3px 4px',
+                                borderRadius: '4px',
+                                fontWeight: 800,
+                                color: 'var(--accent-primary)',
                               }}
-                            />
-                            <span>{holder.nameEn}</span>
-                          </Link>
-                        );
-                      })}
+                            >
+                              <img
+                                src={holder.imageUrl}
+                                alt={holder.nameEn}
+                                width={30}
+                                height={30}
+                                style={{
+                                  width: '30px',
+                                  height: '30px',
+                                  borderRadius: '5px',
+                                  objectFit: 'cover',
+                                  objectPosition: 'top',
+                                }}
+                              />
+                              <span>{holder.nameEn}</span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => toggleOwnedEquip(eq.slug)}
+                        style={{
+                          padding: '4px 10px',
+                          borderRadius: '4px',
+                          border: ownedEquipSlugs.includes(eq.slug)
+                            ? '1.5px solid #15803D'
+                            : '1px solid var(--border-strong)',
+                          background: ownedEquipSlugs.includes(eq.slug) ? '#DCFCE7' : 'var(--bg-surface)',
+                          color: ownedEquipSlugs.includes(eq.slug) ? '#15803D' : 'var(--text-main)',
+                          fontSize: '10.5px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {ownedEquipSlugs.includes(eq.slug) ? '✓ Owned in My Box' : '+ Add Gear to My Box'}
+                      </button>
                     </div>
                   </div>
                 </article>
@@ -2627,193 +3283,274 @@ export function GameWikiClient({
                 </div>
               </div>
 
-              {/* CHRONOLOGICAL BANNERS WITH WIDE HD BANNERS & FEATURED UNIT PORTRAITS */}
-              {hub.banners.map((bn, index) => {
-                const daysFromNow = (index + 1) * 28;
-                const calc = calculatePullSavings({
-                  currentCurrency,
-                  currentTickets,
-                  daysUntilBanner: daysFromNow,
-                  monthlyF2pIncome: hub.monthlyF2pIncome,
-                  monthlyPassIncome: hub.monthlyPassIncome,
-                  hasMonthlyPass,
-                  singlePullCost: hub.pullCostSingle,
-                  pitySparkPulls: hub.pityThreshold,
-                  featuredRatePerPull: 0.0075,
-                });
+              {/* CHRONOLOGICAL BANNERS WITH CUMULATIVE MULTI-BANNER PULL ROADMAP LEDGER */}
+              {(() => {
+                let cumulativeSpentCurrency = 0;
+                return hub.banners.map((bn, index) => {
+                  const daysFromNow = (index + 1) * 28;
+                  const planMode: BannerPlanMode = bannerPlanMap[bn.slug] || 'SKIP';
+                  const plannedCostThisBanner =
+                    planMode === 'SPARK'
+                      ? bn.pityCurrencyCost
+                      : planMode === 'HALF'
+                        ? Math.round(bn.pityCurrencyCost * 0.5)
+                        : 0;
 
-                const featuredUnits = bn.featuredUnitSlugs
-                  .map((s) => hub.units.find((u) => u.slug === s))
-                  .filter(Boolean);
+                  const effectiveStartingCurrency = Math.max(0, currentCurrency - cumulativeSpentCurrency);
+                  const priorOverdraft = Math.max(0, cumulativeSpentCurrency - currentCurrency);
 
-                return (
-                  <article
-                    key={bn.slug}
-                    style={{
-                      background: 'var(--bg-surface)',
-                      border: '1px solid var(--border-main)',
-                      borderRadius: '6px',
-                      padding: '12px 14px',
-                      display: 'flex',
-                      gap: '14px',
-                      alignItems: 'flex-start',
-                      flexWrap: 'wrap',
-                    }}
-                  >
-                    <img
-                      src={bn.imageUrl}
-                      alt={bn.bannerTitle}
+                  const calc = calculatePullSavings({
+                    currentCurrency: effectiveStartingCurrency,
+                    currentTickets: index === 0 ? currentTickets : 0,
+                    daysUntilBanner: daysFromNow,
+                    monthlyF2pIncome: hub.monthlyF2pIncome,
+                    monthlyPassIncome: hub.monthlyPassIncome,
+                    hasMonthlyPass,
+                    singlePullCost: hub.pullCostSingle,
+                    pitySparkPulls: hub.pityThreshold,
+                    featuredRatePerPull: 0.0075,
+                  });
+
+                  const netAvailableAtBanner = calc.totalCurrencyAvailable - priorOverdraft;
+                  const balanceAfterPlannedPull = netAvailableAtBanner - plannedCostThisBanner;
+                  const canAffordPlanned = balanceAfterPlannedPull >= 0;
+
+                  cumulativeSpentCurrency += plannedCostThisBanner;
+
+                  const featuredUnits = bn.featuredUnitSlugs
+                    .map((s) => hub.units.find((u) => u.slug === s))
+                    .filter(Boolean);
+
+                  return (
+                    <article
+                      key={bn.slug}
                       style={{
-                        width: '230px',
-                        height: '124px',
-                        objectFit: 'cover',
-                        borderRadius: '7px',
-                        border: '2px solid var(--border-strong)',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.16)',
+                        background: 'var(--bg-surface)',
+                        border:
+                          planMode !== 'SKIP'
+                            ? '2px solid var(--accent-primary)'
+                            : '1px solid var(--border-main)',
+                        borderRadius: '6px',
+                        padding: '12px 14px',
+                        display: 'flex',
+                        gap: '14px',
+                        alignItems: 'flex-start',
+                        flexWrap: 'wrap',
                       }}
-                    />
-                    <div style={{ flex: 1, minWidth: '250px' }}>
-                      <div
+                    >
+                      <img
+                        src={bn.imageUrl}
+                        alt={bn.bannerTitle}
                         style={{
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          alignItems: 'center',
-                          flexWrap: 'wrap',
-                          gap: '6px',
+                          width: '230px',
+                          height: '124px',
+                          objectFit: 'cover',
+                          borderRadius: '7px',
+                          border: '2px solid var(--border-strong)',
+                          boxShadow: '0 2px 8px rgba(0,0,0,0.16)',
                         }}
-                      >
-                        <div style={{ fontSize: '15px', fontWeight: 900 }}>{bn.bannerTitle}</div>
-                        <span
+                      />
+                      <div style={{ flex: 1, minWidth: '250px' }}>
+                        <div
                           style={{
-                            background:
-                              bn.pullVerdict === 'MUST_PULL' ? 'var(--green-bg)' : 'var(--amber-bg)',
-                            color:
-                              bn.pullVerdict === 'MUST_PULL'
-                                ? 'var(--green-primary)'
-                                : 'var(--amber-primary)',
-                            padding: '3px 9px',
-                            borderRadius: '4px',
-                            fontSize: '11px',
-                            fontWeight: 900,
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            flexWrap: 'wrap',
+                            gap: '6px',
                           }}
                         >
-                          VERDICT: {bn.pullVerdict.replace('_', ' ')}
-                        </span>
-                      </div>
+                          <div style={{ fontSize: '15px', fontWeight: 900 }}>{bn.bannerTitle}</div>
+                          <span
+                            style={{
+                              background:
+                                bn.pullVerdict === 'MUST_PULL' ? 'var(--green-bg)' : 'var(--amber-bg)',
+                              color:
+                                bn.pullVerdict === 'MUST_PULL'
+                                  ? 'var(--green-primary)'
+                                  : 'var(--amber-primary)',
+                              padding: '3px 9px',
+                              borderRadius: '4px',
+                              fontSize: '11px',
+                              fontWeight: 900,
+                            }}
+                          >
+                            VERDICT: {bn.pullVerdict.replace('_', ' ')}
+                          </span>
+                        </div>
 
-                      <div
-                        className="mono"
-                        style={{
-                          fontSize: '11px',
-                          color: 'var(--text-muted)',
-                          marginTop: '3px',
-                          fontWeight: 700,
-                        }}
-                      >
-                        Debut Date: {bn.asianStartDate} | Target Banner Window:{' '}
-                        <strong style={{ color: 'var(--text-main)' }}>{bn.estGlobalStartDate}</strong> (~
-                        {daysFromNow}d)
-                      </div>
+                        <div
+                          className="mono"
+                          style={{
+                            fontSize: '11px',
+                            color: 'var(--text-muted)',
+                            marginTop: '3px',
+                            fontWeight: 700,
+                          }}
+                        >
+                          Debut Date: {bn.asianStartDate} | Target Banner Window:{' '}
+                          <strong style={{ color: 'var(--text-main)' }}>{bn.estGlobalStartDate}</strong> (~
+                          {daysFromNow}d) • Pity Cost: {bn.pityCurrencyCost.toLocaleString()} {hub.currencyName}
+                        </div>
 
-                      {/* FEATURED UNITS VISUAL ROW */}
-                      {featuredUnits.length > 0 && (
+                        {/* INTERACTIVE BANNER PULL PLAN TOGGLE (DEDUCTS FROM SUBSEQUENT BANNERS) */}
                         <div
                           style={{
                             display: 'flex',
                             gap: '6px',
                             alignItems: 'center',
                             flexWrap: 'wrap',
-                            marginTop: '6px',
+                            marginTop: '7px',
                           }}
                         >
-                          <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--text-muted)' }}>
-                            Featured Units:
+                          <span className="mono" style={{ fontSize: '10px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                            YOUR PULL PLAN:
                           </span>
-                          {featuredUnits.map((fu) =>
-                            fu ? (
-                              <Link
-                                key={fu.slug}
-                                href={`/${hub.slug}/units/${fu.slug}`}
-                                style={{
-                                  display: 'inline-flex',
-                                  alignItems: 'center',
-                                  gap: '6px',
-                                  background: 'var(--bg-subtle)',
-                                  border: '1px solid var(--border-main)',
-                                  padding: '3px 8px 3px 4px',
-                                  borderRadius: '4px',
-                                  fontSize: '11px',
-                                  fontWeight: 800,
-                                  color: 'var(--text-main)',
-                                }}
-                              >
-                                <img
-                                  src={fu.imageUrl}
-                                  alt={fu.nameEn}
-                                  width={30}
-                                  height={30}
-                                  style={{
-                                    width: '30px',
-                                    height: '30px',
-                                    borderRadius: '5px',
-                                    objectFit: 'cover',
-                                    objectPosition: 'top',
-                                  }}
-                                />
-                                <span>{fu.nameEn}</span>
-                              </Link>
-                            ) : null
-                          )}
+                          {(
+                            [
+                              {
+                                mode: 'SPARK',
+                                label: `🎯 Plan 1× Spark (-${bn.pityCurrencyCost.toLocaleString()})`,
+                              },
+                              {
+                                mode: 'HALF',
+                                label: `🔥 Plan 50/50 Attempt (-${Math.round(bn.pityCurrencyCost * 0.5).toLocaleString()})`,
+                              },
+                              { mode: 'SKIP', label: '⏭️ Skip & Save Currency' },
+                            ] as const
+                          ).map((btn) => (
+                            <button
+                              key={btn.mode}
+                              type="button"
+                              onClick={() => setBannerPlan(bn.slug, btn.mode)}
+                              style={{
+                                padding: '4px 9px',
+                                borderRadius: '4px',
+                                fontSize: '10.5px',
+                                fontWeight: 900,
+                                cursor: 'pointer',
+                                border:
+                                  planMode === btn.mode
+                                    ? '1.5px solid var(--accent-primary)'
+                                    : '1px solid var(--border-main)',
+                                background:
+                                  planMode === btn.mode ? 'var(--accent-primary)' : 'var(--bg-subtle)',
+                                color: planMode === btn.mode ? '#FFF' : 'var(--text-main)',
+                              }}
+                            >
+                              {btn.label}
+                            </button>
+                          ))}
                         </div>
-                      )}
 
-                      <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '6px' }}>
-                        {bn.verdictReasoning}
-                      </p>
+                        {/* FEATURED UNITS VISUAL ROW */}
+                        {featuredUnits.length > 0 && (
+                          <div
+                            style={{
+                              display: 'flex',
+                              gap: '6px',
+                              alignItems: 'center',
+                              flexWrap: 'wrap',
+                              marginTop: '6px',
+                            }}
+                          >
+                            <span style={{ fontSize: '11px', fontWeight: 800, color: 'var(--text-muted)' }}>
+                              Featured Units:
+                            </span>
+                            {featuredUnits.map((fu) =>
+                              fu ? (
+                                <Link
+                                  key={fu.slug}
+                                  href={`/${hub.slug}/units/${fu.slug}`}
+                                  style={{
+                                    display: 'inline-flex',
+                                    alignItems: 'center',
+                                    gap: '6px',
+                                    background: 'var(--bg-subtle)',
+                                    border: '1px solid var(--border-main)',
+                                    padding: '3px 8px 3px 4px',
+                                    borderRadius: '4px',
+                                    fontSize: '11px',
+                                    fontWeight: 800,
+                                    color: 'var(--text-main)',
+                                  }}
+                                >
+                                  <img
+                                    src={fu.imageUrl}
+                                    alt={fu.nameEn}
+                                    width={30}
+                                    height={30}
+                                    style={{
+                                      width: '30px',
+                                      height: '30px',
+                                      borderRadius: '5px',
+                                      objectFit: 'cover',
+                                      objectPosition: 'top',
+                                    }}
+                                  />
+                                  <span>{fu.nameEn}</span>
+                                </Link>
+                              ) : null
+                            )}
+                          </div>
+                        )}
 
-                      {/* LIVE SAVINGS PROJECTION BAR FOR THIS BANNER */}
-                      <div
-                        className="mono"
-                        style={{
-                          marginTop: '8px',
-                          background: 'var(--bg-subtle)',
-                          border: '1px solid var(--border-main)',
-                          borderRadius: '3px',
-                          padding: '6px 10px',
-                          fontSize: '11px',
-                          display: 'flex',
-                          justifyContent: 'space-between',
-                          flexWrap: 'wrap',
-                          gap: '8px',
-                        }}
-                      >
-                        <span>
-                          Projected Balance:{' '}
-                          <strong>
-                            {calc.totalCurrencyAvailable.toLocaleString()} {hub.currencyName}
-                          </strong>{' '}
-                          ({calc.totalPullsAvailable} Pulls)
-                        </span>
-                        <span>
-                          Rate-Up Odds: <strong>{calc.probabilityAtLeastOneFeaturedPct}%</strong>
-                        </span>
-                        <span
+                        <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '6px' }}>
+                          {bn.verdictReasoning}
+                        </p>
+
+                        {/* CUMULATIVE LEDGER PROJECTION BAR FOR THIS BANNER */}
+                        <div
+                          className="mono"
                           style={{
-                            fontWeight: 900,
-                            color: calc.canGuaranteePity
-                              ? 'var(--green-primary)'
-                              : 'var(--accent-primary)',
+                            marginTop: '8px',
+                            background: 'var(--bg-subtle)',
+                            border: '1px solid var(--border-main)',
+                            borderRadius: '4px',
+                            padding: '7px 10px',
+                            fontSize: '11px',
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            flexWrap: 'wrap',
+                            gap: '8px',
                           }}
                         >
-                          {calc.canGuaranteePity
-                            ? `SPARK GUARANTEED (+${calc.currencySurplusOrDeficit.toLocaleString()} Surplus)`
-                            : `NEED ${Math.abs(calc.currencySurplusOrDeficit).toLocaleString()} MORE FOR SPARK`}
-                        </span>
+                          <span>
+                            Available on Arrival:{' '}
+                            <strong>
+                              {netAvailableAtBanner.toLocaleString()} {hub.currencyName}
+                            </strong>
+                          </span>
+                          <span>
+                            After Planned Pull:{' '}
+                            <strong
+                              style={{
+                                color: canAffordPlanned ? 'var(--green-primary)' : 'var(--accent-primary)',
+                              }}
+                            >
+                              {balanceAfterPlannedPull.toLocaleString()} {hub.currencyName}
+                            </strong>
+                          </span>
+                          <span
+                            style={{
+                              fontWeight: 900,
+                              color: canAffordPlanned
+                                ? 'var(--green-primary)'
+                                : 'var(--accent-primary)',
+                            }}
+                          >
+                            {planMode === 'SKIP'
+                              ? `⏭️ SKIPPING — BANKING ${netAvailableAtBanner.toLocaleString()} FOR NEXT BANNER`
+                              : canAffordPlanned
+                                ? `✓ PLAN FUNDED (+${balanceAfterPlannedPull.toLocaleString()} LEFT OVER)`
+                                : `⚠️ SHORT BY ${Math.abs(balanceAfterPlannedPull).toLocaleString()} AFTER PRIOR BANNERS`}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                  </article>
-                );
-              })}
+                    </article>
+                  );
+                });
+              })()}
             </section>
           )}
 
@@ -3283,8 +4020,331 @@ export function GameWikiClient({
           </section>
         </main>
 
-        {/* ================= RIGHT COLUMN: WIDE HD UPCOMING BANNERS + STICKY 300x600 AD ================= */}
+        {/* ================= RIGHT COLUMN: LIVE ACCOUNT BOX & SQUAD BUILDER DOCK + UPCOMING BANNERS ================= */}
         <aside className="wiki-right-rail" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {/* LIVE MY BOX & INTERACTIVE SQUAD SYNERGY BUILDER DOCK */}
+          <div
+            style={{
+              background: 'var(--bg-surface)',
+              border: '1.5px solid var(--border-strong)',
+              borderRadius: '6px',
+              padding: '12px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px',
+            }}
+          >
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                borderBottom: '2px solid var(--accent-primary)',
+                paddingBottom: '6px',
+              }}
+            >
+              <span style={{ fontSize: '11.5px', fontWeight: 900 }}>
+                MY {hub.shortName} BOX &amp; SQUAD BUILDER
+              </span>
+              <span
+                className="mono"
+                style={{
+                  fontSize: '10px',
+                  fontWeight: 900,
+                  padding: '2px 6px',
+                  borderRadius: '3px',
+                  background: 'var(--accent-bg)',
+                  color: 'var(--accent-primary)',
+                }}
+              >
+                {ownedCount}/{hub.units.length} ({completionPct}%)
+              </span>
+            </div>
+
+            {/* COLLECTION PROGRESS BAR */}
+            <div>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  fontSize: '10.5px',
+                  fontWeight: 800,
+                  color: 'var(--text-secondary)',
+                  marginBottom: '4px',
+                }}
+              >
+                <span>Units Owned: {ownedCount}</span>
+                <span>Gear Owned: {ownedEquipSlugs.length}/{hub.equipments.length}</span>
+              </div>
+              <div
+                style={{
+                  height: '7px',
+                  width: '100%',
+                  background: 'var(--bg-subtle)',
+                  borderRadius: '4px',
+                  border: '1px solid var(--border-main)',
+                  overflow: 'hidden',
+                }}
+              >
+                <div
+                  style={{
+                    height: '100%',
+                    width: `${Math.max(4, completionPct)}%`,
+                    background: '#15803D',
+                  }}
+                />
+              </div>
+              <div style={{ display: 'flex', gap: '5px', marginTop: '6px' }}>
+                <button
+                  type="button"
+                  onClick={handleAutoBuildFromOwnedBox}
+                  style={{
+                    flex: 1,
+                    padding: '6px 6px',
+                    background: '#15803D',
+                    color: '#FFFFFF',
+                    border: 'none',
+                    borderRadius: '4px',
+                    fontSize: '10.5px',
+                    fontWeight: 900,
+                    cursor: 'pointer',
+                  }}
+                >
+                  ⚡ Build From My Box
+                </button>
+                <button
+                  type="button"
+                  onClick={handleAutoBuildMetaApex}
+                  style={{
+                    flex: 1,
+                    padding: '6px 6px',
+                    background: 'var(--bg-header)',
+                    color: '#FFFFFF',
+                    border: 'none',
+                    borderRadius: '4px',
+                    fontSize: '10.5px',
+                    fontWeight: 900,
+                    cursor: 'pointer',
+                  }}
+                >
+                  🏆 Meta Apex Team
+                </button>
+              </div>
+            </div>
+
+            {/* ACTIVE SQUAD SLOTS (6 FOR HBR/UMA, 5 FOR SOC/STAR SAVIOR) */}
+            <div
+              style={{
+                background: 'var(--bg-subtle)',
+                border: '1px solid var(--border-main)',
+                borderRadius: '5px',
+                padding: '8px',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  fontSize: '10.5px',
+                  fontWeight: 900,
+                  marginBottom: '6px',
+                }}
+              >
+                <span>
+                  ACTIVE SQUAD ({activeSquadUnits.length}/{statConfig.squadSize} SLOTS)
+                </span>
+                <span
+                  className="mono"
+                  style={{
+                    fontSize: '10px',
+                    fontWeight: 900,
+                    padding: '1px 6px',
+                    borderRadius: '3px',
+                    background: squadAudit.scorePercent >= 80 ? '#DCFCE7' : '#FEF3C7',
+                    color: squadAudit.scorePercent >= 80 ? '#15803D' : '#B45309',
+                  }}
+                >
+                  Synergy: {squadAudit.scorePercent}% ({squadAudit.grade})
+                </span>
+              </div>
+
+              <div
+                style={{
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gap: '6px',
+                }}
+              >
+                {Array.from({ length: statConfig.squadSize }).map((_, slotIdx) => {
+                  const sqUnit = activeSquadUnits[slotIdx];
+                  if (!sqUnit) {
+                    return (
+                      <div
+                        key={`empty-${slotIdx}`}
+                        style={{
+                          height: '66px',
+                          borderRadius: '5px',
+                          border: '1.5px dashed var(--border-strong)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          fontSize: '9.5px',
+                          fontWeight: 800,
+                          color: 'var(--text-muted)',
+                          textAlign: 'center',
+                          padding: '4px',
+                        }}
+                      >
+                        Slot #{slotIdx + 1}
+                      </div>
+                    );
+                  }
+                  const elColor = getElementColor(sqUnit.element);
+                  return (
+                    <div
+                      key={sqUnit.slug}
+                      style={{
+                        position: 'relative',
+                        borderRadius: '5px',
+                        border: `2px solid ${elColor}`,
+                        background: 'var(--bg-surface)',
+                        padding: '3px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <button
+                        type="button"
+                        onClick={() => toggleSquadUnit(sqUnit.slug)}
+                        title="Remove from Squad"
+                        style={{
+                          position: 'absolute',
+                          top: '2px',
+                          right: '2px',
+                          width: '16px',
+                          height: '16px',
+                          borderRadius: '3px',
+                          border: 'none',
+                          background: 'rgba(24,24,27,0.85)',
+                          color: '#FFF',
+                          fontSize: '9px',
+                          fontWeight: 900,
+                          cursor: 'pointer',
+                          lineHeight: 1,
+                        }}
+                      >
+                        ×
+                      </button>
+                      <Link
+                        href={`/${hub.slug}/units/${sqUnit.slug}`}
+                        style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}
+                      >
+                        <img
+                          src={sqUnit.imageUrl}
+                          alt={sqUnit.nameEn}
+                          width={44}
+                          height={44}
+                          style={{
+                            width: '44px',
+                            height: '44px',
+                            borderRadius: '4px',
+                            objectFit: 'cover',
+                            objectPosition: 'top',
+                          }}
+                        />
+                        <span
+                          style={{
+                            fontSize: '9px',
+                            fontWeight: 800,
+                            marginTop: '2px',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            maxWidth: '100%',
+                          }}
+                        >
+                          {sqUnit.nameOriginal}
+                        </span>
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* LIVE 6-LAYER BUFF & SYNERGY CHECKLIST */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <div style={{ fontSize: '10px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                LIVE COMBAT BUFF &amp; ROLE COVERAGE AUDIT:
+              </div>
+              {squadAudit.checklist.map((item) => (
+                <div
+                  key={item.label}
+                  title={item.hint}
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: '6px',
+                    padding: '4px 6px',
+                    borderRadius: '4px',
+                    background: item.passed ? 'rgba(21, 128, 61, 0.08)' : 'rgba(217, 119, 6, 0.08)',
+                    border: item.passed ? '1px solid rgba(21, 128, 61, 0.35)' : '1px solid rgba(217, 119, 6, 0.35)',
+                    fontSize: '10px',
+                  }}
+                >
+                  <span
+                    style={{
+                      fontWeight: 800,
+                      color: item.passed ? '#15803D' : '#B45309',
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {item.passed ? '✓ ' : '⚠️ '}
+                    {item.label}
+                  </span>
+                  <span
+                    className="mono"
+                    style={{
+                      fontSize: '9px',
+                      fontWeight: 800,
+                      color: 'var(--text-muted)',
+                      flexShrink: 0,
+                    }}
+                  >
+                    {item.providerName || 'Missing'}
+                  </span>
+                </div>
+              ))}
+              <div style={{ fontSize: '10px', color: 'var(--text-secondary)', fontWeight: 700, marginTop: '2px' }}>
+                {squadAudit.summaryAdvice}
+              </div>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '6px' }}>
+              <button
+                type="button"
+                onClick={handleExportAccountJson}
+                style={{
+                  flex: 1,
+                  padding: '5px 8px',
+                  borderRadius: '4px',
+                  border: '1px solid var(--border-main)',
+                  background: 'var(--bg-subtle)',
+                  fontSize: '10px',
+                  fontWeight: 800,
+                  cursor: 'pointer',
+                }}
+              >
+                {backupNotice || 'Copy Box & Squad Backup JSON'}
+              </button>
+            </div>
+          </div>
+
           <div
             style={{
               background: 'var(--bg-surface)',
@@ -3416,40 +4476,13 @@ export function GameWikiClient({
                 cursor: 'pointer',
               }}
             >
-              Open Full Pull Savings Calculator &rarr;
+              Open Cumulative Pull Roadmap &rarr;
             </button>
           </div>
-
-          {/* STICKY RIGHT RAIL AD SLOT (300x600) */}
-          <AdSlot
-            slotId={`${hub.slug}-right-sticky`}
-            label="STICKY RIGHT RAIL AD"
-            dimensions="300×600 / 300×250"
-            minHeightPx={420}
-            sticky
-            description="Stays visible while user scrolls Tier Matrix, Character Breakdowns, and Boss Guides"
-          />
         </aside>
       </div>
 
       <SiteFooter />
-
-      {/* MOBILE STICKY FOOTER AD (320x50) */}
-      <div className="mobile-sticky-ad" data-ad-slot="mobile-sticky-320x50">
-        <span
-          className="mono"
-          style={{
-            background: 'var(--accent-primary)',
-            color: '#FFF',
-            fontSize: '10.5px',
-            fontWeight: 900,
-            padding: '2px 8px',
-            borderRadius: '2px',
-          }}
-        >
-          MOBILE STICKY AD (320×50) — 0.00 CLS
-        </span>
-      </div>
     </div>
   );
 }
