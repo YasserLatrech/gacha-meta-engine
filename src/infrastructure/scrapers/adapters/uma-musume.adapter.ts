@@ -14,7 +14,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
   "pityThreshold": 200,
   "monthlyF2pIncome": 13500,
   "monthlyPassIncome": 19500,
-  "sourceUrl": "https://meta.gg/uma-musume",
+  "sourceUrl": "https://gachacrest.gg/uma-musume",
   "rolesConfig": [
     {
       "key": "DPS",
@@ -111,13 +111,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -133,8 +133,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-811061",
-        "uma-794061"
+        "uma-641198",
+        "uma-794061",
+        "uma-661551"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -142,7 +143,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.9,
       "summaryVerdict": "Symboli Rudolf [Adamant Sovereign] is a SSS-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-818827"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-818827"
     },
     {
       "externalId": "uma-unit-811061",
@@ -190,13 +191,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -212,16 +213,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-794061",
-        "uma-785654"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
+      "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.8,
       "summaryVerdict": "Epiphaneia [Fates Chosen Star] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-811061"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-811061"
     },
     {
       "externalId": "uma-unit-794061",
@@ -269,13 +271,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -291,8 +293,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-785654",
-        "uma-780423"
+        "uma-641198",
+        "uma-818827",
+        "uma-661551"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -300,7 +303,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Narita Top Road [Dragon Soup Supreme] is a SSS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-794061"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-794061"
     },
     {
       "externalId": "uma-unit-785654",
@@ -348,13 +351,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -370,8 +373,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-780423",
-        "uma-775196"
+        "uma-584944",
+        "uma-708453",
+        "uma-547974"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -379,7 +383,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Manhattan Cafe [Mystic Rose Bride] is a SSS-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-785654"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-785654"
     },
     {
       "externalId": "uma-unit-780423",
@@ -427,13 +431,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -449,8 +453,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-775196",
-        "uma-755849"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -458,7 +463,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.6,
       "summaryVerdict": "Admire Groove [Glacial Queen] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-780423"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-780423"
     },
     {
       "externalId": "uma-unit-775196",
@@ -506,13 +511,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Evolved Pink Skill",
+          "multiplierSummary": "Short Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Short"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Short courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -528,8 +533,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-755849",
-        "uma-758981"
+        "uma-538996",
+        "uma-482000",
+        "uma-666499"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -537,7 +543,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.9,
       "summaryVerdict": "Sakura Bakushin O [Spring Thunder Sprinter] is a SSS-Tier Short-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks.",
       "longevityNote": "Top-meta Short Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-775196"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-775196"
     },
     {
       "externalId": "uma-unit-755849",
@@ -585,13 +591,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -607,8 +613,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-758981",
-        "uma-751219"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -616,7 +623,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.8,
       "summaryVerdict": "Almond Eye [The Changer] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-755849"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-755849"
     },
     {
       "externalId": "uma-unit-758981",
@@ -664,13 +671,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -686,16 +693,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-751219",
-        "uma-734203"
+        "uma-510277",
+        "uma-602130",
+        "uma-775195"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
+      "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
       "summaryVerdict": "Taiki Shuttle [Baa Baa Patisserie] is a SSS-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-758981"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-758981"
     },
     {
       "externalId": "uma-unit-751219",
@@ -743,13 +751,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -765,8 +773,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-734203",
-        "uma-717556"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -774,7 +783,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Stay Gold [Sunlit Outsider] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-751219"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-751219"
     },
     {
       "externalId": "uma-unit-734203",
@@ -822,13 +831,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -844,16 +853,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
+        "uma-629749",
         "uma-717556",
-        "uma-712500"
+        "uma-685367"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
-      "tierBossRaid": "SSS",
+      "tierBossRaid": "SS",
       "numericScore": 9.6,
       "summaryVerdict": "Transcend [Dusk Neo-Kagura] is a SSS-Tier Dirt-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-734203"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-734203"
     },
     {
       "externalId": "uma-unit-717556",
@@ -901,13 +911,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
         }
       ],
       "passives": [
@@ -923,16 +933,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-712500",
-        "uma-708453"
+        "uma-734203",
+        "uma-685367",
+        "uma-629749"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
+      "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
       "summaryVerdict": "Espoir City [Red Devil Gear] is a SSS-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-717556"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-717556"
     },
     {
       "externalId": "uma-unit-712500",
@@ -980,13 +991,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -1002,8 +1013,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-708453",
-        "uma-697314"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1011,7 +1023,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.8,
       "summaryVerdict": "Still in Love [Scarlet Vow Attire] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-712500"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-712500"
     },
     {
       "externalId": "uma-unit-708453",
@@ -1059,13 +1071,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -1081,8 +1093,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-697314",
-        "uma-688549"
+        "uma-641198",
+        "uma-818827",
+        "uma-661551"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1090,7 +1103,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Cheval Grand [Summer Calm Navy Drop] is a SSS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-708453"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-708453"
     },
     {
       "externalId": "uma-unit-697314",
@@ -1138,13 +1151,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -1160,16 +1173,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-688549",
-        "uma-685367"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
+      "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.7,
       "summaryVerdict": "Chrono Genesis [Genesis Chronicler] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-697314"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-697314"
     },
     {
       "externalId": "uma-unit-688549",
@@ -1217,13 +1231,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -1239,8 +1253,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-685367",
-        "uma-675742"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1248,7 +1263,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.6,
       "summaryVerdict": "Loves Only You [9927 Wishes] is a SSS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-688549"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-688549"
     },
     {
       "externalId": "uma-unit-685367",
@@ -1296,13 +1311,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -1318,16 +1333,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-675742",
-        "uma-670452"
+        "uma-629749",
+        "uma-734203",
+        "uma-717556"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
+      "tierReroll": "SS",
       "tierBossRaid": "SSS",
       "numericScore": 9.9,
       "summaryVerdict": "Smart Falcon [Luminous Twirler] is a SSS-Tier Dirt-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-685367"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-685367"
     },
     {
       "externalId": "uma-unit-675742",
@@ -1375,13 +1391,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -1397,8 +1413,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-670452",
-        "uma-666499"
+        "uma-510277",
+        "uma-758981",
+        "uma-639905"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1406,7 +1423,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.8,
       "summaryVerdict": "Gran Alegria [Smile My Way!] is a SSS-Tier Mile-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-675742"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-675742"
     },
     {
       "externalId": "uma-unit-670452",
@@ -1454,13 +1471,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -1476,8 +1493,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-666499",
-        "uma-641198"
+        "uma-757130",
+        "uma-751219",
+        "uma-755849"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1485,7 +1503,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Orfevre [Absolute Sovereign] is a SSS-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-670452"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-670452"
     },
     {
       "externalId": "uma-unit-666499",
@@ -1533,13 +1551,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Evolved Pink Skill",
+          "multiplierSummary": "Short Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Short"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Short courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -1555,8 +1573,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-641198",
-        "uma-635115"
+        "uma-538996",
+        "uma-554860",
+        "uma-775196"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1564,7 +1583,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Aston Machan [Unmelting Sugar Confection] is a SSS-Tier Short-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks.",
       "longevityNote": "Top-meta Short Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-666499"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-666499"
     },
     {
       "externalId": "uma-unit-641198",
@@ -1612,13 +1631,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -1634,16 +1653,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-635115",
-        "uma-629749"
+        "uma-785654",
+        "uma-708453",
+        "uma-547974"
       ],
       "tierOverall": "SSS",
-      "tierReroll": "SSS",
-      "tierBossRaid": "SSS",
+      "tierReroll": "SS",
+      "tierBossRaid": "SS",
       "numericScore": 9.6,
       "summaryVerdict": "Mayano Top Gun [Rockin MewMeow] is a SSS-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-641198"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-641198"
     },
     {
       "externalId": "uma-unit-635115",
@@ -1691,13 +1711,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -1713,8 +1733,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-629749",
-        "uma-584944"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1722,7 +1743,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.9,
       "summaryVerdict": "Gentildonna [Regina dei Fiori] is a SSS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-635115"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-635115"
     },
     {
       "externalId": "uma-unit-629749",
@@ -1770,13 +1791,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
         }
       ],
       "passives": [
@@ -1792,8 +1813,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-584944",
-        "uma-836268"
+        "uma-685367",
+        "uma-734203",
+        "uma-717556"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1801,7 +1823,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.8,
       "summaryVerdict": "Hokko Tarumae [Pastel Marine Locodol] is a SSS-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-629749"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-629749"
     },
     {
       "externalId": "uma-unit-584944",
@@ -1849,13 +1871,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -1871,8 +1893,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-836268",
-        "uma-802528"
+        "uma-818827",
+        "uma-794061",
+        "uma-661551"
       ],
       "tierOverall": "SSS",
       "tierReroll": "SSS",
@@ -1880,7 +1903,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.7,
       "summaryVerdict": "Kitasan Black [Blooming Wish Finale] is a SSS-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-584944"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-584944"
     },
     {
       "externalId": "uma-unit-836268",
@@ -1928,13 +1951,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -1950,16 +1973,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-802528",
-        "uma-799891"
+        "uma-785654",
+        "uma-708453",
+        "uma-547974"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
       "summaryVerdict": "Daiwa Scarlet [Gale-Force Royal Blue] is a SS-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-836268"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-836268"
     },
     {
       "externalId": "uma-unit-802528",
@@ -2007,13 +2031,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -2029,16 +2053,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-799891",
-        "uma-796335"
+        "uma-780423",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.2,
       "summaryVerdict": "Seiun Sky [Seaside Whimsical Orange] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-802528"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-802528"
     },
     {
       "externalId": "uma-unit-799891",
@@ -2086,13 +2111,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -2108,16 +2133,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-796335",
-        "uma-785653"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierReroll": "S",
+      "tierBossRaid": "SSS",
       "numericScore": 9.5,
       "summaryVerdict": "Rulership [Monochrome GM] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-799891"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-799891"
     },
     {
       "externalId": "uma-unit-796335",
@@ -2165,13 +2191,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -2187,8 +2213,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-785653",
-        "uma-782228"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2196,7 +2223,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "Fine Motion [Radiant Ramen Legend] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-796335"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-796335"
     },
     {
       "externalId": "uma-unit-785653",
@@ -2244,13 +2271,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -2266,8 +2293,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-782228",
-        "uma-771047"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2275,7 +2303,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Gentildonna [La Dama Perfetta] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-785653"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-785653"
     },
     {
       "externalId": "uma-unit-782228",
@@ -2323,13 +2351,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -2345,16 +2373,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-771047",
-        "uma-768732"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
       "summaryVerdict": "Jungle Pocket [Vermilion Cheer Leader] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-782228"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-782228"
     },
     {
       "externalId": "uma-unit-771047",
@@ -2402,13 +2431,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -2424,8 +2453,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-768732",
-        "uma-757130"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2433,7 +2463,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.2,
       "summaryVerdict": "Victoire Pisa [Lueur Angelique] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-771047"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-771047"
     },
     {
       "externalId": "uma-unit-768732",
@@ -2481,13 +2511,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -2503,8 +2533,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-757130",
-        "uma-754944"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2512,7 +2543,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.5,
       "summaryVerdict": "Loves Only You [Love-Linked Aster] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-768732"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-768732"
     },
     {
       "externalId": "uma-unit-757130",
@@ -2560,13 +2591,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -2582,16 +2613,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-754944",
-        "uma-749288"
+        "uma-751219",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.4,
       "summaryVerdict": "Kiseki [Miracle Author] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-757130"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-757130"
     },
     {
       "externalId": "uma-unit-754944",
@@ -2639,13 +2671,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -2661,8 +2693,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-749288",
-        "uma-744513"
+        "uma-510277",
+        "uma-675742",
+        "uma-639905"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2670,7 +2703,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Bubble Gum Fellow [Dawn Radiance] is a SS-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-754944"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-754944"
     },
     {
       "externalId": "uma-unit-749288",
@@ -2718,13 +2751,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -2740,16 +2773,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-744513",
-        "uma-708454"
+        "uma-584944",
+        "uma-785654",
+        "uma-547974"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.3,
       "summaryVerdict": "Oguri Cap [Cinderella Gray] is a SS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-749288"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-749288"
     },
     {
       "externalId": "uma-unit-744513",
@@ -2797,13 +2831,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -2819,8 +2853,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-708454",
-        "uma-707016"
+        "uma-802528",
+        "uma-780423",
+        "uma-811061"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2828,7 +2863,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.2,
       "summaryVerdict": "Buena Vista [Heroina Inocente] is a SS-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-744513"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-744513"
     },
     {
       "externalId": "uma-unit-708454",
@@ -2876,13 +2911,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -2898,8 +2933,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-707016",
-        "uma-661550"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2907,7 +2943,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.5,
       "summaryVerdict": "Satono Crown [Sunlit Island Blossom] is a SS-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-708454"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-708454"
     },
     {
       "externalId": "uma-unit-707016",
@@ -2955,13 +2991,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -2977,8 +3013,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-661550",
-        "uma-655283"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -2986,7 +3023,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "Fusaichi Pandora [Assorted Cuteness] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-707016"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-707016"
     },
     {
       "externalId": "uma-unit-661550",
@@ -3034,13 +3071,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -3056,8 +3093,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-655283",
-        "uma-650313"
+        "uma-751219",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3065,7 +3103,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Katsuragi Ace [Ink Dragon Masterpiece] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-661550"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-661550"
     },
     {
       "externalId": "uma-unit-655283",
@@ -3113,13 +3151,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -3135,8 +3173,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-650313",
-        "uma-639905"
+        "uma-802528",
+        "uma-780423",
+        "uma-811061"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3144,7 +3183,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Admire Vega [Glacialis Vega] is a SS-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-655283"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-655283"
     },
     {
       "externalId": "uma-unit-650313",
@@ -3192,13 +3231,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -3214,16 +3253,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-639905",
-        "uma-602130"
+        "uma-584944",
+        "uma-785654",
+        "uma-547974"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.2,
       "summaryVerdict": "Biwa Hayahide [Engineered Victory] is a SS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-650313"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-650313"
     },
     {
       "externalId": "uma-unit-639905",
@@ -3271,13 +3311,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -3293,8 +3333,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-602130",
-        "uma-563273"
+        "uma-510277",
+        "uma-675742",
+        "uma-758981"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3302,7 +3343,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.5,
       "summaryVerdict": "Durandal [Chevalier Fidele] is a SS-Tier Mile-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-639905"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-639905"
     },
     {
       "externalId": "uma-unit-602130",
@@ -3350,13 +3391,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -3372,8 +3413,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-563273",
-        "uma-543421"
+        "uma-510277",
+        "uma-754944",
+        "uma-775195"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3381,7 +3423,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "Daiichi Ruby [Flowing Blue] is a SS-Tier Mile-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-602130"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-602130"
     },
     {
       "externalId": "uma-unit-563273",
@@ -3429,13 +3471,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -3451,8 +3493,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-543421",
-        "uma-538996"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3460,7 +3503,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Mejiro Ramonu [Onyx Line] is a SS-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-563273"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-563273"
     },
     {
       "externalId": "uma-unit-543421",
@@ -3508,13 +3551,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -3530,16 +3573,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-538996",
-        "uma-510277"
+        "uma-751219",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "S",
       "tierBossRaid": "SS",
       "numericScore": 9.3,
       "summaryVerdict": "Silence Suzuka [Emerald Among the Waves] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-543421"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-543421"
     },
     {
       "externalId": "uma-unit-538996",
@@ -3587,13 +3631,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Evolved Pink Skill",
+          "multiplierSummary": "Short Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Short"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Short courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -3609,16 +3653,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-510277",
-        "uma-506211"
+        "uma-775196",
+        "uma-554860",
+        "uma-666499"
       ],
       "tierOverall": "SS",
-      "tierReroll": "SS",
+      "tierReroll": "SSS",
       "tierBossRaid": "SS",
       "numericScore": 9.2,
       "summaryVerdict": "Bamboo Memory [Ultra Marine] is a SS-Tier Short-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks.",
       "longevityNote": "Top-meta Short Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-538996"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-538996"
     },
     {
       "externalId": "uma-unit-510277",
@@ -3666,13 +3711,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -3688,16 +3733,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-506211",
-        "uma-504927"
+        "uma-602130",
+        "uma-754944",
+        "uma-775195"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.5,
       "summaryVerdict": "Ines Fujin [MELTY GIFT] is a SS-Tier Mile-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-510277"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-510277"
     },
     {
       "externalId": "uma-unit-506211",
@@ -3745,13 +3791,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -3767,8 +3813,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-504927",
-        "uma-376568"
+        "uma-780423",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3776,7 +3823,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.4,
       "summaryVerdict": "Kitasan Black [Auspicious Crane Headliner] is a SS-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-506211"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-506211"
     },
     {
       "externalId": "uma-unit-504927",
@@ -3824,13 +3871,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -3846,16 +3893,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-376568",
-        "uma-818828"
+        "uma-584944",
+        "uma-785654",
+        "uma-547974"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
+      "tierBossRaid": "SSS",
       "numericScore": 9.3,
       "summaryVerdict": "Narita Brian [Hungry Wolf] is a SS-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-504927"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-504927"
     },
     {
       "externalId": "uma-unit-376568",
@@ -3903,13 +3951,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -3925,8 +3973,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-818828",
-        "uma-815143"
+        "uma-510277",
+        "uma-675742",
+        "uma-639905"
       ],
       "tierOverall": "SS",
       "tierReroll": "SS",
@@ -3934,7 +3983,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9.3,
       "summaryVerdict": "Taiki Shuttle [Wild Frontier] is a SS-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-376568"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-376568"
     },
     {
       "externalId": "uma-unit-818828",
@@ -3982,13 +4031,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -4004,16 +4053,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-815143",
-        "uma-807041"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "SS",
       "numericScore": 8.7,
       "summaryVerdict": "Air Groove [Eternal Hecateia] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-818828"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-818828"
     },
     {
       "externalId": "uma-unit-815143",
@@ -4061,13 +4111,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -4083,8 +4133,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-807041",
-        "uma-802527"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -4092,7 +4143,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Phalaenopsis [Peerless Dawn] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-815143"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-815143"
     },
     {
       "externalId": "uma-unit-807041",
@@ -4140,13 +4191,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -4162,16 +4213,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-802527",
-        "uma-782230"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.9,
       "summaryVerdict": "Fusaichi Pandora [Snatchin Hearts] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-807041"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-807041"
     },
     {
       "externalId": "uma-unit-802527",
@@ -4219,13 +4271,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -4241,16 +4293,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-782230",
-        "uma-778574"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Mejiro Bright [Seaside Elegance Chiffon] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-802527"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-802527"
     },
     {
       "externalId": "uma-unit-782230",
@@ -4298,13 +4351,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -4320,16 +4373,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-778574",
-        "uma-775195"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Fuji Kiseki [Blanche Etoile] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-782230"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-782230"
     },
     {
       "externalId": "uma-unit-778574",
@@ -4377,13 +4431,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -4399,8 +4453,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-775195",
-        "uma-751668"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -4408,7 +4463,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "Lucky Lilac [Unbreakable Regalia] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-778574"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-778574"
     },
     {
       "externalId": "uma-unit-775195",
@@ -4456,13 +4511,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -4478,16 +4533,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-751668",
-        "uma-751669"
+        "uma-510277",
+        "uma-602130",
+        "uma-754944"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 9,
       "summaryVerdict": "North Flight [Azure Flash] is a S-Tier Mile-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-775195"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-775195"
     },
     {
       "externalId": "uma-unit-751668",
@@ -4535,13 +4591,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -4557,16 +4613,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-751669",
-        "uma-746402"
+        "uma-641198",
+        "uma-794061",
+        "uma-661551"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.9,
       "summaryVerdict": "Sakura Laurel [Nouvelle Pousse] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-751668"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-751668"
     },
     {
       "externalId": "uma-unit-751669",
@@ -4614,13 +4671,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -4636,16 +4693,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-746402",
-        "uma-737336"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Ikuno Dictus [Orderly Stroll] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-751669"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-751669"
     },
     {
       "externalId": "uma-unit-746402",
@@ -4693,13 +4751,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -4715,16 +4773,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-737336",
-        "uma-727873"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Nakayama Festa [Festive Gambit] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-746402"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-746402"
     },
     {
       "externalId": "uma-unit-737336",
@@ -4772,13 +4831,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
         }
       ],
       "passives": [
@@ -4794,16 +4853,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-727873",
-        "uma-710376"
+        "uma-685367",
+        "uma-734203",
+        "uma-717556"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.7,
       "summaryVerdict": "Wonder Acute [Warm Lantern Hot Spring] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-737336"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-737336"
     },
     {
       "externalId": "uma-unit-727873",
@@ -4851,13 +4911,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -4873,16 +4933,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-710376",
-        "uma-707101"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 9,
       "summaryVerdict": "Tosen Jordan [Highkey Hallowed] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-727873"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-727873"
     },
     {
       "externalId": "uma-unit-710376",
@@ -4930,13 +4991,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -4952,8 +5013,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-707101",
-        "uma-705722"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -4961,7 +5023,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "Special Week [Eclat d Ete] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-710376"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-710376"
     },
     {
       "externalId": "uma-unit-707101",
@@ -5009,13 +5071,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -5031,8 +5093,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-705722",
-        "uma-687349"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5040,7 +5103,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Rhein Kraft [Eternal Fairytale] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-707101"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-707101"
     },
     {
       "externalId": "uma-unit-705722",
@@ -5088,13 +5151,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -5110,16 +5173,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-687349",
-        "uma-685368"
+        "uma-751219",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Ines Fujin [Hello Hello Island] is a S-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-705722"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-705722"
     },
     {
       "externalId": "uma-unit-687349",
@@ -5167,13 +5231,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -5189,16 +5253,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-685368",
-        "uma-661551"
+        "uma-510277",
+        "uma-675742",
+        "uma-639905"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.7,
       "summaryVerdict": "Verxina [Le Beau Sommet] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-687349"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-687349"
     },
     {
       "externalId": "uma-unit-685368",
@@ -5246,13 +5311,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
         }
       ],
       "passives": [
@@ -5268,16 +5333,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-661551",
-        "uma-659197"
+        "uma-685367",
+        "uma-734203",
+        "uma-717556"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 9,
       "summaryVerdict": "Copano Rickey [Radiant Fortune Regalia] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-685368"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-685368"
     },
     {
       "externalId": "uma-unit-661551",
@@ -5325,13 +5391,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -5347,8 +5413,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-659197",
-        "uma-655284"
+        "uma-641198",
+        "uma-818827",
+        "uma-794061"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5356,7 +5423,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "Mr. C.B. [Dazzling Kabuki Star] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-661551"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-661551"
     },
     {
       "externalId": "uma-unit-659197",
@@ -5404,13 +5471,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -5426,8 +5493,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-655284",
-        "uma-643036"
+        "uma-584944",
+        "uma-708453",
+        "uma-547974"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5435,7 +5503,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Grass Wonder [Blue Flame Honor] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-659197"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-659197"
     },
     {
       "externalId": "uma-unit-655284",
@@ -5483,13 +5551,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -5505,8 +5573,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-643036",
-        "uma-629750"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5514,7 +5583,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Narita Top Road [Celestial Road] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-655284"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-655284"
     },
     {
       "externalId": "uma-unit-643036",
@@ -5562,13 +5631,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -5584,16 +5653,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-629750",
-        "uma-614759"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.7,
       "summaryVerdict": "Bubble Gum Fellow [POPPING!] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-643036"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-643036"
     },
     {
       "externalId": "uma-unit-629750",
@@ -5641,13 +5711,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -5663,16 +5733,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-614759",
-        "uma-606583"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 9,
       "summaryVerdict": "Eishin Flash [Reines Platschern] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-629750"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-629750"
     },
     {
       "externalId": "uma-unit-614759",
@@ -5720,13 +5791,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -5742,8 +5813,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-606583",
-        "uma-600193"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5751,7 +5823,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "Jungle Pocket [Roar of the Monarch] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-614759"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-614759"
     },
     {
       "externalId": "uma-unit-606583",
@@ -5799,13 +5871,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -5821,8 +5893,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-600193",
-        "uma-595542"
+        "uma-641198",
+        "uma-818827",
+        "uma-661551"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5830,7 +5903,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Super Creek [Merciful Rain Shadow] is a S-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-606583"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-606583"
     },
     {
       "externalId": "uma-unit-600193",
@@ -5878,13 +5951,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -5900,16 +5973,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-595542",
-        "uma-579403"
+        "uma-510277",
+        "uma-602130",
+        "uma-775195"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Rhein Kraft [Dream Successor] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-600193"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-600193"
     },
     {
       "externalId": "uma-unit-595542",
@@ -5957,13 +6031,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -5979,8 +6053,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-579403",
-        "uma-554860"
+        "uma-802528",
+        "uma-780423",
+        "uma-811061"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -5988,7 +6063,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "Duramente [Red in Black] is a S-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-595542"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-595542"
     },
     {
       "externalId": "uma-unit-579403",
@@ -6036,13 +6111,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -6058,7 +6133,8 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-554860",
+        "uma-584944",
+        "uma-708453",
         "uma-547974"
       ],
       "tierOverall": "S",
@@ -6067,7 +6143,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Mejiro Bright [Starlit Snow Lolita] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-579403"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-579403"
     },
     {
       "externalId": "uma-unit-554860",
@@ -6115,13 +6191,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Evolved Pink Skill",
+          "multiplierSummary": "Short Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Short"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Short courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Short courses."
         }
       ],
       "passives": [
@@ -6137,16 +6213,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-547974",
-        "uma-523946"
+        "uma-775196",
+        "uma-538996",
+        "uma-666499"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.9,
       "summaryVerdict": "K.S. Miracle [Prism] is a S-Tier Short-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks.",
       "longevityNote": "Top-meta Short Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-554860"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-554860"
     },
     {
       "externalId": "uma-unit-547974",
@@ -6194,13 +6271,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -6216,16 +6293,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-523946",
-        "uma-486171"
+        "uma-584944",
+        "uma-785654",
+        "uma-708453"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Gold Ship [La Mode 564] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-547974"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-547974"
     },
     {
       "externalId": "uma-unit-523946",
@@ -6273,13 +6351,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -6295,16 +6373,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-486171",
-        "uma-482000"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Neo Universe [Universe-Naut] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-523946"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-523946"
     },
     {
       "externalId": "uma-unit-486171",
@@ -6352,13 +6431,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Evolved Pink Skill",
+          "multiplierSummary": "Short Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Short"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Short courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -6374,16 +6453,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
+        "uma-538996",
         "uma-482000",
-        "uma-473265"
+        "uma-775196"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "A",
       "numericScore": 8.7,
       "summaryVerdict": "Aston Machan [Flare] is a S-Tier Short-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks.",
       "longevityNote": "Top-meta Short Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-486171"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-486171"
     },
     {
       "externalId": "uma-unit-482000",
@@ -6431,13 +6511,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Short Evolved Pink Skill",
+          "multiplierSummary": "Short Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Short"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Short courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Short courses."
         }
       ],
       "passives": [
@@ -6453,8 +6533,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-473265",
-        "uma-468712"
+        "uma-775196",
+        "uma-538996",
+        "uma-666499"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -6462,7 +6543,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Seeking the Pearl [Rocket Star] is a S-Tier Short-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Short G1 tracks.",
       "longevityNote": "Top-meta Short Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-482000"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-482000"
     },
     {
       "externalId": "uma-unit-473265",
@@ -6510,13 +6591,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
         }
       ],
       "passives": [
@@ -6532,16 +6613,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-468712",
-        "uma-467730"
+        "uma-685367",
+        "uma-734203",
+        "uma-717556"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.9,
       "summaryVerdict": "Copano Rickey [Yin-Yang Fortune Regalia] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-473265"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-473265"
     },
     {
       "externalId": "uma-unit-468712",
@@ -6589,13 +6671,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -6611,8 +6693,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-467730",
-        "uma-447968"
+        "uma-641198",
+        "uma-818827",
+        "uma-794061"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -6620,7 +6703,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Gold Ship [Run! Splash! Launcher!!] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-468712"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-468712"
     },
     {
       "externalId": "uma-unit-467730",
@@ -6668,13 +6751,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -6690,8 +6773,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-447968",
-        "uma-446143"
+        "uma-584944",
+        "uma-708453",
+        "uma-547974"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -6699,7 +6783,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Special Week [Supreme Commander of Japan] is a S-Tier Long-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-467730"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-467730"
     },
     {
       "externalId": "uma-unit-447968",
@@ -6747,13 +6831,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -6769,8 +6853,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-446143",
-        "uma-440486"
+        "uma-510277",
+        "uma-675742",
+        "uma-639905"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -6778,7 +6863,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.7,
       "summaryVerdict": "Nishino Flower [Tiered Petal] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-447968"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-447968"
     },
     {
       "externalId": "uma-unit-446143",
@@ -6826,13 +6911,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -6848,8 +6933,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-440486",
-        "uma-391131"
+        "uma-785654",
+        "uma-708453",
+        "uma-547974"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -6857,7 +6943,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Seiun Sky [Soiree de Chaton] is a S-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-446143"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-446143"
     },
     {
       "externalId": "uma-unit-440486",
@@ -6905,13 +6991,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -6927,8 +7013,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-391131",
-        "uma-376672"
+        "uma-818827",
+        "uma-794061",
+        "uma-661551"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -6936,7 +7023,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "Kitasan Black [Gilded Festival Mikoshi] is a S-Tier Long-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-440486"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-440486"
     },
     {
       "externalId": "uma-unit-391131",
@@ -6984,13 +7071,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Runner Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Secures the 1st-place lead rod on early-race entry and triggers 0.40 m/s² late-race corner acceleration."
         }
       ],
       "passives": [
@@ -7006,16 +7093,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-376672",
-        "uma-829952"
+        "uma-751219",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Seiun Sky [Blue Cloud Summing] is a S-Tier Medium-distance Runner Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Runner contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-391131"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-391131"
     },
     {
       "externalId": "uma-unit-376672",
@@ -7063,13 +7151,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -7085,16 +7173,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-829952",
-        "uma-812592"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Special Week [Special Dreamer] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-376672"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-376672"
     },
     {
       "externalId": "uma-unit-829952",
@@ -7142,13 +7231,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -7164,16 +7253,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-812592",
-        "uma-812593"
+        "uma-757130",
+        "uma-751219",
+        "uma-755849"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 8.7,
       "summaryVerdict": "Duramente [Claret Nosferatu] is a S-Tier Medium-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-829952"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-829952"
     },
     {
       "externalId": "uma-unit-812592",
@@ -7221,13 +7311,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Long courses."
         }
       ],
       "passives": [
@@ -7243,8 +7333,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-812593",
-        "uma-791608"
+        "uma-641198",
+        "uma-818827",
+        "uma-661551"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -7252,7 +7343,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 9,
       "summaryVerdict": "Fenomeno [Indomitable Violet Flame] is a S-Tier Long-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-812592"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-812592"
     },
     {
       "externalId": "uma-unit-812593",
@@ -7300,13 +7391,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Dirt Evolved Pink Skill",
+          "multiplierSummary": "Dirt Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Dirt"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Dirt courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Dirt courses."
         }
       ],
       "passives": [
@@ -7322,16 +7413,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-791608",
-        "uma-784735"
+        "uma-685367",
+        "uma-734203",
+        "uma-717556"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "SS",
       "numericScore": 8.9,
       "summaryVerdict": "Shinko Windy [Chomp-Chomp Scamp] is a S-Tier Dirt-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Dirt G1 tracks.",
       "longevityNote": "Top-meta Dirt Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-812593"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-812593"
     },
     {
       "externalId": "uma-unit-791608",
@@ -7379,13 +7471,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -7401,8 +7493,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-784735",
-        "uma-783894"
+        "uma-802528",
+        "uma-780423",
+        "uma-670452"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -7410,7 +7503,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Curren Bouquetd'or [Floral Couture] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-791608"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-791608"
     },
     {
       "externalId": "uma-unit-784735",
@@ -7458,13 +7551,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -7480,8 +7573,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-783894",
-        "uma-758980"
+        "uma-757130",
+        "uma-755849",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -7489,7 +7583,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.8,
       "summaryVerdict": "Red Desire [Divine Raiment] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-784735"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-784735"
     },
     {
       "externalId": "uma-unit-783894",
@@ -7537,13 +7631,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Mile Evolved Pink Skill",
+          "multiplierSummary": "Mile Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Mile"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Mile courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Mile courses."
         }
       ],
       "passives": [
@@ -7559,16 +7653,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-758980",
-        "uma-746401"
+        "uma-510277",
+        "uma-675742",
+        "uma-639905"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "A",
       "tierBossRaid": "S",
       "numericScore": 8.7,
       "summaryVerdict": "Daring Heart [Daring Darling!] is a S-Tier Mile-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Mile G1 tracks.",
       "longevityNote": "Top-meta Mile Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-783894"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-783894"
     },
     {
       "externalId": "uma-unit-758980",
@@ -7616,13 +7711,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -7638,16 +7733,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-746401",
-        "uma-731548"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierBossRaid": "SS",
       "numericScore": 9,
       "summaryVerdict": "Sounds of Earth [Sonata Alla Menta] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-758980"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-758980"
     },
     {
       "externalId": "uma-unit-746401",
@@ -7695,13 +7791,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Long Evolved Pink Skill",
+          "multiplierSummary": "Long Chaser Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Long"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Long courses."
+          "exactDescription": "Unleashes straightaway spurt acceleration from the back pack to bypass mid-pack traffic blocks."
         }
       ],
       "passives": [
@@ -7717,8 +7813,9 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-731548",
-        "uma-723606"
+        "uma-641198",
+        "uma-818827",
+        "uma-794061"
       ],
       "tierOverall": "S",
       "tierReroll": "S",
@@ -7726,7 +7823,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "numericScore": 8.9,
       "summaryVerdict": "Dream Journey [Snow-White Dream Path] is a S-Tier Long-distance Chaser Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Long G1 tracks.",
       "longevityNote": "Top-meta Long Chaser contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-746401"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-746401"
     },
     {
       "externalId": "uma-unit-731548",
@@ -7774,13 +7871,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Leader Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Maintains 2nd–4th pace position with 0.35 m/s mid-leg velocity and builtin stamina recovery on Medium courses."
         }
       ],
       "passives": [
@@ -7796,16 +7893,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-723606",
-        "uma-818827"
+        "uma-757130",
+        "uma-751219",
+        "uma-744513"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
-      "tierBossRaid": "S",
+      "tierReroll": "A",
+      "tierBossRaid": "SS",
       "numericScore": 8.8,
       "summaryVerdict": "Dantsu Flame [Center Spotlight] is a S-Tier Medium-distance Leader Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Leader contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-731548"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-731548"
     },
     {
       "externalId": "uma-unit-723606",
@@ -7853,13 +7951,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
           "name": "Awakening Lv.5 Evolved Skill",
           "type": "TRAINING_EVENT",
           "spOrEnergyCost": "180 Skill Pts",
-          "multiplierSummary": "Medium Evolved Pink Skill",
+          "multiplierSummary": "Medium Betweener Evolved Pink Skill",
           "hitCount": 1,
           "buffCategoryTags": [
             "Evolved Pink Skill",
             "Medium"
           ],
-          "exactDescription": "Upgrades at Awakening Lv.5 to grant massive mid-race speed and final-leg spurt consistency on Medium courses."
+          "exactDescription": "Overtakes from 5th–9th position on the final corner with 0.45 m/s target speed and +0.40 m/s² burst spurt."
         }
       ],
       "passives": [
@@ -7875,16 +7973,17 @@ export const umaMusumeBundle: GameAdapterBundle = {
         }
       ],
       "synergyUnitSlugs": [
-        "uma-818827",
-        "uma-811061"
+        "uma-802528",
+        "uma-811061",
+        "uma-670452"
       ],
       "tierOverall": "S",
-      "tierReroll": "S",
+      "tierReroll": "SS",
       "tierBossRaid": "S",
       "numericScore": 8.8,
       "summaryVerdict": "Marvelous Sunday [Trick Ribbonetta] is a S-Tier Medium-distance Betweener Trainee for Champions Meet and League of Heroes. Features built-in final-corner acceleration, mid-race positioning velocity, and Evolved Pink Skills tailored for Medium G1 tracks.",
       "longevityNote": "Top-meta Medium Betweener contender across Champions Meet and League of Heroes G1 tournaments.",
-      "sourceUrl": "https://meta.gg/uma-musume/units/uma-723606"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/units/uma-723606"
     }
   ],
   "equipments": [
@@ -7908,11 +8007,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "effectSummary": "SSS-Tier SSR Speed Support Card (Tokai Teio [Genius Utopia]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
         "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-629749",
+        "uma-563273",
+        "uma-705722",
+        "uma-447968"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-733886"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-733886"
     },
     {
       "externalId": "uma-card-751667",
@@ -7933,12 +8033,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Speed Support Card (Air Groove [Heartfelt Kyoto Blossom]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
         "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-584944",
+        "uma-543421",
+        "uma-687349",
+        "uma-446143"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-751667"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-751667"
     },
     {
       "externalId": "uma-card-782234",
@@ -7959,12 +8060,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Speed Support Card (Tap Dance City [Blade Flash Clash!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
         "uma-794061",
-        "uma-785654"
+        "uma-836268",
+        "uma-538996",
+        "uma-685368",
+        "uma-440486"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-782234"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-782234"
     },
     {
       "externalId": "uma-card-785656",
@@ -7985,12 +8087,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Speed Support Card (Satono Diamond [Eternal Vow, Eternal Brilliance]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-785654",
+        "uma-802528",
+        "uma-510277",
+        "uma-661551",
+        "uma-391131"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-785656"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-785656"
     },
     {
       "externalId": "uma-card-811060",
@@ -8011,12 +8114,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Speed Support Card (Mr. C.B. [Where Sea and Sky Meet]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-780423",
+        "uma-799891",
+        "uma-506211",
+        "uma-659197",
+        "uma-376672"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-811060"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-811060"
     },
     {
       "externalId": "uma-card-811059",
@@ -8037,12 +8141,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Speed Support Card (Efforia [As if Guided]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-775196",
+        "uma-796335",
+        "uma-504927",
+        "uma-655284",
+        "uma-829952"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-811059"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-811059"
     },
     {
       "externalId": "uma-card-794062",
@@ -8064,11 +8169,10 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "effectSummary": "SSS-Tier SSR Stamina Support Card (Meisho Doto [Raging Wave Tenacity]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
         "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-650313",
+        "uma-523946"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-794062"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-794062"
     },
     {
       "externalId": "uma-card-802531",
@@ -8089,12 +8193,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Stamina Support Card (Kiseki [Full-Color Summer]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
         "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-639905",
+        "uma-486171"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-802531"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-802531"
     },
     {
       "externalId": "uma-card-737339",
@@ -8115,12 +8218,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Power Support Card (Mihono Bourbon [Inorganic Fighting Spirit]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
         "uma-794061",
-        "uma-785654"
+        "uma-602130",
+        "uma-482000"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-737339"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-737339"
     },
     {
       "externalId": "uma-card-836269",
@@ -8141,12 +8243,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Power Support Card (Mayano Top Gun [Time of Departure]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-785654",
+        "uma-563273",
+        "uma-473265"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-836269"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-836269"
     },
     {
       "externalId": "uma-card-778571",
@@ -8167,12 +8268,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Guts Support Card (Aston Machan [Prime Lens Focus]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-780423",
+        "uma-543421",
+        "uma-468712"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-778571"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-778571"
     },
     {
       "externalId": "uma-card-763716",
@@ -8194,11 +8294,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "effectSummary": "SSS-Tier SSR Wisdom Support Card (Forever Young [Innovator]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
         "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-641198",
+        "uma-655283",
+        "uma-751669",
+        "uma-554860",
+        "uma-758980"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-763716"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-763716"
     },
     {
       "externalId": "uma-card-836270",
@@ -8219,12 +8321,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SSS-Tier SSR Friend / Group Support Card (Azuma [Joyous Festival Celebration]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
         "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-635115",
+        "uma-650313",
+        "uma-746402",
+        "uma-547974",
+        "uma-746401"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-836270"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-836270"
     },
     {
       "externalId": "uma-card-670447",
@@ -8245,12 +8349,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Speed Support Card (Almond Eye [Gaze That Changes the World]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-755849",
+        "uma-785653",
+        "uma-376568",
+        "uma-643036",
+        "uma-812592"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-670447"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-670447"
     },
     {
       "externalId": "uma-card-723595",
@@ -8271,12 +8376,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Speed Support Card (Eishin Flash [Zirkus der Traume]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-758981",
+        "uma-782228",
+        "uma-818828",
+        "uma-629750",
+        "uma-812593"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-723595"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-723595"
     },
     {
       "externalId": "uma-card-758987",
@@ -8297,12 +8403,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Speed Support Card (Matikanefukukitaru [Auspicious Valentine Chocolate]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-751219",
+        "uma-771047",
+        "uma-815143",
+        "uma-614759",
+        "uma-791608"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-758987"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-758987"
     },
     {
       "externalId": "uma-card-768738",
@@ -8323,12 +8430,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Speed Support Card (Marche Lorraine [Echoing Duet of Victory]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-734203",
+        "uma-768732",
+        "uma-807041",
+        "uma-606583",
+        "uma-784735"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-768738"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-768738"
     },
     {
       "externalId": "uma-card-815144",
@@ -8349,12 +8457,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Speed Support Card (Matikanetannhauser [Bound for a Warm Place]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-717556",
+        "uma-757130",
+        "uma-802527",
+        "uma-600193",
+        "uma-783894"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-815144"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-815144"
     },
     {
       "externalId": "uma-card-746404",
@@ -8375,12 +8484,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Stamina Support Card (Fenomeno [Warm Noel]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-775196",
+        "uma-538996",
+        "uma-467730"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-746404"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-746404"
     },
     {
       "externalId": "uma-card-783895",
@@ -8401,12 +8509,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Stamina Support Card (Sakura Chiyono O [Run Toward a Lively Future!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-755849",
+        "uma-510277",
+        "uma-447968"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-783895"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-783895"
     },
     {
       "externalId": "uma-card-751666",
@@ -8427,12 +8534,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Power Support Card (Fine Motion [Graceful Sparkling Journey]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-758981",
+        "uma-506211",
+        "uma-446143"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-751666"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-751666"
     },
     {
       "externalId": "uma-card-758988",
@@ -8453,12 +8559,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Power Support Card (Neo Universe [Star-Crossing Message]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-751219",
+        "uma-504927",
+        "uma-440486"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-758988"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-758988"
     },
     {
       "externalId": "uma-card-782235",
@@ -8479,12 +8584,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Power Support Card (Agnes Digital [Brave Challenger of All]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-734203",
+        "uma-376568",
+        "uma-391131"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-782235"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-782235"
     },
     {
       "externalId": "uma-card-785657",
@@ -8505,12 +8609,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Power Support Card (Gran Alegria [Smile Ever After]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-717556",
+        "uma-818828",
+        "uma-376672"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-785657"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-785657"
     },
     {
       "externalId": "uma-card-712501",
@@ -8531,12 +8634,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Guts Support Card (Stay Gold [Whimsical Wandering Star]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-712500",
+        "uma-815143",
+        "uma-829952"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-712501"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-712501"
     },
     {
       "externalId": "uma-card-775199",
@@ -8557,12 +8659,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Guts Support Card (Daring Tact [Pure Innocence in White]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-708453",
+        "uma-807041",
+        "uma-812592"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-775199"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-775199"
     },
     {
       "externalId": "uma-card-775198",
@@ -8583,12 +8684,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Guts Support Card (Daring Heart [Steadfast Resolve in White]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-697314",
+        "uma-802527",
+        "uma-812593"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-775198"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-775198"
     },
     {
       "externalId": "uma-card-818830",
@@ -8609,12 +8709,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Wisdom Support Card (Admire Groove [Frosty Bisque Doll]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
         "uma-794061",
-        "uma-785654"
+        "uma-629749",
+        "uma-639905",
+        "uma-737336",
+        "uma-523946",
+        "uma-731548"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-818830"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-818830"
     },
     {
       "externalId": "uma-card-818831",
@@ -8635,12 +8737,14 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Wisdom Support Card (Narita Brian [Evening Banquet]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-785654",
+        "uma-584944",
+        "uma-602130",
+        "uma-727873",
+        "uma-486171",
+        "uma-723606"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-818831"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-818831"
     },
     {
       "externalId": "uma-card-796336",
@@ -8661,12 +8765,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Wisdom Support Card (Nice Nature [Hands Full of Kokura Love]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-780423",
+        "uma-836268",
+        "uma-563273",
+        "uma-710376",
+        "uma-482000"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-796336"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-796336"
     },
     {
       "externalId": "uma-card-708457",
@@ -8687,12 +8792,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Wisdom Support Card (Win Variation [Waterside Principal]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-775196",
+        "uma-802528",
+        "uma-543421",
+        "uma-707101",
+        "uma-473265"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-708457"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-708457"
     },
     {
       "externalId": "uma-card-681576",
@@ -8713,12 +8819,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "SS-Tier SSR Wisdom Support Card (Daring Tact [Spotless White Brilliance]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-755849",
+        "uma-799891",
+        "uma-538996",
+        "uma-705722",
+        "uma-468712"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-681576"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-681576"
     },
     {
       "externalId": "uma-card-629755",
@@ -8739,12 +8846,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Speed Support Card (Smart Falcon [Wavefront Off-Shot]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-712500",
+        "uma-754944",
+        "uma-782230",
+        "uma-595542",
+        "uma-758980"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-629755"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-629755"
     },
     {
       "externalId": "uma-card-635113",
@@ -8765,12 +8873,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Speed Support Card (Still in Love [Devilish Whispers]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-708453",
+        "uma-749288",
+        "uma-778574",
+        "uma-579403",
+        "uma-746401"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-635113"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-635113"
     },
     {
       "externalId": "uma-card-713261",
@@ -8791,12 +8900,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Speed Support Card (Calstone Light O [Feline Sprinter]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-697314",
+        "uma-744513",
+        "uma-775195",
+        "uma-554860",
+        "uma-731548"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-713261"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-713261"
     },
     {
       "externalId": "uma-card-712502",
@@ -8817,12 +8927,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Speed Support Card (Admire Groove [Ice Crystal Sanctuary]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-688549",
+        "uma-708454",
+        "uma-751668",
+        "uma-547974",
+        "uma-723606"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-712502"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-712502"
     },
     {
       "externalId": "uma-card-692544",
@@ -8843,12 +8954,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Speed Support Card (Rhein Kraft [Unveiled Dream]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-685367",
+        "uma-707016",
+        "uma-751669",
+        "uma-523946"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-692544"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-692544"
     },
     {
       "externalId": "uma-card-679967",
@@ -8869,12 +8980,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Speed Support Card (Dream Journey [Beckoning Dreamscape]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-675742",
+        "uma-661550",
+        "uma-746402",
+        "uma-486171"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-679967"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-679967"
     },
     {
       "externalId": "uma-card-727874",
@@ -8895,12 +9006,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Stamina Support Card (Curren Bouquetd'or [Flora of Determination]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-688549",
+        "uma-782230",
+        "uma-791608"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-727874"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-727874"
     },
     {
       "externalId": "uma-card-746405",
@@ -8921,12 +9031,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Stamina Support Card (Gold Ship [Runaway Reindeer Incident!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-685367",
+        "uma-778574",
+        "uma-784735"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-746405"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-746405"
     },
     {
       "externalId": "uma-card-749323",
@@ -8947,12 +9056,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Stamina Support Card (Inari One [Hometown Brocade!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-675742",
+        "uma-775195",
+        "uma-783894"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-749323"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-749323"
     },
     {
       "externalId": "uma-card-623911",
@@ -8973,12 +9081,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Stamina Support Card (Dantsu Flame [And the Curtain Rises]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-670452",
+        "uma-751668",
+        "uma-758980"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-623911"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-623911"
     },
     {
       "externalId": "uma-card-679968",
@@ -8999,12 +9106,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Power Support Card (Vodka [Ballroom Tempest]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-666499",
+        "uma-751669",
+        "uma-746401"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-679968"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-679968"
     },
     {
       "externalId": "uma-card-685370",
@@ -9025,12 +9131,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Power Support Card (Buena Vista [Luz de Ensueno]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-641198",
+        "uma-746402",
+        "uma-731548"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-685370"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-685370"
     },
     {
       "externalId": "uma-card-700421",
@@ -9051,12 +9156,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Power Support Card (Tamamo Cross [Like White Lightning]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-635115",
+        "uma-737336",
+        "uma-723606"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-700421"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-700421"
     },
     {
       "externalId": "uma-card-812595",
@@ -9077,12 +9181,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Power Support Card (Haru Urara [Friendly Gift Exchange]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-629749",
+        "uma-727873",
+        "uma-510277"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-812595"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-812595"
     },
     {
       "externalId": "uma-card-652448",
@@ -9103,12 +9206,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Power Support Card (Symboli Kris S [COOL / CRAZY Buddy]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-584944",
+        "uma-710376",
+        "uma-506211"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-652448"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-652448"
     },
     {
       "externalId": "uma-card-754978",
@@ -9129,12 +9231,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Guts Support Card (King Halo [Shopping for Myself]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-836268",
+        "uma-707101",
+        "uma-504927"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-754978"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-754978"
     },
     {
       "externalId": "uma-card-802530",
@@ -9155,12 +9256,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Guts Support Card (Almond Eye [Summer Sky Chill Time]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-802528",
+        "uma-705722",
+        "uma-376568"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-802530"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-802530"
     },
     {
       "externalId": "uma-card-812594",
@@ -9181,12 +9281,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Guts Support Card (Biko Pegasus [Bad-Boy Hero Arrives!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-799891",
+        "uma-687349",
+        "uma-818828"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-812594"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-812594"
     },
     {
       "externalId": "uma-card-723596",
@@ -9207,12 +9306,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Guts Support Card (Fuji Kiseki [Magic from the Stage]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-796335",
+        "uma-685368",
+        "uma-815143"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-723596"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-723596"
     },
     {
       "externalId": "uma-card-666502",
@@ -9233,12 +9331,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Guts Support Card (Curren Chan [Cutest in Your Heart]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-785653",
+        "uma-661551",
+        "uma-807041"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-666502"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-666502"
     },
     {
       "externalId": "uma-card-713260",
@@ -9259,12 +9356,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Wisdom Support Card (Durandal [Tonight, For My Liege]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-758981",
+        "uma-796335",
+        "uma-510277",
+        "uma-687349",
+        "uma-467730"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-713260"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-713260"
     },
     {
       "externalId": "uma-card-692543",
@@ -9285,12 +9383,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Wisdom Support Card (Daring Heart [Blooming Buds]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-751219",
+        "uma-785653",
+        "uma-506211",
+        "uma-685368",
+        "uma-447968"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-692543"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-692543"
     },
     {
       "externalId": "uma-card-666501",
@@ -9311,12 +9410,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Wisdom Support Card (Ikuno Dictus [Even the Iron Maiden Smiles]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-734203",
+        "uma-782228",
+        "uma-504927",
+        "uma-661551",
+        "uma-446143"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-666501"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-666501"
     },
     {
       "externalId": "uma-card-661554",
@@ -9337,12 +9437,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Wisdom Support Card (Symboli Rudolf [Soaring Cloud Calligraphy]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-717556",
+        "uma-771047",
+        "uma-376568",
+        "uma-659197",
+        "uma-440486"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-661554"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-661554"
     },
     {
       "externalId": "uma-card-606577",
@@ -9363,12 +9464,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "S-Tier SSR Wisdom Support Card (Narita Taishin [Take Them Down!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-712500",
+        "uma-768732",
+        "uma-818828",
+        "uma-655284",
+        "uma-391131"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-606577"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-606577"
     },
     {
       "externalId": "uma-card-546717",
@@ -9389,12 +9491,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Speed Support Card (El Condor Pasa [Soaring Ambition]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-670452",
+        "uma-655283",
+        "uma-737336",
+        "uma-482000"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-546717"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-546717"
     },
     {
       "externalId": "uma-card-612009",
@@ -9415,12 +9517,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Speed Support Card (Vivlos [Alstroemeria Dream]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-666499",
+        "uma-650313",
+        "uma-727873",
+        "uma-473265"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-612009"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-612009"
     },
     {
       "externalId": "uma-card-655286",
@@ -9441,12 +9543,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Speed Support Card (Meisho Doto [Indomitable Howl]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-641198",
+        "uma-639905",
+        "uma-710376",
+        "uma-468712"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-655286"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-655286"
     },
     {
       "externalId": "uma-card-641201",
@@ -9467,12 +9569,12 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Speed Support Card (Narita Brian [Roaring Apoyando]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-635115",
+        "uma-602130",
+        "uma-707101",
+        "uma-467730"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-641201"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-641201"
     },
     {
       "externalId": "uma-card-708456",
@@ -9493,12 +9595,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Stamina Support Card (Duramente [Tranquillo]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-782228",
+        "uma-659197",
+        "uma-710376"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-708456"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-708456"
     },
     {
       "externalId": "uma-card-705748",
@@ -9519,12 +9620,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Stamina Support Card (Mejiro Ryan [Thirst for Victory]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-771047",
+        "uma-655284",
+        "uma-707101"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-705748"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-705748"
     },
     {
       "externalId": "uma-card-675743",
@@ -9545,12 +9645,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Stamina Support Card (Mejiro Bright [Spring Has Come]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-768732",
+        "uma-643036",
+        "uma-705722"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-675743"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-675743"
     },
     {
       "externalId": "uma-card-587963",
@@ -9571,12 +9670,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Stamina Support Card (Hokko Tarumae [White Wings Return]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-757130",
+        "uma-629750",
+        "uma-687349"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-587963"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-587963"
     },
     {
       "externalId": "uma-card-650311",
@@ -9597,12 +9695,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Stamina Support Card (Air Shakur [Cocoon]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-754944",
+        "uma-614759",
+        "uma-685368"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-650311"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-650311"
     },
     {
       "externalId": "uma-card-661553",
@@ -9623,12 +9720,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Power Support Card (Mejiro Ardan [To the Sheltered Maiden]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-749288",
+        "uma-606583",
+        "uma-661551"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-661553"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-661553"
     },
     {
       "externalId": "uma-card-717557",
@@ -9649,12 +9745,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Guts Support Card (Daiichi Ruby [Inseparable]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-744513",
+        "uma-600193",
+        "uma-659197"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-717557"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-717557"
     },
     {
       "externalId": "uma-card-657201",
@@ -9675,12 +9770,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Guts Support Card (Blast Onepiece [Blast Off!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-708454",
+        "uma-595542",
+        "uma-655284"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-657201"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-657201"
     },
     {
       "externalId": "uma-card-641202",
@@ -9701,12 +9795,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Guts Support Card (Hishi Amazon [Bared Fangs Refrain]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-707016",
+        "uma-579403",
+        "uma-643036"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-641202"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-641202"
     },
     {
       "externalId": "uma-card-632699",
@@ -9727,12 +9820,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Guts Support Card (Fine Motion [History and Gastronomy]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-661550",
+        "uma-554860",
+        "uma-629750"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-632699"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-632699"
     },
     {
       "externalId": "uma-card-595474",
@@ -9753,12 +9845,11 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Guts Support Card (Orfevre [Simply Reigning]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-655283",
+        "uma-547974",
+        "uma-614759"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-595474"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-595474"
     },
     {
       "externalId": "uma-card-650312",
@@ -9779,12 +9870,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Wisdom Support Card (Daiwa Scarlet [Scarlet Wind Blows]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-708453",
+        "uma-757130",
+        "uma-815143",
+        "uma-643036",
+        "uma-376672"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-650312"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-650312"
     },
     {
       "externalId": "uma-card-629754",
@@ -9805,12 +9897,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Wisdom Support Card (Copano Rickey [Lucky Summertime]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-697314",
+        "uma-754944",
+        "uma-807041",
+        "uma-629750",
+        "uma-829952"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-629754"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-629754"
     },
     {
       "externalId": "uma-card-584901",
@@ -9831,12 +9924,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Wisdom Support Card (Satono Diamond [Hundred-Blossom Wish]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-688549",
+        "uma-749288",
+        "uma-802527",
+        "uma-614759",
+        "uma-812592"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-584901"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-584901"
     },
     {
       "externalId": "uma-card-574530",
@@ -9857,12 +9951,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Wisdom Support Card (Mejiro McQueen [Home Run Queen!?]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-685367",
+        "uma-744513",
+        "uma-782230",
+        "uma-606583",
+        "uma-812593"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-574530"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-574530"
     },
     {
       "externalId": "uma-card-513508",
@@ -9883,12 +9978,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Wisdom Support Card (Mejiro Ramonu [Radiant Splendor]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-675742",
+        "uma-708454",
+        "uma-778574",
+        "uma-600193",
+        "uma-791608"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-513508"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-513508"
     },
     {
       "externalId": "uma-card-473490",
@@ -9909,12 +10005,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Friend / Group Support Card (Light Hello [from the GROUND UP]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-670452",
+        "uma-707016",
+        "uma-775195",
+        "uma-595542",
+        "uma-784735"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-473490"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-473490"
     },
     {
       "externalId": "uma-card-372316",
@@ -9935,12 +10032,13 @@ export const umaMusumeBundle: GameAdapterBundle = {
       },
       "effectSummary": "A-Tier SSR Friend / Group Support Card (Tazuna Hayakawa [Welcome to Tracen Academy!]) with high Specialty Priority, Race Bonus, and Gold Skill hints.",
       "bestHolderSlugs": [
-        "uma-818827",
-        "uma-811061",
-        "uma-794061",
-        "uma-785654"
+        "uma-666499",
+        "uma-661550",
+        "uma-751668",
+        "uma-579403",
+        "uma-783894"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/support-cards/uma-card-372316"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/support-cards/uma-card-372316"
     }
   ],
   "bosses": [
@@ -9986,7 +10084,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
         "uma-785654",
         "uma-780423"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/events/champions-meet-tokyo-2400m"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/events/champions-meet-tokyo-2400m"
     },
     {
       "slug": "league-of-heroes-kyoto-3000m-long",
@@ -10022,7 +10120,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
         "uma-755849",
         "uma-758981"
       ],
-      "sourceUrl": "https://meta.gg/uma-musume/events/league-of-heroes-kyoto-3000m"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/events/league-of-heroes-kyoto-3000m"
     }
   ],
   "banners": [
@@ -10036,8 +10134,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
         "SSR Almond Eye [Gaze That Changes the World]"
       ],
       "featuredUnitSlugs": [
-        "uma-818827",
-        "uma-811061"
+        "uma-755849"
       ],
       "asianStartDate": "2026-10-29",
       "asianEndDate": "2026-11-18",
@@ -10046,7 +10143,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "SSS Tier 0 Trainee and #1 Universal Speed SSR Support Card — mandatory centerpiece for every competitive deck.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://meta.gg/uma-musume/banners/almond-eye"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/banners/almond-eye"
     },
     {
       "slug": "uma-forever-young-support-banner",
@@ -10068,7 +10165,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "pullVerdict": "MUST_PULL",
       "verdictReasoning": "Both Forever Young (Wisdom) and Efforia (Stamina) sit in SSS Tier 0 of the Support Card meta.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://meta.gg/uma-musume/banners/forever-young-efforia"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/banners/forever-young-efforia"
     },
     {
       "slug": "uma-rudolf-epiphaneia-pickup",
@@ -10090,7 +10187,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "pullVerdict": "HIGH_VALUE",
       "verdictReasoning": "Top-ranked SSS Tier Medium and Long-distance Trainees for Champions Meet Group A finals.",
       "pityCurrencyCost": 30000,
-      "sourceUrl": "https://meta.gg/uma-musume/banners/rudolf-epiphaneia"
+      "sourceUrl": "https://gachacrest.gg/uma-musume/banners/rudolf-epiphaneia"
     }
   ]
 };
