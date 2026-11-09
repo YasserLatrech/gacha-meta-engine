@@ -212,8 +212,8 @@ export function getServerSyncContext(
       isSimultaneous: true,
       syncMode: 'SIMULTANEOUS_SYNC',
       foresightGapMonths: 0,
-      badgeLabel: `🌐 SIMULTANEOUS GLOBAL & ASIA PATCH SYNC (${globalPatchVersion})`,
-      shortBadgeLabel: '🌐 Simultaneous Global/Asia Sync',
+      badgeLabel: `SIMULTANEOUS GLOBAL & ASIA PATCH SYNC (${globalPatchVersion})`,
+      shortBadgeLabel: 'Simultaneous Global/Asia Sync',
       explanation:
         'All Global, KR, and JP servers run on the exact same live patch and banner schedule with 0-month regional delay.',
     };
@@ -222,8 +222,8 @@ export function getServerSyncContext(
     isSimultaneous: false,
     syncMode: 'REGIONAL_FORESIGHT',
     foresightGapMonths,
-    badgeLabel: `🔭 +${foresightGapMonths}MO REGIONAL FORESIGHT LEAD (${globalPatchVersion})`,
-    shortBadgeLabel: `🔭 +${foresightGapMonths}mo Foresight Lead`,
+    badgeLabel: `+${foresightGapMonths}MO REGIONAL FORESIGHT LEAD (${globalPatchVersion})`,
+    shortBadgeLabel: `+${foresightGapMonths}mo Foresight Lead`,
     explanation: `Original server leads Global by ~${foresightGapMonths} months — use verified endgame raid & PvP usage data to plan future pulls with zero wasted pity.`,
   };
 }
@@ -348,8 +348,8 @@ export function computeMultiSourceConsensus(
   if (hasDupeSplit) {
     return {
       consensusStatus: 'SPLIT_VERDICT',
-      consensusBadgeLabel: `⚖️ SPLIT RATING: ${primaryTier} (LB1+) vs ${secondaryTier} (0-Dupe LB0)`,
-      shortPillLabel: `⚖️ Split: ${primaryTier}/${secondaryTier} (LB1)`,
+      consensusBadgeLabel: `SPLIT RATING: ${primaryTier} (LB1+) vs ${secondaryTier} (0-Dupe LB0)`,
+      shortPillLabel: `Split: ${primaryTier}/${secondaryTier} (LB1)`,
       agreementPct: 74,
       finalConsensusTier: baseTier,
       finalWeightedScore,
@@ -387,8 +387,8 @@ export function computeMultiSourceConsensus(
   if (hasModeSplit) {
     return {
       consensusStatus: 'SPLIT_VERDICT',
-      consensusBadgeLabel: `⚖️ MODE SPLIT: ${bossTier} (Boss Raid) vs ${rerollTier} (General)`,
-      shortPillLabel: `⚖️ Split: ${bossTier}/${rerollTier} (Mode)`,
+      consensusBadgeLabel: `MODE SPLIT: ${bossTier} (Boss Raid) vs ${rerollTier} (General)`,
+      shortPillLabel: `Split: ${bossTier}/${rerollTier} (Mode)`,
       agreementPct: 78,
       finalConsensusTier: baseTier,
       finalWeightedScore,
@@ -896,7 +896,7 @@ export function auditSquadSynergy(gameSlug: string, squad: GameHubUnitDTO[]): Sq
       scorePercent: 0,
       grade: 'INCOMPLETE',
       checklist: [],
-      summaryAdvice: 'Click "⚡ Auto-Build From My Box" or "+ Squad" on any character card to test your team synergy.',
+      summaryAdvice: 'Click "Auto-Build From My Box" or "+ Squad" on any character card to test your team synergy.',
     };
   }
 
@@ -1170,27 +1170,27 @@ export function getEquipmentLimitBreakTable(
       { stage: '0LB (Base)', bonus: '5% Training Effectiveness • +15 Friendship Bonus', verdict: 'Usable for Gold Skill only' },
       { stage: '1LB (Lv 35)', bonus: '+1 Initial Stat Bonus • +20 Specialty Priority', verdict: 'Unlocks base stat bonus' },
       { stage: '3LB (Lv 45)', bonus: '10% Training Effectiveness • +50 Specialty Priority • +10% Race Bonus', verdict: '★ F2P Sweet-Spot Breakpoint' },
-      { stage: 'MLB (Lv 50)', bonus: '15% Training Effectiveness • +80 Specialty Priority • Max Initial Gauge', verdict: '🏆 Champions Meeting Apex' },
+      { stage: 'MLB (Lv 50)', bonus: '15% Training Effectiveness • +80 Specialty Priority • Max Initial Gauge', verdict: 'Champions Meeting Apex' },
     ];
   }
   if (gameSlug === 'sword-of-convallaria') {
     return [
       { stage: '1★ (Base)', bonus: 'Base passive effect (Half scaling)', verdict: 'Immediate utility unlock' },
       { stage: '3★ (Mid)', bonus: '75% of max passive stat & proc chance', verdict: '★ Efficient Weaponry Trial stop' },
-      { stage: '5★ (Max)', bonus: '100% passive stat multiplier & 100% trigger reliability', verdict: '🏆 Endgame BiS for main carry' },
+      { stage: '5★ (Max)', bonus: '100% passive stat multiplier & 100% trigger reliability', verdict: 'Endgame BiS for main carry' },
     ];
   }
   if (gameSlug === 'heaven-burns-red') {
     return [
       { stage: '+0 Crafted', bonus: 'Base main stat + 3 random substat slots', verdict: 'Temporary starter gear' },
       { stage: '+4 Unlocked', bonus: 'All 3 substat slots unlocked (+37 STR/DEX/INT)', verdict: 'Solid mid-game threshold' },
-      { stage: '+6 Max Synthesis', bonus: 'Max +48/+55 substat cap across all 3 slots', verdict: '🏆 Grade 140 Score Attack Standard' },
+      { stage: '+6 Max Synthesis', bonus: 'Max +48/+55 substat cap across all 3 slots', verdict: 'Grade 140 Score Attack Standard' },
     ];
   }
   return [
     { stage: 'Lv 1 (Base)', bonus: 'Base Arcana passive & initial Resonance link', verdict: 'Usable immediately' },
     { stage: 'Break +2', bonus: '+25% Arcana Stat Bonus & +10% Link Gauge speed', verdict: '★ Recommended F2P target' },
-    { stage: 'Max Break +5', bonus: '+50% Arcana Stat Bonus & Max Burst Multiplier', verdict: '🏆 Apex Raid Leaderboard' },
+    { stage: 'Max Break +5', bonus: '+50% Arcana Stat Bonus & Max Burst Multiplier', verdict: 'Apex Raid Leaderboard' },
   ];
 }
 
