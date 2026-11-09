@@ -186,8 +186,15 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
 
   // 2. UMA MUSUME: TRACK/DISTANCE APTITUDE GRID + CAREER TRAINING EVENT CHOICE HELPER
   if (gameSlug === 'uma-musume' && deep.umaAptitudes) {
-    const gradeColor = (g: string) =>
-      g === 'S' || g === 'A' ? 'var(--accent-primary)' : g === 'B' ? 'var(--amber-primary)' : 'var(--text-muted)';
+    const gradeStyle = (g: string): { color: string; bg: string; border: string } => {
+      if (g === 'S') return { color: '#FBBF24', bg: 'rgba(251, 191, 36, 0.16)', border: 'rgba(251, 191, 36, 0.55)' };
+      if (g === 'A') return { color: '#FB7185', bg: 'rgba(251, 113, 133, 0.16)', border: 'rgba(251, 113, 133, 0.55)' };
+      if (g === 'B') return { color: '#F472B6', bg: 'rgba(244, 114, 182, 0.14)', border: 'rgba(244, 114, 182, 0.45)' };
+      if (g === 'C') return { color: '#34D399', bg: 'rgba(52, 211, 153, 0.14)', border: 'rgba(52, 211, 153, 0.45)' };
+      if (g === 'D') return { color: '#38BDF8', bg: 'rgba(56, 189, 248, 0.14)', border: 'rgba(56, 189, 248, 0.45)' };
+      if (g === 'E') return { color: '#A78BFA', bg: 'rgba(167, 139, 250, 0.14)', border: 'rgba(167, 139, 250, 0.45)' };
+      return { color: '#94A3B8', bg: 'rgba(148, 163, 184, 0.1)', border: 'rgba(148, 163, 184, 0.3)' };
+    };
 
     return (
       <section
@@ -278,26 +285,38 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
                 {group.title.toUpperCase()}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '7px' }}>
-                {group.items.map((it) => (
-                  <span
-                    key={it.label}
-                    className="mono"
-                    style={{
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: '6px',
-                      padding: '4px 9px',
-                      borderRadius: '5px',
-                      background: 'var(--bg-surface)',
-                      border: '1px solid var(--border-main)',
-                      fontSize: '12px',
-                      fontWeight: 800,
-                    }}
-                  >
-                    <span>{it.label}:</span>
-                    <strong style={{ color: gradeColor(it.grade), fontSize: '13.5px' }}>{it.grade}</strong>
-                  </span>
-                ))}
+                {group.items.map((it) => {
+                  const gs = gradeStyle(it.grade);
+                  return (
+                    <span
+                      key={it.label}
+                      className="mono"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '6px',
+                        padding: '4px 9px',
+                        borderRadius: '5px',
+                        background: gs.bg,
+                        border: `1.5px solid ${gs.border}`,
+                        fontSize: '12px',
+                        fontWeight: 800,
+                      }}
+                    >
+                      <span style={{ color: 'var(--text-main)' }}>{it.label}:</span>
+                      <strong
+                        style={{
+                          color: gs.color,
+                          fontSize: '14px',
+                          fontWeight: 900,
+                          textShadow: '0 1px 2px rgba(0,0,0,0.45)',
+                        }}
+                      >
+                        {it.grade}
+                      </strong>
+                    </span>
+                  );
+                })}
               </div>
             </div>
           ))}
