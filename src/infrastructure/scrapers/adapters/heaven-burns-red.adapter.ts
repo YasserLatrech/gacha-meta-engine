@@ -1078,10 +1078,10 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "hbr-784346",
         "hbr-721625"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
-      "numericScore": 9.4,
+      "numericScore": 9.7,
       "summaryVerdict": "Fubuki Mikoto [Muse of the Broken Night] is a SS-Tier Fire Debuffer (Slash) in Heaven Burns Red. Strikes all enemies 4 times with Fire Slash damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-816687"
@@ -1406,10 +1406,10 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "hbr-669859",
         "hbr-730675"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
-      "numericScore": 9.5,
+      "numericScore": 9.7,
       "summaryVerdict": "Shiki Hanamura [Evening Fireworks Nocturne] is a SS-Tier Ice Healer (Slash) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-794994"
@@ -1489,10 +1489,10 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "hbr-752169",
         "hbr-642066"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "S",
-      "tierBossRaid": "SS",
-      "numericScore": 9.4,
+      "tierBossRaid": "SSS",
+      "numericScore": 9.7,
       "summaryVerdict": "Charlotta Skopovskaya [Exotic Principessa] is a SS-Tier Fire Debuffer (Pierce) in Heaven Burns Red. Strikes all enemies 4 times with Fire Pierce damage while simultaneously applying -45% Base DEF Down, -45% Fire Resistance Down, and +50% Fragile Weakness Exposure for 2 turns.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-793215"
@@ -2478,10 +2478,10 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
         "hbr-752168",
         "hbr-764339"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SS",
-      "tierBossRaid": "SS",
-      "numericScore": 9.3,
+      "tierBossRaid": "SSS",
+      "numericScore": 9.7,
       "summaryVerdict": "Erika Aoi [Connecting Legacy] is a SS-Tier Ice Healer (Crush) in Heaven Burns Red. Restores 120% DP across the entire frontline and backline (reviving broken DP shields in Grade 140 Score Attack) while granting +35% Party DEF Up and +1 Overdrive Gauge charge.",
       "longevityNote": "Core meta staple for Grade 140 Score Attack and Anachrony multi-squad clear rotations.",
       "sourceUrl": "https://gachacrest.gg/heaven-burns-red/units/hbr-756804"

@@ -110,13 +110,13 @@ export function UnitAccountActionsClient({
       style={{
         background: 'var(--bg-surface)',
         border: '1.5px solid var(--border-strong)',
-        borderRadius: '6px',
-        padding: '12px',
+        borderRadius: '8px',
+        padding: '14px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '10px',
+        gap: '12px',
         position: 'sticky',
-        top: '14px',
+        top: '72px',
       }}
     >
       <div
@@ -124,22 +124,23 @@ export function UnitAccountActionsClient({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          borderBottom: '2px solid var(--border-strong)',
-          paddingBottom: '6px',
+          borderBottom: '2px solid var(--border-main)',
+          paddingBottom: '8px',
         }}
       >
-        <span style={{ fontSize: '11.5px', fontWeight: 900 }}>
+        <span style={{ fontSize: '13px', fontWeight: 800 }}>
           MY {gameShortName} ROSTER &amp; SQUAD TRACKER
         </span>
         <span
           className="mono"
           style={{
-            fontSize: '10px',
-            fontWeight: 900,
-            padding: '2px 6px',
-            borderRadius: '3px',
-            background: isOwned ? '#DCFCE7' : 'var(--bg-subtle)',
-            color: isOwned ? '#15803D' : 'var(--text-muted)',
+            fontSize: '11px',
+            fontWeight: 800,
+            padding: '2px 8px',
+            borderRadius: '4px',
+            background: isOwned ? 'var(--green-bg)' : 'var(--bg-subtle)',
+            color: isOwned ? 'var(--green-primary)' : 'var(--text-muted)',
+            border: isOwned ? '1px solid var(--green-border)' : '1px solid var(--border-main)',
           }}
         >
           {isOwned ? `OWNED • ${currentDupe}` : 'UNOWNED'}
@@ -152,13 +153,13 @@ export function UnitAccountActionsClient({
         onClick={toggleOwned}
         style={{
           width: '100%',
-          padding: '9px 12px',
-          borderRadius: '5px',
-          border: isOwned ? '1.5px solid #15803D' : '1.5px solid var(--accent-primary)',
-          background: isOwned ? '#DCFCE7' : 'var(--accent-primary)',
-          color: isOwned ? '#15803D' : '#FFFFFF',
-          fontWeight: 900,
-          fontSize: '12px',
+          padding: '10px 12px',
+          borderRadius: '6px',
+          border: isOwned ? '1.5px solid var(--green-border)' : '1.5px solid var(--accent-primary)',
+          background: isOwned ? 'var(--green-bg)' : 'var(--accent-primary)',
+          color: isOwned ? 'var(--green-primary)' : '#FFFFFF',
+          fontWeight: 800,
+          fontSize: '13px',
           cursor: 'pointer',
         }}
       >
@@ -167,10 +168,10 @@ export function UnitAccountActionsClient({
 
       {/* DUPE SELECTOR */}
       <div>
-        <div style={{ fontSize: '10.5px', fontWeight: 800, color: 'var(--text-muted)', marginBottom: '5px' }}>
+        <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '6px' }}>
           Select Your {statConfig.dupeSystemName}:
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '4px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '5px' }}>
           {DUPE_LEVELS.map((lv) => {
             const active = currentDupe === lv;
             return (
@@ -180,13 +181,13 @@ export function UnitAccountActionsClient({
                 onClick={() => setDupeLevel(lv)}
                 className="mono"
                 style={{
-                  padding: '5px 2px',
-                  fontSize: '10.5px',
-                  fontWeight: 900,
-                  borderRadius: '4px',
-                  border: active ? '1.5px solid #15803D' : '1px solid var(--border-main)',
-                  background: active ? '#15803D' : 'var(--bg-subtle)',
-                  color: active ? '#FFFFFF' : 'var(--text-main)',
+                  padding: '6px 4px',
+                  fontSize: '11.5px',
+                  fontWeight: 800,
+                  borderRadius: '5px',
+                  border: active ? '1.5px solid var(--green-border)' : '1px solid var(--border-main)',
+                  background: active ? 'var(--green-bg)' : 'var(--bg-subtle)',
+                  color: active ? 'var(--green-primary)' : 'var(--text-main)',
                   cursor: 'pointer',
                 }}
               >
@@ -203,13 +204,13 @@ export function UnitAccountActionsClient({
         onClick={toggleSquad}
         style={{
           width: '100%',
-          padding: '8px 12px',
-          borderRadius: '5px',
-          border: inSquad ? '1.5px solid #1E40AF' : '1px solid var(--border-strong)',
-          background: inSquad ? '#DBEAFE' : 'var(--bg-header)',
-          color: inSquad ? '#1E40AF' : '#FFFFFF',
-          fontWeight: 900,
-          fontSize: '11.5px',
+          padding: '9px 12px',
+          borderRadius: '6px',
+          border: inSquad ? '1.5px solid var(--blue-border)' : '1px solid var(--border-strong)',
+          background: inSquad ? 'var(--blue-bg)' : 'var(--bg-subtle)',
+          color: inSquad ? 'var(--blue-primary)' : 'var(--text-main)',
+          fontWeight: 800,
+          fontSize: '12.5px',
           cursor: 'pointer',
         }}
       >
@@ -223,14 +224,14 @@ export function UnitAccountActionsClient({
         style={{
           background: 'var(--bg-subtle)',
           border: '1px solid var(--border-main)',
-          borderRadius: '5px',
-          padding: '9px',
+          borderRadius: '6px',
+          padding: '11px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '6px',
+          gap: '8px',
         }}
       >
-        <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--text-main)' }}>
+        <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--amber-primary)' }}>
           INVESTMENT TIER SCALING (F2P vs WHALE)
         </div>
         {[
@@ -244,18 +245,18 @@ export function UnitAccountActionsClient({
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              fontSize: '11px',
-              paddingBottom: '4px',
+              fontSize: '12.5px',
+              paddingBottom: '5px',
               borderBottom: '1px solid var(--border-subtle)',
             }}
           >
             <span style={{ fontWeight: 700 }}>{row.label}</span>
-            <span className="mono" style={{ fontWeight: 900, color: 'var(--accent-primary)' }}>
+            <span className="mono" style={{ fontWeight: 800, color: row.ev.badgeColor }}>
               Tier {row.ev.adjustedTier} ({row.ev.adjustedScore.toFixed(1)})
             </span>
           </div>
         ))}
-        <div style={{ fontSize: '10.5px', color: 'var(--text-secondary)', lineHeight: 1.35 }}>
+        <div style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
           {f2pEval.explanation}
         </div>
       </div>
@@ -264,13 +265,13 @@ export function UnitAccountActionsClient({
         href={`/${gameSlug}`}
         style={{
           textAlign: 'center',
-          fontSize: '11px',
-          fontWeight: 900,
+          fontSize: '12.5px',
+          fontWeight: 800,
           color: 'var(--accent-primary)',
           paddingTop: '2px',
         }}
       >
-        Open Full {gameShortName} Squad Builder &amp; Box Tracker →
+        Open Full {gameShortName} Squad Builder &amp; Box Tracker &rarr;
       </Link>
     </div>
   );

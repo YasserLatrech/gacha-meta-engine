@@ -34,6 +34,8 @@ import {
   getBossLeaderboardClearTeams,
   getBossCharacterUsageRates,
   evaluateSquadVsBossEffectiveness,
+  getServerSyncContext,
+  computeMultiSourceConsensus,
 } from '../domain/game-mechanics';
 
 export type WikiTabKey = 'tier-list' | 'weapons' | 'bosses' | 'banners' | 'compare';
@@ -58,6 +60,10 @@ export function GameWikiClient({
   }, [searchParams]);
 
   const statConfig = useMemo(() => getGameStatLabels(hub.slug), [hub.slug]);
+  const syncCtx = useMemo(
+    () => getServerSyncContext(hub.slug, hub.foresightGapMonths, hub.globalPatchVersion),
+    [hub.slug, hub.foresightGapMonths, hub.globalPatchVersion]
+  );
   const boxStorageKey = `gachacrest_box_${hub.slug}`;
   const equipBoxStorageKey = `gachacrest_equip_box_${hub.slug}`;
   const squadStorageKey = `gachacrest_squad_${hub.slug}`;
@@ -1091,7 +1097,7 @@ export function GameWikiClient({
                   fontWeight: 800,
                 }}
               >
-                Patch: {hub.globalPatchVersion}
+                {syncCtx.badgeLabel}
               </span>
             </div>
 
@@ -1174,53 +1180,85 @@ export function GameWikiClient({
                     gap: '8px',
                   }}
                 >
-                  <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-                    <button
-                      type="button"
-                      onClick={() => setServerScope('ASIAN_FUTURE')}
-                      style={{
-                        padding: '5px 10px',
-                        borderRadius: '3px',
-                        fontSize: '11px',
-                        fontWeight: 800,
-                        cursor: 'pointer',
-                        border: '1px solid var(--border-strong)',
-                        background:
-                          serverScope === 'ASIAN_FUTURE' ? 'var(--bg-header)' : 'var(--bg-subtle)',
-                        color: serverScope === 'ASIAN_FUTURE' ? '#FFFFFF' : 'var(--text-secondary)',
-                      }}
-                    >
-                      All Units (Including Upcoming)
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setServerScope('GLOBAL_CURRENT')}
-                      style={{
-                        padding: '5px 10px',
-                        borderRadius: '3px',
-                        fontSize: '11px',
-                        fontWeight: 800,
-                        cursor: 'pointer',
-                        border: '1px solid var(--border-main)',
-                        background:
-                          serverScope === 'GLOBAL_CURRENT' ? 'var(--bg-header)' : 'var(--bg-subtle)',
-                        color: serverScope === 'GLOBAL_CURRENT' ? '#FFFFFF' : 'var(--text-secondary)',
-                      }}
-                    >
-                      Currently Released
-                    </button>
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', alignItems: 'center' }}>
+                    {syncCtx.isSimultaneous ? (
+                      <div
+                        className="mono"
+                        title={syncCtx.explanation}
+                        style={{
+                          padding: '6px 12px',
+                          borderRadius: '5px',
+                          fontSize: '11.5px',
+                          fontWeight: 900,
+                          background: 'var(--green-bg)',
+                          color: 'var(--green-primary)',
+                          border: '1.5px solid var(--green-border)',
+                        }}
+                      >
+                        🌐 SIMULTANEOUS GLOBAL &amp; ASIA PATCH SYNC — ALL {hub.units.length} CHARACTERS LIVE ON {hub.globalPatchVersion}
+                      </div>
+                    ) : (
+                      <>
+                        <button
+                          type="button"
+                          onClick={() => setServerScope('ASIAN_FUTURE')}
+                          style={{
+                            padding: '6px 12px',
+                            borderRadius: '4px',
+                            fontSize: '12px',
+                            fontWeight: 800,
+                            cursor: 'pointer',
+                            border:
+                              serverScope === 'ASIAN_FUTURE'
+                                ? '1.5px solid var(--blue-primary)'
+                                : '1px solid var(--border-main)',
+                            background:
+                              serverScope === 'ASIAN_FUTURE' ? 'var(--blue-bg)' : 'var(--bg-subtle)',
+                            color:
+                              serverScope === 'ASIAN_FUTURE'
+                                ? 'var(--blue-primary)'
+                                : 'var(--text-secondary)',
+                          }}
+                        >
+                          🔮 All Units (+{hub.foresightGapMonths}mo Regional Lead)
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setServerScope('GLOBAL_CURRENT')}
+                          style={{
+                            padding: '6px 12px',
+                            borderRadius: '4px',
+                            fontSize: '12px',
+                            fontWeight: 800,
+                            cursor: 'pointer',
+                            border:
+                              serverScope === 'GLOBAL_CURRENT'
+                                ? '1.5px solid var(--blue-primary)'
+                                : '1px solid var(--border-main)',
+                            background:
+                              serverScope === 'GLOBAL_CURRENT' ? 'var(--blue-bg)' : 'var(--bg-subtle)',
+                            color:
+                              serverScope === 'GLOBAL_CURRENT'
+                                ? 'var(--blue-primary)'
+                                : 'var(--text-secondary)',
+                          }}
+                        >
+                          Currently Released Global
+                        </button>
+                      </>
+                    )}
                   </div>
 
-                  <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', alignItems: 'center' }}>
                     {(['OVERALL', 'REROLL', 'BOSS_RAID'] as const).map((cat) => (
                       <button
                         key={cat}
                         type="button"
                         onClick={() => setTierCategory(cat)}
                         style={{
-                          padding: '4px 9px',
-                          borderRadius: '3px',
-                          fontSize: '10.5px',
+                          padding: '5px 11px',
+                          borderRadius: '4px',
+                          fontSize: '11.5px',
                           fontWeight: 800,
                           cursor: 'pointer',
                           border:
@@ -1246,12 +1284,12 @@ export function GameWikiClient({
                     alignItems: 'center',
                     flexWrap: 'wrap',
                     gap: '8px',
-                    paddingTop: '6px',
+                    paddingTop: '8px',
                     borderTop: '1px solid var(--border-subtle)',
                   }}
                 >
-                  <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
-                    <span className="mono" style={{ fontSize: '10px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                  <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <span className="mono" style={{ fontSize: '11px', fontWeight: 900, color: 'var(--text-muted)' }}>
                       DUPE / INVESTMENT TIER:
                     </span>
                     {(
@@ -1266,17 +1304,17 @@ export function GameWikiClient({
                         type="button"
                         onClick={() => setInvestmentMode(inv.key)}
                         style={{
-                          padding: '4px 9px',
+                          padding: '5px 11px',
                           borderRadius: '4px',
-                          fontSize: '10.5px',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           cursor: 'pointer',
                           border:
                             investmentMode === inv.key
-                              ? '1.5px solid #1E40AF'
+                              ? '1.5px solid var(--blue-primary)'
                               : '1px solid var(--border-main)',
-                          background: investmentMode === inv.key ? '#DBEAFE' : 'var(--bg-subtle)',
-                          color: investmentMode === inv.key ? '#1E40AF' : 'var(--text-secondary)',
+                          background: investmentMode === inv.key ? 'var(--blue-bg)' : 'var(--bg-subtle)',
+                          color: investmentMode === inv.key ? 'var(--blue-primary)' : 'var(--text-secondary)',
                         }}
                       >
                         {inv.label}
@@ -1284,8 +1322,8 @@ export function GameWikiClient({
                     ))}
                   </div>
 
-                  <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
-                    <span className="mono" style={{ fontSize: '10px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                  <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <span className="mono" style={{ fontSize: '11px', fontWeight: 900, color: 'var(--text-muted)' }}>
                       MY ROSTER BOX:
                     </span>
                     {(
@@ -1300,17 +1338,17 @@ export function GameWikiClient({
                         type="button"
                         onClick={() => setOwnershipFilter(f.key)}
                         style={{
-                          padding: '4px 8px',
+                          padding: '5px 10px',
                           borderRadius: '4px',
-                          fontSize: '10.5px',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           cursor: 'pointer',
                           border:
                             ownershipFilter === f.key
-                              ? '1.5px solid #15803D'
+                              ? '1.5px solid var(--green-primary)'
                               : '1px solid var(--border-main)',
-                          background: ownershipFilter === f.key ? '#DCFCE7' : 'var(--bg-subtle)',
-                          color: ownershipFilter === f.key ? '#15803D' : 'var(--text-secondary)',
+                          background: ownershipFilter === f.key ? 'var(--green-bg)' : 'var(--bg-subtle)',
+                          color: ownershipFilter === f.key ? 'var(--green-primary)' : 'var(--text-secondary)',
                         }}
                       >
                         {f.label}
@@ -1530,17 +1568,17 @@ export function GameWikiClient({
                       </div>
                     </div>
 
-                    <div style={{ display: 'flex', gap: '5px', alignItems: 'center', flexWrap: 'wrap' }}>
+                    <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
                       <button
                         type="button"
                         onClick={() => toggleOwnedUnit(quickPeekUnit.slug)}
                         style={{
                           padding: '6px 10px',
                           borderRadius: '4px',
-                          border: ownedBoxMap[quickPeekUnit.slug] ? '1.5px solid #15803D' : '1px solid var(--border-strong)',
-                          background: ownedBoxMap[quickPeekUnit.slug] ? '#DCFCE7' : 'var(--bg-subtle)',
-                          color: ownedBoxMap[quickPeekUnit.slug] ? '#15803D' : 'var(--text-main)',
-                          fontSize: '11px',
+                          border: ownedBoxMap[quickPeekUnit.slug] ? '1.5px solid var(--green-primary)' : '1px solid var(--border-strong)',
+                          background: ownedBoxMap[quickPeekUnit.slug] ? 'var(--green-bg)' : 'var(--bg-subtle)',
+                          color: ownedBoxMap[quickPeekUnit.slug] ? 'var(--green-primary)' : 'var(--text-main)',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           cursor: 'pointer',
                         }}
@@ -1556,13 +1594,13 @@ export function GameWikiClient({
                           onClick={() => setUnitDupeLevel(quickPeekUnit.slug, lv)}
                           className="mono"
                           style={{
-                            padding: '5px 7px',
+                            padding: '5px 8px',
                             borderRadius: '4px',
-                            fontSize: '10px',
+                            fontSize: '10.5px',
                             fontWeight: 900,
                             border: '1px solid var(--border-main)',
-                            background: ownedBoxMap[quickPeekUnit.slug] === lv ? '#15803D' : 'var(--bg-subtle)',
-                            color: ownedBoxMap[quickPeekUnit.slug] === lv ? '#FFF' : 'var(--text-main)',
+                            background: ownedBoxMap[quickPeekUnit.slug] === lv ? 'var(--green-primary)' : 'var(--bg-subtle)',
+                            color: ownedBoxMap[quickPeekUnit.slug] === lv ? '#07090D' : 'var(--text-main)',
                             cursor: 'pointer',
                           }}
                         >
@@ -1575,10 +1613,10 @@ export function GameWikiClient({
                         style={{
                           padding: '6px 10px',
                           borderRadius: '4px',
-                          border: '1px solid #1E40AF',
-                          background: activeSquadSlugs.includes(quickPeekUnit.slug) ? '#DBEAFE' : '#1E40AF',
-                          color: activeSquadSlugs.includes(quickPeekUnit.slug) ? '#1E40AF' : '#FFF',
-                          fontSize: '11px',
+                          border: '1px solid var(--blue-primary)',
+                          background: activeSquadSlugs.includes(quickPeekUnit.slug) ? 'var(--blue-bg)' : 'var(--blue-primary)',
+                          color: activeSquadSlugs.includes(quickPeekUnit.slug) ? 'var(--blue-primary)' : '#07090D',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           cursor: 'pointer',
                         }}
@@ -1592,7 +1630,7 @@ export function GameWikiClient({
                           borderRadius: '4px',
                           background: 'var(--accent-primary)',
                           color: '#FFF',
-                          fontSize: '11px',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                         }}
                       >
@@ -1602,11 +1640,12 @@ export function GameWikiClient({
                         type="button"
                         onClick={() => setQuickPeekSlug(null)}
                         style={{
-                          padding: '6px 9px',
+                          padding: '6px 10px',
                           borderRadius: '4px',
                           border: '1px solid var(--border-main)',
                           background: 'var(--bg-subtle)',
-                          fontSize: '11px',
+                          color: 'var(--text-main)',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           cursor: 'pointer',
                         }}
@@ -1616,13 +1655,41 @@ export function GameWikiClient({
                     </div>
                   </div>
 
+                  {/* MULTI-SOURCE CONSENSUS & USAGE PROOF INSIDE QUICK-PEEK */}
+                  {(() => {
+                    const qpConsensus = computeMultiSourceConsensus(hub.slug, quickPeekUnit);
+                    const isUnanimous = qpConsensus.consensusStatus !== 'SPLIT_VERDICT';
+                    return (
+                      <div
+                        style={{
+                          background: isUnanimous ? 'var(--green-bg)' : 'var(--amber-bg)',
+                          border: `1.5px solid ${isUnanimous ? 'var(--green-border)' : 'var(--amber-border)'}`,
+                          borderRadius: '6px',
+                          padding: '10px 12px',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: '5px',
+                        }}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '6px' }}>
+                          <span className="mono" style={{ fontSize: '11.5px', fontWeight: 900, color: isUnanimous ? 'var(--green-primary)' : 'var(--amber-primary)' }}>
+                            {qpConsensus.consensusBadgeLabel}
+                          </span>
+                          <span className="mono" style={{ fontSize: '11px', fontWeight: 800, color: 'var(--text-main)' }}>
+                            50% Usage: {qpConsensus.normalizedElementUsagePct}% ({qpConsensus.normalizedElementRankLabel}) • 30% Raid Lab: {qpConsensus.primaryWikiVote.tier} • 20% F2P LB0: {qpConsensus.secondaryWikiVote.tier}
+                          </span>
+                        </div>
+                        <div style={{ fontSize: '12px', color: 'var(--text-secondary)', fontWeight: 600 }}>
+                          <strong style={{ color: 'var(--text-main)' }}>Why Sources {isUnanimous ? 'Agree' : 'Differ'}:</strong> {qpConsensus.whySourcesDifferOrAgree}
+                        </div>
+                      </div>
+                    );
+                  })()}
+
                   {/* GAME-NATIVE STATS ROW INSIDE QUICK-PEEK */}
                   <div
-                    className="mono"
+                    className="mono stats-5-grid"
                     style={{
-                      display: 'grid',
-                      gridTemplateColumns: 'repeat(5, 1fr)',
-                      gap: '6px',
                       textAlign: 'center',
                     }}
                   >
@@ -1639,13 +1706,13 @@ export function GameWikiClient({
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           borderRadius: '4px',
-                          padding: '6px',
+                          padding: '7px',
                         }}
                       >
-                        <div style={{ fontSize: '9.5px', color: 'var(--text-muted)', fontWeight: 800 }}>
+                        <div style={{ fontSize: '10.5px', color: 'var(--text-muted)', fontWeight: 800 }}>
                           {st.label}
                         </div>
-                        <div style={{ fontSize: '13.5px', fontWeight: 900 }}>{st.val.toLocaleString()}</div>
+                        <div style={{ fontSize: '14.5px', fontWeight: 900 }}>{st.val.toLocaleString()}</div>
                       </div>
                     ))}
                   </div>
@@ -1659,18 +1726,18 @@ export function GameWikiClient({
                 style={{
                   background: 'var(--bg-surface)',
                   border: '1px solid var(--border-main)',
-                  borderRadius: '4px',
-                  padding: '12px',
+                  borderRadius: '6px',
+                  padding: '14px',
                   overflowX: 'auto',
                 }}
               >
                 <div
                   style={{
-                    fontSize: '12.5px',
+                    fontSize: '13.5px',
                     fontWeight: 900,
                     borderLeft: '4px solid var(--accent-primary)',
                     paddingLeft: '8px',
-                    marginBottom: '10px',
+                    marginBottom: '12px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     flexWrap: 'wrap',
@@ -1685,8 +1752,8 @@ export function GameWikiClient({
                         ? 'MAX WHALE (MLB / 5★)'
                         : 'SWEET-SPOT INVESTMENT (LB1 / 3★)'}
                   </span>
-                  <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                    Showing {filteredUnits.length} Characters • Click &ldquo;+ Box&rdquo; to Track Owned or &ldquo;⚡ Inspect&rdquo; for Quick Build
+                  <span className="mono" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
+                    Showing {filteredUnits.length} Characters • Multi-Source Consensus (50% Usage + 30% Raid Lab + 20% F2P LB0)
                   </span>
                 </div>
 
@@ -1695,7 +1762,7 @@ export function GameWikiClient({
                     width: '100%',
                     borderCollapse: 'collapse',
                     border: '1px solid var(--border-main)',
-                    minWidth: '620px',
+                    minWidth: '640px',
                   }}
                 >
                   <thead>
@@ -1703,10 +1770,10 @@ export function GameWikiClient({
                       <th
                         style={{
                           width: '58px',
-                          padding: '9px 6px',
-                          fontSize: '11.5px',
+                          padding: '10px 6px',
+                          fontSize: '12px',
                           fontWeight: 900,
-                          borderRight: '1px solid #3F3F46',
+                          borderRight: '1px solid var(--border-main)',
                           textAlign: 'center',
                         }}
                       >
@@ -1725,10 +1792,10 @@ export function GameWikiClient({
                           <th
                             key={rc.key}
                             style={{
-                              padding: '9px 8px',
-                              fontSize: '11px',
+                              padding: '10px 8px',
+                              fontSize: '11.5px',
                               fontWeight: 900,
-                              borderRight: '1px solid #3F3F46',
+                              borderRight: '1px solid var(--border-main)',
                               textAlign: 'center',
                             }}
                           >
@@ -1789,7 +1856,7 @@ export function GameWikiClient({
                               borderLeft: `4px solid ${badgeColor}`,
                               borderRight: '1px solid var(--border-main)',
                               fontWeight: 900,
-                              fontSize: '16px',
+                              fontSize: '17px',
                               textAlign: 'center',
                               verticalAlign: 'middle',
                             }}
@@ -1821,15 +1888,17 @@ export function GameWikiClient({
                                     const elemColor = getElementColor(u.element);
                                     const ownedDupe = ownedBoxMap[u.slug];
                                     const microTag = getUnitMicroTags(hub.slug, u)[0];
+                                    const unitConsensus = computeMultiSourceConsensus(hub.slug, u);
+                                    const isUnanimous = unitConsensus.consensusStatus !== 'SPLIT_VERDICT';
                                     return (
                                       <div
                                         key={u.slug}
                                         style={{
-                                          width: '88px',
+                                          width: '92px',
                                           display: 'flex',
                                           flexDirection: 'column',
                                           alignItems: 'center',
-                                          gap: '3px',
+                                          gap: '3.5px',
                                         }}
                                       >
                                         <Link
@@ -1838,19 +1907,19 @@ export function GameWikiClient({
                                             display: 'flex',
                                             flexDirection: 'column',
                                             alignItems: 'center',
-                                            gap: '3px',
+                                            gap: '3.5px',
                                           }}
                                         >
                                           <div
                                             style={{
-                                              width: '76px',
-                                              height: '76px',
+                                              width: '78px',
+                                              height: '78px',
                                               borderRadius: '8px',
                                               overflow: 'hidden',
-                                              border: ownedDupe ? '2.5px solid #15803D' : `2.5px solid ${elemColor}`,
+                                              border: ownedDupe ? '2.5px solid var(--green-primary)' : `2.5px solid ${elemColor}`,
                                               position: 'relative',
                                               background: 'var(--bg-subtle)',
-                                              boxShadow: '0 2px 6px rgba(0,0,0,0.14)',
+                                              boxShadow: '0 2px 8px rgba(0,0,0,0.35)',
                                             }}
                                           >
                                             <img
@@ -1870,7 +1939,7 @@ export function GameWikiClient({
                                                 right: 0,
                                                 background: elemColor,
                                                 color: '#FFF',
-                                                fontSize: '8.5px',
+                                                fontSize: '9px',
                                                 fontWeight: 900,
                                                 padding: '1px 4px',
                                                 borderTopLeftRadius: '4px',
@@ -1885,9 +1954,9 @@ export function GameWikiClient({
                                                   position: 'absolute',
                                                   top: 0,
                                                   left: 0,
-                                                  background: '#15803D',
-                                                  color: '#FFFFFF',
-                                                  fontSize: '8px',
+                                                  background: 'var(--green-primary)',
+                                                  color: '#07090D',
+                                                  fontSize: '8.5px',
                                                   fontWeight: 900,
                                                   padding: '1px 4px',
                                                   borderBottomRightRadius: '4px',
@@ -1901,9 +1970,9 @@ export function GameWikiClient({
                                                   position: 'absolute',
                                                   top: 0,
                                                   left: 0,
-                                                  background: '#18181B',
+                                                  background: 'rgba(11, 14, 20, 0.92)',
                                                   color: '#FDE047',
-                                                  fontSize: '8px',
+                                                  fontSize: '8.5px',
                                                   fontWeight: 900,
                                                   padding: '1px 4px',
                                                 }}
@@ -1914,21 +1983,40 @@ export function GameWikiClient({
                                           </div>
                                           <span
                                             style={{
-                                              fontSize: '10px',
+                                              fontSize: '11px',
                                               fontWeight: 800,
                                               color: 'var(--text-main)',
                                               textAlign: 'center',
-                                              lineHeight: 1.15,
+                                              lineHeight: 1.2,
                                             }}
                                           >
                                             {u.nameEn}
                                           </span>
                                         </Link>
+                                        <span
+                                          className="mono"
+                                          title={unitConsensus.whySourcesDifferOrAgree}
+                                          style={{
+                                            fontSize: '8.5px',
+                                            fontWeight: 900,
+                                            color: isUnanimous ? 'var(--green-primary)' : 'var(--amber-primary)',
+                                            background: isUnanimous ? 'var(--green-bg)' : 'var(--amber-bg)',
+                                            border: `1px solid ${isUnanimous ? 'var(--green-border)' : 'var(--amber-border)'}`,
+                                            borderRadius: '3px',
+                                            padding: '1px 4px',
+                                            whiteSpace: 'nowrap',
+                                            maxWidth: '90px',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis',
+                                          }}
+                                        >
+                                          {unitConsensus.shortPillLabel}
+                                        </span>
                                         {microTag && (
                                           <span
                                             className="mono"
                                             style={{
-                                              fontSize: '8.5px',
+                                              fontSize: '9px',
                                               fontWeight: 800,
                                               color: 'var(--text-secondary)',
                                               background: 'var(--bg-subtle)',
@@ -1936,7 +2024,7 @@ export function GameWikiClient({
                                               borderRadius: '3px',
                                               padding: '1px 4px',
                                               whiteSpace: 'nowrap',
-                                              maxWidth: '86px',
+                                              maxWidth: '90px',
                                               overflow: 'hidden',
                                               textOverflow: 'ellipsis',
                                             }}
@@ -1951,13 +2039,13 @@ export function GameWikiClient({
                                             className="mono"
                                             title="Add or remove character in My Roster Box"
                                             style={{
-                                              fontSize: '8px',
+                                              fontSize: '9px',
                                               fontWeight: 900,
-                                              padding: '2px 4px',
+                                              padding: '2px 5px',
                                               borderRadius: '3px',
-                                              border: ownedDupe ? '1px solid #15803D' : '1px solid var(--border-main)',
-                                              background: ownedDupe ? '#DCFCE7' : 'var(--bg-surface)',
-                                              color: ownedDupe ? '#15803D' : 'var(--text-secondary)',
+                                              border: ownedDupe ? '1px solid var(--green-primary)' : '1px solid var(--border-main)',
+                                              background: ownedDupe ? 'var(--green-bg)' : 'var(--bg-surface)',
+                                              color: ownedDupe ? 'var(--green-primary)' : 'var(--text-secondary)',
                                               cursor: 'pointer',
                                             }}
                                           >
@@ -1971,9 +2059,9 @@ export function GameWikiClient({
                                             className="mono"
                                             title="Open Quick Build & Skill Tree Inspector"
                                             style={{
-                                              fontSize: '8px',
+                                              fontSize: '9px',
                                               fontWeight: 900,
-                                              padding: '2px 4px',
+                                              padding: '2px 5px',
                                               borderRadius: '3px',
                                               border: '1px solid var(--border-main)',
                                               background:
@@ -2040,6 +2128,8 @@ export function GameWikiClient({
                   const synergyPartners = u.synergyUnitSlugs
                     .map((s) => hub.units.find((cand) => cand.slug === s))
                     .filter(Boolean);
+                  const consensus = computeMultiSourceConsensus(hub.slug, u);
+                  const isUnanimous = consensus.consensusStatus !== 'SPLIT_VERDICT';
 
                   return (
                     <article
@@ -2047,11 +2137,11 @@ export function GameWikiClient({
                       style={{
                         border: '1px solid var(--border-main)',
                         borderRadius: '6px',
-                        padding: '12px',
+                        padding: '14px',
                         background: 'var(--bg-subtle)',
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '9px',
+                        gap: '10px',
                       }}
                     >
                       <div
@@ -2073,7 +2163,7 @@ export function GameWikiClient({
                               objectFit: 'cover',
                               objectPosition: 'top center',
                               border: `2.5px solid ${elemColor}`,
-                              boxShadow: '0 2px 6px rgba(0,0,0,0.16)',
+                              boxShadow: '0 2px 8px rgba(0,0,0,0.35)',
                             }}
                           />
                         </Link>
@@ -2090,7 +2180,7 @@ export function GameWikiClient({
                             <Link
                               href={`/${hub.slug}/units/${u.slug}`}
                               style={{
-                                fontSize: '15px',
+                                fontSize: '16px',
                                 fontWeight: 900,
                                 color: 'var(--text-main)',
                                 textDecoration: 'underline',
@@ -2098,7 +2188,21 @@ export function GameWikiClient({
                             >
                               {u.nameEn} — {u.styleOrTitle}
                             </Link>
-                            <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                            <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
+                              <span
+                                className="mono"
+                                style={{
+                                  background: isUnanimous ? 'var(--green-bg)' : 'var(--amber-bg)',
+                                  color: isUnanimous ? 'var(--green-primary)' : 'var(--amber-primary)',
+                                  border: `1px solid ${isUnanimous ? 'var(--green-border)' : 'var(--amber-border)'}`,
+                                  padding: '3px 8px',
+                                  borderRadius: '4px',
+                                  fontSize: '11px',
+                                  fontWeight: 900,
+                                }}
+                              >
+                                {consensus.shortPillLabel}
+                              </span>
                               <span
                                 className="mono"
                                 style={{
@@ -2107,11 +2211,11 @@ export function GameWikiClient({
                                   border: '1px solid var(--accent-border)',
                                   padding: '3px 8px',
                                   borderRadius: '4px',
-                                  fontSize: '11.5px',
+                                  fontSize: '12px',
                                   fontWeight: 900,
                                 }}
                               >
-                                {getUnitTierRank(u)} • {u.tiers.overallAsian.numericScore.toFixed(1)}/10
+                                {getUnitTierRank(u)} • {consensus.finalWeightedScore.toFixed(1)}/10
                               </span>
                             </div>
                           </div>
@@ -2120,9 +2224,9 @@ export function GameWikiClient({
                             style={{
                               display: 'flex',
                               gap: '6px',
-                              marginTop: '6px',
+                              marginTop: '7px',
                               flexWrap: 'wrap',
-                              fontSize: '11px',
+                              fontSize: '11.5px',
                               fontWeight: 800,
                             }}
                           >
@@ -2133,8 +2237,8 @@ export function GameWikiClient({
                                 gap: '5px',
                                 background: elemColor,
                                 color: '#FFF',
-                                padding: '3px 7px',
-                                borderRadius: '3px',
+                                padding: '3px 8px',
+                                borderRadius: '4px',
                               }}
                             >
                               <img
@@ -2153,8 +2257,8 @@ export function GameWikiClient({
                                 gap: '5px',
                                 background: 'var(--bg-surface)',
                                 border: '1px solid var(--border-main)',
-                                padding: '3px 7px',
-                                borderRadius: '3px',
+                                padding: '3px 8px',
+                                borderRadius: '4px',
                               }}
                             >
                               <img
@@ -2170,9 +2274,9 @@ export function GameWikiClient({
                               style={{
                                 background: 'var(--amber-bg)',
                                 color: 'var(--amber-primary)',
-                                border: '1px solid var(--border-main)',
-                                padding: '3px 7px',
-                                borderRadius: '3px',
+                                border: '1px solid var(--amber-border)',
+                                padding: '3px 8px',
+                                borderRadius: '4px',
                               }}
                             >
                               Target Dupes: {u.recommendedDupes}
@@ -2181,13 +2285,59 @@ export function GameWikiClient({
                               style={{
                                 background: 'var(--green-bg)',
                                 color: 'var(--green-primary)',
-                                padding: '3px 7px',
-                                borderRadius: '3px',
+                                border: '1px solid var(--green-border)',
+                                padding: '3px 8px',
+                                borderRadius: '4px',
                               }}
                             >
                               Meta Longevity: {u.longevityMonths} Months
                             </span>
                           </div>
+                        </div>
+                      </div>
+
+                      {/* MULTI-SOURCE CONSENSUS & USAGE RATE PROOF STRIP */}
+                      <div
+                        style={{
+                          background: 'var(--bg-surface)',
+                          border: `1px solid ${isUnanimous ? 'var(--green-border)' : 'var(--amber-border)'}`,
+                          borderRadius: '5px',
+                          padding: '9px 11px',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: '5px',
+                        }}
+                      >
+                        <div
+                          className="mono"
+                          style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            flexWrap: 'wrap',
+                            gap: '8px',
+                            fontSize: '11.5px',
+                            fontWeight: 800,
+                          }}
+                        >
+                          <span style={{ color: isUnanimous ? 'var(--green-primary)' : 'var(--amber-primary)', fontWeight: 900 }}>
+                            {consensus.consensusBadgeLabel}
+                          </span>
+                          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                            <span style={{ color: 'var(--blue-primary)' }}>
+                              📊 50% Usage: {consensus.normalizedElementUsagePct}% ({consensus.normalizedElementRankLabel})
+                            </span>
+                            <span style={{ color: 'var(--text-main)' }}>
+                              🏆 30% {consensus.primaryWikiVote.sourceName}: {consensus.primaryWikiVote.tier} ({consensus.primaryWikiVote.score.toFixed(1)})
+                            </span>
+                            <span style={{ color: 'var(--amber-primary)' }}>
+                              🛡️ 20% {consensus.secondaryWikiVote.sourceName}: {consensus.secondaryWikiVote.tier} ({consensus.secondaryWikiVote.score.toFixed(1)})
+                            </span>
+                          </div>
+                        </div>
+                        <div style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
+                          <strong style={{ color: 'var(--text-main)' }}>Why Sources {isUnanimous ? 'Agree' : 'Differ'}:</strong>{' '}
+                          {consensus.whySourcesDifferOrAgree}
                         </div>
                       </div>
 
@@ -2198,8 +2348,8 @@ export function GameWikiClient({
                             background: 'var(--bg-surface)',
                             border: '1px solid var(--border-main)',
                             borderRadius: '4px',
-                            padding: '8px 10px',
-                            fontSize: '11px',
+                            padding: '9px 11px',
+                            fontSize: '12px',
                             display: 'flex',
                             gap: '10px',
                             alignItems: 'center',
@@ -2212,11 +2362,11 @@ export function GameWikiClient({
                               recommendedGear?.imageUrl || u.imageUrl
                             )}
                             alt={primarySkill.name}
-                            width={38}
-                            height={38}
+                            width={40}
+                            height={40}
                             style={{
-                              width: '38px',
-                              height: '38px',
+                              width: '40px',
+                              height: '40px',
                               borderRadius: '6px',
                               objectFit: 'cover',
                               border: '1px solid var(--border-main)',
@@ -2248,9 +2398,9 @@ export function GameWikiClient({
                           alignItems: 'center',
                           background: 'var(--bg-surface)',
                           border: '1px solid var(--border-subtle)',
-                          padding: '6px 10px',
+                          padding: '7px 11px',
                           borderRadius: '4px',
-                          fontSize: '11px',
+                          fontSize: '12px',
                         }}
                       >
                         {recommendedGear && (
@@ -2263,11 +2413,11 @@ export function GameWikiClient({
                               gap: '7px',
                               background: 'var(--bg-subtle)',
                               border: '1px solid var(--border-main)',
-                              padding: '4px 8px',
+                              padding: '4px 9px',
                               borderRadius: '4px',
                               cursor: 'pointer',
                               fontWeight: 800,
-                              fontSize: '11px',
+                              fontSize: '11.5px',
                               color: 'var(--text-main)',
                             }}
                           >
@@ -2328,9 +2478,9 @@ export function GameWikiClient({
                         )}
                       </div>
 
-                      <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)' }}>
-                        <strong>Evaluation:</strong> {u.tiers.overallAsian.summaryVerdict}{' '}
-                        <strong>Meta Notes:</strong> {u.tiers.overallAsian.longevityNote}
+                      <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                        <strong style={{ color: 'var(--text-main)' }}>Evaluation:</strong> {u.tiers.overallAsian.summaryVerdict}{' '}
+                        <strong style={{ color: 'var(--text-main)' }}>Meta Notes:</strong> {u.tiers.overallAsian.longevityNote}
                       </div>
 
                       <div
@@ -2338,9 +2488,9 @@ export function GameWikiClient({
                           display: 'flex',
                           justifyContent: 'space-between',
                           alignItems: 'center',
-                          paddingTop: '6px',
+                          paddingTop: '8px',
                           borderTop: '1px solid var(--border-subtle)',
-                          fontSize: '11px',
+                          fontSize: '12px',
                           flexWrap: 'wrap',
                           gap: '8px',
                         }}
@@ -2356,14 +2506,14 @@ export function GameWikiClient({
                             type="button"
                             onClick={() => toggleOwnedUnit(u.slug)}
                             style={{
-                              background: ownedBoxMap[u.slug] ? '#DCFCE7' : 'var(--bg-surface)',
-                              border: ownedBoxMap[u.slug] ? '1.5px solid #15803D' : '1px solid var(--border-strong)',
-                              padding: '3px 8px',
-                              borderRadius: '3px',
-                              fontSize: '10.5px',
+                              background: ownedBoxMap[u.slug] ? 'var(--green-bg)' : 'var(--bg-surface)',
+                              border: ownedBoxMap[u.slug] ? '1.5px solid var(--green-primary)' : '1px solid var(--border-strong)',
+                              padding: '4px 9px',
+                              borderRadius: '4px',
+                              fontSize: '11px',
                               fontWeight: 900,
                               cursor: 'pointer',
-                              color: ownedBoxMap[u.slug] ? '#15803D' : 'var(--text-main)',
+                              color: ownedBoxMap[u.slug] ? 'var(--green-primary)' : 'var(--text-main)',
                             }}
                           >
                             {ownedBoxMap[u.slug] ? `✓ Owned (${ownedBoxMap[u.slug]})` : '+ My Box'}
@@ -2375,13 +2525,13 @@ export function GameWikiClient({
                               onClick={() => setUnitDupeLevel(u.slug, lv)}
                               className="mono"
                               style={{
-                                padding: '2px 5px',
+                                padding: '3px 6px',
                                 borderRadius: '3px',
-                                fontSize: '9.5px',
+                                fontSize: '10px',
                                 fontWeight: 900,
                                 border: '1px solid var(--border-main)',
-                                background: ownedBoxMap[u.slug] === lv ? '#15803D' : 'var(--bg-surface)',
-                                color: ownedBoxMap[u.slug] === lv ? '#FFF' : 'var(--text-secondary)',
+                                background: ownedBoxMap[u.slug] === lv ? 'var(--green-primary)' : 'var(--bg-surface)',
+                                color: ownedBoxMap[u.slug] === lv ? '#07090D' : 'var(--text-secondary)',
                                 cursor: 'pointer',
                               }}
                             >
@@ -2392,14 +2542,14 @@ export function GameWikiClient({
                             type="button"
                             onClick={() => toggleSquadUnit(u.slug)}
                             style={{
-                              background: activeSquadSlugs.includes(u.slug) ? '#DBEAFE' : 'var(--bg-header)',
-                              border: '1px solid #1E40AF',
-                              padding: '3px 8px',
-                              borderRadius: '3px',
-                              fontSize: '10.5px',
+                              background: activeSquadSlugs.includes(u.slug) ? 'var(--blue-bg)' : 'var(--bg-header)',
+                              border: '1px solid var(--blue-primary)',
+                              padding: '4px 9px',
+                              borderRadius: '4px',
+                              fontSize: '11px',
                               fontWeight: 900,
                               cursor: 'pointer',
-                              color: activeSquadSlugs.includes(u.slug) ? '#1E40AF' : '#FFF',
+                              color: activeSquadSlugs.includes(u.slug) ? 'var(--blue-primary)' : '#FFF',
                             }}
                           >
                             {activeSquadSlugs.includes(u.slug) ? '★ In Squad' : '+ Squad'}
@@ -2860,14 +3010,14 @@ export function GameWikiClient({
                         type="button"
                         onClick={() => toggleOwnedEquip(eq.slug)}
                         style={{
-                          padding: '4px 10px',
+                          padding: '5px 11px',
                           borderRadius: '4px',
                           border: ownedEquipSlugs.includes(eq.slug)
-                            ? '1.5px solid #15803D'
+                            ? '1.5px solid var(--green-primary)'
                             : '1px solid var(--border-strong)',
-                          background: ownedEquipSlugs.includes(eq.slug) ? '#DCFCE7' : 'var(--bg-surface)',
-                          color: ownedEquipSlugs.includes(eq.slug) ? '#15803D' : 'var(--text-main)',
-                          fontSize: '10.5px',
+                          background: ownedEquipSlugs.includes(eq.slug) ? 'var(--green-bg)' : 'var(--bg-surface)',
+                          color: ownedEquipSlugs.includes(eq.slug) ? 'var(--green-primary)' : 'var(--text-main)',
+                          fontSize: '11.5px',
                           fontWeight: 900,
                           cursor: 'pointer',
                         }}
@@ -2929,18 +3079,18 @@ export function GameWikiClient({
                         objectFit: 'cover',
                         borderRadius: '7px',
                         border: '2px solid var(--border-strong)',
-                        boxShadow: '0 2px 8px rgba(0,0,0,0.18)',
+                        boxShadow: '0 2px 8px rgba(0,0,0,0.35)',
                       }}
                     />
                     <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: '16px', fontWeight: 900 }}>{boss.nameEn}</div>
-                      <div style={{ fontSize: '11.5px', color: 'var(--text-muted)', fontWeight: 700, marginTop: '2px' }}>
+                      <div style={{ fontSize: '16.5px', fontWeight: 900 }}>{boss.nameEn}</div>
+                      <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 700, marginTop: '2px' }}>
                         {boss.modeName} • {boss.difficultyLabel}
                       </div>
                       <div
                         className="mono"
                         style={{
-                          fontSize: '12px',
+                          fontSize: '12.5px',
                           fontWeight: 900,
                           color: 'var(--accent-primary)',
                           marginTop: '4px',
@@ -2952,18 +3102,18 @@ export function GameWikiClient({
                   </div>
 
                   {/* WEAKNESSES & RESISTANCES WITH REAL ELEMENT / WEAPON CONCEPT ICONS */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                  <div className="boss-weakness-grid">
                     <div
                       style={{
                         background: 'var(--green-bg)',
-                        border: '1px solid var(--border-main)',
-                        padding: '8px 10px',
-                        borderRadius: '4px',
+                        border: '1px solid var(--green-border)',
+                        padding: '9px 11px',
+                        borderRadius: '5px',
                       }}
                     >
                       <div
                         style={{
-                          fontSize: '10.5px',
+                          fontSize: '11px',
                           fontWeight: 900,
                           color: 'var(--green-primary)',
                           marginBottom: '6px',
@@ -2983,7 +3133,7 @@ export function GameWikiClient({
                               border: '1px solid var(--border-main)',
                               padding: '4px 8px',
                               borderRadius: '4px',
-                              fontSize: '11px',
+                              fontSize: '11.5px',
                               fontWeight: 800,
                             }}
                           >
@@ -3004,13 +3154,13 @@ export function GameWikiClient({
                       style={{
                         background: 'var(--accent-bg)',
                         border: '1px solid var(--accent-border)',
-                        padding: '8px 10px',
-                        borderRadius: '4px',
+                        padding: '9px 11px',
+                        borderRadius: '5px',
                       }}
                     >
                       <div
                         style={{
-                          fontSize: '10.5px',
+                          fontSize: '11px',
                           fontWeight: 900,
                           color: 'var(--accent-primary)',
                           marginBottom: '6px',
@@ -3030,7 +3180,7 @@ export function GameWikiClient({
                               border: '1px solid var(--accent-border)',
                               padding: '4px 8px',
                               borderRadius: '4px',
-                              fontSize: '11px',
+                              fontSize: '11.5px',
                               fontWeight: 800,
                             }}
                           >
@@ -3049,8 +3199,8 @@ export function GameWikiClient({
                   </div>
 
                   {/* TURN-BY-TURN ATTACK ROTATION TABLE */}
-                  <div>
-                    <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
+                  <div style={{ overflowX: 'auto' }}>
+                    <div style={{ fontSize: '12.5px', fontWeight: 900, marginBottom: '6px' }}>
                       BOSS ATTACK PATTERN &amp; EXACT COUNTER TIMING
                     </div>
                     <table
@@ -3058,21 +3208,22 @@ export function GameWikiClient({
                         width: '100%',
                         borderCollapse: 'collapse',
                         border: '1px solid var(--border-main)',
-                        fontSize: '11px',
+                        fontSize: '12px',
+                        minWidth: '520px',
                       }}
                     >
                       <thead>
                         <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
-                          <th style={{ padding: '6px 8px', textAlign: 'left', width: '130px' }}>
+                          <th style={{ padding: '7px 9px', textAlign: 'left', width: '130px' }}>
                             TURN / PHASE
                           </th>
-                          <th style={{ padding: '6px 8px', textAlign: 'left', width: '180px' }}>
+                          <th style={{ padding: '7px 9px', textAlign: 'left', width: '180px' }}>
                             BOSS ACTION
                           </th>
-                          <th style={{ padding: '6px 8px', textAlign: 'left', width: '170px' }}>
+                          <th style={{ padding: '7px 9px', textAlign: 'left', width: '170px' }}>
                             DAMAGE / EFFECT
                           </th>
-                          <th style={{ padding: '6px 8px', textAlign: 'left' }}>
+                          <th style={{ padding: '7px 9px', textAlign: 'left' }}>
                             HOW TO COUNTER
                           </th>
                         </tr>
@@ -3085,15 +3236,15 @@ export function GameWikiClient({
                           >
                             <td
                               className="mono"
-                              style={{ padding: '6px 8px', fontWeight: 900, color: 'var(--accent-primary)' }}
+                              style={{ padding: '7px 9px', fontWeight: 900, color: 'var(--accent-primary)' }}
                             >
                               {pat.turnOrPhase}
                             </td>
-                            <td style={{ padding: '6px 8px', fontWeight: 800 }}>{pat.attackName}</td>
-                            <td className="mono" style={{ padding: '6px 8px' }}>
+                            <td style={{ padding: '7px 9px', fontWeight: 800 }}>{pat.attackName}</td>
+                            <td className="mono" style={{ padding: '7px 9px' }}>
                               {pat.damageType}
                             </td>
-                            <td style={{ padding: '6px 8px', color: 'var(--text-secondary)' }}>
+                            <td style={{ padding: '7px 9px', color: 'var(--text-secondary)' }}>
                               {pat.counterAction}
                             </td>
                           </tr>
@@ -3111,16 +3262,16 @@ export function GameWikiClient({
                       padding: '10px 12px',
                     }}
                   >
-                    <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
+                    <div style={{ fontSize: '12.5px', fontWeight: 900, marginBottom: '6px' }}>
                       STEP-BY-STEP &ldquo;HOW TO BEAT&rdquo; CLEAR STRATEGY
                     </div>
                     <ol
                       style={{
                         paddingLeft: '18px',
-                        fontSize: '11.5px',
+                        fontSize: '12.5px',
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '4px',
+                        gap: '5px',
                       }}
                     >
                       {boss.strategySteps.map((step, i) => (
@@ -3133,7 +3284,7 @@ export function GameWikiClient({
 
                   {/* RECOMMENDED COUNTER TEAM PORTRAITS + RECOMMENDED RAID GEAR */}
                   <div>
-                    <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
                       RECOMMENDED APEX COUNTER UNITS &amp; RAID EQUIPMENT:
                     </div>
                     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
@@ -3152,7 +3303,7 @@ export function GameWikiClient({
                               background: 'var(--bg-subtle)',
                               border: '1px solid var(--border-main)',
                               borderRadius: '5px',
-                              fontSize: '11px',
+                              fontSize: '11.5px',
                               fontWeight: 800,
                             }}
                           >
@@ -3169,7 +3320,7 @@ export function GameWikiClient({
                             />
                             <div>
                               <div>{unit.nameEn}</div>
-                              <div style={{ fontSize: '9.5px', color: 'var(--accent-primary)' }}>
+                              <div style={{ fontSize: '10px', color: 'var(--accent-primary)' }}>
                                 {unit.role} • {unit.tiers.overallAsian.tierRank}
                               </div>
                             </div>
@@ -3189,7 +3340,7 @@ export function GameWikiClient({
                             background: 'var(--bg-subtle)',
                             border: '1px solid var(--border-main)',
                             borderRadius: '5px',
-                            fontSize: '11px',
+                            fontSize: '11.5px',
                             fontWeight: 800,
                             cursor: 'pointer',
                             textAlign: 'left',
@@ -3207,7 +3358,7 @@ export function GameWikiClient({
                           />
                           <div>
                             <div style={{ color: 'var(--text-main)' }}>{eq.nameEn}</div>
-                            <div style={{ fontSize: '9.5px', color: 'var(--amber-primary)' }}>
+                            <div style={{ fontSize: '10px', color: 'var(--amber-primary)' }}>
                               {eq.category} • Tier {eq.tierRank}
                             </div>
                           </div>
@@ -3239,24 +3390,24 @@ export function GameWikiClient({
                       }}
                     >
                       <div>
-                        <div style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--text-main)' }}>
+                        <div style={{ fontSize: '13px', fontWeight: 900, color: 'var(--text-main)' }}>
                           ⚡ MY ACTIVE SQUAD VS. {boss.nameEn.toUpperCase()} — LIVE EFFECTIVENESS AUDIT
                         </div>
-                        <div style={{ fontSize: '10.5px', color: 'var(--text-secondary)', fontWeight: 600 }}>
+                        <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', fontWeight: 600 }}>
                           Evaluates your current {activeSquadUnits.length}/{statConfig.squadSize} Active Squad against this boss&apos;s exact weaknesses, resistances &amp; phase checks
                         </div>
                       </div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
                         <span
                           className="mono"
                           style={{
-                            padding: '4px 10px',
+                            padding: '5px 11px',
                             borderRadius: '4px',
                             fontWeight: 900,
                             fontSize: '12px',
-                            background: squadEval.effectivenessPct >= 80 ? '#DCFCE7' : '#FEF3C7',
-                            color: squadEval.effectivenessPct >= 80 ? '#15803D' : '#B45309',
-                            border: squadEval.effectivenessPct >= 80 ? '1.5px solid #86EFAC' : '1.5px solid #FDE68A',
+                            background: squadEval.effectivenessPct >= 80 ? 'var(--green-bg)' : 'var(--amber-bg)',
+                            color: squadEval.effectivenessPct >= 80 ? 'var(--green-primary)' : 'var(--amber-primary)',
+                            border: squadEval.effectivenessPct >= 80 ? '1.5px solid var(--green-border)' : '1.5px solid var(--amber-border)',
                           }}
                         >
                           Effectiveness: {squadEval.effectivenessPct}% ({squadEval.grade}) • {squadEval.estClearMetric}
@@ -3265,12 +3416,12 @@ export function GameWikiClient({
                           type="button"
                           onClick={() => handleLogBossClear(boss.slug, squadEval.estClearMetric)}
                           style={{
-                            padding: '5px 10px',
+                            padding: '6px 11px',
                             borderRadius: '4px',
                             border: 'none',
                             background: 'var(--accent-primary)',
                             color: '#FFF',
-                            fontSize: '10.5px',
+                            fontSize: '11px',
                             fontWeight: 900,
                             cursor: 'pointer',
                           }}
@@ -3291,18 +3442,18 @@ export function GameWikiClient({
                         <div
                           key={cIdx}
                           style={{
-                            padding: '6px 8px',
+                            padding: '7px 9px',
                             borderRadius: '4px',
-                            background: chk.passed ? '#F0FDF4' : '#FFFBEB',
-                            border: chk.passed ? '1px solid #BBF7D0' : '1px solid #FDE68A',
-                            fontSize: '10.5px',
+                            background: chk.passed ? 'var(--green-bg)' : 'var(--amber-bg)',
+                            border: chk.passed ? '1px solid var(--green-border)' : '1px solid var(--amber-border)',
+                            fontSize: '11.5px',
                           }}
                         >
-                          <div style={{ fontWeight: 900, color: chk.passed ? '#15803D' : '#B45309' }}>
+                          <div style={{ fontWeight: 900, color: chk.passed ? 'var(--green-primary)' : 'var(--amber-primary)' }}>
                             {chk.passed ? '✓ ' : '⚠️ '}
                             {chk.label}
                           </div>
-                          <div style={{ color: 'var(--text-secondary)', marginTop: '2px', fontSize: '10px' }}>
+                          <div style={{ color: 'var(--text-secondary)', marginTop: '2px', fontSize: '11px' }}>
                             {chk.detail}
                           </div>
                         </div>
@@ -3313,19 +3464,19 @@ export function GameWikiClient({
                       <div
                         style={{
                           marginTop: '8px',
-                          padding: '7px 10px',
-                          background: '#EFF6FF',
-                          border: '1px solid #BFDBFE',
+                          padding: '8px 11px',
+                          background: 'var(--blue-bg)',
+                          border: '1px solid var(--blue-border)',
                           borderRadius: '4px',
                           display: 'flex',
                           justifyContent: 'space-between',
                           alignItems: 'center',
                           flexWrap: 'wrap',
                           gap: '8px',
-                          fontSize: '11px',
+                          fontSize: '12px',
                         }}
                       >
-                        <span style={{ fontWeight: 800, color: '#1E40AF' }}>
+                        <span style={{ fontWeight: 800, color: 'var(--blue-primary)' }}>
                           💡 Smart Matchup Upgrade: {squadEval.recommendedSwap.reason}
                         </span>
                         <button
@@ -3346,12 +3497,12 @@ export function GameWikiClient({
                             });
                           }}
                           style={{
-                            padding: '4px 10px',
+                            padding: '5px 11px',
                             borderRadius: '4px',
                             border: 'none',
-                            background: '#2563EB',
-                            color: '#FFF',
-                            fontSize: '10.5px',
+                            background: 'var(--blue-primary)',
+                            color: '#07090D',
+                            fontSize: '11px',
                             fontWeight: 900,
                             cursor: 'pointer',
                           }}
@@ -3362,7 +3513,7 @@ export function GameWikiClient({
                     )}
 
                     {userLoggedClears.length > 0 && (
-                      <div style={{ marginTop: '8px', fontSize: '10.5px', color: '#15803D', fontWeight: 800 }}>
+                      <div style={{ marginTop: '8px', fontSize: '11.5px', color: 'var(--green-primary)', fontWeight: 800 }}>
                         Recent Player Clears Logged: {userLoggedClears.map((c) => `[${c.squadNames.slice(0, 4).join(' + ')} — ${c.metric}]`).join(' • ')}
                       </div>
                     )}
@@ -3381,10 +3532,10 @@ export function GameWikiClient({
                         flexWrap: 'wrap',
                       }}
                     >
-                      <div style={{ fontSize: '12px', fontWeight: 900 }}>
+                      <div style={{ fontSize: '12.5px', fontWeight: 900 }}>
                         🏆 TOP PROVEN CLEAR TEAMS &amp; PLAYER USAGE TELEMETRY VS. {boss.nameEn.toUpperCase()}
                       </div>
-                      <span className="mono" style={{ fontSize: '10px', color: 'var(--text-muted)', fontWeight: 700 }}>
+                      <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
                         Aggregated Endgame Leaderboard &amp; Community Clear Data
                       </span>
                     </div>
@@ -3413,15 +3564,15 @@ export function GameWikiClient({
                               }}
                             >
                               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                                <span style={{ fontSize: '12px', fontWeight: 900, color: 'var(--text-main)' }}>
+                                <span style={{ fontSize: '13px', fontWeight: 900, color: 'var(--text-main)' }}>
                                   {team.archetypeTitle}
                                 </span>
                                 <span
                                   className="mono"
                                   style={{
-                                    fontSize: '10px',
+                                    fontSize: '11px',
                                     fontWeight: 900,
-                                    padding: '2px 6px',
+                                    padding: '2px 7px',
                                     borderRadius: '3px',
                                     background: 'var(--accent-bg)',
                                     color: 'var(--accent-primary)',
@@ -3433,12 +3584,13 @@ export function GameWikiClient({
                                 <span
                                   className="mono"
                                   style={{
-                                    fontSize: '10px',
+                                    fontSize: '11px',
                                     fontWeight: 800,
-                                    padding: '2px 6px',
+                                    padding: '2px 7px',
                                     borderRadius: '3px',
-                                    background: '#DCFCE7',
-                                    color: '#15803D',
+                                    background: 'var(--green-bg)',
+                                    color: 'var(--green-primary)',
+                                    border: '1px solid var(--green-border)',
                                   }}
                                 >
                                   Box Match: {ownedInTeam}/{team.units.length} Owned
@@ -3458,12 +3610,12 @@ export function GameWikiClient({
                                   setTimeout(() => setBackupNotice(null), 3000);
                                 }}
                                 style={{
-                                  padding: '4px 10px',
+                                  padding: '5px 11px',
                                   borderRadius: '4px',
                                   border: '1px solid var(--border-strong)',
                                   background: 'var(--bg-header)',
                                   color: '#FFF',
-                                  fontSize: '10px',
+                                  fontSize: '11px',
                                   fontWeight: 900,
                                   cursor: 'pointer',
                                 }}
@@ -3476,7 +3628,7 @@ export function GameWikiClient({
                             <div
                               style={{
                                 display: 'grid',
-                                gridTemplateColumns: `repeat(${team.units.length}, minmax(95px, 1fr))`,
+                                gridTemplateColumns: `repeat(auto-fit, minmax(92px, 1fr))`,
                                 gap: '6px',
                                 marginBottom: '8px',
                               }}
@@ -3492,8 +3644,8 @@ export function GameWikiClient({
                                       flexDirection: 'column',
                                       alignItems: 'center',
                                       padding: '6px 4px',
-                                      background: isOwned ? '#F0FDF4' : 'var(--bg-surface)',
-                                      border: isOwned ? '1.5px solid #16A34A' : '1px solid var(--border-main)',
+                                      background: isOwned ? 'var(--green-bg)' : 'var(--bg-surface)',
+                                      border: isOwned ? '1.5px solid var(--green-primary)' : '1px solid var(--border-main)',
                                       borderRadius: '5px',
                                       textDecoration: 'none',
                                     }}
@@ -3514,7 +3666,7 @@ export function GameWikiClient({
                                     />
                                     <div
                                       style={{
-                                        fontSize: '10px',
+                                        fontSize: '11px',
                                         fontWeight: 900,
                                         color: 'var(--text-main)',
                                         textAlign: 'center',
@@ -3526,7 +3678,7 @@ export function GameWikiClient({
                                     </div>
                                     <div
                                       style={{
-                                        fontSize: '9px',
+                                        fontSize: '9.5px',
                                         fontWeight: 800,
                                         color: 'var(--accent-primary)',
                                         textAlign: 'center',
@@ -3548,7 +3700,7 @@ export function GameWikiClient({
                                 alignItems: 'center',
                                 flexWrap: 'wrap',
                                 gap: '8px',
-                                fontSize: '10.5px',
+                                fontSize: '11.5px',
                                 color: 'var(--text-secondary)',
                                 borderTop: '1px dashed var(--border-main)',
                                 paddingTop: '6px',
@@ -3580,7 +3732,7 @@ export function GameWikiClient({
                       padding: '10px',
                     }}
                   >
-                    <div style={{ fontSize: '11.5px', fontWeight: 900, marginBottom: '6px' }}>
+                    <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
                       📊 CHARACTER USAGE RATE &amp; CLEAR SUCCESS LEADERBOARD VS. {boss.nameEn.toUpperCase()}
                     </div>
                     <div
@@ -3598,7 +3750,7 @@ export function GameWikiClient({
                             display: 'flex',
                             alignItems: 'center',
                             gap: '8px',
-                            padding: '5px 8px',
+                            padding: '6px 8px',
                             background: 'var(--bg-subtle)',
                             border: '1px solid var(--border-main)',
                             borderRadius: '4px',
@@ -3608,11 +3760,11 @@ export function GameWikiClient({
                           <img
                             src={entry.unit.imageUrl}
                             alt={entry.unit.nameEn}
-                            width={34}
-                            height={34}
+                            width={36}
+                            height={36}
                             style={{
-                              width: '34px',
-                              height: '34px',
+                              width: '36px',
+                              height: '36px',
                               borderRadius: '4px',
                               objectFit: 'cover',
                               objectPosition: 'top',
@@ -3620,7 +3772,7 @@ export function GameWikiClient({
                             }}
                           />
                           <div style={{ flex: 1, minWidth: 0 }}>
-                            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '10.5px', fontWeight: 900 }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '11.5px', fontWeight: 900 }}>
                               <span style={{ color: 'var(--text-main)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                                 {entry.unit.nameOriginal}
                               </span>
@@ -3630,8 +3782,8 @@ export function GameWikiClient({
                             </div>
                             <div
                               style={{
-                                height: '5px',
-                                background: '#E4E4E7',
+                                height: '6px',
+                                background: 'var(--border-main)',
                                 borderRadius: '99px',
                                 overflow: 'hidden',
                                 marginTop: '3px',
@@ -3645,7 +3797,7 @@ export function GameWikiClient({
                                 }}
                               />
                             </div>
-                            <div style={{ fontSize: '9px', color: 'var(--text-muted)', marginTop: '2px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                            <div style={{ fontSize: '10px', color: 'var(--text-muted)', marginTop: '2px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                               {entry.winOrClearRatePct}% Clear • {entry.tacticalReason}
                             </div>
                           </div>
@@ -3703,10 +3855,8 @@ export function GameWikiClient({
                 </div>
 
                 <div
+                  className="calc-3-grid"
                   style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(3, 1fr)',
-                    gap: '10px',
                     background: 'var(--bg-subtle)',
                     padding: '10px',
                     borderRadius: '4px',
@@ -4111,11 +4261,8 @@ export function GameWikiClient({
 
                 {/* SELECTORS FOR UNIT A VS UNIT B */}
                 <div
+                  className="compare-selector-grid"
                   style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr auto 1fr',
-                    gap: '10px',
-                    alignItems: 'center',
                     background: 'var(--bg-subtle)',
                     padding: '10px',
                     borderRadius: '4px',
@@ -4314,11 +4461,9 @@ export function GameWikiClient({
                 </h2>
 
                 <div
+                  className="calc-3-grid"
                   style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(3, 1fr)',
-                    gap: '10px',
-                    fontSize: '11px',
+                    fontSize: '11.5px',
                     fontWeight: 800,
                   }}
                 >
@@ -4619,7 +4764,7 @@ export function GameWikiClient({
                   style={{
                     height: '100%',
                     width: `${Math.max(4, completionPct)}%`,
-                    background: '#15803D',
+                    background: 'var(--green-primary)',
                   }}
                 />
               </div>
@@ -4630,11 +4775,11 @@ export function GameWikiClient({
                   style={{
                     flex: 1,
                     padding: '6px 6px',
-                    background: '#15803D',
-                    color: '#FFFFFF',
-                    border: 'none',
+                    background: 'var(--green-bg)',
+                    color: 'var(--green-primary)',
+                    border: '1px solid var(--green-border)',
                     borderRadius: '4px',
-                    fontSize: '10.5px',
+                    fontSize: '11px',
                     fontWeight: 900,
                     cursor: 'pointer',
                   }}
@@ -4649,9 +4794,9 @@ export function GameWikiClient({
                     padding: '6px 6px',
                     background: 'var(--bg-header)',
                     color: '#FFFFFF',
-                    border: 'none',
+                    border: '1px solid var(--border-strong)',
                     borderRadius: '4px',
-                    fontSize: '10.5px',
+                    fontSize: '11px',
                     fontWeight: 900,
                     cursor: 'pointer',
                   }}
@@ -4675,7 +4820,7 @@ export function GameWikiClient({
                   display: 'flex',
                   justifyContent: 'space-between',
                   alignItems: 'center',
-                  fontSize: '10.5px',
+                  fontSize: '11px',
                   fontWeight: 900,
                   marginBottom: '6px',
                 }}
@@ -4688,12 +4833,13 @@ export function GameWikiClient({
                 <span
                   className="mono"
                   style={{
-                    fontSize: '10px',
+                    fontSize: '10.5px',
                     fontWeight: 900,
-                    padding: '1px 6px',
+                    padding: '2px 7px',
                     borderRadius: '3px',
-                    background: squadAudit.scorePercent >= 80 ? '#DCFCE7' : '#FEF3C7',
-                    color: squadAudit.scorePercent >= 80 ? '#15803D' : '#B45309',
+                    background: squadAudit.scorePercent >= 80 ? 'var(--green-bg)' : 'var(--amber-bg)',
+                    color: squadAudit.scorePercent >= 80 ? 'var(--green-primary)' : 'var(--amber-primary)',
+                    border: squadAudit.scorePercent >= 80 ? '1px solid var(--green-border)' : '1px solid var(--amber-border)',
                   }}
                 >
                   Synergy: {squadAudit.scorePercent}% ({squadAudit.grade})
@@ -4821,15 +4967,15 @@ export function GameWikiClient({
                     gap: '6px',
                     padding: '4px 6px',
                     borderRadius: '4px',
-                    background: item.passed ? 'rgba(21, 128, 61, 0.08)' : 'rgba(217, 119, 6, 0.08)',
-                    border: item.passed ? '1px solid rgba(21, 128, 61, 0.35)' : '1px solid rgba(217, 119, 6, 0.35)',
-                    fontSize: '10px',
+                    background: item.passed ? 'var(--green-bg)' : 'var(--amber-bg)',
+                    border: item.passed ? '1px solid var(--green-border)' : '1px solid var(--amber-border)',
+                    fontSize: '10.5px',
                   }}
                 >
                   <span
                     style={{
                       fontWeight: 800,
-                      color: item.passed ? '#15803D' : '#B45309',
+                      color: item.passed ? 'var(--green-primary)' : 'var(--amber-primary)',
                       whiteSpace: 'nowrap',
                       overflow: 'hidden',
                       textOverflow: 'ellipsis',

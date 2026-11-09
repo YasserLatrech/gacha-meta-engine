@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { GachaCrestMark, GachaCrestWordmark } from './GachaCrestLogo';
+import { GachaCrestWordmark } from './GachaCrestLogo';
 
 export function SiteFooter() {
   const [email, setEmail] = useState('');
@@ -16,33 +16,92 @@ export function SiteFooter() {
   };
 
   return (
-    <footer className="mt-16 border-t-2 border-[var(--border-strong)] bg-[var(--bg-surface)] text-[var(--text-primary)]">
-      {/* Top Marketing & Retention Bar: Meta Patch & Banner Alert CTA */}
-      <div className="border-b border-[var(--border-subtle)] bg-[var(--bg-elevated)]">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-5">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-2 mb-1.5">
-              <span className="px-2 py-0.5 text-[10px] font-mono font-bold uppercase tracking-widest rounded bg-[var(--accent-primary)] text-white">
-                META PATCH ALERTS
+    <footer
+      style={{
+        marginTop: '36px',
+        borderTop: '2px solid var(--border-main)',
+        background: 'var(--bg-header)',
+        color: 'var(--text-main)',
+      }}
+    >
+      {/* Top Meta Patch & Consensus Alert Bar */}
+      <div
+        style={{
+          borderBottom: '1px solid var(--border-main)',
+          background: 'var(--bg-surface)',
+        }}
+      >
+        <div
+          style={{
+            maxWidth: '1420px',
+            margin: '0 auto',
+            padding: '20px 16px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '16px',
+          }}
+        >
+          <div style={{ maxWidth: '680px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '6px' }}>
+              <span
+                className="mono"
+                style={{
+                  padding: '3px 8px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                  borderRadius: '4px',
+                  background: 'var(--accent-primary)',
+                  color: '#FFFFFF',
+                }}
+              >
+                META CONSENSUS &amp; PATCH ALERTS
               </span>
-              <span className="text-[11px] font-mono font-bold text-[var(--text-secondary)]">
-                INSTANT TIER SHIFTS &amp; MUST-PULL BANNER WARNINGS
+              <span
+                className="mono"
+                style={{
+                  fontSize: '12px',
+                  fontWeight: 700,
+                  color: 'var(--amber-primary)',
+                }}
+              >
+                INSTANT TIER SHIFTS • BOSS RAID USAGE • MUST-PULL BANNER WARNINGS
               </span>
             </div>
-            <h3 className="text-lg sm:text-xl font-extrabold tracking-tight" style={{ fontFamily: 'var(--font-display)' }}>
-              Never Waste Pity Currency on a Powercrept Banner Again
+            <h3 style={{ fontSize: '18px', fontWeight: 800, color: 'var(--text-main)' }}>
+              Never Waste Pity Currency on a Powercrept or Overhyped Banner Again
             </h3>
-            <p className="text-xs sm:text-sm text-[var(--text-secondary)] mt-0.5">
-              Get notified whenever a new SSS Tier 0 character drops, Score Attack / Champions Meet rotations update, or limited banners change pull priority.
+            <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', marginTop: '4px' }}>
+              Get notified whenever multi-source consensus shifts, new SSS Tier 0 characters drop, or Score Attack / Champions Meet / Cosmo Gate rotations update.
             </p>
           </div>
 
           {subscribed ? (
-            <div className="px-4 py-3 rounded border border-emerald-600/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-mono font-bold flex items-center gap-2 shrink-0">
-              <span>✓ SUBSCRIBED TO GACHACREST META PATCH ALERTS</span>
+            <div
+              className="mono"
+              style={{
+                padding: '10px 16px',
+                borderRadius: '6px',
+                border: '1.5px solid var(--green-border)',
+                background: 'var(--green-bg)',
+                color: 'var(--green-primary)',
+                fontSize: '13px',
+                fontWeight: 800,
+              }}
+            >
+              ✓ SUBSCRIBED TO GACHACREST META PATCH ALERTS
             </div>
           ) : (
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 shrink-0">
+            <form
+              onSubmit={handleSubscribe}
+              style={{
+                display: 'flex',
+                gap: '8px',
+                flexWrap: 'wrap',
+                alignItems: 'center',
+              }}
+            >
               <input
                 type="email"
                 required
@@ -50,13 +109,31 @@ export function SiteFooter() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter email for Tier 0 patch alerts..."
                 aria-label="Email address for meta patch alerts"
-                className="px-3.5 py-2.5 text-xs font-mono rounded border border-[var(--border-strong)] bg-[var(--bg-surface)] text-[var(--text-primary)] min-w-[260px] focus:outline-none focus:border-[var(--accent-primary)]"
+                style={{
+                  padding: '10px 14px',
+                  fontSize: '13.5px',
+                  borderRadius: '6px',
+                  border: '1.5px solid var(--border-strong)',
+                  background: 'var(--bg-subtle)',
+                  color: 'var(--text-main)',
+                  minWidth: '0',
+                  flex: '1 1 200px',
+                }}
               />
               <button
                 type="submit"
-                className="px-5 py-2.5 rounded text-xs font-mono font-extrabold uppercase tracking-wider bg-[var(--accent-primary)] text-white hover:opacity-95 transition-opacity cursor-pointer shrink-0"
+                style={{
+                  padding: '10px 18px',
+                  borderRadius: '6px',
+                  fontSize: '13px',
+                  fontWeight: 800,
+                  border: 'none',
+                  background: 'var(--accent-primary)',
+                  color: '#FFFFFF',
+                  cursor: 'pointer',
+                }}
               >
-                Subscribe Free →
+                Subscribe Free &rarr;
               </button>
             </form>
           )}
@@ -64,204 +141,142 @@ export function SiteFooter() {
       </div>
 
       {/* Main 5-Column SEO & Internal Link Matrix */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-        {/* Col 1: Brand Identity & Scoring Methodology Summary */}
-        <div className="lg:col-span-1 space-y-3">
-          <Link href="/" className="inline-flex items-center gap-2.5 group">
-            <GachaCrestMark size={36} />
-            <GachaCrestWordmark />
+      <div
+        className="footer-links-grid"
+        style={{
+          maxWidth: '1420px',
+          margin: '0 auto',
+          padding: '28px 16px',
+        }}
+      >
+        {/* Col 1: Brand Identity & Multi-Source Consensus Formula */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center' }}>
+            <GachaCrestWordmark showSubtitle={false} />
           </Link>
-          <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
-            The authoritative English multi-game gacha tier list, character build encyclopedia, weapon/support card ranking matrix, boss raid strategy hub, and pity pull calculator.
+          <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+            The verified English multi-game gacha tier list, multi-source consensus engine, character build encyclopedia, weapon/support card ranking matrix, boss raid strategy hub, and pity pull calculator.
           </p>
-          <div className="p-3 rounded border border-[var(--border-subtle)] bg-[var(--bg-primary)] space-y-1">
-            <div className="text-[10px] font-mono font-extrabold uppercase tracking-wider text-[var(--accent-primary)]">
-              VERIFIED SCORING WEIGHTS
+          <div
+            className="mono"
+            style={{
+              padding: '10px 12px',
+              borderRadius: '6px',
+              border: '1px solid var(--border-main)',
+              background: 'var(--bg-surface)',
+              fontSize: '12px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '4px',
+            }}
+          >
+            <div style={{ fontWeight: 800, color: 'var(--amber-primary)', fontSize: '11.5px' }}>
+              MULTI-SOURCE CONSENSUS WEIGHTS
             </div>
-            <div className="text-[11px] font-mono text-[var(--text-secondary)]">
-              • Burst &amp; Break Ceiling: <strong className="text-[var(--text-primary)]">35%</strong>
+            <div style={{ color: 'var(--text-secondary)' }}>
+              • Normalized Boss/PvP Usage: <strong style={{ color: 'var(--text-main)' }}>50%</strong>
             </div>
-            <div className="text-[11px] font-mono text-[var(--text-secondary)]">
-              • SP / Turn Economy: <strong className="text-[var(--text-primary)]">25%</strong>
+            <div style={{ color: 'var(--text-secondary)' }}>
+              • Primary Endgame Raid Lab: <strong style={{ color: 'var(--text-main)' }}>30%</strong>
             </div>
-            <div className="text-[11px] font-mono text-[var(--text-secondary)]">
-              • Role Compression: <strong className="text-[var(--text-primary)]">25%</strong>
-            </div>
-            <div className="text-[11px] font-mono text-[var(--text-secondary)]">
-              • Endgame Longevity: <strong className="text-[var(--text-primary)]">15%</strong>
+            <div style={{ color: 'var(--text-secondary)' }}>
+              • Secondary F2P (LB0) Codex: <strong style={{ color: 'var(--text-main)' }}>20%</strong>
             </div>
           </div>
         </div>
 
-        {/* Col 2: Heaven Burns Red */}
-        <div className="space-y-2.5">
-          <div className="text-xs font-mono font-extrabold uppercase tracking-wider text-[var(--accent-primary)]">
-            HEAVEN BURNS RED (HBR)
+        {/* Col 2: Star Savior (Simultaneous Global/Asia Sync) */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div className="mono" style={{ fontSize: '12.5px', fontWeight: 800, color: 'var(--green-primary)' }}>
+            STAR SAVIOR (GLOBAL/ASIA SYNC)
           </div>
-          <ul className="space-y-1.5 text-xs font-semibold text-[var(--text-secondary)]">
-            <li>
-              <Link href="/heaven-burns-red" className="hover:text-[var(--accent-primary)] transition-colors">
-                SS Style Tier List (118 Units)
-              </Link>
-            </li>
-            <li>
-              <Link href="/heaven-burns-red/units/hbr-699438" className="hover:text-[var(--accent-primary)] transition-colors">
-                Karen Asakura [Midnight Soul Harvest] Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/heaven-burns-red/units/hbr-656783" className="hover:text-[var(--accent-primary)] transition-colors">
-                Ruka Kayamori [Diva Suit] Admiral Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/heaven-burns-red/units/hbr-670489" className="hover:text-[var(--accent-primary)] transition-colors">
-                Yuina Shirakawa [Awakened Unison] Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/heaven-burns-red" className="hover:text-[var(--accent-primary)] transition-colors">
-                6★ Elemental Rings, Earrings &amp; Orbs
-              </Link>
-            </li>
-            <li>
-              <Link href="/heaven-burns-red" className="hover:text-[var(--accent-primary)] transition-colors">
-                Grade 140 Score Attack &amp; Quartz Planner
-              </Link>
-            </li>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+            <li><Link href="/star-savior">SSR Character Tier List (57 Saviors)</Link></li>
+            <li><Link href="/star-savior/units/ss-80384230">Professor M [Veteran Detective] Build</Link></li>
+            <li><Link href="/star-savior/units/ss-80354674">Amora [Point of No Return] Build</Link></li>
+            <li><Link href="/star-savior/units/ss-80022340">Carmen (Bride) Buffer Build</Link></li>
+            <li><Link href="/star-savior?tab=weapons">SSR Arcana Tier List (53 Arcanas)</Link></li>
+            <li><Link href="/star-savior?tab=bosses">Cosmo Gate &amp; Void Singularity Raids</Link></li>
           </ul>
         </div>
 
-        {/* Col 3: Star Savior */}
-        <div className="space-y-2.5">
-          <div className="text-xs font-mono font-extrabold uppercase tracking-wider text-[var(--accent-primary)]">
-            STAR SAVIOR
+        {/* Col 3: Heaven Burns Red */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div className="mono" style={{ fontSize: '12.5px', fontWeight: 800, color: 'var(--accent-primary)' }}>
+            HEAVEN BURNS RED (+4MO FORESIGHT)
           </div>
-          <ul className="space-y-1.5 text-xs font-semibold text-[var(--text-secondary)]">
-            <li>
-              <Link href="/star-savior" className="hover:text-[var(--accent-primary)] transition-colors">
-                SSR Character Tier List (57 Saviors)
-              </Link>
-            </li>
-            <li>
-              <Link href="/star-savior/units/ss-2977196" className="hover:text-[var(--accent-primary)] transition-colors">
-                Frey (Bunny) [Moonlit Showtime] Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/star-savior/units/ss-2937733" className="hover:text-[var(--accent-primary)] transition-colors">
-                Lugh [Spear of Radiance] Breaker Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/star-savior/units/ss-2937760" className="hover:text-[var(--accent-primary)] transition-colors">
-                Besta [Immortal Aegis] Defender Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/star-savior" className="hover:text-[var(--accent-primary)] transition-colors">
-                SSR Arcana Tier List (53 Arcanas)
-              </Link>
-            </li>
-            <li>
-              <Link href="/star-savior" className="hover:text-[var(--accent-primary)] transition-colors">
-                Cosmo Gate Boss Raid &amp; Pity Planner
-              </Link>
-            </li>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+            <li><Link href="/heaven-burns-red">SS Style Tier List (118 Units)</Link></li>
+            <li><Link href="/heaven-burns-red/units/hbr-699438">Karen Asakura [Midnight Soul Harvest]</Link></li>
+            <li><Link href="/heaven-burns-red/units/hbr-656783">Ruka Kayamori [Diva Suit] Admiral</Link></li>
+            <li><Link href="/heaven-burns-red/units/hbr-670489">Yuina Shirakawa [Awakened Unison]</Link></li>
+            <li><Link href="/heaven-burns-red?tab=weapons">6★ Elemental Rings, Earrings &amp; Orbs</Link></li>
+            <li><Link href="/heaven-burns-red?tab=bosses">Grade 140 Score Attack &amp; Quartz Calc</Link></li>
           </ul>
         </div>
 
         {/* Col 4: Uma Musume: Pretty Derby */}
-        <div className="space-y-2.5">
-          <div className="text-xs font-mono font-extrabold uppercase tracking-wider text-[var(--accent-primary)]">
-            UMA MUSUME: PRETTY DERBY
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div className="mono" style={{ fontSize: '12.5px', fontWeight: 800, color: 'var(--amber-primary)' }}>
+            UMA MUSUME (+18MO FORESIGHT)
           </div>
-          <ul className="space-y-1.5 text-xs font-semibold text-[var(--text-secondary)]">
-            <li>
-              <Link href="/uma-musume" className="hover:text-[var(--accent-primary)] transition-colors">
-                3★ Trainee Tier List (99 Racers)
-              </Link>
-            </li>
-            <li>
-              <Link href="/uma-musume/units/uma-818827" className="hover:text-[var(--accent-primary)] transition-colors">
-                Symboli Rudolf [Adamant Sovereign] Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/uma-musume/units/uma-755849" className="hover:text-[var(--accent-primary)] transition-colors">
-                Almond Eye [The Changer] Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/uma-musume/units/uma-670452" className="hover:text-[var(--accent-primary)] transition-colors">
-                Orfevre [Absolute Sovereign] Build
-              </Link>
-            </li>
-            <li>
-              <Link href="/uma-musume" className="hover:text-[var(--accent-primary)] transition-colors">
-                SSR Support Card Tier List (79 Cards)
-              </Link>
-            </li>
-            <li>
-              <Link href="/uma-musume" className="hover:text-[var(--accent-primary)] transition-colors">
-                Champions Meet &amp; Carat Spark Calculator
-              </Link>
-            </li>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+            <li><Link href="/uma-musume">3★ Trainee Tier List (99 Racers)</Link></li>
+            <li><Link href="/uma-musume/units/uma-818827">Symboli Rudolf [Adamant Sovereign]</Link></li>
+            <li><Link href="/uma-musume/units/uma-755849">Almond Eye [The Changer] Build</Link></li>
+            <li><Link href="/uma-musume/units/uma-670452">Orfevre [Absolute Sovereign] Build</Link></li>
+            <li><Link href="/uma-musume?tab=weapons">SSR Support Card Tier List (79 Cards)</Link></li>
+            <li><Link href="/uma-musume?tab=bosses">Champions Meet &amp; Carat Spark Calc</Link></li>
           </ul>
         </div>
 
         {/* Col 5: Sword of Convallaria */}
-        <div className="space-y-2.5">
-          <div className="text-xs font-mono font-extrabold uppercase tracking-wider text-[var(--accent-primary)]">
-            SWORD OF CONVALLARIA (SOC)
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div className="mono" style={{ fontSize: '12.5px', fontWeight: 800, color: 'var(--blue-primary)' }}>
+            SWORD OF CONVALLARIA (+6MO LEAD)
           </div>
-          <ul className="space-y-1.5 text-xs font-semibold text-[var(--text-secondary)]">
-            <li>
-              <Link href="/sword-of-convallaria" className="hover:text-[var(--accent-primary)] transition-colors">
-                Tactical Character Tier List (62 Units)
-              </Link>
-            </li>
-            <li>
-              <Link href="/sword-of-convallaria/units/soc-sp-samantha" className="hover:text-[var(--accent-primary)] transition-colors">
-                SP Samantha S+ Tier Build &amp; Trait
-              </Link>
-            </li>
-            <li>
-              <Link href="/sword-of-convallaria/units/soc-triss" className="hover:text-[var(--accent-primary)] transition-colors">
-                Triss (Witcher Collab) Build &amp; Gear
-              </Link>
-            </li>
-            <li>
-              <Link href="/sword-of-convallaria/units/soc-cocoa" className="hover:text-[var(--accent-primary)] transition-colors">
-                Cocoa S+ Support Build &amp; Trinkets
-              </Link>
-            </li>
-            <li>
-              <Link href="/sword-of-convallaria" className="hover:text-[var(--accent-primary)] transition-colors">
-                Legendary Weapons &amp; Trinkets (48 Gear)
-              </Link>
-            </li>
-            <li>
-              <Link href="/sword-of-convallaria" className="hover:text-[var(--accent-primary)] transition-colors">
-                Weaponry Trials Lv.70 &amp; Luxite Planner
-              </Link>
-            </li>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '7px', fontSize: '13px', color: 'var(--text-secondary)' }}>
+            <li><Link href="/sword-of-convallaria">Tactical Character Tier List (62 Units)</Link></li>
+            <li><Link href="/sword-of-convallaria/units/soc-sp-samantha">SP Samantha SSS Build &amp; Skill Tree</Link></li>
+            <li><Link href="/sword-of-convallaria/units/soc-triss">Triss (Witcher Collab) Build &amp; Gear</Link></li>
+            <li><Link href="/sword-of-convallaria/units/soc-cocoa">Cocoa Support Build &amp; Trinkets</Link></li>
+            <li><Link href="/sword-of-convallaria?tab=weapons">Legendary Weapons &amp; Trinkets (48 Gear)</Link></li>
+            <li><Link href="/sword-of-convallaria?tab=bosses">Weaponry Trials Lv.70 &amp; Luxite Calc</Link></li>
           </ul>
         </div>
       </div>
 
       {/* Bottom Legal & Telemetry Stamp */}
-      <div className="border-t border-[var(--border-subtle)] bg-[var(--bg-primary)]">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-mono text-[var(--text-muted)]">
+      <div
+        style={{
+          borderTop: '1px solid var(--border-main)',
+          background: 'var(--bg-page)',
+        }}
+      >
+        <div
+          className="mono"
+          style={{
+            maxWidth: '1420px',
+            margin: '0 auto',
+            padding: '14px 16px',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '10px',
+            fontSize: '12px',
+            color: 'var(--text-muted)',
+          }}
+        >
           <div>
-            © {new Date().getFullYear()} <strong>GachaCrest</strong> (gachacrest.gg) • Verified 336 Units • 216 Weapons, Support Cards &amp; Arcanas • 9 Boss Raid Guides • 23 Banners
+            © {new Date().getFullYear()} <strong style={{ color: 'var(--text-main)' }}>GachaCrest</strong> (gachacrest.gg) • Verified 336 Units • 216 Weapons, Support Cards &amp; Arcanas • Multi-Source Consensus &amp; Usage Telemetry
           </div>
-          <div className="flex items-center gap-4">
-            <Link href="/" className="hover:text-[var(--text-primary)]">Portal Index</Link>
-            <Link href="/star-savior" className="hover:text-[var(--text-primary)]">Star Savior</Link>
-            <Link href="/heaven-burns-red" className="hover:text-[var(--text-primary)]">Heaven Burns Red</Link>
-            <Link href="/uma-musume" className="hover:text-[var(--text-primary)]">Uma Musume</Link>
-            <Link href="/sword-of-convallaria" className="hover:text-[var(--text-primary)]">Sword of Convallaria</Link>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+            <Link href="/">Portal Index</Link>
+            <Link href="/star-savior">Star Savior</Link>
+            <Link href="/heaven-burns-red">Heaven Burns Red</Link>
+            <Link href="/uma-musume">Uma Musume</Link>
+            <Link href="/sword-of-convallaria">Sword of Convallaria</Link>
           </div>
         </div>
       </div>

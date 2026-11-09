@@ -7,7 +7,7 @@ export const starSaviorBundle: GameAdapterBundle = {
   "asianRegion": "EN",
   "asianPatchVersion": "v1.4.0 Live Meta",
   "globalPatchVersion": "v1.4.0 Live",
-  "foresightGapMonths": 3,
+  "foresightGapMonths": 0,
   "coverImageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/7e92abdb1993c2427574813ed72a5c53702acb18/ss_7e92abdb1993c2427574813ed72a5c53702acb18.1920x1080.jpg?t=1792662563",
   "currencyName": "Starlight Quartz",
   "pullCostSingle": 150,
@@ -1077,10 +1077,10 @@ export const starSaviorBundle: GameAdapterBundle = {
         "ss-79517726",
         "ss-80482402"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
-      "numericScore": 9.3,
+      "numericScore": 9.7,
       "summaryVerdict": "Emily is a SS-Tier Moon-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Moon elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
       "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79677914"
@@ -1417,10 +1417,10 @@ export const starSaviorBundle: GameAdapterBundle = {
         "ss-79517666",
         "ss-79517738"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
-      "numericScore": 9.3,
+      "numericScore": 9.7,
       "summaryVerdict": "Ede is a SS-Tier Star-attribute Defender (Tank / Shield) specializing in Cosmo Gate and Void Singularity boss encounters. Provides high Toughness Gauge break efficiency, action bar manipulation, and Star elemental resonance.",
       "longevityNote": "Maintains top-tier performance across Cosmo Gate Stage 10 and Void Singularity endgame raids.",
       "sourceUrl": "https://gachacrest.gg/star-savior/units/ss-79517675"
@@ -3309,7 +3309,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_GADGET_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3394,7 +3394,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_ROD_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3479,7 +3479,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/STELLAR_THIEF_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3564,7 +3564,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_PRAY_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3649,7 +3649,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SCISSORS_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3734,7 +3734,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SPEAR_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3819,7 +3819,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NOA_OBSERVER_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3904,7 +3904,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/LPU_POST_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -3989,7 +3989,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_WRENCH_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4074,7 +4074,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_LANCER_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4159,7 +4159,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/DETECTIVE_WATSON_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4244,7 +4244,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WILD_HOG_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4329,7 +4329,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/GRACE_DUALSWORD_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4414,7 +4414,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/SAINTESS_ELF_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4499,7 +4499,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/SAINTESS_DEMON_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4584,7 +4584,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4669,7 +4669,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/STARPIERCER_OMEGA_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4754,7 +4754,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_BOMB_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
@@ -4839,7 +4839,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
       "releaseDateAsian": "2025-11-18",
       "releaseDateGlobal": null,
-      "isReleasedGlobal": false,
+      "isReleasedGlobal": true,
       "longevityMonths": 6,
       "recommendedDupes": "Base (0 Dupes)",
       "baseStats": {
