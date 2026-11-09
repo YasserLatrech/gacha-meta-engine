@@ -123,6 +123,11 @@ export function GameWikiClient({
   // Equipment Filters
   const [equipSearch, setEquipSearch] = useState<string>('');
   const [equipTierFilter, setEquipTierFilter] = useState<string>('ALL');
+  const [equipSubTypeFilter, setEquipSubTypeFilter] = useState<string>('ALL');
+  const uniqueEquipSubTypes = useMemo(
+    () => Array.from(new Set(hub.equipments.map((eq) => eq.subType))),
+    [hub.equipments]
+  );
 
   useEffect(() => {
     try {
@@ -355,6 +360,7 @@ export function GameWikiClient({
   const filteredEquipments = useMemo(() => {
     return hub.equipments.filter((eq) => {
       if (equipTierFilter !== 'ALL' && eq.tierRank !== equipTierFilter) return false;
+      if (equipSubTypeFilter !== 'ALL' && eq.subType !== equipSubTypeFilter) return false;
       if (equipSearch.trim()) {
         const q = equipSearch.toLowerCase();
         const matchName =
@@ -365,7 +371,7 @@ export function GameWikiClient({
       }
       return true;
     });
-  }, [hub.equipments, equipTierFilter, equipSearch]);
+  }, [hub.equipments, equipTierFilter, equipSubTypeFilter, equipSearch]);
 
   const getBaseUnitTierRank = (u: HydratedGameHub['units'][number]): string => {
     if (tierCategory === 'REROLL') return u.tiers.rerollAsian;
@@ -432,6 +438,7 @@ export function GameWikiClient({
 
   const comparisonRows = useMemo(() => {
     if (!unitA || !unitB) return [];
+    const isUma = hub.slug === 'uma-musume';
     return compareUnitStats(
       unitA.baseStats,
       unitB.baseStats,
@@ -443,9 +450,13 @@ export function GameWikiClient({
         atkLabel: statConfig.atkOrPower.label,
         defLabel: statConfig.defOrGuts.label,
         critLabel: statConfig.critOrWit.label,
+        burstLabel: isUma ? 'Final Spurt Acceleration (0–100)' : undefined,
+        bufferLabel: isUma ? 'Mid-Race Velocity & Positioning' : undefined,
+        sustainLabel: isUma ? 'Stamina Recovery & Long Consistency' : undefined,
+        spLabel: isUma ? 'Skill Point & Hint Efficiency' : undefined,
       }
     );
-  }, [unitA, unitB, statConfig]);
+  }, [unitA, unitB, statConfig, hub.slug]);
 
   const combatResult = useMemo(() => {
     return evaluateCombatMultiplier({
@@ -701,7 +712,7 @@ export function GameWikiClient({
                     border: '1px solid var(--border-main)',
                   }}
                 />
-                <span>Weapons / Support Cards</span>
+                <span>{hub.slug === 'uma-musume' ? 'SSR Support Cards' : 'Weapons / Support Cards'}</span>
               </span>
               <span className="mono" style={{ fontSize: '10px' }}>
                 {hub.equipments.length}
@@ -802,7 +813,7 @@ export function GameWikiClient({
               borderLeft: '3.5px solid var(--accent-primary)',
             }}
           >
-            03. BOSS &amp; RAID STRATEGY DB
+            {hub.slug === 'uma-musume' ? '03. CHAMPIONS MEET & LOH DB' : '03. BOSS & RAID STRATEGY DB'}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <button
@@ -836,7 +847,7 @@ export function GameWikiClient({
                   border: '1px solid var(--border-main)',
                 }}
               />
-              <span>Boss Weaknesses &amp; Raid Guides ({hub.bosses.length})</span>
+              <span>{hub.slug === 'uma-musume' ? `Champions Meet & LoH Guides (${hub.bosses.length})` : `Boss Weaknesses & Raid Guides (${hub.bosses.length})`}</span>
             </button>
             <button
               type="button"
@@ -878,7 +889,7 @@ export function GameWikiClient({
                   border: '1px solid var(--border-main)',
                 }}
               />
-              <span>Boss / Raid Apex Tier List</span>
+              <span>{hub.slug === 'uma-musume' ? 'Champions Meet Apex Tier List' : 'Boss / Raid Apex Tier List'}</span>
             </button>
           </div>
 
@@ -960,7 +971,7 @@ export function GameWikiClient({
                   border: '1px solid var(--border-main)',
                 }}
               />
-              <span>Buff-Stacking &amp; Damage Calc</span>
+              <span>{hub.slug === 'uma-musume' ? 'Final-Spurt & Stamina Sim' : 'Buff-Stacking & Damage Calc'}</span>
             </button>
           </div>
 
@@ -975,7 +986,7 @@ export function GameWikiClient({
               borderLeft: '3.5px solid var(--accent-primary)',
             }}
           >
-            05. CHARACTER DATABASE ({hub.units.length})
+            {hub.slug === 'uma-musume' ? `05. TRAINEE DATABASE (${hub.units.length})` : `05. CHARACTER DATABASE (${hub.units.length})`}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '620px', overflowY: 'auto' }}>
             {hub.units.map((u) => (
@@ -1071,11 +1082,26 @@ export function GameWikiClient({
                 />
                 <h1 style={{ fontSize: '17.5px', fontWeight: 900, color: 'var(--text-main)' }}>
                   [{hub.name}]{' '}
-                  {activeTab === 'tier-list' && `Strongest Character Tier List (${tierCategory})`}
-                  {activeTab === 'weapons' && 'Weapon, Support Card & Equipment Tier List'}
-                  {activeTab === 'bosses' && 'Monsters, Raid Boss Weaknesses & Strategy Guides'}
-                  {activeTab === 'banners' && 'Upcoming Banner Schedule & Pull Calculator'}
-                  {activeTab === 'compare' && 'Visual Stat Comparison & Damage Formula Simulator'}
+                  {activeTab === 'tier-list' &&
+                    (hub.slug === 'uma-musume'
+                      ? `Strongest Trainee Tier List (${tierCategory === 'BOSS_RAID' ? 'CHAMPIONS MEET' : tierCategory})`
+                      : `Strongest Character Tier List (${tierCategory})`)}
+                  {activeTab === 'weapons' &&
+                    (hub.slug === 'uma-musume'
+                      ? 'SSR Support Card Tier List & Limit Break Guide'
+                      : 'Weapon, Support Card & Equipment Tier List')}
+                  {activeTab === 'bosses' &&
+                    (hub.slug === 'uma-musume'
+                      ? 'Champions Meet & League of Heroes Course Strategy Guides'
+                      : 'Monsters, Raid Boss Weaknesses & Strategy Guides')}
+                  {activeTab === 'banners' &&
+                    (hub.slug === 'uma-musume'
+                      ? 'Carat Banner Schedule & 200-Pull Spark Calculator'
+                      : 'Upcoming Banner Schedule & Pull Calculator')}
+                  {activeTab === 'compare' &&
+                    (hub.slug === 'uma-musume'
+                      ? 'Trainee Stat Comparison & Final-Spurt Velocity Simulator'
+                      : 'Visual Stat Comparison & Damage Formula Simulator')}
                 </h1>
               </div>
               <span
@@ -1098,11 +1124,31 @@ export function GameWikiClient({
             <div className="quick-menu-grid">
               {(
                 [
-                  { key: 'tier-list', label: '1. Character Tier List', thumb: topUnitThumb },
-                  { key: 'weapons', label: '2. Weapons & Cards', thumb: topEquipThumb },
-                  { key: 'bosses', label: '3. Boss & Raid Guides', thumb: topBossThumb },
-                  { key: 'banners', label: '4. Banners & Pull Calc', thumb: topBannerThumb },
-                  { key: 'compare', label: '5. Stat Compare & Math', thumb: secondEquipThumb },
+                  {
+                    key: 'tier-list',
+                    label: hub.slug === 'uma-musume' ? '1. Trainee Tier List' : '1. Character Tier List',
+                    thumb: topUnitThumb,
+                  },
+                  {
+                    key: 'weapons',
+                    label: hub.slug === 'uma-musume' ? '2. SSR Support Cards' : '2. Weapons & Cards',
+                    thumb: topEquipThumb,
+                  },
+                  {
+                    key: 'bosses',
+                    label: hub.slug === 'uma-musume' ? '3. Champions Meet' : '3. Boss & Raid Guides',
+                    thumb: topBossThumb,
+                  },
+                  {
+                    key: 'banners',
+                    label: hub.slug === 'uma-musume' ? '4. Banners & Carat Calc' : '4. Banners & Pull Calc',
+                    thumb: topBannerThumb,
+                  },
+                  {
+                    key: 'compare',
+                    label: hub.slug === 'uma-musume' ? '5. Compare & Spurt Sim' : '5. Stat Compare & Math',
+                    thumb: secondEquipThumb,
+                  },
                 ] as const
               ).map((btn) => (
                 <button
@@ -1263,7 +1309,13 @@ export function GameWikiClient({
                             tierCategory === cat ? 'var(--accent-primary)' : 'var(--text-secondary)',
                         }}
                       >
-                        {cat === 'OVERALL' ? 'Overall Tier' : cat === 'REROLL' ? 'Reroll' : 'Boss / Raid'}
+                        {cat === 'OVERALL'
+                          ? 'Overall Tier'
+                          : cat === 'REROLL'
+                            ? 'Reroll'
+                            : hub.slug === 'uma-musume'
+                              ? 'Champions Meet'
+                              : 'Boss / Raid'}
                       </button>
                     ))}
                   </div>
@@ -1287,9 +1339,18 @@ export function GameWikiClient({
                     </span>
                     {(
                       [
-                        { key: 'F2P_LB0', label: 'F2P Base (0 Dupes / LB0)' },
-                        { key: 'REC_LB1', label: 'Sweet Spot (LB1 / 3★)' },
-                        { key: 'MAX_MLB', label: 'Max Whale (MLB / 5★)' },
+                        {
+                          key: 'F2P_LB0',
+                          label: hub.slug === 'uma-musume' ? '3★ Base (0LB / F2P)' : 'F2P Base (0 Dupes / LB0)',
+                        },
+                        {
+                          key: 'REC_LB1',
+                          label: hub.slug === 'uma-musume' ? '4★ Talent (Sweet Spot)' : 'Sweet Spot (LB1 / 3★)',
+                        },
+                        {
+                          key: 'MAX_MLB',
+                          label: hub.slug === 'uma-musume' ? '5★ Max Talent / MLB' : 'Max Whale (MLB / 5★)',
+                        },
                       ] as const
                     ).map((inv) => (
                       <button
@@ -1939,25 +2000,61 @@ export function GameWikiClient({
                                                 display: 'block',
                                               }}
                                             />
-                                            <img
-                                              src={elemIconUrl}
-                                              alt={u.element}
-                                              title={u.element}
-                                              width={20}
-                                              height={20}
-                                              style={{
-                                                position: 'absolute',
-                                                top: '2px',
-                                                left: '2px',
-                                                width: '20px',
-                                                height: '20px',
-                                                borderRadius: '4px',
-                                                background: 'rgba(13, 17, 23, 0.9)',
-                                                border: '1px solid var(--border-strong)',
-                                                padding: '1px',
-                                                objectFit: 'contain',
-                                              }}
-                                            />
+                                            {hub.slug === 'uma-musume' ? (
+                                              <span
+                                                className="mono"
+                                                title={`Distance Specialty: ${u.element}`}
+                                                style={{
+                                                  position: 'absolute',
+                                                  top: '2px',
+                                                  left: '2px',
+                                                  display: 'inline-flex',
+                                                  alignItems: 'center',
+                                                  gap: '2px',
+                                                  background: 'rgba(11, 14, 20, 0.92)',
+                                                  color: elemColor,
+                                                  border: `1.5px solid ${elemColor}`,
+                                                  borderRadius: '4px',
+                                                  padding: '1px 4px',
+                                                  fontSize: '8.5px',
+                                                  fontWeight: 900,
+                                                  lineHeight: 1.1,
+                                                }}
+                                              >
+                                                <img
+                                                  src={elemIconUrl}
+                                                  alt={u.element}
+                                                  width={11}
+                                                  height={11}
+                                                  style={{ width: '11px', height: '11px', objectFit: 'contain' }}
+                                                />
+                                                <span>
+                                                  {u.element === 'Medium'
+                                                    ? 'MED'
+                                                    : u.element.toUpperCase()}
+                                                </span>
+                                              </span>
+                                            ) : (
+                                              <img
+                                                src={elemIconUrl}
+                                                alt={u.element}
+                                                title={u.element}
+                                                width={20}
+                                                height={20}
+                                                style={{
+                                                  position: 'absolute',
+                                                  top: '2px',
+                                                  left: '2px',
+                                                  width: '20px',
+                                                  height: '20px',
+                                                  borderRadius: '4px',
+                                                  background: 'rgba(13, 17, 23, 0.9)',
+                                                  border: '1px solid var(--border-strong)',
+                                                  padding: '1px',
+                                                  objectFit: 'contain',
+                                                }}
+                                              />
+                                            )}
                                             <span
                                               className="mono"
                                               style={{
@@ -2352,7 +2449,9 @@ export function GameWikiClient({
                           <div style={{ flex: 1 }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900 }}>
                               <span>
-                                EX / Core Skill: {primarySkill.name} ({primarySkill.hitCount}-Hit)
+                                {hub.slug === 'uma-musume'
+                                  ? `Unique Skill: ${primarySkill.name.replace(/^Unique Skill:\s*/i, '')}`
+                                  : `EX / Core Skill: ${primarySkill.name} (${primarySkill.hitCount}-Hit)`}
                               </span>
                               <span style={{ color: 'var(--accent-primary)' }}>
                                 Cost: {primarySkill.spOrEnergyCost}
@@ -2606,7 +2705,7 @@ export function GameWikiClient({
                     paddingLeft: '8px',
                   }}
                 >
-                  RANKED WEAPON, SUPPORT CARD, ORB &amp; ARCANA TIER LIST ({filteredEquipments.length} / {hub.equipments.length})
+                  {hub.slug === 'uma-musume' ? `SSR SUPPORT CARD TIER LIST BY STAT TYPE & LIMIT BREAK (${filteredEquipments.length} / ${hub.equipments.length})` : `RANKED WEAPON, SUPPORT CARD, ORB & ARCANA TIER LIST (${filteredEquipments.length} / ${hub.equipments.length})`}
                 </h2>
 
                 <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap' }}>
@@ -2645,6 +2744,90 @@ export function GameWikiClient({
                     }}
                   />
                 </div>
+              </div>
+
+              {/* STAT TYPE / CATEGORY FILTER PILLS WITH OFFICIAL ICONS */}
+              <div
+                style={{
+                  display: 'flex',
+                  gap: '6px',
+                  flexWrap: 'wrap',
+                  alignItems: 'center',
+                  paddingTop: '4px',
+                  paddingBottom: '4px',
+                  borderTop: '1px solid var(--border-subtle)',
+                }}
+              >
+                <span className="mono" style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--text-muted)' }}>
+                  {hub.slug === 'uma-musume' ? 'CARD STAT TYPE:' : 'EQUIPMENT SLOT:'}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setEquipSubTypeFilter('ALL')}
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '5px',
+                    padding: '4px 9px',
+                    fontSize: '11px',
+                    fontWeight: 900,
+                    borderRadius: '4px',
+                    cursor: 'pointer',
+                    border:
+                      equipSubTypeFilter === 'ALL'
+                        ? '1.5px solid var(--accent-primary)'
+                        : '1px solid var(--border-main)',
+                    background: equipSubTypeFilter === 'ALL' ? 'var(--accent-bg)' : 'var(--bg-subtle)',
+                    color: equipSubTypeFilter === 'ALL' ? 'var(--accent-primary)' : 'var(--text-main)',
+                  }}
+                >
+                  <img
+                    src={topEquipThumb}
+                    alt="All"
+                    width={18}
+                    height={18}
+                    style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
+                  />
+                  <span>All ({hub.equipments.length})</span>
+                </button>
+                {uniqueEquipSubTypes.map((st) => {
+                  const stIcon = getStatConceptIconUrl(hub.slug, st, topEquipThumb);
+                  const stCount = hub.equipments.filter((e) => e.subType === st).length;
+                  return (
+                    <button
+                      key={st}
+                      type="button"
+                      onClick={() => setEquipSubTypeFilter(st)}
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        padding: '4px 9px',
+                        fontSize: '11px',
+                        fontWeight: 800,
+                        borderRadius: '4px',
+                        cursor: 'pointer',
+                        border:
+                          equipSubTypeFilter === st
+                            ? '1.5px solid var(--blue-primary)'
+                            : '1px solid var(--border-main)',
+                        background: equipSubTypeFilter === st ? 'var(--blue-bg)' : 'var(--bg-subtle)',
+                        color: equipSubTypeFilter === st ? 'var(--blue-primary)' : 'var(--text-main)',
+                      }}
+                    >
+                      <img
+                        src={stIcon}
+                        alt={st}
+                        width={18}
+                        height={18}
+                        style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'contain' }}
+                      />
+                      <span>
+                        {st.replace(/^SSR\s+/i, '').replace(/\s+Support$/i, '')} ({stCount})
+                      </span>
+                    </button>
+                  );
+                })}
               </div>
 
               {/* VISUAL TIER MATRIX FOR WEAPONS / SUPPORT CARDS / ARCANAS (CLICK TO JUMP) */}
@@ -2690,46 +2873,116 @@ export function GameWikiClient({
                         </td>
                         <td style={{ padding: '10px' }}>
                           <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-                            {gearsInTier.map((eq) => (
-                              <a
-                                key={eq.slug}
-                                href={`#equip-${eq.slug}`}
-                                style={{
-                                  width: '86px',
-                                  display: 'flex',
-                                  flexDirection: 'column',
-                                  alignItems: 'center',
-                                  gap: '4px',
-                                  textDecoration: 'none',
-                                }}
-                              >
-                                <img
-                                  src={eq.imageUrl}
-                                  alt={eq.nameEn}
-                                  width={76}
-                                  height={76}
+                            {gearsInTier.map((eq) => {
+                              const eqTypeIcon = getStatConceptIconUrl(hub.slug, eq.subType, eq.imageUrl);
+                              const eqSubLower = eq.subType.toLowerCase();
+                              const eqBorderColor =
+                                hub.slug === 'uma-musume'
+                                  ? eqSubLower.includes('speed')
+                                    ? '#0EA5E9'
+                                    : eqSubLower.includes('stamina')
+                                      ? '#F43F5E'
+                                      : eqSubLower.includes('power')
+                                        ? '#F59E0B'
+                                        : eqSubLower.includes('guts')
+                                          ? '#EC4899'
+                                          : eqSubLower.includes('wisdom') || eqSubLower.includes('wit')
+                                            ? '#10B981'
+                                            : '#A855F7'
+                                  : badgeColor;
+                              return (
+                                <a
+                                  key={eq.slug}
+                                  href={`#equip-${eq.slug}`}
                                   style={{
-                                    width: '76px',
-                                    height: '76px',
-                                    borderRadius: '8px',
-                                    objectFit: 'cover',
-                                    border: `2px solid ${badgeColor}`,
-                                    boxShadow: '0 2px 5px rgba(0,0,0,0.14)',
-                                  }}
-                                />
-                                <span
-                                  style={{
-                                    fontSize: '10px',
-                                    fontWeight: 800,
-                                    textAlign: 'center',
-                                    lineHeight: 1.15,
-                                    color: 'var(--text-main)',
+                                    width: '88px',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    gap: '4px',
+                                    textDecoration: 'none',
                                   }}
                                 >
-                                  {eq.nameEn}
-                                </span>
-                              </a>
-                            ))}
+                                  <div
+                                    style={{
+                                      width: '76px',
+                                      height: '76px',
+                                      borderRadius: '8px',
+                                      overflow: 'hidden',
+                                      border: `2px solid ${eqBorderColor}`,
+                                      position: 'relative',
+                                      background: 'var(--bg-subtle)',
+                                      boxShadow: '0 2px 5px rgba(0,0,0,0.18)',
+                                    }}
+                                  >
+                                    <img
+                                      src={eq.imageUrl}
+                                      alt={eq.nameEn}
+                                      width={76}
+                                      height={76}
+                                      style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover',
+                                        display: 'block',
+                                      }}
+                                    />
+                                    <img
+                                      src={eqTypeIcon}
+                                      alt={eq.subType}
+                                      title={eq.subType}
+                                      width={20}
+                                      height={20}
+                                      style={{
+                                        position: 'absolute',
+                                        top: '2px',
+                                        left: '2px',
+                                        width: '20px',
+                                        height: '20px',
+                                        borderRadius: '4px',
+                                        background: 'rgba(11, 14, 20, 0.92)',
+                                        border: `1px solid ${eqBorderColor}`,
+                                        padding: '1px',
+                                        objectFit: 'contain',
+                                      }}
+                                    />
+                                    <span
+                                      className="mono"
+                                      style={{
+                                        position: 'absolute',
+                                        bottom: '2px',
+                                        right: '2px',
+                                        background: 'rgba(11, 14, 20, 0.92)',
+                                        color: '#FFFFFF',
+                                        fontSize: '9.5px',
+                                        fontWeight: 900,
+                                        padding: '1px 4px',
+                                        borderRadius: '3px',
+                                        border: '1px solid var(--border-strong)',
+                                        lineHeight: 1.1,
+                                      }}
+                                    >
+                                      {eq.score.toFixed(1)}
+                                    </span>
+                                  </div>
+                                  <span
+                                    style={{
+                                      fontSize: '10px',
+                                      fontWeight: 800,
+                                      textAlign: 'center',
+                                      lineHeight: 1.15,
+                                      color: 'var(--text-main)',
+                                      display: '-webkit-box',
+                                      WebkitLineClamp: 2,
+                                      WebkitBoxOrient: 'vertical',
+                                      overflow: 'hidden',
+                                    }}
+                                  >
+                                    {eq.nameEn.replace(/^SSR\s+/i, '')}
+                                  </span>
+                                </a>
+                              );
+                            })}
                           </div>
                         </td>
                       </tr>
@@ -3097,7 +3350,9 @@ export function GameWikiClient({
                           marginBottom: '6px',
                         }}
                       >
-                        EXPLOITABLE WEAKNESSES / OPTIMAL TRIGGERS
+                        {hub.slug === 'uma-musume'
+                          ? 'KEY WIN CONDITIONS & OPTIMAL ACCELERATION SKILLS'
+                          : 'EXPLOITABLE WEAKNESSES / OPTIMAL TRIGGERS'}
                       </div>
                       <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
                         {boss.weaknesses.map((wk) => (
@@ -3144,7 +3399,9 @@ export function GameWikiClient({
                           marginBottom: '6px',
                         }}
                       >
-                        BOSS RESISTANCES / PENALTIES
+                        {hub.slug === 'uma-musume'
+                          ? 'COURSE HAZARDS & STAMINA / TRAFFIC PENALTIES'
+                          : 'BOSS RESISTANCES / PENALTIES'}
                       </div>
                       <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
                         {boss.resistances.map((rs) => (
@@ -3179,7 +3436,9 @@ export function GameWikiClient({
                   {/* TURN-BY-TURN ATTACK ROTATION TABLE */}
                   <div style={{ overflowX: 'auto' }}>
                     <div style={{ fontSize: '12.5px', fontWeight: 900, marginBottom: '6px' }}>
-                      BOSS ATTACK PATTERN &amp; EXACT COUNTER TIMING
+                      {hub.slug === 'uma-musume'
+                        ? 'COURSE LEG BREAKDOWN & FINAL-SPURT ACCELERATION TIMING'
+                        : 'BOSS ATTACK PATTERN & EXACT COUNTER TIMING'}
                     </div>
                     <table
                       style={{
@@ -3193,16 +3452,16 @@ export function GameWikiClient({
                       <thead>
                         <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
                           <th style={{ padding: '7px 9px', textAlign: 'left', width: '130px' }}>
-                            TURN / PHASE
+                            {hub.slug === 'uma-musume' ? 'COURSE LEG' : 'TURN / PHASE'}
                           </th>
                           <th style={{ padding: '7px 9px', textAlign: 'left', width: '180px' }}>
-                            BOSS ACTION
+                            {hub.slug === 'uma-musume' ? 'TRACK MECHANIC' : 'BOSS ACTION'}
                           </th>
                           <th style={{ padding: '7px 9px', textAlign: 'left', width: '170px' }}>
-                            DAMAGE / EFFECT
+                            {hub.slug === 'uma-musume' ? 'STAT / SKILL CHECK' : 'DAMAGE / EFFECT'}
                           </th>
                           <th style={{ padding: '7px 9px', textAlign: 'left' }}>
-                            HOW TO COUNTER
+                            {hub.slug === 'uma-musume' ? 'OPTIMAL COUNTER & INHERITANCE' : 'HOW TO COUNTER'}
                           </th>
                         </tr>
                       </thead>
@@ -3263,7 +3522,9 @@ export function GameWikiClient({
                   {/* RECOMMENDED COUNTER TEAM PORTRAITS + RECOMMENDED RAID GEAR */}
                   <div>
                     <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
-                      RECOMMENDED APEX COUNTER UNITS &amp; RAID EQUIPMENT:
+                      {hub.slug === 'uma-musume'
+                        ? 'RECOMMENDED APEX TRAINEES & SSR SUPPORT CARDS:'
+                        : 'RECOMMENDED APEX COUNTER UNITS & RAID EQUIPMENT:'}
                     </div>
                     <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                       {boss.recommendedUnitSlugs.map((uSlug) => {
@@ -4435,7 +4696,9 @@ export function GameWikiClient({
                     marginBottom: '10px',
                   }}
                 >
-                  INTERACTIVE BUFF-STACKING &amp; EXACT DAMAGE CALCULATOR
+                  {hub.slug === 'uma-musume'
+                    ? 'INTERACTIVE CHAMPIONS MEET STAMINA & FINAL-SPURT VELOCITY SIMULATOR'
+                    : 'INTERACTIVE BUFF-STACKING & EXACT DAMAGE CALCULATOR'}
                 </h2>
 
                 <div
@@ -4446,62 +4709,119 @@ export function GameWikiClient({
                   }}
                 >
                   {(
-                    [
-                      {
-                        label: 'Skill Base Potency:',
-                        val: basePotency,
-                        set: setBasePotency,
-                        icon: getStatConceptIconUrl(hub.slug, 'power', topEquipThumb),
-                      },
-                      {
-                        label: 'Skill ATK Buff #1 (%):',
-                        val: skillAtk1,
-                        set: setSkillAtk1,
-                        icon: getStatConceptIconUrl(hub.slug, 'atk', topEquipThumb),
-                      },
-                      {
-                        label: 'Skill ATK Buff #2 (%):',
-                        val: skillAtk2,
-                        set: setSkillAtk2,
-                        icon: getStatConceptIconUrl(hub.slug, 'atk', topEquipThumb),
-                      },
-                      {
-                        label: 'Crit DMG Buff #1 (%):',
-                        val: critDmg1,
-                        set: setCritDmg1,
-                        icon: getStatConceptIconUrl(hub.slug, 'crit', topEquipThumb),
-                      },
-                      {
-                        label: 'Crit DMG Buff #2 (%):',
-                        val: critDmg2,
-                        set: setCritDmg2,
-                        icon: getStatConceptIconUrl(hub.slug, 'crit', topEquipThumb),
-                      },
-                      {
-                        label: 'Elemental Field Zone (%):',
-                        val: fieldZonePct,
-                        set: setFieldZonePct,
-                        icon: getStatConceptIconUrl(hub.slug, 'fire', topEquipThumb),
-                      },
-                      {
-                        label: 'Enemy DEF Down #1 (%):',
-                        val: defDown1,
-                        set: setDefDown1,
-                        icon: getStatConceptIconUrl(hub.slug, 'def', topEquipThumb),
-                      },
-                      {
-                        label: 'Elemental DEF Down #2 (%):',
-                        val: defDown2,
-                        set: setDefDown2,
-                        icon: getStatConceptIconUrl(hub.slug, 'dark', topEquipThumb),
-                      },
-                      {
-                        label: 'Multi-Hit Bonus (%):',
-                        val: multiHitPct,
-                        set: setMultiHitPct,
-                        icon: getStatConceptIconUrl(hub.slug, 'speed', topEquipThumb),
-                      },
-                    ] as const
+                    hub.slug === 'uma-musume'
+                      ? [
+                          {
+                            label: 'Base Training Rating:',
+                            val: basePotency,
+                            set: setBasePotency,
+                            icon: getStatConceptIconUrl(hub.slug, 'speed', topEquipThumb),
+                          },
+                          {
+                            label: 'Speed Stat Bonus (%):',
+                            val: skillAtk1,
+                            set: setSkillAtk1,
+                            icon: getStatConceptIconUrl(hub.slug, 'speed', topEquipThumb),
+                          },
+                          {
+                            label: 'Power Accel Bonus (%):',
+                            val: skillAtk2,
+                            set: setSkillAtk2,
+                            icon: getStatConceptIconUrl(hub.slug, 'power', topEquipThumb),
+                          },
+                          {
+                            label: 'Final-Leg Velocity Skills (%):',
+                            val: critDmg1,
+                            set: setCritDmg1,
+                            icon: getStatConceptIconUrl(hub.slug, 'speed', topEquipThumb),
+                          },
+                          {
+                            label: 'Inherited Unique Accel (%):',
+                            val: critDmg2,
+                            set: setCritDmg2,
+                            icon: getStatConceptIconUrl(hub.slug, 'power', topEquipThumb),
+                          },
+                          {
+                            label: 'Distance S Aptitude Bonus (%):',
+                            val: fieldZonePct,
+                            set: setFieldZonePct,
+                            icon: getStatConceptIconUrl(hub.slug, 'aptitude', topEquipThumb),
+                          },
+                          {
+                            label: 'Stamina Recovery Margin (%):',
+                            val: defDown1,
+                            set: setDefDown1,
+                            icon: getStatConceptIconUrl(hub.slug, 'stamina', topEquipThumb),
+                          },
+                          {
+                            label: 'Guts Final-Spurt Bonus (%):',
+                            val: defDown2,
+                            set: setDefDown2,
+                            icon: getStatConceptIconUrl(hub.slug, 'guts', topEquipThumb),
+                          },
+                          {
+                            label: 'Wisdom Skill Proc Rate (%):',
+                            val: multiHitPct,
+                            set: setMultiHitPct,
+                            icon: getStatConceptIconUrl(hub.slug, 'wisdom', topEquipThumb),
+                          },
+                        ]
+                      : [
+                          {
+                            label: 'Skill Base Potency:',
+                            val: basePotency,
+                            set: setBasePotency,
+                            icon: getStatConceptIconUrl(hub.slug, 'power', topEquipThumb),
+                          },
+                          {
+                            label: 'Skill ATK Buff #1 (%):',
+                            val: skillAtk1,
+                            set: setSkillAtk1,
+                            icon: getStatConceptIconUrl(hub.slug, 'atk', topEquipThumb),
+                          },
+                          {
+                            label: 'Skill ATK Buff #2 (%):',
+                            val: skillAtk2,
+                            set: setSkillAtk2,
+                            icon: getStatConceptIconUrl(hub.slug, 'atk', topEquipThumb),
+                          },
+                          {
+                            label: 'Crit DMG Buff #1 (%):',
+                            val: critDmg1,
+                            set: setCritDmg1,
+                            icon: getStatConceptIconUrl(hub.slug, 'crit', topEquipThumb),
+                          },
+                          {
+                            label: 'Crit DMG Buff #2 (%):',
+                            val: critDmg2,
+                            set: setCritDmg2,
+                            icon: getStatConceptIconUrl(hub.slug, 'crit', topEquipThumb),
+                          },
+                          {
+                            label: 'Elemental Field Zone (%):',
+                            val: fieldZonePct,
+                            set: setFieldZonePct,
+                            icon: getStatConceptIconUrl(hub.slug, 'fire', topEquipThumb),
+                          },
+                          {
+                            label: 'Enemy DEF Down #1 (%):',
+                            val: defDown1,
+                            set: setDefDown1,
+                            icon: getStatConceptIconUrl(hub.slug, 'def', topEquipThumb),
+                          },
+                          {
+                            label: 'Elemental DEF Down #2 (%):',
+                            val: defDown2,
+                            set: setDefDown2,
+                            icon: getStatConceptIconUrl(hub.slug, 'dark', topEquipThumb),
+                          },
+                          {
+                            label: 'Multi-Hit Bonus (%):',
+                            val: multiHitPct,
+                            set: setMultiHitPct,
+                            icon: getStatConceptIconUrl(hub.slug, 'speed', topEquipThumb),
+                          },
+                        ]
                   ).map((inp) => (
                     <label key={inp.label} style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
                       <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px' }}>
@@ -4539,17 +4859,34 @@ export function GameWikiClient({
                     gap: '10px',
                   }}
                 >
-                  <div style={{ fontSize: '11px' }}>
-                    <span>ATK Bucket: {combatResult.totalSkillAtkMult}x</span> •{' '}
-                    <span>Crit Bucket: {combatResult.totalCritMult}x</span> •{' '}
-                    <span>Field: {combatResult.totalFieldMult}x</span> •{' '}
-                    <span>DEF Shred: {combatResult.totalDefDownMult}x</span> •{' '}
-                    <span>Multi-Hit: {combatResult.totalMultiHitMult}x</span>
-                  </div>
-                  <div style={{ fontSize: '14px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                    Total Multiplier: {combatResult.finalDamageMultiplier}x &rarr; Est. Final DMG:{' '}
-                    {combatResult.estimatedFinalDamage.toLocaleString()}
-                  </div>
+                  {hub.slug === 'uma-musume' ? (
+                    <>
+                      <div style={{ fontSize: '11px' }}>
+                        <span>Target Speed: {(20.0 + combatResult.totalSkillAtkMult * 0.85).toFixed(2)} m/s</span> •{' '}
+                        <span>Spurt Accel: {(0.35 + combatResult.totalCritMult * 0.08).toFixed(2)} m/s²</span> •{' '}
+                        <span>Dist S Mult: {combatResult.totalFieldMult}x</span> •{' '}
+                        <span>Stamina Check: 100% Full Spurt</span>
+                      </div>
+                      <div style={{ fontSize: '14px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                        Spurt Efficiency: {combatResult.finalDamageMultiplier}x &rarr; Est. Champions Meet Score:{' '}
+                        {Math.min(49999, Math.round(32500 + combatResult.estimatedFinalDamage * 0.018)).toLocaleString()} pt (UD6)
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <div style={{ fontSize: '11px' }}>
+                        <span>ATK Bucket: {combatResult.totalSkillAtkMult}x</span> •{' '}
+                        <span>Crit Bucket: {combatResult.totalCritMult}x</span> •{' '}
+                        <span>Field: {combatResult.totalFieldMult}x</span> •{' '}
+                        <span>DEF Shred: {combatResult.totalDefDownMult}x</span> •{' '}
+                        <span>Multi-Hit: {combatResult.totalMultiHitMult}x</span>
+                      </div>
+                      <div style={{ fontSize: '14px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+                        Total Multiplier: {combatResult.finalDamageMultiplier}x &rarr; Est. Final DMG:{' '}
+                        {combatResult.estimatedFinalDamage.toLocaleString()}
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </section>

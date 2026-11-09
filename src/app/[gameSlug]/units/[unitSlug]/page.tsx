@@ -202,7 +202,7 @@ export default async function UnitDetailPage({
                   height={28}
                   style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
-                <span>Weapons &amp; Support Cards</span>
+                <span>{hub.slug === 'uma-musume' ? 'SSR Support Card Tier List' : 'Weapons & Support Cards'}</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=bosses`}
@@ -223,7 +223,7 @@ export default async function UnitDetailPage({
                   height={28}
                   style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
-                <span>Boss &amp; Raid Guides</span>
+                <span>{hub.slug === 'uma-musume' ? 'Champions Meet & LoH Guides' : 'Boss & Raid Guides'}</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=banners`}
@@ -703,7 +703,7 @@ export default async function UnitDetailPage({
                   paddingLeft: '10px',
                 }}
               >
-                SKILL MULTIPLIERS &amp; COMBAT MECHANICS
+                {hub.slug === 'uma-musume' ? 'UNIQUE SKILL, EVOLVED PINK SKILLS & RACE MECHANICS' : 'SKILL MULTIPLIERS & COMBAT MECHANICS'}
               </h2>
 
               {unit.skills.map((sk, skIdx) => (
@@ -741,7 +741,7 @@ export default async function UnitDetailPage({
                   <div style={{ flex: 1, minWidth: '220px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '6px', fontWeight: 800, fontSize: '14.5px' }}>
                       <span>
-                        [{sk.type}] {sk.name} ({sk.hitCount}-Hit)
+                        [{sk.type}] {sk.name}{hub.slug === 'uma-musume' ? '' : ` (${sk.hitCount}-Hit)`}
                       </span>
                       <span className="mono" style={{ color: 'var(--accent-primary)' }}>
                         Cost: {sk.spOrEnergyCost}
@@ -785,7 +785,7 @@ export default async function UnitDetailPage({
                   marginBottom: '12px',
                 }}
               >
-                LIMIT BREAK / AWAKENING PASSIVES &amp; DUPE BREAKPOINTS
+                {hub.slug === 'uma-musume' ? 'NATIVE STAT GROWTH BONUSES & TRACK APTITUDES' : 'LIMIT BREAK / AWAKENING PASSIVES & DUPE BREAKPOINTS'}
               </h2>
               <table
                 style={{
@@ -846,13 +846,13 @@ export default async function UnitDetailPage({
                   paddingLeft: '10px',
                 }}
               >
-                BEST SYNERGY TEAMMATES, WEAPONS / CARDS &amp; RAID MATCHUPS
+                {hub.slug === 'uma-musume' ? 'BEST INHERITANCE PARENTS, SSR SUPPORT CARD DECK & CHAMPIONS MEET COURSES' : 'BEST SYNERGY TEAMMATES, WEAPONS / CARDS & RAID MATCHUPS'}
               </h2>
 
               {/* SYNERGY TEAMMATES */}
               <div>
                 <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
-                  Optimal Synergy Teammates:
+                  {hub.slug === 'uma-musume' ? 'Optimal Inheritance Parents & Team Trials Partners:' : 'Optimal Synergy Teammates:'}
                 </div>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {unit.synergyUnitSlugs.map((synSlug) => {
@@ -903,7 +903,7 @@ export default async function UnitDetailPage({
               {/* BEST-IN-SLOT WEAPONS / SUPPORT CARDS / ARCANAS WITH REAL IMAGES */}
               <div>
                 <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
-                  Best-in-Slot Weapons / Support Cards / Arcanas:
+                  {hub.slug === 'uma-musume' ? 'Recommended SSR Support Card Deck:' : 'Best-in-Slot Weapons / Support Cards / Arcanas:'}
                 </div>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {displayGears.map((g) => (
@@ -949,7 +949,7 @@ export default async function UnitDetailPage({
               {/* TOP RAID BOSS MATCHUPS WITH REAL WIDE BOSS IMAGES */}
               <div>
                 <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
-                  Top Raid Boss Matchups:
+                  {hub.slug === 'uma-musume' ? 'Target Champions Meet & League of Heroes Courses:' : 'Top Raid Boss Matchups:'}
                 </div>
                 <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {displayBosses.map((b) => (

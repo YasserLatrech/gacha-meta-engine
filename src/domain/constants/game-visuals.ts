@@ -244,12 +244,12 @@ export function getElementIconUrl(
     return STAR_SAVIOR_ATTR_ICONS[elementKey] ?? SS_ATTR_STAR;
   }
   if (gameSlug === 'uma-musume') {
-    if (elementKey === 'Short') return UMA_SKILL_RUNNER;
-    if (elementKey === 'Mile') return UMA_SKILL_LEADER;
-    if (elementKey === 'Medium') return UMA_SKILL_BETWEENER;
-    if (elementKey === 'Long') return UMA_SKILL_RECOVERY;
-    if (elementKey === 'Dirt') return UMA_SKILL_PASSIVE;
-    return UMA_SKILL_RUNNER;
+    if (elementKey === 'Short') return UMA_SPEED;
+    if (elementKey === 'Mile') return UMA_WISDOM;
+    if (elementKey === 'Medium') return UMA_POWER;
+    if (elementKey === 'Long') return UMA_STAMINA;
+    if (elementKey === 'Dirt') return UMA_GUTS;
+    return UMA_SPEED;
   }
   return SS_ATTR_STAR;
 }
@@ -260,10 +260,10 @@ export function getRoleIconUrl(
   _units?: Array<{ roleColumn?: string; imageUrl: string }>
 ): string {
   if (gameSlug === 'uma-musume') {
-    if (roleKey === 'DPS') return UMA_SKILL_RUNNER;
+    if (roleKey === 'DPS') return UMA_SPEED;
     if (roleKey === 'SUB_DPS') return UMA_SKILL_LEADER;
-    if (roleKey === 'SUPPORT') return UMA_SKILL_BETWEENER;
-    if (roleKey === 'SUSTAIN') return UMA_SKILL_CHASER;
+    if (roleKey === 'SUPPORT') return UMA_SKILL_RECOVERY;
+    if (roleKey === 'SUSTAIN') return UMA_GUTS;
   }
   if (gameSlug === 'sword-of-convallaria') {
     if (roleKey === 'DPS') return SOC_CLASS_DESTROYER;
@@ -323,14 +323,17 @@ export function getStatConceptIconUrl(
   const s = statLabel.toLowerCase();
 
   if (gameSlug === 'uma-musume') {
-    if (s.includes('speed')) return UMA_SPEED;
-    if (s.includes('stamina')) return UMA_STAMINA;
-    if (s.includes('power')) return UMA_POWER;
+    if (s.includes('friend') || s.includes('group') || s.includes('pal')) {
+      return 'https://img.game8.jp/5598597/d4766aeac9fe6db527387991e48f1b7f.png/original';
+    }
+    if (s.includes('speed') || s.includes('velocity') || s.includes('position')) return UMA_SPEED;
+    if (s.includes('stamina') || s.includes('consistency')) return UMA_STAMINA;
+    if (s.includes('power') || s.includes('accel') || s.includes('spurt') || s.includes('burst')) return UMA_POWER;
     if (s.includes('guts')) return UMA_GUTS;
-    if (s.includes('wit') || s.includes('wisdom') || s.includes('sp') || s.includes('efficiency')) return UMA_WISDOM;
+    if (s.includes('wit') || s.includes('wisdom') || s.includes('sp') || s.includes('skill') || s.includes('hint') || s.includes('efficiency')) return UMA_WISDOM;
     if (s.includes('recovery') || s.includes('uphill') || s.includes('drain') || s.includes('sustain')) return UMA_SKILL_RECOVERY;
     if (s.includes('aptitude') || s.includes('turf') || s.includes('dirt') || s.includes('longevity')) return UMA_SKILL_PASSIVE;
-    if (s.includes('swing') || s.includes('penalty') || s.includes('loss')) return UMA_SKILL_DEBUFF;
+    if (s.includes('swing') || s.includes('penalty') || s.includes('loss') || s.includes('traffic')) return UMA_SKILL_DEBUFF;
     if (s.includes('buff') || s.includes('support')) return UMA_SKILL_VISION;
     return UMA_SKILL_RUNNER;
   }

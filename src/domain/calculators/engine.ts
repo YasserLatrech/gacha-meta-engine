@@ -135,6 +135,10 @@ export function compareUnitStats(
     atkLabel: string;
     defLabel: string;
     critLabel: string;
+    burstLabel?: string;
+    bufferLabel?: string;
+    sustainLabel?: string;
+    spLabel?: string;
   }
 ): StatComparisonMetric[] {
   const buildRow = (label: string, a: number, b: number, maxRef: number): StatComparisonMetric => {
@@ -150,10 +154,10 @@ export function compareUnitStats(
     buildRow(statLabels?.atkLabel || 'ATK / Power Stat', statsA.atkOrPower, statsB.atkOrPower, Math.max(statsA.atkOrPower, statsB.atkOrPower, 1)),
     buildRow(statLabels?.defLabel || 'DEF / Toughness', statsA.defOrGuts, statsB.defOrGuts, Math.max(statsA.defOrGuts, statsB.defOrGuts, 1)),
     buildRow(statLabels?.critLabel || 'Crit / Wisdom', statsA.critOrWit, statsB.critOrWit, Math.max(statsA.critOrWit, statsB.critOrWit, 1)),
-    buildRow('Burst DPS Ceiling (0-100)', statsA.burstCeilingScore, statsB.burstCeilingScore, 100),
-    buildRow('Buff / Support Amplification', statsA.bufferCeilingScore, statsB.bufferCeilingScore, 100),
-    buildRow('Sustain / Survival Score', statsA.sustainScore, statsB.sustainScore, 100),
-    buildRow('SP / Energy Efficiency', statsA.spEfficiencyScore, statsB.spEfficiencyScore, 100),
+    buildRow(statLabels?.burstLabel || 'Burst DPS Ceiling (0-100)', statsA.burstCeilingScore, statsB.burstCeilingScore, 100),
+    buildRow(statLabels?.bufferLabel || 'Buff / Support Amplification', statsA.bufferCeilingScore, statsB.bufferCeilingScore, 100),
+    buildRow(statLabels?.sustainLabel || 'Sustain / Survival Score', statsA.sustainScore, statsB.sustainScore, 100),
+    buildRow(statLabels?.spLabel || 'SP / Energy Efficiency', statsA.spEfficiencyScore, statsB.spEfficiencyScore, 100),
     buildRow('Endgame Meta Longevity (Months)', longevityA, longevityB, 36),
   ];
 }
