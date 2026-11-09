@@ -6,7 +6,6 @@ import { AdSlot } from '../components/AdSlot';
 import { PortalSearchClient, SearchableItem } from '../components/PortalSearchClient';
 import { getGameAppIconUrl, getSectionEmblemUrl } from '../domain/constants/game-visuals';
 import { getServerSyncContext } from '../domain/game-mechanics';
-import { GachaCrestMark } from '../components/GachaCrestLogo';
 import { SiteFooter } from '../components/SiteFooter';
 
 export const dynamic = 'force-dynamic';
@@ -97,7 +96,7 @@ export default async function PortalHomePage() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-            <GachaCrestMark size={48} />
+            
             <div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
                 <span

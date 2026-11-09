@@ -8,7 +8,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
   "asianPatchVersion": "v2.4.0 Live Meta",
   "globalPatchVersion": "v2.4.0 Live",
   "foresightGapMonths": 6,
-  "coverImageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/12/IMG_5806.webp",
+  "coverImageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/07/Sword-of-Convallaria-Key-Art-1024x461.webp",
   "currencyName": "Hope Luxite",
   "pullCostSingle": 150,
   "pityThreshold": 100,
@@ -6369,7 +6369,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial I (Lv.70 Stage 10) — Judgement Tarot Arbiter",
       "modeName": "Weaponry Trial I",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2599.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/image-13-1024x580.webp",
       "hpStat": "265,000 HP",
       "shieldOrDpStat": "Immune to Melee Counter & Knockback",
       "weaknesses": [
@@ -6406,7 +6406,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial II (Lv.70 Stage 10) — Papal Executioner",
       "modeName": "Weaponry Trial II",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2727.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/image-12-1024x580.webp",
       "hpStat": "280,000 HP",
       "shieldOrDpStat": "Summons Volatile Detonation Crystals",
       "weaknesses": [
@@ -6442,7 +6442,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial III (Lv.70 Stage 10) — Calamity Dragon",
       "modeName": "Weaponry Trial III",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2601.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/image-11-1024x580.webp",
       "hpStat": "290,000 HP",
       "shieldOrDpStat": "Stacking ATK/DEF Dragon Scales",
       "weaknesses": [
@@ -6525,7 +6525,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "slug": "soc-sp-samantha-kvare-dual",
       "bannerTitle": "Dual Destinies Pickup — SP Samantha & Kvare",
       "bannerType": "LIMITED",
-      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/12/IMG_5806.webp",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2024/07/Convallaria-21-768x346.webp",
       "featuredNames": [
         "SP Samantha",
         "Kvare"

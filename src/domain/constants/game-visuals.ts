@@ -11,73 +11,64 @@ export const GAME_APP_ICONS: Record<string, string> = {
 };
 
 // ============================================================================
-// 0. PURPOSE-BUILT UI NAVIGATION & TOOL SECTION EMBLEMS (Dark-Mode SVG Data URIs)
-//    Strictly separates UI Navigation tabs (Tier List, Weapons, Bosses, Banners,
-//    Pull Calculator, Stat Compare) from character Element/Stat icons.
+// 0. OFFICIAL GAME8.JP / APPMEDIA.JP / DOTGG SECTION NAVIGATION THUMBNAILS
+//    Zero homemade SVGs — every section thumbnail is the authentic icon used on
+//    the Japanese / Korean / Global wiki quick-menu for that exact game.
 // ============================================================================
-function svgToDataUri(svg: string): string {
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg.trim())}`;
-}
+export type WikiSectionKey =
+  | 'tier-list'
+  | 'reroll'
+  | 'weapons'
+  | 'banners'
+  | 'calculator'
+  | 'bosses'
+  | 'compare';
 
-export const UI_SECTION_EMBLEMS: Record<
-  'tier-list' | 'reroll' | 'weapons' | 'banners' | 'calculator' | 'bosses' | 'compare',
-  string
-> = {
-  'tier-list': svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#F43F5E" stroke-width="2"/>
-      <path d="M8 28L11 14L17 20L20 11L23 20L29 14L32 28H8Z" fill="#FBBF24" stroke="#FEF3C7" stroke-width="1.2" stroke-linejoin="round"/>
-      <rect x="9" y="30" width="22" height="3" rx="1.5" fill="#F43F5E"/>
-    </svg>
-  `),
-  reroll: svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#34D399" stroke-width="2"/>
-      <path d="M20 8L23 16.5L32 20L23 23.5L20 32L17 23.5L8 20L17 16.5L20 8Z" fill="#34D399"/>
-      <circle cx="20" cy="20" r="3.5" fill="#FEF3C7"/>
-    </svg>
-  `),
-  weapons: svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#38BDF8" stroke-width="2"/>
-      <rect x="16" y="8" width="15" height="21" rx="2.5" fill="#1E293B" stroke="#38BDF8" stroke-width="1.8"/>
-      <path d="M9 31L25 15M25 15H19M25 15V21" stroke="#FBBF24" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="23.5" cy="18.5" r="2.2" fill="#38BDF8"/>
-    </svg>
-  `),
-  bosses: svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#F43F5E" stroke-width="2"/>
-      <path d="M9 12L14 18C14 14.5 16.7 12 20 12C23.3 12 26 14.5 26 18L31 12L29 23C29 27.5 25 31 20 31C15 31 11 27.5 11 23L9 12Z" fill="#F43F5E"/>
-      <circle cx="16.5" cy="21.5" r="2.2" fill="#FEF3C7"/>
-      <circle cx="23.5" cy="21.5" r="2.2" fill="#FEF3C7"/>
-      <path d="M17 27H23" stroke="#0B0E14" stroke-width="2" stroke-linecap="round"/>
-    </svg>
-  `),
-  banners: svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#FBBF24" stroke-width="2"/>
-      <rect x="7" y="12" width="26" height="16" rx="3" fill="#1E293B" stroke="#FBBF24" stroke-width="1.8"/>
-      <path d="M20 13.5L22 18L26.5 20L22 22L20 26.5L18 22L13.5 20L18 18L20 13.5Z" fill="#FBBF24"/>
-    </svg>
-  `),
-  calculator: svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#34D399" stroke-width="2"/>
-      <polygon points="20,8 30,16 25,31 15,31 10,16" fill="#10B981" stroke="#A7F3D0" stroke-width="1.5"/>
-      <polygon points="20,12 25,17 20,27 15,17" fill="#ECFDF5"/>
-    </svg>
-  `),
-  compare: svgToDataUri(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
-      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#A855F7" stroke-width="2"/>
-      <rect x="9" y="21" width="5" height="10" rx="1.5" fill="#38BDF8"/>
-      <rect x="17.5" y="13" width="5" height="18" rx="1.5" fill="#FBBF24"/>
-      <rect x="26" y="16" width="5" height="15" rx="1.5" fill="#F43F5E"/>
-      <path d="M8 11H32" stroke="#CBD5E1" stroke-width="1.6" stroke-dasharray="2 2"/>
-    </svg>
-  `),
+export const GAME_SECTION_ICONS: Record<string, Record<WikiSectionKey, string>> = {
+  'star-savior': {
+    // Official AppMedia.jp Star Savior quick-menu icons (最強ランキング, リセマラ, SSRアルカナ, コスモゲート, ガチャ, 試練)
+    'tier-list': 'https://appmedia.jp/wp-content/uploads/2026/07/205642_m8vfh.webp',
+    reroll: 'https://appmedia.jp/wp-content/uploads/2026/02/181128_a531d.webp',
+    weapons: 'https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp',
+    bosses: 'https://appmedia.jp/wp-content/uploads/2025/12/152123_6avt2.webp',
+    banners: 'https://appmedia.jp/wp-content/uploads/2025/11/144612_t1qbw.webp',
+    compare: 'https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp',
+    calculator: 'https://appmedia.jp/wp-content/uploads/2026/10/144125_id9hj.webp',
+  },
+  'heaven-burns-red': {
+    // Official Game8.jp Heaven Burns Red quick-menu icons (最強ランキング, リセマラ, オーブスキル, スコアアタック, ガチャ, 最強パーティー, スキル一覧)
+    'tier-list': 'https://img.game8.jp/12250726/19cef3c6b75dabe7c76a41e366c6af7d.webp/original',
+    reroll: 'https://img.game8.jp/12250821/f0a148a416565179abc0685bb567abb8.webp/original',
+    weapons: 'https://img.game8.jp/12250736/a13946cd2c07ca85385980d6f5d9b52e.webp/original',
+    bosses: 'https://img.game8.jp/12250812/426fa8dc0f83da044dc779a1e0564d07.webp/original',
+    banners: 'https://img.game8.jp/12250858/72cb04bd10eebb139cf11e4f3427fce9.webp/original',
+    compare: 'https://img.game8.jp/12250759/ec45a87b48e4928d14c74a9573f7e27c.webp/original',
+    calculator: 'https://img.game8.jp/12250803/e5785f03a668ef402455eeb7ac6e621e.webp/original',
+  },
+  'uma-musume': {
+    // Official Game8.jp Uma Musume quick-menu icons (最強育成ウマ娘, リセマラ当たり, 最強サポート, チャンミ, ガチャ一覧, ステータスの解説, トレーニングの効果)
+    'tier-list': 'https://img.game8.jp/5598597/d4766aeac9fe6db527387991e48f1b7f.png/original',
+    reroll: 'https://img.game8.jp/5588466/a50a2c08265c12ae40dea46db5637d09.png/original',
+    weapons: 'https://img.game8.jp/5594582/f1ecbc97887b04af6a8a33fccf2fdc88.png/original',
+    bosses: 'https://img.game8.jp/11060253/6d4af6774173922aa8956cb4bb88f10a.png/original',
+    banners: 'https://img.game8.jp/5589413/840f3d24f3cabc1d2af08f53bc6be4ee.png/original',
+    compare: 'https://img.game8.jp/5598929/ddbc15365a674bf2342da195bb54680e.png/original',
+    calculator: 'https://img.game8.jp/5597449/7400890d5b1b13f27fabc4099b25b484.png/original',
+  },
+  'sword-of-convallaria': {
+    // Official DotGG Sword of Convallaria section icons (SP Inanna, SP Samantha, Starry Sky Heritage, Judgement Tarot, Triss, Strength Tarot, World Tarot)
+    'tier-list': 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/07/IMG_1686.webp',
+    reroll: 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/06/IMG_0699.webp',
+    weapons: 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/09/IMG_2870.webp',
+    bosses: 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2599.webp',
+    banners: 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/11/IMG_4942.webp',
+    compare: 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_4789.webp',
+    calculator: 'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2723.webp',
+  },
 };
+
+export const UI_SECTION_EMBLEMS: Record<WikiSectionKey, string> =
+  GAME_SECTION_ICONS['star-savior']!;
 
 // ============================================================================
 // 1. HEAVEN BURNS RED — OFFICIAL IN-GAME ICONS (Game8 JP Official Asset CDN)
@@ -226,10 +217,12 @@ export const STAR_SAVIOR_ATTR_ICONS: Record<string, string> = {
 };
 
 export function getSectionEmblemUrl(
-  section: 'tier-list' | 'reroll' | 'weapons' | 'banners' | 'calculator' | 'bosses' | 'compare',
-  _gameSlug?: string
+  section: WikiSectionKey,
+  gameSlug?: string
 ): string {
-  return UI_SECTION_EMBLEMS[section] ?? UI_SECTION_EMBLEMS['tier-list'];
+  const gameIcons =
+    (gameSlug && GAME_SECTION_ICONS[gameSlug]) || GAME_SECTION_ICONS['star-savior']!;
+  return gameIcons[section] ?? gameIcons['tier-list'];
 }
 
 export function getGameAppIconUrl(gameSlug: string): string {
@@ -360,7 +353,7 @@ export function getStatConceptIconUrl(
   }
 
   if (gameSlug === 'sword-of-convallaria') {
-    if (s.includes('ranged') || s.includes('magic') || s.includes('matk')) return SOC_CLASS_DESTROYER;
+    if (s.includes('ranged') || s.includes('magic') || s.includes('matk')) return SOC_TAROT_MAGICIAN_MATK;
     if (s.includes('aoe') || s.includes('pierc') || s.includes('crystal')) return SOC_CLASS_SEEKER;
     if (s.includes('dispel') || s.includes('debuff') || s.includes('buff') || s.includes('support') || s.includes('nrg')) return SOC_CLASS_WATCHER;
     if (s.includes('knockback') || s.includes('outside-ring') || s.includes('def') || s.includes('shield') || s.includes('sustain')) return SOC_CLASS_DEFENDER;
