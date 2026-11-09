@@ -11,6 +11,75 @@ export const GAME_APP_ICONS: Record<string, string> = {
 };
 
 // ============================================================================
+// 0. PURPOSE-BUILT UI NAVIGATION & TOOL SECTION EMBLEMS (Dark-Mode SVG Data URIs)
+//    Strictly separates UI Navigation tabs (Tier List, Weapons, Bosses, Banners,
+//    Pull Calculator, Stat Compare) from character Element/Stat icons.
+// ============================================================================
+function svgToDataUri(svg: string): string {
+  return `data:image/svg+xml;utf8,${encodeURIComponent(svg.trim())}`;
+}
+
+export const UI_SECTION_EMBLEMS: Record<
+  'tier-list' | 'reroll' | 'weapons' | 'banners' | 'calculator' | 'bosses' | 'compare',
+  string
+> = {
+  'tier-list': svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#F43F5E" stroke-width="2"/>
+      <path d="M8 28L11 14L17 20L20 11L23 20L29 14L32 28H8Z" fill="#FBBF24" stroke="#FEF3C7" stroke-width="1.2" stroke-linejoin="round"/>
+      <rect x="9" y="30" width="22" height="3" rx="1.5" fill="#F43F5E"/>
+    </svg>
+  `),
+  reroll: svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#34D399" stroke-width="2"/>
+      <path d="M20 8L23 16.5L32 20L23 23.5L20 32L17 23.5L8 20L17 16.5L20 8Z" fill="#34D399"/>
+      <circle cx="20" cy="20" r="3.5" fill="#FEF3C7"/>
+    </svg>
+  `),
+  weapons: svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#38BDF8" stroke-width="2"/>
+      <rect x="16" y="8" width="15" height="21" rx="2.5" fill="#1E293B" stroke="#38BDF8" stroke-width="1.8"/>
+      <path d="M9 31L25 15M25 15H19M25 15V21" stroke="#FBBF24" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="23.5" cy="18.5" r="2.2" fill="#38BDF8"/>
+    </svg>
+  `),
+  bosses: svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#F43F5E" stroke-width="2"/>
+      <path d="M9 12L14 18C14 14.5 16.7 12 20 12C23.3 12 26 14.5 26 18L31 12L29 23C29 27.5 25 31 20 31C15 31 11 27.5 11 23L9 12Z" fill="#F43F5E"/>
+      <circle cx="16.5" cy="21.5" r="2.2" fill="#FEF3C7"/>
+      <circle cx="23.5" cy="21.5" r="2.2" fill="#FEF3C7"/>
+      <path d="M17 27H23" stroke="#0B0E14" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  `),
+  banners: svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#FBBF24" stroke-width="2"/>
+      <rect x="7" y="12" width="26" height="16" rx="3" fill="#1E293B" stroke="#FBBF24" stroke-width="1.8"/>
+      <path d="M20 13.5L22 18L26.5 20L22 22L20 26.5L18 22L13.5 20L18 18L20 13.5Z" fill="#FBBF24"/>
+    </svg>
+  `),
+  calculator: svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#34D399" stroke-width="2"/>
+      <polygon points="20,8 30,16 25,31 15,31 10,16" fill="#10B981" stroke="#A7F3D0" stroke-width="1.5"/>
+      <polygon points="20,12 25,17 20,27 15,17" fill="#ECFDF5"/>
+    </svg>
+  `),
+  compare: svgToDataUri(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+      <rect width="40" height="40" rx="8" fill="#181F2E" stroke="#A855F7" stroke-width="2"/>
+      <rect x="9" y="21" width="5" height="10" rx="1.5" fill="#38BDF8"/>
+      <rect x="17.5" y="13" width="5" height="18" rx="1.5" fill="#FBBF24"/>
+      <rect x="26" y="16" width="5" height="15" rx="1.5" fill="#F43F5E"/>
+      <path d="M8 11H32" stroke="#CBD5E1" stroke-width="1.6" stroke-dasharray="2 2"/>
+    </svg>
+  `),
+};
+
+// ============================================================================
 // 1. HEAVEN BURNS RED — OFFICIAL IN-GAME ICONS (Game8 JP Official Asset CDN)
 // ============================================================================
 const HBR_FIRE = 'https://img.game8.jp/12419023/39fa5ab24fb93da646fbb9cc4036f275.webp/original';
@@ -29,8 +98,6 @@ const HBR_STYLE_SSR =
   'https://img.game8.jp/11566408/b29a20344e140381e2bfd5f3680fee0f.webp/original';
 const HBR_STYLE_SS =
   'https://img.game8.jp/11566413/edf618f56e767b04c67e15ca01b1f8e3.webp/show';
-const HBR_STYLE_S =
-  'https://img.game8.jp/12421668/7814963711a70d9b90251bcc83bbd5be.webp/show';
 
 // ============================================================================
 // 2. UMA MUSUME: PRETTY DERBY — OFFICIAL IN-GAME ICONS (Game8 JP Official CDN)
@@ -58,13 +125,9 @@ const UMA_SKILL_DEBUFF =
   'https://img.game8.jp/5596393/8eb0da5677ae80d5fcf5fc94e31058d0.jpeg/show';
 const UMA_SKILL_VISION =
   'https://img.game8.jp/5596399/b07bfe4d47be6c0d94f4a783ef47f267.jpeg/show';
-const UMA_RANK_SS_PLUS =
-  'https://img.game8.jp/4083451/7c5b10307f1032546940f77b9814763d.png/show';
-const UMA_EVENT_ICON =
-  'https://img.game8.jp/7695739/0347a2a6ecbc8481d79974cf7bd7369f.png/show';
 
 // ============================================================================
-// 3. SWORD OF CONVALLARIA — OFFICIAL IN-GAME CLASS, TAROT & MENU ICONS
+// 3. SWORD OF CONVALLARIA — OFFICIAL IN-GAME CLASS & TAROT ICONS
 // ============================================================================
 const SOC_CLASS_WATCHER = 'https://cdn.discordapp.com/emojis/1348813900186910731.webp?size=44';
 const SOC_CLASS_DESTROYER = 'https://cdn.discordapp.com/emojis/1348813902573473853.webp?size=44';
@@ -88,21 +151,6 @@ const SOC_TAROT_PRIESTESS_HEAL =
   'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2778.webp';
 const SOC_TAROT_WORLD_NRG =
   'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2723.webp';
-
-const SOC_MENU_ROSTER =
-  SOC_CLASS_WATCHER;
-const SOC_MENU_BOSSES =
-  'https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2599.webp';
-const SOC_MENU_WEAPONS =
-  SOC_TAROT_STRENGTH_ATK;
-const SOC_MENU_SPIRAL =
-  SOC_CLASS_SEEKER;
-const SOC_MENU_GACHA =
-  SOC_TAROT_WORLD_NRG;
-const SOC_MENU_DAMAGE_CALC =
-  SOC_TAROT_JUSTICE_CRIT;
-const SOC_MENU_CURRENCY =
-  SOC_TAROT_CHARIOT_SPD;
 
 // ============================================================================
 // 4. STAR SAVIOR — OFFICIAL IN-GAME ATTRIBUTE, CLASS & STAT ICONS (AppMedia)
@@ -129,7 +177,6 @@ const SS_CLASS_SUPPORTER =
 const SS_STAT_HP = 'https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp';
 const SS_STAT_SHIELD = 'https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp';
 const SS_STAT_ATK = 'https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp';
-const SS_STAT_DEF = 'https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp';
 const SS_STAT_FOCUS = 'https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp';
 
 export const HBR_ELEMENT_ICONS: Record<string, string> = {
@@ -180,43 +227,9 @@ export const STAR_SAVIOR_ATTR_ICONS: Record<string, string> = {
 
 export function getSectionEmblemUrl(
   section: 'tier-list' | 'reroll' | 'weapons' | 'banners' | 'calculator' | 'bosses' | 'compare',
-  gameSlug?: string
+  _gameSlug?: string
 ): string {
-  if (gameSlug === 'uma-musume') {
-    if (section === 'tier-list') return UMA_RANK_SS_PLUS;
-    if (section === 'reroll') return UMA_EVENT_ICON;
-    if (section === 'weapons') return UMA_SPEED;
-    if (section === 'banners') return UMA_WISDOM;
-    if (section === 'calculator') return UMA_STAMINA;
-    if (section === 'bosses') return UMA_SKILL_RUNNER;
-    return UMA_POWER;
-  }
-  if (gameSlug === 'heaven-burns-red') {
-    if (section === 'tier-list') return HBR_STYLE_SSR;
-    if (section === 'reroll') return HBR_STYLE_SS;
-    if (section === 'weapons') return HBR_SLASH;
-    if (section === 'banners') return HBR_LIGHT;
-    if (section === 'calculator') return HBR_ICE;
-    if (section === 'bosses') return HBR_FIRE;
-    return HBR_THUNDER;
-  }
-  if (gameSlug === 'star-savior') {
-    if (section === 'tier-list') return SS_CLASS_STRIKER;
-    if (section === 'reroll') return SS_ATTR_STAR;
-    if (section === 'weapons') return SS_STAT_ATK;
-    if (section === 'banners') return SS_ATTR_SUN;
-    if (section === 'calculator') return SS_ATTR_ORDER;
-    if (section === 'bosses') return SS_ATTR_CHAOS;
-    return SS_STAT_FOCUS;
-  }
-  // Default / Sword of Convallaria official in-game icons
-  if (section === 'tier-list') return SOC_MENU_ROSTER;
-  if (section === 'reroll') return SOC_MENU_SPIRAL;
-  if (section === 'weapons') return SOC_MENU_WEAPONS;
-  if (section === 'banners') return SOC_MENU_GACHA;
-  if (section === 'calculator') return SOC_MENU_CURRENCY;
-  if (section === 'bosses') return SOC_MENU_BOSSES;
-  return SOC_MENU_DAMAGE_CALC;
+  return UI_SECTION_EMBLEMS[section] ?? UI_SECTION_EMBLEMS['tier-list'];
 }
 
 export function getGameAppIconUrl(gameSlug: string): string {
@@ -294,15 +307,16 @@ export function getAttackTypeIconUrl(
   }
   if (gameSlug === 'sword-of-convallaria') {
     const lower = attackType.toLowerCase();
-    if (lower.includes('magic')) return SOC_TAROT_MAGICIAN_MATK;
-    if (lower.includes('pierc')) return SOC_CLASS_SEEKER;
-    return SOC_TAROT_STRENGTH_ATK;
+    if (lower.includes('magic')) return SOC_CLASS_DESTROYER;
+    if (lower.includes('pierc') || lower.includes('ranged')) return SOC_CLASS_SEEKER;
+    return SOC_CLASS_BREAKER;
   }
   if (gameSlug === 'star-savior') {
     const lower = attackType.toLowerCase();
     if (lower.includes('magic')) return SS_CLASS_CASTER;
     if (lower.includes('pierc')) return SS_CLASS_RANGER;
     if (lower.includes('crush') || lower.includes('strike')) return SS_CLASS_DEFENDER;
+    if (lower.includes('assassin')) return SS_CLASS_ASSASSIN;
     return SS_CLASS_STRIKER;
   }
   return SS_STAT_ATK;
@@ -320,10 +334,11 @@ export function getStatConceptIconUrl(
     if (s.includes('stamina')) return UMA_STAMINA;
     if (s.includes('power')) return UMA_POWER;
     if (s.includes('guts')) return UMA_GUTS;
-    if (s.includes('wit') || s.includes('wisdom')) return UMA_WISDOM;
-    if (s.includes('recovery') || s.includes('uphill') || s.includes('drain')) return UMA_SKILL_RECOVERY;
-    if (s.includes('aptitude') || s.includes('turf') || s.includes('dirt')) return UMA_SKILL_PASSIVE;
+    if (s.includes('wit') || s.includes('wisdom') || s.includes('sp') || s.includes('efficiency')) return UMA_WISDOM;
+    if (s.includes('recovery') || s.includes('uphill') || s.includes('drain') || s.includes('sustain')) return UMA_SKILL_RECOVERY;
+    if (s.includes('aptitude') || s.includes('turf') || s.includes('dirt') || s.includes('longevity')) return UMA_SKILL_PASSIVE;
     if (s.includes('swing') || s.includes('penalty') || s.includes('loss')) return UMA_SKILL_DEBUFF;
+    if (s.includes('buff') || s.includes('support')) return UMA_SKILL_VISION;
     return UMA_SKILL_RUNNER;
   }
 
@@ -336,27 +351,43 @@ export function getStatConceptIconUrl(
     if (s.includes('slash')) return HBR_SLASH;
     if (s.includes('pierce')) return HBR_PIERCE;
     if (s.includes('crush')) return HBR_CRUSH;
+    if (s.includes('hp') || s.includes('health')) return SS_STAT_HP;
+    if (s.includes('dp') || s.includes('shield') || s.includes('sustain')) return SS_STAT_SHIELD;
+    if (s.includes('def') || s.includes('guard')) return SS_CLASS_DEFENDER;
+    if (s.includes('crit') || s.includes('dex') || s.includes('spd') || s.includes('sp')) return SS_STAT_FOCUS;
+    if (s.includes('buff') || s.includes('support') || s.includes('field') || s.includes('zone')) return HBR_STYLE_SSR;
+    return HBR_SLASH;
   }
 
   if (gameSlug === 'sword-of-convallaria') {
+    if (s.includes('ranged') || s.includes('magic') || s.includes('matk')) return SOC_CLASS_DESTROYER;
+    if (s.includes('aoe') || s.includes('pierc') || s.includes('crystal')) return SOC_CLASS_SEEKER;
+    if (s.includes('dispel') || s.includes('debuff') || s.includes('buff') || s.includes('support') || s.includes('nrg')) return SOC_CLASS_WATCHER;
+    if (s.includes('knockback') || s.includes('outside-ring') || s.includes('def') || s.includes('shield') || s.includes('sustain')) return SOC_CLASS_DEFENDER;
+    if (s.includes('melee') || s.includes('counter') || s.includes('isolation') || s.includes('patk') || s.includes('atk') || s.includes('burst')) return SOC_CLASS_BREAKER;
     if (s.includes('hp') || s.includes('health')) return SOC_TAROT_FOOL_HP;
     if (s.includes('spd') || s.includes('speed') || s.includes('turn')) return SOC_TAROT_CHARIOT_SPD;
-    if (s.includes('matk') || s.includes('magic')) return SOC_TAROT_MAGICIAN_MATK;
-    if (s.includes('patk') || s.includes('atk') || s.includes('melee')) return SOC_TAROT_STRENGTH_ATK;
-    if (s.includes('def') || s.includes('shield') || s.includes('knockback')) return SOC_TAROT_HERMIT_DEF;
     if (s.includes('crit')) return SOC_TAROT_JUSTICE_CRIT;
-    return SOC_TAROT_WORLD_NRG;
+    return SOC_CLASS_DESTROYER;
   }
 
-  // Star Savior & HBR pure in-game stat icons (from Star Savior official stat badges)
+  // Star Savior official attribute, class, and stat icons
+  if (s.includes('sun')) return SS_ATTR_SUN;
+  if (s.includes('moon')) return SS_ATTR_MOON;
+  if (s.includes('star')) return SS_ATTR_STAR;
+  if (s.includes('order')) return SS_ATTR_ORDER;
+  if (s.includes('chaos')) return SS_ATTR_CHAOS;
+  if (s.includes('break') || s.includes('toughness')) return SS_CLASS_RANGER;
+  if (s.includes('stun') || s.includes('immunity') || s.includes('buff') || s.includes('support')) return SS_CLASS_SUPPORTER;
   if (s.includes('hp') || s.includes('health')) return SS_STAT_HP;
-  if (s.includes('dp') || s.includes('shield') || s.includes('guard') || s.includes('toughness')) {
+  if (s.includes('dp') || s.includes('shield') || s.includes('guard') || s.includes('sustain')) {
     return SS_STAT_SHIELD;
   }
-  if (s.includes('def') || s.includes('endurance') || s.includes('res')) return SS_STAT_DEF;
-  if (s.includes('crit') || s.includes('dex') || s.includes('spd') || s.includes('speed') || s.includes('focus')) {
+  if (s.includes('def') || s.includes('endurance') || s.includes('res')) return SS_CLASS_DEFENDER;
+  if (s.includes('crit') || s.includes('dex') || s.includes('spd') || s.includes('speed') || s.includes('focus') || s.includes('action') || s.includes('sp')) {
     return SS_STAT_FOCUS;
   }
+  if (s.includes('longevity')) return SS_ATTR_STAR;
   return SS_STAT_ATK;
 }
 

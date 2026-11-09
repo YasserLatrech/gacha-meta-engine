@@ -65,11 +65,26 @@ a {
   transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
 }
 
-button,
-input,
-select {
+button {
   font-family: inherit;
   color: inherit;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: var(--text-main);
+  background-color: var(--bg-page);
+  border: 1.5px solid var(--border-strong);
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--accent-primary);
 }
 
 button:active {

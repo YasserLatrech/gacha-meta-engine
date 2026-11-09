@@ -97,27 +97,38 @@ export default async function PortalHomePage() {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-            <GachaCrestMark size={46} />
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              {games.map((g, idx) => (
-                <img
-                  key={g.slug}
-                  src={getGameAppIconUrl(g.slug)}
-                  alt={g.name}
-                  width={40}
-                  height={40}
-                  style={{
-                    width: '40px',
-                    height: '40px',
-                    borderRadius: '8px',
-                    objectFit: 'cover',
-                    border: '2px solid var(--bg-surface)',
-                    marginLeft: idx === 0 ? '0' : '-8px',
-                  }}
-                />
-              ))}
-            </div>
+            <GachaCrestMark size={48} />
             <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', marginBottom: '4px' }}>
+                <span
+                  className="mono"
+                  style={{
+                    background: 'var(--accent-bg)',
+                    color: 'var(--accent-primary)',
+                    border: '1px solid var(--accent-border)',
+                    padding: '2px 8px',
+                    borderRadius: '4px',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                  }}
+                >
+                  MULTI-SOURCE CONSENSUS ENGINE
+                </span>
+                <span
+                  className="mono"
+                  style={{
+                    background: 'var(--green-bg)',
+                    color: 'var(--green-primary)',
+                    border: '1px solid var(--green-border)',
+                    padding: '2px 8px',
+                    borderRadius: '4px',
+                    fontSize: '11px',
+                    fontWeight: 800,
+                  }}
+                >
+                  50% NORMALIZED USAGE • 30% RAID LAB • 20% F2P LB0
+                </span>
+              </div>
               <h1 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>
                 GachaCrest — Multi-Source Gacha Tier Lists, Builds &amp; Pull Codex
               </h1>

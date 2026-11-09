@@ -782,7 +782,7 @@ export function GameWikiClient({
               }}
             >
               <img
-                src={secondEquipThumb}
+                src={getSectionEmblemUrl('calculator', hub.slug)}
                 alt="Pull Savings Planner"
                 width={26}
                 height={26}
@@ -1088,10 +1088,10 @@ export function GameWikiClient({
               <span
                 className="mono"
                 style={{
-                  fontSize: '10.5px',
-                  background: 'var(--accent-bg)',
-                  color: 'var(--accent-primary)',
-                  border: '1px solid var(--accent-border)',
+                  fontSize: '11px',
+                  background: syncCtx.isSimultaneous ? 'var(--green-bg)' : 'var(--blue-bg)',
+                  color: syncCtx.isSimultaneous ? 'var(--green-primary)' : 'var(--blue-primary)',
+                  border: syncCtx.isSimultaneous ? '1px solid var(--green-border)' : '1px solid var(--blue-border)',
                   padding: '3px 8px',
                   borderRadius: '3px',
                   fontWeight: 800,
@@ -1109,7 +1109,7 @@ export function GameWikiClient({
                   { key: 'weapons', label: '2. Weapons & Cards', thumb: topEquipThumb },
                   { key: 'bosses', label: '3. Boss & Raid Guides', thumb: topBossThumb },
                   { key: 'banners', label: '4. Banners & Pull Calc', thumb: topBannerThumb },
-                  { key: 'compare', label: '5. Stat Compare & Math', thumb: secondUnitThumb },
+                  { key: 'compare', label: '5. Stat Compare & Math', thumb: secondEquipThumb },
                 ] as const
               ).map((btn) => (
                 <button
@@ -3076,7 +3076,9 @@ export function GameWikiClient({
                       style={{
                         width: '230px',
                         height: '124px',
-                        objectFit: 'cover',
+                        objectFit: boss.imageUrl.includes('/IMG_2') ? 'contain' : 'cover',
+                        padding: boss.imageUrl.includes('/IMG_2') ? '6px' : '0',
+                        background: 'radial-gradient(circle at center, #1E293B 0%, #0B0E14 100%)',
                         borderRadius: '7px',
                         border: '2px solid var(--border-strong)',
                         boxShadow: '0 2px 8px rgba(0,0,0,0.35)',
@@ -4540,7 +4542,7 @@ export function GameWikiClient({
                         type="number"
                         value={inp.val}
                         onChange={(e) => inp.set(Number(e.target.value) || 0)}
-                        style={{ padding: '5px', border: '1px solid var(--border-main)', borderRadius: '3px' }}
+                        style={{ padding: '7px 10px', border: '1.5px solid var(--border-strong)', borderRadius: '5px', background: 'var(--bg-page)', color: 'var(--text-main)', fontSize: '13.5px', fontWeight: 800 }}
                       />
                     </label>
                   ))}
