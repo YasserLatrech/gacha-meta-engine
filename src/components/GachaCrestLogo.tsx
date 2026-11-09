@@ -51,6 +51,7 @@ export function GachaCrestWordmark({ showSubtitle = true }: { showSubtitle?: boo
         display: 'inline-flex',
         alignItems: 'center',
         gap: '8px',
+        flexWrap: 'wrap',
       }}
     >
       <GachaCrestMark size={34} />
@@ -88,6 +89,7 @@ export function GachaCrestWordmark({ showSubtitle = true }: { showSubtitle?: boo
       </span>
       {showSubtitle && (
         <span
+          className="brand-subtitle"
           style={{
             fontSize: '13.5px',
             fontWeight: 800,

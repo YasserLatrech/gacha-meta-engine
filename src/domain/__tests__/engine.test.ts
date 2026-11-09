@@ -148,4 +148,53 @@ describe('Pure Official English Localization & Roster Verification', () => {
       }
     }
   });
+
+  it('enforces Simultaneous Global/Asia Server Parity for Star Savior and Multi-Source Consensus across all games', async () => {
+    const { starSaviorBundle } = await import('../../infrastructure/scrapers/adapters/star-savior.adapter');
+    const { heavenBurnsRedBundle } = await import('../../infrastructure/scrapers/adapters/heaven-burns-red.adapter');
+    const { getServerSyncContext, computeMultiSourceConsensus } = await import('../game-mechanics');
+
+    // Star Savior must have 0-month foresight gap and 100% simultaneous release parity
+    expect(starSaviorBundle.foresightGapMonths).toBe(0);
+    expect(starSaviorBundle.units.every((u) => u.isReleasedGlobal === true)).toBe(true);
+
+    const ssSync = getServerSyncContext(
+      starSaviorBundle.slug,
+      starSaviorBundle.foresightGapMonths,
+      starSaviorBundle.globalPatchVersion
+    );
+    expect(ssSync.isSimultaneous).toBe(true);
+    expect(ssSync.badgeLabel).toContain('SIMULTANEOUS');
+
+    // Heaven Burns Red has a regional server lead (+4 months)
+    const hbrSync = getServerSyncContext(
+      heavenBurnsRedBundle.slug,
+      heavenBurnsRedBundle.foresightGapMonths,
+      heavenBurnsRedBundle.globalPatchVersion
+    );
+    expect(hbrSync.isSimultaneous).toBe(false);
+    expect(hbrSync.badgeLabel).toContain('+4MO');
+
+    // Multi-Source Consensus Engine validation
+    const rawUnit = starSaviorBundle.units[0]!;
+    const hydratedUnit = {
+      ...rawUnit,
+      tiers: {
+        overallAsian: {
+          tierRank: rawUnit.tierOverall,
+          numericScore: rawUnit.numericScore,
+          roleColumn: rawUnit.roleColumn,
+          summaryVerdict: rawUnit.summaryVerdict,
+          longevityNote: rawUnit.longevityNote,
+        },
+        overallGlobal: null,
+        rerollAsian: rawUnit.tierReroll,
+        bossRaidAsian: rawUnit.tierBossRaid,
+      },
+    };
+    const consensus = computeMultiSourceConsensus('star-savior', hydratedUnit);
+    expect(consensus.finalWeightedScore).toBeGreaterThanOrEqual(8.5);
+    expect(consensus.normalizedElementUsagePct).toBeGreaterThanOrEqual(70);
+    expect(consensus.whySourcesDifferOrAgree.length).toBeGreaterThan(20);
+  });
 });

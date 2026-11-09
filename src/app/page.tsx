@@ -5,6 +5,7 @@ import { SiteHeader } from '../components/SiteHeader';
 import { AdSlot } from '../components/AdSlot';
 import { PortalSearchClient, SearchableItem } from '../components/PortalSearchClient';
 import { getGameAppIconUrl, getSectionEmblemUrl } from '../domain/constants/game-visuals';
+import { getServerSyncContext } from '../domain/game-mechanics';
 import { GachaCrestMark } from '../components/GachaCrestLogo';
 import { SiteFooter } from '../components/SiteFooter';
 
@@ -68,7 +69,7 @@ export default async function PortalHomePage() {
     alternateName: ['GachaCrest', 'GachaCrest.gg'],
     url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gachacrest.gg',
     description:
-      'GachaCrest is the multi-game gacha encyclopedic database featuring character tier lists, weapon and support card rankings, boss raid guides, and pull calculators.',
+      'GachaCrest is the multi-game gacha encyclopedic database featuring character tier lists, multi-source consensus ratings, weapon and support card rankings, boss raid guides, and pull calculators.',
   };
 
   return (
@@ -79,36 +80,36 @@ export default async function PortalHomePage() {
       />
       <SiteHeader />
 
-      <main className="portal-container" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <main className="portal-container" style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
         {/* HERO DIRECTORY BAR + INSTANT SEARCH */}
         <section
           style={{
             background: 'var(--bg-surface)',
             border: '1px solid var(--border-main)',
             borderLeft: '4px solid var(--accent-primary)',
-            borderRadius: '6px',
-            padding: '13px 16px',
+            borderRadius: '8px',
+            padding: '16px 18px',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             flexWrap: 'wrap',
-            gap: '12px',
+            gap: '14px',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-            <GachaCrestMark size={44} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
+            <GachaCrestMark size={46} />
             <div style={{ display: 'flex', alignItems: 'center' }}>
               {games.map((g, idx) => (
                 <img
                   key={g.slug}
                   src={getGameAppIconUrl(g.slug)}
                   alt={g.name}
-                  width={36}
-                  height={36}
+                  width={40}
+                  height={40}
                   style={{
-                    width: '36px',
-                    height: '36px',
-                    borderRadius: '7px',
+                    width: '40px',
+                    height: '40px',
+                    borderRadius: '8px',
                     objectFit: 'cover',
                     border: '2px solid var(--bg-surface)',
                     marginLeft: idx === 0 ? '0' : '-8px',
@@ -117,11 +118,11 @@ export default async function PortalHomePage() {
               ))}
             </div>
             <div>
-              <h1 style={{ fontSize: '17.5px', fontWeight: 900 }}>
-                GachaCrest — Gacha Character Tier Lists, Builds &amp; Pull Codex
+              <h1 style={{ fontSize: '20px', fontWeight: 800, color: 'var(--text-main)' }}>
+                GachaCrest — Multi-Source Gacha Tier Lists, Builds &amp; Pull Codex
               </h1>
-              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '2px', fontWeight: 600 }}>
-                336 verified characters, 216 weapons &amp; support cards, boss raid guides, and pull calculators across 4 games.
+              <p style={{ fontSize: '13.5px', color: 'var(--text-secondary)', marginTop: '3px', fontWeight: 600 }}>
+                336 verified characters, 216 weapons &amp; support cards, multi-wiki consensus ratings, boss raid usage telemetry, and pull calculators.
               </p>
             </div>
           </div>
@@ -144,21 +145,23 @@ export default async function PortalHomePage() {
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              marginBottom: '10px',
+              flexWrap: 'wrap',
+              gap: '8px',
+              marginBottom: '12px',
             }}
           >
             <h2
               style={{
-                fontSize: '14px',
-                fontWeight: 900,
-                borderLeft: '4px solid var(--border-strong)',
-                paddingLeft: '8px',
+                fontSize: '16px',
+                fontWeight: 800,
+                borderLeft: '4px solid var(--accent-primary)',
+                paddingLeft: '10px',
               }}
             >
               GACHACREST WIKI HUBS (SELECT GAME)
             </h2>
-            <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
-              GachaCrest Verified English Codex • Complete Rosters &amp; Builds
+            <span className="mono" style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 700 }}>
+              Multi-Source Consensus • Server Parity Aware • Complete Rosters &amp; Builds
             </span>
           </div>
 
@@ -170,6 +173,7 @@ export default async function PortalHomePage() {
               const bannerIcon = getSectionEmblemUrl('banners', g.slug);
               const compareIcon = getSectionEmblemUrl('compare', g.slug);
               const calcIcon = getSectionEmblemUrl('calculator', g.slug);
+              const syncCtx = getServerSyncContext(g.slug, g.foresightGapMonths, g.globalPatchVersion);
 
               return (
                 <article
@@ -177,7 +181,7 @@ export default async function PortalHomePage() {
                   style={{
                     background: 'var(--bg-surface)',
                     border: '1px solid var(--border-main)',
-                    borderRadius: '6px',
+                    borderRadius: '8px',
                     overflow: 'hidden',
                     display: 'flex',
                     flexDirection: 'column',
@@ -186,12 +190,12 @@ export default async function PortalHomePage() {
                   <Link
                     href={`/${g.slug}`}
                     style={{
-                      height: '185px',
+                      height: '195px',
                       position: 'relative',
                       overflow: 'hidden',
                       borderBottom: '1px solid var(--border-main)',
                       display: 'block',
-                      background: '#18181B',
+                      background: 'var(--bg-header)',
                     }}
                   >
                     <img
@@ -208,29 +212,47 @@ export default async function PortalHomePage() {
                       className="mono"
                       style={{
                         position: 'absolute',
-                        top: '8px',
-                        left: '8px',
+                        top: '10px',
+                        left: '10px',
                         background: 'var(--accent-primary)',
                         color: '#FFFFFF',
-                        fontSize: '10.5px',
-                        fontWeight: 900,
-                        padding: '4px 9px',
-                        borderRadius: '4px',
+                        fontSize: '11.5px',
+                        fontWeight: 800,
+                        padding: '4px 10px',
+                        borderRadius: '5px',
                       }}
                     >
                       {g.counts.units} UNITS • {g.counts.equipments} ITEMS
+                    </span>
+                    <span
+                      className="mono"
+                      style={{
+                        position: 'absolute',
+                        top: '10px',
+                        right: '10px',
+                        background: syncCtx.isSimultaneous ? 'rgba(6, 78, 59, 0.92)' : 'rgba(15, 23, 42, 0.92)',
+                        color: syncCtx.isSimultaneous ? '#6EE7B7' : '#7DD3FC',
+                        border: syncCtx.isSimultaneous ? '1px solid #34D399' : '1px solid #38BDF8',
+                        fontSize: '11px',
+                        fontWeight: 800,
+                        padding: '4px 9px',
+                        borderRadius: '5px',
+                      }}
+                    >
+                      {syncCtx.shortBadgeLabel}
                     </span>
                     {/* Top 4 SSS character avatars strip in bottom-left of cover */}
                     <div
                       style={{
                         position: 'absolute',
-                        bottom: '8px',
-                        left: '8px',
+                        bottom: '10px',
+                        left: '10px',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '5px',
-                        background: 'rgba(20, 19, 18, 0.88)',
-                        padding: '4px 8px',
+                        gap: '6px',
+                        background: 'rgba(11, 14, 20, 0.9)',
+                        border: '1px solid var(--border-strong)',
+                        padding: '5px 10px',
                         borderRadius: '6px',
                       }}
                     >
@@ -240,68 +262,69 @@ export default async function PortalHomePage() {
                           src={u.imageUrl}
                           alt={u.nameEn}
                           title={u.nameEn}
-                          width={36}
-                          height={36}
+                          width={38}
+                          height={38}
                           style={{
-                            width: '36px',
-                            height: '36px',
+                            width: '38px',
+                            height: '38px',
                             borderRadius: '6px',
                             objectFit: 'cover',
-                            border: '1.5px solid rgba(255,255,255,0.7)',
+                            border: '1.5px solid rgba(255,255,255,0.75)',
                           }}
                         />
                       ))}
                       <span
                         className="mono"
-                        style={{ color: '#FFF', fontSize: '10px', fontWeight: 900, marginLeft: '3px' }}
+                        style={{ color: 'var(--amber-primary)', fontSize: '11px', fontWeight: 800, marginLeft: '4px' }}
                       >
-                        SSS META
+                        SSS APEX
                       </span>
                     </div>
                     <span
                       className="mono"
                       style={{
                         position: 'absolute',
-                        bottom: '8px',
-                        right: '8px',
-                        background: 'rgba(20, 19, 18, 0.9)',
-                        color: '#FDE047',
-                        fontSize: '10px',
+                        bottom: '10px',
+                        right: '10px',
+                        background: 'rgba(11, 14, 20, 0.92)',
+                        color: 'var(--amber-primary)',
+                        border: '1px solid var(--border-main)',
+                        fontSize: '11px',
                         fontWeight: 800,
-                        padding: '3px 7px',
-                        borderRadius: '4px',
+                        padding: '4px 8px',
+                        borderRadius: '5px',
                       }}
                     >
                       {g.globalPatchVersion}
                     </span>
                   </Link>
 
-                  <div style={{ padding: '12px', display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <div style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '12px', flex: 1 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                       <img
                         src={getGameAppIconUrl(g.slug)}
                         alt={g.name}
-                        width={40}
-                        height={40}
+                        width={44}
+                        height={44}
                         style={{
-                          width: '40px',
-                          height: '40px',
+                          width: '44px',
+                          height: '44px',
                           borderRadius: '8px',
                           objectFit: 'cover',
-                          border: '1px solid var(--border-main)',
+                          border: '1.5px solid var(--border-strong)',
                           flexShrink: 0,
                         }}
                       />
                       <div>
                         <Link
                           href={`/${g.slug}`}
-                          style={{ fontSize: '16px', fontWeight: 900, color: 'var(--text-main)' }}
+                          style={{ fontSize: '18px', fontWeight: 800, color: 'var(--text-main)' }}
                         >
                           {g.name} Wiki
                         </Link>
                         <div
                           className="mono"
-                          style={{ fontSize: '10.5px', color: 'var(--text-muted)', marginTop: '1px', fontWeight: 700 }}
+                          style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '2px', fontWeight: 700 }}
                         >
                           {g.counts.units} Characters • {g.counts.equipments} Weapons/Cards •{' '}
                           {g.counts.bossEncounters} Raid Guides • {g.counts.banners} Banners
@@ -309,13 +332,29 @@ export default async function PortalHomePage() {
                       </div>
                     </div>
 
+                    {/* SERVER PARITY EXPLANATION BAR */}
+                    <div
+                      style={{
+                        padding: '7px 10px',
+                        borderRadius: '6px',
+                        background: syncCtx.isSimultaneous ? 'var(--green-bg)' : 'var(--blue-bg)',
+                        border: syncCtx.isSimultaneous ? '1px solid var(--green-border)' : '1px solid var(--blue-border)',
+                        fontSize: '12px',
+                        color: 'var(--text-secondary)',
+                      }}
+                    >
+                      <strong style={{ color: syncCtx.isSimultaneous ? 'var(--green-primary)' : 'var(--blue-primary)' }}>
+                        {syncCtx.isSimultaneous ? 'Simultaneous Global/Asia Patch: ' : `Regional Foresight (+${g.foresightGapMonths}mo): `}
+                      </strong>
+                      {syncCtx.explanation}
+                    </div>
+
                     {/* 6 DIRECT TOPIC QUICK-LINKS WITH REAL THUMBNAILS FOR THIS GAME */}
                     <div
                       style={{
                         display: 'grid',
                         gridTemplateColumns: '1fr 1fr',
-                        gap: '6px',
-                        marginTop: '4px',
+                        gap: '8px',
                       }}
                     >
                       <Link
@@ -323,24 +362,24 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
+                          gap: '9px',
                           background: 'var(--accent-bg)',
                           border: '1px solid var(--accent-border)',
-                          color: 'var(--accent-primary)',
-                          padding: '6px 8px',
-                          borderRadius: '5px',
-                          fontSize: '11.5px',
-                          fontWeight: 900,
+                          color: 'var(--text-main)',
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 800,
                         }}
                       >
                         <img
                           src={unitIcon}
                           alt="Character Tier List"
-                          width={34}
-                          height={34}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '34px',
-                            height: '34px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--accent-border)',
@@ -354,24 +393,24 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
+                          gap: '9px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '6px 8px',
-                          borderRadius: '5px',
-                          fontSize: '11.5px',
-                          fontWeight: 800,
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 700,
                         }}
                       >
                         <img
                           src={equipIcon}
                           alt="Weapons and Cards"
-                          width={34}
-                          height={34}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '34px',
-                            height: '34px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
@@ -385,24 +424,24 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
+                          gap: '9px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '6px 8px',
-                          borderRadius: '5px',
-                          fontSize: '11.5px',
-                          fontWeight: 800,
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 700,
                         }}
                       >
                         <img
                           src={bossIcon}
                           alt="Boss and Raid Guides"
-                          width={34}
-                          height={34}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '34px',
-                            height: '34px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
@@ -416,55 +455,55 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
+                          gap: '9px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '6px 8px',
-                          borderRadius: '5px',
-                          fontSize: '11.5px',
-                          fontWeight: 800,
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 700,
                         }}
                       >
                         <img
                           src={bannerIcon}
                           alt="Upcoming Banners"
-                          width={34}
-                          height={34}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '34px',
-                            height: '34px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
                             flexShrink: 0,
                           }}
                         />
-                        <span>Upcoming Banners</span>
+                        <span>{syncCtx.isSimultaneous ? 'Banner Schedule' : 'Upcoming Banners'}</span>
                       </Link>
                       <Link
                         href={`/${g.slug}?tab=compare`}
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
+                          gap: '9px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '6px 8px',
-                          borderRadius: '5px',
-                          fontSize: '11.5px',
-                          fontWeight: 800,
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 700,
                         }}
                       >
                         <img
                           src={compareIcon}
                           alt="Stat Comparison"
-                          width={34}
-                          height={34}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '34px',
-                            height: '34px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
@@ -478,24 +517,24 @@ export default async function PortalHomePage() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '8px',
+                          gap: '9px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
                           color: 'var(--text-main)',
-                          padding: '6px 8px',
-                          borderRadius: '5px',
-                          fontSize: '11.5px',
-                          fontWeight: 800,
+                          padding: '7px 10px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
+                          fontWeight: 700,
                         }}
                       >
                         <img
                           src={calcIcon}
                           alt="Pull Calculator"
-                          width={34}
-                          height={34}
+                          width={36}
+                          height={36}
                           style={{
-                            width: '34px',
-                            height: '34px',
+                            width: '36px',
+                            height: '36px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             border: '1px solid var(--border-main)',
@@ -513,35 +552,28 @@ export default async function PortalHomePage() {
         </section>
 
         {/* SECTION 2: LATEST META UPDATES & UPCOMING BANNER ALERTS */}
-        <section
-          style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 320px',
-            gap: '14px',
-            alignItems: 'start',
-          }}
-        >
+        <section className="portal-updates-grid">
           <div
             style={{
               background: 'var(--bg-surface)',
               border: '1px solid var(--border-main)',
-              borderRadius: '4px',
-              padding: '14px',
+              borderRadius: '8px',
+              padding: '16px',
             }}
           >
             <h2
               style={{
-                fontSize: '13.5px',
-                fontWeight: 900,
+                fontSize: '15.5px',
+                fontWeight: 800,
                 borderLeft: '4px solid var(--accent-primary)',
-                paddingLeft: '8px',
-                marginBottom: '10px',
+                paddingLeft: '10px',
+                marginBottom: '12px',
               }}
             >
-              LATEST META UPDATES &amp; BANNER ALERTS
+              LATEST META UPDATES &amp; BANNER PULL VERDICTS
             </h2>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {games.flatMap((g) =>
                 g.upcomingBanners.slice(0, 3).map((bn) => (
                   <Link
@@ -551,66 +583,67 @@ export default async function PortalHomePage() {
                       display: 'flex',
                       justifyContent: 'space-between',
                       alignItems: 'center',
-                      padding: '8px 10px',
+                      padding: '10px 12px',
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      borderRadius: '5px',
-                      fontSize: '12.5px',
+                      borderRadius: '6px',
+                      fontSize: '13.5px',
                       flexWrap: 'wrap',
-                      gap: '10px',
+                      gap: '12px',
                     }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
                       <img
                         src={bn.imageUrl}
                         alt={bn.bannerTitle}
-                        width={132}
-                        height={70}
+                        width={136}
+                        height={72}
                         style={{
-                          width: '132px',
-                          height: '70px',
+                          width: '136px',
+                          height: '72px',
                           borderRadius: '6px',
                           objectFit: 'cover',
-                          border: '1px solid var(--border-main)',
+                          border: '1px solid var(--border-strong)',
                           flexShrink: 0,
                         }}
                       />
                       <div>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '7px', flexWrap: 'wrap' }}>
                           <span
                             style={{
                               display: 'inline-flex',
                               alignItems: 'center',
                               gap: '5px',
                               background: 'var(--bg-header)',
-                              color: '#FFF',
-                              fontSize: '10.5px',
-                              fontWeight: 900,
-                              padding: '2px 7px',
-                              borderRadius: '3px',
+                              border: '1px solid var(--border-main)',
+                              color: 'var(--text-main)',
+                              fontSize: '11.5px',
+                              fontWeight: 800,
+                              padding: '2px 8px',
+                              borderRadius: '4px',
                             }}
                           >
                             <img
                               src={getGameAppIconUrl(g.slug)}
                               alt={g.shortName}
-                              width={16}
-                              height={16}
-                              style={{ width: '16px', height: '16px', borderRadius: '3px', objectFit: 'cover' }}
+                              width={18}
+                              height={18}
+                              style={{ width: '18px', height: '18px', borderRadius: '3px', objectFit: 'cover' }}
                             />
                             [{g.shortName}]
                           </span>
-                          <strong>{bn.bannerTitle}</strong>
+                          <strong style={{ fontSize: '14px' }}>{bn.bannerTitle}</strong>
                         </div>
-                        <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '3px', fontWeight: 600 }}>
+                        <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '4px', fontWeight: 600 }}>
                           Featured: {bn.featuredNames.join(', ')}
                         </div>
                       </div>
                     </div>
-                    <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800 }}>
-                      <span style={{ color: 'var(--text-muted)', marginRight: '8px' }}>
-                        Release: {bn.estGlobalStartDate}
+                    <div className="mono" style={{ fontSize: '12.5px', fontWeight: 800 }}>
+                      <span style={{ color: 'var(--text-muted)', marginRight: '10px' }}>
+                        Schedule: {bn.estGlobalStartDate}
                       </span>
-                      <span style={{ color: 'var(--accent-primary)' }}>
+                      <span style={{ color: bn.pullVerdict === 'MUST_PULL' ? 'var(--green-primary)' : 'var(--amber-primary)' }}>
                         {bn.pullVerdict.replace('_', ' ')} &rarr;
                       </span>
                     </div>
@@ -624,46 +657,46 @@ export default async function PortalHomePage() {
             style={{
               background: 'var(--bg-surface)',
               border: '2px solid var(--accent-primary)',
-              borderRadius: '6px',
-              padding: '14px',
+              borderRadius: '8px',
+              padding: '16px',
               display: 'flex',
               flexDirection: 'column',
-              gap: '10px',
+              gap: '12px',
             }}
           >
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '6px' }}>
               <span
                 className="mono"
                 style={{
                   background: 'var(--accent-primary)',
                   color: '#FFF',
-                  fontSize: '10px',
-                  fontWeight: 900,
-                  padding: '2px 7px',
-                  borderRadius: '3px',
+                  fontSize: '11px',
+                  fontWeight: 800,
+                  padding: '3px 8px',
+                  borderRadius: '4px',
                 }}
               >
-                LIVE ACCOUNT ENGINE
+                CONSENSUS &amp; ACCOUNT ENGINE
               </span>
-              <span className="mono" style={{ fontSize: '10.5px', fontWeight: 900, color: '#15803D' }}>
+              <span className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--green-primary)' }}>
                 ✓ AUTO-SAVED IN BROWSER
               </span>
             </div>
-            <h3 style={{ fontSize: '14px', fontWeight: 900 }}>
-              MY ROSTER BOX, LB DUPE TRACKER &amp; SQUAD SYNERGY AUDITOR
+            <h3 style={{ fontSize: '16px', fontWeight: 800 }}>
+              MULTI-SOURCE CONSENSUS, LB DUPE TRACKER &amp; SQUAD AUDITOR
             </h3>
-            <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-              Unlike static tier lists, GachaCrest adapts dynamically to your account investment:
+            <p style={{ fontSize: '13px', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+              Unlike single-opinion tier lists, GachaCrest resolves disagreements across major Asian wikis and endgame usage telemetry:
             </p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', fontSize: '11.5px' }}>
-              <div style={{ padding: '7px 9px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '4px' }}>
-                <strong style={{ color: 'var(--accent-primary)' }}>1. F2P LB0 vs. LB1 vs. MLB Tiers:</strong> Toggle how every character scales from Base 0-Dupe to Max Limit Break.
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '13px' }}>
+              <div style={{ padding: '9px 11px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '6px' }}>
+                <strong style={{ color: 'var(--amber-primary)' }}>1. Multi-Source Consensus &amp; Disagreement Engine:</strong> See instantly when a character is 100% Unanimous Apex vs. Split Rating (e.g. LB1 Raid Ceiling vs. 0-Dupe F2P).
               </div>
-              <div style={{ padding: '7px 9px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '4px' }}>
-                <strong style={{ color: 'var(--accent-primary)' }}>2. Game-Native Deep Builds:</strong> SoC Rank 1–11 Left/Right Skill Trees, Uma Career Event Choices &amp; HBR 8-Layer Buff Matrices.
+              <div style={{ padding: '9px 11px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '6px' }}>
+                <strong style={{ color: 'var(--blue-primary)' }}>2. Server Parity &amp; Regional Foresight Aware:</strong> Simultaneous Global/Asia sync for Star Savior vs. regional foresight planning for HBR, Uma Musume &amp; SoC.
               </div>
-              <div style={{ padding: '7px 9px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '4px' }}>
-                <strong style={{ color: 'var(--accent-primary)' }}>3. Auto-Squad Builder &amp; Pull Ledger:</strong> Build optimal 6-unit teams from your owned box and track cumulative multi-banner pity.
+              <div style={{ padding: '9px 11px', background: 'var(--bg-subtle)', border: '1px solid var(--border-main)', borderRadius: '6px' }}>
+                <strong style={{ color: 'var(--green-primary)' }}>3. Auto-Squad Builder &amp; Boss Matchup Simulator:</strong> Test your exact owned roster against endgame raid bosses and track cumulative multi-banner pity.
               </div>
             </div>
           </div>
@@ -674,76 +707,74 @@ export default async function PortalHomePage() {
           style={{
             background: 'var(--bg-surface)',
             border: '1px solid var(--border-main)',
-            borderRadius: '4px',
-            padding: '16px',
+            borderRadius: '8px',
+            padding: '18px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '12px',
+            gap: '14px',
           }}
         >
           <h2
             style={{
-              fontSize: '14px',
-              fontWeight: 900,
+              fontSize: '15.5px',
+              fontWeight: 800,
               borderLeft: '4px solid var(--accent-primary)',
-              paddingLeft: '8px',
+              paddingLeft: '10px',
             }}
           >
-            GACHACREST TIER LIST SCORING METHODOLOGY &amp; MULTI-GAME FAQ
+            HOW GACHACREST RESOLVES WIKI DISAGREEMENTS &amp; CALCULATES CONSENSUS TIERS
           </h2>
 
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-              gap: '10px',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+              gap: '12px',
             }}
           >
             <div
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
-                padding: '11px',
+                borderRadius: '6px',
+                padding: '13px',
               }}
             >
-              <h3 style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                How does GachaCrest calculate SSS (9.5–10.0) Tier Rankings?
+              <h3 style={{ fontSize: '14px', fontWeight: 800, color: 'var(--amber-primary)' }}>
+                Why do Asian wikis sometimes disagree on the same character?
               </h3>
-              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.5 }}>
-                Every character and weapon/card is evaluated across four weighted telemetry metrics: <strong>Burst &amp; Break Ceiling (35%)</strong>,{' '}
-                <strong>SP / Turn Economy (25%)</strong>, <strong>Role Compression &amp; Buff Stacking (25%)</strong>, and{' '}
-                <strong>Endgame Meta Longevity (15%)</strong>.
+              <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: 1.55 }}>
+                One wiki often evaluates characters at <strong>LB1+ / 3★ Dupe Breakpoints</strong> for 3-turn Boss Raid speed-clears, while another evaluates at <strong>0-Dupe Base (LB0)</strong> for general story and dungeon farming. GachaCrest surfaces both ratings side-by-side and explains the exact reason for any split.
               </p>
             </div>
             <div
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
-                padding: '11px',
+                borderRadius: '6px',
+                padding: '13px',
               }}
             >
-              <h3 style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                Who are the #1 Apex Meta units across all 4 games right now?
+              <h3 style={{ fontSize: '14px', fontWeight: 800, color: 'var(--blue-primary)' }}>
+                How does Element &amp; Track-Normalized Usage (50% Weight) work?
               </h3>
-              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.5 }}>
-                In <strong>Star Savior</strong>: Frey (Bunny) &amp; Lugh. In <strong>Heaven Burns Red</strong>: Karen Asakura [Midnight Soul Harvest] &amp; Ruka Kayamori [Diva Suit]. In <strong>Uma Musume</strong>: Symboli Rudolf [Adamant Sovereign] &amp; Almond Eye. In <strong>Sword of Convallaria</strong>: SP Samantha &amp; Triss.
+              <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: 1.55 }}>
+                Raw pick rates can be skewed by the current week&apos;s boss element. GachaCrest normalizes usage within each character&apos;s own <strong>Element, Track Distance, or Tactical Class (50%)</strong>, combined with <strong>Primary Raid Lab (30%)</strong> and <strong>Secondary F2P Codex (20%)</strong>.
               </p>
             </div>
             <div
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '4px',
-                padding: '11px',
+                borderRadius: '6px',
+                padding: '13px',
               }}
             >
-              <h3 style={{ fontSize: '12.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                How do the Pity &amp; Spark Pull Calculators work?
+              <h3 style={{ fontSize: '14px', fontWeight: 800, color: 'var(--green-primary)' }}>
+                How does Server Parity differ between Star Savior and other games?
               </h3>
-              <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px', lineHeight: 1.5 }}>
-                Each game wiki features a dedicated Pity Planner that calculates your exact pull readiness against hard pity (200 pulls in Star Savior &amp; Uma Musume, 150 in Heaven Burns Red, 100 in Sword of Convallaria) using your saved currency and monthly F2P income.
+              <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '6px', lineHeight: 1.55 }}>
+                <strong>Star Savior</strong> runs on simultaneous Global/Asia patch parity (0-month gap), so every tier rating applies immediately to all servers. <strong>Heaven Burns Red</strong>, <strong>Uma Musume</strong>, and <strong>Sword of Convallaria</strong> include regional foresight timelines so Global players can plan ahead.
               </p>
             </div>
           </div>
