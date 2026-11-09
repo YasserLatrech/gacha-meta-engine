@@ -324,7 +324,7 @@ export function getStatConceptIconUrl(
 
   if (gameSlug === 'uma-musume') {
     if (s.includes('friend') || s.includes('group') || s.includes('pal')) {
-      return 'https://img.game8.jp/5598597/d4766aeac9fe6db527387991e48f1b7f.png/original';
+      return UMA_SKILL_PASSIVE;
     }
     if (s.includes('speed') || s.includes('velocity') || s.includes('position')) return UMA_SPEED;
     if (s.includes('stamina') || s.includes('consistency')) return UMA_STAMINA;
