@@ -2,44 +2,36 @@
 [data-theme="dark"] {
   color-scheme: dark;
 
-  /* Authentic Game8 / BiliGame / Prydwen Dark Mode Palette */
-  --bg-page: #0d1117;
-  --bg-surface: #161b22;
-  --bg-subtle: #1c2128;
-  --bg-elevated: #21262d;
-  --bg-header: #090d13;
-  --bg-subnav: #131820;
+  /* AppMedia-Inspired Dark Studio Palette */
+  --bg-page: #0b0e14;
+  --bg-surface: #131822;
+  --bg-subtle: #1a2130;
+  --bg-elevated: #21293a;
+  --bg-header: #080a0f;
 
-  /* Crisp 1px Structural Borders */
-  --border-main: #30363d;
-  --border-subtle: #21262d;
-  --border-strong: #484f58;
+  /* Crisp 1px Structural Hairlines */
+  --border-main: #283246;
+  --border-subtle: #1e2636;
+  --border-strong: #3b4861;
 
-  /* High-Contrast Editorial Text Hierarchy */
-  --text-main: #f0f6fc;
-  --text-primary: #f0f6fc;
-  --text-secondary: #c9d1d9;
-  --text-muted: #8b949e;
+  /* High-Contrast Typography */
+  --text-main: #f3f6fc;
+  --text-secondary: #c3cde0;
+  --text-muted: #8492a6;
 
-  /* Semantic Accents */
-  --accent-primary: #e11d48;
-  --accent-bg: rgba(225, 29, 72, 0.14);
-  --accent-border: rgba(225, 29, 72, 0.45);
+  /* AppMedia Tier & Brand Accents */
+  --accent-primary: #38bdf8;
+  --accent-bg: rgba(56, 189, 248, 0.14);
+  --accent-border: rgba(56, 189, 248, 0.45);
 
-  --amber-primary: #f59e0b;
-  --amber-bg: rgba(245, 158, 11, 0.14);
-  --amber-border: rgba(245, 158, 11, 0.42);
-
-  --green-primary: #10b981;
-  --green-bg: rgba(16, 185, 129, 0.14);
-  --green-border: rgba(16, 185, 129, 0.42);
-
-  --blue-primary: #38bdf8;
-  --blue-bg: rgba(56, 189, 248, 0.14);
-  --blue-border: rgba(56, 189, 248, 0.42);
-
-  --ad-bg: #0d1117;
-  --ad-border: #30363d;
+  --tier-ss: #f43f5e;
+  --tier-ss-bg: rgba(244, 63, 94, 0.16);
+  --tier-s: #f59e0b;
+  --tier-s-bg: rgba(245, 158, 11, 0.16);
+  --tier-a: #10b981;
+  --tier-a-bg: rgba(16, 185, 129, 0.16);
+  --tier-b: #3b82f6;
+  --tier-b-bg: rgba(59, 130, 246, 0.16);
 }
 
 * {
@@ -48,9 +40,7 @@
   padding: 0;
 }
 
-/* ============================================================================
-   SLEEK DARK-MODE SCROLLBARS (NO WHITE OS TRACKS OR CHUNKY ARROW BUTTONS)
-   ============================================================================ */
+/* Sleek Dark Scrollbars (Zero White OS Tracks or Arrow Buttons) */
 ::-webkit-scrollbar {
   width: 7px;
   height: 7px;
@@ -64,50 +54,40 @@
 
 ::-webkit-scrollbar-track {
   background: #0b0e14;
-  border-left: 1px solid #1c2128;
+  border-left: 1px solid #1e2636;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #30363d;
+  background: #283246;
   border-radius: 999px;
-  border: 1px solid #161b22;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #484f58;
+  background: #3b4861;
 }
 
 ::-webkit-scrollbar-thumb:active {
   background: var(--accent-primary);
 }
 
-::-webkit-scrollbar-corner {
-  background: #0b0e14;
-}
-
-.wiki-sidebar-scroll::-webkit-scrollbar {
+.sidebar-scroll::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-.wiki-sidebar-scroll::-webkit-scrollbar-track {
-  background: #0d1117;
-  border-left: 1px solid #21262d;
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: #0b0e14;
 }
 
-.wiki-sidebar-scroll::-webkit-scrollbar-thumb {
-  background: #30363d;
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #283246;
   border-radius: 999px;
-}
-
-.wiki-sidebar-scroll::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-primary);
 }
 
 @supports not selector(::-webkit-scrollbar) {
   * {
     scrollbar-width: thin;
-    scrollbar-color: #30363d #0b0e14;
+    scrollbar-color: #283246 #0b0e14;
   }
 }
 
@@ -116,19 +96,17 @@ body {
   color-scheme: dark;
   background: var(--bg-page);
   color: var(--text-main);
-  font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: -0.005em;
+  line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  transition: color 0.12s ease, border-color 0.12s ease, background-color 0.12s ease;
+  transition: color 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
 }
 
 button {
@@ -138,30 +116,40 @@ button {
 }
 
 input,
-select,
-textarea {
+select {
   font-family: inherit;
   color: var(--text-main);
-  background-color: var(--bg-page);
+  background: var(--bg-page);
   border: 1px solid var(--border-main);
   border-radius: 6px;
   outline: none;
 }
 
 input:focus,
-select:focus,
-textarea:focus {
+select:focus {
   border-color: var(--accent-primary);
 }
 
 .mono {
-  font-family: var(--font-mono), "JetBrains Mono", "Consolas", monospace;
+  font-family: "JetBrains Mono", "Consolas", monospace;
   font-variant-numeric: tabular-nums;
 }
 
-/* ============================================================================
-   GAME8 / APPMEDIA / PRYDWEN WIKI DESIGN SYSTEM CLASSES
-   ============================================================================ */
+/* AppMedia Clean 2-Column Container (240px Sidebar + 1fr Article) */
+.wiki-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.wiki-grid {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
 .wiki-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-main);
@@ -169,315 +157,65 @@ textarea:focus {
   overflow: hidden;
 }
 
-.wiki-section-bar {
-  padding: 10px 14px;
+.wiki-section-header {
   background: var(--bg-subtle);
   border-bottom: 1px solid var(--border-main);
   border-left: 4px solid var(--accent-primary);
+  padding: 10px 14px;
+  font-size: 14.5px;
+  font-weight: 900;
+  color: var(--text-main);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
   flex-wrap: wrap;
-  gap: 8px;
 }
 
-.wiki-section-title {
-  font-family: var(--font-display);
-  font-size: 0.98rem;
-  font-weight: 900;
-  color: var(--text-main);
-  letter-spacing: -0.01em;
-}
-
-.wiki-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 3px 8px;
-  border-radius: 4px;
-  font-size: 0.7rem;
-  font-weight: 800;
-  border: 1px solid var(--border-main);
-  background: var(--bg-elevated);
-  color: var(--text-secondary);
-}
-
-.wiki-quick-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid var(--border-main);
-  background: var(--bg-subtle);
-  color: var(--text-secondary);
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-align: left;
-  transition: border-color 0.12s ease, background-color 0.12s ease;
-}
-
-.wiki-quick-btn:hover {
-  border-color: var(--border-strong);
-  background: var(--bg-elevated);
-  color: var(--text-main);
-}
-
-.wiki-quick-btn.is-active {
-  border-color: var(--accent-primary);
-  background: var(--accent-bg);
-  color: #ffffff;
-}
-
-/* Tier Matrix Unit Cell (Game8 / AppMedia Clean Portrait + Name Spec) */
-.tier-unit-cell {
-  width: 82px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding: 5px 4px;
-  border-radius: 6px;
-  background: var(--bg-page);
-  border: 1px solid var(--border-main);
-  cursor: pointer;
-  transition: border-color 0.12s ease, transform 0.12s ease;
-  position: relative;
-}
-
-.tier-unit-cell:hover {
-  border-color: var(--accent-primary);
-  background: var(--bg-subtle);
-}
-
-.tier-unit-cell.is-owned {
-  border-color: var(--green-primary);
-  background: rgba(16, 185, 129, 0.08);
-}
-
-.tier-unit-portrait-wrap {
-  position: relative;
-  width: 72px;
-  height: 72px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid var(--border-strong);
-  background: var(--bg-surface);
-  flex-shrink: 0;
-}
-
-.tier-unit-portrait-wrap img.unit-portrait {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.tier-unit-element-badge {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background: rgba(13, 17, 23, 0.88);
-  border: 1px solid var(--border-strong);
-  padding: 1px;
-  object-fit: contain;
-}
-
-.tier-unit-score-badge {
-  position: absolute;
-  bottom: 2px;
-  right: 2px;
-  background: rgba(13, 17, 23, 0.92);
-  color: #ffffff;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 800;
-  padding: 1px 4px;
-  border-radius: 3px;
-  border: 1px solid var(--border-strong);
-  line-height: 1.1;
-}
-
-.tier-unit-name {
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--text-main);
-  text-align: center;
-  line-height: 1.2;
-  width: 100%;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 1.62rem;
-}
-
-/* ============================================================================
-   RESPONSIVE LAYOUT & MOBILE-FIRST BENTO GRIDS (DESKTOP + TABLET + 375px PHONE)
-   ============================================================================ */
-.portal-container {
-  max-width: 1420px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 16px;
-}
-
-.game-cards-grid > *,
-.portal-updates-grid > *,
-.wiki-layout-grid > *,
-.quick-menu-grid > *,
-.stats-5-grid > *,
-.calc-3-grid > *,
-.boss-weakness-grid > *,
-.compare-selector-grid > *,
-.consensus-votes-grid > *,
-.footer-links-grid > * {
-  min-width: 0;
-  max-width: 100%;
-}
-
-.game-cards-grid {
+.shortcuts-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
-.portal-updates-grid {
+.banners-grid {
   display: grid;
-  grid-template-columns: 1fr 350px;
-  gap: 16px;
-  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
 }
 
-.wiki-layout-grid {
-  display: grid;
-  grid-template-columns: 230px minmax(0, 1fr) 310px;
-  gap: 16px;
-  align-items: start;
-}
-
-.quick-menu-grid {
+.stats-grid-5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 8px;
 }
 
-.stats-5-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
-  text-align: center;
-}
-
-.calc-3-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.boss-weakness-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.compare-selector-grid {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 10px;
-  align-items: center;
-}
-
-.consensus-votes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.footer-links-grid {
-  display: grid;
-  grid-template-columns: 1.35fr repeat(4, 1fr);
-  gap: 24px;
-}
-
-.mobile-sticky-ad {
-  display: none;
-}
-
-@media (max-width: 1180px) {
-  .wiki-layout-grid {
-    grid-template-columns: 215px minmax(0, 1fr);
-  }
-  .wiki-right-rail {
-    grid-column: 1 / -1;
-  }
-  .portal-updates-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-links-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 820px) {
-  .portal-container {
-    padding: 12px 10px 76px 10px;
-  }
-  .game-cards-grid {
-    grid-template-columns: 1fr;
-  }
-  .wiki-layout-grid {
+@media (max-width: 960px) {
+  .wiki-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .wiki-left-sidebar {
+  .wiki-sidebar {
     order: 2;
   }
-  .wiki-center-article {
+  .wiki-main {
     order: 1;
   }
-  .wiki-right-rail {
-    order: 3;
-  }
-  .quick-menu-grid {
+  .shortcuts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .stats-5-grid {
+  .banners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .wiki-container {
+    padding: 10px;
+  }
+  .shortcuts-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .calc-3-grid {
-    grid-template-columns: 1fr;
-  }
-  .boss-weakness-grid {
-    grid-template-columns: 1fr;
-  }
-  .compare-selector-grid {
-    grid-template-columns: 1fr;
-  }
-  .consensus-votes-grid {
-    grid-template-columns: 1fr;
-  }
-  .footer-links-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
-  .brand-subtitle {
-    display: none;
-  }
-  .mobile-sticky-ad {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 56px;
-    z-index: 90;
-    background: var(--bg-header);
-    border-top: 2px solid var(--accent-primary);
-    align-items: center;
-    justify-content: center;
-    padding: 4px 10px;
+  .stats-grid-5 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

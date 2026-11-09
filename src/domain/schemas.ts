@@ -1,141 +1,121 @@
 import { z } from 'zod';
 
-export const RoleColumnSchema = z.object({
-  key: z.enum(['DPS', 'SUB_DPS', 'SUPPORT', 'SUSTAIN']),
-  label: z.string().min(1),
-  colorHex: z.string().regex(/^#[0-9A-Fa-f]{6}$/),
-});
+export const TierRankSchema = z.enum(['SS', 'S', 'A', 'B']);
+export type TierRank = z.infer<typeof TierRankSchema>;
 
-export const ElementConfigSchema = z.object({
+export const ElementOptionSchema = z.object({
   key: z.string().min(1),
   label: z.string().min(1),
-  colorHex: z.string().regex(/^#[0-9A-Fa-f]{6}$/),
+  colorHex: z.string().min(4),
+  iconUrl: z.string().url(),
 });
+export type ElementOption = z.infer<typeof ElementOptionSchema>;
 
-export const SkillSchema = z.object({
+export const RoleOptionSchema = z.object({
+  key: z.string().min(1),
+  label: z.string().min(1),
+  colorHex: z.string().min(4),
+  iconUrl: z.string().url(),
+});
+export type RoleOption = z.infer<typeof RoleOptionSchema>;
+
+export const ShortcutItemSchema = z.object({
+  key: z.string().min(1),
+  title: z.string().min(1),
+  subtitle: z.string().min(1),
+  href: z.string().min(1),
+  iconUrl: z.string().url(),
+  badge: z.string().min(1),
+});
+export type ShortcutItem = z.infer<typeof ShortcutItemSchema>;
+
+export const CharacterStatsSchema = z.object({
+  hp: z.number(),
+  spd: z.number(),
+  atk: z.number(),
+  def: z.number(),
+  crit: z.number(),
+});
+export type CharacterStats = z.infer<typeof CharacterStatsSchema>;
+
+export const CharacterSkillSchema = z.object({
   name: z.string().min(1),
-  type: z.enum(['EX_ULTIMATE', 'ACTIVE', 'NORMAL', 'TRAINING_EVENT']),
+  type: z.string().min(1),
   spOrEnergyCost: z.string().min(1),
   multiplierSummary: z.string().min(1),
-  hitCount: z.number().int().min(1),
-  buffCategoryTags: z.array(z.string()).min(1),
   exactDescription: z.string().min(1),
 });
+export type CharacterSkill = z.infer<typeof CharacterSkillSchema>;
 
-export const PassiveSchema = z.object({
-  unlockRank: z.string().min(1),
+export const CharacterEntitySchema = z.object({
+  id: z.number(),
+  gameSlug: z.string().min(1),
+  slug: z.string().min(1),
   name: z.string().min(1),
-  effect: z.string().min(1),
-});
-
-export const UnitBaseStatsSchema = z.object({
-  hpOrStamina: z.number().positive(),
-  dpOrSpeed: z.number().positive(),
-  atkOrPower: z.number().positive(),
-  defOrGuts: z.number().positive(),
-  critOrWit: z.number().positive(),
-  burstCeilingScore: z.number().min(1).max(100),
-  bufferCeilingScore: z.number().min(1).max(100),
-  sustainScore: z.number().min(1).max(100),
-  spEfficiencyScore: z.number().min(1).max(100),
-});
-
-export const TierRankEnum = z.enum(['SSS', 'SS', 'S', 'A', 'B', 'C']);
-
-export const VerifiedUnitPayloadSchema = z.object({
-  externalId: z.string().min(1),
-  slug: z.string().min(1),
-  nameEn: z.string().min(1),
-  nameOriginal: z.string().min(1),
-  styleOrTitle: z.string().min(1),
+  title: z.string(),
   rarity: z.string().min(1),
-  role: z.string().min(1),
-  roleColumn: z.enum(['DPS', 'SUB_DPS', 'SUPPORT', 'SUSTAIN']),
   element: z.string().min(1),
-  attackType: z.string().min(1),
-  imageUrl: z.string().min(1),
-  releaseDateAsian: z.string().min(1),
-  releaseDateGlobal: z.string().nullable(),
-  isReleasedGlobal: z.boolean(),
-  longevityMonths: z.number().int().min(1),
-  recommendedDupes: z.string().min(1),
-  baseStats: UnitBaseStatsSchema,
-  skills: z.array(SkillSchema).min(1),
-  passives: z.array(PassiveSchema).min(1),
-  synergyUnitSlugs: z.array(z.string()),
-  tierOverall: TierRankEnum,
-  tierReroll: TierRankEnum,
-  tierBossRaid: TierRankEnum,
-  numericScore: z.number().min(1).max(10),
-  summaryVerdict: z.string().min(10),
-  longevityNote: z.string().min(10),
-  sourceUrl: z.string().url(),
+  role: z.string().min(1),
+  imageUrl: z.string().url(),
+  overallTier: TierRankSchema,
+  rerollTier: TierRankSchema,
+  score: z.number().min(0).max(10),
+  summary: z.string(),
+  recommendedDupes: z.string(),
+  baseStats: CharacterStatsSchema,
+  skills: z.array(CharacterSkillSchema),
+  bestArcanaSlugs: z.array(z.string()),
 });
+export type CharacterEntity = z.infer<typeof CharacterEntitySchema>;
 
-export const VerifiedEquipmentPayloadSchema = z.object({
-  externalId: z.string().min(1),
+export const ArcanaEntitySchema = z.object({
+  id: z.number(),
+  gameSlug: z.string().min(1),
   slug: z.string().min(1),
-  nameEn: z.string().min(1),
+  name: z.string().min(1),
+  rarity: z.string().min(1),
   category: z.string().min(1),
   subType: z.string().min(1),
-  rarity: z.string().min(1),
-  imageUrl: z.string().min(1),
-  tierRank: TierRankEnum,
-  score: z.number().min(1).max(10),
-  recommendedDupes: z.string().min(1),
+  imageUrl: z.string().url(),
+  tier: TierRankSchema,
+  score: z.number().min(0).max(10),
+  effectSummary: z.string(),
   stats: z.record(z.string(), z.union([z.string(), z.number()])),
-  effectSummary: z.string().min(10),
   bestHolderSlugs: z.array(z.string()),
-  sourceUrl: z.string().url(),
 });
+export type ArcanaEntity = z.infer<typeof ArcanaEntitySchema>;
 
-export const AttackPatternSchema = z.object({
-  turnOrPhase: z.string().min(1),
-  attackName: z.string().min(1),
-  damageType: z.string().min(1),
-  counterAction: z.string().min(1),
-});
-
-export const VerifiedBossPayloadSchema = z.object({
+export const BannerEntitySchema = z.object({
+  id: z.number(),
+  gameSlug: z.string().min(1),
   slug: z.string().min(1),
-  nameEn: z.string().min(1),
-  modeName: z.string().min(1),
-  difficultyLabel: z.string().min(1),
-  imageUrl: z.string().min(1),
-  hpStat: z.string().min(1),
-  shieldOrDpStat: z.string().min(1),
-  weaknesses: z.array(z.string()).min(1),
-  resistances: z.array(z.string()).min(1),
-  attackPatterns: z.array(AttackPatternSchema).min(1),
-  strategySteps: z.array(z.string()).min(2),
-  recommendedUnitSlugs: z.array(z.string()).min(1),
-  sourceUrl: z.string().url(),
+  title: z.string().min(1),
+  bannerType: z.string().min(1),
+  imageUrl: z.string().url(),
+  periodLabel: z.string().min(1),
+  verdict: z.string().min(1),
+  reasoning: z.string().min(1),
+  featuredCharacterSlugs: z.array(z.string()),
 });
+export type BannerEntity = z.infer<typeof BannerEntitySchema>;
 
-export const VerifiedBannerPayloadSchema = z.object({
+export const GameConfigEntitySchema = z.object({
   slug: z.string().min(1),
-  bannerTitle: z.string().min(1),
-  bannerType: z.enum(['LIMITED', 'COLLAB', 'FESTIVAL', 'STANDARD', 'SUPPORT_CARD']),
-  imageUrl: z.string().min(1),
-  featuredNames: z.array(z.string()).min(1),
-  featuredUnitSlugs: z.array(z.string()).min(1),
-  asianStartDate: z.string().min(1),
-  asianEndDate: z.string().min(1),
-  estGlobalStartDate: z.string().min(1),
-  estGlobalEndDate: z.string().min(1),
-  pullVerdict: z.enum(['MUST_PULL', 'HIGH_VALUE', 'NICHE_META', 'EASY_SKIP']),
-  verdictReasoning: z.string().min(10),
-  pityCurrencyCost: z.number().int().positive(),
-  sourceUrl: z.string().url(),
+  name: z.string().min(1),
+  subtitle: z.string().min(1),
+  patchVersion: z.string().min(1),
+  serverStatus: z.string().min(1),
+  iconUrl: z.string().url(),
+  bannerUrl: z.string().url(),
+  elementsConfig: z.array(ElementOptionSchema),
+  rolesConfig: z.array(RoleOptionSchema),
+  shortcutsConfig: z.array(ShortcutItemSchema),
 });
+export type GameConfigEntity = z.infer<typeof GameConfigEntitySchema>;
 
-export type VerifiedUnitPayload = z.infer<typeof VerifiedUnitPayloadSchema>;
-export type VerifiedEquipmentPayload = z.infer<typeof VerifiedEquipmentPayloadSchema>;
-export type VerifiedBossPayload = z.infer<typeof VerifiedBossPayloadSchema>;
-export type VerifiedBannerPayload = z.infer<typeof VerifiedBannerPayloadSchema>;
-export type UnitBaseStats = z.infer<typeof UnitBaseStatsSchema>;
-export type SkillData = z.infer<typeof SkillSchema>;
-export type PassiveData = z.infer<typeof PassiveSchema>;
-export type AttackPatternData = z.infer<typeof AttackPatternSchema>;
-export type RoleColumnConfig = z.infer<typeof RoleColumnSchema>;
-export type ElementConfig = z.infer<typeof ElementConfigSchema>;
+export interface GameWikiDataset {
+  game: GameConfigEntity;
+  characters: CharacterEntity[];
+  arcana: ArcanaEntity[];
+  banners: BannerEntity[];
+}
