@@ -17,19 +17,19 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
         style={{
           background: 'var(--bg-surface)',
           border: '1px solid var(--border-main)',
-          borderRadius: '6px',
-          padding: '14px',
+          borderRadius: '8px',
+          padding: '16px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '12px',
+          gap: '14px',
         }}
       >
         <h2
           style={{
-            fontSize: '13.5px',
-            fontWeight: 900,
+            fontSize: '15px',
+            fontWeight: 800,
             borderLeft: '4px solid var(--accent-primary)',
-            paddingLeft: '8px',
+            paddingLeft: '10px',
           }}
         >
           RANK 1–11 SKILL TREE PROGRESSION (LEFT vs. RIGHT PICK) &amp; TAROT / ENGRAVING BUILD
@@ -39,8 +39,8 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-            gap: '8px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))',
+            gap: '10px',
           }}
         >
           {deep.socTarotWhisper && (
@@ -48,17 +48,17 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '5px',
-                padding: '9px 11px',
+                borderRadius: '6px',
+                padding: '11px 13px',
               }}
             >
-              <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+              <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--accent-primary)' }}>
                 BEST TAROT WHISPER
               </div>
-              <div style={{ fontSize: '12px', fontWeight: 900, marginTop: '2px' }}>
+              <div style={{ fontSize: '13.5px', fontWeight: 800, marginTop: '3px' }}>
                 {deep.socTarotWhisper.name}
               </div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '3px' }}>
+              <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '4px' }}>
                 {deep.socTarotWhisper.bonusEffect}
               </div>
             </div>
@@ -69,17 +69,17 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '5px',
-                padding: '9px 11px',
+                borderRadius: '6px',
+                padding: '11px 13px',
               }}
             >
-              <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--amber-primary)' }}>
+              <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--amber-primary)' }}>
                 BEST WEAPON + TRINKET ENGRAVING
               </div>
-              <div style={{ fontSize: '12px', fontWeight: 900, marginTop: '2px' }}>
+              <div style={{ fontSize: '13.5px', fontWeight: 800, marginTop: '3px' }}>
                 {deep.socEngraving.combo}
               </div>
-              <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '3px' }}>
+              <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '4px' }}>
                 {deep.socEngraving.effect}
               </div>
             </div>
@@ -90,14 +90,14 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '5px',
-                padding: '9px 11px',
+                borderRadius: '6px',
+                padding: '11px 13px',
               }}
             >
-              <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--green-primary)' }}>
+              <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--green-primary)' }}>
                 MEMORY SHARD TRIAL (1★ → 5★ PLAN)
               </div>
-              <div style={{ fontSize: '11.5px', fontWeight: 700, color: 'var(--text-main)', marginTop: '3px' }}>
+              <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-main)', marginTop: '4px' }}>
                 {deep.socTraitPlan}
               </div>
             </div>
@@ -111,15 +111,16 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               width: '100%',
               borderCollapse: 'collapse',
               border: '1px solid var(--border-main)',
-              fontSize: '11.5px',
+              fontSize: '13px',
+              minWidth: '580px',
             }}
           >
             <thead>
-              <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
-                <th style={{ padding: '7px 9px', textAlign: 'left', width: '135px' }}>RANK</th>
-                <th style={{ padding: '7px 9px', textAlign: 'left' }}>LEFT TREE SKILL</th>
-                <th style={{ padding: '7px 9px', textAlign: 'left' }}>RIGHT TREE SKILL</th>
-                <th style={{ padding: '7px 9px', textAlign: 'center', width: '130px' }}>RECOMMENDED PICK</th>
+              <tr style={{ background: 'var(--bg-subnav)', color: 'var(--text-main)' }}>
+                <th style={{ padding: '9px 10px', textAlign: 'left', width: '145px' }}>RANK</th>
+                <th style={{ padding: '9px 10px', textAlign: 'left' }}>LEFT TREE SKILL</th>
+                <th style={{ padding: '9px 10px', textAlign: 'left' }}>RIGHT TREE SKILL</th>
+                <th style={{ padding: '9px 10px', textAlign: 'center', width: '145px' }}>RECOMMENDED PICK</th>
               </tr>
             </thead>
             <tbody>
@@ -128,46 +129,46 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
                 const pickRight = row.pick === 'RIGHT' || row.pick.includes('BOTH');
                 return (
                   <tr key={row.rank} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-                    <td className="mono" style={{ padding: '8px 9px', fontWeight: 900 }}>
+                    <td className="mono" style={{ padding: '10px', fontWeight: 800 }}>
                       {row.rank}
                     </td>
                     <td
                       style={{
-                        padding: '8px 9px',
-                        background: pickLeft ? 'rgba(21, 128, 61, 0.07)' : 'transparent',
+                        padding: '10px',
+                        background: pickLeft ? 'var(--green-bg)' : 'transparent',
                       }}
                     >
-                      <div style={{ fontWeight: 900, color: pickLeft ? '#15803D' : 'var(--text-main)' }}>
+                      <div style={{ fontWeight: 800, color: pickLeft ? 'var(--green-primary)' : 'var(--text-main)' }}>
                         {pickLeft ? '✓ ' : ''}
                         {row.leftSkill}
                       </div>
-                      <div style={{ fontSize: '10.5px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                      <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '3px' }}>
                         {row.leftDesc}
                       </div>
                     </td>
                     <td
                       style={{
-                        padding: '8px 9px',
-                        background: pickRight ? 'rgba(21, 128, 61, 0.07)' : 'transparent',
+                        padding: '10px',
+                        background: pickRight ? 'var(--green-bg)' : 'transparent',
                       }}
                     >
-                      <div style={{ fontWeight: 900, color: pickRight ? '#15803D' : 'var(--text-main)' }}>
+                      <div style={{ fontWeight: 800, color: pickRight ? 'var(--green-primary)' : 'var(--text-main)' }}>
                         {pickRight ? '✓ ' : ''}
                         {row.rightSkill}
                       </div>
-                      <div style={{ fontSize: '10.5px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                      <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '3px' }}>
                         {row.rightDesc}
                       </div>
                     </td>
-                    <td className="mono" style={{ padding: '8px 9px', textAlign: 'center', fontWeight: 900 }}>
+                    <td className="mono" style={{ padding: '10px', textAlign: 'center', fontWeight: 800 }}>
                       <span
                         style={{
-                          padding: '3px 7px',
+                          padding: '4px 8px',
                           borderRadius: '4px',
-                          fontSize: '10px',
-                          background: row.pick.includes('BOTH') ? '#FEF3C7' : '#DCFCE7',
-                          color: row.pick.includes('BOTH') ? '#B45309' : '#15803D',
-                          border: '1px solid currentColor',
+                          fontSize: '11.5px',
+                          background: row.pick.includes('BOTH') ? 'var(--amber-bg)' : 'var(--green-bg)',
+                          color: row.pick.includes('BOTH') ? 'var(--amber-primary)' : 'var(--green-primary)',
+                          border: row.pick.includes('BOTH') ? '1px solid var(--amber-border)' : '1px solid var(--green-border)',
                         }}
                       >
                         {row.pick}
@@ -186,26 +187,26 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
   // 2. UMA MUSUME: TRACK/DISTANCE APTITUDE GRID + CAREER TRAINING EVENT CHOICE HELPER
   if (gameSlug === 'uma-musume' && deep.umaAptitudes) {
     const gradeColor = (g: string) =>
-      g === 'S' || g === 'A' ? '#DC2626' : g === 'B' ? '#D97706' : '#71717A';
+      g === 'S' || g === 'A' ? 'var(--accent-primary)' : g === 'B' ? 'var(--amber-primary)' : 'var(--text-muted)';
 
     return (
       <section
         style={{
           background: 'var(--bg-surface)',
           border: '1px solid var(--border-main)',
-          borderRadius: '6px',
-          padding: '14px',
+          borderRadius: '8px',
+          padding: '16px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '12px',
+          gap: '14px',
         }}
       >
         <h2
           style={{
-            fontSize: '13.5px',
-            fontWeight: 900,
+            fontSize: '15px',
+            fontWeight: 800,
             borderLeft: '4px solid var(--accent-primary)',
-            paddingLeft: '8px',
+            paddingLeft: '10px',
           }}
         >
           TRACK / DISTANCE APTITUDES, TARGET STATS &amp; TRAINING EVENT CHOICE HELPER
@@ -216,21 +217,21 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '8px',
+            gap: '10px',
           }}
         >
           <div
             style={{
               background: 'var(--bg-subtle)',
               border: '1px solid var(--border-main)',
-              borderRadius: '5px',
-              padding: '9px 11px',
+              borderRadius: '6px',
+              padding: '11px 13px',
             }}
           >
-            <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+            <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--accent-primary)' }}>
               STAT GROWTH BONUSES
             </div>
-            <div className="mono" style={{ fontSize: '12px', fontWeight: 900, marginTop: '3px' }}>
+            <div className="mono" style={{ fontSize: '13.5px', fontWeight: 800, marginTop: '4px' }}>
               {deep.umaStatGrowth}
             </div>
           </div>
@@ -238,14 +239,14 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
             style={{
               background: 'var(--bg-subtle)',
               border: '1px solid var(--border-main)',
-              borderRadius: '5px',
-              padding: '9px 11px',
+              borderRadius: '6px',
+              padding: '11px 13px',
             }}
           >
-            <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--green-primary)' }}>
+            <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--green-primary)' }}>
               CHAMPIONS MEETING TARGET STAT THRESHOLDS
             </div>
-            <div className="mono" style={{ fontSize: '11.5px', fontWeight: 900, marginTop: '3px' }}>
+            <div className="mono" style={{ fontSize: '13px', fontWeight: 800, marginTop: '4px' }}>
               {deep.umaTargetStats}
             </div>
           </div>
@@ -255,8 +256,8 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: '8px',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
+            gap: '10px',
           }}
         >
           {[
@@ -269,14 +270,14 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '5px',
-                padding: '8px 10px',
+                borderRadius: '6px',
+                padding: '10px 12px',
               }}
             >
-              <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--text-muted)', marginBottom: '6px' }}>
+              <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--text-muted)', marginBottom: '7px' }}>
                 {group.title.toUpperCase()}
               </div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '7px' }}>
                 {group.items.map((it) => (
                   <span
                     key={it.label}
@@ -284,17 +285,17 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
-                      gap: '5px',
-                      padding: '3px 8px',
-                      borderRadius: '4px',
+                      gap: '6px',
+                      padding: '4px 9px',
+                      borderRadius: '5px',
                       background: 'var(--bg-surface)',
                       border: '1px solid var(--border-main)',
-                      fontSize: '11px',
+                      fontSize: '12px',
                       fontWeight: 800,
                     }}
                   >
                     <span>{it.label}:</span>
-                    <strong style={{ color: gradeColor(it.grade), fontSize: '12.5px' }}>{it.grade}</strong>
+                    <strong style={{ color: gradeColor(it.grade), fontSize: '13.5px' }}>{it.grade}</strong>
                   </span>
                 ))}
               </div>
@@ -305,49 +306,49 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
         {/* CAREER EVENT CHOICE HELPER */}
         {deep.umaCareerEvents && (
           <div>
-            <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
+            <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
               Interactive Training Event Choice Helper (Top Option vs. Bottom Option):
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '9px' }}>
               {deep.umaCareerEvents.map((ev) => (
                 <div
                   key={ev.eventTitle}
                   style={{
                     background: 'var(--bg-subtle)',
                     border: '1px solid var(--border-main)',
-                    borderRadius: '5px',
-                    padding: '9px 11px',
+                    borderRadius: '6px',
+                    padding: '11px 13px',
                   }}
                 >
-                  <div style={{ fontWeight: 900, fontSize: '12px', marginBottom: '5px' }}>
+                  <div style={{ fontWeight: 800, fontSize: '13.5px', marginBottom: '7px' }}>
                     Event: {ev.eventTitle}
                   </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))', gap: '6px' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '8px' }}>
                     <div
                       style={{
                         background: 'var(--bg-surface)',
-                        borderLeft: '3px solid #15803D',
-                        padding: '6px 9px',
-                        borderRadius: '4px',
-                        fontSize: '11px',
+                        borderLeft: '3px solid var(--green-primary)',
+                        padding: '8px 10px',
+                        borderRadius: '5px',
+                        fontSize: '12.5px',
                       }}
                     >
-                      <div style={{ fontWeight: 900, color: '#15803D' }}>▲ Top Choice: &ldquo;{ev.topOption}&rdquo;</div>
-                      <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                      <div style={{ fontWeight: 800, color: 'var(--green-primary)' }}>▲ Top Choice: &ldquo;{ev.topOption}&rdquo;</div>
+                      <div className="mono" style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '3px' }}>
                         → {ev.topOutcome}
                       </div>
                     </div>
                     <div
                       style={{
                         background: 'var(--bg-surface)',
-                        borderLeft: '3px solid #2563EB',
-                        padding: '6px 9px',
-                        borderRadius: '4px',
-                        fontSize: '11px',
+                        borderLeft: '3px solid var(--blue-primary)',
+                        padding: '8px 10px',
+                        borderRadius: '5px',
+                        fontSize: '12.5px',
                       }}
                     >
-                      <div style={{ fontWeight: 900, color: '#2563EB' }}>▼ Bottom Choice: &ldquo;{ev.bottomOption}&rdquo;</div>
-                      <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                      <div style={{ fontWeight: 800, color: 'var(--blue-primary)' }}>▼ Bottom Choice: &ldquo;{ev.bottomOption}&rdquo;</div>
+                      <div className="mono" style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '3px' }}>
                         → {ev.bottomOutcome}
                       </div>
                     </div>
@@ -368,19 +369,19 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
         style={{
           background: 'var(--bg-surface)',
           border: '1px solid var(--border-main)',
-          borderRadius: '6px',
-          padding: '14px',
+          borderRadius: '8px',
+          padding: '16px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '12px',
+          gap: '14px',
         }}
       >
         <h2
           style={{
-            fontSize: '13.5px',
-            fontWeight: 900,
+            fontSize: '15px',
+            fontWeight: 800,
             borderLeft: '4px solid var(--accent-primary)',
-            paddingLeft: '8px',
+            paddingLeft: '10px',
           }}
         >
           8-LAYER SCORE ATTACK BUFF MATRIX &amp; 6★ ACCESSORY SUBSTAT SYNTHESIS
@@ -390,7 +391,7 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-            gap: '8px',
+            gap: '10px',
           }}
         >
           {deep.hbrSynthesisPriority && (
@@ -398,14 +399,14 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '5px',
-                padding: '9px 11px',
+                borderRadius: '6px',
+                padding: '11px 13px',
               }}
             >
-              <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--accent-primary)' }}>
+              <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--accent-primary)' }}>
                 6★ SUBSTAT SYNTHESIS PRIORITY (+6 RINGS / EARRINGS)
               </div>
-              <div style={{ fontSize: '11.5px', fontWeight: 800, marginTop: '3px' }}>
+              <div style={{ fontSize: '13px', fontWeight: 700, marginTop: '4px' }}>
                 {deep.hbrSynthesisPriority}
               </div>
             </div>
@@ -415,50 +416,50 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
               style={{
                 background: 'var(--bg-subtle)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '5px',
-                padding: '9px 11px',
+                borderRadius: '6px',
+                padding: '11px 13px',
               }}
             >
-              <div style={{ fontSize: '10.5px', fontWeight: 900, color: 'var(--amber-primary)' }}>
+              <div className="mono" style={{ fontSize: '11.5px', fontWeight: 800, color: 'var(--amber-primary)' }}>
                 RECOMMENDED 5★ BOSS ORB SLOT
               </div>
-              <div style={{ fontSize: '11.5px', fontWeight: 800, marginTop: '3px' }}>
+              <div style={{ fontSize: '13px', fontWeight: 700, marginTop: '4px' }}>
                 {deep.hbrOrbRecommendation}
               </div>
             </div>
           )}
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '7px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '9px' }}>
           {deep.hbrBuffMatrix.map((item) => {
             const active = item.status === 'PROVIDES';
             return (
               <div
                 key={item.layerName}
                 style={{
-                  background: active ? 'rgba(21, 128, 61, 0.06)' : 'var(--bg-subtle)',
-                  border: active ? '1.5px solid #15803D' : '1px solid var(--border-main)',
-                  borderRadius: '5px',
-                  padding: '8px 10px',
+                  background: active ? 'var(--green-bg)' : 'var(--bg-subtle)',
+                  border: active ? '1.5px solid var(--green-border)' : '1px solid var(--border-main)',
+                  borderRadius: '6px',
+                  padding: '10px 12px',
                 }}
               >
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '6px' }}>
-                  <span style={{ fontWeight: 900, fontSize: '11.5px' }}>{item.layerName}</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontWeight: 800, fontSize: '13px' }}>{item.layerName}</span>
                   <span
                     className="mono"
                     style={{
-                      fontSize: '9.5px',
-                      fontWeight: 900,
-                      padding: '2px 6px',
-                      borderRadius: '3px',
-                      background: active ? '#15803D' : 'var(--bg-subnav)',
-                      color: '#FFF',
+                      fontSize: '10.5px',
+                      fontWeight: 800,
+                      padding: '2px 7px',
+                      borderRadius: '4px',
+                      background: active ? 'var(--green-primary)' : 'var(--bg-subnav)',
+                      color: active ? '#062E22' : 'var(--text-secondary)',
                     }}
                   >
                     {active ? '✓ SELF / KIT' : 'ALLY NEEDED'}
                   </span>
                 </div>
-                <div style={{ fontSize: '10.5px', color: 'var(--text-secondary)', marginTop: '3px' }}>
+                <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginTop: '4px' }}>
                   {item.detail}
                 </div>
               </div>
@@ -475,19 +476,19 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
       style={{
         background: 'var(--bg-surface)',
         border: '1px solid var(--border-main)',
-        borderRadius: '6px',
-        padding: '14px',
+        borderRadius: '8px',
+        padding: '16px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '10px',
+        gap: '12px',
       }}
     >
       <h2
         style={{
-          fontSize: '13.5px',
-          fontWeight: 900,
+          fontSize: '15px',
+          fontWeight: 800,
           borderLeft: '4px solid var(--accent-primary)',
-          paddingLeft: '8px',
+          paddingLeft: '10px',
         }}
       >
         ARCANA RESONANCE LINK &amp; 3-TURN OVERDRIVE BURST ROTATION
@@ -497,26 +498,27 @@ export function UnitDeepBuildSection({ gameSlug, unit }: UnitDeepBuildSectionPro
           style={{
             background: 'var(--bg-subtle)',
             border: '1px solid var(--border-main)',
-            borderRadius: '5px',
-            padding: '9px 11px',
-            fontSize: '12px',
+            borderRadius: '6px',
+            padding: '10px 12px',
+            fontSize: '13.5px',
             fontWeight: 800,
+            color: 'var(--amber-primary)',
           }}
         >
           ★ {deep.starResonancePair}
         </div>
       )}
       {deep.starBurstRotation && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
           {deep.starBurstRotation.map((step) => (
             <div
               key={step}
               style={{
                 background: 'var(--bg-subtle)',
                 borderLeft: '3px solid var(--accent-primary)',
-                padding: '7px 10px',
-                borderRadius: '4px',
-                fontSize: '11.5px',
+                padding: '9px 12px',
+                borderRadius: '5px',
+                fontSize: '13px',
                 fontWeight: 700,
               }}
             >

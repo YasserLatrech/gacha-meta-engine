@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { getGameAppIconUrl } from '../domain/constants/game-visuals';
 import { GachaCrestWordmark } from './GachaCrestLogo';
@@ -12,42 +12,37 @@ interface SiteHeaderProps {
 }
 
 const HEADER_GAMES = [
-  { slug: 'star-savior', label: 'Star Savior' },
-  { slug: 'heaven-burns-red', label: 'Heaven Burns Red' },
-  { slug: 'uma-musume', label: 'Uma Musume' },
-  { slug: 'sword-of-convallaria', label: 'Sword of Convallaria' },
+  { slug: 'star-savior', label: 'Star Savior', badge: 'Sync' },
+  { slug: 'heaven-burns-red', label: 'Heaven Burns Red', badge: '+4m' },
+  { slug: 'uma-musume', label: 'Uma Musume', badge: '+18m' },
+  { slug: 'sword-of-convallaria', label: 'Sword of Convallaria', badge: '+6m' },
 ];
 
 export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: SiteHeaderProps) {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
   useEffect(() => {
-    const saved = window.localStorage.getItem('gacha-meta-theme');
-    if (saved === 'dark' || saved === 'light') {
-      setTheme(saved);
-      document.documentElement.setAttribute('data-theme', saved);
+    document.documentElement.setAttribute('data-theme', 'dark');
+    try {
+      window.localStorage.setItem('gacha-meta-theme', 'dark');
+    } catch {
+      // ignore storage errors
     }
   }, []);
-
-  const toggleTheme = () => {
-    const next = theme === 'light' ? 'dark' : 'light';
-    setTheme(next);
-    document.documentElement.setAttribute('data-theme', next);
-    window.localStorage.setItem('gacha-meta-theme', next);
-  };
 
   return (
     <header
       style={{
-        background: 'var(--bg-surface)',
-        borderBottom: '2px solid var(--border-strong)',
+        background: 'var(--bg-header)',
+        borderBottom: '2px solid var(--border-main)',
+        position: 'sticky',
+        top: 0,
+        zIndex: 80,
       }}
     >
       <div
         style={{
-          maxWidth: '1380px',
+          maxWidth: '1420px',
           margin: '0 auto',
-          padding: '10px 16px',
+          padding: '12px 16px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -55,7 +50,7 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
           flexWrap: 'wrap',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
           <Link
             href="/"
             style={{
@@ -72,8 +67,8 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
-                fontSize: '12.5px',
+                gap: '8px',
+                fontSize: '13.5px',
                 color: 'var(--text-muted)',
                 fontWeight: 700,
               }}
@@ -86,20 +81,20 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
                   textDecoration: 'underline',
                   display: 'inline-flex',
                   alignItems: 'center',
-                  gap: '6px',
+                  gap: '7px',
                 }}
               >
                 <img
                   src={getGameAppIconUrl(activeGameSlug)}
                   alt={activeGameName}
-                  width={24}
-                  height={24}
+                  width={26}
+                  height={26}
                   style={{
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '4px',
+                    width: '26px',
+                    height: '26px',
+                    borderRadius: '5px',
                     objectFit: 'cover',
-                    border: '1px solid var(--border-main)',
+                    border: '1px solid var(--border-strong)',
                   }}
                 />
                 <span>{activeGameName} Wiki</span>
@@ -107,7 +102,7 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
               {breadcrumbLeaf && (
                 <>
                   <span>&rsaquo;</span>
-                  <span style={{ color: 'var(--text-main)', fontWeight: 900 }}>{breadcrumbLeaf}</span>
+                  <span style={{ color: 'var(--text-main)', fontWeight: 800 }}>{breadcrumbLeaf}</span>
                 </>
               )}
             </nav>
@@ -115,60 +110,59 @@ export function SiteHeader({ activeGameSlug, activeGameName, breadcrumbLeaf }: S
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-          {HEADER_GAMES.map((g) => (
-            <Link
-              key={g.slug}
-              href={`/${g.slug}`}
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '7px',
-                fontSize: '12px',
-                fontWeight: 800,
-                padding: '5px 10px',
-                borderRadius: '5px',
-                border:
-                  activeGameSlug === g.slug
+          {HEADER_GAMES.map((g) => {
+            const isActive = activeGameSlug === g.slug;
+            return (
+              <Link
+                key={g.slug}
+                href={`/${g.slug}`}
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontSize: '13px',
+                  fontWeight: 800,
+                  padding: '6px 12px',
+                  borderRadius: '6px',
+                  border: isActive
                     ? '1.5px solid var(--accent-primary)'
                     : '1px solid var(--border-main)',
-                background: activeGameSlug === g.slug ? 'var(--accent-bg)' : 'var(--bg-subtle)',
-                color: activeGameSlug === g.slug ? 'var(--accent-primary)' : 'var(--text-secondary)',
-              }}
-            >
-              <img
-                src={getGameAppIconUrl(g.slug)}
-                alt={g.label}
-                width={24}
-                height={24}
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  borderRadius: '4px',
-                  objectFit: 'cover',
-                  border: '1px solid var(--border-main)',
-                  flexShrink: 0,
+                  background: isActive ? 'var(--accent-bg)' : 'var(--bg-surface)',
+                  color: isActive ? 'var(--text-main)' : 'var(--text-secondary)',
                 }}
-              />
-              <span>{g.label}</span>
-            </Link>
-          ))}
-
-          <button
-            type="button"
-            onClick={toggleTheme}
-            style={{
-              cursor: 'pointer',
-              background: 'var(--bg-header)',
-              color: '#FFFFFF',
-              border: '1px solid var(--border-strong)',
-              borderRadius: '5px',
-              padding: '6px 11px',
-              fontSize: '11.5px',
-              fontWeight: 800,
-            }}
-          >
-            Style: {theme === 'light' ? 'Warm Stone (Light)' : 'Matte Carbon (Dark)'}
-          </button>
+              >
+                <img
+                  src={getGameAppIconUrl(g.slug)}
+                  alt={g.label}
+                  width={26}
+                  height={26}
+                  style={{
+                    width: '26px',
+                    height: '26px',
+                    borderRadius: '5px',
+                    objectFit: 'cover',
+                    border: '1px solid var(--border-strong)',
+                    flexShrink: 0,
+                  }}
+                />
+                <span>{g.label}</span>
+                <span
+                  className="mono"
+                  style={{
+                    fontSize: '10.5px',
+                    fontWeight: 800,
+                    padding: '1px 5px',
+                    borderRadius: '4px',
+                    background: g.badge === 'Sync' ? 'var(--green-bg)' : 'var(--blue-bg)',
+                    color: g.badge === 'Sync' ? 'var(--green-primary)' : 'var(--blue-primary)',
+                    border: g.badge === 'Sync' ? '1px solid var(--green-border)' : '1px solid var(--blue-border)',
+                  }}
+                >
+                  {g.badge}
+                </span>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </header>

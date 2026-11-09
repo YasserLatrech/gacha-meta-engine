@@ -8,7 +8,11 @@ import { SiteFooter } from '../../../../components/SiteFooter';
 import { AdSlot } from '../../../../components/AdSlot';
 import { UnitAccountActionsClient } from '../../../../components/UnitAccountActionsClient';
 import { UnitDeepBuildSection } from '../../../../components/UnitDeepBuildSection';
-import { getGameStatLabels } from '../../../../domain/game-mechanics';
+import {
+  getGameStatLabels,
+  getServerSyncContext,
+  computeMultiSourceConsensus,
+} from '../../../../domain/game-mechanics';
 import {
   getGameAppIconUrl,
   getElementIconUrl,
@@ -31,8 +35,8 @@ export async function generateMetadata({
   if (!hub || !unit) return { title: 'Unit Not Found' };
 
   return {
-    title: `${unit.nameEn} ${unit.styleOrTitle} — Build, Multipliers & Tier Evaluation (${hub.name})`,
-    description: `Complete ${unit.nameEn} (${unit.styleOrTitle}) skill multipliers, SP/Energy cost, recommended ${unit.recommendedDupes}, best weapons/cards, and ${unit.longevityMonths}-month meta longevity in ${hub.name}.`,
+    title: `${unit.nameEn} ${unit.styleOrTitle} — Build, Consensus Tier & Multipliers (${hub.name})`,
+    description: `Complete ${unit.nameEn} (${unit.styleOrTitle}) multi-source tier consensus, skill multipliers, SP/Energy cost, recommended ${unit.recommendedDupes}, best weapons/cards, and ${unit.longevityMonths}-month meta longevity in ${hub.name}.`,
   };
 }
 
@@ -47,6 +51,9 @@ export default async function UnitDetailPage({
 
   const unit = hub.units.find((u) => u.slug === unitSlug);
   if (!unit) notFound();
+
+  const syncCtx = getServerSyncContext(hub.slug, hub.foresightGapMonths, hub.globalPatchVersion);
+  const consensus = computeMultiSourceConsensus(hub.slug, unit);
 
   const recommendedGears = hub.equipments.filter((eq) =>
     eq.bestHolderSlugs.includes(unit.slug)
@@ -93,7 +100,7 @@ export default async function UnitDetailPage({
         name: `Is ${unit.nameEn} (${unit.styleOrTitle}) worth pulling in ${hub.name}?`,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: `${unit.tiers.overallAsian.summaryVerdict} ${unit.tiers.overallAsian.longevityNote} Recommended investment: ${unit.recommendedDupes}.`,
+          text: `${unit.tiers.overallAsian.summaryVerdict} ${consensus.whySourcesDifferOrAgree} Recommended investment: ${unit.recommendedDupes}.`,
         },
       },
     ],
@@ -111,7 +118,7 @@ export default async function UnitDetailPage({
         breadcrumbLeaf={unit.nameEn}
       />
 
-      <main className="portal-container" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+      <main className="portal-container" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
         <AdSlot
           slotId={`unit-${unit.slug}-top`}
           label="UNIT BUILD PAGE TOP AD"
@@ -127,136 +134,136 @@ export default async function UnitDetailPage({
             style={{
               background: 'var(--bg-surface)',
               border: '1px solid var(--border-main)',
-              borderRadius: '4px',
+              borderRadius: '8px',
               overflow: 'hidden',
             }}
           >
             <div
               style={{
                 background: 'var(--bg-subnav)',
-                color: '#FFF',
-                fontSize: '11px',
-                fontWeight: 900,
-                padding: '8px 10px',
-                borderLeft: '3.5px solid var(--accent-primary)',
+                color: 'var(--text-main)',
+                fontSize: '12px',
+                fontWeight: 800,
+                padding: '10px 12px',
+                borderLeft: '4px solid var(--accent-primary)',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '7px',
+                gap: '8px',
               }}
             >
               <img
                 src={gameAppIcon}
                 alt={hub.shortName}
-                width={20}
-                height={20}
-                style={{ width: '20px', height: '20px', borderRadius: '4px', objectFit: 'cover' }}
+                width={22}
+                height={22}
+                style={{ width: '22px', height: '22px', borderRadius: '4px', objectFit: 'cover' }}
               />
-              <span>RETURN TO {hub.shortName} WIKI HUB</span>
+              <span>RETURN TO {hub.shortName} WIKI</span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Link
                 href={`/${hub.slug}?tab=tier-list`}
                 style={{
-                  padding: '8px 10px',
-                  fontSize: '11.5px',
+                  padding: '9px 12px',
+                  fontSize: '13px',
                   fontWeight: 800,
                   borderBottom: '1px solid var(--border-subtle)',
                   color: 'var(--accent-primary)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '8px',
+                  gap: '9px',
                 }}
               >
                 <img
                   src={getSectionEmblemUrl('tier-list', hub.slug)}
                   alt="Strongest Tier List"
-                  width={26}
-                  height={26}
-                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
+                  width={28}
+                  height={28}
+                  style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
                 <span>&larr; Strongest Tier List</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=weapons`}
                 style={{
-                  padding: '8px 10px',
-                  fontSize: '11.5px',
+                  padding: '9px 12px',
+                  fontSize: '13px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '8px',
+                  gap: '9px',
                 }}
               >
                 <img
                   src={topEquipThumb}
                   alt="Weapons and Support Cards"
-                  width={26}
-                  height={26}
-                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
+                  width={28}
+                  height={28}
+                  style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
                 <span>Weapons &amp; Support Cards</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=bosses`}
                 style={{
-                  padding: '8px 10px',
-                  fontSize: '11.5px',
+                  padding: '9px 12px',
+                  fontSize: '13px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '8px',
+                  gap: '9px',
                 }}
               >
                 <img
                   src={getSectionEmblemUrl('bosses', hub.slug)}
                   alt="Boss and Raid Guides"
-                  width={26}
-                  height={26}
-                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
+                  width={28}
+                  height={28}
+                  style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
                 <span>Boss &amp; Raid Guides</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=banners`}
                 style={{
-                  padding: '8px 10px',
-                  fontSize: '11.5px',
+                  padding: '9px 12px',
+                  fontSize: '13px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '8px',
+                  gap: '9px',
                 }}
               >
                 <img
                   src={getSectionEmblemUrl('banners', hub.slug)}
                   alt="Upcoming Banners"
-                  width={26}
-                  height={26}
-                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
+                  width={28}
+                  height={28}
+                  style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
-                <span>Upcoming Banners &amp; Pull Calc</span>
+                <span>Banners &amp; Pull Calc</span>
               </Link>
               <Link
                 href={`/${hub.slug}?tab=compare`}
                 style={{
-                  padding: '8px 10px',
-                  fontSize: '11.5px',
+                  padding: '9px 12px',
+                  fontSize: '13px',
                   fontWeight: 700,
                   borderBottom: '1px solid var(--border-subtle)',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '8px',
+                  gap: '9px',
                 }}
               >
                 <img
                   src={getSectionEmblemUrl('compare', hub.slug)}
                   alt="Stat Comparison Tool"
-                  width={26}
-                  height={26}
-                  style={{ width: '26px', height: '26px', borderRadius: '4px', objectFit: 'cover' }}
+                  width={28}
+                  height={28}
+                  style={{ width: '28px', height: '28px', borderRadius: '5px', objectFit: 'cover' }}
                 />
                 <span>Stat Comparison Tool</span>
               </Link>
@@ -265,11 +272,11 @@ export default async function UnitDetailPage({
             <div
               style={{
                 background: 'var(--bg-subnav)',
-                color: '#FFF',
-                fontSize: '10.5px',
-                fontWeight: 900,
-                padding: '7px 10px',
-                borderLeft: '3.5px solid var(--accent-primary)',
+                color: 'var(--text-main)',
+                fontSize: '11.5px',
+                fontWeight: 800,
+                padding: '9px 12px',
+                borderLeft: '4px solid var(--accent-primary)',
               }}
             >
               ALL {hub.shortName} CHARACTERS ({hub.units.length})
@@ -280,27 +287,27 @@ export default async function UnitDetailPage({
                   key={u.slug}
                   href={`/${hub.slug}/units/${u.slug}`}
                   style={{
-                    padding: '6px 8px',
-                    fontSize: '11px',
-                    fontWeight: u.slug === unit.slug ? 900 : 600,
+                    padding: '7px 10px',
+                    fontSize: '12.5px',
+                    fontWeight: u.slug === unit.slug ? 800 : 600,
                     background: u.slug === unit.slug ? 'var(--accent-bg)' : 'transparent',
-                    color: u.slug === unit.slug ? 'var(--accent-primary)' : 'var(--text-secondary)',
+                    color: u.slug === unit.slug ? 'var(--text-main)' : 'var(--text-secondary)',
                     borderBottom: '1px solid var(--border-subtle)',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    gap: '7px',
+                    gap: '8px',
                   }}
                 >
-                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', minWidth: 0 }}>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', minWidth: 0 }}>
                     <img
                       src={u.imageUrl}
                       alt={u.nameEn}
-                      width={30}
-                      height={30}
+                      width={32}
+                      height={32}
                       style={{
-                        width: '30px',
-                        height: '30px',
+                        width: '32px',
+                        height: '32px',
                         borderRadius: '5px',
                         objectFit: 'cover',
                         objectPosition: 'top',
@@ -318,7 +325,7 @@ export default async function UnitDetailPage({
                       {u.nameEn}
                     </span>
                   </span>
-                  <span className="mono" style={{ flexShrink: 0, fontWeight: 900 }}>
+                  <span className="mono" style={{ flexShrink: 0, fontWeight: 800, color: 'var(--amber-primary)' }}>
                     {u.tiers.overallAsian.tierRank}
                   </span>
                 </Link>
@@ -327,16 +334,16 @@ export default async function UnitDetailPage({
           </aside>
 
           {/* CENTER CHARACTER PROFILE & BUILD GUIDE */}
-          <div className="wiki-center-article" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          <div className="wiki-center-article" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {/* HERO UNIT PROFILE CARD */}
             <section
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '6px',
-                padding: '16px',
+                borderRadius: '8px',
+                padding: '18px',
                 display: 'flex',
-                gap: '16px',
+                gap: '18px',
                 alignItems: 'center',
                 flexWrap: 'wrap',
               }}
@@ -344,16 +351,15 @@ export default async function UnitDetailPage({
               <img
                 src={unit.imageUrl}
                 alt={unit.nameEn}
-                width={116}
-                height={116}
+                width={120}
+                height={120}
                 style={{
-                  width: '116px',
-                  height: '116px',
-                  borderRadius: '8px',
+                  width: '120px',
+                  height: '120px',
+                  borderRadius: '10px',
                   objectFit: 'cover',
                   objectPosition: 'top',
                   border: '2.5px solid var(--accent-primary)',
-                  boxShadow: '0 4px 14px rgba(0,0,0,0.12)',
                 }}
               />
               <div style={{ flex: 1, minWidth: '240px' }}>
@@ -363,15 +369,15 @@ export default async function UnitDetailPage({
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     flexWrap: 'wrap',
-                    gap: '8px',
+                    gap: '10px',
                   }}
                 >
                   <div>
-                    <h1 style={{ fontSize: '19px', fontWeight: 900 }}>
+                    <h1 style={{ fontSize: '21px', fontWeight: 800, color: 'var(--text-main)' }}>
                       {unit.nameEn} — {unit.styleOrTitle}
                     </h1>
-                    <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: 700, marginTop: '2px' }}>
-                      Character: {unit.nameOriginal} • Rarity: {unit.rarity}
+                    <div style={{ fontSize: '13px', color: 'var(--text-muted)', fontWeight: 700, marginTop: '3px' }}>
+                      Character: {unit.nameOriginal} • Rarity: {unit.rarity} • {syncCtx.shortBadgeLabel}
                     </div>
                   </div>
                   <span
@@ -379,11 +385,11 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--accent-bg)',
                       color: 'var(--accent-primary)',
-                      border: '1.5px solid var(--accent-primary)',
-                      padding: '5px 12px',
-                      borderRadius: '4px',
-                      fontSize: '14px',
-                      fontWeight: 900,
+                      border: '1.5px solid var(--accent-border)',
+                      padding: '6px 14px',
+                      borderRadius: '6px',
+                      fontSize: '15px',
+                      fontWeight: 800,
                     }}
                   >
                     Tier {unit.tiers.overallAsian.tierRank} • {unit.tiers.overallAsian.numericScore.toFixed(1)}/10
@@ -395,8 +401,8 @@ export default async function UnitDetailPage({
                     display: 'flex',
                     gap: '8px',
                     flexWrap: 'wrap',
-                    marginTop: '10px',
-                    fontSize: '11.5px',
+                    marginTop: '12px',
+                    fontSize: '12.5px',
                     fontWeight: 800,
                   }}
                 >
@@ -405,10 +411,11 @@ export default async function UnitDetailPage({
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
-                      background: 'var(--bg-header)',
-                      color: '#FFF',
-                      padding: '4px 10px',
-                      borderRadius: '4px',
+                      background: 'var(--bg-subtle)',
+                      border: '1px solid var(--border-strong)',
+                      color: 'var(--text-main)',
+                      padding: '5px 11px',
+                      borderRadius: '5px',
                     }}
                   >
                     <img
@@ -416,7 +423,7 @@ export default async function UnitDetailPage({
                       alt={unit.role}
                       width={20}
                       height={20}
-                      style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                      style={{ width: '20px', height: '20px', borderRadius: '4px', objectFit: 'cover' }}
                     />
                     Role: {unit.role}
                   </span>
@@ -427,8 +434,8 @@ export default async function UnitDetailPage({
                       gap: '6px',
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      padding: '4px 10px',
-                      borderRadius: '4px',
+                      padding: '5px 11px',
+                      borderRadius: '5px',
                     }}
                   >
                     <img
@@ -436,7 +443,7 @@ export default async function UnitDetailPage({
                       alt={unit.element}
                       width={20}
                       height={20}
-                      style={{ width: '20px', height: '20px', borderRadius: '3px', objectFit: 'cover' }}
+                      style={{ width: '20px', height: '20px', borderRadius: '4px', objectFit: 'cover' }}
                     />
                     {getGameStatLabels(hub.slug).elementTypeBadgeLabel}: {unit.element} ({unit.attackType})
                   </span>
@@ -444,9 +451,9 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--amber-bg)',
                       color: 'var(--amber-primary)',
-                      border: '1px solid var(--border-main)',
-                      padding: '4px 10px',
-                      borderRadius: '4px',
+                      border: '1px solid var(--amber-border)',
+                      padding: '5px 11px',
+                      borderRadius: '5px',
                       display: 'inline-flex',
                       alignItems: 'center',
                     }}
@@ -457,8 +464,9 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--green-bg)',
                       color: 'var(--green-primary)',
-                      padding: '4px 10px',
-                      borderRadius: '4px',
+                      border: '1px solid var(--green-border)',
+                      padding: '5px 11px',
+                      borderRadius: '5px',
                       display: 'inline-flex',
                       alignItems: 'center',
                     }}
@@ -469,36 +477,158 @@ export default async function UnitDetailPage({
               </div>
             </section>
 
+            {/* MULTI-SOURCE CONSENSUS & DISAGREEMENT BREAKDOWN PANEL */}
+            <section
+              style={{
+                background: 'var(--bg-surface)',
+                border:
+                  consensus.consensusStatus === 'SPLIT_VERDICT'
+                    ? '1.5px solid var(--amber-border)'
+                    : '1.5px solid var(--green-border)',
+                borderRadius: '8px',
+                padding: '16px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '12px',
+              }}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  gap: '10px',
+                }}
+              >
+                <h2
+                  style={{
+                    fontSize: '15px',
+                    fontWeight: 800,
+                    borderLeft: '4px solid var(--amber-primary)',
+                    paddingLeft: '10px',
+                  }}
+                >
+                  MULTI-SOURCE META CONSENSUS &amp; ENDGAME USAGE VERDICT
+                </h2>
+                <span
+                  className="mono"
+                  style={{
+                    padding: '4px 10px',
+                    borderRadius: '5px',
+                    fontSize: '12px',
+                    fontWeight: 800,
+                    background:
+                      consensus.consensusStatus === 'SPLIT_VERDICT'
+                        ? 'var(--amber-bg)'
+                        : 'var(--green-bg)',
+                    color:
+                      consensus.consensusStatus === 'SPLIT_VERDICT'
+                        ? 'var(--amber-primary)'
+                        : 'var(--green-primary)',
+                    border:
+                      consensus.consensusStatus === 'SPLIT_VERDICT'
+                        ? '1px solid var(--amber-border)'
+                        : '1px solid var(--green-border)',
+                  }}
+                >
+                  {consensus.consensusBadgeLabel}
+                </span>
+              </div>
+
+              <div className="consensus-votes-grid">
+                {[
+                  consensus.telemetryUsageVote,
+                  consensus.primaryWikiVote,
+                  consensus.secondaryWikiVote,
+                ].map((vote) => (
+                  <div
+                    key={vote.sourceName}
+                    style={{
+                      background: 'var(--bg-subtle)',
+                      border: '1px solid var(--border-main)',
+                      borderRadius: '6px',
+                      padding: '11px 13px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '4px',
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        gap: '6px',
+                      }}
+                    >
+                      <span className="mono" style={{ fontSize: '11px', fontWeight: 800, color: 'var(--text-muted)' }}>
+                        {vote.weightPct}% WEIGHT
+                      </span>
+                      <span
+                        className="mono"
+                        style={{
+                          fontSize: '12.5px',
+                          fontWeight: 800,
+                          color: vote.tier === 'SSS' ? 'var(--accent-primary)' : 'var(--amber-primary)',
+                        }}
+                      >
+                        Tier {vote.tier} ({vote.score}/10)
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '13.5px', fontWeight: 800, color: 'var(--text-main)' }}>
+                      {vote.sourceName}
+                    </div>
+                    <div style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>
+                      {vote.focusArea}
+                    </div>
+                    <div className="mono" style={{ fontSize: '11.5px', color: 'var(--blue-primary)', marginTop: '2px' }}>
+                      {vote.evaluationBasis}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div
+                style={{
+                  background: 'var(--bg-subtle)',
+                  borderLeft:
+                    consensus.consensusStatus === 'SPLIT_VERDICT'
+                      ? '3.5px solid var(--amber-primary)'
+                      : '3.5px solid var(--green-primary)',
+                  padding: '10px 12px',
+                  borderRadius: '5px',
+                  fontSize: '13px',
+                  color: 'var(--text-secondary)',
+                }}
+              >
+                <strong style={{ color: 'var(--text-main)' }}>Consensus Analysis: </strong>
+                {consensus.whySourcesDifferOrAgree}
+              </div>
+            </section>
+
             {/* VERIFIED BASE STATS & PERFORMANCE CEILINGS WITH REAL STAT ICONS */}
             <section
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '6px',
-                padding: '14px',
+                borderRadius: '8px',
+                padding: '16px',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13.5px',
-                  fontWeight: 900,
+                  fontSize: '15px',
+                  fontWeight: 800,
                   borderLeft: '4px solid var(--accent-primary)',
-                  paddingLeft: '8px',
-                  marginBottom: '10px',
+                  paddingLeft: '10px',
+                  marginBottom: '12px',
                 }}
               >
                 MAX-LEVEL STATS &amp; PERFORMANCE METRICS
               </h2>
 
-              <div
-                className="mono"
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(5, 1fr)',
-                  gap: '8px',
-                  textAlign: 'center',
-                }}
-              >
+              <div className="mono stats-5-grid">
                 {(() => {
                   const statLabels = getGameStatLabels(hub.slug);
                   return [
@@ -515,21 +645,21 @@ export default async function UnitDetailPage({
                     style={{
                       background: 'var(--bg-subtle)',
                       border: '1px solid var(--border-main)',
-                      borderRadius: '4px',
-                      padding: '9px 6px',
+                      borderRadius: '6px',
+                      padding: '11px 8px',
                       display: 'flex',
                       flexDirection: 'column',
                       alignItems: 'center',
-                      gap: '4px',
+                      gap: '5px',
                     }}
                   >
                     <div
                       style={{
                         display: 'inline-flex',
                         alignItems: 'center',
-                        gap: '5px',
-                        fontSize: '10.5px',
-                        color: 'var(--text-muted)',
+                        gap: '6px',
+                        fontSize: '11.5px',
+                        color: 'var(--text-secondary)',
                         fontWeight: 800,
                       }}
                     >
@@ -542,7 +672,7 @@ export default async function UnitDetailPage({
                       />
                       <span>{s.label}</span>
                     </div>
-                    <div style={{ fontSize: '15.5px', fontWeight: 900 }}>
+                    <div style={{ fontSize: '17px', fontWeight: 800, color: 'var(--text-main)' }}>
                       {s.val.toLocaleString()}
                     </div>
                   </div>
@@ -558,19 +688,19 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '6px',
-                padding: '14px',
+                borderRadius: '8px',
+                padding: '16px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '10px',
+                gap: '12px',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13.5px',
-                  fontWeight: 900,
+                  fontSize: '15px',
+                  fontWeight: 800,
                   borderLeft: '4px solid var(--accent-primary)',
-                  paddingLeft: '8px',
+                  paddingLeft: '10px',
                 }}
               >
                 SKILL MULTIPLIERS &amp; COMBAT MECHANICS
@@ -582,11 +712,12 @@ export default async function UnitDetailPage({
                   style={{
                     background: 'var(--bg-subtle)',
                     border: '1px solid var(--border-main)',
-                    borderRadius: '5px',
-                    padding: '12px',
+                    borderRadius: '6px',
+                    padding: '14px',
                     display: 'flex',
-                    gap: '12px',
+                    gap: '14px',
                     alignItems: 'flex-start',
+                    flexWrap: 'wrap',
                   }}
                 >
                   <img
@@ -596,19 +727,19 @@ export default async function UnitDetailPage({
                       displayGears[skIdx % displayGears.length]?.imageUrl || unit.imageUrl
                     )}
                     alt={sk.name}
-                    width={48}
-                    height={48}
+                    width={52}
+                    height={52}
                     style={{
-                      width: '48px',
-                      height: '48px',
-                      borderRadius: '6px',
+                      width: '52px',
+                      height: '52px',
+                      borderRadius: '7px',
                       objectFit: 'cover',
                       border: '1.5px solid var(--border-strong)',
                       flexShrink: 0,
                     }}
                   />
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontWeight: 900, fontSize: '13.5px' }}>
+                  <div style={{ flex: 1, minWidth: '220px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '6px', fontWeight: 800, fontSize: '14.5px' }}>
                       <span>
                         [{sk.type}] {sk.name} ({sk.hitCount}-Hit)
                       </span>
@@ -619,15 +750,15 @@ export default async function UnitDetailPage({
                     <div
                       className="mono"
                       style={{
-                        fontSize: '12px',
+                        fontSize: '13px',
                         fontWeight: 800,
-                        color: 'var(--text-main)',
-                        marginTop: '4px',
+                        color: 'var(--amber-primary)',
+                        marginTop: '5px',
                       }}
                     >
                       {sk.multiplierSummary}
                     </div>
-                    <p style={{ fontSize: '11.5px', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                    <p style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '5px', lineHeight: 1.55 }}>
                       {sk.exactDescription}
                     </p>
                   </div>
@@ -640,17 +771,18 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '6px',
-                padding: '14px',
+                borderRadius: '8px',
+                padding: '16px',
+                overflowX: 'auto',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13.5px',
-                  fontWeight: 900,
+                  fontSize: '15px',
+                  fontWeight: 800,
                   borderLeft: '4px solid var(--border-strong)',
-                  paddingLeft: '8px',
-                  marginBottom: '10px',
+                  paddingLeft: '10px',
+                  marginBottom: '12px',
                 }}
               >
                 LIMIT BREAK / AWAKENING PASSIVES &amp; DUPE BREAKPOINTS
@@ -660,33 +792,34 @@ export default async function UnitDetailPage({
                   width: '100%',
                   borderCollapse: 'collapse',
                   border: '1px solid var(--border-main)',
-                  fontSize: '11.5px',
+                  fontSize: '13px',
+                  minWidth: '520px',
                 }}
               >
                 <thead>
-                  <tr style={{ background: 'var(--bg-subnav)', color: '#FFF' }}>
-                    <th style={{ padding: '7px 10px', textAlign: 'left', width: '130px' }}>RANK</th>
-                    <th style={{ padding: '7px 10px', textAlign: 'left', width: '210px' }}>PASSIVE NAME</th>
-                    <th style={{ padding: '7px 10px', textAlign: 'left' }}>EFFECT</th>
+                  <tr style={{ background: 'var(--bg-subnav)', color: 'var(--text-main)' }}>
+                    <th style={{ padding: '9px 12px', textAlign: 'left', width: '135px' }}>RANK</th>
+                    <th style={{ padding: '9px 12px', textAlign: 'left', width: '220px' }}>PASSIVE NAME</th>
+                    <th style={{ padding: '9px 12px', textAlign: 'left' }}>EFFECT</th>
                   </tr>
                 </thead>
                 <tbody>
                   {unit.passives.map((p, pIdx) => (
                     <tr key={p.unlockRank} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-                      <td className="mono" style={{ padding: '8px 10px', fontWeight: 900, color: 'var(--accent-primary)' }}>
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
+                      <td className="mono" style={{ padding: '10px 12px', fontWeight: 800, color: 'var(--amber-primary)' }}>
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px' }}>
                           <img
                             src={displayGears[pIdx % displayGears.length]?.imageUrl || elemIcon}
                             alt={p.unlockRank}
-                            width={24}
-                            height={24}
-                            style={{ width: '24px', height: '24px', borderRadius: '4px', objectFit: 'cover' }}
+                            width={26}
+                            height={26}
+                            style={{ width: '26px', height: '26px', borderRadius: '5px', objectFit: 'cover' }}
                           />
                           <span>{p.unlockRank}</span>
                         </span>
                       </td>
-                      <td style={{ padding: '8px 10px', fontWeight: 800 }}>{p.name}</td>
-                      <td style={{ padding: '8px 10px', color: 'var(--text-secondary)' }}>{p.effect}</td>
+                      <td style={{ padding: '10px 12px', fontWeight: 800 }}>{p.name}</td>
+                      <td style={{ padding: '10px 12px', color: 'var(--text-secondary)' }}>{p.effect}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -698,19 +831,19 @@ export default async function UnitDetailPage({
               style={{
                 background: 'var(--bg-surface)',
                 border: '1px solid var(--border-main)',
-                borderRadius: '6px',
-                padding: '14px',
+                borderRadius: '8px',
+                padding: '16px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '14px',
+                gap: '16px',
               }}
             >
               <h2
                 style={{
-                  fontSize: '13.5px',
-                  fontWeight: 900,
+                  fontSize: '15px',
+                  fontWeight: 800,
                   borderLeft: '4px solid var(--accent-primary)',
-                  paddingLeft: '8px',
+                  paddingLeft: '10px',
                 }}
               >
                 BEST SYNERGY TEAMMATES, WEAPONS / CARDS &amp; RAID MATCHUPS
@@ -718,10 +851,10 @@ export default async function UnitDetailPage({
 
               {/* SYNERGY TEAMMATES */}
               <div>
-                <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '7px' }}>
+                <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
                   Optimal Synergy Teammates:
                 </div>
-                <div style={{ display: 'flex', gap: '9px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {unit.synergyUnitSlugs.map((synSlug) => {
                     const partner = hub.units.find((u) => u.slug === synSlug);
                     if (!partner) return null;
@@ -732,23 +865,23 @@ export default async function UnitDetailPage({
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '9px',
-                          padding: '6px 12px 6px 6px',
+                          gap: '10px',
+                          padding: '7px 14px 7px 7px',
                           background: 'var(--bg-subtle)',
                           border: '1px solid var(--border-main)',
-                          borderRadius: '5px',
-                          fontSize: '12px',
+                          borderRadius: '6px',
+                          fontSize: '13px',
                           fontWeight: 800,
                         }}
                       >
                         <img
                           src={partner.imageUrl}
                           alt={partner.nameEn}
-                          width={48}
-                          height={48}
+                          width={50}
+                          height={50}
                           style={{
-                            width: '48px',
-                            height: '48px',
+                            width: '50px',
+                            height: '50px',
                             borderRadius: '6px',
                             objectFit: 'cover',
                             objectPosition: 'top',
@@ -757,7 +890,7 @@ export default async function UnitDetailPage({
                         />
                         <div>
                           <div>{partner.nameEn}</div>
-                          <div style={{ fontSize: '10.5px', color: 'var(--accent-primary)' }}>
+                          <div style={{ fontSize: '11.5px', color: 'var(--accent-primary)' }}>
                             {partner.role} • Tier {partner.tiers.overallAsian.tierRank}
                           </div>
                         </div>
@@ -769,10 +902,10 @@ export default async function UnitDetailPage({
 
               {/* BEST-IN-SLOT WEAPONS / SUPPORT CARDS / ARCANAS WITH REAL IMAGES */}
               <div>
-                <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '7px' }}>
+                <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
                   Best-in-Slot Weapons / Support Cards / Arcanas:
                 </div>
-                <div style={{ display: 'flex', gap: '9px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {displayGears.map((g) => (
                     <Link
                       key={g.slug}
@@ -780,23 +913,23 @@ export default async function UnitDetailPage({
                       style={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '9px',
-                        padding: '6px 12px 6px 6px',
+                        gap: '10px',
+                        padding: '7px 14px 7px 7px',
                         background: 'var(--bg-subtle)',
                         border: '1px solid var(--border-main)',
-                        borderRadius: '5px',
-                        fontSize: '12px',
+                        borderRadius: '6px',
+                        fontSize: '13px',
                         fontWeight: 800,
                       }}
                     >
                       <img
                         src={g.imageUrl}
                         alt={g.nameEn}
-                        width={52}
-                        height={52}
+                        width={54}
+                        height={54}
                         style={{
-                          width: '52px',
-                          height: '52px',
+                          width: '54px',
+                          height: '54px',
                           borderRadius: '6px',
                           objectFit: 'cover',
                           border: '1.5px solid var(--border-strong)',
@@ -804,7 +937,7 @@ export default async function UnitDetailPage({
                       />
                       <div>
                         <div>{g.nameEn}</div>
-                        <div style={{ fontSize: '10.5px', color: 'var(--amber-primary)' }}>
+                        <div style={{ fontSize: '11.5px', color: 'var(--amber-primary)' }}>
                           {g.subType} • Tier {g.tierRank}
                         </div>
                       </div>
@@ -815,10 +948,10 @@ export default async function UnitDetailPage({
 
               {/* TOP RAID BOSS MATCHUPS WITH REAL WIDE BOSS IMAGES */}
               <div>
-                <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '7px' }}>
+                <div style={{ fontSize: '13.5px', fontWeight: 800, marginBottom: '8px' }}>
                   Top Raid Boss Matchups:
                 </div>
-                <div style={{ display: 'flex', gap: '9px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
                   {displayBosses.map((b) => (
                     <Link
                       key={b.slug}
@@ -826,31 +959,31 @@ export default async function UnitDetailPage({
                       style={{
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '10px',
-                        padding: '6px 12px 6px 6px',
+                        gap: '11px',
+                        padding: '7px 14px 7px 7px',
                         background: 'var(--bg-subtle)',
                         border: '1px solid var(--border-main)',
-                        borderRadius: '5px',
-                        fontSize: '12px',
+                        borderRadius: '6px',
+                        fontSize: '13px',
                         fontWeight: 800,
                       }}
                     >
                       <img
                         src={b.imageUrl}
                         alt={b.nameEn}
-                        width={112}
-                        height={62}
+                        width={116}
+                        height={64}
                         style={{
-                          width: '112px',
-                          height: '62px',
-                          borderRadius: '5px',
+                          width: '116px',
+                          height: '64px',
+                          borderRadius: '6px',
                           objectFit: 'cover',
                           border: '1.5px solid var(--border-strong)',
                         }}
                       />
                       <div>
                         <div>{b.nameEn}</div>
-                        <div style={{ fontSize: '10.5px', color: 'var(--accent-primary)' }}>
+                        <div style={{ fontSize: '11.5px', color: 'var(--accent-primary)' }}>
                           {b.modeName} • {b.hpStat}
                         </div>
                       </div>
@@ -861,26 +994,26 @@ export default async function UnitDetailPage({
             </section>
           </div>
 
-          {/* RIGHT RAIL PICKUP BANNERS + STICKY AD */}
-          <aside className="wiki-right-rail" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {/* RIGHT RAIL PICKUP BANNERS + STICKY ACCOUNT ACTIONS */}
+          <aside className="wiki-right-rail" style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {displayBanners.length > 0 && (
               <div
                 style={{
                   background: 'var(--bg-surface)',
                   border: '1px solid var(--border-main)',
-                  borderRadius: '6px',
-                  padding: '12px',
+                  borderRadius: '8px',
+                  padding: '14px',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '10px',
+                  gap: '12px',
                 }}
               >
                 <div
                   style={{
-                    fontSize: '11.5px',
-                    fontWeight: 900,
-                    borderBottom: '2px solid var(--border-strong)',
-                    paddingBottom: '6px',
+                    fontSize: '12.5px',
+                    fontWeight: 800,
+                    borderBottom: '2px solid var(--border-main)',
+                    paddingBottom: '7px',
                   }}
                 >
                   FEATURED PICKUP BANNERS
@@ -892,9 +1025,9 @@ export default async function UnitDetailPage({
                     style={{
                       display: 'flex',
                       flexDirection: 'column',
-                      gap: '6px',
-                      fontSize: '11.5px',
-                      paddingBottom: '10px',
+                      gap: '7px',
+                      fontSize: '12.5px',
+                      paddingBottom: '12px',
                       borderBottom: '1px solid var(--border-subtle)',
                     }}
                   >
@@ -902,18 +1035,18 @@ export default async function UnitDetailPage({
                       style={{
                         position: 'relative',
                         width: '100%',
-                        height: '112px',
+                        height: '116px',
                         borderRadius: '6px',
                         overflow: 'hidden',
                         border: '1.5px solid var(--border-strong)',
-                        background: '#111',
+                        background: 'var(--bg-header)',
                       }}
                     >
                       <img
                         src={bn.imageUrl}
                         alt={bn.bannerTitle}
                         width={260}
-                        height={112}
+                        height={116}
                         style={{
                           width: '100%',
                           height: '100%',
@@ -926,9 +1059,9 @@ export default async function UnitDetailPage({
                           position: 'absolute',
                           top: '6px',
                           right: '6px',
-                          fontSize: '9.5px',
-                          fontWeight: 900,
-                          padding: '2px 7px',
+                          fontSize: '10.5px',
+                          fontWeight: 800,
+                          padding: '3px 8px',
                           borderRadius: '4px',
                           background: 'var(--accent-primary)',
                           color: '#FFFFFF',
@@ -937,9 +1070,9 @@ export default async function UnitDetailPage({
                         {bn.pullVerdict}
                       </span>
                     </div>
-                    <div style={{ fontWeight: 900, fontSize: '12px' }}>{bn.bannerTitle}</div>
-                    <div className="mono" style={{ fontSize: '10.5px', color: 'var(--text-muted)' }}>
-                      Release: {bn.estGlobalStartDate} ({bn.pityCurrencyCost.toLocaleString()} {hub.currencyName})
+                    <div style={{ fontWeight: 800, fontSize: '13px' }}>{bn.bannerTitle}</div>
+                    <div className="mono" style={{ fontSize: '11.5px', color: 'var(--text-muted)' }}>
+                      Schedule: {bn.estGlobalStartDate} ({bn.pityCurrencyCost.toLocaleString()} {hub.currencyName})
                     </div>
                   </Link>
                 ))}

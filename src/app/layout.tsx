@@ -1,17 +1,33 @@
 import type { Metadata } from 'next';
+import { Plus_Jakarta_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['600', '700', '800'],
+  variable: '--font-mono',
+  display: 'swap',
+});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gachacrest.gg';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  referrer: 'no-referrer',
   applicationName: 'GachaCrest',
   title: {
     default: 'GachaCrest — Gacha Tier Lists, Character Builds & Pull Codex',
     template: '%s | GachaCrest Gacha Wiki & Tier Database',
   },
   description:
-    'GachaCrest is the verified English gacha tier list, character build, weapon and support card ranking, boss raid strategy, and pity pull calculator encyclopedia for Star Savior, Heaven Burns Red, Uma Musume: Pretty Derby, and Sword of Convallaria.',
+    'GachaCrest is the verified English gacha tier list, multi-source meta consensus, character build, weapon and support card ranking, boss raid strategy, and pity pull calculator encyclopedia for Star Savior, Heaven Burns Red, Uma Musume: Pretty Derby, and Sword of Convallaria.',
   keywords: [
     'GachaCrest',
     'gacha tier list',
@@ -27,7 +43,7 @@ export const metadata: Metadata = {
     siteName: 'GachaCrest',
     title: 'GachaCrest — Gacha Tier Lists, Character Builds & Pull Codex',
     description:
-      'Complete SSS/SS character tier lists, skill multipliers, weapon and support card rankings, boss raid guides, and pull calculators across top gacha RPGs.',
+      'Complete SSS/SS character tier lists, multi-source consensus ratings, skill multipliers, weapon and support card rankings, boss raid guides, and pull calculators across top gacha RPGs.',
     url: siteUrl,
     images: [
       {
@@ -42,7 +58,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'GachaCrest — Gacha Tier Lists, Character Builds & Pull Codex',
     description:
-      'Verified SSS/SS character tier lists, weapon & support card rankings, boss raid strategies, and pull calculators.',
+      'Verified SSS/SS character tier lists, multi-source consensus ratings, weapon & support card rankings, boss raid strategies, and pull calculators.',
     images: ['/gachacrest-logo.jpg'],
   },
 };
@@ -60,11 +76,11 @@ export default function RootLayout({
     url: siteUrl,
     logo: `${siteUrl}/gachacrest-logo.jpg`,
     description:
-      'GachaCrest is a multi-game gacha tier list, character build, weapon & support card ranking, boss raid strategy, and pull calculator encyclopedia.',
+      'GachaCrest is a multi-game gacha tier list, multi-source meta consensus, character build, weapon & support card ranking, boss raid strategy, and pull calculator encyclopedia.',
   };
 
   return (
-    <html lang="en">
+    <html lang="en" data-theme="dark" className={`${plusJakarta.variable} ${jetbrainsMono.variable}`}>
       <body>
         <script
           type="application/ld+json"

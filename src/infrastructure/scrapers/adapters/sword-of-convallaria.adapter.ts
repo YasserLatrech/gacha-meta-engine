@@ -631,10 +631,10 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-sp-samantha",
         "soc-auguste"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SS",
       "tierBossRaid": "SSS",
-      "numericScore": 9.2,
+      "numericScore": 9.7,
       "summaryVerdict": "Nydia is a SS-Tier Seeker (Backline Dive Assassin) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Physical backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-nydia"
@@ -959,10 +959,10 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-luvata",
         "soc-agata"
       ],
-      "tierOverall": "SS",
+      "tierOverall": "SSS",
       "tierReroll": "SSS",
-      "tierBossRaid": "SS",
-      "numericScore": 9.2,
+      "tierBossRaid": "SSS",
+      "numericScore": 9.7,
       "summaryVerdict": "Lutfi is a SS-Tier Seeker (Tactical Debuff & Crit Seeker) specialist in Sword of Convallaria. Teleports behind the target to deliver a 175% Piercing backstab that ignores enemy Block and Reaction skills, then re-positions 3 tiles to safety.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-lutfi"
@@ -1533,10 +1533,10 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
         "soc-falin",
         "soc-camelot"
       ],
-      "tierOverall": "S",
+      "tierOverall": "SSS",
       "tierReroll": "S",
-      "tierBossRaid": "SS",
-      "numericScore": 8.8,
+      "tierBossRaid": "SSS",
+      "numericScore": 9.7,
       "summaryVerdict": "Ayishah is a S-Tier Defender (Bodyguard Cover Tank) specialist in Sword of Convallaria. Ayishah enters Guardian Bulwark stance for 2 turns, intercepting all Physical and Ranged attacks targeting allies within 2 tiles while gaining -35% Damage Taken and a 40% Max HP Shield.",
       "longevityNote": "Farmable to 5★ via the daily Memory Retrieval stage.",
       "sourceUrl": "https://gachacrest.gg/sword-of-convallaria/units/soc-ayishah"
