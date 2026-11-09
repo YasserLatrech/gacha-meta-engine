@@ -281,7 +281,7 @@ export default async function UnitDetailPage({
             >
               ALL {hub.shortName} CHARACTERS ({hub.units.length})
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '580px', overflowY: 'auto' }}>
+            <div className="wiki-sidebar-scroll" style={{ display: 'flex', flexDirection: 'column', maxHeight: '580px', overflowY: 'auto' }}>
               {hub.units.map((u) => (
                 <Link
                   key={u.slug}
