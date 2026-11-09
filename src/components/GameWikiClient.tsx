@@ -988,7 +988,7 @@ export function GameWikiClient({
           >
             {hub.slug === 'uma-musume' ? `05. TRAINEE DATABASE (${hub.units.length})` : `05. CHARACTER DATABASE (${hub.units.length})`}
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', maxHeight: '620px', overflowY: 'auto' }}>
+          <div className="wiki-sidebar-scroll" style={{ display: 'flex', flexDirection: 'column', maxHeight: '620px', overflowY: 'auto' }}>
             {hub.units.map((u) => (
               <Link
                 key={u.slug}
