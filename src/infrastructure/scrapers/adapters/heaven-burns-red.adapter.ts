@@ -11073,7 +11073,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Score Attack #65 — Red Crimson (Grade 140 / Intensity 35)",
       "modeName": "Score Attack",
       "difficultyLabel": "Grade 140 Max Intensity",
-      "imageUrl": "/boss-hbr-cancer.jpg",
+      "imageUrl": "https://img.game8.jp/6551559/ecbe8c7ca7a0b4378426cda1d3cbf241.png/original",
       "hpStat": "38,000,000 HP",
       "shieldOrDpStat": "2,450,000 DP (x2 Bars)",
       "weaknesses": [
@@ -11117,7 +11117,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "nameEn": "Anachrony — Supreme Flat Hand (Phase 3)",
       "modeName": "Anachrony",
       "difficultyLabel": "Skull Feather Endgame",
-      "imageUrl": "/boss-hbr-flathand.jpg",
+      "imageUrl": "https://img.game8.jp/7029894/ee6f893695d9b1ea4e6b3a3e2d8425e3.png/original",
       "hpStat": "52,000,000 HP",
       "shieldOrDpStat": "3,200,000 DP",
       "weaknesses": [

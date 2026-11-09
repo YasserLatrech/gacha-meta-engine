@@ -6369,7 +6369,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial I (Lv.70 Stage 10) — Judgement Tarot Arbiter",
       "modeName": "Weaponry Trial I",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "/boss-soc-dragon.jpg",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2599.webp",
       "hpStat": "265,000 HP",
       "shieldOrDpStat": "Immune to Melee Counter & Knockback",
       "weaknesses": [
@@ -6406,7 +6406,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial II (Lv.70 Stage 10) — Papal Executioner",
       "modeName": "Weaponry Trial II",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "/boss-soc-inquisitor.jpg",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2727.webp",
       "hpStat": "280,000 HP",
       "shieldOrDpStat": "Summons Volatile Detonation Crystals",
       "weaknesses": [
@@ -6442,7 +6442,7 @@ export const swordOfConvallariaBundle: GameAdapterBundle = {
       "nameEn": "Weaponry Trial III (Lv.70 Stage 10) — Calamity Dragon",
       "modeName": "Weaponry Trial III",
       "difficultyLabel": "Stage 10 (Lv.70)",
-      "imageUrl": "/boss-soc-colossus.jpg",
+      "imageUrl": "https://dotgg.gg/sword-of-convallaria/wp-content/uploads/sites/49/2025/04/IMG_2601.webp",
       "hpStat": "290,000 HP",
       "shieldOrDpStat": "Stacking ATK/DEF Dragon Scales",
       "weaknesses": [

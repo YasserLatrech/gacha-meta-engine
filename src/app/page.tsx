@@ -4,7 +4,7 @@ import { getPortalOverview } from '../application/services/meta-query.service';
 import { SiteHeader } from '../components/SiteHeader';
 import { AdSlot } from '../components/AdSlot';
 import { PortalSearchClient, SearchableItem } from '../components/PortalSearchClient';
-import { getGameAppIconUrl } from '../domain/constants/game-visuals';
+import { getGameAppIconUrl, getSectionEmblemUrl } from '../domain/constants/game-visuals';
 import { GachaCrestMark } from '../components/GachaCrestLogo';
 import { SiteFooter } from '../components/SiteFooter';
 
@@ -164,12 +164,12 @@ export default async function PortalHomePage() {
 
           <div className="game-cards-grid">
             {games.map((g) => {
-              const unitIcon = g.units[0]?.imageUrl || getGameAppIconUrl(g.slug);
-              const equipIcon = g.equipments[0]?.imageUrl || unitIcon;
-              const bossIcon = g.bosses[0]?.imageUrl || g.coverImageUrl;
-              const bannerIcon = g.upcomingBanners[0]?.imageUrl || g.coverImageUrl;
-              const compareIcon = g.units[1]?.imageUrl || unitIcon;
-              const calcIcon = g.equipments[1]?.imageUrl || equipIcon;
+              const unitIcon = getSectionEmblemUrl('tier-list', g.slug);
+              const equipIcon = getSectionEmblemUrl('weapons', g.slug);
+              const bossIcon = getSectionEmblemUrl('bosses', g.slug);
+              const bannerIcon = getSectionEmblemUrl('banners', g.slug);
+              const compareIcon = getSectionEmblemUrl('compare', g.slug);
+              const calcIcon = getSectionEmblemUrl('calculator', g.slug);
 
               return (
                 <article

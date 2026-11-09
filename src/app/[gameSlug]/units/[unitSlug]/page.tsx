@@ -82,7 +82,7 @@ export default async function UnitDetailPage({
   const gameAppIcon = getGameAppIconUrl(hub.slug);
   const elemIcon = getElementIconUrl(hub.slug, unit.element, hub.units);
   const atkIcon = getAttackTypeIconUrl(hub.slug, unit.attackType, elemIcon);
-  const topEquipThumb = getSectionEmblemUrl('weapons');
+  const topEquipThumb = getSectionEmblemUrl('weapons', hub.slug);
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -168,7 +168,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={getSectionEmblemUrl('tier-list')}
+                  src={getSectionEmblemUrl('tier-list', hub.slug)}
                   alt="Strongest Tier List"
                   width={26}
                   height={26}
@@ -210,7 +210,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={getSectionEmblemUrl('bosses')}
+                  src={getSectionEmblemUrl('bosses', hub.slug)}
                   alt="Boss and Raid Guides"
                   width={26}
                   height={26}
@@ -231,7 +231,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={getSectionEmblemUrl('banners')}
+                  src={getSectionEmblemUrl('banners', hub.slug)}
                   alt="Upcoming Banners"
                   width={26}
                   height={26}
@@ -252,7 +252,7 @@ export default async function UnitDetailPage({
                 }}
               >
                 <img
-                  src={getSectionEmblemUrl('compare')}
+                  src={getSectionEmblemUrl('compare', hub.slug)}
                   alt="Stat Comparison Tool"
                   width={26}
                   height={26}
