@@ -428,14 +428,7 @@ export function GameWikiClient({
     setMultiHitPct(Math.min(100, hitCount * 12));
   }, [unitA]);
 
-  // Sync damage calculator defaults with selected Unit A's real kit potency & hit count
-  useEffect(() => {
-    if (!unitA) return;
-    const hitCount = unitA.skills[0]?.hitCount || 4;
-    const isDps = unitA.tiers.overallAsian.roleColumn === 'DPS';
-    setBasePotency(isDps ? 13800 + (unitA.baseStats.burstCeilingScore - 90) * 220 : 10400);
-    setMultiHitPct(Math.min(100, hitCount * 12));
-  }, [unitA]);
+
 
   const comparisonRows = useMemo(() => {
     if (!unitA || !unitB) return [];
@@ -1195,7 +1188,7 @@ export function GameWikiClient({
                           border: '1.5px solid var(--green-border)',
                         }}
                       >
-                        🌐 SIMULTANEOUS GLOBAL &amp; ASIA PATCH SYNC — ALL {hub.units.length} CHARACTERS LIVE ON {hub.globalPatchVersion}
+                        SIMULTANEOUS GLOBAL &amp; ASIA PATCH SYNC — ALL {hub.units.length} CHARACTERS LIVE ON {hub.globalPatchVersion}
                       </div>
                     ) : (
                       <>
@@ -1220,7 +1213,7 @@ export function GameWikiClient({
                                 : 'var(--text-secondary)',
                           }}
                         >
-                          🔮 All Units (+{hub.foresightGapMonths}mo Regional Lead)
+                          All Units (+{hub.foresightGapMonths}mo Regional Lead)
                         </button>
                         <button
                           type="button"
@@ -1560,7 +1553,7 @@ export function GameWikiClient({
                       />
                       <div>
                         <div style={{ fontSize: '15.5px', fontWeight: 900 }}>
-                          ⚡ Quick Build Inspector: {quickPeekUnit.nameEn}
+                          Quick Build Inspector: {quickPeekUnit.nameEn}
                         </div>
                         <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', fontWeight: 700 }}>
                           {quickPeekUnit.styleOrTitle} • {quickPeekUnit.role} • Target: {quickPeekUnit.recommendedDupes}
@@ -1886,19 +1879,30 @@ export function GameWikiClient({
                                 >
                                   {roleUnits.map((u) => {
                                     const elemColor = getElementColor(u.element);
+                                    const elemIconUrl = getElementIconUrl(hub.slug, u.element, hub.units);
                                     const ownedDupe = ownedBoxMap[u.slug];
-                                    const microTag = getUnitMicroTags(hub.slug, u)[0];
-                                    const unitConsensus = computeMultiSourceConsensus(hub.slug, u);
-                                    const isUnanimous = unitConsensus.consensusStatus !== 'SPLIT_VERDICT';
+                                    const evalResult = computeInvestmentTier(
+                                      hub.slug,
+                                      u,
+                                      getBaseUnitTierRank(u),
+                                      investmentMode
+                                    );
                                     return (
                                       <div
                                         key={u.slug}
+                                        className={`tier-unit-cell${ownedDupe ? ' is-owned' : ''}`}
                                         style={{
-                                          width: '92px',
+                                          width: '86px',
                                           display: 'flex',
                                           flexDirection: 'column',
                                           alignItems: 'center',
-                                          gap: '3.5px',
+                                          gap: '4px',
+                                          padding: '5px 4px',
+                                          borderRadius: '6px',
+                                          background: 'var(--bg-page)',
+                                          border: ownedDupe
+                                            ? '1.5px solid var(--green-primary)'
+                                            : '1px solid var(--border-main)',
                                         }}
                                       >
                                         <Link
@@ -1907,81 +1911,92 @@ export function GameWikiClient({
                                             display: 'flex',
                                             flexDirection: 'column',
                                             alignItems: 'center',
-                                            gap: '3.5px',
+                                            gap: '4px',
+                                            width: '100%',
                                           }}
                                         >
                                           <div
                                             style={{
-                                              width: '78px',
-                                              height: '78px',
-                                              borderRadius: '8px',
+                                              width: '74px',
+                                              height: '74px',
+                                              borderRadius: '6px',
                                               overflow: 'hidden',
-                                              border: ownedDupe ? '2.5px solid var(--green-primary)' : `2.5px solid ${elemColor}`,
+                                              border: `2px solid ${elemColor}`,
                                               position: 'relative',
                                               background: 'var(--bg-subtle)',
-                                              boxShadow: '0 2px 8px rgba(0,0,0,0.35)',
                                             }}
                                           >
                                             <img
                                               src={u.imageUrl}
                                               alt={u.nameEn}
+                                              width={74}
+                                              height={74}
                                               style={{
                                                 width: '100%',
                                                 height: '100%',
                                                 objectFit: 'cover',
                                                 objectPosition: 'top center',
+                                                display: 'block',
+                                              }}
+                                            />
+                                            <img
+                                              src={elemIconUrl}
+                                              alt={u.element}
+                                              title={u.element}
+                                              width={20}
+                                              height={20}
+                                              style={{
+                                                position: 'absolute',
+                                                top: '2px',
+                                                left: '2px',
+                                                width: '20px',
+                                                height: '20px',
+                                                borderRadius: '4px',
+                                                background: 'rgba(13, 17, 23, 0.9)',
+                                                border: '1px solid var(--border-strong)',
+                                                padding: '1px',
+                                                objectFit: 'contain',
                                               }}
                                             />
                                             <span
+                                              className="mono"
                                               style={{
                                                 position: 'absolute',
-                                                bottom: 0,
-                                                right: 0,
-                                                background: elemColor,
-                                                color: '#FFF',
-                                                fontSize: '9px',
+                                                bottom: '2px',
+                                                right: '2px',
+                                                background: 'rgba(13, 17, 23, 0.92)',
+                                                color: '#FFFFFF',
+                                                fontSize: '9.5px',
                                                 fontWeight: 900,
                                                 padding: '1px 4px',
-                                                borderTopLeftRadius: '4px',
+                                                borderRadius: '3px',
+                                                border: '1px solid var(--border-strong)',
+                                                lineHeight: 1.1,
                                               }}
                                             >
-                                              {u.element}
+                                              {evalResult.adjustedScore.toFixed(1)}
                                             </span>
-                                            {ownedDupe ? (
+                                            {ownedDupe && (
                                               <span
                                                 className="mono"
                                                 style={{
                                                   position: 'absolute',
-                                                  top: 0,
-                                                  left: 0,
+                                                  top: '2px',
+                                                  right: '2px',
                                                   background: 'var(--green-primary)',
                                                   color: '#07090D',
-                                                  fontSize: '8.5px',
+                                                  fontSize: '8px',
                                                   fontWeight: 900,
-                                                  padding: '1px 4px',
-                                                  borderBottomRightRadius: '4px',
+                                                  padding: '1px 3px',
+                                                  borderRadius: '3px',
                                                 }}
                                               >
-                                                ✓ {ownedDupe}
+                                                {ownedDupe}
                                               </span>
-                                            ) : !u.isReleasedGlobal ? (
-                                              <span
-                                                style={{
-                                                  position: 'absolute',
-                                                  top: 0,
-                                                  left: 0,
-                                                  background: 'rgba(11, 14, 20, 0.92)',
-                                                  color: '#FDE047',
-                                                  fontSize: '8.5px',
-                                                  fontWeight: 900,
-                                                  padding: '1px 4px',
-                                                }}
-                                              >
-                                                UPCOMING
-                                              </span>
-                                            ) : null}
+                                            )}
                                           </div>
                                           <span
+                                            className="tier-unit-name"
                                             style={{
                                               fontSize: '11px',
                                               fontWeight: 800,
@@ -1993,59 +2008,20 @@ export function GameWikiClient({
                                             {u.nameEn}
                                           </span>
                                         </Link>
-                                        <span
-                                          className="mono"
-                                          title={unitConsensus.whySourcesDifferOrAgree}
-                                          style={{
-                                            fontSize: '8.5px',
-                                            fontWeight: 900,
-                                            color: isUnanimous ? 'var(--green-primary)' : 'var(--amber-primary)',
-                                            background: isUnanimous ? 'var(--green-bg)' : 'var(--amber-bg)',
-                                            border: `1px solid ${isUnanimous ? 'var(--green-border)' : 'var(--amber-border)'}`,
-                                            borderRadius: '3px',
-                                            padding: '1px 4px',
-                                            whiteSpace: 'nowrap',
-                                            maxWidth: '90px',
-                                            overflow: 'hidden',
-                                            textOverflow: 'ellipsis',
-                                          }}
-                                        >
-                                          {unitConsensus.shortPillLabel}
-                                        </span>
-                                        {microTag && (
-                                          <span
-                                            className="mono"
-                                            style={{
-                                              fontSize: '9px',
-                                              fontWeight: 800,
-                                              color: 'var(--text-secondary)',
-                                              background: 'var(--bg-subtle)',
-                                              border: '1px solid var(--border-subtle)',
-                                              borderRadius: '3px',
-                                              padding: '1px 4px',
-                                              whiteSpace: 'nowrap',
-                                              maxWidth: '90px',
-                                              overflow: 'hidden',
-                                              textOverflow: 'ellipsis',
-                                            }}
-                                          >
-                                            {microTag}
-                                          </span>
-                                        )}
-                                        <div style={{ display: 'flex', gap: '3px', alignItems: 'center' }}>
+                                        <div style={{ display: 'flex', gap: '3px', width: '100%', justifyContent: 'center' }}>
                                           <button
                                             type="button"
                                             onClick={() => toggleOwnedUnit(u.slug)}
                                             className="mono"
-                                            title="Add or remove character in My Roster Box"
+                                            title="Toggle in My Roster Box"
                                             style={{
-                                              fontSize: '9px',
-                                              fontWeight: 900,
-                                              padding: '2px 5px',
+                                              fontSize: '8.5px',
+                                              fontWeight: 800,
+                                              padding: '2px 4px',
                                               borderRadius: '3px',
                                               border: ownedDupe ? '1px solid var(--green-primary)' : '1px solid var(--border-main)',
                                               background: ownedDupe ? 'var(--green-bg)' : 'var(--bg-surface)',
-                                              color: ownedDupe ? 'var(--green-primary)' : 'var(--text-secondary)',
+                                              color: ownedDupe ? 'var(--green-primary)' : 'var(--text-muted)',
                                               cursor: 'pointer',
                                             }}
                                           >
@@ -2057,20 +2033,20 @@ export function GameWikiClient({
                                               setQuickPeekSlug((prev) => (prev === u.slug ? null : u.slug))
                                             }
                                             className="mono"
-                                            title="Open Quick Build & Skill Tree Inspector"
+                                            title="Inspect Build & Consensus"
                                             style={{
-                                              fontSize: '9px',
-                                              fontWeight: 900,
-                                              padding: '2px 5px',
+                                              fontSize: '8.5px',
+                                              fontWeight: 800,
+                                              padding: '2px 4px',
                                               borderRadius: '3px',
                                               border: '1px solid var(--border-main)',
                                               background:
                                                 quickPeekSlug === u.slug ? 'var(--accent-primary)' : 'var(--bg-surface)',
-                                              color: quickPeekSlug === u.slug ? '#FFF' : 'var(--accent-primary)',
+                                              color: quickPeekSlug === u.slug ? '#FFF' : 'var(--text-secondary)',
                                               cursor: 'pointer',
                                             }}
                                           >
-                                            ⚡ Build
+                                            Build
                                           </button>
                                         </div>
                                       </div>
@@ -2325,13 +2301,13 @@ export function GameWikiClient({
                           </span>
                           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
                             <span style={{ color: 'var(--blue-primary)' }}>
-                              📊 50% Usage: {consensus.normalizedElementUsagePct}% ({consensus.normalizedElementRankLabel})
+                              50% Usage: {consensus.normalizedElementUsagePct}% ({consensus.normalizedElementRankLabel})
                             </span>
                             <span style={{ color: 'var(--text-main)' }}>
-                              🏆 30% {consensus.primaryWikiVote.sourceName}: {consensus.primaryWikiVote.tier} ({consensus.primaryWikiVote.score.toFixed(1)})
+                              30% {consensus.primaryWikiVote.sourceName}: {consensus.primaryWikiVote.tier} ({consensus.primaryWikiVote.score.toFixed(1)})
                             </span>
                             <span style={{ color: 'var(--amber-primary)' }}>
-                              🛡️ 20% {consensus.secondaryWikiVote.sourceName}: {consensus.secondaryWikiVote.tier} ({consensus.secondaryWikiVote.score.toFixed(1)})
+                              20% {consensus.secondaryWikiVote.sourceName}: {consensus.secondaryWikiVote.tier} ({consensus.secondaryWikiVote.score.toFixed(1)})
                             </span>
                           </div>
                         </div>
@@ -3393,7 +3369,7 @@ export function GameWikiClient({
                     >
                       <div>
                         <div style={{ fontSize: '13px', fontWeight: 900, color: 'var(--text-main)' }}>
-                          ⚡ MY ACTIVE SQUAD VS. {boss.nameEn.toUpperCase()} — LIVE EFFECTIVENESS AUDIT
+                          MY ACTIVE SQUAD VS. {boss.nameEn.toUpperCase()} — LIVE EFFECTIVENESS AUDIT
                         </div>
                         <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', fontWeight: 600 }}>
                           Evaluates your current {activeSquadUnits.length}/{statConfig.squadSize} Active Squad against this boss&apos;s exact weaknesses, resistances &amp; phase checks
@@ -3452,7 +3428,7 @@ export function GameWikiClient({
                           }}
                         >
                           <div style={{ fontWeight: 900, color: chk.passed ? 'var(--green-primary)' : 'var(--amber-primary)' }}>
-                            {chk.passed ? '✓ ' : '⚠️ '}
+                            {chk.passed ? '✓ ' : ''}
                             {chk.label}
                           </div>
                           <div style={{ color: 'var(--text-secondary)', marginTop: '2px', fontSize: '11px' }}>
@@ -3479,7 +3455,7 @@ export function GameWikiClient({
                         }}
                       >
                         <span style={{ fontWeight: 800, color: 'var(--blue-primary)' }}>
-                          💡 Smart Matchup Upgrade: {squadEval.recommendedSwap.reason}
+                          Smart Matchup Upgrade: {squadEval.recommendedSwap.reason}
                         </span>
                         <button
                           type="button"
@@ -3509,7 +3485,7 @@ export function GameWikiClient({
                             cursor: 'pointer',
                           }}
                         >
-                          ⚡ Auto-Swap In {squadEval.recommendedSwap.bringUnit.nameOriginal}
+                          Auto-Swap In {squadEval.recommendedSwap.bringUnit.nameOriginal}
                         </button>
                       </div>
                     )}
@@ -3535,7 +3511,7 @@ export function GameWikiClient({
                       }}
                     >
                       <div style={{ fontSize: '12.5px', fontWeight: 900 }}>
-                        🏆 TOP PROVEN CLEAR TEAMS &amp; PLAYER USAGE TELEMETRY VS. {boss.nameEn.toUpperCase()}
+                        TOP PROVEN CLEAR TEAMS &amp; PLAYER USAGE TELEMETRY VS. {boss.nameEn.toUpperCase()}
                       </div>
                       <span className="mono" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
                         Aggregated Endgame Leaderboard &amp; Community Clear Data
@@ -3622,7 +3598,7 @@ export function GameWikiClient({
                                   cursor: 'pointer',
                                 }}
                               >
-                                ⚡ Load Team Into Squad Builder
+                                Load Team Into Squad Builder
                               </button>
                             </div>
 
@@ -3735,7 +3711,7 @@ export function GameWikiClient({
                     }}
                   >
                     <div style={{ fontSize: '12px', fontWeight: 900, marginBottom: '6px' }}>
-                      📊 CHARACTER USAGE RATE &amp; CLEAR SUCCESS LEADERBOARD VS. {boss.nameEn.toUpperCase()}
+                      CHARACTER USAGE RATE &amp; CLEAR SUCCESS LEADERBOARD VS. {boss.nameEn.toUpperCase()}
                     </div>
                     <div
                       style={{
@@ -4091,13 +4067,13 @@ export function GameWikiClient({
                             [
                               {
                                 mode: 'SPARK',
-                                label: `🎯 Plan 1× Spark (-${bn.pityCurrencyCost.toLocaleString()})`,
+                                label: `Plan 1× Spark (-${bn.pityCurrencyCost.toLocaleString()})`,
                               },
                               {
                                 mode: 'HALF',
-                                label: `🔥 Plan 50/50 Attempt (-${Math.round(bn.pityCurrencyCost * 0.5).toLocaleString()})`,
+                                label: `Plan 50/50 Attempt (-${Math.round(bn.pityCurrencyCost * 0.5).toLocaleString()})`,
                               },
-                              { mode: 'SKIP', label: '⏭️ Skip & Save Currency' },
+                              { mode: 'SKIP', label: 'Skip & Save Currency' },
                             ] as const
                           ).map((btn) => (
                             <button
@@ -4221,10 +4197,10 @@ export function GameWikiClient({
                             }}
                           >
                             {planMode === 'SKIP'
-                              ? `⏭️ SKIPPING — BANKING ${netAvailableAtBanner.toLocaleString()} FOR NEXT BANNER`
+                              ? `SKIPPING — BANKING ${netAvailableAtBanner.toLocaleString()} FOR NEXT BANNER`
                               : canAffordPlanned
                                 ? `✓ PLAN FUNDED (+${balanceAfterPlannedPull.toLocaleString()} LEFT OVER)`
-                                : `⚠️ SHORT BY ${Math.abs(balanceAfterPlannedPull).toLocaleString()} AFTER PRIOR BANNERS`}
+                                : `SHORT BY ${Math.abs(balanceAfterPlannedPull).toLocaleString()} AFTER PRIOR BANNERS`}
                           </span>
                         </div>
                       </div>
@@ -4786,7 +4762,7 @@ export function GameWikiClient({
                     cursor: 'pointer',
                   }}
                 >
-                  ⚡ Build From My Box
+                  Build From My Box
                 </button>
                 <button
                   type="button"
@@ -4803,7 +4779,7 @@ export function GameWikiClient({
                     cursor: 'pointer',
                   }}
                 >
-                  🏆 Meta Apex Team
+                  Meta Apex Team
                 </button>
               </div>
             </div>
@@ -4983,7 +4959,7 @@ export function GameWikiClient({
                       textOverflow: 'ellipsis',
                     }}
                   >
-                    {item.passed ? '✓ ' : '⚠️ '}
+                    {item.passed ? '✓ ' : ''}
                     {item.label}
                   </span>
                   <span

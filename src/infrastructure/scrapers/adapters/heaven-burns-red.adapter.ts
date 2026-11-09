@@ -38,7 +38,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
   "asianPatchVersion": "v4.12.0 Live Meta",
   "globalPatchVersion": "v4.12.0 Live",
   "foresightGapMonths": 4,
-  "coverImageUrl": "https://img.game8.jp/12147005/b11d4e6ac151c10c6292f99656586d39.webp/original",
+  "coverImageUrl": "https://img.game8.jp/6546170/cb6ec36b86baf6452c5b6dd9a9665303.png/original",
   "currencyName": "Quartz",
   "pullCostSingle": 300,
   "pityThreshold": 150,
@@ -11154,7 +11154,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "slug": "hbr-karen-halloween-pickup",
       "bannerTitle": "Platinum Rate-Up — Karen Asakura [Midnight Soul Harvest] & Fubuki Mikoto",
       "bannerType": "LIMITED",
-      "imageUrl": "https://img.game8.jp/13148096/f35ea4ee2d58b2d3e8df2bec88e06257.webp/original",
+      "imageUrl": "https://img.game8.jp/13147208/e51f60d9c840a17d487c5248b961d68b.webp/original",
       "featuredNames": [
         "Karen Asakura [Midnight Soul Harvest]",
         "Fubuki Mikoto [Muse of the Broken Night]"
@@ -11176,7 +11176,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "slug": "hbr-fire-ice-wishlist-gacha",
       "bannerTitle": "Fire & Ice Attribute Wishlist Special Banner (Select 6 SS Memoria)",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://img.game8.jp/12147007/fe45539d9f2d123641efee398f538e23.webp/original",
+      "imageUrl": "https://img.game8.jp/13146983/dedacd16e79a2e1326d63a9c4d6176b7.webp/original",
       "featuredNames": [
         "Ruka Kayamori [Glorious Blades]",
         "Yuina Shirakawa [Oracle Banner of Victory]",
@@ -11200,7 +11200,7 @@ export const heavenBurnsRedBundle: GameAdapterBundle = {
       "slug": "hbr-halloween-ss-guaranteed-stepup",
       "bannerTitle": "Halloween SS Guaranteed Step-Up Banner (Step 4 & Step 8 Guaranteed)",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://img.game8.jp/12476899/5431de4d1dd7c4c4bd552cdb825e929c.webp/original",
+      "imageUrl": "https://img.game8.jp/13051330/c32ac2cf86684df5754628f5b96e2460.webp/original",
       "featuredNames": [
         "Misato Nikaido [Blue Sky Full-Power Cheer]",
         "Nanami Nanase [Promise Beyond the Dawn]"
