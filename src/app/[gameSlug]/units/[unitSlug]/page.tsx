@@ -977,7 +977,9 @@ export default async function UnitDetailPage({
                           width: '116px',
                           height: '64px',
                           borderRadius: '6px',
-                          objectFit: 'cover',
+                          objectFit: b.imageUrl.includes('/IMG_2') ? 'contain' : 'cover',
+                          padding: b.imageUrl.includes('/IMG_2') ? '4px' : '0',
+                          background: 'radial-gradient(circle at center, #1E293B 0%, #0B0E14 100%)',
                           border: '1.5px solid var(--border-strong)',
                         }}
                       />
