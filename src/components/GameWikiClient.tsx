@@ -1953,7 +1953,7 @@ export function GameWikiClient({
                                         key={u.slug}
                                         className={`tier-unit-cell${ownedDupe ? ' is-owned' : ''}`}
                                         style={{
-                                          width: '86px',
+                                          width: '90px',
                                           display: 'flex',
                                           flexDirection: 'column',
                                           alignItems: 'center',
@@ -1978,8 +1978,8 @@ export function GameWikiClient({
                                         >
                                           <div
                                             style={{
-                                              width: '74px',
-                                              height: '74px',
+                                              width: '78px',
+                                              height: '78px',
                                               borderRadius: '6px',
                                               overflow: 'hidden',
                                               border: `2px solid ${elemColor}`,
@@ -1990,8 +1990,8 @@ export function GameWikiClient({
                                             <img
                                               src={u.imageUrl}
                                               alt={u.nameEn}
-                                              width={74}
-                                              height={74}
+                                              width={78}
+                                              height={78}
                                               style={{
                                                 width: '100%',
                                                 height: '100%',
@@ -2000,41 +2000,7 @@ export function GameWikiClient({
                                                 display: 'block',
                                               }}
                                             />
-                                            {hub.slug === 'uma-musume' ? (
-                                              <span
-                                                className="mono"
-                                                title={`Distance Specialty: ${u.element}`}
-                                                style={{
-                                                  position: 'absolute',
-                                                  top: '2px',
-                                                  left: '2px',
-                                                  display: 'inline-flex',
-                                                  alignItems: 'center',
-                                                  gap: '2px',
-                                                  background: 'rgba(11, 14, 20, 0.92)',
-                                                  color: elemColor,
-                                                  border: `1.5px solid ${elemColor}`,
-                                                  borderRadius: '4px',
-                                                  padding: '1px 4px',
-                                                  fontSize: '8.5px',
-                                                  fontWeight: 900,
-                                                  lineHeight: 1.1,
-                                                }}
-                                              >
-                                                <img
-                                                  src={elemIconUrl}
-                                                  alt={u.element}
-                                                  width={11}
-                                                  height={11}
-                                                  style={{ width: '11px', height: '11px', objectFit: 'contain' }}
-                                                />
-                                                <span>
-                                                  {u.element === 'Medium'
-                                                    ? 'MED'
-                                                    : u.element.toUpperCase()}
-                                                </span>
-                                              </span>
-                                            ) : (
+                                            {hub.slug !== 'uma-musume' && (
                                               <img
                                                 src={elemIconUrl}
                                                 alt={u.element}
@@ -2092,6 +2058,39 @@ export function GameWikiClient({
                                               </span>
                                             )}
                                           </div>
+                                          {hub.slug === 'uma-musume' && (
+                                            <span
+                                              className="mono"
+                                              title={`Distance Specialty: ${u.element}`}
+                                              style={{
+                                                display: 'inline-flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                gap: '3px',
+                                                background: 'rgba(11, 14, 20, 0.95)',
+                                                color: elemColor,
+                                                border: `1px solid ${elemColor}`,
+                                                borderRadius: '4px',
+                                                padding: '1px 5px',
+                                                fontSize: '8.5px',
+                                                fontWeight: 900,
+                                                lineHeight: 1.1,
+                                              }}
+                                            >
+                                              <img
+                                                src={elemIconUrl}
+                                                alt={u.element}
+                                                width={10}
+                                                height={10}
+                                                style={{ width: '10px', height: '10px', objectFit: 'contain' }}
+                                              />
+                                              <span>
+                                                {u.element === 'Medium'
+                                                  ? 'MED'
+                                                  : u.element.toUpperCase()}
+                                              </span>
+                                            </span>
+                                          )}
                                           <span
                                             className="tier-unit-name"
                                             style={{
@@ -2499,13 +2498,13 @@ export function GameWikiClient({
                             <img
                               src={recommendedGear.imageUrl}
                               alt={recommendedGear.nameEn}
-                              width={32}
-                              height={32}
+                              width={hub.slug === 'uma-musume' ? 33 : 32}
+                              height={hub.slug === 'uma-musume' ? 44 : 32}
                               style={{
-                                width: '32px',
-                                height: '32px',
+                                width: hub.slug === 'uma-musume' ? '33px' : '32px',
+                                height: hub.slug === 'uma-musume' ? '44px' : '32px',
                                 borderRadius: '5px',
-                                objectFit: 'cover',
+                                objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
                                 border: '1px solid var(--border-strong)',
                               }}
                             />
@@ -2895,7 +2894,7 @@ export function GameWikiClient({
                                   key={eq.slug}
                                   href={`#equip-${eq.slug}`}
                                   style={{
-                                    width: '88px',
+                                    width: hub.slug === 'uma-musume' ? '92px' : '88px',
                                     display: 'flex',
                                     flexDirection: 'column',
                                     alignItems: 'center',
@@ -2905,47 +2904,49 @@ export function GameWikiClient({
                                 >
                                   <div
                                     style={{
-                                      width: '76px',
-                                      height: '76px',
+                                      width: hub.slug === 'uma-musume' ? '84px' : '76px',
+                                      height: hub.slug === 'uma-musume' ? '112px' : '76px',
                                       borderRadius: '8px',
                                       overflow: 'hidden',
                                       border: `2px solid ${eqBorderColor}`,
                                       position: 'relative',
-                                      background: 'var(--bg-subtle)',
-                                      boxShadow: '0 2px 5px rgba(0,0,0,0.18)',
+                                      background: '#0B0E14',
+                                      boxShadow: '0 2px 6px rgba(0,0,0,0.28)',
                                     }}
                                   >
                                     <img
                                       src={eq.imageUrl}
                                       alt={eq.nameEn}
-                                      width={76}
-                                      height={76}
+                                      width={hub.slug === 'uma-musume' ? 84 : 76}
+                                      height={hub.slug === 'uma-musume' ? 112 : 76}
                                       style={{
                                         width: '100%',
                                         height: '100%',
-                                        objectFit: 'cover',
+                                        objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
                                         display: 'block',
                                       }}
                                     />
-                                    <img
-                                      src={eqTypeIcon}
-                                      alt={eq.subType}
-                                      title={eq.subType}
-                                      width={20}
-                                      height={20}
-                                      style={{
-                                        position: 'absolute',
-                                        top: '2px',
-                                        left: '2px',
-                                        width: '20px',
-                                        height: '20px',
-                                        borderRadius: '4px',
-                                        background: 'rgba(11, 14, 20, 0.92)',
-                                        border: `1px solid ${eqBorderColor}`,
-                                        padding: '1px',
-                                        objectFit: 'contain',
-                                      }}
-                                    />
+                                    {hub.slug !== 'uma-musume' && (
+                                      <img
+                                        src={eqTypeIcon}
+                                        alt={eq.subType}
+                                        title={eq.subType}
+                                        width={20}
+                                        height={20}
+                                        style={{
+                                          position: 'absolute',
+                                          top: '2px',
+                                          left: '2px',
+                                          width: '20px',
+                                          height: '20px',
+                                          borderRadius: '4px',
+                                          background: 'rgba(11, 14, 20, 0.92)',
+                                          border: `1px solid ${eqBorderColor}`,
+                                          padding: '1px',
+                                          objectFit: 'contain',
+                                        }}
+                                      />
+                                    )}
                                     <span
                                       className="mono"
                                       style={{
@@ -3044,9 +3045,10 @@ export function GameWikiClient({
                     src={eq.imageUrl}
                     alt={eq.nameEn}
                     style={{
-                      width: '92px',
-                      height: '92px',
-                      objectFit: 'cover',
+                      width: hub.slug === 'uma-musume' ? '96px' : '92px',
+                      height: hub.slug === 'uma-musume' ? '128px' : '92px',
+                      objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
+                      background: '#0B0E14',
                       borderRadius: '8px',
                       border: '2px solid var(--border-strong)',
                       boxShadow: '0 2px 6px rgba(0,0,0,0.15)',
@@ -3303,9 +3305,12 @@ export function GameWikiClient({
                       src={boss.imageUrl}
                       alt={boss.nameEn}
                       style={{
-                        width: '230px',
-                        height: '124px',
-                        objectFit: boss.imageUrl.includes('/IMG_2') ? 'contain' : 'cover',
+                        width: hub.slug === 'uma-musume' ? '264px' : '230px',
+                        height: hub.slug === 'uma-musume' ? '100px' : '124px',
+                        objectFit:
+                          hub.slug === 'uma-musume' || boss.imageUrl.includes('/IMG_2')
+                            ? 'contain'
+                            : 'cover',
                         padding: boss.imageUrl.includes('/IMG_2') ? '6px' : '0',
                         background: 'radial-gradient(circle at center, #1E293B 0%, #0B0E14 100%)',
                         borderRadius: '7px',
@@ -3589,10 +3594,10 @@ export function GameWikiClient({
                             src={eq.imageUrl}
                             alt={eq.nameEn}
                             style={{
-                              width: '42px',
-                              height: '42px',
+                              width: hub.slug === 'uma-musume' ? '39px' : '42px',
+                              height: hub.slug === 'uma-musume' ? '52px' : '42px',
                               borderRadius: '5px',
-                              objectFit: 'cover',
+                              objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
                             }}
                           />
                           <div>
@@ -4258,9 +4263,10 @@ export function GameWikiClient({
                         src={bn.imageUrl}
                         alt={bn.bannerTitle}
                         style={{
-                          width: '230px',
-                          height: '124px',
-                          objectFit: 'cover',
+                          width: hub.slug === 'uma-musume' ? '300px' : '230px',
+                          height: hub.slug === 'uma-musume' ? '74px' : '124px',
+                          objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
+                          background: '#0B0E14',
                           borderRadius: '7px',
                           border: '2px solid var(--border-strong)',
                           boxShadow: '0 2px 8px rgba(0,0,0,0.16)',
@@ -5375,15 +5381,22 @@ export function GameWikiClient({
                       overflow: 'hidden',
                     }}
                   >
-                    <div style={{ position: 'relative', height: '106px', overflow: 'hidden' }}>
+                    <div
+                      style={{
+                        position: 'relative',
+                        height: hub.slug === 'uma-musume' ? '68px' : '106px',
+                        background: '#0B0E14',
+                        overflow: 'hidden',
+                      }}
+                    >
                       <img
                         src={bn.imageUrl}
                         alt={bn.bannerTitle}
                         style={{
                           width: '100%',
                           height: '100%',
-                          objectFit: 'cover',
-                          objectPosition: 'center 20%',
+                          objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
+                          objectPosition: 'center',
                         }}
                       />
                       <span

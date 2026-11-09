@@ -925,13 +925,14 @@ export default async function UnitDetailPage({
                       <img
                         src={g.imageUrl}
                         alt={g.nameEn}
-                        width={54}
-                        height={54}
+                        width={hub.slug === 'uma-musume' ? 48 : 54}
+                        height={hub.slug === 'uma-musume' ? 64 : 54}
                         style={{
-                          width: '54px',
-                          height: '54px',
+                          width: hub.slug === 'uma-musume' ? '48px' : '54px',
+                          height: hub.slug === 'uma-musume' ? '64px' : '54px',
                           borderRadius: '6px',
-                          objectFit: 'cover',
+                          objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
+                          background: '#0B0E14',
                           border: '1.5px solid var(--border-strong)',
                         }}
                       />
@@ -971,13 +972,16 @@ export default async function UnitDetailPage({
                       <img
                         src={b.imageUrl}
                         alt={b.nameEn}
-                        width={116}
-                        height={64}
+                        width={hub.slug === 'uma-musume' ? 148 : 116}
+                        height={hub.slug === 'uma-musume' ? 56 : 64}
                         style={{
-                          width: '116px',
-                          height: '64px',
+                          width: hub.slug === 'uma-musume' ? '148px' : '116px',
+                          height: hub.slug === 'uma-musume' ? '56px' : '64px',
                           borderRadius: '6px',
-                          objectFit: b.imageUrl.includes('/IMG_2') ? 'contain' : 'cover',
+                          objectFit:
+                            hub.slug === 'uma-musume' || b.imageUrl.includes('/IMG_2')
+                              ? 'contain'
+                              : 'cover',
                           padding: b.imageUrl.includes('/IMG_2') ? '4px' : '0',
                           background: 'radial-gradient(circle at center, #1E293B 0%, #0B0E14 100%)',
                           border: '1.5px solid var(--border-strong)',
@@ -1037,22 +1041,22 @@ export default async function UnitDetailPage({
                       style={{
                         position: 'relative',
                         width: '100%',
-                        height: '116px',
+                        height: hub.slug === 'uma-musume' ? '68px' : '116px',
                         borderRadius: '6px',
                         overflow: 'hidden',
                         border: '1.5px solid var(--border-strong)',
-                        background: 'var(--bg-header)',
+                        background: '#0B0E14',
                       }}
                     >
                       <img
                         src={bn.imageUrl}
                         alt={bn.bannerTitle}
                         width={260}
-                        height={116}
+                        height={hub.slug === 'uma-musume' ? 68 : 116}
                         style={{
                           width: '100%',
                           height: '100%',
-                          objectFit: 'cover',
+                          objectFit: hub.slug === 'uma-musume' ? 'contain' : 'cover',
                         }}
                       />
                       <span
