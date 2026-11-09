@@ -1,5 +1,7 @@
 :root,
 [data-theme="dark"] {
+  color-scheme: dark;
+
   /* Authentic Game8 / BiliGame / Prydwen Dark Mode Palette */
   --bg-page: #0d1117;
   --bg-surface: #161b22;
@@ -46,8 +48,72 @@
   padding: 0;
 }
 
+/* ============================================================================
+   SLEEK DARK-MODE SCROLLBARS (NO WHITE OS TRACKS OR CHUNKY ARROW BUTTONS)
+   ============================================================================ */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+  border-left: 1px solid #1c2128;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 999px;
+  border: 1px solid #161b22;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #484f58;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--accent-primary);
+}
+
+::-webkit-scrollbar-corner {
+  background: #0b0e14;
+}
+
+.wiki-sidebar-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.wiki-sidebar-scroll::-webkit-scrollbar-track {
+  background: #0d1117;
+  border-left: 1px solid #21262d;
+}
+
+.wiki-sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 999px;
+}
+
+.wiki-sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #30363d #0b0e14;
+  }
+}
+
 html,
 body {
+  color-scheme: dark;
   background: var(--bg-page);
   color: var(--text-main);
   font-family: var(--font-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
