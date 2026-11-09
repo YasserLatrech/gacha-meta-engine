@@ -19,49 +19,49 @@ export const umaMusumeBundle: GameAdapterBundle = {
     {
       "key": "DPS",
       "label": "RUNNER (FRONT-RUNNER)",
-      "colorHex": "#DC2626"
+      "colorHex": "#0EA5E9"
     },
     {
       "key": "SUB_DPS",
       "label": "LEADER (PACE CHASER)",
-      "colorHex": "#D97706"
+      "colorHex": "#F59E0B"
     },
     {
       "key": "SUPPORT",
       "label": "BETWEENER (LATE SURGER)",
-      "colorHex": "#2563EB"
+      "colorHex": "#3B82F6"
     },
     {
       "key": "SUSTAIN",
       "label": "CHASER (END CLOSER)",
-      "colorHex": "#15803D"
+      "colorHex": "#EC4899"
     }
   ],
   "elementsConfig": [
     {
       "key": "Short",
       "label": "Short (Sprint)",
-      "colorHex": "#DC2626"
+      "colorHex": "#0EA5E9"
     },
     {
       "key": "Mile",
       "label": "Mile",
-      "colorHex": "#15803D"
+      "colorHex": "#10B981"
     },
     {
       "key": "Medium",
       "label": "Medium",
-      "colorHex": "#2563EB"
+      "colorHex": "#F59E0B"
     },
     {
       "key": "Long",
       "label": "Long",
-      "colorHex": "#7C3AED"
+      "colorHex": "#F43F5E"
     },
     {
       "key": "Dirt",
       "label": "Dirt",
-      "colorHex": "#D97706"
+      "colorHex": "#EC4899"
     }
   ],
   "units": [
@@ -8174,7 +8174,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "category": "Support Card",
       "subType": "SSR Speed Support",
       "rarity": "SSR",
-      "imageUrl": "https://img.game8.jp/12165653/937d3523ceeb56ade38364b520ac5da6.webp/original",
+      "imageUrl": "https://img.game8.jp/12598773/6b071ad941b0aaeebd74fc326a411494.webp/original",
       "tierRank": "SSS",
       "score": 9.7,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
@@ -8228,7 +8228,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "category": "Support Card",
       "subType": "SSR Speed Support",
       "rarity": "SSR",
-      "imageUrl": "https://img.game8.jp/13129737/c1633e28630c76743076a785f152b94d.webp/original",
+      "imageUrl": "https://img.game8.jp/12905138/06b92e3c47ce49e78fecf7fd6ebf89fe.webp/original",
       "tierRank": "SSS",
       "score": 9.9,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
@@ -8380,7 +8380,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "category": "Support Card",
       "subType": "SSR Wisdom Support",
       "rarity": "SSR",
-      "imageUrl": "https://img.game8.jp/11881614/0118aff4ac085a31604212ed725c2f5b.webp/original",
+      "imageUrl": "https://img.game8.jp/12338049/21c077d69ddeaf5b4fb5e5d004430c9d.webp/original",
       "tierRank": "SSS",
       "score": 9.8,
       "recommendedDupes": "MLB (Lv.50) / 3LB (Lv.45)",
