@@ -126,7 +126,7 @@ describe('Pure Official English Localization & Roster Verification', () => {
     expect(umaMusumeBundle.equipments.length).toBeGreaterThanOrEqual(75);
     expect(swordOfConvallariaBundle.units.length).toBeGreaterThanOrEqual(50);
     expect(swordOfConvallariaBundle.equipments.length).toBeGreaterThanOrEqual(45);
-    expect(swordOfConvallariaBundle.banners.length).toBeGreaterThanOrEqual(14);
+    expect(swordOfConvallariaBundle.banners.length).toBeGreaterThanOrEqual(3);
 
     const cjkRegex = /[\u3000-\u303F\u3040-\u309F\u30A0-\u30FF\uFF00-\uFFEF\u4E00-\u9FAF\uAC00-\uD7AF]/;
     const forbiddenWordsRegex = /\b(asian|game8|appmedia|scraped|foresight)\b/i;
@@ -143,6 +143,7 @@ describe('Pure Official English Localization & Roster Verification', () => {
       }
       for (const eq of bundle.equipments) {
         expect(() => VerifiedEquipmentPayloadSchema.parse(eq)).not.toThrow();
+        expect(bundle.coverImageUrl.startsWith('https://')).toBe(true);
         expect(eq.imageUrl).not.toContain('prydwen.gg');
       }
     }

@@ -8,7 +8,7 @@ export const starSaviorBundle: GameAdapterBundle = {
   "asianPatchVersion": "v1.4.0 Live Meta",
   "globalPatchVersion": "v1.4.0 Live",
   "foresightGapMonths": 3,
-  "coverImageUrl": "/starsavior-cover.jpg",
+  "coverImageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/7e92abdb1993c2427574813ed72a5c53702acb18/ss_7e92abdb1993c2427574813ed72a5c53702acb18.1920x1080.jpg?t=1792662563",
   "currencyName": "Starlight Quartz",
   "pullCostSingle": 150,
   "pityThreshold": 200,
@@ -4970,7 +4970,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "category": "SSR Arcana",
       "subType": "Power (STR) • ATK % / Crit DMG %",
       "rarity": "SSR",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185314_wdzh2.webp",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/12a16538db2fe0e2c1d7716048cd895dbf57e3b6/ss_12a16538db2fe0e2c1d7716048cd895dbf57e3b6.1920x1080.jpg?t=1792662563",
       "tierRank": "B",
       "score": 7.8,
       "recommendedDupes": "LB1+",
@@ -5987,7 +5987,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "category": "SSR Arcana",
       "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170751_oeb4y.webp",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/feb45479176f4bab30859201e4ccac0854acd015/ss_feb45479176f4bab30859201e4ccac0854acd015.1920x1080.jpg?t=1792662563",
       "tierRank": "A",
       "score": 8.5,
       "recommendedDupes": "LB1+",
@@ -6107,7 +6107,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "category": "SSR Arcana",
       "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/7e92abdb1993c2427574813ed72a5c53702acb18/ss_7e92abdb1993c2427574813ed72a5c53702acb18.1920x1080.jpg?t=1792662563",
       "tierRank": "A",
       "score": 8.4,
       "recommendedDupes": "LB1+",
@@ -6203,7 +6203,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "nameEn": "Cosmo Gate Season Boss — Abyssal Sovereign",
       "modeName": "Cosmo Gate",
       "difficultyLabel": "Stage 10 Extreme",
-      "imageUrl": "/boss-starsavior-void.jpg",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/eb1066db481088382703111550686d8c6490c926/ss_eb1066db481088382703111550686d8c6490c926.1920x1080.jpg?t=1792662563",
       "hpStat": "48,000,000 HP",
       "shieldOrDpStat": "18 Toughness Gauge Bars",
       "weaknesses": [
@@ -6247,7 +6247,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "nameEn": "Void Singularity — Stella Eater",
       "modeName": "Void Singularity",
       "difficultyLabel": "Depth 15 Endgame",
-      "imageUrl": "/boss-starsavior-behemoth.jpg",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/a2790ca566b8425b516b2948182df1f5c86e25b9/ss_a2790ca566b8425b516b2948182df1f5c86e25b9.1920x1080.jpg?t=1792662563",
       "hpStat": "32,500,000 HP",
       "shieldOrDpStat": "14 Toughness Gauge Bars",
       "weaknesses": [
@@ -6284,7 +6284,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "slug": "starsavior-bunny-frey-pickup",
       "bannerTitle": "Limited Rate-Up — Frey (Bunny) & Indomitable Masterpiece Arcana",
       "bannerType": "LIMITED",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185314_wdzh2.webp",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/12a16538db2fe0e2c1d7716048cd895dbf57e3b6/ss_12a16538db2fe0e2c1d7716048cd895dbf57e3b6.1920x1080.jpg?t=1792662563",
       "featuredNames": [
         "Frey (Bunny)",
         "Dana"
@@ -6306,7 +6306,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "slug": "starsavior-lugh-besta-pickup",
       "bannerTitle": "Order & Aegis Dual Rate-Up — Lugh & Besta",
       "bannerType": "FESTIVAL",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/7e92abdb1993c2427574813ed72a5c53702acb18/ss_7e92abdb1993c2427574813ed72a5c53702acb18.1920x1080.jpg?t=1792662563",
       "featuredNames": [
         "Lugh",
         "Besta"
@@ -6328,7 +6328,7 @@ export const starSaviorBundle: GameAdapterBundle = {
       "slug": "starsavior-arcana-pickup",
       "bannerTitle": "SSR Arcana Rate-Up — Death to the Flowers & Custom Special Training",
       "bannerType": "SUPPORT_CARD",
-      "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170751_oeb4y.webp",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3609080/feb45479176f4bab30859201e4ccac0854acd015/ss_feb45479176f4bab30859201e4ccac0854acd015.1920x1080.jpg?t=1792662563",
       "featuredNames": [
         "Arcana: Summer Night Sky",
         "Arcana: Battle-Hardened Mercenary"

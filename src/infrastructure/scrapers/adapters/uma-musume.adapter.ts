@@ -10146,7 +10146,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "nameEn": "Champions Meet Classic — Tokyo Turf 2400m (Medium)",
       "modeName": "Champions Meet (Grade League)",
       "difficultyLabel": "Group A Finals",
-      "imageUrl": "/course-uma-tokyo2400.jpg",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/426b023d8cfd11a9e367c543a6b01891ab2e2dd0/ss_426b023d8cfd11a9e367c543a6b01891ab2e2dd0.1920x1080.jpg?t=1773306345",
       "hpStat": "2400m Left-Handed (Spring / Sunny / Firm)",
       "shieldOrDpStat": "Target Stamina: 1,150 + 1 Gold Recovery",
       "weaknesses": [
@@ -10190,7 +10190,7 @@ export const umaMusumeBundle: GameAdapterBundle = {
       "nameEn": "League of Heroes — Kyoto Turf 3000m (Long)",
       "modeName": "League of Heroes (12-Racer Format)",
       "difficultyLabel": "Platinum 4 Star Rank",
-      "imageUrl": "/course-uma-kyoto3000.jpg",
+      "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/ss_67f95b138da201b52e9bcc43ab6f01ae820b7f12.1920x1080.jpg?t=1773306345",
       "hpStat": "3000m Right-Handed Outer (Autumn / Firm)",
       "shieldOrDpStat": "Target Stamina: 1,350 + 2 Gold Recoveries",
       "weaknesses": [

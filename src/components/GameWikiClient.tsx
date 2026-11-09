@@ -488,12 +488,12 @@ export function GameWikiClient({
   ];
 
   const gameAppIcon = getGameAppIconUrl(hub.slug);
-  const topUnitThumb = getSectionEmblemUrl('tier-list');
-  const secondUnitThumb = getSectionEmblemUrl('reroll');
-  const topEquipThumb = getSectionEmblemUrl('weapons');
-  const secondEquipThumb = getSectionEmblemUrl('compare');
-  const topBossThumb = getSectionEmblemUrl('bosses');
-  const topBannerThumb = getSectionEmblemUrl('banners');
+  const topUnitThumb = getSectionEmblemUrl('tier-list', hub.slug);
+  const secondUnitThumb = getSectionEmblemUrl('reroll', hub.slug);
+  const topEquipThumb = getSectionEmblemUrl('weapons', hub.slug);
+  const secondEquipThumb = getSectionEmblemUrl('compare', hub.slug);
+  const topBossThumb = getSectionEmblemUrl('bosses', hub.slug);
+  const topBannerThumb = getSectionEmblemUrl('banners', hub.slug);
 
   return (
     <div className="portal-container">
@@ -949,7 +949,7 @@ export function GameWikiClient({
               }}
             >
               <img
-                src={getSectionEmblemUrl('calculator')}
+                src={getSectionEmblemUrl('calculator', hub.slug)}
                 alt="Buff-Stacking Damage Calc"
                 width={26}
                 height={26}
