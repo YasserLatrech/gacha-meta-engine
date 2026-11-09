@@ -5436,8 +5436,8 @@ export const starSaviorBundle: GameAdapterBundle = {
       "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
-      "tierRank": "SS",
-      "score": 9.4,
+      "tierRank": "SSS",
+      "score": 9.7,
       "recommendedDupes": "LB1+",
       "stats": {
         "AptitudeTag": "Power (STR)",
@@ -5460,8 +5460,8 @@ export const starSaviorBundle: GameAdapterBundle = {
       "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
-      "tierRank": "SS",
-      "score": 9.3,
+      "tierRank": "SSS",
+      "score": 9.7,
       "recommendedDupes": "LB1+",
       "stats": {
         "AptitudeTag": "Power (STR)",
@@ -5484,8 +5484,8 @@ export const starSaviorBundle: GameAdapterBundle = {
       "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
-      "tierRank": "SS",
-      "score": 9.3,
+      "tierRank": "SSS",
+      "score": 9.7,
       "recommendedDupes": "LB1+",
       "stats": {
         "AptitudeTag": "Power (STR)",
@@ -5508,8 +5508,8 @@ export const starSaviorBundle: GameAdapterBundle = {
       "subType": "Power (STR) • ATK % / Crit Rate",
       "rarity": "SSR",
       "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
-      "tierRank": "SS",
-      "score": 9.5,
+      "tierRank": "SSS",
+      "score": 9.8,
       "recommendedDupes": "LB1+",
       "stats": {
         "AptitudeTag": "Power (STR)",
