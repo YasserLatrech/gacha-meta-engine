@@ -31,9 +31,17 @@ export type ShortcutItem = z.infer<typeof ShortcutItemSchema>;
 
 export const CharacterStatsSchema = z.object({
   hp: z.number(),
+  hpRank: z.string().optional(),
+  hpBarPct: z.number().optional(),
   spd: z.number(),
+  spdRank: z.string().optional(),
+  spdBarPct: z.number().optional(),
   atk: z.number(),
+  atkRank: z.string().optional(),
+  atkBarPct: z.number().optional(),
   def: z.number(),
+  defRank: z.string().optional(),
+  defBarPct: z.number().optional(),
   crit: z.number(),
   critRate: z.string().optional(),
   critDmg: z.string().optional(),
@@ -42,18 +50,95 @@ export const CharacterStatsSchema = z.object({
 });
 export type CharacterStats = z.infer<typeof CharacterStatsSchema>;
 
+export const SkillScalingRowSchema = z.object({
+  category: z.string(),
+  items: z.array(
+    z.object({
+      value: z.string(),
+      iconUrl: z.string().optional(),
+    })
+  ),
+});
+
+export const SkillTooltipSchema = z.object({
+  title: z.string(),
+  detail: z.string(),
+});
+
 export const CharacterSkillSchema = z.object({
   name: z.string().min(1),
   nameJp: z.string().optional(),
   type: z.string().min(1),
   iconUrl: z.string().optional(),
   target: z.string().optional(),
+  cooldown: z.string().optional(),
+  toughnessDamage: z.string().optional(),
+  novaForce: z.string().optional(),
   spOrEnergyCost: z.string().min(1),
   multiplierSummary: z.string().min(1),
+  scalingRows: z.array(SkillScalingRowSchema).optional(),
   exactDescription: z.string().min(1),
   novaBurst: z.string().optional(),
+  tooltips: z.array(SkillTooltipSchema).optional(),
 });
 export type CharacterSkill = z.infer<typeof CharacterSkillSchema>;
+
+export const EquipmentSetDetailSchema = z.object({
+  name: z.string(),
+  shortName: z.string().optional(),
+  iconUrl: z.string().optional(),
+  effect: z.string().optional(),
+});
+
+export const SubstituteArcanaSlotSchema = z.object({
+  targetArticleId: z.string().optional(),
+  targetSlug: z.string(),
+  targetName: z.string(),
+  targetIconUrl: z.string(),
+  substitutes: z.array(
+    z.object({
+      articleId: z.string().optional(),
+      slug: z.string(),
+      name: z.string(),
+      nameJp: z.string().optional(),
+      rarity: z.string(),
+      statTag: z.string().optional(),
+      iconUrl: z.string(),
+    })
+  ),
+});
+
+export const StatPriorityMeterSchema = z.object({
+  stat: z.string(),
+  statJp: z.string().optional(),
+  iconUrl: z.string(),
+  segmentsOn: z.number(),
+});
+
+export const StrengthSectionSchema = z.object({
+  level: z.string(),
+  title: z.string(),
+  imageUrl: z.string().optional(),
+  paragraphs: z.array(z.string()),
+});
+
+export const SkillLevelEffectRowSchema = z.object({
+  level: z.string(),
+  effect: z.string(),
+});
+
+export const ResonanceMaterialItemSchema = z.object({
+  name: z.string(),
+  count: z.number(),
+  iconUrl: z.string(),
+});
+
+export const ResonanceStageSchema = z.object({
+  stage: z.number(),
+  journeyBonus: z.string(),
+  combatBonus: z.string(),
+  materials: z.array(ResonanceMaterialItemSchema),
+});
 
 export const CharacterStaticDataSchema = z.object({
   nameJp: z.string().optional(),
@@ -62,21 +147,31 @@ export const CharacterStaticDataSchema = z.object({
   attributeIconUrl: z.string().optional(),
   classIconUrl: z.string().optional(),
   illustUrl: z.string().optional(),
+  arkPointUrl: z.string().optional(),
   pvpTier: TierRankSchema.optional(),
   pveTier: z.string().optional(),
   bossTier: z.string().optional(),
   appMediaTier: z.string().optional(),
   appMediaRerollTier: z.string().optional(),
   evalBullets: z.array(z.string()).optional(),
+  partyTitle: z.string().optional(),
   recommendedParty: z
     .array(
       z.object({
         slug: z.string(),
         name: z.string(),
+        nameJp: z.string().optional(),
+        iconUrl: z.string().optional(),
         position: z.string(),
       })
     )
     .optional(),
+  partyNotes: z.array(z.string()).optional(),
+  arcanaDeckTitle: z.string().optional(),
+  journeyTrainingPoints: z.array(z.string()).optional(),
+  substituteArcana: z.array(SubstituteArcanaSlotSchema).optional(),
+  statPriorityMeters: z.array(StatPriorityMeterSchema).optional(),
+  strengthsSections: z.array(StrengthSectionSchema).optional(),
   journeyStats: z
     .object({
       power: z.number(),
@@ -90,18 +185,24 @@ export const CharacterStaticDataSchema = z.object({
     .object({
       pveSets: z.array(z.string()),
       pvpSets: z.array(z.string()),
+      pveSetDetails: z.array(EquipmentSetDetailSchema).optional(),
+      pvpSetDetails: z.array(EquipmentSetDetailSchema).optional(),
       necklaceMain: z.string(),
+      necklaceIconUrl: z.string().optional(),
       ringMain: z.string(),
+      ringIconUrl: z.string().optional(),
       subStats: z.string(),
     })
     .optional(),
   hardPotential: z
     .object({
       name: z.string(),
+      iconUrl: z.string().optional(),
       effect: z.string(),
     })
     .optional(),
   dupeRating: z.string().optional(),
+  dupeSummary: z.string().optional(),
   limitBreaks: z
     .array(
       z.object({
@@ -119,11 +220,20 @@ export const CharacterStaticDataSchema = z.object({
       })
     )
     .optional(),
+  skillLevelProgression: z
+    .object({
+      basic: z.array(SkillLevelEffectRowSchema),
+      special: z.array(SkillLevelEffectRowSchema),
+      ultimate: z.array(SkillLevelEffectRowSchema),
+    })
+    .optional(),
+  preAwakeningSkills: z.array(CharacterSkillSchema).optional(),
   curio: z
     .object({
       name: z.string(),
       iconUrl: z.string(),
       rank: z.string(),
+      rankNote: z.string().optional(),
       effect: z.string(),
     })
     .optional(),
@@ -135,11 +245,15 @@ export const CharacterStaticDataSchema = z.object({
       })
     )
     .optional(),
+  resonanceStages: z.array(ResonanceStageSchema).optional(),
+  resonanceTotalMaterials: z.array(ResonanceMaterialItemSchema).optional(),
   gifts: z
     .array(
       z.object({
         name: z.string(),
         iconUrl: z.string(),
+        tier: z.string().optional(),
+        tierIconUrl: z.string().optional(),
       })
     )
     .optional(),
@@ -179,6 +293,16 @@ export const CharacterEntitySchema = z.object({
 });
 export type CharacterEntity = z.infer<typeof CharacterEntitySchema>;
 
+export const ArcanaJourneyEventSchema = z.object({
+  eventTitle: z.string(),
+  choices: z.array(
+    z.object({
+      choice: z.string(),
+      outcomes: z.array(z.string()),
+    })
+  ),
+});
+
 export const ArcanaStaticDataSchema = z.object({
   nameJp: z.string().optional(),
   cardArtUrl: z.string().optional(),
@@ -196,6 +320,13 @@ export const ArcanaStaticDataSchema = z.object({
       })
     )
     .optional(),
+  uniqueEffect: z
+    .object({
+      name: z.string(),
+      effect: z.string(),
+      unlockLevel: z.string().optional(),
+    })
+    .optional(),
   supportBonuses: z
     .array(
       z.object({
@@ -204,6 +335,7 @@ export const ArcanaStaticDataSchema = z.object({
       })
     )
     .optional(),
+  journeyEvents: z.array(ArcanaJourneyEventSchema).optional(),
   evalBullets: z.array(z.string()).optional(),
   appMediaTier: z.string().optional(),
   rerollTier: z.string().optional(),

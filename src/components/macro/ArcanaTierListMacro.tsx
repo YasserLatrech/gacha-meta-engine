@@ -170,7 +170,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                                   imageUrl={a.imageUrl}
                                   rarity="SSR"
                                   topLeftIconUrl={a.staticData?.statTagIconUrl}
-                                  badgeText={a.score.toFixed(1)}
+                                  badgeText={a.staticData?.appMediaTier || a.tier}
                                   size="md"
                                 />
                               ))}
@@ -299,34 +299,41 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           <table className="w-full border-collapse text-left text-[12px]">
             <thead>
               <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
-                <th className="px-3.5 py-2.5 border-r border-[#243049]">Arcana Card ({filteredDatabase.length})</th>
-                <th className="w-28 px-3 py-2.5 text-center border-r border-[#243049]">Rarity / Rank</th>
-                <th className="w-44 px-3 py-2.5 border-r border-[#243049]">Tag & Featured Savior</th>
-                <th className="px-3.5 py-2.5">Translated Potentials & Max Limit Break Bonuses</th>
+                <th className="w-64 px-3.5 py-2.5 border-r border-[#243049]">Arcana Card ({filteredDatabase.length})</th>
+                <th className="w-24 px-3 py-2.5 text-center border-r border-[#243049]">Rarity / Rank</th>
+                <th className="w-40 px-3 py-2.5 border-r border-[#243049]">Tag & Savior</th>
+                <th className="px-3.5 py-2.5">Unique Effect, Potentials, Journey Bonuses & Events</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[#1e293b]">
               {filteredDatabase.map((a) => (
-                <tr key={a.slug} id={a.slug} className="hover:bg-[#141d30] scroll-mt-24">
+                <tr key={a.slug} id={a.slug} className="hover:bg-[#141d30] scroll-mt-24 align-top">
                   <td className="p-3 border-r border-[#1e293b]">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-start gap-3">
                       <img
                         src={a.imageUrl}
                         alt={a.name}
                         className="h-[68px] w-[68px] rounded-lg border-2 border-[#eab308]/70 object-cover shrink-0 bg-[#090d16]"
                         loading="eager"
                       />
-                      <div>
+                      <div className="space-y-1">
                         <div className="font-extrabold text-white text-[13px]">{a.name}</div>
-                        <div className="mt-0.5 text-[11px] font-semibold text-[#60a5fa]">
+                        <div className="text-[11px] font-semibold text-[#60a5fa]">
                           {a.staticData?.classBonus || 'Universal Bonus'} · {a.staticData?.statBonusType || 'Stat Bonus'}
                         </div>
+                        {a.staticData?.evalBullets && a.staticData.evalBullets.length > 0 && (
+                          <ul className="space-y-0.5 text-[10px] text-[#cbd5e1] pt-0.5">
+                            {a.staticData.evalBullets.map((eb, idx) => (
+                              <li key={idx}>• {eb}</li>
+                            ))}
+                          </ul>
+                        )}
                       </div>
                     </div>
                   </td>
                   <td className="p-3 text-center border-r border-[#1e293b] space-y-1">
                     <div><AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} /></div>
-                    <div className="text-[11px] font-extrabold text-[#fbbf24]">{a.rarity} · {a.score.toFixed(1)}</div>
+                    <div className="text-[11px] font-extrabold text-[#fbbf24]">{a.rarity}</div>
                   </td>
                   <td className="p-3 border-r border-[#1e293b] space-y-1.5">
                     <div className="inline-flex items-center gap-1.5 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-white">
@@ -344,26 +351,64 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                       </div>
                     )}
                   </td>
-                  <td className="p-3 space-y-1.5">
+                  <td className="p-3 space-y-2">
+                    {/* Unique Effect (固有効果) */}
+                    {a.staticData?.uniqueEffect && (
+                      <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-2.5 py-1.5 text-[11px]">
+                        <span className="font-extrabold text-[#fde047]">
+                          Unique Effect (Unlock {a.staticData.uniqueEffect.unlockLevel}):{' '}
+                        </span>
+                        <span className="text-white font-semibold">{a.staticData.uniqueEffect.effect}</span>
+                      </div>
+                    )}
+
+                    {/* Potentials (獲得潜在力) */}
                     {(a.staticData?.potentials || []).length > 0 ? (
                       <div className="space-y-1">
                         {a.staticData?.potentials?.map((p, i) => (
                           <div key={i} className="text-[11px] text-[#e2e8f0]">
-                            <span className="font-extrabold text-[#93c5fd]">[{p.name}]</span> {p.effect}
+                            <span className="font-extrabold text-[#93c5fd]">[{p.name}]</span>{' '}
+                            <span>{p.effect}</span>
                           </div>
                         ))}
                       </div>
                     ) : (
                       <div className="text-[11px] text-[#cbd5e1]">{a.effectSummary}</div>
                     )}
+
+                    {/* Support Bonuses (旅の効果) */}
                     {(a.staticData?.supportBonuses || []).length > 0 && (
-                      <div className="flex flex-wrap gap-1.5 pt-1">
-                        {a.staticData?.supportBonuses?.slice(0, 4).map((sb, i) => (
+                      <div className="flex flex-wrap gap-1.5 pt-0.5">
+                        {a.staticData?.supportBonuses?.map((sb, i) => (
                           <span key={i} className="rounded bg-[#161f33] border border-[#243049] px-1.5 py-0.5 text-[10px] text-[#94a3b8]">
                             {sb.label}: <strong className="text-white">{sb.value}</strong>
                           </span>
                         ))}
                       </div>
+                    )}
+
+                    {/* Journey Events & Choices (イベント効果と選択肢) */}
+                    {a.staticData?.journeyEvents && a.staticData.journeyEvents.length > 0 && (
+                      <details className="rounded border border-[#1e293b] bg-[#0b101b] p-2 text-[11px]">
+                        <summary className="cursor-pointer font-extrabold text-[#60a5fa] select-none">
+                          Rescue Journey Events & Choices ({a.staticData.journeyEvents.length} Events)
+                        </summary>
+                        <div className="mt-2 space-y-2 border-t border-[#1e293b] pt-2">
+                          {a.staticData.journeyEvents.map((ev, eIdx) => (
+                            <div key={eIdx} className="space-y-1">
+                              <div className="font-extrabold text-[#fbbf24]">{ev.eventTitle}</div>
+                              <div className="space-y-1 pl-2 border-l-2 border-[#243049]">
+                                {ev.choices.map((ch, cIdx) => (
+                                  <div key={cIdx} className="text-[10px]">
+                                    <span className="font-bold text-[#93c5fd]">{ch.choice}: </span>
+                                    <span className="text-[#cbd5e1]">{ch.outcomes.join(' / ')}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </details>
                     )}
                   </td>
                 </tr>

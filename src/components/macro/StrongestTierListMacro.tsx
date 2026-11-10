@@ -321,7 +321,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                                   rarity={c.rarity}
                                   topLeftIconUrl={c.staticData?.attributeIconUrl}
                                   topRightIconUrl={c.staticData?.classIconUrl}
-                                  badgeText={c.score.toFixed(1)}
+                                  badgeText={resolveDisplayTier(c)}
                                   size="md"
                                 />
                               ))}
