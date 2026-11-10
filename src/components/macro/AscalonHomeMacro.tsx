@@ -175,7 +175,7 @@ export function AscalonHomeMacro() {
                 Ascalon.gg — Japanese Mobile Game Rankings, Upcoming Gacha Release Calendar & Strategy Portal
               </h1>
               <p className="text-[12px] sm:text-[13px] text-[#cbd5e1] leading-relaxed">
-                Direct 1:1 English translation of Japan&apos;s largest strategy portal (<strong className="text-white">AppMedia.jp</strong>). Browse the official Top 25 Recommended Mobile Games ranking, real-time Upcoming Gacha Release Calendar with Japanese player vote counts (<span className="text-[#fbbf24] font-bold">投票</span>), App Store Free & Grossing charts, and dedicated game strategy wikis.
+                Direct 1:1 English translation of Japan&apos;s largest strategy portal (<strong className="text-white">AppMedia.jp</strong>). Browse the official Top 25 Recommended Mobile Games ranking, real-time Upcoming Gacha Release Calendar with Japanese player vote counts, App Store Free & Grossing charts, and dedicated game strategy wikis.
               </p>
             </div>
 
@@ -232,7 +232,7 @@ export function AscalonHomeMacro() {
           </div>
 
           <p className="text-[12px] text-[#cbd5e1]">
-            Official 1:1 translation of AppMedia&apos;s <strong className="text-white">おすすめスマホゲーム最新ランキング</strong> (<code className="text-[#93c5fd]">appmedia.jp/app_review</code>), featuring AppMedia&apos;s exact editorial star rating, release date, genre tags, and 3-point editorial review highlights.
+            Official 1:1 translation of AppMedia&apos;s <strong className="text-white">Latest Recommended Mobile Games Ranking</strong> (<code className="text-[#93c5fd]">appmedia.jp/app_review</code>), featuring AppMedia&apos;s exact editorial star rating, release date, genre tags, and 3-point editorial review highlights.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
@@ -288,11 +288,11 @@ export function AscalonHomeMacro() {
                       {game.outline}
                     </div>
 
-                    {/* AppMedia Editorial Recommendation Points (編集部のおすすめポイント) */}
+                    {/* AppMedia Editorial Recommendation Points */}
                     {game.points.length > 0 && (
                       <div className="rounded-lg border border-[#1e293b] bg-[#0b101b] p-2.5 space-y-1">
                         <div className="text-[10px] font-extrabold uppercase tracking-wider text-[#fbbf24]">
-                          AppMedia Editorial Highlights (編集部のおすすめポイント)
+                          AppMedia Editorial Highlights
                         </div>
                         <ul className="space-y-1 text-[11px] text-[#cbd5e1]">
                           {game.points.map((pt, idx) => (
@@ -343,7 +343,7 @@ export function AscalonHomeMacro() {
                     : 'bg-[#161f33] text-[#cbd5e1]'
                 }`}
               >
-                Reader Votes (投票)
+                Reader Votes
               </button>
               <button
                 type="button"
@@ -360,7 +360,7 @@ export function AscalonHomeMacro() {
           </div>
 
           <p className="text-[12px] text-[#cbd5e1]">
-            Sourced 100% from AppMedia&apos;s <strong className="text-white">新作ゲームアプリの配信日一覧</strong> (<code className="text-[#93c5fd]">appmedia.jp/newgame</code>), including official release dates, developers, descriptions, and real Japanese reader expectation vote counts (<span className="text-[#fbbf24] font-bold">投票</span>).
+            Sourced 100% from AppMedia&apos;s <strong className="text-white">Upcoming Mobile Game Release Schedule</strong> (<code className="text-[#93c5fd]">appmedia.jp/newgame</code>), including official release dates, developers, descriptions, and real reader expectation vote counts.
           </p>
 
           {/* Release Window Filter Bar */}
@@ -426,7 +426,7 @@ export function AscalonHomeMacro() {
                     <td className="p-3 text-center">
                       <div className="inline-flex flex-col items-center rounded-lg border border-[#243049] bg-[#141c2e] px-3 py-1">
                         <span className="text-[13px] font-black text-[#fbbf24]">{g.votes}</span>
-                        <span className="text-[9px] font-bold uppercase text-[#94a3b8]">Votes (投票)</span>
+                        <span className="text-[9px] font-bold uppercase text-[#94a3b8]">Votes</span>
                       </div>
                     </td>
                   </tr>
@@ -459,7 +459,7 @@ export function AscalonHomeMacro() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Free App Ranking */}
             <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-2.5">
-              <AppMediaH3>Top Free App Ranking (無料アプリランキング)</AppMediaH3>
+              <AppMediaH3>Top Free App Ranking</AppMediaH3>
               <div className="divide-y divide-[#1e293b]">
                 {appStoreFreeRanking.map((app) => (
                   <a
@@ -489,7 +489,7 @@ export function AscalonHomeMacro() {
 
             {/* Sales App Ranking */}
             <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-2.5">
-              <AppMediaH3>Top Grossing / Sales Ranking (セールスランキング)</AppMediaH3>
+              <AppMediaH3>Top Grossing / Sales Ranking</AppMediaH3>
               <div className="divide-y divide-[#1e293b]">
                 {appStoreSalesRanking.map((app) => (
                   <a
@@ -519,11 +519,11 @@ export function AscalonHomeMacro() {
           </div>
         </section>
 
-        {/* 4. AppMedia Strategy Wiki Directory (攻略タイトル一覧 — 48 Active Wikis) */}
+        {/* 4. AppMedia Strategy Wiki Directory (48 Active Wikis) */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <AppMediaH2 id="strategy-wikis" badge={`${strategyWikis.length} WIKIS`}>
-              AppMedia Active Strategy Wikis Directory (スマホアプリ & Console)
+              AppMedia Active Strategy Wikis Directory (Mobile & Console)
             </AppMediaH2>
             <div className="flex items-center gap-1.5">
               {(['ALL', 'Mobile App', 'Console / PC'] as const).map((plat) => (
@@ -590,12 +590,12 @@ export function AscalonHomeMacro() {
           </div>
         </section>
 
-        {/* 5. Featured Strategy Articles (ピックアップ攻略記事 from root_home.html) */}
+        {/* 5. Featured Strategy Articles (100% Uncropped English Localized Banners) */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <AppMediaH2 id="featured-articles" badge="PICKUP GUIDES">
-            Featured AppMedia Strategy Articles (ピックアップ攻略記事)
+            Featured AppMedia Strategy Articles
           </AppMediaH2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
             {featuredArticles.map((art, idx) => (
               <a
                 key={idx}
@@ -604,12 +604,12 @@ export function AscalonHomeMacro() {
                 rel="noopener noreferrer"
                 className="group flex flex-col overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] transition-colors"
               >
-                <div className="h-32 w-full overflow-hidden bg-[#090d16] border-b border-[#1e293b]">
+                <div className="w-full overflow-hidden bg-[#090d16] border-b border-[#1e293b]">
                   <img
                     src={art.thumbUrl}
                     alt={art.title}
-                    className="h-full w-full object-cover group-hover:scale-105 transition-transform"
-                    loading="lazy"
+                    className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform"
+                    loading="eager"
                   />
                 </div>
                 <div className="p-3">

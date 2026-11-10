@@ -1973,97 +1973,97 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
   "featuredArticles": [
     {
       "url": "https://appmedia.jp/fategrandorder/80548351",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/210332_h0sbm.webp",
+      "thumbUrl": "/banners/home/en_home_01.webp",
       "title": "[FGO] 100M Downloads Breakthrough Campaign Guide & Efficient Mission Routes",
       "titleJa": "【FGO】1億ダウンロード突破キャンペーン最新情報とミッションの効率の良い達成方法"
     },
     {
       "url": "https://appmedia.jp/fategrandorder/80548135",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210217_d061u.webp",
+      "thumbUrl": "/banners/home/en_home_02.webp",
       "title": "[FGO] Best Free ★5 SSR Servant Ticket Recommendations",
       "titleJa": "【FGO】星5配布のおすすめサーヴァント"
     },
     {
       "url": "https://appmedia.jp/fategrandorder/80547502",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210512_d6mix.webp",
+      "thumbUrl": "/banners/home/en_home_03.webp",
       "title": "[FGO] Should You Pull on the Global 100M DL Commemorative Pickup Banners?",
       "titleJa": "【FGO】全世界1億DL記念ピックアップは引くべき？"
     },
     {
       "url": "https://appmedia.jp/fategrandorder/1351236",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2017/12/185921_b7e8r.webp",
+      "thumbUrl": "/banners/home/en_home_04.webp",
       "title": "[FGO] Strongest Servant Tier List (AppMedia)",
       "titleJa": "【FGO】最強サーヴァントランキング"
     },
     {
       "url": "https://appmedia.jp/fategrandorder/80546191",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/FGO_480.webp",
+      "thumbUrl": "/banners/home/en_home_05.webp",
       "title": "[FGO] GUDAGUDA Punipuni Wars Event Schedule & Release Date",
       "titleJa": "【FGO】ぐだぐだぷにぷにウォーズの開幕はいつ？"
     },
     {
       "url": "https://appmedia.jp/spalik/80517526",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/164646_0flar.webp",
+      "thumbUrl": "/banners/home/en_home_06.webp",
       "title": "[Sparklink Stars] Reroll Tier List & Best Starting Characters",
       "titleJa": "【スパリク】リセマラ当たりランキング"
     },
     {
       "url": "https://appmedia.jp/spalik/80538658",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/11/150516_um75q.webp",
+      "thumbUrl": "/banners/home/en_home_07.webp",
       "title": "[Sparklink Stars] Fast Reroll Method & Time Required",
       "titleJa": "【スパリク】高速リセマラのやり方と所要時間"
     },
     {
       "url": "https://appmedia.jp/spalik/80516932",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/170120_5exo7.webp",
+      "thumbUrl": "/banners/home/en_home_08.webp",
       "title": "[Sparklink Stars] Strongest Character Tier List",
       "titleJa": "【スパリク】最強キャラランキング"
     },
     {
       "url": "https://appmedia.jp/spalik/80539765",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/11/153915_1kuce.webp",
+      "thumbUrl": "/banners/home/en_home_09.webp",
       "title": "[Sparklink Stars] Account Linking & Data Transfer Guide",
       "titleJa": "【スパリク】アカウント連携と引き継ぎのやり方"
     },
     {
       "url": "https://appmedia.jp/spalik/80539981",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/11/163136_51c3w.webp",
+      "thumbUrl": "/banners/home/en_home_10.webp",
       "title": "[Sparklink Stars] Gacha Animations & Guaranteed SSR Tells",
       "titleJa": "【スパリク】ガチャの確定演出まとめ"
     },
     {
       "url": "https://appmedia.jp/bleach-mh/80520532",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/163124_347an.webp",
+      "thumbUrl": "/banners/home/en_home_11.webp",
       "title": "[BLEACH Mirrors High] Reroll Tier List & Best Starting Characters",
       "titleJa": "【ミラハイ】リセマラ当たりランキング"
     },
     {
       "url": "https://appmedia.jp/bleach-mh/80520952",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/161816_2lqg4.webp",
+      "thumbUrl": "/banners/home/en_home_12.webp",
       "title": "[BLEACH Mirrors High] Fast Reroll Step-by-Step Guide",
       "titleJa": "【ミラハイ】高速リセマラのやり方と手順"
     },
     {
       "url": "https://appmedia.jp/bleach-mh/80519308",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/165140_sixb1.webp",
+      "thumbUrl": "/banners/home/en_home_13.webp",
       "title": "[BLEACH Mirrors High] Strongest Character Tier List",
       "titleJa": "【ミラハイ】最強キャラランキング"
     },
     {
       "url": "https://appmedia.jp/bleach-mh/80521930",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/171909_ap0ce.webp",
+      "thumbUrl": "/banners/home/en_home_14.webp",
       "title": "[BLEACH Mirrors High] Best Tutorial Redraw Gacha Recommendations",
       "titleJa": "【ミラハイ】引き直しガチャのおすすめ"
     },
     {
       "url": "https://appmedia.jp/bleach-mh/80521258",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/10/160034_j95gc.webp",
+      "thumbUrl": "/banners/home/en_home_15.webp",
       "title": "[BLEACH Mirrors High] Invite Code Exchange Board",
       "titleJa": "【ミラハイ】招待コード掲示板"
     },
     {
       "url": "https://appmedia.jp/onimusha_ws/80369761",
-      "thumbUrl": "https://appmedia.jp/wp-content/uploads/2026/09/121553_pxvye.webp",
+      "thumbUrl": "/banners/home/en_home_16.webp",
       "title": "[Onimusha: Way of the Sword] Strongest Omamori Talismans & Best Loadouts",
       "titleJa": "【鬼武者WS】最強の御守とおすすめの組み合わせ"
     }

@@ -632,16 +632,6 @@ export function CharacterDetailMacro({
               ) : (
                 <AppMediaH3>{sec.title}</AppMediaH3>
               )}
-              {sec.imageUrl && (
-                <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#090d16] max-w-xl">
-                  <img
-                    src={sec.imageUrl}
-                    alt={sec.title}
-                    className="w-full h-auto object-contain"
-                    loading="lazy"
-                  />
-                </div>
-              )}
               <div className="space-y-2">
                 {sec.paragraphs.map((p, pIdx) => (
                   <p key={pIdx} className="text-[#e2e8f0] leading-relaxed">
