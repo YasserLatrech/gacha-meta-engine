@@ -3,7 +3,7 @@ import type { TierRank } from '../../domain/schemas';
 export const STAR_SAVIOR_GAME_SEED = {
   "slug": "starsavior",
   "name": "Star Savior",
-  "subtitle": "Complete Database, Tier Lists, Journey Training & Arcana Encyclopedia",
+  "subtitle": "Complete Strategy Wiki, Tier Lists, Rescue Journey & Arcana Database",
   "patchVersion": "v2.4 Global / JP Meta",
   "serverStatus": "LIVE",
   "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/images/icon/icon_starsavior.webp",
@@ -119,7 +119,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "asherah",
     "name": "Asherah",
-    "title": "Voyager Relief Team · Slash Damage",
+    "title": "Voyager Rescue Squad · Slash Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Striker",
@@ -127,7 +127,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "8.0",
-    "summary": "SSR Moon Striker (Slash Damage). Asherah's ATK increases by 15%. When attacking, own Crit Rate increases by 30%. After attacking, own Crit DMG increases by 6%. Can be stacked up to 5 times. Ultimate [Dawn of Night]: Temporarily releases the seal of the magic sword and causes devastating damage to all enemies. Grants Cr",
+    "summary": "SSR Moon Striker (Slash Damage). Asherah's ATK increases by 15%. When attacking, own Crit Rate increases by 30%. After attacking, own Crit DMG increases by 6%. Can be stacked up to 5 times.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -164,7 +164,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1."
       },
       {
-        "name": "Tobarigiri",
+        "name": "Tobarigiri (Veil Slash)",
         "nameJp": "とばり斬り",
         "type": "Special Skill",
         "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/SKILL_VOYAGER_STRANIS_SPECIAL_icon.webp",
@@ -200,6 +200,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_VOYAGER_STRANIS_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "C",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "As a critical attacker, you can prepare a large amount of buffs yourself.",
+        "↳ Crit DMG 60% + damage buff 30%",
+        "With an unconditional Crit Rate of 30%, it is easy to take advantage of the above effects.",
+        "Lacks built-in Action Gauge self-advance, so pair her with an Action Gauge supporter."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -232,15 +240,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": "Limit Break +1 (LB1)",
-          "effect": "Asherah's ATK increases by 5%. After Asherah uses Tobari Slash, her Crit DMG increases by 4%. Can be stacked up to 5 times."
+          "effect": "Asherah's ATK increases by 5%. After Asherah uses Tobarigiri (Veil Slash), her Crit DMG increases by 4%. Can be stacked up to 5 times."
         },
         {
           "stage": "Limit Break +2 (LB2)",
-          "effect": "Asherah's ATK increases by 10%. After Asherah uses Tobari Slash, her Crit DMG increases by 5%. Can be stacked up to 5 times."
+          "effect": "Asherah's ATK increases by 10%. After Asherah uses Tobarigiri (Veil Slash), her Crit DMG increases by 5%. Can be stacked up to 5 times."
         },
         {
           "stage": "Limit Break +3 (LB3)",
-          "effect": "Asherah's ATK increases by 15%. After Asherah uses Tobari Slash, her Crit DMG increases by 6%. Can be stacked up to 5 times."
+          "effect": "Asherah's ATK increases by 15%. After Asherah uses Tobarigiri (Veil Slash), her Crit DMG increases by 6%. Can be stacked up to 5 times."
         }
       ],
       "skillPriority": [
@@ -261,9 +269,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "curio": {
-        "name": "Hoshimori's Journey",
+        "name": "Stargazer's Journey",
         "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/JOURNEY_ITEM_STARGAZER_TRIP.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "After attacking, if no Critical Hit occurs, increase own Action Gauge by 50% and increase Crit Rate when using the next skill by 50%. Extra turns occur after a Critical Hit occurs."
       },
       "resonancePotentials": [
@@ -273,7 +281,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Skill of Destruction",
@@ -324,11 +332,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Natsumi Takamori",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "April 22nd",
         "height": "166cm",
         "origin": "NOA",
-        "obtain": "Gacha (permanent) Initial Distribution",
+        "obtain": "Standard Gacha / Initial Starter Distribution",
         "bio": "An aristocratic daughter who longs to be a savior of the stars and joins the journey to become one. The fact that you take action immediately without worrying about it is both a strength and a weakness."
       }
     }
@@ -337,7 +345,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "smile",
     "name": "Smile",
-    "title": "Voyager Relief Team · impact damage",
+    "title": "Voyager Rescue Squad · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Ranger",
@@ -345,7 +353,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Star Ranger (impact damage). Smile's ATK increases by 15%. After Smile's attack, if your Jump is at maximum stack, consume all stacks to activate Cat Tap Dance. After using Shooting Coordinate Confirmation, increase own Action Gauge by 15%. After using Shooting Coordinate Confirmation, if the enemy's HP is below 50",
+    "summary": "SSR Star Ranger (Impact Damage). Smile's ATK increases by 15%. After Smile's attack, if your Jump is at maximum stack, consume all stacks to activate Cat Tap Dance. After using Shooting Coordinate Confirmation, increase own Action Gauge by 15%. After using Shooting Coordinate Confirmation, if the enemy's HP is below 50%, increase own Action Gauge by an additional 15%.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -413,11 +421,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "スマイル",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_VOYAGER_SMILE_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Debuffer with special trigger skills",
+        "If the conditions are met, it will be possible to perform movements like 2 actions in 1T.",
+        "Excellent firepower support with defense debuffs"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -542,7 +557,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yuzuki Tamukai",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "November 10th",
         "height": "148cm",
         "origin": "NOA",
@@ -555,7 +570,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "luna",
     "name": "Luna",
-    "title": "Voyager Relief Team · elemental damage",
+    "title": "Voyager Rescue Squad · Elemental Damage",
     "rarity": "SSR",
     "element": "Order",
     "role": "Caster",
@@ -563,7 +578,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Order Caster (elemental damage). Luna's ATK increases by 15%. When Luna uses the world reflected in my eyes, Crit DMG increases by 20% if she is in an enhanced state. At the start of battle, give yourself 2 Insight stacks. If a critical hit occurs with a self-defense magic bullet or an attack from the world that I ",
+    "summary": "SSR Order Caster (Elemental Damage). Luna's ATK increases by 15%. When Luna uses the world reflected in my eyes, Crit DMG increases by 20% if she is in an enhanced state. At the start of battle, give yourself 2 Insight stacks. If a critical hit occurs with a self-defense magic bullet or an attack from the world that I see, give yourself one insight stack.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20622,
@@ -631,11 +646,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ルナ",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-65502-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_VOYAGER_ORACLE_img.webp",
       "pvpTier": "S",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Debuffer that can increase damage taken from all attacks",
+        "Basic Skills allow full attack",
+        "This is almost essential performance in stages where all-out attacks are important.",
+        "↳ Battle against Tyria, battle against Caneria, etc."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -713,7 +736,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -760,7 +783,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Miya Minato",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "March 18th",
         "height": "167cm",
         "origin": "unknown",
@@ -781,7 +804,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Sun Striker (Slash Damage). Charles' ATK increases by 15%. When attacking, damage increases by 3% in proportion to the ignition stack attached to yourself. This effect can be applied up to 5 times. After using Unyielding Strike, the damage of straight thrust increases by 10%. Can be stacked up to 3 times. Ultimate ",
+    "summary": "SSR Sun Striker (Slash Damage). Charles' ATK increases by 15%. When attacking, damage increases by 3% in proportion to the ignition stack attached to yourself. This effect can be applied up to 5 times. After using Unyielding Strike, the damage of straight thrust increases by 10%. Can be stacked up to 3 times.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -854,6 +877,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_KINGDOM_KNIGHT_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Can give criticality rate and attack buff to yourself or a single ally.",
+        "Crit Rate buff is highly compatible with critical attacker",
+        "Widely adopted in formations where conversion rate is important",
+        "It is also excellent that you can use your Basic Skills to generate firepower with your Unique Passive.",
+        "↳ It takes a while to reach maximum firepower",
+        "The 15% damage buff based on the ignition stack is also excellent."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -991,7 +1024,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "carmen",
     "name": "Carmen",
-    "title": "Knights of Monastir · impact damage",
+    "title": "Knights of Monastir · Impact Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Defender",
@@ -999,7 +1032,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "7.5",
-    "summary": "SSR Moon Defender (impact damage). Carmen's maximum HP increases by 15%. When Carmen is attacked, her defense increases by 4% in proportion to the Cooling stacks she has, up to a maximum of 5. Ultimate [Monastir Activation Barrier]: Carmen's will to protect everyone is embodied in the form of a castle wall. Increases d",
+    "summary": "SSR Moon Defender (Impact Damage). Carmen's maximum HP increases by 15%. When Carmen is attacked, her defense increases by 4% in proportion to the Cooling stacks she has, up to a maximum of 5.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25109,
@@ -1066,11 +1099,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "カルメン",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_KINGDOM_SHIELDER_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "C",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "A defender who uses provocation to reduce damage taken by allies.",
+        "A long-lasting overall defense buff that can withstand even whole-body attacks.",
+        "I want to raise my HP because the damage increases according to my HP."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -1208,7 +1248,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "frey",
     "name": "Frey",
-    "title": "Knights of Monastir · impact damage",
+    "title": "Knights of Monastir · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Supporter",
@@ -1216,7 +1256,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Star Supporter (impact damage). Frey's maximum HP increases by 15%. At the start of your turn, give yourself 1 Jump stack. When using Negotiation Breakdown, if your own jump stack is at maximum, after attacking, consume all your jump stacks and increase your own Action Gauge by 30%. Additionally, recovers HP of all",
+    "summary": "SSR Star Supporter (Impact Damage). Frey's maximum HP increases by 15%. At the start of your turn, give yourself 1 Jump stack. When using Negotiation Breakdown, if your own jump stack is at maximum, after attacking, consume all your jump stacks and increase your own Action Gauge by 30%. Additionally, recovers HP of all allies. The amount of recovery increases in proportion to your maximum HP. When using Mona Stil's full support, if the HP of the ally target is below 75%, increase the Action Gauge of all allies by 15%.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25109,
@@ -1284,11 +1324,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "フレイ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_KINGDOM_PRAY_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "A specialized supporter who can recover allies and increase the Action Gauge.",
+        "↳ Firepower needs to be supplemented elsewhere.",
+        "Since the amount of recovery increases against star attributes, I would like to use it as a supporter of star attribute parties.",
+        "Increase the durability of your formation by removing debuffs and adding barriers",
+        "It cannot produce firepower and has no firepower buffs, so it is not suitable for content with turn restrictions such as Cosmo Gate."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -1426,7 +1475,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "seira",
     "name": "Seira",
-    "title": "Fantasy Species · mental damage",
+    "title": "Fantasy Species · Mental Damage",
     "rarity": "SSR",
     "element": "Order",
     "role": "Striker",
@@ -1434,7 +1483,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Order Striker (mental damage). Seira's ATK increases by 15%. When Seira attacks, if the enemy's HP is over 75%, the damage will increase by 15%. Ultimate [Invitation to Fantasy]: Draws the enemy into the realm of illusion and cuts them to pieces in one fell swoop. 100% chance to slow down enemy for 2 turns. Grants ",
+    "summary": "SSR Order Striker (Mental Damage). Seira's ATK increases by 15%. When Seira attacks, if the enemy's HP is over 75%, the damage will increase by 15%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21743,
@@ -1502,11 +1551,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "セイラ",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-65502-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_NIGHTMARE_REAPER_img.webp",
       "pvpTier": "S",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "A buffer that can increase the attack power and Action Gauge of a single ally.",
+        "↳ Attack buff up to 50%",
+        "It is also possible to indirectly speed up the actions of allies by slowing down the enemy.",
+        "He also has attack buffs and can provide firepower.",
+        "↳ Be careful as the firepower will decrease if the enemy's HP falls below 75%.",
+        "In order to aim to reuse Special Skills, I want to increase my speed as much as possible and increase the number of actions I take."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -1652,7 +1711,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Star Assassin (Slash Damage). Trish's Crit DMG increases by 25%. At the start of battle, give yourself 3 Jump stacks. Increases accuracy by 50% when attacking. When Trish defeats an enemy, increases her Action Gauge by 30% and grants 3 Jump stacks. Ultimate [Continuous Slash]: Unleash a series of lightning-fast att",
+    "summary": "SSR Star Assassin (Slash Damage). Trish's Crit DMG increases by 25%. At the start of battle, give yourself 3 Jump stacks. Increases accuracy by 50% when attacking. When Trish defeats an enemy, increases her Action Gauge by 30% and grants 3 Jump stacks.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -1725,6 +1784,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_STELLAR_THIEF_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "An attacker who can constantly buff the chance of winning with a Special Skill loop.",
+        "CT reset when defeating an enemy with Ultimate Skill",
+        "Expect instant firepower with the Ultimate Skill's defense penetration of 50%."
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -1788,7 +1854,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Gentle Vuvuzela",
         "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/JOURNEY_ITEM_TRISH_VUVUZELA.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "Increases Crit Rate by 50% and recovers HP equal to 100% of the damage taken. If you defeat an enemy with continuous slashes, increase your Action Gauge by 70%. If you fail to defeat the enemy with continuous slashes, reduce the cooldown of continuous slashes by 2 turns and activate Phantom Step."
       },
       "resonancePotentials": [
@@ -1802,7 +1868,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -1853,7 +1919,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "October 4th",
         "height": "161cm",
         "origin": "NOA",
-        "obtain": "Gacha (permanent) Initial Distribution",
+        "obtain": "Standard Gacha / Initial Starter Distribution",
         "bio": "A skilled hunter who belongs to the Asellus Hunter Association. He earns a huge bounty due to his skill, but his pockets are always lonely because he spends it like hot water."
       }
     }
@@ -1870,7 +1936,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Star Defender (Slash Damage). Ede's defense power increases by 15%. At the start of battle, Ede generates protection and barrier for 1 turn. After being attacked, give yourself 1 Jump stack at 100%. Barrier increases in proportion to your defense power. Ultimate [Grave of Thorns]: Ede gathers the power of emptiness",
+    "summary": "SSR Star Defender (Slash Damage). Ede's defense power increases by 15%. At the start of battle, Ede generates protection and barrier for 1 turn. After being attacked, give yourself 1 Jump stack at 100%. Barrier increases in proportion to your defense power.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 22153,
@@ -1940,6 +2006,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_INCOGNITA_FLOWER_img.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "A defender who takes over some of the enemy's attacks.",
+        "The barrier's durability is extremely high and greatly contributes to the party's durability.",
+        "↳ It is also great to be able to reduce the damage taken by reducing the hit rate.",
+        "Barrier and damage depend on defense power, so I want to prioritize defense, but I also want to have as much HP as possible because I will be taking on damage from my allies."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -2077,7 +2151,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "serpang",
     "name": "Serpang",
-    "title": "Fugetsudo · mental damage",
+    "title": "Fugetsudo · Mental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Supporter",
@@ -2085,7 +2159,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Sun Supporter (mental damage). Serpang's maximum HP increases by 15%. I choose you! After use, there is a 100% chance to inflict Burn on the enemy for 2 turns. At the start of a turn, a Burning enemy grants itself 1 Ignition stack. At the end of the turn, if your ignition is at maximum stack, increase your Action G",
+    "summary": "SSR Sun Supporter (Mental Damage). Serpang's maximum HP increases by 15%. I choose you! After use, there is a 100% chance to inflict Burn on the enemy for 2 turns. At the start of a turn, a Burning enemy grants itself 1 Ignition stack. At the end of the turn, if your ignition is at maximum stack, increase your Action Gauge by 50% and then erase all stacks.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 24753,
@@ -2153,11 +2227,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "セルパン",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_EASTERN_OWL_img.webp",
       "pvpTier": "S",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Ultimate Skill grants immunity to skill damage to yourself and one ally.",
+        "↳ Please note that the target cannot be specified.",
+        "Possesses total recovery x2 and can be considered as a supporter for solar attribute parties.",
+        "Reduces the enemy's attack power and contributes to the durability of all allies",
+        "Serupan is the only supporter who can apply debuffs.",
+        "↳ Combustion is also compatible with Crystal (Excellent)"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -2295,7 +2379,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "dana",
     "name": "Dana",
-    "title": "Canopic Guard · elemental damage",
+    "title": "Canopic Guard · Elemental Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Caster",
@@ -2303,7 +2387,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Star Caster (elemental damage). Dana's ATK increases by 15%. If a Critical Hit occurs, there is a 100% chance to grant Speed ​​Up to yourself for 1 turn. After a Star Attribute ally other than yourself attacks, give yourself 1 Jump stack. At the start of the turn, if your jump is at the maximum stack, consume all t",
+    "summary": "SSR Star Caster (Elemental Damage). Dana's ATK increases by 15%. If a Critical Hit occurs, there is a 100% chance to grant Speed ​​Up to yourself for 1 turn. After a Star Attribute ally other than yourself attacks, give yourself 1 Jump stack. At the start of the turn, if your jump is at the maximum stack, consume all the stacks and apply Roroka to yourself! (Cannot be removed) for 2 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -2371,11 +2455,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ダーナ",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAGICIAN_DRUID_img.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "The combined buff of attack buff and Crit DMG is extremely powerful.",
+        "↳ Buffs are relatively easy to maintain and it is easy to maintain firepower.",
+        "Increase your firepower by giving attack power buffs to yourself and your allies.",
+        "↳ Excellent to overlap with composite buffs",
+        "Excellent in PVP to slow down all enemies",
+        "You can give yourself a speed increase when a critical hit occurs.",
+        "↳ Increases own number of moves along with speed debuff"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -2453,7 +2548,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -2513,7 +2608,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "muriel",
     "name": "Muriel",
-    "title": "Monolith Cult · elemental damage",
+    "title": "Monolith Cult · Elemental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Caster",
@@ -2521,7 +2616,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "8.0",
-    "summary": "SSR Sun Caster (elemental damage). Muriel's Crit DMG increases by 25%. Muriel has a 100% chance to apply one Ignite stack to herself after a Sun Attribute ally other than herself attacks. Ultimate [I Won't Do Anything Bad Again]: The entire enemy is caught up in the divine punishment Muriel was supposed to receive. 75%",
+    "summary": "SSR Sun Caster (Elemental Damage). Muriel's Crit DMG increases by 25%. Muriel has a 100% chance to apply one Ignite stack to herself after a Sun Attribute ally other than herself attacks.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21080,
@@ -2589,11 +2684,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ミュリエル",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_SAINTESS_DEMON_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "B",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "Caster whose firepower increases according to the number of debuffs",
+        "Has a unique effect that extends the enemy's weakening effect.",
+        "Compatible with debuffs such as Lacey (Excellent)",
+        "Skill firepower is relatively high"
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -2731,7 +2834,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "elisa",
     "name": "Elisa",
-    "title": "Monolith Cult · mental damage",
+    "title": "Monolith Cult · Mental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Supporter",
@@ -2739,7 +2842,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "8.0",
-    "summary": "SSR Chaos Supporter (mental damage). Elisa's maximum HP increases by 15%. Elisa may be useless, but when using help, if your HP is above 50%, the amount of recovery will increase by 25%. When using Please Return, if your own upheaval is at its maximum stack, it will be consumed and an additional turn will be generated ",
+    "summary": "SSR Chaos Supporter (Mental Damage). Elisa's maximum HP increases by 15%. Elisa may be useless, but when using help, if your HP is above 50%, the amount of recovery will increase by 25%. When using Please Return, if your own upheaval is at its maximum stack, it will be consumed and an additional turn will be generated for you.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25366,
@@ -2807,11 +2910,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "エリサ",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-10703-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_SAINTESS_ELF_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "B",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "A unique supporter who can revive allies.",
+        "Contributes to durability by imparting Effect RES and damage reduction to a single unit",
+        "Especially powerful in PvP rather than PvE",
+        "↳ Mainly active in strategy defense battles"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -2949,7 +3060,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "lu",
     "name": "Lu",
-    "title": "Orbital Search Team · mental damage",
+    "title": "Orbital Search Team · Mental Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Ranger",
@@ -2957,7 +3068,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Moon Ranger (mental damage). Lu's ATK increases by 15%. Lu gains 2 Nova Force at the start of battle. When attacking, damage increases by 4% for each stack of own cooling. After any of your allies except yourself uses a skill that is not an attack, if you are not in a sudden state of Ritsuryo (cannot be removed), g",
+    "summary": "SSR Moon Ranger (Mental Damage). Lu's ATK increases by 15%. Lu gains 2 Nova Force at the start of battle. When attacking, damage increases by 4% for each stack of own cooling. After any of your allies except yourself uses a skill that is not an attack, if you are not in a sudden state of Ritsuryo (cannot be removed), give yourself one {Snow Flower} (cannot be removed). When using the Four Friends in the Snow on your turn, if you are not in the state of Sudden Nyo Ritsuryo (cannot be removed) but in the state of Yukinaka (unremovable), after attacking, give yourself {Kudky Nyo Ritsuryo} (unremovable) and increase your Action Gauge by 40% for each stack of Yukinaka (unremovable). The maximum increase in Action Gauge due to this effect is 120%. This effect does not occur for additional activated skills.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -3025,11 +3136,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ルー",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_RECON_AMULET_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "A character who fights using a combination of unique buffs and strengthened Basic Skills.",
+        "Obtain Snow Flower when using the Ultimate Skill and an ally's non-attack skill.",
+        "While possessing Snow Flowers, use Special Skills to suddenly obtain the Ritsuryo code.",
+        "↳ It is also possible to increase the Action Gauge, which takes a lot of effort.",
+        "Basic Skills are strengthened when you possess Sudoku Nyo Ritsuryo, and you can use Basic Skills repeatedly with burst included.",
+        "The problem is that it eats up the burst.",
+        "↳ Recovery performance and firepower of other characters will decrease accordingly."
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -3175,7 +3297,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "8.0",
-    "summary": "SSR Moon Assassin (Slash Damage). Epindel's ATK increases by 15%. Epindel grants himself a Cooling stack when a Moon Attribute ally hits a Critical Hit. When Epindel uses Orlan style swordsmanship, if his own Cooling is at maximum stack, the damage will be increased by 20%, and all Cooling stacks will disappear after u",
+    "summary": "SSR Moon Assassin (Slash Damage). Epindel's ATK increases by 15%. Epindel grants himself a Cooling stack when a Moon Attribute ally hits a Critical Hit. When Epindel uses Orlan style swordsmanship, if his own Cooling is at maximum stack, the damage will be increased by 20%, and all Cooling stacks will disappear after using Orlan style swordsmanship.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -3248,6 +3370,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_GRACE_DUALSWORD_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "B",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "Assassin who mainly uses Basic Skills",
+        "↳ The maximum number of stacks of Cooling increases your Basic Skill damage.",
+        "Strong against debuffs with immune loop",
+        "Self-healing is also possible and has high stand-alone performance",
+        "It is important to have a Moon attribute ally, but there are many excellent allies, including Bunny Flay, so it is easy to combine."
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -3325,7 +3456,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -3385,7 +3516,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "lydia",
     "name": "Lydia",
-    "title": "Western Recapture Force · mental damage",
+    "title": "Western Recapture Force · Mental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Ranger",
@@ -3393,7 +3524,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Chaos Ranger (mental damage). Lydia's maximum HP increases by 15%. When Lydia attacks, Effect Hit increases by 6% in proportion to the stack. This effect can be applied to up to 5 items. After attacking, if the enemy is weakened, your ATK increases by 6%. This effect can be stacked up to 5 times. After using Empty ",
+    "summary": "SSR Chaos Ranger (Mental Damage). Lydia's maximum HP increases by 15%. When Lydia attacks, Effect Hit increases by 6% in proportion to the stack. This effect can be applied to up to 5 items. After attacking, if the enemy is weakened, your ATK increases by 6%. This effect can be stacked up to 5 times. After using Empty Hand, if the enemy is weakened, there is a 100% chance to inflict an unknown spell on the enemy for 1 turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 23246,
@@ -3461,11 +3592,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "リディア",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-10703-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_WEST_ROD_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Has Action Gauge increase & decrease, so it takes a lot of your own moves.",
+        "↳ It's also great to have a speed debuff.",
+        "Easy to apply debuffs with Effect Hit buff & Effect RES debuff",
+        "↳ Highly compatible with characters who fight mainly with debuff effects",
+        "If the enemy is in a debuff state, attack power increases and firepower increases."
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -3603,7 +3743,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "harley",
     "name": "Harley",
-    "title": "Hellsaver · impact damage",
+    "title": "Hellsaver · Impact Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Defender",
@@ -3611,7 +3751,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "8.0",
-    "summary": "SSR Sun Defender (impact damage). Harley's maximum HP increases by 15%. Harley's speed increases by 3% at 100% after an ally other than herself is attacked. Can be stacked up to 5 times. When attacking, if your own ignition stack is at maximum stack, consume all ignition stacks and give yourself Effect Hit up for 2 tur",
+    "summary": "SSR Sun Defender (Impact Damage). Harley's maximum HP increases by 15%. Harley's speed increases by 3% at 100% after an ally other than herself is attacked. Can be stacked up to 5 times. When attacking, if your own ignition stack is at maximum stack, consume all ignition stacks and give yourself Effect Hit up for 2 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25109,
@@ -3679,11 +3819,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ハーレー",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_WILD_HOG_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "B",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "Defender who gives speed buff to all allies",
+        "↳ Endurance support is also possible with overall defense buff.",
+        "Conditionally, but greatly increases own speed in rampage mode",
+        "You can also hinder enemy actions by having multiple enemy Action Gauge reductions.",
+        "Since firepower increases depending on speed, speed buff is actually a firepower buff"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -3821,7 +3970,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "petra",
     "name": "Petra",
-    "title": "Petra Union · impact damage",
+    "title": "Petra Union · Impact Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Ranger",
@@ -3829,7 +3978,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "7.5",
-    "summary": "SSR Sun Ranger (impact damage). Petra's ATK increases by 15%. After Petra breaks the enemy's Toughness with all allies except for herself, she gives herself one Ignite stack and increases her Action Gauge by 20%. Occurs only once per turn. Ultimate [Architectural Consultation]: Petra attacks by rolling a large number o",
+    "summary": "SSR Sun Ranger (Impact Damage). Petra's ATK increases by 15%. After Petra breaks the enemy's Toughness with all allies except for herself, she gives herself one Ignite stack and increases her Action Gauge by 20%. Occurs only once per turn.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -3897,11 +4046,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ペトラ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_CONSTRUCT_BOMB_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "C",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "Can give defense power down",
+        "↳ Firepower increases with the number of ignition stacks",
+        "Attribute compatibility is important because you gain stacks when your allies break.",
+        "There is also a speed buff and you can increase the number of actions you take."
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -4039,7 +4196,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "lacy",
     "name": "Lacy",
-    "title": "Eastern Continent · elemental damage",
+    "title": "Eastern Continent · Elemental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Ranger",
@@ -4047,7 +4204,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Chaos Ranger (elemental damage). Lacy's ATK increases by 15%. At the start of battle, give yourself 2 turbulent stacks. After being attacked by an enemy with Intertwined Dreams, increase Action Gauge by 10% and apply one stack of Convulsion. Additionally, recovers own HP. After receiving an attack, if your own turb",
+    "summary": "SSR Chaos Ranger (Elemental Damage). Lacy's ATK increases by 15%. At the start of battle, give yourself 2 turbulent stacks. After being attacked by an enemy with Intertwined Dreams, increase Action Gauge by 10% and apply one stack of Convulsion. Additionally, recovers own HP. After receiving an attack, if your own turbulence is at maximum stack and the enemy is not in the Intertwined Dream state, consume all {turbulent stacks} and give the attacker 2 turns of Intertwined Dream with a 100% chance. The amount of recovery increases in proportion to your ATK.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20822,
@@ -4115,11 +4272,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "レイシー",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-10703-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_INDEPENDENT_DRAGON_img.webp",
       "pvpTier": "S",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Excellent single performance with high firepower and self-recovery",
+        "↳ Raw speed is also top class",
+        "Recovers own HP when attacked by an enemy with Intertwined Dreams.",
+        "↳ Recovery power depends on your attack power, not the enemy's attack.",
+        "If the amount of recovery exceeds the enemy's damage, you will almost never be defeated.",
+        "Recommended as it is very strong especially in the early stages"
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -4257,7 +4424,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "tanya",
     "name": "Tanya",
-    "title": "Petra Union · impact damage",
+    "title": "Petra Union · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Striker",
@@ -4265,7 +4432,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Star Striker (impact damage). Tanya's ATK increases by 15%. After Tanya breaks the enemy's Toughness, she gives herself 3 Jump stacks and increases the Action Gauge of all allies except herself by 10%. At the start of the turn, if your Jump stack is at its maximum, consume it all and cause yourself to enter Demolit",
+    "summary": "SSR Star Striker (Impact Damage). Tanya's ATK increases by 15%. After Tanya breaks the enemy's Toughness, she gives herself 3 Jump stacks and increases the Action Gauge of all allies except herself by 10%. At the start of the turn, if your Jump stack is at its maximum, consume it all and cause yourself to enter Demolition Mode for 3 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -4333,11 +4500,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ターニャ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_CONSTRUCT_GADGET_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "A striker who can give a critical buff to all allies.",
+        "Owns Action Gauge increase and attack buff",
+        "Strength break increases jump stack and overall Action Gauge",
+        "Toughness damage increased in Demolition mode",
+        "↳ The desired flow is Break → Jump stack added → Enter demolition mode, so the engagement is not very good."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -4475,7 +4651,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "lily",
     "name": "Lily",
-    "title": "Lampadis · mental damage",
+    "title": "Lampadis · Mental Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Caster",
@@ -4483,7 +4659,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "8.0",
-    "summary": "SSR Moon Caster (mental damage). Lily's ATK increases by 15%. Lily increases her Action Gauge by 20% after using Usagi-san's Instant Judgment. After a Moon Attribute ally other than yourself is attacked, give yourself 1 Cooling stack. At the start of the turn, if your Cooling is at maximum stack, consume all stacks and",
+    "summary": "SSR Moon Caster (Mental Damage). Lily's ATK increases by 15%. Lily increases her Action Gauge by 20% after using Usagi-san's Instant Judgment. After a Moon Attribute ally other than yourself is attacked, give yourself 1 Cooling stack. At the start of the turn, if your Cooling is at maximum stack, consume all stacks and give yourself Rabbit-san's Investigation Advice for 2 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21080,
@@ -4551,11 +4727,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "リリー",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_DETECTIVE_WATSON_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "B",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "A caster who can support the durability of allies.",
+        "Special Skill that gives a barrier to allies and buffs attack power and Crit Rate to yourself",
+        "↳ Since the Crit Rate buff is a unique buff, it is best to overlap with the general Crit Rate buff.",
+        "Under certain conditions, the damage of the Ultimate Skill can be increased and there are many self-buffs."
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -4693,7 +4877,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "kira",
     "name": "Kira",
-    "title": "Kira Doesn't Have Any Friends · mental damage",
+    "title": "Kira Doesn't Have Any Friends · Mental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Assassin",
@@ -4701,7 +4885,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Sun Assassin (mental damage). Kira's ATK increases by 15%. When using Kira's skill, if you are hidden, the damage will increase by 10%. When using Extraordinary Greetings, if your Ignition stack is at its maximum, consume all stacks and apply Incubation to yourself for 1 turn. Ultimate [Distorted Interest]: Release",
+    "summary": "SSR Sun Assassin (Mental Damage). Kira's ATK increases by 15%. When using Kira's skill, if you are hidden, the damage will increase by 10%. When using Extraordinary Greetings, if your Ignition stack is at its maximum, consume all stacks and apply Incubation to yourself for 1 turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -4769,11 +4953,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "キラ",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MUTANT_MASK_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Assassin who fights using hidden effects",
+        "While hiding, you won't be targeted by the enemy, so your survivability is high.",
+        "↳ There is also a way to concentrate the attack on the defender by positioning yourself in the front line.",
+        "Since it receives all attacks, it is powerful against opponents who only attack single targets.",
+        "Excellent attack power debuff and Action Gauge reduction"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -4847,7 +5040,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Attack Skill",
@@ -4911,7 +5104,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bunny-scarlet",
     "name": "Bunny Scarlet",
-    "title": "Candle Square · impact damage",
+    "title": "Candle Square · Impact Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Ranger",
@@ -4919,7 +5112,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Sun Ranger (impact damage). Scarlet's Crit Rate increases by 15%. When Scarlet attacks, the damage increases by 7% in proportion to the Ignition stacks attached to her. This effect can be applied up to 5 stacks. At the start of Scarlet's turn, give yourself pinball time! will occur three times, and after the attack",
+    "summary": "SSR Sun Ranger (Impact Damage). Scarlet's Crit Rate increases by 15%. When Scarlet attacks, the damage increases by 7% in proportion to the Ignition stacks attached to her. This effect can be applied up to 5 stacks. At the start of Scarlet's turn, give yourself pinball time! will occur three times, and after the attack, it's pinball time! Clear all conditions. At the start of your turn, your speed increases by 1 depending on the number of Seven Balls (cannot be removed) you have. Can be stacked up to 10 times. Normal ball (cannot be removed): Increases damage dealt by 1% Seven ball (cannot be removed): Increases damage dealt by 7%",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -4987,11 +5180,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "バニースカーレット",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103214_mxha8.webp",
       "pvpTier": "B",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Obtain various benefits depending on the number of seven balls",
+        "If there are 3 Seven Balls, the cooldown time of your Ultimate Skill will be reset.",
+        "↳ If you are lucky, you can use the Ultimate Skill continuously.",
+        "It is possible to continuously output high damage by increasing the damage dealt by passive.",
+        "It is important when using the Ultimate Skill, so it is not suitable for automatic use."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -5129,7 +5331,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bunny-claire",
     "name": "Bunny Claire",
-    "title": "Candle Square · impact damage",
+    "title": "Candle Square · Impact Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Striker",
@@ -5137,7 +5339,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Moon Striker (impact damage). Claire's ATK increases by 15%. At the start of Claire's turn, her Crit Rate increases by 10%. Can be stacked up to 3 times. After using invisible movement, if your cooling is at maximum stack, it will be consumed and \"Where are you looking?\" will be activated. Ultimate [Bunny Jackpot]:",
+    "summary": "SSR Moon Striker (Impact Damage). Claire's ATK increases by 15%. At the start of Claire's turn, her Crit Rate increases by 10%. Can be stacked up to 3 times. After using invisible movement, if your cooling is at maximum stack, it will be consumed and \"Where are you looking?\" will be activated.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -5205,11 +5407,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "バニークレア",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103214_6nm5y.webp",
       "pvpTier": "S",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "When you accumulate Cooling stacks, you can perform additional attacks with Special Skills.",
+        "It's also great that you can easily use skills because you can accumulate 3 stacks with Special Skills.",
+        "The firepower of special moves increases as the enemy has more buffs.",
+        "I want to raise the conversion rate because it is important to generate conversions."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -5347,7 +5557,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "omega",
     "name": "Omega",
-    "title": "Voyager Relief Team · impact damage",
+    "title": "Voyager Rescue Squad · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Caster",
@@ -5355,7 +5565,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "7.5",
-    "summary": "SSR Star Caster (impact damage). Omega's ATK increases by 15%. After Omega attacks a Star Attribute ally other than himself, he grants himself 1 Jump stack at 100%. At the start of the turn, if your Jump stack is at its maximum, it will be consumed and a power-up star will be generated once. At the start of the turn, i",
+    "summary": "SSR Star Caster (Impact Damage). Omega's ATK increases by 15%. After Omega attacks a Star Attribute ally other than himself, he grants himself 1 Jump stack at 100%. At the start of the turn, if your Jump stack is at its maximum, it will be consumed and a power-up star will be generated once. At the start of the turn, if your Power Up Star is at maximum stack, Jump will not be consumed.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21380,
@@ -5423,11 +5633,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "オメガ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_STARPIERCER_OMEGA_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "C",
+      "appMediaRerollTier": "B",
+      "evalBullets": [
+        "A caster whose skills change depending on the stack of power-up stars.",
+        "Star attribute characters' stacks increase when they attack.",
+        "It is necessary to compose multiple star attribute characters, so the composition width is narrow"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -5552,7 +5769,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Maria Naganawa",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "February 4th",
         "height": "131cm",
         "origin": "star piercer",
@@ -5565,7 +5782,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "dress-asherah",
     "name": "Dress Asherah",
-    "title": "Voyager Relief Team · Slash Damage",
+    "title": "Voyager Rescue Squad · Slash Damage",
     "rarity": "SSR",
     "element": "Order",
     "role": "Supporter",
@@ -5573,7 +5790,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Order Supporter (Slash Damage). Asherah's maximum HP increases by 15%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The chance of pincer attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5. The amount of",
+    "summary": "SSR Order Supporter (Slash Damage). Asherah's maximum HP increases by 15%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The chance of Pincer Dual-Attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25006,
@@ -5595,7 +5812,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "target": "Passive",
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "HP4.5%",
-        "exactDescription": "Asherah's maximum HP increases by 15%.\nAfter Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage.\nThe chance of pincer attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5.\nThe amount of recovery increases in proportion to your maximum HP.",
+        "exactDescription": "Asherah's maximum HP increases by 15%.\nAfter Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage.\nThe chance of Pincer Dual-Attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5.\nThe amount of recovery increases in proportion to your maximum HP.",
         "novaBurst": ""
       },
       {
@@ -5646,6 +5863,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/12/183033_c3iw4.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Supporter who can recover total HP and remove debuffs",
+        "Recovers allies with low HP even with Basic Skills",
+        "↳ By increasing the Pincer Dual-Attack rate, it is possible to recover whenever an ally uses a Basic Skill.",
+        "Support performance is high due to increased Action Gauge",
+        "Contributes to firepower while being a supporter with Special Skills such as Pincer Dual-Attacks and attacks.",
+        "Please note that non-convex has a weak Unique Passive, and 1 or more convex is almost required."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -5678,15 +5905,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": "Limit Break +1 (LB1)",
-          "effect": "Asherah's maximum HP increases by 5%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The pincer attack rate increases by 10% in proportion to the insight stacks you have, up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP."
+          "effect": "Asherah's maximum HP increases by 5%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The Pincer Dual-Attack rate increases by 10% in proportion to the insight stacks you have, up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP."
         },
         {
           "stage": "Limit Break +2 (LB2)",
-          "effect": "Asherah's maximum HP increases by 10%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. Pincer attack rate increases by 15% in proportion to the insight stacks you have, up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP."
+          "effect": "Asherah's maximum HP increases by 10%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. Pincer Dual-Attack rate increases by 15% in proportion to the insight stacks you have, up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP."
         },
         {
           "stage": "Limit Break +3 (LB3)",
-          "effect": "Asherah's maximum HP increases by 15%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The pincer attack rate increases by 20% in proportion to the insight stacks granted to you, up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP."
+          "effect": "Asherah's maximum HP increases by 15%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The Pincer Dual-Attack rate increases by 20% in proportion to the insight stacks granted to you, up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP."
         }
       ],
       "skillPriority": [
@@ -5770,7 +5997,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Natsumi Takamori",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "April 22nd",
         "height": "166cm",
         "origin": "NOA",
@@ -5783,7 +6010,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bell-lease",
     "name": "Bell Lease",
-    "title": "Candle Square · mental damage",
+    "title": "Candle Square · Mental Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Ranger",
@@ -5791,7 +6018,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Star Ranger (mental damage). Bell Lease's ATK increases by 15%. Bell Lease increases his Action Gauge by 50% and increases his ATK by 10% each time an ally or enemy other than himself becomes incapacitated. ATK up effect can be stacked up to 3 times. Ultimate [Coffin]: Attack by engulfing the enemy in the darkness ",
+    "summary": "SSR Star Ranger (Mental Damage). Bell Lease's ATK increases by 15%. Bell Lease increases his Action Gauge by 50% and increases his ATK by 10% each time an ally or enemy other than himself becomes incapacitated. ATK up effect can be stacked up to 3 times.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -5859,11 +6086,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ベル・リース",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/01/215428_t9ria.webp",
       "pvpTier": "B",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "An attacker who focuses on interference by reducing accuracy, silence, and removal of reinforcement.",
+        "Strong against multiple opponents and multiple waves due to attack increase and Action Gauge increase when enemy or ally dies",
+        "Silence & buff removal is useful as a PvP meta",
+        "Demonstrate high single firepower with Ultimate Skill with increased damage",
+        "Potential to win depending on luck due to decreased accuracy"
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -6009,7 +6245,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Moon Defender (Slash Damage). Emily's maximum HP increases by 15%. At the start of the first battle, create a barrier for yourself for 1 turn. After being attacked, the cooldown time of \"Turndown Service\" is reduced by one turn. After receiving a general attack, the cooldown of \"Turndown Service\" is further shorten",
+    "summary": "SSR Moon Defender (Slash Damage). Emily's maximum HP increases by 15%. At the start of the first battle, create a barrier for yourself for 1 turn. After being attacked, the cooldown time of \"Turndown Service\" is reduced by one turn. After receiving a general attack, the cooldown of \"Turndown Service\" is further shortened by 1 turn, and grants 1 Cooling stack to itself at 100%. Barrier increases in proportion to own maximum HP.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 24753,
@@ -6080,6 +6316,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200934_052an.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Excellent overall attack firepower with ultimate continuous fire & increased damage",
+        "High self-durability due to barrier created by Basic Skill burst",
+        "↳ Further increase durability by utilizing hard potential",
+        "Support allies' durability by adding offensive and defensive buffs and barriers",
+        "Burst dependence and standalone support are delicate in automatic operation"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -6153,7 +6398,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Skill of Destruction",
@@ -6217,7 +6462,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bunny-charles",
     "name": "Bunny Charles",
-    "title": "Knights of Monastir · mental damage",
+    "title": "Knights of Monastir · Mental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Assassin",
@@ -6225,7 +6470,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.9",
-    "summary": "SSR Sun Assassin (mental damage). Charles' ATK increases by 15%. Charles gives himself one Ignition stack at the start of the turn of any Sun Attribute ally other than himself. After using Bunny Step, increase own Action Gauge by 10%. After using Bunny Step on your turn, if you are in Lucky Token (cannot be removed) st",
+    "summary": "SSR Sun Assassin (Mental Damage). Charles' ATK increases by 15%. Charles gives himself one Ignition stack at the start of the turn of any Sun Attribute ally other than himself. After using Bunny Step, increase own Action Gauge by 10%. After using Bunny Step on your turn, if you are in Lucky Token (cannot be removed) state, Bunny Step will occur again. The additional activation effect only occurs once per turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -6293,11 +6538,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "バニーシャルル",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/03/164518_6rspg.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SSS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "Attacker with additional activation of Basic Skills, Ultimate Skill CT reset, additional turns and moves",
+        "Increased firepower with attack buff and defense penetration (Excellent)",
+        "Since the attack buff applies to all allies, firepower support is also possible.",
+        "You can also recover HP with the Ultimate Skill Nova Burst."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -6367,7 +6620,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonancePotentials": [
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Sense of Attack",
@@ -6375,7 +6628,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -6435,7 +6688,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bunny-frey",
     "name": "Bunny Frey",
-    "title": "Knights of Monastir · impact damage",
+    "title": "Knights of Monastir · Impact Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Caster",
@@ -6443,7 +6696,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Moon Caster (impact damage). Frey's ATK increases by 15%. At the start of Frey's turn, if his Cooling stack is at its maximum, he will inflict a High Roller (cannot be removed) on himself and consume all Cooling stacks. At the start of the turn, if your High Roller (cannot be removed) is at maximum stack, it will n",
+    "summary": "SSR Moon Caster (Impact Damage). Frey's ATK increases by 15%. At the start of Frey's turn, if his Cooling stack is at its maximum, he will inflict a High Roller (cannot be removed) on himself and consume all Cooling stacks. At the start of the turn, if your High Roller (cannot be removed) is at maximum stack, it will not consume Cooling. After attacking Moon Attribute allies other than yourself, increase your own Action Gauge by 8% and cause yourself to become a High Roller (cannot be removed) once at 100%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -6511,11 +6764,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "バニーフレイ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/02/180836_pgnjz.webp",
       "pvpTier": "S",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "3 turns of increasing overall acceptance rate is powerful",
+        "↳ It is also excellent that it is easy to use with CT4.",
+        "When 5 stacks of High Roller accumulate, Basic Skill damage increases by 100%.",
+        "By combining it with the moon attribute, the number of moves increases by increasing the Action Gauge and it becomes easier to accumulate high rollers.",
+        "↳ Especially compatible with Bunny Claire(Excellent)"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -6653,7 +6915,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "roberta",
     "name": "Roberta",
-    "title": "Orbital Search Team · impact damage",
+    "title": "Orbital Search Team · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Striker",
@@ -6661,7 +6923,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Star Striker (impact damage). Roberta's ATK increases by 15%. When Roberta attacks, Crit Rate increases by 50%. If your HP is above 50%, your damage will increase by 8%, and if your HP is below 50%, your damage will increase by 16%. Ultimate [Emergency On-site Judgment]: Skip procedures based on on-site judgment an",
+    "summary": "SSR Star Striker (Impact Damage). Roberta's ATK increases by 15%. When Roberta attacks, Crit Rate increases by 50%. If your HP is above 50%, your damage will increase by 8%, and if your HP is below 50%, your damage will increase by 16%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -6729,11 +6991,23 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ロベルタ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201812_ic1f4.webp",
       "pvpTier": "SS",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "50% critical hit buff when attacking",
+        "↳ This buff amount is almost unconditional.",
+        "All skills have Action Gauge increase, so it takes a lot of work.",
+        "↳ The Basic Skill is Nova Burst, which increases the Action Gauge.",
+        "Activates the trigger skill when hit by an overall attack.",
+        "↳ The problem is that it depends on the enemy",
+        "A powerful counter to Luna, Lacey, etc.",
+        "↳ Also excellent at removing debuffs from Special Skills."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -6797,7 +7071,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Orbital Search Team Badge",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/124356_zy9kv.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "When a Critical Hit occurs, fast track is applied to the enemy.\nOccurs only once in your turn."
       },
       "resonancePotentials": [
@@ -6871,7 +7145,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "yanagi-mina",
     "name": "Yanagi Mina",
-    "title": "Fenrir Platoon · impact damage",
+    "title": "Fenrir Platoon · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Ranger",
@@ -6879,7 +7153,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Star Ranger (impact damage). Yanagi Mina's ATK increases by 15%. After Yanagi Mina attacks, her own ATK increases by 4%. Can be stacked up to 5 times. When a Critical Hit occurs, increase own Action Gauge by 15%. Ultimate [Wolfsbane]: Attack the enemy by wielding Wolvesbane. Increases ATK for 2 turns and grants 2 J",
+    "summary": "SSR Star Ranger (Impact Damage). Yanagi Mina's ATK increases by 15%. After Yanagi Mina attacks, her own ATK increases by 4%. Can be stacked up to 5 times. When a Critical Hit occurs, increase own Action Gauge by 15%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20823,
@@ -6947,11 +7221,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ヤナギ・ミナ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/124735_l8ofw.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Attacker that inflicts a lot of bleeding",
+        "↳ There is no need to increase the effect accuracy",
+        "Increase your own firepower with attack buffs and Crit Rate buffs",
+        "There is no support effect from allies, so expect him to play an active role as a pure attacker."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -7089,7 +7371,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "hilde",
     "name": "Hilde",
-    "title": "Fenrir Platoon · impact damage",
+    "title": "Fenrir Platoon · Impact Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Defender",
@@ -7097,7 +7379,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SSR Sun Defender (impact damage). Hilde's maximum HP increases by 15%. Hilde's first defense probability increases by 30%. At the start of the first battle, create a barrier for all allies except yourself for 1 turn. Barrier increases in proportion to own maximum HP. Ultimate [Buster Overdrive]: After charging forward,",
+    "summary": "SSR Sun Defender (Impact Damage). Hilde's maximum HP increases by 15%. Hilde's first defense probability increases by 30%. At the start of the first battle, create a barrier for all allies except yourself for 1 turn. Barrier increases in proportion to own maximum HP.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25109,
@@ -7163,11 +7445,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ヒルデ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/124752_9cz8o.webp",
       "pvpTier": "S",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Defender capable of pre-emptive defense",
+        "↳ Maximum probability is 50% when used with Arcana that becomes the title.",
+        "Durability is quite high due to overlapping defense buffs and multiple methods of applying barriers.",
+        "Excellent in situations such as PvP where the defender's grouping of enemies cannot be used.",
+        "↳ With the advent of ignoring pre-emptive defense, the number of active situations is decreasing."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -7305,7 +7596,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "rosalia",
     "name": "Rosalia",
-    "title": "Fallen Hawk · elemental damage",
+    "title": "Fallen Hawk · Elemental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Ranger",
@@ -7313,7 +7604,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Chaos Ranger (elemental damage). Rosalia's ATK increases by 15%. After Rosalia uses Ash Flame, the probability of inferno (cannot be removed) will increase by 20% in proportion to the turbulence stack attached to herself, and will be applied up to 5 times. After receiving an attack, your current HP will not fall be",
+    "summary": "SSR Chaos Ranger (Elemental Damage). Rosalia's ATK increases by 15%. After Rosalia uses Ash Flame, the probability of inferno (cannot be removed) will increase by 20% in proportion to the turbulence stack attached to herself, and will be applied up to 5 times. After receiving an attack, your current HP will not fall below 40% and your ATK will increase for 3 turns. The effect after being attacked only occurs once during the battle.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20822,
@@ -7381,11 +7672,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ロザリア",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-10703-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_8l7u1.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Enhance your Special Skills with hellfire stacks",
+        "The Ultimate Skill that has the first overall defense debuff.",
+        "↳ Excellent combination of Basic Skill buff and speed buff",
+        "Although it is an overall attack, the multiplier is very high and it is also expected to have single firepower.",
+        "Basic Skill trigger with Special Skill, Ultimate Skill Action Gauge increase and speed buff will save you time (Excellent)",
+        "Although it is only used once, it also covers durability with the insurance effect that HP will not fall below 40%.",
+        "↳ I also like the attack buff that depends on convexity and extends the duration of turns."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -7531,7 +7833,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Star Striker (Slash Damage). ATK increases by 15%. When Rin attacks, the ATK increases by 4% in proportion to the number of jump stacks given to itself, up to a maximum of 5 stacks. After using Phantom Sword Dance on your turn, if you are in Seifu (cannot be removed) state, the cooldown of Phantom Sword Dance will ",
+    "summary": "SSR Star Striker (Slash Damage). ATK increases by 15%. When Rin attacks, the ATK increases by 4% in proportion to the number of jump stacks given to itself, up to a maximum of 5 stacks. After using Phantom Sword Dance on your turn, if you are in Seifu (cannot be removed) state, the cooldown of Phantom Sword Dance will be shortened by 1 turn. After using Seifu Meigetsu on your turn, if you are in Meigetsu (unremovable) state, Seifu Meigetsu's cooldown will be shortened by 1 turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -7604,6 +7906,17 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/04/193138_frw90.webp",
       "pvpTier": "A",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "An irregular attacker whose skill effects change depending on the order in which they are used.",
+        "Ultimate → Special and active as a star attribute supporter",
+        "↳ Jump stack x3, Crit DMG buff applied to all star attributes",
+        "↳ Especially compatible with Tanya (Excellent)",
+        "Special → Ultimate operation as main attacker",
+        "↳ Self Crit DMG buff 50%, total attack buff 50%",
+        "It has many roles and is very powerful, and there are few situations where it gets corrupted."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -7749,7 +8062,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Moon Assassin (Slash Damage). Fei's ATK increases by 15%. Fei increases evasion rate for 1 turn at the start of battle and at the end of turn. If you evade after being attacked, your ATK increases by 4%. Can be stacked up to 5 times. Ultimate [Seifu Rougetsu]: Attacks the enemy with a slash that can cut through eve",
+    "summary": "SSR Moon Assassin (Slash Damage). Fei's ATK increases by 15%. Fei increases evasion rate for 1 turn at the start of battle and at the end of turn. If you evade after being attacked, your ATK increases by 4%. Can be stacked up to 5 times.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -7822,6 +8135,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173815_xcjae.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Counter attack attacker with constant evasion rate of 50%",
+        "↳ Activate trigger skill with successful evasion",
+        "Trigger skill can be used repeatedly with CT0",
+        "↳ Be careful of the once per turn condition.",
+        "The upside performance when successfully evading is the highest among all characters.",
+        "↳ On the other hand, it's not good when the counterattack doesn't occur.",
+        "Possesses a guaranteed hit that can ignore first defense.",
+        "↳ Seems to be a must-have character in strategy games.",
+        "It is strong that you can aim for an upside with content such as Cosmo Gate that you can try many times."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -7885,7 +8211,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Heavenly Question Book",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/125823_petzh.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "Evasion rate increases by 20%.\nIf evasion occurs after receiving an attack, Seifu Rogetsu's cooldown will be reduced by 1 turn."
       },
       "resonancePotentials": [
@@ -7967,7 +8293,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Sun Striker (Slash Damage). Tilia's ATK increases by 15%. When Tilia activates Prelude of the End or Requiem of Tragedy, if the enemy has Thorns of Tragedy (cannot be removed), it will penetrate their defense by 25%. After activating the Prelude of the End, cause 100% of the enemy to inflict Thorns of Tragedy (cann",
+    "summary": "SSR Sun Striker (Slash Damage). Tilia's ATK increases by 15%. When Tilia activates Prelude of the End or Requiem of Tragedy, if the enemy has Thorns of Tragedy (cannot be removed), it will penetrate their defense by 25%. After activating the Prelude of the End, cause 100% of the enemy to inflict Thorns of Tragedy (cannot be removed). After activating Prelude of the End, if the enemy's Thorn of Tragedy (cannot be removed) is at maximum stack, activate Requiem of Tragedy.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -8040,6 +8366,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/03/170432_kais6.webp",
       "pvpTier": "S",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "An attacker who brings out firepower with Special Skills.",
+        "↳ Increase maximum firepower with defense penetration and damage buffs",
+        "↳ The usability is similar to Rosalia.",
+        "Trigger Special Skills with Basic Skills",
+        "Since the unique debuff is at its maximum stack, the situations are limited.",
+        "It is unique that Nova Burst has an additional turn.",
+        "The unique debuff doesn't depend on the Effect Hit or Effect RES, so it's great that you don't have to worry about accidents.",
+        "Demonstrates top-class strength against defenders"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -8177,7 +8515,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bride-carmen",
     "name": "Bride Carmen",
-    "title": "Knights of Monastir · impact damage",
+    "title": "Knights of Monastir · Impact Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Supporter",
@@ -8185,7 +8523,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.9",
-    "summary": "SSR Moon Supporter (impact damage). Carmen's maximum HP increases by 15%. At the start of a battle, Carmen applies a Pledge of Love (which cannot be canceled) to the ally with the highest ATK, excluding herself. When an ally in the Pledge of Love (unremovable) state is attacked by a single target, it takes 40% of the t",
+    "summary": "SSR Moon Supporter (Impact Damage). Carmen's maximum HP increases by 15%. At the start of a battle, Carmen applies a Pledge of Love (which cannot be canceled) to the ally with the highest ATK, excluding herself. When an ally in the Pledge of Love (unremovable) state is attacked by a single target, it takes 40% of the target's damage instead and increases its own Action Gauge by 30%. Only the highest damage dispersion effect is applied. After using Basic Skill, recovers the HP of all allies, and the amount recovered increases if Cooling is at maximum stack. The amount of recovery increases in proportion to your maximum HP.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25109,
@@ -8253,11 +8591,23 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "花嫁カルメン",
       "pool": "Limited",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132205_k6viz.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SSS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "A supporter who protects his allies even outside of his own turn with trigger skills.",
+        "↳ Targets the ally with the highest attack power",
+        "The recovery performance of Nova Burst and Ultimate Skill is high, and the single recovery performance is top class.",
+        "↳ Total recovery is also possible with Basic Skill effects.",
+        "The ideal strategy is to increase the number of moves by increasing the Action Gauge and recover the CT of the trigger skill as quickly as possible.",
+        "↳ It is also great that there are multiple ways to increase the Action Gauge.",
+        "You can give Cooling to a moon attribute ally.",
+        "↳ Compatible with characters that require Cooling such as Bunny Claire and Bunny Flay (Excellent)"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -8386,7 +8736,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "August 11th",
         "height": "168cm",
         "origin": "Principality of Monastir",
-        "obtain": "Gacha (limited)",
+        "obtain": "Limited Pickup Observation Gacha",
         "bio": "Vice-commander of the Knights of the Principality of Monastir. No matter how difficult the situation, he is a shield for the knights who never forgets to smile."
       }
     }
@@ -8403,7 +8753,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Sun Caster (Slash Damage). Epindel's ATK increases by 15%. Epindel gives himself one ignition stack when an ally other than himself receives a Critical Hit. At the start of each Sun Attribute ally's turn, each grant 2 Ignition stacks at 100%. Ultimate [Bride, Entrance]: Epindel is determined and punishes those who ",
+    "summary": "SSR Sun Caster (Slash Damage). Epindel's ATK increases by 15%. Epindel gives himself one ignition stack when an ally other than himself receives a Critical Hit. At the start of each Sun Attribute ally's turn, each grant 2 Ignition stacks at 100%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21080,
@@ -8476,6 +8826,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/06/152600_marq9.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Super high damage buff of 150% to those with barrier",
+        "↳ In addition, it can be used strongly against barriers such as reducing the Action Gauge.",
+        "His skill multipliers are excellent across the board and he is simply powerful as an attacker.",
+        "Grants an additional turn with Special Skills when the ignition stack is at maximum",
+        "↳ The difficulty of applying the ignition stack itself is not high, but you need to wait 2 turns including an additional turn.",
+        "Nova Burst is a 20% damage increase type, so it can't make that much of a difference."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -8549,7 +8909,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Attack Skill",
@@ -8613,7 +8973,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "carnelia",
     "name": "Carnelia",
-    "title": "Wanderer · mental damage",
+    "title": "Wanderer · Mental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Caster",
@@ -8621,7 +8981,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Chaos Caster (mental damage). Carnelia's ATK increases by 15%. At the start of battle, Carnelia generates jet black reverberation (cannot be removed) for 1 turn. When attacking, ATK increases by 6% in proportion to the number of upheaval stacks attached to itself, up to a maximum of 5 stacks. When you receive damag",
+    "summary": "SSR Chaos Caster (Mental Damage). Carnelia's ATK increases by 15%. At the start of battle, Carnelia generates jet black reverberation (cannot be removed) for 1 turn. When attacking, ATK increases by 6% in proportion to the number of upheaval stacks attached to itself, up to a maximum of 5 stacks. When you receive damage that would leave you incapacitated, you will recover 1% of your maximum HP and will not be incapacitated. Also, inflicts immortality on himself for 1 turn, jet black reverberation (cannot be removed) for 3 turns, and resets the cooldown time of all skills. Occurs only once during battle.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20622,
@@ -8689,11 +9049,23 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "カネリア",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-10703-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/06/175513_un5x8.webp",
       "pvpTier": "SS",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Chaos caster who is immortal and has a good position.",
+        "↳ Don't fall down until your turn comes",
+        "Activate immortality to reset CT + apply unique buff to bring in high power on the next turn",
+        "↳ Increases Ultimate Skill firepower when possessing unique buff",
+        "Impossible to enhance and hinder enemy actions",
+        "Special Skills can be used repeatedly when possessing jet black reverberations",
+        "↳ Pure firepower up & Action Gauge reduced by 50%",
+        "Covers your own durability with self-healing using the Ultimate Skill Nova Burst"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -8757,7 +9129,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Light of Dawn",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/130150_bgu0m.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "At the start of battle, generates jet black reverberations (cannot be removed) for 3 turns.\nWhen attacking, if you are in jet black reverberation (cannot be removed), recover HP equal to 15% of the damage."
       },
       "resonancePotentials": [
@@ -8767,7 +9139,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Attack Skill",
@@ -8839,7 +9211,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Moon Striker (Slash Damage). Ceres' ATK increases by 15%. Ceres grants herself 2 Cooling stacks at the start of battle. After using Type 7 Great Earthquake, increase own Action Gauge by 35% according to the number of targets attacked. This effect increases Action Gauge up to 175%. When using Type 1 Shingetsu or Typ",
+    "summary": "SSR Moon Striker (Slash Damage). Ceres' ATK increases by 15%. Ceres grants herself 2 Cooling stacks at the start of battle. After using Type 7 Great Earthquake, increase own Action Gauge by 35% according to the number of targets attacked. This effect increases Action Gauge up to 175%. When using Type 1 Shingetsu or Type 21 Kenfu, if the enemy is frozen, the damage will increase by 30%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -8912,6 +9284,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/07/211713_ymnwi.webp",
       "pvpTier": "A",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Attacker who can make a difference in the number of moves with Action Gauge & speed increase/decrease",
+        "Has high PvP interference performance by removing all buffs, lowering pre-emptive defense rate, and inhibiting actions. - Canceling all buffs is also useful in some stages other than PvP.",
+        "Special → Ultimate rapid attack power is especially powerful in PvP"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -8976,7 +9355,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "name": "Blitz Operation Plan",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/130202_yi4t7.webp",
         "rank": "C (no change to that extent)",
-        "effect": "At the start of battle, give yourself 2 cooling stacks.\nAfter using the 21st type sword style, there is a 100% chance to reduce the speed of the enemy for 2 turns.\nThis effect ignores Effect RES."
+        "effect": "At the start of battle, give yourself 2 Cooling stacks.\nAfter using the 21st type sword style, there is a 100% chance to reduce the speed of the enemy for 2 turns.\nThis effect ignores Effect RES."
       },
       "resonancePotentials": [
         {
@@ -9049,7 +9428,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "swimsuit-luna",
     "name": "Swimsuit Luna",
-    "title": "Voyager Relief Team · elemental damage",
+    "title": "Voyager Rescue Squad · Elemental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Defender",
@@ -9057,7 +9436,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Sun Defender (elemental damage). Luna's maximum HP increases by 15%. At the start of battle, give yourself 5 Ignition stacks and apply Waterpuff Sunscreen to all allies except yourself for 3 turns. After receiving an attack, if a Critical Hit occurs, give yourself one ignition stack. If a Critical Hit occurs after ",
+    "summary": "SSR Sun Defender (Elemental Damage). Luna's maximum HP increases by 15%. At the start of battle, give yourself 5 Ignition stacks and apply Waterpuff Sunscreen to all allies except yourself for 3 turns. After receiving an attack, if a Critical Hit occurs, give yourself one ignition stack. If a Critical Hit occurs after any of your allies other than yourself is attacked, there is a 100% chance to apply one Ignition stack to yourself.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 25109,
@@ -9123,11 +9502,24 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "水着ルナ",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/07/194829_9igtr.webp",
       "pvpTier": "SS",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Defender who protects allies from Crit DMG",
+        "Granting 50% Crit DMG resistance to the whole body effectively nullifies Crit DMG.",
+        "↳ The only way to apply it is at the start of the battle, so it will be painful if the battle drags on.",
+        "Counter with trigger skill when an ally is hit by a critical hit.",
+        "↳ It is also excellent to be able to support firepower with defense debuffs and focus on targets with provocations at the same time.",
+        "Powerful performance in PvP where criticality is the default",
+        "↳ If you use a strategy attack formation, battles won't drag on too long.",
+        "On the other hand, it is not stable in PvE where the enemy's chance of hitting is not that high.",
+        "↳ It's also painful to waste Crit DMG resistance by crossing weaves or sections."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -9252,7 +9644,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Miya Minato",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "March 18th",
         "height": "167cm",
         "origin": "unknown",
@@ -9265,7 +9657,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "swimsuit-smile",
     "name": "Swimsuit Smile",
-    "title": "Voyager Relief Team · elemental damage",
+    "title": "Voyager Rescue Squad · Elemental Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Assassin",
@@ -9273,7 +9665,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.9",
-    "summary": "SSR Star Assassin (elemental damage). Smile's ATK increases by 15%. At the start of battle, the enemy with the highest speed has a 100% chance of inflicting a water bomb for 3 turns. The effect at the start of battle occurs regardless of Effect RES, immunity, and hits. After rehydrating or using Summer Night and Firewo",
+    "summary": "SSR Star Assassin (Elemental Damage). Smile's ATK increases by 15%. At the start of battle, the enemy with the highest speed has a 100% chance of inflicting a water bomb for 3 turns. The effect at the start of battle occurs regardless of Effect RES, immunity, and hits. After rehydrating or using Summer Night and Fireworks, there is a 100% chance to inflict a water bomb on the enemy for 3 turns. When adding a new water bomb, the existing water bomb will be removed. When attacking, if the enemy is in a water bomb state, your Crit DMG increases by 20%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20480,
@@ -9341,11 +9733,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "水着スマイル",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/07/145100_2hp3y.webp",
       "pvpTier": "S",
+      "appMediaTier": "SSS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "Possesses CT0 trigger skill",
+        "Chase down an enemy with a water gun",
+        "Additional attack with trigger skill up to 3 times after using Ultimate Skill",
+        "↳ Skill effect does not activate only damage",
+        "Quite a lot of moves and excellent overall firepower"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -9409,7 +9810,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Happy Ending Summer",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/130220_goch1.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "At the start of battle, give yourself 3 sparklers (cannot be removed).\nWhen using water replenishment, if the enemy is in a water bomb state, the KuRing system will be additionally activated on the enemy in a water bomb state.\nAlso grants one sparkler (cannot be removed) to yourself.\nThe additionally activated KuRing system prioritizes and attacks enemies in water bomb state."
       },
       "resonancePotentials": [
@@ -9470,7 +9871,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yuzuki Tamukai",
-        "affiliation": "Voyager Relief Team",
+        "affiliation": "Voyager Rescue Squad",
         "birthday": "November 10th",
         "height": "148cm",
         "origin": "NOA",
@@ -9483,7 +9884,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "christel",
     "name": "Christel",
-    "title": "Morel Shipping Company · elemental damage",
+    "title": "Morel Shipping Company · Elemental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Ranger",
@@ -9491,7 +9892,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Sun Ranger (elemental damage). Christel's ATK increases by 15%. At the start of battle, give yourself 3 Ignition stacks. When any ally other than yourself attacks with a Special Skill or Ultimate Skill, give yourself 1 Ignition stack, and if the attacking ally has Sun Attribute, add 1 Ignition stack. When using Rev",
+    "summary": "SSR Sun Ranger (Elemental Damage). Christel's ATK increases by 15%. At the start of battle, give yourself 3 Ignition stacks. When any ally other than yourself attacks with a Special Skill or Ultimate Skill, give yourself 1 Ignition stack, and if the attacking ally has Sun Attribute, add 1 Ignition stack. When using Revenge and Punishment, if the enemy is weakened, there is a 100% chance to inflict chain damage proportional to own ATK and increase own Action Gauge by 30%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -9559,11 +9960,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "クリステル",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/08/203222_m2hvq.webp",
       "pvpTier": "A",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "High firepower with multiple action increases and light CT",
+        "Increases ignition with ally's special/ultimate & triggers when ignition reaches maximum",
+        "Valuable ignition support for solar allies",
+        "Special firepower mainly weakened by chain damage & combustion"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -9709,7 +10118,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.9",
-    "summary": "SSR Order Assassin (Slash Damage). Amora's ATK increases by 15%. When attacking, if you are not weakened, the damage increases by 30%. After being attacked, if you are weakened, give yourself 3 Insight stacks. At the start of the turn, if your Insight is at its maximum stack, consume all stacks and remove all of your o",
+    "summary": "SSR Order Assassin (Slash Damage). Amora's ATK increases by 15%. When attacking, if you are not weakened, the damage increases by 30%. After being attacked, if you are weakened, give yourself 3 Insight stacks. At the start of the turn, if your Insight is at its maximum stack, consume all stacks and remove all of your own debuffs. Additionally, grants ATK up for 2 turns and grants Night Blooming Flower (cannot be removed).",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20622,
@@ -9782,6 +10191,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/09/171707_rlvta.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SSS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "A high-speed attacker who fights using Special Skills that can be used frequently and Action Gauge increases.",
+        "When not weakened, the damage dealt increases, and you can remove the weakness yourself, so you can manage it alone.",
+        "↳ Weak against debuffs that cannot be removed",
+        "The unique buff \"Night Blooming Flower\" can be applied when the insight stack is at its maximum, but you must receive a debuff to accumulate the insight stack.",
+        "Although the compatibility with ↑ is delicate, the hit rate reduction itself is a very powerful effect.",
+        "↳ It is possible to indirectly support the durability of allies by invalidating critical points and debuffs.",
+        "CT6's Ultimate Skill requires additional turns and many moves to begin with, so you can experience it quickly.",
+        "I'm concerned about the quick turn consumption of buffs."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -9845,13 +10266,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "\"Night Starlight\" Earrings",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/165155_yrd62.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "When attacking, Crit Rate and Crit DMG increase by 50% if you are not in a weakened state.\nRecovers own HP after being attacked by a weakened enemy.\nThe amount of recovery increases in proportion to your ATK."
       },
       "resonancePotentials": [
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Sense of Attack",
@@ -9859,7 +10280,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -9919,7 +10340,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "professor-m",
     "name": "Professor M",
-    "title": "Lampadis · mental damage",
+    "title": "Lampadis · Mental Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Ranger",
@@ -9927,7 +10348,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.9",
-    "summary": "SSR Moon Ranger (mental damage). Professor M's ATK increases by 15%. After Professor M uses black-and-white logic, he grants Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of pincer attack, causing a pincer attack. When an ally other than yourself attacks, increase your ",
+    "summary": "SSR Moon Ranger (Mental Damage). Professor M's ATK increases by 15%. After Professor M uses black-and-white logic, he grants Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack. When an ally other than yourself attacks, increase your Action Gauge by 4% and give yourself 1 Cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack. When a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 20662,
@@ -9949,7 +10370,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "target": "Passive",
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
-        "exactDescription": "Professor M's ATK increases by 15%.\nAfter Professor M uses black-and-white logic, he grants Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of pincer attack, causing a pincer attack.\nWhen an ally other than yourself attacks, increase your Action Gauge by 4% and give yourself 1 Cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled.",
+        "exactDescription": "Professor M's ATK increases by 15%.\nAfter Professor M uses black-and-white logic, he grants Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack.\nWhen an ally other than yourself attacks, increase your Action Gauge by 4% and give yourself 1 Cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled.",
         "novaBurst": ""
       },
       {
@@ -9995,11 +10416,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "プロフェッサーM",
       "pool": "Standard",
-      "attackType": "mental damage",
+      "attackType": "Mental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/11/135932_70yqc.webp",
       "pvpTier": "SS",
+      "appMediaTier": "SSS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "Attacker with a large amount of Action Gauge increase",
+        "Possesses a passive that can induce Pincer Dual-Attacks from allies",
+        "↳ It is also excellent that the condition is to be an ally with the highest attack power.",
+        "It is easy to generate firepower with CT0 trigger skill.",
+        "↳ Earn Cooling with passive Pincer Dual-Attack and activate the trigger.",
+        "Ultimate Skill gives a debuff that increases damage dealt to enemies",
+        "↳ Indirect contribution to party firepower"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -10028,19 +10460,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "limitBreaks": [
         {
           "stage": "Base (LB0)",
-          "effect": "After Professor M uses Black and White Logic, he applies Sample Behavior Analysis for 1 turn to the ally with the highest ATK among the allies capable of pincer attack, causing a pincer attack.\nWhen attacking an ally other than yourself, increase your Action Gauge by 4% and give yourself 1 cooling stack with a 50% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
+          "effect": "After Professor M uses Black and White Logic, he applies Sample Behavior Analysis for 1 turn to the ally with the highest ATK among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack.\nWhen attacking an ally other than yourself, increase your Action Gauge by 4% and give yourself 1 cooling stack with a 50% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
         },
         {
           "stage": "Limit Break +1 (LB1)",
-          "effect": "Professor M's ATK increases by 5%.\nAfter Professor M uses black-and-white logic, he applies Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of pincer attack, causing a pincer attack.\nWhen attacking an ally other than yourself, increase your Action Gauge by 4% and give yourself 1 cooling stack with a 50% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
+          "effect": "Professor M's ATK increases by 5%.\nAfter Professor M uses black-and-white logic, he applies Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack.\nWhen attacking an ally other than yourself, increase your Action Gauge by 4% and give yourself 1 cooling stack with a 50% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
         },
         {
           "stage": "Limit Break +2 (LB2)",
-          "effect": "Professor M's ATK increases by 10%.\nAfter Professor M uses black-and-white logic, he applies Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of pincer attack, causing a pincer attack.\nWhen attacking an ally other than yourself, increase your Action Gauge by 4% and give yourself 1 cooling stack with a 75% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
+          "effect": "Professor M's ATK increases by 10%.\nAfter Professor M uses black-and-white logic, he applies Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack.\nWhen attacking an ally other than yourself, increase your Action Gauge by 4% and give yourself 1 cooling stack with a 75% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
         },
         {
           "stage": "Limit Break +3 (LB3)",
-          "effect": "Professor M's ATK increases by 15%.\nAfter Professor M uses black-and-white logic, he applies Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of pincer attack, causing a pincer attack.\nWhen attacking an ally other than yourself, increase your own Action Gauge by 4% and give yourself 1 cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
+          "effect": "Professor M's ATK increases by 15%.\nAfter Professor M uses black-and-white logic, he applies Sample Behavior Analysis for one turn to the ally with the highest ATK among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack.\nWhen attacking an ally other than yourself, increase your own Action Gauge by 4% and give yourself 1 cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled."
         }
       ],
       "skillPriority": [
@@ -10064,7 +10496,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "name": "Silver Candy Case",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/144511_b8apr.webp",
         "rank": "B (properly strengthened)",
-        "effect": "At the start of your turn, give yourself 2 cooling stacks.\nWhen used from evil to evil, own Toughness Damage increases by 1.\nIf an ally breaks the enemy's Toughness, activates the magic bullet archer on the enemy with the lowest current HP.\nThe effect after the enemy's Toughness break occurs only once every 3 turns."
+        "effect": "At the start of your turn, give yourself 2 Cooling stacks.\nWhen used from evil to evil, own Toughness Damage increases by 1.\nIf an ally breaks the enemy's Toughness, activates the magic bullet archer on the enemy with the lowest current HP.\nThe effect after the enemy's Toughness break occurs only once every 3 turns."
       },
       "resonancePotentials": [
         {
@@ -10137,7 +10569,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "gwen",
     "name": "Gwen",
-    "title": "Lambadis · impact damage",
+    "title": "Lambadis · Impact Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Striker",
@@ -10145,7 +10577,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SSR Star Striker (impact damage). Gwen's ATK increases by 15%. At the start of battle, give yourself standby status for 1 turn. When an ally other than yourself attacks, if you are on standby, apply one electric shock (cannot be removed) to yourself. If an ally's attack is a Special Skill and you are on scene standby, ",
+    "summary": "SSR Star Striker (Impact Damage). Gwen's ATK increases by 15%. At the start of battle, give yourself standby status for 1 turn. When an ally other than yourself attacks, if you are on standby, apply one electric shock (cannot be removed) to yourself. If an ally's attack is a Special Skill and you are on scene standby, apply one more electric shock (cannot be removed). After an ally attacks, if you have 5 or more stacks of Electric Shock (cannot be removed), a light that reveals the truth to the enemy! After activating , consume 5 stacks of Electric Shock (cannot be removed). The additional activation effect prioritizes attacking the last enemy you attacked. At the start of the turn of an ally or enemy other than yourself, if you are not in standby mode, increase your Action Gauge by 4% in proportion to the number of your Jump stacks.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21573,
@@ -10213,11 +10645,24 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "グウェン",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/03/124449_sw1v4.webp",
       "pvpTier": "SS",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Additional Special Skills can be activated by consuming 5 unique stacks.",
+        "Unique stack accumulates by 1 when an ally attacks, up to a maximum of 10 stacks.",
+        "↳ When attacking with a Special Skill, 1 will be added for a total of 2.",
+        "Compatible with characters who use Special Skills a lot(Excellent)",
+        "↳ Swimsuit Smile, Professor M, etc.",
+        "Possesses on-site standby, which has an effect similar to incubation.",
+        "↳ Preemptive Guard cannot be disabled, but it will not be canceled even if attacked.",
+        "Excellent as a covert agent in terms of performance and ease of handling.",
+        "↳ Recommended to accompany characters who want to concentrate their attacks, such as Fei."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -10355,7 +10800,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "maid-lydia",
     "name": "Maid Lydia",
-    "title": "Western Recapture Force · elemental damage",
+    "title": "Western Recapture Force · Elemental Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Caster",
@@ -10363,7 +10808,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "SS",
     "score": "9.2",
-    "summary": "SSR Moon Caster (elemental damage). Lydia's ATK increases by 15%. At the start of a battle, Lydia gives the ally with the highest ATK (excluding herself) a shift of responsibility (which cannot be removed). At the start of an ally's turn in the Responsibility Transfer (cannot be removed) state, give Lydia 2 reminders t",
+    "summary": "SSR Moon Caster (Elemental Damage). Lydia's ATK increases by 15%. At the start of a battle, Lydia gives the ally with the highest ATK (excluding herself) a shift of responsibility (which cannot be removed). At the start of an ally's turn in the Responsibility Transfer (cannot be removed) state, give Lydia 2 reminders to leave work (cannot be removed), and after that ally attacks on their turn, give Lydia up to 5 reminders to leave work (cannot be removed) for the number of targets attacked. After an ally with Responsibility Transfer (cannot be removed) attacks on their turn, if Lydia's Reminder to Leave (cannot be removed) stacks 5 or more, increase Lydia's Action Gauge by 30%. Action Gauge increase effect only occurs once per turn. When Lydia attacks, the damage dealt increases by 4% for each cooling stack on her own, and if there are 5 or more stacks of Reminder to Leave (cannot be removed), the damage dealt increases by an additional 30%. After Lydia's attack, if there are 5 or more stacks of reminders to leave work (cannot be removed), reduce reminders to leave work (cannot be removed) by 5.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 21080,
@@ -10431,11 +10876,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "メイドリディア",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/10/195259_5zmpw.webp",
       "pvpTier": "S",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "Grants a combined buff of \"15% attack buff and 15% Crit DMG\" to the single ally with the highest attack power.",
+        "↳ It is powerful because it cannot be canceled and is permanent.",
+        "When an ally who has been given the buff above acts, you will be given a \"reminder to leave work\".",
+        "Increase behavior gauge and strengthen skill content of special/Ultimate Skills with 5 or more stacks of reminder to leave work",
+        "Reminder for work is consumed when attacking with Basic Skills when there are 5 or more stacks",
+        "↳ Be careful of outbursts caused by Pincer Dual-Attacks such as EX."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -10499,7 +10954,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Obedience Choker",
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/124525_4s1ew.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "At the start of the turn, give 3 reminders to leave work (cannot be canceled).\nWhen attacking, if you have 5 or more stacks of reminders to leave work (cannot be removed), don't come to the enemy with the highest maximum HP after the attack! Activates and restores all skill cooldowns for one turn."
       },
       "resonancePotentials": [
@@ -10509,7 +10964,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Attack Skill",
@@ -10581,7 +11036,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SSR Sun Supporter (Slash Damage). Ceres's maximum HP increases by 15%. After Ceres uses a skill on her turn, or at the start of an ally's turn other than herself, she will give herself 1 stack of Dust Capture (cannot be removed). At the start of an ally's turn other than yourself, if that ally has a weakening effect, g",
+    "summary": "SSR Sun Supporter (Slash Damage). Ceres's maximum HP increases by 15%. After Ceres uses a skill on her turn, or at the start of an ally's turn other than herself, she will give herself 1 stack of Dust Capture (cannot be removed). At the start of an ally's turn other than yourself, if that ally has a weakening effect, give yourself 1 Ignition stack. After receiving a general attack, increase your Action Gauge by 30% and grant 1 Ignition stack. When using a skill on your turn, if Dust Trap (cannot be removed) is 5 or more stacks, activates hospitality cleaning and reduces Dust Trap (cannot be removed) by 5 stacks. The additional activation effect does not grant dust capture (cannot be removed) or ignition stack to itself.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
       "hp": 24753,
@@ -10654,6 +11109,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/10/111227_60ydj.webp",
       "pvpTier": "S",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Supporter excellent for overall recovery",
+        "2 types of total recovery, of which Special Skills can be activated additionally.",
+        "↳ Contributes to recovery even outside of your turn by giving regeneration",
+        "A supporter's first attack buff can be applied to all allies.",
+        "It is also possible to remove all weaknesses",
+        "↳ Ultimate is 1 unconditional/Special is 1 with limited effect when activated additionally",
+        "The number of moves made by characters other than yourself is very important.",
+        "↳ Compatible with characters who have a lot of work such as Professor M(Excellent)",
+        "Single recovery performance is up to that point.",
+        "↳ When teaming up with a defender, it is best to team up with another single recovery person."
+      ],
       "journeyStats": {
         "power": 100,
         "vitality": 180,
@@ -10791,7 +11260,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "vesta",
     "name": "Vesta",
-    "title": "Western Recapture Force · impact damage",
+    "title": "Western Recapture Force · Impact Damage",
     "rarity": "SR",
     "element": "Star",
     "role": "Defender",
@@ -10799,7 +11268,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SR Star Defender (impact damage). Vesta's maximum HP increases by 15%. After Vesta is attacked, if her Jump stack is at maximum, she will create a barrier for 2 turns and erase all Jump stacks. After receiving a general attack, 40% activates \"Repel\" on a random enemy. The additional activation effect only occurs once p",
+    "summary": "SR Star Defender (Impact Damage). Vesta's maximum HP increases by 15%. After Vesta is attacked, if her Jump stack is at maximum, she will create a barrier for 2 turns and erase all Jump stacks. After receiving a general attack, 40% activates \"Repel\" on a random enemy. The additional activation effect only occurs once per turn, and it occurs even when Toughness is broken.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -10910,11 +11379,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ベスタ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_WEST_LANCER_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Defender with excellent barrier effect",
+        "There is a chance that a Special Skill will be activated when hit by an overall attack.",
+        "↳ Activation has great benefits by increasing the Action Gauge and giving a barrier to allies.",
+        "Increased Action Gauge makes it more troublesome",
+        "↳ Increased chances of receiving jumping stacks",
+        "Supports allies' durability with attack debuff"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -11019,7 +11498,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "anna",
     "name": "Anna",
-    "title": "NOA Town Guard · impact damage",
+    "title": "NOA Town Guard · Impact Damage",
     "rarity": "SR",
     "element": "Sun",
     "role": "Defender",
@@ -11027,7 +11506,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "S",
     "score": "9.2",
-    "summary": "SR Sun Defender (impact damage). Anna's maximum HP increases by 15%. After Anna uses \"Stop Resistance!\", increases the Action Gauge of a random ally other than herself by 15%. After receiving a single attack, give yourself 1 Ignition stack. At the start of your turn, if your Ignition stack is at its maximum, erase all ",
+    "summary": "SR Sun Defender (Impact Damage). Anna's maximum HP increases by 15%. After Anna uses \"Stop Resistance!\", increases the Action Gauge of a random ally other than herself by 15%. After receiving a single attack, give yourself 1 Ignition stack. At the start of your turn, if your Ignition stack is at its maximum, erase all Ignition stacks and generate an enhanced counterattack after attacking.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -11139,11 +11618,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "アンナ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_OFFICER_POLICE_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "S",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "A durable defender who can recover his own HP.",
+        "All attack skills depend on attack power, so it is difficult to generate firepower.",
+        "↳ It's different if your build focuses on firepower.",
+        "Random Action Gauge increases when using Basic Skills",
+        "Counterattack is possible when the ignition stack is at maximum",
+        "↳ Support your allies by increasing the frequency of Basic Skill use",
+        "Have an extra turn with Nova Burst"
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -11248,7 +11738,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "marcille",
     "name": "Marcille",
-    "title": "Petra Union · impact damage",
+    "title": "Petra Union · Impact Damage",
     "rarity": "SR",
     "element": "Sun",
     "role": "Assassin",
@@ -11256,7 +11746,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SR Sun Assassin (impact damage). Marcille's Crit Rate increases by 15%. When Marcille starts a battle or when an ally breaks an enemy's Toughness, she will generate two Broken Nuts on herself. At the start of the turn, if your own Broken Nuts are at the maximum stack, generate Hexa Nuts on yourself and release all Brok",
+    "summary": "SR Sun Assassin (Impact Damage). Marcille's Crit Rate increases by 15%. When Marcille starts a battle or when an ally breaks an enemy's Toughness, she will generate two Broken Nuts on herself. At the start of the turn, if your own Broken Nuts are at the maximum stack, generate Hexa Nuts on yourself and release all Broken Nuts. When attacking, Crit DMG increases by 3% in proportion to the Ignition stacks attached to yourself, up to a maximum of 5.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -11368,11 +11858,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "マルシル",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_CONSTRUCT_WRENCH_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "An attacker who collects unique buff nuts to generate firepower.",
+        "Increases firepower during strength break",
+        "↳ You need to attack during the break, so be careful when breaking.",
+        "A character who has multiple critical hit damage ups and whose Crit Rate is extremely important.",
+        "You can increase the number of moves by increasing the Action Gauge multiple times.",
+        "Nova Burst has rare Special Skill CT reduction"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -11409,7 +11909,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonancePotentials": [
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Sense of Attack",
@@ -11417,7 +11917,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
       "gifts": [
@@ -11477,7 +11977,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "bella",
     "name": "Bella",
-    "title": "Delivery Shop Association · elemental damage",
+    "title": "Delivery Shop Association · Elemental Damage",
     "rarity": "SR",
     "element": "Moon",
     "role": "Supporter",
@@ -11485,7 +11985,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SR Moon Supporter (elemental damage). Bella's maximum HP increases by 15%. After Bella is attacked, if her Cooling is at maximum stack, increases her Action Gauge by 15%. Ultimate [A Step Towards a Dream]: Bella completes a special package delivery for an ally. Recovers the HP of all allies, causes 1 Express Delivery f",
+    "summary": "SR Moon Supporter (Elemental Damage). Bella's maximum HP increases by 15%. After Bella is attacked, if her Cooling is at maximum stack, increases her Action Gauge by 15%.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -11597,11 +12097,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ベラ",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51987-20251113062435.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_LPU_POST_img.webp",
       "pvpTier": "B",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "SR's only supporter",
+        "Special Skill to recover single target + remove 2 debuffs, Ultimate Skill to recover all",
+        "Buffs are also given to allies with the random activation effect of the Ultimate Skill.",
+        "Increases recovery amount for moon attribute allies",
+        "As the Action Gauge increases, the number of steps increases → You can expect a higher overall amount of recovery."
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 150,
@@ -11633,7 +12142,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "name": "Delivery Man's Trumpet",
         "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/JOURNEY_ITEM_DELIVERY_TRUMPET.webp",
         "rank": "B (properly strengthened)",
-        "effect": "After using the skill, if the number of debuffs you have is 2 or less, cause 100% chain damage proportional to your maximum HP to all enemies.\nAfter being attacked, give yourself 1 cooling stack and increase your Action Gauge by 15%.\nAt the start of the turn, if your cooling is at maximum stack, there is a 100% chance to reduce the speed of the enemy in front of you for 3 turns.\nThe effect at the start of the turn ignores Effect RES and only occurs once during the battle."
+        "effect": "After using the skill, if the number of debuffs you have is 2 or less, cause 100% chain damage proportional to your maximum HP to all enemies.\nAfter being attacked, give yourself 1 Cooling stack and increase your Action Gauge by 15%.\nAt the start of the turn, if your Cooling is at maximum stack, there is a 100% chance to reduce the speed of the enemy in front of you for 3 turns.\nThe effect at the start of the turn ignores Effect RES and only occurs once during the battle."
       },
       "resonancePotentials": [
         {
@@ -11706,7 +12215,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "naru",
     "name": "Naru",
-    "title": "Orbital Search Team · elemental damage",
+    "title": "Orbital Search Team · Elemental Damage",
     "rarity": "SR",
     "element": "Star",
     "role": "Ranger",
@@ -11714,7 +12223,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SR Star Ranger (elemental damage). Naru's ATK increases by 15%. When Naru uses \"Look here!\", the damage increases by 3% depending on the number of enemy weakenings, up to a maximum of 5. When using \"Look here!\", if your Jump is at the maximum stack, after clearing all stacks, \"Look here!\" will be activated again. The a",
+    "summary": "SR Star Ranger (Elemental Damage). Naru's ATK increases by 15%. When Naru uses \"Look here!\", the damage increases by 3% depending on the number of enemy weakenings, up to a maximum of 5. When using \"Look here!\", if your Jump is at the maximum stack, after clearing all stacks, \"Look here!\" will be activated again. The additional activated effect only occurs once per your turn.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -11826,11 +12335,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "ナル",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_NOA_OBSERVER_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Increase own firepower by applying debuffs",
+        "↳ You can give up to two by yourself.",
+        "Activate additional Basic Skills when jumping stack is at maximum",
+        "Special Skill gives jumping stack according to the number of debuffs applied.",
+        "Have an extra turn with Nova Burst"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -11943,7 +12461,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SR Moon Assassin (Slash Damage). Claire's ATK increases by 15%. When Claire attacks, if the enemy's HP is 50% or higher, it will penetrate the enemy's defense by 15%. When attacking, if your Cooling is at maximum stack, after clearing all stacks, increase your Action Gauge by 30%. Occurs only once in your turn. Ultimat",
+    "summary": "SR Moon Assassin (Slash Damage). Claire's ATK increases by 15%. When Claire attacks, if the enemy's HP is 50% or higher, it will penetrate the enemy's defense by 15%. When attacking, if your Cooling is at maximum stack, after clearing all stacks, increase your Action Gauge by 30%. Occurs only once in your turn.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -12060,6 +12578,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAID_SPEAR_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "Capable of supporting a wide range of gimmicks such as defense penetration, hiding, and ignoring pre-emptive defense.",
+        "You can also earn more moves with multiple Action Gauge increases and speed buffs.",
+        "↳ Cooling stack needs support from others",
+        "Very easy to use with no complicated conditions or quirks"
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -12164,7 +12690,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "scarlet",
     "name": "Scarlet",
-    "title": "Candle Square · elemental damage",
+    "title": "Candle Square · Elemental Damage",
     "rarity": "SR",
     "element": "Sun",
     "role": "Striker",
@@ -12172,7 +12698,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "A",
     "score": "8.6",
-    "summary": "SR Sun Striker (elemental damage). Scarlet's maximum HP increases by 15%. After Scarlet uses \"I'll cut it!\", it inflicts Burn on the enemy at 100% for 2 turns. When attacking, if your Ignition is at maximum stack, after clearing all stacks, activate \"Go boldly!\" on the enemy. Occurs only once in your turn. Ultimate [Ca",
+    "summary": "SR Sun Striker (Elemental Damage). Scarlet's maximum HP increases by 15%. After Scarlet uses \"I'll cut it!\", it inflicts Burn on the enemy at 100% for 2 turns. When attacking, if your Ignition is at maximum stack, after clearing all stacks, activate \"Go boldly!\" on the enemy. Occurs only once in your turn.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -12284,11 +12810,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "スカーレット",
       "pool": "Standard",
-      "attackType": "elemental damage",
+      "attackType": "Elemental Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41494-20251114140221.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAID_SCISSORS_img.webp",
       "pvpTier": "A",
+      "appMediaTier": "A",
+      "appMediaRerollTier": "A",
+      "evalBullets": [
+        "A powerful Special Skill that increases firepower according to the number of enemies inflicted with Burning.",
+        "↳ It's great that you can give up to 3 Ultimate Skills and complete them yourself.",
+        "When the ignition stack is at its maximum, you can further attack by activating additional Special Skills.",
+        "Having overlapping attack buffs is also great.",
+        "The CT of the Ultimate Skill is heavy, and it takes some ingenuity to continuously generate firepower."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -12393,7 +12928,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "clarissa",
     "name": "Clarissa",
-    "title": "Canopic Guard · impact damage",
+    "title": "Canopic Guard · Impact Damage",
     "rarity": "SR",
     "element": "Star",
     "role": "Ranger",
@@ -12401,7 +12936,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "9.6",
-    "summary": "SR Star Ranger (impact damage). Clarissa's Crit Rate increases by 15%. At the start of Clarissa's turn, give herself 1 Jump stack at 100%. The applied effect is added depending on the number of times your own Jump stacks. After being attacked, erase all of your Jump stacks. 2 stacks: Increases damage by 15% when attack",
+    "summary": "SR Star Ranger (Impact Damage). Clarissa's Crit Rate increases by 15%. At the start of Clarissa's turn, give herself 1 Jump stack at 100%. The applied effect is added depending on the number of times your own Jump stacks. After being attacked, erase all of your Jump stacks. 2 stacks: Increases damage by 15% when attacking. 3 stacks: Increases accuracy by 50% when attacking. 4 stacks: After attacking, increase own Action Gauge by 15%. 5 stacks: After attacking, reduce enemy's Action Gauge by 15% at 100%.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
       "hp": 21500,
@@ -12513,11 +13048,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "staticData": {
       "nameJp": "クラリッサ",
       "pool": "Standard",
-      "attackType": "impact damage",
+      "attackType": "Impact Damage",
       "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-27624-20251113062238.webp",
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAGICIAN_SNIPER_img.webp",
       "pvpTier": "S",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "Gives various buffs to itself depending on the number of jumping stacks",
+        "The firepower against the moon is among the highest among all.",
+        "There are many effects that occur at the time of winning, and the winning rate is very important.",
+        "Speed buff and Action Gauge increase for self, speed debuff and Action Gauge decrease for opponent",
+        "↳ Not only does it increase your own workload, but it also indirectly supports your party's actions."
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -12548,7 +13092,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "curio": {
         "name": "Last Shot",
         "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/JOURNEY_ITEM_LAST_BULLET.webp",
-        "rank": "A (easy to clear)",
+        "rank": "A (Easy Clear)",
         "effect": "At the start of the turn, generates precision aiming for yourself.\nThis is how you shoot a gun. Or shoot as you feel. After using it, move at the enemy a little further and activate it.\nOccurs only once in your turn.\nPrecision Aiming: Increases Crit Rate by 100% and recovers HP equal to 50% of damage taken. It will be canceled after the attack."
       },
       "resonancePotentials": [
@@ -12558,7 +13102,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "name": "Sense of Insight",
-          "effect": "Crit rate increases by 5%."
+          "effect": "Crit Rate increases by 5%."
         },
         {
           "name": "Skill of Destruction",
@@ -12674,7 +13218,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of the turn, Nova Force increases by 2. Occurs only once every 2 turns."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "The appeal is that you can obtain Nova Force with Special Potential.",
+        "↳ Initial Nova Burst is easier to activate",
+        "I also enjoy events where you can earn potential points."
+      ]
     }
   },
   {
@@ -12712,7 +13261,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Speed increases by 8."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Boost your speed with Special Potential",
+        "↳ Easy to combine with Universal Class Bonus (Excellent)",
+        "Possesses stamina recovery event"
+      ]
     }
   },
   {
@@ -12721,14 +13275,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Night View Through Glass",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Protection · Rescuer Assistance",
+    "subType": "Protection · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "8.0",
     "effectSummary": "[Generous Response] When attacked by an enemy, if you are in Monastir's Discipline state, you will counterattack at 25%, and if you are attacked by an enemy in Taunt state, you will counterattack at 100%.",
     "stats": {
       "Tag": "Protection",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Carmen"
     },
@@ -12743,14 +13297,20 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Carmen",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Generous Response",
           "effect": "When attacked by an enemy, if you are in Monastir's Discipline state, you will counterattack at 25%, and if you are attacked by an enemy in Taunt state, you will counterattack at 100%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Arcana with Unique Potential",
+        "↳ Carmen exclusive",
+        "Possess multiple condition recovery events",
+        "↳ Great for making it easier to maintain condition"
+      ]
     }
   },
   {
@@ -12790,7 +13350,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses Special Potential to increase supporter's recovery amount",
+        "↳ I’m also happy that it has a physical strength tag that goes well with supporters.",
+        "Please note that breaking the limit is required to release the unique effect."
+      ]
     }
   },
   {
@@ -12832,7 +13397,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "ATK increases by 8%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Excellent arcana that is compatible with all attackers.",
+        "Multiple offensive potentials can be acquired.",
+        "↳ It is easy to extend the attack considerably"
+      ]
     }
   },
   {
@@ -12849,7 +13419,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "stats": {
       "Tag": "Power",
       "Class Bonus": "Caster Bonus",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Dana"
     },
     "bestHolderSlugs": [
@@ -12864,7 +13434,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
       "characterName": "Dana",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAGICIAN_DRUID_icon.webp",
-      "statBonusType": "Crit Rate Subsidy",
+      "statBonusType": "Crit Rate Bonus",
       "classBonus": "Caster Bonus",
       "potentials": [
         {
@@ -12872,7 +13442,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of the first battle, increase Crit Rate for 2 turns."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses power tag, Crit Rate support and excellent set",
+        "Possesses a criticality buff that activates at the start of the turn",
+        "↳ It's a shame that it's only for casters."
+      ]
     }
   },
   {
@@ -12912,7 +13487,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of the turn, own Crit DMG increases by 10%. Repeats up to 3 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses power tag, Crit DMG support and excellent set",
+        "It's a shame that it's only for casters.",
+        "Please note that breaking the limit is required to release the unique effect."
+      ]
     }
   },
   {
@@ -12954,7 +13534,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Defense power increases by 8% and Effect RES increases by 4%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Patience, defense support and defense-specific abilities",
+        "↳ Currently, there are few characters who want to prioritize defense power.",
+        "Possess an event that can recover stamina"
+      ]
     }
   },
   {
@@ -12996,7 +13581,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "When attacked, if your HP is below 25%, recover your HP. The amount of recovery increases in proportion to your maximum HP. Occurs only once every 2 turns."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses Special Potential that can recover physical strength",
+        "↳ Excellent as insurance in case the durability is not enough"
+      ]
     }
   },
   {
@@ -13038,7 +13627,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum Toughness value increases by 2."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses Special Potential to increase Toughness",
+        "↳ Recommended to attach to vanguard characters"
+      ]
     }
   },
   {
@@ -13051,11 +13644,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_BOMB_SSR_01_icon_arcana.webp",
     "tier": "SS",
     "score": "9.7",
-    "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [Sense of Attack] ATK increases by 5%. / [Stigmata of Insight] Crit rate increases by 18%.",
+    "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [Sense of Attack] ATK increases by 5%. / [Stigmata of Insight] Crit Rate increases by 18%.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "Universal Bonus",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Petra"
     },
     "bestHolderSlugs": [
@@ -13068,7 +13661,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
       "characterName": "Petra",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_BOMB_icon.webp",
-      "statBonusType": "Crit Rate Subsidy",
+      "statBonusType": "Crit Rate Bonus",
       "classBonus": "Universal Bonus",
       "potentials": [
         {
@@ -13081,10 +13674,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Stigmata of Insight",
-          "effect": "Crit rate increases by 18%."
+          "effect": "Crit Rate increases by 18%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Excellent critical hit rate buff for Universal Class Bonusance",
+        "Compatible with all attackers (Excellent)",
+        "It's also nice to be able to increase your attack power with attack potential."
+      ]
     }
   },
   {
@@ -13122,7 +13720,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "ATK increases by 6% and Crit Rate increases by 6%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Strength tag, attack power support and attack power-specific performance",
+        "↳ Compatible with all attackers with Universal Class Bonus (Excellent)",
+        "I'm glad that the Special Potential can increase not only attack power but also conversion rate.",
+        "↳ Therefore, each magnification is modest.",
+        "Own multiple stamina recovery events",
+        "↳ You can train more often"
+      ]
     }
   },
   {
@@ -13131,14 +13737,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Tempura Master",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Protection · Rescuer Assistance",
+    "subType": "Protection · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_GADGET_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "8.0",
     "effectSummary": "[Sense of Protection] Effect RES increases by 10%. / [Protection Skills] Effect RES increases by 4%. / [Tempura Party] After using the skill, if your HP is over 50%, increase your Action Gauge by 20%.",
     "stats": {
       "Tag": "Protection",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Tanya"
     },
@@ -13153,7 +13759,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Tanya",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_GADGET_icon.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Sense of Protection",
@@ -13168,7 +13774,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "After using the skill, if your HP is over 50%, increase your Action Gauge by 20%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Unique Potential can be acquired",
+        "↳ Exclusive to Tanya",
+        "You can acquire multiple protection potentials (Excellent)"
+      ]
     }
   },
   {
@@ -13212,7 +13823,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "After receiving an attack, if your HP is below 50%, generate a 3 turn token for yourself. Occurs only once during battle.\nProof: Increases damage dealt by 10% and reduces damage received by 10%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Special Potential to increase attack power when physical strength is low",
+        "↳ There are points to improve HP adjustment.",
+        "Please note that breaking the limit is required to release the unique effect."
+      ]
     }
   },
   {
@@ -13252,7 +13868,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of your turn, your speed increases by 10. Can be stacked up to 3 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "It is excellent to be able to add speed, which is often desired for assassins.",
+        "Please note that breaking the limit is required to release the unique effect.",
+        "There are many events that reduce stamina.",
+        "↳ There are a lot of statuses you can get as a result."
+      ]
     }
   },
   {
@@ -13296,7 +13918,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum Toughness value increases by 2. When attacked, Crit DMG resistance increases by 20% if you are not in Toughness break state."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses a Special Potential that increases the defender's Toughness.",
+        "Please note that breaking the limit is required to release the unique effect.",
+        "Stamina may increase or decrease depending on the event option, so please check"
+      ]
     }
   },
   {
@@ -13334,7 +13961,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum Toughness value increases by 2."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses a Special Potential that increases Toughness with shared aids",
+        "↳ Basically, team up with a defender (Excellent)",
+        "Please note that breaking the limit is required to release the unique effect."
+      ]
     }
   },
   {
@@ -13374,7 +14006,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses Special Potential to increase supporter's HP recovery amount",
+        "Since there are many characters whose recovery amount depends on their maximum HP, the physical strength tag is also excellent."
+      ]
     }
   },
   {
@@ -13387,11 +14023,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NOA_OBSERVER_SSR_01_icon_arcana.webp",
     "tier": "S",
     "score": "9.2",
-    "effectSummary": "[Stigmata of Insight] Crit rate increases by 18%.",
+    "effectSummary": "[Stigmata of Insight] Crit Rate increases by 18%.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "Universal Bonus",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Naru"
     },
     "bestHolderSlugs": [
@@ -13404,15 +14040,21 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
       "characterName": "Naru",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NOA_OBSERVER_icon.webp",
-      "statBonusType": "Crit Rate Subsidy",
+      "statBonusType": "Crit Rate Bonus",
       "classBonus": "Universal Bonus",
       "potentials": [
         {
           "name": "Stigmata of Insight",
-          "effect": "Crit rate increases by 18%."
+          "effect": "Crit Rate increases by 18%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Compatible with all attackers due to the Crit Rate buff of Universal Class Bonus (Excellent)",
+        "Please note that breaking the limit is required to release the unique effect.",
+        "Condition recovery in events",
+        "Obtained with Apocalypse Support Pass"
+      ]
     }
   },
   {
@@ -13421,14 +14063,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Bold and Amazing Bunny Girl",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Power · Rescuer Assistance",
+    "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105829_y0pco.webp",
     "tier": "B",
     "score": "8.0",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Get Ready!] When using a skill, Effect Hit increases by 10% and damage dealt increases by 5% depending on the number of strengthening effects you have. This effect applies up to 5 layers. / [Offensive Talent] ATK increases by 3%.",
     "stats": {
       "Tag": "Power",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Effect Hit Auxiliary",
       "Featured Unit": "Scarlet"
     },
@@ -13443,7 +14085,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Scarlet",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SCISSORS_icon.webp",
       "statBonusType": "Effect Hit Auxiliary",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Attack Skill",
@@ -13458,7 +14100,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "ATK increases by 3%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Arcana with performance that makes it easy to increase overall power",
+        "You can acquire multiple offensive potentials while assisting in hitting.",
+        "Possesses many events that can restore stamina",
+        "There are advantages and disadvantages as there are disadvantages as well.",
+        "You can acquire Unique Potentials exclusive to Scarlet."
+      ]
     }
   },
   {
@@ -13504,7 +14153,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum HP increases by 3%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Performance specialized in HP like a physical strength tag",
+        "↳ Acquire multiple HP-related potentials",
+        "Stamina can be recovered during the event",
+        "Excellent general-purpose potential that can increase your conversion rate and increase your durability."
+      ]
     }
   },
   {
@@ -13546,7 +14201,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "After using a Special Skill, your own Special Skill damage increases by 5%. Repeats up to 5 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Versatility with shared use of power tags(Excellent)",
+        "Increase damage of Special Skills with Special Potential",
+        "↳ Recommended for characters who fight mainly with Special Skills",
+        "Possesses multiple excellent effects such as stamina recovery and condition increase."
+      ]
     }
   },
   {
@@ -13588,7 +14249,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum HP increases by 8%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Specializes in strengthening HP status by sharing physical strength tags",
+        "↳ Basically recommended for supporters and defenders",
+        "There are no offensive status enhancements, including potential, so it is not suitable for developing attackers."
+      ]
     }
   },
   {
@@ -13605,7 +14271,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "Ranger Bonus",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Bell Lease"
     },
     "bestHolderSlugs": [
@@ -13620,7 +14286,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
       "characterName": "Bell Lease",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200314_a0eqx.webp",
-      "statBonusType": "Crit Rate Subsidy",
+      "statBonusType": "Crit Rate Bonus",
       "classBonus": "Ranger Bonus",
       "potentials": [
         {
@@ -13632,7 +14298,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "When using Basic Skill, your Crit Rate increases by 5%. Can be stacked up to 5 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses a Special Potential that increases the Ranger's success rate.",
+        "↳ Maximum Crit Rate can be increased by 15%",
+        "Competitor has a conversion rate of 18% with Universal Class Bonus.",
+        "↳ It is not an absolutely essential arcana.",
+        "For characters other than Rangers, stamina recovery of 20 is a very useful effect."
+      ]
     }
   },
   {
@@ -13676,7 +14349,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "After attacking with Basic Skill, if the enemy's Toughness is broken, it will cause chain damage to all enemies proportional to your own ATK at 100%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses Special Potential that allows additional attacks",
+        "↳ Limited to assassins, conditions are heavy such as the need to reduce the enemy's Toughness",
+        "It's quite painful not being able to use the physical strength tag Charles."
+      ]
     }
   },
   {
@@ -13689,7 +14367,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Power training bonuses and Universal Bonus amplification during Journey runs.",
+    "effectSummary": "Grants Power training bonuses and Universal Bonus amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "Universal Bonus",
@@ -13722,6 +14400,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "label": "rugged destruction",
           "value": "Crit DMG increases by 12% and maximum HP increases by 4%."
         }
+      ],
+      "evalBullets": [
+        "Possesses Special Potential to increase Crit DMG",
+        "It is also very good that it is a common tag that can be added to any organization.",
+        "Combined with maximum HP increase",
+        "↳ Compatible with supporters who want to show off their firepower, such as Emily and Dress Acela.",
+        "The training performance “Acquire additional potential points 5” is quite excellent."
       ]
     }
   },
@@ -13731,14 +14416,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "A Sense of Responsibility Piled Up with Piles of Documents",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Rescuer Assistance",
+    "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201813_3r618.webp",
     "tier": "A",
     "score": "8.6",
     "effectSummary": "[Sense of Speed] Increases speed by 5. / [Disaster Response Protocols] The maximum Toughness value increases by 1.\nWhen a Critical Hit occurs with Special Skill or Ultimate Skill, recover HP equal to 20% of the damage.",
     "stats": {
       "Tag": "Vitality",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Roberta"
     },
@@ -13753,7 +14438,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Roberta",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201812_s56oa.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Sense of Speed",
@@ -13764,7 +14449,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "The maximum Toughness value increases by 1.\nWhen a Critical Hit occurs with Special Skill or Ultimate Skill, recover HP equal to 20% of the damage."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Health tag Savior-Exclusive Bonus",
+        "↳ Versatility is ×",
+        "Special Skill Possesses Special Potential that can recover HP when critical.",
+        "The drawback is that the competitor's physical strength arcana is excellent.",
+        "↳ A Knight's Vow, the Perfect Bunny Girl, etc."
+      ]
     }
   },
   {
@@ -13773,14 +14465,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Veteran Mercenary",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Rescuer Assistance",
+    "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202111_kmw0s.webp",
     "tier": "B",
     "score": "8.0",
     "effectSummary": "[Skill of Destruction] Crit DMG increases by 4%. / [Catalyst] If a Critical Hit occurs after an attack, there is a 100% chance that chain damage will be inflicted on all enemies proportional to your own ATK.\nOccurs only once in your turn.",
     "stats": {
       "Tag": "Vitality",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Yanagi Mina"
     },
@@ -13795,7 +14487,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Yanagi Mina",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/130558_c8vsj.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Skill of Destruction",
@@ -13806,7 +14498,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "If a Critical Hit occurs after an attack, there is a 100% chance that chain damage will be inflicted on all enemies proportional to your own ATK.\nOccurs only once in your turn."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Supporting Yanagi Mina by assisting rescuers",
+        "Since it deals chain damage to all enemies, the operation will not change dramatically.",
+        "↳ Not an essential arcana"
+      ]
     }
   },
   {
@@ -13819,7 +14516,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202110_u9dqe.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "[Sense of Defense] Defense power increases by 5%. / [Shield of Silence] Preemptive defense occurrence probability increases by 20%.",
+    "effectSummary": "[Sense of Defense] Defense power increases by 5%. / [Shield of Silence] Preemptive Guard occurrence probability increases by 20%.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "Defender Bonus",
@@ -13847,10 +14544,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Shield of Silence",
-          "effect": "Preemptive defense occurrence probability increases by 20%."
+          "effect": "Preemptive Guard occurrence probability increases by 20%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses Patience Tag Defender Aid",
+        "Special Potential that enables pre-emptive defense",
+        "↳ Excellent effect in PvP"
+      ]
     }
   },
   {
@@ -13863,7 +14565,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
     "tier": "S",
     "score": "9.2",
-    "effectSummary": "[Talent of Insight] Crit rate increases by 4.5%. / [The Sound of Blood] After a critical hit occurs with a general attack, your own ATK increases by 3% depending on the number of targets hit. Can be stacked up to 5 times.",
+    "effectSummary": "[Talent of Insight] Crit Rate increases by 4.5%. / [The Sound of Blood] After a critical hit occurs with a general attack, your own ATK increases by 3% depending on the number of targets hit. Can be stacked up to 5 times.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "Ranger Bonus",
@@ -13887,14 +14589,21 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [
         {
           "name": "Talent of Insight",
-          "effect": "Crit rate increases by 4.5%."
+          "effect": "Crit Rate increases by 4.5%."
         },
         {
           "name": "The Sound of Blood",
           "effect": "After a critical hit occurs with a general attack, your own ATK increases by 3% depending on the number of targets hit. Can be stacked up to 5 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Although it is a power tag, it is a ranger aid and its versatility is low.",
+        "↳ One reason is that the Special Potential is an all-attack condition.",
+        "Gain irreplaceable insight talent",
+        "↳ I would like to secure it as a blessing staff.",
+        "The training performance “Acquire additional potential points 5” is quite excellent."
+      ]
     }
   },
   {
@@ -13907,7 +14616,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/182813_7ue9j.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Vitality training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
       "Class Bonus": "-",
@@ -13936,6 +14645,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "label": "It doesn't matter! Obtain +5 stamina and +5 potential points!",
           "value": "Stamina +5\nPotential points +5"
         }
+      ],
+      "evalBullets": [
+        "Anyone can strengthen it up to level 50 by distribution.",
+        "Special Potential cannot be acquired even though it is SSR.",
+        "↳ The event content is also quite modest.",
+        "The training performance is at the SSR level, so use it if you want training performance.",
+        "↳ Recruitment priority is low because Special Potential is high"
       ]
     }
   },
@@ -13982,7 +14698,18 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum HP increases by 3%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Patience tag sharing aid",
+        "Possesses the second stigmata of speed",
+        "↳ Please note that it cannot be taken at the same time as physical strength Charles.",
+        "Life talent and attack talent can be acquired through events.",
+        "↳ Very good for blessings",
+        "Possesses additional strength stat and additional stamina stat",
+        "↳ Possibility of achieving 3 stages at the same time with patience development",
+        "The overall effect of the event is excellent.",
+        "↳ Condition +2, stamina recovery, etc."
+      ]
     }
   },
   {
@@ -13991,15 +14718,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Today's Step",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Rescuer Assistance",
+    "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173815_r9imk.webp",
     "tier": "A",
     "score": "8.6",
     "effectSummary": "[Sense of Destruction] Crit DMG increases by 10%. / [Solitary Seeker] The maximum Toughness value increases by 1.\nAfter receiving an attack, if evasion occurs, inflicts Tenma's Mystery on yourself for 1 turn.\nMystery of Heaven: Crit Rate 100% up",
     "stats": {
       "Tag": "Vitality",
-      "Class Bonus": "Rescuer Assistance",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Class Bonus": "Savior-Exclusive Bonus",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Fei"
     },
     "bestHolderSlugs": [
@@ -14012,8 +14739,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Fei",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105026_1pwrt.webp",
-      "statBonusType": "Crit Rate Subsidy",
-      "classBonus": "Rescuer Assistance",
+      "statBonusType": "Crit Rate Bonus",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Sense of Destruction",
@@ -14024,7 +14751,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "The maximum Toughness value increases by 1.\nAfter receiving an attack, if evasion occurs, inflicts Tenma's Mystery on yourself for 1 turn.\nMystery of Heaven: Crit Rate 100% up"
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Health tag Savior-Exclusive Bonus",
+        "Powerful Special Potential of 100% critical hit rate buff when evasion is successful",
+        "↳ Almost essential for Fae training",
+        "I'm happy with the additional potential points.",
+        "Since there is no need to take the potential of the conversion rate, the actual benefit of potential points is even greater."
+      ]
     }
   },
   {
@@ -14062,7 +14796,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "ATK increases by 6% and Crit Rate increases by 6%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Versatility with shared use of power tags(Excellent)",
+        "Special Potential: ``6% attack, 6% critical hit rate''",
+        "↳ Same with no pain, no gain",
+        "Training performance is also high and quite excellent.",
+        "↳ Can be used for most character development",
+        "Easy to use with 2 stamina in event conditions and overall strong performance"
+      ]
     }
   },
   {
@@ -14071,14 +14813,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "A Gap in a Lazy Afternoon",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Rescuer Assistance",
+    "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132533_e9xba.webp",
     "tier": "A",
     "score": "8.6",
     "effectSummary": "[Skill in Life] Maximum HP increases by 2%. / [Sense of Life] Maximum HP increases by 5%. / [March of Love] The maximum Toughness value increases by 1.\nGain 2 Nova Force after using Special Skill or Ultimate Skill.",
     "stats": {
       "Tag": "Vitality",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Toughness Aid",
       "Featured Unit": "Carmen"
     },
@@ -14093,7 +14835,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Carmen",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
       "statBonusType": "Toughness Aid",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Skill in Life",
@@ -14108,7 +14850,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "The maximum Toughness value increases by 1.\nGain 2 Nova Force after using Special Skill or Ultimate Skill."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Health tag Savior-Exclusive Bonus",
+        "↳ Carmen exclusive",
+        "Excellent Special Potential for acquiring Nova Force",
+        "Almost essential arcana for bride Carmen"
+      ]
     }
   },
   {
@@ -14152,7 +14900,17 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "After attacking all targets, generates a proof for 2 turns on yourself.\nWhen attacking, if you are in the witness state, the damage dealt increases by 15%.\nProof: Damage dealt increases by 10%, damage taken decreases by 10%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Grants proof (10% damage dealt for 2 turns, 10% damage reduction) when attacking all targets.",
+        "↳ When holding the certificate, damage dealt increases by 15%.",
+        "Strict restrictions on when attacking the entire body",
+        "↳ It is a shame that the CT of all attack skills is generally long.",
+        "With Luna, you can make the most of it.",
+        "Bride Epindel, the original title character, has an overall attack skill of CT5 & an additional turn that consumes proof turns, making her a bad match overall.",
+        "Excellent training performance",
+        "↳ I'm happy with the additional potential points of +5."
+      ]
     }
   },
   {
@@ -14165,11 +14923,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
     "tier": "SS",
     "score": "9.7",
-    "effectSummary": "[Sense of Destruction] Crit DMG increases by 10%. / [Skill of Insight] Crit rate increases by 3%. / [Skill of Destruction] Crit DMG increases by 4%. / [Stigmata of Insight] Crit rate increases by 18%.",
+    "effectSummary": "[Sense of Destruction] Crit DMG increases by 10%. / [Skill of Insight] Crit Rate increases by 3%. / [Skill of Destruction] Crit DMG increases by 4%. / [Stigmata of Insight] Crit Rate increases by 18%.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "Universal Bonus",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Carnelia"
     },
     "bestHolderSlugs": [
@@ -14182,7 +14940,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
       "characterName": "Carnelia",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/120413_604d3.webp",
-      "statBonusType": "Crit Rate Subsidy",
+      "statBonusType": "Crit Rate Bonus",
       "classBonus": "Universal Bonus",
       "potentials": [
         {
@@ -14191,7 +14949,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         },
         {
           "name": "Skill of Destruction",
@@ -14199,10 +14957,18 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Stigmata of Insight",
-          "effect": "Crit rate increases by 18%."
+          "effect": "Crit Rate increases by 18%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses a super powerful Special Potential with a conversion rate of 18%",
+        "↳ The tags are patient and easy to use as well.",
+        "Excellent bonus effects of additional potential power +4 and additional power +4",
+        "Firmly possesses training effects, conditions, and super-sensitive training effects",
+        "↳ Other points include bond points, sensitivity training occurrence rate, and no waste.",
+        "A must-have item"
+      ]
     }
   },
   {
@@ -14242,7 +15008,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "When attacking, if your HP is above 50%, the damage dealt increases by 15%.\nWhen attacked, if your HP is less than 50%, damage taken will be reduced by 15%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "First striker aid",
+        "Increases damage dealt by 15% when HP is 50% or above, reduces damage taken by 15% when HP is below 50%",
+        "↳ Excellent offensive and defensive potential",
+        "It doesn't change the character dramatically.",
+        "↳ There are few situations where it is required.",
+        "It may be difficult to adopt due to the power tag framework.",
+        "↳ Tyria and Bunny Flay fill up the two slots."
+      ]
     }
   },
   {
@@ -14251,14 +15026,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Follow the Light!",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Power · Rescuer Assistance",
+    "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170551_o4b9x.webp",
     "tier": "A",
     "score": "8.6",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Path of Destiny] When one of your allies starts their turn, say \"Now!\" to yourself! (Cannot be canceled) will be granted once.\nAfter using the skill, now on yourself! (Unremovable) Depending on the number of stacks, there is a 100% chance to inflict chain damage proportional to your own ATK on one of the enemies, and now it's time! Delete all (cannot be canceled).\nNow! (Cannot be canceled): I have a feeling that a perfect machine will come. This effect can be stacked up to 5 times.",
     "stats": {
       "Tag": "Power",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Luna"
     },
@@ -14273,7 +15048,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Luna",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_ORACLE_icon.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Attack Skill",
@@ -14284,7 +15059,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "When one of your allies starts their turn, say \"Now!\" to yourself! (Cannot be canceled) will be granted once.\nAfter using the skill, now on yourself! (Unremovable) Depending on the number of stacks, there is a 100% chance to inflict chain damage proportional to your own ATK on one of the enemies, and now it's time! Delete all (cannot be canceled).\nNow! (Cannot be canceled): I have a feeling that a perfect machine will come. This effect can be stacked up to 5 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Special Potential exclusive to Luna",
+        "Special Potential that causes stacking chain damage.",
+        "Fair training performance",
+        "There is no event to recover stamina or increase condition."
+      ]
     }
   },
   {
@@ -14332,7 +15113,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "At the start of the first battle, create a barrier on yourself for 2 turns.\nBarrier increases in proportion to own maximum HP."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses \"Gives barrier for 2 turns at the start of battle\" exclusive to Defenders",
+        "↳ It hurts when the battle starts",
+        "I want to avoid Special Potential being a temporary effect as much as possible.",
+        "Ability to concentrate",
+        "Training performance/event performance is so-so."
+      ]
     }
   },
   {
@@ -14341,14 +15129,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Preparing for Your Vacation Starts with Shopping!",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Power · Rescuer Assistance",
+    "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/170418_4q5sx.webp",
     "tier": "S",
     "score": "9.2",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Laughter Induction Mechanism] When using Special Skill, damage dealt increases by 20%.\nAt the start of your turn, give yourself 1 jumping stack. / [Sense of Speed] Increases speed by 5.",
     "stats": {
       "Tag": "Power",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Smile"
     },
@@ -14363,7 +15151,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Smile",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_SMILE_icon.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Attack Skill",
@@ -14378,7 +15166,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Increases speed by 5."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Force tag Savior-Exclusive Bonus",
+        "Special Potential that combines \"20% damage dealt when using Special Skills\" and \"Gives 1 jumping stack at the start of turn\"",
+        "↳ Compatible with both swimsuit smile and regular smile(Excellent)",
+        "Arcana that you should definitely use to develop a smile",
+        "Additional potential points +5 is also powerful"
+      ]
     }
   },
   {
@@ -14426,7 +15221,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "ATK increases by 8%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Centralized tag sharing assistance",
+        "The first common tag support with firepower potential.",
+        "An excellent point is that it is easy to increase the force with additional force."
+      ]
     }
   },
   {
@@ -14470,7 +15270,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Increases damage by 10% when attacking a single target.\nIf you are not weakened, damage increases by an additional 15%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Assassin assistance with health tag",
+        "Special Potential to increase damage when attacking a single target",
+        "↳ Increases magnification when not weak",
+        "Compatible with Amora, who can remove debilitations, Bunny Charles, who is good at single-target attacks, and Swimsuit Smile.",
+        "There are many characters who are strong against assassins, so the acquisition priority is high."
+      ]
     }
   },
   {
@@ -14483,7 +15290,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/194438_w92ck.webp",
     "tier": "S",
     "score": "9.2",
-    "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [Speed Prowess] Speed increases by 2. / [Skill of Insight] Crit rate increases by 3%. / [Sharp Posture] After attacking with Special Skill, increase own Action Gauge by 20%.\nThis effect does not occur with skills other than single-target attacks.\nThis effect only occurs once per turn. / [Talent of Concentration] Effect Hit increases by 6%.",
+    "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [Speed Prowess] Speed increases by 2. / [Skill of Insight] Crit Rate increases by 3%. / [Sharp Posture] After attacking with Special Skill, increase own Action Gauge by 20%.\nThis effect does not occur with skills other than single-target attacks.\nThis effect only occurs once per turn. / [Talent of Concentration] Effect Hit increases by 6%.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "Ranger Bonus",
@@ -14515,7 +15322,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         },
         {
           "name": "Sharp Posture",
@@ -14526,7 +15333,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Effect Hit increases by 6%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Patience Tag Ranger Aid",
+        "Special Potential to increase Action Gauge by 20% after using Special Skill for single attack",
+        "Compatible with characters who use Special Skills a lot (Excellent)",
+        "↳ Currently it's about Professor M.",
+        "Multiple Common Potentials available at events",
+        "↳ Speed prowess and insight prowess",
+        "Training performance is based on patience"
+      ]
     }
   },
   {
@@ -14574,7 +15390,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "When attacking, your damage increases by 10%.\nThis effect can be stacked up to 2 times.\nAt the end of the turn, initialize all stacks."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Force tag striker auxiliary",
+        "Increases damage dealt by 10% when attacking, up to 2 stacks can increase damage dealt by 20%.",
+        "It disappears at the end of your turn, so it moves outside of your turn/The drawback is that it needs to move more than once per turn.",
+        "↳ Gwen, Bunny Claire etc.",
+        "Although the training performance is high, it is worrisome that there are no various status bonuses.",
+        "Get more potential points for events"
+      ]
     }
   },
   {
@@ -14583,15 +15407,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Is This...clothes?",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Power · Rescuer Assistance",
+    "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/192925_u7brs.webp",
     "tier": "S",
     "score": "9.2",
-    "effectSummary": "[Attack Skill] ATK increases by 2%. / [Gesture of Emptiness] Crit rate increases by 20%.\nAfter attacking, your ATK increases by 2% for each number of targets you hit with Critical Hit.\nThis effect can occur up to 10 times.",
+    "effectSummary": "[Attack Skill] ATK increases by 2%. / [Gesture of Emptiness] Crit Rate increases by 20%.\nAfter attacking, your ATK increases by 2% for each number of targets you hit with Critical Hit.\nThis effect can occur up to 10 times.",
     "stats": {
       "Tag": "Power",
-      "Class Bonus": "Rescuer Assistance",
-      "Stat Bonus": "Crit Rate Subsidy",
+      "Class Bonus": "Savior-Exclusive Bonus",
+      "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Lydia"
     },
     "bestHolderSlugs": [
@@ -14604,8 +15428,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
       "characterName": "Lydia",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_ROD_icon.webp",
-      "statBonusType": "Crit Rate Subsidy",
-      "classBonus": "Rescuer Assistance",
+      "statBonusType": "Crit Rate Bonus",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Attack Skill",
@@ -14613,10 +15437,17 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Gesture of Emptiness",
-          "effect": "Crit rate increases by 20%.\nAfter attacking, your ATK increases by 2% for each number of targets you hit with Critical Hit.\nThis effect can occur up to 10 times."
+          "effect": "Crit Rate increases by 20%.\nAfter attacking, your ATK increases by 2% for each number of targets you hit with Critical Hit.\nThis effect can occur up to 10 times."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Force tag Savior-Exclusive Bonus",
+        "Special Potential with unconditional critical hit rate of 20% and attack buff of up to 20%",
+        "↳ Attack buff increases by 2% depending on the number of critical hits when attacking.",
+        "It is also possible to supply potential points with additional potential points +4",
+        "It's also nice to be able to earn potential points at events."
+      ]
     }
   },
   {
@@ -14625,14 +15456,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Sleepy Outing",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Rescuer Assistance",
+    "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/190614_vbrik.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "[Skill of Insight] Crit rate increases by 3%. / [Sense of Destruction] Crit DMG increases by 10%. / [Butterfly Lullaby] After using a skill that is not an attack, give yourself Sweet Dreams (cannot be removed) for 3 turns and gain 2 Nova Force.\nSweet Dream: Toughness Damage increases by 1. / [Speed Prowess] Speed increases by 2.",
+    "effectSummary": "[Skill of Insight] Crit Rate increases by 3%. / [Sense of Destruction] Crit DMG increases by 10%. / [Butterfly Lullaby] After using a skill that is not an attack, give yourself Sweet Dreams (cannot be removed) for 3 turns and gain 2 Nova Force.\nSweet Dream: Toughness Damage increases by 1. / [Speed Prowess] Speed increases by 2.",
     "stats": {
       "Tag": "Vitality",
-      "Class Bonus": "Rescuer Assistance",
+      "Class Bonus": "Savior-Exclusive Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Seira"
     },
@@ -14647,11 +15478,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "characterName": "Seira",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NIGHTMARE_REAPER_icon.webp",
       "statBonusType": "Special Effect Bonus",
-      "classBonus": "Rescuer Assistance",
+      "classBonus": "Savior-Exclusive Bonus",
       "potentials": [
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         },
         {
           "name": "Sense of Destruction",
@@ -14666,7 +15497,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Speed increases by 2."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Health tag Savior-Exclusive Bonus",
+        "Gain unique buff and Nova Force 2 when using skills that are not attacks.",
+        "↳ Unique buff increases Toughness damage by 1",
+        "Normally, only Sayla's Special Skills can achieve the conditions.",
+        "Obtain insight prowess/speed prowess at a discount in events"
+      ]
     }
   },
   {
@@ -14679,7 +15517,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Vitality training bonuses and Universal Bonus amplification during Journey runs.",
+    "effectSummary": "Grants Vitality training bonuses and Universal Bonus amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
       "Class Bonus": "Universal Bonus",
@@ -14716,6 +15554,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "label": "defensive skill",
           "value": "Defense power increases by 2%."
         }
+      ],
+      "evalBullets": [
+        "Supporter assistance for physical fitness tags",
+        "Increases speed by 4 when using Special Skills that are not attacks, Special Potential that can be stacked up to 5 times",
+        "↳ Maximum speed increased by 20, but does not apply to Dress Acela",
+        "I'm simply happy that the number of supporter subsidies has increased.",
+        "Supporter speed is not an essential stat, so it is likely to be removed from the formation in the future.",
+        "↳ Currently, it is only adopted as a makeshift measure.",
+        "It's also a shame that there are no effects around the potential points.",
+        "↳ There are not enough potential points for physical strength development."
       ]
     }
   },
@@ -14754,7 +15602,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum HP increases by 5%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+        "[Sense of Life] Maximum HP increases by 5%."
+      ]
     }
   },
   {
@@ -14767,7 +15619,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_SMILE_SR_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Focus training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -14787,7 +15639,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -14800,7 +15655,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_ORACLE_SR_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Power training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -14820,7 +15675,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -14833,7 +15691,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SPEAR_SR_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "[Skill of Insight] Crit rate increases by 3%.",
+    "effectSummary": "[Skill of Insight] Crit Rate increases by 3%.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -14855,10 +15713,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [
         {
           "name": "Skill of Insight",
-          "effect": "Crit rate increases by 3%."
+          "effect": "Crit Rate increases by 3%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Increase your conversion rate with your potential",
+        "↳ Compatibility with power tag (Excellent)"
+      ]
     }
   },
   {
@@ -14896,7 +15758,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum HP increases by 5%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+        "[Sense of Life] Maximum HP increases by 5%."
+      ]
     }
   },
   {
@@ -14934,7 +15800,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Maximum HP increases by 5%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "HP can be increased with potential",
+        "Possesses stamina recovery and condition increase in events"
+      ]
     }
   },
   {
@@ -14976,7 +15846,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "ATK increases by 3%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Possesses multiple attack power potentials",
+        "↳ Compatibility with attacker (Excellent)"
+      ]
     }
   },
   {
@@ -15014,7 +15888,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Defense power increases by 2%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+        "[Defensive Skill] Defense power increases by 2%."
+      ]
     }
   },
   {
@@ -15052,7 +15930,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Effect RES increases by 4%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+        "[Protection Skills] Effect RES increases by 4%."
+      ]
     }
   },
   {
@@ -15090,7 +15972,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Speed increases by 3."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Increase speed with potential",
+        "Stamina decreased by 15 in the event"
+      ]
     }
   },
   {
@@ -15103,7 +15989,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_KNUCKLE_SR_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Protection training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
       "Class Bonus": "-",
@@ -15123,7 +16009,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15161,7 +16050,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Effect Hit increases by 10%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+        "[Sense of Concentration] Effect Hit increases by 10%."
+      ]
     }
   },
   {
@@ -15199,7 +16092,11 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Effect RES increases by 4%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+        "[Protection Skills] Effect RES increases by 4%."
+      ]
     }
   },
   {
@@ -15212,7 +16109,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_ROD_SR_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Focus training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -15232,7 +16129,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15270,7 +16170,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "effect": "Defense power increases by 5%."
         }
       ],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "You can increase your defense power with potential.",
+        "↳ There are options for condition recovery, so choose depending on the situation.",
+        "Being able to recover stamina during events is also great."
+      ]
     }
   },
   {
@@ -15283,7 +16188,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_ORACLE_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Power training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -15303,7 +16208,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15316,7 +16224,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SPEAR_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Power training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -15336,7 +16244,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15349,7 +16260,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_DRUID_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Power training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -15369,7 +16280,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15382,7 +16296,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_DETECTIVE_WATSON_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Power training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -15402,7 +16316,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15415,7 +16332,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_BEAMSWORD_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Vitality training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
       "Class Bonus": "-",
@@ -15435,7 +16352,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15448,7 +16368,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Vitality training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
       "Class Bonus": "-",
@@ -15468,7 +16388,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15481,7 +16404,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Vitality training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
       "Class Bonus": "-",
@@ -15501,7 +16424,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15514,7 +16440,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_SMILE_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Focus training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -15534,7 +16460,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15547,7 +16476,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Vitality training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
       "Class Bonus": "-",
@@ -15567,7 +16496,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15580,7 +16512,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Focus training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -15600,7 +16532,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15613,7 +16548,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NOA_OBSERVER_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Focus training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -15633,7 +16568,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15646,7 +16584,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_SNIPER_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Focus training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -15666,7 +16604,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15679,7 +16620,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Protection training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
       "Class Bonus": "-",
@@ -15699,7 +16640,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15712,7 +16656,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_ROD_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Protection training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
       "Class Bonus": "-",
@@ -15732,7 +16676,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15745,7 +16692,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Protection training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
       "Class Bonus": "-",
@@ -15765,7 +16712,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15778,7 +16728,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Protection training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
       "Class Bonus": "-",
@@ -15798,7 +16748,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15811,7 +16764,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_AMULET_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Endurance training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
@@ -15831,7 +16784,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15844,7 +16800,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WILD_HOG_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Endurance training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
@@ -15864,7 +16820,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15877,7 +16836,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Endurance training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
@@ -15897,7 +16856,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   },
   {
@@ -15910,7 +16872,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_R_01_icon_arcana.webp",
     "tier": "A",
     "score": "8.6",
-    "effectSummary": "Grants Endurance training bonuses and - amplification during Journey runs.",
+    "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
@@ -15930,7 +16892,10 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
-      "supportBonuses": []
+      "supportBonuses": [],
+      "evalBullets": [
+        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+      ]
     }
   }
 ]).map((a) => ({
@@ -15942,47 +16907,47 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
 export const STAR_SAVIOR_BANNERS_SEED = [
   {
     "gameSlug": "starsavior",
-    "slug": "pickup-professor-m-amora",
-    "title": "Featured Pickup: Professor M & Amora",
-    "bannerType": "Rate-Up Pickup Observation",
+    "slug": "maid-ceres-pickup-gacha",
+    "title": "Maid Ceres Pickup Observation Gacha",
+    "bannerType": "Character ★★★★★ · Arcana ★★★★☆",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01.webp",
-    "periodLabel": "Active Rate-Up · 200 Pity Mileage",
+    "periodLabel": "Active Until Nov 13 (Fri)",
     "verdict": "MUST PULL",
-    "reasoning": "Professor M (Moon Ranger) and Amora (Order Assassin) are Tier-0 SSS meta-defining carries for Cosmo Gate bosses and Endgame PvE.",
+    "reasoning": "Features Maid Ceres (Sun Supporter with dual AoE heals, Regeneration, and team-wide ATK buff Ultimate) alongside SSR Arcana \"Harsh Trial\".",
     "featuredCharacterSlugs": [
+      "maid-ceres",
       "professor-m",
-      "amora",
-      "maid-ceres"
+      "amora"
     ]
   },
   {
     "gameSlug": "starsavior",
-    "slug": "limited-bride-carmen-swimsuit-smile",
-    "title": "Limited Revival: Bride Carmen & Swimsuit Smile",
-    "bannerType": "Limited Special Observation",
-    "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01.webp",
-    "periodLabel": "Limited Banner · Exclusive Pool",
-    "verdict": "META PICK",
-    "reasoning": "Bride Carmen provides unmatched teamwide Action Gauge & Crit buffs, while Swimsuit Smile dominates single-target Boss Toughness breaking.",
-    "featuredCharacterSlugs": [
-      "bride-carmen",
-      "swimsuit-smile",
-      "bunny-charles"
-    ]
-  },
-  {
-    "gameSlug": "starsavior",
-    "slug": "arcana-pickup-SSR-masterpiece",
-    "title": "SSR Arcana Pickup: Indomitable Masterpiece & Resolve",
-    "bannerType": "Arcana Observation",
+    "slug": "bunny-frey-pickup-gacha",
+    "title": "Bunny Frey & Indomitable Masterpiece Pickup Gacha",
+    "bannerType": "Character ★★★☆☆ · Arcana ★★★★★",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01.webp",
-    "periodLabel": "Arcana Rate-Up · Journey Meta",
-    "verdict": "HIGH VALUE",
-    "reasoning": "Top-priority Power and Vitality SSR Arcana cards that unlock S+ rank Journey training stats and high-tier combat potentials.",
+    "periodLabel": "Active Until Nov 19 (Thu)",
+    "verdict": "META PICK",
+    "reasoning": "Features Bunny Frey and the Tier-0 Power SSR Arcana \"Indomitable Masterpiece\" (+12% Crit DMG & +4% Max HP Universal Special Potential).",
     "featuredCharacterSlugs": [
-      "ceres",
-      "tilia",
-      "frey"
+      "bunny-frey",
+      "bunny-charles",
+      "bride-carmen"
+    ]
+  },
+  {
+    "gameSlug": "starsavior",
+    "slug": "custom-standard-observation",
+    "title": "Standard & Custom Observation Gacha",
+    "bannerType": "200 Pity Mileage · Wishlist Selection",
+    "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01.webp",
+    "periodLabel": "Permanent Observation Pool",
+    "verdict": "HIGH VALUE",
+    "reasoning": "Select your priority SSR Saviors and Power/Endurance SSR Arcana cards to complete your 4-unit core party.",
+    "featuredCharacterSlugs": [
+      "amora",
+      "professor-m",
+      "dress-asherah"
     ]
   }
 ];

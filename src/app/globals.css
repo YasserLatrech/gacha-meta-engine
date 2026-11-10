@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
@@ -32,12 +34,7 @@
   --tier-a-bg: rgba(16, 185, 129, 0.16);
   --tier-b: #3b82f6;
   --tier-b-bg: rgba(59, 130, 246, 0.16);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  --bg-canvas: #0b0e14;
 }
 
 /* Sleek Dark Scrollbars (Zero White OS Tracks or Arrow Buttons) */

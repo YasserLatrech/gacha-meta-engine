@@ -156,3 +156,5 @@ export const getStarSaviorWikiData = unstable_cache(
   ['starsavior-wiki-dataset-v4'],
   { revalidate: 300, tags: ['starsavior-wiki'] }
 );
+
+export const getStarSaviorDataset = getStarSaviorWikiData;

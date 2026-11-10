@@ -19,18 +19,28 @@ export function WikiShell({
 }: WikiShellProps) {
   const navGroups = [
     {
-      heading: 'RANKINGS & META',
+      heading: 'RANKINGS & TIER LISTS',
       links: [
         { key: 'portal', label: 'Star Savior Wiki Top', href: '/starsavior', badge: 'TOP' },
-        { key: 'tier-list', label: 'Strongest Tier List', href: '/starsavior/tier-list', badge: 'HOT' },
-        { key: 'reroll', label: 'Reroll Tier List & Guide', href: '/starsavior/reroll', badge: 'NEW' },
-        { key: 'arcana', label: 'All 83 Arcana Tier List', href: '/starsavior/arcana', badge: '83' },
+        { key: 'tier-list', label: 'Strongest Character Tier List', href: '/starsavior/tier-list', badge: 'HOT' },
+        { key: 'reroll', label: 'Reroll Tier List & Stopping Line', href: '/starsavior/reroll', badge: 'STARTER' },
+        { key: 'arcana', label: 'Strongest Arcana Tier List', href: '/starsavior/arcana', badge: '83' },
       ],
     },
     {
       heading: 'STATIC DATABASE',
       links: [
-        { key: 'characters', label: 'All 57 Characters DB', href: '/starsavior/characters', badge: '57' },
+        { key: 'characters', label: 'All 57 Characters List', href: '/starsavior/characters', badge: '57' },
+        { key: 'arcana-db', label: 'All 83 Arcana Cards List', href: '/starsavior/arcana#arcana-complete-database', badge: '83' },
+      ],
+    },
+    {
+      heading: 'STRATEGY GUIDES',
+      links: [
+        { key: 'gacha', label: 'Active Gacha & Pull Priority', href: '/starsavior#gacha-section', badge: 'PU' },
+        { key: 'journey', label: 'Rescue Journey Hard Guide', href: '/starsavior#rescue-journey', badge: 'GUIDE' },
+        { key: 'operations', label: 'Operations & Cube Palace', href: '/starsavior#cube-palace', badge: 'BOSS' },
+        { key: 'beginner', label: 'Beginner Early-Game Guide', href: '/starsavior#beginner-guides', badge: 'NEW' },
       ],
     },
   ];
