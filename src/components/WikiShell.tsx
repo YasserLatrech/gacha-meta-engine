@@ -117,7 +117,7 @@ export function WikiShell({
                   </span>
                 </div>
                 <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', fontWeight: 600 }}>
-                  Gacha Meta Intelligence
+                  Strategy Wiki Portal
                 </div>
               </div>
             </Link>
@@ -159,7 +159,7 @@ export function WikiShell({
                   </span>
                 </div>
                 <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                  57 Characters · 83 Arcana · 100% EN Database
+                  57 Characters · 83 Arcana · Strategy Database
                 </div>
               </div>
             </Link>
@@ -463,7 +463,7 @@ export function WikiShell({
               style={{ width: '26px', height: '26px', borderRadius: '6px', objectFit: 'cover', border: '1px solid #3b82f6' }}
             />
             <span>
-              <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.gg</strong> — Elite Gacha Strategy Wiki & Translated Meta Database.
+              <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.gg</strong> — Star Savior Strategy Wiki &amp; Database.
             </span>
           </div>
           <div style={{ display: 'flex', gap: '14px' }}>

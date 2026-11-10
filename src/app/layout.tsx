@@ -4,11 +4,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Ascalon.gg — Gacha Strategy Network, Upcoming Gacha Ranks & Game Wikis',
+    default: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki Portal',
     template: '%s | Ascalon.gg',
   },
   description:
-    'Ascalon.gg is the premier gacha strategy portal, upcoming gacha hype rankings hub, industry news radar, and 1:1 translated game wiki network.',
+    'Mobile game rankings, upcoming gacha release calendar with reader votes, App Store charts, and complete game strategy wikis.',
   icons: {
     icon: [
       { url: '/brand/ascalon-favicon.png', sizes: '64x64', type: 'image/png' },

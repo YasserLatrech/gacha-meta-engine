@@ -9,6 +9,7 @@ import {
   AppMediaIconCell,
 } from '@/components/micro/AppMediaHeadings';
 import { AppMediaLatestUpdatesTabs } from '@/components/medium/AppMediaTocAndWidgets';
+import { AppMediaStrategyFooter } from '@/components/medium/AppMediaStrategyBlocks';
 
 const TOP_INDEX_CELLS = [
   { label: 'Latest Updates', href: '#latest-updates' },
@@ -61,7 +62,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               <span className="rounded bg-[#2563eb] px-2 py-0.5 text-white font-extrabold">UPDATED DAILY</span>
               <span>{game.patchVersion}</span>
               <span>•</span>
-              <span className="text-emerald-400">100% English Translated Static Database</span>
+              <span className="text-[#94a3b8]">57 Saviors · 83 Arcana Cards</span>
             </div>
             <h1 className="mt-1 text-xl sm:text-2xl font-black tracking-tight text-white">
               Star Savior Strategy Wiki | Complete Guide & Database
@@ -396,38 +397,118 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
       {/* H2: スターセイヴァー救援の旅攻略 */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
         <AppMediaH2 id="rescue-journey">Star Savior Rescue Journey Strategy</AppMediaH2>
+        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+          <table className="w-full border-collapse text-left text-[12px]">
+            <thead>
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <th className="w-44 px-3.5 py-2 border-r border-[#243049]">Journey Topic</th>
+                <th className="px-3.5 py-2">AppMedia Strategy Summary & Target Benchmarks</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#1e293b]">
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  Normal vs Hard Mode
+                </td>
+                <td className="px-3.5 py-2.5 text-[#e2e8f0]">
+                  Clear Normal Mode once per Savior to unlock their base Stellar Archive, then switch exclusively to <strong className="text-[#fbbf24]">Hard Mode</strong> to unlock exclusive Hard Potentials and higher stat caps (1,200+ primary stat).
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  Blessing Loop & Inheritance
+                </td>
+                <td className="px-3.5 py-2.5 text-[#e2e8f0]">
+                  Equip two 3-Star Power/Vitality Stellar Archives as parents before starting a run. Inherited blessings trigger at Exam milestones and provide flat +120 to +180 stat spikes without spending stamina turns.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  SS+ Evaluation Formula
+                </td>
+                <td className="px-3.5 py-2.5 text-[#e2e8f0]">
+                  Stack 3 matching Stat Tag Arcana (e.g. 3 Power + 2 Vitality/Focus) to trigger Multi-Tag Resonance Training (+45% stat gain when 2+ SSR partners land on the same facility) and purchase gold Special Potentials at the final shop.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <AppMediaTableLink href="/starsavior/arcana" label="Rescue Journey Normal Mode Strategy & Events" />
-          <AppMediaTableLink href="/starsavior/arcana" label="Rescue Journey Hard Mode & Best Hard Potentials" />
-          <AppMediaTableLink href="/starsavior/arcana" label="Blessing Farming Loop & Stellar Archive Inheritance" />
-          <AppMediaTableLink href="/starsavior/arcana" label="Rescue Journey Common Event Choices & Outcomes" />
-          <AppMediaTableLink href="/starsavior/arcana" label="How to Progress Efficiently in Rescue Journey" />
-          <AppMediaTableLink href="/starsavior/arcana" label="How to Achieve SS+ High Evaluation Ranks" />
+          <AppMediaTableLink href="/starsavior/arcana" label="Rescue Journey Normal & Hard Mode Arcana Deck Guide" />
+          <AppMediaTableLink href="/starsavior/arcana#arcana-database" label="All 83 Arcana Special Potentials & Training Bonuses" />
         </div>
       </section>
 
       {/* H2: スターセイヴァー作戦攻略 */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
-        <AppMediaH2 id="operations-section">Star Savior Operation Sector Strategy</AppMediaH2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
-          <AppMediaTableLink href="/starsavior/tier-list" label="Sector 1-5 Boss Strategy & Lineup" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Sector 2-12 Boss Strategy & Lineup" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Sector 3-15 Boss Strategy & Lineup" />
+        <AppMediaH2 id="operations-section">Star Savior Operation Sector Boss Strategy</AppMediaH2>
+        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+          <table className="w-full border-collapse text-left text-[12px]">
+            <thead>
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <th className="w-36 px-3.5 py-2 border-r border-[#243049]">Sector Boss</th>
+                <th className="w-36 px-3.5 py-2 border-r border-[#243049]">Weak Attribute</th>
+                <th className="px-3.5 py-2">Boss Mechanics & Recommended Clear Lineup</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#1e293b]">
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-white border-r border-[#1e293b]">Sector 1-5 Boss</td>
+                <td className="px-3.5 py-2.5 font-bold text-[#fbbf24] border-r border-[#1e293b]">Moon / Order</td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  Uses a 3-layer Toughness shield on Turn 2. Bring multi-hitters (<Link href="/starsavior/characters/asherah" className="text-[#60a5fa] hover:underline font-bold">Asherah</Link>, <Link href="/starsavior/characters/professor-m" className="text-[#60a5fa] hover:underline font-bold">Professor M</Link>) to break before the AoE laser fires.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-white border-r border-[#1e293b]">Sector 2-12 Boss</td>
+                <td className="px-3.5 py-2.5 font-bold text-[#fbbf24] border-r border-[#1e293b]">Sun / Star</td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  Inflicts stacking Burn and DEF Down. Pair a cleanser/healer (<Link href="/starsavior/characters/frey" className="text-[#60a5fa] hover:underline font-bold">Frey</Link> or <Link href="/starsavior/characters/roberta" className="text-[#60a5fa] hover:underline font-bold">Roberta</Link>) with <Link href="/starsavior/characters/bunny-charles" className="text-[#60a5fa] hover:underline font-bold">Bunny Charles</Link> for burst execution.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-white border-r border-[#1e293b]">Sector 3-15 Boss</td>
+                <td className="px-3.5 py-2.5 font-bold text-[#fbbf24] border-r border-[#1e293b]">Star / Order</td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  Summons two shield drones that grant Boss Invulnerability. Eliminate adds with AoE Casters (<Link href="/starsavior/characters/amora" className="text-[#60a5fa] hover:underline font-bold">Amora</Link>, <Link href="/starsavior/characters/epindel" className="text-[#60a5fa] hover:underline font-bold">Epindel</Link>) then chain Nova Burst during Break.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
       {/* H2: スターセイヴァーキューブパレス攻略 */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
-        <AppMediaH2 id="cube-palace">Star Savior Cube Palace Boss Strategy</AppMediaH2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
-          <AppMediaTableLink href="/starsavior/tier-list" label="Interface" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Kernel" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Assembler" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Firmware" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Mechanics" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Linker" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Bootloader" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Register" />
+        <AppMediaH2 id="cube-palace">Star Savior Cube Palace Bosses & Cheat Codes Strategy</AppMediaH2>
+        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+          <table className="w-full border-collapse text-left text-[12px]">
+            <thead>
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <th className="w-36 px-3.5 py-2 border-r border-[#243049]">Cube Palace Boss</th>
+                <th className="w-40 px-3.5 py-2 border-r border-[#243049]">Recommended Cheat Code</th>
+                <th className="px-3.5 py-2">Core Gimmick Counter & Recommended Saviors</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#1e293b]">
+              {[
+                { boss: 'Interface', code: 'OVERCLOCK_ATK_III', tip: 'punishes single-hit ultimates; bring Pincer Dual-Attack rangers (Professor M, Dana) to strip 6-hit Toughness bar.' },
+                { boss: 'Kernel', code: 'SHIELD_PIERCE_II', tip: 'regenerates 15% HP if any ally is unshielded; use Hilde or Claire for permanent party barrier uptime.' },
+                { boss: 'Assembler', code: 'SPEED_SYNC_III', tip: 'accelerates turn gauge by +20% per enemy buff; strip buffs immediately using Maid Ceres or Harley.' },
+                { boss: 'Firmware', code: 'CRIT_OVERDRIVE_II', tip: 'takes 70% reduced non-critical damage; stack Crit Rate buffs via Bride Carmen and Assassin carries.' },
+                { boss: 'Mechanics', code: 'BREAK_EFFICIENCY_III', tip: 'locks Toughness bar until 3 debuffs are applied; use Bell or Lugran to stack debuffs on Turn 1.' },
+                { boss: 'Linker', code: 'AOE_SUPPRESSION_II', tip: 'links damage across summoned nodes; hit all targets simultaneously with Epindel or Rosalyn AoE skills.' },
+                { boss: 'Bootloader', code: 'NOVA_CHARGE_III', tip: 'wipes party at Turn 8 Enrage; use Nova Burst chains with Amora and Swimsuit Smile to finish before Turn 7.' },
+                { boss: 'Register', code: 'COUNTER_NULL_II', tip: 'counters ranged attacks; use Stealth/Evasion Assassins (Fei, Bunny Charles) to bypass counter triggers.' },
+              ].map((row) => (
+                <tr key={row.boss} className="hover:bg-[#141d30]">
+                  <td className="px-3.5 py-2 font-extrabold text-white border-r border-[#1e293b]">{row.boss}</td>
+                  <td className="px-3.5 py-2 font-mono text-[11px] font-bold text-[#93c5fd] border-r border-[#1e293b]">{row.code}</td>
+                  <td className="px-3.5 py-2 text-[#cbd5e1]">{row.boss} {row.tip}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -440,8 +521,8 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           <AppMediaTableLink href="/starsavior/characters" label="Who Should You Use Quasar Core On?" />
           <AppMediaTableLink href="/starsavior/characters" label="Who Should You Use Pulsar Core On?" />
           <AppMediaTableLink href="/starsavior/tier-list" label="How to Unlock Break Skills & Best Skills" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Flashpoint Boss Strategy (Manager Gregory)" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Cube Palace Summary & All Cheat Codes" />
+          <AppMediaTableLink href="#operations-section" label="Flashpoint Boss Strategy & Sector Lineups" />
+          <AppMediaTableLink href="#cube-palace" label="Cube Palace Summary & All Cheat Codes" />
           <AppMediaTableLink href="/starsavior/tier-list" label="Interstellar Corridor Progression & Tips" />
           <AppMediaTableLink href="/starsavior/characters?rarity=SR" label="Recommended SR Awakening Characters" />
           <AppMediaTableLink href="/starsavior/characters" label="Precision Equipment Crafting Guide" />
@@ -453,13 +534,49 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
       {/* H2: スターセイヴァーの効果検証・解説 */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
         <AppMediaH2 id="mechanics-verification">Star Savior Effect Verification & Combat Mechanics</AppMediaH2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-          <AppMediaTableLink href="/starsavior/characters/professor-m" label="Pincer Dual-Attack Mechanics" />
-          <AppMediaTableLink href="/starsavior/characters/fei" label="Counterattack Mechanics" />
-          <AppMediaTableLink href="/starsavior/characters/fei" label="Evasion Rate Formula" />
-          <AppMediaTableLink href="/starsavior/characters/hilde" label="Preemptive Guard Mechanics" />
-          <AppMediaTableLink href="/starsavior/characters" label="Break Costume Destruction Toggle" />
-          <AppMediaTableLink href="/starsavior/characters/bride-carmen" label="HP Recovery Scaling Verification" />
+        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+          <table className="w-full border-collapse text-left text-[12px]">
+            <thead>
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <th className="w-48 px-3.5 py-2 border-r border-[#243049]">Verified Mechanic</th>
+                <th className="px-3.5 py-2">Verified Formula & In-Game Behavior</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#1e293b]">
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  Pincer Dual-Attack (<Link href="/starsavior/characters/professor-m" className="underline">Professor M</Link>)
+                </td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  Calls the ally with the highest current ATK (including in-battle buffs) to execute a Skill 1 follow-up attack that reduces 1 Toughness gauge point and grants +10% Action Gauge.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  Evasion & Counterattack (<Link href="/starsavior/characters/fei" className="underline">Fei</Link>)
+                </td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  Successful Evasion reduces incoming damage by 75%, prevents debuff application, and triggers Counterattack stances immediately after the enemy skill animation concludes.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  Preemptive Guard (<Link href="/starsavior/characters/hilde" className="underline">Hilde</Link>)
+                </td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  Intercepts single-target attacks aimed at backline allies, redirecting 40% of final post-mitigation damage to the Defender while preserving the target&apos;s Stealth status.
+                </td>
+              </tr>
+              <tr>
+                <td className="px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#1e293b]">
+                  Attribute Advantage Chart
+                </td>
+                <td className="px-3.5 py-2.5 text-[#cbd5e1]">
+                  <strong className="text-white">Sun &gt; Star &gt; Moon &gt; Sun</strong> (+30% Damage, +15% Crit Rate, +1 Toughness Break). <strong className="text-white">Order &lt;&gt; Chaos</strong> deal +30% mutual bonus damage without taking reduced damage.
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -660,11 +777,11 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         <AppMediaH3>Database Index</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <AppMediaTableLink href="/starsavior/characters" label="Complete Character List (57 Saviors)" badge="57" />
-          <AppMediaTableLink href="/starsavior/characters" label="Lv.200 Character Stats & Server Rank List" />
+          <AppMediaTableLink href="/starsavior/characters#stats-comparison-table" label="Lv.200 Character Stats & Server Rank List" />
           <AppMediaTableLink href="/starsavior/arcana" label="Complete Arcana Encyclopedia (83 Cards)" badge="83" />
-          <AppMediaTableLink href="/starsavior/characters" label="Ark Points & Affinity Gift Database" />
-          <AppMediaTableLink href="/starsavior/characters" label="Character Birthdays & Height List" />
-          <AppMediaTableLink href="/starsavior/characters" label="Voice Actors (CV) & Affiliations List" />
+          <AppMediaTableLink href="/starsavior/characters/asherah#ark-points" label="Ark Points & Affinity Gift Database" />
+          <AppMediaTableLink href="/starsavior/characters#profile-cv-database" label="Character Birthdays & Height List" />
+          <AppMediaTableLink href="/starsavior/characters#profile-cv-database" label="Voice Actors (CV) & Affiliations List" />
         </div>
       </section>
 
@@ -756,6 +873,8 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           </p>
         </div>
       </section>
+
+      <AppMediaStrategyFooter />
     </div>
   );
 }

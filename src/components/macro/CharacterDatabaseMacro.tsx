@@ -208,7 +208,9 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
         )}
 
         {/* Complete Lv.200 Stats & Journey Aptitudes Table */}
-        <AppMediaH3>Complete Character Stats & Journey Aptitudes Table ({filtered.length})</AppMediaH3>
+        <div id="stats-comparison-table" className="pt-2">
+          <AppMediaH3>Complete Character Stats & Journey Aptitudes Table ({filtered.length})</AppMediaH3>
+        </div>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
           <table className="w-full border-collapse text-left text-[12px]">
             <thead>
@@ -286,6 +288,76 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                           Journey: POW {js.power} / VIT {js.vitality} / END {js.endurance} / FOC {js.focus} / PRT {js.protection}
                         </div>
                       )}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* H2: Voice Actors (CV), Affiliations, Birthdays & Heights Database */}
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
+        <AppMediaH2 id="profile-cv-database" badge="PROFILES & CV">
+          Voice Actors (CV), Affiliations, Birthdays & Heights List ({filtered.length} Saviors)
+        </AppMediaH2>
+        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+          Complete character profile registry for all playable Saviors, including Japanese Voice Actors (CV), Starlight Squad / faction affiliations, birthdays, heights, character titles, and acquisition methods.
+        </p>
+
+        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+          <table className="w-full border-collapse text-left text-[12px]">
+            <thead>
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <th className="px-3.5 py-2.5 border-r border-[#243049]">Character</th>
+                <th className="px-3.5 py-2.5 border-r border-[#243049]">Voice Actor (CV)</th>
+                <th className="px-3.5 py-2.5 border-r border-[#243049]">Affiliation / Faction</th>
+                <th className="w-28 px-3 py-2.5 text-center border-r border-[#243049]">Birthday</th>
+                <th className="w-24 px-3 py-2.5 text-center border-r border-[#243049]">Height</th>
+                <th className="px-3.5 py-2.5">Title & How to Obtain</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-[#1e293b]">
+              {filtered.map((c) => {
+                const prof = c.staticData?.profile;
+                return (
+                  <tr key={`prof-${c.slug}`} className="hover:bg-[#141d30] transition-colors">
+                    <td className="p-3 border-r border-[#1e293b]">
+                      <Link href={`/starsavior/characters/${c.slug}#profile`} className="flex items-center gap-2.5 group">
+                        <img
+                          src={c.imageUrl}
+                          alt={c.name}
+                          className="h-10 w-10 rounded-lg border border-[#334155] object-cover shrink-0 bg-[#090d16]"
+                          loading="lazy"
+                        />
+                        <div>
+                          <div className="font-extrabold text-[#60a5fa] group-hover:text-white text-[12px]">
+                            {c.name}
+                          </div>
+                          <div className="text-[10px] text-[#94a3b8] font-bold">{c.rarity} · {c.element}</div>
+                        </div>
+                      </Link>
+                    </td>
+                    <td className="p-3 border-r border-[#1e293b] font-bold text-white">
+                      {prof?.cv || 'TBA'}
+                    </td>
+                    <td className="p-3 border-r border-[#1e293b] text-[#cbd5e1] font-semibold">
+                      {prof?.affiliation || 'Voyager Guild'}
+                    </td>
+                    <td className="p-3 text-center border-r border-[#1e293b] text-[#93c5fd] font-bold">
+                      {prof?.birthday || '—'}
+                    </td>
+                    <td className="p-3 text-center border-r border-[#1e293b] text-[#cbd5e1] font-mono">
+                      {prof?.height || '—'}
+                    </td>
+                    <td className="p-3 space-y-0.5">
+                      {prof?.origin && (
+                        <div className="text-[11px] font-extrabold text-[#fbbf24]">{prof.origin}</div>
+                      )}
+                      <div className="text-[11px] text-[#94a3b8]">
+                        {prof?.obtain || c.staticData?.pool || 'Standard Gacha'}
+                      </div>
                     </td>
                   </tr>
                 );

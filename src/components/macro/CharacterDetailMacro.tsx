@@ -798,7 +798,7 @@ export function CharacterDetailMacro({
                     : 'text-[#94a3b8] hover:text-white'
                 }`}
               >
-                Post-Awakening (開花後)
+                Post-Awakening
               </button>
               <button
                 type="button"
@@ -809,7 +809,7 @@ export function CharacterDetailMacro({
                     : 'text-[#94a3b8] hover:text-white'
                 }`}
               >
-                Pre-Awakening (開花前)
+                Pre-Awakening
               </button>
             </div>
           )}

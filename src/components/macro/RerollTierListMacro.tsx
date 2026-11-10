@@ -107,7 +107,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           />
           <div>
             <div className="text-[11px] font-bold text-[#93c5fd]">
-              Updated: 2026/11/10 · {game.patchVersion} · Synced with Neon DB
+              Last Updated: 2026/11/10 · {game.patchVersion}
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
               [Star Savior] Reroll Tier List & Stopping Line Guide
