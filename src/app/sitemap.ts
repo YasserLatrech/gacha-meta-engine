@@ -1,30 +1,30 @@
 import type { MetadataRoute } from 'next';
 import { getStarSaviorWikiData } from '../application/wiki.service';
+import { SITE_LASTMOD_ISO, SITE_URL } from '../application/seo.service';
 import { STAR_SAVIOR_GUIDES } from '../infrastructure/db/starsavior-guides-data';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3005';
   const dataset = await getStarSaviorWikiData();
 
   const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/`, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
-    { url: `${baseUrl}/starsavior`, lastModified: new Date(), changeFrequency: 'daily', priority: 1.0 },
-    { url: `${baseUrl}/starsavior/tier-list`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.95 },
-    { url: `${baseUrl}/starsavior/reroll`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/starsavior/characters`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/starsavior/arcana`, lastModified: new Date(), changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${SITE_URL}/`, lastModified: SITE_LASTMOD_ISO, changeFrequency: 'daily', priority: 1.0 },
+    { url: `${SITE_URL}/starsavior`, lastModified: SITE_LASTMOD_ISO, changeFrequency: 'daily', priority: 1.0 },
+    { url: `${SITE_URL}/starsavior/tier-list`, lastModified: SITE_LASTMOD_ISO, changeFrequency: 'daily', priority: 0.95 },
+    { url: `${SITE_URL}/starsavior/reroll`, lastModified: SITE_LASTMOD_ISO, changeFrequency: 'daily', priority: 0.9 },
+    { url: `${SITE_URL}/starsavior/characters`, lastModified: SITE_LASTMOD_ISO, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/starsavior/arcana`, lastModified: SITE_LASTMOD_ISO, changeFrequency: 'weekly', priority: 0.85 },
   ];
 
   const charRoutes: MetadataRoute.Sitemap = dataset.characters.map((c) => ({
-    url: `${baseUrl}/starsavior/characters/${c.slug}`,
-    lastModified: new Date(),
+    url: `${SITE_URL}/starsavior/characters/${c.slug}`,
+    lastModified: SITE_LASTMOD_ISO,
     changeFrequency: 'weekly',
     priority: 0.8,
   }));
 
   const guideRoutes: MetadataRoute.Sitemap = STAR_SAVIOR_GUIDES.map((g) => ({
-    url: `${baseUrl}/starsavior/guides/${g.slug}`,
-    lastModified: new Date(),
+    url: `${SITE_URL}/starsavior/guides/${g.slug}`,
+    lastModified: SITE_LASTMOD_ISO,
     changeFrequency: 'weekly',
     priority: 0.8,
   }));

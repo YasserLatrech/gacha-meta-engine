@@ -29,6 +29,17 @@ import {
   CastVoteBodySchema,
 } from '../../application/vote.service';
 import { APPMEDIA_HOME_PORTAL_DATA } from '../../infrastructure/db/appmedia-home-data';
+import {
+  SITE_URL,
+  buildHomePortalJsonLd,
+  buildStarSaviorPortalJsonLd,
+  buildStarSaviorHubJsonLd,
+  buildCharacterMetadata,
+  buildCharacterJsonLd,
+  buildGuideMetadata,
+  buildGuideJsonLd,
+  serializeJsonLd,
+} from '../../application/seo.service';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -325,5 +336,75 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
         mode: 'per-item',
       }).success
     ).toBe(true);
+  });
+
+  it('validates SEO & GEO compliance: unique canonical metadata, Schema.org JSON-LD graphs, XSS escaping, and llms.txt', () => {
+    expect(SITE_URL).toMatch(/^https?:\/\//);
+
+    // 1. Home JSON-LD graph
+    const homeLd = buildHomePortalJsonLd();
+    const homeGraph = homeLd['@graph'] as Array<Record<string, unknown>>;
+    expect(homeGraph.some((n) => n['@type'] === 'Organization')).toBe(true);
+    expect(homeGraph.some((n) => n['@type'] === 'WebSite')).toBe(true);
+    expect(homeGraph.some((n) => n['@type'] === 'CollectionPage')).toBe(true);
+    expect(homeGraph.some((n) => n['@type'] === 'ItemList')).toBe(true);
+
+    // 2. Star Savior Portal JSON-LD (VideoGame + BreadcrumbList + FAQPage)
+    const portalLd = buildStarSaviorPortalJsonLd('v2.4');
+    const portalGraph = portalLd['@graph'] as Array<Record<string, unknown>>;
+    expect(portalGraph.some((n) => n['@type'] === 'VideoGame')).toBe(true);
+    expect(portalGraph.some((n) => n['@type'] === 'BreadcrumbList')).toBe(true);
+    const faqNode = portalGraph.find((n) => n['@type'] === 'FAQPage');
+    expect(faqNode).toBeDefined();
+    expect((faqNode?.mainEntity as unknown[]).length).toBe(5);
+
+    // 3. Character Metadata & JSON-LD
+    const sampleChar = CharacterEntitySchema.parse({
+      id: 1,
+      ...STAR_SAVIOR_CHARACTERS_SEED[0],
+      score: Number(STAR_SAVIOR_CHARACTERS_SEED[0].score),
+    });
+    const charMeta = buildCharacterMetadata(sampleChar);
+    expect(String(charMeta.description).length).toBeLessThanOrEqual(160);
+    expect(charMeta.alternates?.canonical).toContain(`/starsavior/characters/${sampleChar.slug}`);
+    expect(charMeta.openGraph?.images).toBeDefined();
+
+    const charLd = buildCharacterJsonLd(sampleChar);
+    const charSerialized = serializeJsonLd(charLd);
+    expect(charSerialized).toContain('"@type":"BreadcrumbList"');
+    expect(charSerialized).toContain('"@type":"PropertyValue"');
+    expect(charSerialized).not.toContain('</script>');
+
+    // 4. XSS-safe JSON-LD serialization
+    const unsafe = serializeJsonLd({ test: '</script><script>alert(1)</script>' });
+    expect(unsafe).not.toContain('</script>');
+    expect(unsafe).toContain('\\u003c/script>');
+
+    // 5. Hub & Guide Metadata + JSON-LD
+    const hubLd = buildStarSaviorHubJsonLd({
+      title: 'Star Savior Tier List',
+      description: 'Tier ranking of all 57 Saviors.',
+      path: '/starsavior/tier-list',
+      breadcrumbLabel: 'Tier List',
+      image: '/banners/starsavior/eyecatch/rank_chars.webp',
+      topCharacters: [sampleChar],
+    });
+    expect(serializeJsonLd(hubLd)).toContain('"@type":"ItemList"');
+
+    const guide = STAR_SAVIOR_GUIDES[0];
+    const guideMeta = buildGuideMetadata(guide);
+    expect(String(guideMeta.description).length).toBeLessThanOrEqual(160);
+    expect(guideMeta.alternates?.canonical).toContain(`/starsavior/guides/${guide.slug}`);
+    expect(serializeJsonLd(buildGuideJsonLd(guide))).toContain('"@type":"Article"');
+
+    // 6. Verify public/llms.txt exists and links core hubs
+    const llmsPath = path.resolve(__dirname, '../../../public/llms.txt');
+    expect(fs.existsSync(llmsPath)).toBe(true);
+    const llmsContent = fs.readFileSync(llmsPath, 'utf8');
+    expect(llmsContent).toContain('https://ascalon.gg/starsavior/tier-list');
+    expect(llmsContent).toContain('https://ascalon.gg/starsavior/reroll');
+    expect(llmsContent).toContain('https://ascalon.gg/starsavior/characters');
+    expect(llmsContent).toContain('https://ascalon.gg/starsavior/arcana');
+    expect(llmsContent).toContain('https://ascalon.gg/sitemap.xml');
   });
 });

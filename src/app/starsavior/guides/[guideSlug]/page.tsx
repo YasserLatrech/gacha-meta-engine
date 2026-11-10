@@ -2,12 +2,14 @@ import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getStarSaviorDataset } from '@/application/wiki.service';
+import { buildGuideJsonLd, buildGuideMetadata } from '@/application/seo.service';
 import {
   getStarSaviorGuideBySlug,
   STAR_SAVIOR_GUIDES,
 } from '@/infrastructure/db/starsavior-guides-data';
 import { WikiShell } from '@/components/WikiShell';
 import { StarSaviorGuideMacro } from '@/components/macro/StarSaviorGuideMacro';
+import { JsonLd } from '@/components/micro/JsonLd';
 
 export const revalidate = 300;
 
@@ -23,12 +25,12 @@ export async function generateMetadata({
   const { guideSlug } = await params;
   const guide = getStarSaviorGuideBySlug(guideSlug);
   if (!guide) {
-    return { title: 'Guide Not Found | Star Savior Strategy Wiki' };
+    return {
+      title: 'Guide Not Found — Star Savior Wiki',
+      robots: { index: false, follow: false },
+    };
   }
-  return {
-    title: `${guide.title} | Star Savior Strategy Wiki`,
-    description: guide.lead,
-  };
+  return buildGuideMetadata(guide);
 }
 
 export default async function StarSaviorGuidePage({
@@ -54,13 +56,16 @@ export default async function StarSaviorGuidePage({
       : 'portal';
 
   return (
-    <WikiShell
-      game={dataset.game}
-      topCharacters={topUnits}
-      activeNav={activeNav}
-      breadcrumbLabel={guide.title}
-    >
-      <StarSaviorGuideMacro guide={guide} dataset={dataset} />
-    </WikiShell>
+    <>
+      <JsonLd data={buildGuideJsonLd(guide)} />
+      <WikiShell
+        game={dataset.game}
+        topCharacters={topUnits}
+        activeNav={activeNav}
+        breadcrumbLabel={guide.title}
+      >
+        <StarSaviorGuideMacro guide={guide} dataset={dataset} />
+      </WikiShell>
+    </>
   );
 }
