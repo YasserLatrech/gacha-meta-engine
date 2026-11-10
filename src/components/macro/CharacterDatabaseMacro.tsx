@@ -158,7 +158,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search name or CV..."
-                className="rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+                className="flex-1 sm:flex-none rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
               />
             </div>
           </div>
@@ -209,9 +209,66 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
 
         {/* Complete Lv.200 Stats & Journey Aptitudes Table */}
         <div id="stats-comparison-table" className="pt-2">
-          <AppMediaH3>Complete Character Stats & Journey Aptitudes Table ({filtered.length})</AppMediaH3>
+          <AppMediaH3>Complete Character Stats & Journey Aptitudes ({filtered.length})</AppMediaH3>
         </div>
-        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+
+        {/* Mobile Savior Stat Cards (< md) */}
+        <div className="md:hidden space-y-2.5">
+          {filtered.map((c) => {
+            const js = c.staticData?.journeyStats;
+            return (
+              <Link
+                key={`mob-stat-${c.slug}`}
+                href={`/starsavior/characters/${c.slug}`}
+                className="block rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-2 hover:border-[#3b82f6]/60 transition-colors"
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src={c.imageUrl}
+                    alt={c.name}
+                    className="h-14 w-14 rounded-lg border-2 border-[#eab308]/70 object-cover shrink-0 bg-[#090d16]"
+                    loading="lazy"
+                  />
+                  <div className="min-w-0 flex-1 space-y-1">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <AppMediaTierBadge tier={c.staticData?.appMediaTier || c.overallTier} />
+                      <span className="rounded border border-[#eab308]/60 bg-[#eab308]/15 px-1.5 py-0.5 text-[10px] font-black text-[#fde047]">
+                        {c.rarity}
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-white">
+                        {c.staticData?.attributeIconUrl && (
+                          <img src={c.staticData.attributeIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="lazy" />
+                        )}
+                        <span>{c.element}</span>
+                      </span>
+                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#cbd5e1]">
+                        {c.staticData?.classIconUrl && (
+                          <img src={c.staticData.classIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="lazy" />
+                        )}
+                        <span>{c.role}</span>
+                      </span>
+                    </div>
+                    <div className="text-[13px] font-extrabold text-[#60a5fa] leading-snug">{c.name}</div>
+                    <div className="text-[10px] font-semibold text-[#94a3b8]">
+                      {c.staticData?.pool || 'Standard'} · Reroll: {c.staticData?.appMediaRerollTier || c.rerollTier}
+                    </div>
+                  </div>
+                </div>
+
+                <div className="rounded bg-[#141c2e] border border-[#1e293b] px-2.5 py-1.5 font-mono text-[11px] font-extrabold text-white">
+                  HP {c.baseStats.hp.toLocaleString()} · ATK {c.baseStats.atk.toLocaleString()} · DEF {c.baseStats.def.toLocaleString()} · SPD {c.baseStats.spd}
+                </div>
+                {js && (
+                  <div className="text-[10px] font-semibold text-[#94a3b8]">
+                    Journey: POW {js.power} / HLT {js.vitality} / END {js.endurance} / FOC {js.focus} / PRO {js.protection}
+                  </div>
+                )}
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
           <table className="w-full border-collapse text-left text-[12px]">
             <thead>
               <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
@@ -306,7 +363,39 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
           Complete character profile registry for all playable Saviors, including Japanese Voice Actors (CV), Starlight Squad / faction affiliations, birthdays, heights, character titles, and acquisition methods.
         </p>
 
-        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+        {/* Mobile CV & Profile Cards (< md) */}
+        <div className="md:hidden grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+          {filtered.map((c) => {
+            const prof = c.staticData?.profile;
+            return (
+              <Link
+                key={`mob-prof-${c.slug}`}
+                href={`/starsavior/characters/${c.slug}#profile-cv-lore`}
+                className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5 hover:border-[#3b82f6]/60 transition-colors"
+              >
+                <div className="flex items-center gap-2.5">
+                  <img
+                    src={c.imageUrl}
+                    alt={c.name}
+                    className="h-10 w-10 rounded-lg border border-[#334155] object-cover shrink-0 bg-[#090d16]"
+                    loading="lazy"
+                  />
+                  <div className="min-w-0 flex-1">
+                    <div className="font-extrabold text-[#60a5fa] text-[12px] truncate">{c.name}</div>
+                    <div className="text-[11px] font-bold text-white truncate">CV: {prof?.cv || 'TBA'}</div>
+                  </div>
+                </div>
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-[#cbd5e1] border-t border-[#1e293b] pt-1.5">
+                  <span>Faction: <strong className="text-white">{prof?.affiliation || 'Voyager Guild'}</strong></span>
+                  {prof?.birthday && <span>Birthday: <strong className="text-[#93c5fd]">{prof.birthday}</strong></span>}
+                  {prof?.height && <span>Height: <strong className="text-white">{prof.height}</strong></span>}
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
           <table className="w-full border-collapse text-left text-[12px]">
             <thead>
               <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import type { GameConfigEntity, CharacterEntity } from '../domain/schemas';
+import { MobileWikiDrawer } from './micro/MobileWikiDrawer';
 
 interface WikiShellProps {
   game: GameConfigEntity;
@@ -51,183 +52,140 @@ export function WikiShell({
     },
   ];
 
+  const quickTopNav = [
+    { key: 'home', label: 'Home', href: '/' },
+    { key: 'portal', label: 'Wiki Top', href: '/starsavior' },
+    { key: 'tier-list', label: 'Tier List', href: '/starsavior/tier-list' },
+    { key: 'reroll', label: 'Reroll', href: '/starsavior/reroll' },
+    { key: 'characters', label: 'Characters (57)', href: '/starsavior/characters' },
+    { key: 'arcana', label: 'Arcana (83)', href: '/starsavior/arcana' },
+  ];
+
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-canvas)' }}>
-      {/* Top AppMedia Dark Header */}
-      <header
-        style={{
-          position: 'sticky',
-          top: 0,
-          zIndex: 50,
-          background: 'rgba(14, 17, 23, 0.96)',
-          backdropFilter: 'blur(8px)',
-          borderBottom: '1px solid var(--border-subtle)',
-        }}
-      >
-        <div
-          style={{
-            maxWidth: '1240px',
-            margin: '0 auto',
-            padding: '10px 16px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '12px',
-            flexWrap: 'wrap',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+      {/* Top AppMedia Dark Header (Responsive Desktop + Mobile) */}
+      <header className="sticky top-0 z-50 border-b border-[#1e2636] bg-[#0e1117]/96 backdrop-blur-md">
+        <div className="mx-auto flex max-w-[1240px] items-center justify-between gap-2 px-3 py-2 sm:px-4 sm:py-2.5">
+          {/* Brand Pair */}
+          <div className="flex min-w-0 items-center gap-2 sm:gap-3.5">
             <Link
               href="/"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '9px',
-                textDecoration: 'none',
-                paddingRight: '14px',
-                borderRight: '1px solid var(--border-subtle)',
-              }}
               title="Ascalon.gg Home"
+              className="flex shrink-0 items-center gap-2 border-r border-[#1e2636] pr-2 sm:pr-3.5"
             >
               <img
                 src="/brand/ascalon-logo.png"
                 alt="Ascalon.gg"
-                width={44}
-                height={44}
-                style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '9px',
-                  objectFit: 'cover',
-                  border: '1.5px solid #60a5fa',
-                  boxShadow: '0 0 10px rgba(59, 130, 246, 0.35)',
-                }}
+                width={40}
+                height={40}
+                className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg border border-[#60a5fa] object-cover shadow-[0_0_10px_rgba(59,130,246,0.3)]"
               />
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
-                  <span style={{ fontWeight: 900, fontSize: '1.02rem', color: '#ffffff', letterSpacing: '0.02em' }}>
+              <div className="hidden xs:block sm:block">
+                <div className="flex items-center gap-1">
+                  <span className="text-[13px] sm:text-[15.5px] font-black tracking-wide text-white">
                     ASCALON
                   </span>
-                  <span
-                    style={{
-                      fontWeight: 900,
-                      fontSize: '0.75rem',
-                      color: '#60a5fa',
-                      background: 'rgba(59, 130, 246, 0.16)',
-                      padding: '1px 5px',
-                      borderRadius: '4px',
-                      border: '1px solid rgba(59, 130, 246, 0.35)',
-                    }}
-                  >
+                  <span className="rounded border border-[#3b82f6]/40 bg-[#3b82f6]/15 px-1 py-0.5 text-[10px] font-black text-[#60a5fa]">
                     .GG
                   </span>
                 </div>
-                <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                <div className="hidden sm:block text-[10px] font-semibold text-[#8492a6]">
                   Strategy Wiki Portal
                 </div>
               </div>
             </Link>
 
-            <Link
-              href="/starsavior"
-              style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}
-            >
+            <Link href="/starsavior" className="flex min-w-0 items-center gap-2 sm:gap-2.5">
               <img
                 src={game.iconUrl}
                 alt={game.name}
-                width={40}
-                height={40}
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  borderRadius: '9px',
-                  objectFit: 'cover',
-                  border: '1px solid var(--border-strong)',
-                }}
+                width={38}
+                height={38}
+                className="h-8 w-8 sm:h-9 sm:w-9 shrink-0 rounded-lg border border-[#3b4861] object-cover"
               />
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ fontWeight: 800, fontSize: '1.02rem', color: '#f8fafc', letterSpacing: '-0.01em' }}>
+              <div className="min-w-0">
+                <div className="flex items-center gap-1.5">
+                  <span className="truncate text-[13.5px] sm:text-[15.5px] font-extrabold tracking-tight text-[#f8fafc]">
                     {game.name} Wiki
                   </span>
-                  <span
-                    style={{
-                      fontSize: '0.68rem',
-                      fontWeight: 800,
-                      padding: '2px 7px',
-                      borderRadius: '4px',
-                      background: 'rgba(59, 130, 246, 0.18)',
-                      color: '#60a5fa',
-                      border: '1px solid rgba(59, 130, 246, 0.35)',
-                    }}
-                  >
+                  <span className="hidden md:inline-block shrink-0 rounded border border-[#3b82f6]/35 bg-[#3b82f6]/18 px-1.5 py-0.5 text-[10.5px] font-extrabold text-[#60a5fa]">
                     {game.patchVersion}
                   </span>
                 </div>
-                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-                  57 Characters · 83 Arcana · Strategy Database
+                <div className="truncate text-[10.5px] sm:text-[11px] text-[#8492a6]">
+                  57 Characters · 83 Arcana
                 </div>
               </div>
             </Link>
           </div>
 
-          <nav style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-            {[
-              { key: 'home', label: 'Home', href: '/' },
-              { key: 'portal', label: 'Wiki Top', href: '/starsavior' },
-              { key: 'tier-list', label: 'Tier List', href: '/starsavior/tier-list' },
-              { key: 'reroll', label: 'Reroll', href: '/starsavior/reroll' },
-              { key: 'characters', label: 'Characters (57)', href: '/starsavior/characters' },
-              { key: 'arcana', label: 'Arcana (83)', href: '/starsavior/arcana' },
-            ].map((item) => {
+          {/* Desktop Navigation Pills */}
+          <nav className="hidden lg:flex items-center gap-1.5">
+            {quickTopNav.map((item) => {
               const isActive = activeNav === item.key;
               return (
                 <Link
                   key={item.key}
                   href={item.href}
-                  style={{
-                    padding: '7px 13px',
-                    borderRadius: '6px',
-                    fontSize: '0.82rem',
-                    fontWeight: 700,
-                    background: isActive ? '#2563eb' : 'var(--bg-elevated)',
-                    color: isActive ? '#ffffff' : 'var(--text-secondary)',
-                    border: isActive ? '1px solid #3b82f6' : '1px solid var(--border-subtle)',
-                  }}
+                  className={`rounded-md border px-3 py-1.5 text-[12.5px] font-bold transition-colors ${
+                    isActive
+                      ? 'border-[#3b82f6] bg-[#2563eb] text-white'
+                      : 'border-[#1e2636] bg-[#21293a] text-[#c3cde0] hover:border-[#3b82f6]/60 hover:text-white'
+                  }`}
                 >
                   {item.label}
                 </Link>
               );
             })}
           </nav>
+
+          {/* Mobile Drawer Trigger */}
+          <MobileWikiDrawer
+            navGroups={navGroups}
+            activeNav={activeNav}
+            elementsConfig={game.elementsConfig}
+            topCharacters={topCharacters}
+          />
         </div>
+
+        {/* Mobile / Tablet Single-Line Horizontal Quick Nav Strip */}
+        <nav
+          aria-label="Star Savior Quick Navigation"
+          className="no-scrollbar lg:hidden flex items-center gap-1.5 overflow-x-auto border-t border-[#1e2636] bg-[#0b0f19] px-3 py-1.5"
+        >
+          {quickTopNav.map((item) => {
+            const isActive = activeNav === item.key;
+            return (
+              <Link
+                key={item.key}
+                href={item.href}
+                className={`shrink-0 whitespace-nowrap rounded-md border px-2.5 py-1 text-[11.5px] font-bold active:scale-95 transition-all ${
+                  isActive
+                    ? 'border-[#3b82f6] bg-[#2563eb] text-white shadow-xs'
+                    : 'border-[#1e2636] bg-[#161e2e] text-[#cbd5e1] hover:text-white'
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
       </header>
 
       {/* Breadcrumb Bar */}
-      <div style={{ background: '#11151e', borderBottom: '1px solid var(--border-subtle)' }}>
-        <div
-          style={{
-            maxWidth: '1240px',
-            margin: '0 auto',
-            padding: '7px 16px',
-            fontSize: '0.76rem',
-            color: 'var(--text-muted)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-          }}
-        >
-          <Link href="/" style={{ color: '#94a3b8', fontWeight: 700 }}>
+      <div className="border-b border-[#1e2636] bg-[#11151e]">
+        <div className="no-scrollbar mx-auto flex max-w-[1240px] items-center gap-1.5 overflow-x-auto whitespace-nowrap px-3 py-1.5 sm:px-4 text-[11.5px] text-[#8492a6]">
+          <Link href="/" className="shrink-0 font-bold text-[#94a3b8] hover:text-white">
             Ascalon.gg
           </Link>
-          <span>›</span>
-          <Link href="/starsavior" style={{ color: '#60a5fa', fontWeight: 600 }}>
+          <span className="shrink-0">›</span>
+          <Link href="/starsavior" className="shrink-0 font-semibold text-[#60a5fa] hover:underline">
             Star Savior Wiki
           </Link>
           {breadcrumbLabel && (
             <>
-              <span>›</span>
-              <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{breadcrumbLabel}</span>
+              <span className="shrink-0">›</span>
+              <span className="truncate font-semibold text-[#f3f6fc]">{breadcrumbLabel}</span>
             </>
           )}
         </div>
@@ -235,12 +193,11 @@ export function WikiShell({
 
       {/* Main 2-Column AppMedia Layout (255px Left Menu + 1fr Article Column) */}
       <div
-        className="wiki-layout-grid"
+        className="wiki-layout-grid px-2.5 py-3 sm:p-4"
         style={{
           maxWidth: '1240px',
           width: '100%',
           margin: '0 auto',
-          padding: '16px',
           flex: 1,
         }}
       >
@@ -469,7 +426,7 @@ export function WikiShell({
               <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.gg</strong> — Star Savior Strategy Wiki &amp; Database.
             </span>
           </div>
-          <div style={{ display: 'flex', gap: '14px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', columnGap: '14px', rowGap: '8px' }}>
             <Link href="/">Ascalon Home</Link>
             <Link href="/starsavior">Star Savior Wiki</Link>
             <Link href="/starsavior/tier-list">Tier List</Link>

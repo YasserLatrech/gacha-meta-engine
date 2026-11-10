@@ -204,77 +204,68 @@ export function CharacterDetailMacro({
 
           {/* Basic Spec & Tier Table */}
           <div className="md:col-span-7 space-y-3">
-            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-left text-[12px]">
-                <tbody className="divide-y divide-[#1e293b]">
-                  <tr>
-                    <th className="w-28 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">Rarity / Pool</th>
-                    <td className="px-3 py-2 font-bold text-[#fbbf24]">
-                      {character.rarity} ({sd?.pool || 'Standard'})
-                    </td>
-                    <th className="w-28 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-x border-[#243049]">Attribute</th>
-                    <td className="px-3 py-2 font-bold text-white">
-                      <span className="inline-flex items-center gap-1.5">
-                        {sd?.attributeIconUrl && (
-                          <img src={sd.attributeIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
-                        )}
-                        <span>{character.element} Attribute</span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">Class</th>
-                    <td className="px-3 py-2 font-bold text-white">
-                      <span className="inline-flex items-center gap-1.5">
-                        {sd?.classIconUrl && (
-                          <img src={sd.classIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
-                        )}
-                        <span>{character.role}</span>
-                      </span>
-                    </td>
-                    <th className="bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-x border-[#243049]">Attack Type</th>
-                    <td className="px-3 py-2 font-bold text-[#cbd5e1]">{sd?.attackType || 'Slash Damage'}</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 text-[12px]">
+              <div className="flex items-center border-b border-[#1e293b] sm:border-r sm:border-[#243049]">
+                <div className="w-28 shrink-0 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">
+                  Rarity / Pool
+                </div>
+                <div className="px-3 py-2 font-bold text-[#fbbf24]">
+                  {character.rarity} ({sd?.pool || 'Standard'})
+                </div>
+              </div>
+              <div className="flex items-center border-b border-[#1e293b]">
+                <div className="w-28 shrink-0 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">
+                  Attribute
+                </div>
+                <div className="px-3 py-2 font-bold text-white">
+                  <span className="inline-flex items-center gap-1.5">
+                    {sd?.attributeIconUrl && (
+                      <img src={sd.attributeIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
+                    )}
+                    <span>{character.element} Attribute</span>
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center sm:border-r sm:border-[#243049]">
+                <div className="w-28 shrink-0 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">
+                  Class
+                </div>
+                <div className="px-3 py-2 font-bold text-white">
+                  <span className="inline-flex items-center gap-1.5">
+                    {sd?.classIconUrl && (
+                      <img src={sd.classIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
+                    )}
+                    <span>{character.role}</span>
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center">
+                <div className="w-28 shrink-0 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">
+                  Attack Type
+                </div>
+                <div className="px-3 py-2 font-bold text-[#cbd5e1]">{sd?.attackType || 'Slash Damage'}</div>
+              </div>
             </div>
 
-            {/* AppMedia Authentic Tier Ratings Table (Letter Ranks Only — Zero Made-Up Numeric Scores) */}
-            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-center text-[12px]">
-                <thead>
-                  <tr className="border-b border-[#243049] bg-[#161f33] text-[10px] font-extrabold uppercase text-[#94a3b8]">
-                    <th className="py-2 border-r border-[#243049]">Overall</th>
-                    <th className="py-2 border-r border-[#243049]">General PvE</th>
-                    <th className="py-2 border-r border-[#243049]">Vs. Boss</th>
-                    <th className="py-2 border-r border-[#243049]">Gauntlet PvP</th>
-                    <th className="py-2 border-r border-[#243049]">Reroll</th>
-                    <th className="py-2">Dupe Priority</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="py-2.5 border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={sd?.appMediaTier || character.overallTier} />
-                    </td>
-                    <td className="py-2.5 border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={sd?.pveTier || sd?.appMediaTier || character.overallTier} />
-                    </td>
-                    <td className="py-2.5 border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={sd?.bossTier || sd?.appMediaTier || character.overallTier} />
-                    </td>
-                    <td className="py-2.5 border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={sd?.pvpTier || character.overallTier} />
-                    </td>
-                    <td className="py-2.5 border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={sd?.appMediaRerollTier || character.rerollTier} />
-                    </td>
-                    <td className="py-2.5 font-black text-[#fbbf24]">
-                      {sd?.dupeRating || '—'}
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            {/* AppMedia Authentic Tier Ratings Grid (3x2 on mobile, 6x1 on >= sm) */}
+            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-3 sm:grid-cols-6 divide-x divide-y sm:divide-y-0 divide-[#243049] text-center text-[12px]">
+              {[
+                { label: 'Overall', val: <AppMediaTierBadge tier={sd?.appMediaTier || character.overallTier} /> },
+                { label: 'General PvE', val: <AppMediaTierBadge tier={sd?.pveTier || sd?.appMediaTier || character.overallTier} /> },
+                { label: 'Vs. Boss', val: <AppMediaTierBadge tier={sd?.bossTier || sd?.appMediaTier || character.overallTier} /> },
+                { label: 'Gauntlet PvP', val: <AppMediaTierBadge tier={sd?.pvpTier || character.overallTier} /> },
+                { label: 'Reroll', val: <AppMediaTierBadge tier={sd?.appMediaRerollTier || character.rerollTier} /> },
+                { label: 'Dupe Priority', val: <span className="font-black text-[#fbbf24]">{sd?.dupeRating || '—'}</span> },
+              ].map((cell) => (
+                <div key={cell.label} className="flex flex-col">
+                  <div className="border-b border-[#243049] bg-[#161f33] px-1.5 py-1.5 text-[10px] font-extrabold uppercase text-[#94a3b8] truncate">
+                    {cell.label}
+                  </div>
+                  <div className="flex-1 flex items-center justify-center py-2.5">
+                    {cell.val}
+                  </div>
+                </div>
+              ))}
             </div>
 
             {/* Quick Summary & Strengths Bullet Box */}
@@ -303,61 +294,60 @@ export function CharacterDetailMacro({
         <AppMediaH2 id="recommended-equipment">{character.name}&apos;s Recommended Equipment Builds</AppMediaH2>
 
         <AppMediaH3 id="equip-sets">Recommended Equipment Sets (PvE & PvP)</AppMediaH3>
-        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
-            <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
-                <th className="w-1/2 px-3.5 py-2 border-r border-[#243049]">Recommended PvE Equipment Sets</th>
-                <th className="w-1/2 px-3.5 py-2">Recommended PvP (Gauntlet) Equipment Sets</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="p-3.5 align-top border-r border-[#1e293b] space-y-2 text-[#e2e8f0]">
-                  {sd?.equipment?.pveSetDetails && sd.equipment.pveSetDetails.length > 0 ? (
-                    <div className="flex flex-wrap gap-3">
-                      {sd.equipment.pveSetDetails.map((s, i) => (
-                        <div key={i} className="flex items-center gap-2.5 rounded-lg border border-[#243049] bg-[#111827] px-3 py-2">
-                          {s.iconUrl && (
-                            <img src={s.iconUrl} alt={s.name} className="h-11 w-11 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
-                          )}
-                          <div>
-                            <div className="font-extrabold text-white text-[12px]">{s.name} Set</div>
-                            {s.effect && <div className="text-[11px] font-semibold text-[#fbbf24]">{s.effect}</div>}
-                          </div>
-                        </div>
-                      ))}
+        <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#243049] text-[12px]">
+          <div>
+            <div className="border-b border-[#243049] bg-[#161f33] px-3.5 py-2 text-[11px] font-extrabold text-[#94a3b8]">
+              Recommended PvE Equipment Sets
+            </div>
+            <div className="p-3.5 space-y-2 text-[#e2e8f0]">
+              {sd?.equipment?.pveSetDetails && sd.equipment.pveSetDetails.length > 0 ? (
+                <div className="flex flex-wrap gap-2.5">
+                  {sd.equipment.pveSetDetails.map((s, i) => (
+                    <div key={i} className="flex items-center gap-2.5 rounded-lg border border-[#243049] bg-[#111827] px-3 py-2">
+                      {s.iconUrl && (
+                        <img src={s.iconUrl} alt={s.name} className="h-10 w-10 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
+                      )}
+                      <div>
+                        <div className="font-extrabold text-white text-[12px]">{s.name} Set</div>
+                        {s.effect && <div className="text-[11px] font-semibold text-[#fbbf24]">{s.effect}</div>}
+                      </div>
                     </div>
-                  ) : (
-                    (sd?.equipment?.pveSets || []).map((s, i) => (
-                      <div key={i} className="font-bold">• {s}</div>
-                    ))
-                  )}
-                </td>
-                <td className="p-3.5 align-top space-y-2 text-[#e2e8f0]">
-                  {sd?.equipment?.pvpSetDetails && sd.equipment.pvpSetDetails.length > 0 ? (
-                    <div className="flex flex-wrap gap-3">
-                      {sd.equipment.pvpSetDetails.map((s, i) => (
-                        <div key={i} className="flex items-center gap-2.5 rounded-lg border border-[#243049] bg-[#111827] px-3 py-2">
-                          {s.iconUrl && (
-                            <img src={s.iconUrl} alt={s.name} className="h-11 w-11 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
-                          )}
-                          <div>
-                            <div className="font-extrabold text-white text-[12px]">{s.name} Set</div>
-                            {s.effect && <div className="text-[11px] font-semibold text-[#fbbf24]">{s.effect}</div>}
-                          </div>
-                        </div>
-                      ))}
+                  ))}
+                </div>
+              ) : (
+                (sd?.equipment?.pveSets || []).map((s, i) => (
+                  <div key={i} className="font-bold">• {s}</div>
+                ))
+              )}
+            </div>
+          </div>
+
+          <div>
+            <div className="border-b border-[#243049] bg-[#161f33] px-3.5 py-2 text-[11px] font-extrabold text-[#94a3b8]">
+              Recommended PvP (Gauntlet) Equipment Sets
+            </div>
+            <div className="p-3.5 space-y-2 text-[#e2e8f0]">
+              {sd?.equipment?.pvpSetDetails && sd.equipment.pvpSetDetails.length > 0 ? (
+                <div className="flex flex-wrap gap-2.5">
+                  {sd.equipment.pvpSetDetails.map((s, i) => (
+                    <div key={i} className="flex items-center gap-2.5 rounded-lg border border-[#243049] bg-[#111827] px-3 py-2">
+                      {s.iconUrl && (
+                        <img src={s.iconUrl} alt={s.name} className="h-10 w-10 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
+                      )}
+                      <div>
+                        <div className="font-extrabold text-white text-[12px]">{s.name} Set</div>
+                        {s.effect && <div className="text-[11px] font-semibold text-[#fbbf24]">{s.effect}</div>}
+                      </div>
                     </div>
-                  ) : (
-                    (sd?.equipment?.pvpSets || []).map((s, i) => (
-                      <div key={i} className="font-bold">• {s}</div>
-                    ))
-                  )}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  ))}
+                </div>
+              ) : (
+                (sd?.equipment?.pvpSets || []).map((s, i) => (
+                  <div key={i} className="font-bold">• {s}</div>
+                ))
+              )}
+            </div>
+          </div>
         </div>
 
         <AppMediaH3 id="equip-stats">Recommended Main Stats & Substat Priority</AppMediaH3>
@@ -502,8 +492,8 @@ export function CharacterDetailMacro({
         {substituteColumns.length > 0 && (
           <>
             <AppMediaH4 id="arcana-substitutes">Substitute Arcana Cards (Replacement Table)</AppMediaH4>
-            <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626] p-3">
-              <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 min-w-[480px]">
+            <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3">
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2.5 sm:gap-3">
                 {substituteColumns.map((col, idx) => (
                   <div
                     key={idx}

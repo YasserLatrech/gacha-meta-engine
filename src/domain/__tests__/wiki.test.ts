@@ -19,6 +19,14 @@ import {
   APPMEDIA_SR_CHAR_GROUPS,
   APPMEDIA_SR_ARCANA_GROUPS,
 } from '../../infrastructure/db/starsavior-guides-data';
+import {
+  extractClientIp,
+  normalizeIp,
+  hashClientIp,
+  castVoteInMemory,
+  checkVoteRateLimit,
+  resetMemoryVotesForTests,
+} from '../../application/vote.service';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -184,5 +192,109 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     for (const [slug, bossPair] of expectedCubeBosses) {
       expect(getStarSaviorGuideBySlug(slug)?.title).toContain(bossPair);
     }
+  });
+
+  it('enforces 1-vote-per-IP across per-item (Upcoming Games) and single-choice (Community Poll) modes', () => {
+    resetMemoryVotesForTests();
+
+    // 1. IP normalization & HMAC hashing
+    expect(normalizeIp('::1')).toBe('127.0.0.1');
+    expect(normalizeIp('::ffff:203.0.113.42')).toBe('203.0.113.42');
+
+    const headersA = new Headers({ 'x-forwarded-for': '203.0.113.42, 10.0.0.1' });
+    const headersB = new Headers({ 'cf-connecting-ip': '198.51.100.77' });
+    expect(extractClientIp(headersA)).toBe('203.0.113.42');
+    expect(extractClientIp(headersB)).toBe('198.51.100.77');
+
+    const ipHashA = hashClientIp('203.0.113.42');
+    const ipHashAMapped = hashClientIp('::ffff:203.0.113.42');
+    const ipHashB = hashClientIp('198.51.100.77');
+    expect(ipHashA).toBe(ipHashAMapped);
+    expect(ipHashA).not.toBe(ipHashB);
+
+    // 2. Per-item mode (Upcoming Games Calendar): 1 vote per game per IP
+    const up1 = castVoteInMemory({
+      scope: 'upcoming-games',
+      targetId: 'arknights-endfield',
+      mode: 'per-item',
+      ipHash: ipHashA,
+    });
+    expect(up1.ok).toBe(true);
+    expect(up1.alreadyVoted).toBe(false);
+    expect(up1.counts['arknights-endfield']).toBe(1);
+
+    // Duplicate vote from same IP on same game -> rejected!
+    const upDup = castVoteInMemory({
+      scope: 'upcoming-games',
+      targetId: 'arknights-endfield',
+      mode: 'per-item',
+      ipHash: ipHashA,
+    });
+    expect(upDup.ok).toBe(false);
+    expect(upDup.alreadyVoted).toBe(true);
+    expect(upDup.counts['arknights-endfield']).toBe(1);
+
+    // Same IP voting on a DIFFERENT upcoming game -> allowed once!
+    const upOtherGame = castVoteInMemory({
+      scope: 'upcoming-games',
+      targetId: 'azur-promilia',
+      mode: 'per-item',
+      ipHash: ipHashA,
+    });
+    expect(upOtherGame.ok).toBe(true);
+    expect(upOtherGame.myVotes).toEqual(['arknights-endfield', 'azur-promilia']);
+
+    // Different IP voting on arknights-endfield -> allowed!
+    const upIpB = castVoteInMemory({
+      scope: 'upcoming-games',
+      targetId: 'arknights-endfield',
+      mode: 'per-item',
+      ipHash: ipHashB,
+    });
+    expect(upIpB.ok).toBe(true);
+    expect(upIpB.counts['arknights-endfield']).toBe(2);
+
+    // 3. Single-choice mode (Community Poll): 1 vote TOTAL per poll per IP
+    const poll1 = castVoteInMemory({
+      scope: 'poll:starsavior-strongest-char',
+      targetId: 'tanya',
+      mode: 'single-choice',
+      ipHash: ipHashA,
+    });
+    expect(poll1.ok).toBe(true);
+    expect(poll1.counts['tanya']).toBe(1);
+
+    // Same IP trying to vote for ANOTHER character in the same poll -> blocked!
+    const poll2 = castVoteInMemory({
+      scope: 'poll:starsavior-strongest-char',
+      targetId: 'amora',
+      mode: 'single-choice',
+      ipHash: ipHashA,
+    });
+    expect(poll2.ok).toBe(false);
+    expect(poll2.alreadyVoted).toBe(true);
+    expect(poll2.counts['tanya']).toBe(1);
+    expect(poll2.counts['amora']).toBeUndefined();
+    expect(poll2.myVotes).toEqual(['tanya']);
+
+    // Different IP voting for amora -> allowed!
+    const pollIpB = castVoteInMemory({
+      scope: 'poll:starsavior-strongest-char',
+      targetId: 'amora',
+      mode: 'single-choice',
+      ipHash: ipHashB,
+    });
+    expect(pollIpB.ok).toBe(true);
+    expect(pollIpB.counts['tanya']).toBe(1);
+    expect(pollIpB.counts['amora']).toBe(1);
+
+    // 4. Sliding-window rate limit check (blocks on 21st request within 60s)
+    const testLimiterHash = hashClientIp('192.0.2.99');
+    for (let i = 0; i < 20; i++) {
+      expect(checkVoteRateLimit(testLimiterHash, 1000 + i).allowed).toBe(true);
+    }
+    const blocked = checkVoteRateLimit(testLimiterHash, 2000);
+    expect(blocked.allowed).toBe(false);
+    expect(blocked.retryAfterSec).toBeGreaterThan(0);
   });
 });

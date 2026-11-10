@@ -230,32 +230,98 @@ export function AscalonHomeMacro() {
 
   const [selectedPlatform, setSelectedPlatform] = useState<'ALL' | 'Mobile App' | 'Console / PC'>('ALL');
 
-  // Interactive Reader Votes state for Upcoming Games Calendar
-  const [votedMap, setVotedMap] = useState<Record<string, number>>({});
+  // Server-backed 1-Vote-Per-IP state for Upcoming Games Calendar
+  const [serverVoteCounts, setServerVoteCounts] = useState<Record<string, number>>({});
+  const [myVotedIds, setMyVotedIds] = useState<Record<string, boolean>>({});
+  const [pendingVoteIds, setPendingVoteIds] = useState<Record<string, boolean>>({});
   const [activeArticle, setActiveArticle] = useState<AppMediaFeaturedArticle | null>(null);
   const [activeGameReview, setActiveGameReview] = useState<AppMediaRecommendedGame | null>(null);
 
   useEffect(() => {
-    try {
-      const saved = localStorage.getItem('ascalon_upcoming_votes_v1');
-      if (saved) {
-        setVotedMap(JSON.parse(saved));
-      }
-    } catch {
-      // ignore storage errors
-    }
+    let cancelled = false;
+    fetch('/api/votes?scope=upcoming-games', { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled || !data) return;
+        if (data.counts && typeof data.counts === 'object') {
+          setServerVoteCounts(data.counts);
+        }
+        if (Array.isArray(data.myVotes)) {
+          const nextVoted: Record<string, boolean> = {};
+          for (const id of data.myVotes) {
+            nextVoted[String(id)] = true;
+          }
+          setMyVotedIds(nextVoted);
+        }
+      })
+      .catch(() => {
+        // Keep static baseline counts if offline
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  const handleVoteUpcoming = (gameId: string) => {
-    setVotedMap((prev) => {
-      const next = { ...prev, [gameId]: (prev[gameId] || 0) + 1 };
-      try {
-        localStorage.setItem('ascalon_upcoming_votes_v1', JSON.stringify(next));
-      } catch {
-        // ignore storage errors
+  const handleVoteUpcoming = async (gameId: string) => {
+    if (myVotedIds[gameId] || pendingVoteIds[gameId]) return;
+
+    // Optimistic UI update
+    setPendingVoteIds((prev) => ({ ...prev, [gameId]: true }));
+    setMyVotedIds((prev) => ({ ...prev, [gameId]: true }));
+    setServerVoteCounts((prev) => ({ ...prev, [gameId]: (prev[gameId] || 0) + 1 }));
+
+    try {
+      const res = await fetch('/api/votes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          scope: 'upcoming-games',
+          targetId: gameId,
+          mode: 'per-item',
+        }),
+      });
+      const data = await res.json().catch(() => null);
+      if ((res.ok || res.status === 409) && data) {
+        if (data.counts && typeof data.counts === 'object') {
+          setServerVoteCounts(data.counts);
+        }
+        if (Array.isArray(data.myVotes)) {
+          const synced: Record<string, boolean> = {};
+          for (const id of data.myVotes) {
+            synced[String(id)] = true;
+          }
+          synced[gameId] = true;
+          setMyVotedIds(synced);
+        }
+      } else {
+        // Rollback on rate-limit or validation error
+        setMyVotedIds((prev) => {
+          const copy = { ...prev };
+          delete copy[gameId];
+          return copy;
+        });
+        setServerVoteCounts((prev) => ({
+          ...prev,
+          [gameId]: Math.max(0, (prev[gameId] || 1) - 1),
+        }));
       }
-      return next;
-    });
+    } catch {
+      setMyVotedIds((prev) => {
+        const copy = { ...prev };
+        delete copy[gameId];
+        return copy;
+      });
+      setServerVoteCounts((prev) => ({
+        ...prev,
+        [gameId]: Math.max(0, (prev[gameId] || 1) - 1),
+      }));
+    } finally {
+      setPendingVoteIds((prev) => {
+        const copy = { ...prev };
+        delete copy[gameId];
+        return copy;
+      });
+    }
   };
 
   // Filter Top 25 Recommended Mobile Games
@@ -301,10 +367,13 @@ export function AscalonHomeMacro() {
     });
 
     if (sortUpcomingBy === 'votes') {
-      return [...list].sort((a, b) => (b.votes + (votedMap[b.id] || 0)) - (a.votes + (votedMap[a.id] || 0)));
+      return [...list].sort(
+        (a, b) =>
+          b.votes + (serverVoteCounts[b.id] || 0) - (a.votes + (serverVoteCounts[a.id] || 0))
+      );
     }
     return list;
-  }, [upcomingGames, selectedWindow, sortUpcomingBy, searchQuery, votedMap]);
+  }, [upcomingGames, selectedWindow, sortUpcomingBy, searchQuery, serverVoteCounts]);
 
   const displayedUpcoming = showAllUpcoming ? filteredUpcoming : filteredUpcoming.slice(0, 16);
 
@@ -324,29 +393,27 @@ export function AscalonHomeMacro() {
     <div className="min-h-screen bg-[#090d16] text-[#e2e8f0]">
       {/* Sticky Top Global Header */}
       <header className="sticky top-0 z-40 border-b border-[#1e293b] bg-[#0b101b]/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-3 px-4 py-2.5">
-          <div className="flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <img
-                src="/brand/ascalon-logo.png"
-                alt="Ascalon.gg"
-                className="h-9 w-9 rounded-lg border border-[#3b82f6]/60 object-cover shadow-sm"
-              />
-              <div>
-                <div className="flex items-center gap-1.5">
-                  <span className="text-base font-black tracking-tight text-white group-hover:text-[#60a5fa] transition-colors">
-                    ASCALON<span className="text-[#3b82f6]">.GG</span>
-                  </span>
-                  <span className="rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[9px] font-extrabold text-[#93c5fd]">
-                    STRATEGY PORTAL
-                  </span>
-                </div>
-                <div className="text-[10px] font-semibold text-[#94a3b8]">
-                  Mobile Game Rankings, Release Calendar & Strategy Wikis
-                </div>
+        <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-2.5 px-3 sm:px-4 py-2 sm:py-2.5">
+          <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group min-w-0">
+            <img
+              src="/brand/ascalon-logo.png"
+              alt="Ascalon.gg"
+              className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg border border-[#3b82f6]/60 object-cover shadow-sm shrink-0"
+            />
+            <div className="min-w-0">
+              <div className="flex items-center gap-1.5">
+                <span className="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-[#60a5fa] transition-colors whitespace-nowrap">
+                  ASCALON<span className="text-[#3b82f6]">.GG</span>
+                </span>
+                <span className="hidden xs:inline-block rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[9px] font-extrabold text-[#93c5fd] whitespace-nowrap">
+                  PORTAL
+                </span>
               </div>
-            </Link>
-          </div>
+              <div className="hidden sm:block text-[10px] font-semibold text-[#94a3b8] truncate">
+                Mobile Game Rankings, Release Calendar & Strategy Wikis
+              </div>
+            </div>
+          </Link>
 
           <nav className="hidden lg:flex items-center gap-5 text-[12px] font-extrabold text-[#cbd5e1]">
             <a href="#recommended-ranking" className="hover:text-[#60a5fa] transition-colors">
@@ -366,31 +433,77 @@ export function AscalonHomeMacro() {
             </a>
           </nav>
 
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2 shrink-0">
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search games, studios, genres..."
-              className="w-44 sm:w-56 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+              className="hidden sm:block w-48 md:w-56 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
             />
             <Link
               href="/starsavior"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-3 py-1.5 text-[11px] font-black text-white shadow transition-colors"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 sm:px-3 py-1.5 text-[11px] font-black text-white shadow transition-colors whitespace-nowrap"
             >
               <img
                 src={strategyWikis[0]?.iconUrl || '/brand/ascalon-logo.png'}
                 alt="Star Savior"
-                className="h-4 w-4 rounded-sm object-cover"
+                className="h-4 w-4 rounded-sm object-cover shrink-0"
               />
               <span>Star Savior Wiki →</span>
             </Link>
           </div>
         </div>
+
+        {/* Compact Mobile Horizontal Section Jump Bar */}
+        <div className="lg:hidden border-t border-[#161f33] bg-[#090d16]/90 px-3 py-1.5">
+          <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto text-[11px] font-extrabold">
+            <a
+              href="#recommended-ranking"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+            >
+              Top 25 Games
+            </a>
+            <a
+              href="#upcoming-calendar"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+            >
+              Upcoming ({upcomingGames.length})
+            </a>
+            <a
+              href="#appstore-rankings"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+            >
+              App Store
+            </a>
+            <a
+              href="#strategy-wikis"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+            >
+              Wikis ({strategyWikis.length})
+            </a>
+            <a
+              href="#featured-articles"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+            >
+              Guides
+            </a>
+          </div>
+        </div>
       </header>
 
       {/* Main Content Container */}
-      <main className="mx-auto max-w-[1280px] px-4 py-6 space-y-8">
+      <main className="mx-auto max-w-[1280px] px-3 sm:px-4 py-4 sm:py-6 space-y-6 sm:space-y-8">
+        {/* Mobile Full-Width Search Input (Keeps Sticky Header Ultra-Compact) */}
+        <div className="sm:hidden">
+          <input
+            type="search"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder="Search ranked games, upcoming releases, wikis..."
+            className="w-full rounded-lg border border-[#243049] bg-[#111726] px-3.5 py-2.5 text-[12px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+          />
+        </div>
         {/* Clean AppMedia-Style Portal Header & Section Directory */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#1e293b] pb-4">
@@ -610,7 +723,7 @@ export function AscalonHomeMacro() {
           </div>
 
           <p className="text-[12px] text-[#cbd5e1]">
-            Complete release schedule for upcoming mobile and cross-platform gacha RPGs, including expected launch windows, publishers, and interactive reader expectation votes.
+            Complete release schedule for upcoming mobile and cross-platform gacha RPGs, including expected launch windows, publishers, and interactive reader expectation votes (<strong className="text-[#93c5fd]">1 vote per game per IP address</strong>).
           </p>
 
           {/* Release Window Filter Bar */}
@@ -631,20 +744,94 @@ export function AscalonHomeMacro() {
             ))}
           </div>
 
-          <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+          {/* Mobile Card Layout (< md) — Zero Horizontal Overflow */}
+          <div className="md:hidden space-y-2.5">
+            {displayedUpcoming.map((g) => {
+              const hasVoted = Boolean(myVotedIds[g.id]);
+              const isPending = Boolean(pendingVoteIds[g.id]);
+              const totalVotes = g.votes + (serverVoteCounts[g.id] || 0);
+              return (
+                <div
+                  key={g.id}
+                  className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-2.5"
+                >
+                  <div className="flex items-start gap-3">
+                    <img
+                      src={g.iconUrl}
+                      alt={g.title}
+                      className="h-13 w-13 rounded-lg border border-[#334155] bg-[#090d16] object-cover shrink-0"
+                      style={{ width: '52px', height: '52px' }}
+                      loading="lazy"
+                    />
+                    <div className="min-w-0 flex-1 space-y-1">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="font-extrabold text-[#93c5fd] text-[11px]">
+                          {g.releaseDate}
+                        </span>
+                        <span
+                          className={`inline-block rounded px-1.5 py-0.5 text-[9px] font-black ${
+                            g.status === 'Released'
+                              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                              : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                          }`}
+                        >
+                          {g.status}
+                        </span>
+                      </div>
+                      <div className="font-extrabold text-white text-[13px] leading-snug">
+                        {g.title}
+                      </div>
+                      <div className="text-[10px] font-bold text-[#94a3b8]">
+                        Publisher: {g.publisher || 'TBA'}
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-[11px] text-[#cbd5e1] leading-relaxed">
+                    {g.description}
+                  </p>
+
+                  <div className="flex items-center justify-between gap-2 border-t border-[#1e293b] pt-2">
+                    <div className="flex items-center gap-1.5">
+                      <span className="text-[11px] font-bold text-[#94a3b8]">Reader Votes:</span>
+                      <span className="text-[13px] font-black text-[#fbbf24] font-mono">
+                        {totalVotes.toLocaleString()}
+                      </span>
+                    </div>
+                    <button
+                      type="button"
+                      disabled={hasVoted || isPending}
+                      onClick={() => handleVoteUpcoming(g.id)}
+                      className={`min-h-[34px] rounded-lg px-3.5 py-1.5 text-[11px] font-extrabold transition-colors ${
+                        hasVoted
+                          ? 'bg-[#10b981]/20 text-[#34d399] border border-[#10b981]/40 cursor-default'
+                          : 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white shadow-sm'
+                      }`}
+                    >
+                      {hasVoted ? '✓ Voted (1/IP)' : '+1 Vote'}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Desktop Table Layout (>= md) */}
+          <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
             <table className="w-full border-collapse text-left text-[12px]">
               <thead>
                 <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
                   <th className="w-40 px-3.5 py-2.5 border-r border-[#243049]">Release Window / Status</th>
                   <th className="px-3.5 py-2.5 border-r border-[#243049]">Upcoming Game & Description</th>
                   <th className="w-44 px-3.5 py-2.5 border-r border-[#243049]">Developer / Publisher</th>
-                  <th className="w-32 px-3 py-2.5 text-center">Reader Votes</th>
+                  <th className="w-36 px-3 py-2.5 text-center">Reader Votes (1/IP)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#1e293b]">
                 {displayedUpcoming.map((g) => {
-                  const userVotes = votedMap[g.id] || 0;
-                  const totalVotes = g.votes + userVotes;
+                  const hasVoted = Boolean(myVotedIds[g.id]);
+                  const isPending = Boolean(pendingVoteIds[g.id]);
+                  const totalVotes = g.votes + (serverVoteCounts[g.id] || 0);
                   return (
                     <tr key={g.id} className="hover:bg-[#141d30] transition-colors">
                       <td className="p-3 border-r border-[#1e293b] space-y-1">
@@ -678,17 +865,20 @@ export function AscalonHomeMacro() {
                       </td>
                       <td className="p-3 text-center">
                         <div className="inline-flex flex-col items-center gap-1 rounded-lg border border-[#243049] bg-[#141c2e] px-2.5 py-1.5">
-                          <span className="text-[13px] font-black text-[#fbbf24]">{totalVotes}</span>
+                          <span className="text-[13px] font-black text-[#fbbf24] font-mono">
+                            {totalVotes.toLocaleString()}
+                          </span>
                           <button
                             type="button"
+                            disabled={hasVoted || isPending}
                             onClick={() => handleVoteUpcoming(g.id)}
-                            className={`rounded px-2 py-0.5 text-[10px] font-extrabold transition-colors ${
-                              userVotes > 0
-                                ? 'bg-[#10b981]/20 text-[#34d399] border border-[#10b981]/40'
+                            className={`rounded px-2.5 py-1 text-[10px] font-extrabold transition-colors ${
+                              hasVoted
+                                ? 'bg-[#10b981]/20 text-[#34d399] border border-[#10b981]/40 cursor-default'
                                 : 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white'
                             }`}
                           >
-                            {userVotes > 0 ? `Voted (+${userVotes})` : '+1 Vote'}
+                            {hasVoted ? '✓ Voted' : '+1 Vote'}
                           </button>
                         </div>
                       </td>
@@ -958,11 +1148,11 @@ export function AscalonHomeMacro() {
       {/* English Strategy Article Summary Modal */}
       {activeArticle && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-3 sm:p-4 backdrop-blur-sm"
           onClick={() => setActiveArticle(null)}
         >
           <div
-            className="w-full max-w-2xl rounded-xl border border-[#3b82f6] bg-[#111726] p-5 shadow-2xl space-y-4"
+            className="w-full max-w-2xl max-h-[88dvh] overflow-y-auto overscroll-contain rounded-xl border border-[#3b82f6] bg-[#111726] p-4 sm:p-5 shadow-2xl space-y-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-3 border-b border-[#1e293b] pb-3">
@@ -1034,11 +1224,11 @@ export function AscalonHomeMacro() {
       {/* English Game Review Summary Modal */}
       {activeGameReview && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-3 sm:p-4 backdrop-blur-sm"
           onClick={() => setActiveGameReview(null)}
         >
           <div
-            className="w-full max-w-xl rounded-xl border border-[#3b82f6] bg-[#111726] p-5 shadow-2xl space-y-4"
+            className="w-full max-w-xl max-h-[88dvh] overflow-y-auto overscroll-contain rounded-xl border border-[#3b82f6] bg-[#111726] p-4 sm:p-5 shadow-2xl space-y-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-3 border-b border-[#1e293b] pb-3">
@@ -1112,11 +1302,11 @@ export function AscalonHomeMacro() {
 
       {/* Footer */}
       <footer className="border-t border-[#1e293b] bg-[#070a12] py-6 text-center text-[11px] text-[#64748b]">
-        <div className="mx-auto max-w-[1280px] px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div className="mx-auto max-w-[1280px] px-4 flex flex-col sm:flex-row items-center justify-between gap-2.5">
           <div>
             <strong className="text-white">Ascalon.gg</strong> · Mobile Game Rankings, Release Schedule & Strategy Wiki Portal
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
             <Link href="/starsavior" className="text-[#93c5fd] hover:underline">
               Star Savior Strategy Wiki
             </Link>

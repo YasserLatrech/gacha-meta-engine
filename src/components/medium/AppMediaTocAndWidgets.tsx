@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 
 export interface TocItem {
@@ -213,43 +213,111 @@ export function AppMediaCommunityPoll({
   title,
   subtitle,
   initialOptions,
+  pollKey = 'starsavior-community-poll',
 }: {
   title: string;
   subtitle: string;
   initialOptions: PollOption[];
+  pollKey?: string;
 }) {
-  const [options, setOptions] = useState<PollOption[]>(initialOptions);
+  const [serverCounts, setServerCounts] = useState<Record<string, number>>({});
   const [votedSlug, setVotedSlug] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleVote = (slug: string) => {
-    if (votedSlug) return;
+  const scope = `poll:${pollKey}`;
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch(`/api/votes?scope=${encodeURIComponent(scope)}`, { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled || !data) return;
+        if (data.counts && typeof data.counts === 'object') {
+          setServerCounts(data.counts);
+        }
+        if (Array.isArray(data.myVotes) && data.myVotes.length > 0) {
+          setVotedSlug(String(data.myVotes[0]));
+        }
+      })
+      .catch(() => {
+        // Keep baseline poll options if offline
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [scope]);
+
+  const options = useMemo(() => {
+    const merged = initialOptions.map((o) => ({
+      ...o,
+      votes: o.votes + (serverCounts[o.slug] || 0),
+    }));
+    const total = Math.max(
+      1,
+      merged.reduce((acc, o) => acc + o.votes, 0)
+    );
+    return merged
+      .map((o) => ({
+        ...o,
+        percent: Number(((o.votes / total) * 100).toFixed(1)),
+      }))
+      .sort((a, b) => b.votes - a.votes)
+      .map((o, i) => ({ ...o, rank: i + 1 }));
+  }, [initialOptions, serverCounts]);
+
+  const handleVote = async (slug: string) => {
+    if (votedSlug || isSubmitting) return;
+
+    setIsSubmitting(true);
     setVotedSlug(slug);
-    setOptions((prev) => {
-      const total = prev.reduce((acc, o) => acc + o.votes, 0) + 1;
-      return prev
-        .map((o) => {
-          const nextVotes = o.slug === slug ? o.votes + 1 : o.votes;
-          return {
-            ...o,
-            votes: nextVotes,
-            percent: Number(((nextVotes / total) * 100).toFixed(1)),
-          };
-        })
-        .sort((a, b) => b.votes - a.votes)
-        .map((o, i) => ({ ...o, rank: i + 1 }));
-    });
+    setServerCounts((prev) => ({ ...prev, [slug]: (prev[slug] || 0) + 1 }));
+
+    try {
+      const res = await fetch('/api/votes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          scope,
+          targetId: slug,
+          mode: 'single-choice',
+        }),
+      });
+      const data = await res.json().catch(() => null);
+      if ((res.ok || res.status === 409) && data) {
+        if (data.counts && typeof data.counts === 'object') {
+          setServerCounts(data.counts);
+        }
+        if (Array.isArray(data.myVotes) && data.myVotes.length > 0) {
+          setVotedSlug(String(data.myVotes[0]));
+        }
+      } else {
+        setVotedSlug(null);
+        setServerCounts((prev) => ({
+          ...prev,
+          [slug]: Math.max(0, (prev[slug] || 1) - 1),
+        }));
+      }
+    } catch {
+      setVotedSlug(null);
+      setServerCounts((prev) => ({
+        ...prev,
+        [slug]: Math.max(0, (prev[slug] || 1) - 1),
+      }));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
-    <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-4 space-y-3">
+    <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 sm:p-4 space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2.5">
-        <div>
+        <div className="space-y-0.5">
           <div className="text-[13px] font-extrabold text-white">{title}</div>
-          <p className="text-[11px] text-[#94a3b8]">{subtitle}</p>
+          <p className="text-[11px] text-[#94a3b8]">{subtitle} · 1 vote per IP address</p>
         </div>
         {votedSlug && (
           <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2.5 py-1 text-[11px] font-bold text-emerald-300">
-            ✓ Vote Recorded!
+            ✓ Vote Recorded (1 per IP)
           </span>
         )}
       </div>
@@ -260,7 +328,7 @@ export function AppMediaCommunityPoll({
           return (
             <div
               key={opt.slug}
-              className={`flex items-center gap-3 rounded-lg border p-2 transition-colors ${
+              className={`flex items-center gap-2.5 sm:gap-3 rounded-lg border p-2.5 transition-colors ${
                 isSelected
                   ? 'border-[#3b82f6] bg-[#17223b]'
                   : 'border-[#1e293b] bg-[#131b2e]'
@@ -283,15 +351,15 @@ export function AppMediaCommunityPoll({
                 <img src={opt.imageUrl} alt={opt.name} className="h-full w-full object-cover" loading="eager" />
               </Link>
               <div className="min-w-0 flex-1">
-                <div className="flex items-center justify-between text-[12px] font-bold">
-                  <Link href={`/starsavior/characters/${opt.slug}`} className="text-white hover:text-[#60a5fa] truncate">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 sm:gap-2 text-[12px] font-bold">
+                  <Link href={`/starsavior/characters/${opt.slug}`} className="text-white hover:text-[#60a5fa] leading-tight break-words">
                     {opt.name}
                   </Link>
-                  <span className="text-[11px] text-[#93c5fd] font-mono">
+                  <span className="text-[11px] text-[#93c5fd] font-mono shrink-0">
                     {opt.votes} votes ({opt.percent}%)
                   </span>
                 </div>
-                <div className="mt-1 h-2 w-full rounded-full bg-[#090d16] overflow-hidden">
+                <div className="mt-1.5 h-2 w-full rounded-full bg-[#090d16] overflow-hidden">
                   <div
                     className="h-full rounded-full bg-gradient-to-r from-[#2563eb] to-[#38bdf8]"
                     style={{ width: `${Math.min(100, Math.max(6, opt.percent * 4.5))}%` }}
@@ -300,9 +368,9 @@ export function AppMediaCommunityPoll({
               </div>
               <button
                 type="button"
-                disabled={Boolean(votedSlug)}
+                disabled={Boolean(votedSlug) || isSubmitting}
                 onClick={() => handleVote(opt.slug)}
-                className={`shrink-0 rounded px-2.5 py-1 text-[11px] font-bold transition-colors ${
+                className={`shrink-0 min-h-[34px] rounded px-3 py-1.5 text-[11px] font-extrabold transition-colors ${
                   isSelected
                     ? 'bg-[#2563eb] text-white'
                     : votedSlug
@@ -310,7 +378,7 @@ export function AppMediaCommunityPoll({
                     : 'bg-[#1e293b] hover:bg-[#2563eb] text-[#93c5fd] hover:text-white border border-[#334155]'
                 }`}
               >
-                {isSelected ? 'Voted' : 'Vote'}
+                {isSelected ? '✓ Voted' : 'Vote'}
               </button>
             </div>
           );

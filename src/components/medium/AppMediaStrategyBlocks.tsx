@@ -15,8 +15,8 @@ export function AppMediaDetailedCharEvalTable({
       <table className="w-full border-collapse text-left">
         <thead>
           <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold uppercase tracking-wider text-[#94a3b8]">
-            <th className="w-[140px] px-3 py-2.5 text-center border-r border-[#243049]">Character</th>
-            <th className="px-3.5 py-2.5">Quick Evaluation & Performance Breakdown</th>
+            <th className="w-[96px] sm:w-[140px] px-2 sm:px-3 py-2.5 text-center border-r border-[#243049]">Character</th>
+            <th className="px-3 sm:px-3.5 py-2.5">Quick Evaluation & Performance Breakdown</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-[#1e293b]">
@@ -29,7 +29,7 @@ export function AppMediaDetailedCharEvalTable({
                 ];
             return (
               <tr key={c.slug} className="hover:bg-[#141d30] transition-colors">
-                <td className="p-3 align-top border-r border-[#1e293b] text-center">
+                <td className="p-2 sm:p-3 align-top border-r border-[#1e293b] text-center">
                   <div className="flex flex-col items-center">
                     <AppMediaIconCell
                       href={`/starsavior/characters/${c.slug}`}
@@ -42,7 +42,7 @@ export function AppMediaDetailedCharEvalTable({
                     />
                   </div>
                 </td>
-                <td className="p-3.5 align-top space-y-2 text-[12px]">
+                <td className="p-2.5 sm:p-3.5 align-top space-y-2 text-[12px]">
                   <div className="flex flex-wrap items-center gap-2 border-b border-[#1e293b] pb-1.5">
                     <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#e2e8f0]">
                       <span className="text-[#93c5fd]">[Attribute]</span>
@@ -100,8 +100,8 @@ export function AppMediaDetailedArcanaEvalTable({
       <table className="w-full border-collapse text-left">
         <thead>
           <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold uppercase tracking-wider text-[#94a3b8]">
-            <th className="w-[150px] px-3 py-2.5 text-center border-r border-[#243049]">Arcana Card</th>
-            <th className="px-3.5 py-2.5">Quick Evaluation & Potential Breakdown</th>
+            <th className="w-[96px] sm:w-[150px] px-2 sm:px-3 py-2.5 text-center border-r border-[#243049]">Arcana Card</th>
+            <th className="px-3 sm:px-3.5 py-2.5">Quick Evaluation & Potential Breakdown</th>
           </tr>
         </thead>
         <tbody className="divide-y divide-[#1e293b]">
@@ -114,7 +114,7 @@ export function AppMediaDetailedArcanaEvalTable({
                 ];
             return (
               <tr key={a.slug} className="hover:bg-[#141d30] transition-colors">
-                <td className="p-3 align-top border-r border-[#1e293b] text-center">
+                <td className="p-2 sm:p-3 align-top border-r border-[#1e293b] text-center">
                   <div className="flex flex-col items-center">
                     <AppMediaIconCell
                       href={`/starsavior/arcana#${a.slug}`}
@@ -123,11 +123,11 @@ export function AppMediaDetailedArcanaEvalTable({
                       rarity={a.rarity}
                       topLeftIconUrl={a.staticData?.statTagIconUrl}
                       badgeText={a.rarity}
-                      size="lg"
+                      size="md"
                     />
                   </div>
                 </td>
-                <td className="p-3.5 align-top space-y-2 text-[12px]">
+                <td className="p-2.5 sm:p-3.5 align-top space-y-2 text-[12px]">
                   <div className="flex flex-wrap items-center gap-2 border-b border-[#1e293b] pb-1.5">
                     <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#e2e8f0]">
                       <span className="text-[#93c5fd]">[Tag]</span>
@@ -195,6 +195,8 @@ export function AppMediaStrategyFooter({
   const [comments, setComments] = useState<
     Array<{ id: string; author: string; body: string; createdAt: string; likes: number }>
   >([]);
+  const [likedCommentIds, setLikedCommentIds] = useState<Record<string, boolean>>({});
+  const [serverCommentLikes, setServerCommentLikes] = useState<Record<string, number>>({});
 
   useEffect(() => {
     try {
@@ -206,13 +208,34 @@ export function AppMediaStrategyFooter({
     } catch {
       // ignore storage errors
     }
+
+    let cancelled = false;
+    fetch('/api/votes?scope=comment-likes', { cache: 'no-store' })
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (cancelled || !data) return;
+        if (data.counts && typeof data.counts === 'object') {
+          setServerCommentLikes(data.counts);
+        }
+        if (Array.isArray(data.myVotes)) {
+          const map: Record<string, boolean> = {};
+          for (const id of data.myVotes) map[String(id)] = true;
+          setLikedCommentIds(map);
+        }
+      })
+      .catch(() => {
+        // ignore offline
+      });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const handlePostComment = (e: React.FormEvent) => {
     e.preventDefault();
     if (!commentText.trim()) return;
     const newEntry = {
-      id: `${Date.now()}`,
+      id: `cmt-${Date.now()}`,
       author: commentAuthor.trim() || 'Reader',
       body: commentText.trim(),
       createdAt: 'Just now',
@@ -229,14 +252,35 @@ export function AppMediaStrategyFooter({
     }
   };
 
-  const handleLikeComment = (id: string) => {
-    const next = comments.map((c) => (c.id === id ? { ...c, likes: c.likes + 1 } : c));
-    setComments(next);
+  const handleLikeComment = async (id: string) => {
+    if (likedCommentIds[id]) return;
+    setLikedCommentIds((prev) => ({ ...prev, [id]: true }));
+    setServerCommentLikes((prev) => ({ ...prev, [id]: (prev[id] || 0) + 1 }));
+
     try {
-      const key = `ascalon_comments_${typeof window !== 'undefined' ? window.location.pathname : 'default'}`;
-      localStorage.setItem(key, JSON.stringify(next));
+      const res = await fetch('/api/votes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          scope: 'comment-likes',
+          targetId: id,
+          mode: 'per-item',
+        }),
+      });
+      const data = await res.json().catch(() => null);
+      if ((res.ok || res.status === 409) && data) {
+        if (data.counts && typeof data.counts === 'object') {
+          setServerCommentLikes(data.counts);
+        }
+        if (Array.isArray(data.myVotes)) {
+          const map: Record<string, boolean> = {};
+          for (const vid of data.myVotes) map[String(vid)] = true;
+          map[id] = true;
+          setLikedCommentIds(map);
+        }
+      }
     } catch {
-      // ignore storage errors
+      // Keep optimistic single-session lock
     }
   };
 
@@ -385,10 +429,15 @@ export function AppMediaStrategyFooter({
                     <span>{c.createdAt}</span>
                     <button
                       type="button"
+                      disabled={Boolean(likedCommentIds[c.id])}
                       onClick={() => handleLikeComment(c.id)}
-                      className="rounded border border-[#243049] bg-[#161f33] hover:border-[#3b82f6] px-2 py-0.5 text-[10px] font-bold text-[#cbd5e1]"
+                      className={`rounded border px-2 py-0.5 text-[10px] font-bold transition-colors ${
+                        likedCommentIds[c.id]
+                          ? 'border-emerald-500/40 bg-emerald-500/20 text-emerald-300 cursor-default'
+                          : 'border-[#243049] bg-[#161f33] hover:border-[#3b82f6] text-[#cbd5e1]'
+                      }`}
                     >
-                      Good ({c.likes})
+                      {likedCommentIds[c.id] ? '✓ ' : ''}Good ({Math.max(c.likes, serverCommentLikes[c.id] || 0)})
                     </button>
                   </div>
                 </div>

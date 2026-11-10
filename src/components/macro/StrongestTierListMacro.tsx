@@ -99,6 +99,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
   const [selectedRole, setSelectedRole] = useState<string>('ALL');
   const [selectedRarity, setSelectedRarity] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [mobileMatrixView, setMobileMatrixView] = useState<boolean>(false);
 
   const filteredCharacters = useMemo(() => {
     return characters.filter((c) => {
@@ -270,7 +271,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               ))}
             </div>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex flex-wrap items-center gap-1.5 w-full sm:w-auto">
               {(['ALL', 'SSR', 'SR'] as const).map((r) => (
                 <button
                   key={r}
@@ -288,14 +289,89 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search Savior..."
-                className="rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+                className="flex-1 sm:flex-none rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
               />
             </div>
           </div>
         </div>
 
+        {/* Mobile View Switcher (< md): Compact Zero-Overflow Rows vs Full 5-Role Matrix */}
+        <div className="md:hidden flex items-center justify-between gap-2 rounded-lg border border-[#243049] bg-[#0f1626] px-3 py-2">
+          <span className="text-[11px] font-extrabold text-[#94a3b8]">Mobile Layout:</span>
+          <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => setMobileMatrixView(false)}
+              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+                !mobileMatrixView
+                  ? 'bg-[#2563eb] text-white'
+                  : 'bg-[#161f33] text-[#cbd5e1]'
+              }`}
+            >
+              Compact Tiers
+            </button>
+            <button
+              type="button"
+              onClick={() => setMobileMatrixView(true)}
+              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+                mobileMatrixView
+                  ? 'bg-[#2563eb] text-white'
+                  : 'bg-[#161f33] text-[#cbd5e1]'
+              }`}
+            >
+              By Role Matrix ↔
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Compact Tier Rows (< md, when !mobileMatrixView) */}
+        {!mobileMatrixView && (
+          <div className="md:hidden overflow-hidden rounded-lg border border-[#243049] bg-[#0b101b]">
+            <table className="w-full border-collapse">
+              <tbody>
+                {tiersOrder.map((tierKey) => {
+                  const rowChars = filteredCharacters.filter((c) => resolveDisplayTier(c) === tierKey);
+                  const tStyle = TIER_COLOR_STYLES[tierKey];
+                  return (
+                    <tr key={tierKey} className="border-b last:border-b-0 border-[#1e293b]">
+                      <td className={`w-20 p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
+                        <AppMediaRankIcon tier={tierKey} size="sm" subLabel={tStyle.label} />
+                      </td>
+                      <td className="p-2.5">
+                        {rowChars.length === 0 ? (
+                          <div className="py-3 text-center text-[11px] text-[#475569]">—</div>
+                        ) : (
+                          <div className="flex flex-wrap gap-2">
+                            {rowChars.map((c) => (
+                              <AppMediaIconCell
+                                key={c.slug}
+                                href={`/starsavior/characters/${c.slug}`}
+                                name={c.name}
+                                imageUrl={c.imageUrl}
+                                rarity={c.rarity}
+                                topLeftIconUrl={c.staticData?.attributeIconUrl}
+                                topRightIconUrl={c.staticData?.classIconUrl}
+                                badgeText={c.role.slice(0, 3).toUpperCase()}
+                                size="sm"
+                              />
+                            ))}
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+
         {/* AppMedia SSS–C Tier Matrix Table (スタセイ最強キャラランキング) */}
-        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0b101b]">
+        <div
+          className={`${
+            mobileMatrixView ? 'block' : 'hidden md:block'
+          } overflow-x-auto rounded-lg border border-[#243049] bg-[#0b101b]`}
+        >
           <table className="w-full min-w-[780px] border-collapse">
             <thead>
               <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#cbd5e1]">
@@ -552,8 +628,9 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
         <AppMediaH2 id="tier-poll-section">Who Do You Think is the Strongest in Star Savior?</AppMediaH2>
         <AppMediaCommunityPoll
+          pollKey="starsavior-strongest-char"
           title="Reader Vote: Strongest Playable Savior"
-          subtitle="Click Vote on any Savior below to add your vote to the community ranking!"
+          subtitle="Click Vote on any Savior below to add your vote to the community ranking"
           initialOptions={pollInitial}
         />
       </section>

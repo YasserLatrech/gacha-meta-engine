@@ -6,6 +6,7 @@ import {
   jsonb,
   timestamp,
   unique,
+  index,
 } from 'drizzle-orm/pg-core';
 import type {
   ElementOption,
@@ -101,4 +102,20 @@ export const bannersTable = pgTable(
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
   },
   (t) => [unique('banners_game_slug_slug_unique').on(t.gameSlug, t.slug)]
+);
+
+export const ipVotesTable = pgTable(
+  'ip_votes',
+  {
+    id: serial('id').primaryKey(),
+    scope: text('scope').notNull(),
+    voteLockKey: text('vote_lock_key').notNull(),
+    targetId: text('target_id').notNull(),
+    ipHash: text('ip_hash').notNull(),
+    createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+  },
+  (t) => [
+    unique('ip_votes_lock_ip_unique').on(t.voteLockKey, t.ipHash),
+    index('ip_votes_scope_idx').on(t.scope),
+  ]
 );

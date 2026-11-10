@@ -64,6 +64,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
   const [selectedRarity, setSelectedRarity] = useState<string>('ALL');
   const [selectedTag, setSelectedTag] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [mobileMatrixView, setMobileMatrixView] = useState<boolean>(false);
 
   const ssrArcana = useMemo(() => arcana.filter((a) => a.rarity === 'SSR'), [arcana]);
 
@@ -148,7 +149,83 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           Strongest Arcana Ranking (By Training Tag)
         </AppMediaH2>
 
-        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0b101b]">
+        {/* Mobile View Switcher (< md): Compact Zero-Overflow Rows vs Full 5-Tag Matrix */}
+        <div className="md:hidden flex items-center justify-between gap-2 rounded-lg border border-[#243049] bg-[#0f1626] px-3 py-2">
+          <span className="text-[11px] font-extrabold text-[#94a3b8]">Mobile Layout:</span>
+          <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => setMobileMatrixView(false)}
+              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+                !mobileMatrixView
+                  ? 'bg-[#2563eb] text-white'
+                  : 'bg-[#161f33] text-[#cbd5e1]'
+              }`}
+            >
+              Compact Tiers
+            </button>
+            <button
+              type="button"
+              onClick={() => setMobileMatrixView(true)}
+              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+                mobileMatrixView
+                  ? 'bg-[#2563eb] text-white'
+                  : 'bg-[#161f33] text-[#cbd5e1]'
+              }`}
+            >
+              By Tag Matrix ↔
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Compact SSR Arcana Tier Rows (< md, when !mobileMatrixView) */}
+        {!mobileMatrixView && (
+          <div className="md:hidden overflow-hidden rounded-lg border border-[#243049] bg-[#0b101b]">
+            <table className="w-full border-collapse">
+              <tbody>
+                {(['SS', 'S', 'A', 'B', 'C'] as const).map((tierKey, idx) => {
+                  const rowCards = ssrArcana.filter(
+                    (a) => (a.staticData?.appMediaTier || a.tier) === tierKey
+                  );
+                  const tStyle = TIER_COLOR_STYLES[tierKey];
+                  return (
+                    <tr key={tierKey} className="border-b last:border-b-0 border-[#1e293b]">
+                      <td className={`w-20 p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
+                        <AppMediaRankIcon tier={tierKey} size="sm" subLabel={`Tier ${idx + 1}`} />
+                      </td>
+                      <td className="p-2.5">
+                        {rowCards.length === 0 ? (
+                          <div className="py-3 text-center text-[11px] text-[#475569]">—</div>
+                        ) : (
+                          <div className="flex flex-wrap gap-2">
+                            {rowCards.map((a) => (
+                              <AppMediaIconCell
+                                key={a.slug}
+                                href={`#${a.slug}`}
+                                name={a.name}
+                                imageUrl={a.imageUrl}
+                                rarity="SSR"
+                                topLeftIconUrl={a.staticData?.statTagIconUrl}
+                                badgeText={(a.staticData?.statTag || 'POW').slice(0, 3).toUpperCase()}
+                                size="sm"
+                              />
+                            ))}
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        <div
+          className={`${
+            mobileMatrixView ? 'block' : 'hidden md:block'
+          } overflow-x-auto rounded-lg border border-[#243049] bg-[#0b101b]`}
+        >
           <table className="w-full min-w-[780px] border-collapse">
             <thead>
               <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#cbd5e1]">
@@ -303,11 +380,97 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search Arcana, Savior, Potential..."
-            className="rounded border border-[#243049] bg-[#090d16] px-3 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+            className="w-full sm:w-auto rounded border border-[#243049] bg-[#090d16] px-3 py-1.5 sm:py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
           />
         </div>
 
-        <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+        {/* Mobile Card Encyclopedia (< md) */}
+        <div className="md:hidden space-y-3">
+          {filteredDatabase.map((a) => (
+            <div
+              key={`mob-${a.slug}`}
+              id={`mob-${a.slug}`}
+              className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-2.5"
+            >
+              <div className="flex items-start gap-3">
+                <img
+                  src={a.imageUrl}
+                  alt={a.name}
+                  className="h-16 w-16 rounded-lg border-2 border-[#eab308]/70 object-cover shrink-0 bg-[#090d16]"
+                  loading="lazy"
+                />
+                <div className="min-w-0 flex-1 space-y-1">
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} />
+                    <span className="rounded bg-[#eab308]/15 border border-[#eab308]/50 px-1.5 py-0.5 text-[10px] font-black text-[#fbbf24]">
+                      {a.rarity}
+                    </span>
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-1.5 py-0.5 text-[10px] font-bold text-white">
+                      {a.staticData?.statTagIconUrl && (
+                        <img src={a.staticData.statTagIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="lazy" />
+                      )}
+                      <span>{a.staticData?.statTag || 'Power'}</span>
+                    </span>
+                  </div>
+                  <div className="font-extrabold text-white text-[13px] leading-snug">{a.name}</div>
+                  <div className="text-[11px] font-semibold text-[#60a5fa]">
+                    {a.staticData?.classBonus || 'Universal Bonus'}
+                    {a.staticData?.characterName && a.staticData.characterName !== '-'
+                      ? ` · ${a.staticData.characterName}`
+                      : ''}
+                  </div>
+                </div>
+              </div>
+
+              {a.staticData?.uniqueEffect && (
+                <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-2.5 py-1.5 text-[11px]">
+                  <span className="font-extrabold text-[#fde047]">
+                    Unique ({a.staticData.uniqueEffect.unlockLevel}):{' '}
+                  </span>
+                  <span className="text-white font-semibold">{a.staticData.uniqueEffect.effect}</span>
+                </div>
+              )}
+
+              {(a.staticData?.potentials || []).length > 0 ? (
+                <div className="space-y-1">
+                  {a.staticData?.potentials?.map((p, i) => (
+                    <div key={i} className="text-[11px] text-[#e2e8f0]">
+                      <span className="font-extrabold text-[#93c5fd]">[{p.name}]</span>{' '}
+                      <span>{p.effect}</span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="text-[11px] text-[#cbd5e1]">{a.effectSummary}</div>
+              )}
+
+              {a.staticData?.journeyEvents && a.staticData.journeyEvents.length > 0 && (
+                <details className="rounded border border-[#1e293b] bg-[#0b101b] p-2 text-[11px]">
+                  <summary className="cursor-pointer font-extrabold text-[#60a5fa] select-none">
+                    Rescue Journey Events & Choices ({a.staticData.journeyEvents.length})
+                  </summary>
+                  <div className="mt-2 space-y-2 border-t border-[#1e293b] pt-2">
+                    {a.staticData.journeyEvents.map((ev, eIdx) => (
+                      <div key={eIdx} className="space-y-1">
+                        <div className="font-extrabold text-[#fbbf24]">{ev.eventTitle}</div>
+                        <div className="space-y-1 pl-2 border-l-2 border-[#243049]">
+                          {ev.choices.map((ch, cIdx) => (
+                            <div key={cIdx} className="text-[10px]">
+                              <span className="font-bold text-[#93c5fd]">{ch.choice}: </span>
+                              <span className="text-[#cbd5e1]">{ch.outcomes.join(' / ')}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </details>
+              )}
+            </div>
+          ))}
+        </div>
+
+        <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
           <table className="w-full border-collapse text-left text-[12px]">
             <thead>
               <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
