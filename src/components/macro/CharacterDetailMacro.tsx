@@ -254,7 +254,7 @@ export function CharacterDetailMacro({
                       <AppMediaTierBadge tier={sd?.appMediaTier || character.overallTier} />
                     </td>
                     <td className="py-2.5 border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={character.rerollTier} />
+                      <AppMediaTierBadge tier={sd?.appMediaRerollTier || character.rerollTier} />
                     </td>
                     <td className="py-2.5 border-r border-[#1e293b]">
                       <AppMediaTierBadge tier={sd?.pvpTier || character.overallTier} />
@@ -361,17 +361,17 @@ export function CharacterDetailMacro({
         <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-4 space-y-3">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 place-items-center">
             {partyPartners.map((p, idx) => (
-              <div key={p.slug} className="flex flex-col items-center text-center space-y-1">
+              <div key={p.unit.slug} className="flex flex-col items-center text-center space-y-1">
                 <span className="rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[10px] font-extrabold text-[#93c5fd]">
-                  {idx === 0 ? 'Core Unit' : p.role === 'Supporter' ? 'Healer / Buffer' : p.role === 'Defender' ? 'Frontline Tank' : 'Synergy Carry'}
+                  {p.position} · {idx === 0 && p.unit.slug === character.slug ? 'Core Unit' : p.unit.role}
                 </span>
                 <AppMediaIconCell
-                  href={`/starsavior/characters/${p.slug}`}
-                  name={p.name}
-                  imageUrl={p.imageUrl}
-                  rarity={p.rarity}
-                  topLeftIconUrl={p.staticData?.attributeIconUrl}
-                  topRightIconUrl={p.staticData?.classIconUrl}
+                  href={`/starsavior/characters/${p.unit.slug}`}
+                  name={p.unit.name}
+                  imageUrl={p.unit.imageUrl}
+                  rarity={p.unit.rarity}
+                  topLeftIconUrl={p.unit.staticData?.attributeIconUrl}
+                  topRightIconUrl={p.unit.staticData?.classIconUrl}
                   size="lg"
                 />
               </div>
@@ -408,7 +408,7 @@ export function CharacterDetailMacro({
                   <span className="font-extrabold text-[13px] text-white group-hover:text-[#60a5fa] truncate">
                     {a.name}
                   </span>
-                  <AppMediaTierBadge tier={a.tier} size="sm" />
+                  <AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} size="sm" />
                 </div>
                 <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#93c5fd]">
                   {a.staticData?.statTagIconUrl && (
@@ -878,17 +878,33 @@ export function CharacterDetailMacro({
   );
 }
 
-function useMemoPartyPartners(character: CharacterEntity, allCharacters: CharacterEntity[]): CharacterEntity[] {
-  const result: CharacterEntity[] = [character];
-  const pick = (slugs: string[]) => {
-    for (const s of slugs) {
+function useMemoPartyPartners(
+  character: CharacterEntity,
+  allCharacters: CharacterEntity[]
+): { unit: CharacterEntity; position: string }[] {
+  const recParty = character.staticData?.recommendedParty || [];
+  const result: { unit: CharacterEntity; position: string }[] = [];
+
+  for (const item of recParty) {
+    const found = allCharacters.find((c) => c.slug === item.slug);
+    if (found && !result.some((r) => r.unit.slug === found.slug)) {
+      result.push({ unit: found, position: item.position || 'BACK' });
+    }
+  }
+
+  if (result.length < 4) {
+    if (!result.some((r) => r.unit.slug === character.slug)) {
+      result.unshift({ unit: character, position: character.role === 'Defender' || character.role === 'Striker' ? 'FRONT' : 'BACK' });
+    }
+    const fallbackSlugs = ['professor-m', 'bride-carmen', 'maid-ceres', 'amora', 'bunny-charles', 'emily', 'dress-asherah'];
+    for (const s of fallbackSlugs) {
       if (result.length >= 4) break;
       const found = allCharacters.find((c) => c.slug === s);
-      if (found && !result.some((r) => r.slug === found.slug)) {
-        result.push(found);
+      if (found && !result.some((r) => r.unit.slug === found.slug)) {
+        result.push({ unit: found, position: found.role === 'Defender' || found.role === 'Striker' ? 'FRONT' : 'BACK' });
       }
     }
-  };
-  pick(['professor-m', 'bride-carmen', 'maid-ceres', 'amora', 'bunny-charles', 'emily', 'dress-asherah']);
+  }
+
   return result.slice(0, 4);
 }

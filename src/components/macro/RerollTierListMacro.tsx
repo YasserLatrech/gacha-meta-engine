@@ -58,11 +58,11 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
 
   const ssrArcana = arcana.filter((a) => a.rarity === 'SSR');
 
-  const charByRerollTier = (tier: 'SS' | 'S' | 'A' | 'B') =>
-    characters.filter((c) => c.rerollTier === tier);
+  const charByRerollTier = (tier: 'SS' | 'S' | 'A' | 'B' | 'C') =>
+    characters.filter((c) => c.rarity === 'SSR' && (c.staticData?.appMediaRerollTier || c.rerollTier) === tier);
 
-  const arcanaByTier = (tier: 'SS' | 'S' | 'A' | 'B') =>
-    ssrArcana.filter((a) => a.tier === tier);
+  const arcanaByTier = (tier: 'SS' | 'S' | 'A' | 'B' | 'C') =>
+    ssrArcana.filter((a) => (a.staticData?.rerollTier || a.tier) === tier);
 
   const supporterTriad = characters.filter((c) =>
     ['dress-asherah', 'bride-carmen', 'maid-ceres'].includes(c.slug)
@@ -146,7 +146,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0b101b]">
           <table className="w-full border-collapse">
             <tbody>
-              {(['SS', 'S', 'A', 'B'] as const).map((tierKey, idx) => {
+              {(['SS', 'S', 'A', 'B', 'C'] as const).map((tierKey, idx) => {
                 const list = charByRerollTier(tierKey);
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (
@@ -268,7 +268,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0b101b]">
           <table className="w-full border-collapse">
             <tbody>
-              {(['SS', 'S', 'A', 'B'] as const).map((tierKey, idx) => {
+              {(['SS', 'S', 'A', 'B', 'C'] as const).map((tierKey, idx) => {
                 const list = arcanaByTier(tierKey);
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (

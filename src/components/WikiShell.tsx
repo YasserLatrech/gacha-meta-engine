@@ -70,28 +70,78 @@ export function WikiShell({
             flexWrap: 'wrap',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <Link
+              href="/"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '9px',
+                textDecoration: 'none',
+                paddingRight: '14px',
+                borderRight: '1px solid var(--border-subtle)',
+              }}
+              title="Ascalon.gg Home"
+            >
+              <img
+                src="/brand/ascalon-logo.jpg"
+                alt="Ascalon.gg"
+                width={38}
+                height={38}
+                style={{
+                  width: '38px',
+                  height: '38px',
+                  borderRadius: '8px',
+                  objectFit: 'cover',
+                  border: '1px solid #3b82f6',
+                }}
+              />
+              <div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
+                  <span style={{ fontWeight: 900, fontSize: '1.02rem', color: '#ffffff', letterSpacing: '0.02em' }}>
+                    ASCALON
+                  </span>
+                  <span
+                    style={{
+                      fontWeight: 900,
+                      fontSize: '0.75rem',
+                      color: '#60a5fa',
+                      background: 'rgba(59, 130, 246, 0.16)',
+                      padding: '1px 5px',
+                      borderRadius: '4px',
+                      border: '1px solid rgba(59, 130, 246, 0.35)',
+                    }}
+                  >
+                    .GG
+                  </span>
+                </div>
+                <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                  Gacha Meta Intelligence
+                </div>
+              </div>
+            </Link>
+
             <Link
               href="/starsavior"
-              style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}
+              style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}
             >
               <img
                 src={game.iconUrl}
                 alt={game.name}
-                width={44}
-                height={44}
+                width={40}
+                height={40}
                 style={{
-                  width: '44px',
-                  height: '44px',
-                  borderRadius: '10px',
+                  width: '40px',
+                  height: '40px',
+                  borderRadius: '9px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-strong)',
                 }}
               />
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <span style={{ fontWeight: 800, fontSize: '1.08rem', color: '#f8fafc', letterSpacing: '-0.01em' }}>
-                    {game.name} Strategy Wiki
+                  <span style={{ fontWeight: 800, fontSize: '1.02rem', color: '#f8fafc', letterSpacing: '-0.01em' }}>
+                    {game.name} Wiki
                   </span>
                   <span
                     style={{
@@ -107,8 +157,8 @@ export function WikiShell({
                     {game.patchVersion}
                   </span>
                 </div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
-                  Complete EN Translated Database · 57 Characters · 83 Arcana Cards
+                <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                  57 Characters · 83 Arcana · 100% EN Database
                 </div>
               </div>
             </Link>
@@ -116,6 +166,7 @@ export function WikiShell({
 
           <nav style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
             {[
+              { key: 'home', label: 'Home', href: '/' },
               { key: 'portal', label: 'Wiki Top', href: '/starsavior' },
               { key: 'tier-list', label: 'Tier List', href: '/starsavior/tier-list' },
               { key: 'reroll', label: 'Reroll', href: '/starsavior/reroll' },
@@ -159,6 +210,10 @@ export function WikiShell({
             gap: '6px',
           }}
         >
+          <Link href="/" style={{ color: '#94a3b8', fontWeight: 700 }}>
+            Ascalon.gg
+          </Link>
+          <span>›</span>
           <Link href="/starsavior" style={{ color: '#60a5fa', fontWeight: 600 }}>
             Star Savior Wiki
           </Link>
@@ -363,7 +418,7 @@ export function WikiShell({
                     border: '1px solid rgba(239, 68, 68, 0.4)',
                   }}
                 >
-                  {unit.overallTier}
+                  {unit.staticData?.appMediaTier || unit.overallTier}
                 </span>
               </Link>
             ))}
@@ -398,11 +453,21 @@ export function WikiShell({
             color: 'var(--text-muted)',
           }}
         >
-          <div>
-            <strong style={{ color: 'var(--text-secondary)' }}>Star Savior Strategy Wiki</strong> — Complete Translated Static Database & Tier Encyclopedia.
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <img
+              src="/brand/ascalon-logo.jpg"
+              alt="Ascalon.gg"
+              width={22}
+              height={22}
+              style={{ width: '22px', height: '22px', borderRadius: '5px', objectFit: 'cover' }}
+            />
+            <span>
+              <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.gg</strong> — Elite Gacha Strategy Wiki & Translated Meta Database.
+            </span>
           </div>
           <div style={{ display: 'flex', gap: '14px' }}>
-            <Link href="/starsavior">Wiki Top</Link>
+            <Link href="/">Ascalon Home</Link>
+            <Link href="/starsavior">Star Savior Wiki</Link>
             <Link href="/starsavior/tier-list">Tier List</Link>
             <Link href="/starsavior/reroll">Reroll Guide</Link>
             <Link href="/starsavior/characters">Characters (57)</Link>

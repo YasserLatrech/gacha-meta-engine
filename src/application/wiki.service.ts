@@ -153,7 +153,7 @@ export async function fetchGameWikiFromDb(gameSlug: string = 'starsavior'): Prom
 
 export const getStarSaviorWikiData = unstable_cache(
   async () => fetchGameWikiFromDb('starsavior'),
-  ['starsavior-wiki-dataset-v4'],
+  ['starsavior-wiki-dataset-v5'],
   { revalidate: 300, tags: ['starsavior-wiki'] }
 );
 

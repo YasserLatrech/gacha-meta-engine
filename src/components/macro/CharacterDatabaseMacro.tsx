@@ -275,7 +275,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                       <AppMediaTierBadge tier={c.staticData?.appMediaTier || c.overallTier} />
                     </td>
                     <td className="p-3 text-center border-r border-[#1e293b]">
-                      <AppMediaTierBadge tier={c.rerollTier} />
+                      <AppMediaTierBadge tier={c.staticData?.appMediaRerollTier || c.rerollTier} />
                     </td>
                     <td className="p-3 space-y-1">
                       <div className="font-mono text-[12px] font-extrabold text-white">

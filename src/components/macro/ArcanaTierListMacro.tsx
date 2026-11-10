@@ -145,8 +145,8 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
               </tr>
             </thead>
             <tbody className="divide-y divide-[#1e293b]">
-              {(['SS', 'S', 'A', 'B'] as const).map((tierKey, idx) => {
-                const rowCards = ssrArcana.filter((a) => a.tier === tierKey);
+              {(['SS', 'S', 'A', 'B', 'C'] as const).map((tierKey, idx) => {
+                const rowCards = ssrArcana.filter((a) => (a.staticData?.appMediaTier || a.tier) === tierKey);
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (
                   <tr key={tierKey} className="hover:bg-[#111827]/60">
@@ -230,8 +230,8 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       {/* H2: 最強アルカナの簡易解説 */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-5">
         <AppMediaH2 id="arcana-brief-overviews">Brief Overview of Strongest SSR Arcana by Rank</AppMediaH2>
-        {(['SS', 'S', 'A', 'B'] as const).map((tierKey, idx) => {
-          const group = ssrArcana.filter((a) => a.tier === tierKey);
+        {(['SS', 'S', 'A', 'B', 'C'] as const).map((tierKey, idx) => {
+          const group = ssrArcana.filter((a) => (a.staticData?.appMediaTier || a.tier) === tierKey);
           return (
             <div key={tierKey} className="space-y-2.5">
               <AppMediaH3 id={`arcana-rank-${tierKey.toLowerCase()}`}>
@@ -325,7 +325,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                     </div>
                   </td>
                   <td className="p-3 text-center border-r border-[#1e293b] space-y-1">
-                    <div><AppMediaTierBadge tier={a.tier} /></div>
+                    <div><AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} /></div>
                     <div className="text-[11px] font-extrabold text-[#fbbf24]">{a.rarity} · {a.score.toFixed(1)}</div>
                   </td>
                   <td className="p-3 border-r border-[#1e293b] space-y-1.5">

@@ -63,9 +63,20 @@ export const CharacterStaticDataSchema = z.object({
   classIconUrl: z.string().optional(),
   illustUrl: z.string().optional(),
   pvpTier: TierRankSchema.optional(),
+  pveTier: z.string().optional(),
+  bossTier: z.string().optional(),
   appMediaTier: z.string().optional(),
   appMediaRerollTier: z.string().optional(),
   evalBullets: z.array(z.string()).optional(),
+  recommendedParty: z
+    .array(
+      z.object({
+        slug: z.string(),
+        name: z.string(),
+        position: z.string(),
+      })
+    )
+    .optional(),
   journeyStats: z
     .object({
       power: z.number(),
@@ -194,6 +205,8 @@ export const ArcanaStaticDataSchema = z.object({
     )
     .optional(),
   evalBullets: z.array(z.string()).optional(),
+  appMediaTier: z.string().optional(),
+  rerollTier: z.string().optional(),
 });
 export type ArcanaStaticData = z.infer<typeof ArcanaStaticDataSchema>;
 

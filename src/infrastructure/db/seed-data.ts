@@ -126,7 +126,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "8.0",
+    "score": "7.8",
     "summary": "SSR Moon Striker (Slash Damage). Asherah's ATK increases by 15%. When attacking, own Crit Rate increases by 30%. After attacking, own Crit DMG increases by 6%. Can be stacked up to 5 times.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -187,10 +187,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79606361",
-      "arcana-79517798",
-      "arcana-79517858",
-      "arcana-79517753"
+      "arcana-80191501",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "アセラ",
@@ -200,13 +201,37 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_VOYAGER_STRANIS_img.webp",
       "pvpTier": "B",
-      "appMediaTier": "C",
-      "appMediaRerollTier": "B",
+      "pveTier": "B",
+      "bossTier": "B",
+      "appMediaTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "As a critical attacker, you can prepare a large amount of buffs yourself.",
         "↳ Crit DMG 60% + damage buff 30%",
         "With an unconditional Crit Rate of 30%, it is easy to take advantage of the above effects.",
         "Lacks built-in Action Gauge self-advance, so pair her with an Action Gauge supporter."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "asherah",
+          "name": "Asherah",
+          "position": "BACK"
+        },
+        {
+          "slug": "lacy",
+          "name": "Lacy",
+          "position": "FRONT"
+        },
+        {
+          "slug": "anna",
+          "name": "Anna",
+          "position": "FRONT"
+        },
+        {
+          "slug": "naru",
+          "name": "Naru",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -217,12 +242,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
@@ -351,8 +376,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_SMILE_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Star Ranger (Impact Damage). Smile's ATK increases by 15%. After Smile's attack, if your Jump is at maximum stack, consume all stacks to activate Cat Tap Dance. After using Shooting Coordinate Confirmation, increase own Action Gauge by 15%. After using Shooting Coordinate Confirmation, if the enemy's HP is below 50%, increase own Action Gauge by an additional 15%.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -413,10 +438,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-80012824",
       "arcana-80283517",
-      "arcana-79517801",
-      "arcana-79517864",
-      "arcana-79517756"
+      "arcana-79865537",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "スマイル",
@@ -426,12 +452,36 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_VOYAGER_SMILE_img.webp",
       "pvpTier": "A",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
         "Debuffer with special trigger skills",
         "If the conditions are met, it will be possible to perform movements like 2 actions in 1T.",
         "Excellent firepower support with defense debuffs"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "smile",
+          "name": "Smile",
+          "position": "BACK"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -442,16 +492,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "ATK (%) / Speed / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -576,8 +626,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Caster",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_ORACLE_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Order Caster (Elemental Damage). Luna's ATK increases by 15%. When Luna uses the world reflected in my eyes, Crit DMG increases by 20% if she is in an enhanced state. At the start of battle, give yourself 2 Insight stacks. If a critical hit occurs with a self-defense magic bullet or an attack from the world that I see, give yourself one insight stack.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -638,10 +688,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80210542",
-      "arcana-80231986",
-      "arcana-79517804",
-      "arcana-79517843"
+      "arcana-79517759",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ルナ",
@@ -651,6 +702,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_VOYAGER_ORACLE_img.webp",
       "pvpTier": "S",
+      "pveTier": "A",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -658,6 +711,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Basic Skills allow full attack",
         "This is almost essential performance in stages where all-out attacks are important.",
         "↳ Battle against Tyria, battle against Caneria, etc."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "rin",
+          "name": "Rin",
+          "position": "FRONT"
+        },
+        {
+          "slug": "luna",
+          "name": "Luna",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -668,16 +743,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%)",
+        "subStats": "Speed / Effect Hit / ATK (%) / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -802,8 +877,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_KNIGHT_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Sun Striker (Slash Damage). Charles' ATK increases by 15%. When attacking, damage increases by 3% in proportion to the ignition stack attached to yourself. This effect can be applied up to 5 times. After using Unyielding Strike, the damage of straight thrust increases by 10%. Can be stacked up to 3 times.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -864,10 +939,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517744",
-      "arcana-79717619",
-      "arcana-79517867",
-      "arcana-79517774"
+      "arcana-80191501",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "シャルル",
@@ -877,6 +953,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_KINGDOM_KNIGHT_img.webp",
       "pvpTier": "B",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -887,6 +965,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ It takes a while to reach maximum firepower",
         "The 15% damage buff based on the ignition stack is also excellent."
       ],
+      "recommendedParty": [
+        {
+          "slug": "charles",
+          "name": "Charles",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "swimsuit-luna",
+          "name": "Swimsuit Luna",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -896,16 +996,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Attack Set (4pc: ATK +35%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "ATK (%) / Speed / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -1031,7 +1131,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "7.5",
+    "score": "7",
     "summary": "SSR Moon Defender (Impact Damage). Carmen's maximum HP increases by 15%. When Carmen is attacked, her defense increases by 4% in proportion to the Cooling stacks she has, up to a maximum of 5.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -1092,9 +1192,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517747",
+      "arcana-79517744",
+      "arcana-79517741",
       "arcana-80041744",
-      "arcana-79517885"
+      "arcana-79517768",
+      "arcana-79517786"
     ],
     "staticData": {
       "nameJp": "カルメン",
@@ -1104,12 +1206,36 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_KINGDOM_SHIELDER_img.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "C",
       "appMediaTier": "C",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "A defender who uses provocation to reduce damage taken by allies.",
         "A long-lasting overall defense buff that can withstand even whole-body attacks.",
         "I want to raise my HP because the damage increases according to my HP."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "carmen",
+          "name": "Carmen",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 10,
@@ -1120,16 +1246,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "ringMain": "Max HP (%) or Effect Hit (%)",
+        "subStats": "Max HP (%) / Speed / Effect Hit / Effect RES"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -1254,8 +1380,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Supporter",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_PRAY_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Star Supporter (Impact Damage). Frey's maximum HP increases by 15%. At the start of your turn, give yourself 1 Jump stack. When using Negotiation Breakdown, if your own jump stack is at maximum, after attacking, consume all your jump stacks and increase your own Action Gauge by 30%. Additionally, recovers HP of all allies. The amount of recovery increases in proportion to your maximum HP. When using Mona Stil's full support, if the HP of the ally target is below 75%, increase the Action Gauge of all allies by 15%.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -1317,9 +1443,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     ],
     "bestArcanaSlugs": [
       "arcana-79517750",
-      "arcana-79766540",
-      "arcana-79517861",
-      "arcana-79517741"
+      "arcana-79606361",
+      "arcana-80521390",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "フレイ",
@@ -1329,8 +1456,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_KINGDOM_PRAY_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "B",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "A specialized supporter who can recover allies and increase the Action Gauge.",
         "↳ Firepower needs to be supplemented elsewhere.",
@@ -1338,6 +1467,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Increase the durability of your formation by removing debuffs and adding barriers",
         "It cannot produce firepower and has no firepower buffs, so it is not suitable for content with turn restrictions such as Cosmo Gate."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -1347,16 +1477,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "ringMain": "Max HP (%) or Effect RES (%)",
+        "subStats": "Max HP (%) / HP / Effect RES"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -1481,8 +1611,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NIGHTMARE_REAPER_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Order Striker (Mental Damage). Seira's ATK increases by 15%. When Seira attacks, if the enemy's HP is over 75%, the damage will increase by 15%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -1543,10 +1673,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80498278",
-      "arcana-79517813",
-      "arcana-79517756",
-      "arcana-79517759"
+      "arcana-80191501",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "セイラ",
@@ -1556,6 +1687,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_NIGHTMARE_REAPER_img.webp",
       "pvpTier": "S",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -1566,6 +1699,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ Be careful as the firepower will decrease if the enemy's HP falls below 75%.",
         "In order to aim to reuse Special Skills, I want to increase my speed as much as possible and increase the number of actions I take."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -1575,16 +1709,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Attack Power (%) or Effect Hit (%)",
+        "subStats": "ATK (%) / Speed / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -1709,8 +1843,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Assassin",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/STELLAR_THIEF_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Star Assassin (Slash Damage). Trish's Crit DMG increases by 25%. At the start of battle, give yourself 3 Jump stacks. Increases accuracy by 50% when attacking. When Trish defeats an enemy, increases her Action Gauge by 30% and grants 3 Jump stacks.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -1771,10 +1905,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517816",
-      "arcana-79517759",
-      "arcana-79517774",
-      "arcana-79517783"
+      "arcana-79517783",
+      "arcana-80012824",
+      "arcana-79576397",
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "トリッシュ",
@@ -1784,13 +1919,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_STELLAR_THIEF_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "A",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "An attacker who can constantly buff the chance of winning with a Special Skill loop.",
         "CT reset when defeating an enemy with Ultimate Skill",
         "Expect instant firepower with the Ultimate Skill's defense penetration of 50%."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -1800,16 +1938,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "ATK (%) / Speed / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -1934,8 +2072,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Defender",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Star Defender (Slash Damage). Ede's defense power increases by 15%. At the start of battle, Ede generates protection and barrier for 1 turn. After being attacked, give yourself 1 Jump stack at 100%. Barrier increases in proportion to your defense power.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -1996,7 +2134,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517819"
+      "arcana-79517744",
+      "arcana-79606361",
+      "arcana-79517741",
+      "arcana-79517768",
+      "arcana-79517786"
     ],
     "staticData": {
       "nameJp": "エデ",
@@ -2006,6 +2148,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_INCOGNITA_FLOWER_img.webp",
       "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "S",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -2013,6 +2157,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "The barrier's durability is extremely high and greatly contributes to the party's durability.",
         "↳ It is also great to be able to reduce the damage taken by reducing the hit rate.",
         "Barrier and damage depend on defense power, so I want to prioritize defense, but I also want to have as much HP as possible because I will be taking on damage from my allies."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "elisa",
+          "name": "Elisa",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 10,
@@ -2023,16 +2189,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Defense Set (2pc: DEF +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Defense Set (2pc: DEF +15%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "ringMain": "Defense (%)",
+        "subStats": "DEF (%) / Speed / Effect Hit / Effect RES"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -2157,8 +2321,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Supporter",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/EASTERN_OWL_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Sun Supporter (Mental Damage). Serpang's maximum HP increases by 15%. I choose you! After use, there is a 100% chance to inflict Burn on the enemy for 2 turns. At the start of a turn, a Burning enemy grants itself 1 Ignition stack. At the end of the turn, if your ignition is at maximum stack, increase your Action Gauge by 50% and then erase all stacks.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -2219,10 +2383,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517822",
-      "arcana-79517879",
-      "arcana-79534223",
-      "arcana-79606361"
+      "arcana-79517750",
+      "arcana-79606361",
+      "arcana-80521390",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "セルパン",
@@ -2232,8 +2397,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_EASTERN_OWL_img.webp",
       "pvpTier": "S",
+      "pveTier": "S",
+      "bossTier": "B",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Ultimate Skill grants immunity to skill damage to yourself and one ally.",
         "↳ Please note that the target cannot be specified.",
@@ -2242,6 +2409,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Serupan is the only supporter who can apply debuffs.",
         "↳ Combustion is also compatible with Crystal (Excellent)"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -2251,16 +2419,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / HP / Effect Hit / Effect RES"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -2385,8 +2553,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Caster",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAGICIAN_DRUID_icon.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "A",
+    "score": "9.5",
     "summary": "SSR Star Caster (Elemental Damage). Dana's ATK increases by 15%. If a Critical Hit occurs, there is a 100% chance to grant Speed ​​Up to yourself for 1 turn. After a Star Attribute ally other than yourself attacks, give yourself 1 Jump stack. At the start of the turn, if your jump is at the maximum stack, consume all the stacks and apply Roroka to yourself! (Cannot be removed) for 2 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -2447,10 +2615,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517756",
-      "arcana-79517849",
-      "arcana-79517753",
-      "arcana-79517759"
+      "arcana-79517759",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ダーナ",
@@ -2460,6 +2629,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAGICIAN_DRUID_img.webp",
       "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "S",
       "appMediaTier": "SS",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -2471,6 +2642,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "You can give yourself a speed increase when a critical hit occurs.",
         "↳ Increases own number of moves along with speed debuff"
       ],
+      "recommendedParty": [
+        {
+          "slug": "bunny-frey",
+          "name": "Bunny Frey",
+          "position": "BACK"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dana",
+          "name": "Dana",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -2480,16 +2673,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%)",
+        "subStats": "ATK (%) / Speed / Effect Hit / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -2615,7 +2808,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/SAINTESS_DEMON_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "8.0",
+    "score": "7.8",
     "summary": "SSR Sun Caster (Elemental Damage). Muriel's Crit DMG increases by 25%. Muriel has a 100% chance to apply one Ignite stack to herself after a Sun Attribute ally other than herself attacks.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -2677,9 +2870,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     ],
     "bestArcanaSlugs": [
       "arcana-79517759",
-      "arcana-79517756",
-      "arcana-79517774",
-      "arcana-79517783"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ミュリエル",
@@ -2689,6 +2883,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_SAINTESS_DEMON_img.webp",
       "pvpTier": "B",
+      "pveTier": "A",
+      "bossTier": "B",
       "appMediaTier": "B",
       "appMediaRerollTier": "B",
       "evalBullets": [
@@ -2697,6 +2893,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Compatible with debuffs such as Lacey (Excellent)",
         "Skill firepower is relatively high"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -2706,16 +2903,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%)",
+        "subStats": "ATK (%) / Speed / Crit Rate / Crit DMG / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -2841,7 +3038,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/SAINTESS_ELF_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "8.0",
+    "score": "7.8",
     "summary": "SSR Chaos Supporter (Mental Damage). Elisa's maximum HP increases by 15%. Elisa may be useless, but when using help, if your HP is above 50%, the amount of recovery will increase by 25%. When using Please Return, if your own upheaval is at its maximum stack, it will be consumed and an additional turn will be generated for you.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -2902,10 +3099,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517762",
       "arcana-79517750",
-      "arcana-79517792",
-      "arcana-79534223"
+      "arcana-79606361",
+      "arcana-80521390",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "エリサ",
@@ -2915,13 +3113,37 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_SAINTESS_ELF_img.webp",
       "pvpTier": "A",
+      "pveTier": "B",
+      "bossTier": "C",
       "appMediaTier": "B",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "A unique supporter who can revive allies.",
         "Contributes to durability by imparting Effect RES and damage reduction to a single unit",
         "Especially powerful in PvP rather than PvE",
         "↳ Mainly active in strategy defense battles"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "elisa",
+          "name": "Elisa",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 10,
@@ -2932,16 +3154,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / HP / Effect RES / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -3066,8 +3288,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/RECON_AMULET_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Moon Ranger (Mental Damage). Lu's ATK increases by 15%. Lu gains 2 Nova Force at the start of battle. When attacking, damage increases by 4% for each stack of own cooling. After any of your allies except yourself uses a skill that is not an attack, if you are not in a sudden state of Ritsuryo (cannot be removed), give yourself one {Snow Flower} (cannot be removed). When using the Four Friends in the Snow on your turn, if you are not in the state of Sudden Nyo Ritsuryo (cannot be removed) but in the state of Yukinaka (unremovable), after attacking, give yourself {Kudky Nyo Ritsuryo} (unremovable) and increase your Action Gauge by 40% for each stack of Yukinaka (unremovable). The maximum increase in Action Gauge due to this effect is 120%. This effect does not occur for additional activated skills.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -3128,10 +3350,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517831",
-      "arcana-79517891",
-      "arcana-79517774",
-      "arcana-79517783"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ルー",
@@ -3141,8 +3364,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_RECON_AMULET_img.webp",
       "pvpTier": "A",
+      "pveTier": "S",
+      "bossTier": "A",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "A character who fights using a combination of unique buffs and strengthened Basic Skills.",
         "Obtain Snow Flower when using the Ultimate Skill and an ally's non-attack skill.",
@@ -3152,6 +3377,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "The problem is that it eats up the burst.",
         "↳ Recovery performance and firepower of other characters will decrease accordingly."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -3161,16 +3387,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Attack Power (%) or Effect Hit (%)",
+        "subStats": "ATK (%) / Speed / Effect Hit / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -3296,7 +3522,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/GRACE_DUALSWORD_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "8.0",
+    "score": "7.8",
     "summary": "SSR Moon Assassin (Slash Damage). Epindel's ATK increases by 15%. Epindel grants himself a Cooling stack when a Moon Attribute ally hits a Critical Hit. When Epindel uses Orlan style swordsmanship, if his own Cooling is at maximum stack, the damage will be increased by 20%, and all Cooling stacks will disappear after using Orlan style swordsmanship.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -3357,10 +3583,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80077855",
-      "arcana-79517834",
       "arcana-79517783",
-      "arcana-79534220"
+      "arcana-79766540",
+      "arcana-80012824",
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "エピンデル",
@@ -3370,8 +3597,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_GRACE_DUALSWORD_img.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "A",
       "appMediaTier": "B",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "Assassin who mainly uses Basic Skills",
         "↳ The maximum number of stacks of Cooling increases your Basic Skill damage.",
@@ -3379,6 +3608,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Self-healing is also possible and has high stand-alone performance",
         "It is important to have a Moon attribute ally, but there are many excellent allies, including Bunny Flay, so it is easy to combine."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -3388,16 +3618,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "ATK (%) / Speed / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -3522,8 +3752,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_ROD_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Chaos Ranger (Mental Damage). Lydia's maximum HP increases by 15%. When Lydia attacks, Effect Hit increases by 6% in proportion to the stack. This effect can be applied to up to 5 items. After attacking, if the enemy is weakened, your ATK increases by 6%. This effect can be stacked up to 5 times. After using Empty Hand, if the enemy is weakened, there is a 100% chance to inflict an unknown spell on the enemy for 1 turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -3585,9 +3815,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     ],
     "bestArcanaSlugs": [
       "arcana-80482327",
-      "arcana-79517837",
-      "arcana-79517882",
-      "arcana-79517753"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "リディア",
@@ -3597,8 +3828,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_WEST_ROD_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "S",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Has Action Gauge increase & decrease, so it takes a lot of your own moves.",
         "↳ It's also great to have a speed debuff.",
@@ -3606,6 +3839,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ Highly compatible with characters who fight mainly with debuff effects",
         "If the enemy is in a debuff state, attack power increases and firepower increases."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -3615,16 +3849,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "Speed / Effect Hit / ATK (%) / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -3750,7 +3984,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WILD_HOG_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "8.0",
+    "score": "7.8",
     "summary": "SSR Sun Defender (Impact Damage). Harley's maximum HP increases by 15%. Harley's speed increases by 3% at 100% after an ally other than herself is attacked. Can be stacked up to 5 times. When attacking, if your own ignition stack is at maximum stack, consume all ignition stacks and give yourself Effect Hit up for 2 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -3811,9 +4045,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-79517744",
+      "arcana-79606361",
+      "arcana-79517741",
       "arcana-79517768",
-      "arcana-79517894",
-      "arcana-79517777",
       "arcana-79517786"
     ],
     "staticData": {
@@ -3824,8 +4059,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_WILD_HOG_img.webp",
       "pvpTier": "A",
+      "pveTier": "B",
+      "bossTier": "C",
       "appMediaTier": "B",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "Defender who gives speed buff to all allies",
         "↳ Endurance support is also possible with overall defense buff.",
@@ -3833,6 +4070,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "You can also hinder enemy actions by having multiple enemy Action Gauge reductions.",
         "Since firepower increases depending on speed, speed buff is actually a firepower buff"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -3842,16 +4080,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Speed Set (4pc: Speed +25%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / Speed / Effect RES"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -3977,7 +4215,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_BOMB_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "7.5",
+    "score": "7",
     "summary": "SSR Sun Ranger (Impact Damage). Petra's ATK increases by 15%. After Petra breaks the enemy's Toughness with all allies except for herself, she gives herself one Ignite stack and increases her Action Gauge by 20%. Occurs only once per turn.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -4038,10 +4276,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517771",
-      "arcana-79517759",
-      "arcana-79517774",
-      "arcana-79517783"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ペトラ",
@@ -4051,14 +4290,17 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_CONSTRUCT_BOMB_img.webp",
       "pvpTier": "B",
+      "pveTier": "C",
+      "bossTier": "B",
       "appMediaTier": "C",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "Can give defense power down",
         "↳ Firepower increases with the number of ignition stacks",
         "Attribute compatibility is important because you gain stacks when your allies break.",
         "There is also a speed buff and you can increase the number of actions you take."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -4068,16 +4310,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%)",
+        "subStats": "Speed / Effect Hit / ATK (%) / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -4202,8 +4444,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INDEPENDENT_DRAGON_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Chaos Ranger (Elemental Damage). Lacy's ATK increases by 15%. At the start of battle, give yourself 2 turbulent stacks. After being attacked by an enemy with Intertwined Dreams, increase Action Gauge by 10% and apply one stack of Convulsion. Additionally, recovers own HP. After receiving an attack, if your own turbulence is at maximum stack and the enemy is not in the Intertwined Dream state, consume all {turbulent stacks} and give the attacker 2 turns of Intertwined Dream with a 100% chance. The amount of recovery increases in proportion to your ATK.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -4264,10 +4506,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "レイシー",
@@ -4277,6 +4520,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_INDEPENDENT_DRAGON_img.webp",
       "pvpTier": "S",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -4287,6 +4532,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "If the amount of recovery exceeds the enemy's damage, you will almost never be defeated.",
         "Recommended as it is very strong especially in the early stages"
       ],
+      "recommendedParty": [
+        {
+          "slug": "asherah",
+          "name": "Asherah",
+          "position": "BACK"
+        },
+        {
+          "slug": "lacy",
+          "name": "Lacy",
+          "position": "FRONT"
+        },
+        {
+          "slug": "anna",
+          "name": "Anna",
+          "position": "FRONT"
+        },
+        {
+          "slug": "naru",
+          "name": "Naru",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -4296,16 +4563,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -4430,8 +4697,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_GADGET_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Star Striker (Impact Damage). Tanya's ATK increases by 15%. After Tanya breaks the enemy's Toughness, she gives herself 3 Jump stacks and increases the Action Gauge of all allies except herself by 10%. At the start of the turn, if your Jump stack is at its maximum, consume it all and cause yourself to enter Demolition Mode for 3 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -4492,10 +4759,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517777",
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-80191501",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ターニャ",
@@ -4505,8 +4773,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_CONSTRUCT_GADGET_img.webp",
       "pvpTier": "A",
+      "pveTier": "S",
+      "bossTier": "SS",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "A striker who can give a critical buff to all allies.",
         "Owns Action Gauge increase and attack buff",
@@ -4514,6 +4784,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Toughness damage increased in Demolition mode",
         "↳ The desired flow is Break → Jump stack added → Enter demolition mode, so the engagement is not very good."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -4523,12 +4794,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
@@ -4658,7 +4929,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/DETECTIVE_WATSON_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "8.0",
+    "score": "7.8",
     "summary": "SSR Moon Caster (Mental Damage). Lily's ATK increases by 15%. Lily increases her Action Gauge by 20% after using Usagi-san's Instant Judgment. After a Moon Attribute ally other than yourself is attacked, give yourself 1 Cooling stack. At the start of the turn, if your Cooling is at maximum stack, consume all stacks and give yourself Rabbit-san's Investigation Advice for 2 turns.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -4719,10 +4990,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517780",
-      "arcana-79517852",
-      "arcana-79517753",
-      "arcana-79517756"
+      "arcana-79517759",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "リリー",
@@ -4732,14 +5004,17 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_DETECTIVE_WATSON_img.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "B",
       "appMediaTier": "B",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "A caster who can support the durability of allies.",
         "Special Skill that gives a barrier to allies and buffs attack power and Crit Rate to yourself",
         "↳ Since the Crit Rate buff is a unique buff, it is best to overlap with the general Crit Rate buff.",
         "Under certain conditions, the damage of the Ultimate Skill can be increased and there are many self-buffs."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -4749,16 +5024,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Attack Set (4pc: ATK +35%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Attack Set (4pc: ATK +35%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "ATK (%) / Speed / Effect Hit / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -4883,8 +5158,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Assassin",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MUTANT_MASK_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Sun Assassin (Mental Damage). Kira's ATK increases by 15%. When using Kira's skill, if you are hidden, the damage will increase by 10%. When using Extraordinary Greetings, if your Ignition stack is at its maximum, consume all stacks and apply Incubation to yourself for 1 turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -4946,9 +5221,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     ],
     "bestArcanaSlugs": [
       "arcana-79517783",
-      "arcana-79517870",
-      "arcana-79517756",
-      "arcana-79517759"
+      "arcana-79766540",
+      "arcana-80012824",
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "キラ",
@@ -4958,14 +5234,38 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MUTANT_MASK_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "S",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Assassin who fights using hidden effects",
         "While hiding, you won't be targeted by the enemy, so your survivability is high.",
         "↳ There is also a way to concentrate the attack on the defender by positioning yourself in the front line.",
         "Since it receives all attacks, it is powerful against opponents who only attack single targets.",
         "Excellent attack power debuff and Action Gauge reduction"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "fei",
+          "name": "Fei",
+          "position": "BACK"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "kira",
+          "name": "Kira",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -4976,12 +5276,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
@@ -5110,8 +5410,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103214_qznbh.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Sun Ranger (Impact Damage). Scarlet's Crit Rate increases by 15%. When Scarlet attacks, the damage increases by 7% in proportion to the Ignition stacks attached to her. This effect can be applied up to 5 stacks. At the start of Scarlet's turn, give yourself pinball time! will occur three times, and after the attack, it's pinball time! Clear all conditions. At the start of your turn, your speed increases by 1 depending on the number of Seven Balls (cannot be removed) you have. Can be stacked up to 10 times. Normal ball (cannot be removed): Increases damage dealt by 1% Seven ball (cannot be removed): Increases damage dealt by 7%",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -5172,10 +5472,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517759",
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "バニースカーレット",
@@ -5185,8 +5486,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103214_mxha8.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "A",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Obtain various benefits depending on the number of seven balls",
         "If there are 3 Seven Balls, the cooldown time of your Ultimate Skill will be reset.",
@@ -5194,6 +5497,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "It is possible to continuously output high damage by increasing the damage dealt by passive.",
         "It is important when using the Ultimate Skill, so it is not suitable for automatic use."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -5203,16 +5507,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Attack Power (%) or Effect Hit (%)",
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -5337,8 +5641,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103213_6rb9d.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Moon Striker (Impact Damage). Claire's ATK increases by 15%. At the start of Claire's turn, her Crit Rate increases by 10%. Can be stacked up to 3 times. After using invisible movement, if your cooling is at maximum stack, it will be consumed and \"Where are you looking?\" will be activated.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -5399,10 +5703,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-80191501",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "バニークレア",
@@ -5412,6 +5717,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103214_6nm5y.webp",
       "pvpTier": "S",
+      "pveTier": "SS",
+      "bossTier": "SSS",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -5419,6 +5726,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "It's also great that you can easily use skills because you can accumulate 3 stacks with Special Skills.",
         "The firepower of special moves increases as the enemy has more buffs.",
         "I want to raise the conversion rate because it is important to generate conversions."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-claire",
+          "name": "Bunny Claire",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -5429,14 +5758,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
-        "necklaceMain": "Speed",
+        "necklaceMain": "Speed or Crit Rate (%) or Crit DMG (%)",
         "ringMain": "Attack Power (%)",
         "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
       },
@@ -5564,7 +5893,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/STARPIERCER_OMEGA_icon.webp",
     "overallTier": "B",
     "rerollTier": "B",
-    "score": "7.5",
+    "score": "7",
     "summary": "SSR Star Caster (Impact Damage). Omega's ATK increases by 15%. After Omega attacks a Star Attribute ally other than himself, he grants himself 1 Jump stack at 100%. At the start of the turn, if your Jump stack is at its maximum, it will be consumed and a power-up star will be generated once. At the start of the turn, if your Power Up Star is at maximum stack, Jump will not be consumed.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -5626,9 +5955,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     ],
     "bestArcanaSlugs": [
       "arcana-79576397",
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79717619"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-80139832",
+      "arcana-79941760"
     ],
     "staticData": {
       "nameJp": "オメガ",
@@ -5638,12 +5968,36 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_STARPIERCER_OMEGA_img.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "B",
       "appMediaTier": "C",
-      "appMediaRerollTier": "B",
+      "appMediaRerollTier": "C",
       "evalBullets": [
         "A caster whose skills change depending on the stack of power-up stars.",
         "Star attribute characters' stacks increase when they attack.",
         "It is necessary to compose multiple star attribute characters, so the composition width is narrow"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "omega",
+          "name": "Omega",
+          "position": "BACK"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "rin",
+          "name": "Rin",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -5654,12 +6008,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
@@ -5788,8 +6142,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Supporter",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Order Supporter (Slash Damage). Asherah's maximum HP increases by 15%. After Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage. The chance of Pincer Dual-Attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5. The amount of recovery increases in proportion to your maximum HP.",
     "recommendedDupes": "★★★ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -5850,10 +6204,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517741",
-      "arcana-79517744",
-      "arcana-79517750",
-      "arcana-79517792"
+      "arcana-80012824",
+      "arcana-79534223",
+      "arcana-79606361",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ドレスアセラ",
@@ -5863,6 +6218,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/12/183033_c3iw4.webp",
       "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "S",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -5873,6 +6230,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Contributes to firepower while being a supporter with Special Skills such as Pincer Dual-Attacks and attacks.",
         "Please note that non-convex has a weak Unique Passive, and 1 or more convex is almost required."
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -5882,16 +6261,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Speed Set (4pc: Speed +25%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
-        "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "necklaceMain": "Speed or Crit Rate (%) or Crit DMG (%)",
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / Speed / Crit Rate / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -6016,8 +6395,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200314_a0eqx.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Star Ranger (Mental Damage). Bell Lease's ATK increases by 15%. Bell Lease increases his Action Gauge by 50% and increases his ATK by 10% each time an ally or enemy other than himself becomes incapacitated. ATK up effect can be stacked up to 3 times.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -6078,10 +6457,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79644746",
-      "arcana-79517756",
-      "arcana-79517759",
-      "arcana-79517774"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79865537",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ベル・リース",
@@ -6091,8 +6471,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/01/215428_t9ria.webp",
       "pvpTier": "B",
+      "pveTier": "A",
+      "bossTier": "A",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "An attacker who focuses on interference by reducing accuracy, silence, and removal of reinforcement.",
         "Strong against multiple opponents and multiple waves due to attack increase and Action Gauge increase when enemy or ally dies",
@@ -6100,6 +6482,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Demonstrate high single firepower with Ultimate Skill with increased damage",
         "Potential to win depending on luck due to decreased accuracy"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 150,
         "vitality": 20,
@@ -6109,16 +6492,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Effect Hit / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -6243,8 +6626,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Defender",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "A",
+    "score": "9.5",
     "summary": "SSR Moon Defender (Slash Damage). Emily's maximum HP increases by 15%. At the start of the first battle, create a barrier for yourself for 1 turn. After being attacked, the cooldown time of \"Turndown Service\" is reduced by one turn. After receiving a general attack, the cooldown of \"Turndown Service\" is further shortened by 1 turn, and grants 1 Cooling stack to itself at 100%. Barrier increases in proportion to own maximum HP.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -6305,8 +6688,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-80012824",
+      "arcana-79534223",
       "arcana-79517741",
-      "arcana-79517786"
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "エミリー",
@@ -6316,6 +6702,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200934_052an.webp",
       "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "S",
       "appMediaTier": "SS",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -6324,6 +6712,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ Further increase durability by utilizing hard potential",
         "Support allies' durability by adding offensive and defensive buffs and barriers",
         "Burst dependence and standalone support are delicate in automatic operation"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-claire",
+          "name": "Bunny Claire",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 10,
@@ -6334,16 +6744,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Speed Set (4pc: Speed +25%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
-        "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "necklaceMain": "Speed or Max HP (%)",
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -6530,10 +6940,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517774",
       "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-79766540",
+      "arcana-80012824",
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "バニーシャルル",
@@ -6543,6 +6954,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/03/164518_6rspg.webp",
       "pvpTier": "SS",
+      "pveTier": "SSS",
+      "bossTier": "SSS",
       "appMediaTier": "SSS",
       "appMediaRerollTier": "SS",
       "evalBullets": [
@@ -6550,6 +6963,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Increased firepower with attack buff and defense penetration (Excellent)",
         "Since the attack buff applies to all allies, firepower support is also possible.",
         "You can also recover HP with the Ultimate Skill Nova Burst."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "christel",
+          "name": "Christel",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "FRONT"
+        },
+        {
+          "slug": "tilia",
+          "name": "Tilia",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -6560,16 +6995,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
-        "necklaceMain": "Speed",
+        "necklaceMain": "Speed or Crit Rate (%) or Crit DMG (%)",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -6694,8 +7129,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Caster",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/181128_a531d.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Moon Caster (Impact Damage). Frey's ATK increases by 15%. At the start of Frey's turn, if his Cooling stack is at its maximum, he will inflict a High Roller (cannot be removed) on himself and consume all Cooling stacks. At the start of the turn, if your High Roller (cannot be removed) is at maximum stack, it will not consume Cooling. After attacking Moon Attribute allies other than yourself, increase your own Action Gauge by 8% and cause yourself to become a High Roller (cannot be removed) once at 100%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -6756,10 +7191,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397",
-      "arcana-79717619"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "バニーフレイ",
@@ -6769,6 +7205,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/02/180836_pgnjz.webp",
       "pvpTier": "S",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -6777,6 +7215,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "When 5 stacks of High Roller accumulate, Basic Skill damage increases by 100%.",
         "By combining it with the moon attribute, the number of moves increases by increasing the Action Gauge and it becomes easier to accumulate high rollers.",
         "↳ Especially compatible with Bunny Claire(Excellent)"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "bunny-frey",
+          "name": "Bunny Frey",
+          "position": "BACK"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dana",
+          "name": "Dana",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -6787,16 +7247,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
-        "necklaceMain": "Speed",
+        "necklaceMain": "Speed or Crit DMG (%)",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -6921,8 +7381,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201812_s56oa.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Star Striker (Impact Damage). Roberta's ATK increases by 15%. When Roberta attacks, Crit Rate increases by 50%. If your HP is above 50%, your damage will increase by 8%, and if your HP is below 50%, your damage will increase by 16%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -6983,10 +7443,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-80012824",
+      "arcana-80191501",
+      "arcana-79576397",
       "arcana-79808948",
-      "arcana-79517828",
-      "arcana-79517753",
-      "arcana-79517756"
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ロベルタ",
@@ -6996,8 +7457,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201812_ic1f4.webp",
       "pvpTier": "SS",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "50% critical hit buff when attacking",
         "↳ This buff amount is almost unconditional.",
@@ -7008,6 +7471,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "A powerful counter to Luna, Lacey, etc.",
         "↳ Also excellent at removing debuffs from Special Skills."
       ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "fei",
+          "name": "Fei",
+          "position": "FRONT"
+        },
+        {
+          "slug": "roberta",
+          "name": "Roberta",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -7017,16 +7502,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Speed Set (4pc: Speed +25%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit DMG / Speed / ATK (%) / Crit Rate"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -7151,8 +7636,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/130558_c8vsj.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SSR Star Ranger (Impact Damage). Yanagi Mina's ATK increases by 15%. After Yanagi Mina attacks, her own ATK increases by 4%. Can be stacked up to 5 times. When a Critical Hit occurs, increase own Action Gauge by 15%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -7213,10 +7698,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79855448",
-      "arcana-79517756",
-      "arcana-79517759",
-      "arcana-79517774"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79865537",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ヤナギ・ミナ",
@@ -7226,13 +7712,37 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/124735_l8ofw.webp",
       "pvpTier": "A",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Attacker that inflicts a lot of bleeding",
         "↳ There is no need to increase the effect accuracy",
         "Increase your own firepower with attack buffs and Crit Rate buffs",
         "There is no support effect from allies, so expect him to play an active role as a pure attacker."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "yanagi-mina",
+          "name": "Yanagi Mina",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -7243,16 +7753,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%) / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -7378,7 +7888,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/130612_m2rk9.webp",
     "overallTier": "A",
     "rerollTier": "A",
-    "score": "8.6",
+    "score": "8.5",
     "summary": "SSR Sun Defender (Impact Damage). Hilde's maximum HP increases by 15%. Hilde's first defense probability increases by 30%. At the start of the first battle, create a barrier for all allies except yourself for 1 turn. Barrier increases in proportion to own maximum HP.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -7439,6 +7949,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-79517744",
+      "arcana-79606361",
+      "arcana-79517741",
       "arcana-79855463",
       "arcana-79517786"
     ],
@@ -7450,6 +7963,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/124752_9cz8o.webp",
       "pvpTier": "S",
+      "pveTier": "A",
+      "bossTier": "A",
       "appMediaTier": "A",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -7458,6 +7973,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Durability is quite high due to overlapping defense buffs and multiple methods of applying barriers.",
         "Excellent in situations such as PvP where the defender's grouping of enemies cannot be used.",
         "↳ With the advent of ignoring pre-emptive defense, the number of active situations is decreasing."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "elisa",
+          "name": "Elisa",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 10,
@@ -7468,16 +8005,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
-        "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "necklaceMain": "Speed or Max HP (%)",
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -7602,8 +8139,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Chaos Ranger (Elemental Damage). Rosalia's ATK increases by 15%. After Rosalia uses Ash Flame, the probability of inferno (cannot be removed) will increase by 20% in proportion to the turbulence stack attached to herself, and will be applied up to 5 times. After receiving an attack, your current HP will not fall below 40% and your ATK will increase for 3 turns. The effect after being attacked only occurs once during the battle.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -7664,10 +8201,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-80012824",
+      "arcana-79766540",
       "arcana-79865537",
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220"
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ロザリア",
@@ -7677,6 +8215,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_8l7u1.webp",
       "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "SS",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -7688,6 +8228,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Although it is only used once, it also covers durability with the insurance effect that HP will not fall below 40%.",
         "↳ I also like the attack buff that depends on convexity and extends the duration of turns."
       ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "rin",
+          "name": "Rin",
+          "position": "FRONT"
+        },
+        {
+          "slug": "luna",
+          "name": "Luna",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -7697,16 +8259,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Attack Power (%) or Effect Hit (%)",
+        "subStats": "Crit Rate / Speed / Crit DMG / ATK (%) / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -7831,8 +8393,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Star Striker (Slash Damage). ATK increases by 15%. When Rin attacks, the ATK increases by 4% in proportion to the number of jump stacks given to itself, up to a maximum of 5 stacks. After using Phantom Sword Dance on your turn, if you are in Seifu (cannot be removed) state, the cooldown of Phantom Sword Dance will be shortened by 1 turn. After using Seifu Meigetsu on your turn, if you are in Meigetsu (unremovable) state, Seifu Meigetsu's cooldown will be shortened by 1 turn.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -7893,10 +8455,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517753",
+      "arcana-80191501",
+      "arcana-80012824",
+      "arcana-79766540",
       "arcana-79941760",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "リン",
@@ -7906,8 +8469,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/04/193138_frw90.webp",
       "pvpTier": "A",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "An irregular attacker whose skill effects change depending on the order in which they are used.",
         "Ultimate → Special and active as a star attribute supporter",
@@ -7916,6 +8481,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Special → Ultimate operation as main attacker",
         "↳ Self Crit DMG buff 50%, total attack buff 50%",
         "It has many roles and is very powerful, and there are few situations where it gets corrupted."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "rin",
+          "name": "Rin",
+          "position": "FRONT"
+        },
+        {
+          "slug": "luna",
+          "name": "Luna",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -7926,16 +8513,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / ATK (%) / Speed / Crit DMG"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -8060,8 +8647,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Assassin",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105026_1pwrt.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Moon Assassin (Slash Damage). Fei's ATK increases by 15%. Fei increases evasion rate for 1 turn at the start of battle and at the end of turn. If you evade after being attacked, your ATK increases by 4%. Can be stacked up to 5 times.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -8122,10 +8709,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-79766540",
+      "arcana-79576397",
+      "arcana-79517783",
       "arcana-79983016",
-      "arcana-79517753",
-      "arcana-79517756",
-      "arcana-79517759"
+      "arcana-79941760"
     ],
     "staticData": {
       "nameJp": "フェイ",
@@ -8135,6 +8723,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173815_xcjae.webp",
       "pvpTier": "SS",
+      "pveTier": "A",
+      "bossTier": "SSS",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -8148,6 +8738,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ Seems to be a must-have character in strategy games.",
         "It is strong that you can aim for an upside with content such as Cosmo Gate that you can try many times."
       ],
+      "recommendedParty": [
+        {
+          "slug": "rosalia",
+          "name": "Rosalia",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "fei",
+          "name": "Fei",
+          "position": "FRONT"
+        },
+        {
+          "slug": "roberta",
+          "name": "Roberta",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -8157,16 +8769,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Attack Power (%) or Effect Hit (%)",
+        "subStats": "Crit DMG / ATK (%) / Speed / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -8291,8 +8903,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115944_7kujw.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "A",
+    "score": "9.5",
     "summary": "SSR Sun Striker (Slash Damage). Tilia's ATK increases by 15%. When Tilia activates Prelude of the End or Requiem of Tragedy, if the enemy has Thorns of Tragedy (cannot be removed), it will penetrate their defense by 25%. After activating the Prelude of the End, cause 100% of the enemy to inflict Thorns of Tragedy (cannot be removed). After activating Prelude of the End, if the enemy's Thorn of Tragedy (cannot be removed) is at maximum stack, activate Requiem of Tragedy.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -8353,10 +8965,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-80191501",
       "arcana-80012824",
-      "arcana-79517756",
-      "arcana-79517759",
-      "arcana-79517774"
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ティリア",
@@ -8366,6 +8979,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/03/170432_kais6.webp",
       "pvpTier": "S",
+      "pveTier": "S",
+      "bossTier": "SS",
       "appMediaTier": "SS",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -8378,6 +8993,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "The unique debuff doesn't depend on the Effect Hit or Effect RES, so it's great that you don't have to worry about accidents.",
         "Demonstrates top-class strength against defenders"
       ],
+      "recommendedParty": [
+        {
+          "slug": "christel",
+          "name": "Christel",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "FRONT"
+        },
+        {
+          "slug": "tilia",
+          "name": "Tilia",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -8387,16 +9024,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -8583,10 +9220,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517750",
-      "arcana-79517792",
+      "arcana-80041744",
+      "arcana-79606361",
       "arcana-79534223",
-      "arcana-79606361"
+      "arcana-79517768",
+      "arcana-79941760"
     ],
     "staticData": {
       "nameJp": "花嫁カルメン",
@@ -8596,6 +9234,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132205_k6viz.webp",
       "pvpTier": "SS",
+      "pveTier": "SSS",
+      "bossTier": "S",
       "appMediaTier": "SSS",
       "appMediaRerollTier": "SS",
       "evalBullets": [
@@ -8608,6 +9248,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "You can give Cooling to a moon attribute ally.",
         "↳ Compatible with characters that require Cooling such as Bunny Claire and Bunny Flay (Excellent)"
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -8617,16 +9279,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / Speed / DEF (%) / Effect RES / Crit Rate"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -8751,8 +9413,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Caster",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/151138_sphtu.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Sun Caster (Slash Damage). Epindel's ATK increases by 15%. Epindel gives himself one ignition stack when an ally other than himself receives a Critical Hit. At the start of each Sun Attribute ally's turn, each grant 2 Ignition stacks at 100%.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -8813,10 +9475,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-79517759",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "花嫁エピンデル",
@@ -8826,6 +9489,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/06/152600_marq9.webp",
       "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "SS",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -8836,6 +9501,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ The difficulty of applying the ignition stack itself is not high, but you need to wait 2 turns including an additional turn.",
         "Nova Burst is a 20% damage increase type, so it can't make that much of a difference."
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-epindel",
+          "name": "Bride Epindel",
+          "position": "BACK"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "FRONT"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -8845,16 +9532,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -8979,8 +9666,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Caster",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/120413_604d3.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Chaos Caster (Mental Damage). Carnelia's ATK increases by 15%. At the start of battle, Carnelia generates jet black reverberation (cannot be removed) for 1 turn. When attacking, ATK increases by 6% in proportion to the number of upheaval stacks attached to itself, up to a maximum of 5 stacks. When you receive damage that would leave you incapacitated, you will recover 1% of your maximum HP and will not be incapacitated. Also, inflicts immortality on himself for 1 turn, jet black reverberation (cannot be removed) for 3 turns, and resets the cooldown time of all skills. Occurs only once during battle.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -9041,10 +9728,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80139832",
-      "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-79517759",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "カネリア",
@@ -9054,6 +9742,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/06/175513_un5x8.webp",
       "pvpTier": "SS",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -9066,6 +9756,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ Pure firepower up & Action Gauge reduced by 50%",
         "Covers your own durability with self-healing using the Ultimate Skill Nova Burst"
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "carnelia",
+          "name": "Carnelia",
+          "position": "FRONT"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -9075,16 +9787,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Attack Power (%) or Effect Hit (%)",
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -9209,8 +9921,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/152521_s54gh.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Moon Striker (Slash Damage). Ceres' ATK increases by 15%. Ceres grants herself 2 Cooling stacks at the start of battle. After using Type 7 Great Earthquake, increase own Action Gauge by 35% according to the number of targets attacked. This effect increases Action Gauge up to 175%. When using Type 1 Shingetsu or Type 21 Kenfu, if the enemy is frozen, the damage will increase by 30%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -9271,10 +9983,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517765",
       "arcana-80191501",
-      "arcana-80521390",
-      "arcana-79517855"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "セレス",
@@ -9284,12 +9997,36 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/07/211713_ymnwi.webp",
       "pvpTier": "A",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
         "Attacker who can make a difference in the number of moves with Action Gauge & speed increase/decrease",
         "Has high PvP interference performance by removing all buffs, lowering pre-emptive defense rate, and inhibiting actions. - Canceling all buffs is also useful in some stages other than PvP.",
         "Special → Ultimate rapid attack power is especially powerful in PvP"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "ceres",
+          "name": "Ceres",
+          "position": "BACK"
+        },
+        {
+          "slug": "bunny-claire",
+          "name": "Bunny Claire",
+          "position": "FRONT"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -9300,16 +10037,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -9434,8 +10171,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Defender",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/112813_tnirc.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Sun Defender (Elemental Damage). Luna's maximum HP increases by 15%. At the start of battle, give yourself 5 Ignition stacks and apply Waterpuff Sunscreen to all allies except yourself for 3 turns. After receiving an attack, if a Critical Hit occurs, give yourself one ignition stack. If a Critical Hit occurs after any of your allies other than yourself is attacked, there is a 100% chance to apply one Ignition stack to yourself.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -9496,8 +10233,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517777",
-      "arcana-79517786"
+      "arcana-80012824",
+      "arcana-79534223",
+      "arcana-79517741",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "水着ルナ",
@@ -9507,8 +10247,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/07/194829_9igtr.webp",
       "pvpTier": "SS",
+      "pveTier": "A",
+      "bossTier": "S",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Defender who protects allies from Crit DMG",
         "Granting 50% Crit DMG resistance to the whole body effectively nullifies Crit DMG.",
@@ -9520,6 +10262,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "On the other hand, it is not stable in PvE where the enemy's chance of hitting is not that high.",
         "↳ It's also painful to waste Crit DMG resistance by crossing weaves or sections."
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "swimsuit-luna",
+          "name": "Swimsuit Luna",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bride-epindel",
+          "name": "Bride Epindel",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -9529,16 +10293,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "ringMain": "Max HP (%)",
+        "subStats": "Speed / Max HP (%) / Effect Hit / DEF (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -9725,10 +10489,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517759",
-      "arcana-79517774",
+      "arcana-80012824",
+      "arcana-80283517",
       "arcana-79517783",
-      "arcana-79534220"
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "水着スマイル",
@@ -9738,6 +10503,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/07/145100_2hp3y.webp",
       "pvpTier": "S",
+      "pveTier": "SSS",
+      "bossTier": "SSS",
       "appMediaTier": "SSS",
       "appMediaRerollTier": "SS",
       "evalBullets": [
@@ -9746,6 +10513,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Additional attack with trigger skill up to 3 times after using Ultimate Skill",
         "↳ Skill effect does not activate only damage",
         "Quite a lot of moves and excellent overall firepower"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "swimsuit-smile",
+          "name": "Swimsuit Smile",
+          "position": "BACK"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "rin",
+          "name": "Rin",
+          "position": "FRONT"
+        },
+        {
+          "slug": "clarissa",
+          "name": "Clarissa",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -9756,16 +10545,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%) / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -9890,8 +10679,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/08/190200_51vpg.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Sun Ranger (Elemental Damage). Christel's ATK increases by 15%. At the start of battle, give yourself 3 Ignition stacks. When any ally other than yourself attacks with a Special Skill or Ultimate Skill, give yourself 1 Ignition stack, and if the attacking ally has Sun Attribute, add 1 Ignition stack. When using Revenge and Punishment, if the enemy is weakened, there is a 100% chance to inflict chain damage proportional to own ATK and increase own Action Gauge by 30%.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -9952,10 +10741,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80331877",
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-79644746",
+      "arcana-80331877"
     ],
     "staticData": {
       "nameJp": "クリステル",
@@ -9965,6 +10755,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/08/203222_m2hvq.webp",
       "pvpTier": "A",
+      "pveTier": "SS",
+      "bossTier": "SS",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -9972,6 +10764,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Increases ignition with ally's special/ultimate & triggers when ignition reaches maximum",
         "Valuable ignition support for solar allies",
         "Special firepower mainly weakened by chain damage & combustion"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "christel",
+          "name": "Christel",
+          "position": "BACK"
+        },
+        {
+          "slug": "hilde",
+          "name": "Hilde",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "FRONT"
+        },
+        {
+          "slug": "tilia",
+          "name": "Tilia",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -9982,16 +10796,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%) / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -10178,10 +10992,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80363578",
       "arcana-79517783",
-      "arcana-79534220",
-      "arcana-79576397"
+      "arcana-80012824",
+      "arcana-79576397",
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "アモラ",
@@ -10191,6 +11006,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/09/171707_rlvta.webp",
       "pvpTier": "SS",
+      "pveTier": "SSS",
+      "bossTier": "SSS",
       "appMediaTier": "SSS",
       "appMediaRerollTier": "SS",
       "evalBullets": [
@@ -10203,6 +11020,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "CT6's Ultimate Skill requires additional turns and many moves to begin with, so you can experience it quickly.",
         "I'm concerned about the quick turn consumption of buffs."
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -10212,16 +11051,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%) / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -10408,10 +11247,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80400913",
-      "arcana-79517753",
-      "arcana-79517756",
-      "arcana-79517759"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79576397",
+      "arcana-80139832",
+      "arcana-80400913"
     ],
     "staticData": {
       "nameJp": "プロフェッサーM",
@@ -10421,6 +11261,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/11/135932_70yqc.webp",
       "pvpTier": "SS",
+      "pveTier": "SSS",
+      "bossTier": "SSS",
       "appMediaTier": "SSS",
       "appMediaRerollTier": "SS",
       "evalBullets": [
@@ -10432,6 +11274,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Ultimate Skill gives a debuff that increases damage dealt to enemies",
         "↳ Indirect contribution to party firepower"
       ],
+      "recommendedParty": [
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        },
+        {
+          "slug": "dress-asherah",
+          "name": "Dress Asherah",
+          "position": "FRONT"
+        },
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -10441,16 +11305,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
-        "necklaceMain": "Speed",
+        "necklaceMain": "Crit DMG (%)",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / ATK (%) / Speed / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -10575,8 +11439,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205936_ywjad.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "A",
+    "score": "9",
     "summary": "SSR Star Striker (Impact Damage). Gwen's ATK increases by 15%. At the start of battle, give yourself standby status for 1 turn. When an ally other than yourself attacks, if you are on standby, apply one electric shock (cannot be removed) to yourself. If an ally's attack is a Special Skill and you are on scene standby, apply one more electric shock (cannot be removed). After an ally attacks, if you have 5 or more stacks of Electric Shock (cannot be removed), a light that reveals the truth to the enemy! After activating , consume 5 stacks of Electric Shock (cannot be removed). The additional activation effect prioritizes attacking the last enemy you attacked. At the start of the turn of an ally or enemy other than yourself, if you are not in standby mode, increase your Action Gauge by 4% in proportion to the number of your Jump stacks.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -10637,10 +11501,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-80444335",
-      "arcana-79517756",
-      "arcana-79517759",
-      "arcana-79517774"
+      "arcana-79576397",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-80139832",
+      "arcana-79941760"
     ],
     "staticData": {
       "nameJp": "グウェン",
@@ -10650,6 +11515,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2025/03/124449_sw1v4.webp",
       "pvpTier": "SS",
+      "pveTier": "S",
+      "bossTier": "S",
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
@@ -10663,6 +11530,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Excellent as a covert agent in terms of performance and ease of handling.",
         "↳ Recommended to accompany characters who want to concentrate their attacks, such as Fei."
       ],
+      "recommendedParty": [
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "BACK"
+        },
+        {
+          "slug": "fei",
+          "name": "Fei",
+          "position": "FRONT"
+        },
+        {
+          "slug": "gwen",
+          "name": "Gwen",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -10672,16 +11561,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -10806,8 +11695,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Caster",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/154756_yiks1.webp",
     "overallTier": "S",
-    "rerollTier": "SS",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SSR Moon Caster (Elemental Damage). Lydia's ATK increases by 15%. At the start of a battle, Lydia gives the ally with the highest ATK (excluding herself) a shift of responsibility (which cannot be removed). At the start of an ally's turn in the Responsibility Transfer (cannot be removed) state, give Lydia 2 reminders to leave work (cannot be removed), and after that ally attacks on their turn, give Lydia up to 5 reminders to leave work (cannot be removed) for the number of targets attacked. After an ally with Responsibility Transfer (cannot be removed) attacks on their turn, if Lydia's Reminder to Leave (cannot be removed) stacks 5 or more, increase Lydia's Action Gauge by 30%. Action Gauge increase effect only occurs once per turn. When Lydia attacks, the damage dealt increases by 4% for each cooling stack on her own, and if there are 5 or more stacks of Reminder to Leave (cannot be removed), the damage dealt increases by an additional 30%. After Lydia's attack, if there are 5 or more stacks of reminders to leave work (cannot be removed), reduce reminders to leave work (cannot be removed) by 5.",
     "recommendedDupes": "★★☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -10868,10 +11757,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
+      "arcana-80482327",
+      "arcana-80012824",
       "arcana-79517759",
-      "arcana-79517774",
-      "arcana-79517783",
-      "arcana-79534220"
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "メイドリディア",
@@ -10881,8 +11771,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/10/195259_5zmpw.webp",
       "pvpTier": "S",
+      "pveTier": "SS",
+      "bossTier": "S",
       "appMediaTier": "S",
-      "appMediaRerollTier": "SS",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Grants a combined buff of \"15% attack buff and 15% Crit DMG\" to the single ally with the highest attack power.",
         "↳ It is powerful because it cannot be canceled and is permanent.",
@@ -10890,6 +11782,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Increase behavior gauge and strengthen skill content of special/Ultimate Skills with 5 or more stacks of reminder to leave work",
         "Reminder for work is consumed when attacking with Basic Skills when there are 5 or more stacks",
         "↳ Be careful of outbursts caused by Pincer Dual-Attacks such as EX."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "maid-lydia",
+          "name": "Maid Lydia",
+          "position": "BACK"
+        },
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "FRONT"
+        },
+        {
+          "slug": "emily",
+          "name": "Emily",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bride-carmen",
+          "name": "Bride Carmen",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -10900,16 +11814,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "Crit Rate / Crit DMG / Speed / ATK (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -11034,8 +11948,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Supporter",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/144125_id9hj.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "S",
+    "score": "9.5",
     "summary": "SSR Sun Supporter (Slash Damage). Ceres's maximum HP increases by 15%. After Ceres uses a skill on her turn, or at the start of an ally's turn other than herself, she will give herself 1 stack of Dust Capture (cannot be removed). At the start of an ally's turn other than yourself, if that ally has a weakening effect, give yourself 1 Ignition stack. After receiving a general attack, increase your Action Gauge by 30% and grant 1 Ignition stack. When using a skill on your turn, if Dust Trap (cannot be removed) is 5 or more stacks, activates hospitality cleaning and reduces Dust Trap (cannot be removed) by 5 stacks. The additional activation effect does not grant dust capture (cannot be removed) or ignition stack to itself.",
     "recommendedDupes": "★☆☆ (Limit Break +1 (LB1))",
     "baseStats": {
@@ -11096,10 +12010,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517792",
-      "arcana-79534223",
+      "arcana-79517750",
       "arcana-79606361",
-      "arcana-79808948"
+      "arcana-80521390",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "メイドセレス",
@@ -11109,6 +12024,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/10/111227_60ydj.webp",
       "pvpTier": "S",
+      "pveTier": "SS",
+      "bossTier": "A",
       "appMediaTier": "SS",
       "appMediaRerollTier": "S",
       "evalBullets": [
@@ -11123,6 +12040,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Single recovery performance is up to that point.",
         "↳ When teaming up with a defender, it is best to team up with another single recovery person."
       ],
+      "recommendedParty": [
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "position": "BACK"
+        },
+        {
+          "slug": "maid-ceres",
+          "name": "Maid Ceres",
+          "position": "FRONT"
+        },
+        {
+          "slug": "bunny-charles",
+          "name": "Bunny Charles",
+          "position": "FRONT"
+        },
+        {
+          "slug": "amora",
+          "name": "Amora",
+          "position": "BACK"
+        }
+      ],
       "journeyStats": {
         "power": 100,
         "vitality": 180,
@@ -11132,16 +12071,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / Speed / DEF (%)"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -11266,8 +12205,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Defender",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_LANCER_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SR Star Defender (Impact Damage). Vesta's maximum HP increases by 15%. After Vesta is attacked, if her Jump stack is at maximum, she will create a barrier for 2 turns and erase all Jump stacks. After receiving a general attack, 40% activates \"Repel\" on a random enemy. The additional activation effect only occurs once per turn, and it occurs even when Toughness is broken.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -11372,9 +12311,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517786",
-      "arcana-79893874",
-      "arcana-79517897"
+      "arcana-79517744",
+      "arcana-79606361",
+      "arcana-79517741",
+      "arcana-79517768",
+      "arcana-79517786"
     ],
     "staticData": {
       "nameJp": "ベスタ",
@@ -11384,8 +12325,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_WEST_LANCER_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "B",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Defender with excellent barrier effect",
         "There is a chance that a Special Skill will be activated when hit by an overall attack.",
@@ -11394,6 +12337,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "↳ Increased chances of receiving jumping stacks",
         "Supports allies' durability with attack debuff"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 10,
         "vitality": 180,
@@ -11403,16 +12347,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
-        "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "necklaceMain": "Max HP (%) or Speed",
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / HP / Effect Hit / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -11504,8 +12448,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Defender",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
     "overallTier": "S",
-    "rerollTier": "S",
-    "score": "9.2",
+    "rerollTier": "B",
+    "score": "9",
     "summary": "SR Sun Defender (Impact Damage). Anna's maximum HP increases by 15%. After Anna uses \"Stop Resistance!\", increases the Action Gauge of a random ally other than herself by 15%. After receiving a single attack, give yourself 1 Ignition stack. At the start of your turn, if your Ignition stack is at its maximum, erase all Ignition stacks and generate an enhanced counterattack after attacking.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -11610,10 +12554,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517789",
-      "arcana-79517900",
-      "arcana-79517747",
-      "arcana-79517777"
+      "arcana-79517744",
+      "arcana-79606361",
+      "arcana-79517741",
+      "arcana-79517768",
+      "arcana-79517786"
     ],
     "staticData": {
       "nameJp": "アンナ",
@@ -11623,8 +12568,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-9372-20251112031758.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_OFFICER_POLICE_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "A",
       "appMediaTier": "S",
-      "appMediaRerollTier": "S",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "A durable defender who can recover his own HP.",
         "All attack skills depend on attack power, so it is difficult to generate firepower.",
@@ -11633,6 +12580,28 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Counterattack is possible when the ignition stack is at maximum",
         "↳ Support your allies by increasing the frequency of Basic Skill use",
         "Have an extra turn with Nova Burst"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "asherah",
+          "name": "Asherah",
+          "position": "BACK"
+        },
+        {
+          "slug": "lacy",
+          "name": "Lacy",
+          "position": "FRONT"
+        },
+        {
+          "slug": "anna",
+          "name": "Anna",
+          "position": "FRONT"
+        },
+        {
+          "slug": "naru",
+          "name": "Naru",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 10,
@@ -11643,16 +12612,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Life Set (Max HP +20%)",
-          "Protection Set (DEF +20% / Guard Rate +10%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
-        "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "HP (%) / DEF (%) / Speed / Effect RES"
+        "necklaceMain": "Max HP (%) or Speed",
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / HP / Effect Hit / Effect RES / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -11744,8 +12713,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Assassin",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_WRENCH_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SR Sun Assassin (Impact Damage). Marcille's Crit Rate increases by 15%. When Marcille starts a battle or when an ally breaks an enemy's Toughness, she will generate two Broken Nuts on herself. At the start of the turn, if your own Broken Nuts are at the maximum stack, generate Hexa Nuts on yourself and release all Broken Nuts. When attacking, Crit DMG increases by 3% in proportion to the Ignition stacks attached to yourself, up to a maximum of 5.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -11850,10 +12819,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517840",
-      "arcana-79517756",
-      "arcana-79517759",
-      "arcana-79517774"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "マルシル",
@@ -11863,8 +12833,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_CONSTRUCT_WRENCH_img.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "S",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "An attacker who collects unique buff nuts to generate firepower.",
         "Increases firepower during strength break",
@@ -11873,6 +12845,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "You can increase the number of moves by increasing the Action Gauge multiple times.",
         "Nova Burst has rare Special Skill CT reduction"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -11882,16 +12855,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Destruction Set (4pc: Crit DMG +40%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
-        "necklaceMain": "Speed",
+        "necklaceMain": "Crit Rate (%) or Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Effect Hit / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -11983,8 +12956,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Supporter",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/LPU_POST_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SR Moon Supporter (Elemental Damage). Bella's maximum HP increases by 15%. After Bella is attacked, if her Cooling is at maximum stack, increases her Action Gauge by 15%.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -12089,10 +13062,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517792",
-      "arcana-79517888",
       "arcana-79517750",
-      "arcana-79534223"
+      "arcana-79606361",
+      "arcana-80521390",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ベラ",
@@ -12102,8 +13076,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-18986-20251112031910.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_LPU_POST_img.webp",
       "pvpTier": "B",
+      "pveTier": "B",
+      "bossTier": "C",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "SR's only supporter",
         "Special Skill to recover single target + remove 2 debuffs, Ultimate Skill to recover all",
@@ -12111,6 +13087,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Increases recovery amount for moon attribute allies",
         "As the Action Gauge increases, the number of steps increases → You can expect a higher overall amount of recovery."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 10,
         "vitality": 150,
@@ -12120,16 +13097,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Speed Set (SPD +25%)",
-          "Life Set (Max HP +20%)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Immunity Set (1T Debuff Immunity)"
+          "Vitality Set (2pc: Max HP +15%)",
+          "Barrier Set (4pc: Ally Shield +15% Max HP)"
         ],
-        "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "Speed / HP (%) / Effect Hit / Effect RES"
+        "necklaceMain": "Max HP (%) or Speed",
+        "ringMain": "Max HP (%)",
+        "subStats": "Max HP (%) / HP / Effect RES / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -12221,8 +13198,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NOA_OBSERVER_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SR Star Ranger (Elemental Damage). Naru's ATK increases by 15%. When Naru uses \"Look here!\", the damage increases by 3% depending on the number of enemy weakenings, up to a maximum of 5. When using \"Look here!\", if your Jump is at the maximum stack, after clearing all stacks, \"Look here!\" will be activated again. The additional activated effect only occurs once per your turn.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -12327,10 +13304,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517795",
-      "arcana-79517873",
-      "arcana-79517774",
-      "arcana-79517783"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "ナル",
@@ -12340,14 +13318,38 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_NOA_OBSERVER_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "A",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Increase own firepower by applying debuffs",
         "↳ You can give up to two by yourself.",
         "Activate additional Basic Skills when jumping stack is at maximum",
         "Special Skill gives jumping stack according to the number of debuffs applied.",
         "Have an extra turn with Nova Burst"
+      ],
+      "recommendedParty": [
+        {
+          "slug": "asherah",
+          "name": "Asherah",
+          "position": "BACK"
+        },
+        {
+          "slug": "lacy",
+          "name": "Lacy",
+          "position": "FRONT"
+        },
+        {
+          "slug": "anna",
+          "name": "Anna",
+          "position": "FRONT"
+        },
+        {
+          "slug": "naru",
+          "name": "Naru",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -12358,16 +13360,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Effect Hit / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -12459,8 +13461,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Assassin",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SPEAR_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SR Moon Assassin (Slash Damage). Claire's ATK increases by 15%. When Claire attacks, if the enemy's HP is 50% or higher, it will penetrate the enemy's defense by 15%. When attacking, if your Cooling is at maximum stack, after clearing all stacks, increase your Action Gauge by 30%. Occurs only once in your turn.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -12565,10 +13567,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79534223",
-      "arcana-79517807",
-      "arcana-79517846",
-      "arcana-79517783"
+      "arcana-79517783",
+      "arcana-79766540",
+      "arcana-80012824",
+      "arcana-80363578",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "クレア",
@@ -12578,14 +13581,17 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-23566-20251112031814.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAID_SPEAR_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "A",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Capable of supporting a wide range of gimmicks such as defense penetration, hiding, and ignoring pre-emptive defense.",
         "You can also earn more moves with multiple Action Gauge increases and speed buffs.",
         "↳ Cooling stack needs support from others",
         "Very easy to use with no complicated conditions or quirks"
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 180,
         "vitality": 20,
@@ -12595,12 +13601,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Insight Set (2pc: Crit Rate +12%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
@@ -12696,8 +13702,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Striker",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SCISSORS_icon.webp",
     "overallTier": "A",
-    "rerollTier": "A",
-    "score": "8.6",
+    "rerollTier": "B",
+    "score": "8.5",
     "summary": "SR Sun Striker (Elemental Damage). Scarlet's maximum HP increases by 15%. After Scarlet uses \"I'll cut it!\", it inflicts Burn on the enemy at 100% for 2 turns. When attacking, if your Ignition is at maximum stack, after clearing all stacks, activate \"Go boldly!\" on the enemy. Occurs only once in your turn.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -12802,10 +13808,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79534220",
-      "arcana-79517810",
-      "arcana-79517753",
-      "arcana-79517756"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "スカーレット",
@@ -12815,8 +13822,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAID_SCISSORS_img.webp",
       "pvpTier": "A",
+      "pveTier": "A",
+      "bossTier": "S",
       "appMediaTier": "A",
-      "appMediaRerollTier": "A",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "A powerful Special Skill that increases firepower according to the number of enemies inflicted with Burning.",
         "↳ It's great that you can give up to 3 Ultimate Skills and complete them yourself.",
@@ -12824,6 +13833,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Having overlapping attack buffs is also great.",
         "The CT of the Ultimate Skill is heavy, and it takes some ingenuity to continuously generate firepower."
       ],
+      "recommendedParty": [],
       "journeyStats": {
         "power": 180,
         "vitality": 140,
@@ -12833,16 +13843,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Attack Set (4pc: ATK +35%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Attack Set (4pc: ATK +35%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
-        "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "ringMain": "Effect Hit (%) or Attack Power (%)",
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Effect Hit / Speed"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -12934,8 +13944,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "role": "Ranger",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAGICIAN_SNIPER_icon.webp",
     "overallTier": "SS",
-    "rerollTier": "SS",
-    "score": "9.6",
+    "rerollTier": "B",
+    "score": "9.5",
     "summary": "SR Star Ranger (Impact Damage). Clarissa's Crit Rate increases by 15%. At the start of Clarissa's turn, give herself 1 Jump stack at 100%. The applied effect is added depending on the number of times your own Jump stacks. After being attacked, erase all of your Jump stacks. 2 stacks: Increases damage by 15% when attacking. 3 stacks: Increases accuracy by 50% when attacking. 4 stacks: After attacking, increase own Action Gauge by 15%. 5 stacks: After attacking, reduce enemy's Action Gauge by 15% at 100%.",
     "recommendedDupes": "★★☆ (LB1 Recommended)",
     "baseStats": {
@@ -13040,10 +14050,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       }
     ],
     "bestArcanaSlugs": [
-      "arcana-79517825",
-      "arcana-79517876",
-      "arcana-79517756",
-      "arcana-79517759"
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79534223",
+      "arcana-79941760",
+      "arcana-80139832"
     ],
     "staticData": {
       "nameJp": "クラリッサ",
@@ -13053,14 +14064,38 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-171-20251112031735.webp",
       "illustUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ILLUST_MAGICIAN_SNIPER_img.webp",
       "pvpTier": "S",
+      "pveTier": "SS",
+      "bossTier": "SS",
       "appMediaTier": "SS",
-      "appMediaRerollTier": "SS",
+      "appMediaRerollTier": "B",
       "evalBullets": [
         "Gives various buffs to itself depending on the number of jumping stacks",
         "The firepower against the moon is among the highest among all.",
         "There are many effects that occur at the time of winning, and the winning rate is very important.",
         "Speed buff and Action Gauge increase for self, speed debuff and Action Gauge decrease for opponent",
         "↳ Not only does it increase your own workload, but it also indirectly supports your party's actions."
+      ],
+      "recommendedParty": [
+        {
+          "slug": "swimsuit-smile",
+          "name": "Swimsuit Smile",
+          "position": "BACK"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "position": "FRONT"
+        },
+        {
+          "slug": "rin",
+          "name": "Rin",
+          "position": "FRONT"
+        },
+        {
+          "slug": "clarissa",
+          "name": "Clarissa",
+          "position": "BACK"
+        }
       ],
       "journeyStats": {
         "power": 180,
@@ -13071,16 +14106,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "equipment": {
         "pveSets": [
-          "Destruction Set (Crit DMG +40%)",
-          "Fighting Spirit Set (ATK +15% / Eff RES +15%)"
+          "Annihilation Set (2pc: DEF Penetration +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "pvpSets": [
-          "Speed Set (SPD +25%)",
-          "Destruction Set (Crit DMG +40%)"
+          "Annihilation Set (2pc: DEF Penetration +15%)",
+          "Precision Set (2pc: Effect Hit +20%)"
         ],
         "necklaceMain": "Speed",
         "ringMain": "Attack Power (%)",
-        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed"
+        "subStats": "ATK (%) / Crit Rate / Crit DMG / Speed / Effect Hit"
       },
       "hardPotential": {
         "name": "Starlight Trajectory AX-5",
@@ -13182,7 +14217,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01_icon_arcana.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Sense of Protection] Effect RES increases by 10%. / [Sense of Life] Maximum HP increases by 5%. / [Prudent Tactics] At the start of the turn, Nova Force increases by 2. Occurs only once every 2 turns.",
     "stats": {
       "Tag": "Vitality",
@@ -13223,7 +14258,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "The appeal is that you can obtain Nova Force with Special Potential.",
         "↳ Initial Nova Burst is easier to activate",
         "I also enjoy events where you can earn potential points."
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -13235,7 +14272,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Stigmata of Speed] Speed increases by 8.",
     "stats": {
       "Tag": "Vitality",
@@ -13266,7 +14303,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Boost your speed with Special Potential",
         "↳ Easy to combine with Universal Class Bonus (Excellent)",
         "Possesses stamina recovery event"
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -13278,7 +14317,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Protection · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[Generous Response] When attacked by an enemy, if you are in Monastir's Discipline state, you will counterattack at 25%, and if you are attacked by an enemy in Taunt state, you will counterattack at 100%.",
     "stats": {
       "Tag": "Protection",
@@ -13310,7 +14349,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Carmen exclusive",
         "Possess multiple condition recovery events",
         "↳ Great for making it easier to maintain condition"
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "C"
     }
   },
   {
@@ -13322,7 +14363,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Supporter Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Blessings of Starlight] At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times.",
     "stats": {
       "Tag": "Vitality",
@@ -13355,7 +14396,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses Special Potential to increase supporter's recovery amount",
         "↳ I’m also happy that it has a physical strength tag that goes well with supporters.",
         "Please note that breaking the limit is required to release the unique effect."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -13367,7 +14410,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_SWORDMASTER_SSR_01_icon_arcana.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Attack] ATK increases by 5%. / [Stigmata of Attack] ATK increases by 8%.",
     "stats": {
       "Tag": "Power",
@@ -13402,7 +14445,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Excellent arcana that is compatible with all attackers.",
         "Multiple offensive potentials can be acquired.",
         "↳ It is easy to extend the attack considerably"
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -13414,7 +14459,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Caster Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_DRUID_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[How to Cast an Emergency Spell] At the start of the first battle, increase Crit Rate for 2 turns.",
     "stats": {
       "Tag": "Power",
@@ -13447,7 +14492,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses power tag, Crit Rate support and excellent set",
         "Possesses a criticality buff that activates at the start of the turn",
         "↳ It's a shame that it's only for casters."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "C"
     }
   },
   {
@@ -13459,7 +14506,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Caster Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Magic Circle of Target Alignment] At the start of the turn, own Crit DMG increases by 10%. Repeats up to 3 times.",
     "stats": {
       "Tag": "Power",
@@ -13492,7 +14539,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses power tag, Crit DMG support and excellent set",
         "It's a shame that it's only for casters.",
         "Please note that breaking the limit is required to release the unique effect."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "S"
     }
   },
   {
@@ -13504,7 +14553,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_ELF_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Sense of Defense] Defense power increases by 5%. / [Sensory Defense] Defense power increases by 8% and Effect RES increases by 4%.",
     "stats": {
       "Tag": "Endurance",
@@ -13539,7 +14588,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Patience, defense support and defense-specific abilities",
         "↳ Currently, there are few characters who want to prioritize defense power.",
         "Possess an event that can recover stamina"
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -13551,7 +14602,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Focus · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_BEAMSWORD_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [First Aid] When attacked, if your HP is below 25%, recover your HP. The amount of recovery increases in proportion to your maximum HP. Occurs only once every 2 turns.",
     "stats": {
       "Tag": "Focus",
@@ -13585,7 +14636,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Possesses Special Potential that can recover physical strength",
         "↳ Excellent as insurance in case the durability is not enough"
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "C"
     }
   },
   {
@@ -13597,7 +14650,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WILD_HOG_SSR_01_icon_arcana.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Defensive Skill] Defense power increases by 2%. / [Second Heart] Maximum Toughness value increases by 2.",
     "stats": {
       "Tag": "Endurance",
@@ -13631,7 +14684,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Possesses Special Potential to increase Toughness",
         "↳ Recommended to attach to vanguard characters"
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "A"
     }
   },
   {
@@ -13643,7 +14698,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Focus · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_BOMB_SSR_01_icon_arcana.webp",
     "tier": "SS",
-    "score": "9.7",
+    "score": "9.8",
     "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [Sense of Attack] ATK increases by 5%. / [Stigmata of Insight] Crit Rate increases by 18%.",
     "stats": {
       "Tag": "Focus",
@@ -13682,7 +14737,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Excellent critical hit rate buff for Universal Class Bonusance",
         "Compatible with all attackers (Excellent)",
         "It's also nice to be able to increase your attack power with attack potential."
-      ]
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "S"
     }
   },
   {
@@ -13694,7 +14751,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_INDEPENDENT_DRAGON_SSR_01_icon_arcana.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Sharp Offensive] ATK increases by 6% and Crit Rate increases by 6%.",
     "stats": {
       "Tag": "Power",
@@ -13728,7 +14785,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Therefore, each magnification is modest.",
         "Own multiple stamina recovery events",
         "↳ You can train more often"
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -13740,7 +14799,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Protection · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_GADGET_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[Sense of Protection] Effect RES increases by 10%. / [Protection Skills] Effect RES increases by 4%. / [Tempura Party] After using the skill, if your HP is over 50%, increase your Action Gauge by 20%.",
     "stats": {
       "Tag": "Protection",
@@ -13779,7 +14838,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Unique Potential can be acquired",
         "↳ Exclusive to Tanya",
         "You can acquire multiple protection potentials (Excellent)"
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "C"
     }
   },
   {
@@ -13791,7 +14852,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Focus · Caster Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_DETECTIVE_WATSON_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[Concentration Skills] Effect Hit increases by 4%. / [Resolute Determination] After receiving an attack, if your HP is below 50%, generate a 3 turn token for yourself. Occurs only once during battle.\nProof: Increases damage dealt by 10% and reduces damage received by 10%.",
     "stats": {
       "Tag": "Focus",
@@ -13828,7 +14889,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Special Potential to increase attack power when physical strength is low",
         "↳ There are points to improve HP adjustment.",
         "Please note that breaking the limit is required to release the unique effect."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "C"
     }
   },
   {
@@ -13840,7 +14903,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Assassin Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_SSR_01_icon_arcana.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Elasticity/acceleration] At the start of your turn, your speed increases by 10. Can be stacked up to 3 times.",
     "stats": {
       "Tag": "Power",
@@ -13874,7 +14937,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Please note that breaking the limit is required to release the unique effect.",
         "There are many events that reduce stamina.",
         "↳ There are a lot of statuses you can get as a result."
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -13886,7 +14951,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Protection · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Sense of Protection] Effect RES increases by 10%. / [Strong Will] Maximum Toughness value increases by 2. When attacked, Crit DMG resistance increases by 20% if you are not in Toughness break state.",
     "stats": {
       "Tag": "Protection",
@@ -13923,7 +14988,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses a Special Potential that increases the defender's Toughness.",
         "Please note that breaking the limit is required to release the unique effect.",
         "Stamina may increase or decrease depending on the event option, so please check"
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "C"
     }
   },
   {
@@ -13935,7 +15002,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Second Heart] Maximum Toughness value increases by 2.",
     "stats": {
       "Tag": "Endurance",
@@ -13966,7 +15033,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses a Special Potential that increases Toughness with shared aids",
         "↳ Basically, team up with a defender (Excellent)",
         "Please note that breaking the limit is required to release the unique effect."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -13978,7 +15047,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Supporter Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[Blessings of Starlight] At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times.",
     "stats": {
       "Tag": "Vitality",
@@ -14010,7 +15079,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Possesses Special Potential to increase supporter's HP recovery amount",
         "Since there are many characters whose recovery amount depends on their maximum HP, the physical strength tag is also excellent."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -14022,7 +15093,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Focus · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NOA_OBSERVER_SSR_01_icon_arcana.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Stigmata of Insight] Crit Rate increases by 18%.",
     "stats": {
       "Tag": "Focus",
@@ -14054,7 +15125,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Please note that breaking the limit is required to release the unique effect.",
         "Condition recovery in events",
         "Obtained with Apocalypse Support Pass"
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -14066,7 +15139,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105829_y0pco.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "7.4",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Get Ready!] When using a skill, Effect Hit increases by 10% and damage dealt increases by 5% depending on the number of strengthening effects you have. This effect applies up to 5 layers. / [Offensive Talent] ATK increases by 3%.",
     "stats": {
       "Tag": "Power",
@@ -14107,7 +15180,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses many events that can restore stamina",
         "There are advantages and disadvantages as there are disadvantages as well.",
         "You can acquire Unique Potentials exclusive to Scarlet."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -14119,7 +15194,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
     "tier": "SS",
-    "score": "9.7",
+    "score": "9.8",
     "effectSummary": "[Skill in Life] Maximum HP increases by 2%. / [Sharp Growth] Maximum HP increases by 6% and Crit Rate increases by 6%. / [Talent of Life] Maximum HP increases by 3%.",
     "stats": {
       "Tag": "Vitality",
@@ -14159,7 +15234,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Acquire multiple HP-related potentials",
         "Stamina can be recovered during the event",
         "Excellent general-purpose potential that can increase your conversion rate and increase your durability."
-      ]
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "S"
     }
   },
   {
@@ -14171,7 +15248,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Attack] ATK increases by 5%. / [Stack Trigger] After using a Special Skill, your own Special Skill damage increases by 5%. Repeats up to 5 times.",
     "stats": {
       "Tag": "Power",
@@ -14207,7 +15284,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Increase damage of Special Skills with Special Potential",
         "↳ Recommended for characters who fight mainly with Special Skills",
         "Possesses multiple excellent effects such as stamina recovery and condition increase."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "S"
     }
   },
   {
@@ -14219,7 +15298,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Talent of Speed] Speed increases by 3. / [Stigmata of Life] Maximum HP increases by 8%.",
     "stats": {
       "Tag": "Vitality",
@@ -14254,7 +15333,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Specializes in strengthening HP status by sharing physical strength tags",
         "↳ Basically recommended for supporters and defenders",
         "There are no offensive status enhancements, including potential, so it is not suitable for developing attackers."
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "A"
     }
   },
   {
@@ -14266,7 +15347,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Focus · Ranger Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200315_snce6.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Concentration Skills] Effect Hit increases by 4%. / [The Shadow of Silkworm Eating] When using Basic Skill, your Crit Rate increases by 5%. Can be stacked up to 5 times.",
     "stats": {
       "Tag": "Focus",
@@ -14305,7 +15386,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Competitor has a conversion rate of 18% with Universal Class Bonus.",
         "↳ It is not an absolutely essential arcana.",
         "For characters other than Rangers, stamina recovery of 20 is a very useful effect."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "C"
     }
   },
   {
@@ -14317,7 +15400,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Assassin Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/185314_wdzh2.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Speed Prowess] Speed increases by 2. / [Double Tap] After attacking with Basic Skill, if the enemy's Toughness is broken, it will cause chain damage to all enemies proportional to your own ATK at 100%.",
     "stats": {
       "Tag": "Power",
@@ -14354,7 +15437,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses Special Potential that allows additional attacks",
         "↳ Limited to assassins, conditions are heavy such as the need to reduce the enemy's Toughness",
         "It's quite painful not being able to use the physical strength tag Charles."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "C"
     }
   },
   {
@@ -14365,8 +15450,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SSR Arcana",
     "subType": "Power · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "SS",
+    "score": "9.8",
     "effectSummary": "Grants Power training bonuses and Universal Bonus amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
@@ -14407,7 +15492,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Combined with maximum HP increase",
         "↳ Compatible with supporters who want to show off their firepower, such as Emily and Dress Acela.",
         "The training performance “Acquire additional potential points 5” is quite excellent."
-      ]
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "SS"
     }
   },
   {
@@ -14419,7 +15506,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201813_3r618.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Speed] Increases speed by 5. / [Disaster Response Protocols] The maximum Toughness value increases by 1.\nWhen a Critical Hit occurs with Special Skill or Ultimate Skill, recover HP equal to 20% of the damage.",
     "stats": {
       "Tag": "Vitality",
@@ -14456,7 +15543,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Special Skill Possesses Special Potential that can recover HP when critical.",
         "The drawback is that the competitor's physical strength arcana is excellent.",
         "↳ A Knight's Vow, the Perfect Bunny Girl, etc."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "A"
     }
   },
   {
@@ -14468,7 +15557,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202111_kmw0s.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Skill of Destruction] Crit DMG increases by 4%. / [Catalyst] If a Critical Hit occurs after an attack, there is a 100% chance that chain damage will be inflicted on all enemies proportional to your own ATK.\nOccurs only once in your turn.",
     "stats": {
       "Tag": "Vitality",
@@ -14503,7 +15592,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Supporting Yanagi Mina by assisting rescuers",
         "Since it deals chain damage to all enemies, the operation will not change dramatically.",
         "↳ Not an essential arcana"
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -14515,7 +15606,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202110_u9dqe.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Defense] Defense power increases by 5%. / [Shield of Silence] Preemptive Guard occurrence probability increases by 20%.",
     "stats": {
       "Tag": "Endurance",
@@ -14552,7 +15643,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Possesses Patience Tag Defender Aid",
         "Special Potential that enables pre-emptive defense",
         "↳ Excellent effect in PvP"
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "A"
     }
   },
   {
@@ -14564,7 +15657,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Ranger Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Talent of Insight] Crit Rate increases by 4.5%. / [The Sound of Blood] After a critical hit occurs with a general attack, your own ATK increases by 3% depending on the number of targets hit. Can be stacked up to 5 times.",
     "stats": {
       "Tag": "Power",
@@ -14603,7 +15696,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Gain irreplaceable insight talent",
         "↳ I would like to secure it as a blessing staff.",
         "The training performance “Acquire additional potential points 5” is quite excellent."
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -14614,8 +15709,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SSR Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/182813_7ue9j.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.4",
     "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
@@ -14652,7 +15747,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ The event content is also quite modest.",
         "The training performance is at the SSR level, so use it if you want training performance.",
         "↳ Recruitment priority is low because Special Potential is high"
-      ]
+      ],
+      "appMediaTier": "D",
+      "rerollTier": "B"
     }
   },
   {
@@ -14664,7 +15761,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
     "tier": "SS",
-    "score": "9.7",
+    "score": "9.8",
     "effectSummary": "[Stigmata of Speed] Speed increases by 8. / [Offensive Talent] ATK increases by 3%. / [Talent of Life] Maximum HP increases by 3%.",
     "stats": {
       "Tag": "Endurance",
@@ -14709,7 +15806,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Possibility of achieving 3 stages at the same time with patience development",
         "The overall effect of the event is excellent.",
         "↳ Condition +2, stamina recovery, etc."
-      ]
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "SS"
     }
   },
   {
@@ -14721,7 +15820,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173815_r9imk.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Destruction] Crit DMG increases by 10%. / [Solitary Seeker] The maximum Toughness value increases by 1.\nAfter receiving an attack, if evasion occurs, inflicts Tenma's Mystery on yourself for 1 turn.\nMystery of Heaven: Crit Rate 100% up",
     "stats": {
       "Tag": "Vitality",
@@ -14758,7 +15857,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Almost essential for Fae training",
         "I'm happy with the additional potential points.",
         "Since there is no need to take the potential of the conversion rate, the actual benefit of potential points is even greater."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "A"
     }
   },
   {
@@ -14770,7 +15871,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
     "tier": "SS",
-    "score": "9.7",
+    "score": "9.8",
     "effectSummary": "[Sharp Offensive] ATK increases by 6% and Crit Rate increases by 6%.",
     "stats": {
       "Tag": "Power",
@@ -14804,7 +15905,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Training performance is also high and quite excellent.",
         "↳ Can be used for most character development",
         "Easy to use with 2 stamina in event conditions and overall strong performance"
-      ]
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "SS"
     }
   },
   {
@@ -14816,7 +15919,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132533_e9xba.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Skill in Life] Maximum HP increases by 2%. / [Sense of Life] Maximum HP increases by 5%. / [March of Love] The maximum Toughness value increases by 1.\nGain 2 Nova Force after using Special Skill or Ultimate Skill.",
     "stats": {
       "Tag": "Vitality",
@@ -14856,7 +15959,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Carmen exclusive",
         "Excellent Special Potential for acquiring Nova Force",
         "Almost essential arcana for bride Carmen"
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "A"
     }
   },
   {
@@ -14868,7 +15973,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Caster Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170751_oeb4y.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Speed] Increases speed by 5. / [Crimson Oath] After attacking all targets, generates a proof for 2 turns on yourself.\nWhen attacking, if you are in the witness state, the damage dealt increases by 15%.\nProof: Damage dealt increases by 10%, damage taken decreases by 10%.",
     "stats": {
       "Tag": "Power",
@@ -14910,7 +16015,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Bride Epindel, the original title character, has an overall attack skill of CT5 & an additional turn that consumes proof turns, making her a bad match overall.",
         "Excellent training performance",
         "↳ I'm happy with the additional potential points of +5."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -14922,7 +16029,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
     "tier": "SS",
-    "score": "9.7",
+    "score": "9.8",
     "effectSummary": "[Sense of Destruction] Crit DMG increases by 10%. / [Skill of Insight] Crit Rate increases by 3%. / [Skill of Destruction] Crit DMG increases by 4%. / [Stigmata of Insight] Crit Rate increases by 18%.",
     "stats": {
       "Tag": "Endurance",
@@ -14968,7 +16075,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Firmly possesses training effects, conditions, and super-sensitive training effects",
         "↳ Other points include bond points, sensitivity training occurrence rate, and no waste.",
         "A must-have item"
-      ]
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "SS"
     }
   },
   {
@@ -14980,7 +16089,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Striker Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Flexible Judgment] When attacking, if your HP is above 50%, the damage dealt increases by 15%.\nWhen attacked, if your HP is less than 50%, damage taken will be reduced by 15%.",
     "stats": {
       "Tag": "Power",
@@ -15017,7 +16126,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ There are few situations where it is required.",
         "It may be difficult to adopt due to the power tag framework.",
         "↳ Tyria and Bunny Flay fill up the two slots."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "A"
     }
   },
   {
@@ -15029,7 +16140,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/06/170551_o4b9x.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Path of Destiny] When one of your allies starts their turn, say \"Now!\" to yourself! (Cannot be canceled) will be granted once.\nAfter using the skill, now on yourself! (Unremovable) Depending on the number of stacks, there is a 100% chance to inflict chain damage proportional to your own ATK on one of the enemies, and now it's time! Delete all (cannot be canceled).\nNow! (Cannot be canceled): I have a feeling that a perfect machine will come. This effect can be stacked up to 5 times.",
     "stats": {
       "Tag": "Power",
@@ -15065,7 +16176,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Special Potential that causes stacking chain damage.",
         "Fair training performance",
         "There is no event to recover stamina or increase condition."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -15077,7 +16190,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp",
     "tier": "B",
-    "score": "8.0",
+    "score": "8",
     "effectSummary": "[Defensive Skill] Defense power increases by 2%. / [Talent of Concentration] Effect Hit increases by 6%. / [Solid Trust] At the start of the first battle, create a barrier on yourself for 2 turns.\nBarrier increases in proportion to own maximum HP.",
     "stats": {
       "Tag": "Vitality",
@@ -15120,7 +16233,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "I want to avoid Special Potential being a temporary effect as much as possible.",
         "Ability to concentrate",
         "Training performance/event performance is so-so."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "C"
     }
   },
   {
@@ -15132,7 +16247,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/170418_4q5sx.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Laughter Induction Mechanism] When using Special Skill, damage dealt increases by 20%.\nAt the start of your turn, give yourself 1 jumping stack. / [Sense of Speed] Increases speed by 5.",
     "stats": {
       "Tag": "Power",
@@ -15173,7 +16288,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Compatible with both swimsuit smile and regular smile(Excellent)",
         "Arcana that you should definitely use to develop a smile",
         "Additional potential points +5 is also powerful"
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "A"
     }
   },
   {
@@ -15185,7 +16302,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Focus · Ranger Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/08/193327_txw73.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Attack] ATK increases by 5%. / [Concentration Skills] Effect Hit increases by 4%. / [Stigmata of Attack] ATK increases by 8%.",
     "stats": {
       "Tag": "Focus",
@@ -15226,7 +16343,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Centralized tag sharing assistance",
         "The first common tag support with firepower potential.",
         "An excellent point is that it is easy to increase the force with additional force."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -15238,7 +16357,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Assassin Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Skill of Destruction] Crit DMG increases by 4%. / [A Refreshing Scent] Increases damage by 10% when attacking a single target.\nIf you are not weakened, damage increases by an additional 15%.",
     "stats": {
       "Tag": "Vitality",
@@ -15277,7 +16396,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Increases magnification when not weak",
         "Compatible with Amora, who can remove debilitations, Bunny Charles, who is good at single-target attacks, and Swimsuit Smile.",
         "There are many characters who are strong against assassins, so the acquisition priority is high."
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -15289,7 +16410,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Endurance · Ranger Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/194438_w92ck.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%. / [Speed Prowess] Speed increases by 2. / [Skill of Insight] Crit Rate increases by 3%. / [Sharp Posture] After attacking with Special Skill, increase own Action Gauge by 20%.\nThis effect does not occur with skills other than single-target attacks.\nThis effect only occurs once per turn. / [Talent of Concentration] Effect Hit increases by 6%.",
     "stats": {
       "Tag": "Endurance",
@@ -15342,7 +16463,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Multiple Common Potentials available at events",
         "↳ Speed prowess and insight prowess",
         "Training performance is based on patience"
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
     }
   },
   {
@@ -15354,7 +16477,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Striker Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/03/170800_jb9o5.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Sense of Attack] ATK increases by 5%. / [Attack Skill] ATK increases by 2%. / [Heat of Battle] When attacking, your damage increases by 10%.\nThis effect can be stacked up to 2 times.\nAt the end of the turn, initialize all stacks.",
     "stats": {
       "Tag": "Power",
@@ -15398,7 +16521,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Gwen, Bunny Claire etc.",
         "Although the training performance is high, it is worrisome that there are no various status bonuses.",
         "Get more potential points for events"
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -15410,7 +16535,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Power · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/192925_u7brs.webp",
     "tier": "S",
-    "score": "9.2",
+    "score": "9.3",
     "effectSummary": "[Attack Skill] ATK increases by 2%. / [Gesture of Emptiness] Crit Rate increases by 20%.\nAfter attacking, your ATK increases by 2% for each number of targets you hit with Critical Hit.\nThis effect can occur up to 10 times.",
     "stats": {
       "Tag": "Power",
@@ -15447,7 +16572,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Attack buff increases by 2% depending on the number of critical hits when attacking.",
         "It is also possible to supply potential points with additional potential points +4",
         "It's also nice to be able to earn potential points at events."
-      ]
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "A"
     }
   },
   {
@@ -15459,7 +16586,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Savior-Exclusive Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/190614_vbrik.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "[Skill of Insight] Crit Rate increases by 3%. / [Sense of Destruction] Crit DMG increases by 10%. / [Butterfly Lullaby] After using a skill that is not an attack, give yourself Sweet Dreams (cannot be removed) for 3 turns and gain 2 Nova Force.\nSweet Dream: Toughness Damage increases by 1. / [Speed Prowess] Speed increases by 2.",
     "stats": {
       "Tag": "Vitality",
@@ -15504,7 +16631,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Unique buff increases Toughness damage by 1",
         "Normally, only Sayla's Special Skills can achieve the conditions.",
         "Obtain insight prowess/speed prowess at a discount in events"
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -15516,7 +16645,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "subType": "Vitality · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
     "tier": "A",
-    "score": "8.6",
+    "score": "8.7",
     "effectSummary": "Grants Vitality training bonuses and Universal Bonus amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
@@ -15564,7 +16693,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "↳ Currently, it is only adopted as a makeshift measure.",
         "It's also a shame that there are no effects around the potential points.",
         "↳ There are not enough potential points for physical strength development."
-      ]
+      ],
+      "appMediaTier": "A",
+      "rerollTier": "B"
     }
   },
   {
@@ -15575,8 +16706,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "[Sense of Life] Maximum HP increases by 5%.",
     "stats": {
       "Tag": "Vitality",
@@ -15606,7 +16737,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
         "[Sense of Life] Maximum HP increases by 5%."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -15617,8 +16750,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_SMILE_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
@@ -15642,7 +16775,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -15653,8 +16788,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_ORACLE_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
@@ -15678,7 +16813,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -15689,8 +16826,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SPEAR_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.4",
     "effectSummary": "[Skill of Insight] Crit Rate increases by 3%.",
     "stats": {
       "Tag": "Power",
@@ -15720,7 +16857,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Increase your conversion rate with your potential",
         "↳ Compatibility with power tag (Excellent)"
-      ]
+      ],
+      "appMediaTier": "D",
+      "rerollTier": "B"
     }
   },
   {
@@ -15731,8 +16870,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SCISSORS_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "[Sense of Life] Maximum HP increases by 5%.",
     "stats": {
       "Tag": "Vitality",
@@ -15762,7 +16901,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
         "[Sense of Life] Maximum HP increases by 5%."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -15773,8 +16914,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NIGHTMARE_REAPER_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.4",
     "effectSummary": "[Sense of Life] Maximum HP increases by 5%.",
     "stats": {
       "Tag": "Vitality",
@@ -15804,7 +16945,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "HP can be increased with potential",
         "Possesses stamina recovery and condition increase in events"
-      ]
+      ],
+      "appMediaTier": "D",
+      "rerollTier": "B"
     }
   },
   {
@@ -15815,8 +16958,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_STELLAR_THIEF_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.4",
     "effectSummary": "[Sense of Attack] ATK increases by 5%. / [Offensive Talent] ATK increases by 3%.",
     "stats": {
       "Tag": "Power",
@@ -15850,7 +16993,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Possesses multiple attack power potentials",
         "↳ Compatibility with attacker (Excellent)"
-      ]
+      ],
+      "appMediaTier": "D",
+      "rerollTier": "B"
     }
   },
   {
@@ -15861,8 +17006,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_INCOGNITA_FLOWER_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "[Defensive Skill] Defense power increases by 2%.",
     "stats": {
       "Tag": "Endurance",
@@ -15892,7 +17037,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
         "[Defensive Skill] Defense power increases by 2%."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -15903,8 +17050,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "[Protection Skills] Effect RES increases by 4%.",
     "stats": {
       "Tag": "Protection",
@@ -15934,7 +17081,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
         "[Protection Skills] Effect RES increases by 4%."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -15945,8 +17094,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_SNIPER_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.4",
     "effectSummary": "[Talent of Speed] Speed increases by 3.",
     "stats": {
       "Tag": "Power",
@@ -15976,7 +17125,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Increase speed with potential",
         "Stamina decreased by 15 in the event"
-      ]
+      ],
+      "appMediaTier": "D",
+      "rerollTier": "B"
     }
   },
   {
@@ -15987,8 +17138,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_KNUCKLE_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
@@ -16012,7 +17163,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -16023,8 +17176,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_AMULET_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "[Sense of Concentration] Effect Hit increases by 10%.",
     "stats": {
       "Tag": "Focus",
@@ -16054,7 +17207,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
         "[Sense of Concentration] Effect Hit increases by 10%."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -16065,8 +17220,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_GRACE_DUALSWORD_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "[Protection Skills] Effect RES increases by 4%.",
     "stats": {
       "Tag": "Protection",
@@ -16096,7 +17251,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
         "[Protection Skills] Effect RES increases by 4%."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -16107,8 +17264,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_ROD_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.8",
     "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
@@ -16132,7 +17289,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "B",
+      "rerollTier": "B"
     }
   },
   {
@@ -16143,8 +17302,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "SR Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_WRENCH_SR_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7.4",
     "effectSummary": "[Sense of Defense] Defense power increases by 5%.",
     "stats": {
       "Tag": "Endurance",
@@ -16175,7 +17334,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "You can increase your defense power with potential.",
         "↳ There are options for condition recovery, so choose depending on the situation.",
         "Being able to recover stamina during events is also great."
-      ]
+      ],
+      "appMediaTier": "D",
+      "rerollTier": "B"
     }
   },
   {
@@ -16186,8 +17347,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_ORACLE_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
@@ -16211,7 +17372,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16222,8 +17385,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SPEAR_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
@@ -16247,7 +17410,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16258,8 +17423,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_DRUID_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
@@ -16283,7 +17448,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16294,8 +17461,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_DETECTIVE_WATSON_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Power training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
@@ -16319,7 +17486,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16330,8 +17499,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_BEAMSWORD_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
@@ -16355,7 +17524,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16366,8 +17537,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
@@ -16391,7 +17562,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16402,8 +17575,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
@@ -16427,7 +17600,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16438,8 +17613,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_SMILE_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
@@ -16463,7 +17638,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16474,8 +17651,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Vitality · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Vitality training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Vitality",
@@ -16499,7 +17676,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16510,8 +17689,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
@@ -16535,7 +17714,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16546,8 +17727,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NOA_OBSERVER_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
@@ -16571,7 +17752,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16582,8 +17765,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_SNIPER_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Focus training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
@@ -16607,7 +17790,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16618,8 +17803,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
@@ -16643,7 +17828,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16654,8 +17841,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_ROD_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
@@ -16679,7 +17866,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16690,8 +17879,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
@@ -16715,7 +17904,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16726,8 +17917,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Protection · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Protection training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Protection",
@@ -16751,7 +17942,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16762,8 +17955,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_AMULET_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
@@ -16787,7 +17980,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16798,8 +17993,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WILD_HOG_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
@@ -16823,7 +18018,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16834,8 +18031,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
@@ -16859,7 +18056,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   },
   {
@@ -16870,8 +18069,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_R_01_icon_arcana.webp",
-    "tier": "A",
-    "score": "8.6",
+    "tier": "B",
+    "score": "7",
     "effectSummary": "Grants Endurance training bonuses and - amplification during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
@@ -16895,7 +18094,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "supportBonuses": [],
       "evalBullets": [
         "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
-      ]
+      ],
+      "appMediaTier": "C",
+      "rerollTier": "B"
     }
   }
 ]).map((a) => ({
