@@ -350,7 +350,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         </p>
         <AppMediaH3>Aim for Both Characters and Arcana</AppMediaH3>
         <p>
-          Because Star Savior has separate Character Observation and Arcana Observation banners, starting with a balanced foundation in both is ideal—or secure your core Saviors during rerolling and invest your early story Starlight Stones into SSR Arcana.
+          Because Star Savior has separate Character Observation and Arcana Observation banners, starting with a balanced foundation in both is ideal—or secure your core Saviors during rerolling and invest your early story Starlight Gems into SSR Arcana.
         </p>
         <AppMediaH3>Generous Free Distributions Mean Starting Immediately is Also Fine</AppMediaH3>
         <p>
@@ -367,7 +367,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           <li>Select your server (<strong className="text-white">&quot;Global&quot;</strong> is recommended).</li>
           <li>Complete the initial Rescue Journey tutorial run.</li>
           <li>When prompted twice in a row for Tutorial Skip (NOA Support Funds & Operation Tutorial), select <strong className="text-white">&quot;Skip Tutorial&quot;</strong> on both.</li>
-          <li>Claim <strong className="text-[#fbbf24]">10,000 Starlight Stones</strong> from Challenge Missions (&quot;First Rescue Journey Clear&quot; & &quot;First Observation&quot;).</li>
+          <li>Claim <strong className="text-[#fbbf24]">10,000 Starlight Gems</strong> from Challenge Missions (&quot;First Rescue Journey Clear&quot; & &quot;First Observation&quot;).</li>
           <li>Claim all Mailbox and Login Bonus tickets and pull on the Rate-Up Pickup Gacha banners.</li>
           <li>If unsatisfied with your pulls, open Settings → <strong className="text-white">&quot;Reset Server Account&quot;</strong> and repeat from Step 3.</li>
         </ol>

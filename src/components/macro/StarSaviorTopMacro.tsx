@@ -1297,11 +1297,11 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             },
             {
               q: 'Can I change my name, and are duplicate names allowed?',
-              a: 'Both changing your name and using duplicate Commander names are supported. Changing your name requires a dedicated item: your first name change is effectively free, while subsequent changes require purchasing the rename item with Starlight Stones (Astral Gems), so frequent name changes are not recommended.',
+              a: 'Both changing your name and using duplicate Commander names are supported. Changing your name requires a dedicated item: your first name change is effectively free, while subsequent changes require purchasing the rename item with Starlight Gems, so frequent name changes are not recommended.',
             },
             {
               q: 'What should I exchange Observation Reports for?',
-              a: 'As a rule of thumb, prioritize discounted sale items first. Next in line is the Break Skill Support Plan, though raising Break Skill levels offers relatively modest returns—so if you are short on Observation Reports, you can safely skip it.',
+              a: 'Prioritize discounted sale items (such as Observation Tickets and enhancement materials) and Remnant Cores (required for SR Guardian Star Awakening & Engraving) first. Next in line is the Break Skill Support Plan, though raising Break Skill levels offers relatively modest returns—so if you are short on Observation Reports, you can safely hold off on it.',
             },
             {
               q: 'What should I do if I cannot clear Rescue Journey?',

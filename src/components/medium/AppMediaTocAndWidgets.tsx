@@ -66,10 +66,10 @@ const LATEST_UPDATE_TABS = [
   {
     key: 'livestream',
     tabLabel: 'Livestream News',
-    title: 'Witch of Favoritism & Guile Confirmed! Dress Lacy & Dress Carnelia Revealed!',
+    title: 'Nov 12 1st Anniv: Witch of Favoritism & FREE SSR Guile (+ Free SSR Arcana)!',
     badge: 'RECOMMENDED',
     description:
-      'Official broadcast highlights: new playable SSRs Witch of Favoritism and Guile announced alongside Dress Lacy and Dress Carnelia outfits and 1st Anniversary celebrations!',
+      '1st Anniversary broadcast summary: Order Striker Witch of Favoritism & FREE Chaos Caster Guile (+ free universal SSR Arcana) launch Nov 12 alongside 200 Anniv pulls, followed by Limited Dress Lacy & Dress Carnelia (+300 pulls) in December!',
     links: [
       { label: 'View Latest Livestream Summary Here', href: '/starsavior/guides/livestream-summary' },
       { label: 'Active Coupon Codes List Here', href: '/starsavior/guides/promo-codes' },
@@ -78,10 +78,10 @@ const LATEST_UPDATE_TABS = [
   {
     key: 'coupons',
     tabLabel: 'Coupon Codes Released',
-    title: 'Active Promo Codes (~Nov 27, 23:59): GIFTREADYANNIV1ST & ENDOFTHEJOURNEY',
+    title: 'Active Codes: GIFTREADYANNIV1ST, ENDOFTHEJOURNEY & TOGETHER1STANNIV',
     badge: 'RECOMMENDED',
     description:
-      'Redeem GIFTREADYANNIV1ST and ENDOFTHEJOURNEY via Settings -> Account -> Redeem Coupon Code (or the official portal on iOS) before Nov 27, 23:59 to claim Astral Gems and Observation Tickets.',
+      'Redeem GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, ~Nov 27 04:00), ENDOFTHEJOURNEY (2,000 Starlight Gems, ~Dec 4 23:59), and TOGETHER1STANNIV (3x Singularity Degeneration Reactor + 1x Skill Reset Code, Nov 12 – Dec 10).',
     links: [
       { label: 'Coupon Codes List & How to Redeem', href: '/starsavior/guides/promo-codes' },
       { label: 'How to Reroll Fast Guide', href: '/starsavior/guides/how-to-reroll' },
@@ -114,10 +114,10 @@ const LATEST_UPDATE_TABS = [
   {
     key: 'cosmo-gate',
     tabLabel: 'Cosmo Gate P7',
-    title: 'Cosmo Gate Season P7 Boss Strategy & Recommended Formations (~Nov 12, 04:00)',
+    title: 'Cosmo Gate Season P7 (Belgras, Tyria & Carnelia) Boss Strategy (~Nov 12, 04:00)',
     badge: 'EVENT',
     description:
-      'Single-target Toughness break and Cross Attack compositions centered around Professor M, Amora, Haydee, and Smile: Sunshine Cat dominate Cosmo Gate P7 boss clears.',
+      'Single-target Toughness break and Cross Attack formations pairing Professor M and Asherah: Waltz of Starlight with Amora, Smile: Sunshine Cat, and Carmen: Eternal Promise dominate Season P7.',
     links: [
       { label: 'Cosmo Gate Strategy & Recommended Teams', href: '/starsavior/guides/cosmo-gate' },
       { label: 'Professor M Build & Cross Attack Guide', href: '/starsavior/characters/professor-m' },
@@ -126,10 +126,10 @@ const LATEST_UPDATE_TABS = [
   {
     key: 'valentine',
     tabLabel: 'Valentine Revival',
-    title: 'Revival Valentine Event Walkthrough & Exchange Shop (~Nov 13, 04:00)',
+    title: 'Revival Valentine Event "Bittersweet! Golden Fantasia" (~Nov 13, 04:00)',
     badge: 'EVENT',
     description:
-      'Clear Golden Fantasia event stages to exchange for Observation Tickets, Quasar/Pulsar Core shards, and Affinity Gifts before November 13, 04:00.',
+      'Clear daily event missions and all 3 daily Event Raids to farm Deluxe Valentine Chocolates for Focused / Standard Observation Tickets, Master Cube, Moonlight Water, and Polaris Support Boxes.',
     links: [
       { label: 'Valentine Event Walkthrough Here', href: '/starsavior/guides/valentine-event' },
       { label: 'All 57 Playable Characters Database', href: '/starsavior/characters' },
