@@ -77,7 +77,7 @@ export async function POST(request: NextRequest) {
   });
 
   return NextResponse.json(result, {
-    status: result.alreadyVoted ? 409 : 200,
+    status: 200,
     headers: NO_STORE_HEADERS,
   });
 }

@@ -26,7 +26,9 @@ import {
   castVoteInMemory,
   checkVoteRateLimit,
   resetMemoryVotesForTests,
+  CastVoteBodySchema,
 } from '../../application/vote.service';
+import { APPMEDIA_HOME_PORTAL_DATA } from '../../infrastructure/db/appmedia-home-data';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -296,5 +298,32 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     const blocked = checkVoteRateLimit(testLimiterHash, 2000);
     expect(blocked.allowed).toBe(false);
     expect(blocked.retryAfterSec).toBeGreaterThan(0);
+
+    // 5. Validate EVERY real Upcoming Game ID, Poll Character Slug, and Comment ID against CastVoteBodySchema
+    expect(APPMEDIA_HOME_PORTAL_DATA.upcomingGames.length).toBeGreaterThan(50);
+    for (const game of APPMEDIA_HOME_PORTAL_DATA.upcomingGames) {
+      const parsed = CastVoteBodySchema.safeParse({
+        scope: 'upcoming-games',
+        targetId: game.id,
+        mode: 'per-item',
+      });
+      expect(parsed.success, `Upcoming game ID failed validation: ${game.id}`).toBe(true);
+    }
+    for (const char of STAR_SAVIOR_CHARACTERS_SEED) {
+      expect(
+        CastVoteBodySchema.safeParse({
+          scope: 'poll:starsavior-strongest-char',
+          targetId: char.slug,
+          mode: 'single-choice',
+        }).success
+      ).toBe(true);
+    }
+    expect(
+      CastVoteBodySchema.safeParse({
+        scope: 'comment-likes',
+        targetId: 'cmt-1794340000000',
+        mode: 'per-item',
+      }).success
+    ).toBe(true);
   });
 });

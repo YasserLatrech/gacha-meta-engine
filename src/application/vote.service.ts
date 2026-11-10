@@ -6,15 +6,15 @@ export const VoteScopeSchema = z
   .string()
   .trim()
   .min(2)
-  .max(64)
-  .regex(/^[a-z0-9:_-]+$/i, 'Invalid vote scope format');
+  .max(100)
+  .regex(/^[a-z0-9:._-]+$/i, 'Invalid vote scope format');
 
 export const VoteTargetSchema = z
   .string()
   .trim()
   .min(1)
-  .max(80)
-  .regex(/^[a-z0-9:._-]+$/i, 'Invalid vote target format');
+  .max(200)
+  .refine((val) => !/[\u0000-\u001f\u007f]/.test(val), 'Invalid control characters in targetId');
 
 export const VoteModeSchema = z.enum(['per-item', 'single-choice']);
 export type VoteMode = z.infer<typeof VoteModeSchema>;
