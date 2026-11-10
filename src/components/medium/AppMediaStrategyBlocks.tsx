@@ -286,39 +286,39 @@ export function AppMediaStrategyFooter({
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           <AppMediaTableLink href="/starsavior/tier-list" label="Strongest Character Tier List" badge="HOT" />
           <AppMediaTableLink href="/starsavior/arcana" label="Strongest Arcana Tier List" badge="83" />
-          <AppMediaTableLink href="/starsavior/tier-list#pvp-gauntlet" label="PvP Gauntlet Strongest Tier List" badge="PVP" />
+          <AppMediaTableLink href="/starsavior/guides/pvp-tier-list" label="PvP Gauntlet Strongest Tier List" badge="PVP" />
         </div>
 
         <AppMediaH3>Beginner Must-Reads!</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <AppMediaTableLink href="/starsavior/reroll" label="Reroll Tier List & Stopping Line" />
-          <AppMediaTableLink href="/starsavior/reroll#how-to-reroll" label="How to Reroll Step-by-Step (~10 Min)" />
-          <AppMediaTableLink href="/starsavior#beginner-guides" label="Beginner Early-Game Progression Guide" />
-          <AppMediaTableLink href="/starsavior#beginner-guides" label="Daily Checklist & Reset Routine" />
-          <AppMediaTableLink href="/starsavior#rescue-journey" label="Rescue Journey Normal & Hard Strategy" />
-          <AppMediaTableLink href="/starsavior#beginner-guides" label="Character Training & Upgrade Priority" />
-          <AppMediaTableLink href="/starsavior/tier-list" label="Best Party Formations & Synergies" />
-          <AppMediaTableLink href="/starsavior/arcana" label="Best Arcana Deck Building Guide" />
+          <AppMediaTableLink href="/starsavior/guides/how-to-reroll" label="How to Reroll Step-by-Step" />
+          <AppMediaTableLink href="/starsavior/guides/beginner-progression" label="Beginner Early-Game Progression Guide" />
+          <AppMediaTableLink href="/starsavior/guides/daily-routine" label="Daily Checklist & Reset Routine" />
+          <AppMediaTableLink href="/starsavior/guides/rescue-journey-guide" label="Rescue Journey Normal & Hard Strategy" />
+          <AppMediaTableLink href="/starsavior/guides/upgrade-systems" label="Character Training & Upgrade Priority" />
+          <AppMediaTableLink href="/starsavior/guides/party-formations" label="Best Party Formations & Synergies" />
+          <AppMediaTableLink href="/starsavior/guides/arcana-deck-guide" label="Best Arcana Deck Building Guide" />
         </div>
 
         <AppMediaH3>Useful Mechanics & System Guides</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <AppMediaTableLink href="/starsavior#mechanics-verification" label="Combat Tips & Turn-Based Battle System" />
-          <AppMediaTableLink href="/starsavior#mechanics-verification" label="Attribute Advantage & Cosmic Type Chart" />
-          <AppMediaTableLink href="/starsavior#gacha-section" label="Gacha Rates, Pity System & 200 Mileage" />
-          <AppMediaTableLink href="/starsavior#gacha-section" label="Gacha Animations & Guaranteed SSR Tells" />
-          <AppMediaTableLink href="/starsavior#beginner-guides" label="Willpower Stamina Recovery & Usage" />
-          <AppMediaTableLink href="/starsavior#beginner-guides" label="Headquarters & NOA Support Funds Guide" />
-          <AppMediaTableLink href="/starsavior#latest-updates" label="Active Coupon Codes & How to Redeem" />
-          <AppMediaTableLink href="/starsavior#cube-palace" label="Cube Palace Bosses & Cheat Codes List" />
+          <AppMediaTableLink href="/starsavior/guides/battle-system" label="Combat Tips & Turn-Based Battle System" />
+          <AppMediaTableLink href="/starsavior/guides/attribute-matchups" label="Attribute Advantage & Cosmic Type Chart" />
+          <AppMediaTableLink href="/starsavior/guides/gacha-rates" label="Gacha Rates, Pity System & 200 Mileage" />
+          <AppMediaTableLink href="/starsavior/guides/gacha-animations" label="Gacha Animations & Guaranteed SSR Tells" />
+          <AppMediaTableLink href="/starsavior/guides/willpower" label="Willpower Stamina Recovery & Usage" />
+          <AppMediaTableLink href="/starsavior/guides/noa-support-funds" label="Headquarters & NOA Support Funds Guide" />
+          <AppMediaTableLink href="/starsavior/guides/promo-codes" label="Active Coupon Codes & How to Redeem" />
+          <AppMediaTableLink href="/starsavior/guides/cube-palace" label="Cube Palace Bosses & Cheat Codes List" />
         </div>
 
         <AppMediaH3>Complete Static Database</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <AppMediaTableLink href="/starsavior/characters" label="All 57 Characters List (SSR & SR)" badge="57" />
-          <AppMediaTableLink href="/starsavior/characters#stats-comparison-table" label="Lv.200 Character Stats & Server Rank Table" />
+          <AppMediaTableLink href="/starsavior/guides/character-stats-list" label="All Character Stats Comparison Table" />
           <AppMediaTableLink href="/starsavior/arcana" label="All 83 Arcana Cards Encyclopedia (SSR/SR/R)" badge="83" />
-          <AppMediaTableLink href="/starsavior/characters#profile-cv-database" label="Voice Actors (CV), Birthdays & Affiliations" />
+          <AppMediaTableLink href="/starsavior/guides/voice-actors" label="Voice Actors (CV), Birthdays & Skins" />
         </div>
       </section>
 

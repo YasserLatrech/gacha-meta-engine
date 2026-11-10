@@ -192,7 +192,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -227,7 +227,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -262,7 +262,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -314,7 +314,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "anna",
-          "name": "Anna",
+          "name": "Annah",
           "nameJp": "アンナ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
           "position": "FRONT"
@@ -329,7 +329,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "A composition that combines Asherah, which you can get from the initial observation, and Lacy, which you can get from the selection box that you can get from the login bonus on the first day.",
-        "If you can get other SSR characters through gacha, try to change them to Anna or Naru as appropriate.",
+        "If you can get other SSR characters through gacha, try to change them to Annah or Naru as appropriate.",
         "Lacy is quite strong in the early stages, so let's focus on training Lacy."
       ],
       "arcanaDeckTitle": "Striker formation",
@@ -343,16 +343,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -360,7 +360,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -377,13 +377,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -394,7 +394,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -403,7 +403,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -411,7 +411,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -426,7 +426,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -443,7 +443,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -461,7 +461,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -493,7 +493,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "It is powerful that if you accumulate cooling stacks to the maximum, you can permanently increase the firepower of the Special Skill, but the only way to accumulate cooling stacks is through Ultimate Skill and Basic Skill, so the drawback is that it takes a little time to accumulate 5 stacks.",
-            "Please be careful as you will need to use Professor M to do Pincer Dual-Attacks and other ways to save money."
+            "Please be careful as you will need to use Professor M to do Cross Attacks and other ways to save money."
           ]
         },
         {
@@ -501,7 +501,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Support is required for things that require less effort.",
           "imageUrl": "",
           "paragraphs": [
-            "Although Asherah has excellent firepower buffs, she does not have any effects such as increasing Action Gauge or special effects such as continuous attacks or additional turns such as Bunny Charles, so the number of moves is inevitably reduced.",
+            "Although Asherah has excellent firepower buffs, she does not have any effects such as increasing Action Gauge or special effects such as continuous attacks or additional turns such as Bunnygirl Charlotte, so the number of moves is inevitably reduced.",
             "If you're on your own, you'll have no choice but to fight with pure speed, so you'll want to be conscious of forming your party in a way that allows you to receive support effects such as Action Gauge from those around you."
           ]
         }
@@ -739,7 +739,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -800,7 +800,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -888,7 +888,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -1031,7 +1031,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "April 22nd",
         "height": "166cm",
         "origin": "NOA",
-        "obtain": "Standard Gacha / Starter Distribution",
+        "obtain": "Standard Observation / Starter Reward",
         "bio": "An aristocratic daughter who longs to be a savior of the stars and joins the journey to become one. The fact that you take action immediately without worrying about it is both a strength and a weakness."
       }
     }
@@ -1087,7 +1087,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -1118,7 +1118,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -1157,7 +1157,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -1196,7 +1196,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Combustion",
@@ -1241,29 +1241,29 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "When organizing Smile, it would be best to pair him with Bunny Charles to specialize in single-target attacks.",
-        "Smile uses a trigger skill to attack all enemies if the enemy's HP is less than half when attacking, but if that's not enough, you can replace Bunny Charles' frame with Rosalia to increase the overall attack frame."
+        "When organizing Smile, it would be best to pair her with Bunnygirl Charlotte to specialize in single-target attacks.",
+        "Smile uses a trigger skill to attack all enemies if the enemy's HP is less than half when attacking, but if that's not enough, you can replace Bunnygirl Charlotte' frame with Rosaria to increase the overall attack frame."
       ],
       "arcanaDeckTitle": "Smile organization",
       "journeyTrainingPoints": [
@@ -1276,7 +1276,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -1293,13 +1293,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79865537",
           "targetSlug": "arcana-79865537",
-          "targetName": "The End Has the Face of a Girl",
+          "targetName": "The End Wears the Face of a Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
           "substitutes": [
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -1310,7 +1310,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -1319,7 +1319,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -1327,7 +1327,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -1342,7 +1342,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -1359,7 +1359,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -1377,7 +1377,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -1389,7 +1389,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "1T attacks twice with trigger skill",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/112005_6fqt0.webp",
           "paragraphs": [
-            "Smile possesses a valuable trigger skill, which allows him to follow up with a trigger skill if the attacked enemy's HP is less than half.",
+            "Smile possesses a valuable trigger skill, which allows her to follow up with a trigger skill if the attacked enemy's HP is less than half.",
             "As a bonus effect, it also gives you a chance to burn, so it is recommended to increase Smile's attack power as much as possible."
           ]
         }
@@ -1611,7 +1611,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -1672,7 +1672,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -1760,7 +1760,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -1861,7 +1861,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -1903,8 +1903,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "November 10th",
         "height": "148cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "A believer in science who claims that he is not a human but a creature created by advanced science and technology. I have never laughed since I was born. He's doing research to become more funny, and he's using the leader as a guinea pig."
+        "obtain": "Standard Observation",
+        "bio": "A believer in science who claims that she is not a human but a creature created by advanced science and technology. I have never laughed since I was born. She's doing research to become more funny, and she's using the leader as a guinea pig."
       }
     }
   },
@@ -1920,7 +1920,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "A",
     "score": "0",
-    "summary": "Debuffer that can increase damage taken from all attacks · Basic Skill allows full attack · This is almost a must-have performance in stages where all-out attacks are important\n└Tilia, Carnelia, etc.",
+    "summary": "Debuffer that can increase damage taken from all attacks · Basic Skill allows full attack · This is almost a must-have performance in stages where all-out attacks are important\n└Tyria, Carnelia, etc.",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 20622,
@@ -1959,7 +1959,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -1990,7 +1990,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -2025,7 +2025,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -2060,7 +2060,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Crit Rate up",
@@ -2092,27 +2092,27 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "evalBullets": [
         "Debuffer that can increase damage taken from all attacks",
         "Basic Skill allows full attack",
-        "This is almost a must-have performance in stages where all-out attacks are important\n└Tilia, Carnelia, etc."
+        "This is almost a must-have performance in stages where all-out attacks are important\n└Tyria, Carnelia, etc."
       ],
       "partyTitle": "Strongest strategy formation [Attack]",
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "rin",
-          "name": "Rin",
+          "name": "Lyn",
           "nameJp": "リン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
           "position": "FRONT"
@@ -2126,9 +2126,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "In strategy attack battles, Dress Asherah's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
+        "In strategy attack battles, Asherah: Waltz of Starlight's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
         "Since it is necessary to destroy half of the opponent's party with this one ally's action, it is recommended to use an all-out attack attacker who will not be hindered by pre-emptive defense in the three attacker slots.",
-        "Let's go on the offensive with Rosalia, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Rin, who can act twice in one turn.",
+        "Let's go on the offensive with Rosaria, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Lyn, who can act twice in one turn.",
         "Be careful of Roberta and Fei, who will counter your attacks.",
         "Roberta has an Action Gauge increase when countered, and when countered, she may interrupt her allies, so there is a risk that the party's strategy will be disrupted.",
         "There is no point worrying about Fei, so it would be safe to pray that she doesn't get evaded, or to fight a party that doesn't have these characters."
@@ -2139,19 +2139,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "I want to earn as much concentration as possible\n└Bound is unstable because it is only 75% (it becomes 100% with Nova Burst)",
         "If you have enough Crit Rate, change Vani Claire Lucana to Vani Flare Arcana.",
         "It is recommended to strengthen Stellar Archive with Power +2",
-        "Since he has Crit Rate up himself, it is recommended to prioritize attack, Effect Hit, and Crit DMG potential."
+        "Since she has Crit Rate up herself, it is recommended to prioritize attack, Effect Hit, and Crit DMG potential."
       ],
       "substituteArcana": [
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -2162,7 +2162,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -2179,13 +2179,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -2196,7 +2196,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -2205,7 +2205,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -2213,7 +2213,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -2228,7 +2228,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -2245,7 +2245,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -2263,7 +2263,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -2795,7 +2795,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -2837,7 +2837,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -2849,15 +2849,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "March 18th",
         "height": "167cm",
         "origin": "Unknown",
-        "obtain": "Gacha (constant)",
-        "bio": "He is the best disciple of the Great Witch of Dreams, Magi, and has inherited her \"Moon Staff\", and is the self-proclaimed best prophet in Lavista. He lives his life without thinking about the future, so much so that he spends the money he earned that day at the casino."
+        "obtain": "Standard Observation",
+        "bio": "She is the best disciple of the Great Witch of Dreams, Magi, and has inherited her \"Moon Staff\", and is the self-proclaimed best prophet in Lavista. She lives her life without thinking about the future, so much so that she spends the money she earned that day at the casino."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "charles",
-    "name": "Charles",
+    "name": "Charlotte",
     "title": "Knights of Monastir · Slash Damage",
     "rarity": "SSR",
     "element": "Sun",
@@ -2900,7 +2900,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Charles' attack power increases by 15%.\nWhen attacking, damage increases by 3% in proportion to the ignition stack attached to yourself. This effect can be applied up to 5 times.\nAfter using Unyielding Strike, the damage of straight thrust increases by 10%. Can be stacked up to 3 times.",
+        "exactDescription": "Charlotte' attack power increases by 15%.\nWhen attacking, damage increases by 3% in proportion to the ignition stack attached to yourself. This effect can be applied up to 5 times.\nAfter using Unyielding Strike, the damage of straight thrust increases by 10%. Can be stacked up to 3 times.",
         "novaBurst": "",
         "tooltips": []
       },
@@ -2931,7 +2931,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -2960,7 +2960,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -2995,7 +2995,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Crit Rate up",
@@ -3034,25 +3034,25 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Unique Passive is also excellent in that you can generate firepower with Basic Skill\n└It takes a little time to generate maximum firepower",
         "The 15% Damage Dealt buff depending on the ignition stack is also excellent."
       ],
-      "partyTitle": "Pro M pincer formation",
+      "partyTitle": "Professor M Cross Attack Formation",
       "recommendedParty": [
         {
           "slug": "charles",
-          "name": "Charles",
+          "name": "Charlotte",
           "nameJp": "シャルル",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_KNIGHT_icon.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "swimsuit-luna",
-          "name": "Swimsuit Luna",
+          "name": "Luna: Summer Starlight",
           "nameJp": "水着ルナ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/112813_tnirc.webp",
           "position": "FRONT"
@@ -3066,8 +3066,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "A composition in which Charles, who has a strong Basic Skill, is moved by Professor M.",
-        "Charles himself has a damage buff, an attack buff, a Crit Rate buff, and multiple firepower buffs, so you can expect high firepower, but the damage buff increases by using the Ultimate Skill, so it is far from reaching its maximum firepower.",
+        "A composition in which Charlotte, who has a strong Basic Skill, is moved by Professor M.",
+        "Charlotte herself has a damage buff, an attack buff, a Crit Rate buff, and multiple firepower buffs, so you can expect high firepower, but the damage buff increases by using the Ultimate Skill, so it is far from reaching its maximum firepower.",
         "Supporters and defenders can be characters that you already have or that have firepower."
       ],
       "arcanaDeckTitle": "Striker formation",
@@ -3082,16 +3082,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -3099,7 +3099,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -3116,13 +3116,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -3133,7 +3133,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -3142,7 +3142,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -3150,7 +3150,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -3165,7 +3165,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -3182,7 +3182,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -3200,7 +3200,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -3212,7 +3212,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Acquire damage buff to increase overall firepower",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/182739_gvyrf.webp",
           "paragraphs": [
-            "Charles can expect high overall firepower due to the damage buff given according to the number of ignition stacks.",
+            "Charlotte can expect high overall firepower due to the damage buff given according to the number of ignition stacks.",
             "Also, since the ignition stacks are not consumed like other characters, once the stacks are accumulated, it becomes a permanent damage buff, which is very good.",
             "It's not a skill buff, but a passive effect, so removal of reinforcement doesn't matter, so being able to consistently produce high firepower is also an excellent point."
           ]
@@ -3231,8 +3231,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Compatibility with Professor M(Great)",
           "imageUrl": "",
           "paragraphs": [
-            "Professor M triggers the attacker's Basic Skill with a Pincer Dual-Attack, so he is compatible with Charles, who has a strong Basic Skill.",
-            "Charles is worried about the amount of work involved, but he's grateful that Professor M covers that."
+            "Professor M triggers the attacker's Basic Skill with a Cross Attack, so she is compatible with Charlotte, who has a strong Basic Skill.",
+            "Charlotte is worried about the amount of work involved, but she's grateful that Professor M covers that."
           ]
         },
         {
@@ -3242,7 +3242,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "Although this is the original, it can also be used as a semi-supporter, giving allies Crit Rate buffs and attack buffs with Special Skills.",
             "The duration of the attack buff has been extended to 2T, making it much easier to handle, and the addition of the damage buff has increased its own firepower, so it can be appreciated that it has become easier to pass on the attack buff to others.",
-            "However, it cannot be denied that the firepower decreases, so it is generally recommended to use it on Charles himself or with a character who can supplement the firepower."
+            "However, it cannot be denied that the firepower decreases, so it is generally recommended to use it on Charlotte herself or with a character who can supplement the firepower."
           ]
         }
       ],
@@ -3479,7 +3479,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -3540,7 +3540,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -3628,7 +3628,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -3729,7 +3729,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -3747,7 +3747,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -3766,13 +3766,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Sakieko Oki",
+        "cv": "Saeko Oki",
         "affiliation": "Knights of Monastir",
         "birthday": "October 20th",
         "height": "166cm",
         "origin": "Principality of Monastir",
-        "obtain": "Gacha (constant)",
-        "bio": "Leader of the Knights of Monastir. He aims to be a calm and dignified knight commander, but his cheerful and simple personality is holding him back."
+        "obtain": "Standard Observation",
+        "bio": "Leader of the Knights of Monastir. She aims to be a calm and dignified knight commander, but her cheerful and simple personality is holding her back."
       }
     }
   },
@@ -3827,7 +3827,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -3862,7 +3862,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -3905,7 +3905,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -3948,7 +3948,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Discipline of Monastir",
@@ -3986,7 +3986,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
@@ -4000,21 +4000,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "The recommended formation for Carmen is to pair her with Rosalia and Bunny Charles, and use Dress Asherah as a healer.",
+        "The recommended formation for Carmen is to pair her with Rosaria and Bunnygirl Charlotte, and use Asherah: Waltz of Starlight as a healer.",
         "Provocation allows you to focus attacks on yourself, so use your attackers to attack while protecting your allies."
       ],
       "arcanaDeckTitle": "Carmen organization",
@@ -4033,7 +4033,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -4050,7 +4050,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -4061,7 +4061,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517786",
           "targetSlug": "arcana-79517786",
-          "targetName": "Satisfying Meal",
+          "targetName": "A Satisfying Meal",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
@@ -4070,16 +4070,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             },
             {
               "articleId": "79606361",
               "slug": "arcana-79606361",
-              "name": "Daughter of the Stranis Family",
+              "name": "Young Lady of Stranis",
               "nameJp": "ストラニス家の令嬢",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp"
             }
           ]
@@ -4093,7 +4093,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -4111,7 +4111,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 2
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -4337,7 +4337,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -4393,7 +4393,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -4459,7 +4459,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -4481,7 +4481,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -4622,7 +4622,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -4646,8 +4646,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "August 11th",
         "height": "168cm",
         "origin": "Principality of Monastir",
-        "obtain": "Gacha (constant)",
-        "bio": "Vice-commander of the Knights of the Principality of Monastir. No matter how difficult the situation, he is a shield for the knights who never forgets to smile."
+        "obtain": "Standard Observation",
+        "bio": "Vice-commander of the Knights of the Principality of Monastir. No matter how difficult the situation, she is a shield for the knights who never forgets to smile."
       }
     }
   },
@@ -4712,7 +4712,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -4747,12 +4747,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "In response to his opponent's outrageous suggestion, Frey slams his opponent in the cheek with all his might. Give yourself 1 Jump stack.",
+        "exactDescription": "In response to her opponent's outrageous suggestion, Frey slams her opponent in the cheek with all her might. Give yourself 1 Jump stack.",
         "novaBurst": "When attacking, your Fixed Toughness Damage will temporarily increase by 1, and after attacking, apply {Barrier} to the ally with the lowest current HP percentage for 2 turns. Barrier increases in proportion to own maximum HP.",
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -4778,12 +4778,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Frey, Quartermaster of Monastir, urgently procures survival supplies for his allies.\nGive yourself 2 Jump stacks. Furthermore, after recovering the HP of the ally target, all weakening effects are removed.\nIf the recovery target is Star Attribute, the recovery amount will increase.\nThe amount of recovery increases in proportion to your maximum HP.",
+        "exactDescription": "Frey, Quartermaster of Monastir, urgently procures survival supplies for her allies.\nGive yourself 2 Jump stacks. Furthermore, after recovering the HP of the ally target, all weakening effects are removed.\nIf the recovery target is Star Attribute, the recovery amount will increase.\nThe amount of recovery increases in proportion to your maximum HP.",
         "novaBurst": "After using a skill, recover 1 Toughness.",
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -4818,12 +4818,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Frey represents Monastir and supports his allies with all his heart.\nGives 2 Jump stacks to self and recovers HP of allies.\nAdditionally, grants Barrier for 3 turns and {Effect RES Up} for 2 turns.\nIf the recovery target is Star Attribute, the recovery amount will increase.\nThe amount of recovery and barrier increase in proportion to your maximum HP.",
+        "exactDescription": "Frey represents Monastir and supports her allies with all her heart.\nGives 2 Jump stacks to self and recovers HP of allies.\nAdditionally, grants Barrier for 3 turns and {Effect RES Up} for 2 turns.\nIf the recovery target is Star Attribute, the recovery amount will increase.\nThe amount of recovery and barrier increase in proportion to your maximum HP.",
         "novaBurst": "After using a skill, recover 1 Toughness.",
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -4864,7 +4864,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "arcanaDeckTitle": "Supporter basic organization",
       "journeyTrainingPoints": [
         "OK with training centered on physical strength and patience",
-        "Since he is not a character that can produce firepower, he basically does not use strength and concentration.",
+        "Since she is not a character that can produce firepower, she basically does not use strength and concentration.",
         "I want to avoid being affected by debuffs such as silence, so I want to have as much protection as possible.",
         "It is recommended to prioritize HP and defense for potential power, and take Effect RES as runner-up."
       ],
@@ -4872,16 +4872,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517750",
           "targetSlug": "arcana-79517750",
-          "targetName": "Princess Takes the Throne",
+          "targetName": "The Princess Ascends the Throne",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -4889,16 +4889,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -4906,16 +4906,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80521390",
           "targetSlug": "arcana-80521390",
-          "targetName": "Harsh Ordeal",
+          "targetName": "Grueling Ordeal",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -4923,7 +4923,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -4932,7 +4932,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -4940,13 +4940,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
               "articleId": "79517762",
               "slug": "arcana-79517762",
-              "name": "Heaven's Trial",
+              "name": "Divine Trial",
               "nameJp": "天の試練",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -4963,7 +4963,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -4981,7 +4981,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 3
@@ -4993,7 +4993,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Excellent as a Star Attribute supporter",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/195611_s8c3r.webp",
           "paragraphs": [
-            "Frey has the effect of increasing the amount of recovery for Star Attribute allies, so it is recommended to employ him as a supporter of a Star Attribute party.",
+            "Frey has the effect of increasing the amount of recovery for Star Attribute allies, so it is recommended to employ her as a supporter of a Star Attribute party.",
             "It may be a little thin and hard to see, but Star Attribute allies recover 20,367, but other attributes recover only 16,153.",
             "A simple calculation shows that Star Attribute can provide about 1.26 times the amount of recovery compared to other attributes."
           ]
@@ -5261,7 +5261,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -5317,7 +5317,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -5383,7 +5383,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -5405,7 +5405,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -5570,8 +5570,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "July 7th",
         "height": "156cm",
         "origin": "Principality of Monastir",
-        "obtain": "Gacha (constant) Beginner Mission",
-        "bio": "A girl who calls herself the quartermaster of the Monastir Knights. He has an eye for making money and comes up with business ideas one after another, but most of them end in failure."
+        "obtain": "Standard Observation / Beginner Mission",
+        "bio": "A girl who calls herself the quartermaster of the Monastir Knights. She has an eye for making money and comes up with business ideas one after another, but most of them end in failure."
       }
     }
   },
@@ -5579,7 +5579,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "seira",
     "name": "Seira",
-    "title": "Fantasy species · Mental Damage",
+    "title": "Phantasmal Species · Mental Damage",
     "rarity": "SSR",
     "element": "Order",
     "role": "Striker",
@@ -5587,7 +5587,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "A",
     "score": "0",
-    "summary": "A buffer that can increase the attack power and Action Gauge of a single ally\n└Attack buff up to 50% · It is also possible to indirectly speed up the actions of allies by slowing down the enemy. · He also has an attack buff and can provide firepower\n└Please note that the firepower will decrease if the enemy's HP falls below 75%. · In order to aim to reuse Special Skills, I want to increase my speed as much as possible and increase the number of actions I take.",
+    "summary": "A buffer that can increase the attack power and Action Gauge of a single ally\n└Attack buff up to 50% · It is also possible to indirectly speed up the actions of allies by slowing down the enemy. · She also has an attack buff and can provide firepower\n└Please note that the firepower will decrease if the enemy's HP falls below 75%. · In order to aim to reuse Special Skills, I want to increase my speed as much as possible and increase the number of actions I take.",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 21743,
@@ -5652,7 +5652,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -5677,7 +5677,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -5716,7 +5716,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Advanced ATK Up",
@@ -5748,7 +5748,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "evalBullets": [
         "A buffer that can increase the attack power and Action Gauge of a single ally\n└Attack buff up to 50%",
         "It is also possible to indirectly speed up the actions of allies by slowing down the enemy.",
-        "He also has an attack buff and can provide firepower\n└Please note that the firepower will decrease if the enemy's HP falls below 75%.",
+        "She also has an attack buff and can provide firepower\n└Please note that the firepower will decrease if the enemy's HP falls below 75%.",
         "In order to aim to reuse Special Skills, I want to increase my speed as much as possible and increase the number of actions I take."
       ],
       "partyTitle": "",
@@ -5765,16 +5765,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -5782,7 +5782,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -5799,13 +5799,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -5816,7 +5816,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -5825,7 +5825,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -5833,7 +5833,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -5848,7 +5848,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -5865,7 +5865,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -5883,7 +5883,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 2
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -6142,7 +6142,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -6203,7 +6203,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -6291,7 +6291,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -6430,12 +6430,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Rikako Aida",
-        "affiliation": "Fantasy species",
+        "affiliation": "Phantasmal Species",
         "birthday": "December 9th",
         "height": "165cm",
         "origin": "Unknown",
-        "obtain": "Gacha (constant)",
-        "bio": "A dream demon who has been wandering around Lavista for a long time. He has the ability to show people good dreams. However, its power sometimes makes people addicted, so they cannot stay in the same place for long."
+        "obtain": "Standard Observation",
+        "bio": "A dream demon who has been wandering around Lavista for a long time. She has the ability to show people good dreams. However, its power sometimes makes people addicted, so they cannot stay in the same place for long."
       }
     }
   },
@@ -6490,7 +6490,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -6521,7 +6521,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -6556,7 +6556,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -6591,7 +6591,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Crit Rate up",
@@ -6640,7 +6640,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -6657,13 +6657,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79576397",
           "targetSlug": "arcana-79576397",
-          "targetName": "Pioneer of Imaginary Numbers",
+          "targetName": "The Imaginary Pioneer",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
           "substitutes": [
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -6674,22 +6674,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             },
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -6700,7 +6700,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -6715,7 +6715,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -6732,7 +6732,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -6750,7 +6750,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -6957,7 +6957,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "ATK +100 HP +720",
           "materials": [
             {
@@ -7013,7 +7013,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "Effect RES4%",
           "materials": [
             {
@@ -7079,7 +7079,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "ATK +175 HP +1080",
           "materials": [
             {
@@ -7101,7 +7101,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "Effect RES8%",
           "materials": [
             {
@@ -7254,27 +7254,27 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         }
       ],
       "profile": {
-        "cv": "Tsukijohika",
+        "cv": "Hika Tsukishiro",
         "affiliation": "Acellus Association",
         "birthday": "October 4th",
         "height": "161cm",
         "origin": "NOA",
-        "obtain": "Standard Gacha / Starter Distribution",
-        "bio": "A skilled hunter who belongs to the Asellus Hunter Association. He earns a huge bounty due to his skill, but his pockets are always lonely because he spends it like hot water."
+        "obtain": "Standard Observation / Starter Reward",
+        "bio": "A skilled hunter who belongs to the Asellus Hunter Association. She earns a huge bounty due to her skill, but her pockets are always lonely because she spends it like hot water."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "ede",
-    "name": "Ede",
+    "name": "Haydee",
     "title": "Morel Shipping Company · Slash Damage",
     "rarity": "SSR",
     "element": "Star",
@@ -7327,7 +7327,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Ede's defense power increases by 15%.\nAt the start of battle, Ede generates protection and barrier for 1 turn.\nAfter being attacked, give yourself 1 Jump stack at 100%.\nBarrier increases in proportion to your defense power.",
+        "exactDescription": "Haydee's defense power increases by 15%.\nAt the start of battle, Haydee generates protection and barrier for 1 turn.\nAfter being attacked, give yourself 1 Jump stack at 100%.\nBarrier increases in proportion to your defense power.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -7340,7 +7340,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -7375,12 +7375,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Fires the power of emptiness condensed into the Ede flower towards the enemy and attacks them. Give yourself 1 Jump stack.",
+        "exactDescription": "Fires the power of emptiness condensed into the Haydee flower towards the enemy and attacks them. Give yourself 1 Jump stack.",
         "novaBurst": "When attacking, temporarily increases your Fixed Toughness Damage by 1 and creates a barrier for 1 turn after attacking. Barrier increases in proportion to own defense power.",
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Protection",
@@ -7427,7 +7427,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Protection",
@@ -7461,7 +7461,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Ede gathers the power of emptiness to the limit and showers it on the enemy. Inflicts protection on self for 3 turns, and 100% chance to reduce accuracy for 2 turns on enemy. When attacking, damage increases by 20% if you are in barrier state. The damage increases in proportion to your defense power.",
+        "exactDescription": "Haydee gathers the power of emptiness to the limit and showers it on the enemy. Inflicts protection on self for 3 turns, and 100% chance to reduce accuracy for 2 turns on enemy. When attacking, damage increases by 20% if you are in barrier state. The damage increases in proportion to your defense power.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.",
         "tooltips": [
           {
@@ -7478,7 +7478,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "DEF Up",
@@ -7530,14 +7530,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "BACK"
@@ -7545,22 +7545,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "If you want to survive in a defensive battle, we recommend a composition that employs two defenders and two healers.",
-        "Since Dress Asherah can provide firepower through Pincer Dual-Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
-        "Emily is also excellent as a defender, so we recommend using characters you already have.",
-        "As for the composition dyed with Star Attribute, we recommend a composition centered around Swimsuit Smile, and we would like to use Ede for the durability frame.",
-        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Rin, who can pass jumping stacks, but there are multiple potential substitutes, such as Yanagi Mina, who is excellent as an attacker, Bell Lease, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
+        "Since Asherah: Waltz of Starlight can provide firepower through Cross Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
+        "Emilly is also excellent as a defender, so we recommend using characters you already have.",
+        "As for the composition dyed with Star Attribute, we recommend a composition centered around Smile: Sunshine Cat, and we would like to use Haydee for the durability frame.",
+        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Lyn, who can pass jumping stacks, but there are multiple potential substitutes, such as Yoo Mina, who is excellent as an attacker, Bell Rhys, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
         "Therefore, it is recommended to hire an attacker who is well-developed among the characters you own.",
-        "Dress Asherah may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Ede and Emily in the front line.",
-        "Since there is no healer, it is important to keep the barrier intact, but Ede and Emily's barriers have high durability, and Emily can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
-        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosalia and Bunny Charles.",
+        "Asherah: Waltz of Starlight may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Haydee and Emilly in the front line.",
+        "Since there is no healer, it is important to keep the barrier intact, but Haydee and Emilly's barriers have high durability, and Emilly can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
+        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosaria and Bunnygirl Charlotte.",
         "A party that employs both Fei and Roberta to gain damage through counter attacks.",
-        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that counterattack with all-out attacks.",
+        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that Revenge Attack with all-out attacks.",
         "Since you want to increase the number of times Fei is attacked, it is recommended that you do not attach pre-emptive defense to the defender and place Fei in the vanguard position.",
         "An anti-all attack formation that is useful against enemies that often use all-out attacks.",
         "Another good point is that Roberta's counter is very powerful and can be obtained with distributed characters and flash points, making it a low hurdle to obtain.",
-        "As a countermeasure against general attacks, I would like to use Ede's protection to reduce the damage taken by the attackers as much as possible, and use Dress Asherah to recover.",
-        "It is recommended that the Assassin organization be centered around Bunny Charles, with Kira as the hidden personnel and Ede as the tank.",
-        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kira to Emily or Dress Asherah.",
+        "As a countermeasure against general attacks, I would like to use Haydee's protection to reduce the damage taken by the attackers as much as possible, and use Asherah: Waltz of Starlight to recover.",
+        "It is recommended that the Assassin organization be centered around Bunnygirl Charlotte, with Kyra as the hidden personnel and Haydee as the tank.",
+        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kyra to Emilly or Asherah: Waltz of Starlight.",
         "The way you fight will change greatly depending on whether Fei has a counter or not, so be careful when operating it manually."
       ],
       "arcanaDeckTitle": "Defender basic formation",
@@ -7579,7 +7579,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -7590,7 +7590,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
@@ -7599,7 +7599,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             }
           ]
@@ -7613,7 +7613,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -7624,16 +7624,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517786",
           "targetSlug": "arcana-79517786",
-          "targetName": "Satisfying Meal",
+          "targetName": "A Satisfying Meal",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -7647,7 +7647,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -7665,7 +7665,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -7677,7 +7677,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Possesses a barrier that depends on defense power",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/184710_dwpvb.webp",
           "paragraphs": [
-            "Many of Ede's effects are dependent on defense power, and the barrier in particular affects its own durability, so it is important to have as much defense power as possible.",
+            "Many of Haydee's effects are dependent on defense power, and the barrier in particular affects its own durability, so it is important to have as much defense power as possible.",
             "The durability of the barrier itself is set quite high, so it won't break unless something goes wrong, and thanks to its short CT and additional turns, it is easy to lupe, which greatly contributes to the durability of your allies.",
             "For the time being, the firepower of the Ultimate Skill also depends on the defense power, so it is a good point that the firepower also increases."
           ]
@@ -7687,7 +7687,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Aim to reduce damage taken by reducing hit rate",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/184806_x2bfl.webp",
           "paragraphs": [
-            "Ede's Ultimate Skill also comes with a hit rate reduction, which can also be used to reduce damage taken from enemies.",
+            "Haydee's Ultimate Skill also comes with a hit rate reduction, which can also be used to reduce damage taken from enemies.",
             "It's not guaranteed, so it's all a matter of luck, but if you combine it with the ability to take over, increase defense, and decrease accuracy, it will demonstrate a high level of durability."
           ]
         },
@@ -7705,7 +7705,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Equipment is specialized for defense",
           "imageUrl": "",
           "paragraphs": [
-            "Ede can be durable as long as the barrier does not break, so it is recommended to develop defense specialization.",
+            "Haydee can be durable as long as the barrier does not break, so it is recommended to develop defense specialization.",
             "In addition to being effective with two equipment defense sets, they can be stacked (up to 3 sets), so you can greatly increase your defense power.",
             "Let's aim for DEF +6000 by increasing the defense power as much as possible even with sub-stats, and do our best to be selective."
           ]
@@ -7913,7 +7913,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -7930,7 +7930,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "HP2%",
           "materials": [
             {
@@ -7969,7 +7969,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect RES4%",
           "materials": [
             {
@@ -7991,7 +7991,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +75",
           "materials": [
             {
@@ -8035,7 +8035,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -8057,7 +8057,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect RES8%",
           "materials": [
             {
@@ -8079,7 +8079,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +150 DEF +90",
           "materials": [
             {
@@ -8222,8 +8222,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "January 20th",
         "height": "153cm",
         "origin": "Faren",
-        "obtain": "Gacha (constant)",
-        "bio": "Vice representative of the Morel Shipping Company, which conducts trade throughout the continent. He has a cold and unfriendly personality and always keeps his distance from the people around him."
+        "obtain": "Standard Observation",
+        "bio": "Vice representative of the Morel Shipping Company, which conducts trade throughout the continent. She has a cold and unfriendly personality and always keeps her distance from the people around her."
       }
     }
   },
@@ -8239,7 +8239,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "B",
     "score": "0",
-    "summary": "Gives skill damage immunity to yourself and one ally with Ultimate Skill\n└Please note that the target cannot be specified · Possesses total recovery x2 and can be used as a supporter of Sun Attribute party. · Reduces the enemy's attack power and contributes to the durability of all allies · Serpang is the only supporter who can give debuffs\n└Combustion is also compatible with Christel(Great)",
+    "summary": "Gives skill damage immunity to yourself and one ally with Ultimate Skill\n└Please note that the target cannot be specified · Possesses total recovery x2 and can be used as a supporter of Sun Attribute party. · Reduces the enemy's attack power and contributes to the durability of all allies · Serpang is the only supporter who can give debuffs\n└Combustion is also compatible with Cristelle(Great)",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 24753,
@@ -8282,7 +8282,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -8322,7 +8322,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Combustion",
@@ -8366,7 +8366,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Down",
@@ -8409,7 +8409,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Skill damage disabled",
@@ -8454,7 +8454,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Gives skill damage immunity to yourself and one ally with Ultimate Skill\n└Please note that the target cannot be specified",
         "Possesses total recovery x2 and can be used as a supporter of Sun Attribute party.",
         "Reduces the enemy's attack power and contributes to the durability of all allies",
-        "Serpang is the only supporter who can give debuffs\n└Combustion is also compatible with Christel(Great)"
+        "Serpang is the only supporter who can give debuffs\n└Combustion is also compatible with Cristelle(Great)"
       ],
       "partyTitle": "",
       "recommendedParty": [],
@@ -8469,16 +8469,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517750",
           "targetSlug": "arcana-79517750",
-          "targetName": "Princess Takes the Throne",
+          "targetName": "The Princess Ascends the Throne",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -8486,16 +8486,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -8503,16 +8503,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80521390",
           "targetSlug": "arcana-80521390",
-          "targetName": "Harsh Ordeal",
+          "targetName": "Grueling Ordeal",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -8520,7 +8520,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -8529,7 +8529,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -8537,13 +8537,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
               "articleId": "79517762",
               "slug": "arcana-79517762",
-              "name": "Heaven's Trial",
+              "name": "Divine Trial",
               "nameJp": "天の試練",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -8560,7 +8560,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -8578,7 +8578,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -8610,7 +8610,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Possesses valuable skill damage immunity",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/125745_o0uch.webp",
           "paragraphs": [
-            "In addition to durability support through HP recovery, Serpang can also grant skill damage immunity to himself and one ally. It's a shame that you can't choose the target, but being able to reduce enemy damage to 0 is extremely powerful.",
+            "In addition to durability support through HP recovery, Serpang can also grant skill damage immunity to herself and one ally. It's a shame that you can't choose the target, but being able to reduce enemy damage to 0 is extremely powerful.",
             "Please note that you can only negate enemy attacks, so you cannot negate debuff damage such as combustion, so be careful."
           ]
         },
@@ -8625,12 +8625,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "level": "h4",
-          "title": "Check out his compatibility with Christel",
+          "title": "Check out her compatibility with Cristelle",
           "imageUrl": "",
           "paragraphs": [
-            "In addition to inflicting multiple burns, Christel can also extend the duration of burns by turns, making it compatible with Serpang, which can inflict burns.",
-            "Furthermore, Christel is a Sun Attribute and can also receive Serpang's recovery amount increasing effect, so there may be situations where they can be used in combination in the future.",
-            "Click here for details on Christel's performance"
+            "In addition to inflicting multiple burns, Cristelle can also extend the duration of burns by turns, making it compatible with Serpang, which can inflict burns.",
+            "Furthermore, Cristelle is a Sun Attribute and can also receive Serpang's recovery amount increasing effect, so there may be situations where they can be used in combination in the future.",
+            "Click here for details on Cristelle's performance"
           ]
         }
       ],
@@ -8834,7 +8834,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -8851,7 +8851,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "HP2%",
           "materials": [
             {
@@ -8890,7 +8890,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect RES4%",
           "materials": [
             {
@@ -8912,7 +8912,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +75",
           "materials": [
             {
@@ -8956,7 +8956,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -8978,7 +8978,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect RES8%",
           "materials": [
             {
@@ -9000,7 +9000,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +150 DEF +90",
           "materials": [
             {
@@ -9101,7 +9101,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -9138,12 +9138,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Sayi Hiratsuka",
+        "cv": "Sae Hiratsuka",
         "affiliation": "Fugetsudo",
         "birthday": "April 8th",
         "height": "149cm",
-        "origin": "Touhou",
-        "obtain": "Gacha (constant)",
+        "origin": "Eastern Region",
+        "obtain": "Standard Observation",
         "bio": "A girl belonging to Fugetsudo who came from the eastern continent with the mythical beast Toto. I hate troublesome things and always try to skip training."
       }
     }
@@ -9152,7 +9152,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "dana",
     "name": "Dana",
-    "title": "Canopic guard · Elemental Damage",
+    "title": "Canopic Guard · Elemental Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Caster",
@@ -9203,7 +9203,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Loroca!",
@@ -9238,7 +9238,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -9285,7 +9285,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Loroca!",
@@ -9320,7 +9320,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Down",
@@ -9371,21 +9371,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bunny-frey",
-          "name": "Bunny Frey",
+          "name": "Frey: Noble Princess",
           "nameJp": "バニーフレイ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/181128_a531d.webp",
           "position": "BACK"
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
@@ -9399,12 +9399,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "The recommended caster formation is Bunny Frey, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
+        "The recommended caster formation is Frey: Noble Princess, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
         "If you want to focus on general attacks, we recommend replacing Dana with Luna, and if you want to focus on durability, use Lily.",
-        "If you have the time, Bunny Frey gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective.",
-        "A combination of Swimsuit Smile and Dana.",
-        "Swimsuit Smile's high number of moves and Dana's attack buff have synergy with each other, so it is possible to continuously deliver high firepower.",
-        "The supporter slot can be Dress Asherah or Bride Carmen, so it is recommended to use a character that is growing among the supporters you have."
+        "If you have the time, Frey: Noble Princess gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective.",
+        "A combination of Smile: Sunshine Cat and Dana.",
+        "Smile: Sunshine Cat's high number of moves and Dana's attack buff have synergy with each other, so it is possible to continuously deliver high firepower.",
+        "The supporter slot can be Asherah: Waltz of Starlight or Carmen: Eternal Promise, so it is recommended to use a character that is growing among the supporters you have."
       ],
       "arcanaDeckTitle": "Caster organization",
       "journeyTrainingPoints": [
@@ -9418,13 +9418,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -9435,7 +9435,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -9452,13 +9452,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -9469,7 +9469,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -9478,7 +9478,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -9486,7 +9486,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -9501,7 +9501,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -9518,7 +9518,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -9536,7 +9536,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -9548,20 +9548,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Obtain the powerful unique buff “Roroka!”",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/170715_cgh3w.webp",
           "paragraphs": [
-            "Due to the balance adjustment, he acquired the new unique buff \"Roroka!\", which greatly increased his own firepower.",
+            "Due to the balance adjustment, she acquired the new unique buff \"Roroka!\", which greatly increased her own firepower.",
             "Loroca! is a skill that combines 15% attack buff and 20% Crit DMG, and since it is a unique buff, it is also an excellent point that it overlaps with general attack buff and Crit DMG buff.",
             "Originally, the firepower itself was relatively high, but by adjusting the balance, it can be said that it has achieved a level of firepower that is suitable for the current environment."
           ]
         },
         {
           "level": "h3",
-          "title": "Easy to use with Swimsuit Smile",
+          "title": "Easy to use with Smile: Sunshine Cat",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/171054_ieun7.webp",
           "paragraphs": [
-            "Loroca! In order to give this, you need to use the Ultimate Skill or maximize your jump stack, but since you can get a jump stack when an ally attacks with Star Attribute in Passive, you can easily accumulate jumps by using it in conjunction with Swimsuit Smile.",
-            "Dana's burst is not an essential effect, so by using it for Swimsuit Smile, you can easily get Roroka! Another strength is that it can be used to create a loop.",
-            "Swimsuit Smile can also receive attack buffs from Dana, so it's a combination that has benefits for both parties, and is a character you'll definitely want to team up with.",
-            "Click here for details on the performance of Swimsuit Smile"
+            "Loroca! In order to give this, you need to use the Ultimate Skill or maximize your jump stack, but since you can get a jump stack when an ally attacks with Star Attribute in Passive, you can easily accumulate jumps by using it in conjunction with Smile: Sunshine Cat.",
+            "Dana's burst is not an essential effect, so by using it for Smile: Sunshine Cat, you can easily get Roroka! Another strength is that it can be used to create a loop.",
+            "Smile: Sunshine Cat can also receive attack buffs from Dana, so it's a combination that has benefits for both parties, and is a character you'll definitely want to team up with.",
+            "Click here for details on the performance of Smile: Sunshine Cat"
           ]
         },
         {
@@ -10105,13 +10105,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Kagetsu Mikawa",
-        "affiliation": "Canopic guard",
+        "cv": "Haruna Mikawa",
+        "affiliation": "Canopic Guard",
         "birthday": "May 15th",
         "height": "160cm",
-        "origin": "Canopic mountains",
-        "obtain": "Gacha (constant)",
-        "bio": "A girl who grew up in a Druid village deep in the Canopus Mountains. He has a very positive personality and sees everything in a positive light."
+        "origin": "Canopic Mountains",
+        "obtain": "Standard Observation",
+        "bio": "A girl who grew up in a Druid village deep in the Canopus Mountains. She has a very positive personality and sees everything in a positive light."
       }
     }
   },
@@ -10119,7 +10119,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "muriel",
     "name": "Muriel",
-    "title": "Monolith cult · Elemental Damage",
+    "title": "Monolith Cult · Elemental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Caster",
@@ -10166,7 +10166,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -10197,7 +10197,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -10228,7 +10228,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -10263,7 +10263,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Combustion",
@@ -10311,13 +10311,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -10328,7 +10328,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -10345,13 +10345,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -10362,7 +10362,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -10371,7 +10371,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -10379,7 +10379,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -10394,7 +10394,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -10411,7 +10411,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -10429,7 +10429,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -10910,7 +10910,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -10952,7 +10952,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -10960,11 +10960,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Akari Kito",
-        "affiliation": "Monolith cult",
+        "affiliation": "Monolith Cult",
         "birthday": "March 2nd",
         "height": "152cm",
-        "origin": "Canopic mountains",
-        "obtain": "Gacha (constant)",
+        "origin": "Canopic Mountains",
+        "obtain": "Standard Observation",
         "bio": "Saint of the Monolith Church. The ranking is number 116. A troublemaker girl whose dream is to rise up the ranks and become the Great Saint, the top of the Saints."
       }
     }
@@ -10973,7 +10973,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "elisa",
     "name": "Elisa",
-    "title": "Monolith cult · Mental Damage",
+    "title": "Monolith Cult · Mental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Supporter",
@@ -11056,7 +11056,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -11091,7 +11091,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -11126,7 +11126,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -11174,14 +11174,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "BACK"
@@ -11189,12 +11189,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "If you want to survive in a defensive battle, we recommend a composition that employs two defenders and two healers.",
-        "Since Dress Asherah can provide firepower through Pincer Dual-Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
-        "Emily is also excellent as a defender, so we recommend using characters you already have."
+        "Since Asherah: Waltz of Starlight can provide firepower through Cross Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
+        "Emilly is also excellent as a defender, so we recommend using characters you already have."
       ],
       "arcanaDeckTitle": "Supporter basic organization",
       "journeyTrainingPoints": [
-        "Since he is not a character that produces firepower, training that prioritizes physical strength and patience is OK.",
+        "Since she is not a character that produces firepower, training that prioritizes physical strength and patience is OK.",
         "I don't want to be unable to move due to debuffs, so it's a good idea to have some protection (Great)",
         "When it comes to potential, it is recommended that HP is the highest priority, followed by defense and protection."
       ],
@@ -11202,16 +11202,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517750",
           "targetSlug": "arcana-79517750",
-          "targetName": "Princess Takes the Throne",
+          "targetName": "The Princess Ascends the Throne",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -11219,16 +11219,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -11236,16 +11236,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80521390",
           "targetSlug": "arcana-80521390",
-          "targetName": "Harsh Ordeal",
+          "targetName": "Grueling Ordeal",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -11253,7 +11253,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -11262,7 +11262,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -11270,13 +11270,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
               "articleId": "79517762",
               "slug": "arcana-79517762",
-              "name": "Heaven's Trial",
+              "name": "Divine Trial",
               "nameJp": "天の試練",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -11293,7 +11293,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -11311,7 +11311,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 3
@@ -11353,7 +11353,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/181732_cem4v.webp",
           "paragraphs": [
             "Please note that while it specializes in single-target recovery, it does not have overall recovery, so it can be a little difficult to use.",
-            "If it's a gauntlet, you can deal with it by forming two supporters, but it's not suitable for bosses who use a lot of all-out attacks, so be sure to use a supporter that can cover the whole area, such as Dress Asherah."
+            "If it's a gauntlet, you can deal with it by forming two supporters, but it's not suitable for bosses who use a lot of all-out attacks, so be sure to use a supporter that can cover the whole area, such as Asherah: Waltz of Starlight."
           ]
         },
         {
@@ -11362,7 +11362,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "While being able to revive allies is a strength, it also means that the enemy is strong enough to cause an ally to be defeated, and even if you fight the enemy in that state, you will most likely be defeated.",
-            "Also, in PvE, the basics are to have a quick attack with an attacker-heavy formation, or to form a supporter that emphasizes firepower such as Dress Asherah or Emily, so keep in mind that Elisa, who has no firepower-related effects, will have limited opportunities to play an active role."
+            "Also, in PvE, the basics are to have a quick attack with an attacker-heavy formation, or to form a supporter that emphasizes firepower such as Asherah: Waltz of Starlight or Emilly, so keep in mind that Elisa, who has no firepower-related effects, will have limited opportunities to play an active role."
           ]
         }
       ],
@@ -11566,7 +11566,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -11622,7 +11622,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -11688,7 +11688,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -11710,7 +11710,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -11870,21 +11870,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Mizuki Rin",
-        "affiliation": "Monolith cult",
+        "cv": "Mizuki Lyn",
+        "affiliation": "Monolith Cult",
         "birthday": "September 14th",
         "height": "169cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "Saint of the Monolith Church. The ranking is number 117. Although he has a wealth of knowledge about relics, he has low self-esteem and is easily influenced, so he is unable to fully demonstrate his abilities."
+        "obtain": "Standard Observation",
+        "bio": "Saint of the Monolith Church. The ranking is number 117. Although she has a wealth of knowledge about relics, she has low self-esteem and is easily influenced, so she is unable to fully demonstrate her abilities."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "lu",
-    "name": "Lu",
-    "title": "Orbital search team · Mental Damage",
+    "name": "Lugh",
+    "title": "Orbital Recon Team · Mental Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Ranger",
@@ -11926,12 +11926,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Lu's attack power increases by 15%.\nLu gains 2 Nova Force at the start of battle.\nWhen attacking, damage increases by 4% for each stack of own cooling.\nAfter any of your allies except yourself uses a skill that is not an attack, if you are not in a sudden state of Ritsuryo (cannot be removed), give yourself one {Snow Flower} (cannot be removed).\nWhen using the Four Friends in the Snow on your turn, if you are not in the state of Sudden Nyo Ritsuryo (cannot be removed) but in the state of Yukinaka (unremovable), after attacking, give yourself {Kudky Nyo Ritsuryo} (unremovable) and increase your Action Gauge by 40% for each stack of Yukinaka (unremovable).\nThe maximum increase in Action Gauge due to this effect is 120%.\nThis effect does not occur for additional activated skills.",
+        "exactDescription": "Lugh's attack power increases by 15%.\nLugh gains 2 Nova Force at the start of battle.\nWhen attacking, damage increases by 4% for each stack of own cooling.\nAfter any of your allies except yourself uses a skill that is not an attack, if you are not in a sudden state of Ritsuryo (cannot be removed), give yourself one {Snow Flower} (cannot be removed).\nWhen using the Four Friends in the Snow on your turn, if you are not in the state of Sudden Nyo Ritsuryo (cannot be removed) but in the state of Yukinaka (unremovable), after attacking, give yourself {Kudky Nyo Ritsuryo} (unremovable) and increase your Action Gauge by 40% for each stack of Yukinaka (unremovable).\nThe maximum increase in Action Gauge due to this effect is 120%.\nThis effect does not occur for additional activated skills.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -11962,7 +11962,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -11993,7 +11993,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -12028,7 +12028,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -12074,7 +12074,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -12091,13 +12091,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -12108,13 +12108,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -12125,7 +12125,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -12134,7 +12134,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -12142,7 +12142,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -12157,7 +12157,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -12174,7 +12174,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 2
@@ -12192,7 +12192,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -12204,7 +12204,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Understand the specifications of Yukichuhana and Kyukyo Ritsuryo.",
           "imageUrl": "",
           "paragraphs": [
-            "Enhanced Basic Skills are indispensable when using Lu, but in order to use enhanced Basic Skills, a unique buff called ``Suddenly Ritsuryo'' is required, and a buff called ``Snow Flower'' is required to impart that ``Suddenly Ritsuryo''.",
+            "Enhanced Basic Skills are indispensable when using Lugh, but in order to use enhanced Basic Skills, a unique buff called ``Suddenly Ritsuryo'' is required, and a buff called ``Snow Flower'' is required to impart that ``Suddenly Ritsuryo''.",
             "The granting conditions for both are slightly different and quite complicated, so take a look at the table above and keep in mind the granting conditions for each."
           ]
         },
@@ -12214,8 +12214,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/152334_3zxml.webp",
           "paragraphs": [
             "When you have the unique buff \"Suddenly Ritsuryo\", your Basic Skill will be strengthened, and you will be able to use the enhanced Basic Skill and deal great damage to the enemy.",
-            "Lu's Special Skill and Ultimate Skill's CT is quite heavy, so this Basic Skill provides firepower while the two skills are accumulated, so this enhanced Basic Skill can be said to be Lu's main weapon.",
-            "In addition, Lu himself has several ways to grant additional turns, and if used properly, it is possible to repeatedly use enhanced Basic Skills and aim for great damage."
+            "Lugh's Special Skill and Ultimate Skill's CT is quite heavy, so this Basic Skill provides firepower while the two skills are accumulated, so this enhanced Basic Skill can be said to be Lugh's main weapon.",
+            "In addition, Lugh herself has several ways to grant additional turns, and if used properly, it is possible to repeatedly use enhanced Basic Skills and aim for great damage."
           ]
         },
         {
@@ -12224,7 +12224,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "Once Sudoku Nyo Ritsuryo is applied, Snow Flower cannot be applied until Sudden Nyo Ritsuryo is lifted.",
-            "This Snow Flower can accumulate up to 3 stacks, and each time Lu uses an enhanced Basic Skill, it will decrease by 1 stack. Furthermore, when using the Enhanced Basic Skill, if the flowers in the snow disappear, the code will suddenly be lifted.",
+            "This Snow Flower can accumulate up to 3 stacks, and each time Lugh uses an enhanced Basic Skill, it will decrease by 1 stack. Furthermore, when using the Enhanced Basic Skill, if the flowers in the snow disappear, the code will suddenly be lifted.",
             "In other words, the number of stacks of Snow Flowers is the number of times you can use the Enhanced Basic Skill, and by accumulating Snow Flowers in advance, you can use the Enhanced Basic Skill repeatedly, so it is recommended to have multiple people with non-attack skills in your party."
           ]
         },
@@ -12233,10 +12233,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Performance required to crush Nova Force",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/153347_rj09x.webp",
           "paragraphs": [
-            "As explained above, Lu's Special Skill CT is 5 and Ultimate Skill's CT is 10, which is quite heavy compared to the others.",
-            "This seems to be because Lu possesses multiple additional turn means, the first being the Ultimate Skill when possessing the Sukyuyo Ritsuryo, and the second being due to the Nova Burst effect.",
-            "The first is that you need to use the Ultimate Skill = 10T grace + conditional, so basically you need to use the burst effect to take turns and refill Lu's skills.",
-            "However, currently, bursts are often used for recovery and Action Gauge purposes, so if all of them are used against Lu, there is a concern that the firepower and durability of each party will decrease, so it will probably take some ingenuity to use them."
+            "As explained above, Lugh's Special Skill CT is 5 and Ultimate Skill's CT is 10, which is quite heavy compared to the others.",
+            "This seems to be because Lugh possesses multiple additional turn means, the first being the Ultimate Skill when possessing the Sukyuyo Ritsuryo, and the second being due to the Nova Burst effect.",
+            "The first is that you need to use the Ultimate Skill = 10T grace + conditional, so basically you need to use the burst effect to take turns and refill Lugh's skills.",
+            "However, currently, bursts are often used for recovery and Action Gauge purposes, so if all of them are used against Lugh, there is a concern that the firepower and durability of each party will decrease, so it will probably take some ingenuity to use them."
           ]
         },
         {
@@ -12244,7 +12244,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Increase your allies' firepower with defense debuffs",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/153447_q6f1x.webp",
           "paragraphs": [
-            "Lu still has a defensive debuff even after changing its performance, making it extremely powerful as fire support for allies. His own firepower is not low, and one of his strengths is that he can be expected to serve as a secondary firepower.",
+            "Lugh still has a defensive debuff even after changing its performance, making it extremely powerful as fire support for allies. Her own firepower is not low, and one of her strengths is that she can be expected to serve as a secondary firepower.",
             "You can increase the number of actions you take with speed buffs, so make sure to strengthen your skills such as CT reduction so that you can frequently apply defense debuffs."
           ]
         },
@@ -12779,7 +12779,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -12787,12 +12787,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yurina Watanabe",
-        "affiliation": "Orbital search team",
+        "affiliation": "Orbital Recon Team",
         "birthday": "December 21st",
         "height": "167cm",
-        "origin": "Touhou",
-        "obtain": "Gacha (constant)",
-        "bio": "Vice-captain of the Orbital Search Team belonging to Polaris. Due to a special constitution that has been passed down from generation to generation in the family, he does not feel pain. Rumor has it that he has hobbies that are completely hidden from those around him."
+        "origin": "Eastern Region",
+        "obtain": "Standard Observation",
+        "bio": "Vice-captain of the Orbital Search Team belonging to Polaris. Due to a special constitution that has been passed down from generation to generation in the family, she does not feel pain. Rumor has it that she has hobbies that are completely hidden from those around her."
       }
     }
   },
@@ -12800,7 +12800,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "epindel",
     "name": "Epindel",
-    "title": "Orlan family · Slash Damage",
+    "title": "House Orlan · Slash Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Assassin",
@@ -12808,7 +12808,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "0",
-    "summary": "Assassin who mainly uses Basic Skill\n└The maximum number of stacks of Cooling increases the damage of your Basic Skill. · Strong against debuffs with immunity Lup · Self-healing is also possible and has high stand-alone performance · Moon Attribute's critical ally is important, but there are many excellent allies, including Bunny Frey, so it is easy to combine.",
+    "summary": "Assassin who mainly uses Basic Skill\n└The maximum number of stacks of Cooling increases the damage of your Basic Skill. · Strong against debuffs with immunity Lup · Self-healing is also possible and has high stand-alone performance · Moon Attribute's critical ally is important, but there are many excellent allies, including Frey: Noble Princess, so it is easy to combine.",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 20480,
@@ -12842,12 +12842,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Epindel's attack power increases by 15%.\nEpindel grants himself a Cooling stack when a Moon Attribute ally hits a critical hit. When Epindel uses Orlan style swordsmanship, if his own Cooling is at maximum stack, the damage will be increased by 20%, and all Cooling stacks will disappear after using Orlan style swordsmanship.",
+        "exactDescription": "Epindel's attack power increases by 15%.\nEpindel grants herself a Cooling stack when a Moon Attribute ally hits a critical hit. When Epindel uses Orlan style swordsmanship, if her own Cooling is at maximum stack, the damage will be increased by 20%, and all Cooling stacks will disappear after using Orlan style swordsmanship.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -12878,7 +12878,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -12907,7 +12907,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -12942,7 +12942,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Immunity",
@@ -12979,7 +12979,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Assassin who mainly uses Basic Skill\n└The maximum number of stacks of Cooling increases the damage of your Basic Skill.",
         "Strong against debuffs with immunity Lup",
         "Self-healing is also possible and has high stand-alone performance",
-        "Moon Attribute's critical ally is important, but there are many excellent allies, including Bunny Frey, so it is easy to combine."
+        "Moon Attribute's critical ally is important, but there are many excellent allies, including Frey: Noble Princess, so it is easy to combine."
       ],
       "partyTitle": "",
       "recommendedParty": [],
@@ -12996,13 +12996,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -13013,7 +13013,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -13030,13 +13030,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -13047,7 +13047,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -13062,7 +13062,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -13079,7 +13079,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -13097,7 +13097,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -13128,7 +13128,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/164933_s03pt.webp",
           "paragraphs": [
             "Although there are excellent buffs such as long-lasting speed buffs, the only buffs that directly affect firepower are Unique Passive's ATK Up and Damage Dealt buffs, so your own buffs alone will not give you enough firepower.",
-            "Use Moon Attribute characters that can provide firepower support, such as Emily and Lu, and devise a composition that can cover the firepower buff."
+            "Use Moon Attribute characters that can provide firepower support, such as Emilly and Lugh, and devise a composition that can cover the firepower buff."
           ]
         }
       ],
@@ -13332,7 +13332,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "ATK +100 HP +720",
           "materials": [
             {
@@ -13388,7 +13388,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "Effect RES4%",
           "materials": [
             {
@@ -13454,7 +13454,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "ATK +175 HP +1080",
           "materials": [
             {
@@ -13476,7 +13476,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "Effect RES8%",
           "materials": [
             {
@@ -13617,7 +13617,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -13637,12 +13637,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Saki Miyashita",
-        "affiliation": "Orlan family",
+        "affiliation": "House Orlan",
         "birthday": "August 18th",
         "height": "165cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "The next head of the Orlan family. Asherah and I are childhood friends. In many ways, he is conscious of Asherah and has a fierce rivalry with him."
+        "obtain": "Standard Observation",
+        "bio": "The next head of the Orlan family. Asherah and I are childhood friends. In many ways, she is conscious of Asherah and has a fierce rivalry with her."
       }
     }
   },
@@ -13650,7 +13650,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "lydia",
     "name": "Lydia",
-    "title": "Western recapture force · Mental Damage",
+    "title": "Western Reclamation Force · Mental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Ranger",
@@ -13697,7 +13697,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Unknown spell",
@@ -13732,7 +13732,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Unknown spell",
@@ -13767,7 +13767,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Unknown spell",
@@ -13802,7 +13802,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Down",
@@ -13853,7 +13853,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -13870,13 +13870,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -13885,7 +13885,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79865537",
               "slug": "arcana-79865537",
-              "name": "The End Has the Face of a Girl",
+              "name": "The End Wears the Face of a Girl",
               "nameJp": "終末は少女の顔をしている",
               "rarity": "SSR",
               "statTag": "Power",
@@ -13896,7 +13896,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -13905,7 +13905,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -13913,7 +13913,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -13928,7 +13928,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -13945,7 +13945,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -13963,7 +13963,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -14473,7 +14473,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -14523,11 +14523,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Saya Aizawa",
-        "affiliation": "Western recapture force",
+        "affiliation": "Western Reclamation Force",
         "birthday": "June 18th",
         "height": "156cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha (constant)",
+        "origin": "Western Disaster Zone",
+        "obtain": "Standard Observation",
         "bio": "Vice-captain of the Western Recapture Corps. She is always assisting Ceres next to her. She always has a bright smile on her face, but behind that smile lies a darkness."
       }
     }
@@ -14536,7 +14536,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "harley",
     "name": "Harley",
-    "title": "Hellsaver · Impact damage",
+    "title": "Hellsavers · Impact damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Defender",
@@ -14614,7 +14614,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Effect Hit up",
@@ -14657,7 +14657,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Effect Hit up",
@@ -14712,7 +14712,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -14762,7 +14762,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -14773,7 +14773,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
@@ -14782,7 +14782,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             }
           ]
@@ -14796,7 +14796,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -14807,16 +14807,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517786",
           "targetSlug": "arcana-79517786",
-          "targetName": "Satisfying Meal",
+          "targetName": "A Satisfying Meal",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -14830,7 +14830,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -14848,7 +14848,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -14861,7 +14861,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/135600_wea7m.webp",
           "paragraphs": [
             "You can also give a speed buff not only to yourself but also to all allies, which is great for increasing the number of moves your party can take.",
-            "Although it is a standalone character, it can give 3 ignition stacks, and it goes well with characters who want ignition stacks such as Bunny Charles, so I would like to actively combine it when hiring Harley."
+            "Although it is a standalone character, it can give 3 ignition stacks, and it goes well with characters who want ignition stacks such as Bunnygirl Charlotte, so I would like to actively combine it when hiring Harley."
           ]
         },
         {
@@ -15074,7 +15074,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -15091,7 +15091,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "HP2%",
           "materials": [
             {
@@ -15130,7 +15130,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect RES4%",
           "materials": [
             {
@@ -15152,7 +15152,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +75",
           "materials": [
             {
@@ -15196,7 +15196,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -15218,7 +15218,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect RES8%",
           "materials": [
             {
@@ -15240,7 +15240,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +150 DEF +90",
           "materials": [
             {
@@ -15329,7 +15329,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -15379,12 +15379,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Sayuri Yahagi",
-        "affiliation": "Hellsaver",
+        "affiliation": "Hellsavers",
         "birthday": "July 13th",
         "height": "154cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha (constant)",
-        "bio": "The leader of the bikehog biker gang, Hellsaver. Rumor has it that he has committed numerous crimes and is on the wanted list. A generous girl who values ​​her obligations above all else."
+        "origin": "Western Disaster Zone",
+        "obtain": "Standard Observation",
+        "bio": "The leader of the bikehog biker gang, Hellsaver. Rumor has it that she has committed numerous crimes and is on the wanted list. A generous girl who values ​​her obligations above all else."
       }
     }
   },
@@ -15392,7 +15392,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "petra",
     "name": "Petra",
-    "title": "Petra union · Impact damage",
+    "title": "Petra Union · Impact damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Ranger",
@@ -15439,7 +15439,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -15470,7 +15470,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -15505,7 +15505,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -15540,7 +15540,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -15587,7 +15587,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -15604,13 +15604,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -15621,13 +15621,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -15638,7 +15638,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -15647,7 +15647,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -15655,7 +15655,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -15670,7 +15670,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -15687,7 +15687,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -15705,7 +15705,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -16207,7 +16207,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -16227,12 +16227,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Mayu Mineta",
-        "affiliation": "Petra union",
+        "affiliation": "Petra Union",
         "birthday": "October 21st",
         "height": "155cm",
         "origin": "Callide",
-        "obtain": "Gacha (constant)",
-        "bio": "Representative of the Petra union, which undertakes all construction-related work, from demolition to construction. He has a talent for developing bombs that accurately destroy only their targets."
+        "obtain": "Standard Observation",
+        "bio": "Representative of the Petra union, which undertakes all construction-related work, from demolition to construction. She has a talent for developing bombs that accurately destroy only their targets."
       }
     }
   },
@@ -16240,7 +16240,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "lacy",
     "name": "Lacy",
-    "title": "Eastern continent · Elemental Damage",
+    "title": "Eastern Continent · Elemental Damage",
     "rarity": "SSR",
     "element": "Chaos",
     "role": "Ranger",
@@ -16297,7 +16297,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Intertwined dreams",
@@ -16332,7 +16332,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Intertwined dreams",
@@ -16367,7 +16367,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -16406,7 +16406,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -16467,7 +16467,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "anna",
-          "name": "Anna",
+          "name": "Annah",
           "nameJp": "アンナ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
           "position": "FRONT"
@@ -16482,7 +16482,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "A composition that combines Asherah, which you can get from the initial observation, and Lacy, which you can get from the selection box that you can get from the login bonus on the first day.",
-        "If you can get other SSR characters through gacha, try to change them to Anna or Naru as appropriate.",
+        "If you can get other SSR characters through gacha, try to change them to Annah or Naru as appropriate.",
         "Lacy is quite strong in the early stages, so let's focus on training Lacy."
       ],
       "arcanaDeckTitle": "Attacker basic formation",
@@ -16497,7 +16497,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -16514,13 +16514,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -16531,13 +16531,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -16548,7 +16548,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -16557,7 +16557,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -16565,7 +16565,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -16580,7 +16580,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -16597,7 +16597,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -16615,7 +16615,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -16647,7 +16647,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "When Lacy uses her special move, she has a chance of inflicting \"Intertwined Dreams\", which reduces the attack power of the affected enemies by 10%.",
             "Due to the passive effect, if you are attacked by an enemy that has been given Intertwined Dreams, you will recover according to your own attack power, so your self-resistance is extremely high.",
-            "Although he is an attacker, he can also be on the vanguard, so he can be said to be a versatile character who can demonstrate his strength no matter who he is teamed up with."
+            "Although she is an attacker, she can also be on the vanguard, so she can be said to be a versatile character who can demonstrate her strength no matter who she is teamed up with."
           ]
         },
         {
@@ -17199,12 +17199,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Kaori Maeda",
-        "affiliation": "Eastern continent",
+        "affiliation": "Eastern Continent",
         "birthday": "One day when pink flowers bloom",
         "height": "170cm",
-        "origin": "Dragon valley",
-        "obtain": "Gacha (constant)",
-        "bio": "A dragon tribe from the eastern continent. Although he has been active as a writer for many years and achieved great success, he seems to have fallen into a slump recently."
+        "origin": "Dragon Valley",
+        "obtain": "Standard Observation",
+        "bio": "A dragon tribe from the eastern continent. Although she has been active as a writer for many years and achieved great success, she seems to have fallen into a slump recently."
       }
     }
   },
@@ -17212,7 +17212,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "tanya",
     "name": "Tanya",
-    "title": "Petra union · Impact damage",
+    "title": "Petra Union · Impact damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Striker",
@@ -17259,7 +17259,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Demolition mode",
@@ -17294,7 +17294,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Demolition mode",
@@ -17333,7 +17333,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Demolition mode",
@@ -17376,7 +17376,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Crit Rate up",
@@ -17424,16 +17424,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -17441,7 +17441,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -17458,13 +17458,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -17475,7 +17475,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -17484,7 +17484,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -17492,7 +17492,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -17507,7 +17507,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -17524,7 +17524,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -17542,7 +17542,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -17555,7 +17555,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/113510_6zqot.webp",
           "paragraphs": [
             "By breaking Toughness, Tanya can increase the Action Gauge of everyone except herself by 10%, which also contributes to increasing the number of actions of her allies.",
-            "Since he needs to make a break himself, he needs to be creative in how he fights in order to take advantage of it every time, but he can be said to be an excellent character for supporting his allies, including the Crit Rate buff mentioned above."
+            "Since she needs to make a break herself, she needs to be creative in how she fights in order to take advantage of it every time, but she can be said to be an excellent character for supporting her allies, including the Crit Rate buff mentioned above."
           ]
         },
         {
@@ -17563,7 +17563,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Firepower also increases in demolition mode",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/113838_bo3jf.webp",
           "paragraphs": [
-            "By maximizing the jumping stack, he will be given a special Damage Dealt buff called Demolition Mode, and since he also has an attack buff with his Ultimate Skill, he is also excellent in that he can generate firepower himself.",
+            "By maximizing the jumping stack, she will be given a special Damage Dealt buff called Demolition Mode, and since she also has an attack buff with her Ultimate Skill, she is also excellent in that she can generate firepower herself.",
             "Using the Ultimate Skill while in Demolition Mode has the additional effect of increasing Toughness Damage by 1, so the strategy is to accumulate jumping stacks in order to break the enemy and then trigger Demolition Mode again."
           ]
         },
@@ -18044,7 +18044,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -18082,12 +18082,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Mina Nakazawa",
-        "affiliation": "Petra union",
+        "affiliation": "Petra Union",
         "birthday": "December 1st",
         "height": "173cm",
         "origin": "Unknown",
-        "obtain": "Gacha (constant)",
-        "bio": "An intern belonging to the Petra union. He has extraordinary strength and tries to solve everything by force when Marcille isn't watching. I love tempura."
+        "obtain": "Standard Observation",
+        "bio": "An intern belonging to the Petra union. She has extraordinary strength and tries to solve everything by force when Marcille isn't watching. I love tempura."
       }
     }
   },
@@ -18142,7 +18142,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Rabbit's investigation advice",
@@ -18177,7 +18177,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Rabbit's investigation advice",
@@ -18207,7 +18207,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Repair the rabbit on the spot and find a way out.\nApplies Barrier to all allies except yourself for 2 turns.\nAlso grants ATK Up and Usagi-san's Investigation Advice to himself for 2 turns.\nThen increase Action Gauge by 50%.\nBarrier amount increases in proportion to own attack power.",
+        "exactDescription": "Repair the rabbit on the spot and find a way out.\nApplies Barrier to all allies except yourself for 2 turns.\nAlso grants ATK Up and Usagi-san's Investigation Advice to herself for 2 turns.\nThen increase Action Gauge by 50%.\nBarrier amount increases in proportion to own attack power.",
         "novaBurst": "After using a skill, recover 1 Toughness.",
         "tooltips": [
           {
@@ -18224,7 +18224,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -18255,7 +18255,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Down",
@@ -18306,7 +18306,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "partyNotes": [],
       "arcanaDeckTitle": "Caster organization",
       "journeyTrainingPoints": [
-        "There is no problem in prioritizing power, but since he has debuffs, I would like to concentrate to some extent.",
+        "There is no problem in prioritizing power, but since she has debuffs, I would like to concentrate to some extent.",
         "If you have enough Crit Rate, change Vani Claire Lucana to Vani Flare Arcana.",
         "It is recommended that Stellar Archive has Power +2 to strengthen its power.",
         "Potential prioritizes attack type\n└Because barrier depends on attack power",
@@ -18316,13 +18316,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -18333,7 +18333,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -18350,13 +18350,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -18367,7 +18367,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -18376,7 +18376,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -18384,7 +18384,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -18399,7 +18399,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -18416,7 +18416,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -18434,7 +18434,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -18455,7 +18455,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Durable with a barrier that depends on attack power",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/172951_ciwn3.webp",
           "paragraphs": [
-            "As for durability, in addition to giving a barrier to allies other than himself, he is also excellent at raising the durability of the entire party with attack debuffs from his Ultimate Skill.",
+            "As for durability, in addition to giving a barrier to allies other than herself, she is also excellent at raising the durability of the entire party with attack debuffs from her Ultimate Skill.",
             "Since the barrier depends on its own attack power, it can be said to be excellent in that it can be easily combined with firepower.",
             "She also has an attack debuff with her Ultimate Skill, but this is a probability grant in situations other than Nova Burst, and it is unstable, so be careful not to rely on it too much."
           ]
@@ -18465,7 +18465,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Expect firepower with Crit Rate buff and attack buff",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/153107_1x7cw.webp",
           "paragraphs": [
-            "Regarding firepower, she has her own Crit Rate buff and attack buff, and since the Crit Rate buff is Lily's unique buff, it can be stacked with Crit Rate buffs such as Bunny Frey.",
+            "Regarding firepower, she has her own Crit Rate buff and attack buff, and since the Crit Rate buff is Lily's unique buff, it can be stacked with Crit Rate buffs such as Frey: Noble Princess.",
             "The unique buff is a composite buff of 20% Crit Rate and 15% Speed Buff, so it's great that it contributes to increasing the number of moves along with increasing your own Action Gauge.",
             "Ultimate Skill has a unique buff that increases Damage Dealt by 30%, so you can expect high firepower. I want to be sure to use the Ultimate Skill while having the unique buff."
           ]
@@ -18938,7 +18938,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -18980,7 +18980,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "November 5th",
         "height": "151cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
+        "obtain": "Standard Observation",
         "bio": "An apprentice investigator at Lampadis Investigation Consulting. She is always holding a large stuffed rabbit that she named Usagi-san. People around her are worried because she sometimes talks to rabbits."
       }
     }
@@ -18988,8 +18988,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "kira",
-    "name": "Kira",
-    "title": "Kira doesn't have any friends · Mental Damage",
+    "name": "Kyra",
+    "title": "Kyra doesn't have any friends · Mental Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Assassin",
@@ -19031,7 +19031,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Kira's attack power increases by 15%.\nWhen using Kira's skill, if you are hidden, the damage will increase by 10%.\nWhen using Extraordinary Greetings, if your Ignition stack is at its maximum, consume all stacks and apply Incubation to yourself for 1 turn.",
+        "exactDescription": "Kyra's attack power increases by 15%.\nWhen using Kyra's skill, if you are hidden, the damage will increase by 10%.\nWhen using Extraordinary Greetings, if your Ignition stack is at its maximum, consume all stacks and apply Incubation to yourself for 1 turn.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -19040,7 +19040,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -19071,7 +19071,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Latent",
@@ -19110,7 +19110,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Latent",
@@ -19153,7 +19153,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Down",
@@ -19207,29 +19207,29 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "kira",
-          "name": "Kira",
+          "name": "Kyra",
           "nameJp": "キラ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MUTANT_MASK_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "It is recommended that the Assassin organization be centered around Bunny Charles, with Kira as the hidden personnel and Ede as the tank.",
-        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kira to Emily or Dress Asherah.",
+        "It is recommended that the Assassin organization be centered around Bunnygirl Charlotte, with Kyra as the hidden personnel and Haydee as the tank.",
+        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kyra to Emilly or Asherah: Waltz of Starlight.",
         "The way you fight will change greatly depending on whether Fei has a counter or not, so be careful when operating it manually."
       ],
       "arcanaDeckTitle": "Assassin basic formation",
@@ -19244,13 +19244,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -19261,7 +19261,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -19278,13 +19278,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -19295,7 +19295,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -19310,7 +19310,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -19327,7 +19327,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -19345,7 +19345,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 2
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -19357,8 +19357,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Vanguard placement is recommended",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/123053_1azym.webp",
           "paragraphs": [
-            "When forming a formation with one defender and three attackers, you can place Kira in the vanguard and hide, leaving the vanguard with only defenders.",
-            "When using Kira, it is recommended to place her in the vanguard position, as it allows you to concentrate your attacks with defenders and reduces unexpected accidents."
+            "When forming a formation with one defender and three attackers, you can place Kyra in the vanguard and hide, leaving the vanguard with only defenders.",
+            "When using Kyra, it is recommended to place her in the vanguard position, as it allows you to concentrate your attacks with defenders and reduces unexpected accidents."
           ]
         },
         {
@@ -19366,7 +19366,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Excellent debuff effect on enemies",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/123233_iphas.webp",
           "paragraphs": [
-            "Kira can apply attack debuffs with her Ultimate Skill, contributing to reducing damage taken by the entire party. Particularly in parties that use Kira, the damage is often concentrated on one member of the vanguard, so it's nice to be able to support her in terms of durability.",
+            "Kyra can apply attack debuffs with her Ultimate Skill, contributing to reducing damage taken by the entire party. Particularly in parties that use Kyra, the damage is often concentrated on one member of the vanguard, so it's nice to be able to support her in terms of durability.",
             "In addition, there is also a special skill that reduces the Action Gauge and can delay actions, so it can be said that it is excellent to increase the number of moves for allies."
           ]
         }
@@ -19826,7 +19826,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -19875,21 +19875,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Rishino Aono",
-        "affiliation": "Kira doesn't have any friends",
+        "cv": "Hina Aono",
+        "affiliation": "Kyra doesn't have any friends",
         "birthday": "April 4th",
         "height": "155cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "A girl with a special ability called Kotodama, which holds power in her voice. As a child, he was unable to control his words and caused trouble to those around him, which led to him gradually becoming a shy person."
+        "obtain": "Standard Observation",
+        "bio": "A girl with a special ability called Kotodama, which holds power in her voice. As a child, she was unable to control her words and caused trouble to those around her, which led to her gradually becoming a shy person."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "bunny-scarlet",
-    "name": "Bunny Scarlet",
-    "title": "Candle square · Impact damage",
+    "name": "Bunnygirl Scarlet",
+    "title": "Candle Square · Impact damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Ranger",
@@ -19936,7 +19936,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Pinball time!",
@@ -19971,7 +19971,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Pinball time!",
@@ -20010,7 +20010,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Pinball time!",
@@ -20053,7 +20053,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Pinball time!",
@@ -20101,7 +20101,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -20118,13 +20118,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -20135,13 +20135,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -20152,7 +20152,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -20161,7 +20161,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -20169,7 +20169,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -20184,7 +20184,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -20201,7 +20201,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -20219,7 +20219,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -20459,7 +20459,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -20520,7 +20520,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -20608,7 +20608,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -20709,7 +20709,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -20747,20 +20747,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Misaki Akiyama",
-        "affiliation": "Candle square",
+        "affiliation": "Candle Square",
         "birthday": "May 5th",
         "height": "155cm",
-        "origin": "Dragon valley",
-        "obtain": "Gacha (constant)",
-        "bio": "A dragon girl who dreams of becoming a great tailor. He is ignorant of the common sense of human society, and is often scolded by Claire for causing trouble."
+        "origin": "Dragon Valley",
+        "obtain": "Standard Observation",
+        "bio": "A dragon girl who dreams of becoming a great tailor. She is ignorant of the common sense of human society, and is often scolded by Claire for causing trouble."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "bunny-claire",
-    "name": "Bunny Claire",
-    "title": "Candle square · Impact damage",
+    "name": "Bunnygirl Claire",
+    "title": "Candle Square · Impact damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Striker",
@@ -20833,7 +20833,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -20868,7 +20868,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -20903,7 +20903,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -20942,21 +20942,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-claire",
-          "name": "Bunny Claire",
+          "name": "Bunnygirl Claire",
           "nameJp": "バニークレア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103213_6rb9d.webp",
           "position": "FRONT"
@@ -20970,13 +20970,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunny Claire's Basic Skill → Special trigger.",
-        "Bunny Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
-        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emily as another attacker.",
+        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunnygirl Claire's Basic Skill → Special trigger.",
+        "Bunnygirl Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
+        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emilly as another attacker.",
         "If you can tolerate the luck factor, adding Fei will increase the firepower during the upswing, but if you want stability, this formation is recommended, so consult with your heart.",
-        "If you want to solidify your team with strikers, we recommend creating a formation centered around Rin and Bunny Claire.",
-        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tilia, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
-        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Dress Asherah with something like Tilia."
+        "If you want to solidify your team with strikers, we recommend creating a formation centered around Lyn and Bunnygirl Claire.",
+        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tyria, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
+        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Asherah: Waltz of Starlight with something like Tyria."
       ],
       "arcanaDeckTitle": "Striker formation",
       "journeyTrainingPoints": [
@@ -20989,16 +20989,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -21006,7 +21006,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -21023,13 +21023,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -21040,7 +21040,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -21049,7 +21049,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -21057,7 +21057,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -21072,7 +21072,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -21089,7 +21089,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -21107,7 +21107,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -21119,7 +21119,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Crit Rate is very important",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/121008_fgb06.webp",
           "paragraphs": [
-            "The most important effect of Bunny Claire is her special skill, ``Gives 3 cooling stacks when a critical hit occurs.''",
+            "The most important effect of Bunnygirl Claire is her special skill, ``Gives 3 cooling stacks when a critical hit occurs.''",
             "If you miss the critical point with the Special Skill, the cooling stack will accumulate more slowly, which means the activation timing of the Special Skill will be delayed, which will greatly affect the firepower, so be careful."
           ]
         },
@@ -21128,7 +21128,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "There are many ways to give Crit Rate.",
           "imageUrl": "",
           "paragraphs": [
-            "Fortunately, Bunny Claire can increase her Crit Rate by up to 38-50%, so the good news is that aiming for a critical hit is not that difficult.",
+            "Fortunately, Bunnygirl Claire can increase her Crit Rate by up to 38-50%, so the good news is that aiming for a critical hit is not that difficult.",
             "You can aim for 100% Crit Rate by making use of equipment and buffs from allies, so keep your Crit Rate as high as possible."
           ]
         },
@@ -21137,9 +21137,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "I'm glad that there are no required stages to improve your skills.",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/143343_ow37f.webp",
           "paragraphs": [
-            "Bunny Claire's skill enhancement content for all three skills does not have an effect such as CT reduction, and the effect is simply to increase skill firepower.",
+            "Bunnygirl Claire's skill enhancement content for all three skills does not have an effect such as CT reduction, and the effect is simply to increase skill firepower.",
             "Although it may seem disappointing at first glance, Star Savior often runs out of cubes for skill enhancement materials, and it is often impossible to enhance the skills and make full use of the character.",
-            "However, since Bunny Claire does not have this, it can be used even by beginners or those who are having trouble with not having enough cubes, and it is very easy to use, which is quite nice.",
+            "However, since Bunnygirl Claire does not have this, it can be used even by beginners or those who are having trouble with not having enough cubes, and it is very easy to use, which is quite nice.",
             "Of course, firepower is still an important element, so you want to increase it as much as possible, but for valuable items such as Cosmic Cubes, give them to other characters when you have time."
           ]
         }
@@ -21361,7 +21361,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -21422,7 +21422,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -21510,7 +21510,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -21649,12 +21649,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Hikari Sonoyama",
-        "affiliation": "Candle square",
+        "affiliation": "Candle Square",
         "birthday": "January 30th",
         "height": "162cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "Candle Square's noble maid and acting head maid. He has a personality that values ​​planning and Lulu above all else, and is always making plans for irregular situations."
+        "obtain": "Standard Observation",
+        "bio": "Candle Square's noble maid and acting head maid. She has a personality that values ​​planning and Lulu above all else, and is always making plans for irregular situations."
       }
     }
   },
@@ -21704,12 +21704,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Omega's attack power increases by 15%.\nAfter Omega attacks a Star Attribute ally other than himself, he grants himself 1 Jump stack at 100%.\nAt the start of the turn, if your Jump stack is at its maximum, it will be consumed and a power-up star will be generated once.\nAt the start of the turn, if your Power Up Star is at maximum stack, Jump will not be consumed.",
+        "exactDescription": "Omega's attack power increases by 15%.\nAfter Omega attacks a Star Attribute ally other than herself, she grants herself 1 Jump stack at 100%.\nAt the start of the turn, if your Jump stack is at its maximum, it will be consumed and a power-up star will be generated once.\nAt the start of the turn, if your Power Up Star is at maximum stack, Jump will not be consumed.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Power up star",
@@ -21744,7 +21744,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Power up star",
@@ -21779,7 +21779,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Power up star",
@@ -21818,7 +21818,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Power up star",
@@ -21863,21 +21863,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "rin",
-          "name": "Rin",
+          "name": "Lyn",
           "nameJp": "リン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
           "position": "BACK"
@@ -21885,8 +21885,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "For Omega, it is recommended to form a party with as many Star Attributes as possible in order to take advantage of the Unique Passive effect.",
-        "There are a wide range of options, such as Ede, who is excellent as a tank, Rin, who can also be used as an attacker and Star Attribute buffer, and Roberta, who has a counter, so it would be a good idea to rearrange them depending on the quest.",
-        "When using Bride Carmen as a healer, remember to place the attacker with the highest attack power in the front line, and place Bride Carmen in the back line."
+        "There are a wide range of options, such as Haydee, who is excellent as a tank, Lyn, who can also be used as an attacker and Star Attribute buffer, and Roberta, who has a counter, so it would be a good idea to rearrange them depending on the quest.",
+        "When using Carmen: Eternal Promise as a healer, remember to place the attacker with the highest attack power in the front line, and place Carmen: Eternal Promise in the back line."
       ],
       "arcanaDeckTitle": "Attacker (Special Skill) formation",
       "journeyTrainingPoints": [
@@ -21899,13 +21899,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79576397",
           "targetSlug": "arcana-79576397",
-          "targetName": "Pioneer of Imaginary Numbers",
+          "targetName": "The Imaginary Pioneer",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
           "substitutes": [
             {
               "articleId": "79517783",
               "slug": "arcana-79517783",
-              "name": "As Cute As Kira!",
+              "name": "As Cute as Kyra!",
               "nameJp": "キラくらい可愛い！",
               "rarity": "SSR",
               "statTag": "Power",
@@ -21916,7 +21916,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -21933,13 +21933,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -21950,7 +21950,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -21965,7 +21965,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -21976,7 +21976,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -21985,7 +21985,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -21999,7 +21999,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -22017,7 +22017,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -22278,7 +22278,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -22339,7 +22339,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -22427,7 +22427,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -22528,7 +22528,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -22569,16 +22569,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "affiliation": "Voyager Rescue Squad",
         "birthday": "February 4th",
         "height": "131cm",
-        "origin": "Star piercer",
-        "obtain": "Gacha (constant)",
-        "bio": "An artificial intelligence from a super ancient civilization that was sealed in the leader's sword. He joins the Voyager Rescue Team to reunite with his long-lost family."
+        "origin": "Star Piercer",
+        "obtain": "Standard Observation",
+        "bio": "An artificial intelligence from a super ancient civilization that was sealed in the leader's sword. She joins the Voyager Rescue Team to reunite with her long-lost family."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "dress-asherah",
-    "name": "Dress Asherah",
+    "name": "Asherah: Waltz of Starlight",
     "title": "Voyager Rescue Squad · Slash Damage",
     "rarity": "SSR",
     "element": "Order",
@@ -22587,7 +22587,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "S",
     "score": "0",
-    "summary": "Supporter who can recover total HP and remove debuffs · Recover allies with low HP even with Basic Skill\n└By increasing pincer rate, you can also recover whenever an ally uses Basic Skill · Support performance is high due to increased Action Gauge · Contributes to firepower while being a supporter with special skills such as Pincer Dual-Attacks and attacks. · Please note that Base (LB0) has weak Unique Passive, and LB1 (+1) or higher is almost required.",
+    "summary": "Supporter who can recover total HP and remove debuffs · Recover allies with low HP even with Basic Skill\n└By increasing pincer rate, you can also recover whenever an ally uses Basic Skill · Support performance is high due to increased Action Gauge · Contributes to firepower while being a supporter with special skills such as Cross Attacks and attacks. · Please note that Base (LB0) has weak Unique Passive, and LB1 (+1) or higher is almost required.",
     "recommendedDupes": "★★★ (LB1)",
     "baseStats": {
       "hp": 25006,
@@ -22631,12 +22631,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Asherah's maximum HP increases by 15%.\nAfter Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage.\nThe chance of Pincer Dual-Attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5.\nThe amount of recovery increases in proportion to your maximum HP.",
+        "exactDescription": "Asherah's maximum HP increases by 15%.\nAfter Asherah uses Bel Rahm, she restores the HP of the ally with the lowest current HP percentage.\nThe chance of Cross Attacks increases by 20% in proportion to the insight stacks granted to you, and applies up to a maximum of 5.\nThe amount of recovery increases in proportion to your maximum HP.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -22671,7 +22671,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -22719,7 +22719,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -22750,7 +22750,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Starlight wish",
@@ -22783,21 +22783,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Supporter who can recover total HP and remove debuffs",
         "Recover allies with low HP even with Basic Skill\n└By increasing pincer rate, you can also recover whenever an ally uses Basic Skill",
         "Support performance is high due to increased Action Gauge",
-        "Contributes to firepower while being a supporter with special skills such as Pincer Dual-Attacks and attacks.",
+        "Contributes to firepower while being a supporter with special skills such as Cross Attacks and attacks.",
         "Please note that Base (LB0) has weak Unique Passive, and LB1 (+1) or higher is almost required."
       ],
       "partyTitle": "PVE strongest formation",
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
@@ -22822,36 +22822,36 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "In addition to the high firepower of Amora's Basic Skill, she can also deal high damage with her Special Skill, making her an excellent compatibility with Professor M.",
         "Two people can provide more than enough firepower, so I want to use the other two as supporters to support the two attackers so they don't get destroyed.",
         "In particular, these two supporters can also provide indirect firepower support by increasing their Action Gauge, so overall it can be said that this is a powerful party that requires a lot of work.",
-        "In strategy attack battles, Dress Asherah's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
+        "In strategy attack battles, Asherah: Waltz of Starlight's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
         "Since it is necessary to destroy half of the opponent's party with this one ally's action, it is recommended to use an all-out attack attacker who will not be hindered by pre-emptive defense in the three attacker slots.",
-        "Let's go on the offensive with Rosalia, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Rin, who can act twice in one turn.",
+        "Let's go on the offensive with Rosaria, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Lyn, who can act twice in one turn.",
         "Be careful of Roberta and Fei, who will counter your attacks.",
         "Roberta has an Action Gauge increase when countered, and when countered, she may interrupt her allies, so there is a risk that the party's strategy will be disrupted.",
         "There is no point worrying about Fei, so it would be safe to pray that she doesn't get evaded, or to fight a party that doesn't have these characters.",
         "If you want to survive in a defensive battle, we recommend a composition that employs two defenders and two healers.",
-        "Since Dress Asherah can provide firepower through Pincer Dual-Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
-        "Emily is also excellent as a defender, so we recommend using characters you already have.",
+        "Since Asherah: Waltz of Starlight can provide firepower through Cross Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
+        "Emilly is also excellent as a defender, so we recommend using characters you already have.",
         "A party that employs both Fei and Roberta to gain damage through counter attacks.",
-        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that counterattack with all-out attacks.",
+        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that Revenge Attack with all-out attacks.",
         "Since you want to increase the number of times Fei is attacked, it is recommended that you do not attach pre-emptive defense to the defender and place Fei in the vanguard position.",
         "An anti-all attack formation that is useful against enemies that often use all-out attacks.",
         "Another good point is that Roberta's counter is very powerful and can be obtained with distributed characters and flash points, making it a low hurdle to obtain.",
-        "As a countermeasure against general attacks, I would like to use Ede's protection to reduce the damage taken by the attackers as much as possible, and use Dress Asherah to recover.",
-        "If you want to solidify your team with strikers, we recommend creating a formation centered around Rin and Bunny Claire.",
-        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tilia, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
-        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Dress Asherah with something like Tilia.",
-        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosalia at the center.",
-        "In the other slot, we are using Yanagi Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Lease, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
-        "Lu and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible.",
-        "The recommended caster formation is Bunny Frey, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
+        "As a countermeasure against general attacks, I would like to use Haydee's protection to reduce the damage taken by the attackers as much as possible, and use Asherah: Waltz of Starlight to recover.",
+        "If you want to solidify your team with strikers, we recommend creating a formation centered around Lyn and Bunnygirl Claire.",
+        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tyria, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
+        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Asherah: Waltz of Starlight with something like Tyria.",
+        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosaria at the center.",
+        "In the other slot, we are using Yoo Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Rhys, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
+        "Lugh and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible.",
+        "The recommended caster formation is Frey: Noble Princess, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
         "If you want to focus on general attacks, we recommend replacing Dana with Luna, and if you want to focus on durability, use Lily.",
-        "If you have the time, Bunny Frey gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective.",
-        "A formation that uses the powerful Bride Epindel against enemies with barriers.",
-        "Dress Asherah is a Pincer Dual-Attack, and Bunny Charles is a basic trigger that can earn you critical moves, so it's great to be able to give Bride Epindel a large amount of ignition stacks.",
-        "Bride Carmen's buff target changes depending on its attack power, so Bunny Charles and Bride Epindel should place the one with higher attack power in the vanguard.",
-        "We recommend placing Bunny Charles in the vanguard if possible, as Bunny Charles has higher durability as he can heal himself."
+        "If you have the time, Frey: Noble Princess gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective.",
+        "A formation that uses the powerful Epindel: Blessing in Bloom against enemies with barriers.",
+        "Asherah: Waltz of Starlight is a Cross Attack, and Bunnygirl Charlotte is a basic trigger that can earn you critical moves, so it's great to be able to give Epindel: Blessing in Bloom a large amount of ignition stacks.",
+        "Carmen: Eternal Promise's buff target changes depending on its attack power, so Bunnygirl Charlotte and Epindel: Blessing in Bloom should place the one with higher attack power in the vanguard.",
+        "We recommend placing Bunnygirl Charlotte in the vanguard if possible, as Bunnygirl Charlotte has higher durability as she can heal herself."
       ],
-      "arcanaDeckTitle": "Dress Asherah organization",
+      "arcanaDeckTitle": "Asherah: Waltz of Starlight organization",
       "journeyTrainingPoints": [
         "Training is recommended, prioritizing physical fitness.",
         "Since it also serves as firepower, training prioritizes power as the runner-up.",
@@ -22863,7 +22863,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -22880,13 +22880,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -22897,25 +22897,25 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79517750",
               "slug": "arcana-79517750",
-              "name": "Princess Takes the Throne",
+              "name": "The Princess Ascends the Throne",
               "nameJp": "姫、王位に就く",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp"
             },
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -22923,7 +22923,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -22932,7 +22932,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -22940,7 +22940,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -22955,7 +22955,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -22972,7 +22972,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -22990,7 +22990,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 1
@@ -23002,7 +23002,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Supports allies' durability with increased recovery performance",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/12/110753_m5ws1.webp",
           "paragraphs": [
-            "Dress Asherah not only recovers allies with all skills including Basic Skill, but also recovers when an ally uses Basic Skill due to the Limit Broken effect's pincer rate increase, so her recovery performance is quite high.",
+            "Asherah: Waltz of Starlight not only recovers allies with all skills including Basic Skill, but also recovers when an ally uses Basic Skill due to the Limit Broken effect's pincer rate increase, so her recovery performance is quite high.",
             "The drawback of existing healers was not their one-time recovery power, but their low recovery frequency, so Asherah, who can heal allies with every action, is extremely superior in that she can achieve higher continuous durability for the entire formation than other healers."
           ]
         },
@@ -23021,7 +23021,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Can contribute firepower while being a supporter",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/12/110820_3am07.webp",
           "paragraphs": [
-            "With Special Skill, he not only attacks while healing all allies, but also uses Pincer Dual-Attack to attack when allies have Basic Skill, so he contributes enough firepower compared to supporters who can only attack with Basic Skill.",
+            "With Special Skill, she not only attacks while healing all allies, but also uses Cross Attack to attack when allies have Basic Skill, so she contributes enough firepower compared to supporters who can only attack with Basic Skill.",
             "By simply increasing your HP, you can reinforce all of your durability, firepower, and recovery power, so the advantage is that you can naturally generate firepower without having to build for firepower."
           ]
         },
@@ -23031,7 +23031,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "The overall Action Gauge increase that comes with the Ultimate Skill is also very good, allowing indirect firepower support by increasing the number of moves for allies.",
-            "In games such as Cosmo Gate, the number of moves you make is directly linked to your score, so Dress Asherah, which increases the number of moves you make overall, is easy to use as a healer and will be useful in a variety of situations."
+            "In games such as Cosmo Gate, the number of moves you make is directly linked to your score, so Asherah: Waltz of Starlight, which increases the number of moves you make overall, is easy to use as a healer and will be useful in a variety of situations."
           ]
         },
         {
@@ -23039,7 +23039,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "PvP is active in quick attack formations",
           "imageUrl": "",
           "paragraphs": [
-            "Using this Action Gauge increase, in PvP, you can use Dress Asherah's Ultimate Skill in your first move to raise the order of your allies' actions, allowing you to use their skills.",
+            "Using this Action Gauge increase, in PvP, you can use Asherah: Waltz of Starlight's Ultimate Skill in your first move to raise the order of your allies' actions, allowing you to use their skills.",
             "In that case, use attackers with all-around attacks for the other three characters, and form them with the goal of destroying half of the opponent's party."
           ]
         }
@@ -23260,7 +23260,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -23316,7 +23316,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -23382,7 +23382,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -23404,7 +23404,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -23569,7 +23569,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "April 22nd",
         "height": "166cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
+        "obtain": "Standard Observation",
         "bio": "An aristocratic daughter who longs to be a savior of the stars and joins the journey to become one. The fact that you take action immediately without worrying about it is both a strength and a weakness."
       }
     }
@@ -23577,8 +23577,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "bell-lease",
-    "name": "Bell Lease",
-    "title": "Candle square · Mental Damage",
+    "name": "Bell Rhys",
+    "title": "Candle Square · Mental Damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Ranger",
@@ -23620,7 +23620,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Bell Lease's attack power increases by 15%.\nBell Lease increases his Action Gauge by 50% and increases his attack power by 10% each time an ally or enemy other than himself becomes incapacitated.\nATK Up effect can be stacked up to 3 times.",
+        "exactDescription": "Bell Rhys's attack power increases by 15%.\nBell Rhys increases her Action Gauge by 50% and increases her attack power by 10% each time an ally or enemy other than herself becomes incapacitated.\nATK Up effect can be stacked up to 3 times.",
         "novaBurst": "",
         "tooltips": []
       },
@@ -23685,7 +23685,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -23720,7 +23720,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -23773,7 +23773,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -23790,13 +23790,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -23807,22 +23807,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79865537",
           "targetSlug": "arcana-79865537",
-          "targetName": "The End Has the Face of a Girl",
+          "targetName": "The End Wears the Face of a Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             },
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -23833,7 +23833,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -23842,7 +23842,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -23850,7 +23850,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -23865,7 +23865,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -23882,7 +23882,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -23900,7 +23900,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -23961,7 +23961,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "This is intended for everyday use, not PvP, but the Special Skill and Basic Skill Nova Burst can reduce the enemy's accuracy.",
             "The effect value is also not bad at 30%, so depending on your luck, you may be able to greatly reduce the damage taken by applying it to the boss.",
-            "If you have a situation where you are stuck in a strategy, you may want to consider using Bell Lease."
+            "If you have a situation where you are stuck in a strategy, you may want to consider using Bell Rhys."
           ]
         }
       ],
@@ -24486,20 +24486,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Chisa Suganuma",
-        "affiliation": "Candle square",
+        "affiliation": "Candle Square",
         "birthday": "February 29th",
         "height": "156cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "The second daughter of the Reese family and the caretaker of the NOA cemetery. A sorcerer who takes over from his missing sister and serves Candle Square in order to fulfill his duty as a member of the Reese family."
+        "obtain": "Standard Observation",
+        "bio": "The second daughter of the Reese family and the caretaker of the NOA cemetery. A sorcerer who takes over from her missing sister and serves Candle Square in order to fulfill her duty as a member of the Reese family."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "emily",
-    "name": "Emily",
-    "title": "Candle square · Slash Damage",
+    "name": "Emilly",
+    "title": "Candle Square · Slash Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Defender",
@@ -24551,7 +24551,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Emily's maximum HP increases by 15%.\nAt the start of the first battle, create a barrier for yourself for 1 turn.\nAfter being attacked, the Cooldown of \"Turndown Service\" will be reduced by 1 Turn. After receiving a general attack, the Cooldown of \"Turndown Service\" will be reduced by 1 additional turn, and will give you 1 Cooldown stack at 100%.\nBarrier increases in proportion to own maximum HP.",
+        "exactDescription": "Emilly's maximum HP increases by 15%.\nAt the start of the first battle, create a barrier for yourself for 1 turn.\nAfter being attacked, the Cooldown of \"Turndown Service\" will be reduced by 1 Turn. After receiving a general attack, the Cooldown of \"Turndown Service\" will be reduced by 1 additional turn, and will give you 1 Cooldown stack at 100%.\nBarrier increases in proportion to own maximum HP.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -24560,7 +24560,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -24604,7 +24604,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -24647,7 +24647,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -24690,7 +24690,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -24733,21 +24733,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-claire",
-          "name": "Bunny Claire",
+          "name": "Bunnygirl Claire",
           "nameJp": "バニークレア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103213_6rb9d.webp",
           "position": "FRONT"
@@ -24761,22 +24761,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunny Claire's Basic Skill → Special trigger.",
-        "Bunny Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
-        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emily as another attacker.",
+        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunnygirl Claire's Basic Skill → Special trigger.",
+        "Bunnygirl Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
+        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emilly as another attacker.",
         "If you can tolerate the luck factor, adding Fei will increase the firepower during the upswing, but if you want stability, this formation is recommended, so consult with your heart.",
-        "Dress Asherah may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Ede and Emily in the front line.",
-        "Since there is no healer, it is important to keep the barrier intact, but Ede and Emily's barriers have high durability, and Emily can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
-        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosalia and Bunny Charles.",
-        "If you want to solidify your team with strikers, we recommend creating a formation centered around Rin and Bunny Claire.",
-        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tilia, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
-        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Dress Asherah with something like Tilia.",
-        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosalia at the center.",
-        "In the other slot, we are using Yanagi Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Lease, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
-        "Lu and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible.",
-        "The recommended caster formation is Bunny Frey, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
+        "Asherah: Waltz of Starlight may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Haydee and Emilly in the front line.",
+        "Since there is no healer, it is important to keep the barrier intact, but Haydee and Emilly's barriers have high durability, and Emilly can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
+        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosaria and Bunnygirl Charlotte.",
+        "If you want to solidify your team with strikers, we recommend creating a formation centered around Lyn and Bunnygirl Claire.",
+        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tyria, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
+        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Asherah: Waltz of Starlight with something like Tyria.",
+        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosaria at the center.",
+        "In the other slot, we are using Yoo Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Rhys, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
+        "Lugh and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible.",
+        "The recommended caster formation is Frey: Noble Princess, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
         "If you want to focus on general attacks, we recommend replacing Dana with Luna, and if you want to focus on durability, use Lily.",
-        "If you have the time, Bunny Frey gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective."
+        "If you have the time, Frey: Noble Princess gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective."
       ],
       "arcanaDeckTitle": "Defender (firepower) formation",
       "journeyTrainingPoints": [
@@ -24788,7 +24788,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -24803,7 +24803,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -24814,7 +24814,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
@@ -24823,16 +24823,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             },
             {
               "articleId": "79606361",
               "slug": "arcana-79606361",
-              "name": "Daughter of the Stranis Family",
+              "name": "Young Lady of Stranis",
               "nameJp": "ストラニス家の令嬢",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp"
             }
           ]
@@ -24840,7 +24840,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -24849,7 +24849,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -24857,7 +24857,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -24872,7 +24872,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -24889,7 +24889,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -24907,7 +24907,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 2
@@ -24919,7 +24919,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Ultimate Skill with 150% maximum damage",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/130949_qxbk8.webp",
           "paragraphs": [
-            "Emily has a maximum 150% Ultimate Skill damage buff, and is attractive because she can be expected to have high firepower even though she is a defender.",
+            "Emilly has a maximum 150% Ultimate Skill damage buff, and is attractive because she can be expected to have high firepower even though she is a defender.",
             "This damage buff has no limit on the number of times or turns it can be used, so once you accumulate stacks, you can sustain high firepower."
           ]
         },
@@ -24928,7 +24928,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Activate Ultimate Skill frequently by shortening CT",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/131407_mcfe1.webp",
           "paragraphs": [
-            "Emily can reduce the CT of her Ultimate Skill by being hit by a bullet, but she can also reduce her CT by 2 by using her Ultimate Skill when her cooling stack is at maximum.",
+            "Emilly can reduce the CT of her Ultimate Skill by being hit by a bullet, but she can also reduce her CT by 2 by using her Ultimate Skill when her cooling stack is at maximum.",
             "The basic operation is as follows: Ultimate Skill → Reduce CT when hit → Use Ultimate Skill again, and by using Ultimate Skill frequently, you can increase your firepower.",
             "The CT reduction for being hit by a single target is reduced by 1, and by being hit by an entire attack, it is reduced by 2, so be careful as the reduced turn will change depending on the enemy's attack."
           ]
@@ -24947,8 +24947,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Self-healing is also possible with hard potential",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/01/170747_s32zu.webp",
           "paragraphs": [
-            "With the potential power acquired through the hard rescue journey, it is now possible to self-heal, albeit with a certain probability. As a result, his durability has been further refined, and he has transformed into a super powerful character that has both firepower and durability.",
-            "In order to take advantage of Emily's strengths, be sure to carefully select her hard potential.",
+            "With the potential power acquired through the hard rescue journey, it is now possible to self-heal, albeit with a certain probability. As a result, her durability has been further refined, and she has transformed into a super powerful character that has both firepower and durability.",
+            "In order to take advantage of Emilly's strengths, be sure to carefully select her hard potential.",
             "Rescue journey hard strategy"
           ]
         },
@@ -24958,7 +24958,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "As mentioned above, it doesn't have any special effects regarding durability support, it's just simple defensive buffs and barriers, so it's difficult to counter gimmicks.",
-            "Especially in PvP, where silence and reinforcement removal are expected, it is possible that Emily will be defeated before she can take full advantage of her strength, so keep in mind that you will need to take countermeasures with other characters."
+            "Especially in PvP, where silence and reinforcement removal are expected, it is possible that Emilly will be defeated before she can take full advantage of her strength, so keep in mind that you will need to take countermeasures with other characters."
           ]
         },
         {
@@ -24967,7 +24967,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "Due to the specifications of the skill, which provides a barrier and attack buff to the selected single target, it is not suitable for automatic operation where targets are selected roughly.",
-            "Please note that manual control is required to make the most of Emily's strength."
+            "Please note that manual control is required to make the most of Emilly's strength."
           ]
         }
       ],
@@ -25187,7 +25187,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -25243,7 +25243,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Crit Rate3%",
           "materials": [
             {
@@ -25309,7 +25309,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -25331,7 +25331,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Crit Rate6%",
           "materials": [
             {
@@ -25492,11 +25492,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Shiori Sugiura",
-        "affiliation": "Candle square",
+        "affiliation": "Candle Square",
         "birthday": "June 8th",
         "height": "167cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha (constant)",
+        "origin": "Western Disaster Zone",
+        "obtain": "Standard Observation",
         "bio": "A maid from Candle Square who always has cleaning tools in hand and does thorough combat cleaning. Due to my severe forgetfulness, it is common for me to forget important things. Sometimes I remember the exact opposite."
       }
     }
@@ -25504,7 +25504,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "bunny-charles",
-    "name": "Bunny Charles",
+    "name": "Bunnygirl Charlotte",
     "title": "Knights of Monastir · Mental Damage",
     "rarity": "SSR",
     "element": "Sun",
@@ -25547,12 +25547,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Charles' attack power increases by 15%.\nCharles gives himself one Ignition stack at the start of the turn of any Sun Attribute ally other than himself.\nAfter using Bunny Step, increase own Action Gauge by 10%.\nAfter using Bunny Step on your turn, if you are in Lucky Token (cannot be removed) state, Bunny Step will occur again.\nThe additional activation effect only occurs once per turn.",
+        "exactDescription": "Charlotte' attack power increases by 15%.\nCharlotte gives herself one Ignition stack at the start of the turn of any Sun Attribute ally other than herself.\nAfter using Bunny Step, increase own Action Gauge by 10%.\nAfter using Bunny Step on your turn, if you are in Lucky Token (cannot be removed) state, Bunny Step will occur again.\nThe additional activation effect only occurs once per turn.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Lucky token (cannot be removed)",
@@ -25582,12 +25582,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Charles quickly attacks.\nGive yourself one Ignition stack.",
+        "exactDescription": "Charlotte quickly attacks.\nGive yourself one Ignition stack.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.",
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Lucky token (cannot be removed)",
@@ -25607,7 +25607,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "CT: 4 turns | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Charles raises his glass generously and encourages his entire team.\nGives ATK Up to all allies for 2 turns, and grants 3 Lucky Tokens (cannot be removed) and 3 Ignition stacks each at 100% for 3 turns.\nAlso generates an additional turn.",
+        "exactDescription": "Charlotte raises her glass generously and encourages her entire team.\nGives ATK Up to all allies for 2 turns, and grants 3 Lucky Tokens (cannot be removed) and 3 Ignition stacks each at 100% for 3 turns.\nAlso generates an additional turn.",
         "novaBurst": "After using a skill, recover 1 Toughness.",
         "tooltips": [
           {
@@ -25620,7 +25620,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -25646,12 +25646,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Charles loses all his chips and attacks.\nWhen attacking, damage increases by 5% in proportion to the Ignition stacks attached to yourself, up to a maximum of 5.\nAfter attacking, all of your Ignition stacks disappear.\nIf Ignition is at maximum stack, the cooldown of rabbits cornered after being attacked will be reset.",
+        "exactDescription": "Charlotte loses all her chips and attacks.\nWhen attacking, damage increases by 5% in proportion to the Ignition stacks attached to yourself, up to a maximum of 5.\nAfter attacking, all of your Ignition stacks disappear.\nIf Ignition is at maximum stack, the cooldown of rabbits cornered after being attacked will be reset.",
         "novaBurst": "When attacking, your Fixed Toughness Damage will temporarily increase by 1 and you will recover HP equal to 30% of the damage.",
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Lucky token (cannot be removed)",
@@ -25693,7 +25693,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "christel",
-          "name": "Christel",
+          "name": "Cristelle",
           "nameJp": "クリステル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/190200_51vpg.webp",
           "position": "BACK"
@@ -25707,32 +25707,32 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "FRONT"
         },
         {
           "slug": "tilia",
-          "name": "Tilia",
+          "name": "Tyria",
           "nameJp": "ティリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115944_7kujw.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunny Charles.",
-        "Other attackers will want to use Tilia and Christel to increase their firepower, but if you want overall firepower, try switching to Muriel.",
-        "Dress Asherah may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Ede and Emily in the front line.",
-        "Since there is no healer, it is important to keep the barrier intact, but Ede and Emily's barriers have high durability, and Emily can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
-        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosalia and Bunny Charles.",
-        "It is recommended that the Assassin organization be centered around Bunny Charles, with Kira as the hidden personnel and Ede as the tank.",
-        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kira to Emily or Dress Asherah.",
+        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunnygirl Charlotte.",
+        "Other attackers will want to use Tyria and Cristelle to increase their firepower, but if you want overall firepower, try switching to Muriel.",
+        "Asherah: Waltz of Starlight may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Haydee and Emilly in the front line.",
+        "Since there is no healer, it is important to keep the barrier intact, but Haydee and Emilly's barriers have high durability, and Emilly can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
+        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosaria and Bunnygirl Charlotte.",
+        "It is recommended that the Assassin organization be centered around Bunnygirl Charlotte, with Kyra as the hidden personnel and Haydee as the tank.",
+        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kyra to Emilly or Asherah: Waltz of Starlight.",
         "The way you fight will change greatly depending on whether Fei has a counter or not, so be careful when operating it manually.",
-        "A formation that uses the powerful Bride Epindel against enemies with barriers.",
-        "Dress Asherah is a Pincer Dual-Attack, and Bunny Charles is a basic trigger that can earn you critical moves, so it's great to be able to give Bride Epindel a large amount of ignition stacks.",
-        "Bride Carmen's buff target changes depending on its attack power, so Bunny Charles and Bride Epindel should place the one with higher attack power in the vanguard.",
-        "We recommend placing Bunny Charles in the vanguard if possible, as Bunny Charles has higher durability as he can heal himself."
+        "A formation that uses the powerful Epindel: Blessing in Bloom against enemies with barriers.",
+        "Asherah: Waltz of Starlight is a Cross Attack, and Bunnygirl Charlotte is a basic trigger that can earn you critical moves, so it's great to be able to give Epindel: Blessing in Bloom a large amount of ignition stacks.",
+        "Carmen: Eternal Promise's buff target changes depending on its attack power, so Bunnygirl Charlotte and Epindel: Blessing in Bloom should place the one with higher attack power in the vanguard.",
+        "We recommend placing Bunnygirl Charlotte in the vanguard if possible, as Bunnygirl Charlotte has higher durability as she can heal herself."
       ],
       "arcanaDeckTitle": "Assassin basic formation",
       "journeyTrainingPoints": [
@@ -25745,13 +25745,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -25762,7 +25762,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -25779,13 +25779,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -25796,7 +25796,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -25811,7 +25811,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -25828,7 +25828,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -25846,7 +25846,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -25868,7 +25868,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Form 2 or more Sun Attributes",
           "imageUrl": "",
           "paragraphs": [
-            "Each time a Sun Attribute ally acts, an ignition stack is granted, so if there are three or more Sun Attribute characters, including Bunny Charles, you can use the powerful Ultimate Skill once every two turns.",
+            "Each time a Sun Attribute ally acts, an ignition stack is granted, so if there are three or more Sun Attribute characters, including Bunnygirl Charlotte, you can use the powerful Ultimate Skill once every two turns.",
             "However, even two people can use the Ultimate Skill at regular intervals, so it won't be a big problem even if three people are difficult to organize."
           ]
         },
@@ -25878,7 +25878,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/173449_aked2.webp",
           "paragraphs": [
             "A new Special Potential added in Rescue Journey Hard is ``When using a Basic Skill, there is a 25% chance to generate a random ally's Basic Skill on a random target.''",
-            "Bunny Charles has the advantage of being able to repeatedly hit Basic Skill, making it easy to trigger this effect. Since it can only be triggered once per turn, it cannot be triggered twice in a row, but it is still powerful.",
+            "Bunnygirl Charlotte has the advantage of being able to repeatedly hit Basic Skill, making it easy to trigger this effect. Since it can only be triggered once per turn, it cannot be triggered twice in a row, but it is still powerful.",
             "Also, this potential is conditional on obtaining two Helms (Crit Rate), which naturally allows you to increase your Crit Rate by 10% or more, so in that sense it is a powerful potential.",
             "Click here for the rescue journey hard strategy"
           ]
@@ -25888,8 +25888,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Auto is also excellent",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183513_gxh5w.webp",
           "paragraphs": [
-            "Bunny Charles is also excellent in auto-battle, which automatically selects skills, and only uses his ultimate skill when the above conditions for removing the cooldown are met and the ignition level is 5.",
-            "Even in situations where you can defeat him with one more Ultimate Skill, it prioritizes normal attacks, which can be annoying depending on the situation, but in that case, you can just cancel auto for that timing.",
+            "Bunnygirl Charlotte is also excellent in auto-battle, which automatically selects skills, and only uses her ultimate skill when the above conditions for removing the cooldown are met and the ignition level is 5.",
+            "Even in situations where you can defeat her with one more Ultimate Skill, it prioritizes normal attacks, which can be annoying depending on the situation, but in that case, you can just cancel auto for that timing.",
             "However, since Special Skill has the highest priority, it should be noted that even if there are 5 stacks of ignition, Special Skill will be prioritized."
           ]
         }
@@ -26111,7 +26111,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "Crit Rate3%",
           "materials": [
             {
@@ -26172,7 +26172,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -26260,7 +26260,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -26361,7 +26361,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -26379,7 +26379,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -26398,20 +26398,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Sakieko Oki",
+        "cv": "Saeko Oki",
         "affiliation": "Knights of Monastir",
         "birthday": "October 20th",
         "height": "166cm",
         "origin": "Principality of Monastir",
-        "obtain": "Gacha (constant)",
-        "bio": "Leader of the Knights of Monastir. He aims to be a calm and dignified knight commander, but his cheerful and simple personality is holding him back."
+        "obtain": "Standard Observation",
+        "bio": "Leader of the Knights of Monastir. She aims to be a calm and dignified knight commander, but her cheerful and simple personality is holding her back."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "bunny-frey",
-    "name": "Bunny Frey",
+    "name": "Frey: Noble Princess",
     "title": "Knights of Monastir · Impact damage",
     "rarity": "SSR",
     "element": "Moon",
@@ -26420,7 +26420,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "A",
     "score": "0",
-    "summary": "Strong overall Crit Rate up for 3 turns\n└Easy to reuse with CT4 is also excellent · When 5 stacks of High Roller accumulate, Basic Skill damage increases by 100%. · By combining with Moon Attribute, the number of moves will increase due to the increase in Action Gauge and high rollers will accumulate more easily\n└Especially compatible with Bunny Claire(Great)",
+    "summary": "Strong overall Crit Rate up for 3 turns\n└Easy to reuse with CT4 is also excellent · When 5 stacks of High Roller accumulate, Basic Skill damage increases by 100%. · By combining with Moon Attribute, the number of moves will increase due to the increase in Action Gauge and high rollers will accumulate more easily\n└Especially compatible with Bunnygirl Claire(Great)",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 20480,
@@ -26454,12 +26454,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Frey's attack power increases by 15%.\nAt the start of Frey's turn, if his Cooling stack is at its maximum, he will inflict a High Roller (cannot be removed) on himself and consume all Cooling stacks.\nAt the start of the turn, if your High Roller (cannot be removed) is at maximum stack, it will not consume Cooling.\nAfter attacking Moon Attribute allies other than yourself, increase your own Action Gauge by 8% and cause yourself to become a High Roller (cannot be removed) once at 100%.",
+        "exactDescription": "Frey's attack power increases by 15%.\nAt the start of Frey's turn, if her Cooling stack is at its maximum, she will inflict a High Roller (cannot be removed) on herself and consume all Cooling stacks.\nAt the start of the turn, if your High Roller (cannot be removed) is at maximum stack, it will not consume Cooling.\nAfter attacking Moon Attribute allies other than yourself, increase your own Action Gauge by 8% and cause yourself to become a High Roller (cannot be removed) once at 100%.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "High roller (cannot be canceled)",
@@ -26489,12 +26489,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Frey uses all his strength to slap his opponent's impossible bet.\nGive yourself 1 Cooling stack.\nWhen used on your turn, if your High Roller (cannot be removed) is at maximum stack, force negotiation instead of refusing betting.\nForced Negotiation: Frey attacks with all his might against his opponent's impossible bet.\nWhen attacking, damage increases by 100%.\nAfter attacking, increase own Action Gauge by 30%, apply 1 Cooling stack to yourself, and remove High Roller (cannot be removed).",
+        "exactDescription": "Frey uses all her strength to slap her opponent's impossible bet.\nGive yourself 1 Cooling stack.\nWhen used on your turn, if your High Roller (cannot be removed) is at maximum stack, force negotiation instead of refusing betting.\nForced Negotiation: Frey attacks with all her might against her opponent's impossible bet.\nWhen attacking, damage increases by 100%.\nAfter attacking, increase own Action Gauge by 30%, apply 1 Cooling stack to yourself, and remove High Roller (cannot be removed).",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1 and damage increases by 20%.",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "High roller (cannot be canceled)",
@@ -26514,7 +26514,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "CT: 4 turns | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Frey bets all his chips and supports all allies.\nIncreases Crit Rate for all allies for 3 turns and grants 3 Cooling stacks to yourself at 100% each.\nAlso, an additional turn will occur for yourself.",
+        "exactDescription": "Frey bets all her chips and supports all allies.\nIncreases Crit Rate for all allies for 3 turns and grants 3 Cooling stacks to yourself at 100% each.\nAlso, an additional turn will occur for yourself.",
         "novaBurst": "After using a skill, recover 1 Toughness.",
         "tooltips": [
           {
@@ -26523,7 +26523,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "High roller (cannot be canceled)",
@@ -26566,7 +26566,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Crit Rate up",
@@ -26598,27 +26598,27 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "evalBullets": [
         "Strong overall Crit Rate up for 3 turns\n└Easy to reuse with CT4 is also excellent",
         "When 5 stacks of High Roller accumulate, Basic Skill damage increases by 100%.",
-        "By combining with Moon Attribute, the number of moves will increase due to the increase in Action Gauge and high rollers will accumulate more easily\n└Especially compatible with Bunny Claire(Great)"
+        "By combining with Moon Attribute, the number of moves will increase due to the increase in Action Gauge and high rollers will accumulate more easily\n└Especially compatible with Bunnygirl Claire(Great)"
       ],
       "partyTitle": "Caster organization",
       "recommendedParty": [
         {
           "slug": "bunny-frey",
-          "name": "Bunny Frey",
+          "name": "Frey: Noble Princess",
           "nameJp": "バニーフレイ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/181128_a531d.webp",
           "position": "BACK"
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
@@ -26632,9 +26632,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "The recommended caster formation is Bunny Frey, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
+        "The recommended caster formation is Frey: Noble Princess, who can give an overall Crit Rate of 30%, and Dana, who can give attack buffs to other allies, and can provide stable firepower to the entire enemy.",
         "If you want to focus on general attacks, we recommend replacing Dana with Luna, and if you want to focus on durability, use Lily.",
-        "If you have the time, Bunny Frey gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective."
+        "If you have the time, Frey: Noble Princess gives you a certain amount of leeway in Crit Rate, so if you prepare a destruction set, the firepower of the whole party will increase, so be selective."
       ],
       "arcanaDeckTitle": "Attacker basic formation",
       "journeyTrainingPoints": [
@@ -26648,7 +26648,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -26665,13 +26665,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -26682,13 +26682,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -26699,7 +26699,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -26708,7 +26708,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -26716,7 +26716,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -26731,7 +26731,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -26748,7 +26748,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -26766,7 +26766,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -26778,7 +26778,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Basic Skill Damage 100%",
           "imageUrl": "",
           "paragraphs": [
-            "Bunny Frey's Basic Skill is strengthened and damage is increased by 100% when the High Roller stack reaches its maximum.",
+            "Frey: Noble Princess's Basic Skill is strengthened and damage is increased by 100% when the High Roller stack reaches its maximum.",
             "Also, you can increase your own Action Gauge by attacking with an enhanced Basic Skill, so you want to collect high rollers as soon as possible so you can use the enhanced Basic Skills."
           ]
         },
@@ -26793,11 +26793,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "level": "h4",
-          "title": "Compatibility with Bunny Claire (Great)",
+          "title": "Compatibility with Bunnygirl Claire (Great)",
           "imageUrl": "",
           "paragraphs": [
-            "Bunny Claire has an additional attack with the effect of Unique Passive, so you can accumulate 2 stacks of Bunny Frey's High Roller in one go.",
-            "Bunny Frey's Crit Rate buff is also quite nice for Bunny Claire, so it would be a good idea to actively pair these two together."
+            "Bunnygirl Claire has an additional attack with the effect of Unique Passive, so you can accumulate 2 stacks of Frey: Noble Princess's High Roller in one go.",
+            "Frey: Noble Princess's Crit Rate buff is also quite nice for Bunnygirl Claire, so it would be a good idea to actively pair these two together."
           ]
         },
         {
@@ -26805,7 +26805,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Increased Action Gauge and additional turns make it a lot of work.",
           "imageUrl": "",
           "paragraphs": [
-            "Bunny Frey has Unique Passive and enhanced Basic Skill that increase Action Gauge, and Special Skill also has an additional turn, so it is very time consuming.",
+            "Frey: Noble Princess has Unique Passive and enhanced Basic Skill that increase Action Gauge, and Special Skill also has an additional turn, so it is very time consuming.",
             "The more moves you have, the easier it will be to accumulate high rollers, so I want to form a team with Moon Attribute allies and accumulate high rollers."
           ]
         },
@@ -27035,7 +27035,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -27096,7 +27096,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -27184,7 +27184,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -27327,8 +27327,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "July 7th",
         "height": "156cm",
         "origin": "Principality of Monastir",
-        "obtain": "Gacha (constant)",
-        "bio": "A girl who calls herself the quartermaster of the Monastir Knights. He has an eye for making money and comes up with business ideas one after another, but most of them end in failure."
+        "obtain": "Standard Observation",
+        "bio": "A girl who calls herself the quartermaster of the Monastir Knights. She has an eye for making money and comes up with business ideas one after another, but most of them end in failure."
       }
     }
   },
@@ -27336,7 +27336,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "roberta",
     "name": "Roberta",
-    "title": "Orbital search team · Impact damage",
+    "title": "Orbital Recon Team · Impact damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Striker",
@@ -27409,7 +27409,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -27440,7 +27440,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -27475,7 +27475,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -27510,7 +27510,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
@@ -27539,14 +27539,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "If you have a formation that will bring in firepower in a defensive battle, we recommend a formation that uses Fei and Roberta.",
-        "Rosalia, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
+        "Rosaria, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
         "For better or worse, it depends on Fei's counters, but on the other hand, depending on the activation of evasion, it has the potential to take revenge on any opponent, so it can be said to be the perfect formation to entrust defensive battles to.",
         "A party that employs both Fei and Roberta to gain damage through counter attacks.",
-        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that counterattack with all-out attacks.",
+        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that Revenge Attack with all-out attacks.",
         "Since you want to increase the number of times Fei is attacked, it is recommended that you do not attach pre-emptive defense to the defender and place Fei in the vanguard position.",
         "An anti-all attack formation that is useful against enemies that often use all-out attacks.",
         "Another good point is that Roberta's counter is very powerful and can be obtained with distributed characters and flash points, making it a low hurdle to obtain.",
-        "As a countermeasure against general attacks, I would like to use Ede's protection to reduce the damage taken by the attackers as much as possible, and use Dress Asherah to recover."
+        "As a countermeasure against general attacks, I would like to use Haydee's protection to reduce the damage taken by the attackers as much as possible, and use Asherah: Waltz of Starlight to recover."
       ],
       "arcanaDeckTitle": "Roberta organization",
       "journeyTrainingPoints": [
@@ -27559,7 +27559,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -27576,13 +27576,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -27593,13 +27593,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79576397",
           "targetSlug": "arcana-79576397",
-          "targetName": "Pioneer of Imaginary Numbers",
+          "targetName": "The Imaginary Pioneer",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -27610,13 +27610,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79808948",
           "targetSlug": "arcana-79808948",
-          "targetName": "A Sense of Responsibility Piled Up with Piles of Documents",
+          "targetName": "Responsibility Atop a Pile of Paperwork",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201813_3r618.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -27627,7 +27627,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -27642,7 +27642,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -27659,7 +27659,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -27677,7 +27677,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -27716,8 +27716,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Active as a meta for Lacy and others in Gauntlet",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/154754_bz14l.webp",
           "paragraphs": [
-            "Characters with powerful gauntlets such as Lacy and Emily often have full-scale attacks, and Roberta is also powerful as a counter to them.",
-            "Emily has an attribute advantage, and against Lacy and Dana's general attacks with debuffs, debuffs can be removed by removing debuffs, and the compatibility is quite good, so it is recommended to use it as a countermeasure against the above characters."
+            "Characters with powerful gauntlets such as Lacy and Emilly often have full-scale attacks, and Roberta is also powerful as a counter to them.",
+            "Emilly has an attribute advantage, and against Lacy and Dana's general attacks with debuffs, debuffs can be removed by removing debuffs, and the compatibility is quite good, so it is recommended to use it as a countermeasure against the above characters."
           ]
         },
         {
@@ -27963,7 +27963,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -28024,7 +28024,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -28112,7 +28112,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -28231,7 +28231,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -28251,20 +28251,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Keiko Watanabe",
-        "affiliation": "Orbital search team",
+        "affiliation": "Orbital Recon Team",
         "birthday": "November 20th",
         "height": "165cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "Leader of the orbital search team under Polaris. He works hard to become a great leader, and the stress that accumulates each time is released by drinking."
+        "obtain": "Standard Observation",
+        "bio": "Leader of the orbital search team under Polaris. She works hard to become a great leader, and the stress that accumulates each time is released by drinking."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "yanagi-mina",
-    "name": "Yanagi Mina",
-    "title": "Fenrir platoon · Impact damage",
+    "name": "Yoo Mina",
+    "title": "Fenrir Squad · Impact damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Ranger",
@@ -28272,7 +28272,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "A",
     "rerollTier": "B",
     "score": "0",
-    "summary": "Attacker that inflicts a lot of bleeding\n└No need to add Effect Hit · Increase your own firepower with attack buffs and Crit Rate buffs · There is no support effect from allies, so expect him to play an active role as a pure attacker.",
+    "summary": "Attacker that inflicts a lot of bleeding\n└No need to add Effect Hit · Increase your own firepower with attack buffs and Crit Rate buffs · There is no support effect from allies, so expect her to play an active role as a pure attacker.",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 20823,
@@ -28306,7 +28306,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Yanagi Mina's attack power increases by 15%.\nAfter Yanagi Mina attacks, her own attack power increases by 4%.\nCan be stacked up to 5 times.\nWhen a critical hit occurs, increase own Action Gauge by 15%.",
+        "exactDescription": "Yoo Mina's attack power increases by 15%.\nAfter Yoo Mina attacks, her own attack power increases by 4%.\nCan be stacked up to 5 times.\nWhen a critical hit occurs, increase own Action Gauge by 15%.",
         "novaBurst": "",
         "tooltips": []
       },
@@ -28337,7 +28337,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -28376,7 +28376,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -28411,7 +28411,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Bleeding",
@@ -28447,43 +28447,43 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "evalBullets": [
         "Attacker that inflicts a lot of bleeding\n└No need to add Effect Hit",
         "Increase your own firepower with attack buffs and Crit Rate buffs",
-        "There is no support effect from allies, so expect him to play an active role as a pure attacker."
+        "There is no support effect from allies, so expect her to play an active role as a pure attacker."
       ],
       "partyTitle": "Ranger formation",
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "yanagi-mina",
-          "name": "Yanagi Mina",
+          "name": "Yoo Mina",
           "nameJp": "ヤナギ・ミナ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/130558_c8vsj.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosalia at the center.",
-        "In the other slot, we are using Yanagi Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Lease, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
-        "Lu and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible."
+        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosaria at the center.",
+        "In the other slot, we are using Yoo Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Rhys, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
+        "Lugh and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible."
       ],
       "arcanaDeckTitle": "Ranger (all attack) formation",
       "journeyTrainingPoints": [
@@ -28496,7 +28496,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -28513,13 +28513,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -28530,22 +28530,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79865537",
           "targetSlug": "arcana-79865537",
-          "targetName": "The End Has the Face of a Girl",
+          "targetName": "The End Wears the Face of a Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             },
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -28556,7 +28556,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -28565,7 +28565,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -28573,7 +28573,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -28588,7 +28588,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -28605,7 +28605,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 4
@@ -28623,7 +28623,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -29136,7 +29136,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -29174,12 +29174,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Nana Mizuki",
-        "affiliation": "Fenrir platoon",
+        "affiliation": "Fenrir Squad",
         "birthday": "December 25th",
         "height": "168cm",
-        "origin": "Counter side",
-        "obtain": "Gacha (constant)",
-        "bio": "A mercenary from another world who was involved in an unexpected accident and ended up in Lavistar. He is cooperating with the leader in order to return to his original world."
+        "origin": "Counter:Side",
+        "obtain": "Standard Observation",
+        "bio": "A mercenary from another world who was involved in an unexpected accident and ended up in Lavistar. She is cooperating with the leader in order to return to her original world."
       }
     }
   },
@@ -29187,7 +29187,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "hilde",
     "name": "Hilde",
-    "title": "Fenrir platoon · Impact damage",
+    "title": "Fenrir Squad · Impact damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Defender",
@@ -29288,7 +29288,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -29335,7 +29335,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -29391,7 +29391,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -29451,14 +29451,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "BACK"
@@ -29466,15 +29466,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "If you want to survive in a defensive battle, we recommend a composition that employs two defenders and two healers.",
-        "Since Dress Asherah can provide firepower through Pincer Dual-Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
-        "Emily is also excellent as a defender, so we recommend using characters you already have.",
+        "Since Asherah: Waltz of Starlight can provide firepower through Cross Attacks, it is excellent in being able to reduce the opponent's strength while remaining durable, and in addition to that, it can destroy the party with lightning strikes on the stage.",
+        "Emilly is also excellent as a defender, so we recommend using characters you already have.",
         "If you have a formation that will bring in firepower in a defensive battle, we recommend a formation that uses Fei and Roberta.",
-        "Rosalia, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
+        "Rosaria, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
         "For better or worse, it depends on Fei's counters, but on the other hand, depending on the activation of evasion, it has the potential to take revenge on any opponent, so it can be said to be the perfect formation to entrust defensive battles to.",
-        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunny Charles.",
-        "Other attackers will want to use Tilia and Christel to increase their firepower, but if you want overall firepower, try switching to Muriel."
+        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunnygirl Charlotte.",
+        "Other attackers will want to use Tyria and Cristelle to increase their firepower, but if you want overall firepower, try switching to Muriel."
       ],
-      "arcanaDeckTitle": "Defender (preemptive defense) formation",
+      "arcanaDeckTitle": "Defender (Defend Forward) formation",
       "journeyTrainingPoints": [
         "Training that prioritizes physical strength is OK\n└No need to protect yourself as you have immunity",
         "Since it has a debuff, be aware of Effect Hit\n└Training is OK when you have time to take it.",
@@ -29491,7 +29491,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -29502,16 +29502,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             },
             {
@@ -29520,7 +29520,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             }
           ]
@@ -29528,7 +29528,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517786",
           "targetSlug": "arcana-79517786",
-          "targetName": "Satisfying Meal",
+          "targetName": "A Satisfying Meal",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
@@ -29543,7 +29543,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -29560,7 +29560,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 2
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -29578,7 +29578,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 2
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -29590,8 +29590,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "You can further increase the probability with your own arcana.",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/141416_kxubm.webp",
           "paragraphs": [
-            "With his Arcana \"Nostalgia's Counterattack\", he can further increase the probability of the above pre-emptive defense occurring.",
-            "Preemptive defense only activates once per turn, so increasing the probability too high will have little effect, but if you want to place more emphasis on preemptive defense, consider using it.",
+            "With her Arcana \"Nostalgia's Revenge Attack\", she can further increase the probability of the above pre-emptive defense occurring.",
+            "Defend Forward only activates once per turn, so increasing the probability too high will have little effect, but if you want to place more emphasis on Defend Forward, consider using it.",
             "By the way, if you adopt this arcana and develop characters other than Hilde, you will be able to use pre-emptive defense. (Defender Only) Nostalgia Strikes Back Review and Events"
           ]
         },
@@ -29600,7 +29600,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Does not respond to general attacks",
           "imageUrl": "",
           "paragraphs": [
-            "Preemptive defense only reacts to single enemy attacks, and does not activate against all attacks.",
+            "Defend Forward only reacts to single enemy attacks, and does not activate against all attacks.",
             "Since Hilde applies a barrier to all allies with Unique Passive, she can be expected to have some resistance to all attacks immediately after the battle starts, but other allies will need to take other countermeasures against continuous all attacks.",
             "Also, note that it will not activate when Hilde is in an abnormal state such as a break state, unconsciousness, or sleep."
           ]
@@ -29841,7 +29841,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -29897,7 +29897,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -29963,7 +29963,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -29985,7 +29985,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -30096,7 +30096,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -30146,19 +30146,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yoko Hikasa",
-        "affiliation": "Fenrir platoon",
+        "affiliation": "Fenrir Squad",
         "birthday": "Unknown",
         "height": "150cm",
-        "origin": "Counter side",
-        "obtain": "Gacha (constant)",
-        "bio": "A veteran who worked for a private military company. In another world, he was known as a radical commander who always insisted on a frontal breakthrough."
+        "origin": "Counter:Side",
+        "obtain": "Standard Observation",
+        "bio": "A veteran who worked for a private military company. In another world, she was known as a radical commander who always insisted on a frontal breakthrough."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "rosalia",
-    "name": "Rosalia",
+    "name": "Rosaria",
     "title": "Fallen Hawk · Elemental Damage",
     "rarity": "SSR",
     "element": "Chaos",
@@ -30201,7 +30201,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Rosalia's attack power increases by 15%.\nAfter Rosalia uses Ash Flame, the probability of inferno (cannot be removed) will increase by 20% in proportion to the turbulence stack attached to herself, and will be applied up to 5 times.\nAfter receiving an attack, your current HP will not fall below 40% and you will receive ATK Up for 3 turns.\nThe effect after being attacked only occurs once during the battle.",
+        "exactDescription": "Rosaria's attack power increases by 15%.\nAfter Rosaria uses Ash Flame, the probability of inferno (cannot be removed) will increase by 20% in proportion to the turbulence stack attached to herself, and will be applied up to 5 times.\nAfter receiving an attack, your current HP will not fall below 40% and you will receive ATK Up for 3 turns.\nThe effect after being attacked only occurs once during the battle.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -30241,7 +30241,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -30280,7 +30280,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Hellfire",
@@ -30335,7 +30335,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Turbulent",
-            "detail": "Damage deal to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Order Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -30371,21 +30371,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "rin",
-          "name": "Rin",
+          "name": "Lyn",
           "nameJp": "リン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
           "position": "FRONT"
@@ -30399,36 +30399,36 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "In strategy attack battles, Dress Asherah's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
+        "In strategy attack battles, Asherah: Waltz of Starlight's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
         "Since it is necessary to destroy half of the opponent's party with this one ally's action, it is recommended to use an all-out attack attacker who will not be hindered by pre-emptive defense in the three attacker slots.",
-        "Let's go on the offensive with Rosalia, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Rin, who can act twice in one turn.",
+        "Let's go on the offensive with Rosaria, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Lyn, who can act twice in one turn.",
         "Be careful of Roberta and Fei, who will counter your attacks.",
         "Roberta has an Action Gauge increase when countered, and when countered, she may interrupt her allies, so there is a risk that the party's strategy will be disrupted.",
         "There is no point worrying about Fei, so it would be safe to pray that she doesn't get evaded, or to fight a party that doesn't have these characters.",
         "If you have a formation that will bring in firepower in a defensive battle, we recommend a formation that uses Fei and Roberta.",
-        "Rosalia, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
+        "Rosaria, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
         "For better or worse, it depends on Fei's counters, but on the other hand, depending on the activation of evasion, it has the potential to take revenge on any opponent, so it can be said to be the perfect formation to entrust defensive battles to.",
-        "Dress Asherah may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Ede and Emily in the front line.",
-        "Since there is no healer, it is important to keep the barrier intact, but Ede and Emily's barriers have high durability, and Emily can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
-        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosalia and Bunny Charles.",
+        "Asherah: Waltz of Starlight may not work if the enemy counters depending on the number of attacks, so in that case it is recommended to use two defenders such as Haydee and Emilly in the front line.",
+        "Since there is no healer, it is important to keep the barrier intact, but Haydee and Emilly's barriers have high durability, and Emilly can be attached to others, so the ability to easily adjust the barrier's durability is also an excellent point.",
+        "As for the attackers, they will remain the same as usual, so let's use the characters that are growing, including Rosaria and Bunnygirl Charlotte.",
         "An anti-all attack formation that is useful against enemies that often use all-out attacks.",
         "Another good point is that Roberta's counter is very powerful and can be obtained with distributed characters and flash points, making it a low hurdle to obtain.",
-        "As a countermeasure against general attacks, I would like to use Ede's protection to reduce the damage taken by the attackers as much as possible, and use Dress Asherah to recover.",
-        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosalia at the center.",
-        "In the other slot, we are using Yanagi Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Lease, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
-        "Lu and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible."
+        "As a countermeasure against general attacks, I would like to use Haydee's protection to reduce the damage taken by the attackers as much as possible, and use Asherah: Waltz of Starlight to recover.",
+        "If you want to solidify your team with Rangers, we recommend creating a formation with Rosaria at the center.",
+        "In the other slot, we are using Yoo Mina, who can use bleeding to generate firepower, but there are many candidates, such as Bell Rhys, who has excellent debuffs such as silence and de-enhancement, and Lacy, who can also be used as a pseudo-tank.",
+        "Lugh and Lydia also have opportunities to play an active role in Cosmo Gate, so it would be a good idea to train them as widely as possible."
       ],
       "arcanaDeckTitle": "Ranger (all attack) formation",
       "journeyTrainingPoints": [
         "Let's train with priority on strength and concentration\n└Physical strength is the runner-up, and everything else is minimal.",
-        "Crit Rate is very important for attackers, so if 2 Strength tags are enough (such as when using 2 Strength Transcendence characters), it is also recommended to change Rosalia Arcana to Berlys Arcana or Bani Claire Lucana.",
+        "Crit Rate is very important for attackers, so if 2 Strength tags are enough (such as when using 2 Strength Transcendence characters), it is also recommended to change Rosaria Arcana to Berlys Arcana or Bani Claire Lucana.",
         "Crit Rate is the highest priority for potential, followed by Crit DMG, attack type, and speed."
       ],
       "substituteArcana": [
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -30445,13 +30445,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -30462,22 +30462,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79865537",
           "targetSlug": "arcana-79865537",
-          "targetName": "The End Has the Face of a Girl",
+          "targetName": "The End Wears the Face of a Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115036_zi6xg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             },
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -30488,7 +30488,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -30497,7 +30497,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -30505,7 +30505,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -30520,7 +30520,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -30537,7 +30537,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -30555,7 +30555,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -31045,7 +31045,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -31063,7 +31063,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -31086,16 +31086,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "affiliation": "Fallen Hawk",
         "birthday": "March 2nd",
         "height": "150cm",
-        "origin": "Counter side",
-        "obtain": "Gacha (constant)",
-        "bio": "He is a member of the \"Demon King of Qliphoth\" who controls fate, and is known as the Tyrant of the North. With just one swing of the sword, many stars were reduced to ashes."
+        "origin": "Counter:Side",
+        "obtain": "Standard Observation",
+        "bio": "She is a member of the \"Demon King of Qliphoth\" who controls fate, and is known as the Tyrant of the North. With just one swing of the sword, many stars were reduced to ashes."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "rin",
-    "name": "Rin",
+    "name": "Lyn",
     "title": "Fugetsudo · Slash Damage",
     "rarity": "SSR",
     "element": "Star",
@@ -31138,7 +31138,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Attack power increases by 15%.\nWhen Rin attacks, the attack power increases by 4% in proportion to the number of jump stacks given to itself, up to a maximum of 5 stacks.\nAfter using Phantom Sword Dance on your turn, if you are in Seifu (cannot be removed) state, the Cooldown of Phantom Sword Dance will be reduced by 1 turn.\nAfter using Seifu Meigetsu on your turn, if you are in Meigetsu (unremovable) state, Seifu Meigetsu's Cooldown will be reduced by 1 turn.",
+        "exactDescription": "Attack power increases by 15%.\nWhen Lyn attacks, the attack power increases by 4% in proportion to the number of jump stacks given to itself, up to a maximum of 5 stacks.\nAfter using Phantom Sword Dance on your turn, if you are in Seifu (cannot be removed) state, the Cooldown of Phantom Sword Dance will be reduced by 1 turn.\nAfter using Seifu Meigetsu on your turn, if you are in Meigetsu (unremovable) state, Seifu Meigetsu's Cooldown will be reduced by 1 turn.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -31178,7 +31178,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Meigetsu",
@@ -31221,7 +31221,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -31272,7 +31272,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -31311,21 +31311,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "rin",
-          "name": "Rin",
+          "name": "Lyn",
           "nameJp": "リン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
           "position": "FRONT"
@@ -31339,18 +31339,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "In strategy attack battles, Dress Asherah's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
+        "In strategy attack battles, Asherah: Waltz of Starlight's ability to act fastest and pull up allies with her ultimate skill's Action Gauge reduction is extremely powerful.",
         "Since it is necessary to destroy half of the opponent's party with this one ally's action, it is recommended to use an all-out attack attacker who will not be hindered by pre-emptive defense in the three attacker slots.",
-        "Let's go on the offensive with Rosalia, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Rin, who can act twice in one turn.",
+        "Let's go on the offensive with Rosaria, who has high firepower, as well as Luna, who can apply a debuff to all attacks, and Lyn, who can act twice in one turn.",
         "Be careful of Roberta and Fei, who will counter your attacks.",
         "Roberta has an Action Gauge increase when countered, and when countered, she may interrupt her allies, so there is a risk that the party's strategy will be disrupted.",
         "There is no point worrying about Fei, so it would be safe to pray that she doesn't get evaded, or to fight a party that doesn't have these characters.",
-        "As for the composition dyed with Star Attribute, we recommend a composition centered around Swimsuit Smile, and we would like to use Ede for the durability frame.",
-        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Rin, who can pass jumping stacks, but there are multiple potential substitutes, such as Yanagi Mina, who is excellent as an attacker, Bell Lease, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
+        "As for the composition dyed with Star Attribute, we recommend a composition centered around Smile: Sunshine Cat, and we would like to use Haydee for the durability frame.",
+        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Lyn, who can pass jumping stacks, but there are multiple potential substitutes, such as Yoo Mina, who is excellent as an attacker, Bell Rhys, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
         "Therefore, it is recommended to hire an attacker who is well-developed among the characters you own.",
-        "If you want to solidify your team with strikers, we recommend creating a formation centered around Rin and Bunny Claire.",
-        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tilia, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
-        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Dress Asherah with something like Tilia."
+        "If you want to solidify your team with strikers, we recommend creating a formation centered around Lyn and Bunnygirl Claire.",
+        "Both are very good attackers, so they can be used in a wide range of stages, but if the enemy is a defender, change to Tyria, and if the enemy has multiple general attacks, change to Roberta, etc., and adjust accordingly.",
+        "Also, if you don't need durability due to battle environment buffs, etc., we recommend replacing Asherah: Waltz of Starlight with something like Tyria."
       ],
       "arcanaDeckTitle": "Striker formation",
       "journeyTrainingPoints": [
@@ -31363,16 +31363,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -31380,7 +31380,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -31397,13 +31397,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -31414,7 +31414,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -31423,7 +31423,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -31431,7 +31431,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -31446,7 +31446,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -31463,7 +31463,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -31481,7 +31481,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -31705,7 +31705,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -31766,7 +31766,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -31854,7 +31854,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -31973,7 +31973,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -31996,9 +31996,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "affiliation": "Fugetsudo",
         "birthday": "February 24th",
         "height": "168cm",
-        "origin": "Eastern continent",
-        "obtain": "Gacha (constant)",
-        "bio": "Fugetsudo's children's club teacher. Because he has taught manners and martial arts to children, he sometimes acts toward adults the same way he would treat children."
+        "origin": "Eastern Continent",
+        "obtain": "Standard Observation",
+        "bio": "Fugetsudo's children's club teacher. Because she has taught manners and martial arts to children, she sometimes acts toward adults the same way she would treat children."
       }
     }
   },
@@ -32014,7 +32014,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "S",
     "score": "0",
-    "summary": "Counter attack attacker with constant evasion rate of 50%\n└ Activates trigger skill on successful evasion · Trigger skill can be hit repeatedly with CT0\n└Be careful of the condition of once per turn · His upward performance when he continues to succeed in evasion is top class among all characters\n└On the other hand, when his counterattack does not occur, it is not good · Possesses a guaranteed hit that can ignore pre-emptive defense\n└Seems to be an essential character in strategy · It is strong that you can aim for an upside with content such as Cosmo Gate that you can try many times.",
+    "summary": "Counter attack attacker with constant evasion rate of 50%\n└ Activates trigger skill on successful evasion · Trigger skill can be hit repeatedly with CT0\n└Be careful of the condition of once per turn · Her upward performance when she continues to succeed in evasion is top class among all characters\n└On the other hand, when her Revenge Attack does not occur, it is not good · Possesses a guaranteed hit that can ignore pre-emptive defense\n└Seems to be an essential character in strategy · It is strong that you can aim for an upside with content such as Cosmo Gate that you can try many times.",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 20480,
@@ -32084,7 +32084,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Evasion rate increased",
@@ -32123,7 +32123,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Down",
@@ -32166,7 +32166,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Evasion rate increased",
@@ -32206,7 +32206,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "evalBullets": [
         "Counter attack attacker with constant evasion rate of 50%\n└ Activates trigger skill on successful evasion",
         "Trigger skill can be hit repeatedly with CT0\n└Be careful of the condition of once per turn",
-        "His upward performance when he continues to succeed in evasion is top class among all characters\n└On the other hand, when his counterattack does not occur, it is not good",
+        "Her upward performance when she continues to succeed in evasion is top class among all characters\n└On the other hand, when her Revenge Attack does not occur, it is not good",
         "Possesses a guaranteed hit that can ignore pre-emptive defense\n└Seems to be an essential character in strategy",
         "It is strong that you can aim for an upside with content such as Cosmo Gate that you can try many times."
       ],
@@ -32214,7 +32214,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "rosalia",
-          "name": "Rosalia",
+          "name": "Rosaria",
           "nameJp": "ロザリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
           "position": "BACK"
@@ -32243,18 +32243,18 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "If you have a formation that will bring in firepower in a defensive battle, we recommend a formation that uses Fei and Roberta.",
-        "Rosalia, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
+        "Rosaria, who has high overall firepower and HP +40% Guts, is also excellent, so protecting these three with Hilde's pre-emptive defense is quite powerful.",
         "For better or worse, it depends on Fei's counters, but on the other hand, depending on the activation of evasion, it has the potential to take revenge on any opponent, so it can be said to be the perfect formation to entrust defensive battles to.",
         "A party that employs both Fei and Roberta to gain damage through counter attacks.",
-        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that counterattack with all-out attacks.",
+        "Although it depends on the battle environment buff, this party is quite effective against enemies like Demoligis: Beta that Revenge Attack with all-out attacks.",
         "Since you want to increase the number of times Fei is attacked, it is recommended that you do not attach pre-emptive defense to the defender and place Fei in the vanguard position.",
-        "It is recommended that the Assassin organization be centered around Bunny Charles, with Kira as the hidden personnel and Ede as the tank.",
-        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kira to Emily or Dress Asherah.",
+        "It is recommended that the Assassin organization be centered around Bunnygirl Charlotte, with Kyra as the hidden personnel and Haydee as the tank.",
+        "If the enemy has high firepower or attacks frequently on all targets, it would be a good idea to change Kyra to Emilly or Asherah: Waltz of Starlight.",
         "The way you fight will change greatly depending on whether Fei has a counter or not, so be careful when operating it manually.",
         "A formation that combines Fei, which increases evasion rate by 50%, and Amora, which can repeatedly decrease accuracy rate by 30%.",
         "In order to inevitably focus your attacks on Fei, use Gwen, who has a stealth ability that cannot be canceled, and hit as many counters as possible.",
         "I'm a little worried about Fei's durability, so I recommend setting her hard potential to XX2 so she can self-heal.",
-        "Dress Asherah is also recommended for the Bride Carmen slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks."
+        "Asherah: Waltz of Starlight is also recommended for the Carmen: Eternal Promise slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks."
       ],
       "arcanaDeckTitle": "Fei organization",
       "journeyTrainingPoints": [
@@ -32266,13 +32266,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "80012824",
               "slug": "arcana-80012824",
-              "name": "Weakness Correction Custom Training",
+              "name": "Customized Training to Cover Weaknesses",
               "nameJp": "弱点補完カスタム特訓",
               "rarity": "SSR",
               "statTag": "Power",
@@ -32283,13 +32283,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79576397",
           "targetSlug": "arcana-79576397",
-          "targetName": "Pioneer of Imaginary Numbers",
+          "targetName": "The Imaginary Pioneer",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -32300,7 +32300,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -32309,7 +32309,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -32323,7 +32323,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 2
@@ -32341,7 +32341,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -32581,7 +32581,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -32642,7 +32642,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -32730,7 +32730,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -32872,16 +32872,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "affiliation": "Wanderer",
         "birthday": "October 18th",
         "height": "168cm",
-        "origin": "Eastern continent",
-        "obtain": "Gacha (constant)",
-        "bio": "A wandering samurai who once belonged to Fugetsu-do, but stole the secret book \"Tenmonsho\" and escaped. His goal is to complete the fantastic military feat ``Tenmon'' and spread its charm to the world."
+        "origin": "Eastern Continent",
+        "obtain": "Standard Observation",
+        "bio": "A wandering samurai who once belonged to Fugetsu-do, but stole the secret book \"Tenmonsho\" and escaped. Her goal is to complete the fantastic military feat ``Tenmon'' and spread its charm to the world."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "tilia",
-    "name": "Tilia",
+    "name": "Tyria",
     "title": "Executor · Slash Damage",
     "rarity": "SSR",
     "element": "Sun",
@@ -32890,7 +32890,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "A",
     "score": "0",
-    "summary": "Attacker who produces firepower with Special Skill\n└ Increases maximum firepower with defense penetration and damage buff\n└ Usability is similar to Rosalia · Inducing Special Skill with Basic Skill\nSituations are limited as the unique debuff is at maximum stack. · Unique in having an additional turn in Nova Burst · The unique debuff doesn't depend on Effect Hit or Effect RES, so it's great that you don't have to worry about accidents. · Demonstrates top-class strength against defenders",
+    "summary": "Attacker who produces firepower with Special Skill\n└ Increases maximum firepower with defense penetration and damage buff\n└ Usability is similar to Rosaria · Inducing Special Skill with Basic Skill\nSituations are limited as the unique debuff is at maximum stack. · Unique in having an additional turn in Nova Burst · The unique debuff doesn't depend on Effect Hit or Effect RES, so it's great that you don't have to worry about accidents. · Demonstrates top-class strength against defenders",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 21573,
@@ -32924,7 +32924,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Tilia's attack power increases by 15%.\nWhen Tilia activates Prelude of the End or Requiem of Tragedy, if the enemy has Thorns of Tragedy (cannot be removed), it will penetrate their defense by 25%.\nAfter activating the Prelude of the End, cause 100% of the enemy to inflict Thorns of Tragedy (cannot be removed).\nAfter activating Prelude of the End, if the enemy's Thorn of Tragedy (cannot be removed) is at maximum stack, activate Requiem of Tragedy.",
+        "exactDescription": "Tyria's attack power increases by 15%.\nWhen Tyria activates Prelude of the End or Requiem of Tragedy, if the enemy has Thorns of Tragedy (cannot be removed), it will penetrate their defense by 25%.\nAfter activating the Prelude of the End, cause 100% of the enemy to inflict Thorns of Tragedy (cannot be removed).\nAfter activating Prelude of the End, if the enemy's Thorn of Tragedy (cannot be removed) is at maximum stack, activate Requiem of Tragedy.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -32960,7 +32960,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Thorns of Tragedy (Cannot be removed)",
@@ -32999,7 +32999,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -33038,7 +33038,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Thorns of Tragedy (Cannot be removed)",
@@ -33072,7 +33072,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaTier": "SS",
       "appMediaRerollTier": "A",
       "evalBullets": [
-        "Attacker who produces firepower with Special Skill\n└ Increases maximum firepower with defense penetration and damage buff\n└ Usability is similar to Rosalia",
+        "Attacker who produces firepower with Special Skill\n└ Increases maximum firepower with defense penetration and damage buff\n└ Usability is similar to Rosaria",
         "Inducing Special Skill with Basic Skill\nSituations are limited as the unique debuff is at maximum stack.",
         "Unique in having an additional turn in Nova Burst",
         "The unique debuff doesn't depend on Effect Hit or Effect RES, so it's great that you don't have to worry about accidents.",
@@ -33082,7 +33082,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "christel",
-          "name": "Christel",
+          "name": "Cristelle",
           "nameJp": "クリステル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/190200_51vpg.webp",
           "position": "BACK"
@@ -33096,22 +33096,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "FRONT"
         },
         {
           "slug": "tilia",
-          "name": "Tilia",
+          "name": "Tyria",
           "nameJp": "ティリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115944_7kujw.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunny Charles.",
-        "Other attackers will want to use Tilia and Christel to increase their firepower, but if you want overall firepower, try switching to Muriel."
+        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunnygirl Charlotte.",
+        "Other attackers will want to use Tyria and Cristelle to increase their firepower, but if you want overall firepower, try switching to Muriel."
       ],
       "arcanaDeckTitle": "Striker formation",
       "journeyTrainingPoints": [
@@ -33123,16 +33123,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -33140,7 +33140,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -33157,13 +33157,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -33174,7 +33174,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -33183,7 +33183,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -33191,7 +33191,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -33206,7 +33206,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -33223,7 +33223,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 3
@@ -33241,7 +33241,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -33481,7 +33481,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -33542,7 +33542,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -33630,7 +33630,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -33761,7 +33761,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -33773,15 +33773,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "Unknown",
         "height": "163cm",
         "origin": "Unknown",
-        "obtain": "Gacha (constant)",
-        "bio": "A difficult girl from Monastir. He usually speaks in a high-handed and elegant manner, but when he gets angry, he sometimes speaks in rough and violent ways."
+        "obtain": "Standard Observation",
+        "bio": "A difficult girl from Monastir. She usually speaks in a high-handed and elegant manner, but when she gets angry, she sometimes speaks in rough and violent ways."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "bride-carmen",
-    "name": "Bride Carmen",
+    "name": "Carmen: Eternal Promise",
     "title": "Knights of Monastir · Impact damage",
     "rarity": "SSR",
     "element": "Moon",
@@ -33790,7 +33790,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "0",
-    "summary": "Supporter who protects allies even outside of his own turn with trigger skills\n└Targets allies with the highest attack power · The recovery performance of Nova Burst and Ultimate Skill is high, and the single recovery performance is top class\n└Basic Skill effect can also recover the entire body · It is ideal to increase the number of moves by increasing the Action Gauge and recover the CT of the trigger skill as quickly as possible\n└It is also excellent to have multiple ways to increase the Action Gauge. · You can give cooling to Moon Attribute allies\n└Compatibility with characters that require cooling such as Bunny Claire and Bunny Frey (Great)",
+    "summary": "Supporter who protects allies even outside of her own turn with trigger skills\n└Targets allies with the highest attack power · The recovery performance of Nova Burst and Ultimate Skill is high, and the single recovery performance is top class\n└Basic Skill effect can also recover the entire body · It is ideal to increase the number of moves by increasing the Action Gauge and recover the CT of the trigger skill as quickly as possible\n└It is also excellent to have multiple ways to increase the Action Gauge. · You can give cooling to Moon Attribute allies\n└Compatibility with characters that require cooling such as Bunnygirl Claire and Frey: Noble Princess (Great)",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 25109,
@@ -33883,7 +33883,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Pledge of love",
@@ -33935,7 +33935,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -33966,7 +33966,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Pledge of love",
@@ -34000,23 +34000,23 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaTier": "SSS",
       "appMediaRerollTier": "SS",
       "evalBullets": [
-        "Supporter who protects allies even outside of his own turn with trigger skills\n└Targets allies with the highest attack power",
+        "Supporter who protects allies even outside of her own turn with trigger skills\n└Targets allies with the highest attack power",
         "The recovery performance of Nova Burst and Ultimate Skill is high, and the single recovery performance is top class\n└Basic Skill effect can also recover the entire body",
         "It is ideal to increase the number of moves by increasing the Action Gauge and recover the CT of the trigger skill as quickly as possible\n└It is also excellent to have multiple ways to increase the Action Gauge.",
-        "You can give cooling to Moon Attribute allies\n└Compatibility with characters that require cooling such as Bunny Claire and Bunny Frey (Great)"
+        "You can give cooling to Moon Attribute allies\n└Compatibility with characters that require cooling such as Bunnygirl Claire and Frey: Noble Princess (Great)"
       ],
       "partyTitle": "PVE strongest formation",
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
@@ -34041,22 +34041,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "In addition to the high firepower of Amora's Basic Skill, she can also deal high damage with her Special Skill, making her an excellent compatibility with Professor M.",
         "Two people can provide more than enough firepower, so I want to use the other two as supporters to support the two attackers so they don't get destroyed.",
         "In particular, these two supporters can also provide indirect firepower support by increasing their Action Gauge, so overall it can be said that this is a powerful party that requires a lot of work.",
-        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunny Claire's Basic Skill → Special trigger.",
-        "Bunny Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
-        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emily as another attacker.",
+        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunnygirl Claire's Basic Skill → Special trigger.",
+        "Bunnygirl Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
+        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emilly as another attacker.",
         "If you can tolerate the luck factor, adding Fei will increase the firepower during the upswing, but if you want stability, this formation is recommended, so consult with your heart.",
-        "A formation that uses the powerful Bride Epindel against enemies with barriers.",
-        "Dress Asherah is a Pincer Dual-Attack, and Bunny Charles is a basic trigger that can earn you critical moves, so it's great to be able to give Bride Epindel a large amount of ignition stacks.",
-        "Bride Carmen's buff target changes depending on its attack power, so Bunny Charles and Bride Epindel should place the one with higher attack power in the vanguard.",
-        "We recommend placing Bunny Charles in the vanguard if possible, as Bunny Charles has higher durability as he can heal himself.",
-        "A formation consisting of three highly durable members: Bride Carmen, Dress Asherah, and Ede, plus one attacker.",
-        "Basically, the attacker can be anyone, but it will be more stable if you assemble a character with some kind of durability, such as Bunny Charles who can heal himself, Rosalia who has guts, or Lacy who can recover after being hit.",
+        "A formation that uses the powerful Epindel: Blessing in Bloom against enemies with barriers.",
+        "Asherah: Waltz of Starlight is a Cross Attack, and Bunnygirl Charlotte is a basic trigger that can earn you critical moves, so it's great to be able to give Epindel: Blessing in Bloom a large amount of ignition stacks.",
+        "Carmen: Eternal Promise's buff target changes depending on its attack power, so Bunnygirl Charlotte and Epindel: Blessing in Bloom should place the one with higher attack power in the vanguard.",
+        "We recommend placing Bunnygirl Charlotte in the vanguard if possible, as Bunnygirl Charlotte has higher durability as she can heal herself.",
+        "A formation consisting of three highly durable members: Carmen: Eternal Promise, Asherah: Waltz of Starlight, and Haydee, plus one attacker.",
+        "Basically, the attacker can be anyone, but it will be more stable if you assemble a character with some kind of durability, such as Bunnygirl Charlotte who can heal herself, Rosaria who has guts, or Lacy who can recover after being hit.",
         "A formation that combines Fei, which increases evasion rate by 50%, and Amora, which can repeatedly decrease accuracy rate by 30%.",
         "In order to inevitably focus your attacks on Fei, use Gwen, who has a stealth ability that cannot be canceled, and hit as many counters as possible.",
         "I'm a little worried about Fei's durability, so I recommend setting her hard potential to XX2 so she can self-heal.",
-        "Dress Asherah is also recommended for the Bride Carmen slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks."
+        "Asherah: Waltz of Starlight is also recommended for the Carmen: Eternal Promise slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks."
       ],
-      "arcanaDeckTitle": "Bride Carmen organization",
+      "arcanaDeckTitle": "Carmen: Eternal Promise organization",
       "journeyTrainingPoints": [
         "We recommend training that prioritizes physical fitness first, followed by training for patience.",
         "I'm not good at producing firepower, so the minimum amount of power is OK.",
@@ -34067,25 +34067,25 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79517750",
               "slug": "arcana-79517750",
-              "name": "Princess Takes the Throne",
+              "name": "The Princess Ascends the Throne",
               "nameJp": "姫、王位に就く",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp"
             },
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -34093,13 +34093,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "80139832",
               "slug": "arcana-80139832",
-              "name": "Death to Flowers",
+              "name": "Death for the Flowers",
               "nameJp": "花々に死を",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -34116,7 +34116,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -34127,7 +34127,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -34136,7 +34136,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -34150,7 +34150,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -34168,7 +34168,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 1
@@ -34180,7 +34180,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "The amount of recovery is extremely high",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/103255_muxln.webp",
           "paragraphs": [
-            "Bride Carmen's overall recovery amount is extremely high, and she is powerful because she can rebuild her allies even if their HP is reduced.",
+            "Carmen: Eternal Promise's overall recovery amount is extremely high, and she is powerful because she can rebuild her allies even if their HP is reduced.",
             "Although it relies heavily on single-target recovery, Nova Burst can sometimes recover allies whose HP is currently low, so it doesn't feel like that much of an inconvenience.",
             "If you consider that it can provide over 10,000 recovery amounts every turn, it can be said that it has exceptional performance as a supporter."
           ]
@@ -34190,7 +34190,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Support is possible even if it is not your turn",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/152243_adf81.webp",
           "paragraphs": [
-            "Bride Carmen has a trigger skill, and when an ally with a unique buff is attacked, she activates the skill even if it's not her turn, and protects her ally.",
+            "Carmen: Eternal Promise has a trigger skill, and when an ally with a unique buff is attacked, she activates the skill even if it's not her turn, and protects her ally.",
             "The effect is HP recovery and barrier for a single ally, and an increase in Action Gauge for both the ally and yourself.It is excellent because it not only supports durability, but also supports the number of moves by increasing Action Gauge.",
             "Since the skill CT is 2 at the shortest, it is difficult to fire repeatedly, but thanks to the increase in Action Gauge, it will be easier to earn the number of actions, so it will not feel that difficult to use."
           ]
@@ -34200,7 +34200,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Full recovery when using Basic Skill",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/152156_xtjak.webp",
           "paragraphs": [
-            "Bride Carmen is also powerful because it recovers the HP of all allies when attacking with Basic Skill.",
+            "Carmen: Eternal Promise is also powerful because it recovers the HP of all allies when attacking with Basic Skill.",
             "Although the recovery multiplier is modest at first, when the cooling is accumulated to the maximum stack, the amount of recovery becomes considerable, and combined with the number of moves it takes, it increases the HP recovery performance.",
             "It's a little hard to understand from the character's skill description, but please note that the cooling stack is consumed, so the increase in recovery amount when the cooling stack is at its maximum is temporary."
           ]
@@ -34230,7 +34230,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132956_btjsd.webp",
           "paragraphs": [
             "The Special Potential that can be acquired through your own Arcana, which was implemented at the same time, is good at supplying Nova Force, so by combining them, you can continuously heal your allies.",
-            "In endurance formations where Bride Carmen is active, lack of Nova Force can be fatal, so it is an essential arcana for Bride Carmen, so don't forget to draw it.",
+            "In endurance formations where Carmen: Eternal Promise is active, lack of Nova Force can be fatal, so it is an essential arcana for Carmen: Eternal Promise, so don't forget to draw it.",
             "Evaluation and events during a lazy afternoon"
           ]
         },
@@ -34240,7 +34240,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/144117_kyj74.webp",
           "paragraphs": [
             "Although its recovery performance is extremely high, it is important to note that it can only remove debuffs from a single ally.",
-            "It is difficult to deal with opponents who apply multiple debuffs to the entire body with Bride Carmen alone, so try using it in conjunction with other debuff removal characters or characters with immunity."
+            "It is difficult to deal with opponents who apply multiple debuffs to the entire body with Carmen: Eternal Promise alone, so try using it in conjunction with other debuff removal characters or characters with immunity."
           ]
         },
         {
@@ -34470,7 +34470,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -34526,7 +34526,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -34592,7 +34592,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -34614,7 +34614,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -34755,7 +34755,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -34779,16 +34779,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "August 11th",
         "height": "168cm",
         "origin": "Principality of Monastir",
-        "obtain": "Limited Pickup Observation Gacha",
-        "bio": "Vice-commander of the Knights of the Principality of Monastir. No matter how difficult the situation, he is a shield for the knights who never forgets to smile."
+        "obtain": "Limited Pickup Observation",
+        "bio": "Vice-commander of the Knights of the Principality of Monastir. No matter how difficult the situation, she is a shield for the knights who never forgets to smile."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "bride-epindel",
-    "name": "Bride Epindel",
-    "title": "Orlan family · Slash Damage",
+    "name": "Epindel: Blessing in Bloom",
+    "title": "House Orlan · Slash Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Caster",
@@ -34796,7 +34796,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "S",
     "score": "0",
-    "summary": "Super high damage buff of 150% to barrier holders\n└In addition, it can be strongly applied to barrier holders such as Action Gauge reduction · His skill multipliers are excellent across the board and he is simply powerful as an attacker. · Grant an additional turn with Special Skill when the ignition stack is at maximum\n└The difficulty of applying the ignition stack itself is not high, but you need to wait 2 turns including the additional turn. · Nova Burst is a 20% damage increase type, so it can't make that much of a difference.",
+    "summary": "Super high damage buff of 150% to barrier holders\n└In addition, it can be strongly applied to barrier holders such as Action Gauge reduction · Her skill multipliers are excellent across the board and she is simply powerful as an attacker. · Grant an additional turn with Special Skill when the ignition stack is at maximum\n└The difficulty of applying the ignition stack itself is not high, but you need to wait 2 turns including the additional turn. · Nova Burst is a 20% damage increase type, so it can't make that much of a difference.",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 21080,
@@ -34830,7 +34830,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Epindel's attack power increases by 15%.\nEpindel gives himself one ignition stack when an ally other than himself receives a critical hit.\nAt the start of each Sun Attribute ally's turn, each grant 2 Ignition stacks at 100%.",
+        "exactDescription": "Epindel's attack power increases by 15%.\nEpindel gives herself one ignition stack when an ally other than herself receives a critical hit.\nAt the start of each Sun Attribute ally's turn, each grant 2 Ignition stacks at 100%.",
         "novaBurst": "",
         "tooltips": []
       },
@@ -34935,7 +34935,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaRerollTier": "S",
       "evalBullets": [
         "Super high damage buff of 150% to barrier holders\n└In addition, it can be strongly applied to barrier holders such as Action Gauge reduction",
-        "His skill multipliers are excellent across the board and he is simply powerful as an attacker.",
+        "Her skill multipliers are excellent across the board and she is simply powerful as an attacker.",
         "Grant an additional turn with Special Skill when the ignition stack is at maximum\n└The difficulty of applying the ignition stack itself is not high, but you need to wait 2 turns including the additional turn.",
         "Nova Burst is a 20% damage increase type, so it can't make that much of a difference."
       ],
@@ -34943,57 +34943,57 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bride-epindel",
-          "name": "Bride Epindel",
+          "name": "Epindel: Blessing in Bloom",
           "nameJp": "花嫁エピンデル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/151138_sphtu.webp",
           "position": "BACK"
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "FRONT"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
         },
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "A formation that uses the powerful Bride Epindel against enemies with barriers.",
-        "Dress Asherah is a Pincer Dual-Attack, and Bunny Charles is a basic trigger that can earn you critical moves, so it's great to be able to give Bride Epindel a large amount of ignition stacks.",
-        "Bride Carmen's buff target changes depending on its attack power, so Bunny Charles and Bride Epindel should place the one with higher attack power in the vanguard.",
-        "We recommend placing Bunny Charles in the vanguard if possible, as Bunny Charles has higher durability as he can heal himself."
+        "A formation that uses the powerful Epindel: Blessing in Bloom against enemies with barriers.",
+        "Asherah: Waltz of Starlight is a Cross Attack, and Bunnygirl Charlotte is a basic trigger that can earn you critical moves, so it's great to be able to give Epindel: Blessing in Bloom a large amount of ignition stacks.",
+        "Carmen: Eternal Promise's buff target changes depending on its attack power, so Bunnygirl Charlotte and Epindel: Blessing in Bloom should place the one with higher attack power in the vanguard.",
+        "We recommend placing Bunnygirl Charlotte in the vanguard if possible, as Bunnygirl Charlotte has higher durability as she can heal herself."
       ],
       "arcanaDeckTitle": "Caster organization",
       "journeyTrainingPoints": [
         "Training that prioritizes strength is OK",
         "It will affect the grant rate of Action Gauge reduction, so be sure to concentrate to some extent.",
-        "For Stellar Archive, it is safe to have Power +1 Body Power +1\n└If you are aiming for an upside, you can also make Body Power +2",
+        "For Stellar Archive, it is safe to have Power +1 Health +1\n└If you are aiming for an upside, you can also make Health +2",
         "Potential is recommended in order of Crit Rate, followed by Speed, Attack Power, Crit DMG, and Effect Hit."
       ],
       "substituteArcana": [
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -35004,7 +35004,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -35021,13 +35021,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -35038,7 +35038,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -35047,7 +35047,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -35055,7 +35055,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -35070,7 +35070,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -35087,7 +35087,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 2
@@ -35105,7 +35105,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -35309,7 +35309,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/125956_tjo8r.webp",
         "rank": "B",
         "rankNote": "(Solid Upgrade)",
-        "effect": "Grants 5 Ignition Stacks at the start of battle, and 1 Ignition Stack to himself at the start of his turn. When using Bouquet Toss, cause chain damage to the enemy proportional to the attack power of your ignition stack. Applies to up to 5 items."
+        "effect": "Grants 5 Ignition Stacks at the start of battle, and 1 Ignition Stack to herself at the start of her turn. When using Bouquet Toss, cause chain damage to the enemy proportional to the attack power of your ignition stack. Applies to up to 5 items."
       },
       "resonancePotentials": [
         {
@@ -35345,7 +35345,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -35406,7 +35406,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -35494,7 +35494,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -35613,7 +35613,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -35633,12 +35633,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Saki Miyashita",
-        "affiliation": "Orlan family",
+        "affiliation": "House Orlan",
         "birthday": "August 18th",
         "height": "165cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "The next head of the Orlan family. Asherah and I are childhood friends. In many ways, he is conscious of Asherah and has a fierce rivalry with him."
+        "obtain": "Standard Observation",
+        "bio": "The next head of the Orlan family. Asherah and I are childhood friends. In many ways, she is conscious of Asherah and has a fierce rivalry with her."
       }
     }
   },
@@ -35654,7 +35654,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "A",
     "score": "0",
-    "summary": "Chaos caster who is immortal and has good position\n└Does not fall until his turn comes · Activate immortality to reset CT + apply unique buff to bring in high power in the next turn\n└Increase the firepower of Ultimate Skill when you have unique buff · Impossible to enhance and hinder enemy actions · When you have Jet Black Reverberation, you can use Special Skill repeatedly\n└Pure firepower increase & Action Gauge 50% reduction · Covers your own durability with self-healing by Ultimate SkillNova Burst",
+    "summary": "Chaos caster who is immortal and has good position\n└Does not fall until her turn comes · Activate immortality to reset CT + apply unique buff to bring in high power in the next turn\n└Increase the firepower of Ultimate Skill when you have unique buff · Impossible to enhance and hinder enemy actions · When you have Jet Black Reverberation, you can use Special Skill repeatedly\n└Pure firepower increase & Action Gauge 50% reduction · Covers your own durability with self-healing by Ultimate SkillNova Burst",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 20622,
@@ -35688,7 +35688,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Carnelia's attack power increases by 15%.\nAt the start of battle, Carnelia generates jet black reverberation (cannot be removed) for 1 turn.\nWhen attacking, attack power increases by 6% in proportion to the number of upheaval stacks attached to itself, up to a maximum of 5 stacks.\nWhen you receive damage that would leave you incapacitated, you will recover 1% of your maximum HP and will not be incapacitated.\nAlso, inflicts immortality on himself for 1 turn, jet black reverberation (cannot be removed) for 3 turns, and resets the cooldown of all skills. Occurs only once during battle.",
+        "exactDescription": "Carnelia's attack power increases by 15%.\nAt the start of battle, Carnelia generates jet black reverberation (cannot be removed) for 1 turn.\nWhen attacking, attack power increases by 6% in proportion to the number of upheaval stacks attached to itself, up to a maximum of 5 stacks.\nWhen you receive damage that would leave you incapacitated, you will recover 1% of your maximum HP and will not be incapacitated.\nAlso, inflicts immortality on herself for 1 turn, jet black reverberation (cannot be removed) for 3 turns, and resets the cooldown of all skills. Occurs only once during battle.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -35836,7 +35836,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaTier": "S",
       "appMediaRerollTier": "A",
       "evalBullets": [
-        "Chaos caster who is immortal and has good position\n└Does not fall until his turn comes",
+        "Chaos caster who is immortal and has good position\n└Does not fall until her turn comes",
         "Activate immortality to reset CT + apply unique buff to bring in high power in the next turn\n└Increase the firepower of Ultimate Skill when you have unique buff",
         "Impossible to enhance and hinder enemy actions",
         "When you have Jet Black Reverberation, you can use Special Skill repeatedly\n└Pure firepower increase & Action Gauge 50% reduction",
@@ -35846,7 +35846,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
@@ -35860,43 +35860,43 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "A formation that produces firepower with Carnelia and Bunny Charles as its core.",
+        "A formation that produces firepower with Carnelia and Bunnygirl Charlotte as its core.",
         "Thanks to Carnelia's invulnerability buff, she can even deal with instant death attacks once, so when used in conjunction with Carmen, she can act as a quasi-tank.",
-        "Bunny Charles is used for its overall attack buff and single target firepower, but if you want overall firepower, it is recommended to change it to something like Rosalia and rearrange it as appropriate."
+        "Bunnygirl Charlotte is used for its overall attack buff and single target firepower, but if you want overall firepower, it is recommended to change it to something like Rosaria and rearrange it as appropriate."
       ],
       "arcanaDeckTitle": "Caster organization",
       "journeyTrainingPoints": [
         "Training that prioritizes strength is OK",
         "If you can train for patience and sensitivity, I recommend you try it.",
         "If you are expecting that it will not be possible to strengthen or that the Action Gauge will decrease, you will want to increase your concentration to some extent.\n└If it is only firepower, it will not have that much of an effect.",
-        "If you have enough power, you can also use Blessing to increase your physical strength or change the Bunny Frey Arcana to the Bunny Claire Arcana.",
+        "If you have enough power, you can also use Blessing to increase your physical strength or change the Frey: Noble Princess Arcana to the Bunnygirl Claire Arcana.",
         "Prioritize criticality and speed for potential, and it is recommended to aim for attacks and Effect Hits at certain points."
       ],
       "substituteArcana": [
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -35907,7 +35907,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -35924,13 +35924,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -35941,7 +35941,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -35950,7 +35950,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -35958,7 +35958,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -35973,7 +35973,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -35990,7 +35990,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -36008,7 +36008,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -36535,13 +36535,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "profile": {
-        "cv": "Groundwork Shino",
+        "cv": "Shino Shimoji",
         "affiliation": "Wanderer",
         "birthday": "December 31st",
         "height": "166cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "The former head maid of Candle Square and the eldest daughter of the Reese family. Due to the influence of the \"curse of immortality\", he is unable to face death and has become numb to the joys of life. She had gone missing and returned to NOA to break the curse."
+        "obtain": "Standard Observation",
+        "bio": "The former head maid of Candle Square and the eldest daughter of the Reese family. Due to the influence of the \"curse of immortality\", she is unable to face death and has become numb to the joys of life. She had gone missing and returned to NOA to break the curse."
       }
     }
   },
@@ -36549,7 +36549,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "ceres",
     "name": "Ceres",
-    "title": "Western recapture force · Slash Damage",
+    "title": "Western Reclamation Force · Slash Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Striker",
@@ -36596,7 +36596,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Freezing",
@@ -36631,7 +36631,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Freezing",
@@ -36670,11 +36670,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Isolation",
-            "detail": "Preemptive defense occurrence rate is reduced by 50%."
+            "detail": "Defend Forward occurrence rate is reduced by 50%."
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -36713,7 +36713,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Freezing",
@@ -36721,7 +36721,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Isolation",
-            "detail": "Preemptive defense occurrence rate is reduced by 50%."
+            "detail": "Defend Forward occurrence rate is reduced by 50%."
           }
         ]
       }
@@ -36762,21 +36762,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "bunny-claire",
-          "name": "Bunny Claire",
+          "name": "Bunnygirl Claire",
           "nameJp": "バニークレア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/103213_6rb9d.webp",
           "position": "FRONT"
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
@@ -36794,16 +36794,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80191501",
           "targetSlug": "arcana-80191501",
-          "targetName": "Be Prepared to Take Poison",
+          "targetName": "Even If It's Poison",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/184533_dvhyg.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -36811,7 +36811,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -36828,13 +36828,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -36845,7 +36845,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -36854,7 +36854,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -36862,7 +36862,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -36877,7 +36877,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -36894,7 +36894,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 2
@@ -36912,7 +36912,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -37402,7 +37402,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -37440,19 +37440,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yuko Natsuyoshi",
-        "affiliation": "Western recapture force",
+        "affiliation": "Western Reclamation Force",
         "birthday": "January 1st",
         "height": "158cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha (constant)",
-        "bio": "He is the captain of the Western Recapture Corps and a hero for the people of the West who dream of reclaiming the West. He pursues strength and never allows himself to be seen as weak."
+        "origin": "Western Disaster Zone",
+        "obtain": "Standard Observation",
+        "bio": "She is the captain of the Western Recapture Corps and a hero for the people of the West who dream of reclaiming the West. She pursues strength and never allows herself to be seen as weak."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "swimsuit-luna",
-    "name": "Swimsuit Luna",
+    "name": "Luna: Summer Starlight",
     "title": "Voyager Rescue Squad · Elemental Damage",
     "rarity": "SSR",
     "element": "Sun",
@@ -37500,7 +37500,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Waterproof sunscreen",
@@ -37548,7 +37548,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Waterproof sunscreen",
@@ -37600,7 +37600,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Provocation",
@@ -37647,7 +37647,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Down",
@@ -37695,32 +37695,32 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Powerful performance in PvP where criticality is the default\n└If you use a strategy attack formation, the battle will not drag on too long.",
         "On the other hand, it is not stable in PvE where the enemy's chance of hitting is not that high\n└It is also painful to waste Crit DMG resistance by crossing weaves and sections."
       ],
-      "partyTitle": "Swimsuit Luna formation",
+      "partyTitle": "Luna: Summer Starlight formation",
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "swimsuit-luna",
-          "name": "Swimsuit Luna",
+          "name": "Luna: Summer Starlight",
           "nameJp": "水着ルナ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/112813_tnirc.webp",
           "position": "FRONT"
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "FRONT"
         },
         {
           "slug": "bride-epindel",
-          "name": "Bride Epindel",
+          "name": "Epindel: Blessing in Bloom",
           "nameJp": "花嫁エピンデル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/151138_sphtu.webp",
           "position": "BACK"
@@ -37738,7 +37738,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -37753,7 +37753,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -37764,7 +37764,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
@@ -37773,16 +37773,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             },
             {
               "articleId": "79606361",
               "slug": "arcana-79606361",
-              "name": "Daughter of the Stranis Family",
+              "name": "Young Lady of Stranis",
               "nameJp": "ストラニス家の令嬢",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp"
             }
           ]
@@ -37790,7 +37790,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -37799,7 +37799,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -37807,7 +37807,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -37822,7 +37822,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -37839,7 +37839,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -37857,7 +37857,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 1
@@ -38080,7 +38080,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -38136,7 +38136,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect Hit4%",
           "materials": [
             {
@@ -38202,7 +38202,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -38224,7 +38224,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "Effect Hit8%",
           "materials": [
             {
@@ -38335,7 +38335,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -38377,7 +38377,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -38389,15 +38389,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "March 18th",
         "height": "167cm",
         "origin": "Unknown",
-        "obtain": "Gacha (constant)",
-        "bio": "He is the best disciple of the Great Witch of Dreams, Magi, and has inherited her \"Moon Staff\", and is the self-proclaimed best prophet in Lavista. He lives his life without thinking about the future, so much so that he spends the money he earned that day at the casino."
+        "obtain": "Standard Observation",
+        "bio": "She is the best disciple of the Great Witch of Dreams, Magi, and has inherited her \"Moon Staff\", and is the self-proclaimed best prophet in Lavista. She lives her life without thinking about the future, so much so that she spends the money she earned that day at the casino."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "swimsuit-smile",
-    "name": "Swimsuit Smile",
+    "name": "Smile: Sunshine Cat",
     "title": "Voyager Rescue Squad · Elemental Damage",
     "rarity": "SSR",
     "element": "Star",
@@ -38476,7 +38476,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Water bomb",
@@ -38515,7 +38515,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Sparklers",
@@ -38550,7 +38550,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Sparklers",
@@ -38593,21 +38593,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "swimsuit-smile",
-          "name": "Swimsuit Smile",
+          "name": "Smile: Sunshine Cat",
           "nameJp": "水着スマイル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/112830_qacgx.webp",
           "position": "BACK"
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "rin",
-          "name": "Rin",
+          "name": "Lyn",
           "nameJp": "リン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
           "position": "FRONT"
@@ -38621,14 +38621,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "As for the composition dyed with Star Attribute, we recommend a composition centered around Swimsuit Smile, and we would like to use Ede for the durability frame.",
-        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Rin, who can pass jumping stacks, but there are multiple potential substitutes, such as Yanagi Mina, who is excellent as an attacker, Bell Lease, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
+        "As for the composition dyed with Star Attribute, we recommend a composition centered around Smile: Sunshine Cat, and we would like to use Haydee for the durability frame.",
+        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Lyn, who can pass jumping stacks, but there are multiple potential substitutes, such as Yoo Mina, who is excellent as an attacker, Bell Rhys, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
         "Therefore, it is recommended to hire an attacker who is well-developed among the characters you own.",
-        "A composition that uses Dana as Swimsuit Smile's partner.",
-        "Swimsuit Smile's high number of moves and Dana's attack buff have synergy with each other, so it is possible to continuously deliver high firepower.",
-        "The supporter slot can be Dress Asherah or Bride Carmen, so it is recommended to use a character that is growing among the supporters you have."
+        "A composition that uses Dana as Smile: Sunshine Cat's partner.",
+        "Smile: Sunshine Cat's high number of moves and Dana's attack buff have synergy with each other, so it is possible to continuously deliver high firepower.",
+        "The supporter slot can be Asherah: Waltz of Starlight or Carmen: Eternal Promise, so it is recommended to use a character that is growing among the supporters you have."
       ],
-      "arcanaDeckTitle": "Swimsuit Smile organization",
+      "arcanaDeckTitle": "Smile: Sunshine Cat organization",
       "journeyTrainingPoints": [
         "Training that prioritizes strength is OK",
         "Applying debuffs has a big impact on performance, so I want to concentrate to some extent.",
@@ -38640,7 +38640,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -38657,13 +38657,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -38674,7 +38674,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -38689,7 +38689,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -38706,7 +38706,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 2
@@ -38724,7 +38724,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -39214,7 +39214,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -39256,15 +39256,15 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "November 10th",
         "height": "148cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "A believer in science who claims that he is not a human but a creature created by advanced science and technology. I have never laughed since I was born. He's doing research to become more funny, and he's using the leader as a guinea pig."
+        "obtain": "Standard Observation",
+        "bio": "A believer in science who claims that she is not a human but a creature created by advanced science and technology. I have never laughed since I was born. She's doing research to become more funny, and she's using the leader as a guinea pig."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "christel",
-    "name": "Christel",
+    "name": "Cristelle",
     "title": "Morel Shipping Company · Elemental Damage",
     "rarity": "SSR",
     "element": "Sun",
@@ -39317,12 +39317,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Christel's attack power increases by 15%.\nAt the start of battle, give yourself 3 Ignition stacks.\nWhen any ally other than yourself attacks with a Special Skill or Ultimate Skill, give yourself 1 Ignition stack, and if the attacking ally has Sun Attribute, add 1 Ignition stack.\nWhen using Revenge and Punishment, if the enemy is weakened, there is a 100% chance to inflict chain damage proportional to own attack power and increase own Action Gauge by 30%.",
+        "exactDescription": "Cristelle's attack power increases by 15%.\nAt the start of battle, give yourself 3 Ignition stacks.\nWhen any ally other than yourself attacks with a Special Skill or Ultimate Skill, give yourself 1 Ignition stack, and if the attacking ally has Sun Attribute, add 1 Ignition stack.\nWhen using Revenge and Punishment, if the enemy is weakened, there is a 100% chance to inflict chain damage proportional to own attack power and increase own Action Gauge by 30%.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -39353,7 +39353,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -39369,7 +39369,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "CT: 3 turns | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "After any attack by an ally other than himself, if his own ignition is at maximum stack, a boiling desire for revenge will be activated.\nWhen using the skill, give yourself vengeance (cannot be removed) for 3 turns.\nAfter using the skill, there is a 100% chance to inflict 2 Burns on all enemies for 2 turns.\nIncreases own Action Gauge by 50%, gives 2 ignition stacks to Sun Attribute allies other than self, then clears all own ignition stacks.",
+        "exactDescription": "After any attack by an ally other than herself, if her own ignition is at maximum stack, a boiling desire for revenge will be activated.\nWhen using the skill, give yourself vengeance (cannot be removed) for 3 turns.\nAfter using the skill, there is a 100% chance to inflict 2 Burns on all enemies for 2 turns.\nIncreases own Action Gauge by 50%, gives 2 ignition stacks to Sun Attribute allies other than self, then clears all own ignition stacks.",
         "novaBurst": "-",
         "tooltips": [
           {
@@ -39382,7 +39382,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -39426,7 +39426,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Spirit of revenge",
@@ -39465,7 +39465,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "christel",
-          "name": "Christel",
+          "name": "Cristelle",
           "nameJp": "クリステル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/190200_51vpg.webp",
           "position": "BACK"
@@ -39479,24 +39479,24 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "FRONT"
         },
         {
           "slug": "tilia",
-          "name": "Tilia",
+          "name": "Tyria",
           "nameJp": "ティリア",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115944_7kujw.webp",
           "position": "BACK"
         }
       ],
       "partyNotes": [
-        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunny Charles.",
-        "Other attackers will want to use Tilia and Christel to increase their firepower, but if you want overall firepower, try switching to Muriel."
+        "When it comes to knitting dyed with Sun Attribute, we recommend knitting around Bunnygirl Charlotte.",
+        "Other attackers will want to use Tyria and Cristelle to increase their firepower, but if you want overall firepower, try switching to Muriel."
       ],
-      "arcanaDeckTitle": "Christel organization",
+      "arcanaDeckTitle": "Cristelle organization",
       "journeyTrainingPoints": [
         "Training to gain concentration while aiming for maximum power",
         "Since there is a high dependence on debuffs, the priority of concentration is high.",
@@ -39508,7 +39508,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -39525,13 +39525,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -39542,7 +39542,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -39551,7 +39551,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -39559,13 +39559,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79644746",
           "targetSlug": "arcana-79644746",
-          "targetName": "Deep Condolences",
+          "targetName": "Deep Mourning",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200315_snce6.webp",
           "substitutes": [
             {
               "articleId": "80139832",
               "slug": "arcana-80139832",
-              "name": "Death to Flowers",
+              "name": "Death for the Flowers",
               "nameJp": "花々に死を",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -39583,7 +39583,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -39594,13 +39594,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80331877",
           "targetSlug": "arcana-80331877",
-          "targetName": "Eternal Chain of Bondage",
+          "targetName": "Chains of Eternal Bondage",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/193327_txw73.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -39617,7 +39617,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -39635,7 +39635,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 4
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -40113,7 +40113,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -40167,8 +40167,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "March 15th",
         "height": "170cm",
         "origin": "Faren",
-        "obtain": "Gacha (constant)",
-        "bio": "Representative of Morel Shipping Company, a major company. He is famous in social circles for his unique words and deeds."
+        "obtain": "Standard Observation",
+        "bio": "Representative of Morel Shipping Company, a major company. She is famous in social circles for her unique words and deeds."
       }
     }
   },
@@ -40176,7 +40176,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "amora",
     "name": "Amora",
-    "title": "Earl of Stranis · Slash Damage",
+    "title": "House Stranis · Slash Damage",
     "rarity": "SSR",
     "element": "Order",
     "role": "Assassin",
@@ -40223,7 +40223,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -40262,7 +40262,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -40313,7 +40313,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -40356,7 +40356,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Insight",
-            "detail": "Damage deal to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Chaos Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -40392,14 +40392,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
@@ -40425,12 +40425,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Two people can provide more than enough firepower, so I want to use the other two as supporters to support the two attackers so they don't get destroyed.",
         "In particular, these two supporters can also provide indirect firepower support by increasing their Action Gauge, so overall it can be said that this is a powerful party that requires a lot of work.",
         "Strategy formation without wife Carmen.",
-        "You'll need defenders, so hire defenders like Ede and Emily who can maintain a solid front line.",
+        "You'll need defenders, so hire defenders like Haydee and Emilly who can maintain a solid front line.",
         "Also, the firepower and durability will be slightly lower, so it is recommended to use Blooming Clarissa to inhibit her actions while producing firepower.",
         "A formation that combines Fei, which increases evasion rate by 50%, and Amora, which can repeatedly decrease accuracy rate by 30%.",
         "In order to inevitably focus your attacks on Fei, use Gwen, who has a stealth ability that cannot be canceled, and hit as many counters as possible.",
         "I'm a little worried about Fei's durability, so I recommend setting her hard potential to XX2 so she can self-heal.",
-        "Dress Asherah is also recommended for the Bride Carmen slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks."
+        "Asherah: Waltz of Starlight is also recommended for the Carmen: Eternal Promise slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks."
       ],
       "arcanaDeckTitle": "Assassin (Special Skill) formation",
       "journeyTrainingPoints": [
@@ -40443,7 +40443,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -40460,13 +40460,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79576397",
           "targetSlug": "arcana-79576397",
-          "targetName": "Pioneer of Imaginary Numbers",
+          "targetName": "The Imaginary Pioneer",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
           "substitutes": [
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -40477,22 +40477,22 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             },
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -40503,7 +40503,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -40518,7 +40518,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -40535,7 +40535,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -40553,7 +40553,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -41111,7 +41111,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -41131,12 +41131,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yuri Komagata",
-        "affiliation": "Earl of Stranis",
+        "affiliation": "House Stranis",
         "birthday": "March 16th",
         "height": "171cm",
         "origin": "Earldom of Stranis",
-        "obtain": "Gacha (constant)",
-        "bio": "The current head of the Earl Stranis family and an enforcer who follows the great witch Alicia. He has a relaxed personality and enjoys teasing others. He's an alcoholic who always carries Skittles with him, but he's definitely skilled."
+        "obtain": "Standard Observation",
+        "bio": "The current head of the Earl Stranis family and an enforcer who follows the great witch Alicia. She has a relaxed personality and enjoys teasing others. She's an alcoholic who always carries Skittles with her, but she's definitely skilled."
       }
     }
   },
@@ -41152,7 +41152,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "0",
-    "summary": "Attacker with a large amount of Action Gauge increase · Possesses a Passive that can induce a Pincer Dual-Attack from an ally\n└It is also good to have an ally with the highest attack power · CT0 trigger skill makes it easy to generate firepower\n└Passive pincer to earn cooling and activate the trigger · Adds a debuff that increases damage dealt to the enemy with Ultimate Skill\n└Indirect contribution to party firepower",
+    "summary": "Attacker with a large amount of Action Gauge increase · Possesses a Passive that can induce a Cross Attack from an ally\n└It is also good to have an ally with the highest attack power · CT0 trigger skill makes it easy to generate firepower\n└Passive pincer to earn cooling and activate the trigger · Adds a debuff that increases damage dealt to the enemy with Ultimate Skill\n└Indirect contribution to party firepower",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 20662,
@@ -41186,7 +41186,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Professor M's attack power increases by 15%.\nAfter Professor M uses black-and-white logic, he grants Sample Behavior Analysis for one turn to the ally with the highest attack power among the allies capable of Pincer Dual-Attack, causing a Pincer Dual-Attack.\nWhen an ally other than yourself attacks, increase your Action Gauge by 4% and give yourself 1 Cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled.",
+        "exactDescription": "Professor M's attack power increases by 15%.\nAfter Professor M uses black-and-white logic, she grants Sample Behavior Analysis for one turn to the ally with the highest attack power among the allies capable of Cross Attack, causing a Cross Attack.\nWhen an ally other than yourself attacks, increase your Action Gauge by 4% and give yourself 1 Cooling stack with a 100% chance. If the target ally is in the Sample Behavior Analysis state, increase Action Gauge by an additional 4% and apply 1 more Cooling stack.\nWhen a new sample behavior analysis is assigned, the sample behavior analysis that has already been assigned will be canceled.",
         "novaBurst": "",
         "tooltips": [
           {
@@ -41195,7 +41195,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -41221,12 +41221,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Professor M swings his bag around and attacks the enemy.\nGive yourself 1 Cooling stack.",
+        "exactDescription": "Professor M swings her bag around and attacks the enemy.\nGive yourself 1 Cooling stack.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.\nAfter attacking, increase own Action Gauge by 20%.",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Sample behavior analysis",
@@ -41261,7 +41261,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Sample behavior analysis",
@@ -41300,7 +41300,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Sample behavior analysis",
@@ -41331,7 +41331,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaRerollTier": "SS",
       "evalBullets": [
         "Attacker with a large amount of Action Gauge increase",
-        "Possesses a Passive that can induce a Pincer Dual-Attack from an ally\n└It is also good to have an ally with the highest attack power",
+        "Possesses a Passive that can induce a Cross Attack from an ally\n└It is also good to have an ally with the highest attack power",
         "CT0 trigger skill makes it easy to generate firepower\n└Passive pincer to earn cooling and activate the trigger",
         "Adds a debuff that increases damage dealt to the enemy with Ultimate Skill\n└Indirect contribution to party firepower"
       ],
@@ -41339,14 +41339,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
         },
         {
           "slug": "dress-asherah",
-          "name": "Dress Asherah",
+          "name": "Asherah: Waltz of Starlight",
           "nameJp": "ドレスアセラ",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/165111_tyvh9.webp",
           "position": "FRONT"
@@ -41371,13 +41371,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "In addition to the high firepower of Amora's Basic Skill, she can also deal high damage with her Special Skill, making her an excellent compatibility with Professor M.",
         "Two people can provide more than enough firepower, so I want to use the other two as supporters to support the two attackers so they don't get destroyed.",
         "In particular, these two supporters can also provide indirect firepower support by increasing their Action Gauge, so overall it can be said that this is a powerful party that requires a lot of work.",
-        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunny Claire's Basic Skill → Special trigger.",
-        "Bunny Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
-        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emily as another attacker.",
+        "Moon Attribute has a very powerful trigger configuration of Professor M triggering Bunnygirl Claire's Basic Skill → Special trigger.",
+        "Bunnygirl Claire has self-buffs and has high stand-alone performance, making her an excellent partner for Professor M.",
+        "These two can deal a lot of damage, so you may be able to defeat them before they run out of durability, so in that case, make adjustments by using Emilly as another attacker.",
         "If you can tolerate the luck factor, adding Fei will increase the firepower during the upswing, but if you want stability, this formation is recommended, so consult with your heart.",
         "In order to take advantage of Professor M's pincer trigger, Amora, which has excellent Basic Skill firepower, is used.",
-        "Not only does Professor M trigger Basic Skill, but Bride Carmen also increases Action Gauge, which makes Amora's own high number of moves extremely powerful.",
-        "If you have enough recovery time, you can use Dress Asherah as another attacker to increase your firepower, but be careful not to exceed Amora's attack power.",
+        "Not only does Professor M trigger Basic Skill, but Carmen: Eternal Promise also increases Action Gauge, which makes Amora's own high number of moves extremely powerful.",
+        "If you have enough recovery time, you can use Asherah: Waltz of Starlight as another attacker to increase your firepower, but be careful not to exceed Amora's attack power.",
         "A formation that aims to reduce the enemy's Action Gauge by inducing Clarissa's Basic Skill with Professor M. Let's adjust it so that Clarissa's attack power is the highest.",
         "If things go well, you can aim to clear the stage without making the enemy take any action, so it is recommended to focus on firepower rather than durability.",
         "If adjusting the attack power is difficult due to Limit Break, etc., you may want to replace the attacker as appropriate, but it is recommended if the character has strong Special Skills, as you can take advantage of debuffs."
@@ -41393,7 +41393,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -41410,13 +41410,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -41427,7 +41427,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -41442,7 +41442,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -41453,13 +41453,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80400913",
           "targetSlug": "arcana-80400913",
-          "targetName": "Hedonist's Comfort",
+          "targetName": "Solace of the Hedonist",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/194438_w92ck.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -41476,7 +41476,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -41494,7 +41494,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 3
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -41515,9 +41515,9 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Feels like a semi-supporter",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/153310_9mxjv.webp",
           "paragraphs": [
-            "Professor M can use Basic Skill to flank the ally with the highest attack power. Pincer Dual-Attack is fixed by activating Basic Skill, so basically you can just trigger the Basic Skill of the ally with the highest attack power.",
+            "Professor M can use Basic Skill to flank the ally with the highest attack power. Cross Attack is fixed by activating Basic Skill, so basically you can just trigger the Basic Skill of the ally with the highest attack power.",
             "Being able to trigger this attacker's Basic Skill is powerful and requires a lot of moves, so its strength is that it can frequently inflict the main attacker's firepower + its own firepower on the enemy.",
-            "Therefore, what is important is the performance of the attacker rather than the player himself, so it is important to ensure that the attacker is properly trained."
+            "Therefore, what is important is the performance of the attacker rather than the player herself, so it is important to ensure that the attacker is properly trained."
           ]
         },
         {
@@ -41536,7 +41536,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Own firepower is not that high",
           "imageUrl": "",
           "paragraphs": [
-            "Since his own performance is based on ally's skill trigger and Action Gauge increase, the only firepower buff is the Ultimate Skill damage increase debuff, so his firepower is modest.",
+            "Since her own performance is based on ally's skill trigger and Action Gauge increase, the only firepower buff is the Ultimate Skill damage increase debuff, so her firepower is modest.",
             "It's a bit heavy for Professor M to be the main attacker, so it's a character for people who have a certain amount of skills."
           ]
         },
@@ -41783,7 +41783,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -41844,7 +41844,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -41932,7 +41932,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -42051,7 +42051,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -42075,8 +42075,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "May 5th",
         "height": "170cm",
         "origin": "Unknown",
-        "obtain": "Gacha (constant)",
-        "bio": "A private investigator who studies psychology and criminology. Due to his sociopathic tendencies, he lacks the ability to empathize, and tries to understand people by studying and analyzing them."
+        "obtain": "Standard Observation",
+        "bio": "A private investigator who studies psychology and criminology. Due to her sociopathic tendencies, she lacks the ability to empathize, and tries to understand people by studying and analyzing them."
       }
     }
   },
@@ -42084,7 +42084,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "gwen",
     "name": "Gwen",
-    "title": "Lambadis · Impact damage",
+    "title": "Lampadis · Impact damage",
     "rarity": "SSR",
     "element": "Star",
     "role": "Striker",
@@ -42092,7 +42092,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "A",
     "score": "0",
-    "summary": "Special skill is additionally activated by consuming 5 unique stacks. · Unique stack accumulates by 1 when an ally attacks, up to a maximum of 10 stacks\n└When attacking with Special Skill, 1 is added for a total of 2 stacks · Compatible with characters with many Special Skills (Great)\n└Swimsuit Smile, Professor M, etc. · Possesses on-site standby, which has an effect similar to incubation.\n└Preemptive defense cannot be nullified, but it will not be canceled even if attacked. · Even as a covert agent, it is outstanding in terms of performance and ease of use.\n└Recommended as a companion for characters who want to concentrate their attacks, such as Fei.",
+    "summary": "Special skill is additionally activated by consuming 5 unique stacks. · Unique stack accumulates by 1 when an ally attacks, up to a maximum of 10 stacks\n└When attacking with Special Skill, 1 is added for a total of 2 stacks · Compatible with characters with many Special Skills (Great)\n└Smile: Sunshine Cat, Professor M, etc. · Possesses on-site standby, which has an effect similar to incubation.\n└Defend Forward cannot be nullified, but it will not be canceled even if attacked. · Even as a covert agent, it is outstanding in terms of performance and ease of use.\n└Recommended as a companion for characters who want to concentrate their attacks, such as Fei.",
     "recommendedDupes": "★☆☆ (LB1)",
     "baseStats": {
       "hp": 21573,
@@ -42139,7 +42139,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -42170,7 +42170,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "On-site standby",
@@ -42209,7 +42209,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "On-site standby",
@@ -42256,7 +42256,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -42284,8 +42284,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "evalBullets": [
         "Special skill is additionally activated by consuming 5 unique stacks.",
         "Unique stack accumulates by 1 when an ally attacks, up to a maximum of 10 stacks\n└When attacking with Special Skill, 1 is added for a total of 2 stacks",
-        "Compatible with characters with many Special Skills (Great)\n└Swimsuit Smile, Professor M, etc.",
-        "Possesses on-site standby, which has an effect similar to incubation.\n└Preemptive defense cannot be nullified, but it will not be canceled even if attacked.",
+        "Compatible with characters with many Special Skills (Great)\n└Smile: Sunshine Cat, Professor M, etc.",
+        "Possesses on-site standby, which has an effect similar to incubation.\n└Defend Forward cannot be nullified, but it will not be canceled even if attacked.",
         "Even as a covert agent, it is outstanding in terms of performance and ease of use.\n└Recommended as a companion for characters who want to concentrate their attacks, such as Fei."
       ],
       "partyTitle": "Evasion formation",
@@ -42313,7 +42313,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
@@ -42323,7 +42323,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "A formation that combines Fei, which increases evasion rate by 50%, and Amora, which can repeatedly decrease accuracy rate by 30%.",
         "In order to inevitably focus your attacks on Fei, use Gwen, who has a stealth ability that cannot be canceled, and hit as many counters as possible.",
         "I'm a little worried about Fei's durability, so I recommend setting her hard potential to XX2 so she can self-heal.",
-        "Dress Asherah is also recommended for the Bride Carmen slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks.",
+        "Asherah: Waltz of Starlight is also recommended for the Carmen: Eternal Promise slot, but be careful as the overall firepower is likely to decrease when you form a defender who absorbs enemy attacks.",
         "A formation that uses Professor M to keep the allies moving and uses Gwen's Special Skill repeatedly.",
         "Amora, who acts as a pincer, can be placed by any attacker, but since she will be the main firepower, you should place a character with high firepower.",
         "Gwen can miss the enemy's target, so it's recommended to place her in the front line and focus her attacks on defenders."
@@ -42339,13 +42339,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79576397",
           "targetSlug": "arcana-79576397",
-          "targetName": "Pioneer of Imaginary Numbers",
+          "targetName": "The Imaginary Pioneer",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/121445_x6mr0.webp",
           "substitutes": [
             {
               "articleId": "79517783",
               "slug": "arcana-79517783",
-              "name": "As Cute As Kira!",
+              "name": "As Cute as Kyra!",
               "nameJp": "キラくらい可愛い！",
               "rarity": "SSR",
               "statTag": "Power",
@@ -42356,7 +42356,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -42373,13 +42373,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -42390,7 +42390,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -42405,7 +42405,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -42416,7 +42416,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -42425,7 +42425,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -42439,7 +42439,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -42457,7 +42457,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -42479,7 +42479,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "Since this is when an ally attacks, you should be able to accumulate stacks more quickly if you team up with a character who takes a lot of steps.",
-            "There are quite a few characters that require a lot of work, such as Professor M who will be implemented in the same event and Swimsuit Smile who has the same attribute, so I would like to pair her with a character that can take advantage of Gwen's skill effects."
+            "There are quite a few characters that require a lot of work, such as Professor M who will be implemented in the same event and Smile: Sunshine Cat who has the same attribute, so I would like to pair her with a character that can take advantage of Gwen's skill effects."
           ]
         },
         {
@@ -42498,7 +42498,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "When Gwen starts a battle and uses her Ultimate Skill, she will be given a buff called ``stand by on scene,'' but this buff is treated as a stealth buff, allowing her to be out of the enemy's attack target.",
             "Also, unlike stealth, it is extremely powerful in that it cannot be canceled even if attacked, and on top of that, it is possible to receive hidden-related buffs without any problems.",
-            "Preemptive defense cannot be ignored, but it is basically limited to PvP, so in PvE, this on-site standby is a more convenient buff to use."
+            "Defend Forward cannot be ignored, but it is basically limited to PvP, so in PvE, this on-site standby is a more convenient buff to use."
           ]
         },
         {
@@ -42515,7 +42515,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Unconditional special trigger with Ultimate Skill",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/135828_6ze5n.webp",
           "paragraphs": [
-            "His Ultimate Skill has an unconditional Special Skill trigger, and he can expect high firepower with that move.",
+            "Her Ultimate Skill has an unconditional Special Skill trigger, and she can expect high firepower with that move.",
             "It already takes a lot of moves thanks to the Passive effect, but it is also great that you can increase the number of moves even more thanks to this skill.",
             "Considering that the Ultimate Skill's multiplier is 115%, which is an average multiplier, and that the Special Skill is superimposed on it, the Ultimate Skill's firepower can be said to be quite high."
           ]
@@ -42763,7 +42763,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -42824,7 +42824,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -42912,7 +42912,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -43043,7 +43043,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -43051,12 +43051,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Manaka Wakuno",
-        "affiliation": "Lambadis",
+        "affiliation": "Lampadis",
         "birthday": "May 25th",
         "height": "158cm",
         "origin": "NOA",
-        "obtain": "Gacha",
-        "bio": "President and investigator of Lampadis Investigation Consulting, NOA's private investigation company. He dreams of being a genius deducer who can see through everything at a glance, but his true value lies in his tenacity and guts to not let go until the end once he gets the hang of it."
+        "obtain": "Pickup / Standard Observation",
+        "bio": "President and investigator of Lampadis Investigation Consulting, NOA's private investigation company. She dreams of being a genius deducer who can see through everything at a glance, but her true value lies in her tenacity and guts to not let go until the end once she gets the hang of it."
       }
     }
   },
@@ -43064,7 +43064,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "maid-lydia",
     "name": "Maid Lydia",
-    "title": "Western recapture force · Elemental Damage",
+    "title": "Western Reclamation Force · Elemental Damage",
     "rarity": "SSR",
     "element": "Moon",
     "role": "Caster",
@@ -43072,7 +43072,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "B",
     "score": "0",
-    "summary": "Gives a combined buff of \"Attack buff 15% and Crit DMG 15%\" to the single ally with the highest attack power\n└It is powerful because it cannot be removed and is permanent. · When an ally who has been given the buff above acts, you will be given a \"reminder to leave work\". · Increase Action Gauge and strengthen special/Ultimate Skill skill content with 5 or more stacks of reminder to leave work · Reminder for work is consumed when attacking with Basic Skill when 5 or more stacks are used\n└Be careful of sudden attacks due to Pincer Dual-Attack such as EX",
+    "summary": "Gives a combined buff of \"Attack buff 15% and Crit DMG 15%\" to the single ally with the highest attack power\n└It is powerful because it cannot be removed and is permanent. · When an ally who has been given the buff above acts, you will be given a \"reminder to leave work\". · Increase Action Gauge and strengthen special/Ultimate Skill skill content with 5 or more stacks of reminder to leave work · Reminder for work is consumed when attacking with Basic Skill when 5 or more stacks are used\n└Be careful of sudden attacks due to Cross Attack such as EX",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 21080,
@@ -43146,7 +43146,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Reminder to leave work",
@@ -43197,7 +43197,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -43240,7 +43240,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -43269,7 +43269,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "Gives a combined buff of \"Attack buff 15% and Crit DMG 15%\" to the single ally with the highest attack power\n└It is powerful because it cannot be removed and is permanent.",
         "When an ally who has been given the buff above acts, you will be given a \"reminder to leave work\".",
         "Increase Action Gauge and strengthen special/Ultimate Skill skill content with 5 or more stacks of reminder to leave work",
-        "Reminder for work is consumed when attacking with Basic Skill when 5 or more stacks are used\n└Be careful of sudden attacks due to Pincer Dual-Attack such as EX"
+        "Reminder for work is consumed when attacking with Basic Skill when 5 or more stacks are used\n└Be careful of sudden attacks due to Cross Attack such as EX"
       ],
       "partyTitle": "Amora formation",
       "recommendedParty": [
@@ -43289,14 +43289,14 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "emily",
-          "name": "Emily",
+          "name": "Emilly",
           "nameJp": "エミリー",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
           "position": "FRONT"
         },
         {
           "slug": "bride-carmen",
-          "name": "Bride Carmen",
+          "name": "Carmen: Eternal Promise",
           "nameJp": "花嫁カルメン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/121623_3y1g7.webp",
           "position": "BACK"
@@ -43304,11 +43304,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "A formation that fights by assigning Maid Lydia's responsibility to Amora. In order to give Amora the ability to shift responsibility, let's adjust Amora's attack power to be the highest.",
-        "Inevitably, Bride Carmen's pledge of love will also be given to Amora, so placing Amora in the vanguard position will make her more susceptible to debuffs and will make it easier to maintain buffs, so it is recommended.",
+        "Inevitably, Carmen: Eternal Promise's pledge of love will also be given to Amora, so placing Amora in the vanguard position will make her more susceptible to debuffs and will make it easier to maintain buffs, so it is recommended.",
         "Since Amora has an additional turn and has a general attack, it is easy to accumulate Maid Lydia's reminders to leave work, so let's hit the enemy with a powerful general attack.",
-        "This is a configuration in which responsibility is transferred to Bunny Charles.",
-        "Bunny Charles does not have a general attack, but he can hit Basic Skill repeatedly on his own turn, so his advantage is that he can accumulate two stacks of Maid Lydia's reminder to leave work at once.",
-        "Since there is an additional turn, it is easy to use Maid Lydia's strengthening skills like Amora, and since Bunny Charles has an overall attack buff, it is also excellent to increase Maid Lydia's firepower."
+        "This is a configuration in which responsibility is transferred to Bunnygirl Charlotte.",
+        "Bunnygirl Charlotte does not have a general attack, but she can hit Basic Skill repeatedly on her own turn, so her advantage is that she can accumulate two stacks of Maid Lydia's reminder to leave work at once.",
+        "Since there is an additional turn, it is easy to use Maid Lydia's strengthening skills like Amora, and since Bunnygirl Charlotte has an overall attack buff, it is also excellent to increase Maid Lydia's firepower."
       ],
       "arcanaDeckTitle": "Maid Lydia formation",
       "journeyTrainingPoints": [
@@ -43321,7 +43321,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -43338,13 +43338,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517759",
           "targetSlug": "arcana-79517759",
-          "targetName": "Heavenly Judgment",
+          "targetName": "Divine Judgement",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "80077855",
               "slug": "arcana-80077855",
-              "name": "Until Death Separates Us",
+              "name": "Till Death Do Us Part",
               "nameJp": "死が二人を分かつまで",
               "rarity": "SSR",
               "statTag": "Power",
@@ -43355,13 +43355,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
               "articleId": "80139832",
               "slug": "arcana-80139832",
-              "name": "Death to Flowers",
+              "name": "Death for the Flowers",
               "nameJp": "花々に死を",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -43373,7 +43373,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -43381,7 +43381,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -43396,7 +43396,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -43405,7 +43405,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79766540",
               "slug": "arcana-79766540",
-              "name": "An Unyielding Masterpiece",
+              "name": "The Indomitable Masterpiece",
               "nameJp": "不屈の傑作",
               "rarity": "SSR",
               "statTag": "Power",
@@ -43422,7 +43422,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 5
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 1
@@ -43440,7 +43440,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -43454,7 +43454,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "Maid Lydia is a character whose unique buff \"Reminding her to leave work\" is extremely important, but the conditions for granting and consuming this buff are complex, so it is necessary to thoroughly understand how this works.",
             "Regarding the acquisition condition, there is no problem as long as you can acquire it when an ally with Responsibility Transfer has been given moves, but as for the consumption condition, you need to be careful because it is not when using enhanced skills, but when attacking.",
-            "For example, if a Pincer Dual-Attack occurs before Maid Lydia's turn and she attacks with Basic Skill, 5 stacks will be consumed automatically, so you will need to be careful when using it in conjunction with EX or Professor M."
+            "For example, if a Cross Attack occurs before Maid Lydia's turn and she attacks with Basic Skill, 5 stacks will be consumed automatically, so you will need to be careful when using it in conjunction with EX or Professor M."
           ]
         },
         {
@@ -43472,7 +43472,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/143025_6mq8r.webp",
           "paragraphs": [
             "The \"responsibility shift\" that Maid Lydia grants to the ally with the highest attack power is a combined buff of 15% ATK and 15% Crit DMG, making it a simple and powerful buff effect.",
-            "Since this is an unremovable and permanent effect, it is basically recommended to use him as a sub-attacker to support the main attacker while dealing damage."
+            "Since this is an unremovable and permanent effect, it is basically recommended to use her as a sub-attacker to support the main attacker while dealing damage."
           ]
         },
         {
@@ -43481,8 +43481,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "",
           "paragraphs": [
             "This transfer of responsibility is a buff that is directly connected to the above-mentioned reminder to leave work, so it is desirable to give it to characters who have as much work to do as possible.",
-            "The number one choice is Professor M, but there is a possibility that Lydia's stack will be consumed without permission by triggering a Pincer Dual-Attack, so be careful about that.",
-            "Other than that, Amora, Swimsuit Smile, and Ceres are also recommended, so be sure to use them according to the character you have."
+            "The number one choice is Professor M, but there is a possibility that Lydia's stack will be consumed without permission by triggering a Cross Attack, so be careful about that.",
+            "Other than that, Amora, Smile: Sunshine Cat, and Ceres are also recommended, so be sure to use them according to the character you have."
           ]
         },
         {
@@ -43491,7 +43491,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/153731_wijdx.webp",
           "paragraphs": [
             "After skill enhancement, both special and ultimate attacks change to all-over attacks, but thanks to the 100% increase in damage deal, the firepower is extremely high.",
-            "It can deliver firepower comparable to single-target attacks, so it is expected to be useful in situations where full-body attacks such as Tilia are useful."
+            "It can deliver firepower comparable to single-target attacks, so it is expected to be useful in situations where full-body attacks such as Tyria are useful."
           ]
         },
         {
@@ -43510,7 +43510,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "The base multiplier of Basic Skill is set at 40%, which is quite low, and it is quite difficult to aim for high firepower with Basic Skill.",
             "Furthermore, Maid Lydia does not have the CT reduction or additional activation effects of Special Skills, etc., so there are turns where she just rolls Basic Skills, so even if she can produce firepower with special or ultimate, the low firepower of Basic Skills could mean that she has no power.",
-            "To compensate for the low firepower of this Basic Skill, it is recommended to combine it with a character such as Bunny Charles who can give attack buffs to allies."
+            "To compensate for the low firepower of this Basic Skill, it is recommended to combine it with a character such as Bunnygirl Charlotte who can give attack buffs to allies."
           ]
         }
       ],
@@ -43747,7 +43747,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -43808,7 +43808,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -43896,7 +43896,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -43985,7 +43985,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -44035,11 +44035,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Saya Aizawa",
-        "affiliation": "Western recapture force",
+        "affiliation": "Western Reclamation Force",
         "birthday": "June 18th",
         "height": "156cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha",
+        "origin": "Western Disaster Zone",
+        "obtain": "Pickup / Standard Observation",
         "bio": "Vice-captain of the Western Recapture Corps. She is always assisting Ceres next to her. She always has a bright smile on her face, but behind that smile lies a darkness."
       }
     }
@@ -44048,7 +44048,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "maid-ceres",
     "name": "Maid Ceres",
-    "title": "Western recapture force · Slash Damage",
+    "title": "Western Reclamation Force · Slash Damage",
     "rarity": "SSR",
     "element": "Sun",
     "role": "Supporter",
@@ -44099,7 +44099,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -44130,7 +44130,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Dust capture",
@@ -44169,7 +44169,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Dust capture",
@@ -44212,7 +44212,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Feeling refreshed",
@@ -44250,7 +44250,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "└Compatible with characters that require a lot of work such as Professor M(Great)",
         "That's the extent of single-target recovery performance\n└When teaming up with a defender, it's best to team up with another single-target recovery power (Great)"
       ],
-      "partyTitle": "Pro M pincer formation",
+      "partyTitle": "Professor M Cross Attack Formation",
       "recommendedParty": [
         {
           "slug": "professor-m",
@@ -44268,7 +44268,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "bunny-charles",
-          "name": "Bunny Charles",
+          "name": "Bunnygirl Charlotte",
           "nameJp": "バニーシャルル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/182954_1clb6.webp",
           "position": "FRONT"
@@ -44282,10 +44282,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "A composition that employs characters who have a lot of work, such as Professor M, Amora, and Bunny Charles, and collects Maid Ceres' dust traps.",
+        "A composition that employs characters who have a lot of work, such as Professor M, Amora, and Bunnygirl Charlotte, and collects Maid Ceres' dust traps.",
         "The attackers will move a lot before Maid Ceres takes action, so it's very easy to maintain dust capture.",
         "However, if the enemy's single blow is quite heavy, the amount of recovery from Maid Ceres may not be able to keep up with it, so basically you want to be conscious of what you can do before you get hit.",
-        "A composition that combines Ceres, who is good at general recovery, and Bride Carmen, who is good at single recovery.",
+        "A composition that combines Ceres, who is good at general recovery, and Carmen: Eternal Promise, who is good at single recovery.",
         "Two supporters will reduce the party's firepower, so you'll want to use a character with a lot of moves like Professor M or Amora as your attacker.",
         "The strategy itself takes a little time, so content with turn restrictions like Cosmo Gate will only take you to that point, but strategy content like Strategy and Interstellar Corridor allows for a fairly stable strategy.",
         "It doesn't rely on bursts that much and is stable even in automatic operation, so it's recommended for those who want to proceed while leaving things alone."
@@ -44301,16 +44301,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517750",
           "targetSlug": "arcana-79517750",
-          "targetName": "Princess Takes the Throne",
+          "targetName": "The Princess Ascends the Throne",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -44318,16 +44318,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -44335,16 +44335,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80521390",
           "targetSlug": "arcana-80521390",
-          "targetName": "Harsh Ordeal",
+          "targetName": "Grueling Ordeal",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -44352,7 +44352,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -44361,7 +44361,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -44369,13 +44369,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
               "articleId": "79517762",
               "slug": "arcana-79517762",
-              "name": "Heaven's Trial",
+              "name": "Divine Trial",
               "nameJp": "天の試練",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -44392,7 +44392,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 1
         },
         {
-          "stat": "Vitality",
+          "stat": "Health",
           "statJp": "体力",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
           "segmentsOn": 5
@@ -44410,7 +44410,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "segmentsOn": 0
         },
         {
-          "stat": "Protection",
+          "stat": "Protect",
           "statJp": "保護",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
           "segmentsOn": 0
@@ -44422,8 +44422,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Overall recovery performance is top class performance",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/180200_vzros.webp",
           "paragraphs": [
-            "Bride Carmen and Serpang, who currently have high recovery performance as supporters, have high performance by single recovery, but I had the impression that they are a little weak when it comes to total recovery.",
-            "Dress Asherah can also recover the entire body with her special/Ultimate Skill, but it is infrequent, whereas Maid Ceres can recover the entire body with both her special and ultimate skills, and can additionally activate her Special Skill as a passive, making it possible to recover her body frequently.",
+            "Carmen: Eternal Promise and Serpang, who currently have high recovery performance as supporters, have high performance by single recovery, but I had the impression that they are a little weak when it comes to total recovery.",
+            "Asherah: Waltz of Starlight can also recover the entire body with her special/Ultimate Skill, but it is infrequent, whereas Maid Ceres can recover the entire body with both her special and ultimate skills, and can additionally activate her Special Skill as a passive, making it possible to recover her body frequently.",
             "Furthermore, with Special Skill, in addition to being able to give regeneration to everyone, the amount of recovery will also increase if the ignition stack is maximum when additionally activated, so the amount of recovery for overall recovery is high."
           ]
         },
@@ -44441,7 +44441,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Demonstrates its true value when used in combination with a single recovery role",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/143434_ck06m.webp",
           "paragraphs": [
-            "Since it is not good at single-target recovery, it is extremely stable and powerful to use it in combination with other single-target recovery units such as Bride Carmen.",
+            "Since it is not good at single-target recovery, it is extremely stable and powerful to use it in combination with other single-target recovery units such as Carmen: Eternal Promise.",
             "Due to the convenience of forming two supporters, it is difficult to play an active role in content that has a turn limit such as Cosmo Gate, but it allows for a fairly stable strategy in content where the number of turns has little effect such as operations and interstellar corridors.",
             "However, if it takes more than 100 turns, battle environment effects will be activated, so it is recommended that the attacker employ powerful characters with excellent maneuverability, such as Professor M or Amora, to increase the party's firepower as much as possible."
           ]
@@ -44451,7 +44451,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "title": "Supporter's first firepower buff",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/181200_cipxt.webp",
           "paragraphs": [
-            "Until now, supporters were able to pass defensive effects such as Effect RES buffs and damage reduction buffs to their allies, but since they did not have firepower buffs, it was a little difficult to contribute firepower. (Excluding Dress Asherah)",
+            "Until now, supporters were able to pass defensive effects such as Effect RES buffs and damage reduction buffs to their allies, but since they did not have firepower buffs, it was a little difficult to contribute firepower. (Excluding Asherah: Waltz of Starlight)",
             "However, Maid Ceres is the first supporter to have an overall firepower buff, and the ability to support allies with firepower is very attractive.",
             "The buffs it has are easy to treat as general-purpose attack buffs, and can be combined with all attackers, so it can be used in a very wide range of stages."
           ]
@@ -44473,7 +44473,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "paragraphs": [
             "``Dust Capture'', which is an additional activation condition for the Special Skill, accumulates at the start of an ally's turn other than your own, so it is recommended to combine it with a character who can earn a large number of turns.",
             "Typical examples are characters like Professor M and Amora, but other characters with extra turns can also be compatible.",
-            "Please note that Swimsuit Smile's Special Skill and Bunny Charles' Basic Skill are only additional activations, so they are not included in the turn. (That being said, both of them have Action Gauge increase, so they are compatible.)"
+            "Please note that Smile: Sunshine Cat's Special Skill and Bunnygirl Charlotte' Basic Skill are only additional activations, so they are not included in the turn. (That being said, both of them have Action Gauge increase, so they are compatible.)"
           ]
         },
         {
@@ -44711,7 +44711,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -44767,7 +44767,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -44833,7 +44833,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -44855,7 +44855,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -44978,7 +44978,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -45016,20 +45016,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yuko Natsuyoshi",
-        "affiliation": "Western recapture force",
+        "affiliation": "Western Reclamation Force",
         "birthday": "January 1st",
         "height": "158cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha",
-        "bio": "He is the captain of the Western Recapture Corps and a hero for the people of the West who dream of reclaiming the West. He pursues strength and never allows himself to be seen as weak."
+        "origin": "Western Disaster Zone",
+        "obtain": "Pickup / Standard Observation",
+        "bio": "She is the captain of the Western Recapture Corps and a hero for the people of the West who dream of reclaiming the West. She pursues strength and never allows herself to be seen as weak."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "vesta",
-    "name": "Vesta",
-    "title": "Western recapture force · Impact damage",
+    "name": "Besta",
+    "title": "Western Reclamation Force · Impact damage",
     "rarity": "SR",
     "element": "Star",
     "role": "Defender",
@@ -45081,12 +45081,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Vesta's maximum HP increases by 15%.\nAfter Vesta is attacked, if her Jump stack is at maximum, she will create a barrier for 2 turns and erase all Jump stacks.\nAfter receiving a general attack, 40% activates \"Repel\" on a random enemy. The additional activation effect only occurs once per turn, and it also occurs during Toughness Break state.",
+        "exactDescription": "Besta's maximum HP increases by 15%.\nAfter Besta is attacked, if her Jump stack is at maximum, she will create a barrier for 2 turns and erase all Jump stacks.\nAfter receiving a general attack, 40% activates \"Repel\" on a random enemy. The additional activation effect only occurs once per turn, and it also occurs during Toughness Break state.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -45125,7 +45125,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Barrier",
@@ -45181,7 +45181,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -45220,7 +45220,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "After filling a lance with the power of emptiness, it falls at full speed and attacks the enemy.\nInflicts DEF Up on all allies for 2 turns, inflicts Barrier on himself for 2 turns, and gives himself 1 Jump stack.\nIf your HP is less than 50%, your barrier value will increase by 50%. The damage increases in proportion to your maximum HP.",
+        "exactDescription": "After filling a lance with the power of emptiness, it falls at full speed and attacks the enemy.\nInflicts DEF Up on all allies for 2 turns, inflicts Barrier on herself for 2 turns, and gives herself 1 Jump stack.\nIf your HP is less than 50%, your barrier value will increase by 50%. The damage increases in proportion to your maximum HP.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.",
         "tooltips": [
           {
@@ -45233,7 +45233,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Down",
@@ -45287,7 +45287,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -45298,7 +45298,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
@@ -45307,7 +45307,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             }
           ]
@@ -45321,7 +45321,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -45332,16 +45332,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517786",
           "targetSlug": "arcana-79517786",
-          "targetName": "Satisfying Meal",
+          "targetName": "A Satisfying Meal",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -45410,7 +45410,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "spOrEnergyCost": "Passive | Toughness: 1",
           "multiplierSummary": "Passive Effect",
           "scalingRows": [],
-          "exactDescription": "Vesta's maximum HP increases by 12%.",
+          "exactDescription": "Besta's maximum HP increases by 12%.",
           "novaBurst": "",
           "tooltips": []
         },
@@ -45445,7 +45445,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -45484,7 +45484,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -45523,7 +45523,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "ATK Down",
@@ -45537,7 +45537,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/JOURNEY_ITEM_PRECIOUS_DIARY.webp",
         "rank": "B",
         "rankNote": "(Solid Upgrade)",
-        "effect": "At the start of battle, generates a barrier for 2 turns. After receiving a single attack, if the attacker is weakened, creates a barrier for 1 turn and deals 100% chain damage to the attacker proportional to his or her maximum HP. Barrier increases in proportion to own maximum HP. The effect after being attacked only occurs once per turn."
+        "effect": "At the start of battle, generates a barrier for 2 turns. After receiving a single attack, if the attacker is weakened, creates a barrier for 1 turn and deals 100% chain damage to the attacker proportional to her or her maximum HP. Barrier increases in proportion to own maximum HP. The effect after being attacked only occurs once per turn."
       },
       "resonancePotentials": [
         {
@@ -45556,7 +45556,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -45612,7 +45612,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -45678,7 +45678,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -45700,7 +45700,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -45861,19 +45861,19 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Yui Tsukada",
-        "affiliation": "Western recapture force",
+        "affiliation": "Western Reclamation Force",
         "birthday": "March 29th",
         "height": "162cm",
-        "origin": "Western disaster area",
-        "obtain": "Gacha (constant)",
-        "bio": "Captain of the Western Recapture Corps. He has become a role model among Western warriors because he accomplishes his mission without complaining under any circumstances."
+        "origin": "Western Disaster Zone",
+        "obtain": "Standard Observation",
+        "bio": "Captain of the Western Recapture Corps. She has become a role model among Western warriors because she accomplishes her mission without complaining under any circumstances."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "anna",
-    "name": "Anna",
+    "name": "Annah",
     "title": "NOA Town Guard · Impact damage",
     "rarity": "SR",
     "element": "Sun",
@@ -45882,7 +45882,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "S",
     "rerollTier": "B",
     "score": "0",
-    "summary": "A durable defender who can recover his own HP. · All attack skills depend on attack power, so it's difficult to produce firepower\n└It's different if your build focuses on firepower. · Random Action Gauge increase when using Basic Skill · Counterattack is now possible when the ignition stack is at maximum\n└Support your allies by increasing the frequency of Basic Skill usage · Have an extra turn with Nova Burst",
+    "summary": "A durable defender who can recover her own HP. · All attack skills depend on attack power, so it's difficult to produce firepower\n└It's different if your build focuses on firepower. · Random Action Gauge increase when using Basic Skill · Revenge Attack is now possible when the ignition stack is at maximum\n└Support your allies by increasing the frequency of Basic Skill usage · Have an extra turn with Nova Burst",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 25109,
@@ -45916,16 +45916,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Anna's maximum HP increases by 15%.\nAfter Anna uses \"Stop Resistance!\", increases the Action Gauge of a random ally other than herself by 15%.\nAfter receiving a single attack, give yourself 1 Ignition stack.\nAt the start of your turn, if your Ignition stack is at its maximum, erase all Ignition stacks and generate an enhanced counterattack after attacking.",
+        "exactDescription": "Annah's maximum HP increases by 15%.\nAfter Annah uses \"Stop Resistance!\", increases the Action Gauge of a random ally other than herself by 15%.\nAfter receiving a single attack, give yourself 1 Ignition stack.\nAt the start of your turn, if your Ignition stack is at its maximum, erase all Ignition stacks and generate an enhanced Revenge Attack after attacking.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
-            "title": "Enhanced counterattack",
-            "detail": "Counterattack rate increases by 100%."
+            "title": "Enhanced Revenge Attack",
+            "detail": "Revenge Attack rate increases by 100%."
           }
         ]
       },
@@ -45956,11 +45956,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
-            "title": "Enhanced counterattack",
-            "detail": "Counterattack rate increases by 100%."
+            "title": "Enhanced Revenge Attack",
+            "detail": "Revenge Attack rate increases by 100%."
           }
         ]
       },
@@ -45995,7 +45995,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Anna recharges her energy by eating donuts from her favorite street baker.\nRecovers own HP and generates SPD Up and Barrier for 3 turns. The amount of recovery and barrier increase in proportion to your maximum HP.",
+        "exactDescription": "Annah recharges her energy by eating donuts from her favorite street baker.\nRecovers own HP and generates SPD Up and Barrier for 3 turns. The amount of recovery and barrier increase in proportion to your maximum HP.",
         "novaBurst": "After using the skill, recovers 1 Toughness and takes an additional turn.",
         "tooltips": [
           {
@@ -46008,11 +46008,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
-            "title": "Enhanced counterattack",
-            "detail": "Counterattack rate increases by 100%."
+            "title": "Enhanced Revenge Attack",
+            "detail": "Revenge Attack rate increases by 100%."
           }
         ]
       },
@@ -46047,7 +46047,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Anna blows a whistle and summons an arrest team to attack the enemy.\nInflicts DEF Up on all allies for 2 turns, causes ATK Down on enemies for 2 turns at 100%, and gives 3 Ignition stacks to yourself.\nAfter attacking, if your HP is below 50%, recover your HP. The amount of recovery increases in proportion to your maximum HP.",
+        "exactDescription": "Annah blows a whistle and summons an arrest team to attack the enemy.\nInflicts DEF Up on all allies for 2 turns, causes ATK Down on enemies for 2 turns at 100%, and gives 3 Ignition stacks to yourself.\nAfter attacking, if your HP is below 50%, recover your HP. The amount of recovery increases in proportion to your maximum HP.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.",
         "tooltips": [
           {
@@ -46060,11 +46060,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
-            "title": "Enhanced counterattack",
-            "detail": "Counterattack rate increases by 100%."
+            "title": "Enhanced Revenge Attack",
+            "detail": "Revenge Attack rate increases by 100%."
           },
           {
             "title": "SPD Up",
@@ -46098,10 +46098,10 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaTier": "S",
       "appMediaRerollTier": "B",
       "evalBullets": [
-        "A durable defender who can recover his own HP.",
+        "A durable defender who can recover her own HP.",
         "All attack skills depend on attack power, so it's difficult to produce firepower\n└It's different if your build focuses on firepower.",
         "Random Action Gauge increase when using Basic Skill",
-        "Counterattack is now possible when the ignition stack is at maximum\n└Support your allies by increasing the frequency of Basic Skill usage",
+        "Revenge Attack is now possible when the ignition stack is at maximum\n└Support your allies by increasing the frequency of Basic Skill usage",
         "Have an extra turn with Nova Burst"
       ],
       "partyTitle": "Beginner formation",
@@ -46122,7 +46122,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "anna",
-          "name": "Anna",
+          "name": "Annah",
           "nameJp": "アンナ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
           "position": "FRONT"
@@ -46137,7 +46137,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "A composition that combines Asherah, which you can get from the initial observation, and Lacy, which you can get from the selection box that you can get from the login bonus on the first day.",
-        "If you can get other SSR characters through gacha, try to change them to Anna or Naru as appropriate.",
+        "If you can get other SSR characters through gacha, try to change them to Annah or Naru as appropriate.",
         "Lacy is quite strong in the early stages, so let's focus on training Lacy."
       ],
       "arcanaDeckTitle": "Defender basic formation",
@@ -46157,7 +46157,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -46168,7 +46168,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
@@ -46177,7 +46177,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "Summer Night Sky",
               "nameJp": "夏の夜の空",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp"
             }
           ]
@@ -46191,7 +46191,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517789",
               "slug": "arcana-79517789",
-              "name": "Undercover Cup",
+              "name": "Undercover Cop",
               "nameJp": "アンダーカバー・コップ",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -46202,16 +46202,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517786",
           "targetSlug": "arcana-79517786",
-          "targetName": "Satisfying Meal",
+          "targetName": "A Satisfying Meal",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -46280,7 +46280,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "spOrEnergyCost": "Passive | Toughness: 1",
           "multiplierSummary": "Passive Effect",
           "scalingRows": [],
-          "exactDescription": "Anna's maximum HP increases by 12%.",
+          "exactDescription": "Annah's maximum HP increases by 12%.",
           "novaBurst": "",
           "tooltips": []
         },
@@ -46311,7 +46311,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -46337,7 +46337,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               ]
             }
           ],
-          "exactDescription": "Anna eats donuts from her favorite Street Bakers to recharge her batteries. Recovers own HP and causes SPD Up for 2 turns. The amount of recovery increases in proportion to your maximum HP.",
+          "exactDescription": "Annah eats donuts from her favorite Street Bakers to recharge her batteries. Recovers own HP and causes SPD Up for 2 turns. The amount of recovery increases in proportion to your maximum HP.",
           "novaBurst": "After using the skill, restores own Toughness by 1 and increases own Action Gauge by 30%.",
           "tooltips": [
             {
@@ -46346,7 +46346,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -46381,7 +46381,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               ]
             }
           ],
-          "exactDescription": "Anna blows the whistle and summons the arrest team to charge the enemy. Inflicts 100% ATK Down on the enemy for 2 turns. After attacking, if your HP is below 50%, recover your HP. The amount of recovery increases in proportion to your maximum HP.",
+          "exactDescription": "Annah blows the whistle and summons the arrest team to charge the enemy. Inflicts 100% ATK Down on the enemy for 2 turns. After attacking, if your HP is below 50%, recover your HP. The amount of recovery increases in proportion to your maximum HP.",
           "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.",
           "tooltips": [
             {
@@ -46390,7 +46390,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "SPD Up",
@@ -46423,7 +46423,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -46479,7 +46479,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 2%",
           "materials": [
             {
@@ -46545,7 +46545,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -46567,7 +46567,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "DEF 4%",
           "materials": [
             {
@@ -46678,7 +46678,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -46720,7 +46720,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -46732,8 +46732,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "birthday": "September 7th",
         "height": "157cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "Town Guard protects NOA's public order. Although he has a friendly personality and laughs a lot and talks to everyone, he always takes his job as a town guard seriously."
+        "obtain": "Standard Observation",
+        "bio": "Town Guard protects NOA's public order. Although she has a friendly personality and laughs a lot and talks to everyone, she always takes her job as a town guard seriously."
       }
     }
   },
@@ -46741,7 +46741,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "marcille",
     "name": "Marcille",
-    "title": "Petra union · Impact damage",
+    "title": "Petra Union · Impact damage",
     "rarity": "SR",
     "element": "Sun",
     "role": "Assassin",
@@ -46796,7 +46796,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -46827,7 +46827,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Broken nut",
@@ -46878,7 +46878,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Hexa nut",
@@ -46925,7 +46925,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Hexa nut",
@@ -46984,7 +46984,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -47001,13 +47001,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -47018,13 +47018,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -47035,7 +47035,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -47044,7 +47044,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -47052,7 +47052,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -47067,7 +47067,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -47170,7 +47170,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -47209,7 +47209,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -47244,7 +47244,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "SPD Up",
@@ -47536,7 +47536,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -47586,20 +47586,20 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Nanako Ando",
-        "affiliation": "Petra union",
+        "affiliation": "Petra Union",
         "birthday": "September 19th",
         "height": "150cm",
         "origin": "Callide",
-        "obtain": "Gacha (constant)",
-        "bio": "Petra union leader. He works hard every day to buy his family's carrot farm."
+        "obtain": "Standard Observation",
+        "bio": "Petra union leader. She works hard every day to buy her family's carrot farm."
       }
     }
   },
   {
     "gameSlug": "starsavior",
     "slug": "bella",
-    "name": "Bella",
-    "title": "Delivery shop association · Elemental Damage",
+    "name": "Vera",
+    "title": "Courier Guild · Elemental Damage",
     "rarity": "SR",
     "element": "Moon",
     "role": "Supporter",
@@ -47641,12 +47641,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "spOrEnergyCost": "Passive | Toughness: 1",
         "multiplierSummary": "Passive Effect",
         "scalingRows": [],
-        "exactDescription": "Bella's maximum HP increases by 15%.\nAfter Bella is attacked, if her Cooling is at maximum stack, increases her Action Gauge by 15%.",
+        "exactDescription": "Vera's maximum HP increases by 15%.\nAfter Vera is attacked, if her Cooling is at maximum stack, increases her Action Gauge by 15%.",
         "novaBurst": "",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -47677,7 +47677,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -47703,12 +47703,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Bella comes to visit with some good news. Recovers HP of ally target, removes 2 debuffs from allies, then increases own Action Gauge by 40%.\nIf the ally target has Moon Attribute, the amount of recovery will increase. The amount of recovery increases in proportion to your maximum HP.",
+        "exactDescription": "Vera comes to visit with some good news. Recovers HP of ally target, removes 2 debuffs from allies, then increases own Action Gauge by 40%.\nIf the ally target has Moon Attribute, the amount of recovery will increase. The amount of recovery increases in proportion to your maximum HP.",
         "novaBurst": "After using a skill, recover 1 Toughness.",
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -47734,7 +47734,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Bella completes a special package delivery for an ally. Recovers the HP of all allies, causes 1 Express Delivery for 2 turns, and grants 3 Cooling stacks to yourself.\nIf the ally target has Moon Attribute, the amount of recovery will increase. The amount of recovery increases in proportion to your maximum HP.",
+        "exactDescription": "Vera completes a special package delivery for an ally. Recovers the HP of all allies, causes 1 Express Delivery for 2 turns, and grants 3 Cooling stacks to yourself.\nIf the ally target has Moon Attribute, the amount of recovery will increase. The amount of recovery increases in proportion to your maximum HP.",
         "novaBurst": "After using the skill, your Toughness will be restored by 1 and the effect of express delivery will be extended by 1 turn.",
         "tooltips": [
           {
@@ -47743,7 +47743,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       }
@@ -47788,16 +47788,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79517750",
           "targetSlug": "arcana-79517750",
-          "targetName": "Princess Takes the Throne",
+          "targetName": "The Princess Ascends the Throne",
           "targetIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
           "substitutes": [
             {
               "articleId": "79517792",
               "slug": "arcana-79517792",
-              "name": "Naru Is More Professional Than Anyone Else",
+              "name": "More Than Professional",
               "nameJp": "誰よりもプロフェッショナル",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp"
             }
           ]
@@ -47805,16 +47805,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79606361",
           "targetSlug": "arcana-79606361",
-          "targetName": "Daughter of the Stranis Family",
+          "targetName": "Young Lady of Stranis",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -47822,16 +47822,16 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80521390",
           "targetSlug": "arcana-80521390",
-          "targetName": "Harsh Ordeal",
+          "targetName": "Grueling Ordeal",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
           "substitutes": [
             {
               "articleId": "79534223",
               "slug": "arcana-79534223",
-              "name": "Perfect Bunny Girl",
+              "name": "The Perfect Bunny Girl",
               "nameJp": "完璧なバニーガール",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp"
             }
           ]
@@ -47839,7 +47839,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -47848,7 +47848,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -47856,13 +47856,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
               "articleId": "79517762",
               "slug": "arcana-79517762",
-              "name": "Heaven's Trial",
+              "name": "Divine Trial",
               "nameJp": "天の試練",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -47934,7 +47934,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "spOrEnergyCost": "Passive | Toughness: 1",
           "multiplierSummary": "Passive Effect",
           "scalingRows": [],
-          "exactDescription": "Bella's maximum HP increases by 12%.",
+          "exactDescription": "Vera's maximum HP increases by 12%.",
           "novaBurst": "",
           "tooltips": []
         },
@@ -47965,7 +47965,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Cooling",
-              "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -47991,12 +47991,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               ]
             }
           ],
-          "exactDescription": "Bella came to visit with some good news. Recovers HP of ally target and removes one ally's debuff. The amount of recovery increases in proportion to your maximum HP.",
+          "exactDescription": "Vera came to visit with some good news. Recovers HP of ally target and removes one ally's debuff. The amount of recovery increases in proportion to your maximum HP.",
           "novaBurst": "After using a skill, recover 1 Toughness.",
           "tooltips": [
             {
               "title": "Cooling",
-              "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -48022,12 +48022,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               ]
             }
           ],
-          "exactDescription": "Bella completes a special package delivery for an ally. Recovers HP of all allies. If the target is in an enhanced state, generate 1 {Express Delivery} per turn. The amount of recovery increases in proportion to your maximum HP.",
+          "exactDescription": "Vera completes a special package delivery for an ally. Recovers HP of all allies. If the target is in an enhanced state, generate 1 {Express Delivery} per turn. The amount of recovery increases in proportion to your maximum HP.",
           "novaBurst": "After using the skill, recovers your Toughness by 1 and temporarily increases the amount of recovery given by 15%.",
           "tooltips": [
             {
               "title": "Cooling",
-              "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         }
@@ -48056,7 +48056,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "resonanceStages": [
         {
           "stage": 1,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "ATK +75 HP +720",
           "materials": [
             {
@@ -48073,7 +48073,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "Effect RES4%",
           "materials": [
             {
@@ -48112,7 +48112,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 4,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP2%",
           "materials": [
             {
@@ -48134,7 +48134,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +75",
           "materials": [
             {
@@ -48178,7 +48178,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 7,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "ATK +125 HP +1080",
           "materials": [
             {
@@ -48200,7 +48200,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 8,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP4%",
           "materials": [
             {
@@ -48222,7 +48222,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +150 DEF +90",
           "materials": [
             {
@@ -48323,7 +48323,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -48361,11 +48361,11 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Shina Shuto",
-        "affiliation": "Delivery shop association",
+        "affiliation": "Courier Guild",
         "birthday": "February 26th",
         "height": "157cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
+        "obtain": "Standard Observation",
         "bio": "A delivery girl who always works hard to deliver packages at NOA. My goal in life is to earn a lot of money and buy a Cruiser as a special car for my delivery company."
       }
     }
@@ -48374,7 +48374,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "naru",
     "name": "Naru",
-    "title": "Orbital search team · Elemental Damage",
+    "title": "Orbital Recon Team · Elemental Damage",
     "rarity": "SR",
     "element": "Star",
     "role": "Ranger",
@@ -48421,7 +48421,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -48452,7 +48452,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -48487,7 +48487,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -48513,7 +48513,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "With overflowing confidence, he performs an energy dissipation calculation using an unfinished equation.\nAfter inflicting SPD Down on the enemy for 2 turns at 100% and Effect RES Down for 2 turns at 100%, give yourself 2 Jump stacks.",
+        "exactDescription": "With overflowing confidence, she performs an energy dissipation calculation using an unfinished equation.\nAfter inflicting SPD Down on the enemy for 2 turns at 100% and Effect RES Down for 2 turns at 100%, give yourself 2 Jump stacks.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1.",
         "tooltips": [
           {
@@ -48526,7 +48526,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -48579,7 +48579,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "slug": "anna",
-          "name": "Anna",
+          "name": "Annah",
           "nameJp": "アンナ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
           "position": "FRONT"
@@ -48594,7 +48594,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "partyNotes": [
         "A composition that combines Asherah, which you can get from the initial observation, and Lacy, which you can get from the selection box that you can get from the login bonus on the first day.",
-        "If you can get other SSR characters through gacha, try to change them to Anna or Naru as appropriate.",
+        "If you can get other SSR characters through gacha, try to change them to Annah or Naru as appropriate.",
         "Lacy is quite strong in the early stages, so let's focus on training Lacy."
       ],
       "arcanaDeckTitle": "Attacker basic formation",
@@ -48608,7 +48608,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -48625,13 +48625,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -48642,13 +48642,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -48659,7 +48659,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -48668,7 +48668,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -48676,7 +48676,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -48691,7 +48691,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -48794,7 +48794,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -48829,7 +48829,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -48855,7 +48855,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               ]
             }
           ],
-          "exactDescription": "With overflowing confidence, he executes an energy dissipation calculation formula using an unfinished equation. Inflicts SPD Down on the enemy for 2 turns at 100%.",
+          "exactDescription": "With overflowing confidence, she executes an energy dissipation calculation formula using an unfinished equation. Inflicts SPD Down on the enemy for 2 turns at 100%.",
           "novaBurst": "When attacking, temporarily increases your Fixed Toughness Damage by 1, and after attacking, activates 100% Effect RES Down on the enemy for 2 turns.",
           "tooltips": [
             {
@@ -48864,7 +48864,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "ATK Up",
@@ -48914,7 +48914,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -48975,7 +48975,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -49063,7 +49063,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -49182,7 +49182,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
         },
         {
-          "name": "Ceres stick all-in-one essence",
+          "name": "Celestial All-in-One Essence",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_hovi3.webp",
           "tier": "Liked",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
@@ -49202,12 +49202,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Haruna Fukushima",
-        "affiliation": "Orbital search team",
+        "affiliation": "Orbital Recon Team",
         "birthday": "March 3rd",
         "height": "158cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "An intern for the Orbital Search Team affiliated with Polaris. He dreams of a future where it will be possible to perfectly observe the future through the equations he devised."
+        "obtain": "Standard Observation",
+        "bio": "An intern for the Orbital Search Team affiliated with Polaris. She dreams of a future where it will be possible to perfectly observe the future through the equations she devised."
       }
     }
   },
@@ -49215,7 +49215,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "claire",
     "name": "Claire",
-    "title": "Candle square · Slash Damage",
+    "title": "Candle Square · Slash Damage",
     "rarity": "SR",
     "element": "Moon",
     "role": "Assassin",
@@ -49262,7 +49262,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -49293,7 +49293,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -49328,7 +49328,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -49354,7 +49354,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Use force to make a rude uninvited guest realize his mistake.\nIncreases own Action Gauge by 30% and causes ATK Up for 2 turns.\nWhen attacking, ignore the enemy's first defense occurrence rate. If you defeat an enemy, inflict stealth on yourself for 2 turns.",
+        "exactDescription": "Use force to make a rude uninvited guest realize her mistake.\nIncreases own Action Gauge by 30% and causes ATK Up for 2 turns.\nWhen attacking, ignore the enemy's first defense occurrence rate. If you defeat an enemy, inflict stealth on yourself for 2 turns.",
         "novaBurst": "When attacking, your Fixed Toughness Damage temporarily increases by 1 and damage increases by 20%.",
         "tooltips": [
           {
@@ -49367,7 +49367,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Cooling",
-            "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Up",
@@ -49406,7 +49406,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "partyNotes": [],
       "arcanaDeckTitle": "Assassin basic formation",
       "journeyTrainingPoints": [
-        "Since he is a pure attacker with no debuffs, training that prioritizes strength is OK\n└Put up physical strength and patience as much as possible.",
+        "Since she is a pure attacker with no debuffs, training that prioritizes strength is OK\n└Put up physical strength and patience as much as possible.",
         "If you have enough Crit Rate, change Vani Claire Lucana to Vani Flare Arcana.",
         "It is recommended that Stellar Archive has Power +2 to strengthen its power.",
         "Critical and offensive potential are safe, but it is also recommended to use speed buffs and increase Action Gauge to increase speed."
@@ -49415,13 +49415,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -49432,7 +49432,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -49449,13 +49449,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80363578",
           "targetSlug": "arcana-80363578",
-          "targetName": "Itinerary Without Return",
+          "targetName": "Journey of No Return",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
           "substitutes": [
             {
               "articleId": "79941760",
               "slug": "arcana-79941760",
-              "name": "The Warmth of the White Moon Is Like Sunlight",
+              "name": "A White Moon Shines With the Sun's Warmth",
               "nameJp": "白い月のぬくもりは陽光のように",
               "rarity": "SSR",
               "statTag": "Endurance",
@@ -49466,7 +49466,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -49481,7 +49481,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -49584,7 +49584,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Cooling",
-              "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -49619,7 +49619,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Cooling",
-              "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -49650,7 +49650,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Cooling",
-              "detail": "Damage deal to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Sun Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "SPD Up",
@@ -49700,7 +49700,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Protection +45",
+          "journeyBonus": "Protect +45",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -49761,7 +49761,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Protection +60",
+          "journeyBonus": "Protect +60",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -49849,7 +49849,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Protection +75",
+          "journeyBonus": "Protect +75",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -49988,12 +49988,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Hikari Sonoyama",
-        "affiliation": "Candle square",
+        "affiliation": "Candle Square",
         "birthday": "January 30th",
         "height": "162cm",
         "origin": "NOA",
-        "obtain": "Gacha (constant)",
-        "bio": "Candle Square's noble maid and acting head maid. He has a personality that values ​​planning and Lulu above all else, and is always making plans for irregular situations."
+        "obtain": "Standard Observation",
+        "bio": "Candle Square's noble maid and acting head maid. She has a personality that values ​​planning and Lulu above all else, and is always making plans for irregular situations."
       }
     }
   },
@@ -50001,7 +50001,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "scarlet",
     "name": "Scarlet",
-    "title": "Candle square · Elemental Damage",
+    "title": "Candle Square · Elemental Damage",
     "rarity": "SR",
     "element": "Sun",
     "role": "Striker",
@@ -50052,7 +50052,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -50083,7 +50083,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "Combustion",
@@ -50126,7 +50126,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -50152,7 +50152,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             ]
           }
         ],
-        "exactDescription": "Bella Summons the Lumini tribe's followers and exhales extremely hot breath. Inflicts Burn on the enemy for 2 turns at 100%, and additional Burn for 2 turns at 100%.\n2 turns on yourself Choki Choki! and gives 3 Ignition stacks.",
+        "exactDescription": "Vera Summons the Lumini tribe's followers and exhales extremely hot breath. Inflicts Burn on the enemy for 2 turns at 100%, and additional Burn for 2 turns at 100%.\n2 turns on yourself Choki Choki! and gives 3 Ignition stacks.",
         "novaBurst": "When attacking, your Fixed Toughness Damage will temporarily increase by 1, and after attacking, cause the enemy to additionally inflict {Burn} for 2 turns at 100%. Effect Ignore RES.",
         "tooltips": [
           {
@@ -50165,7 +50165,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Ignition",
-            "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "ATK Up",
@@ -50214,7 +50214,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -50231,13 +50231,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -50248,13 +50248,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -50265,7 +50265,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -50274,7 +50274,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -50282,7 +50282,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -50297,7 +50297,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -50400,7 +50400,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -50439,7 +50439,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -50465,7 +50465,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               ]
             }
           ],
-          "exactDescription": "Bella Summons the Lumini tribe's followers and exhales extremely hot breath. Inflicts Burn on the enemy for 2 turns at 100%, and inflicts Burn for 1 turn at 75%.",
+          "exactDescription": "Vera Summons the Lumini tribe's followers and exhales extremely hot breath. Inflicts Burn on the enemy for 2 turns at 100%, and inflicts Burn for 1 turn at 75%.",
           "novaBurst": "When attacking, your Fixed Toughness Damage is temporarily increased by 1, and the chance of additional combustion becomes 100%.",
           "tooltips": [
             {
@@ -50474,7 +50474,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Ignition",
-              "detail": "Damage deal to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Star Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "ATK Up",
@@ -50524,7 +50524,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 2,
-          "journeyBonus": "Body Power +30",
+          "journeyBonus": "Health +30",
           "combatBonus": "ATK 2%",
           "materials": [
             {
@@ -50585,7 +50585,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 5,
-          "journeyBonus": "Body Power +40",
+          "journeyBonus": "Health +40",
           "combatBonus": "HP +900 DEF +60",
           "materials": [
             {
@@ -50673,7 +50673,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 9,
-          "journeyBonus": "Body Power +50",
+          "journeyBonus": "Health +50",
           "combatBonus": "ATK +200 DEF +70",
           "materials": [
             {
@@ -50774,7 +50774,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
         },
         {
-          "name": "Ceres tile sorbet",
+          "name": "Celestial Sorbet",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_ib9ej.webp",
           "tier": "Favorite",
           "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
@@ -50812,12 +50812,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Misaki Akiyama",
-        "affiliation": "Candle square",
+        "affiliation": "Candle Square",
         "birthday": "May 5th",
         "height": "155cm",
-        "origin": "Dragon valley",
-        "obtain": "Gacha (constant)",
-        "bio": "A dragon girl who dreams of becoming a great tailor. He is ignorant of the common sense of human society, and is often scolded by Claire for causing trouble."
+        "origin": "Dragon Valley",
+        "obtain": "Standard Observation",
+        "bio": "A dragon girl who dreams of becoming a great tailor. She is ignorant of the common sense of human society, and is often scolded by Claire for causing trouble."
       }
     }
   },
@@ -50825,7 +50825,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "gameSlug": "starsavior",
     "slug": "clarissa",
     "name": "Clarissa",
-    "title": "Canopic guard · Impact damage",
+    "title": "Canopic Guard · Impact damage",
     "rarity": "SR",
     "element": "Star",
     "role": "Ranger",
@@ -50872,7 +50872,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -50903,7 +50903,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "tooltips": [
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -50938,7 +50938,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           }
         ]
       },
@@ -50973,7 +50973,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           },
           {
             "title": "Jumping",
-            "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+            "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
           },
           {
             "title": "SPD Down",
@@ -51012,21 +51012,21 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "recommendedParty": [
         {
           "slug": "swimsuit-smile",
-          "name": "Swimsuit Smile",
+          "name": "Smile: Sunshine Cat",
           "nameJp": "水着スマイル",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/112830_qacgx.webp",
           "position": "BACK"
         },
         {
           "slug": "ede",
-          "name": "Ede",
+          "name": "Haydee",
           "nameJp": "エデ",
           "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
           "position": "FRONT"
         },
         {
           "slug": "rin",
-          "name": "Rin",
+          "name": "Lyn",
           "nameJp": "リン",
           "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
           "position": "FRONT"
@@ -51040,8 +51040,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         }
       ],
       "partyNotes": [
-        "As for the composition dyed with Star Attribute, we recommend a composition centered around Swimsuit Smile, and we would like to use Ede for the durability frame.",
-        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Rin, who can pass jumping stacks, but there are multiple potential substitutes, such as Yanagi Mina, who is excellent as an attacker, Bell Lease, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
+        "As for the composition dyed with Star Attribute, we recommend a composition centered around Smile: Sunshine Cat, and we would like to use Haydee for the durability frame.",
+        "For the other two slots, we are using Clarissa, who is good at delaying actions, and Lyn, who can pass jumping stacks, but there are multiple potential substitutes, such as Yoo Mina, who is excellent as an attacker, Bell Rhys, who can remove reinforcement, remove reinforcement, and inflict silence, and Roberta, who has a counter.",
         "Therefore, it is recommended to hire an attacker who is well-developed among the characters you own."
       ],
       "arcanaDeckTitle": "Attacker basic formation",
@@ -51054,7 +51054,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80012824",
           "targetSlug": "arcana-80012824",
-          "targetName": "Weakness Correction Custom Training",
+          "targetName": "Customized Training to Cover Weaknesses",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/172414_ia8pq.webp",
           "substitutes": [
             {
@@ -51071,13 +51071,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79766540",
           "targetSlug": "arcana-79766540",
-          "targetName": "An Unyielding Masterpiece",
+          "targetName": "The Indomitable Masterpiece",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/183029_ni2vf.webp",
           "substitutes": [
             {
               "articleId": "79517753",
               "slug": "arcana-79517753",
-              "name": "Atop the Tower, Welcoming the Glass Moon",
+              "name": "Under the Glass Moon, Over the Pavilion",
               "nameJp": "楼閣の上、ガラスの月を迎えて",
               "rarity": "SSR",
               "statTag": "Power",
@@ -51088,13 +51088,13 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79534223",
           "targetSlug": "arcana-79534223",
-          "targetName": "Perfect Bunny Girl",
+          "targetName": "The Perfect Bunny Girl",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
           "substitutes": [
             {
               "articleId": "79576397",
               "slug": "arcana-79576397",
-              "name": "Pioneer of Imaginary Numbers",
+              "name": "The Imaginary Pioneer",
               "nameJp": "虚数の開拓者",
               "rarity": "SSR",
               "statTag": "Power",
@@ -51105,7 +51105,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "79941760",
           "targetSlug": "arcana-79941760",
-          "targetName": "The Warmth of the White Moon Is Like Sunlight",
+          "targetName": "A White Moon Shines With the Sun's Warmth",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194656_x2w06.webp",
           "substitutes": [
             {
@@ -51114,7 +51114,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
               "name": "A Knight's Oath",
               "nameJp": "ある騎士の誓い",
               "rarity": "SSR",
-              "statTag": "Vitality",
+              "statTag": "Health",
               "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp"
             }
           ]
@@ -51122,7 +51122,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "targetArticleId": "80139832",
           "targetSlug": "arcana-80139832",
-          "targetName": "Death to Flowers",
+          "targetName": "Death for the Flowers",
           "targetIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/161306_gw2et.webp",
           "substitutes": [
             {
@@ -51137,7 +51137,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             {
               "articleId": "79517795",
               "slug": "arcana-79517795",
-              "name": "Dream While Looking at the Stars",
+              "name": "Dreams Under the Stars",
               "nameJp": "星を見ながら夢を",
               "rarity": "SSR",
               "statTag": "Focus",
@@ -51240,7 +51240,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "tooltips": [
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -51275,7 +51275,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             }
           ]
         },
@@ -51310,7 +51310,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
             },
             {
               "title": "Jumping",
-              "detail": "Damage deal to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
+              "detail": "Damage dealt to Moon Attribute units increased by 1%. Applies to up to 5 stacks. Boost effects are applied independently regardless of strengthening/weakening."
             },
             {
               "title": "SPD Down",
@@ -51648,12 +51648,12 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "profile": {
         "cv": "Maki Kawase",
-        "affiliation": "Canopic guard",
+        "affiliation": "Canopic Guard",
         "birthday": "November 9th",
         "height": "166cm",
-        "origin": "Canopic mountains",
-        "obtain": "Gacha (constant)",
-        "bio": "A girl who worked as a hunter in the Canopus Mountains. He has superhuman eyesight. Although he likes mischief and has a bright personality, he tries to keep a certain distance from everyone."
+        "origin": "Canopic Mountains",
+        "obtain": "Standard Observation",
+        "bio": "A girl who worked as a hunter in the Canopus Mountains. She has superhuman eyesight. Although she likes mischief and has a bright personality, she tries to keep a certain distance from everyone."
       }
     }
   }
@@ -51671,19 +51671,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517741",
-    "name": "Quiet Rest Time",
+    "name": "A Quiet Moment of Rest",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Defender Bonus",
+    "subType": "Health · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01_icon_arcana.webp",
     "tier": "S",
     "score": "0",
     "effectSummary": "[Sense of protection] Effect RES increases by 10%. / [Sense of life] Maximum HP increases by 5%. / [Prudent tactics] At the start of the turn, Nova Force increases by 2. Occurs only once every 2 turns.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Defender Bonus",
       "Stat Bonus": "Special Effect Bonus",
-      "Featured Unit": "Emily"
+      "Featured Unit": "Emilly"
     },
     "bestHolderSlugs": [
       "emily",
@@ -51693,9 +51693,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "静かな休息時間",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
-      "characterName": "Emily",
+      "characterName": "Emilly",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/194443_qs2vo.webp",
       "statBonusType": "Special Effect Bonus",
       "classBonus": "Defender Bonus",
@@ -51751,7 +51751,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +10",
+                "Health +10",
                 "Potential Power +5",
                 "[Sense of Protection] Potential Power +10%"
               ]
@@ -51764,7 +51764,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +15",
+                "Health +15",
                 "Potential Power +10",
                 "[Sense of Life] Potential Power +10%"
               ]
@@ -51777,7 +51777,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +15",
+                "Health +15",
                 "Potential Power +15",
                 "[Prudent Tactics] Potential"
               ]
@@ -51799,16 +51799,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "A Knight's Oath",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Universal Bonus",
+    "subType": "Health · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01_icon_arcana.webp",
     "tier": "S",
     "score": "0",
     "effectSummary": "[Stigmata of speed] Speed increases by 8.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "Speed Bonus",
-      "Featured Unit": "Charles"
+      "Featured Unit": "Charlotte"
     },
     "bestHolderSlugs": [
       "charles"
@@ -51816,9 +51816,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "ある騎士の誓い",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_SSR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
-      "characterName": "Charles",
+      "characterName": "Charlotte",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_KNIGHT_icon.webp",
       "statBonusType": "Speed Bonus",
       "classBonus": "Universal Bonus",
@@ -51864,16 +51864,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "eventTitle": "Don't let your guard down",
           "choices": [
             {
-              "choice": "Call Charles who runs away.",
+              "choice": "Call Charlotte who runs away.",
               "outcomes": [
-                "Body Power +5",
+                "Health +5",
                 "Stamina+15"
               ]
             },
             {
-              "choice": "Wait for Charles to return.",
+              "choice": "Wait for Charlotte to return.",
               "outcomes": [
-                "Body Power +15"
+                "Health +15"
               ]
             }
           ]
@@ -51884,7 +51884,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +12 Endurance +8"
+                "Health +12 Endurance +8"
               ]
             }
           ]
@@ -51895,7 +51895,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +12 Endurance +8",
+                "Health +12 Endurance +8",
                 "[Speed Stigmata] Potential"
               ]
             }
@@ -51913,16 +51913,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517747",
-    "name": "Night View Through Glass",
+    "name": "Night View Beyond the Window",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Protection · Savior-Exclusive Bonusance",
+    "subType": "Protect · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "[Generous response] When attacked by an enemy, if you are in Monastir's Discipline state, you will counterattack at 25%, and if you are attacked by an enemy in Taunt state, you will counterattack at 100%.",
+    "effectSummary": "[Generous response] When attacked by an enemy, if you are in Monastir's Discipline state, you will Revenge Attack at 25%, and if you are attacked by an enemy in Taunt state, you will Revenge Attack at 100%.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Carmen"
@@ -51933,7 +51933,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "ガラス越しの夜景",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Carmen",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
@@ -51942,7 +51942,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [
         {
           "name": "Generous response",
-          "effect": "When attacked by an enemy, if you are in Monastir's Discipline state, you will counterattack at 25%, and if you are attacked by an enemy in Taunt state, you will counterattack at 100%."
+          "effect": "When attacked by an enemy, if you are in Monastir's Discipline state, you will Revenge Attack at 25%, and if you are attacked by an enemy in Taunt state, you will Revenge Attack at 100%."
         }
       ],
       "uniqueEffect": {
@@ -51987,14 +51987,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "So can you give me a drink?",
               "outcomes": [
-                "Protection +5",
+                "Protect +5",
                 "Travel status: [Confidence] (2 turns)"
               ]
             },
             {
               "choice": "I think it's sufficient for civilian use.",
               "outcomes": [
-                "Protection +5",
+                "Protect +5",
                 "Condition +1"
               ]
             }
@@ -52006,13 +52006,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Got it. I'll try to write it as strangely as possible.",
               "outcomes": [
-                "Patience +8 Protection +12"
+                "Endurance +8 Protect +12"
               ]
             },
             {
               "choice": "I have a better idea...",
               "outcomes": [
-                "Protection +10",
+                "Protect +10",
                 "Condition +1"
               ]
             }
@@ -52024,7 +52024,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "If it's meaningful, I'll buy it.",
               "outcomes": [
-                "Protection +5",
+                "Protect +5",
                 "Condition +1",
                 "[Potential power of generous response]"
               ]
@@ -52032,7 +52032,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "It's better to follow your heart than to regret it later.",
               "outcomes": [
-                "Patience +8 Protection +12",
+                "Endurance +8 Protect +12",
                 "[Potential power of generous response]"
               ]
             }
@@ -52050,16 +52050,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517750",
-    "name": "Princess Takes the Throne",
+    "name": "The Princess Ascends the Throne",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Supporter Bonus",
+    "subType": "Health · Supporter Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Blessings of starlight] At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Supporter Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Frey"
@@ -52072,7 +52072,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "姫、王位に就く",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_SSR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Frey",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_PRAY_icon.webp",
@@ -52122,7 +52122,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +10 Patience +5"
+                "Health +10 Endurance +5"
               ]
             }
           ]
@@ -52133,7 +52133,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +10 Patience +5 Concentration +5"
+                "Health +10 Endurance +5 Focus +5"
               ]
             }
           ]
@@ -52144,7 +52144,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +12 Patience +8",
+                "Health +12 Endurance +8",
                 "[Benefit of Starlight] Potential"
               ]
             }
@@ -52162,7 +52162,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517753",
-    "name": "Atop the Tower, Welcoming the Glass Moon",
+    "name": "Under the Glass Moon, Over the Pavilion",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Universal Bonus",
@@ -52174,7 +52174,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Power",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "ATK Bonus",
-      "Featured Unit": "Rin"
+      "Featured Unit": "Lyn"
     },
     "bestHolderSlugs": [
       "rin"
@@ -52184,7 +52184,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_SWORDMASTER_SSR_01.webp",
       "statTag": "Power",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
-      "characterName": "Rin",
+      "characterName": "Lyn",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
       "statBonusType": "ATK Bonus",
       "classBonus": "Universal Bonus",
@@ -52236,7 +52236,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +5",
+                "Protect +5",
                 "Travel status: [Empathy ability] (permanent) Potential +10",
                 "[Attack Sense] Potential 10%"
               ]
@@ -52249,14 +52249,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Wait a minute, I'll check it first.",
               "outcomes": [
-                "Protection +25",
+                "Protect +25",
                 "Stamina -10"
               ]
             },
             {
               "choice": "...Are there any strange things in there?",
               "outcomes": [
-                "Protection +10",
+                "Protect +10",
                 "Potential +15"
               ]
             }
@@ -52268,7 +52268,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Protection +12",
+                "Strength +8 Protect +12",
                 "[Attack Stigmata] Potential"
               ]
             }
@@ -52286,7 +52286,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517756",
-    "name": "Walk with Friends",
+    "name": "A Stroll with Friends",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Caster Bonus",
@@ -52398,7 +52398,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517759",
-    "name": "Heavenly Judgment",
+    "name": "Divine Judgement",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Caster Bonus",
@@ -52481,7 +52481,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +10 Stamina +5"
+                "Strength +10 Health +5"
               ]
             }
           ]
@@ -52492,7 +52492,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +10 Stamina +5 Patience +5",
+                "Strength +10 Health +5 Endurance +5",
                 "[Magic circle of target alignment] potential power"
               ]
             }
@@ -52510,7 +52510,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517762",
-    "name": "Heaven's Trial",
+    "name": "Divine Trial",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Endurance · Universal Bonus",
@@ -52553,7 +52553,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       },
       "supportBonuses": [
         {
-          "label": "Initial patience",
+          "label": "Initial Endurance",
           "value": "9"
         },
         {
@@ -52584,14 +52584,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Tell the children their favorite stories.",
               "outcomes": [
-                "Patience +15"
+                "Endurance +15"
               ]
             },
             {
               "choice": "Let's proceed with the lesson.",
               "outcomes": [
-                "Patience +5",
-                "Stamina +25 Travel status: [Burnout] (5T)",
+                "Endurance +5",
+                "Health +25 Travel status: [Burnout] (5T)",
                 "[Sense of Defense] Potential 10%"
               ]
             }
@@ -52603,7 +52603,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +5 Patience +10"
+                "Health +5 Endurance +10"
               ]
             }
           ]
@@ -52614,7 +52614,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +5 Stamina +5 Patience +10",
+                "Strength +5 Health +5 Endurance +10",
                 "Potential of [sensory defense]"
               ]
             }
@@ -52632,7 +52632,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517765",
-    "name": "Invisible Place",
+    "name": "An Unseen Place",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Focus · Universal Bonus",
@@ -52706,7 +52706,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +15"
+                "Focus +15"
               ]
             }
           ]
@@ -52717,7 +52717,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +8 Concentration +15",
+                "Health +8 Focus +15",
                 "[Sense of concentration] potential 10%"
               ]
             }
@@ -52729,7 +52729,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +20",
+                "Focus +20",
                 "[First aid] potential"
               ]
             }
@@ -52820,7 +52820,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +5",
+                "Endurance +5",
                 "Potential +15"
               ]
             }
@@ -52832,7 +52832,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +10",
+                "Endurance +10",
                 "Potential +15",
                 "[Defensive prowess] potential 10%"
               ]
@@ -52845,7 +52845,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +10",
+                "Endurance +10",
                 "Potential +20",
                 "[Second heart] potential"
               ]
@@ -52910,7 +52910,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       },
       "supportBonuses": [
         {
-          "label": "Initial concentration",
+          "label": "Initial Focus",
           "value": "6"
         },
         {
@@ -52941,7 +52941,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +10 Stamina +10",
+                "Strength +10 Health +10",
                 "[Sense of concentration] potential 10%"
               ]
             }
@@ -52953,7 +52953,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Rose-colored with dew...?",
               "outcomes": [
-                "Strength +5 Stamina +5 Concentration +12",
+                "Strength +5 Health +5 Focus +12",
                 "Stamina -10",
                 "[Attack Sense] Potential 5-10%"
               ]
@@ -52961,7 +52961,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "The orange color of fresh grape fruit...?",
               "outcomes": [
-                "Stamina +10"
+                "Health +10"
               ]
             }
           ]
@@ -52972,7 +52972,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Stamina +8 Concentration +15",
+                "Strength +8 Health +8 Focus +15",
                 "Stamina -10",
                 "[Stigmata of Insight] Potential"
               ]
@@ -53062,7 +53062,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Strength +5",
-                "Stamina +10"
+                "Health +10"
               ]
             }
           ]
@@ -53073,8 +53073,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +5 Concentration +5",
-                "Stamina +10"
+                "Strength +5 Focus +5",
+                "Health +10"
               ]
             }
           ]
@@ -53086,7 +53086,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Strength +5",
-                "Stamina +10",
+                "Health +10",
                 "Potential of [sharp offensive]"
               ]
             }
@@ -53105,16 +53105,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517777",
-    "name": "Tempura Master",
+    "name": "Master of Fried Food",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Protection · Savior-Exclusive Bonusance",
+    "subType": "Protect · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_GADGET_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Sense of protection] Effect RES increases by 10%. / [Protection skills] Effect RES increases by 4%. / [Tempura party] After using the skill, if your HP is over 50%, increase your Action Gauge by 20%.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Tanya"
@@ -53125,7 +53125,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "天ぷら名人",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_CONSTRUCT_GADGET_SSR_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Tanya",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/CONSTRUCT_GADGET_icon.webp",
@@ -53183,7 +53183,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +10",
+                "Protect +10",
                 "[Sense of Protection] Potential 10%"
               ]
             }
@@ -53195,7 +53195,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +10",
+                "Protect +10",
                 "Condition +1",
                 "[Protection prowess] potential 10%"
               ]
@@ -53208,7 +53208,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +8 Protection +12",
+                "Endurance +8 Protect +12",
                 "[Tempura Party] Potential"
               ]
             }
@@ -53226,7 +53226,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517780",
-    "name": "There Is Always One Truth, Right?",
+    "name": "There's Only One Truth",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Focus · Caster Bonus",
@@ -53287,7 +53287,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "value": "400"
         },
         {
-          "label": "Concentration bonus",
+          "label": "Focus Bonus",
           "value": "4"
         },
         {
@@ -53302,7 +53302,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Concentration +12"
+                "Strength +8 Focus +12"
               ]
             }
           ]
@@ -53331,7 +53331,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +15",
+                "Focus +15",
                 "The potential of [resolute determination]"
               ]
             }
@@ -53349,7 +53349,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517783",
-    "name": "As Cute As Kira!",
+    "name": "As Cute as Kyra!",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Assassin Bonus",
@@ -53361,7 +53361,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Power",
       "Class Bonus": "Assassin Bonus",
       "Stat Bonus": "Speed Bonus",
-      "Featured Unit": "Kira"
+      "Featured Unit": "Kyra"
     },
     "bestHolderSlugs": [
       "kira",
@@ -53373,7 +53373,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_SSR_01.webp",
       "statTag": "Power",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
-      "characterName": "Kira",
+      "characterName": "Kyra",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MUTANT_MASK_icon.webp",
       "statBonusType": "Speed Bonus",
       "classBonus": "Assassin Bonus",
@@ -53416,12 +53416,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "journeyEvents": [
         {
-          "eventTitle": "Kira",
+          "eventTitle": "Kyra",
           "choices": [
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +10 Stamina +5 Concentration +5",
+                "Strength +10 Health +5 Focus +5",
                 "Stamina -10"
               ]
             }
@@ -53472,19 +53472,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517786",
-    "name": "Satisfying Meal",
+    "name": "A Satisfying Meal",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Protection · Defender Bonus",
+    "subType": "Protect · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Sense of protection] Effect RES increases by 10%. / [Strong will] Maximum Toughness value increases by 2. When attacked, Crit DMG resistance increases by 20% if you are not in Toughness Break state.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "Defender Bonus",
       "Stat Bonus": "Toughness aid",
-      "Featured Unit": "Vesta"
+      "Featured Unit": "Besta"
     },
     "bestHolderSlugs": [
       "vesta",
@@ -53494,9 +53494,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "満足のいく食事",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_SSR_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
-      "characterName": "Vesta",
+      "characterName": "Besta",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_LANCER_icon.webp",
       "statBonusType": "Toughness aid",
       "classBonus": "Defender Bonus",
@@ -53548,8 +53548,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +5",
-                "Stamina +10 Potential +10",
+                "Focus +5",
+                "Health +10 Potential +10",
                 "[Sense of Protection] Potential 10%"
               ]
             }
@@ -53561,25 +53561,25 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Try opening the book.",
               "outcomes": [
-                "Stamina +10"
+                "Health +10"
               ]
             },
             {
-              "choice": "I give it to Vesta.",
+              "choice": "I give it to Besta.",
               "outcomes": [
-                "Health +8 Focus +8 Protection +12 or Protection +15",
+                "Health +8 Focus +8 Protect +12 or Protect +15",
                 "Stamina -10"
               ]
             }
           ]
         },
         {
-          "eventTitle": "Vesta's tactical explanation",
+          "eventTitle": "Besta's tactical explanation",
           "choices": [
             {
-              "choice": "Stop Vesta.",
+              "choice": "Stop Besta.",
               "outcomes": [
-                "Stamina +8 Concentration +8 Protection +15",
+                "Health +8 Focus +8 Protect +15",
                 "- or Stamina -20",
                 "[Strong Will] Potential"
               ]
@@ -53587,7 +53587,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Just watch.",
               "outcomes": [
-                "Protection +15",
+                "Protect +15",
                 "[Strong Will] Potential"
               ]
             }
@@ -53606,7 +53606,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517789",
-    "name": "Undercover Cup",
+    "name": "Undercover Cop",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Endurance · Universal Bonus",
@@ -53618,7 +53618,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Endurance",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "Toughness aid",
-      "Featured Unit": "Anna"
+      "Featured Unit": "Annah"
     },
     "bestHolderSlugs": [
       "anna"
@@ -53628,7 +53628,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_SSR_01.webp",
       "statTag": "Endurance",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
-      "characterName": "Anna",
+      "characterName": "Annah",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
       "statBonusType": "Toughness aid",
       "classBonus": "Universal Bonus",
@@ -53653,7 +53653,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "value": "13.88%"
         },
         {
-          "label": "Patience bonus",
+          "label": "Endurance Bonus",
           "value": "2"
         },
         {
@@ -53667,24 +53667,24 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "journeyEvents": [
         {
-          "eventTitle": "Blue Lu and Rider",
+          "eventTitle": "Blue Rule and Rider",
           "choices": [
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +5",
-                "Stamina +10"
+                "Endurance +5",
+                "Health +10"
               ]
             }
           ]
         },
         {
-          "eventTitle": "Lu Inn Boutique",
+          "eventTitle": "Ruined Boutique",
           "choices": [
             {
               "choice": "Do as you wish.",
               "outcomes": [
-                "Patience +15"
+                "Endurance +15"
               ]
             },
             {
@@ -53696,12 +53696,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           ]
         },
         {
-          "eventTitle": "Lu Versus Bunny",
+          "eventTitle": "Rule Versus Bunny",
           "choices": [
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +15",
+                "Endurance +15",
                 "Potential Points+10",
                 "[Second heart] potential"
               ]
@@ -53720,19 +53720,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517792",
-    "name": "Naru Is More Professional Than Anyone Else",
+    "name": "More Than Professional",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Supporter Bonus",
+    "subType": "Health · Supporter Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Blessings of starlight] At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Supporter Bonus",
       "Stat Bonus": "Special Effect Bonus",
-      "Featured Unit": "Bella"
+      "Featured Unit": "Vera"
     },
     "bestHolderSlugs": [
       "bella",
@@ -53742,9 +53742,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "誰よりもプロフェッショナル",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_SSR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
-      "characterName": "Bella",
+      "characterName": "Vera",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/LPU_POST_icon.webp",
       "statBonusType": "Special Effect Bonus",
       "classBonus": "Supporter Bonus",
@@ -53792,18 +53792,18 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Endurance +10 Body Power +5"
+                "Endurance +10 Health +5"
               ]
             }
           ]
         },
         {
-          "eventTitle": "Bella shield 21",
+          "eventTitle": "Vera shield 21",
           "choices": [
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +10 Endurance +8"
+                "Health +10 Endurance +8"
               ]
             }
           ]
@@ -53814,7 +53814,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +12 Patience +8",
+                "Health +12 Endurance +8",
                 "Stamina-5",
                 "[Benefit of Starlight] Potential"
               ]
@@ -53833,7 +53833,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517795",
-    "name": "Dream While Looking at the Stars",
+    "name": "Dreams Under the Stars",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Focus · Universal Bonus",
@@ -53947,7 +53947,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79534220",
-    "name": "Bold and Amazing Bunny Girl",
+    "name": "The Great and Amazing Bunny Girl",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Savior-Exclusive Bonusance",
@@ -54035,7 +54035,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "It's dangerous, Scarlet...!",
               "outcomes": [
-                "Stamina +15 Travel status: [Muscle injury] (3 turns)"
+                "Health +15 Travel status: [Muscle injury] (3 turns)"
               ]
             }
           ]
@@ -54051,9 +54051,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               ]
             },
             {
-              "choice": "Support Charles.",
+              "choice": "Support Charlotte.",
               "outcomes": [
-                "Stamina +20 Travel status: [Overeating] (3 turns)"
+                "Health +20 Travel status: [Overeating] (3 turns)"
               ]
             }
           ]
@@ -54062,7 +54062,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "eventTitle": "Clothes that make you popular",
           "choices": [
             {
-              "choice": "Shall we go and try to convince him together?",
+              "choice": "Shall we go and try to convince her together?",
               "outcomes": [
                 "Strength +20 or Strength +10",
                 "Stamina -10",
@@ -54072,7 +54072,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Maybe it's easier alone?",
               "outcomes": [
-                "Stamina +10",
+                "Health +10",
                 "[Attack Talent] Potential 10%"
               ]
             }
@@ -54092,16 +54092,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79534223",
-    "name": "Perfect Bunny Girl",
+    "name": "The Perfect Bunny Girl",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Universal Bonus",
+    "subType": "Health · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/105828_b3l1z.webp",
     "tier": "SS",
     "score": "0",
     "effectSummary": "[Skill in life] Maximum HP increases by 2%. / [Sharp growth] Maximum HP increases by 6% and Crit Rate increases by 6%. / [Talent of life] Maximum HP increases by 3%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "HP Bonus",
       "Featured Unit": "Claire"
@@ -54112,7 +54112,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "完璧なバニーガール",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/01/181403_grhd4.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Claire",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SPEAR_icon.webp",
@@ -54182,7 +54182,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +10 Potential +10"
+                "Health +10 Potential +10"
               ]
             }
           ]
@@ -54201,7 +54201,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Subtly cheating.",
               "outcomes": [
-                "Stamina +10 Potential +10",
+                "Health +10 Potential +10",
                 "[Life Talent] Potential 10%"
               ]
             }
@@ -54220,7 +54220,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79576397",
-    "name": "Pioneer of Imaginary Numbers",
+    "name": "The Imaginary Pioneer",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Universal Bonus",
@@ -54295,7 +54295,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Strength +5",
-                "Stamina +10 Condition +10",
+                "Health +10 Condition +10",
                 "[Attack Sense] Potential 10%"
               ]
             }
@@ -54307,7 +54307,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +15 Concentration +8"
+                "Strength +15 Focus +8"
               ]
             }
           ]
@@ -54318,15 +54318,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Watch over",
               "outcomes": [
-                "Strength +12 Concentration +8",
-                "Stamina +10 Potential +20",
+                "Strength +12 Focus +8",
+                "Health +10 Potential +20",
                 "[Stack Trigger] Potential"
               ]
             },
             {
               "choice": "Stop omega",
               "outcomes": [
-                "Strength +12 Concentration +8",
+                "Strength +12 Focus +8",
                 "Condition +1 Potential +20",
                 "[Stack Trigger] Potential"
               ]
@@ -54346,16 +54346,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79606361",
-    "name": "Daughter of the Stranis Family",
+    "name": "Young Lady of Stranis",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Universal Bonus",
+    "subType": "Health · Universal Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/12/182739_q8esp.webp",
     "tier": "S",
     "score": "0",
     "effectSummary": "[Talent of speed] Speed increases by 3. / [Stigmata of life] Maximum HP increases by 8%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "HP Bonus",
       "Featured Unit": "Asherah"
@@ -54366,7 +54366,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "ストラニス家の令嬢",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/01/181403_cohbn.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Asherah",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp",
@@ -54421,7 +54421,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Health +10",
-                "Stamina +10",
+                "Health +10",
                 "[Speed Talent] Potential"
               ]
             }
@@ -54433,7 +54433,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Health +12 Patience +8 Protection +8",
+                "Health +12 Endurance +8 Protect +8",
                 "Condition +1 Travel status: [Nutritious food] (5 turns)"
               ]
             }
@@ -54445,7 +54445,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +15 Patience +10",
+                "Health +15 Endurance +10",
                 "[Stigmata of Life] Potential"
               ]
             }
@@ -54463,7 +54463,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79644746",
-    "name": "Deep Condolences",
+    "name": "Deep Mourning",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Focus · Ranger Bonus",
@@ -54475,7 +54475,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Focus",
       "Class Bonus": "Ranger Bonus",
       "Stat Bonus": "Crit Rate Bonus",
-      "Featured Unit": "Bell Lease"
+      "Featured Unit": "Bell Rhys"
     },
     "bestHolderSlugs": [
       "bell-lease",
@@ -54487,7 +54487,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200315_o8uxd.webp",
       "statTag": "Focus",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
-      "characterName": "Bell Lease",
+      "characterName": "Bell Rhys",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/200314_a0eqx.webp",
       "statBonusType": "Crit Rate Bonus",
       "classBonus": "Ranger Bonus",
@@ -54528,7 +54528,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "value": "22.78%"
         },
         {
-          "label": "Concentration bonus",
+          "label": "Focus Bonus",
           "value": "4"
         }
       ],
@@ -54539,8 +54539,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +5",
-                "Stamina +10"
+                "Focus +5",
+                "Health +10"
               ]
             }
           ]
@@ -54551,7 +54551,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "I think Bell's stone is more beautiful though.",
               "outcomes": [
-                "Concentration +5",
+                "Focus +5",
                 "Potential +10",
                 "[Concentration Skills] Potential"
               ]
@@ -54572,15 +54572,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "You won't use dangerous magic, right?",
               "outcomes": [
-                "Strength +8 Concentration +12",
+                "Strength +8 Focus +12",
                 "Potential +10",
                 "The potential of [Shadow of Silkworm]"
               ]
             },
             {
-              "choice": "Bell Lease. Give me the medicine and run.",
+              "choice": "Bell Rhys. Give me the medicine and run.",
               "outcomes": [
-                "Stamina +20"
+                "Health +20"
               ]
             }
           ]
@@ -54598,7 +54598,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79717619",
-    "name": "How to Satisfy Clumsy Desires",
+    "name": "A Clumsy Way to Relieve Desire",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Assassin Bonus",
@@ -54610,7 +54610,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Power",
       "Class Bonus": "Assassin Bonus",
       "Stat Bonus": "Special Effect Bonus",
-      "Featured Unit": "Charles"
+      "Featured Unit": "Charlotte"
     },
     "bestHolderSlugs": [
       "charles",
@@ -54622,7 +54622,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/02/184353_regbu.webp",
       "statTag": "Power",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
-      "characterName": "Charles",
+      "characterName": "Charlotte",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_KNIGHT_icon.webp",
       "statBonusType": "Special Effect Bonus",
       "classBonus": "Assassin Bonus",
@@ -54672,13 +54672,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "eventTitle": "Don't let your guard down",
           "choices": [
             {
-              "choice": "Call Charles who runs away",
+              "choice": "Call Charlotte who runs away",
               "outcomes": [
                 "Power +10"
               ]
             },
             {
-              "choice": "Wait for Charles to come back",
+              "choice": "Wait for Charlotte to come back",
               "outcomes": [
                 "Potential Points+30",
                 "[Speed prowess] potential -10%"
@@ -54692,7 +54692,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +10 Body Power +10"
+                "Power +10 Health +10"
               ]
             }
           ]
@@ -54703,7 +54703,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +20 Body Power +20",
+                "Power +20 Health +20",
                 "[Double Tap] Potential"
               ]
             }
@@ -54712,7 +54712,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "evalBullets": [
         "Possesses a Special Potential that allows additional attacks\n└Limited to assassins, conditions are severe such as needing to reduce enemy's Toughness",
-        "It's quite painful not being able to use Charles in the physical strength tag."
+        "It's quite painful not being able to use Charlotte in the physical strength tag."
       ],
       "appMediaTier": "B",
       "rerollTier": "C"
@@ -54721,7 +54721,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79766540",
-    "name": "An Unyielding Masterpiece",
+    "name": "The Indomitable Masterpiece",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Universal Bonus",
@@ -54812,7 +54812,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +15 Body Power +10",
+                "Power +15 Health +10",
                 "Potential Points+20",
                 "[Attack prowess] potential -10%"
               ]
@@ -54841,7 +54841,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Predict Luna's victory.",
               "outcomes": [
-                "Body Power +10 Endurance +10",
+                "Health +10 Endurance +10",
                 "Potential Points+10",
                 "[Sturdy Destruction] Potential"
               ]
@@ -54852,7 +54852,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Possesses Special Potential for Crit DMG Up",
         "It is also very good that it is a common tag that can be added to any organization.",
-        "Combined with maximum HP increase\n└Compatible with supporters who want to increase firepower such as Emily and Dress Asherah(Great)",
+        "Combined with maximum HP increase\n└Compatible with supporters who want to increase firepower such as Emilly and Asherah: Waltz of Starlight(Great)",
         "The training performance “Acquire additional Potential Points 5” is quite excellent."
       ],
       "appMediaTier": "SS",
@@ -54862,16 +54862,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79808948",
-    "name": "A Sense of Responsibility Piled Up with Piles of Documents",
+    "name": "Responsibility Atop a Pile of Paperwork",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Savior-Exclusive Bonusance",
+    "subType": "Health · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201813_3r618.webp",
     "tier": "A",
     "score": "0",
     "effectSummary": "[Sense of speed] Increases speed by 5. / [Disaster response protocols] The maximum Toughness value increases by 1. When a critical hit occurs with Special Skill or Ultimate Skill, recover HP equal to 20% of the damage taken.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Roberta"
@@ -54882,7 +54882,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "書類の山に積もる責任感",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201813_mu6f7.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Roberta",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201812_s56oa.webp",
@@ -54940,7 +54940,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +10",
+                "Health +10",
                 "Potential Points+15"
               ]
             }
@@ -54952,7 +54952,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +20",
+                "Health +20",
                 "Potential Points+15",
                 "[Sense of speed] potential -15%"
               ]
@@ -54991,19 +54991,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79855448",
-    "name": "Veteran Mercenary",
+    "name": "Experienced Mercenary",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Savior-Exclusive Bonusance",
+    "subType": "Health · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202111_kmw0s.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Skill of destruction] Crit DMG increases by 4%. / [Catalyst] If a critical hit occurs after an attack, there is a 100% chance to inflict chain damage to all enemies proportional to your own attack power. Occurs only once in your turn.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Special Effect Bonus",
-      "Featured Unit": "Yanagi Mina"
+      "Featured Unit": "Yoo Mina"
     },
     "bestHolderSlugs": [
       "yanagi-mina"
@@ -55011,9 +55011,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "歴戦の傭兵",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202111_u4n96.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
-      "characterName": "Yanagi Mina",
+      "characterName": "Yoo Mina",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/130558_c8vsj.webp",
       "statBonusType": "Special Effect Bonus",
       "classBonus": "Savior-Exclusive Bonusance",
@@ -55103,7 +55103,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +15 Endurance +12",
+                "Health +15 Endurance +12",
                 "[Catalyst] Potential"
               ]
             }
@@ -55128,7 +55128,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/202110_u9dqe.webp",
     "tier": "A",
     "score": "0",
-    "effectSummary": "[Sense of defense] Defense power increases by 5%. / [Shield of silence] Preemptive defense occurrence probability increases by 20%.",
+    "effectSummary": "[Sense of defense] Defense power increases by 5%. / [Shield of silence] Defend Forward occurrence probability increases by 20%.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "Defender Bonus",
@@ -55156,7 +55156,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         },
         {
           "name": "Shield of silence",
-          "effect": "Preemptive defense occurrence probability increases by 20%."
+          "effect": "Defend Forward occurrence probability increases by 20%."
         }
       ],
       "uniqueEffect": {
@@ -55207,14 +55207,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "eventTitle": "A childish mind that cannot take responsibility",
           "choices": [
             {
-              "choice": "Receive what Rin has prepared. (No Stamina consumption)",
+              "choice": "Receive what Lyn has prepared. (No Stamina consumption)",
               "outcomes": [
                 "Endurance +20",
                 "Condition+1 Travel status: [Operation command] (3 turns)"
               ]
             },
             {
-              "choice": "Receive what Rin has prepared. (Stamina consumption required)",
+              "choice": "Receive what Lyn has prepared. (Stamina consumption required)",
               "outcomes": [
                 "Endurance +25",
                 "Stamina-10"
@@ -55243,7 +55243,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Cheating appropriately!",
               "outcomes": [
-                "Power +5 Body Power +10",
+                "Power +5 Health +10",
                 "[Shield of Silence] Potential"
               ]
             }
@@ -55261,7 +55261,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79865537",
-    "name": "The End Has the Face of a Girl",
+    "name": "The End Wears the Face of a Girl",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Ranger Bonus",
@@ -55273,7 +55273,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Power",
       "Class Bonus": "Ranger Bonus",
       "Stat Bonus": "ATK Bonus",
-      "Featured Unit": "Rosalia"
+      "Featured Unit": "Rosaria"
     },
     "bestHolderSlugs": [
       "rosalia",
@@ -55285,7 +55285,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2025/03/113706_xzgy5.webp",
       "statTag": "Power",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
-      "characterName": "Rosalia",
+      "characterName": "Rosaria",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/191317_k4lb7.webp",
       "statBonusType": "ATK Bonus",
       "classBonus": "Ranger Bonus",
@@ -55380,19 +55380,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79893874",
-    "name": "Forbidden Records Vol.1",
+    "name": "Forbidden Archive Vol. 1",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/03/182813_7ue9j.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "Anyone can strengthen it up to level 50 by distribution. · Special Potential cannot be obtained even though it is SSR\n└Event content is also quite modest · The training performance is at the SSR level, so use it when you want training performance\n└Since the weight of Special Potential is high, the priority of adoption is low.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Vesta"
+      "Featured Unit": "Besta"
     },
     "bestHolderSlugs": [
       "vesta"
@@ -55400,9 +55400,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "禁断の記録物Vol.1",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/03/182814_tk4xv.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
-      "characterName": "Vesta",
+      "characterName": "Besta",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_LANCER_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
@@ -55443,9 +55443,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "eventTitle": "Born from darkness, sworn to light",
           "choices": [
             {
-              "choice": "It doesn't matter! Get Power +5, Body Power +5, Endurance +5!",
+              "choice": "It doesn't matter! Get Power +5, Health +5, Endurance +5!",
               "outcomes": [
-                "Power +5 Body Power +5 Endurance +5"
+                "Power +5 Health +5 Endurance +5"
               ]
             },
             {
@@ -55462,7 +55462,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +5 Endurance +5",
+                "Health +5 Endurance +5",
                 "Potential Points+5"
               ]
             }
@@ -55474,7 +55474,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +10",
+                "Health +10",
                 "Stamina-5 Travel state: [Metacognition]"
               ]
             }
@@ -55493,7 +55493,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79941760",
-    "name": "The Warmth of the White Moon Is Like Sunlight",
+    "name": "A White Moon Shines With the Sun's Warmth",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Endurance · Universal Bonus",
@@ -55505,7 +55505,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Endurance",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "Speed Bonus",
-      "Featured Unit": "Rin"
+      "Featured Unit": "Lyn"
     },
     "bestHolderSlugs": [
       "rin"
@@ -55515,7 +55515,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/04/194307_e8g0h.webp",
       "statTag": "Endurance",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
-      "characterName": "Rin",
+      "characterName": "Lyn",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105027_kjhmw.webp",
       "statBonusType": "Speed Bonus",
       "classBonus": "Universal Bonus",
@@ -55582,14 +55582,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "I'll check it out.",
               "outcomes": [
-                "Power +5 Body Power +5",
+                "Power +5 Health +5",
                 "Stamina+10"
               ]
             },
             {
               "choice": "...Maybe there's something strange in there?",
               "outcomes": [
-                "Power +15 Body Power +15"
+                "Power +15 Health +15"
               ]
             }
           ]
@@ -55607,7 +55607,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "…I politely decline.",
               "outcomes": [
-                "Body Power +12 Endurance +8",
+                "Health +12 Endurance +8",
                 "[Speed Stigmata] Potential [Life Talent] Potential Power +10%"
               ]
             }
@@ -55616,7 +55616,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "evalBullets": [
         "Universal Bonus for Patience Tag",
-        "Possesses the second Stigmata of Speed\n└Please note that it cannot be taken at the same time as physical strength Charles",
+        "Possesses the second Stigmata of Speed\n└Please note that it cannot be taken at the same time as physical strength Charlotte",
         "Life talent and attack talent can be acquired through events\n└ Also great for blessings",
         "Possesses additional power status and additional physical strength status\n└Possibility to use 3 status at the same time by developing patience",
         "Event effects are generally excellent\n└Condition+2, Stamina recovery, etc."
@@ -55628,16 +55628,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79983016",
-    "name": "Today's Step",
+    "name": "Today's Step Forward",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Savior-Exclusive Bonusance",
+    "subType": "Health · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173815_r9imk.webp",
     "tier": "A",
     "score": "0",
     "effectSummary": "[Sense of destruction] Crit DMG increases by 10%. / [Solitary seeker] The maximum Toughness value increases by 1. After receiving an attack, if evasion occurs, inflicts Heaven's Mystery on yourself for 1 turn. Mystery of Heaven: Crit Rate increased by 100%",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Crit Rate Bonus",
       "Featured Unit": "Fei"
@@ -55648,7 +55648,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "今日の一歩",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/04/173816_ed0gs.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Fei",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/105026_1pwrt.webp",
@@ -55706,7 +55706,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "I'll till the soil.",
               "outcomes": [
-                "Power +8 Body Power +12",
+                "Power +8 Health +12",
                 "Stamina-5"
               ]
             },
@@ -55725,13 +55725,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Listen to what the two have to say.",
               "outcomes": [
-                "Power +10 Body Power +12"
+                "Power +10 Health +12"
               ]
             },
             {
               "choice": "Brew some tea.",
               "outcomes": [
-                "Body Power +12",
+                "Health +12",
                 "[Sense of Destruction] Potential Power +10%"
               ]
             }
@@ -55743,7 +55743,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "...Banner, let's try again. (Pattern 1)",
               "outcomes": [
-                "Power +10 Body Power +10",
+                "Power +10 Health +10",
                 "Stamina-5",
                 "[Solitary Seeker] Potential"
               ]
@@ -55751,7 +55751,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "...Banner, let's try again. (Pattern 2)",
               "outcomes": [
-                "Body Power +20",
+                "Health +20",
                 "Stamina-5",
                 "[Solitary Seeker] Potential"
               ]
@@ -55759,7 +55759,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "...Would you like to take a break?",
               "outcomes": [
-                "Body Power +5",
+                "Health +5",
                 "[Solitary Seeker] Potential"
               ]
             }
@@ -55779,7 +55779,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80012824",
-    "name": "Weakness Correction Custom Training",
+    "name": "Customized Training to Cover Weaknesses",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Universal Bonus",
@@ -55791,7 +55791,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Power",
       "Class Bonus": "Universal Bonus",
       "Stat Bonus": "ATK Bonus",
-      "Featured Unit": "Tilia"
+      "Featured Unit": "Tyria"
     },
     "bestHolderSlugs": [
       "tilia"
@@ -55801,7 +55801,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2025/03/172124_z876m.webp",
       "statTag": "Power",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
-      "characterName": "Tilia",
+      "characterName": "Tyria",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/115944_7kujw.webp",
       "statBonusType": "ATK Bonus",
       "classBonus": "Universal Bonus",
@@ -55849,7 +55849,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +10 Body Power +5",
+                "Power +10 Health +5",
                 "Condition+1"
               ]
             }
@@ -55867,7 +55867,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Even so, we still have to respect the closing time.",
               "outcomes": [
-                "Power +10 Body Power +8",
+                "Power +10 Health +8",
                 "Stamina-5",
                 "Travel status: [Responsibility]"
               ]
@@ -55880,7 +55880,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +12 Body Power +8",
+                "Power +12 Health +8",
                 "Stamina+10",
                 "Potential of [sharp offensive]"
               ]
@@ -55901,16 +55901,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80041744",
-    "name": "A Gap in a Lazy Afternoon",
+    "name": "A Drowsy Afternoon Interlude",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Savior-Exclusive Bonusance",
+    "subType": "Health · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132533_e9xba.webp",
     "tier": "A",
     "score": "0",
     "effectSummary": "[Skill in life] Maximum HP increases by 2%. / [Sense of life] Maximum HP increases by 5%. / [March of love] The maximum Toughness value increases by 1. Gain 2 Nova Force after using Special Skill or Ultimate Skill.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Toughness aid",
       "Featured Unit": "Carmen"
@@ -55921,7 +55921,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "気怠い午後の隙間",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/05/132509_qwapk.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Carmen",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
@@ -56000,7 +56000,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Got it. I'll try to write it as strangely as possible. (Stamina consumption required)",
               "outcomes": [
-                "Body Power +20",
+                "Health +20",
                 "Stamina-5",
                 "[Life Skills] Potential -20%"
               ]
@@ -56008,7 +56008,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Got it. I'll try to write it as strangely as possible. (No Stamina consumption)",
               "outcomes": [
-                "Body Power +5",
+                "Health +5",
                 "[Life Skills] Potential -10%"
               ]
             },
@@ -56027,7 +56027,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +8 Protection +12",
+                "Health +8 Protect +12",
                 "[March of Love] Potential"
               ]
             }
@@ -56037,7 +56037,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Health tag Savior-Exclusive Bonusance\n└Carmen only",
         "Special Potential is excellent for acquiring Nova Force.",
-        "Almost essential Arcana for Bride Carmen"
+        "Almost essential Arcana for Carmen: Eternal Promise"
       ],
       "appMediaTier": "A",
       "rerollTier": "A"
@@ -56046,7 +56046,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80077855",
-    "name": "Until Death Separates Us",
+    "name": "Till Death Do Us Part",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Caster Bonus",
@@ -56158,7 +56158,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "Grants proof (damage dealt 10% for 2 turns, damage taken reduced 10%) when attacking all targets\n└Damage dealt increases by an additional 15% when carrying proof",
         "Strict restriction on all attack skills\n└It is a shame that the CT of all attack skills is generally long",
         "With Luna, you can make the most of it.",
-        "Bride Epindel, which is the origin of the title, has a CT5 overall attack skill & an additional turn that consumes proof turns, making it a bad match overall.",
+        "Epindel: Blessing in Bloom, which is the origin of the title, has a CT5 overall attack skill & an additional turn that consumes proof turns, making it a bad match overall.",
         "Excellent training performance\n└I'm happy with the additional Potential Points +5"
       ],
       "appMediaTier": "A",
@@ -56168,7 +56168,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80139832",
-    "name": "Death to Flowers",
+    "name": "Death for the Flowers",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Endurance · Universal Bonus",
@@ -56307,7 +56307,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80191501",
-    "name": "Be Prepared to Take Poison",
+    "name": "Even If It's Poison",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Striker Bonus",
@@ -56391,7 +56391,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +10 Body Power +10"
+                "Power +10 Health +10"
               ]
             }
           ]
@@ -56402,7 +56402,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +15 Body Power +15",
+                "Power +15 Health +15",
                 "The potential of [flexible judgment]"
               ]
             }
@@ -56413,7 +56413,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         "First Striker Bonus",
         "Damage Dealt +15% when HP is +50% or more, Damage Taken reduced by 15% when HP is less than +50%\n└Potential for excellent attack and defense",
         "It does not dramatically change the character\n└There are few situations where it is required.",
-        "It may be difficult to use the power tag due to the frame.\n└Tilia and Bunny Frey fill up the two slots."
+        "It may be difficult to use the power tag due to the frame.\n└Tyria and Frey: Noble Princess fill up the two slots."
       ],
       "appMediaTier": "A",
       "rerollTier": "A"
@@ -56422,7 +56422,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80210542",
-    "name": "Follow the Light!",
+    "name": "Chase the Light!",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Savior-Exclusive Bonusance",
@@ -56548,13 +56548,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "Summer Night Sky",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Defender Bonus",
+    "subType": "Health · Defender Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_zk9ua.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Defensive skill] Defense power increases by 2%. / [Talent of concentration] Effect Hit increases by 6%. / [Solid trust] At the start of the first battle, create a barrier on yourself for 2 turns. Barrier increases in proportion to own maximum HP.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Defender Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Luna"
@@ -56567,7 +56567,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "夏の夜の空",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/07/190530_9gd20.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Luna",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_ORACLE_icon.webp",
@@ -56625,7 +56625,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +10 Focus +8",
+                "Health +10 Focus +8",
                 "[Defensive prowess] potential -10%"
               ]
             }
@@ -56637,7 +56637,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +12 Focus +10",
+                "Health +12 Focus +10",
                 "[Concentration talent] potential -10%"
               ]
             }
@@ -56649,7 +56649,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +12 Focus +15",
+                "Health +12 Focus +15",
                 "The potential of [firm trust]"
               ]
             }
@@ -56669,7 +56669,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80283517",
-    "name": "Preparing for Your Vacation Starts with Shopping!",
+    "name": "Vacation Prep Starts with Shopping!",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Savior-Exclusive Bonusance",
@@ -56778,7 +56778,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +12 Body Power +5 Focus +10",
+                "Power +12 Health +5 Focus +10",
                 "Potential of [Laughter inducing mechanism] Potential of [Sense of speed] -10%"
               ]
             }
@@ -56787,7 +56787,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "evalBullets": [
         "Force tag Savior-Exclusive Bonusance",
-        "Special Potential that combines \"Damage Dealt 20% when using Special Skill\" and \"Gives 1 jumping stack at the start of turn\"\n└Compatible with both Swimsuit Smile and Normal Smile(Great)",
+        "Special Potential that combines \"Damage Dealt 20% when using Special Skill\" and \"Gives 1 jumping stack at the start of turn\"\n└Compatible with both Smile: Sunshine Cat and Normal Smile(Great)",
         "Arcana that you should definitely use when training Smile",
         "Additional Potential Points +5 are also powerful"
       ],
@@ -56798,7 +56798,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80331877",
-    "name": "Eternal Chain of Bondage",
+    "name": "Chains of Eternal Bondage",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Focus · Ranger Bonus",
@@ -56810,7 +56810,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Focus",
       "Class Bonus": "Ranger Bonus",
       "Stat Bonus": "ATK Bonus",
-      "Featured Unit": "Christel"
+      "Featured Unit": "Cristelle"
     },
     "bestHolderSlugs": [
       "christel",
@@ -56822,7 +56822,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/08/193446_83ls2.webp",
       "statTag": "Focus",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
-      "characterName": "Christel",
+      "characterName": "Cristelle",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/190200_51vpg.webp",
       "statBonusType": "ATK Bonus",
       "classBonus": "Ranger Bonus",
@@ -56847,7 +56847,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       },
       "supportBonuses": [
         {
-          "label": "Initial concentration",
+          "label": "Initial Focus",
           "value": "12"
         },
         {
@@ -56886,12 +56886,12 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           ]
         },
         {
-          "eventTitle": "Ede, it's my dad!",
+          "eventTitle": "Haydee, it's my dad!",
           "choices": [
             {
               "choice": "It must be an act. (success)",
               "outcomes": [
-                "Power +15 Body Power +8 Focus +12",
+                "Power +15 Health +8 Focus +12",
                 "[Concentration skill] potential -20%"
               ]
             },
@@ -56943,16 +56943,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80363578",
-    "name": "Itinerary Without Return",
+    "name": "Journey of No Return",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Assassin Bonus",
+    "subType": "Health · Assassin Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/09/173117_4wct9.webp",
     "tier": "S",
     "score": "0",
     "effectSummary": "[Skill of destruction] Crit DMG increases by 4%. / [A refreshing scent] Increases damage by 10% when attacking a single target. If you are not weakened, the damage will be increased by an additional 15%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Assassin Bonus",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Amora"
@@ -56965,7 +56965,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "帰路なき旅程",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/09/172840_0ipwd.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Amora",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/143855_iv9nt.webp",
@@ -57019,14 +57019,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Drink while enjoying the aroma.",
               "outcomes": [
-                "Body Power +8",
+                "Health +8",
                 "Condition+1"
               ]
             },
             {
               "choice": "Drink it all at once.",
               "outcomes": [
-                "Body Power +10",
+                "Health +10",
                 "Potential Points+15",
                 "[Destruction prowess] potential -10%"
               ]
@@ -57039,7 +57039,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +8 Body Power +15",
+                "Power +8 Health +15",
                 "Stamina+5"
               ]
             }
@@ -57051,7 +57051,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +8 Body Power +15 Focus +10",
+                "Power +8 Health +15 Focus +10",
                 "The potential of [purifying fragrance]"
               ]
             }
@@ -57061,7 +57061,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Assassin Bonus for health tag",
         "Special Potential that increases Damage Dealt when attacking a single target\n└ Increases multiplier when not weak",
-        "Compatible with Amora, who can remove debuffs, Bunny Charles, who is good at single-target attacks, and Swimsuit Smile.",
+        "Compatible with Amora, who can remove debuffs, Bunnygirl Charlotte, who is good at single-target attacks, and Smile: Sunshine Cat.",
         "There are many characters who are strong against assassins, so the acquisition priority is high."
       ],
       "appMediaTier": "S",
@@ -57071,7 +57071,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80400913",
-    "name": "Hedonist's Comfort",
+    "name": "Solace of the Hedonist",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Endurance · Ranger Bonus",
@@ -57140,7 +57140,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "value": "15.86%"
         },
         {
-          "label": "Patience bonus",
+          "label": "Endurance Bonus",
           "value": "3"
         },
         {
@@ -57176,14 +57176,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Give it to Gwen.",
               "outcomes": [
-                "Body Power +8 Endurance +12",
+                "Health +8 Endurance +12",
                 "[Speed prowess] potential -10%"
               ]
             },
             {
               "choice": "Give it to the professor.",
               "outcomes": [
-                "Body Power +8 Endurance +12",
+                "Health +8 Endurance +12",
                 "[Insight Skill] Potential -10%"
               ]
             }
@@ -57224,7 +57224,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80444335",
-    "name": "Investigation Methods of a Self-proclaimed Veteran Detective",
+    "name": "Self-Proclaimed Veteran Detective's Methods",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Striker Bonus",
@@ -57312,7 +57312,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Point to Gwen.",
               "outcomes": [
-                "Body Power +10",
+                "Health +10",
                 "Potential Points+10",
                 "[Attack prowess] potential -10%"
               ]
@@ -57348,7 +57348,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "evalBullets": [
         "Striker Bonus for Force Tag",
         "Increases Damage Dealt by 10% when attacking, and can increase Damage Dealt by 20% with up to 2 stacks.",
-        "It disappears at the end of your turn, so it moves outside of your turn/The problem is that you need to move more than once in one turn\n└Gwen, Bunny Claire, etc.",
+        "It disappears at the end of your turn, so it moves outside of your turn/The problem is that you need to move more than once in one turn\n└Gwen, Bunnygirl Claire, etc.",
         "Although the training performance is high, it is worrisome that there are no various status bonuses.",
         "Get more Potential Points for events"
       ],
@@ -57359,7 +57359,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80482327",
-    "name": "Is This...clothes?",
+    "name": "Wait, These Are... Clothes?",
     "rarity": "SSR",
     "category": "SSR Arcana",
     "subType": "Power · Savior-Exclusive Bonusance",
@@ -57449,7 +57449,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +10",
+                "Health +10",
                 "Potential Points+10",
                 "[Attack prowess] potential -10%"
               ]
@@ -57462,7 +57462,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "That's enough. Let's stop there.",
               "outcomes": [
-                "Power +12 Body Power +8",
+                "Power +12 Health +8",
                 "Potential Points+20",
                 "[Hand gesture of emptiness] potential power"
               ]
@@ -57470,7 +57470,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "A promise is a promise, so let's try just a little more.",
               "outcomes": [
-                "Power +12 Body Power +8",
+                "Power +12 Health +8",
                 "Stamina+15",
                 "[Hand gesture of emptiness] potential power"
               ]
@@ -57491,16 +57491,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80498278",
-    "name": "Sleepy Outing",
+    "name": "Drowsy Day Out",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Savior-Exclusive Bonusance",
+    "subType": "Health · Savior-Exclusive Bonusance",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/190614_vbrik.webp",
     "tier": "A",
     "score": "0",
     "effectSummary": "[Skill of insight] Crit Rate increases by 3%. / [Sense of destruction] Crit DMG increases by 10%. / [Butterfly lullaby] After using a skill that is not an attack, give yourself Sweet Dreams (cannot be removed) for 3 turns and gain 2 Nova Force. Sweet Dream: Toughness Damage increases by 1. / [Speed prowess] Speed increases by 2.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Savior-Exclusive Bonusance",
       "Stat Bonus": "Special Effect Bonus",
       "Featured Unit": "Seira"
@@ -57511,7 +57511,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "睡魔のお出かけ",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2025/03/133127_cbo6e.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Seira",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NIGHTMARE_REAPER_icon.webp",
@@ -57554,7 +57554,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
           "value": "13.88%"
         },
         {
-          "label": "Patience bonus",
+          "label": "Endurance Bonus",
           "value": "2"
         },
         {
@@ -57585,7 +57585,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +15 Endurance +8",
+                "Health +15 Endurance +8",
                 "Potential Points+10",
                 "[Sense of Destruction] Potential -10%"
               ]
@@ -57598,7 +57598,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Power +5 Body Power +10",
+                "Power +5 Health +10",
                 "Stamina+10",
                 "[Butterfly Lullaby] potential [Speed prowess] potential -10%"
               ]
@@ -57619,16 +57619,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-80521390",
-    "name": "Harsh Ordeal",
+    "name": "Grueling Ordeal",
     "rarity": "SSR",
     "category": "SSR Arcana",
-    "subType": "Vitality · Supporter Bonus",
+    "subType": "Health · Supporter Bonus",
     "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193414_1r78o.webp",
     "tier": "A",
     "score": "0",
     "effectSummary": "[Speed prowess] Speed increases by 2. / [Skill in life] Maximum HP increases by 2%. / [Skilled Acceleration] After using a special skill that is not an attack, your speed increases by 4. This effect can be stacked up to 5 times. / [Defensive skill] Defense power increases by 2%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "Supporter Bonus",
       "Stat Bonus": "Speed Bonus",
       "Featured Unit": "Ceres"
@@ -57641,7 +57641,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "過酷な試練",
       "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/10/193415_zs7rv.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Ceres",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/152521_s54gh.webp",
@@ -57703,7 +57703,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +5 Endurance +5",
+                "Health +5 Endurance +5",
                 "Condition+1",
                 "[Speed prowess] potential -10%"
               ]
@@ -57716,7 +57716,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Body Power +12 Endurance +8",
+                "Health +12 Endurance +8",
                 "Stamina+10"
               ]
             }
@@ -57728,14 +57728,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "It's okay. I'm fine with just one more person.",
               "outcomes": [
-                "Body Power +12 Endurance +8",
+                "Health +12 Endurance +8",
                 "[Life Skills] Potential -10% [Proficiency Acceleration] Potential"
               ]
             },
             {
               "choice": "Yeah, thank you.",
               "outcomes": [
-                "Body Power +8 Endurance +12",
+                "Health +8 Endurance +12",
                 "[Defensive prowess] potential -10% [Proficiency acceleration] potential"
               ]
             }
@@ -57744,7 +57744,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "evalBullets": [
         "Supporter Bonus for physical fitness tag",
-        "Special Potential that increases SPD +4 when using a special skill that is not an attack and can be stacked up to 5 times\n└Maximum SPD +20 increase, but does not apply to Dress Asherah",
+        "Special Potential that increases SPD +4 when using a special skill that is not an attack and can be stacked up to 5 times\n└Maximum SPD +20 increase, but does not apply to Asherah: Waltz of Starlight",
         "I'm simply happy that the number of Supporter Bonus has increased.",
         "Supporter speed is not an essential stat, so there is a high possibility that it will be removed from the formation in the future\n└Currently, it is only adopted as a makeshift",
         "It is also a shame that there are no effects around Potential Points\n└Potential Points are not enough for physical strength development"
@@ -57759,13 +57759,13 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "name": "The Beginning of the Journey",
     "rarity": "SR",
     "category": "SR Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_SR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Sense of life] Maximum HP increases by 5%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Asherah"
@@ -57776,7 +57776,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "旅のはじまり",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_SR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Asherah",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp",
@@ -57813,7 +57813,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Health +3 Protection +3"
+                "Health +3 Protect +3"
               ]
             }
           ]
@@ -57855,7 +57855,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517801",
-    "name": "Cats Don't Laugh",
+    "name": "Cats Do Not Smile",
     "rarity": "SR",
     "category": "SR Arcana",
     "subType": "Focus · -",
@@ -57884,7 +57884,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial concentration",
+          "label": "Initial Focus",
           "value": "2"
         },
         {
@@ -57911,7 +57911,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +5"
+                "Focus +5"
               ]
             }
           ]
@@ -57922,15 +57922,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Carefully pat your head.",
               "outcomes": [
-                "Focus +8 Protection +5 or Focus +8",
+                "Focus +8 Protect +5 or Focus +8",
                 "Condition +1 or Stamina -10"
               ]
             },
             {
               "choice": "Now! Rub your belly like Asherah!",
               "outcomes": [
-                "Concentration +8",
-                "Stamina +5"
+                "Focus +8",
+                "Health +5"
               ]
             }
           ]
@@ -57941,8 +57941,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +12",
-                "Stamina +10"
+                "Focus +12",
+                "Health +10"
               ]
             }
           ]
@@ -58055,7 +58055,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517807",
-    "name": "Cleaning, Unexpected Guests",
+    "name": "Cleaning, and an Unexpected Guest",
     "rarity": "SR",
     "category": "SR Arcana",
     "subType": "Power · -",
@@ -58117,7 +58117,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Strength +3",
-                "Stamina +3"
+                "Health +3"
               ]
             }
           ]
@@ -58128,7 +58128,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Concentration +5"
+                "Strength +8 Focus +5"
               ]
             }
           ]
@@ -58139,7 +58139,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Concentration +5",
+                "Strength +8 Focus +5",
                 "[Insight Proficiency] Potential 10%"
               ]
             }
@@ -58156,16 +58156,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517810",
-    "name": "Attack of the Fierce Dragon",
+    "name": "Assault of the Rampaging Dragon",
     "rarity": "SR",
     "category": "SR Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SCISSORS_SR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Sense of life] Maximum HP increases by 5%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Scarlet"
@@ -58176,7 +58176,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "暴竜の襲来",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SCISSORS_SR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Scarlet",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MAID_SCISSORS_icon.webp",
@@ -58254,7 +58254,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               ]
             },
             {
-              "choice": "Support Charles.",
+              "choice": "Support Charlotte.",
               "outcomes": [
                 "Health +3",
                 "Condition -1 Travel status: [Empathy ability] (Permanent)"
@@ -58274,16 +58274,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517813",
-    "name": "Phantom Butterfly",
+    "name": "Butterfly of Phantasm",
     "rarity": "SR",
     "category": "SR Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NIGHTMARE_REAPER_SR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Sense of life] Maximum HP increases by 5%.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Seira"
@@ -58294,7 +58294,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "幻影の蝶",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NIGHTMARE_REAPER_SR_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Seira",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/NIGHTMARE_REAPER_icon.webp",
@@ -58347,7 +58347,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +10 Condition +1"
+                "Health +10 Condition +1"
               ]
             }
           ]
@@ -58358,7 +58358,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Stamina +15",
+                "Health +15",
                 "[Sense of Life] Potential 20%"
               ]
             }
@@ -58376,7 +58376,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517816",
-    "name": "Prey Selection",
+    "name": "Choosing the Next Prey",
     "rarity": "SR",
     "category": "SR Arcana",
     "subType": "Power · -",
@@ -58441,7 +58441,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +3 Stamina +3"
+                "Strength +3 Health +3"
               ]
             }
           ]
@@ -58500,7 +58500,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Endurance",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Ede"
+      "Featured Unit": "Haydee"
     },
     "bestHolderSlugs": [
       "ede"
@@ -58510,7 +58510,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_INCOGNITA_FLOWER_SR_01.webp",
       "statTag": "Endurance",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
-      "characterName": "Ede",
+      "characterName": "Haydee",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
@@ -58549,7 +58549,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +3",
+                "Endurance +3",
                 "Potential +3"
               ]
             }
@@ -58561,7 +58561,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +12",
+                "Endurance +12",
                 "Stamina -10"
               ]
             }
@@ -58573,7 +58573,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +18",
+                "Endurance +18",
                 "Stamina -15",
                 "[Defensive prowess] potential 10%"
               ]
@@ -58592,16 +58592,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517822",
-    "name": "Sweet and Fluffy...Syaaa...",
+    "name": "Sweet, Fluffy, Zzz...",
     "rarity": "SR",
     "category": "SR Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_SR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Protection skills] Effect RES increases by 4%.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Serpang"
@@ -58612,7 +58612,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "甘くてフワフワで…スヤァ…",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_SR_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Serpang",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/EASTERN_OWL_icon.webp",
@@ -58653,7 +58653,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +5"
+                "Protect +5"
               ]
             }
           ]
@@ -58664,7 +58664,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +10"
+                "Protect +10"
               ]
             }
           ]
@@ -58675,7 +58675,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +12",
+                "Protect +12",
                 "Potential +10",
                 "[Protection prowess] potential 20%"
               ]
@@ -58693,7 +58693,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517825",
-    "name": "Prepare, Aim, Fire",
+    "name": "Ready, Aim, Fire",
     "rarity": "SR",
     "category": "SR Arcana",
     "subType": "Power · -",
@@ -58765,7 +58765,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Concentration +5"
+                "Strength +8 Focus +5"
               ]
             }
           ]
@@ -58776,7 +58776,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +8 Concentration +5",
+                "Strength +8 Focus +5",
                 "Stamina -15",
                 "[Speed Talent] Potential 20%"
               ]
@@ -58795,16 +58795,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517828",
-    "name": "Conversation Ended",
+    "name": "Enough Chit-Chat",
     "rarity": "SR",
     "category": "SR Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_KNUCKLE_SR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "Earn protection and Potential Points at events",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Roberta"
@@ -58815,7 +58815,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "会話終了",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_KNUCKLE_SR_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Roberta",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/201812_s56oa.webp",
@@ -58851,8 +58851,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3",
-                "Stamina +3"
+                "Protect +3",
+                "Health +3"
               ]
             }
           ]
@@ -58863,7 +58863,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +8",
+                "Protect +8",
                 "Potential +5"
               ]
             }
@@ -58875,7 +58875,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +15",
+                "Protect +15",
                 "Potential +10"
               ]
             }
@@ -58892,7 +58892,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517831",
-    "name": "Cleaning Up",
+    "name": "Final Touches",
     "rarity": "SR",
     "category": "SR Arcana",
     "subType": "Focus · -",
@@ -58904,7 +58904,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "Tag": "Focus",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Lu"
+      "Featured Unit": "Lugh"
     },
     "bestHolderSlugs": [
       "lu"
@@ -58914,7 +58914,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_AMULET_SR_01.webp",
       "statTag": "Focus",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
-      "characterName": "Lu",
+      "characterName": "Lugh",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/RECON_AMULET_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
@@ -58953,8 +58953,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +3",
-                "Stamina +3"
+                "Focus +3",
+                "Health +3"
               ]
             }
           ]
@@ -58965,7 +58965,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +8",
+                "Focus +8",
                 "Potential +10"
               ]
             }
@@ -58977,7 +58977,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +12",
+                "Focus +12",
                 "[Sense of Concentration] Potential 20%"
               ]
             }
@@ -58994,16 +58994,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517834",
-    "name": "Dignity Foundation",
+    "name": "Foundation of Elegance",
     "rarity": "SR",
     "category": "SR Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_GRACE_DUALSWORD_SR_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
     "effectSummary": "[Protection skills] Effect RES increases by 4%.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Epindel"
@@ -59014,7 +59014,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "品格財団",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_GRACE_DUALSWORD_SR_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Epindel",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/GRACE_DUALSWORD_icon.webp",
@@ -59055,7 +59055,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3 Patience +3"
+                "Protect +3 Endurance +3"
               ]
             }
           ]
@@ -59066,8 +59066,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3",
-                "Stamina +5 Condition +1"
+                "Protect +3",
+                "Health +5 Condition +1"
               ]
             }
           ]
@@ -59078,8 +59078,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3",
-                "Stamina +5 Potential +15",
+                "Protect +3",
+                "Health +5 Potential +15",
                 "[Protection prowess] potential 10%"
               ]
             }
@@ -59097,7 +59097,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517837",
-    "name": "Satisfied Flowering",
+    "name": "A Satisfying Bloom",
     "rarity": "SR",
     "category": "SR Arcana",
     "subType": "Focus · -",
@@ -59153,7 +59153,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +3 Strength +3"
+                "Focus +3 Strength +3"
               ]
             }
           ]
@@ -59164,8 +59164,8 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +8",
-                "Stamina +5"
+                "Protect +8",
+                "Health +5"
               ]
             }
           ]
@@ -59177,7 +59177,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Endurance +12",
-                "Stamina +10"
+                "Health +10"
               ]
             }
           ]
@@ -59228,7 +59228,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       ],
       "supportBonuses": [
         {
-          "label": "Initial patience",
+          "label": "Initial Endurance",
           "value": "3"
         },
         {
@@ -59255,7 +59255,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +5"
+                "Endurance +5"
               ]
             }
           ]
@@ -59266,14 +59266,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Wait, Clarissa...!",
               "outcomes": [
-                "Patience +5",
-                "Stamina +10"
+                "Endurance +5",
+                "Health +10"
               ]
             },
             {
               "choice": "Apparently there's a monster that imitates a rabbit wandering around!",
               "outcomes": [
-                "Patience +5",
+                "Endurance +5",
                 "Condition +1"
               ]
             }
@@ -59291,7 +59291,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "Wow, that's a scary story...",
               "outcomes": [
-                "Stamina +10 Condition +1"
+                "Health +10 Condition +1"
               ]
             }
           ]
@@ -59308,14 +59308,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517843",
-    "name": "Lantern Moth Prophet",
+    "name": "Prophet of the Lantern Moth",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_ORACLE_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Power training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -59368,7 +59368,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Power training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59377,14 +59377,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517846",
-    "name": "Master Made",
+    "name": "Master Maid",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_SPEAR_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Power training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -59430,14 +59430,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Strength +3",
-                "Stamina +3"
+                "Health +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Power training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59446,14 +59446,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517849",
-    "name": "Druid Coming Out of the Forest",
+    "name": "Druid Out of the Woods",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_DRUID_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Power training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -59498,14 +59498,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Strength +3 Stamina +3"
+                "Strength +3 Health +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Power training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59514,14 +59514,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517852",
-    "name": "Rabbit with Two Faces",
+    "name": "Two-Faced Rabbit",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Power · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_DETECTIVE_WATSON_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Power training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Power",
       "Class Bonus": "-",
@@ -59573,7 +59573,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Power training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59582,16 +59582,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517855",
-    "name": "Western Sword",
+    "name": "Blade of the West",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_BEAMSWORD_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Health training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Ceres"
@@ -59602,7 +59602,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "西部の剣",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_BEAMSWORD_R_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Ceres",
       "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/152521_s54gh.webp",
@@ -59635,14 +59635,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
               "choice": "No Choice Required",
               "outcomes": [
                 "Health +3",
-                "Stamina +3"
+                "Health +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Health training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59651,16 +59651,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517858",
-    "name": "Girl Chasing Stars",
+    "name": "Star-Chasing Girl",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Health training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Asherah"
@@ -59671,7 +59671,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "星を追いかける少女",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_STRANIS_R_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Asherah",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp",
@@ -59711,7 +59711,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Health training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59720,16 +59720,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517861",
-    "name": "Blue Blood Entrepreneur",
+    "name": "Blue-Blooded Entrepreneur",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Health training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Frey"
@@ -59740,7 +59740,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "青い血の起業家",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_PRAY_R_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
       "characterName": "Frey",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_PRAY_icon.webp",
@@ -59772,14 +59772,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Health +3 Protection +3"
+                "Health +3 Protect +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Health training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59788,14 +59788,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517864",
-    "name": "Place Your Order at Smile",
+    "name": "Order with a Smile",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_VOYAGER_SMILE_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Focus training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -59817,7 +59817,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial concentration",
+          "label": "Initial Focus",
           "value": "1"
         },
         {
@@ -59840,15 +59840,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +3",
-                "Stamina +3"
+                "Focus +3",
+                "Health +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Focus training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59857,19 +59857,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517867",
-    "name": "Commander of the Wild Rose Knights",
+    "name": "Commander of the Briar Rose Knights",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Vitality · -",
+    "subType": "Health · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Health training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Vitality",
+      "Tag": "Health",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Charles"
+      "Featured Unit": "Charlotte"
     },
     "bestHolderSlugs": [
       "charles"
@@ -59877,9 +59877,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "野薔薇の騎士団長",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_KNIGHT_R_01.webp",
-      "statTag": "Vitality",
+      "statTag": "Health",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-51607-20251118080315.webp",
-      "characterName": "Charles",
+      "characterName": "Charlotte",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_KNIGHT_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
@@ -59916,7 +59916,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Health training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59925,19 +59925,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517870",
-    "name": "Kotodama Girl",
+    "name": "Girl of Spirit Words",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Focus training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Kira"
+      "Featured Unit": "Kyra"
     },
     "bestHolderSlugs": [
       "kira"
@@ -59947,14 +59947,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MUTANT_MASK_R_01.webp",
       "statTag": "Focus",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-26239-20251118080315.webp",
-      "characterName": "Kira",
+      "characterName": "Kyra",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/MUTANT_MASK_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial concentration",
+          "label": "Initial Focus",
           "value": "1"
         },
         {
@@ -59977,14 +59977,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +5"
+                "Focus +5"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Focus training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -59993,14 +59993,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517873",
-    "name": "Ambitious Newcomer",
+    "name": "Ambitious Rookie",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Focus · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_NOA_OBSERVER_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Focus training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -60045,7 +60045,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +3",
+                "Focus +3",
                 "Potential +3"
               ]
             }
@@ -60053,7 +60053,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Focus training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60069,7 +60069,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAGICIAN_SNIPER_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Focus training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Focus",
       "Class Bonus": "-",
@@ -60091,7 +60091,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial concentration",
+          "label": "Initial Focus",
           "value": "1"
         },
         {
@@ -60114,14 +60114,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Concentration +3 Strength +3"
+                "Focus +3 Strength +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Focus training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60130,16 +60130,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517879",
-    "name": "Companion of the Beast",
+    "name": "Phantasmal Beast's Companion",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Protect training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Serpang"
@@ -60150,7 +60150,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "幻獣の同伴者",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_EASTERN_OWL_R_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Serpang",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/EASTERN_OWL_icon.webp",
@@ -60182,14 +60182,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +5"
+                "Protect +5"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Protect training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60198,16 +60198,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517882",
-    "name": "Western Snake",
+    "name": "Serpent of the West",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_ROD_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Protect training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Lydia"
@@ -60218,7 +60218,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "西部の蛇",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_ROD_R_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Lydia",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_ROD_icon.webp",
@@ -60250,15 +60250,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3",
-                "Stamina +3"
+                "Protect +3",
+                "Health +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Protect training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60267,16 +60267,16 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517885",
-    "name": "Knight's Shield",
+    "name": "Shield of the Knights",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Protect training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
       "Featured Unit": "Carmen"
@@ -60287,7 +60287,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "騎士団の盾",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_R_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
       "characterName": "Carmen",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/KINGDOM_SHIELDER_icon.webp",
@@ -60319,14 +60319,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3 Patience +3"
+                "Protect +3 Endurance +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Protect training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60335,19 +60335,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517888",
-    "name": "Brave Delivery Man",
+    "name": "Brave Courier",
     "rarity": "R",
     "category": "R Arcana",
-    "subType": "Protection · -",
+    "subType": "Protect · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Protect training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
-      "Tag": "Protection",
+      "Tag": "Protect",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Bella"
+      "Featured Unit": "Vera"
     },
     "bestHolderSlugs": [
       "bella"
@@ -60355,9 +60355,9 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
     "staticData": {
       "nameJp": "勇敢な配達屋",
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_LPU_POST_R_01.webp",
-      "statTag": "Protection",
+      "statTag": "Protect",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-63834-20251118080315.webp",
-      "characterName": "Bella",
+      "characterName": "Vera",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/LPU_POST_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
@@ -60387,7 +60387,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Protection +3",
+                "Protect +3",
                 "Potential +3"
               ]
             }
@@ -60395,7 +60395,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Protect training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60404,19 +60404,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517891",
-    "name": "Sword Made of Ice",
+    "name": "Sword Forged of Ice",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_AMULET_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Lu"
+      "Featured Unit": "Lugh"
     },
     "bestHolderSlugs": [
       "lu"
@@ -60426,7 +60426,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_RECON_AMULET_R_01.webp",
       "statTag": "Endurance",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
-      "characterName": "Lu",
+      "characterName": "Lugh",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/RECON_AMULET_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
@@ -60456,7 +60456,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +3",
+                "Endurance +3",
                 "Potential +3"
               ]
             }
@@ -60464,7 +60464,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60473,14 +60473,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517894",
-    "name": "Running Spirit of the Grassland",
+    "name": "Plains Runner's Spirit",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WILD_HOG_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
@@ -60502,7 +60502,7 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial patience",
+          "label": "Initial Endurance",
           "value": "1"
         },
         {
@@ -60525,14 +60525,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +5"
+                "Endurance +5"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60541,19 +60541,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517897",
-    "name": "Western Shield",
+    "name": "Shield of the West",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Vesta"
+      "Featured Unit": "Besta"
     },
     "bestHolderSlugs": [
       "vesta"
@@ -60563,14 +60563,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_WEST_LANCER_R_01.webp",
       "statTag": "Endurance",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
-      "characterName": "Vesta",
+      "characterName": "Besta",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/WEST_LANCER_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial patience",
+          "label": "Initial Endurance",
           "value": "1"
         },
         {
@@ -60593,14 +60593,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +3 Concentration +3"
+                "Endurance +3 Focus +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60609,19 +60609,19 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   {
     "gameSlug": "starsavior",
     "slug": "arcana-79517900",
-    "name": "People's Baton",
+    "name": "Baton of the People",
     "rarity": "R",
     "category": "R Arcana",
     "subType": "Endurance · -",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_R_01_icon_arcana.webp",
     "tier": "B",
     "score": "0",
-    "effectSummary": "Provides undefined training amplification and Stat Bonus during Rescue Journey runs.",
+    "effectSummary": "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs.",
     "stats": {
       "Tag": "Endurance",
       "Class Bonus": "-",
       "Stat Bonus": "-",
-      "Featured Unit": "Anna"
+      "Featured Unit": "Annah"
     },
     "bestHolderSlugs": [
       "anna"
@@ -60631,14 +60631,14 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
       "cardArtUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_OFFICER_POLICE_R_01.webp",
       "statTag": "Endurance",
       "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-41448-20251118080315.webp",
-      "characterName": "Anna",
+      "characterName": "Annah",
       "characterIconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/OFFICER_POLICE_icon.webp",
       "statBonusType": "-",
       "classBonus": "-",
       "potentials": [],
       "supportBonuses": [
         {
-          "label": "Initial patience",
+          "label": "Initial Endurance",
           "value": "1"
         },
         {
@@ -60661,15 +60661,15 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
             {
               "choice": "No Choice Required",
               "outcomes": [
-                "Patience +3",
-                "Stamina +3"
+                "Endurance +3",
+                "Health +3"
               ]
             }
           ]
         }
       ],
       "evalBullets": [
-        "Provides undefined training amplification and Stat Bonus during Rescue Journey runs."
+        "Provides Endurance training amplification and Stat Bonus during Rescue Journey runs."
       ],
       "appMediaTier": "-",
       "rerollTier": "-"
@@ -60685,12 +60685,12 @@ export const STAR_SAVIOR_BANNERS_SEED = [
   {
     "gameSlug": "starsavior",
     "slug": "maid-ceres-pickup-gacha",
-    "title": "Maid Ceres Pickup Observation Gacha",
+    "title": "Maid Ceres Pickup Observation",
     "bannerType": "Character ★★★★★ · Arcana ★★★★☆",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01.webp",
     "periodLabel": "Active Until Nov 13 (Fri)",
     "verdict": "MUST PULL",
-    "reasoning": "Features Maid Ceres (Sun Supporter with dual AoE heals, Regeneration, and team-wide ATK buff Ultimate) alongside SSR Arcana \"Harsh Trial\".",
+    "reasoning": "Features Maid Ceres (Sun Supporter with dual AoE heals, Regeneration, and team-wide ATK Up Ultimate) alongside SSR Arcana \"Grueling Ordeal\".",
     "featuredCharacterSlugs": [
       "maid-ceres",
       "professor-m",
@@ -60700,12 +60700,12 @@ export const STAR_SAVIOR_BANNERS_SEED = [
   {
     "gameSlug": "starsavior",
     "slug": "bunny-frey-pickup-gacha",
-    "title": "Bunny Frey & Indomitable Masterpiece Pickup Gacha",
+    "title": "Frey: Noble Princess & The Indomitable Masterpiece Pickup",
     "bannerType": "Character ★★★☆☆ · Arcana ★★★★★",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01.webp",
     "periodLabel": "Active Until Nov 19 (Thu)",
     "verdict": "META PICK",
-    "reasoning": "Features Bunny Frey and the Tier-0 Power SSR Arcana \"Indomitable Masterpiece\" (+12% Crit DMG & +4% Max HP Universal Special Potential).",
+    "reasoning": "Features Frey: Noble Princess and the Tier-SSS Power SSR Arcana \"The Indomitable Masterpiece\" (+12% Crit DMG & +4% Max HP Universal Special Potential).",
     "featuredCharacterSlugs": [
       "bunny-frey",
       "bunny-charles",
@@ -60715,12 +60715,12 @@ export const STAR_SAVIOR_BANNERS_SEED = [
   {
     "gameSlug": "starsavior",
     "slug": "custom-standard-observation",
-    "title": "Standard & Custom Observation Gacha",
+    "title": "Standard & Custom Observation",
     "bannerType": "200 Pity Mileage · Wishlist Selection",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_KINGDOM_SHIELDER_SSR_01.webp",
     "periodLabel": "Permanent Observation Pool",
     "verdict": "HIGH VALUE",
-    "reasoning": "Select your priority SSR Saviors and Power/Endurance SSR Arcana cards to complete your 4-unit core party.",
+    "reasoning": "Select your priority SSR Saviors and Power/Endurance SSR Arcana cards to complete your 4-unit core formation.",
     "featuredCharacterSlugs": [
       "amora",
       "professor-m",

@@ -67,6 +67,203 @@ export const TIER_COLOR_STYLES: Record<string, { bg: string; text: string; label
   D: { bg: 'bg-[#334155] border-[#64748b]', text: 'text-slate-200', label: 'Tier 6' },
 };
 
+export interface AppMediaBannerH2Props {
+  id?: string;
+  children: React.ReactNode;
+  bannerSrc: string;
+  bannerAlt: string;
+  badge?: string;
+}
+
+export function AppMediaBannerH2({
+  id,
+  children,
+  bannerSrc,
+  bannerAlt,
+  badge,
+}: AppMediaBannerH2Props) {
+  return (
+    <div id={id} className="scroll-mt-24 space-y-2.5">
+      <h2 className="flex items-center justify-between bg-[#1d283e] px-3.5 py-2.5 text-[15px] sm:text-[16px] font-extrabold tracking-tight text-[#f8fafc] border-b-[3px] border-[#e86c58] border-x border-t border-x-[#2a3958] border-t-[#2a3958] rounded-t-sm shadow-sm">
+        <span>{children}</span>
+        {badge && (
+          <span className="ml-2 rounded bg-[#2563eb]/25 border border-[#3b82f6]/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#93c5fd]">
+            {badge}
+          </span>
+        )}
+      </h2>
+      <div className="overflow-hidden rounded border border-[#263450] bg-[#0b101b] shadow-sm">
+        <img
+          src={bannerSrc}
+          alt={bannerAlt}
+          width={740}
+          height={156}
+          className="w-full h-auto block object-cover"
+          loading="eager"
+        />
+      </div>
+    </div>
+  );
+}
+
+export interface AppMediaEyecatchBannerProps {
+  src: string;
+  alt: string;
+}
+
+export function AppMediaEyecatchBanner({ src, alt }: AppMediaEyecatchBannerProps) {
+  return (
+    <div className="overflow-hidden rounded-md border border-[#28354e] bg-[#0b101b] shadow-md">
+      <img
+        src={src}
+        alt={alt}
+        width={740}
+        height={388}
+        className="w-full h-auto block object-cover"
+        loading="eager"
+      />
+    </div>
+  );
+}
+
+export interface AppMediaGraphicButtonItem {
+  href: string;
+  label: string;
+  bannerSrc: string;
+  bannerAlt?: string;
+}
+
+export interface AppMediaGraphicButtonGridProps {
+  headerLabel?: string;
+  items: AppMediaGraphicButtonItem[];
+  footerLinks?: { href: string; label: string }[];
+}
+
+export function AppMediaGraphicButtonGrid({
+  headerLabel,
+  items,
+  footerLinks,
+}: AppMediaGraphicButtonGridProps) {
+  const rows: [AppMediaGraphicButtonItem, AppMediaGraphicButtonItem | null][] = [];
+  for (let i = 0; i < items.length; i += 2) {
+    rows.push([items[i], items[i + 1] ?? null]);
+  }
+
+  return (
+    <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626] shadow-sm">
+      <table className="w-full border-collapse table-fixed">
+        {headerLabel && (
+          <thead>
+            <tr>
+              <th
+                colSpan={2}
+                className="border-b border-[#28354e] bg-[#162136] px-3 py-2 text-center text-[12px] font-extrabold tracking-wide text-[#dbeafe]"
+              >
+                {headerLabel}
+              </th>
+            </tr>
+          </thead>
+        )}
+        <tbody>
+          {rows.map(([left, right], rowIdx) => (
+            <tr key={rowIdx} className="border-b border-[#28354e] last:border-b-0">
+              <td className="w-1/2 border-r border-[#28354e] p-2 sm:p-2.5 align-top bg-[#0f1626] hover:bg-[#162036] transition-colors">
+                <Link href={left.href} className="group block text-center">
+                  <div className="overflow-hidden rounded-[6px] border border-[#2b3a57] group-hover:border-[#60a5fa] bg-[#0b101c] shadow-sm transition-colors">
+                    <img
+                      src={left.bannerSrc}
+                      alt={left.bannerAlt || left.label}
+                      width={400}
+                      height={126}
+                      className="w-full h-auto block object-cover transition-transform duration-150 group-hover:scale-[1.015]"
+                      loading="eager"
+                    />
+                  </div>
+                  <span className="mt-1.5 block text-[12px] sm:text-[13px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
+                    {left.label}
+                  </span>
+                </Link>
+              </td>
+              {right ? (
+                <td className="w-1/2 p-2 sm:p-2.5 align-top bg-[#0f1626] hover:bg-[#162036] transition-colors">
+                  <Link href={right.href} className="group block text-center">
+                    <div className="overflow-hidden rounded-[6px] border border-[#2b3a57] group-hover:border-[#60a5fa] bg-[#0b101c] shadow-sm transition-colors">
+                      <img
+                        src={right.bannerSrc}
+                        alt={right.bannerAlt || right.label}
+                        width={400}
+                        height={126}
+                        className="w-full h-auto block object-cover transition-transform duration-150 group-hover:scale-[1.015]"
+                        loading="eager"
+                      />
+                    </div>
+                    <span className="mt-1.5 block text-[12px] sm:text-[13px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
+                      {right.label}
+                    </span>
+                  </Link>
+                </td>
+              ) : (
+                <td className="w-1/2 bg-[#0b111e]" />
+              )}
+            </tr>
+          ))}
+          {footerLinks &&
+            footerLinks.map((fl) => (
+              <tr key={fl.href + fl.label} className="border-t border-[#28354e]">
+                <td colSpan={2} className="bg-[#131d31] hover:bg-[#1a2742] px-3 py-2.5 text-center transition-colors">
+                  <Link
+                    href={fl.href}
+                    className="inline-flex items-center justify-center gap-1.5 text-[12px] sm:text-[13px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
+                  >
+                    <span className="text-[10px] text-[#3b82f6]">▶</span>
+                    <span>{fl.label}</span>
+                  </Link>
+                </td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+const VALID_RANK_ICONS = new Set(['sss', 'ss', 's', 'a', 'b', 'c']);
+
+export function AppMediaRankIcon({
+  tier,
+  size = 'md',
+  subLabel,
+}: {
+  tier: string;
+  size?: 'sm' | 'md' | 'lg';
+  subLabel?: string;
+}) {
+  const key = tier.toLowerCase();
+  if (!VALID_RANK_ICONS.has(key)) {
+    return <AppMediaTierBadge tier={tier} size={size} />;
+  }
+  const imgCls =
+    size === 'lg'
+      ? 'h-9 w-auto'
+      : size === 'sm'
+      ? 'h-5 w-auto'
+      : 'h-7 w-auto';
+
+  return (
+    <div className="inline-flex flex-col items-center justify-center gap-0.5">
+      <img
+        src={`/banners/starsavior/ranks/rarity_${key}.png`}
+        alt={`${tier} Rank`}
+        className={`${imgCls} object-contain drop-shadow`}
+        loading="eager"
+      />
+      {subLabel && (
+        <span className="text-[9px] font-bold text-[#94a3b8] leading-none">{subLabel}</span>
+      )}
+    </div>
+  );
+}
+
 export function AppMediaTierBadge({ tier, size = 'md' }: { tier: string; size?: 'sm' | 'md' | 'lg' }) {
   const style = TIER_COLOR_STYLES[tier] || TIER_COLOR_STYLES.B;
   const sizeCls =

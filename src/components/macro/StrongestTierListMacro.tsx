@@ -7,6 +7,8 @@ import {
   AppMediaH2,
   AppMediaH3,
   AppMediaH4,
+  AppMediaEyecatchBanner,
+  AppMediaRankIcon,
   AppMediaTierBadge,
   AppMediaTableLink,
   AppMediaIconCell,
@@ -27,10 +29,10 @@ const TIER_TOC = [
     subItems: [
       { id: 'analysis-amora', label: 'The Strongest Character is Amora!' },
       { id: 'analysis-professor-m', label: 'Professor M Scales With Overall Party Power' },
-      { id: 'analysis-bride-carmen', label: 'Bride Carmen Dominates on a Party-Wide Level' },
-      { id: 'analysis-bunny-charles', label: 'Bunny Charles is Consistently Powerful' },
-      { id: 'analysis-swimsuit-smile', label: 'Swimsuit Smile Excels in Boss Battles' },
-      { id: 'analysis-dress-asherah', label: 'Dress Asherah Has Slightly Dropped in Priority' },
+      { id: 'analysis-bride-carmen', label: 'Carmen: Eternal Promise Dominates on a Party-Wide Level' },
+      { id: 'analysis-bunny-charles', label: 'Bunnygirl Charlotte is Consistently Powerful' },
+      { id: 'analysis-swimsuit-smile', label: 'Smile: Sunshine Cat Excels in Boss Battles' },
+      { id: 'analysis-dress-asherah', label: 'Asherah: Waltz of Starlight Has Slightly Dropped in Priority' },
     ],
   },
   {
@@ -119,13 +121,13 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
     const defaults = [
       { slug: 'tanya', name: 'Tanya', votes: 161, percent: 15.9 },
       { slug: 'seira', name: 'Seira', votes: 92, percent: 9.1 },
-      { slug: 'charles', name: 'Charles', votes: 83, percent: 8.2 },
-      { slug: 'bell-lease', name: 'Bell Lease', votes: 77, percent: 7.6 },
-      { slug: 'bunny-charles', name: 'Bunny Charles', votes: 47, percent: 4.6 },
-      { slug: 'bride-carmen', name: 'Bride Carmen', votes: 42, percent: 4.1 },
+      { slug: 'charles', name: 'Charlotte', votes: 83, percent: 8.2 },
+      { slug: 'bell-lease', name: 'Bell Rhys', votes: 77, percent: 7.6 },
+      { slug: 'bunny-charles', name: 'Bunnygirl Charlotte', votes: 47, percent: 4.6 },
+      { slug: 'bride-carmen', name: 'Carmen: Eternal Promise', votes: 42, percent: 4.1 },
       { slug: 'carmen', name: 'Carmen', votes: 41, percent: 4.0 },
       { slug: 'amora', name: 'Amora', votes: 40, percent: 3.9 },
-      { slug: 'bunny-frey', name: 'Bunny Frey', votes: 38, percent: 3.7 },
+      { slug: 'bunny-frey', name: 'Frey: Noble Princess', votes: 38, percent: 3.7 },
       { slug: 'professor-m', name: 'Professor M', votes: 35, percent: 3.5 },
     ];
     return defaults.map((d, i) => {
@@ -164,24 +166,38 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
           </div>
         </div>
 
+        <AppMediaEyecatchBanner
+          src="/banners/starsavior/eyecatch/rank_chars.webp"
+          alt="Star Savior Strongest Character Ranking & Tier List"
+        />
+
         <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
           This is the Star Savior Strongest Character Ranking (Tier List). It covers the latest character evaluations, the complete SSS–C tier matrix by role, and detailed breakdowns of the strongest SSR and SR Saviors in Star Savior.
         </p>
 
-        {/* Top Ranking Switcher Table (スターセイヴァーの最強ランキング) */}
+        {/* Top Ranking Switcher Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
           <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
-            Star Savior Strongest Rankings
+            Various Star Savior Rankings
           </div>
-          <div className="grid grid-cols-3 divide-x divide-[#1e293b] text-center text-[12px] font-bold">
+          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[12px] font-bold">
             <Link href="/starsavior/tier-list" className="bg-[#2563eb]/25 py-2.5 text-white">
               Strongest Characters
             </Link>
             <Link href="/starsavior/arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest Arcana
             </Link>
+            <Link href="/starsavior/guides/pvp-tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+              Strongest PvP Characters
+            </Link>
             <Link href="/starsavior/reroll" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
-              Reroll Tier List
+              Reroll Rankings
+            </Link>
+            <Link href="/starsavior/guides/sr-characters" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+              Recommended SR Chars
+            </Link>
+            <Link href="/starsavior/guides/sr-arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+              Recommended SR Arcana
             </Link>
           </div>
         </div>
@@ -297,9 +313,8 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (
                   <tr key={tierKey} className="hover:bg-[#111827]/60">
-                    <td className={`p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}`}>
-                      <div className="text-lg font-black leading-none text-white">{tierKey}</div>
-                      <div className="mt-1 text-[10px] font-bold text-white/90">{tStyle.label}</div>
+                    <td className={`p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
+                      <AppMediaRankIcon tier={tierKey} size="md" subLabel={tStyle.label} />
                     </td>
                     {ROLE_COLUMNS.map((col) => {
                       const cellChars = rowChars.filter((c) => col.roles.includes(c.role));
@@ -337,7 +352,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
           </table>
         </div>
 
-        {/* H3: ランク評価基準早見表 */}
+        {/* H3: Rank Evaluation Criteria Quick Reference Table */}
         <AppMediaH3 id="rank-criteria-quick-table">Rank Evaluation Criteria Quick Reference Table</AppMediaH3>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
           <table className="w-full border-collapse text-left text-[12px]">
@@ -350,7 +365,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
             <tbody className="divide-y divide-[#1e293b]">
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]">
-                  <AppMediaTierBadge tier="SSS" />
+                  <AppMediaRankIcon tier="SSS" size="sm" />
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Practically mandatory performance across endgame PvE content</div>
@@ -360,7 +375,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               </tr>
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]">
-                  <AppMediaTierBadge tier="SS" />
+                  <AppMediaRankIcon tier="SS" size="sm" />
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Possesses potential on par with SSS in specific encounters</div>
@@ -370,7 +385,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               </tr>
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]">
-                  <AppMediaTierBadge tier="S" />
+                  <AppMediaRankIcon tier="S" size="sm" />
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Very strong when stage mechanics or attribute advantages align</div>
@@ -380,7 +395,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               </tr>
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]">
-                  <AppMediaTierBadge tier="A" />
+                  <AppMediaRankIcon tier="A" size="sm" />
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Solid average performance</div>
@@ -389,7 +404,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               </tr>
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]">
-                  <AppMediaTierBadge tier="B" />
+                  <AppMediaRankIcon tier="B" size="sm" />
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Slightly lacking compared to top-meta options</div>
@@ -398,7 +413,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               </tr>
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]">
-                  <AppMediaTierBadge tier="C" />
+                  <AppMediaRankIcon tier="C" size="sm" />
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Needs future balance adjustments to compete</div>
@@ -410,7 +425,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         </div>
       </section>
 
-      {/* H2: 最強キャラランキングの解説 */}
+      {/* H2: Strongest Character Ranking Analysis */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
         <AppMediaH2 id="tier-ranking-analysis">Strongest Character Ranking Analysis</AppMediaH2>
 
@@ -431,51 +446,51 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         <div className="space-y-2 pt-2">
           <AppMediaH3 id="analysis-professor-m">Professor M Scales With Overall Party Power</AppMediaH3>
           <p>
-            <strong className="text-white">Professor M</strong> (Moon Ranger) triggers a <strong className="text-[#93c5fd]">Pincer Dual-Attack</strong> from the ally with the highest ATK whenever conditions are met, pairing phenomenally well with Attackers who have strong Basic Skills.
+            <strong className="text-white">Professor M</strong> (Moon Ranger) triggers a <strong className="text-[#93c5fd]">Cross Attack</strong> from the ally with the highest ATK whenever conditions are met, pairing phenomenally well with Attackers who have strong Basic Skills.
           </p>
           <p>
-            Whenever allies attack, Professor M also gains Action Gauge and Cooling stacks, chaining directly into her 0-cooldown trigger Special Skill. When paired with high-turn-frequency carries like Amora or Bunny Charles, her total team damage contribution is unmatched—though if your main Attacker is under-invested early on, her ceiling will naturally depend on your carry&apos;s stats.
+            Whenever allies attack, Professor M also gains Action Gauge and Cooling stacks, chaining directly into her 0-cooldown trigger Special Skill. When paired with high-turn-frequency carries like Amora or Bunnygirl Charlotte, her total team damage contribution is unmatched—though if your main Attacker is under-invested early on, her ceiling will naturally depend on your carry&apos;s stats.
           </p>
           <AppMediaTableLink href="/starsavior/characters/professor-m" label="Professor M Evaluation, Skills & Best Equipment Builds" />
         </div>
 
         <div className="space-y-2 pt-2">
-          <AppMediaH3 id="analysis-bride-carmen">Bride Carmen Dominates on a Party-Wide Level</AppMediaH3>
+          <AppMediaH3 id="analysis-bride-carmen">Carmen: Eternal Promise Dominates on a Party-Wide Level</AppMediaH3>
           <p>
-            <strong className="text-white">Bride Carmen</strong> (Moon Supporter) boasts top-class healing and damage-sharing protection via her off-turn trigger skill, shining through overall team survivability and enabling fragile Attackers to play aggressively as pseudo-tanks.
+            <strong className="text-white">Carmen: Eternal Promise</strong> (Moon Supporter) boasts top-class healing and damage-sharing protection via her off-turn trigger skill, shining through overall team survivability and enabling fragile Attackers to play aggressively as pseudo-tanks.
           </p>
-          <AppMediaH4>How to Use Alongside Dress Asherah</AppMediaH4>
+          <AppMediaH4>How to Use Alongside Asherah: Waltz of Starlight</AppMediaH4>
           <p>
-            While Bride Carmen provides stronger raw healing and single-target damage redirection, her debuff cleanse is single-target. Using Bride Carmen and Dress Asherah depending on the boss—or running both together in high-difficulty raids—forms an unbreakable core.
+            While Carmen: Eternal Promise provides stronger raw healing and single-target damage redirection, her debuff cleanse is single-target. Using Carmen: Eternal Promise and Asherah: Waltz of Starlight depending on the boss—or running both together in high-difficulty raids—forms an unbreakable core.
           </p>
-          <AppMediaTableLink href="/starsavior/characters/bride-carmen" label="Bride Carmen Evaluation, Skills & Best Equipment Builds" />
+          <AppMediaTableLink href="/starsavior/characters/bride-carmen" label="Carmen: Eternal Promise Evaluation, Skills & Best Equipment Builds" />
         </div>
 
         <div className="space-y-2 pt-2">
-          <AppMediaH3 id="analysis-bunny-charles">Bunny Charles is Consistently Powerful</AppMediaH3>
+          <AppMediaH3 id="analysis-bunny-charles">Bunnygirl Charlotte is Consistently Powerful</AppMediaH3>
           <p>
-            <strong className="text-white">Bunny Charles</strong> (Sun Assassin) excels at sustained single-target damage: while holding her Special Skill&apos;s &quot;Lucky Token&quot;, her Basic Skill strikes twice consecutively, and her Ultimate Skill features a cooldown reset mechanic.
+            <strong className="text-white">Bunnygirl Charlotte</strong> (Sun Assassin) excels at sustained single-target damage: while holding her Special Skill&apos;s &quot;Lucky Token&quot;, her Basic Skill strikes twice consecutively, and her Ultimate Skill features a cooldown reset mechanic.
           </p>
           <p>
             Combined with her team-wide ATK buff and self-healing via Nova Burst, she is completely self-sufficient and fits effortlessly into any 4-unit composition.
           </p>
-          <AppMediaTableLink href="/starsavior/characters/bunny-charles" label="Bunny Charles Evaluation, Skills & Best Equipment Builds" />
+          <AppMediaTableLink href="/starsavior/characters/bunny-charles" label="Bunnygirl Charlotte Evaluation, Skills & Best Equipment Builds" />
         </div>
 
         <div className="space-y-2 pt-2">
-          <AppMediaH3 id="analysis-swimsuit-smile">Swimsuit Smile Excels in Boss Battles</AppMediaH3>
+          <AppMediaH3 id="analysis-swimsuit-smile">Smile: Sunshine Cat Excels in Boss Battles</AppMediaH3>
           <p>
-            In single-target boss encounters, <strong className="text-white">Swimsuit Smile</strong> (Star Assassin) triggers high-frequency follow-up Special Skills by consuming 2 Leap Stacks—which she generates rapidly through her Nova Burst and her signature SSR Arcana &quot;Preparing for Vacation Starts With Shopping!&quot;. Her Special Skill also inflicts Toughness damage, breaking boss shields effortlessly.
+            In single-target boss encounters, <strong className="text-white">Smile: Sunshine Cat</strong> (Star Assassin) triggers high-frequency follow-up Special Skills by consuming 2 Leap Stacks—which she generates rapidly through her Nova Burst and her signature SSR Arcana &quot;Vacation Prep Starts with Shopping!&quot;. Her Special Skill also inflicts Toughness damage, breaking boss shields effortlessly.
           </p>
-          <AppMediaTableLink href="/starsavior/characters/swimsuit-smile" label="Swimsuit Smile Evaluation, Skills & Best Equipment Builds" />
+          <AppMediaTableLink href="/starsavior/characters/swimsuit-smile" label="Smile: Sunshine Cat Evaluation, Skills & Best Equipment Builds" />
         </div>
 
         <div className="space-y-2 pt-2">
-          <AppMediaH3 id="analysis-dress-asherah">Dress Asherah Has Slightly Dropped in Priority</AppMediaH3>
+          <AppMediaH3 id="analysis-dress-asherah">Asherah: Waltz of Starlight Has Slightly Dropped in Priority</AppMediaH3>
           <p>
-            <strong className="text-white">Dress Asherah</strong> (Order Supporter) remains an excellent healer/sub-DPS at LB1+, but because <strong className="text-[#fbbf24]">Pincer Dual-Attacks can only trigger once per turn</strong>, running her alongside Professor M causes Professor M to consume the Pincer proc—reducing Dress Asherah&apos;s Pincer-based healing and damage. In parties without Professor M, however, Dress Asherah remains a top-tier Supporter.
+            <strong className="text-white">Asherah: Waltz of Starlight</strong> (Order Supporter) remains an excellent healer/sub-DPS at LB1+, but because <strong className="text-[#fbbf24]">Cross Attacks can only trigger once per turn</strong>, running her alongside Professor M causes Professor M to consume the Cross Attack proc—reducing Asherah: Waltz of Starlight&apos;s Cross Attack healing and damage. In parties without Professor M, however, Asherah: Waltz of Starlight remains a top-tier Supporter.
           </p>
-          <AppMediaTableLink href="/starsavior/characters/dress-asherah" label="Dress Asherah Evaluation, Skills & Best Equipment Builds" />
+          <AppMediaTableLink href="/starsavior/characters/dress-asherah" label="Asherah: Waltz of Starlight Evaluation, Skills & Best Equipment Builds" />
         </div>
       </section>
 
@@ -579,7 +594,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         <AppMediaH3 id="criteria-supporters">Supporters Are Also Evaluated on Damage Contribution</AppMediaH3>
         <p>
-          Supporters and Defenders who contribute offensive buffs, Pincer Dual-Attacks, or sub-DPS while sustaining the team are evaluated on par with or above pure Attackers.
+          Supporters and Defenders who contribute offensive buffs, Cross Attacks, or sub-DPS while sustaining the team are evaluated on par with or above pure Attackers.
         </p>
 
         <AppMediaH3 id="criteria-single-target">Single-Target DPS is Heavily Emphasized</AppMediaH3>
@@ -612,14 +627,14 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
               <tr>
                 <td className="px-3.5 py-2.5 font-bold text-white border-r border-[#1e293b]">Ranger</td>
                 <td className="px-3.5 py-2.5 space-y-0.5">
-                  <div>• Evaluated on sustained damage and Pincer Dual-Attack triggers</div>
+                  <div>• Evaluated on sustained damage and Cross Attack triggers</div>
                   <div>• Major bonus points for offensive debuffs (especially DEF Down & Damage Taken Up)</div>
                 </td>
               </tr>
               <tr>
                 <td className="px-3.5 py-2.5 font-bold text-white border-r border-[#1e293b]">Defender</td>
                 <td className="px-3.5 py-2.5 space-y-0.5">
-                  <div>• Evaluated primarily on frontline mitigation, Taunt, Barriers, and Preemptive Guard</div>
+                  <div>• Evaluated primarily on frontline mitigation, Taunt, Barriers, and Defend Forward</div>
                   <div>• Bonus points for team-wide Speed/DEF buffs or sub-DPS scaling</div>
                 </td>
               </tr>

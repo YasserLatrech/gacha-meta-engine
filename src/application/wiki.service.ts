@@ -151,9 +151,40 @@ export async function fetchGameWikiFromDb(gameSlug: string = 'starsavior'): Prom
   }
 }
 
+export const CHARACTER_SLUG_ALIASES: Record<string, string> = {
+  charlotte: 'charles',
+  'bunnygirl-charlotte': 'bunny-charles',
+  'bunnygirl-claire': 'bunny-claire',
+  'bunnygirl-scarlet': 'bunny-scarlet',
+  'asherah-waltz-of-starlight': 'dress-asherah',
+  'carmen-eternal-promise': 'bride-carmen',
+  'epindel-blessing-in-bloom': 'bride-epindel',
+  'frey-noble-princess': 'bunny-frey',
+  'luna-summer-starlight': 'swimsuit-luna',
+  'smile-sunshine-cat': 'swimsuit-smile',
+  'bell-rhys': 'bell-lease',
+  'yoo-mina': 'yanagi-mina',
+  rosaria: 'rosalia',
+  haydee: 'ede',
+  lugh: 'lu',
+  kyra: 'kira',
+  lyn: 'rin',
+  tyria: 'tilia',
+  cristelle: 'christel',
+  besta: 'vesta',
+  annah: 'anna',
+  vera: 'bella',
+  emilly: 'emily',
+};
+
+export function resolveCharacterSlug(slug: string): string {
+  const normalized = slug.trim().toLowerCase();
+  return CHARACTER_SLUG_ALIASES[normalized] ?? normalized;
+}
+
 export const getStarSaviorWikiData = unstable_cache(
   async () => fetchGameWikiFromDb('starsavior'),
-  ['starsavior-wiki-dataset-v5'],
+  ['starsavior-wiki-dataset-v6'],
   { revalidate: 300, tags: ['starsavior-wiki'] }
 );
 

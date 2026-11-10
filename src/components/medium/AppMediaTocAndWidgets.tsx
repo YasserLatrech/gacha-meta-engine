@@ -64,84 +64,87 @@ export function AppMediaTocBox({ items, title = 'Table of Contents' }: { items: 
 
 const LATEST_UPDATE_TABS = [
   {
-    key: 'maid-ceres',
-    tabLabel: 'Maid Ceres Released',
-    title: 'New Sun Supporter "Maid Ceres" & SSR Arcana "Harsh Trial" Released!',
-    badge: 'NEW CHARACTER',
+    key: 'livestream',
+    tabLabel: 'Livestream News',
+    title: 'Witch of Favoritism & Guile Confirmed! Dress Lacy & Dress Carnelia Revealed!',
+    badge: 'RECOMMENDED',
     description:
-      'Maid Ceres is a Sun Supporter equipped with two AoE healing skills, an extra-trigger Special Skill that grants Regeneration, team-wide debuff cleansing, and the first Supporter Ultimate Skill that grants an AoE Attack buff.',
+      'Official broadcast highlights: new playable SSRs Witch of Favoritism and Guile announced alongside Dress Lacy and Dress Carnelia outfits and 1st Anniversary celebrations!',
     links: [
-      { label: 'Maid Ceres Build, Skills & Evaluation', href: '/starsavior/characters/maid-ceres' },
-      { label: 'Should You Pull on Maid Ceres Gacha?', href: '/starsavior/tier-list' },
-    ],
-  },
-  {
-    key: 'bunny-frey',
-    tabLabel: 'Bunny Frey Pickup',
-    title: 'Bunny Frey & Tier-0 SSR Arcana "Indomitable Masterpiece" Rate-Up!',
-    badge: 'PICKUP GACHA',
-    description:
-      'Bunny Frey returns alongside her signature Power SSR Arcana "Indomitable Masterpiece", which grants +12% Crit DMG and +4% Max HP as a Universal Special Potential for all Attackers and Sub-DPS units.',
-    links: [
-      { label: 'Bunny Frey Build, Skills & Evaluation', href: '/starsavior/characters/bunny-frey' },
-      { label: 'Strongest Arcana Tier List & Rankings', href: '/starsavior/arcana' },
-    ],
-  },
-  {
-    key: 'tier-update',
-    tabLabel: 'Strongest Ranking Updated!',
-    title: 'Strongest Character Tier List Updated (v2.4 Meta)',
-    badge: 'TIER UPDATE',
-    description:
-      'Amora (Order Assassin), Professor M (Moon Ranger), Bride Carmen (Moon Supporter), Bunny Charles (Sun Assassin), and Swimsuit Smile (Star Assassin) lead Tier-0 SSS, with Maid Ceres debuting in SS Tier.',
-    links: [
-      { label: 'Open Strongest Character Tier List', href: '/starsavior/tier-list' },
-      { label: 'Open Reroll Tier List & Stopping Line', href: '/starsavior/reroll' },
-    ],
-  },
-  {
-    key: 'cosmo-gate',
-    tabLabel: 'Cosmo Gate P7',
-    title: 'Cosmo Gate Season P7 Boss Strategy & Best Party Formations',
-    badge: 'ENDGAME PVE',
-    description:
-      'Single-target Toughness break and Pincer Dual-Attack compositions centered around Professor M, Amora, and Swimsuit Smile dominate high-score Cosmo Gate P7 boss clears.',
-    links: [
-      { label: 'Professor M Build & Pincer Team Guide', href: '/starsavior/characters/professor-m' },
-      { label: 'Amora Build & High-Speed DPS Guide', href: '/starsavior/characters/amora' },
-    ],
-  },
-  {
-    key: 'valentine',
-    tabLabel: 'Valentine Revival',
-    title: 'Revival Valentine Story Event & Exchange Shop Priority',
-    badge: 'ACTIVE EVENT',
-    description:
-      'Clear event stages to farm event currency for Standard Observation Tickets, Ether Dust, Anti-Gravity Meteorites, and Affinity Gift boxes before November 13.',
-    links: [
-      { label: 'All 57 Playable Characters Database', href: '/starsavior/characters' },
+      { label: 'View Latest Livestream Summary Here', href: '/starsavior/guides/livestream-summary' },
+      { label: 'Active Coupon Codes List Here', href: '/starsavior/guides/promo-codes' },
     ],
   },
   {
     key: 'coupons',
     tabLabel: 'Coupon Codes Released',
-    title: 'Active Promo & Coupon Codes List (Free Starlight Stones & Tickets)',
-    badge: 'FREE REWARDS',
+    title: 'Active Promo Codes (~Nov 27, 23:59): GIFTREADYANNIV1ST & ENDOFTHEJOURNEY',
+    badge: 'RECOMMENDED',
     description:
-      'Redeem the latest official Star Savior coupon codes via Account Settings -> Redeem Coupon Code (or the official web redemption portal for iOS) to claim Starlight Stones and Observation Tickets.',
+      'Redeem GIFTREADYANNIV1ST and ENDOFTHEJOURNEY via Settings -> Account -> Redeem Coupon Code (or the official portal on iOS) before Nov 27, 23:59 to claim Astral Gems and Observation Tickets.',
     links: [
-      { label: 'Reroll Guide & Starting Starlight Stones', href: '/starsavior/reroll' },
+      { label: 'Coupon Codes List & How to Redeem', href: '/starsavior/guides/promo-codes' },
+      { label: 'How to Reroll Fast Guide', href: '/starsavior/guides/how-to-reroll' },
     ],
   },
   {
-    key: 'anniversary',
-    tabLabel: '1st Anniversary Forecast',
-    title: '1st Anniversary Event & Limited Savior Release Predictions',
-    badge: 'FORECAST',
+    key: 'maid-ceres',
+    tabLabel: 'Maid Ceres Released',
+    title: 'New Sun Supporter "Maid Ceres" & SSR Arcana "Grueling Ordeal" Pickup (~Nov 13, 04:00)',
+    badge: 'GACHA',
     description:
-      'Upcoming roadmap schedule, expected Order/Chaos Limited Saviors, and recommended Starlight Stone savings target (200-pull mileage pity).',
+      'Maid Ceres is a Sun Supporter equipped with two AoE healing skills, an extra-trigger Special Skill that grants Regeneration, team-wide debuff cleansing, and an AoE ATK buff Ultimate Skill.',
     links: [
-      { label: 'All Limited & Standard Characters List', href: '/starsavior/characters' },
+      { label: 'Should You Pull Maid Ceres Gacha?', href: '/starsavior/guides/maid-ceres-gacha' },
+      { label: 'Maid Ceres Build, Skills & Evaluation', href: '/starsavior/characters/maid-ceres' },
+    ],
+  },
+  {
+    key: 'bunny-frey',
+    tabLabel: 'Frey: Noble Princess PU',
+    title: 'Frey: Noble Princess & Tier-0 SSR Arcana "The Indomitable Masterpiece" (~Nov 19, 04:00)',
+    badge: 'GACHA',
+    description:
+      'Frey: Noble Princess returns alongside the Tier-0 Power SSR Arcana "The Indomitable Masterpiece", granting +12% Crit DMG and +4% Max HP as a Universal Special Potential.',
+    links: [
+      { label: 'Should You Pull Frey: Noble Princess Gacha?', href: '/starsavior/guides/frey-noble-princess-gacha' },
+      { label: 'Strongest Arcana Tier List & Rankings', href: '/starsavior/arcana' },
+    ],
+  },
+  {
+    key: 'cosmo-gate',
+    tabLabel: 'Cosmo Gate P7',
+    title: 'Cosmo Gate Season P7 Boss Strategy & Recommended Formations (~Nov 12, 04:00)',
+    badge: 'EVENT',
+    description:
+      'Single-target Toughness break and Cross Attack compositions centered around Professor M, Amora, Haydee, and Smile: Sunshine Cat dominate Cosmo Gate P7 boss clears.',
+    links: [
+      { label: 'Cosmo Gate Strategy & Recommended Teams', href: '/starsavior/guides/cosmo-gate' },
+      { label: 'Professor M Build & Cross Attack Guide', href: '/starsavior/characters/professor-m' },
+    ],
+  },
+  {
+    key: 'valentine',
+    tabLabel: 'Valentine Revival',
+    title: 'Revival Valentine Event Walkthrough & Exchange Shop (~Nov 13, 04:00)',
+    badge: 'EVENT',
+    description:
+      'Clear Golden Fantasia event stages to exchange for Observation Tickets, Quasar/Pulsar Core shards, and Affinity Gifts before November 13, 04:00.',
+    links: [
+      { label: 'Valentine Event Walkthrough Here', href: '/starsavior/guides/valentine-event' },
+      { label: 'All 57 Playable Characters Database', href: '/starsavior/characters' },
+    ],
+  },
+  {
+    key: 'tier-update',
+    tabLabel: 'Strongest Ranking Updated!',
+    title: 'Strongest Character Tier List Updated — Maid Ceres Debuts at SS!',
+    badge: 'RECOMMENDED',
+    description:
+      'Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat lead Tier-0 SSS, with newly released Maid Ceres entering SS Rank!',
+    links: [
+      { label: 'Strongest Character Ranking', href: '/starsavior/tier-list' },
+      { label: 'Gauntlet (PvP) Strongest Ranking', href: '/starsavior/guides/pvp-tier-list' },
     ],
   },
 ];

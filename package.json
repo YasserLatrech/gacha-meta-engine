@@ -1,6 +1,6 @@
 {
   "name": "gacha-meta-engine",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "private": true,
   "description": "Star Savior Strategy Wiki — AppMedia-Style Serverless Tier List, Reroll, Character & Arcana Database",
   "scripts": {

@@ -7,6 +7,8 @@ import {
   AppMediaH2,
   AppMediaH3,
   AppMediaH4,
+  AppMediaEyecatchBanner,
+  AppMediaRankIcon,
   AppMediaTierBadge,
   AppMediaTableLink,
   AppMediaIconCell,
@@ -26,11 +28,11 @@ const REROLL_TOC = [
     subItems: [
       { id: 'reroll-char-criteria', label: 'Character Evaluation Criteria Table' },
       { id: 'reroll-supporters-first', label: 'Secure Supporter Units First' },
-      { id: 'reroll-bride-carmen', label: 'Highest Priority is Bride Carmen' },
-      { id: 'reroll-dress-asherah', label: 'Dress Asherah Priority Adjusted' },
+      { id: 'reroll-bride-carmen', label: 'Highest Priority is Carmen: Eternal Promise' },
+      { id: 'reroll-dress-asherah', label: 'Asherah: Waltz of Starlight Priority Adjusted' },
       { id: 'reroll-amora', label: 'Among Attackers, Amora Stands Above the Rest' },
-      { id: 'reroll-bunny-charles', label: 'Bunny Charles Has High Single-Target Damage' },
-      { id: 'reroll-swimsuit-smile', label: 'Swimsuit Smile is Exceptional Against Bosses' },
+      { id: 'reroll-bunny-charles', label: 'Bunnygirl Charlotte Has High Single-Target Damage' },
+      { id: 'reroll-swimsuit-smile', label: 'Smile: Sunshine Cat is Exceptional Against Bosses' },
       { id: 'reroll-arcana-matrix', label: 'Reroll Tier List (Arcana Cards)' },
       { id: 'reroll-power-tag', label: 'Power Tag Arcana Are Recommended for Rerolling!' },
       { id: 'reroll-endurance-tag', label: 'Strong Endurance Tag Arcana Have Increased' },
@@ -70,14 +72,14 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
 
   const pollOptions = useMemo(() => {
     const list = [
-      { slug: 'bunny-charles', name: 'Bunny Charles', votes: 13, percent: 12.2 },
-      { slug: 'bell-lease', name: 'Bell Lease', votes: 12, percent: 11.3 },
-      { slug: 'bride-carmen', name: 'Bride Carmen', votes: 7, percent: 6.6 },
-      { slug: 'bunny-frey', name: 'Bunny Frey', votes: 6, percent: 5.6 },
+      { slug: 'bunny-charles', name: 'Bunnygirl Charlotte', votes: 13, percent: 12.2 },
+      { slug: 'bell-lease', name: 'Bell Rhys', votes: 12, percent: 11.3 },
+      { slug: 'bride-carmen', name: 'Carmen: Eternal Promise', votes: 7, percent: 6.6 },
+      { slug: 'bunny-frey', name: 'Frey: Noble Princess', votes: 6, percent: 5.6 },
       { slug: 'tanya', name: 'Tanya', votes: 5, percent: 4.7 },
-      { slug: 'dress-asherah', name: 'Dress Asherah', votes: 5, percent: 4.7 },
-      { slug: 'rin', name: 'Rin', votes: 4, percent: 3.7 },
-      { slug: 'bride-epindel', name: 'Bride Epindel', votes: 4, percent: 3.7 },
+      { slug: 'dress-asherah', name: 'Asherah: Waltz of Starlight', votes: 5, percent: 4.7 },
+      { slug: 'rin', name: 'Lyn', votes: 4, percent: 3.7 },
+      { slug: 'bride-epindel', name: 'Epindel: Blessing in Bloom', votes: 4, percent: 3.7 },
       { slug: 'professor-m', name: 'Professor M', votes: 4, percent: 3.7 },
       { slug: 'amora', name: 'Amora', votes: 4, percent: 3.7 },
     ];
@@ -115,29 +117,34 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           </div>
         </div>
 
+        <AppMediaEyecatchBanner
+          src="/banners/starsavior/eyecatch/rank_reroll.webp"
+          alt="Star Savior Reroll Tier List & Stopping Line Guide"
+        />
+
         <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
           This is the Star Savior Reroll Tier List. It covers the ideal reroll stopping line, recommended gacha banners, and detailed evaluations of the best starting SSR Characters and SSR Arcana cards.
         </p>
 
-        {/* Early Game Recommended Articles Table (序盤おすすめ記事) */}
+        {/* Early Game Recommended Articles Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
           <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
             Early-Game Recommended Strategy Guides
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[11px] font-bold">
             <a href="#reroll-ranking-section" className="bg-[#2563eb]/20 py-2 text-white">Reroll Tier List</a>
-            <a href="#how-to-reroll" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">How to Reroll</a>
-            <Link href="/starsavior#beginner-guides" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Early-Game Guide</Link>
-            <Link href="/starsavior#beginner-guides" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Daily Checklist</Link>
-            <Link href="/starsavior#rescue-journey" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Rescue Journey Guide</Link>
-            <Link href="/starsavior/tier-list" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Best Party Formations</Link>
+            <Link href="/starsavior/guides/how-to-reroll" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">How to Reroll</Link>
+            <Link href="/starsavior/guides/beginner-progression" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Early-Game Guide</Link>
+            <Link href="/starsavior/guides/daily-routine" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Daily Checklist</Link>
+            <Link href="/starsavior/guides/rescue-journey-guide" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Rescue Journey Guide</Link>
+            <Link href="/starsavior/guides/party-formations" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Best Party Formations</Link>
           </div>
         </div>
 
         <AppMediaTocBox items={REROLL_TOC} />
       </section>
 
-      {/* H2: リセマラ当たりランキング (Character Reroll Tier Matrix) */}
+      {/* H2: Reroll Tier List (Characters) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
         <AppMediaH2 id="reroll-ranking-section" badge="CHARACTERS & ARCANA">
           Reroll Tier List (Characters)
@@ -151,9 +158,8 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (
                   <tr key={tierKey} className="border-b last:border-b-0 border-[#1e293b]">
-                    <td className={`w-28 p-3 text-center align-middle border-r border-[#243049] ${tStyle.bg}`}>
-                      <div className="text-lg font-black text-white">{tierKey}</div>
-                      <div className="text-[10px] font-bold text-white/90">Tier {idx + 1}</div>
+                    <td className={`w-28 p-3 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
+                      <AppMediaRankIcon tier={tierKey} size="md" subLabel={`Tier ${idx + 1}`} />
                     </td>
                     <td className="p-3">
                       <div className="flex flex-wrap gap-2.5">
@@ -178,31 +184,30 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           </table>
         </div>
 
-        {/* H3: 評価基準表 */}
         <AppMediaH3 id="reroll-char-criteria">Character Reroll Evaluation Criteria Table</AppMediaH3>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
           <table className="w-full border-collapse text-left text-[12px]">
             <tbody className="divide-y divide-[#1e293b]">
               <tr>
-                <td className="w-24 p-2.5 text-center border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                <td className="w-24 p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="SS" size="sm" /></td>
                 <td className="p-2.5">• Finish rerolling immediately once pulled</td>
               </tr>
               <tr>
-                <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaTierBadge tier="S" /></td>
+                <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="S" size="sm" /></td>
                 <td className="p-2.5">
                   <div>• Safe to finish if pulled alongside multiple SSRs</div>
                   <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Prioritize SS-Rank characters whenever possible</div>
                 </td>
               </tr>
               <tr>
-                <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaTierBadge tier="A" /></td>
+                <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="A" size="sm" /></td>
                 <td className="p-2.5">
                   <div>• Great secondary pull alongside an SS-Rank unit</div>
                   <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Keep rerolling if you only pulled an A-Rank unit alone</div>
                 </td>
               </tr>
               <tr>
-                <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaTierBadge tier="B" /></td>
+                <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="B" size="sm" /></td>
                 <td className="p-2.5">
                   <div>• Situational strength (e.g., strong in PvP but slower in early PvE) — continue rerolling</div>
                 </td>
@@ -211,7 +216,6 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           </table>
         </div>
 
-        {/* H3: まずはサポーターを確保 */}
         <AppMediaH3 id="reroll-supporters-first">Secure Supporter Units First</AppMediaH3>
         <div className="flex flex-wrap gap-3 rounded-lg border border-[#243049] bg-[#0f1626] p-3">
           {supporterTriad.map((c) => (
@@ -227,21 +231,21 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           ))}
         </div>
         <p>
-          While Star Savior features an abundance of strong Attackers, top-tier Supporters are scarce—meaning you will inevitably rely on Dress Asherah, Bride Carmen, and Maid Ceres across every endgame mode. Whenever any of these three Supporters is on Rate-Up Pickup, securing them is the highest priority.
+          While Star Savior features an abundance of strong Attackers, top-tier Supporters are scarce—meaning you will inevitably rely on Asherah: Waltz of Starlight, Carmen: Eternal Promise, and Maid Ceres across every endgame mode. Whenever any of these three Supporters is on Rate-Up Pickup, securing them is the highest priority.
         </p>
 
-        <AppMediaH3 id="reroll-bride-carmen">Highest Priority is Bride Carmen</AppMediaH3>
+        <AppMediaH3 id="reroll-bride-carmen">Highest Priority is Carmen: Eternal Promise</AppMediaH3>
         <p>
-          Among Supporters, <strong className="text-white">Bride Carmen</strong> is the #1 priority: her off-turn trigger skill protects allies and absorbs single-target damage, while her Basic Skill provides AoE healing and her Ultimate cleanses debuffs. This allows fragile Attackers (such as Counterattack carries like Fei) to operate safely on the frontline.
+          Among Supporters, <strong className="text-white">Carmen: Eternal Promise</strong> is the #1 priority: her off-turn trigger skill protects allies and absorbs single-target damage, while her Basic Skill provides AoE healing and her Ultimate cleanses debuffs. This allows fragile Attackers (such as Evade / Revenge Attack carries like Fei) to operate safely on the frontline.
         </p>
 
-        <AppMediaH3 id="reroll-dress-asherah">Dress Asherah Priority Adjusted</AppMediaH3>
+        <AppMediaH3 id="reroll-dress-asherah">Asherah: Waltz of Starlight Priority Adjusted</AppMediaH3>
         <p>
-          <strong className="text-white">Dress Asherah</strong> provides AoE healing and debuff cleansing, and from Limit Break +1 (LB1) her Unique Passive unlocks Pincer Dual-Attack follow-ups with single-target healing.
+          <strong className="text-white">Asherah: Waltz of Starlight</strong> provides AoE healing and debuff cleansing, and from Limit Break +1 (LB1) her Unique Passive unlocks Cross Attack follow-ups with single-target healing.
         </p>
         <AppMediaH4>Slightly Reduced Usage With Maid Ceres & Professor M</AppMediaH4>
         <p>
-          Because Pincer Dual-Attacks can only trigger once per turn, pairing Dress Asherah with Professor M prevents Dress Asherah&apos;s Pincer healing from triggering. Coupled with Maid Ceres offering stronger pure AoE healing, Dress Asherah&apos;s priority has shifted slightly down—though she remains top-tier in teams without Professor M.
+          Because Cross Attacks can only trigger once per turn, pairing Asherah: Waltz of Starlight with Professor M prevents Asherah: Waltz of Starlight&apos;s Cross Attack healing from triggering. Coupled with Maid Ceres offering stronger pure AoE healing, Asherah: Waltz of Starlight&apos;s priority has shifted slightly down—though she remains top-tier in teams without Professor M.
         </p>
 
         <AppMediaH3 id="reroll-amora">Among Attackers, Amora Stands Above the Rest</AppMediaH3>
@@ -249,18 +253,18 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           If you are rerolling for an Attacker, <strong className="text-white">Amora</strong> is the #1 recommendation. Her Special Skill has a 100% base multiplier on a 3-turn cooldown, inflicts Hit Rate Down, and advances her own Action Gauge by 30% (50% on Nova Burst), while her Ultimate grants an Extra Turn and her passive cleanses debuffs.
         </p>
 
-        <AppMediaH3 id="reroll-bunny-charles">Bunny Charles Has High Single-Target Damage</AppMediaH3>
+        <AppMediaH3 id="reroll-bunny-charles">Bunnygirl Charlotte Has High Single-Target Damage</AppMediaH3>
         <p>
-          While holding her Special Skill&apos;s &quot;Lucky Token&quot;, <strong className="text-white">Bunny Charles</strong> fires her Basic Skill twice in a row, delivering top-class single-target DPS alongside Ultimate cooldown resets, team-wide ATK buffs, and Nova Burst self-healing—even at LB0.
+          While holding her Special Skill&apos;s &quot;Lucky Token&quot;, <strong className="text-white">Bunnygirl Charlotte</strong> fires her Basic Skill twice in a row, delivering top-class single-target DPS alongside Ultimate cooldown resets, team-wide ATK buffs, and Nova Burst self-healing—even at LB0.
         </p>
 
-        <AppMediaH3 id="reroll-swimsuit-smile">Swimsuit Smile is Exceptional Against Bosses</AppMediaH3>
+        <AppMediaH3 id="reroll-swimsuit-smile">Smile: Sunshine Cat is Exceptional Against Bosses</AppMediaH3>
         <p>
-          <strong className="text-white">Swimsuit Smile</strong> consumes 2 Leap Stacks to unleash high-frequency follow-up Special Skills whenever allies attack, shredding single-target boss Toughness bars.
+          <strong className="text-white">Smile: Sunshine Cat</strong> consumes 2 Leap Stacks to unleash high-frequency follow-up Special Skills whenever allies attack, shredding single-target boss Toughness bars.
         </p>
         <AppMediaH4>Her Signature Arcana is Practically Mandatory</AppMediaH4>
         <p>
-          Note that Swimsuit Smile relies heavily on her signature SSR Arcana &quot;Preparing for Vacation Starts With Shopping!&quot; to maintain Leap Stack uptime.
+          Note that Smile: Sunshine Cat relies heavily on her signature SSR Arcana &quot;Vacation Prep Starts with Shopping!&quot; to maintain Leap Stack uptime.
         </p>
 
         {/* Arcana Reroll Tier Matrix */}
@@ -273,9 +277,8 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (
                   <tr key={tierKey} className="border-b last:border-b-0 border-[#1e293b]">
-                    <td className={`w-28 p-3 text-center align-middle border-r border-[#243049] ${tStyle.bg}`}>
-                      <div className="text-lg font-black text-white">{tierKey}</div>
-                      <div className="text-[10px] font-bold text-white/90">Tier {idx + 1}</div>
+                    <td className={`w-28 p-3 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
+                      <AppMediaRankIcon tier={tierKey} size="md" subLabel={`Tier ${idx + 1}`} />
                     </td>
                     <td className="p-3">
                       <div className="flex flex-wrap gap-2.5">
@@ -302,12 +305,12 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
 
         <AppMediaH3 id="reroll-power-tag">Power Tag Arcana Are Recommended for Rerolling!</AppMediaH3>
         <p>
-          The top Arcana reroll targets are <strong className="text-white">&quot;Weakness Correction Custom Training&quot;</strong> (Tilia) and <strong className="text-white">&quot;Indomitable Masterpiece&quot;</strong> (Frey). Both carry the Power Tag required by every Attacker and provide Universal Class Bonuses (+6% ATK & +6% Crit Rate, and +12% Crit DMG & +4% Max HP respectively).
+          The top Arcana reroll targets are <strong className="text-white">&quot;Customized Training to Cover Weaknesses&quot;</strong> (Tyria) and <strong className="text-white">&quot;The Indomitable Masterpiece&quot;</strong> (Frey). Both carry the Power Tag required by every Attacker and provide Universal Class Bonuses (+6% ATK & +6% Crit Rate, and +12% Crit DMG & +4% Max HP respectively).
         </p>
 
         <AppMediaH3 id="reroll-endurance-tag">Strong Endurance Tag Arcana Have Increased</AppMediaH3>
         <p>
-          Endurance Tag SSR Arcana—specifically <strong className="text-white">&quot;Death to Flowers&quot;</strong> (Carnelia, granting [Stigmata of Insight] +18% Crit Rate) and <strong className="text-white">&quot;The Warmth of the White Moon Is Like Sunlight&quot;</strong> (Rin, granting [Stigmata of Speed] +8 Speed)—are mandatory across almost every Rescue Journey build.
+          Endurance Tag SSR Arcana—specifically <strong className="text-white">&quot;Death for the Flowers&quot;</strong> (Carnelia, granting [Stigmata of Insight] +18% Crit Rate) and <strong className="text-white">&quot;A White Moon Shines With the Sun&apos;s Warmth&quot;</strong> (Lyn, granting [Stigmata of Speed] +8 Speed)—are mandatory across almost every Rescue Journey build.
         </p>
 
         <AppMediaH3 id="reroll-savior-assist">Savior Assist Arcana Must Be Paired With Their Character</AppMediaH3>
@@ -389,16 +392,16 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         </div>
       </section>
 
-      {/* H2: リセマラ終了ライン & キャラとアルカナはどっち優先？ & 評価基準 */}
+      {/* H2: Reroll Stopping Line & Banner Priority */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
         <AppMediaH2 id="reroll-stopping-line">Reroll Stopping Line & Banner Priority</AppMediaH2>
         <AppMediaH3>Aim for Multiple SS-Rank Characters & Arcana</AppMediaH3>
         <p>
-          The ideal stopping line is securing <strong className="text-white">2 or more SS-Rank Characters/Arcana</strong> (for example, an SS-Rank Attacker like Amora or Bunny Charles paired with a Supporter like Bride Carmen or Maid Ceres, or a Universal Power SSR Arcana).
+          The ideal stopping line is securing <strong className="text-white">2 or more SS-Rank Characters/Arcana</strong> (for example, an SS-Rank Attacker like Amora or Bunnygirl Charlotte paired with a Supporter like Carmen: Eternal Promise or Maid Ceres, or a Universal Power SSR Arcana).
         </p>
         <AppMediaH3>Focus on Assembling a Full 4-Unit Party (Including Free SSRs)</AppMediaH3>
         <p>
-          Because combat in Star Savior uses a 4-unit party and level synchronization caps require focusing resources on 4 core characters until Lv.200, assemble 4 strong SSR characters first (counting free Asherah and selector tickets) before switching all pulls to SSR Arcana banners.
+          Because combat in Star Savior uses a 4-unit party and Synchro Level caps require focusing resources on 4 core characters until Lv.200, assemble 4 strong SSR characters first (counting free Asherah and selector tickets) before switching all pulls to SSR Arcana banners.
         </p>
         <AppMediaH4 id="char-vs-arcana-priority">Prioritize Quantity Over Limit Breaks for Arcana (LB0 is Fine)</AppMediaH4>
         <p>
@@ -408,7 +411,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         <AppMediaH2 id="reroll-eval-criteria">Reroll Evaluation Criteria</AppMediaH2>
         <ul className="space-y-1.5 list-disc pl-5">
           <li><strong className="text-white">Characters Evaluated on Versatility:</strong> Units that excel across Operations, Cosmo Gate, and Gauntlet without requiring hyper-specific teammates score highest.</li>
-          <li><strong className="text-white">Irreplaceable Kits Scored Higher:</strong> Supporters with off-turn healing/damage sharing (Bride Carmen, Maid Ceres) and unique Evasion/Counter units (Fei) receive premium ratings.</li>
+          <li><strong className="text-white">Irreplaceable Kits Scored Higher:</strong> Supporters with off-turn healing/damage sharing (Carmen: Eternal Promise, Maid Ceres) and unique Evade / Revenge Attack units (Fei) receive premium ratings.</li>
           <li><strong className="text-white">Arcana Evaluated on Special Potentials:</strong> Universal Class Bonus cards with Crit Rate, Crit DMG, ATK, and Speed Special Potentials rank at the top.</li>
         </ul>
       </section>

@@ -26,15 +26,14 @@ export function CharacterDetailMacro({
   const hasPreAwakening = Boolean(sd?.preAwakeningSkills && sd.preAwakeningSkills.length > 0);
   const [skillTab, setSkillTab] = useState<'post' | 'pre'>('post');
 
-  // Variant switcher (e.g., Asherah <-> Dress Asherah)
-  const baseRootName = character.name
-    .replace(/^(Dress|Bride|Swimsuit|Bunny|Maid)\s+/i, '')
-    .trim();
-  const variants = characters.filter(
-    (c) =>
-      c.name === baseRootName ||
-      c.name.endsWith(` ${baseRootName}`)
-  );
+  // Variant switcher (e.g., Asherah <-> Asherah: Waltz of Starlight, Charlotte <-> Bunnygirl Charlotte)
+  const normalizeRoot = (n: string) =>
+    n
+      .replace(/^(Bunnygirl|Dress|Bride|Swimsuit|Bunny|Maid)\s+/i, '')
+      .replace(/:\s*.*$/, '')
+      .trim();
+  const baseRootName = normalizeRoot(character.name);
+  const variants = characters.filter((c) => normalizeRoot(c.name) === baseRootName);
 
   // Server stat ranks (/57)
   const totalUnits = characters.length;
@@ -999,7 +998,7 @@ export function CharacterDetailMacro({
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.power}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Vitality</div>
+                <div className="text-[10px] font-bold text-[#94a3b8]">Health</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.vitality}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
@@ -1011,7 +1010,7 @@ export function CharacterDetailMacro({
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.focus}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Protection</div>
+                <div className="text-[10px] font-bold text-[#94a3b8]">Protect</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.protection}</div>
               </div>
             </div>

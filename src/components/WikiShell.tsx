@@ -23,24 +23,30 @@ export function WikiShell({
       links: [
         { key: 'portal', label: 'Star Savior Wiki Top', href: '/starsavior', badge: 'TOP' },
         { key: 'tier-list', label: 'Strongest Character Tier List', href: '/starsavior/tier-list', badge: 'HOT' },
-        { key: 'reroll', label: 'Reroll Tier List & Stopping Line', href: '/starsavior/reroll', badge: 'STARTER' },
         { key: 'arcana', label: 'Strongest Arcana Tier List', href: '/starsavior/arcana', badge: '83' },
+        { key: 'pvp-tier', label: 'PvP Gauntlet Tier List', href: '/starsavior/guides/pvp-tier-list', badge: 'PVP' },
+        { key: 'reroll', label: 'Reroll Tier List & Stopping Line', href: '/starsavior/reroll', badge: 'STARTER' },
+        { key: 'sr-chars', label: 'Recommended SR Characters', href: '/starsavior/guides/sr-characters', badge: 'SR' },
+        { key: 'sr-arcana', label: 'Recommended SR Arcana', href: '/starsavior/guides/sr-arcana', badge: 'SR' },
       ],
     },
     {
-      heading: 'STATIC DATABASE',
+      heading: 'STATIC DATABASE & TOOLS',
       links: [
         { key: 'characters', label: 'All 57 Characters List', href: '/starsavior/characters', badge: '57' },
         { key: 'arcana-db', label: 'All 83 Arcana Cards List', href: '/starsavior/arcana#arcana-complete-database', badge: '83' },
+        { key: 'event-checker', label: 'Journey Event Choice Checker', href: '/starsavior/guides/event-choice-checker', badge: 'TOOL' },
+        { key: 'char-tier-maker', label: 'Character Tier Maker Tool', href: '/starsavior/guides/character-tier-maker', badge: 'TOOL' },
       ],
     },
     {
       heading: 'STRATEGY GUIDES',
       links: [
         { key: 'gacha', label: 'Active Gacha & Pull Priority', href: '/starsavior#gacha-section', badge: 'PU' },
-        { key: 'journey', label: 'Rescue Journey Hard Guide', href: '/starsavior#rescue-journey', badge: 'GUIDE' },
-        { key: 'operations', label: 'Operations & Cube Palace', href: '/starsavior#cube-palace', badge: 'BOSS' },
-        { key: 'beginner', label: 'Beginner Early-Game Guide', href: '/starsavior#beginner-guides', badge: 'NEW' },
+        { key: 'journey', label: 'Rescue Journey Hard Guide', href: '/starsavior/guides/rescue-journey-guide', badge: 'GUIDE' },
+        { key: 'operations', label: 'Cube Palace & Operations', href: '/starsavior/guides/cube-palace', badge: 'BOSS' },
+        { key: 'beginner', label: 'Beginner Early-Game Guide', href: '/starsavior/guides/beginner-progression', badge: 'NEW' },
+        { key: 'codes', label: 'Active Coupon Codes List', href: '/starsavior/guides/promo-codes', badge: 'GIFT' },
       ],
     },
   ];
@@ -235,15 +241,12 @@ export function WikiShell({
           width: '100%',
           margin: '0 auto',
           padding: '16px',
-          display: 'grid',
-          gridTemplateColumns: '255px minmax(0, 1fr)',
-          gap: '18px',
           flex: 1,
-          alignItems: 'start',
         }}
       >
         {/* Left Navigation Menu */}
         <aside
+          className="wiki-sidebar"
           style={{
             background: 'var(--bg-surface)',
             border: '1px solid var(--border-subtle)',
@@ -427,7 +430,7 @@ export function WikiShell({
         </aside>
 
         {/* Main Content Column */}
-        <main style={{ display: 'flex', flexDirection: 'column', gap: '16px', minWidth: 0 }}>
+        <main className="wiki-main" style={{ display: 'flex', flexDirection: 'column', gap: '16px', minWidth: 0 }}>
           {children}
         </main>
       </div>

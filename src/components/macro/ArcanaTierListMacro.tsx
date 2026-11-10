@@ -7,6 +7,8 @@ import {
   AppMediaH2,
   AppMediaH3,
   AppMediaH4,
+  AppMediaEyecatchBanner,
+  AppMediaRankIcon,
   AppMediaTierBadge,
   AppMediaIconCell,
   TIER_COLOR_STYLES,
@@ -22,22 +24,22 @@ const ARCANA_TOC = [
     id: 'arcana-tier-matrix',
     label: 'Strongest Arcana Ranking & Tier Matrix',
     subItems: [
-      { id: 'arcana-top-tilia', label: 'The Strongest is "Weakness Correction Custom Training"' },
-      { id: 'arcana-top-frey', label: '"Indomitable Masterpiece" is Equally Powerful' },
-      { id: 'arcana-top-carnelia', label: '"Death to Flowers" With Stigmata of Insight' },
+      { id: 'arcana-top-tyria', label: 'The Strongest is "Customized Training to Cover Weaknesses"' },
+      { id: 'arcana-top-frey', label: '"The Indomitable Masterpiece" is Equally Powerful' },
+      { id: 'arcana-top-carnelia', label: '"Death for the Flowers" With Stigmata of Insight' },
     ],
   },
   {
     id: 'arcana-latest-news',
     label: 'Strongest Arcana Latest Release Info',
     subItems: [
-      { id: 'arcana-new-maid-ceres', label: 'Maid Ceres SSR Arcana "Harsh Trial" Implemented!' },
-      { id: 'arcana-new-seira', label: 'Seira SSR Arcana "Sandman\'s Outing" Implemented!' },
+      { id: 'arcana-new-maid-ceres', label: 'Maid Ceres SSR Arcana "Grueling Ordeal" Implemented!' },
+      { id: 'arcana-new-seira', label: 'Seira SSR Arcana "Drowsy Day Out" Implemented!' },
     ],
   },
   {
     id: 'arcana-brief-overviews',
-    label: 'Brief Overview of Strongest Arcana by Rank (SS–B)',
+    label: 'Brief Overview of Strongest Arcana by Rank (SS–C)',
     subItems: [
       { id: 'arcana-rank-ss', label: 'SS Rank (Tier 1)' },
       { id: 'arcana-rank-s', label: 'S Rank (Tier 2)' },
@@ -55,7 +57,7 @@ const ARCANA_TOC = [
   },
 ];
 
-const TAG_COLUMNS = ['Power', 'Vitality', 'Endurance', 'Focus', 'Protection'] as const;
+const TAG_COLUMNS = ['Power', 'Health', 'Endurance', 'Focus', 'Protect'] as const;
 
 export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
   const { game, characters, arcana } = dataset;
@@ -101,24 +103,38 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           </div>
         </div>
 
+        <AppMediaEyecatchBanner
+          src="/banners/starsavior/eyecatch/rank_arcana.webp"
+          alt="Star Savior Strongest Arcana Tier List & Rankings"
+        />
+
         <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
-          This page presents the Star Savior Strongest Arcana Ranking (Tier List) and complete 83-card encyclopedia. Use this guide to check the best SSR, SR, and R Arcana Special Potentials, Training Tag bonuses, and Rescue Journey event effects.
+          This page presents the Star Savior Strongest Arcana Ranking (Tier List) and complete 83-card encyclopedia. Use this guide to check the best SSR, SR, and R Arcana Special Potentials, Training Tag bonuses (Power, Health, Endurance, Focus, Protect), and Rescue Journey event effects.
         </p>
 
         {/* Top Ranking Switcher Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
           <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
-            Star Savior Strongest Rankings
+            Various Star Savior Rankings
           </div>
-          <div className="grid grid-cols-3 divide-x divide-[#1e293b] text-center text-[12px] font-bold">
+          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[12px] font-bold">
             <Link href="/starsavior/tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest Characters
             </Link>
             <Link href="/starsavior/arcana" className="bg-[#2563eb]/25 py-2.5 text-white">
               Strongest Arcana
             </Link>
+            <Link href="/starsavior/guides/pvp-tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+              Strongest PvP Characters
+            </Link>
             <Link href="/starsavior/reroll" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
-              Reroll Tier List
+              Reroll Rankings
+            </Link>
+            <Link href="/starsavior/guides/sr-characters" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+              Recommended SR Chars
+            </Link>
+            <Link href="/starsavior/guides/sr-arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+              Recommended SR Arcana
             </Link>
           </div>
         </div>
@@ -126,7 +142,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         <AppMediaTocBox items={ARCANA_TOC} />
       </section>
 
-      {/* H2: 最強アルカナランキング (Tag-Split Tier Matrix) */}
+      {/* H2: Strongest Arcana Ranking (Tag-Split Tier Matrix) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
         <AppMediaH2 id="arcana-tier-matrix" badge="48 SSR CARDS">
           Strongest Arcana Ranking (By Training Tag)
@@ -150,9 +166,8 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 const tStyle = TIER_COLOR_STYLES[tierKey];
                 return (
                   <tr key={tierKey} className="hover:bg-[#111827]/60">
-                    <td className={`p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}`}>
-                      <div className="text-lg font-black text-white">{tierKey}</div>
-                      <div className="mt-0.5 text-[10px] font-bold text-white/90">Tier {idx + 1}</div>
+                    <td className={`p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
+                      <AppMediaRankIcon tier={tierKey} size="md" subLabel={`Tier ${idx + 1}`} />
                     </td>
                     {TAG_COLUMNS.map((tag) => {
                       const cellCards = rowCards.filter((a) => (a.staticData?.statTag || 'Power') === tag);
@@ -186,44 +201,41 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           </table>
         </div>
 
-        {/* H3: 最強は弱点補完カスタム特訓 */}
-        <AppMediaH3 id="arcana-top-tilia">
-          The Strongest Arcana is &quot;Weakness Correction Custom Training&quot;
+        <AppMediaH3 id="arcana-top-tyria">
+          The Strongest Arcana is &quot;Customized Training to Cover Weaknesses&quot;
         </AppMediaH3>
         <p>
-          Tilia&apos;s featured SSR Arcana <strong className="text-white">&quot;Weakness Correction Custom Training&quot;</strong> (Power Tag / Universal Bonus) grants the Special Potential <strong className="text-[#fbbf24]">[Sharp Offensive] (+6% ATK & +6% Crit Rate)</strong> and provides a massive +5 Power training bonus. Because it frees up Stellar Archive slots for other stats and fits every single Attacker in the game, it is the #1 priority Arcana to level.
+          Tyria&apos;s featured SSR Arcana <strong className="text-white">&quot;Customized Training to Cover Weaknesses&quot;</strong> (Power Tag / Universal Bonus) grants the Special Potential <strong className="text-[#fbbf24]">[Sharp Offensive] (+6% ATK & +6% Crit Rate)</strong> and provides a massive +5 Power training bonus. Because it frees up Stellar Archive slots for other stats and fits every single Attacker in the game, it is the #1 priority Arcana to level.
         </p>
 
-        {/* H3: 不屈の傑作も同格の強さ */}
         <AppMediaH3 id="arcana-top-frey">
-          &quot;Indomitable Masterpiece&quot; is Equally Powerful
+          &quot;The Indomitable Masterpiece&quot; is Equally Powerful
         </AppMediaH3>
         <p>
-          Frey&apos;s featured SSR Arcana <strong className="text-white">&quot;Indomitable Masterpiece&quot;</strong> (Power Tag / Universal Bonus) grants <strong className="text-[#fbbf24]">[Sturdy Destruction] (+12% Crit DMG & +4% Max HP)</strong> alongside [Sense of Attack] (+5% ATK). Its hybrid Crit DMG + Max HP boost makes it top-tier for both Attackers and offensive Supporters/Defenders like Emily and Dress Asherah.
+          Frey&apos;s featured SSR Arcana <strong className="text-white">&quot;The Indomitable Masterpiece&quot;</strong> (Power Tag / Universal Bonus) grants <strong className="text-[#fbbf24]">[Sturdy Destruction] (+12% Crit DMG & +4% Max HP)</strong> alongside [Sense of Attack] (+5% ATK). Its hybrid Crit DMG + Max HP boost makes it top-tier for both Attackers and offensive Supporters/Defenders like Emilly and Asherah: Waltz of Starlight.
         </p>
 
-        {/* H3: 洞察の聖痕持ちの花々に死を */}
         <AppMediaH3 id="arcana-top-carnelia">
-          &quot;Death to Flowers&quot; With Stigmata of Insight (+18% Crit Rate)
+          &quot;Death for the Flowers&quot; With Stigmata of Insight (+18% Crit Rate)
         </AppMediaH3>
         <p>
-          Carnelia&apos;s featured SSR Arcana <strong className="text-white">&quot;Death to Flowers&quot;</strong> (Endurance Tag / Universal Bonus) grants the coveted <strong className="text-[#fbbf24]">[Stigmata of Insight] (+18% Crit Rate)</strong> alongside +4 Bonus Potential Points and +4 Power training bonuses—making it an irreplaceable staple in high-rank Rescue Journey decks.
+          Carnelia&apos;s featured SSR Arcana <strong className="text-white">&quot;Death for the Flowers&quot;</strong> (Endurance Tag / Universal Bonus) grants the coveted <strong className="text-[#fbbf24]">[Stigmata of Insight] (+18% Crit Rate)</strong> alongside +4 Bonus Potential Points and +4 Power training bonuses—making it an irreplaceable staple in high-rank Rescue Journey decks.
         </p>
       </section>
 
-      {/* H2: 最強アルカナの最新情報 */}
+      {/* H2: Strongest Arcana Latest Release Info */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
         <AppMediaH2 id="arcana-latest-news" badge="NEW">
           Strongest Arcana Latest Release Info
         </AppMediaH2>
-        <AppMediaH3 id="arcana-new-maid-ceres">Maid Ceres SSR Arcana &quot;Harsh Trial&quot; Implemented!</AppMediaH3>
+        <AppMediaH3 id="arcana-new-maid-ceres">Maid Ceres SSR Arcana &quot;Grueling Ordeal&quot; Implemented!</AppMediaH3>
         <p>
-          Maid Ceres&apos;s featured SSR Arcana <strong className="text-white">&quot;Harsh Trial&quot;</strong> has been implemented as a Vitality Tag Supporter-Exclusive card. Its Special Potential increases Speed by 4 whenever a non-attack Special Skill is used (stacking up to 5 times for +20 Speed). Because Offensive Supporters whose Special Skill is an attack (such as Dress Asherah) cannot trigger it, it is rated <strong className="text-[#fbbf24]">A Rank</strong>.
+          Maid Ceres&apos;s featured SSR Arcana <strong className="text-white">&quot;Grueling Ordeal&quot;</strong> has been implemented as a Health Tag Supporter-Exclusive card. Its Special Potential increases Speed by 4 whenever a non-attack Special Skill is used (stacking up to 5 times for +20 Speed). Because Offensive Supporters whose Special Skill is an attack (such as Asherah: Waltz of Starlight) cannot trigger it, it is rated <strong className="text-[#fbbf24]">A Rank</strong>.
         </p>
 
-        <AppMediaH3 id="arcana-new-seira">Seira SSR Arcana &quot;Sandman&apos;s Outing&quot; Implemented!</AppMediaH3>
+        <AppMediaH3 id="arcana-new-seira">Seira SSR Arcana &quot;Drowsy Day Out&quot; Implemented!</AppMediaH3>
         <p>
-          Seira&apos;s featured SSR Arcana <strong className="text-white">&quot;Sandman&apos;s Outing&quot;</strong> (Vitality Tag / Savior-Exclusive) grants &quot;Sweet Dreams&quot; (+1 Toughness damage for 3 turns) and +2 Nova Force after using a non-attack skill. While +2 Nova Force is convenient, running offensive Power/Endurance Arcana generally yields higher DPS.
+          Seira&apos;s featured SSR Arcana <strong className="text-white">&quot;Drowsy Day Out&quot;</strong> (Health Tag / Savior-Exclusive) grants &quot;Sweet Dreams&quot; (+1 Toughness damage for 3 turns) and +2 Nova Force after using a non-attack skill. While +2 Nova Force is convenient, running offensive Power/Endurance Arcana generally yields higher DPS.
         </p>
       </section>
 
@@ -418,7 +430,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         </div>
       </section>
 
-      {/* H2: 最強アルカナの評価基準 */}
+      {/* H2: Strongest Arcana Evaluation Criteria */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
         <AppMediaH2 id="arcana-evaluation-criteria">Strongest Arcana Evaluation Criteria</AppMediaH2>
         <AppMediaH3>Overall Adoption Rate Across Decks is the Core Metric</AppMediaH3>
@@ -429,13 +441,13 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         <p>
           Because Rescue Journey stat caps flatten out raw stat differences at high investment, an Arcana card&apos;s <strong className="text-white">Special Potential</strong> and <strong className="text-white">Common Potentials</strong> (especially ATK, Crit Rate, Crit DMG, and Speed) have the largest impact on final combat performance.
         </p>
-        <AppMediaH3>Power & Vitality Tag Arcana Have Higher Base Value</AppMediaH3>
+        <AppMediaH3>Power, Endurance & Health Tag Arcana Have Higher Base Value</AppMediaH3>
         <p>
-          Power Tag cards (required for every Attacker) and Endurance/Vitality Tag cards with Universal Class Bonuses can be slotted into almost any Savior&apos;s Journey deck, earning higher baseline scores than restrictive class-locked cards.
+          Power Tag cards (required for every Attacker) and Endurance/Health Tag cards with Universal Class Bonuses can be slotted into almost any Savior&apos;s Journey deck, earning higher baseline scores than restrictive class-locked cards.
         </p>
         <AppMediaH4>Same-Character Bonus & Unique Potentials</AppMediaH4>
         <p>
-          Matching an Arcana card with its featured Title Savior activates the <strong className="text-[#fbbf24]">Same-Character Bonus</strong> and unlocks Savior-Exclusive Unique Potentials (such as Tanya&apos;s &quot;Tempura Master&quot; or Swimsuit Smile&apos;s &quot;Preparing for Vacation Starts With Shopping!&quot;).
+          Matching an Arcana card with its featured Title Savior activates the <strong className="text-[#fbbf24]">Same-Character Bonus</strong> and unlocks Savior-Exclusive Unique Potentials (such as Tanya&apos;s &quot;Master of Fried Food&quot; or Smile: Sunshine Cat&apos;s &quot;Vacation Prep Starts with Shopping!&quot;).
         </p>
       </section>
 

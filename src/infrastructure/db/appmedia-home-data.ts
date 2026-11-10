@@ -8,7 +8,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "/starsavior",
       "title": "Star Savior",
       "titleJa": "スタセイ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_starsavior.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_026.webp",
       "platform": "Console / PC",
       "isInternal": true
     },
@@ -16,7 +16,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/fategrandorder",
       "title": "FGO",
       "titleJa": "FGO",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_fategrandorder.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_027.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -24,7 +24,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/spalik",
       "title": "Sparklink Stars",
       "titleJa": "スパリク",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_spalik.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_028.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -32,7 +32,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/bleach-mh",
       "title": "BLEACH Mirrors High",
       "titleJa": "ミラハイ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/lib/bleach-mh/img/icon_bleach-mh.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_029.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -40,7 +40,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/honogurashi",
       "title": "Honogurashi no Niwa",
       "titleJa": "ほの暮しの庭",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_honogurashi.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_030.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -48,7 +48,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/dqm4",
       "title": "Dragon Quest Monsters 4",
       "titleJa": "モンスターズ4",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/06/184434_3u9vz.png",
+      "iconUrl": "/banners/home/icons/portal_icon_031.png",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -56,7 +56,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/ffrs",
       "title": "Final Fantasy Resonance",
       "titleJa": "FFレゾナンス",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/09/155616_uk9n4.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_032.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -64,7 +64,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/fe_banshisenkou",
       "title": "Fire Emblem: Banshi Senkou",
       "titleJa": "万紫千紅",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_fe_banshisenkou.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_033.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -72,7 +72,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/minecraft-dungeons2",
       "title": "Minecraft Dungeons 2",
       "titleJa": "マイクラダンジョンズ2",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_minecraft-dungeons2.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_034.webp",
       "platform": "Mobile App",
       "isInternal": false
     },
@@ -80,7 +80,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/inazuma-cross",
       "title": "Inazuma Eleven Cross",
       "titleJa": "イナイレクロス",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/06/inazuma-cross_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_035.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -88,7 +88,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/pokemonchampions",
       "title": "Pokémon Champions",
       "titleJa": "ポケチャン",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2025/06/150820_oqlrk.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_036.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -96,7 +96,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/nte",
       "title": "NTE",
       "titleJa": "NTE",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_nte.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_037.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -104,7 +104,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/arknights_endfield",
       "title": "Arknights: Endfield",
       "titleJa": "エンドフィールド",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/02/124645_td5i2.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_038.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -112,7 +112,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/ark_nights",
       "title": "Arknights",
       "titleJa": "アークナイツ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_ark_nights.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_039.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -120,7 +120,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/ggene_eternal",
       "title": "SD Gundam G Generation Eternal",
       "titleJa": "ジージェネエターナル",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2025/06/133201_0zgeo.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_040.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -128,7 +128,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/stellasora",
       "title": "Stella Sora",
       "titleJa": "ステラソラ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_stellasora.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_041.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -136,7 +136,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/monst",
       "title": "Monster Strike",
       "titleJa": "モンスト",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_monst.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_042.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -144,7 +144,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/pazudora",
       "title": "Puzzle & Dragons",
       "titleJa": "パズドラ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_pazudora.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_043.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -152,7 +152,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/blue_archive",
       "title": "Blue Archive",
       "titleJa": "ブルアカ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_blue_archive.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_044.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -160,7 +160,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/master_duel",
       "title": "Yu-Gi-Oh! Master Duel",
       "titleJa": "マスターデュエル",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/05/icon_master_duel.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_045.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -168,7 +168,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/wizdaphne",
       "title": "Wizardry Variants Daphne",
       "titleJa": "ダフネ",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2025/10/wizdaphne_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_046.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -176,7 +176,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/duel_links",
       "title": "Yu-Gi-Oh! Duel Links",
       "titleJa": "デュエルリンクス",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/05/icon_duel_links.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_047.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -184,7 +184,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/geass_ls",
       "title": "Code Geass: Lost Stories",
       "titleJa": "ロススト",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_geass_ls.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_048.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -192,7 +192,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/kin_gtr",
       "title": "Kinnikuman: Gokokuji",
       "titleJa": "キン肉マン",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_kin_gtr.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_049.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -200,7 +200,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/dotyuusha",
       "title": "Pixel Heroes",
       "titleJa": "ドット勇者",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_dotyuusha.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_050.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -208,7 +208,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/ten-sura-m",
       "title": "Slime: Isekai Memories",
       "titleJa": "まおりゅう",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_ten-sura-m.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_051.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -216,7 +216,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/seiyaloj",
       "title": "Saint Seiya: Legend of Justice",
       "titleJa": "星矢ジャスティス",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_seiyaloj.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_052.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -224,7 +224,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/festibattle",
       "title": "Festibattle",
       "titleJa": "フェスバ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_festibattle.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_053.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -232,7 +232,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/lineagem",
       "title": "Lineage M",
       "titleJa": "リネージュM",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_lineagem.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_054.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -240,7 +240,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/sironekoproject",
       "title": "Shironeko Project",
       "titleJa": "白猫プロジェクト",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_sironekoproject.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_055.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -248,7 +248,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/shironekotennis",
       "title": "Shironeko Tennis",
       "titleJa": "白猫テニス",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_shironekotennis.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_056.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -256,7 +256,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/youkai-watch",
       "title": "Yo-kai Watch 1 Mobile",
       "titleJa": "妖怪ウォッチ1スマホ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_youkai-watch.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_057.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -264,7 +264,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/smashgrow",
       "title": "Smagro",
       "titleJa": "スマグロ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_smashgrow.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_058.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -272,7 +272,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/hololive-dreams",
       "title": "Holodori",
       "titleJa": "ホロドリ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_hololive-dreams.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_059.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -280,7 +280,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/bang-dream-on",
       "title": "Our Notes",
       "titleJa": "アワーノーツ",
-      "iconUrl": "https://appmedia.jp//wp-content/uploads/2026/09/icon_bang-dream-on.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_060.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -288,7 +288,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/kitaou",
       "title": "Kita-Kita King",
       "titleJa": "キタキタ王様",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_kitaou.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_061.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -296,7 +296,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/silenthill_townfall",
       "title": "Silent Hill: Townfall",
       "titleJa": "サイレントヒル:タウンフォール",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_silenthill_townfall.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_062.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -304,7 +304,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/onimusha_ws",
       "title": "Onimusha: Way of the Sword",
       "titleJa": "鬼武者WS",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_onimusha_ws.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_063.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -312,7 +312,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/beast-of-reincarnation",
       "title": "Reincarnation",
       "titleJa": "リンカネーション",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_beast-of-reincarnation.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_064.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -320,7 +320,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/marvel-tokon",
       "title": "Marvel Tokon",
       "titleJa": "マーベル闘魂",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_marvel-tokon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_065.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -328,7 +328,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/starsandisland",
       "title": "Starsand Island",
       "titleJa": "スターサンドアイランド",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_starsandisland.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_066.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -336,7 +336,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/splatoon-raiders",
       "title": "Splatoon Raiders",
       "titleJa": "スプラレイダース",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_splatoon-raiders.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_067.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -344,7 +344,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/sao_eoa",
       "title": "SAOEoA",
       "titleJa": "SAOEoA",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_sao_eoa.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_068.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -352,7 +352,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/culdcept_begins",
       "title": "Culdcept Begins",
       "titleJa": "カルドセプトビギンズ",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_culdcept_begins.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_069.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -360,7 +360,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/el1000",
       "title": "Elliot",
       "titleJa": "エリオット",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_el1000.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_070.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -368,7 +368,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/pawapuro2026-2027",
       "title": "Powerful Pro Baseball 2026-2027",
       "titleJa": "パワプロ2026",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_pawapuro2026-2027.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_071.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -376,7 +376,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/mhst3",
       "title": "Monster Hunter Stories 3",
       "titleJa": "モンハンストーリーズ3",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_mhst3.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_072.webp",
       "platform": "Console / PC",
       "isInternal": false
     },
@@ -384,7 +384,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "href": "https://appmedia.jp/bio_requiem",
       "title": "Resident Evil 9: Requiem",
       "titleJa": "バイオ9",
-      "iconUrl": "https://appmedia.jp//wp-content/themes/appmedia/images/icon/icon_bio_requiem.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_073.webp",
       "platform": "Console / PC",
       "isInternal": false
     }
@@ -395,7 +395,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 1,
       "title": "Monster Hunter Outlanders",
       "titleJa": "モンスターハンターアウトランダーズ",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/528_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_001.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4921.mp4",
       "evaluation": "5",
       "genre": "Action · New Release",
@@ -412,7 +412,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 2,
       "title": "Duck Survivor",
       "titleJa": "ダックサバイバー",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/529_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_002.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4928.webp",
       "evaluation": "5",
       "genre": "Action · New Release",
@@ -429,7 +429,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 3,
       "title": "Wizardry Variants Daphne",
       "titleJa": "Wizardry Variants Daphne",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/518_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_003.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4801.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -446,7 +446,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 4,
       "title": "Turbulent Water World",
       "titleJa": "波乱水世界",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/524_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_004.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4869.webp",
       "evaluation": "5",
       "genre": "Simulation · New Release",
@@ -463,7 +463,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 5,
       "title": "Goddess of Victory: NIKKE",
       "titleJa": "勝利の女神：NIKKE",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/185_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_005.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_2826.mp4",
       "evaluation": "5",
       "genre": "Action · RPG · Shooter · Best Time to Start",
@@ -480,7 +480,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 6,
       "title": "Monster Survival",
       "titleJa": "モンスターサバイバル",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/522_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_006.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4844.mp4",
       "evaluation": "5",
       "genre": "RPG · New Release",
@@ -497,7 +497,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 7,
       "title": "BRAVE FRONTIER LEGION",
       "titleJa": "BRAVE FRONTIER LEGION",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/510_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_007.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4702.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -514,7 +514,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 8,
       "title": "Wuthering Waves",
       "titleJa": "鳴潮",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/352_icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_008.png",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4868.mp4",
       "evaluation": "5",
       "genre": "RPG · Action · Popular App",
@@ -531,7 +531,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 9,
       "title": "MementoMori",
       "titleJa": "メメントモリ",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/249_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_009.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_1891.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -548,7 +548,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 10,
       "title": "Monster Loop: Beast God Reincarnation",
       "titleJa": "モンスターループ：獣神転生",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/523_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_010.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4858.webp",
       "evaluation": "5",
       "genre": "RPG · New Release",
@@ -565,7 +565,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 11,
       "title": "Arknights: Endfield",
       "titleJa": "アークナイツ：エンドフィールド",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/484_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_011.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4725.mp4",
       "evaluation": "5",
       "genre": "RPG · Action · Popular App",
@@ -582,7 +582,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 12,
       "title": "DATE A LIVE: Love Limit Break",
       "titleJa": "DATE A LIVE: Love Limit Break",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/498_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_012.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4569.webp",
       "evaluation": "5",
       "genre": "Simulation · Best Time to Start",
@@ -599,7 +599,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 13,
       "title": "Kingdom: Chouten",
       "titleJa": "キングダム 頂天",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/368_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_013.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4907.mp4",
       "evaluation": "5",
       "genre": "Simulation · Popular App",
@@ -616,7 +616,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 14,
       "title": "Tree of Savior: Neverland",
       "titleJa": "ツリーオブセイヴァー：ネバーランド",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/383_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_014.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_3395.mp4",
       "evaluation": "5",
       "genre": "MMO · Best Time to Start",
@@ -633,7 +633,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 15,
       "title": "Plants on Fire",
       "titleJa": "プランツ・オン・ファイア",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/525_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_015.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4874.webp",
       "evaluation": "5",
       "genre": "Simulation · New Release",
@@ -650,7 +650,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 16,
       "title": "Dragon Egg",
       "titleJa": "ドラゴンエッグ",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/140_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_016.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_534.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -667,7 +667,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 17,
       "title": "Trickcal Revive: Chubby Cheeks Operation",
       "titleJa": "トリッカル・もちもちほっぺ大作戦",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/449_icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_017.png",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4244.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -684,7 +684,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 18,
       "title": "Dolphin Wave",
       "titleJa": "ドルフィンウェーブ",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/179_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_018.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_686.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -701,7 +701,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 19,
       "title": "Spirit Legend: Path to the Strongest",
       "titleJa": "聖霊伝説：最強への道",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/436_icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_019.png",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_3974.mp4",
       "evaluation": "5",
       "genre": "RPG · Popular App",
@@ -718,7 +718,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 20,
       "title": "Three Kingdoms Tactics",
       "titleJa": "三國志 真戦",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/64_icon.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_020.jpeg",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_2605.mp4",
       "evaluation": "5",
       "genre": "Simulation · Popular App",
@@ -735,7 +735,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 21,
       "title": "The Eminence in Shadow: Master of Garden",
       "titleJa": "陰の実力者になりたくて！マスターオブガーデン",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/195_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_021.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4711.mp4",
       "evaluation": "5",
       "genre": "RPG · Action · Popular App",
@@ -752,7 +752,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 22,
       "title": "Medabots S: Unlimited Nova",
       "titleJa": "メダロットS",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/480_icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_022.png",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4363.mp4",
       "evaluation": "5",
       "genre": "RPG · Best Time to Start",
@@ -769,7 +769,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 23,
       "title": "Nobunaga's Ambition: Shinsen",
       "titleJa": "信長の野望 真戦",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/482_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_023.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4387.mp4",
       "evaluation": "5",
       "genre": "RPG · Simulation · Popular App",
@@ -786,7 +786,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 24,
       "title": "Browser Sangokushi Ten",
       "titleJa": "ブラウザ三国志 天",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/469_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_024.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4251.mp4",
       "evaluation": "5",
       "genre": "Simulation · Popular App",
@@ -803,7 +803,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "rank": 25,
       "title": "Kiou - Authentic Shogi -",
       "titleJa": "棋桜 - 本格将棋 -",
-      "iconUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/516_icon.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_025.webp",
       "bannerUrl": "https://tool.matomeroyal.com/wp-content/themes/tool/appmediaTool/recommendAppli/article_imgs/article_img_4765.webp",
       "evaluation": "5",
       "genre": "Board Game · Simulation · Popular App",
@@ -828,7 +828,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "虫ストライクZ",
       "description": "Number-battle action RPG starring insects",
       "publisher": "Morimirai",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/sub5_result-11.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_074.webp",
       "articleUrl": "https://appmedia.jp/newgame/80476582"
     },
     {
@@ -842,7 +842,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ディズニー スパークリンク・スターズ",
       "description": "New mobile game featuring Disney characters",
       "publisher": "coly",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/sparklink-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_075.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80049535"
     },
     {
@@ -856,7 +856,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "誰ガ為のアルケミスト ポートマスターズ",
       "description": "High-speed tactical battle RPG that sharpens strategy",
       "publisher": "K3 Studio",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/tagatame-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_076.webp",
       "articleUrl": "https://appmedia.jp/newgame/80363266"
     },
     {
@@ -870,7 +870,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "GALAST（ギャラスト）",
       "description": "Online multiplayer board game collection set in space",
       "publisher": "Eve Sense",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/galast-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_077.webp",
       "articleUrl": "https://appmedia.jp/newgame/80289988"
     },
     {
@@ -884,7 +884,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ベビーモニターからの脱出",
       "description": "Puzzle adventure themed around everyday childcare",
       "publisher": "Freepik",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/escape-baby-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_078.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80479051"
     },
     {
@@ -898,7 +898,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ホロライブ麻雀 -ホロじゃん-",
       "description": "Hololive mahjong game to play alongside your favorite VTubers",
       "publisher": "Aiming",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/hololive-mahjong-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_079.webp",
       "articleUrl": "https://appmedia.jp/newgame/80476192"
     },
     {
@@ -912,7 +912,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "アズールプロミリア",
       "description": "Fantasy open-world RPG journeying alongside Kibo star spirits",
       "publisher": "Manjuu / Yostar",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/03/azuru-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_080.webp",
       "articleUrl": "https://appmedia.jp/newgame/77704138"
     },
     {
@@ -926,7 +926,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "初音ミク ぐらふぃコレクション なぞの音楽すい星 Re:Merge",
       "description": "New Hatsune Miku smartphone game officially announced!",
       "publisher": "Crypton Future Media",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/mikucolle-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_081.webp",
       "articleUrl": "https://appmedia.jp/newgame/80228662"
     },
     {
@@ -940,7 +940,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "コールサイン：KEDR",
       "description": "Fully voiced military tactical strategy RPG",
       "publisher": "GENMUGAME",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/kedr-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_082.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80443495"
     },
     {
@@ -954,7 +954,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ヤンキーサバイバー 転生したら平成ヤンキーだった件",
       "description": "Survival action game aiming for national domination in the Heisei delinquent era",
       "publisher": "SEVEN NEXUS",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/yanki-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_083.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80528752"
     },
     {
@@ -968,7 +968,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ルミナサーガ",
       "description": "Fantasy MMORPG with free open-world exploration",
       "publisher": "HYPER HEAT",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/luminasaga-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_084.webp",
       "articleUrl": "https://appmedia.jp/newgame/80543899"
     },
     {
@@ -982,7 +982,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ウィズジェネレーション",
       "description": "Next-gen quiz action RPG where knowledge becomes your ultimate skill",
       "publisher": "COLOPL",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/sub1_result-80.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_085.webp",
       "articleUrl": "https://appmedia.jp/newgame/80348986"
     },
     {
@@ -996,7 +996,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "プチプラネット",
       "description": "Cozy slow-life simulation game by HoYoverse where you build your own planet",
       "publisher": "HoYoverse",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/09/petitplanet-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_086.jpg",
       "articleUrl": "https://appmedia.jp/newgame/79324727"
     },
     {
@@ -1010,7 +1010,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "白銀の城",
       "description": "Victorian detective open-world action RPG solving mysteries in Silvernia",
       "publisher": "Elementa",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/05/silver-palace-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_087.webp",
       "articleUrl": "https://appmedia.jp/newgame/78876785"
     },
     {
@@ -1024,7 +1024,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "スライムの世界 ぷにっと冒険記",
       "description": "Casual MMORPG where you capture, raise, and fuse slimes",
       "publisher": "TEAM42",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/punislime-icon-.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_088.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80194051"
     },
     {
@@ -1038,7 +1038,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "リカちゃんパズル ドリームコーディネート",
       "description": "First smartphone dress-up puzzle game featuring Licca-chan",
       "publisher": "RENGAME",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/08/rikachan-puzzle-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_089.webp",
       "articleUrl": "https://appmedia.jp/newgame/79154459"
     },
     {
@@ -1052,7 +1052,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "エグリプト X おたからじまの大冒険",
       "description": "Monster-raising RPG where you train unique creatures",
       "publisher": "GameWith NFT",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/eggryptox-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_090.webp",
       "articleUrl": "https://appmedia.jp/newgame/80018506"
     },
     {
@@ -1066,7 +1066,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "幻想世界のぷちぽよん",
       "description": "Cute fusion puzzle game where creatures combine and evolve",
       "publisher": "NHN PlayArt × LEVEL-5",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/puchipoyon-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_091.webp",
       "articleUrl": "https://appmedia.jp/newgame/79930993"
     },
     {
@@ -1080,7 +1080,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "雨のちハレ女",
       "description": "Brand-new original mobile game developed by Game Freak",
       "publisher": "GAME FREAK",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/hareonna-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_092.webp",
       "articleUrl": "https://appmedia.jp/newgame/80395969"
     },
     {
@@ -1094,7 +1094,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "OVER RUSH",
       "description": "Ultra-fast high-speed card battle RPG",
       "publisher": "NHN PlayArt",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/overrush-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_093.webp",
       "articleUrl": "https://appmedia.jp/newgame/80396578"
     },
     {
@@ -1108,7 +1108,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "リミットゼロ ブレイカーズ",
       "description": "Brand-new cel-shaded animation action RPG by VIC Game Studios & NCSoft",
       "publisher": "VIC GAME STUDIOS JAPAN",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2023/09/limit-zero-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_094.webp",
       "articleUrl": "https://appmedia.jp/newgame/77174813"
     },
     {
@@ -1122,7 +1122,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "魔神英雄伝ワタル パズルでおもしろカッコいいぜ!!",
       "description": "Official game adaptation of Mashin Hero Wataru!",
       "publisher": "RENGAME",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/06/watapazu-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_095.webp",
       "articleUrl": "https://appmedia.jp/newgame/78941498"
     },
     {
@@ -1136,7 +1136,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "FairyTale Quest（フェアリーテールクエスト）",
       "description": "Roguelite action RPG featuring famous fairy-tale heroes",
       "publisher": "LINE Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/ft-quest-icon-1.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_096.webp",
       "articleUrl": "https://appmedia.jp/newgame/79556087"
     },
     {
@@ -1150,7 +1150,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "シー オブ レムナンツ",
       "description": "Oceanic adventure RPG from Joker Studio, creators of Identity V",
       "publisher": "Joker Studio",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/06/seaofremnant-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_097.webp",
       "articleUrl": "https://appmedia.jp/newgame/78953966"
     },
     {
@@ -1164,7 +1164,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "MIRESI：視えない未来",
       "description": "Time-travel RPG by Smilegate & Shift Up veterans",
       "publisher": "Smilegate",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/08/miresi-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_098.webp",
       "articleUrl": "https://appmedia.jp/newgame/79213250"
     },
     {
@@ -1178,7 +1178,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "猫蹴～にゃんサカ～",
       "description": "Fast-paced 3v3 team soccer action game",
       "publisher": "Nekonome",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/09/nyansaka-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_099.webp",
       "articleUrl": "https://appmedia.jp/newgame/79334567"
     },
     {
@@ -1192,7 +1192,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "シノビNEXUS –閃乱カグラ–",
       "description": "Latest smartphone entry in the Senran Kagura shinobi series",
       "publisher": "HONEY∞PARADE GAMES",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/10/shinovi-nexus-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_100.webp",
       "articleUrl": "https://appmedia.jp/newgame/79416689"
     },
     {
@@ -1206,7 +1206,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "星のパーティータイム",
       "description": "Hyper-evolved cosmic party & social simulation game",
       "publisher": "NetEase Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/05/ppt-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_101.jpg",
       "articleUrl": "https://appmedia.jp/newgame/78878051"
     },
     {
@@ -1220,7 +1220,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "スタートゥユー",
       "description": "Immersive 3D idol production game set in a modern metropolis",
       "publisher": "Elementa",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/v-project-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_102.webp",
       "articleUrl": "https://appmedia.jp/newgame/79702001"
     },
     {
@@ -1234,7 +1234,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "イノリガミ ハックダウン",
       "description": "Point-and-click horror escape adventure game",
       "publisher": "Wuah",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/inorikami-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_103.webp",
       "articleUrl": "https://appmedia.jp/newgame/79755683"
     },
     {
@@ -1248,7 +1248,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "『魔女と百騎兵』スマホゲーム(仮)",
       "description": "New mobile project based on Nippon Ichi's action RPG The Witch and the Hundred Knight",
       "publisher": "Rudel",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/majojyaki-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_104.webp",
       "articleUrl": "https://appmedia.jp/newgame/79836791"
     },
     {
@@ -1262,7 +1262,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "デッドアカウント～二つの蒼い炎～",
       "description": "Team-based roguelite RPG adaptation of the Dead Account manga/anime",
       "publisher": "Smilegate",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/10/deadaccount-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_105.webp",
       "articleUrl": "https://appmedia.jp/newgame/79377278"
     },
     {
@@ -1276,7 +1276,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "シャングリラ・フロンティア～七つの最強種～",
       "description": "Official 3D action RPG based on the hit anime Shangri-La Frontier",
       "publisher": "Netmarble",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/10/shanfuro-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_106.webp",
       "articleUrl": "https://appmedia.jp/newgame/78248537"
     },
     {
@@ -1290,7 +1290,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "デジモンアリシオン",
       "description": "Competitive digital trading card game set in the Digimon universe",
       "publisher": "Bandai Namco",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/diji-aly-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_107.webp",
       "articleUrl": "https://appmedia.jp/newgame/78683339"
     },
     {
@@ -1304,7 +1304,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "アルカナディア - Gleam Gatherers -",
       "description": "First bishoujo action RPG based on Kotobukiya's Arcanadea series",
       "publisher": "KOTOBUKIYA",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/arcanadea-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_108.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80079973"
     },
     {
@@ -1318,7 +1318,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "『Night Crows』IP新作(仮)",
       "description": "Cross-platform MMORPG built on the Night Crows universe",
       "publisher": "WEMADE",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/night-crows-new-ip_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_109.webp",
       "articleUrl": "https://appmedia.jp/newgame/80086645"
     },
     {
@@ -1332,7 +1332,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ガーディアンメイデン",
       "description": "2D pixel-art fantasy RPG chronicling the journey of the Hero and the Saint",
       "publisher": "Kong Studios",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/Guardian-Maiden-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_110.webp",
       "articleUrl": "https://appmedia.jp/newgame/80062882"
     },
     {
@@ -1346,7 +1346,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ラスト・セーフゾーン",
       "description": "Post-apocalyptic resource strategy & survival simulation RPG",
       "publisher": "Ingame",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/last-save-zone-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_111.webp",
       "articleUrl": "https://appmedia.jp/newgame/80251279"
     },
     {
@@ -1360,7 +1360,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "POMU-みんなと一緒に世界樹を育てる街-",
       "description": "Relaxing slow-life town simulation game",
       "publisher": "StudioZ",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/pomu-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_112.webp",
       "articleUrl": "https://appmedia.jp/newgame/80303008"
     },
     {
@@ -1374,7 +1374,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "混血のカレコレ ミラーラッシュ",
       "description": "Official game adaptation of the 3M+ subscriber YouTube series Karekore",
       "publisher": "Plott",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/08/karemira-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_113.webp",
       "articleUrl": "https://appmedia.jp/newgame/80316055"
     },
     {
@@ -1388,7 +1388,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "グリザイア 集結の百果",
       "description": "15th Anniversary Grisaia franchise RPG project",
       "publisher": "CLYRE",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/gurihyaku-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_114.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80490802"
     },
     {
@@ -1402,7 +1402,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "Sanrio Kawaii Me Live!",
       "description": "Dance & rhythm game featuring beloved Sanrio characters",
       "publisher": "Sanrio Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/sanrio-kml-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_115.webp",
       "articleUrl": "https://appmedia.jp/newgame/80162290"
     },
     {
@@ -1416,7 +1416,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "無限大Ananta",
       "description": "High-mobility urban supernatural open-world RPG by Naked Rain & NetEase",
       "publisher": "NetEase Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2023/08/mugen-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_116.webp",
       "articleUrl": "https://appmedia.jp/newgame/77124260"
     },
     {
@@ -1430,7 +1430,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "この素晴らしい世界に祝福を！～この愛すべき街に繁栄を！～",
       "description": "New official KonoSuba game featuring an original storyline",
       "publisher": "KADOKAWA",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/01/machisuba-icon_result_1.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_117.webp",
       "articleUrl": "https://appmedia.jp/newgame/79656887"
     },
     {
@@ -1444,7 +1444,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "リラックマ ごゆるりパズル",
       "description": "New relaxing match-3 puzzle game starring Rilakkuma",
       "publisher": "San-X",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/rilakkuma-puzzle-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_118.webp",
       "articleUrl": "https://appmedia.jp/newgame/80495167"
     },
     {
@@ -1458,7 +1458,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "はなまるタイマー（仮）",
       "description": "Study & productivity companion app based on Hokou Danshi",
       "publisher": "Earth Star Entertainment",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/hokodan-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_119.webp",
       "articleUrl": "https://appmedia.jp/newgame/80163829"
     },
     {
@@ -1472,7 +1472,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "歌マクロス",
       "description": "Rhythm action game featuring iconic songs from across the Macross series",
       "publisher": "AUGUST",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/uta-macross-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_120.webp",
       "articleUrl": "https://appmedia.jp/newgame/80370787"
     },
     {
@@ -1486,7 +1486,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "カリスマダミス CHARISMA de MURDER MYSTERY",
       "description": "Interactive murder mystery game featuring the cast of Charisma",
       "publisher": "AltPlus / Dazed",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/charisma_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_121.webp",
       "articleUrl": "https://appmedia.jp/newgame/79888400"
     },
     {
@@ -1500,7 +1500,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "崩壊：ネクサスアニマ",
       "description": "Latest entry in HoYoverse's Honkai series featuring Anima creature tactics",
       "publisher": "HoYoverse",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/08/sub5_result-43.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_122.webp",
       "articleUrl": "https://appmedia.jp/newgame/78860024"
     },
     {
@@ -1514,7 +1514,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "デスティニーチャイルド：アッセンブル",
       "description": "Idle tactical RPG inheriting the world and story of Destiny Child",
       "publisher": "TIKITAKA STUDIO",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/assemble-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_123.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80517964"
     },
     {
@@ -1528,7 +1528,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ゴジラ ディフェンス フォース：X",
       "description": "Strategic defense simulation protecting cities with Godzilla series kaiju",
       "publisher": "MINTROCKET",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/06/gojira-td-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_124.webp",
       "articleUrl": "https://appmedia.jp/newgame/80109523"
     },
     {
@@ -1542,7 +1542,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ブレイブ フロンティア オリジン",
       "description": "Pixel-art command RPG returning to the roots of Brave Frontier",
       "publisher": "Alim",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/BF-origin-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_125.webp",
       "articleUrl": "https://appmedia.jp/newgame/80176867"
     },
     {
@@ -1556,7 +1556,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "DCKO",
       "description": "2v2 mobile fighting game featuring DC Super Heroes and Villains",
       "publisher": "Drop Fake",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/07/dcko-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_126.webp",
       "articleUrl": "https://appmedia.jp/newgame/80228038"
     },
     {
@@ -1570,7 +1570,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "RASPBERRY MASH -神々の断罪-",
       "description": "High-octane pixel-art roguelike action RPG",
       "publisher": "IGNITION M",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/RASPBERRY-MASH-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_127.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80360665"
     },
     {
@@ -1584,7 +1584,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "アストラエ・オラティオ",
       "description": "Modern occult fantasy RPG blending magic and government bureaucracy",
       "publisher": "Dynamis One",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/asora-icon_result-1.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_128.webp",
       "articleUrl": "https://appmedia.jp/newgame/79987396"
     },
     {
@@ -1598,7 +1598,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ダンジョンに出会いを求めるのは間違っているだろうか フロンティア・ゼロ",
       "description": "Brand-new RPG adaptation of Is It Wrong to Try to Pick Up Girls in a Dungeon?",
       "publisher": "enish",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/10/danzero-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_129.webp",
       "articleUrl": "https://appmedia.jp/newgame/80503549"
     },
     {
@@ -1612,7 +1612,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "クッキーラン：ニューワールド",
       "description": "The hit Cookie Run franchise expands into an open-world RPG",
       "publisher": "Devsisters",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/04/cookierun-newworld-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_130.webp",
       "articleUrl": "https://appmedia.jp/newgame/79902901"
     },
     {
@@ -1626,7 +1626,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "VALORANT Mobile(ヴァロラント モバイル)",
       "description": "Mobile edition of Riot Games' globally acclaimed 5v5 tactical hero shooter",
       "publisher": "Riot Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2022/09/21d6175eb876f8dc7368fcb0a489e6b3.png",
+      "iconUrl": "/banners/home/icons/portal_icon_131.png",
       "articleUrl": "https://appmedia.jp/newgame/75997709"
     },
     {
@@ -1640,7 +1640,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "桃源暗鬼 Crimson Inferno",
       "description": "3D turn-based RPG adaptation of the hit anime Tougen Anki",
       "publisher": "Com2uS",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/03/tyag-icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_132.png",
       "articleUrl": "https://appmedia.jp/newgame/78692405"
     },
     {
@@ -1654,7 +1654,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "運命のトリガー: The Novita",
       "description": "UE5 anime-styled 3D tactical hero shooter & battle royale",
       "publisher": "Level Infinite / Saroasis Studios",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/09/fatetrigger-icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_133.png",
       "articleUrl": "https://appmedia.jp/newgame/78155003"
     },
     {
@@ -1668,7 +1668,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "鬼滅の刃 血風剣戟ロワイアル",
       "description": "Asymmetrical multiplayer survival action set in Demon Slayer",
       "publisher": "Quatro A / Soleil",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2020/03/8df9d46609e9165cf04af1b404c52730.png",
+      "iconUrl": "/banners/home/icons/portal_icon_134.png",
       "articleUrl": "https://appmedia.jp/newgame/4618531"
     },
     {
@@ -1682,7 +1682,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "「バトルガール ハイスクール」スピンオフ(仮)",
       "description": "New spinoff project with an all-new scenario set in Battle Girl High School",
       "publisher": "COLOPL",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/04/batoka-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_135.webp",
       "articleUrl": "https://appmedia.jp/newgame/78789581"
     },
     {
@@ -1696,7 +1696,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "Fading City",
       "description": "Co-op open-world survival RPG set in a post-apocalyptic world",
       "publisher": "NetEase Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2022/01/Fading-City.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_136.jpeg",
       "articleUrl": "https://appmedia.jp/newgame/27384183"
     },
     {
@@ -1710,7 +1710,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "未来戦場",
       "description": "Sci-fi hero mobile FPS with tactical squad abilities",
       "publisher": "NetEase Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2022/01/9eb6e811d5d2e7e95c1049e77dd91aac.jpeg",
+      "iconUrl": "/banners/home/icons/portal_icon_137.jpeg",
       "articleUrl": "https://appmedia.jp/newgame/27374217"
     },
     {
@@ -1724,7 +1724,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "SKY FRONTIER Fantasy Battle",
       "description": "Multiplayer monster hunting action RPG",
       "publisher": "BIGBANG",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2022/01/SKY-FRONTIER-Fantasy-Battle.png",
+      "iconUrl": "/banners/home/icons/portal_icon_138.png",
       "articleUrl": "https://appmedia.jp/newgame/27473754"
     },
     {
@@ -1738,7 +1738,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "眠りと境界のアルカナ～Arcana; Boundless Horizon～",
       "description": "Fairy-tale personification character training simulation",
       "publisher": "Arithmetic",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2019/08/bc31b4035fed08dc21d20c2aec6bd181.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_139.jpg",
       "articleUrl": "https://appmedia.jp/newgame/3783655"
     },
     {
@@ -1752,7 +1752,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "SOUND VOLTEX ULTIMATE MOBILE",
       "description": "Play KONAMI's rhythm game SOUND VOLTEX anytime, anywhere on mobile",
       "publisher": "KONAMI",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2019/09/SOUND-VOLTEX-ULTIMATE-MOBILE.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_140.jpg",
       "articleUrl": "https://appmedia.jp/newgame/3884635"
     },
     {
@@ -1766,7 +1766,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ユメノコンパス",
       "description": "Life simulation game traveling through a psychic world and meeting friends",
       "publisher": "NetEase Games",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/08/floatopia-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_141.jpg",
       "articleUrl": "https://appmedia.jp/newgame/78084524"
     },
     {
@@ -1780,7 +1780,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "キングスレイド",
       "description": "Classic real-time 3D fantasy RPG of swords and magic",
       "publisher": "Masangsoft",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/kingsraid-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_142.webp",
       "articleUrl": "https://appmedia.jp/newgame/79830455"
     },
     {
@@ -1794,7 +1794,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "元素楽章",
       "description": "Elemental personification fantasy command RPG",
       "publisher": "AgeToridori",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/05/gensogakusho-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_143.webp",
       "articleUrl": "https://appmedia.jp/newgame/78921947"
     },
     {
@@ -1808,7 +1808,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ファイナルファンタジーXIV モバイル",
       "description": "Official mobile adaptation of Square Enix's Final Fantasy XIV",
       "publisher": "Lightspeed Studios / SQUARE ENIX",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/11/FF14mobile-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_144.jpg",
       "articleUrl": "https://appmedia.jp/newgame/78319355"
     },
     {
@@ -1822,7 +1822,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "ラグナロクオンライン３",
       "description": "Latest mainline fantasy MMORPG in the Ragnarok series",
       "publisher": "Gravity / GungHo",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/ro3-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_145.webp",
       "articleUrl": "https://appmedia.jp/newgame/79751339"
     },
     {
@@ -1836,7 +1836,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "Strinova（ストリノヴァ）",
       "description": "Next-gen anime tactical shooter with 3D-to-2D paper-switching mechanics",
       "publisher": "iDreamSky",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/11/strinova-icon.png",
+      "iconUrl": "/banners/home/icons/portal_icon_146.png",
       "articleUrl": "https://appmedia.jp/newgame/78305576"
     },
     {
@@ -1850,7 +1850,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "メイドインアビス ～度し難い不思議な旅～",
       "description": "First smartphone game adaptation of Made in Abyss",
       "publisher": "TBA",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/05/doshitabi-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_147.jpg",
       "articleUrl": "https://appmedia.jp/newgame/78860492"
     },
     {
@@ -1864,7 +1864,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "「ハンドレッドノート」モバイルゲーム(仮)",
       "description": "Mystery detective urban idle RPG produced by Kodansha",
       "publisher": "Kodansha",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/100note-icon_result.webp",
+      "iconUrl": "/banners/home/icons/portal_icon_148.webp",
       "articleUrl": "https://appmedia.jp/newgame/79737101"
     },
     {
@@ -1878,7 +1878,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "カクリヨ・トーキョー",
       "description": "New smartphone RPG marking the 10th anniversary of the Shikihime Project",
       "publisher": "Appirits",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2021/09/d7244ab1ead4b68ae8c2794ff667bf4e.png",
+      "iconUrl": "/banners/home/icons/portal_icon_149.png",
       "articleUrl": "https://appmedia.jp/newgame/26844727"
     },
     {
@@ -1892,7 +1892,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "titleJa": "TERBIS（テルビス）",
       "description": "2D anime fantasy RPG by Webzen about saving the world of Terbis",
       "publisher": "Webzen",
-      "iconUrl": "https://appmedia.jp/wp-content/uploads/2024/12/terbis-icon.jpg",
+      "iconUrl": "/banners/home/icons/portal_icon_150.jpg",
       "articleUrl": "https://appmedia.jp/newgame/78368312"
     }
   ],

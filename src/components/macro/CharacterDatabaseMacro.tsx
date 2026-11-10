@@ -285,7 +285,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                       </div>
                       {js && (
                         <div className="text-[11px] font-semibold text-[#94a3b8]">
-                          Journey: POW {js.power} / VIT {js.vitality} / END {js.endurance} / FOC {js.focus} / PRT {js.protection}
+                          Journey: POW {js.power} / HLT {js.vitality} / END {js.endurance} / FOC {js.focus} / PRO {js.protection}
                         </div>
                       )}
                     </td>

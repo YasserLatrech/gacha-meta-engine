@@ -147,6 +147,13 @@ select:focus {
   align-items: start;
 }
 
+.wiki-layout-grid {
+  display: grid;
+  grid-template-columns: 255px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
 .wiki-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-main);
@@ -188,7 +195,8 @@ select:focus {
 }
 
 @media (max-width: 960px) {
-  .wiki-grid {
+  .wiki-grid,
+  .wiki-layout-grid {
     grid-template-columns: minmax(0, 1fr);
   }
   .wiki-sidebar {

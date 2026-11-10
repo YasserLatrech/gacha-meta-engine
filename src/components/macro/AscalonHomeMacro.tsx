@@ -379,7 +379,7 @@ export function AscalonHomeMacro() {
               className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-3 py-1.5 text-[11px] font-black text-white shadow transition-colors"
             >
               <img
-                src="https://appmedia.jp/wp-content/themes/appmedia/images/icon/icon_starsavior.webp"
+                src={strategyWikis[0]?.iconUrl || '/brand/ascalon-logo.png'}
                 alt="Star Savior"
                 className="h-4 w-4 rounded-sm object-cover"
               />
@@ -414,7 +414,7 @@ export function AscalonHomeMacro() {
               className="group flex items-center gap-3 rounded-lg border border-[#3b82f6] bg-[#141e33] px-3.5 py-2.5 hover:bg-[#192540] transition-colors shrink-0"
             >
               <img
-                src="https://appmedia.jp/wp-content/themes/appmedia/images/icon/icon_starsavior.webp"
+                src={strategyWikis[0]?.iconUrl || '/brand/ascalon-logo.png'}
                 alt="Star Savior"
                 className="h-12 w-12 rounded-lg border border-[#eab308]/80 object-cover shrink-0"
               />
@@ -870,7 +870,7 @@ export function AscalonHomeMacro() {
                       src={w.iconUrl}
                       alt={w.title}
                       className="h-14 w-14 rounded-xl border border-[#334155] object-cover bg-[#090d16]"
-                      loading="lazy"
+                      loading="eager"
                     />
                     {w.isInternal && (
                       <span className="absolute -top-1.5 -right-2 rounded bg-[#2563eb] px-1 py-0.2 text-[8px] font-black text-white">
