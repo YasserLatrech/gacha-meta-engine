@@ -5,9 +5,9 @@ import { WikiShell } from '../../../components/WikiShell';
 import { ArcanaListClient } from '../../../components/ArcanaListClient';
 
 export const metadata: Metadata = {
-  title: 'Star Savior SSR Arcana Tier List — Best Arcana Cards & Effects',
+  title: 'Star Savior Arcana Tier List — All 83 SSR, SR & R Arcana Cards & Potentials',
   description:
-    'Complete Star Savior SSR Arcana Tier List and database: compare all 50 SSR Arcana effects, stat bonuses, and best recommended Saviors.',
+    'Complete Star Savior Arcana Tier List and encyclopedia: compare all 83 SSR, SR, and R Arcana potentials, training stat tags, and max limit break bonuses.',
   alternates: {
     canonical: '/starsavior/arcana',
   },
@@ -16,36 +16,49 @@ export const metadata: Metadata = {
 export default async function StarSaviorArcanaPage() {
   const dataset = await getStarSaviorWikiData();
   const { game, arcana, characters } = dataset;
+  const ssCharacters = characters.filter((c) => c.overallTier === 'SS');
 
   return (
-    <WikiShell dataset={dataset} activeNav="arcana" breadcrumbTitle="SSR Arcana Tier List">
-      <section className="wiki-card" style={{ padding: '16px 18px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+    <WikiShell
+      game={game}
+      topCharacters={ssCharacters}
+      activeNav="arcana"
+      breadcrumbLabel="All 83 Arcana Tier List"
+    >
+      <section
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          padding: '16px 18px',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
           <img
             src={game.shortcutsConfig[3]?.iconUrl ?? game.iconUrl}
-            alt="SSR Arcana Tier List"
-            width={48}
-            height={48}
+            alt="Arcana Tier List"
+            width={56}
+            height={56}
             style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '8px',
+              width: '56px',
+              height: '56px',
+              borderRadius: '10px',
               objectFit: 'cover',
-              border: '1.5px solid var(--accent-primary)',
+              border: '1px solid var(--border-strong)',
             }}
           />
           <div>
-            <h1 style={{ fontSize: '19px', fontWeight: 900, color: 'var(--text-main)' }}>
-              [Star Savior] SSR Arcana Tier List ({arcana.length} Cards)
+            <h1 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900, color: '#f8fafc' }}>
+              [Star Savior] All 83 Arcana Cards Tier List &amp; Potentials Encyclopedia
             </h1>
-            <p style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '3px' }}>
-              All {arcana.length} SSR Arcana cards ranked by stat efficiency, passive triggers, and universal compatibility.
+            <p style={{ margin: '4px 0 0', fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
+              All {arcana.length} SSR, SR, and R Arcana cards with translated Journey potentials, training stat tags, and featured Saviors.
             </p>
           </div>
         </div>
       </section>
 
-      <ArcanaListClient arcana={arcana} characters={characters} />
+      <ArcanaListClient arcana={arcana} />
     </WikiShell>
   );
 }

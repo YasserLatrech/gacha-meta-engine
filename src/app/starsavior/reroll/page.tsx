@@ -16,30 +16,45 @@ export const metadata: Metadata = {
 export default async function StarSaviorRerollPage() {
   const dataset = await getStarSaviorWikiData();
   const { game, characters } = dataset;
+  const ssCharacters = characters.filter((c) => c.overallTier === 'SS');
 
   return (
-    <WikiShell dataset={dataset} activeNav="reroll" breadcrumbTitle="Reroll Tier List">
-      {/* ARTICLE HEADER & REROLL SUMMARY */}
-      <section className="wiki-card" style={{ padding: '16px 18px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+    <WikiShell
+      game={game}
+      topCharacters={ssCharacters}
+      activeNav="reroll"
+      breadcrumbLabel="Reroll Tier List"
+    >
+      <section
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          padding: '16px 18px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
           <img
             src={game.shortcutsConfig[1]?.iconUrl ?? game.iconUrl}
             alt="Reroll Tier List"
-            width={48}
-            height={48}
+            width={56}
+            height={56}
             style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '8px',
+              width: '56px',
+              height: '56px',
+              borderRadius: '10px',
               objectFit: 'cover',
-              border: '1.5px solid var(--accent-primary)',
+              border: '1px solid var(--border-strong)',
             }}
           />
           <div>
-            <h1 style={{ fontSize: '19px', fontWeight: 900, color: 'var(--text-main)' }}>
+            <h1 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900, color: '#f8fafc' }}>
               [Star Savior] Reroll Tier List &amp; Best Starting SSR Guide
             </h1>
-            <p style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '3px' }}>
+            <p style={{ margin: '4px 0 0', fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
               Best starting SSR Saviors to pull from the tutorial and launch banners for smooth early-to-endgame progression.
             </p>
           </div>
@@ -47,26 +62,26 @@ export default async function StarSaviorRerollPage() {
 
         <div
           style={{
-            background: 'var(--bg-page)',
-            border: '1px solid var(--border-main)',
-            borderLeft: '4px solid var(--tier-ss)',
+            background: '#131822',
+            border: '1px solid var(--border-subtle)',
+            borderLeft: '4px solid #ef4444',
             borderRadius: '6px',
             padding: '10px 14px',
-            fontSize: '12.5px',
+            fontSize: '0.8rem',
             color: 'var(--text-secondary)',
           }}
         >
-          <strong style={{ color: 'var(--text-main)' }}>Ideal Reroll Stop Condition:</strong> Aim for{' '}
-          <strong style={{ color: 'var(--tier-ss)' }}>1x SS-Tier Striker/Assassin or Ranger Breaker</strong> (such as{' '}
-          <strong>Professor M</strong> or <strong>Amora</strong>) paired with any <strong>Supporter / Defender</strong>.
-          Tutorial reroll takes ~5 minutes using the built-in account reset option.
+          <strong style={{ color: '#f8fafc' }}>Ideal Reroll Stop Condition:</strong> Aim for{' '}
+          <strong style={{ color: '#f87171' }}>1x SS-Tier Striker/Assassin or Ranger Carry</strong> (such as{' '}
+          <strong>Professor M</strong>, <strong>Amora</strong>, or <strong>Swimsuit Smile</strong>) paired with any{' '}
+          <strong>SSR Supporter / Defender</strong> (such as <strong>Bride Carmen</strong> or <strong>Maid Ceres</strong>).
         </div>
       </section>
 
       <TierMatrixClient
         characters={characters}
-        elementsConfig={game.elementsConfig}
-        rolesConfig={game.rolesConfig}
+        elements={game.elementsConfig}
+        roles={game.rolesConfig}
         mode="reroll"
       />
     </WikiShell>

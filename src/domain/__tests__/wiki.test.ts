@@ -35,8 +35,8 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     }
   });
 
-  it('validates all 50 1:1 square SSR Arcana cards and 3 banners', () => {
-    expect(STAR_SAVIOR_ARCANA_SEED.length).toBe(50);
+  it('validates all 83 real Arcana cards (SSR, SR, R) and 3 banners', () => {
+    expect(STAR_SAVIOR_ARCANA_SEED.length).toBe(83);
     expect(STAR_SAVIOR_BANNERS_SEED.length).toBe(3);
     for (const [idx, a] of STAR_SAVIOR_ARCANA_SEED.entries()) {
       const parsed = ArcanaEntitySchema.parse({

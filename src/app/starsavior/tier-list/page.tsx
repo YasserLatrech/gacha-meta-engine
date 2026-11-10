@@ -5,7 +5,7 @@ import { WikiShell } from '../../../components/WikiShell';
 import { TierMatrixClient } from '../../../components/TierMatrixClient';
 
 export const metadata: Metadata = {
-  title: 'Star Savior Tier List (v1.4.0) — Strongest SSR Characters Ranking',
+  title: 'Star Savior Tier List — Strongest SSR & SR Characters Ranking',
   description:
     'Updated Star Savior Strongest Character Tier List by Class (Striker, Assassin, Ranger, Caster, Supporter, Defender) and Attribute (Sun, Moon, Star, Order, Chaos).',
   alternates: {
@@ -16,31 +16,43 @@ export const metadata: Metadata = {
 export default async function StarSaviorTierListPage() {
   const dataset = await getStarSaviorWikiData();
   const { game, characters } = dataset;
+  const ssCharacters = characters.filter((c) => c.overallTier === 'SS');
 
   return (
-    <WikiShell dataset={dataset} activeNav="tier-list" breadcrumbTitle="Strongest Tier List">
-      {/* ARTICLE HEADER */}
-      <section className="wiki-card" style={{ padding: '16px 18px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+    <WikiShell
+      game={game}
+      topCharacters={ssCharacters}
+      activeNav="tier-list"
+      breadcrumbLabel="Strongest Tier List"
+    >
+      <section
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          padding: '16px 18px',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
           <img
             src={game.shortcutsConfig[0]?.iconUrl ?? game.iconUrl}
             alt="Strongest Tier List"
-            width={48}
-            height={48}
+            width={56}
+            height={56}
             style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '8px',
+              width: '56px',
+              height: '56px',
+              borderRadius: '10px',
               objectFit: 'cover',
-              border: '1.5px solid var(--accent-primary)',
+              border: '1px solid var(--border-strong)',
             }}
           />
           <div>
-            <h1 style={{ fontSize: '19px', fontWeight: 900, color: 'var(--text-main)' }}>
+            <h1 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900, color: '#f8fafc' }}>
               [Star Savior] Strongest Character Tier List ({game.patchVersion})
             </h1>
-            <p style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '3px' }}>
-              Evaluates all {characters.length} Saviors across Cosmo Gate, Void Singularity, and general PvE progression.
+            <p style={{ margin: '4px 0 0', fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
+              Evaluates all {characters.length} Saviors across Cosmo Gate bosses, Journey Hard Mode, and Gauntlet PvP.
             </p>
           </div>
         </div>
@@ -48,8 +60,8 @@ export default async function StarSaviorTierListPage() {
 
       <TierMatrixClient
         characters={characters}
-        elementsConfig={game.elementsConfig}
-        rolesConfig={game.rolesConfig}
+        elements={game.elementsConfig}
+        roles={game.rolesConfig}
         mode="overall"
       />
     </WikiShell>

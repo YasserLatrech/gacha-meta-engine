@@ -5,48 +5,54 @@ import { WikiShell } from '../../../components/WikiShell';
 import { CharacterDatabaseClient } from '../../../components/CharacterDatabaseClient';
 
 export const metadata: Metadata = {
-  title: 'Star Savior Characters Database — All 57 SSR Saviors, Attributes & Classes',
+  title: 'Star Savior Characters Database — All 57 Saviors, Attributes, Classes & Stats',
   description:
-    'Complete Star Savior character database with attribute filters (Sun, Moon, Star, Order, Chaos), class filters, tier ratings, and max-level stats.',
+    'Complete Star Savior character database with attribute filters (Sun, Moon, Star, Order, Chaos), class filters, Lv.200 stats, Journey stats, and skill builds.',
   alternates: {
     canonical: '/starsavior/characters',
   },
 };
 
-export default async function StarSaviorCharactersPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ element?: string }>;
-}) {
-  const [dataset, resolvedParams] = await Promise.all([
-    getStarSaviorWikiData(),
-    searchParams,
-  ]);
+export default async function StarSaviorCharactersPage() {
+  const dataset = await getStarSaviorWikiData();
   const { game, characters } = dataset;
+  const ssCharacters = characters.filter((c) => c.overallTier === 'SS');
 
   return (
-    <WikiShell dataset={dataset} activeNav="characters" breadcrumbTitle="All Characters">
-      <section className="wiki-card" style={{ padding: '16px 18px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+    <WikiShell
+      game={game}
+      topCharacters={ssCharacters}
+      activeNav="characters"
+      breadcrumbLabel="All 57 Characters"
+    >
+      <section
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          padding: '16px 18px',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
           <img
             src={game.shortcutsConfig[2]?.iconUrl ?? game.iconUrl}
             alt="Character Database"
-            width={48}
-            height={48}
+            width={56}
+            height={56}
             style={{
-              width: '48px',
-              height: '48px',
-              borderRadius: '8px',
+              width: '56px',
+              height: '56px',
+              borderRadius: '10px',
               objectFit: 'cover',
-              border: '1.5px solid var(--accent-primary)',
+              border: '1px solid var(--border-strong)',
             }}
           />
           <div>
-            <h1 style={{ fontSize: '19px', fontWeight: 900, color: 'var(--text-main)' }}>
-              [Star Savior] Character Database ({characters.length} Saviors)
+            <h1 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900, color: '#f8fafc' }}>
+              [Star Savior] Complete Character Database ({characters.length} Saviors)
             </h1>
-            <p style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '3px' }}>
-              Filter by Attribute or Class to inspect skills, stats, and best SSR Arcana pairings.
+            <p style={{ margin: '4px 0 0', fontSize: '0.82rem', color: 'var(--text-secondary)' }}>
+              Filter by Attribute, Class, or Rarity to inspect translated skills, Lv.200 stats, Journey potentials, and Limit Breaks.
             </p>
           </div>
         </div>
@@ -54,9 +60,8 @@ export default async function StarSaviorCharactersPage({
 
       <CharacterDatabaseClient
         characters={characters}
-        elementsConfig={game.elementsConfig}
-        rolesConfig={game.rolesConfig}
-        initialElement={resolvedParams.element || 'ALL'}
+        elements={game.elementsConfig}
+        roles={game.rolesConfig}
       />
     </WikiShell>
   );

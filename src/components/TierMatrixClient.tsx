@@ -2,579 +2,552 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import type {
-  CharacterEntity,
-  ElementOption,
-  RoleOption,
-  TierRank,
-} from '../domain/schemas';
-import { getTierColor } from './WikiShell';
+import type { CharacterEntity, ElementOption, RoleOption, TierRank } from '../domain/schemas';
 
 interface TierMatrixClientProps {
   characters: CharacterEntity[];
-  elementsConfig: ElementOption[];
-  rolesConfig: RoleOption[];
+  elements: ElementOption[];
+  roles: RoleOption[];
   mode: 'overall' | 'reroll';
 }
 
-const TIER_ORDER: TierRank[] = ['SS', 'S', 'A', 'B'];
+const TIERS: { rank: TierRank; label: string; sub: string; bg: string; border: string; text: string }[] = [
+  {
+    rank: 'SS',
+    label: 'SS',
+    sub: 'Tier 0 · Meta Core',
+    bg: 'linear-gradient(135deg, #991b1b 0%, #dc2626 100%)',
+    border: '#ef4444',
+    text: '#fef2f2',
+  },
+  {
+    rank: 'S',
+    label: 'S',
+    sub: 'Tier 1 · High Value',
+    bg: 'linear-gradient(135deg, #9a3412 0%, #ea580c 100%)',
+    border: '#f97316',
+    text: '#fff7ed',
+  },
+  {
+    rank: 'A',
+    label: 'A',
+    sub: 'Tier 2 · Situational',
+    bg: 'linear-gradient(135deg, #854d0e 0%, #ca8a04 100%)',
+    border: '#eab308',
+    text: '#fefce8',
+  },
+  {
+    rank: 'B',
+    label: 'B',
+    sub: 'Tier 3 · Niche',
+    bg: 'linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%)',
+    border: '#3b82f6',
+    text: '#eff6ff',
+  },
+];
 
 const ROLE_COLUMNS = [
-  { key: 'DPS', label: 'Striker / Assassin', matchRoles: ['Striker', 'Assassin'] },
-  { key: 'BREAKER', label: 'Ranger / Caster', matchRoles: ['Ranger', 'Caster'] },
-  { key: 'SUPPORT', label: 'Supporter', matchRoles: ['Supporter'] },
-  { key: 'DEFENDER', label: 'Defender', matchRoles: ['Defender'] },
-] as const;
+  { key: 'MeleeDPS', label: 'Striker / Assassin', match: ['Striker', 'Assassin'], color: '#f87171' },
+  { key: 'RangedDPS', label: 'Ranger / Caster', match: ['Ranger', 'Caster'], color: '#c084fc' },
+  { key: 'Supporter', label: 'Supporter', match: ['Supporter'], color: '#34d399' },
+  { key: 'Defender', label: 'Defender', match: ['Defender'], color: '#60a5fa' },
+];
 
-export function TierMatrixClient({
-  characters,
-  elementsConfig,
-  rolesConfig,
-  mode,
-}: TierMatrixClientProps) {
+export function TierMatrixClient({ characters, elements, roles, mode }: TierMatrixClientProps) {
   const [selectedElement, setSelectedElement] = useState<string>('ALL');
   const [selectedRole, setSelectedRole] = useState<string>('ALL');
+  const [selectedRarity, setSelectedRarity] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
-
-  const elementMap = useMemo(() => {
-    const map: Record<string, ElementOption> = {};
-    for (const el of elementsConfig) map[el.key] = el;
-    return map;
-  }, [elementsConfig]);
-
-  const roleMap = useMemo(() => {
-    const map: Record<string, RoleOption> = {};
-    for (const r of rolesConfig) map[r.key] = r;
-    return map;
-  }, [rolesConfig]);
 
   const filtered = useMemo(() => {
     return characters.filter((c) => {
       if (selectedElement !== 'ALL' && c.element !== selectedElement) return false;
       if (selectedRole !== 'ALL' && c.role !== selectedRole) return false;
-      if (
-        searchQuery.trim() !== '' &&
-        !c.name.toLowerCase().includes(searchQuery.trim().toLowerCase()) &&
-        !c.role.toLowerCase().includes(searchQuery.trim().toLowerCase())
-      ) {
-        return false;
+      if (selectedRarity !== 'ALL' && c.rarity !== selectedRarity) return false;
+      if (searchQuery.trim() !== '') {
+        const q = searchQuery.toLowerCase();
+        if (
+          !c.name.toLowerCase().includes(q) &&
+          !(c.staticData?.nameJp || '').toLowerCase().includes(q) &&
+          !c.element.toLowerCase().includes(q) &&
+          !c.role.toLowerCase().includes(q)
+        ) {
+          return false;
+        }
       }
       return true;
     });
-  }, [characters, selectedElement, selectedRole, searchQuery]);
-
-  const getCharTier = (c: CharacterEntity): TierRank =>
-    mode === 'reroll' ? c.rerollTier : c.overallTier;
+  }, [characters, selectedElement, selectedRole, selectedRarity, searchQuery]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-      {/* FILTER BAR */}
-      <section className="wiki-card" style={{ padding: '14px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        {/* ATTRIBUTE FILTERS */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-          <span className="mono" style={{ fontSize: '11px', fontWeight: 900, color: 'var(--text-muted)', marginRight: '4px' }}>
-            ATTRIBUTE:
-          </span>
-          <button
-            type="button"
-            onClick={() => setSelectedElement('ALL')}
-            style={{
-              padding: '5px 11px',
-              borderRadius: '6px',
-              fontSize: '12px',
-              fontWeight: 800,
-              background: selectedElement === 'ALL' ? 'var(--accent-bg)' : 'var(--bg-page)',
-              color: selectedElement === 'ALL' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-              border:
-                selectedElement === 'ALL'
-                  ? '1.5px solid var(--accent-primary)'
-                  : '1px solid var(--border-main)',
-            }}
-          >
-            All ({characters.length})
-          </button>
-          {elementsConfig.map((el) => {
-            const active = selectedElement === el.key;
-            return (
+      {/* Filter Bar with Official AppMedia Attribute & Class Icons */}
+      <div
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          padding: '14px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+        }}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '10px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-secondary)' }}>
+              Filter by Attribute:
+            </span>
+            <button
+              type="button"
+              onClick={() => setSelectedElement('ALL')}
+              style={{
+                padding: '6px 12px',
+                borderRadius: '6px',
+                fontSize: '0.76rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                background: selectedElement === 'ALL' ? '#2563eb' : 'var(--bg-elevated)',
+                color: selectedElement === 'ALL' ? '#fff' : 'var(--text-secondary)',
+                border: '1px solid var(--border-subtle)',
+              }}
+            >
+              All ({characters.length})
+            </button>
+            {elements.map((el) => (
               <button
                 key={el.key}
                 type="button"
-                onClick={() => setSelectedElement(el.key)}
+                onClick={() => setSelectedElement(el.key === selectedElement ? 'ALL' : el.key)}
                 style={{
-                  display: 'inline-flex',
+                  display: 'flex',
                   alignItems: 'center',
                   gap: '6px',
-                  padding: '5px 10px',
+                  padding: '5px 11px',
                   borderRadius: '6px',
-                  fontSize: '12px',
-                  fontWeight: 800,
-                  background: active ? el.colorHex : 'var(--bg-page)',
-                  color: active ? '#FFF' : 'var(--text-main)',
-                  border: `1.5px solid ${el.colorHex}`,
+                  fontSize: '0.76rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  background: selectedElement === el.key ? 'rgba(59, 130, 246, 0.22)' : 'var(--bg-elevated)',
+                  color: selectedElement === el.key ? '#93c5fd' : 'var(--text-secondary)',
+                  border: selectedElement === el.key ? '1px solid #3b82f6' : '1px solid var(--border-subtle)',
                 }}
               >
                 <img
                   src={el.iconUrl}
                   alt={el.label}
-                  width={18}
-                  height={18}
-                  style={{ width: '18px', height: '18px', objectFit: 'contain' }}
+                  width={22}
+                  height={22}
+                  style={{ width: '22px', height: '22px', objectFit: 'contain' }}
                 />
                 <span>{el.label}</span>
               </button>
-            );
-          })}
-        </div>
-
-        {/* CLASS FILTERS + SEARCH */}
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            gap: '10px',
-            flexWrap: 'wrap',
-            paddingTop: '8px',
-            borderTop: '1px solid var(--border-subtle)',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-            <span className="mono" style={{ fontSize: '11px', fontWeight: 900, color: 'var(--text-muted)', marginRight: '4px' }}>
-              CLASS:
-            </span>
-            <button
-              type="button"
-              onClick={() => setSelectedRole('ALL')}
-              style={{
-                padding: '4px 10px',
-                borderRadius: '6px',
-                fontSize: '11.5px',
-                fontWeight: 800,
-                background: selectedRole === 'ALL' ? 'var(--accent-bg)' : 'var(--bg-page)',
-                color: selectedRole === 'ALL' ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                border:
-                  selectedRole === 'ALL'
-                    ? '1.5px solid var(--accent-primary)'
-                    : '1px solid var(--border-main)',
-              }}
-            >
-              All Classes
-            </button>
-            {rolesConfig.map((r) => {
-              const active = selectedRole === r.key;
-              return (
-                <button
-                  key={r.key}
-                  type="button"
-                  onClick={() => setSelectedRole(r.key)}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '5px',
-                    padding: '4px 9px',
-                    borderRadius: '6px',
-                    fontSize: '11.5px',
-                    fontWeight: 800,
-                    background: active ? 'var(--bg-elevated)' : 'var(--bg-page)',
-                    color: active ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                    border: active
-                      ? '1.5px solid var(--accent-primary)'
-                      : '1px solid var(--border-main)',
-                  }}
-                >
-                  <img
-                    src={r.iconUrl}
-                    alt={r.label}
-                    width={17}
-                    height={17}
-                    style={{ width: '17px', height: '17px', objectFit: 'contain' }}
-                  />
-                  <span>{r.label}</span>
-                </button>
-              );
-            })}
+            ))}
           </div>
 
-          <input
-            type="search"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search character..."
-            style={{
-              padding: '6px 11px',
-              fontSize: '12px',
-              width: '210px',
-            }}
-          />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            {['ALL', 'SSR', 'SR'].map((rar) => (
+              <button
+                key={rar}
+                type="button"
+                onClick={() => setSelectedRarity(rar)}
+                style={{
+                  padding: '6px 10px',
+                  borderRadius: '6px',
+                  fontSize: '0.74rem',
+                  fontWeight: 800,
+                  cursor: 'pointer',
+                  background: selectedRarity === rar ? '#2563eb' : '#11151e',
+                  color: selectedRarity === rar ? '#fff' : 'var(--text-secondary)',
+                  border: '1px solid var(--border-subtle)',
+                }}
+              >
+                {rar === 'ALL' ? 'All Rarities' : rar}
+              </button>
+            ))}
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search character..."
+              style={{
+                padding: '7px 12px',
+                borderRadius: '6px',
+                fontSize: '0.8rem',
+                background: '#11151e',
+                color: '#f1f5f9',
+                border: '1px solid var(--border-strong)',
+                minWidth: '185px',
+              }}
+            />
+          </div>
         </div>
-      </section>
 
-      {/* APPMEDIA ROLE-COLUMN TIER MATRIX */}
-      <section className="wiki-card">
-        <div className="wiki-section-header">
-          <span>
-            {mode === 'reroll'
-              ? 'STAR SAVIOR REROLL TIER MATRIX BY CLASS'
-              : 'STAR SAVIOR STRONGEST TIER MATRIX BY CLASS'}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+          <span style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-secondary)' }}>
+            Filter by Class:
           </span>
-          <span className="mono" style={{ fontSize: '11.5px', color: 'var(--text-muted)', fontWeight: 700 }}>
-            Showing {filtered.length} / {characters.length} Saviors
-          </span>
-        </div>
-
-        <div style={{ overflowX: 'auto' }}>
-          <table
+          <button
+            type="button"
+            onClick={() => setSelectedRole('ALL')}
             style={{
-              width: '100%',
-              borderCollapse: 'collapse',
-              minWidth: '640px',
+              padding: '6px 12px',
+              borderRadius: '6px',
+              fontSize: '0.76rem',
+              fontWeight: 700,
+              cursor: 'pointer',
+              background: selectedRole === 'ALL' ? '#2563eb' : 'var(--bg-elevated)',
+              color: selectedRole === 'ALL' ? '#fff' : 'var(--text-secondary)',
+              border: '1px solid var(--border-subtle)',
             }}
           >
-            <thead>
-              <tr style={{ background: 'var(--bg-header)', borderBottom: '1px solid var(--border-main)' }}>
+            All Classes
+          </button>
+          {roles.map((rl) => (
+            <button
+              key={rl.key}
+              type="button"
+              onClick={() => setSelectedRole(rl.key === selectedRole ? 'ALL' : rl.key)}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '5px 11px',
+                borderRadius: '6px',
+                fontSize: '0.76rem',
+                fontWeight: 700,
+                cursor: 'pointer',
+                background: selectedRole === rl.key ? 'rgba(59, 130, 246, 0.22)' : 'var(--bg-elevated)',
+                color: selectedRole === rl.key ? '#93c5fd' : 'var(--text-secondary)',
+                border: selectedRole === rl.key ? '1px solid #3b82f6' : '1px solid var(--border-subtle)',
+              }}
+            >
+              <img
+                src={rl.iconUrl}
+                alt={rl.label}
+                width={22}
+                height={22}
+                style={{ width: '22px', height: '22px', objectFit: 'contain' }}
+              />
+              <span>{rl.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* AppMedia Role-Column Tier Matrix with Larger 68x68 Character Portraits */}
+      <div
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          overflowX: 'auto',
+        }}
+      >
+        <table
+          style={{
+            width: '100%',
+            borderCollapse: 'collapse',
+            minWidth: '780px',
+          }}
+        >
+          <thead>
+            <tr style={{ background: '#1c2333', borderBottom: '2px solid var(--border-strong)' }}>
+              <th
+                style={{
+                  width: '105px',
+                  padding: '12px 10px',
+                  fontSize: '0.78rem',
+                  fontWeight: 800,
+                  color: '#93c5fd',
+                  textAlign: 'center',
+                  borderRight: '1px solid var(--border-subtle)',
+                }}
+              >
+                TIER
+              </th>
+              {ROLE_COLUMNS.map((col) => (
                 <th
+                  key={col.key}
                   style={{
-                    width: '64px',
-                    padding: '10px 6px',
-                    fontSize: '12px',
-                    fontWeight: 900,
-                    borderRight: '1px solid var(--border-main)',
+                    width: '22.3%',
+                    padding: '12px 10px',
+                    fontSize: '0.8rem',
+                    fontWeight: 800,
+                    color: col.color,
                     textAlign: 'center',
+                    borderRight: '1px solid var(--border-subtle)',
                   }}
                 >
-                  TIER
+                  {col.label}
                 </th>
-                {ROLE_COLUMNS.map((col) => {
-                  const firstRole = roleMap[col.matchRoles[0]];
-                  return (
-                    <th
-                      key={col.key}
-                      style={{
-                        padding: '10px 8px',
-                        fontSize: '12px',
-                        fontWeight: 900,
-                        borderRight: '1px solid var(--border-main)',
-                        textAlign: 'center',
-                      }}
-                    >
-                      <div
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {TIERS.map((tierObj) => {
+              const tierUnits = filtered.filter(
+                (c) => (mode === 'reroll' ? c.rerollTier : c.overallTier) === tierObj.rank
+              );
+              return (
+                <tr key={tierObj.rank} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
+                  {/* Tier Badge Cell */}
+                  <td
+                    style={{
+                      background: tierObj.bg,
+                      color: tierObj.text,
+                      textAlign: 'center',
+                      padding: '14px 8px',
+                      borderRight: '1px solid var(--border-subtle)',
+                      verticalAlign: 'middle',
+                    }}
+                  >
+                    <div style={{ fontSize: '1.5rem', fontWeight: 900, lineHeight: 1 }}>{tierObj.label}</div>
+                    <div style={{ fontSize: '0.66rem', fontWeight: 700, opacity: 0.92, marginTop: '5px' }}>
+                      {tierObj.sub}
+                    </div>
+                  </td>
+
+                  {/* Role Cells with Large 68x68 Portraits */}
+                  {ROLE_COLUMNS.map((col) => {
+                    const cellUnits = tierUnits.filter((u) => col.match.includes(u.role));
+                    return (
+                      <td
+                        key={col.key}
                         style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: '6px',
+                          padding: '10px',
+                          verticalAlign: 'top',
+                          borderRight: '1px solid var(--border-subtle)',
+                          background: '#131822',
                         }}
                       >
-                        {firstRole && (
-                          <img
-                            src={firstRole.iconUrl}
-                            alt={col.label}
-                            width={20}
-                            height={20}
-                            style={{ width: '20px', height: '20px', objectFit: 'contain' }}
-                          />
-                        )}
-                        <span>{col.label}</span>
-                      </div>
-                    </th>
-                  );
-                })}
+                        <div
+                          style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            gap: '8px',
+                            minHeight: '78px',
+                            alignContent: 'flex-start',
+                          }}
+                        >
+                          {cellUnits.map((unit) => (
+                            <Link
+                              key={unit.slug}
+                              href={`/starsavior/characters/${unit.slug}`}
+                              title={`${unit.name} (${unit.element} ${unit.role}) — ${unit.score}/10`}
+                              style={{
+                                width: '74px',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                textDecoration: 'none',
+                                background: '#1a202c',
+                                border: '1px solid var(--border-subtle)',
+                                borderRadius: '8px',
+                                padding: '4px',
+                                position: 'relative',
+                              }}
+                            >
+                              <div style={{ position: 'relative', width: '64px', height: '64px' }}>
+                                <img
+                                  src={unit.imageUrl}
+                                  alt={unit.name}
+                                  width={64}
+                                  height={64}
+                                  style={{
+                                    width: '64px',
+                                    height: '64px',
+                                    borderRadius: '6px',
+                                    objectFit: 'cover',
+                                    display: 'block',
+                                    border: unit.rarity === 'SSR' ? '1px solid rgba(245, 158, 11, 0.5)' : '1px solid var(--border-strong)',
+                                  }}
+                                />
+                                {unit.staticData?.attributeIconUrl && (
+                                  <img
+                                    src={unit.staticData.attributeIconUrl}
+                                    alt={unit.element}
+                                    width={20}
+                                    height={20}
+                                    style={{
+                                      position: 'absolute',
+                                      top: '-3px',
+                                      left: '-3px',
+                                      width: '20px',
+                                      height: '20px',
+                                      borderRadius: '50%',
+                                      background: 'rgba(11, 14, 20, 0.9)',
+                                      padding: '1px',
+                                    }}
+                                  />
+                                )}
+                                <span
+                                  style={{
+                                    position: 'absolute',
+                                    bottom: '2px',
+                                    right: '2px',
+                                    fontSize: '0.58rem',
+                                    fontWeight: 900,
+                                    padding: '1px 4px',
+                                    borderRadius: '3px',
+                                    background: 'rgba(11, 14, 20, 0.88)',
+                                    color: unit.rarity === 'SSR' ? '#fbbf24' : '#93c5fd',
+                                  }}
+                                >
+                                  {unit.score.toFixed(1)}
+                                </span>
+                              </div>
+                              <span
+                                style={{
+                                  fontSize: '0.68rem',
+                                  fontWeight: 700,
+                                  color: '#f1f5f9',
+                                  marginTop: '4px',
+                                  maxWidth: '68px',
+                                  whiteSpace: 'nowrap',
+                                  overflow: 'hidden',
+                                  textOverflow: 'ellipsis',
+                                  textAlign: 'center',
+                                }}
+                              >
+                                {unit.name}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Detailed Evaluation Table with 64x64 Character Icons */}
+      <div
+        style={{
+          background: 'var(--bg-surface)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: '8px',
+          overflow: 'hidden',
+        }}
+      >
+        <div
+          style={{
+            background: '#1c2333',
+            padding: '11px 14px',
+            fontSize: '0.88rem',
+            fontWeight: 800,
+            color: '#f8fafc',
+            borderLeft: '4px solid #3b82f6',
+            borderBottom: '1px solid var(--border-subtle)',
+          }}
+        >
+          Character Performance & Static Skill Breakdown ({filtered.length} Units)
+        </div>
+        <div style={{ overflowX: 'auto' }}>
+          <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            <thead>
+              <tr style={{ background: '#141923', borderBottom: '1px solid var(--border-subtle)' }}>
+                <th style={{ padding: '10px 12px', textAlign: 'left', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                  Character
+                </th>
+                <th style={{ padding: '10px 12px', textAlign: 'center', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                  Tier / Score
+                </th>
+                <th style={{ padding: '10px 12px', textAlign: 'left', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                  Attribute / Class
+                </th>
+                <th style={{ padding: '10px 12px', textAlign: 'left', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                  Translated Kit & Evaluation Summary
+                </th>
               </tr>
             </thead>
             <tbody>
-              {TIER_ORDER.map((tier) => {
-                const charsInTier = filtered.filter((c) => getCharTier(c) === tier);
-                if (charsInTier.length === 0) return null;
-                const tColor = getTierColor(tier);
-
+              {filtered.slice(0, 25).map((unit) => {
+                const tRank = mode === 'reroll' ? unit.rerollTier : unit.overallTier;
                 return (
-                  <tr key={tier} style={{ borderBottom: '1px solid var(--border-main)' }}>
-                    <td
-                      className="mono"
-                      style={{
-                        background: tColor.bg,
-                        color: tColor.color,
-                        borderLeft: `4px solid ${tColor.color}`,
-                        borderRight: '1px solid var(--border-main)',
-                        fontWeight: 900,
-                        fontSize: '18px',
-                        textAlign: 'center',
-                        verticalAlign: 'middle',
-                      }}
-                    >
-                      {tier}
-                    </td>
-                    {ROLE_COLUMNS.map((col) => {
-                      const colChars = charsInTier.filter((c) =>
-                        (col.matchRoles as readonly string[]).includes(c.role)
-                      );
-                      return (
-                        <td
-                          key={col.key}
+                  <tr key={unit.slug} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
+                    <td style={{ padding: '10px 12px', width: '230px' }}>
+                      <Link
+                        href={`/starsavior/characters/${unit.slug}`}
+                        style={{ display: 'flex', alignItems: 'center', gap: '12px' }}
+                      >
+                        <img
+                          src={unit.imageUrl}
+                          alt={unit.name}
+                          width={64}
+                          height={64}
                           style={{
-                            padding: '10px 8px',
-                            borderRight: '1px solid var(--border-subtle)',
-                            verticalAlign: 'top',
+                            width: '64px',
+                            height: '64px',
+                            borderRadius: '10px',
+                            objectFit: 'cover',
+                            border: '1px solid var(--border-strong)',
+                            flexShrink: 0,
                           }}
-                        >
-                          <div
-                            style={{
-                              display: 'flex',
-                              flexWrap: 'wrap',
-                              gap: '10px',
-                              justifyContent: 'center',
-                            }}
-                          >
-                            {colChars.map((c) => {
-                              const elOpt = elementMap[c.element];
-                              const borderColor = elOpt?.colorHex ?? '#3b4861';
-                              return (
-                                <Link
-                                  key={c.slug}
-                                  href={`/starsavior/characters/${c.slug}`}
-                                  style={{
-                                    width: '82px',
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    alignItems: 'center',
-                                    gap: '4px',
-                                  }}
-                                >
-                                  <div
-                                    style={{
-                                      width: '76px',
-                                      height: '76px',
-                                      borderRadius: '7px',
-                                      overflow: 'hidden',
-                                      border: `2px solid ${borderColor}`,
-                                      position: 'relative',
-                                      background: 'var(--bg-page)',
-                                    }}
-                                  >
-                                    <img
-                                      src={c.imageUrl}
-                                      alt={c.name}
-                                      width={76}
-                                      height={76}
-                                      style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        display: 'block',
-                                      }}
-                                    />
-                                    {elOpt && (
-                                      <img
-                                        src={elOpt.iconUrl}
-                                        alt={elOpt.label}
-                                        width={20}
-                                        height={20}
-                                        style={{
-                                          position: 'absolute',
-                                          top: '2px',
-                                          left: '2px',
-                                          width: '20px',
-                                          height: '20px',
-                                          borderRadius: '4px',
-                                          background: 'rgba(11, 14, 20, 0.88)',
-                                          padding: '1px',
-                                          objectFit: 'contain',
-                                        }}
-                                      />
-                                    )}
-                                    <span
-                                      className="mono"
-                                      style={{
-                                        position: 'absolute',
-                                        bottom: '2px',
-                                        right: '2px',
-                                        background: 'rgba(11, 14, 20, 0.92)',
-                                        color: '#FFF',
-                                        fontSize: '10px',
-                                        fontWeight: 900,
-                                        padding: '1px 4px',
-                                        borderRadius: '3px',
-                                        border: '1px solid var(--border-strong)',
-                                        lineHeight: 1.1,
-                                      }}
-                                    >
-                                      {c.score.toFixed(1)}
-                                    </span>
-                                  </div>
-                                  <span
-                                    style={{
-                                      fontSize: '11.5px',
-                                      fontWeight: 800,
-                                      color: 'var(--text-main)',
-                                      textAlign: 'center',
-                                      lineHeight: 1.2,
-                                      display: '-webkit-box',
-                                      WebkitLineClamp: 2,
-                                      WebkitBoxOrient: 'vertical',
-                                      overflow: 'hidden',
-                                    }}
-                                  >
-                                    {c.name}
-                                  </span>
-                                </Link>
-                              );
-                            })}
+                        />
+                        <div>
+                          <div style={{ fontWeight: 800, fontSize: '0.9rem', color: '#60a5fa' }}>{unit.name}</div>
+                          <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+                            {unit.rarity} · {unit.staticData?.pool || 'Standard'}
                           </div>
-                        </td>
-                      );
-                    })}
+                          <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
+                            {unit.staticData?.attackType || 'Slash Damage'}
+                          </div>
+                        </div>
+                      </Link>
+                    </td>
+                    <td style={{ padding: '10px 12px', textAlign: 'center', width: '110px' }}>
+                      <span
+                        style={{
+                          display: 'inline-block',
+                          fontWeight: 900,
+                          fontSize: '0.84rem',
+                          padding: '3px 10px',
+                          borderRadius: '4px',
+                          background:
+                            tRank === 'SS'
+                              ? 'rgba(239, 68, 68, 0.2)'
+                              : tRank === 'S'
+                                ? 'rgba(249, 115, 22, 0.2)'
+                                : 'rgba(234, 179, 8, 0.2)',
+                          color: tRank === 'SS' ? '#f87171' : tRank === 'S' ? '#fb923c' : '#facc15',
+                          border: '1px solid currentColor',
+                        }}
+                      >
+                        {tRank}
+                      </span>
+                      <div style={{ fontSize: '0.74rem', color: 'var(--text-secondary)', marginTop: '4px', fontWeight: 700 }}>
+                        {unit.score.toFixed(1)} / 10
+                      </div>
+                    </td>
+                    <td style={{ padding: '10px 12px', width: '165px' }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.8rem', fontWeight: 700, color: '#f1f5f9' }}>
+                        {unit.staticData?.attributeIconUrl && (
+                          <img src={unit.staticData.attributeIconUrl} alt={unit.element} width={22} height={22} style={{ width: '22px', height: '22px' }} />
+                        )}
+                        <span>{unit.element}</span>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.76rem', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                        {unit.staticData?.classIconUrl && (
+                          <img src={unit.staticData.classIconUrl} alt={unit.role} width={20} height={20} style={{ width: '20px', height: '20px' }} />
+                        )}
+                        <span>{unit.role}</span>
+                      </div>
+                    </td>
+                    <td style={{ padding: '10px 12px', fontSize: '0.8rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+                      {unit.summary}
+                    </td>
                   </tr>
                 );
               })}
             </tbody>
           </table>
         </div>
-      </section>
-
-      {/* TOP TIER CHARACTER EVALUATIONS (APPMEDIA SUMMARY TABLE) */}
-      <section className="wiki-card">
-        <div className="wiki-section-header">
-          <span>
-            {mode === 'reroll'
-              ? 'SS & S TIER REROLL TARGET EVALUATIONS'
-              : 'SS & S TIER CHARACTER EVALUATIONS'}
-          </span>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          {filtered
-            .filter((c) => {
-              const t = getCharTier(c);
-              return t === 'SS' || t === 'S';
-            })
-            .slice(0, 20)
-            .map((c) => {
-              const elOpt = elementMap[c.element];
-              const roleOpt = roleMap[c.role];
-              const tier = getCharTier(c);
-              const tStyle = getTierColor(tier);
-              return (
-                <div
-                  key={c.slug}
-                  style={{
-                    padding: '12px 14px',
-                    borderBottom: '1px solid var(--border-subtle)',
-                    display: 'flex',
-                    gap: '14px',
-                    alignItems: 'flex-start',
-                  }}
-                >
-                  <Link href={`/starsavior/characters/${c.slug}`} style={{ flexShrink: 0 }}>
-                    <img
-                      src={c.imageUrl}
-                      alt={c.name}
-                      width={64}
-                      height={64}
-                      style={{
-                        width: '64px',
-                        height: '64px',
-                        borderRadius: '7px',
-                        objectFit: 'cover',
-                        border: `2px solid ${elOpt?.colorHex ?? '#3b4861'}`,
-                      }}
-                    />
-                  </Link>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div
-                      style={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        gap: '8px',
-                        flexWrap: 'wrap',
-                      }}
-                    >
-                      <Link
-                        href={`/starsavior/characters/${c.slug}`}
-                        style={{ fontSize: '14.5px', fontWeight: 900, color: 'var(--text-main)' }}
-                      >
-                        {c.name}
-                      </Link>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                        {elOpt && (
-                          <span
-                            style={{
-                              display: 'inline-flex',
-                              alignItems: 'center',
-                              gap: '4px',
-                              padding: '2px 7px',
-                              borderRadius: '4px',
-                              background: 'var(--bg-page)',
-                              border: `1px solid ${elOpt.colorHex}`,
-                              fontSize: '11px',
-                              fontWeight: 800,
-                            }}
-                          >
-                            <img
-                              src={elOpt.iconUrl}
-                              alt={elOpt.label}
-                              width={14}
-                              height={14}
-                              style={{ width: '14px', height: '14px', objectFit: 'contain' }}
-                            />
-                            <span>{elOpt.label}</span>
-                          </span>
-                        )}
-                        {roleOpt && (
-                          <span
-                            style={{
-                              display: 'inline-flex',
-                              alignItems: 'center',
-                              gap: '4px',
-                              padding: '2px 7px',
-                              borderRadius: '4px',
-                              background: 'var(--bg-page)',
-                              border: '1px solid var(--border-main)',
-                              fontSize: '11px',
-                              fontWeight: 800,
-                              color: 'var(--text-secondary)',
-                            }}
-                          >
-                            <img
-                              src={roleOpt.iconUrl}
-                              alt={roleOpt.label}
-                              width={14}
-                              height={14}
-                              style={{ width: '14px', height: '14px', objectFit: 'contain' }}
-                            />
-                            <span>{roleOpt.label}</span>
-                          </span>
-                        )}
-                        <span
-                          className="mono"
-                          style={{
-                            padding: '2px 8px',
-                            borderRadius: '4px',
-                            fontSize: '11.5px',
-                            fontWeight: 900,
-                            background: tStyle.bg,
-                            color: tStyle.color,
-                            border: `1px solid ${tStyle.border}`,
-                          }}
-                        >
-                          Tier {tier} ({c.score.toFixed(1)})
-                        </span>
-                      </div>
-                    </div>
-                    <p
-                      style={{
-                        fontSize: '12.5px',
-                        color: 'var(--text-secondary)',
-                        marginTop: '5px',
-                        lineHeight: 1.5,
-                      }}
-                    >
-                      {c.summary}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
-        </div>
-      </section>
+      </div>
     </div>
   );
 }

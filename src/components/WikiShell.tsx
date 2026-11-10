@@ -1,131 +1,130 @@
 import React from 'react';
 import Link from 'next/link';
-import type { GameWikiDataset, TierRank } from '../domain/schemas';
-
-export function getTierColor(tier: TierRank | string): { bg: string; color: string; border: string } {
-  switch (tier) {
-    case 'SS':
-      return { bg: 'var(--tier-ss-bg)', color: 'var(--tier-ss)', border: 'rgba(244, 63, 94, 0.45)' };
-    case 'S':
-      return { bg: 'var(--tier-s-bg)', color: 'var(--tier-s)', border: 'rgba(245, 158, 11, 0.45)' };
-    case 'A':
-      return { bg: 'var(--tier-a-bg)', color: 'var(--tier-a)', border: 'rgba(16, 185, 129, 0.45)' };
-    default:
-      return { bg: 'var(--tier-b-bg)', color: 'var(--tier-b)', border: 'rgba(59, 130, 246, 0.45)' };
-  }
-}
+import type { GameConfigEntity, CharacterEntity } from '../domain/schemas';
 
 interface WikiShellProps {
-  dataset: GameWikiDataset;
-  activeNav: 'home' | 'tier-list' | 'reroll' | 'characters' | 'arcana';
-  breadcrumbTitle?: string;
+  game: GameConfigEntity;
+  topCharacters: CharacterEntity[];
+  activeNav: 'portal' | 'tier-list' | 'reroll' | 'characters' | 'arcana';
+  breadcrumbLabel?: string;
   children: React.ReactNode;
 }
 
-export function WikiShell({ dataset, activeNav, breadcrumbTitle, children }: WikiShellProps) {
-  const { game, characters, arcana } = dataset;
-
-  const navItems = [
-    { key: 'home', label: 'Wiki Top', href: '/starsavior', iconUrl: game.iconUrl },
+export function WikiShell({
+  game,
+  topCharacters,
+  activeNav,
+  breadcrumbLabel,
+  children,
+}: WikiShellProps) {
+  const navGroups = [
     {
-      key: 'tier-list',
-      label: 'Strongest Tier List',
-      href: '/starsavior/tier-list',
-      iconUrl: game.shortcutsConfig[0]?.iconUrl ?? game.iconUrl,
-      badge: 'SS',
+      heading: 'RANKINGS & META',
+      links: [
+        { key: 'portal', label: 'Star Savior Wiki Top', href: '/starsavior', badge: 'TOP' },
+        { key: 'tier-list', label: 'Strongest Tier List', href: '/starsavior/tier-list', badge: 'HOT' },
+        { key: 'reroll', label: 'Reroll Tier List & Guide', href: '/starsavior/reroll', badge: 'NEW' },
+        { key: 'arcana', label: 'All 83 Arcana Tier List', href: '/starsavior/arcana', badge: '83' },
+      ],
     },
     {
-      key: 'reroll',
-      label: 'Reroll Tier List',
-      href: '/starsavior/reroll',
-      iconUrl: game.shortcutsConfig[1]?.iconUrl ?? game.iconUrl,
-      badge: 'START',
+      heading: 'STATIC DATABASE',
+      links: [
+        { key: 'characters', label: 'All 57 Characters DB', href: '/starsavior/characters', badge: '57' },
+      ],
     },
-    {
-      key: 'characters',
-      label: `All Characters (${characters.length})`,
-      href: '/starsavior/characters',
-      iconUrl: game.shortcutsConfig[2]?.iconUrl ?? game.iconUrl,
-    },
-    {
-      key: 'arcana',
-      label: `SSR Arcana (${arcana.length})`,
-      href: '/starsavior/arcana',
-      iconUrl: game.shortcutsConfig[3]?.iconUrl ?? game.iconUrl,
-    },
-  ] as const;
+  ];
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* TOP BAR */}
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-canvas)' }}>
+      {/* Top AppMedia Dark Header */}
       <header
         style={{
-          background: 'var(--bg-header)',
-          borderBottom: '1px solid var(--border-main)',
           position: 'sticky',
           top: 0,
           zIndex: 50,
+          background: 'rgba(14, 17, 23, 0.96)',
+          backdropFilter: 'blur(8px)',
+          borderBottom: '1px solid var(--border-subtle)',
         }}
       >
         <div
-          className="wiki-container"
           style={{
-            paddingTop: '10px',
-            paddingBottom: '10px',
+            maxWidth: '1240px',
+            margin: '0 auto',
+            padding: '10px 16px',
             display: 'flex',
-            justifyContent: 'space-between',
             alignItems: 'center',
-            gap: '14px',
+            justifyContent: 'space-between',
+            gap: '12px',
             flexWrap: 'wrap',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <Link
               href="/starsavior"
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '10px' }}
+              style={{ display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}
             >
               <img
                 src={game.iconUrl}
                 alt={game.name}
-                width={34}
-                height={34}
+                width={44}
+                height={44}
                 style={{
-                  width: '34px',
-                  height: '34px',
-                  borderRadius: '8px',
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '10px',
                   objectFit: 'cover',
                   border: '1px solid var(--border-strong)',
                 }}
               />
               <div>
-                <div style={{ fontSize: '15.5px', fontWeight: 900, letterSpacing: '-0.01em' }}>
-                  {game.name.toUpperCase()} <span style={{ color: 'var(--accent-primary)' }}>WIKI</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontWeight: 800, fontSize: '1.08rem', color: '#f8fafc', letterSpacing: '-0.01em' }}>
+                    {game.name} Strategy Wiki
+                  </span>
+                  <span
+                    style={{
+                      fontSize: '0.68rem',
+                      fontWeight: 800,
+                      padding: '2px 7px',
+                      borderRadius: '4px',
+                      background: 'rgba(59, 130, 246, 0.18)',
+                      color: '#60a5fa',
+                      border: '1px solid rgba(59, 130, 246, 0.35)',
+                    }}
+                  >
+                    {game.patchVersion}
+                  </span>
                 </div>
-                <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: 700 }}>
-                  {game.patchVersion}
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+                  Complete EN Translated Database · 57 Characters · 83 Arcana Cards
                 </div>
               </div>
             </Link>
           </div>
 
-          {/* TOP NAVIGATION PILLS */}
-          <nav style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
-            {navItems.map((item) => {
+          <nav style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+            {[
+              { key: 'portal', label: 'Wiki Top', href: '/starsavior' },
+              { key: 'tier-list', label: 'Tier List', href: '/starsavior/tier-list' },
+              { key: 'reroll', label: 'Reroll', href: '/starsavior/reroll' },
+              { key: 'characters', label: 'Characters (57)', href: '/starsavior/characters' },
+              { key: 'arcana', label: 'Arcana (83)', href: '/starsavior/arcana' },
+            ].map((item) => {
               const isActive = activeNav === item.key;
               return (
                 <Link
                   key={item.key}
                   href={item.href}
                   style={{
-                    padding: '6px 11px',
+                    padding: '7px 13px',
                     borderRadius: '6px',
-                    fontSize: '12.5px',
-                    fontWeight: 800,
-                    background: isActive ? 'var(--accent-bg)' : 'var(--bg-surface)',
-                    color: isActive ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                    border: isActive
-                      ? '1px solid var(--accent-border)'
-                      : '1px solid var(--border-main)',
+                    fontSize: '0.82rem',
+                    fontWeight: 700,
+                    background: isActive ? '#2563eb' : 'var(--bg-elevated)',
+                    color: isActive ? '#ffffff' : 'var(--text-secondary)',
+                    border: isActive ? '1px solid #3b82f6' : '1px solid var(--border-subtle)',
                   }}
                 >
                   {item.label}
@@ -136,337 +135,268 @@ export function WikiShell({ dataset, activeNav, breadcrumbTitle, children }: Wik
         </div>
       </header>
 
-      {/* BREADCRUMB BAR */}
-      <div
-        style={{
-          background: 'var(--bg-surface)',
-          borderBottom: '1px solid var(--border-subtle)',
-        }}
-      >
+      {/* Breadcrumb Bar */}
+      <div style={{ background: '#11151e', borderBottom: '1px solid var(--border-subtle)' }}>
         <div
-          className="wiki-container"
           style={{
-            paddingTop: '7px',
-            paddingBottom: '7px',
-            fontSize: '12px',
+            maxWidth: '1240px',
+            margin: '0 auto',
+            padding: '7px 16px',
+            fontSize: '0.76rem',
             color: 'var(--text-muted)',
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
-            flexWrap: 'wrap',
           }}
         >
-          <Link href="/starsavior" style={{ color: 'var(--accent-primary)', fontWeight: 700 }}>
+          <Link href="/starsavior" style={{ color: '#60a5fa', fontWeight: 600 }}>
             Star Savior Wiki
           </Link>
-          {breadcrumbTitle && (
+          {breadcrumbLabel && (
             <>
-              <span>&rsaquo;</span>
-              <span style={{ color: 'var(--text-main)', fontWeight: 700 }}>{breadcrumbTitle}</span>
+              <span>›</span>
+              <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>{breadcrumbLabel}</span>
             </>
           )}
         </div>
       </div>
 
-      {/* MAIN 2-COLUMN APPMEDIA LAYOUT */}
-      <div className="wiki-container" style={{ flex: 1 }}>
-        <div className="wiki-grid">
-          {/* LEFT SIDEBAR MENU */}
-          <aside className="wiki-sidebar wiki-card">
-            {/* MINI GAME HEADER */}
-            <div
-              style={{
-                position: 'relative',
-                height: '86px',
-                overflow: 'hidden',
-                borderBottom: '1px solid var(--border-main)',
-              }}
-            >
-              <img
-                src={game.bannerUrl}
-                alt={game.name}
-                width={245}
-                height={86}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  filter: 'brightness(0.55)',
-                }}
-              />
+      {/* Main 2-Column AppMedia Layout (255px Left Menu + 1fr Article Column) */}
+      <div
+        className="wiki-layout-grid"
+        style={{
+          maxWidth: '1240px',
+          width: '100%',
+          margin: '0 auto',
+          padding: '16px',
+          display: 'grid',
+          gridTemplateColumns: '255px minmax(0, 1fr)',
+          gap: '18px',
+          flex: 1,
+          alignItems: 'start',
+        }}
+      >
+        {/* Left Navigation Menu */}
+        <aside
+          style={{
+            background: 'var(--bg-surface)',
+            border: '1px solid var(--border-subtle)',
+            borderRadius: '8px',
+            overflow: 'hidden',
+          }}
+        >
+          {navGroups.map((group) => (
+            <div key={group.heading}>
               <div
                 style={{
-                  position: 'absolute',
-                  inset: 0,
-                  padding: '10px',
+                  background: '#1c2333',
+                  padding: '9px 12px',
+                  fontSize: '0.73rem',
+                  fontWeight: 800,
+                  letterSpacing: '0.06em',
+                  color: '#93c5fd',
+                  borderBottom: '1px solid var(--border-subtle)',
+                  borderLeft: '3px solid #3b82f6',
+                }}
+              >
+                {group.heading}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                {group.links.map((ln) => {
+                  const active = activeNav === ln.key;
+                  return (
+                    <Link
+                      key={ln.href}
+                      href={ln.href}
+                      style={{
+                        padding: '10px 12px',
+                        fontSize: '0.83rem',
+                        fontWeight: active ? 700 : 500,
+                        color: active ? '#60a5fa' : 'var(--text-primary)',
+                        background: active ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
+                        borderBottom: '1px solid var(--border-subtle)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                      }}
+                    >
+                      <span>{ln.label}</span>
+                      <span
+                        style={{
+                          fontSize: '0.65rem',
+                          fontWeight: 800,
+                          padding: '1px 6px',
+                          borderRadius: '3px',
+                          background: active ? '#2563eb' : '#232a3b',
+                          color: active ? '#fff' : '#94a3b8',
+                        }}
+                      >
+                        {ln.badge}
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+
+          {/* Attribute Filter Quick Links */}
+          <div
+            style={{
+              background: '#1c2333',
+              padding: '9px 12px',
+              fontSize: '0.73rem',
+              fontWeight: 800,
+              letterSpacing: '0.06em',
+              color: '#93c5fd',
+              borderBottom: '1px solid var(--border-subtle)',
+              borderLeft: '3px solid #eab308',
+            }}
+          >
+            ATTRIBUTES & CLASSES
+          </div>
+          <div style={{ padding: '10px', display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px', borderBottom: '1px solid var(--border-subtle)' }}>
+            {game.elementsConfig.map((el) => (
+              <Link
+                key={el.key}
+                href="/starsavior/characters"
+                title={el.label}
+                style={{
                   display: 'flex',
-                  alignItems: 'flex-end',
-                  gap: '9px',
-                  background: 'linear-gradient(to top, rgba(11,14,20,0.92), transparent)',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  gap: '3px',
+                  padding: '5px 2px',
+                  borderRadius: '6px',
+                  background: '#131822',
+                  border: '1px solid var(--border-subtle)',
+                }}
+              >
+                <img src={el.iconUrl} alt={el.label} width={26} height={26} style={{ width: '26px', height: '26px', objectFit: 'contain' }} />
+                <span style={{ fontSize: '0.62rem', fontWeight: 700, color: 'var(--text-secondary)' }}>{el.label}</span>
+              </Link>
+            ))}
+          </div>
+
+          {/* Popular SS-Tier Characters Quick Access */}
+          <div
+            style={{
+              background: '#1c2333',
+              padding: '9px 12px',
+              fontSize: '0.73rem',
+              fontWeight: 800,
+              letterSpacing: '0.06em',
+              color: '#93c5fd',
+              borderBottom: '1px solid var(--border-subtle)',
+              borderLeft: '3px solid #f59e0b',
+            }}
+          >
+            POPULAR SS-TIER UNITS
+          </div>
+          <div style={{ padding: '8px', display: 'flex', flexDirection: 'column', gap: '5px' }}>
+            {topCharacters.slice(0, 10).map((unit) => (
+              <Link
+                key={unit.slug}
+                href={`/starsavior/characters/${unit.slug}`}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px',
+                  padding: '6px 8px',
+                  borderRadius: '6px',
+                  background: '#131822',
+                  border: '1px solid rgba(42, 50, 69, 0.5)',
                 }}
               >
                 <img
-                  src={game.iconUrl}
-                  alt={game.name}
-                  width={38}
-                  height={38}
+                  src={unit.imageUrl}
+                  alt={unit.name}
+                  width={42}
+                  height={42}
                   style={{
-                    width: '38px',
-                    height: '38px',
-                    borderRadius: '7px',
-                    border: '1.5px solid #FFF',
+                    width: '42px',
+                    height: '42px',
+                    borderRadius: '8px',
                     objectFit: 'cover',
+                    border: '1px solid var(--border-strong)',
+                    flexShrink: 0,
                   }}
                 />
-                <div>
-                  <div style={{ fontSize: '13.5px', fontWeight: 900, color: '#FFF', lineHeight: 1.15 }}>
-                    {game.name}
+                <div style={{ minWidth: 0, flex: 1 }}>
+                  <div
+                    style={{
+                      fontSize: '0.8rem',
+                      fontWeight: 700,
+                      color: '#f1f5f9',
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}
+                  >
+                    {unit.name}
                   </div>
-                  <div className="mono" style={{ fontSize: '10px', color: 'var(--accent-primary)', fontWeight: 800 }}>
-                    {game.serverStatus}
+                  <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    {unit.staticData?.attributeIconUrl && (
+                      <img src={unit.staticData.attributeIconUrl} alt={unit.element} width={14} height={14} style={{ width: '14px', height: '14px' }} />
+                    )}
+                    <span>{unit.element} · {unit.role}</span>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* 01. STRATEGY MENU */}
-            <div
-              style={{
-                background: 'var(--bg-subtle)',
-                padding: '7px 11px',
-                fontSize: '11px',
-                fontWeight: 900,
-                color: 'var(--text-main)',
-                borderLeft: '3.5px solid var(--accent-primary)',
-                borderBottom: '1px solid var(--border-main)',
-              }}
-            >
-              01. RANKINGS &amp; DATABASE
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              {navItems.map((item) => {
-                const isActive = activeNav === item.key;
-                return (
-                  <Link
-                    key={item.key}
-                    href={item.href}
-                    style={{
-                      padding: '8px 10px',
-                      fontSize: '12.5px',
-                      fontWeight: isActive ? 900 : 700,
-                      background: isActive ? 'var(--accent-bg)' : 'transparent',
-                      color: isActive ? 'var(--accent-primary)' : 'var(--text-secondary)',
-                      borderBottom: '1px solid var(--border-subtle)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      gap: '8px',
-                    }}
-                  >
-                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                      <img
-                        src={item.iconUrl}
-                        alt={item.label}
-                        width={26}
-                        height={26}
-                        style={{
-                          width: '26px',
-                          height: '26px',
-                          borderRadius: '5px',
-                          objectFit: 'cover',
-                          border: '1px solid var(--border-main)',
-                        }}
-                      />
-                      <span>{item.label}</span>
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-
-            {/* 02. ATTRIBUTE / ELEMENT SHORTCUTS */}
-            <div
-              style={{
-                background: 'var(--bg-subtle)',
-                padding: '7px 11px',
-                fontSize: '11px',
-                fontWeight: 900,
-                color: 'var(--text-main)',
-                borderLeft: '3.5px solid var(--accent-primary)',
-                borderBottom: '1px solid var(--border-main)',
-              }}
-            >
-              02. CHARACTERS BY ATTRIBUTE
-            </div>
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: '6px',
-                padding: '8px',
-                borderBottom: '1px solid var(--border-main)',
-              }}
-            >
-              {game.elementsConfig.map((el) => (
-                <Link
-                  key={el.key}
-                  href={`/starsavior/characters?element=${el.key}`}
+                <span
                   style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    padding: '5px 8px',
-                    borderRadius: '5px',
-                    background: 'var(--bg-page)',
-                    border: '1px solid var(--border-main)',
-                    fontSize: '11.5px',
+                    fontSize: '0.68rem',
                     fontWeight: 800,
-                    color: 'var(--text-secondary)',
+                    padding: '2px 6px',
+                    borderRadius: '4px',
+                    background: 'rgba(239, 68, 68, 0.2)',
+                    color: '#f87171',
+                    border: '1px solid rgba(239, 68, 68, 0.4)',
                   }}
                 >
-                  <img
-                    src={el.iconUrl}
-                    alt={el.label}
-                    width={18}
-                    height={18}
-                    style={{ width: '18px', height: '18px', objectFit: 'contain' }}
-                  />
-                  <span>{el.label}</span>
-                </Link>
-              ))}
-            </div>
+                  {unit.overallTier}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </aside>
 
-            {/* 03. ALL 57 SAVIORS DIRECT INDEX */}
-            <div
-              style={{
-                background: 'var(--bg-subtle)',
-                padding: '7px 11px',
-                fontSize: '11px',
-                fontWeight: 900,
-                color: 'var(--text-main)',
-                borderLeft: '3.5px solid var(--accent-primary)',
-                borderBottom: '1px solid var(--border-main)',
-              }}
-            >
-              03. SAVIOR CHARACTER INDEX ({characters.length})
-            </div>
-            <div
-              className="sidebar-scroll"
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                maxHeight: '520px',
-                overflowY: 'auto',
-              }}
-            >
-              {characters.map((c) => {
-                const tStyle = getTierColor(c.overallTier);
-                return (
-                  <Link
-                    key={c.slug}
-                    href={`/starsavior/characters/${c.slug}`}
-                    style={{
-                      padding: '6px 10px',
-                      borderBottom: '1px solid var(--border-subtle)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      gap: '8px',
-                      fontSize: '12px',
-                      fontWeight: 700,
-                      color: 'var(--text-secondary)',
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        gap: '8px',
-                        minWidth: 0,
-                      }}
-                    >
-                      <img
-                        src={c.imageUrl}
-                        alt={c.name}
-                        width={30}
-                        height={30}
-                        style={{
-                          width: '30px',
-                          height: '30px',
-                          borderRadius: '5px',
-                          objectFit: 'cover',
-                          border: '1px solid var(--border-main)',
-                          flexShrink: 0,
-                        }}
-                      />
-                      <span
-                        style={{
-                          whiteSpace: 'nowrap',
-                          overflow: 'hidden',
-                          textOverflow: 'ellipsis',
-                        }}
-                      >
-                        {c.name}
-                      </span>
-                    </span>
-                    <span
-                      className="mono"
-                      style={{
-                        fontSize: '10.5px',
-                        fontWeight: 900,
-                        padding: '1px 6px',
-                        borderRadius: '4px',
-                        background: tStyle.bg,
-                        color: tStyle.color,
-                        border: `1px solid ${tStyle.border}`,
-                        flexShrink: 0,
-                      }}
-                    >
-                      {c.overallTier}
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-          </aside>
-
-          {/* MAIN CONTENT COLUMN */}
-          <main className="wiki-main" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {children}
-          </main>
-        </div>
+        {/* Main Content Column */}
+        <main style={{ display: 'flex', flexDirection: 'column', gap: '16px', minWidth: 0 }}>
+          {children}
+        </main>
       </div>
 
-      {/* CLEAN FOOTER */}
+      {/* Footer */}
       <footer
         style={{
-          marginTop: '36px',
-          background: 'var(--bg-header)',
-          borderTop: '1px solid var(--border-main)',
-          padding: '20px 0',
-          fontSize: '12px',
-          color: 'var(--text-muted)',
+          borderTop: '1px solid var(--border-subtle)',
+          background: '#0b0e14',
+          padding: '20px 16px',
+          marginTop: '32px',
         }}
       >
         <div
-          className="wiki-container"
           style={{
+            maxWidth: '1240px',
+            margin: '0 auto',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             flexWrap: 'wrap',
-            gap: '10px',
+            gap: '12px',
+            fontSize: '0.76rem',
+            color: 'var(--text-muted)',
           }}
         >
           <div>
-            <strong style={{ color: 'var(--text-main)' }}>Star Savior Strategy Wiki</strong> • Simultaneous Global / JP / KR Database
+            <strong style={{ color: 'var(--text-secondary)' }}>Star Savior Strategy Wiki</strong> — Complete Translated Static Database & Tier Encyclopedia.
           </div>
-          <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '14px' }}>
             <Link href="/starsavior">Wiki Top</Link>
-            <Link href="/starsavior/tier-list">Strongest Tier List</Link>
+            <Link href="/starsavior/tier-list">Tier List</Link>
             <Link href="/starsavior/reroll">Reroll Guide</Link>
             <Link href="/starsavior/characters">Characters (57)</Link>
-            <Link href="/starsavior/arcana">SSR Arcana (50)</Link>
+            <Link href="/starsavior/arcana">Arcana (83)</Link>
           </div>
         </div>
       </footer>

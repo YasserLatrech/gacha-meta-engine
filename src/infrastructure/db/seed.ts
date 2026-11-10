@@ -6,9 +6,17 @@ import {
   STAR_SAVIOR_ARCANA_SEED,
   STAR_SAVIOR_BANNERS_SEED,
 } from './seed-data';
-import { eq } from 'drizzle-orm';
+import { eq, sql } from 'drizzle-orm';
 
 export async function seedStarSaviorDatabase() {
+  // 0. Ensure static_data JSONB columns exist in Neon PostgreSQL
+  await db.execute(
+    sql`ALTER TABLE characters ADD COLUMN IF NOT EXISTS static_data JSONB NOT NULL DEFAULT '{}'::jsonb`
+  );
+  await db.execute(
+    sql`ALTER TABLE arcana ADD COLUMN IF NOT EXISTS static_data JSONB NOT NULL DEFAULT '{}'::jsonb`
+  );
+
   // 1. Upsert Game Config
   await db
     .insert(gamesTable)

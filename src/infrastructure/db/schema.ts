@@ -13,6 +13,8 @@ import type {
   ShortcutItem,
   CharacterStats,
   CharacterSkill,
+  CharacterStaticData,
+  ArcanaStaticData,
 } from '../../domain/schemas';
 
 export const gamesTable = pgTable('games', {
@@ -51,6 +53,7 @@ export const charactersTable = pgTable(
     baseStats: jsonb('base_stats').$type<CharacterStats>().notNull(),
     skills: jsonb('skills').$type<CharacterSkill[]>().notNull(),
     bestArcanaSlugs: jsonb('best_arcana_slugs').$type<string[]>().notNull(),
+    staticData: jsonb('static_data').$type<CharacterStaticData>().default({}).notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
   },
   (t) => [unique('characters_game_slug_slug_unique').on(t.gameSlug, t.slug)]
@@ -74,6 +77,7 @@ export const arcanaTable = pgTable(
     effectSummary: text('effect_summary').notNull().default(''),
     stats: jsonb('stats').$type<Record<string, string | number>>().notNull(),
     bestHolderSlugs: jsonb('best_holder_slugs').$type<string[]>().notNull(),
+    staticData: jsonb('static_data').$type<ArcanaStaticData>().default({}).notNull(),
     updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
   },
   (t) => [unique('arcana_game_slug_slug_unique').on(t.gameSlug, t.slug)]

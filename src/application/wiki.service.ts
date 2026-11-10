@@ -73,6 +73,7 @@ export async function fetchGameWikiFromDb(gameSlug: string = 'starsavior'): Prom
       baseStats: c.baseStats,
       skills: c.skills,
       bestArcanaSlugs: c.bestArcanaSlugs,
+      staticData: c.staticData,
     }));
 
     const arcana: ArcanaEntity[] = arcanaRows.map((a) => ({
@@ -89,6 +90,7 @@ export async function fetchGameWikiFromDb(gameSlug: string = 'starsavior'): Prom
       effectSummary: a.effectSummary,
       stats: a.stats,
       bestHolderSlugs: a.bestHolderSlugs,
+      staticData: a.staticData,
     }));
 
     const banners: BannerEntity[] = bannerRows.map((b) => ({
@@ -127,11 +129,18 @@ export async function fetchGameWikiFromDb(gameSlug: string = 'starsavior'): Prom
       characters: STAR_SAVIOR_CHARACTERS_SEED.map((c, idx) => ({
         id: idx + 1,
         ...c,
+        overallTier: toTierRank(c.overallTier),
+        rerollTier: toTierRank(c.rerollTier),
         score: Number(c.score),
+        staticData: {
+          ...c.staticData,
+          pvpTier: toTierRank(c.staticData.pvpTier),
+        },
       })),
       arcana: STAR_SAVIOR_ARCANA_SEED.map((a, idx) => ({
         id: idx + 1,
         ...a,
+        tier: toTierRank(a.tier),
         score: Number(a.score),
       })),
       banners: STAR_SAVIOR_BANNERS_SEED.map((b, idx) => ({
@@ -144,6 +153,6 @@ export async function fetchGameWikiFromDb(gameSlug: string = 'starsavior'): Prom
 
 export const getStarSaviorWikiData = unstable_cache(
   async () => fetchGameWikiFromDb('starsavior'),
-  ['starsavior-wiki-dataset-v3'],
+  ['starsavior-wiki-dataset-v4'],
   { revalidate: 300, tags: ['starsavior-wiki'] }
 );
