@@ -84,16 +84,17 @@ export function WikiShell({
               title="Ascalon.gg Home"
             >
               <img
-                src="/brand/ascalon-logo.jpg"
+                src="/brand/ascalon-logo.png"
                 alt="Ascalon.gg"
-                width={38}
-                height={38}
+                width={44}
+                height={44}
                 style={{
-                  width: '38px',
-                  height: '38px',
-                  borderRadius: '8px',
+                  width: '44px',
+                  height: '44px',
+                  borderRadius: '9px',
                   objectFit: 'cover',
-                  border: '1px solid #3b82f6',
+                  border: '1.5px solid #60a5fa',
+                  boxShadow: '0 0 10px rgba(59, 130, 246, 0.35)',
                 }}
               />
               <div>
@@ -455,11 +456,11 @@ export function WikiShell({
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <img
-              src="/brand/ascalon-logo.jpg"
+              src="/brand/ascalon-logo.png"
               alt="Ascalon.gg"
-              width={22}
-              height={22}
-              style={{ width: '22px', height: '22px', borderRadius: '5px', objectFit: 'cover' }}
+              width={26}
+              height={26}
+              style={{ width: '26px', height: '26px', borderRadius: '6px', objectFit: 'cover', border: '1px solid #3b82f6' }}
             />
             <span>
               <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.gg</strong> — Elite Gacha Strategy Wiki & Translated Meta Database.
