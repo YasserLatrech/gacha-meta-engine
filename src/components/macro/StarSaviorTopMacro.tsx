@@ -10,6 +10,7 @@ import {
 } from '@/components/micro/AppMediaHeadings';
 import { AppMediaLatestUpdatesTabs } from '@/components/medium/AppMediaTocAndWidgets';
 import { AppMediaStrategyFooter } from '@/components/medium/AppMediaStrategyBlocks';
+import { LiveJstCountdown } from '@/components/micro/LiveJstCountdown';
 
 const TOP_INDEX_CELLS = [
   { label: 'Latest News', href: '#latest-updates' },
@@ -274,16 +275,19 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#28354e]">
             {/* Maid Ceres Gacha */}
             <div className="p-3.5 space-y-3">
-              <div className="flex items-center justify-between border-b border-[#1e293b] pb-2">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/maid-ceres-gacha"
                   className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
                 >
                   Maid Ceres Pickup Gacha
                 </Link>
-                <span className="rounded bg-red-600/25 border border-red-500/40 px-2 py-0.5 text-[10px] font-bold text-red-200">
-                  ~2026/11/13 (Fri)
-                </span>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-red-600/25 border border-red-500/40 px-2 py-0.5 text-[10px] font-bold text-red-200">
+                    ~2026/11/13 (Fri) 04:00 JST
+                  </span>
+                  <LiveJstCountdown targetIso="2026-11-13T04:00:00+09:00" prefix="Ends in" />
+                </div>
               </div>
               <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
@@ -324,16 +328,19 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
 
             {/* Frey: Noble Princess Gacha */}
             <div className="p-3.5 space-y-3">
-              <div className="flex items-center justify-between border-b border-[#1e293b] pb-2">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/frey-noble-princess-gacha"
                   className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
                 >
                   Frey: Noble Princess Gacha
                 </Link>
-                <span className="rounded bg-blue-600/25 border border-blue-500/40 px-2 py-0.5 text-[10px] font-bold text-blue-200">
-                  ~2026/11/19 (Thu)
-                </span>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-blue-600/25 border border-blue-500/40 px-2 py-0.5 text-[10px] font-bold text-blue-200">
+                    ~2026/11/19 (Thu) 04:00 JST
+                  </span>
+                  <LiveJstCountdown targetIso="2026-11-19T04:00:00+09:00" prefix="Ends in" />
+                </div>
               </div>
               <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
@@ -450,7 +457,10 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                   </Link>
                 </td>
                 <td className="p-2.5 text-center align-middle text-[#e2e8f0] font-semibold">
-                  Until 2026/11/13 03:59:59
+                  <div className="flex flex-col items-center gap-1.5">
+                    <span>Until 2026/11/13 03:59:59 JST</span>
+                    <LiveJstCountdown targetIso="2026-11-13T03:59:59+09:00" prefix="Ends in" />
+                  </div>
                 </td>
               </tr>
               <tr>
@@ -468,14 +478,20 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                   </Link>
                 </td>
                 <td className="p-2.5 text-center align-middle text-[#e2e8f0] font-semibold">
-                  Started 2026/11/05 12:00:00
+                  <div className="flex flex-col items-center gap-1.5">
+                    <span>Started 2026/11/05 12:00:00 JST</span>
+                    <LiveJstCountdown startIso="2026-11-05T12:00:00+09:00" />
+                  </div>
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <AppMediaH4>Login Bonus (Held Period: ~Nov 13 [Fri] 04:00)</AppMediaH4>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <AppMediaH4>Login Bonus (Held Period: ~Nov 13 [Fri] 04:00 JST)</AppMediaH4>
+          <LiveJstCountdown targetIso="2026-11-13T04:00:00+09:00" prefix="Reset ends in" />
+        </div>
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
           <table className="w-full border-collapse text-[12px]">
             <thead>

@@ -40,6 +40,11 @@ import {
   buildGuideJsonLd,
   serializeJsonLd,
 } from '../../application/seo.service';
+import {
+  computeCountdownParts,
+  computeElapsedParts,
+  parseUpcomingReleaseIso,
+} from '../../components/micro/LiveJstCountdown';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -228,24 +233,24 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     // 2. Per-item mode (Upcoming Games Calendar): 1 vote per game per IP
     const up1 = castVoteInMemory({
       scope: 'upcoming-games',
-      targetId: 'arknights-endfield',
+      targetId: 'VALORANT Mobile',
       mode: 'per-item',
       ipHash: ipHashA,
     });
     expect(up1.ok).toBe(true);
     expect(up1.alreadyVoted).toBe(false);
-    expect(up1.counts['arknights-endfield']).toBe(1);
+    expect(up1.counts['VALORANT Mobile']).toBe(1);
 
     // Duplicate vote from same IP on same game -> rejected!
     const upDup = castVoteInMemory({
       scope: 'upcoming-games',
-      targetId: 'arknights-endfield',
+      targetId: 'VALORANT Mobile',
       mode: 'per-item',
       ipHash: ipHashA,
     });
     expect(upDup.ok).toBe(false);
     expect(upDup.alreadyVoted).toBe(true);
-    expect(upDup.counts['arknights-endfield']).toBe(1);
+    expect(upDup.counts['VALORANT Mobile']).toBe(1);
 
     // Same IP voting on a DIFFERENT upcoming game -> allowed once!
     const upOtherGame = castVoteInMemory({
@@ -255,17 +260,17 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
       ipHash: ipHashA,
     });
     expect(upOtherGame.ok).toBe(true);
-    expect(upOtherGame.myVotes).toEqual(['arknights-endfield', 'azur-promilia']);
+    expect(upOtherGame.myVotes).toEqual(['VALORANT Mobile', 'azur-promilia']);
 
-    // Different IP voting on arknights-endfield -> allowed!
+    // Different IP voting on VALORANT Mobile -> allowed!
     const upIpB = castVoteInMemory({
       scope: 'upcoming-games',
-      targetId: 'arknights-endfield',
+      targetId: 'VALORANT Mobile',
       mode: 'per-item',
       ipHash: ipHashB,
     });
     expect(upIpB.ok).toBe(true);
-    expect(upIpB.counts['arknights-endfield']).toBe(2);
+    expect(upIpB.counts['VALORANT Mobile']).toBe(2);
 
     // 3. Single-choice mode (Community Poll): 1 vote TOTAL per poll per IP
     const poll1 = castVoteInMemory({
@@ -406,5 +411,25 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(llmsContent).toContain('https://ascalon.gg/starsavior/characters');
     expect(llmsContent).toContain('https://ascalon.gg/starsavior/arcana');
     expect(llmsContent).toContain('https://ascalon.gg/sitemap.xml');
+
+    // 7. Verify JST real-time countdown & upcoming release parser
+    const targetMs = Date.parse('2026-11-13T03:59:59+09:00');
+    const nowMs = Date.parse('2026-11-11T09:00:00+09:00');
+    const cd = computeCountdownParts(targetMs, nowMs);
+    expect(cd.expired).toBe(false);
+    expect(cd.days).toBe(1);
+    expect(cd.hours).toBe(18);
+    expect(cd.minutes).toBe(59);
+    expect(cd.seconds).toBe(59);
+    expect(computeCountdownParts(targetMs, targetMs + 1000).expired).toBe(true);
+
+    const el = computeElapsedParts(Date.parse('2026-11-05T12:00:00+09:00'), nowMs);
+    expect(el.days).toBe(5);
+    expect(el.hours).toBe(21);
+
+    expect(parseUpcomingReleaseIso('Nov 24, 2026', 'Upcoming')).toBe('2026-11-24T00:00:00+09:00');
+    expect(parseUpcomingReleaseIso('Jan 15, 2027', 'Upcoming')).toBe('2027-01-15T00:00:00+09:00');
+    expect(parseUpcomingReleaseIso('Released Nov 6, 2026', 'Released')).toBeNull();
+    expect(parseUpcomingReleaseIso('Spring 2027', 'Upcoming')).toBeNull();
   });
 });

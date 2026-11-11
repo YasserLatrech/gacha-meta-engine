@@ -7,6 +7,7 @@ import {
   AppMediaH2,
   AppMediaH3,
 } from '@/components/micro/AppMediaHeadings';
+import { LiveJstCountdown, parseUpcomingReleaseIso } from '@/components/micro/LiveJstCountdown';
 
 interface AppMediaRecommendedGame {
   readonly id: string;
@@ -750,6 +751,7 @@ export function AscalonHomeMacro() {
               const hasVoted = Boolean(myVotedIds[g.id]);
               const isPending = Boolean(pendingVoteIds[g.id]);
               const totalVotes = g.votes + (serverVoteCounts[g.id] || 0);
+              const launchIso = parseUpcomingReleaseIso(g.releaseDate, g.status);
               return (
                 <div
                   key={g.id}
@@ -777,6 +779,9 @@ export function AscalonHomeMacro() {
                         >
                           {g.status}
                         </span>
+                        {launchIso && (
+                          <LiveJstCountdown targetIso={launchIso} prefix="In" compact />
+                        )}
                       </div>
                       <div className="font-extrabold text-white text-[13px] leading-snug">
                         {g.title}
@@ -832,9 +837,10 @@ export function AscalonHomeMacro() {
                   const hasVoted = Boolean(myVotedIds[g.id]);
                   const isPending = Boolean(pendingVoteIds[g.id]);
                   const totalVotes = g.votes + (serverVoteCounts[g.id] || 0);
+                  const launchIso = parseUpcomingReleaseIso(g.releaseDate, g.status);
                   return (
                     <tr key={g.id} className="hover:bg-[#141d30] transition-colors">
-                      <td className="p-3 border-r border-[#1e293b] space-y-1">
+                      <td className="p-3 border-r border-[#1e293b] space-y-1.5">
                         <div className="font-extrabold text-[#93c5fd] text-[11px]">{g.releaseDate}</div>
                         <span
                           className={`inline-block rounded px-2 py-0.5 text-[10px] font-black ${
@@ -845,6 +851,11 @@ export function AscalonHomeMacro() {
                         >
                           {g.status}
                         </span>
+                        {launchIso && (
+                          <div>
+                            <LiveJstCountdown targetIso={launchIso} prefix="In" compact />
+                          </div>
+                        )}
                       </td>
                       <td className="p-3 border-r border-[#1e293b]">
                         <div className="flex items-center gap-3">

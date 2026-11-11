@@ -22,6 +22,26 @@ import {
   CharacterStatsTableInteractive,
   CommunityBoardWidget,
 } from '../micro/StarSaviorInteractiveTools';
+import { LiveJstCountdown } from '../micro/LiveJstCountdown';
+
+const GUIDE_LIVE_DEADLINES: Record<string, { label: string; targetIso: string }> = {
+  'maid-ceres-gacha': {
+    label: 'Maid Ceres & Grueling Ordeal Banner (~2026/11/13 04:00 JST)',
+    targetIso: '2026-11-13T04:00:00+09:00',
+  },
+  'frey-noble-princess-gacha': {
+    label: 'Frey: Noble Princess & Indomitable Masterpiece Banner (~2026/11/19 04:00 JST)',
+    targetIso: '2026-11-19T04:00:00+09:00',
+  },
+  'valentine-event': {
+    label: 'Valentine Revival Event Period (~2026/11/13 03:59:59 JST)',
+    targetIso: '2026-11-13T03:59:59+09:00',
+  },
+  'which-gacha-to-pull': {
+    label: 'Current Pickup Banner Rotation (~2026/11/13 04:00 JST)',
+    targetIso: '2026-11-13T04:00:00+09:00',
+  },
+};
 
 export function StarSaviorGuideMacro({
   guide,
@@ -51,6 +71,18 @@ export function StarSaviorGuideMacro({
         <h1 className="text-[19px] sm:text-[22px] font-black tracking-tight text-[#f8fafc] leading-snug">
           {guide.title}
         </h1>
+
+        {GUIDE_LIVE_DEADLINES[guide.slug] && (
+          <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#28354e] bg-[#0d1424] px-3 py-2 text-[11.5px]">
+            <span className="font-bold text-[#cbd5e1]">
+              {GUIDE_LIVE_DEADLINES[guide.slug].label}
+            </span>
+            <LiveJstCountdown
+              targetIso={GUIDE_LIVE_DEADLINES[guide.slug].targetIso}
+              prefix="Ends in"
+            />
+          </div>
+        )}
 
         {guide.eyecatchSrc && (
           <AppMediaEyecatchBanner src={guide.eyecatchSrc} alt={guide.title} />
