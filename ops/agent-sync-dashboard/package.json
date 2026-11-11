@@ -1,0 +1,24 @@
+{
+  "name": "ascalon-agent-ops",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Agent-First Upstream Diff Queue & Semantic Sync Control Plane for Ascalon.gg (AppMedia Mirror Intelligence)",
+  "scripts": {
+    "start": "tsx src/presentation/server.ts",
+    "scan": "tsx src/presentation/cli.ts scan",
+    "brief": "tsx src/presentation/cli.ts brief",
+    "queue": "tsx src/presentation/cli.ts queue",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.2.7"
+  }
+}
