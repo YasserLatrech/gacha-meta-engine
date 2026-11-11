@@ -63,3 +63,39 @@ export function parseUpcomingReleaseIso(releaseDate: string, status?: string): s
   const yyyy = m[3];
   return `${yyyy}-${mm}-${dd}T00:00:00+09:00`;
 }
+
+/**
+ * Parses confirmed released dates like "Released Nov 6, 2026" into JST midnight ISO-8601
+ * strings ("2026-11-06T00:00:00+09:00") so Released calendar rows can display a live elapsed timer.
+ */
+export function parseReleasedLaunchIso(releaseDate: string, status?: string): string | null {
+  if (status !== 'Released' && !/^Released\b/i.test(releaseDate)) {
+    return null;
+  }
+  const cleaned = releaseDate.trim().replace(/^Released\s+/i, '');
+  const m = cleaned.match(/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s*(\d{4})$/i);
+  if (!m?.[1] || !m[2] || !m[3]) return null;
+  const mm = MONTH_MAP[m[1].toLowerCase()];
+  if (!mm) return null;
+  const dd = m[2].padStart(2, '0');
+  const yyyy = m[3];
+  return `${yyyy}-${mm}-${dd}T00:00:00+09:00`;
+}
+
+function pad2Digits(n: number): string {
+  return String(n).padStart(2, '0');
+}
+
+/**
+ * Deterministic UTC+9 (Tokyo / JST) wall-clock formatter independent of browser OS timezone.
+ */
+export function formatJstWallClock(nowMs: number): string {
+  const jstDate = new Date(nowMs + 9 * 3_600_000);
+  const yyyy = jstDate.getUTCFullYear();
+  const mm = pad2Digits(jstDate.getUTCMonth() + 1);
+  const dd = pad2Digits(jstDate.getUTCDate());
+  const hh = pad2Digits(jstDate.getUTCHours());
+  const min = pad2Digits(jstDate.getUTCMinutes());
+  const sec = pad2Digits(jstDate.getUTCSeconds());
+  return `${yyyy}/${mm}/${dd} ${hh}:${min}:${sec} JST`;
+}

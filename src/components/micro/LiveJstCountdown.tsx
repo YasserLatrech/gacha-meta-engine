@@ -4,11 +4,20 @@ import React, { useEffect, useState } from 'react';
 import {
   computeCountdownParts,
   computeElapsedParts,
+  formatJstWallClock,
+  parseReleasedLaunchIso,
   parseUpcomingReleaseIso,
   type DurationParts,
 } from '@/domain/jst-time';
 
-export { computeCountdownParts, computeElapsedParts, parseUpcomingReleaseIso, type DurationParts };
+export {
+  computeCountdownParts,
+  computeElapsedParts,
+  formatJstWallClock,
+  parseReleasedLaunchIso,
+  parseUpcomingReleaseIso,
+  type DurationParts,
+};
 
 function pad2(n: number): string {
   return String(n).padStart(2, '0');
@@ -112,7 +121,7 @@ export function LiveJstCountdown({
     const elapsed = computeElapsedParts(startMs, nowMs);
     return (
       <span
-        title={`Campaign Started: ${startIso}`}
+        title={`Campaign / Release Started: ${startIso}`}
         className={`inline-flex items-center gap-1.5 rounded border border-emerald-500/45 bg-emerald-950/45 px-2 py-0.5 font-mono text-[10.5px] font-extrabold tabular-nums text-emerald-200 ${className}`}
       >
         <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400 animate-pulse" />
@@ -124,4 +133,26 @@ export function LiveJstCountdown({
   }
 
   return null;
+}
+
+export function LiveJstWallClock({ className = '' }: { className?: string }) {
+  const [nowMs, setNowMs] = useState<number | null>(null);
+
+  useEffect(() => {
+    setNowMs(Date.now());
+    const id = window.setInterval(() => {
+      setNowMs(Date.now());
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, []);
+
+  return (
+    <span
+      title="Official Japan Standard Time (UTC+9) reference clock for all AppMedia release timers"
+      className={`inline-flex items-center gap-1.5 rounded-md border border-emerald-500/40 bg-[#0b1324] px-2.5 py-1 font-mono text-[11px] font-extrabold tabular-nums text-emerald-300 ${className}`}
+    >
+      <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-pulse" />
+      <span>{nowMs === null ? 'Syncing JST (UTC+9)…' : `${formatJstWallClock(nowMs)} (UTC+9)`}</span>
+    </span>
+  );
 }

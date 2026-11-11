@@ -43,6 +43,8 @@ import {
 import {
   computeCountdownParts,
   computeElapsedParts,
+  formatJstWallClock,
+  parseReleasedLaunchIso,
   parseUpcomingReleaseIso,
 } from '../jst-time';
 import {
@@ -438,6 +440,35 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(parseUpcomingReleaseIso('Jan 15, 2027', 'Upcoming')).toBe('2027-01-15T00:00:00+09:00');
     expect(parseUpcomingReleaseIso('Released Nov 6, 2026', 'Released')).toBeNull();
     expect(parseUpcomingReleaseIso('Spring 2027', 'Upcoming')).toBeNull();
+
+    // 8. Verify Released elapsed parser, JST wall clock, and 100% real Upcoming Calendar chronos
+    expect(parseReleasedLaunchIso('Released Nov 6, 2026', 'Released')).toBe(
+      '2026-11-06T00:00:00+09:00'
+    );
+    expect(parseReleasedLaunchIso('Nov 26, 2026', 'Upcoming')).toBeNull();
+    expect(formatJstWallClock(Date.parse('2026-11-11T02:05:09Z'))).toBe(
+      '2026/11/11 11:05:09 JST'
+    );
+
+    const publicDir = path.resolve(__dirname, '../../../public');
+    let exactUpcomingChronos = 0;
+    let exactReleasedChronos = 0;
+    for (const g of APPMEDIA_HOME_PORTAL_DATA.upcomingGames) {
+      expect(
+        /^(Spring|Summer|Fall|H1)\s+2026$/i.test(g.releaseDate),
+        `Stale past-season 2026 label on ${g.title}: ${g.releaseDate}`
+      ).toBe(false);
+      if (g.iconUrl.startsWith('/')) {
+        expect(
+          fs.existsSync(path.join(publicDir, g.iconUrl)),
+          `Missing upcoming game icon asset: ${g.iconUrl}`
+        ).toBe(true);
+      }
+      if (parseUpcomingReleaseIso(g.releaseDate, g.status)) exactUpcomingChronos++;
+      if (parseReleasedLaunchIso(g.releaseDate, g.status)) exactReleasedChronos++;
+    }
+    expect(exactUpcomingChronos).toBeGreaterThanOrEqual(7);
+    expect(exactReleasedChronos).toBeGreaterThanOrEqual(4);
   });
 
   it('enforces 100% strict Clean Architecture inward dependency rules and zero `any` across src/', () => {

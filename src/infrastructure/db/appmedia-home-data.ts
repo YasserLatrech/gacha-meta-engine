@@ -2,7 +2,7 @@
 // ZERO INVENTED STATISTICS OR FALLBACKS
 
 export const APPMEDIA_HOME_PORTAL_DATA = {
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "strategyWikis": [
     {
       "href": "/starsavior",
@@ -903,7 +903,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
     },
     {
       "id": "アズールプロミリア",
-      "votes": 251,
+      "votes": 253,
       "category": "November 2026",
       "categoryJa": "2026年11月",
       "status": "Upcoming",
@@ -917,7 +917,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
     },
     {
       "id": "初音ミク ぐらふぃコレクション なぞの音楽すい星 Re:Merge",
-      "votes": 6,
+      "votes": 7,
       "category": "November 2026",
       "categoryJa": "2026年11月",
       "status": "Upcoming",
@@ -1001,7 +1001,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
     },
     {
       "id": "白銀の城",
-      "votes": 409,
+      "votes": 411,
       "category": "December 2026",
       "categoryJa": "2026年12月",
       "status": "Upcoming",
@@ -1021,7 +1021,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "status": "Upcoming",
       "releaseDate": "Dec 2026",
       "title": "Slime World: Punitto Adventure Chronicle",
-      "titleJa": "スライムの世界 ぷにっと冒険記",
+      "titleJa": "スライムの世界　ぷにっと冒険記",
       "description": "Casual MMORPG where you capture, raise, and fuse slimes",
       "publisher": "TEAM42",
       "iconUrl": "/banners/home/icons/portal_icon_088.jpg",
@@ -1033,7 +1033,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "category": "Within 2026",
       "categoryJa": "2026年中",
       "status": "Upcoming",
-      "releaseDate": "Spring 2026",
+      "releaseDate": "2026 Planned",
       "title": "Licca-chan Puzzle: Dream Coordinate",
       "titleJa": "リカちゃんパズル ドリームコーディネート",
       "description": "First smartphone dress-up puzzle game featuring Licca-chan",
@@ -1047,7 +1047,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "category": "Within 2026",
       "categoryJa": "2026年中",
       "status": "Upcoming",
-      "releaseDate": "Fall 2026",
+      "releaseDate": "2026 Planned",
       "title": "EGGRYPTO X: Treasure Island Grand Adventure",
       "titleJa": "エグリプト X おたからじまの大冒険",
       "description": "Monster-raising RPG where you train unique creatures",
@@ -1103,7 +1103,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "category": "Within 2026",
       "categoryJa": "2026年中",
       "status": "Upcoming",
-      "releaseDate": "H1 2026",
+      "releaseDate": "2026 Planned",
       "title": "Limit Zero Breakers",
       "titleJa": "リミットゼロ ブレイカーズ",
       "description": "Brand-new cel-shaded animation action RPG by VIC Game Studios & NCSoft",
@@ -1117,7 +1117,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "category": "Within 2026",
       "categoryJa": "2026年中",
       "status": "Upcoming",
-      "releaseDate": "H1 2026",
+      "releaseDate": "2026 Planned",
       "title": "Mashin Hero Wataru: Cool Puzzle Battle!!",
       "titleJa": "魔神英雄伝ワタル パズルでおもしろカッコいいぜ!!",
       "description": "Official game adaptation of Mashin Hero Wataru!",
@@ -1131,7 +1131,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "category": "Within 2026",
       "categoryJa": "2026年中",
       "status": "Upcoming",
-      "releaseDate": "H1 2026",
+      "releaseDate": "2026 Planned",
       "title": "FairyTale Quest",
       "titleJa": "FairyTale Quest（フェアリーテールクエスト）",
       "description": "Roguelite action RPG featuring famous fairy-tale heroes",
@@ -1264,20 +1264,6 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "publisher": "Smilegate",
       "iconUrl": "/banners/home/icons/portal_icon_105.webp",
       "articleUrl": "https://appmedia.jp/newgame/79377278"
-    },
-    {
-      "id": "シャングリラ・フロンティア～七つの最強種～",
-      "votes": 205,
-      "category": "Within 2026",
-      "categoryJa": "2026年中",
-      "status": "Upcoming",
-      "releaseDate": "2026 Planned",
-      "title": "Shangri-La Frontier: The Seven Colossi",
-      "titleJa": "シャングリラ・フロンティア～七つの最強種～",
-      "description": "Official 3D action RPG based on the hit anime Shangri-La Frontier",
-      "publisher": "Netmarble",
-      "iconUrl": "/banners/home/icons/portal_icon_106.webp",
-      "articleUrl": "https://appmedia.jp/newgame/78248537"
     },
     {
       "id": "デジモンアリシオン",
@@ -1602,6 +1588,34 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "articleUrl": "https://appmedia.jp/newgame/80503549"
     },
     {
+      "id": "シャングリラ・フロンティア～七つの最強種～",
+      "votes": 205,
+      "category": "Within 2027",
+      "categoryJa": "2027年中",
+      "status": "Upcoming",
+      "releaseDate": "2027 Planned",
+      "title": "Shangri-La Frontier: The Seven Colossi",
+      "titleJa": "シャングリラ・フロンティア～七つの最強種～",
+      "description": "Official 3D action RPG based on the hit anime Shangri-La Frontier",
+      "publisher": "Netmarble",
+      "iconUrl": "/banners/home/icons/portal_icon_106.webp",
+      "articleUrl": "https://appmedia.jp/newgame/78248537"
+    },
+    {
+      "id": "ドラゴンクエストRPG　魔界樹と導かれし島",
+      "votes": 18,
+      "category": "Within 2027",
+      "categoryJa": "2027年中",
+      "status": "Upcoming",
+      "releaseDate": "2027 Planned",
+      "title": "Dragon Quest RPG: Demon World Tree & Guided Island",
+      "titleJa": "ドラゴンクエストRPG　魔界樹と導かれし島",
+      "description": "Brand-new smartphone command RPG entry in the Dragon Quest franchise",
+      "publisher": "SQUARE ENIX",
+      "iconUrl": "/banners/home/icons/portal_icon_151.webp",
+      "articleUrl": "https://appmedia.jp/newgame/80549512"
+    },
+    {
       "id": "クッキーラン：ニューワールド",
       "votes": 10,
       "category": "Within 2029",
@@ -1631,7 +1645,7 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
     },
     {
       "id": "桃源暗鬼 Crimson Inferno",
-      "votes": 422,
+      "votes": 423,
       "category": "TBA",
       "categoryJa": "未定",
       "status": "Upcoming",
