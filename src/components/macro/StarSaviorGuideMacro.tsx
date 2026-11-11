@@ -1,12 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import type { GameWikiDataset, CharacterEntity, ArcanaEntity } from '../../domain/schemas';
-import {
-  type StarSaviorGuideArticle,
-  APPMEDIA_PVP_TIER_GROUPS,
-  APPMEDIA_SR_CHAR_GROUPS,
-  APPMEDIA_SR_ARCANA_GROUPS,
-} from '../../infrastructure/db/starsavior-guides-data';
+import type {
+  GameWikiDataset,
+  CharacterEntity,
+  ArcanaEntity,
+  StarSaviorGuideArticle,
+  StarSaviorRankingGroups,
+} from '../../domain/schemas';
 import {
   AppMediaH2,
   AppMediaH3,
@@ -46,9 +46,11 @@ const GUIDE_LIVE_DEADLINES: Record<string, { label: string; targetIso: string }>
 export function StarSaviorGuideMacro({
   guide,
   dataset,
+  rankingGroups,
 }: {
   guide: StarSaviorGuideArticle;
   dataset: GameWikiDataset;
+  rankingGroups: StarSaviorRankingGroups;
 }) {
   const charBySlug = new Map<string, CharacterEntity>(
     dataset.characters.map((c) => [c.slug, c])
@@ -114,7 +116,7 @@ export function StarSaviorGuideMacro({
           <div className="overflow-hidden rounded border border-[#263450] bg-[#0f1626]">
             <table className="w-full border-collapse">
               <tbody>
-                {APPMEDIA_PVP_TIER_GROUPS.map((group) => {
+                {rankingGroups.pvpGroups.map((group) => {
                   const units = group.slugs
                     .map((s) => charBySlug.get(s))
                     .filter((u): u is CharacterEntity => Boolean(u));
@@ -156,7 +158,7 @@ export function StarSaviorGuideMacro({
           <div className="overflow-hidden rounded border border-[#263450] bg-[#0f1626]">
             <table className="w-full border-collapse">
               <tbody>
-                {APPMEDIA_SR_CHAR_GROUPS.map((group) => {
+                {rankingGroups.srCharGroups.map((group) => {
                   const units = group.slugs
                     .map((s) => charBySlug.get(s))
                     .filter((u): u is CharacterEntity => Boolean(u));
@@ -198,7 +200,7 @@ export function StarSaviorGuideMacro({
           <div className="overflow-hidden rounded border border-[#263450] bg-[#0f1626]">
             <table className="w-full border-collapse">
               <tbody>
-                {APPMEDIA_SR_ARCANA_GROUPS.map((group) => {
+                {rankingGroups.srArcanaGroups.map((group) => {
                   const cards = group.slugs
                     .map((s) => arcanaBySlug.get(s))
                     .filter((a): a is ArcanaEntity => Boolean(a));

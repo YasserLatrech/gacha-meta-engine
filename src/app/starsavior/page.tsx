@@ -1,12 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { getStarSaviorDataset } from '@/application/wiki.service';
+import { getStarSaviorDataset } from '@/di/container';
 import { buildPageMetadata, buildStarSaviorPortalJsonLd } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { StarSaviorTopMacro } from '@/components/macro/StarSaviorTopMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 export const metadata: Metadata = buildPageMetadata({
   title: 'Star Savior Wiki — Tier List, Reroll, Saviors & Arcana',

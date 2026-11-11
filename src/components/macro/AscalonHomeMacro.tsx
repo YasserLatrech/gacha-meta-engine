@@ -2,34 +2,16 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
-import { APPMEDIA_HOME_PORTAL_DATA } from '@/infrastructure/db/appmedia-home-data';
+import type {
+  HomePortalData,
+  HomeRecommendedGame,
+  HomeFeaturedArticle,
+} from '@/domain/schemas';
 import {
   AppMediaH2,
   AppMediaH3,
 } from '@/components/micro/AppMediaHeadings';
 import { LiveJstCountdown, parseUpcomingReleaseIso } from '@/components/micro/LiveJstCountdown';
-
-interface AppMediaRecommendedGame {
-  readonly id: string;
-  readonly rank: number;
-  readonly title: string;
-  readonly titleJa: string;
-  readonly iconUrl: string;
-  readonly evaluation: string;
-  readonly genre: string;
-  readonly releaseDate: string;
-  readonly outline: string;
-  readonly points: readonly string[];
-  readonly iosUrl?: string;
-  readonly androidUrl?: string;
-}
-
-interface AppMediaFeaturedArticle {
-  readonly title: string;
-  readonly titleJa: string;
-  readonly url: string;
-  readonly thumbUrl: string;
-}
 
 const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; keyPoints: string[]; targetRoute: string }> = {
   '/banners/home/en_home_01.webp': {
@@ -210,7 +192,7 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
   },
 };
 
-export function AscalonHomeMacro() {
+export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData }) {
   const {
     updatedAt,
     strategyWikis,
@@ -219,7 +201,7 @@ export function AscalonHomeMacro() {
     appStoreFreeRanking,
     appStoreSalesRanking,
     featuredArticles,
-  } = APPMEDIA_HOME_PORTAL_DATA;
+  } = portalData;
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedEval, setSelectedEval] = useState<'ALL' | '5' | '4.5'>('ALL');
@@ -235,8 +217,8 @@ export function AscalonHomeMacro() {
   const [serverVoteCounts, setServerVoteCounts] = useState<Record<string, number>>({});
   const [myVotedIds, setMyVotedIds] = useState<Record<string, boolean>>({});
   const [pendingVoteIds, setPendingVoteIds] = useState<Record<string, boolean>>({});
-  const [activeArticle, setActiveArticle] = useState<AppMediaFeaturedArticle | null>(null);
-  const [activeGameReview, setActiveGameReview] = useState<AppMediaRecommendedGame | null>(null);
+  const [activeArticle, setActiveArticle] = useState<HomeFeaturedArticle | null>(null);
+  const [activeGameReview, setActiveGameReview] = useState<HomeRecommendedGame | null>(null);
 
   useEffect(() => {
     let cancelled = false;

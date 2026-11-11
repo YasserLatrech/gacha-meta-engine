@@ -1,12 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { getStarSaviorDataset } from '@/application/wiki.service';
+import { getStarSaviorDataset } from '@/di/container';
 import { buildPageMetadata, buildStarSaviorHubJsonLd } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { RerollTierListMacro } from '@/components/macro/RerollTierListMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 const PAGE_TITLE = 'Star Savior Reroll Tier List — Best Starting SSRs & Guide';
 const PAGE_DESC =

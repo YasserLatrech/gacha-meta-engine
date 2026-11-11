@@ -394,3 +394,231 @@ export interface GameWikiDataset {
   arcana: ArcanaEntity[];
   banners: BannerEntity[];
 }
+
+/* ============================================================================
+ * Guide, Ranking & Community Board Domain Types & Schemas
+ * ============================================================================ */
+export const SeedBoardPostSchema = z.object({
+  author: z.string().trim().min(1).max(60),
+  tag: z.string().trim().min(1).max(60),
+  timestamp: z.string().trim().min(1).max(40),
+  body: z.string().trim().min(1).max(600),
+});
+export type SeedBoardPost = z.infer<typeof SeedBoardPostSchema>;
+
+export interface GuideTableSpec {
+  headers: string[];
+  rows: string[][];
+}
+
+export interface GuideSection {
+  id: string;
+  heading: string;
+  subHeading?: string;
+  paragraphs: string[];
+  bullets?: string[];
+  table?: GuideTableSpec;
+  featuredCharSlugs?: string[];
+  featuredArcanaSlugs?: string[];
+}
+
+export type StarSaviorGuideCategory =
+  | 'Rankings'
+  | 'Tools'
+  | 'Gacha'
+  | 'Events'
+  | 'Rescue Journey'
+  | 'Operations'
+  | 'Cube Palace'
+  | 'Strategy'
+  | 'Mechanics'
+  | 'Beginner & Systems'
+  | 'Database'
+  | 'Community';
+
+export type StarSaviorGuideSpecialKind =
+  | 'pvp-ranking'
+  | 'sr-char-ranking'
+  | 'sr-arcana-ranking'
+  | 'char-tier-maker'
+  | 'arcana-tier-maker'
+  | 'event-checker'
+  | 'char-stats-table'
+  | 'voice-actors-db'
+  | 'birthday-db'
+  | 'ark-points-db'
+  | 'skins-db'
+  | 'community-board';
+
+export interface StarSaviorGuideArticle {
+  slug: string;
+  title: string;
+  category: StarSaviorGuideCategory;
+  updatedAt: string;
+  eyecatchSrc?: string;
+  buttonBannerSrc?: string;
+  lead: string;
+  specialKind?: StarSaviorGuideSpecialKind;
+  boardSeedPosts?: SeedBoardPost[];
+  sections: GuideSection[];
+}
+
+export type ExtendedTierRank = 'SSS' | 'SS' | 'S' | 'A' | 'B' | 'C';
+
+export interface RankingTierGroup {
+  tier: ExtendedTierRank;
+  subLabel: string;
+  slugs: string[];
+}
+
+export interface StarSaviorRankingGroups {
+  pvpGroups: ReadonlyArray<RankingTierGroup>;
+  srCharGroups: ReadonlyArray<RankingTierGroup>;
+  srArcanaGroups: ReadonlyArray<RankingTierGroup>;
+}
+
+/* ============================================================================
+ * Home Portal Domain Types
+ * ============================================================================ */
+export interface HomeStrategyWiki {
+  readonly href: string;
+  readonly title: string;
+  readonly titleJa: string;
+  readonly iconUrl: string;
+  readonly platform: string;
+  readonly isInternal: boolean;
+}
+
+export interface HomeRecommendedGame {
+  readonly id: string;
+  readonly rank: number;
+  readonly title: string;
+  readonly titleJa: string;
+  readonly iconUrl: string;
+  readonly bannerUrl?: string;
+  readonly evaluation: string;
+  readonly genre: string;
+  readonly releaseDate: string;
+  readonly outline: string;
+  readonly points: readonly string[];
+  readonly iosUrl?: string;
+  readonly androidUrl?: string;
+}
+
+export interface HomeUpcomingGame {
+  readonly id: string;
+  readonly votes: number;
+  readonly category: string;
+  readonly categoryJa: string;
+  readonly status: string;
+  readonly releaseDate: string;
+  readonly title: string;
+  readonly titleJa: string;
+  readonly description: string;
+  readonly publisher: string;
+  readonly iconUrl: string;
+  readonly articleUrl: string;
+}
+
+export interface HomeAppStoreRankItem {
+  readonly rank: number;
+  readonly title: string;
+  readonly titleJa: string;
+  readonly iconUrl: string;
+  readonly storeUrl: string;
+}
+
+export interface HomeFeaturedArticle {
+  readonly url: string;
+  readonly thumbUrl: string;
+  readonly title: string;
+  readonly titleJa: string;
+}
+
+export interface HomePortalData {
+  readonly updatedAt: string;
+  readonly strategyWikis: readonly HomeStrategyWiki[];
+  readonly recommendedRanking: readonly HomeRecommendedGame[];
+  readonly upcomingGames: readonly HomeUpcomingGame[];
+  readonly appStoreFreeRanking: readonly HomeAppStoreRankItem[];
+  readonly appStoreSalesRanking: readonly HomeAppStoreRankItem[];
+  readonly featuredArticles: readonly HomeFeaturedArticle[];
+}
+
+/* ============================================================================
+ * Vote & Revalidation Boundary DTO Schemas
+ * ============================================================================ */
+export const VoteScopeSchema = z
+  .string()
+  .trim()
+  .min(2)
+  .max(100)
+  .regex(/^[a-z0-9:._-]+$/i, 'Invalid vote scope format');
+
+export const VoteTargetSchema = z
+  .string()
+  .trim()
+  .min(1)
+  .max(200)
+  .refine((val) => !/[\u0000-\u001f\u007f]/.test(val), 'Invalid control characters in targetId');
+
+export const VoteModeSchema = z.enum(['per-item', 'single-choice']);
+export type VoteMode = z.infer<typeof VoteModeSchema>;
+
+export const CastVoteBodySchema = z
+  .object({
+    scope: VoteScopeSchema,
+    targetId: VoteTargetSchema,
+    mode: VoteModeSchema.default('per-item'),
+  })
+  .strict();
+export type CastVoteBody = z.infer<typeof CastVoteBodySchema>;
+
+export interface VotesSnapshot {
+  counts: Record<string, number>;
+  myVotes: string[];
+}
+
+export interface CastVoteResult extends VotesSnapshot {
+  ok: boolean;
+  alreadyVoted: boolean;
+}
+
+export const RevalidateBodySchema = z
+  .object({
+    tag: z
+      .string()
+      .trim()
+      .min(1)
+      .max(80)
+      .regex(/^[a-z0-9:_-]+$/i, 'Invalid cache tag')
+      .optional(),
+    path: z
+      .string()
+      .trim()
+      .min(1)
+      .max(200)
+      .regex(/^\/[a-z0-9/_-]*$/i, 'Invalid path')
+      .optional(),
+  })
+  .strict();
+export type RevalidateBody = z.infer<typeof RevalidateBodySchema>;
+
+/* ============================================================================
+ * Standardized Error Hierarchy & API Response Envelope
+ * ============================================================================ */
+export type ApiResponse<T> =
+  | { success: true; data: T; meta?: Record<string, unknown> }
+  | { success: false; error: { message: string; code: string; details?: unknown } };
+
+export class AppError extends Error {
+  constructor(
+    public override readonly message: string,
+    public readonly statusCode: number = 500,
+    public readonly code: string = 'INTERNAL_ERROR',
+    public readonly isOperational: boolean = true
+  ) {
+    super(message);
+    Object.setPrototypeOf(this, new.target.prototype);
+  }
+}

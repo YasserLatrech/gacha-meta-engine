@@ -44,7 +44,14 @@ import {
   computeCountdownParts,
   computeElapsedParts,
   parseUpcomingReleaseIso,
-} from '../../components/micro/LiveJstCountdown';
+} from '../jst-time';
+import {
+  BoundedSlidingWindowLimiter,
+  readBoundedJsonBody,
+  sanitizeJsonPayload,
+  timingSafeVerifyBearerSecret,
+} from '../../application/security.service';
+import { RevalidateBodySchema } from '../schemas';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -431,5 +438,221 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(parseUpcomingReleaseIso('Jan 15, 2027', 'Upcoming')).toBe('2027-01-15T00:00:00+09:00');
     expect(parseUpcomingReleaseIso('Released Nov 6, 2026', 'Released')).toBeNull();
     expect(parseUpcomingReleaseIso('Spring 2027', 'Upcoming')).toBeNull();
+  });
+
+  it('enforces 100% strict Clean Architecture inward dependency rules and zero `any` across src/', () => {
+    const srcRoot = path.resolve(__dirname, '../..');
+
+    function collectSourceFiles(dir: string): string[] {
+      const results: string[] = [];
+      for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+        const full = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+          results.push(...collectSourceFiles(full));
+        } else if (/\.(ts|tsx)$/.test(entry.name)) {
+          results.push(full);
+        }
+      }
+      return results;
+    }
+
+    function resolveTargetLayer(fromFileRel: string, specifier: string): string | null {
+      if (specifier.startsWith('@/')) {
+        const rest = specifier.slice(2);
+        return rest.split('/')[0] ?? null;
+      }
+      if (specifier.startsWith('.')) {
+        const resolved = path.posix.normalize(
+          path.posix.join(path.posix.dirname(fromFileRel), specifier)
+        );
+        return resolved.split('/')[0] ?? null;
+      }
+      return null;
+    }
+
+    const allFiles = collectSourceFiles(srcRoot);
+    expect(allFiles.length).toBeGreaterThanOrEqual(40);
+
+    const anyViolations: string[] = [];
+    const layerViolations: string[] = [];
+    const unsafeBlankAnchors: string[] = [];
+
+    const allowedInternalLayers: Record<string, ReadonlySet<string>> = {
+      domain: new Set(['domain']),
+      application: new Set(['domain', 'application']),
+      infrastructure: new Set(['domain', 'infrastructure']),
+      di: new Set(['domain', 'application', 'infrastructure', 'di']),
+      components: new Set(['domain', 'application', 'components']),
+      app: new Set(['domain', 'application', 'di', 'components', 'app']),
+    };
+
+    const forbiddenExternalPackages: Record<string, ReadonlyArray<string>> = {
+      domain: ['next', 'react', 'drizzle-orm', '@neondatabase/serverless'],
+      application: ['drizzle-orm', '@neondatabase/serverless'],
+      infrastructure: ['next', 'react'],
+      components: ['drizzle-orm', '@neondatabase/serverless'],
+      app: ['drizzle-orm', '@neondatabase/serverless'],
+    };
+
+    for (const filePath of allFiles) {
+      const rel = path.relative(srcRoot, filePath).replace(/\\/g, '/');
+      const raw = fs.readFileSync(filePath, 'utf8');
+
+      // Strip single-line and block comments before checking for TypeScript `any`
+      const codeWithoutComments = raw
+        .replace(/\/\*[\s\S]*?\*\//g, '')
+        .replace(/^\s*\/\/.*$/gm, '');
+
+      const anyPattern = /(?::\s*any\b|\bas\s+any\b|<\s*any\s*>|\bany\s*\[\])/g;
+      if (!rel.includes('__tests__/') && anyPattern.test(codeWithoutComments)) {
+        anyViolations.push(rel);
+      }
+
+      // Check target="_blank" rel="noopener" safety
+      const anchorRe = /<a\b[^>]*target=["']_blank["'][^>]*>/g;
+      let anchorMatch: RegExpExecArray | null;
+      while ((anchorMatch = anchorRe.exec(raw)) !== null) {
+        if (!/rel=["'][^"']*noopener/i.test(anchorMatch[0])) {
+          unsafeBlankAnchors.push(`${rel}: ${anchorMatch[0]}`);
+        }
+      }
+
+      if (rel.includes('__tests__/')) continue;
+
+      const sourceLayer = rel.split('/')[0] ?? '';
+      const allowedSet = allowedInternalLayers[sourceLayer];
+      expect(allowedSet, `Unknown top-level layer folder in src/: ${sourceLayer}`).toBeDefined();
+
+      const importRe = /(?:import|export)\s+(?:type\s+)?(?:[\s\S]*?\s+from\s+)?['"]([^'"]+)['"]/g;
+      let impMatch: RegExpExecArray | null;
+      while ((impMatch = importRe.exec(codeWithoutComments)) !== null) {
+        const spec = impMatch[1] ?? '';
+        const targetLayer = resolveTargetLayer(rel, spec);
+
+        if (targetLayer) {
+          if (!allowedSet?.has(targetLayer)) {
+            layerViolations.push(`${rel} (${sourceLayer}) -> forbidden import '${spec}' (${targetLayer})`);
+          }
+        } else {
+          const bannedPkgs = forbiddenExternalPackages[sourceLayer] ?? [];
+          for (const pkg of bannedPkgs) {
+            if (spec === pkg || spec.startsWith(`${pkg}/`)) {
+              layerViolations.push(`${rel} (${sourceLayer}) -> forbidden framework/driver '${spec}'`);
+            }
+          }
+        }
+      }
+    }
+
+    expect(anyViolations).toEqual([]);
+    expect(layerViolations).toEqual([]);
+    expect(unsafeBlankAnchors).toEqual([]);
+  });
+
+  it('enforces security hardening: fail-closed timing-safe secrets, bounded rate limiters, stream size caps, and prototype-pollution sanitization', async () => {
+    // 1. Fail-closed when REVALIDATE_SECRET is missing or shorter than 16 chars
+    expect(timingSafeVerifyBearerSecret('Bearer some-token-1234567890', undefined)).toEqual({
+      ok: false,
+      status: 503,
+      code: 'REVALIDATE_NOT_CONFIGURED',
+      message: expect.any(String),
+    });
+    expect(timingSafeVerifyBearerSecret('Bearer short', 'too-short')).toMatchObject({
+      ok: false,
+      status: 503,
+      code: 'REVALIDATE_NOT_CONFIGURED',
+    });
+    expect(
+      timingSafeVerifyBearerSecret(
+        'Bearer starsavior-revalidate-secret-2026',
+        'starsavior-revalidate-secret-2026'
+      )
+    ).toMatchObject({
+      ok: false,
+      status: 503,
+      code: 'REVALIDATE_NOT_CONFIGURED',
+    });
+
+    // 2. Rejects missing, malformed, or wrong Bearer tokens; accepts exact constant-time match
+    const strongSecret = 'prod-revalidate-secret-9f8e7d6c5b4a3210';
+    expect(timingSafeVerifyBearerSecret(null, strongSecret)).toMatchObject({
+      ok: false,
+      status: 401,
+      code: 'UNAUTHORIZED',
+    });
+    expect(timingSafeVerifyBearerSecret('Basic abcdef', strongSecret)).toMatchObject({
+      ok: false,
+      status: 401,
+      code: 'UNAUTHORIZED',
+    });
+    expect(timingSafeVerifyBearerSecret('Bearer wrong-secret', strongSecret)).toMatchObject({
+      ok: false,
+      status: 401,
+      code: 'UNAUTHORIZED',
+    });
+    expect(timingSafeVerifyBearerSecret(`Bearer ${strongSecret}`, strongSecret)).toEqual({
+      ok: true,
+    });
+
+    // 3. BoundedSlidingWindowLimiter resists high-cardinality IP flood without OOM
+    const boundedLimiter = new BoundedSlidingWindowLimiter(3, 60_000, 25);
+    for (let i = 0; i < 250; i++) {
+      expect(boundedLimiter.check(`botnet-ip-${i}`, 10_000 + i).allowed).toBe(true);
+      expect(boundedLimiter.size).toBeLessThanOrEqual(25);
+    }
+
+    // 4. Prototype-pollution key stripping
+    const maliciousRaw = JSON.parse(
+      '{"scope":"upcoming-games","targetId":"azur-promilia","__proto__":{"polluted":true},"constructor":{"prototype":{"pwned":true}}}'
+    ) as unknown;
+    const sanitized = sanitizeJsonPayload(maliciousRaw) as Record<string, unknown>;
+    expect(Object.prototype.hasOwnProperty.call(sanitized, '__proto__')).toBe(false);
+    expect(Object.prototype.hasOwnProperty.call(sanitized, 'constructor')).toBe(false);
+    expect(({} as Record<string, unknown>)['polluted']).toBeUndefined();
+
+    // 5. Bounded JSON stream reader rejects oversized chunked payloads (413) & non-JSON media types (415)
+    const oversizedReq = new Request('https://ascalon.gg/api/votes', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ scope: 'upcoming-games', targetId: 'x'.repeat(5000) }),
+    });
+    const oversizedRes = await readBoundedJsonBody(oversizedReq, { maxBytes: 2048 });
+    expect(oversizedRes).toMatchObject({
+      ok: false,
+      status: 413,
+      code: 'PAYLOAD_TOO_LARGE',
+    });
+
+    const wrongTypeReq = new Request('https://ascalon.gg/api/votes', {
+      method: 'POST',
+      headers: { 'content-type': 'text/plain' },
+      body: '{"scope":"upcoming-games","targetId":"azur-promilia"}',
+    });
+    const wrongTypeRes = await readBoundedJsonBody(wrongTypeReq, { maxBytes: 2048 });
+    expect(wrongTypeRes).toMatchObject({
+      ok: false,
+      status: 415,
+      code: 'UNSUPPORTED_MEDIA_TYPE',
+    });
+
+    // 6. Strict DTO schemas reject unknown extra properties
+    expect(
+      CastVoteBodySchema.safeParse({
+        scope: 'upcoming-games',
+        targetId: 'azur-promilia',
+        extraInjectedField: 'nope',
+      }).success
+    ).toBe(false);
+    expect(
+      RevalidateBodySchema.safeParse({
+        tag: 'starsavior-wiki',
+        path: '/starsavior',
+      }).success
+    ).toBe(true);
+    expect(
+      RevalidateBodySchema.safeParse({
+        path: 'javascript:alert(1)',
+      }).success
+    ).toBe(false);
   });
 });
