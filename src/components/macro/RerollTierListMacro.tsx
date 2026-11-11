@@ -2,15 +2,13 @@
 
 import React, { useMemo } from 'react';
 import Link from 'next/link';
-import type { GameWikiDataset, CharacterEntity } from '@/domain/schemas';
+import type { GameWikiDataset } from '@/domain/schemas';
 import {
   AppMediaH2,
   AppMediaH3,
   AppMediaH4,
   AppMediaEyecatchBanner,
   AppMediaRankIcon,
-  AppMediaTierBadge,
-  AppMediaTableLink,
   AppMediaIconCell,
   TIER_COLOR_STYLES,
 } from '@/components/micro/AppMediaHeadings';

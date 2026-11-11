@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
-import type { CharacterEntity, ArcanaEntity } from '@/domain/schemas';
-import type { StarSaviorGuideArticle } from '@/infrastructure/db/starsavior-guides-data';
+import type {
+  CharacterEntity,
+  ArcanaEntity,
+  StarSaviorGuideArticle,
+} from '@/domain/schemas';
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.gg').replace(
   /\/$/,

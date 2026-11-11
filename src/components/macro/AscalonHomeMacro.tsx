@@ -2,34 +2,21 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
-import { APPMEDIA_HOME_PORTAL_DATA } from '@/infrastructure/db/appmedia-home-data';
+import type {
+  HomePortalData,
+  HomeRecommendedGame,
+  HomeFeaturedArticle,
+} from '@/domain/schemas';
 import {
   AppMediaH2,
   AppMediaH3,
 } from '@/components/micro/AppMediaHeadings';
-import { LiveJstCountdown, parseUpcomingReleaseIso } from '@/components/micro/LiveJstCountdown';
-
-interface AppMediaRecommendedGame {
-  readonly id: string;
-  readonly rank: number;
-  readonly title: string;
-  readonly titleJa: string;
-  readonly iconUrl: string;
-  readonly evaluation: string;
-  readonly genre: string;
-  readonly releaseDate: string;
-  readonly outline: string;
-  readonly points: readonly string[];
-  readonly iosUrl?: string;
-  readonly androidUrl?: string;
-}
-
-interface AppMediaFeaturedArticle {
-  readonly title: string;
-  readonly titleJa: string;
-  readonly url: string;
-  readonly thumbUrl: string;
-}
+import {
+  LiveJstCountdown,
+  LiveJstWallClock,
+  parseReleasedLaunchIso,
+  parseUpcomingReleaseIso,
+} from '@/components/micro/LiveJstCountdown';
 
 const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; keyPoints: string[]; targetRoute: string }> = {
   '/banners/home/en_home_01.webp': {
@@ -210,7 +197,7 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
   },
 };
 
-export function AscalonHomeMacro() {
+export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData }) {
   const {
     updatedAt,
     strategyWikis,
@@ -219,14 +206,14 @@ export function AscalonHomeMacro() {
     appStoreFreeRanking,
     appStoreSalesRanking,
     featuredArticles,
-  } = APPMEDIA_HOME_PORTAL_DATA;
+  } = portalData;
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedEval, setSelectedEval] = useState<'ALL' | '5' | '4.5'>('ALL');
   const [showAllRanked, setShowAllRanked] = useState(false);
 
   const [selectedWindow, setSelectedWindow] = useState<string>('ALL');
-  const [sortUpcomingBy, setSortUpcomingBy] = useState<'schedule' | 'votes'>('votes');
+  const [sortUpcomingBy, setSortUpcomingBy] = useState<'schedule' | 'votes' | 'chronos'>('votes');
   const [showAllUpcoming, setShowAllUpcoming] = useState(false);
 
   const [selectedPlatform, setSelectedPlatform] = useState<'ALL' | 'Mobile App' | 'Console / PC'>('ALL');
@@ -235,8 +222,8 @@ export function AscalonHomeMacro() {
   const [serverVoteCounts, setServerVoteCounts] = useState<Record<string, number>>({});
   const [myVotedIds, setMyVotedIds] = useState<Record<string, boolean>>({});
   const [pendingVoteIds, setPendingVoteIds] = useState<Record<string, boolean>>({});
-  const [activeArticle, setActiveArticle] = useState<AppMediaFeaturedArticle | null>(null);
-  const [activeGameReview, setActiveGameReview] = useState<AppMediaRecommendedGame | null>(null);
+  const [activeArticle, setActiveArticle] = useState<HomeFeaturedArticle | null>(null);
+  const [activeGameReview, setActiveGameReview] = useState<HomeRecommendedGame | null>(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -351,12 +338,29 @@ export function AscalonHomeMacro() {
     'January 2027',
     'February 2027',
     'Within 2027',
+    'Within 2029',
     'TBA',
   ];
+
+  const liveChronoCount = useMemo(
+    () =>
+      upcomingGames.filter(
+        (g) =>
+          Boolean(parseUpcomingReleaseIso(g.releaseDate, g.status)) ||
+          Boolean(parseReleasedLaunchIso(g.releaseDate, g.status))
+      ).length,
+    [upcomingGames]
+  );
 
   const filteredUpcoming = useMemo(() => {
     const list = upcomingGames.filter((g) => {
       if (selectedWindow !== 'ALL' && g.category !== selectedWindow) return false;
+      if (sortUpcomingBy === 'chronos') {
+        const hasExactChrono =
+          Boolean(parseUpcomingReleaseIso(g.releaseDate, g.status)) ||
+          Boolean(parseReleasedLaunchIso(g.releaseDate, g.status));
+        if (!hasExactChrono) return false;
+      }
       if (searchQuery.trim() !== '') {
         const q = searchQuery.toLowerCase();
         const matchTitle = g.title.toLowerCase().includes(q) || g.titleJa.toLowerCase().includes(q);
@@ -366,6 +370,20 @@ export function AscalonHomeMacro() {
       }
       return true;
     });
+
+    if (sortUpcomingBy === 'chronos') {
+      return [...list].sort((a, b) => {
+        const aUp = parseUpcomingReleaseIso(a.releaseDate, a.status);
+        const bUp = parseUpcomingReleaseIso(b.releaseDate, b.status);
+        if (aUp && bUp) return Date.parse(aUp) - Date.parse(bUp);
+        if (aUp && !bUp) return -1;
+        if (!aUp && bUp) return 1;
+        const aRel = parseReleasedLaunchIso(a.releaseDate, a.status);
+        const bRel = parseReleasedLaunchIso(b.releaseDate, b.status);
+        if (aRel && bRel) return Date.parse(bRel) - Date.parse(aRel);
+        return 0;
+      });
+    }
 
     if (sortUpcomingBy === 'votes') {
       return [...list].sort(
@@ -696,26 +714,38 @@ export function AscalonHomeMacro() {
               Upcoming Gacha & Mobile Game Release Calendar (With Reader Votes)
             </AppMediaH2>
 
-            <div className="flex items-center gap-1.5 text-[11px] font-extrabold">
+            <div className="flex flex-wrap items-center gap-1.5 text-[11px] font-extrabold">
               <span className="text-[#94a3b8]">Sort by:</span>
               <button
                 type="button"
                 onClick={() => setSortUpcomingBy('votes')}
-                className={`rounded px-2.5 py-1 ${
+                className={`rounded px-2.5 py-1 transition-colors ${
                   sortUpcomingBy === 'votes'
                     ? 'bg-[#2563eb] text-white'
-                    : 'bg-[#161f33] text-[#cbd5e1]'
+                    : 'bg-[#161f33] text-[#cbd5e1] hover:text-white'
                 }`}
               >
                 Reader Votes
               </button>
               <button
                 type="button"
+                onClick={() => setSortUpcomingBy('chronos')}
+                className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 transition-colors ${
+                  sortUpcomingBy === 'chronos'
+                    ? 'bg-[#2563eb] text-white'
+                    : 'bg-[#161f33] text-[#93c5fd] border border-[#3b82f6]/40 hover:text-white'
+                }`}
+              >
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>Live Chronos ({liveChronoCount})</span>
+              </button>
+              <button
+                type="button"
                 onClick={() => setSortUpcomingBy('schedule')}
-                className={`rounded px-2.5 py-1 ${
+                className={`rounded px-2.5 py-1 transition-colors ${
                   sortUpcomingBy === 'schedule'
                     ? 'bg-[#2563eb] text-white'
-                    : 'bg-[#161f33] text-[#cbd5e1]'
+                    : 'bg-[#161f33] text-[#cbd5e1] hover:text-white'
                 }`}
               >
                 Release Schedule
@@ -723,9 +753,12 @@ export function AscalonHomeMacro() {
             </div>
           </div>
 
-          <p className="text-[12px] text-[#cbd5e1]">
-            Complete release schedule for upcoming mobile and cross-platform gacha RPGs, including expected launch windows, publishers, and interactive reader expectation votes (<strong className="text-[#93c5fd]">1 vote per game per IP address</strong>).
-          </p>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 rounded-lg border border-[#1e293b] bg-[#0b101b] px-3 py-2">
+            <p className="text-[12px] text-[#cbd5e1]">
+              Verified AppMedia release schedule for upcoming mobile &amp; cross-platform gacha RPGs, synchronized to Japan Standard Time (<strong className="text-[#93c5fd]">1 vote per game per IP</strong> · exact timers strictly for publisher-confirmed dates).
+            </p>
+            <LiveJstWallClock className="shrink-0 self-start sm:self-auto" />
+          </div>
 
           {/* Release Window Filter Bar */}
           <div className="flex flex-wrap items-center gap-1.5 rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
@@ -752,6 +785,7 @@ export function AscalonHomeMacro() {
               const isPending = Boolean(pendingVoteIds[g.id]);
               const totalVotes = g.votes + (serverVoteCounts[g.id] || 0);
               const launchIso = parseUpcomingReleaseIso(g.releaseDate, g.status);
+              const releasedIso = parseReleasedLaunchIso(g.releaseDate, g.status);
               return (
                 <div
                   key={g.id}
@@ -779,15 +813,30 @@ export function AscalonHomeMacro() {
                         >
                           {g.status}
                         </span>
-                        {launchIso && (
-                          <LiveJstCountdown targetIso={launchIso} prefix="In" compact />
+                        {launchIso ? (
+                          <LiveJstCountdown targetIso={launchIso} prefix="In" />
+                        ) : releasedIso ? (
+                          <LiveJstCountdown startIso={releasedIso} />
+                        ) : (
+                          <span className="inline-flex items-center rounded border border-[#243049] bg-[#0b101b] px-1.5 py-0.5 font-mono text-[9.5px] font-bold text-[#64748b]">
+                            Exact Day TBA
+                          </span>
                         )}
                       </div>
                       <div className="font-extrabold text-white text-[13px] leading-snug">
                         {g.title}
                       </div>
-                      <div className="text-[10px] font-bold text-[#94a3b8]">
-                        Publisher: {g.publisher || 'TBA'}
+                      <div className="flex flex-wrap items-center gap-2 text-[10px] font-bold text-[#94a3b8]">
+                        <span>Publisher: {g.publisher || 'TBA'}</span>
+                        <span>·</span>
+                        <a
+                          href={g.articleUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#60a5fa] hover:underline"
+                        >
+                          AppMedia Source ↗
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -826,7 +875,7 @@ export function AscalonHomeMacro() {
             <table className="w-full border-collapse text-left text-[12px]">
               <thead>
                 <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
-                  <th className="w-40 px-3.5 py-2.5 border-r border-[#243049]">Release Window / Status</th>
+                  <th className="w-52 px-3.5 py-2.5 border-r border-[#243049]">Release Window / Live JST Chrono</th>
                   <th className="px-3.5 py-2.5 border-r border-[#243049]">Upcoming Game & Description</th>
                   <th className="w-44 px-3.5 py-2.5 border-r border-[#243049]">Developer / Publisher</th>
                   <th className="w-36 px-3 py-2.5 text-center">Reader Votes (1/IP)</th>
@@ -838,24 +887,33 @@ export function AscalonHomeMacro() {
                   const isPending = Boolean(pendingVoteIds[g.id]);
                   const totalVotes = g.votes + (serverVoteCounts[g.id] || 0);
                   const launchIso = parseUpcomingReleaseIso(g.releaseDate, g.status);
+                  const releasedIso = parseReleasedLaunchIso(g.releaseDate, g.status);
                   return (
                     <tr key={g.id} className="hover:bg-[#141d30] transition-colors">
                       <td className="p-3 border-r border-[#1e293b] space-y-1.5">
-                        <div className="font-extrabold text-[#93c5fd] text-[11px]">{g.releaseDate}</div>
-                        <span
-                          className={`inline-block rounded px-2 py-0.5 text-[10px] font-black ${
-                            g.status === 'Released'
-                              ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
-                              : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
-                          }`}
-                        >
-                          {g.status}
-                        </span>
-                        {launchIso && (
-                          <div>
-                            <LiveJstCountdown targetIso={launchIso} prefix="In" compact />
-                          </div>
-                        )}
+                        <div className="flex flex-wrap items-center gap-1.5">
+                          <span className="font-extrabold text-[#93c5fd] text-[11px]">{g.releaseDate}</span>
+                          <span
+                            className={`inline-block rounded px-1.5 py-0.5 text-[9.5px] font-black ${
+                              g.status === 'Released'
+                                ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
+                                : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                            }`}
+                          >
+                            {g.status}
+                          </span>
+                        </div>
+                        <div>
+                          {launchIso ? (
+                            <LiveJstCountdown targetIso={launchIso} prefix="In" />
+                          ) : releasedIso ? (
+                            <LiveJstCountdown startIso={releasedIso} />
+                          ) : (
+                            <span className="inline-flex items-center rounded border border-[#243049] bg-[#0b101b] px-2 py-0.5 font-mono text-[10px] font-bold text-[#64748b]">
+                              Exact Day TBA
+                            </span>
+                          )}
+                        </div>
                       </td>
                       <td className="p-3 border-r border-[#1e293b]">
                         <div className="flex items-center gap-3">
@@ -866,7 +924,18 @@ export function AscalonHomeMacro() {
                             loading="lazy"
                           />
                           <div className="min-w-0">
-                            <div className="font-extrabold text-white text-[13px]">{g.title}</div>
+                            <div className="flex flex-wrap items-center gap-2">
+                              <span className="font-extrabold text-white text-[13px]">{g.title}</span>
+                              <a
+                                href={g.articleUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="rounded border border-[#243049] bg-[#141c2e] px-1.5 py-0.5 text-[9.5px] font-bold text-[#93c5fd] hover:border-[#3b82f6] hover:text-white transition-colors"
+                                title={`Verify ${g.title} release schedule on AppMedia`}
+                              >
+                                AppMedia ↗
+                              </a>
+                            </div>
                             <div className="text-[11px] text-[#cbd5e1] mt-0.5">{g.description}</div>
                           </div>
                         </div>

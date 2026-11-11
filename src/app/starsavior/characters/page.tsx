@@ -1,12 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { getStarSaviorDataset } from '@/application/wiki.service';
+import { getStarSaviorDataset } from '@/di/container';
 import { buildPageMetadata, buildStarSaviorHubJsonLd } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { CharacterDatabaseMacro } from '@/components/macro/CharacterDatabaseMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 const PAGE_TITLE = 'Star Savior Characters List — All 57 SSR & SR Lv.200 Stats';
 const PAGE_DESC =

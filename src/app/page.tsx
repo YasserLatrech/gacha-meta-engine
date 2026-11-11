@@ -3,8 +3,9 @@ import type { Metadata } from 'next';
 import { AscalonHomeMacro } from '@/components/macro/AscalonHomeMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
 import { buildHomePortalJsonLd, buildPageMetadata } from '@/application/seo.service';
+import { getHomePortalData } from '@/di/container';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 export const metadata: Metadata = buildPageMetadata({
   title: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki',
@@ -26,10 +27,12 @@ export const metadata: Metadata = buildPageMetadata({
 });
 
 export default function AscalonHomePage() {
+  const portalData = getHomePortalData();
+
   return (
     <>
       <JsonLd data={buildHomePortalJsonLd()} />
-      <AscalonHomeMacro />
+      <AscalonHomeMacro portalData={portalData} />
     </>
   );
 }

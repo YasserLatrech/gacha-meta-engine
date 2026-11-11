@@ -1,12 +1,12 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { getStarSaviorDataset } from '@/application/wiki.service';
+import { getStarSaviorDataset } from '@/di/container';
 import { buildPageMetadata, buildStarSaviorHubJsonLd } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { ArcanaTierListMacro } from '@/components/macro/ArcanaTierListMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 const PAGE_TITLE = 'Star Savior Arcana Tier List & All 83 Cards Database';
 const PAGE_DESC =

@@ -2,8 +2,10 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
-import type { CharacterEntity, ArcanaEntity } from '../../domain/schemas';
+import type { CharacterEntity, ArcanaEntity, SeedBoardPost } from '../../domain/schemas';
 import { AppMediaRankIcon } from './AppMediaHeadings';
+
+export type { SeedBoardPost };
 
 const TIER_KEYS = ['SSS', 'SS', 'S', 'A', 'B', 'C'] as const;
 type MakerTier = (typeof TIER_KEYS)[number];
@@ -1078,11 +1080,15 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
 /* ============================================================================
  * 5. Community Bulletin Board Widget (General / Friend / Guild)
  * ============================================================================ */
-export interface SeedBoardPost {
-  author: string;
-  tag: string;
-  timestamp: string;
-  body: string;
+const ALLOWED_BOARD_TAGS = new Set([
+  'Global / Steam',
+  'JP Server (English)',
+  'MLB SSR Arcana Support',
+  'Daily Active',
+]);
+
+function stripControlChars(raw: string): string {
+  return raw.replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/g, '');
 }
 
 export function CommunityBoardWidget({
@@ -1101,15 +1107,18 @@ export function CommunityBoardWidget({
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!body.trim()) return;
+    const cleanBody = stripControlChars(body).trim().slice(0, 500);
+    if (!cleanBody) return;
+    const cleanAuthor = stripControlChars(author).trim().slice(0, 40) || 'Commander';
+    const safeTag = ALLOWED_BOARD_TAGS.has(tag) ? tag : 'Global / Steam';
     setPosts((prev) => [
       {
-        author: author.trim() || 'Commander',
-        tag,
+        author: cleanAuthor,
+        tag: safeTag,
         timestamp: 'Just now',
-        body: body.trim(),
+        body: cleanBody,
       },
-      ...prev,
+      ...prev.slice(0, 49),
     ]);
     setBody('');
   };
@@ -1124,6 +1133,7 @@ export function CommunityBoardWidget({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <input
             type="text"
+            maxLength={40}
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
             placeholder="Commander Name (Optional)"
@@ -1142,6 +1152,7 @@ export function CommunityBoardWidget({
         </div>
         <textarea
           rows={3}
+          maxLength={500}
           value={body}
           onChange={(e) => setBody(e.target.value)}
           placeholder={placeholder}

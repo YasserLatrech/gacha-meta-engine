@@ -1,62 +1,17 @@
-import type { SeedBoardPost } from '../../components/micro/StarSaviorInteractiveTools';
+import type {
+  SeedBoardPost,
+  GuideTableSpec,
+  GuideSection,
+  StarSaviorGuideArticle,
+  RankingTierGroup,
+} from '../../domain/schemas';
 
-export interface GuideTableSpec {
-  headers: string[];
-  rows: string[][];
-}
-
-export interface GuideSection {
-  id: string;
-  heading: string;
-  subHeading?: string;
-  paragraphs: string[];
-  bullets?: string[];
-  table?: GuideTableSpec;
-  featuredCharSlugs?: string[];
-  featuredArcanaSlugs?: string[];
-}
-
-export interface StarSaviorGuideArticle {
-  slug: string;
-  title: string;
-  category:
-    | 'Rankings'
-    | 'Tools'
-    | 'Gacha'
-    | 'Events'
-    | 'Rescue Journey'
-    | 'Operations'
-    | 'Cube Palace'
-    | 'Strategy'
-    | 'Mechanics'
-    | 'Beginner & Systems'
-    | 'Database'
-    | 'Community';
-  updatedAt: string;
-  eyecatchSrc?: string;
-  buttonBannerSrc?: string;
-  lead: string;
-  specialKind?:
-    | 'pvp-ranking'
-    | 'sr-char-ranking'
-    | 'sr-arcana-ranking'
-    | 'char-tier-maker'
-    | 'arcana-tier-maker'
-    | 'event-checker'
-    | 'char-stats-table'
-    | 'voice-actors-db'
-    | 'birthday-db'
-    | 'ark-points-db'
-    | 'skins-db'
-    | 'community-board';
-  boardSeedPosts?: SeedBoardPost[];
-  sections: GuideSection[];
-}
+export type { SeedBoardPost, GuideTableSpec, GuideSection, StarSaviorGuideArticle, RankingTierGroup };
 
 /* ============================================================================
  * AppMedia Exact Gauntlet (PvP), SR Character & SR Arcana Ranking Data
  * ============================================================================ */
-export const APPMEDIA_PVP_TIER_GROUPS: { tier: 'SSS' | 'SS' | 'S' | 'A' | 'B' | 'C'; subLabel: string; slugs: string[] }[] = [
+export const APPMEDIA_PVP_TIER_GROUPS: RankingTierGroup[] = [
   {
     tier: 'SSS',
     subLabel: 'Tier 0',

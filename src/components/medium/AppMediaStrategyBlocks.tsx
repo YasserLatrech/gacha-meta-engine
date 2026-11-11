@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import type { CharacterEntity, ArcanaEntity } from '@/domain/schemas';
 import { AppMediaH2, AppMediaH3, AppMediaTableLink, AppMediaIconCell } from '@/components/micro/AppMediaHeadings';
 

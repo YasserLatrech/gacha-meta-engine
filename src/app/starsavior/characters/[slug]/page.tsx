@@ -1,17 +1,20 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getStarSaviorDataset, resolveCharacterSlug } from '@/application/wiki.service';
+import {
+  getStarSaviorDataset,
+  getAllCharacterSlugs,
+  resolveCharacterSlug,
+} from '@/di/container';
 import { buildCharacterJsonLd, buildCharacterMetadata } from '@/application/seo.service';
-import { STAR_SAVIOR_CHARACTERS_SEED } from '@/infrastructure/db/seed-data';
 import { WikiShell } from '@/components/WikiShell';
 import { CharacterDetailMacro } from '@/components/macro/CharacterDetailMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
 
-export const revalidate = 60;
+export const revalidate = 300;
 
 export function generateStaticParams() {
-  return STAR_SAVIOR_CHARACTERS_SEED.map((c) => ({ slug: c.slug }));
+  return getAllCharacterSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
