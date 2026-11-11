@@ -200,17 +200,60 @@ export async function scanStarSaviorTierAndReroll(): Promise<{
   };
 }
 
+export interface UpstreamNewGameCalendarEntry {
+  articleUrl: string;
+  titleJa: string;
+  categoryJa: string;
+  status: 'Released' | 'Upcoming';
+  timeJa: string;
+  exactIsoDate: string | null;
+}
+
+function parseJapaneseExactDateIso(timeJa: string): string | null {
+  const m = timeJa.trim().match(/^(\d{4})年(\d{1,2})月(\d{1,2})日(?:配信開始)?$/);
+  if (!m?.[1] || !m[2] || !m[3]) return null;
+  return `${m[1]}-${m[2].padStart(2, '0')}-${m[3].padStart(2, '0')}`;
+}
+
 export async function scanAppMediaHomePortal(): Promise<{
   featuredItems: Array<{ url: string; titleJa: string; bannerUrl?: string }>;
   upcomingArticleUrls: string[];
+  newGameCalendarEntries: UpstreamNewGameCalendarEntry[];
 }> {
-  const html = await fetchHtmlWithRetry('https://appmedia.jp/');
+  const [html, newGameHtml] = await Promise.all([
+    fetchHtmlWithRetry('https://appmedia.jp/'),
+    fetchHtmlWithRetry('https://appmedia.jp/newgame'),
+  ]);
 
   const upcomingArticleUrls = [
     ...new Set(
       [...html.matchAll(/https:\/\/appmedia\.jp\/newgame\/\d+/g)].map((m) => m[0])
     ),
   ];
+
+  // Extract full structured calendar entries from https://appmedia.jp/newgame
+  const newGameCalendarEntries: UpstreamNewGameCalendarEntry[] = [];
+  const liRegex =
+    /<li[^>]*class="output_li_each"[^>]*data-category="([^"]+)"[^>]*data-title="([^"]+)"[\s\S]*?<\/li>/gi;
+  let liMatch: RegExpExecArray | null;
+  while ((liMatch = liRegex.exec(newGameHtml)) !== null) {
+    const block = liMatch[0];
+    const categoryJa = liMatch[1] ?? '';
+    const titleJa = liMatch[2] ?? '';
+    const urlM = block.match(/href="(https:\/\/appmedia\.jp\/newgame\/\d+)"/);
+    const statusM = block.match(/data-status="([^"]+)"/);
+    const timeM = block.match(/<time>([^<]+)<\/time>/);
+    if (!urlM?.[1]) continue;
+    const timeJa = timeM?.[1]?.trim() ?? '';
+    newGameCalendarEntries.push({
+      articleUrl: urlM[1],
+      titleJa,
+      categoryJa,
+      status: statusM?.[1] === '配信済' ? 'Released' : 'Upcoming',
+      timeJa,
+      exactIsoDate: parseJapaneseExactDateIso(timeJa),
+    });
+  }
 
   // Extract Pickup Featured Strategy Articles (ピックアップ攻略記事)
   const pickupIdx = html.indexOf('ピックアップ攻略記事');
@@ -241,5 +284,6 @@ export async function scanAppMediaHomePortal(): Promise<{
   return {
     featuredItems,
     upcomingArticleUrls,
+    newGameCalendarEntries,
   };
 }

@@ -204,15 +204,17 @@ export async function runUpstreamAppMediaScan(): Promise<AgentSyncState> {
     });
   }
 
-  // 6. AppMedia Home Portal
+  // 6. AppMedia Home Portal & Upcoming Release Chronos
   if (homeRes.status === 'fulfilled') {
     freshItems.push(
       evaluateHomePortalDiff({
         localFeaturedUrls: local.localFeaturedUrls,
         localUpcomingArticleUrls: local.localUpcomingArticleUrls,
+        localUpcomingCalendarRows: local.localUpcomingCalendarRows,
         upstreamFeaturedItems: homeRes.value.featuredItems,
         upstreamUpcomingArticleUrls: homeRes.value.upcomingArticleUrls,
-        sourceUrl: 'https://appmedia.jp/',
+        upstreamNewGameCalendarEntries: homeRes.value.newGameCalendarEntries,
+        sourceUrl: 'https://appmedia.jp/newgame',
         targetRepoPath: DEFAULT_TARGET_REPO,
         nowIso,
       })

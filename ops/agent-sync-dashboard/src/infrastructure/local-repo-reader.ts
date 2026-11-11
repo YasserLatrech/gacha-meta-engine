@@ -2,6 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import type { GlossaryHint } from '../domain/schemas.js';
 
+export interface LocalUpcomingCalendarRow {
+  articleUrl: string;
+  title: string;
+  categoryJa: string;
+  status: 'Released' | 'Upcoming';
+  releaseDate: string;
+}
+
 export interface LocalRepoSnapshot {
   repoRoot: string;
   saviorsCount: number;
@@ -16,6 +24,7 @@ export interface LocalRepoSnapshot {
   localKnownBannerTokens: string[];
   localFeaturedUrls: string[];
   localUpcomingArticleUrls: string[];
+  localUpcomingCalendarRows: LocalUpcomingCalendarRow[];
   glossary: GlossaryHint[];
 }
 
@@ -127,12 +136,15 @@ export function readLocalAscalonSnapshot(repoRoot: string): LocalRepoSnapshot {
     '121308_4lwqz.webp',
   ];
 
-  // Extract AppMedia Home Portal Featured Articles & Upcoming Games URLs
+  // Extract AppMedia Home Portal Featured Articles & Upcoming Games URLs + Release Chronos
   const featStart = homeRaw.indexOf('"featuredArticles"');
   const upStart = homeRaw.indexOf('"upcomingGames"');
+  const appStoreStart = homeRaw.indexOf('"appStoreFreeRanking"');
   const featSlice = featStart !== -1 ? homeRaw.slice(featStart) : '';
   const upSlice =
-    upStart !== -1 && featStart !== -1
+    upStart !== -1 && appStoreStart !== -1
+      ? homeRaw.slice(upStart, appStoreStart)
+      : upStart !== -1 && featStart !== -1
       ? homeRaw.slice(upStart, featStart)
       : upStart !== -1
       ? homeRaw.slice(upStart)
@@ -149,6 +161,34 @@ export function readLocalAscalonSnapshot(repoRoot: string): LocalRepoSnapshot {
     ),
   ];
 
+  const localUpcomingCalendarRows: LocalUpcomingCalendarRow[] = [];
+  if (upStart !== -1 && appStoreStart !== -1) {
+    try {
+      const jsonArrayRaw = homeRaw
+        .slice(upStart + '"upcomingGames":'.length, appStoreStart)
+        .trim()
+        .replace(/,$/, '');
+      const parsedRows = JSON.parse(jsonArrayRaw) as Array<{
+        articleUrl: string;
+        title: string;
+        categoryJa: string;
+        status: 'Released' | 'Upcoming';
+        releaseDate: string;
+      }>;
+      for (const row of parsedRows) {
+        localUpcomingCalendarRows.push({
+          articleUrl: row.articleUrl,
+          title: row.title,
+          categoryJa: row.categoryJa,
+          status: row.status,
+          releaseDate: row.releaseDate,
+        });
+      }
+    } catch {
+      // Fallback safely if formatting changes
+    }
+  }
+
   return {
     repoRoot,
     saviorsCount: charMatches.length,
@@ -163,6 +203,7 @@ export function readLocalAscalonSnapshot(repoRoot: string): LocalRepoSnapshot {
     localKnownBannerTokens,
     localFeaturedUrls,
     localUpcomingArticleUrls,
+    localUpcomingCalendarRows,
     glossary,
   };
 }

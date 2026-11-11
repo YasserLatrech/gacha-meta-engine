@@ -369,11 +369,50 @@ export function evaluateTierAndRerollDiff(input: {
   };
 }
 
+const EN_MONTH_MAP: Readonly<Record<string, string>> = Object.freeze({
+  jan: '01',
+  feb: '02',
+  mar: '03',
+  apr: '04',
+  may: '05',
+  jun: '06',
+  jul: '07',
+  aug: '08',
+  sep: '09',
+  oct: '10',
+  nov: '11',
+  dec: '12',
+});
+
+function parseLocalReleaseExactIso(releaseDate: string): string | null {
+  const cleaned = releaseDate.trim().replace(/^Released\s+/i, '');
+  const m = cleaned.match(/^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s*(\d{4})$/i);
+  if (!m?.[1] || !m[2] || !m[3]) return null;
+  const mm = EN_MONTH_MAP[m[1].toLowerCase()];
+  if (!mm) return null;
+  return `${m[3]}-${mm}-${m[2].padStart(2, '0')}`;
+}
+
 export function evaluateHomePortalDiff(input: {
   localFeaturedUrls: string[];
   localUpcomingArticleUrls: string[];
+  localUpcomingCalendarRows?: Array<{
+    articleUrl: string;
+    title: string;
+    categoryJa: string;
+    status: 'Released' | 'Upcoming';
+    releaseDate: string;
+  }>;
   upstreamFeaturedItems: Array<{ url: string; titleJa: string; bannerUrl?: string }>;
   upstreamUpcomingArticleUrls: string[];
+  upstreamNewGameCalendarEntries?: Array<{
+    articleUrl: string;
+    titleJa: string;
+    categoryJa: string;
+    status: 'Released' | 'Upcoming';
+    timeJa: string;
+    exactIsoDate: string | null;
+  }>;
   sourceUrl: string;
   targetRepoPath: string;
   nowIso: string;
@@ -382,9 +421,39 @@ export function evaluateHomePortalDiff(input: {
   const localUpSet = new Set(input.localUpcomingArticleUrls);
 
   const newFeatured = input.upstreamFeaturedItems.filter((f) => !localFeatSet.has(f.url));
-  const newUpcoming = [...new Set(input.upstreamUpcomingArticleUrls)].filter(
+  const newUpcomingHome = [...new Set(input.upstreamUpcomingArticleUrls)].filter(
     (u) => !localUpSet.has(u)
   );
+
+  // Compare full https://appmedia.jp/newgame calendar chronos against local upcomingGames
+  const calendarEntries = input.upstreamNewGameCalendarEntries ?? [];
+  const newDatedCalendarEntries = calendarEntries.filter(
+    (e) => e.categoryJa !== '未定' && !localUpSet.has(e.articleUrl)
+  );
+  const newUpcomingHomeSet = new Set(newUpcomingHome);
+  const dedupedDatedAdds = newDatedCalendarEntries.filter(
+    (e) => !newUpcomingHomeSet.has(e.articleUrl)
+  );
+
+  const upstreamByUrl = new Map(calendarEntries.map((e) => [e.articleUrl, e]));
+  const changedFields: Array<{ key: string; localValue: string; upstreamValue: string }> = [];
+
+  for (const localRow of input.localUpcomingCalendarRows ?? []) {
+    const up = upstreamByUrl.get(localRow.articleUrl);
+    if (!up) continue;
+    const localExactIso = parseLocalReleaseExactIso(localRow.releaseDate);
+    if (
+      localRow.status !== up.status ||
+      localRow.categoryJa !== up.categoryJa ||
+      localExactIso !== up.exactIsoDate
+    ) {
+      changedFields.push({
+        key: `ReleaseChrono:${localRow.title}`,
+        localValue: `${localRow.status} | ${localRow.categoryJa} | ${localRow.releaseDate}`,
+        upstreamValue: `${up.status} | ${up.categoryJa} | ${up.timeJa}`,
+      });
+    }
+  }
 
   const newBannerAssets = newFeatured
     .map((f) => f.bannerUrl)
@@ -392,24 +461,31 @@ export function evaluateHomePortalDiff(input: {
 
   const addedItems = [
     ...newFeatured.map((f) => `NEW FEATURED PICKUP: ${f.titleJa} (${f.url})`),
-    ...newUpcoming.map((u) => `NEW UPCOMING GAME ENTRY: ${u}`),
+    ...newUpcomingHome.map((u) => `NEW UPCOMING GAME ENTRY: ${u}`),
+    ...dedupedDatedAdds.map(
+      (e) => `NEW DATED CALENDAR GAME: ${e.titleJa} [${e.timeJa}] (${e.articleUrl})`
+    ),
   ];
 
-  const driftDetected = addedItems.length > 0;
+  const driftDetected = addedItems.length > 0 || changedFields.length > 0;
   const requiresBannerTranslation = newBannerAssets.length > 0;
   const upstreamHash = sha256Short({
     surface: 'HOME_PORTAL',
     featuredUrls: input.upstreamFeaturedItems.map((f) => f.url).sort(),
     upcomingUrls: [...new Set(input.upstreamUpcomingArticleUrls)].sort(),
+    datedCalendarSignature: calendarEntries
+      .filter((e) => e.categoryJa !== '未定' || localUpSet.has(e.articleUrl))
+      .map((e) => `${e.articleUrl}|${e.status}|${e.categoryJa}|${e.exactIsoDate ?? e.timeJa}`)
+      .sort(),
   });
 
   return {
     id: 'diff:portal:appmedia-home',
     surface: 'APPMEDIA_HOME_PORTAL',
     title: driftDetected
-      ? `Home Portal Updates (+${newFeatured.length} Pickup / +${newUpcoming.length} Upcoming Games)`
-      : `Home Portal Feed In Sync (${input.localUpcomingArticleUrls.length} Tracked Upcoming Games)`,
-    priority: driftDetected ? 'P2_NORMAL' : 'P3_INFO',
+      ? `Home Portal & Release Chronos Drift (+${addedItems.length} New / ${changedFields.length} Date Shifts)`
+      : `Home Portal & Release Chronos In Sync (${input.localUpcomingArticleUrls.length} Tracked Games)`,
+    priority: changedFields.length > 0 ? 'P1_HIGH' : driftDetected ? 'P2_NORMAL' : 'P3_INFO',
     status: driftDetected ? 'PENDING_AGENT' : 'IN_SYNC',
     driftDetected,
     requiresBannerTranslation,
@@ -424,26 +500,26 @@ export function evaluateHomePortalDiff(input: {
     ],
     diff: {
       summary: driftDetected
-        ? `AppMedia Home Portal posted ${newFeatured.length} new pickup article(s) and ${newUpcoming.length} new upcoming game calendar entry/entries.`
-        : 'Featured pickup guides and upcoming release calendar entries match AppMedia.',
+        ? `Detected ${newFeatured.length} new pickup article(s), ${newUpcomingHome.length + dedupedDatedAdds.length} new upcoming game(s), and ${changedFields.length} release date/status shift(s) on AppMedia.`
+        : 'Featured pickup guides and all upcoming release calendar chronos match AppMedia 100%.',
       localCount: input.localFeaturedUrls.length + input.localUpcomingArticleUrls.length,
       upstreamCount:
         input.upstreamFeaturedItems.length +
-        new Set(input.upstreamUpcomingArticleUrls).size,
+        Math.max(input.localUpcomingArticleUrls.length, new Set(input.upstreamUpcomingArticleUrls).size),
       addedItems,
       removedOrExpiredItems: [],
-      changedFields: [],
+      changedFields,
       rawJapaneseAssetUrls: newBannerAssets,
     },
     glossaryHints: [],
     agentExecutionSteps: [
-      'Review newly added Pickup Articles or Upcoming Games on https://appmedia.jp/ (ignore pure PR/ad noise if unrelated to gacha/mobile games).',
+      'Review newly added Pickup Articles or Release Chrono shifts across https://appmedia.jp/ and https://appmedia.jp/newgame.',
       ...(requiresBannerTranslation
         ? [
             'Localize new Home Pickup thumbnail banners into English WebP in public/banners/home/ before updating appmedia-home-data.ts.',
           ]
         : []),
-      'Update APPMEDIA_HOME_PORTAL_DATA in src/infrastructure/db/appmedia-home-data.ts and ARTICLE_SUMMARIES in AscalonHomeMacro.tsx.',
+      'Update APPMEDIA_HOME_PORTAL_DATA in src/infrastructure/db/appmedia-home-data.ts (releaseDate, status, category) so LiveJstCountdown reflects real AppMedia dates.',
     ],
   };
 }

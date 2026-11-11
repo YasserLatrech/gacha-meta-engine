@@ -9,11 +9,14 @@ import { AgentDecisionInputSchema } from '../domain/schemas.js';
 import { renderAgentWorkbenchHtml } from './dashboard-html.js';
 
 const PORT = Number(process.env.PORT || 3006);
+const HOST = process.env.HOST || '127.0.0.1';
+const MAX_BODY_BYTES = 16_384;
 
 function sendJson(res: http.ServerResponse, statusCode: number, payload: unknown): void {
   res.writeHead(statusCode, {
     'Content-Type': 'application/json; charset=utf-8',
     'Cache-Control': 'no-store',
+    'X-Content-Type-Options': 'nosniff',
   });
   res.end(JSON.stringify(payload, null, 2));
 }
@@ -21,7 +24,16 @@ function sendJson(res: http.ServerResponse, statusCode: number, payload: unknown
 function readJsonBody(req: http.IncomingMessage): Promise<unknown> {
   return new Promise((resolve, reject) => {
     const chunks: Buffer[] = [];
-    req.on('data', (chunk: Buffer) => chunks.push(chunk));
+    let totalBytes = 0;
+    req.on('data', (chunk: Buffer) => {
+      totalBytes += chunk.byteLength;
+      if (totalBytes > MAX_BODY_BYTES) {
+        req.destroy();
+        reject(new Error('PAYLOAD_TOO_LARGE'));
+        return;
+      }
+      chunks.push(chunk);
+    });
     req.on('end', () => {
       try {
         const raw = Buffer.concat(chunks).toString('utf8');
@@ -125,6 +137,6 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`[ASCALON-AGENT-OPS] Agent Sync Control Plane listening on http://localhost:${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(`[ASCALON-AGENT-OPS] Agent Sync Control Plane listening on http://${HOST}:${PORT}`);
 });

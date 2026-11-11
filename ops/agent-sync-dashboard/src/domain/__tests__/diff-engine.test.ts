@@ -3,6 +3,7 @@ import {
   evaluatePromoCodeDiff,
   evaluateGachaAndEventsDiff,
   evaluateArcanaRosterDiff,
+  evaluateHomePortalDiff,
   mergeQueueWithDecisions,
   formatAgentBriefMarkdown,
 } from '../../application/diff-engine.js';
@@ -137,5 +138,64 @@ describe('Agent-First Semantic Diff Engine & Queue Intelligence', () => {
     });
     expect(brief).toContain('PENDING_AGENT');
     expect(brief).toContain('ARCANA_NEW_SSR_02_icon_arcana.webp');
+  });
+
+  it('detects Upcoming Game Release Calendar date delays, TBA-to-date confirmations, and new dated games on AppMedia', () => {
+    const syncItem = evaluateHomePortalDiff({
+      localFeaturedUrls: ['https://appmedia.jp/fategrandorder/80548351'],
+      localUpcomingArticleUrls: [
+        'https://appmedia.jp/newgame/77704138',
+        'https://appmedia.jp/newgame/78248537',
+      ],
+      localUpcomingCalendarRows: [
+        {
+          articleUrl: 'https://appmedia.jp/newgame/77704138',
+          title: 'Azur Promilia',
+          categoryJa: '2026年11月',
+          status: 'Upcoming',
+          releaseDate: 'Nov 26, 2026',
+        },
+        {
+          articleUrl: 'https://appmedia.jp/newgame/78248537',
+          title: 'Shangri-La Frontier: The Seven Colossi',
+          categoryJa: '2026年中',
+          status: 'Upcoming',
+          releaseDate: '2026 Planned',
+        },
+      ],
+      upstreamFeaturedItems: [
+        { url: 'https://appmedia.jp/fategrandorder/80548351', titleJa: 'FGO 100M DL' },
+      ],
+      upstreamUpcomingArticleUrls: ['https://appmedia.jp/newgame/77704138'],
+      upstreamNewGameCalendarEntries: [
+        {
+          articleUrl: 'https://appmedia.jp/newgame/77704138',
+          titleJa: 'アズールプロミリア',
+          categoryJa: '2026年11月',
+          status: 'Upcoming',
+          timeJa: '2026年11月26日',
+          exactIsoDate: '2026-11-26',
+        },
+        {
+          articleUrl: 'https://appmedia.jp/newgame/78248537',
+          titleJa: 'シャングリラ・フロンティア～七つの最強種～',
+          categoryJa: '2027年中',
+          status: 'Upcoming',
+          timeJa: '2027年予定',
+          exactIsoDate: null,
+        },
+      ],
+      sourceUrl: 'https://appmedia.jp/newgame',
+      targetRepoPath: 'C:/repo/gacha-meta-engine',
+      nowIso: '2026-11-11T11:00:00.000Z',
+    });
+
+    expect(syncItem.driftDetected).toBe(true);
+    expect(syncItem.priority).toBe('P1_HIGH');
+    expect(syncItem.status).toBe('PENDING_AGENT');
+    expect(syncItem.diff.changedFields).toHaveLength(1);
+    expect(syncItem.diff.changedFields[0]?.key).toBe(
+      'ReleaseChrono:Shangri-La Frontier: The Seven Colossi'
+    );
   });
 });
