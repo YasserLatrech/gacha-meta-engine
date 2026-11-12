@@ -165,13 +165,13 @@ export function buildHomePortalJsonLd(): Record<string, unknown> {
           {
             '@type': 'ListItem',
             position: 4,
-            name: 'Star Savior All 57 Characters Lv.200 Database',
+            name: 'Star Savior All 59 Characters Lv.200 Database',
             url: `${SITE_URL}/starsavior/characters`,
           },
           {
             '@type': 'ListItem',
             position: 5,
-            name: 'Star Savior Strongest Arcana Tier List (83 Cards)',
+            name: 'Star Savior Strongest Arcana Tier List (85 Cards)',
             url: `${SITE_URL}/starsavior/arcana`,
           },
         ],
@@ -214,7 +214,7 @@ export function buildStarSaviorPortalJsonLd(patchVersion: string): Record<string
         name: 'Star Savior',
         alternateName: ['スターセイヴァー', 'StarSavior'],
         description:
-          'Star Savior is a Training RPG combining Rescue Journey character simulation, 83 Arcana training decks, and turn-based command battles across PC (Steam), iOS, and Android.',
+          'Star Savior is a Training RPG combining Rescue Journey character simulation, 85 Arcana training decks, and turn-based command battles across PC (Steam), iOS, and Android.',
         genre: ['Training RPG', 'Turn-Based RPG', 'Simulation RPG'],
         gamePlatform: ['PC (Steam)', 'iOS', 'Android'],
         operatingSystem: 'Windows, iOS, Android',
@@ -378,7 +378,7 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
       buildBreadcrumbNode([
         { name: 'Ascalon.gg Home', path: '/' },
         { name: 'Star Savior Wiki', path: '/starsavior' },
-        { name: 'All 57 Characters', path: '/starsavior/characters' },
+        { name: 'All 59 Characters', path: '/starsavior/characters' },
         { name: character.name, path },
       ]),
       {

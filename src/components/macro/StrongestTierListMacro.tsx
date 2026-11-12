@@ -38,7 +38,10 @@ const TIER_TOC = [
   {
     id: 'tier-latest-updates',
     label: 'Strongest Character Ranking Latest Update Info',
-    subItems: [{ id: 'update-maid-ceres', label: 'Newly Implemented: Maid Ceres' }],
+    subItems: [
+      { id: 'update-1st-anniv', label: '1st Anniv: Witch of Favoritism (SSS) & Guile (SS)' },
+      { id: 'update-maid-ceres', label: 'Newly Implemented: Maid Ceres' },
+    ],
   },
   {
     id: 'tier-poll-section',
@@ -144,6 +147,8 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
     });
   }, [characters]);
 
+  const witchOfFavoritism = characters.find((c) => c.slug === 'witch-of-favoritism');
+  const guile = characters.find((c) => c.slug === 'guile');
   const maidCeres = characters.find((c) => c.slug === 'maid-ceres');
 
   return (
@@ -159,7 +164,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
           />
           <div>
             <div className="text-[11px] font-bold text-[#93c5fd]">
-              Last Updated: 2026/11/10 · {game.patchVersion}
+              Last Updated: 2026/11/12 · {game.patchVersion}
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
               [Star Savior] Strongest Character Ranking & Tier List
@@ -208,7 +213,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
       {/* H2: スターセイヴァー最強キャラランキング */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
-        <AppMediaH2 id="tier-ranking-matrix" badge="57 SAVIORS">
+        <AppMediaH2 id="tier-ranking-matrix" badge="59 SAVIORS">
           Star Savior Strongest Character Ranking
         </AppMediaH2>
 
@@ -575,6 +580,74 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         <AppMediaH2 id="tier-latest-updates" badge="NEW">
           Strongest Character Ranking Latest Update Info
         </AppMediaH2>
+        <AppMediaH3 id="update-1st-anniv">1st Anniversary Debut: Witch of Favoritism (SSS) &amp; Guile (SS)</AppMediaH3>
+        <p>
+          <strong className="text-white">Witch of Favoritism</strong> (Order Striker) debuts in <strong className="text-[#fbbf24]">SSS Rank (Tier 0)</strong> thanks to her defense-ignoring 180% ATK Boss Chain Fixed Damage (~50,000+ true damage per hit), Extra Turn on Toughness Break, and Afterimage Cleave cooldown reset loop. Free 1st Anniversary login Cosmic Caster <strong className="text-white">Guile</strong> (Chaos Caster, #1 Base ATK 4,489) debuts in <strong className="text-[#f87171]">SS Rank</strong> with a permanent unremovable team-wide Break DMG aura (up to +30%) and Overture/Rhapsody/Finale Shatter support!
+        </p>
+
+        {(witchOfFavoritism || guile) && (
+          <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
+            <table className="w-full border-collapse text-center text-[12px]">
+              <thead>
+                <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                  <th className="px-3 py-2 border-r border-[#243049]">Character</th>
+                  <th className="px-3 py-2 border-r border-[#243049]">Overall Rank</th>
+                  <th className="px-3 py-2 border-r border-[#243049]">Reroll</th>
+                  <th className="px-3 py-2 border-r border-[#243049]">General PvE</th>
+                  <th className="px-3 py-2 border-r border-[#243049]">Vs. Boss</th>
+                  <th className="px-3 py-2">Gauntlet PvP</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#1e293b]">
+                {witchOfFavoritism && (
+                  <tr>
+                    <td className="p-2.5 border-r border-[#1e293b]">
+                      <div className="flex justify-center">
+                        <AppMediaIconCell
+                          href={`/starsavior/characters/${witchOfFavoritism.slug}`}
+                          name={witchOfFavoritism.name}
+                          imageUrl={witchOfFavoritism.imageUrl}
+                          rarity="SSR"
+                          topLeftIconUrl={witchOfFavoritism.staticData?.attributeIconUrl}
+                          topRightIconUrl={witchOfFavoritism.staticData?.classIconUrl}
+                          size="sm"
+                        />
+                      </div>
+                    </td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SSS" /></td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SSS" /></td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-2.5"><AppMediaTierBadge tier="SSS" /></td>
+                  </tr>
+                )}
+                {guile && (
+                  <tr>
+                    <td className="p-2.5 border-r border-[#1e293b]">
+                      <div className="flex justify-center">
+                        <AppMediaIconCell
+                          href={`/starsavior/characters/${guile.slug}`}
+                          name={guile.name}
+                          imageUrl={guile.imageUrl}
+                          rarity="SSR"
+                          topLeftIconUrl={guile.staticData?.attributeIconUrl}
+                          topRightIconUrl={guile.staticData?.classIconUrl}
+                          size="sm"
+                        />
+                      </div>
+                    </td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="S" /></td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-2.5"><AppMediaTierBadge tier="SS" /></td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        )}
+
         <AppMediaH3 id="update-maid-ceres">Newly Implemented: Maid Ceres (Sun Supporter)</AppMediaH3>
         <p>
           <strong className="text-white">Maid Ceres</strong> has been newly implemented as a Sun Attribute Supporter. She features two AoE healing skills, an extra-trigger Special Skill that grants continuous Regeneration, AoE debuff cleansing, and the first Supporter Ultimate Skill capable of buffing all allies&apos; ATK.
@@ -635,9 +708,9 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         />
       </section>
 
-      {/* H2: 最強キャラの簡易紹介 (All 57 Characters Detailed Breakdown by Tier!) */}
+      {/* H2: 最強キャラの簡易紹介 (All 59 Characters Detailed Breakdown by Tier!) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-5">
-        <AppMediaH2 id="tier-brief-overviews" badge="ALL 57 SAVIORS">
+        <AppMediaH2 id="tier-brief-overviews" badge="ALL 59 SAVIORS">
           Brief Overview of Strongest Characters by Rank
         </AppMediaH2>
 

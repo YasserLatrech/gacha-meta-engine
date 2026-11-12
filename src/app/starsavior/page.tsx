@@ -11,7 +11,7 @@ export const revalidate = 300;
 export const metadata: Metadata = buildPageMetadata({
   title: 'Star Savior Wiki — Tier List, Reroll, Saviors & Arcana',
   description:
-    'Complete Star Savior English strategy wiki (v2.4): Strongest Character & Arcana Tier Lists, Reroll Guide, Journey Event Checker, all 57 Saviors & 83 Arcana.',
+    'Complete Star Savior English strategy wiki (v2.4): Strongest Character & Arcana Tier Lists, Reroll Guide, Journey Event Checker, all 59 Saviors & 85 Arcana.',
   path: '/starsavior',
   ogImage: '/banners/starsavior/eyecatch/gameinfo_01.webp',
   ogImageAlt: 'Star Savior Complete English Strategy Wiki',

@@ -24,8 +24,8 @@ const TOP_INDEX_CELLS = [
   { label: 'Strategy Guides', href: '#recommended-guides' },
   { label: 'Mechanics Test', href: '#mechanics-verification' },
   { label: 'Beginner Guide', href: '#beginner-guides' },
-  { label: 'Characters (57)', href: '#characters-section' },
-  { label: 'Arcana (83)', href: '#arcana-section' },
+  { label: 'Characters (59)', href: '#characters-section' },
+  { label: 'Arcana (85)', href: '#arcana-section' },
   { label: 'Database', href: '#database-section' },
   { label: 'Bulletin Boards', href: '#bulletin-boards' },
   { label: 'FAQ', href: '#faq-section' },
@@ -41,8 +41,14 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
   const srArcana = arcana.filter((a) => a.rarity === 'SR');
   const rArcana = arcana.filter((a) => a.rarity === 'R');
 
+  const witchOfFavoritism = characters.find((c) => c.slug === 'witch-of-favoritism');
+  const guile = characters.find((c) => c.slug === 'guile');
   const maidCeres = characters.find((c) => c.slug === 'maid-ceres');
   const bunnyFrey = characters.find((c) => c.slug === 'bunny-frey');
+  const endlessDance =
+    arcana.find((a) => a.slug === 'arcana-80556268' || a.name === 'Endless Dance') || ssrArcana[0];
+  const fadedDream =
+    arcana.find((a) => a.slug === 'arcana-80556271' || a.name === 'Faded Dream') || ssrArcana[0];
   const gruelingOrdeal =
     arcana.find(
       (a) =>
@@ -65,7 +71,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             </span>
             <span>{game.patchVersion}</span>
           </div>
-          <span>Last Updated: Nov 10, 2026 17:50</span>
+          <span>Last Updated: Nov 12, 2026 21:30 JST</span>
         </div>
 
         <div className="flex items-center gap-3.5">
@@ -80,7 +86,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               Star Savior Strategy Wiki | Complete English Guide & Database
             </h1>
             <p className="mt-1 text-[12px] text-[#cbd5e1] leading-relaxed">
-              Complete Star Savior strategy wiki featuring Strongest Character & Arcana Tier Lists, Reroll Rankings, Journey Event Choice Checker, all 57 playable Saviors, and all 83 Arcana cards.
+              Complete Star Savior strategy wiki featuring Strongest Character & Arcana Tier Lists, Reroll Rankings, Journey Event Choice Checker, all 59 playable Saviors, and all 85 Arcana cards.
             </p>
           </div>
         </div>
@@ -272,9 +278,115 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           <div className="border-b border-[#28354e] bg-[#162136] px-3 py-2 text-center text-[12px] font-extrabold text-[#dbeafe]">
             Currently Held Observation Gachas
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#28354e]">
-            {/* Maid Ceres Gacha */}
+          <div className="grid grid-cols-1 md:grid-cols-2 divide-y divide-[#28354e]">
+            {/* 1st Anniv: Witch of Favoritism Gacha */}
+            <div className="p-3.5 space-y-3 md:border-r md:border-[#28354e]">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
+                <Link
+                  href="/starsavior/guides/1st-anniversary-gacha"
+                  className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
+                >
+                  Witch of Favoritism Pickup Gacha
+                </Link>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-bold text-amber-200">
+                    ~2026/12/04 (Fri) 04:00 JST
+                  </span>
+                  <LiveJstCountdown targetIso="2026-12-04T04:00:00+09:00" prefix="Ends in" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
+                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
+                  <div className="text-[10px] font-bold text-[#94a3b8]">Character</div>
+                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                </div>
+                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
+                  <div className="text-[10px] font-bold text-[#94a3b8]">Arcana</div>
+                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★☆</div>
+                </div>
+              </div>
+              <div>
+                <div className="text-[11px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                <div className="flex items-center gap-4">
+                  {witchOfFavoritism && (
+                    <AppMediaIconCell
+                      href={`/starsavior/characters/${witchOfFavoritism.slug}`}
+                      name={witchOfFavoritism.name}
+                      imageUrl={witchOfFavoritism.imageUrl}
+                      rarity="SSR"
+                      topLeftIconUrl={witchOfFavoritism.staticData?.attributeIconUrl}
+                      topRightIconUrl={witchOfFavoritism.staticData?.classIconUrl}
+                    />
+                  )}
+                  {fadedDream && (
+                    <AppMediaIconCell
+                      href={`/starsavior/arcana#${fadedDream.slug}`}
+                      name={fadedDream.name}
+                      imageUrl={fadedDream.imageUrl}
+                      rarity="SSR"
+                      topLeftIconUrl={fadedDream.staticData?.statTagIconUrl}
+                      badgeText="SSR"
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* 1st Anniv: Guile Gacha */}
             <div className="p-3.5 space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
+                <Link
+                  href="/starsavior/guides/1st-anniversary-gacha"
+                  className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
+                >
+                  Guile Pickup Gacha
+                </Link>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-bold text-amber-200">
+                    ~2026/12/04 (Fri) 04:00 JST
+                  </span>
+                  <LiveJstCountdown targetIso="2026-12-04T04:00:00+09:00" prefix="Ends in" />
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
+                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
+                  <div className="text-[10px] font-bold text-[#94a3b8]">Character</div>
+                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                </div>
+                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
+                  <div className="text-[10px] font-bold text-[#94a3b8]">Arcana</div>
+                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                </div>
+              </div>
+              <div>
+                <div className="text-[11px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                <div className="flex items-center gap-4">
+                  {guile && (
+                    <AppMediaIconCell
+                      href={`/starsavior/characters/${guile.slug}`}
+                      name={guile.name}
+                      imageUrl={guile.imageUrl}
+                      rarity="SSR"
+                      topLeftIconUrl={guile.staticData?.attributeIconUrl}
+                      topRightIconUrl={guile.staticData?.classIconUrl}
+                    />
+                  )}
+                  {endlessDance && (
+                    <AppMediaIconCell
+                      href={`/starsavior/arcana#${endlessDance.slug}`}
+                      name={endlessDance.name}
+                      imageUrl={endlessDance.imageUrl}
+                      rarity="SSR"
+                      topLeftIconUrl={endlessDance.staticData?.statTagIconUrl}
+                      badgeText="SSR"
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Maid Ceres Gacha */}
+            <div className="p-3.5 space-y-3 md:border-r md:border-[#28354e]">
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/maid-ceres-gacha"
@@ -966,14 +1078,14 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* =====================================================================
-       * SECTION 12: CHARACTERS (h2_093_characters.webp + icon_094..104 + 57 Units)
+       * SECTION 12: CHARACTERS (h2_093_characters.webp + icon_094..104 + 59 Units)
        * ===================================================================== */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
         <AppMediaBannerH2
           id="characters-section"
           bannerSrc="/banners/starsavior/h2/h2_093_characters.webp"
           bannerAlt="Star Savior Characters"
-          badge="57 SAVIORS"
+          badge="59 SAVIORS"
         >
           Star Savior Characters
         </AppMediaBannerH2>
@@ -1094,14 +1206,14 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* =====================================================================
-       * SECTION 13: ARCANA (h2_105_arcana.webp + All 83 Arcana Cards)
+       * SECTION 13: ARCANA (h2_105_arcana.webp + All 85 Arcana Cards)
        * ===================================================================== */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
         <AppMediaBannerH2
           id="arcana-section"
           bannerSrc="/banners/starsavior/h2/h2_105_arcana.webp"
           bannerAlt="Star Savior Arcana"
-          badge="83 CARDS"
+          badge="85 CARDS"
         >
           Star Savior Arcana
         </AppMediaBannerH2>

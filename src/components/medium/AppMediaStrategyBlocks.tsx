@@ -287,7 +287,7 @@ export function AppMediaStrategyFooter({
     <div className="space-y-6 pt-4">
       {showCharacterRoster && characters && characters.length > 0 && (
         <section className="space-y-3 rounded-lg border border-[#243049] bg-[#111726] p-4">
-          <AppMediaH2 id="related-character-links">Related Character Links (All 57 Saviors)</AppMediaH2>
+          <AppMediaH2 id="related-character-links">Related Character Links (All 59 Saviors)</AppMediaH2>
           <AppMediaH3>SSR Characters ({ssrChars.length})</AppMediaH3>
           <div className="flex flex-wrap gap-2 pt-1">
             {ssrChars.map((c) => (
@@ -328,7 +328,7 @@ export function AppMediaStrategyFooter({
         <AppMediaH3>Rankings & Tier Lists</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
           <AppMediaTableLink href="/starsavior/tier-list" label="Strongest Character Tier List" badge="HOT" />
-          <AppMediaTableLink href="/starsavior/arcana" label="Strongest Arcana Tier List" badge="83" />
+          <AppMediaTableLink href="/starsavior/arcana" label="Strongest Arcana Tier List" badge="85" />
           <AppMediaTableLink href="/starsavior/guides/pvp-tier-list" label="PvP Gauntlet Strongest Tier List" badge="PVP" />
         </div>
 
@@ -358,9 +358,9 @@ export function AppMediaStrategyFooter({
 
         <AppMediaH3>Complete Static Database</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <AppMediaTableLink href="/starsavior/characters" label="All 57 Characters List (SSR & SR)" badge="57" />
+          <AppMediaTableLink href="/starsavior/characters" label="All 59 Characters List (SSR & SR)" badge="59" />
           <AppMediaTableLink href="/starsavior/guides/character-stats-list" label="All Character Stats Comparison Table" />
-          <AppMediaTableLink href="/starsavior/arcana" label="All 83 Arcana Cards Encyclopedia (SSR/SR/R)" badge="83" />
+          <AppMediaTableLink href="/starsavior/arcana" label="All 85 Arcana Cards Encyclopedia (SSR/SR/R)" badge="85" />
           <AppMediaTableLink href="/starsavior/guides/voice-actors" label="Voice Actors (CV), Birthdays & Skins" />
         </div>
       </section>
@@ -378,7 +378,7 @@ export function AppMediaStrategyFooter({
           <div className="space-y-1">
             <div className="text-[13px] font-extrabold text-white">Star Savior Strategy Editorial Team</div>
             <p className="text-[12px] text-[#94a3b8] leading-relaxed">
-              Dedicated Star Savior verification & meta research team covering all 57 playable Saviors, 83 Arcana cards, Rescue Journey Hard Mode potentials, Cosmo Gate boss clear lineups, and Gauntlet PvP rankings.
+              Dedicated Star Savior verification & meta research team covering all 59 playable Saviors, 85 Arcana cards, Rescue Journey Hard Mode potentials, Cosmo Gate boss clear lineups, and Gauntlet PvP rankings.
             </p>
           </div>
         </div>

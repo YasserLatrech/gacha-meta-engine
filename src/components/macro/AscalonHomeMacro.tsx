@@ -561,7 +561,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                   Star Savior Strategy Wiki
                 </div>
                 <div className="text-[10px] text-[#cbd5e1]">
-                  Tier List · Reroll Guide · 57 Saviors · 83 Arcana →
+                  Tier List · Reroll Guide · 59 Saviors · 85 Arcana →
                 </div>
               </div>
             </Link>
@@ -1394,10 +1394,10 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               Star Savior Tier List
             </Link>
             <Link href="/starsavior/characters" className="text-[#93c5fd] hover:underline">
-              57 Characters Database
+              59 Characters Database
             </Link>
             <Link href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">
-              83 Arcana Encyclopedia
+              85 Arcana Encyclopedia
             </Link>
           </div>
         </div>

@@ -24,7 +24,7 @@ export function WikiShell({
       links: [
         { key: 'portal', label: 'Star Savior Wiki Top', href: '/starsavior', badge: 'TOP' },
         { key: 'tier-list', label: 'Strongest Character Tier List', href: '/starsavior/tier-list', badge: 'HOT' },
-        { key: 'arcana', label: 'Strongest Arcana Tier List', href: '/starsavior/arcana', badge: '83' },
+        { key: 'arcana', label: 'Strongest Arcana Tier List', href: '/starsavior/arcana', badge: '85' },
         { key: 'pvp-tier', label: 'PvP Gauntlet Tier List', href: '/starsavior/guides/pvp-tier-list', badge: 'PVP' },
         { key: 'reroll', label: 'Reroll Tier List & Stopping Line', href: '/starsavior/reroll', badge: 'STARTER' },
         { key: 'sr-chars', label: 'Recommended SR Characters', href: '/starsavior/guides/sr-characters', badge: 'SR' },
@@ -34,8 +34,8 @@ export function WikiShell({
     {
       heading: 'STATIC DATABASE & TOOLS',
       links: [
-        { key: 'characters', label: 'All 57 Characters List', href: '/starsavior/characters', badge: '57' },
-        { key: 'arcana-db', label: 'All 83 Arcana Cards List', href: '/starsavior/arcana#arcana-complete-database', badge: '83' },
+        { key: 'characters', label: 'All 59 Characters List', href: '/starsavior/characters', badge: '59' },
+        { key: 'arcana-db', label: 'All 85 Arcana Cards List', href: '/starsavior/arcana#arcana-complete-database', badge: '85' },
         { key: 'event-checker', label: 'Journey Event Choice Checker', href: '/starsavior/guides/event-choice-checker', badge: 'TOOL' },
         { key: 'char-tier-maker', label: 'Character Tier Maker Tool', href: '/starsavior/guides/character-tier-maker', badge: 'TOOL' },
       ],
@@ -57,8 +57,8 @@ export function WikiShell({
     { key: 'portal', label: 'Wiki Top', href: '/starsavior' },
     { key: 'tier-list', label: 'Tier List', href: '/starsavior/tier-list' },
     { key: 'reroll', label: 'Reroll', href: '/starsavior/reroll' },
-    { key: 'characters', label: 'Characters (57)', href: '/starsavior/characters' },
-    { key: 'arcana', label: 'Arcana (83)', href: '/starsavior/arcana' },
+    { key: 'characters', label: 'Characters (59)', href: '/starsavior/characters' },
+    { key: 'arcana', label: 'Arcana (85)', href: '/starsavior/arcana' },
   ];
 
   return (
@@ -113,7 +113,7 @@ export function WikiShell({
                   </span>
                 </div>
                 <div className="truncate text-[10.5px] sm:text-[11px] text-[#8492a6]">
-                  57 Characters · 83 Arcana
+                  59 Characters · 85 Arcana
                 </div>
               </div>
             </Link>
@@ -431,8 +431,8 @@ export function WikiShell({
             <Link href="/starsavior">Star Savior Wiki</Link>
             <Link href="/starsavior/tier-list">Tier List</Link>
             <Link href="/starsavior/reroll">Reroll Guide</Link>
-            <Link href="/starsavior/characters">Characters (57)</Link>
-            <Link href="/starsavior/arcana">Arcana (83)</Link>
+            <Link href="/starsavior/characters">Characters (59)</Link>
+            <Link href="/starsavior/arcana">Arcana (85)</Link>
           </div>
         </div>
       </footer>

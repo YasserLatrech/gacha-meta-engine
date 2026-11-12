@@ -110,7 +110,7 @@ export function StarSaviorGuideMacro({
       {/* Special Interactive or Ranking Modules */}
       {guide.specialKind === 'pvp-ranking' && (
         <section className="space-y-3">
-          <AppMediaH2 id="gauntlet-tier-table" badge="57 Saviors">
+          <AppMediaH2 id="gauntlet-tier-table" badge="59 Saviors">
             Gauntlet (PvP) Strongest Characters Tier Table
           </AppMediaH2>
           <div className="overflow-hidden rounded border border-[#263450] bg-[#0f1626]">

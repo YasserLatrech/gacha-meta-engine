@@ -66,11 +66,11 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(parsed.shortcutsConfig).toHaveLength(4);
   });
 
-  it('validates all 57 Star Savior characters (49 SSR + 8 SR) with strict Zod schemas and 0 CJK in English fields', () => {
-    expect(STAR_SAVIOR_CHARACTERS_SEED.length).toBe(57);
+  it('validates all 59 Star Savior characters (51 SSR + 8 SR) with strict Zod schemas and 0 CJK in English fields', () => {
+    expect(STAR_SAVIOR_CHARACTERS_SEED.length).toBe(59);
     const ssrCount = STAR_SAVIOR_CHARACTERS_SEED.filter((c) => c.rarity === 'SSR').length;
     const srCount = STAR_SAVIOR_CHARACTERS_SEED.filter((c) => c.rarity === 'SR').length;
-    expect(ssrCount).toBe(49);
+    expect(ssrCount).toBe(51);
     expect(srCount).toBe(8);
 
     for (const [idx, c] of STAR_SAVIOR_CHARACTERS_SEED.entries()) {
@@ -90,12 +90,12 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     }
   });
 
-  it('validates all 83 real Arcana cards (48 SSR + 15 SR + 20 R) and 3 banners with 0 CJK in English fields', () => {
-    expect(STAR_SAVIOR_ARCANA_SEED.length).toBe(83);
-    expect(STAR_SAVIOR_ARCANA_SEED.filter((a) => a.rarity === 'SSR').length).toBe(48);
+  it('validates all 85 real Arcana cards (50 SSR + 15 SR + 20 R) and 5 banners with 0 CJK in English fields', () => {
+    expect(STAR_SAVIOR_ARCANA_SEED.length).toBe(85);
+    expect(STAR_SAVIOR_ARCANA_SEED.filter((a) => a.rarity === 'SSR').length).toBe(50);
     expect(STAR_SAVIOR_ARCANA_SEED.filter((a) => a.rarity === 'SR').length).toBe(15);
     expect(STAR_SAVIOR_ARCANA_SEED.filter((a) => a.rarity === 'R').length).toBe(20);
-    expect(STAR_SAVIOR_BANNERS_SEED.length).toBe(3);
+    expect(STAR_SAVIOR_BANNERS_SEED.length).toBe(5);
 
     for (const [idx, a] of STAR_SAVIOR_ARCANA_SEED.entries()) {
       const parsed = ArcanaEntitySchema.parse({
@@ -120,6 +120,8 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(names.has('Bell Rhys')).toBe(true);
     expect(names.has('Tyria')).toBe(true);
     expect(names.has('Carnelia')).toBe(true);
+    expect(names.has('Witch of Favoritism')).toBe(true);
+    expect(names.has('Guile')).toBe(true);
 
     const arcNames = new Set(STAR_SAVIOR_ARCANA_SEED.map((a) => a.name));
     expect(arcNames.has('Customized Training to Cover Weaknesses')).toBe(true);
@@ -127,6 +129,8 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(arcNames.has('Death for the Flowers')).toBe(true);
     expect(arcNames.has('Grueling Ordeal')).toBe(true);
     expect(arcNames.has('Young Lady of Stranis')).toBe(true);
+    expect(arcNames.has('Endless Dance')).toBe(true);
+    expect(arcNames.has('Faded Dream')).toBe(true);
 
     expect(STAR_SAVIOR_GUIDES.length).toBeGreaterThanOrEqual(80);
     expect(getStarSaviorGuideBySlug('pvp-tier-list')?.specialKind).toBe('pvp-ranking');

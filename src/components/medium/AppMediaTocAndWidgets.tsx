@@ -65,14 +65,15 @@ export function AppMediaTocBox({ items, title = 'Table of Contents' }: { items: 
 const LATEST_UPDATE_TABS = [
   {
     key: 'livestream',
-    tabLabel: 'Livestream News',
-    title: 'Nov 12 1st Anniv: Witch of Favoritism & FREE SSR Guile (+ Free SSR Arcana)!',
+    tabLabel: '1st Anniv Live!',
+    title: '1st Anniversary Live: SSS Witch of Favoritism & FREE SSR Guile (~Dec 4, 04:00)!',
     badge: 'RECOMMENDED',
     description:
-      '1st Anniversary broadcast summary: Order Striker Witch of Favoritism & FREE Chaos Caster Guile (+ free universal SSR Arcana) launch Nov 12 alongside 200 Anniv pulls, followed by Limited Dress Lacy & Dress Carnelia (+300 pulls) in December!',
+      '1st Anniversary Pickup banners are LIVE until Dec 4, 04:00 JST! Claim FREE Chaos Caster Guile (Day 1 Login) + FREE Power SSR Arcana "Endless Dance" (Sector 6), and pull Order Striker Witch of Favoritism!',
     links: [
-      { label: 'View Latest Livestream Summary Here', href: '/starsavior/guides/livestream-summary' },
-      { label: 'Active Coupon Codes List Here', href: '/starsavior/guides/promo-codes' },
+      { label: 'Should You Pull 1st Anniversary Gacha?', href: '/starsavior/guides/1st-anniversary-gacha' },
+      { label: 'Witch of Favoritism Build & Evaluation', href: '/starsavior/characters/witch-of-favoritism' },
+      { label: 'Guile Build & Evaluation', href: '/starsavior/characters/guile' },
     ],
   },
   {
@@ -132,16 +133,16 @@ const LATEST_UPDATE_TABS = [
       'Clear daily event missions and all 3 daily Event Raids to farm Deluxe Valentine Chocolates for Focused / Standard Observation Tickets, Master Cube, Moonlight Water, and Polaris Support Boxes.',
     links: [
       { label: 'Valentine Event Walkthrough Here', href: '/starsavior/guides/valentine-event' },
-      { label: 'All 57 Playable Characters Database', href: '/starsavior/characters' },
+      { label: 'All 59 Playable Characters Database', href: '/starsavior/characters' },
     ],
   },
   {
     key: 'tier-update',
     tabLabel: 'Strongest Ranking Updated!',
-    title: 'Strongest Character Tier List Updated — Maid Ceres Debuts at SS!',
+    title: 'Strongest Tier List Updated — Witch of Favoritism (SSS) & Guile (SS) Debut!',
     badge: 'RECOMMENDED',
     description:
-      'Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat lead Tier-0 SSS, with newly released Maid Ceres entering SS Rank!',
+      'Order Striker Witch of Favoritism debuts in Tier-0 SSS alongside Amora, Professor M, and Carmen: Eternal Promise, while free Cosmic Caster Guile and Maid Ceres enter SS Rank!',
     links: [
       { label: 'Strongest Character Ranking', href: '/starsavior/tier-list' },
       { label: 'Gauntlet (PvP) Strongest Ranking', href: '/starsavior/guides/pvp-tier-list' },

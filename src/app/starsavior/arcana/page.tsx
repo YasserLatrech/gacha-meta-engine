@@ -8,16 +8,16 @@ import { JsonLd } from '@/components/micro/JsonLd';
 
 export const revalidate = 300;
 
-const PAGE_TITLE = 'Star Savior Arcana Tier List & All 83 Cards Database';
+const PAGE_TITLE = 'Star Savior Arcana Tier List & All 85 Cards Database';
 const PAGE_DESC =
-  'Star Savior Strongest Arcana Tier List & complete 83-card SSR/SR/R encyclopedia. Filter by Power, Health, Endurance, Focus & Protect tags and Special Potentials.';
+  'Star Savior Strongest Arcana Tier List & complete 85-card SSR/SR/R encyclopedia. Filter by Power, Health, Endurance, Focus & Protect tags and Special Potentials.';
 
 export const metadata: Metadata = buildPageMetadata({
   title: PAGE_TITLE,
   description: PAGE_DESC,
   path: '/starsavior/arcana',
   ogImage: '/banners/starsavior/eyecatch/rank_arcana.webp',
-  ogImageAlt: 'Star Savior Strongest Arcana Tier List & 83 Cards Database',
+  ogImageAlt: 'Star Savior Strongest Arcana Tier List & 85 Cards Database',
   type: 'website',
   keywords: [
     'Star Savior Arcana tier list',
@@ -39,7 +39,7 @@ export default async function ArcanaTierListPage() {
           title: PAGE_TITLE,
           description: PAGE_DESC,
           path: '/starsavior/arcana',
-          breadcrumbLabel: 'Strongest Arcana Tier List (83 Cards)',
+          breadcrumbLabel: 'Strongest Arcana Tier List (85 Cards)',
           image: '/banners/starsavior/eyecatch/rank_arcana.webp',
           schemaType: 'CollectionPage',
           topArcana,
@@ -49,7 +49,7 @@ export default async function ArcanaTierListPage() {
         game={dataset.game}
         topCharacters={topUnits}
         activeNav="arcana"
-        breadcrumbLabel="Strongest Arcana Tier List (83 Cards)"
+        breadcrumbLabel="Strongest Arcana Tier List (85 Cards)"
       >
         <ArcanaTierListMacro dataset={dataset} />
       </WikiShell>

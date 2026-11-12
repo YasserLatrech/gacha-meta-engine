@@ -97,19 +97,19 @@ export const STAR_SAVIOR_GAME_SEED = {
     },
     {
       "key": "characters",
-      "title": "All 57 Characters",
+      "title": "All 59 Characters",
       "subtitle": "Stats, Skills, Dupes & Builds",
       "href": "/starsavior/characters",
       "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp",
-      "badge": "57 UNITS"
+      "badge": "59 UNITS"
     },
     {
       "key": "arcana",
-      "title": "All 83 Arcana Cards",
+      "title": "All 85 Arcana Cards",
       "subtitle": "SSR/SR/R Potentials & Training",
       "href": "/starsavior/arcana",
       "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_MAID_TWOHANDER_SSR_01_icon_arcana.webp",
-      "badge": "83 CARDS"
+      "badge": "85 CARDS"
     }
   ]
 };
@@ -45027,6 +45027,842 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
   },
   {
     "gameSlug": "starsavior",
+    "slug": "witch-of-favoritism",
+    "name": "Witch of Favoritism",
+    "title": "Unknown Timeline · Slash Damage",
+    "rarity": "SSR",
+    "element": "Order",
+    "role": "Striker",
+    "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/11/212032_duamr.webp",
+    "overallTier": "SS",
+    "rerollTier": "SS",
+    "score": "0",
+    "summary": "Break Attacker that unleashes massive defense-ignoring Chain Fixed Damage (~50,000+ per proc, 180% ATK against Bosses) whenever attacking Toughness-Broken enemies · Gains an Extra Turn once every 2 turns upon breaking an enemy's Toughness · Resets Special Skill (Afterimage Cleave) cooldown when attacking a Broken target, enabling up to 6 Toughness shred against bosses · Consumes 1 Insight stack on hit to reduce incoming damage by 30%, enabling frontline placement · Relies on Toughness Break, so swap her out against Toughness-Immune bosses.",
+    "recommendedDupes": "★★☆ (LB0 Viable)",
+    "baseStats": {
+      "hp": 20822,
+      "hpRank": "35/59",
+      "hpBarPct": 82.1,
+      "spd": 109,
+      "spdRank": "3/59",
+      "spdBarPct": 94.8,
+      "atk": 4432,
+      "atkRank": "5/59",
+      "atkBarPct": 98.7,
+      "def": 1601,
+      "defRank": "18/59",
+      "defBarPct": 83.3,
+      "crit": 5,
+      "critRate": "5%",
+      "critDmg": "50%",
+      "effHit": "100%",
+      "effRes": "0%"
+    },
+    "skills": [
+      {
+        "name": "Cruel Favoritism",
+        "nameJp": "残酷な偏愛",
+        "type": "Unique Passive",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/153906_o51ax.webp",
+        "target": "Passive",
+        "cooldown": "",
+        "toughnessDamage": "0",
+        "novaForce": "0",
+        "spOrEnergyCost": "Passive",
+        "multiplierSummary": "Boss Chain Fixed DMG: ATK 180%",
+        "scalingRows": [],
+        "exactDescription": "Witch of Favoritism's ATK increases by 15%.\nAfter attacking on her own turn, if the target is in Toughness Break state, grants 1 Witch's Stigmata (unremovable) to self, resets Afterimage Cleave's cooldown, and inflicts Chain Fixed Damage equal to 30% of own ATK (180% of own ATK against Boss targets).\nWhen attacked while holding Insight stacks, reduces incoming damage by 30% and consumes 1 Insight stack.\nWhen breaking an enemy's Toughness on her own turn, grants an Extra Turn to self (triggers once every 2 turns).",
+        "novaBurst": "",
+        "tooltips": [
+          {
+            "title": "Insight",
+            "detail": "Damage dealt to Chaos Attribute units increases by 1% per stack (up to 5 stacks). Applied independently of buffs and debuffs."
+          },
+          {
+            "title": "Witch's Stigmata",
+            "detail": "Increases ATK by 4% and SPD by 2% per stack (stacks up to 5 times)."
+          }
+        ]
+      },
+      {
+        "name": "Extinction",
+        "nameJp": "絶命",
+        "type": "Basic Skill",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/153919_bli1p.webp",
+        "target": "Active Skill | Single Target",
+        "cooldown": "",
+        "toughnessDamage": "1",
+        "novaForce": "0",
+        "spOrEnergyCost": "Basic | Toughness: 1",
+        "multiplierSummary": "Damage: ATK 50%",
+        "scalingRows": [
+          {
+            "category": "Damage",
+            "items": [
+              {
+                "value": "ATK 50%",
+                "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/t-14039-20260318073733.webp"
+              }
+            ]
+          }
+        ],
+        "exactDescription": "Swings her sword twice to strike a single enemy and grants 1 Insight stack to self.",
+        "novaBurst": "When attacking, temporarily increases own Fixed Toughness Damage by 2.",
+        "tooltips": [
+          {
+            "title": "Insight",
+            "detail": "Damage dealt to Chaos Attribute units increases by 1% per stack (up to 5 stacks)."
+          }
+        ]
+      },
+      {
+        "name": "Afterimage Cleave",
+        "nameJp": "残影割り",
+        "type": "Special Skill",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/153927_c92k5.webp",
+        "target": "Active Skill | All Enemies",
+        "cooldown": "3 turns",
+        "toughnessDamage": "1",
+        "novaForce": "1",
+        "spOrEnergyCost": "CT: 3 turns | Toughness: 1 (+5 vs Boss)",
+        "multiplierSummary": "Damage: ATK 40%",
+        "scalingRows": [
+          {
+            "category": "Damage",
+            "items": [
+              {
+                "value": "ATK 40%",
+                "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/t-14039-20260318073733.webp"
+              }
+            ]
+          }
+        ],
+        "exactDescription": "Unleashes void power to cleave space and attack all enemies.\nGrants ATK Up to self for 2 turns, increases own Action Gauge by 15%, and grants 1 Insight stack.\nWhile in Shatter state, increases own Toughness Damage by 2, and by an additional 3 if the target is a Boss.",
+        "novaBurst": "When attacking, temporarily increases own Fixed Toughness Damage by 1.",
+        "tooltips": [
+          {
+            "title": "ATK Up",
+            "detail": "Attack power increases by 30%."
+          },
+          {
+            "title": "Shatter",
+            "detail": "Increases ATK by 10% and Fixed Toughness Damage by 1."
+          }
+        ]
+      },
+      {
+        "name": "Lucura Noctis",
+        "nameJp": "ルクーラ・ノクティス",
+        "type": "Ultimate Skill",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/153936_8xh2y.webp",
+        "target": "Active Skill | All Enemies",
+        "cooldown": "4 turns",
+        "toughnessDamage": "2",
+        "novaForce": "1",
+        "spOrEnergyCost": "CT: 4 turns | Toughness: 2",
+        "multiplierSummary": "Damage: ATK 66.25%",
+        "scalingRows": [
+          {
+            "category": "Damage",
+            "items": [
+              {
+                "value": "ATK 66.25%",
+                "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/t-14039-20260318073733.webp"
+              }
+            ]
+          }
+        ],
+        "exactDescription": "Unseals her blade to obliterate everything ahead, attacking all enemies.\nGrants Shatter to self for 3 turns, increases own Action Gauge by 15%, and grants 2 Insight stacks.",
+        "novaBurst": "When attacking, temporarily increases own Fixed Toughness Damage by 1.",
+        "tooltips": [
+          {
+            "title": "Shatter",
+            "detail": "Increases ATK by 10% and Fixed Toughness Damage by 1."
+          }
+        ]
+      }
+    ],
+    "bestArcanaSlugs": [
+      "arcana-80556271",
+      "arcana-80556268",
+      "arcana-80012824",
+      "arcana-79941760",
+      "arcana-80139832"
+    ],
+    "staticData": {
+      "nameJp": "偏愛の魔女",
+      "pool": "Standard",
+      "attackType": "Slash Damage",
+      "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-65502-20251114140221.webp",
+      "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-1533-20251112031704.webp",
+      "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/11/213150_u78m9.webp",
+      "arkPointUrl": "https://appmedia.jp/wp-content/uploads/2026/11/151227_d7z0v.webp",
+      "pvpTier": "SS",
+      "pveTier": "SSS",
+      "bossTier": "SS",
+      "appMediaTier": "SSS",
+      "appMediaRerollTier": "SS",
+      "evalBullets": [
+        "Break Attacker dealing ~50,000+ defense-ignoring Chain Fixed Damage (180% ATK vs Bosses) on Broken targets",
+        "Gains an Extra Turn once every 2 turns upon breaking Toughness and resets Special Skill cooldown when attacking Broken enemies",
+        "Shatter buff enables up to 6 Toughness shred on bosses with Afterimage Cleave; pairs naturally with free 1st Anniversary SSR Guile",
+        "Consumes Insight stacks to cut incoming damage by 30%, allowing frontline deployment in Gauntlet PvP and Boss raids"
+      ],
+      "partyTitle": "1st Anniversary High-Frequency Break Formation",
+      "recommendedParty": [
+        {
+          "slug": "guile",
+          "name": "Guile",
+          "nameJp": "ギーレ",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/214419_cw4lk.webp",
+          "position": "BACK"
+        },
+        {
+          "slug": "witch-of-favoritism",
+          "name": "Witch of Favoritism",
+          "nameJp": "偏愛の魔女",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/212032_duamr.webp",
+          "position": "FRONT"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "nameJp": "エデ",
+          "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "nameJp": "プロフェッサーM",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
+          "position": "BACK"
+        }
+      ],
+      "partyNotes": [
+        "Pairs Witch of Favoritism with Guile to trigger nonstop Toughness Breaks and amplify Break damage up to +50%.",
+        "Place Witch of Favoritism in the frontline thanks to her 30% Insight damage reduction, while Professor M triggers Cross Attacks to stack Faded Dream's ATK buff rapidly."
+      ],
+      "arcanaDeckTitle": "Witch of Favoritism Power Break Deck",
+      "journeyTrainingPoints": [
+        "Prioritize Power training above all else to maximize defense-ignoring Chain Fixed Damage.",
+        "Focus training is unnecessary since she carries no debuffs.",
+        "Select Power and Health Stellar Archive blessings; prioritize Crit Rate/DMG and ATK% potentials."
+      ],
+      "substituteArcana": [],
+      "statPriorityMeters": [
+        {
+          "stat": "Power",
+          "statJp": "力",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_mpod4.webp",
+          "segmentsOn": 5
+        },
+        {
+          "stat": "Health",
+          "statJp": "体力",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
+          "segmentsOn": 4
+        },
+        {
+          "stat": "Endurance",
+          "statJp": "忍耐",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nrs80.webp",
+          "segmentsOn": 3
+        },
+        {
+          "stat": "Focus",
+          "statJp": "集中",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_vmi62.webp",
+          "segmentsOn": 0
+        },
+        {
+          "stat": "Protect",
+          "statJp": "保護",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
+          "segmentsOn": 0
+        }
+      ],
+      "strengthsSections": [
+        {
+          "level": "h3",
+          "title": "Defense-Ignoring 180% ATK Boss Chain Fixed Damage",
+          "imageUrl": "",
+          "paragraphs": [
+            "Attacking a Toughness-Broken target triggers 30% ATK Chain Fixed Damage against regular enemies and 180% ATK against Bosses, consistently dealing 50,000+ true damage before skill damage is even added.",
+            "Equipping the 4-piece Attack Set maximizes this defense-ignoring fixed damage across all attributes."
+          ]
+        },
+        {
+          "level": "h3",
+          "title": "Extra Turn on Break & Special Skill Cooldown Reset Loop",
+          "imageUrl": "",
+          "paragraphs": [
+            "Breaking an enemy grants an Extra Turn (every 2 turns), and attacking with Basic Skill during Break resets Afterimage Cleave so you can immediately shred up to 6 Toughness again as soon as the boss recovers."
+          ]
+        }
+      ],
+      "journeyStats": {
+        "power": 180,
+        "vitality": 140,
+        "endurance": 20,
+        "focus": 10,
+        "protection": 10
+      },
+      "equipment": {
+        "pveSets": [
+          "Attack Set (4pc: ATK +20%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
+        ],
+        "pvpSets": [
+          "Attack Set (4pc: ATK +20%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
+        ],
+        "pveSetDetails": [
+          {
+            "name": "Attack Set (4pc: ATK +20%)",
+            "shortName": "Attack",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/171246_9azfh.webp",
+            "effect": "Attack power"
+          },
+          {
+            "name": "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)",
+            "shortName": "Fighting spirit",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/191249_e3yhb.webp",
+            "effect": "Attack power Effect RES"
+          }
+        ],
+        "pvpSetDetails": [
+          {
+            "name": "Attack Set (4pc: ATK +20%)",
+            "shortName": "Attack",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/171246_9azfh.webp",
+            "effect": "Attack power"
+          },
+          {
+            "name": "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)",
+            "shortName": "Fighting spirit",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/191249_e3yhb.webp",
+            "effect": "Attack power Effect RES"
+          }
+        ],
+        "necklaceMain": "Speed",
+        "necklaceIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/190119_38kec.webp",
+        "ringMain": "Attack power (%)",
+        "ringIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/190119_ncgp0.webp",
+        "subStats": "Crit Rate / Crit DMG / Speed / Attack power (%)"
+      },
+      "hardPotential": {
+        "name": "Starlight Trail AX5",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/120713_nq5gy.webp",
+        "effect": "Attack power increases by 8% and Crit Rate increases by 5%. At the start of each turn, own attack power increases by 8% (up to 5 stacks; resets after Ultimate Skill)."
+      },
+      "dupeRating": "★★☆",
+      "dupeSummary": "★★☆ (Dupes scale Boss Chain Fixed Damage from 120% -> 180% ATK, but LB0 is already top-tier)",
+      "limitBreaks": [],
+      "skillPriority": [
+        {
+          "skillType": "Basic Skill",
+          "priority": "★☆☆",
+          "recLevel": "Lv.3｜Lv.10"
+        },
+        {
+          "skillType": "Special Skill",
+          "priority": "★★★ Raise to Cooldown reduction",
+          "recLevel": "Lv.6｜Lv.10"
+        },
+        {
+          "skillType": "Ultimate Skill",
+          "priority": "★★☆ Raise to Cooldown reduction",
+          "recLevel": "Lv.6｜Lv.10"
+        }
+      ],
+      "skillLevelProgression": {
+        "basic": [
+          { "level": "2", "effect": "Damage Dealt +1%" },
+          { "level": "6", "effect": "Damage Dealt +2%" },
+          { "level": "10", "effect": "Damage Dealt +3%" }
+        ],
+        "special": [
+          { "level": "4", "effect": "Action Gauge Gain +5%" },
+          { "level": "6", "effect": "Cooldown -1 Turn" },
+          { "level": "8", "effect": "Action Gauge Gain +5%" },
+          { "level": "10", "effect": "Damage Dealt +5%" }
+        ],
+        "ultimate": [
+          { "level": "4", "effect": "Action Gauge Gain +5%" },
+          { "level": "6", "effect": "Cooldown -1 Turn" },
+          { "level": "8", "effect": "Action Gauge Gain +5%" },
+          { "level": "10", "effect": "Damage Dealt +5%" }
+        ]
+      },
+      "preAwakeningSkills": [],
+      "curio": {
+        "name": "Impure Circlet",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/164221_wzrhq.webp",
+        "rank": "A",
+        "rankNote": "(Easy Clear)",
+        "effect": "Max Toughness +1. Grants Shatter to self for 1 turn at battle start, and increases Afterimage Cleave Toughness Damage by +1 while in Shatter state."
+      },
+      "resonancePotentials": [
+        { "name": "Sense of attack", "effect": "Attack power increases by 5%." },
+        { "name": "Sense of speed", "effect": "Speed increases by 5." },
+        { "name": "Offensive prowess", "effect": "Attack power increases by 2%." }
+      ],
+      "resonanceStages": [],
+      "resonanceTotalMaterials": [
+        { "name": "Ether Dust", "count": 400, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/140541_4s8yj.webp" },
+        { "name": "Shape-Memory Alloy", "count": 24, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/141907_l0qwx.webp" },
+        { "name": "Anti-Gravity Meteorite I", "count": 56, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/182111_pexf7.webp" },
+        { "name": "Dawn Light Crystal I", "count": 28, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/170006_fn350.webp" },
+        { "name": "Anti-Gravity Meteorite II", "count": 28, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/170038_nlcm1.webp" },
+        { "name": "Dawn Light Crystal II", "count": 14, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/170022_k6t2m.webp" }
+      ],
+      "gifts": [
+        {
+          "name": "Latest issue of Travel Times",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150217_lemsz.webp",
+          "tier": "Favorite",
+          "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
+        },
+        {
+          "name": "Book of Void Manuscript",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150216_upz85.webp",
+          "tier": "Favorite",
+          "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
+        },
+        {
+          "name": "Royal amour bouquet",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150216_hztqp.webp",
+          "tier": "Liked",
+          "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
+        }
+      ],
+      "profile": {
+        "cv": "Natsumi Takamori",
+        "affiliation": "Unknown",
+        "birthday": "April 22nd",
+        "height": "166cm",
+        "origin": "Unknown",
+        "obtain": "1st Anniversary Pickup / Cosmic Observation",
+        "bio": "An entity crossing countless worldlines driven by a single wish to save someone. Though strangely familiar in appearance, her true identity remains shrouded in mystery."
+      }
+    }
+  },
+  {
+    "gameSlug": "starsavior",
+    "slug": "guile",
+    "name": "Guile",
+    "title": "Executor of Aldebaran · Elemental Damage",
+    "rarity": "SSR",
+    "element": "Chaos",
+    "role": "Caster",
+    "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/214419_cw4lk.webp",
+    "overallTier": "SS",
+    "rerollTier": "S",
+    "score": "0",
+    "summary": "Free 1st Anniversary Cosmic Caster (Day 1 Login Reward!) with #1 Base ATK on the server (4,489) · Grants a permanent, unremovable Break Damage Dealt aura to all allies (up to +30% at MLB, +50% total with Finale) · Grants Overture -> Rhapsody -> Finale (+1 Toughness DMG & +20% Break DMG) plus +20% Action Gauge and SPD Up to Shatter-state allies · Automatically follow-up casts Imperfect Death Throes when an Overture/Rhapsody/Finale ally breaks Toughness · Designed to pair with Shatter units such as Witch of Favoritism or Tyria.",
+    "recommendedDupes": "★★★ (LB3 Recommended)",
+    "baseStats": {
+      "hp": 20662,
+      "hpRank": "38/59",
+      "hpBarPct": 81.5,
+      "spd": 93,
+      "spdRank": "45/59",
+      "spdBarPct": 80.9,
+      "atk": 4489,
+      "atkRank": "1/59",
+      "atkBarPct": 100,
+      "def": 1596,
+      "defRank": "41/59",
+      "defBarPct": 83.1,
+      "crit": 5,
+      "critRate": "5%",
+      "critDmg": "68%",
+      "effHit": "100%",
+      "effRes": "0%"
+    },
+    "skills": [
+      {
+        "name": "Malice",
+        "nameJp": "悪意",
+        "type": "Unique Passive",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/225458_gd9xs.webp",
+        "target": "Passive",
+        "cooldown": "",
+        "toughnessDamage": "0",
+        "novaForce": "0",
+        "spOrEnergyCost": "Passive",
+        "multiplierSummary": "Team Break DMG: Up to +30%",
+        "scalingRows": [],
+        "exactDescription": "Guile's ATK increases by 15%.\nAt the start of Guile's turn, grants 1 Upheaval stack to self. When any ally attacks, increases damage dealt to Toughness-Broken enemies by up to 6% per Upheaval stack on Guile (max 5 stacks = +30% at MLB).\nAfter a Shatter-state ally attacks, grants SPD Up for 1 turn to all Shatter-state allies.\nWhen an ally holding Overture, Rhapsody, or Finale breaks an enemy's Toughness, Guile triggers an extra Imperfect Death Throes against the Broken target (once per turn).",
+        "novaBurst": "",
+        "tooltips": [
+          {
+            "title": "Upheaval",
+            "detail": "Damage dealt to Order Attribute units increases by 1% per stack (up to 5 stacks)."
+          },
+          {
+            "title": "Overture / Rhapsody / Finale",
+            "detail": "Unremovable buff: Overture (+1 Toughness DMG) -> Rhapsody (+1 Toughness DMG, +10% Break DMG) -> Finale (+1 Toughness DMG, +20% Break DMG)."
+          }
+        ]
+      },
+      {
+        "name": "Liquefaction",
+        "nameJp": "液化",
+        "type": "Basic Skill",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/225512_59a2s.webp",
+        "target": "Active Skill | Single Target",
+        "cooldown": "",
+        "toughnessDamage": "1",
+        "novaForce": "0",
+        "spOrEnergyCost": "Basic | Toughness: 1",
+        "multiplierSummary": "Damage: ATK 50%",
+        "scalingRows": [
+          {
+            "category": "Damage",
+            "items": [
+              {
+                "value": "ATK 50%",
+                "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/t-14039-20260318073733.webp"
+              }
+            ]
+          }
+        ],
+        "exactDescription": "Snaps her fingers to ignite flames beneath the target's feet, dealing Elemental damage and granting 1 Upheaval stack to self.",
+        "novaBurst": "When attacking, temporarily increases own Fixed Toughness Damage by 1, and grants Shatter to self for 1 turn after attacking.",
+        "tooltips": [
+          {
+            "title": "Shatter",
+            "detail": "Increases ATK by 10% and Fixed Toughness Damage by 1."
+          }
+        ]
+      },
+      {
+        "name": "Imperfect Death Throes",
+        "nameJp": "不完全な断末魔",
+        "type": "Special Skill",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/225521_71vep.webp",
+        "target": "Active Skill | Single Target",
+        "cooldown": "3 turns",
+        "toughnessDamage": "2",
+        "novaForce": "1",
+        "spOrEnergyCost": "CT: 3 turns | Toughness: 2",
+        "multiplierSummary": "Damage: ATK 90%",
+        "scalingRows": [
+          {
+            "category": "Damage",
+            "items": [
+              {
+                "value": "ATK 90%",
+                "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/t-14039-20260318073733.webp"
+              }
+            ]
+          }
+        ],
+        "exactDescription": "Sweeps one wing to strike a single enemy.\nAfter attacking, upgrades all allies' Rhapsody to Finale, and upgrades Overture to Rhapsody (unremovable).\nIf Guile is in Finale state when attacking, increases damage dealt to Toughness-Broken enemies by an additional 30%.",
+        "novaBurst": "When attacking, temporarily increases own Fixed Toughness Damage by 1.",
+        "tooltips": [
+          {
+            "title": "Finale",
+            "detail": "Increases Toughness Damage by 1 and damage dealt to Toughness-Broken targets by 20% (unremovable)."
+          }
+        ]
+      },
+      {
+        "name": "Star-Scorching Calamity",
+        "nameJp": "天体を焼き尽くす災厄",
+        "type": "Ultimate Skill",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/225528_436kl.webp",
+        "target": "Active Skill | All Enemies",
+        "cooldown": "4 turns",
+        "toughnessDamage": "2",
+        "novaForce": "1",
+        "spOrEnergyCost": "CT: 4 turns | Toughness: 2",
+        "multiplierSummary": "Damage: ATK 66.25%",
+        "scalingRows": [
+          {
+            "category": "Damage",
+            "items": [
+              {
+                "value": "ATK 66.25%",
+                "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/03/t-14039-20260318073733.webp"
+              }
+            ]
+          }
+        ],
+        "exactDescription": "Summons the remnants of a calamitous star to bombard all enemies.\nGrants Shatter to self for 2 turns, then grants Overture (unremovable) and +20% Action Gauge to all Shatter-state allies.\nInflicts SPD Down for 2 turns (100% base chance) on the enemy with the highest ATK; ignores Effect RES while Guile holds Finale.",
+        "novaBurst": "When attacking, temporarily increases own Fixed Toughness Damage by 1.",
+        "tooltips": [
+          {
+            "title": "SPD Down",
+            "detail": "Reduces Speed by 20%."
+          }
+        ]
+      }
+    ],
+    "bestArcanaSlugs": [
+      "arcana-80556268",
+      "arcana-80012824",
+      "arcana-79766540",
+      "arcana-79941760",
+      "arcana-80139832"
+    ],
+    "staticData": {
+      "nameJp": "ギーレ",
+      "pool": "Standard",
+      "attackType": "Elemental Damage",
+      "attributeIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-10703-20251114140221.webp",
+      "classIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-57169-20251112031841.webp",
+      "illustUrl": "https://appmedia.jp/wp-content/uploads/2026/11/213149_dzkvq.webp",
+      "arkPointUrl": "https://appmedia.jp/wp-content/uploads/2026/11/151246_tes4q.webp",
+      "pvpTier": "SS",
+      "pveTier": "SS",
+      "bossTier": "SS",
+      "appMediaTier": "SS",
+      "appMediaRerollTier": "S",
+      "evalBullets": [
+        "Distributed FREE via 1st Anniversary Day 1 Login (first free Cosmic Savior in Star Savior history!)",
+        "Ranks #1 out of all 59 Saviors in Base ATK (4,489) while granting up to +30% permanent Break DMG to all allies",
+        "Accelerates Shatter allies (Witch of Favoritism & Tyria) with +20% Action Gauge, SPD Up, and Overture -> Rhapsody -> Finale upgrades",
+        "Signature SSR Arcana Endless Dance is also free upon clearing Operation Sector 6"
+      ],
+      "partyTitle": "1st Anniversary High-Frequency Break Formation",
+      "recommendedParty": [
+        {
+          "slug": "guile",
+          "name": "Guile",
+          "nameJp": "ギーレ",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/214419_cw4lk.webp",
+          "position": "BACK"
+        },
+        {
+          "slug": "witch-of-favoritism",
+          "name": "Witch of Favoritism",
+          "nameJp": "偏愛の魔女",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/212032_duamr.webp",
+          "position": "FRONT"
+        },
+        {
+          "slug": "ede",
+          "name": "Ede",
+          "nameJp": "エデ",
+          "iconUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/INCOGNITA_FLOWER_icon.webp",
+          "position": "FRONT"
+        },
+        {
+          "slug": "professor-m",
+          "name": "Professor M",
+          "nameJp": "プロフェッサーM",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp",
+          "position": "BACK"
+        }
+      ],
+      "partyNotes": [
+        "Guile passes Overture/Rhapsody/Finale and +20% Action Gauge to Shatter allies, making Witch of Favoritism her ideal partner."
+      ],
+      "arcanaDeckTitle": "Attacker Power Crit Deck",
+      "journeyTrainingPoints": [
+        "Train Power as top priority; Focus is unnecessary since Star-Scorching Calamity ignores Effect RES during Finale.",
+        "Use Power and Health Stellar Archive blessings and stack Crit Rate, Crit DMG, and SPD potentials."
+      ],
+      "substituteArcana": [],
+      "statPriorityMeters": [
+        {
+          "stat": "Power",
+          "statJp": "力",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_mpod4.webp",
+          "segmentsOn": 5
+        },
+        {
+          "stat": "Health",
+          "statJp": "体力",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nbx6e.webp",
+          "segmentsOn": 4
+        },
+        {
+          "stat": "Endurance",
+          "statJp": "忍耐",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_nrs80.webp",
+          "segmentsOn": 3
+        },
+        {
+          "stat": "Focus",
+          "statJp": "集中",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102325_vmi62.webp",
+          "segmentsOn": 0
+        },
+        {
+          "stat": "Protect",
+          "statJp": "保護",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/102326_03plv.webp",
+          "segmentsOn": 0
+        }
+      ],
+      "strengthsSections": [
+        {
+          "level": "h3",
+          "title": "Permanent Unremovable Team-Wide Break Damage Buff",
+          "imageUrl": "",
+          "paragraphs": [
+            "Guile passively grants up to +30% Break Damage Dealt to the entire squad at MLB, stacking with Finale (+20%) for a massive +50% Break burst window."
+          ]
+        },
+        {
+          "level": "h3",
+          "title": "Built for Shatter Formations With Witch of Favoritism",
+          "imageUrl": "",
+          "paragraphs": [
+            "Whenever a Shatter ally holding Overture/Rhapsody/Finale breaks Toughness, Guile automatically casts Imperfect Death Throes to upgrade the squad's symphony tier and pile on extra single-target burst."
+          ]
+        }
+      ],
+      "journeyStats": {
+        "power": 180,
+        "vitality": 140,
+        "endurance": 20,
+        "focus": 10,
+        "protection": 10
+      },
+      "equipment": {
+        "pveSets": [
+          "Insight Set (4pc: Crit Rate +15%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
+        ],
+        "pvpSets": [
+          "Insight Set (4pc: Crit Rate +15%)",
+          "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)"
+        ],
+        "pveSetDetails": [
+          {
+            "name": "Insight Set (4pc: Crit Rate +15%)",
+            "shortName": "Insight",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/191249_i4h09.webp",
+            "effect": "Crit Rate"
+          },
+          {
+            "name": "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)",
+            "shortName": "Fighting spirit",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/191249_e3yhb.webp",
+            "effect": "Attack power Effect RES"
+          }
+        ],
+        "pvpSetDetails": [
+          {
+            "name": "Insight Set (4pc: Crit Rate +15%)",
+            "shortName": "Insight",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/191249_i4h09.webp",
+            "effect": "Crit Rate"
+          },
+          {
+            "name": "Fighting Spirit Set (2pc: ATK +15% / Eff RES +15%)",
+            "shortName": "Fighting spirit",
+            "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/191249_e3yhb.webp",
+            "effect": "Attack power Effect RES"
+          }
+        ],
+        "necklaceMain": "Speed",
+        "necklaceIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/190119_38kec.webp",
+        "ringMain": "Attack power (%)",
+        "ringIconUrl": "https://appmedia.jp/wp-content/uploads/2026/05/190119_ncgp0.webp",
+        "subStats": "Crit Rate / Crit DMG / Speed / Attack power (%)"
+      },
+      "hardPotential": {
+        "name": "Starlight Trail AX5",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/120713_nq5gy.webp",
+        "effect": "Attack power increases by 8% and Crit Rate increases by 5%. At the start of each turn, own attack power increases by 8% (up to 5 stacks; resets after Ultimate Skill)."
+      },
+      "dupeRating": "★★★",
+      "dupeSummary": "★★★ (Limit Breaks triple team Break DMG aura from 10% -> 30%; 1 base copy is free via login!)",
+      "limitBreaks": [],
+      "skillPriority": [
+        {
+          "skillType": "Basic Skill",
+          "priority": "★☆☆",
+          "recLevel": "Lv.3｜Lv.10"
+        },
+        {
+          "skillType": "Special Skill",
+          "priority": "★★☆",
+          "recLevel": "Lv.3｜Lv.10"
+        },
+        {
+          "skillType": "Ultimate Skill",
+          "priority": "★★★ Raise to Cooldown reduction",
+          "recLevel": "Lv.4｜Lv.8｜Lv.10"
+        }
+      ],
+      "skillLevelProgression": {
+        "basic": [
+          { "level": "2", "effect": "Damage Dealt +1%" },
+          { "level": "10", "effect": "Damage Dealt +2%" }
+        ],
+        "special": [
+          { "level": "5", "effect": "Damage Dealt +2%" },
+          { "level": "8", "effect": "Damage Dealt +3%" },
+          { "level": "10", "effect": "Damage Dealt +5%" }
+        ],
+        "ultimate": [
+          { "level": "4", "effect": "Cooldown -1 Turn" },
+          { "level": "8", "effect": "Cooldown -1 Turn" },
+          { "level": "10", "effect": "Damage Dealt +5%" }
+        ]
+      },
+      "preAwakeningSkills": [],
+      "curio": {
+        "name": "Noir",
+        "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/164448_lqjhz.webp",
+        "rank": "A",
+        "rankNote": "(Easy Clear)",
+        "effect": "When using Liquefaction or Imperfect Death Throes against a Toughness-Broken enemy, triggers an additional Imperfect Death Throes against that target (once per turn)."
+      },
+      "resonancePotentials": [
+        { "name": "Sense of attack", "effect": "Attack power increases by 5%." },
+        { "name": "Sense of destruction", "effect": "Crit DMG increases by 10%." },
+        { "name": "Offensive prowess", "effect": "Attack power increases by 2%." }
+      ],
+      "resonanceStages": [],
+      "resonanceTotalMaterials": [
+        { "name": "Ether Dust", "count": 400, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/140541_4s8yj.webp" },
+        { "name": "Shape-Memory Alloy", "count": 24, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/141907_l0qwx.webp" },
+        { "name": "Supernova Remnant I", "count": 56, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/152954_3o9p8.webp" },
+        { "name": "Hyperspace Circuit I", "count": 28, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/153116_8sdjg.webp" },
+        { "name": "Supernova Remnant II", "count": 28, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/170056_pcnou.webp" },
+        { "name": "Hyperspace Circuit II", "count": 14, "iconUrl": "https://appmedia.jp/wp-content/uploads/2025/12/170047_z6qa7.webp" }
+      ],
+      "gifts": [
+        {
+          "name": "Tulip flowers",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150215_zbv0m.webp",
+          "tier": "Favorite",
+          "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
+        },
+        {
+          "name": "Royal amour bouquet",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150216_hztqp.webp",
+          "tier": "Favorite",
+          "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_h3wga.webp"
+        },
+        {
+          "name": "Serenade Lumiere",
+          "iconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/150214_b84yd.webp",
+          "tier": "Liked",
+          "tierIconUrl": "https://appmedia.jp/wp-content/uploads/2026/02/144717_vig3n.webp"
+        }
+      ],
+      "profile": {
+        "cv": "Mai Nakahara",
+        "affiliation": "Executor",
+        "birthday": "Unknown",
+        "height": "160cm",
+        "origin": "Unknown",
+        "obtain": "1st Anniversary Day 1 Login (Free) / Pickup Observation",
+        "bio": "The Executor of Aldebaran, principal star of the western sky. Sealed inside the planetarium within Dirac's Well, she has been projected across countless worldlines."
+      }
+    }
+  },
+  {
+    "gameSlug": "starsavior",
     "slug": "vesta",
     "name": "Besta",
     "title": "Western Reclamation Force · Impact damage",
@@ -57755,6 +58591,239 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
   },
   {
     "gameSlug": "starsavior",
+    "slug": "arcana-80556268",
+    "name": "Endless Dance",
+    "rarity": "SSR",
+    "category": "SSR Arcana",
+    "subType": "Power · Universal Bonus",
+    "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210644_q1trk.webp",
+    "tier": "SS",
+    "score": "0",
+    "effectSummary": "[Sense of attack] Attack power increases by 5%. / [Insight proficiency] Crit Rate increases by 3%. / [Overwhelming Offense] Attack power increases by 6% and Crit DMG increases by 6%.",
+    "stats": {
+      "Tag": "Power",
+      "Class Bonus": "Universal Bonus",
+      "Stat Bonus": "Crit DMG Bonus",
+      "Featured Unit": "Guile"
+    },
+    "bestHolderSlugs": [
+      "guile",
+      "witch-of-favoritism",
+      "amora",
+      "professor-m"
+    ],
+    "staticData": {
+      "nameJp": "果てしない舞",
+      "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210645_b8maz.webp",
+      "statTag": "Power",
+      "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
+      "characterName": "Guile",
+      "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/214419_cw4lk.webp",
+      "statBonusType": "Crit DMG Bonus",
+      "classBonus": "Universal Bonus",
+      "potentials": [
+        {
+          "name": "Sense of attack",
+          "effect": "Attack power increases by 5%."
+        },
+        {
+          "name": "Insight proficiency",
+          "effect": "Crit Rate increases by 3%."
+        },
+        {
+          "name": "Overwhelming Offense",
+          "effect": "Attack power increases by 6% and Crit DMG increases by 6%."
+        }
+      ],
+      "uniqueEffect": {
+        "name": "Graceful Dance",
+        "effect": "When Bond Points are 40 or higher, Potential Points gained during training +2.",
+        "unlockLevel": "Lv.35"
+      },
+      "supportBonuses": [
+        { "label": "Initial Bond Points", "value": "15" },
+        { "label": "Condition Effect", "value": "10.3%" },
+        { "label": "Training Effect Up", "value": "17.84%" },
+        { "label": "Power Bonus", "value": "4" },
+        { "label": "Hyper-Resonance Training Effect", "value": "25.76%" },
+        { "label": "Resonance Training Rate", "value": "400" }
+      ],
+      "journeyEvents": [
+        {
+          "eventTitle": "In Search of the Legendary Bird 2",
+          "choices": [
+            {
+              "choice": "No Choice Required",
+              "outcomes": [
+                "Power +10",
+                "Condition +1",
+                "Journey Status: [Light Footsteps] (8 turns)"
+              ]
+            }
+          ]
+        },
+        {
+          "eventTitle": "Step by Step",
+          "choices": [
+            {
+              "choice": "No Choice Required",
+              "outcomes": [
+                "Power +15 Health +10",
+                "Stamina +10",
+                "[Sense of Attack] Potential -10%"
+              ]
+            }
+          ]
+        },
+        {
+          "eventTitle": "What Remains After Fading",
+          "choices": [
+            {
+              "choice": "No Choice Required",
+              "outcomes": [
+                "Power +8 Health +12 Endurance +12",
+                "[Insight Proficiency] Potential -10%",
+                "[Overwhelming Offense] Special Potential"
+              ]
+            }
+          ]
+        }
+      ],
+      "evalBullets": [
+        "Universal Power SSR Arcana granting +6% ATK & +6% Crit DMG via Overwhelming Offense Special Potential",
+        "Combines Power Bonus +4 with +2 Potential Points per training at 40+ Bond Points",
+        "1 free copy awarded by clearing Operation Sector 6; top priority target for Limit Break dupes"
+      ],
+      "appMediaTier": "SS",
+      "rerollTier": "SS"
+    }
+  },
+  {
+    "gameSlug": "starsavior",
+    "slug": "arcana-80556271",
+    "name": "Faded Dream",
+    "rarity": "SSR",
+    "category": "SSR Arcana",
+    "subType": "Power · Universal Bonus",
+    "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210646_nlg0r.webp",
+    "tier": "S",
+    "score": "0",
+    "effectSummary": "[Offensive prowess] Attack power increases by 2%. / [Insight proficiency] Crit Rate increases by 3%. / [Offensive talent] Attack power increases by 3%. / [Endless Terminus] After attacking a Toughness-Broken target, own ATK increases by 5% per hit (stacks up to 5 times = +25% ATK).",
+    "stats": {
+      "Tag": "Power",
+      "Class Bonus": "Universal Bonus",
+      "Stat Bonus": "ATK Bonus",
+      "Featured Unit": "Witch of Favoritism"
+    },
+    "bestHolderSlugs": [
+      "witch-of-favoritism",
+      "guile",
+      "tilia"
+    ],
+    "staticData": {
+      "nameJp": "色褪せた夢",
+      "cardArtUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210647_cnjo4.webp",
+      "statTag": "Power",
+      "statTagIconUrl": "https://appmedia.jp/wp-content/uploads/2025/11/t-30826-20251118080316.webp",
+      "characterName": "Witch of Favoritism",
+      "characterIconUrl": "https://appmedia.jp/wp-content/uploads/2026/11/212032_duamr.webp",
+      "statBonusType": "ATK Bonus",
+      "classBonus": "Universal Bonus",
+      "potentials": [
+        {
+          "name": "Offensive prowess",
+          "effect": "Attack power increases by 2%."
+        },
+        {
+          "name": "Insight proficiency",
+          "effect": "Crit Rate increases by 3%."
+        },
+        {
+          "name": "Offensive talent",
+          "effect": "Attack power increases by 3%."
+        },
+        {
+          "name": "Endless Terminus",
+          "effect": "After attacking a target whose Toughness is Broken, increases own ATK by 5% (stacks up to 5 times)."
+        }
+      ],
+      "uniqueEffect": {
+        "name": "Precious Everyday",
+        "effect": "When Bond Points are 30 or higher, Training Effect Up +8% during training.",
+        "unlockLevel": "Lv.35"
+      },
+      "supportBonuses": [
+        { "label": "Initial Power", "value": "7" },
+        { "label": "Initial Bond Points", "value": "15" },
+        { "label": "Training Effect Up", "value": "15.86%" },
+        { "label": "Power Bonus", "value": "3" },
+        { "label": "Hyper-Resonance Training Effect", "value": "25.76%" },
+        { "label": "Resonance Training Rate", "value": "380" }
+      ],
+      "journeyEvents": [
+        {
+          "eventTitle": "Theater Appreciation 2",
+          "choices": [
+            {
+              "choice": "Wouldn't they look weak without training that hard?",
+              "outcomes": [
+                "Health +12 Condition +1",
+                "Journey Status: [Fleeting Happiness] (8 turns)"
+              ]
+            },
+            {
+              "choice": "It does look a bit exaggerated.",
+              "outcomes": [
+                "Power +10 Stamina +10",
+                "Journey Status: [Fleeting Happiness] (8 turns)"
+              ]
+            }
+          ]
+        },
+        {
+          "eventTitle": "Next Time",
+          "choices": [
+            {
+              "choice": "Let's try another menu item next time.",
+              "outcomes": [
+                "Power +10 Health +8",
+                "[Offensive Prowess] Potential -10%"
+              ]
+            },
+            {
+              "choice": "How about dessert after we finish eating?",
+              "outcomes": [
+                "Power +8 Health +10",
+                "[Insight Proficiency] Potential -10%"
+              ]
+            }
+          ]
+        },
+        {
+          "eventTitle": "Favoritism",
+          "choices": [
+            {
+              "choice": "No Choice Required",
+              "outcomes": [
+                "Power +15 Health +8",
+                "[Offensive Talent] Potential -10%",
+                "[Endless Terminus] Special Potential"
+              ]
+            }
+          ]
+        }
+      ],
+      "evalBullets": [
+        "Universal Power SSR Arcana stacking up to +25% ATK when attacking Toughness-Broken enemies",
+        "Best-in-slot Special Potential for Witch of Favoritism to scale her 180% ATK Boss Chain Fixed Damage",
+        "Securing 1 base copy is recommended for Break teams while focusing dupes on Endless Dance"
+      ],
+      "appMediaTier": "S",
+      "rerollTier": "S"
+    }
+  },
+  {
+    "gameSlug": "starsavior",
     "slug": "arcana-79517798",
     "name": "The Beginning of the Journey",
     "rarity": "SR",
@@ -60682,6 +61751,36 @@ export const STAR_SAVIOR_ARCANA_SEED = ([
 }));
 
 export const STAR_SAVIOR_BANNERS_SEED = [
+  {
+    "gameSlug": "starsavior",
+    "slug": "witch-of-favoritism-pickup-gacha",
+    "title": "1st Anniversary: Witch of Favoritism Pickup Observation",
+    "bannerType": "Character ★★★★★ · Arcana ★★★★☆",
+    "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210647_cnjo4.webp",
+    "periodLabel": "Active Until Dec 4 (Fri) 04:00 JST",
+    "verdict": "MUST PULL",
+    "reasoning": "1st Anniversary SSS Order Striker unleashing 180% ATK defense-ignoring Boss Chain Fixed Damage, Extra Turns on Break, and Special Skill cooldown resets alongside SSR Arcana \"Faded Dream\".",
+    "featuredCharacterSlugs": [
+      "witch-of-favoritism",
+      "guile",
+      "professor-m"
+    ]
+  },
+  {
+    "gameSlug": "starsavior",
+    "slug": "guile-pickup-gacha",
+    "title": "1st Anniversary: Guile & Endless Dance Pickup Observation",
+    "bannerType": "Character ★★★★★ · Arcana ★★★★★",
+    "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/11/210645_b8maz.webp",
+    "periodLabel": "Active Until Dec 4 (Fri) 04:00 JST",
+    "verdict": "MUST PULL",
+    "reasoning": "1st Anniversary Chaos Caster (#1 Base ATK 4,489, 1 copy free via login!) granting up to +30% permanent team Break DMG, paired with universal SS Power Arcana \"Endless Dance\" (+6% ATK / +6% Crit DMG).",
+    "featuredCharacterSlugs": [
+      "guile",
+      "witch-of-favoritism",
+      "ede"
+    ]
+  },
   {
     "gameSlug": "starsavior",
     "slug": "maid-ceres-pickup-gacha",

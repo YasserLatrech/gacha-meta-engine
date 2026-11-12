@@ -2,7 +2,7 @@
 // ZERO INVENTED STATISTICS OR FALLBACKS
 
 export const APPMEDIA_HOME_PORTAL_DATA = {
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "strategyWikis": [
     {
       "href": "/starsavior",
@@ -984,6 +984,20 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "publisher": "COLOPL",
       "iconUrl": "/banners/home/icons/portal_icon_085.webp",
       "articleUrl": "https://appmedia.jp/newgame/80348986"
+    },
+    {
+      "id": "ロールコール",
+      "votes": 0,
+      "category": "December 2026",
+      "categoryJa": "2026年12月",
+      "status": "Upcoming",
+      "releaseDate": "Dec 1, 2026",
+      "title": "Roll Call",
+      "titleJa": "ロールコール",
+      "description": "Academy tactical simulation RPG battling alongside students across five academies",
+      "publisher": "FANTAG",
+      "iconUrl": "/banners/home/icons/portal_icon_152.webp",
+      "articleUrl": "https://appmedia.jp/newgame/80557555"
     },
     {
       "id": "プチプラネット",

@@ -47,27 +47,27 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
         <div className="flex items-center gap-3.5">
           <img
             src="https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_STRANIS_icon.webp"
-            alt="All 57 Characters List"
+            alt="All 59 Characters List"
             className="h-14 w-14 rounded-lg border border-[#3b82f6]/50 object-cover shrink-0"
             loading="eager"
           />
           <div>
             <div className="text-[11px] font-bold text-[#93c5fd]">
-              Updated: 2026/11/10 · {game.patchVersion} · All 57 Saviors
+              Updated: 2026/11/12 · {game.patchVersion} · All 59 Saviors
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
-              [Star Savior] Complete Character List & Lv.200 Stats Database (57 Saviors)
+              [Star Savior] Complete Character List & Lv.200 Stats Database (59 Saviors)
             </h1>
           </div>
         </div>
         <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
-          Complete database of all 57 playable SSR and SR characters in Star Savior. Filter by Attribute, Class, Rarity, or Gacha Pool to inspect Lv.200 combat stats, Rescue Journey training aptitudes, Voice Actors (CV), and build guides.
+          Complete database of all 59 playable SSR and SR characters in Star Savior. Filter by Attribute, Class, Rarity, or Gacha Pool to inspect Lv.200 combat stats, Rescue Journey training aptitudes, Voice Actors (CV), and build guides.
         </p>
       </section>
 
       {/* H2: キャラ一覧 */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
-        <AppMediaH2 id="character-list-filter" badge="57 UNITS">
+        <AppMediaH2 id="character-list-filter" badge="59 UNITS">
           Star Savior Character List & Filter
         </AppMediaH2>
 

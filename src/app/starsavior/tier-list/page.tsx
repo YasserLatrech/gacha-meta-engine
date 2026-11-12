@@ -10,7 +10,7 @@ export const revalidate = 300;
 
 const PAGE_TITLE = 'Star Savior Tier List — Strongest Characters Ranking (v2.4)';
 const PAGE_DESC =
-  'Star Savior Strongest Character Tier List (v2.4) ranking all 57 SSR & SR Saviors across SSS–C tiers by Attacker, Debuffer, Supporter & Defender roles.';
+  'Star Savior Strongest Character Tier List (v2.4) ranking all 59 SSR & SR Saviors across SSS–C tiers by Attacker, Debuffer, Supporter & Defender roles.';
 
 export const metadata: Metadata = buildPageMetadata({
   title: PAGE_TITLE,

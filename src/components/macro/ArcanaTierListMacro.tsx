@@ -49,7 +49,7 @@ const ARCANA_TOC = [
   },
   {
     id: 'arcana-complete-database',
-    label: 'Complete 83 Arcana Cards Database (SSR / SR / R)',
+    label: 'Complete 85 Arcana Cards Database (SSR / SR / R)',
   },
   {
     id: 'arcana-evaluation-criteria',
@@ -96,10 +96,10 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           />
           <div>
             <div className="text-[11px] font-bold text-[#93c5fd]">
-              Updated: 2026/11/10 · {game.patchVersion} · All 83 Arcana Cards
+              Updated: 2026/11/12 · {game.patchVersion} · All 85 Arcana Cards
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
-              [Star Savior] Strongest Arcana Ranking, Tier List & 83-Card Encyclopedia
+              [Star Savior] Strongest Arcana Ranking, Tier List & 85-Card Encyclopedia
             </h1>
           </div>
         </div>
@@ -110,7 +110,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         />
 
         <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
-          This page presents the Star Savior Strongest Arcana Ranking (Tier List) and complete 83-card encyclopedia. Use this guide to check the best SSR, SR, and R Arcana Special Potentials, Training Tag bonuses (Power, Health, Endurance, Focus, Protect), and Rescue Journey event effects.
+          This page presents the Star Savior Strongest Arcana Ranking (Tier List) and complete 85-card encyclopedia. Use this guide to check the best SSR, SR, and R Arcana Special Potentials, Training Tag bonuses (Power, Health, Endurance, Focus, Protect), and Rescue Journey event effects.
         </p>
 
         {/* Top Ranking Switcher Table */}
@@ -145,7 +145,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
 
       {/* H2: Strongest Arcana Ranking (Tag-Split Tier Matrix) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
-        <AppMediaH2 id="arcana-tier-matrix" badge="48 SSR CARDS">
+        <AppMediaH2 id="arcana-tier-matrix" badge="50 SSR CARDS">
           Strongest Arcana Ranking (By Training Tag)
         </AppMediaH2>
 
@@ -332,10 +332,10 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         })}
       </section>
 
-      {/* H2: Complete 83 Arcana Encyclopedia (SSR / SR / R) */}
+      {/* H2: Complete 85 Arcana Encyclopedia (SSR / SR / R) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
-        <AppMediaH2 id="arcana-complete-database" badge="83 CARDS">
-          Complete 83 Arcana Encyclopedia (SSR / SR / R)
+        <AppMediaH2 id="arcana-complete-database" badge="85 CARDS">
+          Complete 85 Arcana Encyclopedia (SSR / SR / R)
         </AppMediaH2>
 
         <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-[#243049] bg-[#0f1626] p-3">
