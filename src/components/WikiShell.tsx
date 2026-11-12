@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import type { GameConfigEntity, CharacterEntity } from '../domain/schemas';
 import { MobileWikiDrawer } from './micro/MobileWikiDrawer';
+import { GlobalOmniSearch } from './micro/GlobalOmniSearch';
+import { AdsterraSlot } from './micro/AnalyticsAndAds';
 
 interface WikiShellProps {
   game: GameConfigEntity;
@@ -139,13 +141,16 @@ export function WikiShell({
             })}
           </nav>
 
-          {/* Mobile Drawer Trigger */}
-          <MobileWikiDrawer
-            navGroups={navGroups}
-            activeNav={activeNav}
-            elementsConfig={game.elementsConfig}
-            topCharacters={topCharacters}
-          />
+          {/* Global Omni-Search + Mobile Drawer Trigger */}
+          <div className="flex items-center gap-2 shrink-0">
+            <GlobalOmniSearch />
+            <MobileWikiDrawer
+              navGroups={navGroups}
+              activeNav={activeNav}
+              elementsConfig={game.elementsConfig}
+              topCharacters={topCharacters}
+            />
+          </div>
         </div>
 
         {/* Mobile / Tablet Single-Line Horizontal Quick Nav Strip */}
@@ -384,11 +389,17 @@ export function WikiShell({
               </Link>
             ))}
           </div>
+
+          <div style={{ padding: '8px' }}>
+            <AdsterraSlot variant="sidebar" />
+          </div>
         </aside>
 
         {/* Main Content Column */}
         <main className="wiki-main" style={{ display: 'flex', flexDirection: 'column', gap: '16px', minWidth: 0 }}>
+          <AdsterraSlot variant="leaderboard" />
           {children}
+          <AdsterraSlot variant="native" />
         </main>
       </div>
 

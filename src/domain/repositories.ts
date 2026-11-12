@@ -5,6 +5,7 @@ import type {
   HomePortalData,
   VotesSnapshot,
   CastVoteResult,
+  AnalyticsSummary,
 } from './schemas';
 
 export interface IWikiRepository {
@@ -28,4 +29,15 @@ export interface IVoteRepository {
 
 export interface IPortalRepository {
   getHomePortalData(): HomePortalData;
+}
+
+export interface IAnalyticsRepository {
+  recordPageview(input: {
+    dayUtc: string;
+    path: string;
+    visitorHash: string;
+    referrerHost: string;
+  }): Promise<{ ok: boolean; countedUnique: boolean }>;
+  getSummary(days: number): Promise<AnalyticsSummary>;
+  resetMemoryFallback(): void;
 }

@@ -54,6 +54,14 @@ import {
   timingSafeVerifyBearerSecret,
 } from '../../application/security.service';
 import { RevalidateBodySchema } from '../schemas';
+import { buildGlobalSearchIndex, queryGlobalSearchIndex } from '../search-index';
+import {
+  createAnalyticsService,
+  isAutomatedCrawler,
+  sanitizeAnalyticsPath,
+  sanitizeReferrerHost,
+} from '../../application/analytics.service';
+import { InMemoryAnalyticsRepository } from '../../infrastructure/repositories/analytics.repository';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -689,5 +697,91 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
         path: 'javascript:alert(1)',
       }).success
     ).toBe(false);
+  });
+
+  it('validates Global Omni-Search index (280+ entries), Google/IndexNow verification assets, and First-Party Analytics service', async () => {
+    // 1. Global Search Index across Hubs + 59 Saviors + 85 Arcana + Guides + Upcoming Games
+    const dataset = {
+      game: GameConfigEntitySchema.parse(STAR_SAVIOR_GAME_SEED),
+      characters: STAR_SAVIOR_CHARACTERS_SEED.map((c, idx) =>
+        CharacterEntitySchema.parse({ id: idx + 1, ...c, score: Number(c.score) })
+      ),
+      arcana: STAR_SAVIOR_ARCANA_SEED.map((a, idx) =>
+        ArcanaEntitySchema.parse({ id: idx + 1, ...a, score: Number(a.score) })
+      ),
+      banners: [],
+    };
+    const searchItems = buildGlobalSearchIndex(
+      dataset,
+      STAR_SAVIOR_GUIDES,
+      APPMEDIA_HOME_PORTAL_DATA
+    );
+    expect(searchItems.length).toBeGreaterThanOrEqual(280);
+
+    const guileHits = queryGlobalSearchIndex(searchItems, 'Guile', 5);
+    expect(guileHits.length).toBeGreaterThanOrEqual(1);
+    expect(guileHits[0]?.title).toContain('Guile');
+    expect(guileHits[0]?.category).toBe('Savior');
+
+    const codeHits = queryGlobalSearchIndex(searchItems, 'coupon codes', 5);
+    expect(codeHits.some((item) => item.href === '/starsavior/guides/promo-codes')).toBe(true);
+
+    // 2. Search Engine Verification Assets (Google Search Console + IndexNow)
+    const publicDir = path.resolve(__dirname, '../../../public');
+    const gscFile = path.join(publicDir, 'google47558ceaecd0fcbe.html');
+    const indexNowFile = path.join(publicDir, 'a5ca10n7f9e2b4d8c1a3e5f7092468ab.txt');
+    expect(fs.existsSync(gscFile)).toBe(true);
+    expect(fs.readFileSync(gscFile, 'utf8').trim()).toBe(
+      'google-site-verification: google47558ceaecd0fcbe.html'
+    );
+    expect(fs.existsSync(indexNowFile)).toBe(true);
+    expect(fs.readFileSync(indexNowFile, 'utf8').trim()).toBe(
+      'a5ca10n7f9e2b4d8c1a3e5f7092468ab'
+    );
+
+    // 3. First-Party Analytics Service (unique visitor dedup, pageviews/visitor, bot filter)
+    expect(isAutomatedCrawler('Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')).toBe(true);
+    expect(isAutomatedCrawler('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131.0')).toBe(false);
+    expect(sanitizeAnalyticsPath('/starsavior/tier-list/?adpreview=1#top')).toBe('/starsavior/tier-list');
+    expect(sanitizeReferrerHost('https://www.google.com')).toBe('direct');
+    expect(sanitizeReferrerHost('www.google.com')).toBe('google.com');
+    expect(sanitizeReferrerHost('www.ascalon.fun')).toBe('direct');
+
+    const repo = new InMemoryAnalyticsRepository();
+    const service = createAnalyticsService(repo);
+    const now = new Date();
+
+    const firstVisit = await service.trackPageview({
+      path: '/starsavior/tier-list?utm=reddit',
+      referrerHost: 'www.reddit.com',
+      visitorHash: 'visitor-alpha-hash',
+      now,
+    });
+    expect(firstVisit.countedUnique).toBe(true);
+
+    const secondPageSameVisitor = await service.trackPageview({
+      path: '/starsavior/characters/guile',
+      referrerHost: 'ascalon.fun',
+      visitorHash: 'visitor-alpha-hash',
+      now,
+    });
+    expect(secondPageSameVisitor.countedUnique).toBe(false);
+
+    const secondVisitor = await service.trackPageview({
+      path: '/starsavior/tier-list',
+      referrerHost: 'google.com',
+      visitorHash: 'visitor-beta-hash',
+      now,
+    });
+    expect(secondVisitor.countedUnique).toBe(true);
+
+    const summary = await service.getDashboardSummary(14);
+    expect(summary.todayVisitors).toBe(2);
+    expect(summary.todayPageviews).toBe(3);
+    expect(summary.pagesPerVisitorToday).toBe(1.5);
+    expect(summary.topRoutes[0]?.path).toBe('/starsavior/tier-list');
+    expect(summary.topRoutes[0]?.pageviews).toBe(2);
+    expect(summary.topReferrers.some((r) => r.referrerHost === 'reddit.com')).toBe(true);
+    expect(summary.topReferrers.some((r) => r.referrerHost === 'google.com')).toBe(true);
   });
 });

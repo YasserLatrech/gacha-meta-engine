@@ -622,3 +622,67 @@ export class AppError extends Error {
     Object.setPrototypeOf(this, new.target.prototype);
   }
 }
+
+/* ============================================================================
+ * Privacy-First Analytics & Global Search Domain Contracts
+ * ============================================================================ */
+export const AnalyticsTrackBodySchema = z
+  .object({
+    path: z
+      .string()
+      .trim()
+      .min(1)
+      .max(200)
+      .regex(/^\/[a-z0-9/_-]*$/i, 'Invalid route path'),
+    referrerHost: z
+      .string()
+      .trim()
+      .max(120)
+      .regex(/^[a-z0-9.-]*$/i, 'Invalid referrer host')
+      .optional(),
+  })
+  .strict();
+export type AnalyticsTrackBody = z.infer<typeof AnalyticsTrackBodySchema>;
+
+export interface AnalyticsDailyPoint {
+  dayUtc: string;
+  pageviews: number;
+  uniqueVisitors: number;
+}
+
+export interface AnalyticsRouteRank {
+  path: string;
+  pageviews: number;
+}
+
+export interface AnalyticsReferrerRank {
+  referrerHost: string;
+  visits: number;
+}
+
+export interface AnalyticsSummary {
+  todayUtc: string;
+  todayVisitors: number;
+  todayPageviews: number;
+  pagesPerVisitorToday: number;
+  totalPageviewsWindow: number;
+  totalUniqueVisitorsWindow: number;
+  adReadinessDailyTarget: number;
+  adReadinessPercent: number;
+  dailySeries: AnalyticsDailyPoint[];
+  topRoutes: AnalyticsRouteRank[];
+  topReferrers: AnalyticsReferrerRank[];
+}
+
+export type GlobalSearchCategory = 'Hub' | 'Savior' | 'Arcana' | 'Guide' | 'Upcoming';
+
+export interface GlobalSearchItem {
+  id: string;
+  category: GlobalSearchCategory;
+  title: string;
+  subtitle: string;
+  badge?: string;
+  href: string;
+  iconUrl?: string;
+  keywords: string;
+}

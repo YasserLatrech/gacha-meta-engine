@@ -2,6 +2,7 @@ import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, Space_Grotesk, JetBrains_Mono } from 'next/font/google';
 import { SITE_NAME, SITE_URL } from '@/application/seo.service';
+import { AnalyticsTelemetry } from '@/components/micro/AnalyticsAndAds';
 import './globals.css';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -85,6 +86,9 @@ export const metadata: Metadata = {
     shortcut: '/brand/ascalon-favicon.png',
     apple: '/brand/ascalon-logo.png',
   },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
 };
 
 export default function RootLayout({
@@ -98,7 +102,10 @@ export default function RootLayout({
       data-theme="dark"
       className={`${plusJakartaSans.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
     >
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <AnalyticsTelemetry />
+      </body>
     </html>
   );
 }

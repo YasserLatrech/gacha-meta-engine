@@ -5,12 +5,13 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''}`,
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://*.google-analytics.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' data: blob: https://appmedia.jp https://*.mzstatic.com https://tool.matomeroyal.com",
+  "img-src 'self' data: blob: https:",
   "media-src 'self' https://tool.matomeroyal.com https://appmedia.jp",
   "font-src 'self' data:",
-  "connect-src 'self'",
+  "connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com",
+  "frame-src 'self' https:",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

@@ -17,6 +17,8 @@ import {
   parseReleasedLaunchIso,
   parseUpcomingReleaseIso,
 } from '@/components/micro/LiveJstCountdown';
+import { GlobalOmniSearch } from '@/components/micro/GlobalOmniSearch';
+import { AdsterraSlot } from '@/components/micro/AnalyticsAndAds';
 
 const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; keyPoints: string[]; targetRoute: string }> = {
   '/banners/home/en_home_01.webp': {
@@ -453,12 +455,13 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </nav>
 
           <div className="flex items-center gap-2 shrink-0">
+            <GlobalOmniSearch />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search games, studios, genres..."
-              className="hidden sm:block w-48 md:w-56 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
+              placeholder="Filter portal lists..."
+              className="hidden xl:block w-44 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
             />
             <Link
               href="/starsavior"
@@ -587,6 +590,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             ))}
           </div>
         </section>
+
+        <AdsterraSlot variant="leaderboard" />
 
         {/* 1. Top 25 Recommended Mobile Games Ranking */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
@@ -983,6 +988,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             </div>
           )}
         </section>
+
+        <AdsterraSlot variant="native" />
 
         {/* 3. App Store Free & Sales Rankings */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
