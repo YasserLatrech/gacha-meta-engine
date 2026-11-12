@@ -70,12 +70,12 @@ export function WikiShell({
           <div className="flex min-w-0 items-center gap-2 sm:gap-3.5">
             <Link
               href="/"
-              title="Ascalon.gg Home"
+              title="Ascalon.fun Home"
               className="flex shrink-0 items-center gap-2 border-r border-[#1e2636] pr-2 sm:pr-3.5"
             >
               <img
                 src="/brand/ascalon-logo.png"
-                alt="Ascalon.gg"
+                alt="Ascalon.fun"
                 width={40}
                 height={40}
                 className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg border border-[#60a5fa] object-cover shadow-[0_0_10px_rgba(59,130,246,0.3)]"
@@ -86,7 +86,7 @@ export function WikiShell({
                     ASCALON
                   </span>
                   <span className="rounded border border-[#3b82f6]/40 bg-[#3b82f6]/15 px-1 py-0.5 text-[10px] font-black text-[#60a5fa]">
-                    .GG
+                    .FUN
                   </span>
                 </div>
                 <div className="hidden sm:block text-[10px] font-semibold text-[#8492a6]">
@@ -176,7 +176,7 @@ export function WikiShell({
       <div className="border-b border-[#1e2636] bg-[#11151e]">
         <div className="no-scrollbar mx-auto flex max-w-[1240px] items-center gap-1.5 overflow-x-auto whitespace-nowrap px-3 py-1.5 sm:px-4 text-[11.5px] text-[#8492a6]">
           <Link href="/" className="shrink-0 font-bold text-[#94a3b8] hover:text-white">
-            Ascalon.gg
+            Ascalon.fun
           </Link>
           <span className="shrink-0">›</span>
           <Link href="/starsavior" className="shrink-0 font-semibold text-[#60a5fa] hover:underline">
@@ -417,13 +417,13 @@ export function WikiShell({
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <img
               src="/brand/ascalon-logo.png"
-              alt="Ascalon.gg"
+              alt="Ascalon.fun"
               width={26}
               height={26}
               style={{ width: '26px', height: '26px', borderRadius: '6px', objectFit: 'cover', border: '1px solid #3b82f6' }}
             />
             <span>
-              <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.gg</strong> — Star Savior Strategy Wiki &amp; Database.
+              <strong style={{ color: 'var(--text-secondary)' }}>Ascalon.fun</strong> — Star Savior Strategy Wiki &amp; Database.
             </span>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', columnGap: '14px', rowGap: '8px' }}>

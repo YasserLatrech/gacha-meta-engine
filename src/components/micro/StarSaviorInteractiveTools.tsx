@@ -62,7 +62,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
         .map((c) => c.name);
       return `${tier}: ${names.length > 0 ? names.join(', ') : '-'}`;
     });
-    const text = `Star Savior Custom Tier List (Ascalon.gg)\n${lines.join('\n')}`;
+    const text = `Star Savior Custom Tier List (Ascalon.fun)\n${lines.join('\n')}`;
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);

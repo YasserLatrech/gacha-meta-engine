@@ -64,7 +64,7 @@ export function MobileWikiDrawer({
               <div className="flex items-center gap-2">
                 <img
                   src="/brand/ascalon-logo.png"
-                  alt="Ascalon.gg"
+                  alt="Ascalon.fun"
                   className="h-7 w-7 rounded-md border border-[#3b82f6] object-cover"
                 />
                 <span className="text-[13px] font-black text-white">Star Savior Wiki Menu</span>

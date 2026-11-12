@@ -1,24 +1,24 @@
-# Ascalon.gg — Mobile & Gacha Strategy Wiki Portal
+# Ascalon.fun — Mobile & Gacha Strategy Wiki Portal
 
-> Ascalon.gg is an English strategy wiki and mobile game data portal covering gacha rankings, upcoming game release calendars with 1-vote-per-IP reader polls, App Store grossing charts, and complete entity-verified strategy wikis.
+> Ascalon.fun is an English strategy wiki and mobile game data portal covering gacha rankings, upcoming game release calendars with 1-vote-per-IP reader polls, App Store grossing charts, and complete entity-verified strategy wikis.
 
 ## Primary Portal Hubs
-- [Ascalon.gg Home Portal](https://ascalon.gg/): Upcoming gacha game release calendar (79+ tracked titles), reader expectation rankings, daily App Store sales & free charts, and featured strategy briefs.
-- [XML Sitemap](https://ascalon.gg/sitemap.xml): Canonical index of all 156+ static strategy wiki routes, character builds, and interactive tools.
+- [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79+ tracked titles), reader expectation rankings, daily App Store sales & free charts, and featured strategy briefs.
+- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 157+ static strategy wiki routes, character builds, and interactive tools.
 
 ## Star Savior Complete English Strategy Wiki (Patch v2.4)
 Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, and Android combining Rescue Journey simulation, 85 Arcana training cards, and turn-based command battles.
 
 ### Core Ranking & Database Hubs
-- [Star Savior Wiki Top](https://ascalon.gg/starsavior): Patch v2.4 overview, active 1st Anniversary pickup banners (Witch of Favoritism, Guile, Maid Ceres, Frey: Noble Princess), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
-- [Strongest Character Tier List](https://ascalon.gg/starsavior/tier-list): PvE & boss meta evaluation across all 59 Saviors (SSS Tier: Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, Smile: Sunshine Cat).
-- [Reroll Tier List & Stopping Line](https://ascalon.gg/starsavior/reroll): Best starting SSR Saviors & Power/Endurance Arcana cards, ~10-minute fast reroll method, and tutorial pull priorities.
-- [All 59 Characters Database](https://ascalon.gg/starsavior/characters): Filterable Lv.200 combat stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes (Striker, Assassin, Ranger, Caster, Supporter, Defender), Voice Actors (CV), and individual build pages at `/starsavior/characters/{slug}`.
-- [Strongest Arcana Tier List & All 85 Cards](https://ascalon.gg/starsavior/arcana): Complete SSR (50), SR (15), and R (20) Arcana card encyclopedia with Stat Tags (Power, Health, Endurance, Focus, Protect), Special Potentials, and Savior Assist synergies.
+- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview, active 1st Anniversary pickup banners (Witch of Favoritism, Guile, Maid Ceres, Frey: Noble Princess), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
+- [Strongest Character Tier List](https://ascalon.fun/starsavior/tier-list): PvE & boss meta evaluation across all 59 Saviors (SSS Tier: Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, Smile: Sunshine Cat).
+- [Reroll Tier List & Stopping Line](https://ascalon.fun/starsavior/reroll): Best starting SSR Saviors & Power/Endurance Arcana cards, ~10-minute fast reroll method, and tutorial pull priorities.
+- [All 59 Characters Database](https://ascalon.fun/starsavior/characters): Filterable Lv.200 combat stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes (Striker, Assassin, Ranger, Caster, Supporter, Defender), Voice Actors (CV), and individual build pages at `/starsavior/characters/{slug}`.
+- [Strongest Arcana Tier List & All 85 Cards](https://ascalon.fun/starsavior/arcana): Complete SSR (50), SR (15), and R (20) Arcana card encyclopedia with Stat Tags (Power, Health, Endurance, Focus, Protect), Special Potentials, and Savior Assist synergies.
 
 ### Interactive Tools & Key Strategy Guides
-- [Journey Event Choice Checker](https://ascalon.gg/starsavior/guides/event-choice-checker): Exact reward outcomes for all 29 Rescue Journey Shared Events.
-- [Gauntlet (PvP) Tier List](https://ascalon.gg/starsavior/guides/pvp-tier-list): Turn-1 speed, AoE pressure, and defensive counter rankings for PvP Gauntlet.
-- [Recommended SR Characters](https://ascalon.gg/starsavior/guides/sr-characters) & [Recommended SR Arcana](https://ascalon.gg/starsavior/guides/sr-arcana): Best low-rarity investments for early progression and Rescue Journey decks.
-- [Active Coupon & Promo Codes](https://ascalon.gg/starsavior/guides/promo-codes): Verified redeemable codes (`GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV`) and redemption steps.
-- [Gacha Rates & Pity System](https://ascalon.gg/starsavior/guides/gacha-rates): 4.0% SSR rate (1.0% rate-up), 200-pull exchange pity, and Starlight Gem economy.
+- [Journey Event Choice Checker](https://ascalon.fun/starsavior/guides/event-choice-checker): Exact reward outcomes for all 29 Rescue Journey Shared Events.
+- [Gauntlet (PvP) Tier List](https://ascalon.fun/starsavior/guides/pvp-tier-list): Turn-1 speed, AoE pressure, and defensive counter rankings for PvP Gauntlet.
+- [Recommended SR Characters](https://ascalon.fun/starsavior/guides/sr-characters) & [Recommended SR Arcana](https://ascalon.fun/starsavior/guides/sr-arcana): Best low-rarity investments for early progression and Rescue Journey decks.
+- [Active Coupon & Promo Codes](https://ascalon.fun/starsavior/guides/promo-codes): Verified redeemable codes (`GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV`) and redemption steps.
+- [Gacha Rates & Pity System](https://ascalon.fun/starsavior/guides/gacha-rates): 4.0% SSR rate (1.0% rate-up), 200-pull exchange pity, and Starlight Gem economy.

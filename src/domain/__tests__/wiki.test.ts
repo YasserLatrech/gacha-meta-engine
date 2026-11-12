@@ -419,11 +419,11 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     const llmsPath = path.resolve(__dirname, '../../../public/llms.txt');
     expect(fs.existsSync(llmsPath)).toBe(true);
     const llmsContent = fs.readFileSync(llmsPath, 'utf8');
-    expect(llmsContent).toContain('https://ascalon.gg/starsavior/tier-list');
-    expect(llmsContent).toContain('https://ascalon.gg/starsavior/reroll');
-    expect(llmsContent).toContain('https://ascalon.gg/starsavior/characters');
-    expect(llmsContent).toContain('https://ascalon.gg/starsavior/arcana');
-    expect(llmsContent).toContain('https://ascalon.gg/sitemap.xml');
+    expect(llmsContent).toContain('https://ascalon.fun/starsavior/tier-list');
+    expect(llmsContent).toContain('https://ascalon.fun/starsavior/reroll');
+    expect(llmsContent).toContain('https://ascalon.fun/starsavior/characters');
+    expect(llmsContent).toContain('https://ascalon.fun/starsavior/arcana');
+    expect(llmsContent).toContain('https://ascalon.fun/sitemap.xml');
 
     // 7. Verify JST real-time countdown & upcoming release parser
     const targetMs = Date.parse('2026-11-13T03:59:59+09:00');
@@ -646,7 +646,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(({} as Record<string, unknown>)['polluted']).toBeUndefined();
 
     // 5. Bounded JSON stream reader rejects oversized chunked payloads (413) & non-JSON media types (415)
-    const oversizedReq = new Request('https://ascalon.gg/api/votes', {
+    const oversizedReq = new Request('https://ascalon.fun/api/votes', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ scope: 'upcoming-games', targetId: 'x'.repeat(5000) }),
@@ -658,7 +658,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
       code: 'PAYLOAD_TOO_LARGE',
     });
 
-    const wrongTypeReq = new Request('https://ascalon.gg/api/votes', {
+    const wrongTypeReq = new Request('https://ascalon.fun/api/votes', {
       method: 'POST',
       headers: { 'content-type': 'text/plain' },
       body: '{"scope":"upcoming-games","targetId":"azur-promilia"}',

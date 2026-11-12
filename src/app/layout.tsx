@@ -13,8 +13,8 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki',
-    template: '%s | Ascalon.gg',
+    default: 'Ascalon.fun — Mobile Game Rankings, Release Calendar & Strategy Wiki',
+    template: '%s | Ascalon.fun',
   },
   description:
     'Mobile game rankings, upcoming gacha release calendar with 1-vote-per-IP reader polls, App Store charts, and complete English strategy wikis.',
@@ -38,19 +38,19 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     locale: 'en_US',
     url: `${SITE_URL}/`,
-    title: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki',
+    title: 'Ascalon.fun — Mobile Game Rankings, Release Calendar & Strategy Wiki',
     description:
       'Mobile game rankings, upcoming gacha release calendar with 1-vote-per-IP reader polls, App Store charts, and complete English strategy wikis.',
     images: [
       {
         url: `${SITE_URL}/banners/home/en_home_01.webp`,
-        alt: 'Ascalon.gg Strategy Wiki Portal',
+        alt: 'Ascalon.fun Strategy Wiki Portal',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki',
+    title: 'Ascalon.fun — Mobile Game Rankings, Release Calendar & Strategy Wiki',
     description:
       'Mobile game rankings, upcoming gacha release calendar with 1-vote-per-IP reader polls, App Store charts, and complete English strategy wikis.',
     images: [`${SITE_URL}/banners/home/en_home_01.webp`],

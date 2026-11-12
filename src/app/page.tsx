@@ -8,13 +8,13 @@ import { getHomePortalData } from '@/di/container';
 export const revalidate = 300;
 
 export const metadata: Metadata = buildPageMetadata({
-  title: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki',
+  title: 'Ascalon.fun — Mobile Game Rankings, Release Calendar & Strategy Wiki',
   absoluteTitle: true,
   description:
     'Mobile & gacha game strategy portal featuring complete English game wikis, upcoming gacha release calendar with reader votes, and daily App Store charts.',
   path: '/',
   ogImage: '/banners/home/en_home_01.webp',
-  ogImageAlt: 'Ascalon.gg Mobile Game Rankings & Strategy Wiki Portal',
+  ogImageAlt: 'Ascalon.fun Mobile Game Rankings & Strategy Wiki Portal',
   type: 'website',
   keywords: [
     'gacha tier list',
@@ -22,7 +22,7 @@ export const metadata: Metadata = buildPageMetadata({
     'mobile game rankings',
     'Star Savior wiki',
     'gacha release calendar',
-    'Ascalon.gg',
+    'Ascalon.fun',
   ],
 });
 

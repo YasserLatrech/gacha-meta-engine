@@ -416,13 +416,13 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group min-w-0">
             <img
               src="/brand/ascalon-logo.png"
-              alt="Ascalon.gg"
+              alt="Ascalon.fun"
               className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg border border-[#3b82f6]/60 object-cover shadow-sm shrink-0"
             />
             <div className="min-w-0">
               <div className="flex items-center gap-1.5">
                 <span className="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-[#60a5fa] transition-colors whitespace-nowrap">
-                  ASCALON<span className="text-[#3b82f6]">.GG</span>
+                  ASCALON<span className="text-[#3b82f6]">.FUN</span>
                 </span>
                 <span className="hidden xs:inline-block rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[9px] font-extrabold text-[#93c5fd] whitespace-nowrap">
                   PORTAL
@@ -1384,7 +1384,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
       <footer className="border-t border-[#1e293b] bg-[#070a12] py-6 text-center text-[11px] text-[#64748b]">
         <div className="mx-auto max-w-[1280px] px-4 flex flex-col sm:flex-row items-center justify-between gap-2.5">
           <div>
-            <strong className="text-white">Ascalon.gg</strong> · Mobile Game Rankings, Release Schedule & Strategy Wiki Portal
+            <strong className="text-white">Ascalon.fun</strong> · Mobile Game Rankings, Release Schedule & Strategy Wiki Portal
           </div>
           <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
             <Link href="/starsavior" className="text-[#93c5fd] hover:underline">

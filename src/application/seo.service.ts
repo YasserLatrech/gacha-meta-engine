@@ -5,13 +5,13 @@ import type {
   StarSaviorGuideArticle,
 } from '@/domain/schemas';
 
-export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.gg').replace(
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fun').replace(
   /\/$/,
   ''
 );
 
-export const SITE_NAME = 'Ascalon.gg';
-export const SITE_LASTMOD_ISO = '2026-11-10T00:00:00.000Z';
+export const SITE_NAME = 'Ascalon.fun';
+export const SITE_LASTMOD_ISO = '2026-11-12T00:00:00.000Z';
 
 export interface BreadcrumbItemInput {
   name: string;
@@ -131,7 +131,7 @@ export function buildHomePortalJsonLd(): Record<string, unknown> {
         '@type': 'CollectionPage',
         '@id': `${SITE_URL}/#webpage`,
         url: `${SITE_URL}/`,
-        name: 'Ascalon.gg — Mobile Game Rankings, Release Calendar & Strategy Wiki',
+        name: 'Ascalon.fun — Mobile Game Rankings, Release Calendar & Strategy Wiki',
         description:
           'Mobile & gacha game strategy portal featuring top strategy wikis, upcoming game release calendar with 1-vote-per-IP reader rankings, and daily App Store charts.',
         isPartOf: { '@id': `${SITE_URL}/#website` },
@@ -140,7 +140,7 @@ export function buildHomePortalJsonLd(): Record<string, unknown> {
       },
       {
         '@type': 'ItemList',
-        name: 'Featured Strategy Wiki Hubs on Ascalon.gg',
+        name: 'Featured Strategy Wiki Hubs on Ascalon.fun',
         itemListOrder: 'https://schema.org/ItemListOrderAscending',
         numberOfItems: 5,
         itemListElement: [
@@ -230,7 +230,7 @@ export function buildStarSaviorPortalJsonLd(patchVersion: string): Record<string
         sameAs: ['https://starsavior.com', 'https://x.com/StarSavior_JP'],
       },
       buildBreadcrumbNode([
-        { name: 'Ascalon.gg Home', path: '/' },
+        { name: 'Ascalon.fun Home', path: '/' },
         { name: 'Star Savior Wiki', path: '/starsavior' },
       ]),
       {
@@ -263,7 +263,7 @@ export function buildStarSaviorHubJsonLd(opts: {
   const graph: Array<Record<string, unknown>> = [
     buildPublisherReference(),
     buildBreadcrumbNode([
-      { name: 'Ascalon.gg Home', path: '/' },
+      { name: 'Ascalon.fun Home', path: '/' },
       { name: 'Star Savior Wiki', path: '/starsavior' },
       { name: opts.breadcrumbLabel, path: opts.path },
     ]),
@@ -376,7 +376,7 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
     '@graph': [
       buildPublisherReference(),
       buildBreadcrumbNode([
-        { name: 'Ascalon.gg Home', path: '/' },
+        { name: 'Ascalon.fun Home', path: '/' },
         { name: 'Star Savior Wiki', path: '/starsavior' },
         { name: 'All 59 Characters', path: '/starsavior/characters' },
         { name: character.name, path },
@@ -443,7 +443,7 @@ export function buildGuideJsonLd(guide: StarSaviorGuideArticle): Record<string, 
     '@graph': [
       buildPublisherReference(),
       buildBreadcrumbNode([
-        { name: 'Ascalon.gg Home', path: '/' },
+        { name: 'Ascalon.fun Home', path: '/' },
         { name: 'Star Savior Wiki', path: '/starsavior' },
         { name: guide.title, path },
       ]),
