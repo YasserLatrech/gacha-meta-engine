@@ -55,87 +55,90 @@ export function WikiShell({
   ];
 
   const quickTopNav = [
-    { key: 'home', label: 'Home', href: '/' },
-    { key: 'portal', label: 'Wiki Top', href: '/starsavior' },
-    { key: 'tier-list', label: 'Tier List', href: '/starsavior/tier-list' },
-    { key: 'reroll', label: 'Reroll', href: '/starsavior/reroll' },
-    { key: 'characters', label: 'Characters (59)', href: '/starsavior/characters' },
-    { key: 'arcana', label: 'Arcana (85)', href: '/starsavior/arcana' },
+    { key: 'home', label: 'Home', count: '', href: '/' },
+    { key: 'portal', label: 'Wiki Top', count: '', href: '/starsavior' },
+    { key: 'tier-list', label: 'Tier List', count: '', href: '/starsavior/tier-list' },
+    { key: 'reroll', label: 'Reroll', count: '', href: '/starsavior/reroll' },
+    { key: 'characters', label: 'Characters', count: '59', href: '/starsavior/characters' },
+    { key: 'arcana', label: 'Arcana', count: '85', href: '/starsavior/arcana' },
   ];
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-canvas)' }}>
       {/* Top AppMedia Dark Header (Responsive Desktop + Mobile) */}
       <header className="sticky top-0 z-50 border-b border-[#1e2636] bg-[#0e1117]/96 backdrop-blur-md">
-        <div className="mx-auto flex max-w-[1240px] items-center justify-between gap-2 px-3 py-2 sm:px-4 sm:py-2.5">
+        <div className="mx-auto flex max-w-[1240px] items-center justify-between gap-2 sm:gap-3 px-3 py-2 sm:px-4 sm:py-2.5">
           {/* Brand Pair */}
-          <div className="flex min-w-0 items-center gap-2 sm:gap-3.5">
+          <div className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-3">
             <Link
               href="/"
               title="Ascalon.fun Home"
-              className="flex shrink-0 items-center gap-2 border-r border-[#1e2636] pr-2 sm:pr-3.5"
+              className="flex shrink-0 items-center gap-2 border-r border-[#1e2636] pr-2 sm:pr-3"
             >
               <img
                 src="/brand/ascalon-logo.png"
                 alt="Ascalon.fun"
-                width={40}
-                height={40}
-                className="h-8 w-8 sm:h-10 sm:w-10 rounded-lg border border-[#60a5fa] object-cover shadow-[0_0_10px_rgba(59,130,246,0.3)]"
+                width={38}
+                height={38}
+                className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg border border-[#60a5fa] object-cover shadow-[0_0_10px_rgba(59,130,246,0.3)]"
               />
-              <div className="hidden xs:block sm:block">
-                <div className="flex items-center gap-1">
-                  <span className="text-[14.5px] sm:text-[15.5px] font-black tracking-wide text-white">
+              <div className="hidden md:block">
+                <div className="flex items-center gap-1 whitespace-nowrap">
+                  <span className="text-[14px] sm:text-[15px] font-black tracking-wide text-white">
                     ASCALON
                   </span>
-                  <span className="rounded border border-[#3b82f6]/40 bg-[#3b82f6]/15 px-1 py-0.5 text-[11.5px] font-black text-[#60a5fa]">
+                  <span className="rounded border border-[#3b82f6]/40 bg-[#3b82f6]/15 px-1 py-0.5 text-[11px] font-black text-[#60a5fa]">
                     .FUN
                   </span>
                 </div>
-                <div className="hidden sm:block text-[11.5px] font-semibold text-[#b8c7dc]">
+                <div className="hidden 2xl:block text-[11px] font-semibold text-[#b8c7dc] whitespace-nowrap">
                   Strategy Wiki Portal
                 </div>
               </div>
             </Link>
 
-            <Link href="/starsavior" className="flex min-w-0 items-center gap-2 sm:gap-2.5">
+            <Link href="/starsavior" className="flex min-w-0 shrink-0 items-center gap-2">
               <img
                 src={game.iconUrl}
                 alt={game.name}
-                width={38}
-                height={38}
+                width={36}
+                height={36}
                 className="h-8 w-8 sm:h-9 sm:w-9 shrink-0 rounded-lg border border-[#3b4861] object-cover"
               />
               <div className="min-w-0">
-                <div className="flex items-center gap-1.5">
-                  <span className="truncate text-[13.5px] sm:text-[15.5px] font-extrabold tracking-tight text-[#f8fafc]">
+                <div className="flex items-center gap-1.5 whitespace-nowrap">
+                  <span className="text-[14px] sm:text-[15px] font-extrabold tracking-tight text-[#f8fafc]">
                     {game.name} Wiki
                   </span>
-                  <span className="hidden md:inline-block shrink-0 rounded border border-[#3b82f6]/35 bg-[#3b82f6]/18 px-1.5 py-0.5 text-[12px] font-extrabold text-[#60a5fa]">
+                  <span className="hidden 2xl:inline-block shrink-0 rounded border border-[#3b82f6]/35 bg-[#3b82f6]/18 px-1.5 py-0.5 text-[11.5px] font-extrabold text-[#60a5fa]">
                     {game.patchVersion}
                   </span>
                 </div>
-                <div className="truncate text-[12px] sm:text-[12.5px] text-[#b8c7dc]">
-                  59 Characters · 85 Arcana
+                <div className="hidden sm:block text-[11.5px] text-[#b8c7dc] whitespace-nowrap">
+                  59 Saviors · 85 Arcana
                 </div>
               </div>
             </Link>
           </div>
 
-          {/* Desktop Navigation Pills */}
-          <nav className="hidden lg:flex items-center gap-1.5">
+          {/* Desktop Navigation Links (Clean spacious single-line pills) */}
+          <nav className="hidden lg:flex shrink-0 items-center gap-1 xl:gap-1.5">
             {quickTopNav.map((item) => {
               const isActive = activeNav === item.key;
               return (
                 <Link
                   key={item.key}
                   href={item.href}
-                  className={`rounded-md border px-3 py-1.5 text-[13.5px] font-bold transition-colors ${
+                  className={`shrink-0 whitespace-nowrap rounded-lg border px-2.5 xl:px-3 py-1.5 text-[13px] font-bold transition-colors ${
                     isActive
-                      ? 'border-[#3b82f6] bg-[#2563eb] text-white'
-                      : 'border-[#1e2636] bg-[#21293a] text-[#c3cde0] hover:border-[#3b82f6]/60 hover:text-white'
+                      ? 'border-[#3b82f6] bg-[#2563eb] text-white shadow-xs'
+                      : 'border-transparent bg-transparent text-[#dbe7f7] hover:border-[#2c3a57] hover:bg-[#1a2234] hover:text-white'
                   }`}
                 >
                   {item.label}
+                  {item.count ? (
+                    <span className="hidden xl:inline ml-1 text-[11.5px] opacity-80">({item.count})</span>
+                  ) : null}
                 </Link>
               );
             })}
@@ -170,7 +173,7 @@ export function WikiShell({
                     : 'border-[#1e2636] bg-[#161e2e] text-[#e8eff8] hover:text-white'
                 }`}
               >
-                {item.label}
+                {item.count ? `${item.label} (${item.count})` : item.label}
               </Link>
             );
           })}

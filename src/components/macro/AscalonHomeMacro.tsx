@@ -232,7 +232,6 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
     [strategyWikis]
   );
 
-  const [searchQuery, setSearchQuery] = useState('');
   const [selectedEval, setSelectedEval] = useState<'ALL' | '5' | '4.5'>('ALL');
   const [showAllRanked, setShowAllRanked] = useState(false);
 
@@ -351,16 +350,9 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
   const filteredRecommended = useMemo(() => {
     return recommendedRanking.filter((item) => {
       if (selectedEval !== 'ALL' && item.evaluation !== selectedEval) return false;
-      if (searchQuery.trim() !== '') {
-        const q = searchQuery.toLowerCase();
-        const matchTitle = item.title.toLowerCase().includes(q) || item.titleJa.toLowerCase().includes(q);
-        const matchOutline = item.outline.toLowerCase().includes(q);
-        const matchGenre = item.genre.toLowerCase().includes(q);
-        if (!matchTitle && !matchOutline && !matchGenre) return false;
-      }
       return true;
     });
-  }, [recommendedRanking, selectedEval, searchQuery]);
+  }, [recommendedRanking, selectedEval]);
 
   const displayedRecommended = showAllRanked ? filteredRecommended : filteredRecommended.slice(0, 10);
 
@@ -396,13 +388,6 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           Boolean(parseReleasedLaunchIso(g.releaseDate, g.status));
         if (!hasExactChrono) return false;
       }
-      if (searchQuery.trim() !== '') {
-        const q = searchQuery.toLowerCase();
-        const matchTitle = g.title.toLowerCase().includes(q) || g.titleJa.toLowerCase().includes(q);
-        const matchDesc = g.description.toLowerCase().includes(q);
-        const matchPub = g.publisher.toLowerCase().includes(q);
-        if (!matchTitle && !matchDesc && !matchPub) return false;
-      }
       return true;
     });
 
@@ -427,7 +412,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
       );
     }
     return list;
-  }, [upcomingGames, selectedWindow, sortUpcomingBy, searchQuery, serverVoteCounts]);
+  }, [upcomingGames, selectedWindow, sortUpcomingBy, serverVoteCounts]);
 
   const displayedUpcoming = showAllUpcoming ? filteredUpcoming : filteredUpcoming.slice(0, 16);
 
@@ -438,77 +423,67 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
       if (selectedRoadmapFilter !== 'ALL' && status !== selectedRoadmapFilter) return false;
       if (selectedPlatform === 'Mobile App' && !w.platform.includes('Mobile')) return false;
       if (selectedPlatform === 'Console / PC' && !w.platform.includes('Console')) return false;
-      if (searchQuery.trim() !== '') {
-        const q = searchQuery.toLowerCase();
-        if (!w.title.toLowerCase().includes(q) && !w.titleJa.toLowerCase().includes(q)) return false;
-      }
       return true;
     });
-  }, [strategyWikis, selectedRoadmapFilter, selectedPlatform, searchQuery]);
+  }, [strategyWikis, selectedRoadmapFilter, selectedPlatform]);
 
   return (
     <div className="min-h-screen bg-[#090d16] text-[#e2e8f0]">
       {/* Sticky Top Global Header */}
       <header className="sticky top-0 z-40 border-b border-[#1e293b] bg-[#0b101b]/95 backdrop-blur">
-        <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-2.5 px-3 sm:px-4 py-2 sm:py-2.5">
-          <Link href="/" className="flex items-center gap-2 sm:gap-2.5 group min-w-0">
+        <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-2.5">
+          <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-2.5 group min-w-0">
             <img
               src="/brand/ascalon-logo.png"
               alt="Ascalon.fun"
               className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg border border-[#3b82f6]/60 object-cover shadow-sm shrink-0"
             />
             <div className="min-w-0">
-              <div className="flex items-center gap-1.5">
-                <span className="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-[#60a5fa] transition-colors whitespace-nowrap">
+              <div className="flex items-center gap-1.5 whitespace-nowrap">
+                <span className="text-[14px] sm:text-base font-black tracking-tight text-white group-hover:text-[#60a5fa] transition-colors">
                   ASCALON<span className="text-[#3b82f6]">.FUN</span>
                 </span>
-                <span className="hidden xs:inline-block rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[11px] font-extrabold text-[#93c5fd] whitespace-nowrap">
+                <span className="hidden sm:inline-block rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[11px] font-extrabold text-[#93c5fd]">
                   PORTAL
                 </span>
               </div>
-              <div className="hidden sm:block text-[11.5px] font-semibold text-[#c8d4e6] truncate">
-                Mobile Game Rankings, Release Calendar & Strategy Wikis
+              <div className="hidden xl:block text-[11px] font-semibold text-[#c8d4e6] whitespace-nowrap">
+                Game Rankings, Calendar &amp; Wikis
               </div>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-5 text-[13.5px] font-extrabold text-[#e8eff8]">
-            <a href="#recommended-ranking" className="hover:text-[#60a5fa] transition-colors">
-              Top 25 Mobile Games
+          <nav className="hidden lg:flex shrink-0 items-center gap-4 xl:gap-6 text-[13px] xl:text-[13.5px] font-extrabold text-[#e8eff8] whitespace-nowrap">
+            <a href="#recommended-ranking" className="shrink-0 hover:text-[#60a5fa] transition-colors">
+              Top 25 Games
             </a>
-            <a href="#upcoming-calendar" className="hover:text-[#60a5fa] transition-colors">
-              Release Calendar ({upcomingGames.length})
+            <a href="#upcoming-calendar" className="shrink-0 hover:text-[#60a5fa] transition-colors">
+              Calendar ({upcomingGames.length})
             </a>
-            <a href="#appstore-rankings" className="hover:text-[#60a5fa] transition-colors">
-              App Store Rankings
+            <a href="#appstore-rankings" className="shrink-0 hover:text-[#60a5fa] transition-colors">
+              App Store
             </a>
-            <a href="#strategy-wikis" className="hover:text-[#60a5fa] transition-colors">
-              Wiki Roadmap (1 Live)
+            <a href="#strategy-wikis" className="shrink-0 hover:text-[#60a5fa] transition-colors">
+              Wiki Roadmap
             </a>
-            <a href="#featured-articles" className="hover:text-[#60a5fa] transition-colors">
-              Featured Guides
+            <a href="#featured-articles" className="shrink-0 hover:text-[#60a5fa] transition-colors">
+              Guides
             </a>
           </nav>
 
           <div className="flex items-center gap-2 shrink-0">
             <GlobalOmniSearch />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Filter portal lists..."
-              className="hidden xl:block w-44 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
-            />
             <Link
               href="/starsavior"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 sm:px-3 py-1.5 text-[12.5px] font-black text-white shadow transition-colors whitespace-nowrap"
+              className="inline-flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 sm:px-3 py-1.5 text-[12.5px] font-black text-white shadow transition-colors"
             >
               <img
                 src={strategyWikis[0]?.iconUrl || '/brand/ascalon-logo.png'}
                 alt="Star Savior"
                 className="h-4 w-4 rounded-sm object-cover shrink-0"
               />
-              <span>Star Savior Wiki →</span>
+              <span className="sm:hidden">Star Savior →</span>
+              <span className="hidden sm:inline">Star Savior Wiki →</span>
             </Link>
           </div>
         </div>
@@ -552,16 +527,6 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
       {/* Main Content Container */}
       <main className="mx-auto max-w-[1280px] px-3 sm:px-4 py-4 sm:py-6 space-y-6 sm:space-y-8">
-        {/* Mobile Full-Width Search Input (Keeps Sticky Header Ultra-Compact) */}
-        <div className="sm:hidden">
-          <input
-            type="search"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search ranked games, upcoming releases, wikis..."
-            className="w-full rounded-lg border border-[#243049] bg-[#111726] px-3.5 py-2.5 text-[13.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
-          />
-        </div>
         {/* Portal Hero Header: 1 Live Wiki (Star Savior) + Next Wiki (Silver Palace) */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b border-[#1e293b] pb-4">
@@ -648,7 +613,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </div>
 
           {/* Portal Quick Section Navigation Table */}
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2">
             {[
               { href: '#recommended-ranking', label: 'Top 25 Mobile Games', sub: 'Editorial Star Ratings & Reviews' },
               { href: '#upcoming-calendar', label: 'New Game Release Calendar', sub: `${upcomingGames.length} Upcoming Titles & Votes` },
@@ -1363,7 +1328,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           {/* Full Step-by-Step Game Expansion Queue */}
           {filteredWikis.length === 0 ? (
             <div className="rounded-lg border border-dashed border-[#334155] bg-[#0f1626] p-6 text-center text-[13px] text-[#c8d4e6]">
-              No titles match the current roadmap filter or search query.
+              No titles match the current roadmap filter.
             </div>
           ) : (
             <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2.5">

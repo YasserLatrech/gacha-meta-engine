@@ -112,34 +112,36 @@ export function GlobalOmniSearch() {
 
   return (
     <>
-      <button
-        type="button"
-        onClick={openModal}
-        aria-label="Search Saviors, Arcana, Guides & Games"
-        className="flex items-center gap-2 rounded-lg border border-[#2c3a57] bg-[#0b101b] hover:border-[#60a5fa] px-2.5 sm:px-3 py-1.5 text-left transition-colors"
-      >
-        <svg
-          width="15"
-          height="15"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#93c5fd"
-          strokeWidth="2.4"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="shrink-0"
+        <button
+          type="button"
+          onClick={openModal}
+          aria-label="Search Saviors, Arcana, Guides & Games"
+          className="flex shrink-0 items-center gap-2 whitespace-nowrap rounded-lg border border-[#2c3a57] bg-[#0b101b] hover:border-[#60a5fa] px-2.5 sm:px-3 py-1.5 text-left transition-colors"
         >
-          <circle cx="11" cy="11" r="8" />
-          <path d="m21 21-4.3-4.3" />
-        </svg>
-        <span className="hidden md:inline text-[12.5px] font-semibold text-[#c8d4e6]">
-          Search Saviors, Arcana, Guides…
-        </span>
-        <span className="md:hidden text-[12px] font-bold text-[#c8d4e6]">Search</span>
-        <kbd className="hidden lg:inline-block rounded border border-[#334155] bg-[#162033] px-1.5 py-0.5 font-mono text-[10.5px] font-bold text-[#93c5fd]">
-          Ctrl K
-        </kbd>
-      </button>
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#93c5fd"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="shrink-0"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <span className="hidden 2xl:inline text-[12.5px] font-semibold text-[#c8d4e6]">
+            Search Saviors, Guides…
+          </span>
+          <span className="hidden sm:inline 2xl:hidden text-[12.5px] font-bold text-[#c8d4e6]">
+            Search
+          </span>
+          <kbd className="hidden md:inline-block rounded border border-[#334155] bg-[#162033] px-1.5 py-0.5 font-mono text-[10.5px] font-bold text-[#93c5fd]">
+            Ctrl K
+          </kbd>
+        </button>
 
       {open && (
         <div
