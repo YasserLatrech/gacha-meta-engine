@@ -62,6 +62,8 @@ import {
   sanitizeReferrerHost,
 } from '../../application/analytics.service';
 import { InMemoryAnalyticsRepository } from '../../infrastructure/repositories/analytics.repository';
+import { StaticPortalRepository } from '../../infrastructure/repositories/portal.repository';
+import { buildCuratedStrategyWikiRoadmap } from '../wiki-roadmap';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -776,6 +778,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(secondVisitor.countedUnique).toBe(true);
 
     const summary = await service.getDashboardSummary(14);
+    expect(summary.storageMode).toBe('memory');
     expect(summary.todayVisitors).toBe(2);
     expect(summary.todayPageviews).toBe(3);
     expect(summary.pagesPerVisitorToday).toBe(1.5);
@@ -783,5 +786,53 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(summary.topRoutes[0]?.pageviews).toBe(2);
     expect(summary.topReferrers.some((r) => r.referrerHost === 'reddit.com')).toBe(true);
     expect(summary.topReferrers.some((r) => r.referrerHost === 'google.com')).toBe(true);
+  });
+
+  it('verifies Strategy Wiki Expansion Roadmap (1 Live: Star Savior, 1 Next: Silver Palace, zero CJK & valid icons) and home accuracy', () => {
+    const portalRepo = new StaticPortalRepository();
+    const portal = portalRepo.getHomePortalData();
+    const roadmap = portal.strategyWikis;
+    const directRoadmap = buildCuratedStrategyWikiRoadmap(
+      APPMEDIA_HOME_PORTAL_DATA.strategyWikis,
+      APPMEDIA_HOME_PORTAL_DATA.upcomingGames
+    );
+    expect(roadmap.length).toBeGreaterThanOrEqual(directRoadmap.length);
+
+    const liveItems = roadmap.filter((w) => w.wikiStatus === 'live');
+    const nextItems = roadmap.filter((w) => w.wikiStatus === 'next');
+    const plannedItems = roadmap.filter((w) => w.wikiStatus === 'planned');
+
+    expect(liveItems).toHaveLength(1);
+    expect(liveItems[0]?.title).toBe('Star Savior');
+    expect(liveItems[0]?.isInternal).toBe(true);
+    expect(liveItems[0]?.href).toBe('/starsavior');
+
+    expect(nextItems).toHaveLength(1);
+    expect(nextItems[0]?.title).toBe('Silver Palace');
+    expect(nextItems[0]?.isInternal).toBe(false);
+    expect(nextItems[0]?.launchWindow).toBe('Dec 14, 2026');
+
+    expect(plannedItems.length).toBeGreaterThan(20);
+    expect(plannedItems.every((w) => !w.isInternal)).toBe(true);
+
+    const publicDir = path.resolve(process.cwd(), 'public');
+    for (const item of roadmap) {
+      expect(CJK_REGEX.test(item.title)).toBe(false);
+      expect(CJK_REGEX.test(item.publisher ?? '')).toBe(false);
+      expect(CJK_REGEX.test(item.launchWindow ?? '')).toBe(false);
+      expect(CJK_REGEX.test(item.roadmapReason ?? '')).toBe(false);
+      if (item.iconUrl.startsWith('/')) {
+        const assetPath = path.join(publicDir, item.iconUrl.replace(/^\//, ''));
+        expect(fs.existsSync(assetPath)).toBe(true);
+      }
+    }
+
+    // Verify factual featured guide label for en_home_16.webp (Onimusha: Way of the Sword)
+    const homeMacroSrc = fs.readFileSync(
+      path.resolve(process.cwd(), 'src/components/macro/AscalonHomeMacro.tsx'),
+      'utf8'
+    );
+    expect(homeMacroSrc).toContain('Onimusha: Way of the Sword');
+    expect(homeMacroSrc).not.toContain('Onimusha VR');
   });
 });

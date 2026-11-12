@@ -115,6 +115,21 @@ export function buildGlobalSearchIndex(
     });
   }
 
+  for (const w of portalData.strategyWikis) {
+    if (w.isInternal || w.wikiStatus === 'live') continue;
+    const statusLabel = w.wikiStatus === 'next' ? 'NEXT WIKI (#2)' : 'PLANNED WIKI';
+    items.push({
+      id: `roadmap:${w.id ?? w.title}`,
+      category: 'Upcoming',
+      title: `${w.title}${w.wikiStatus === 'next' ? ' Strategy Wiki (Up Next)' : ''}`,
+      subtitle: `${statusLabel} · ${w.launchWindow || 'Planned'} · ${w.platform}`,
+      badge: w.wikiStatus === 'next' ? 'NEXT WIKI' : 'ROADMAP',
+      href: '/#strategy-wikis',
+      iconUrl: w.iconUrl,
+      keywords: `${w.title} ${w.titleJa} ${w.publisher || ''} ${statusLabel} next wiki roadmap upcoming`.toLowerCase(),
+    });
+  }
+
   for (const u of portalData.upcomingGames) {
     items.push({
       id: `upcoming:${u.id}`,

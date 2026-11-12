@@ -4,7 +4,12 @@
 
 ## Primary Portal Hubs
 - [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79+ tracked titles), reader expectation rankings, daily App Store sales & free charts, and featured strategy briefs.
-- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 157+ static strategy wiki routes, character builds, and interactive tools.
+- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 151 static strategy wiki routes, character builds, and interactive tools.
+
+## Wiki Expansion Roadmap
+- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, 86 Strategy Guides).
+- **Next Wiki (#2 — Up Next)**: **Silver Palace** (Elementa / Silver Studio) — Simultaneous Global English Launch scheduled for **December 14, 2026** (PC, PS5, iOS, Android).
+- **Planned Expansion Queue**: ANANTA (Jan 15, 2027 Global), Azur Promilia, Honkai: Nexus Anima, Limit Zero Breakers, and community-prioritized upcoming gacha titles ranked on the [Ascalon.fun Home Roadmap](https://ascalon.fun/#strategy-wikis).
 
 ## Star Savior Complete English Strategy Wiki (Patch v2.4)
 Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, and Android combining Rescue Journey simulation, 85 Arcana training cards, and turn-based command battles.

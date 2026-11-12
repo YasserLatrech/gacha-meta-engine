@@ -117,6 +117,7 @@ export class InMemoryAnalyticsRepository implements IAnalyticsRepository {
     );
 
     return {
+      storageMode: 'memory',
       todayUtc,
       todayVisitors,
       todayPageviews,
@@ -271,6 +272,7 @@ export class NeonAnalyticsRepository implements IAnalyticsRepository {
       );
 
       return {
+        storageMode: 'neon',
         todayUtc,
         todayVisitors,
         todayPageviews,

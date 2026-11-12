@@ -1,7 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { analyticsService } from '@/di/container';
+import {
+  analyticsService,
+  getAllStarSaviorGuides,
+  getStarSaviorWikiData,
+  portalService,
+  voteService,
+} from '@/di/container';
 
 export const dynamic = 'force-dynamic';
 
@@ -11,8 +17,32 @@ export const metadata: Metadata = {
 };
 
 export default async function FounderAnalyticsPage() {
-  const summary = await analyticsService.getDashboardSummary(14);
+  const [summary, dataset, roadmapVoteSnap] = await Promise.all([
+    analyticsService.getDashboardSummary(14),
+    getStarSaviorWikiData(),
+    voteService.getVotesSnapshot('wiki-roadmap', 'founder-dashboard'),
+  ]);
+  const portalData = portalService.getHomePortalData();
+  const totalSitemapUrls = 6 + dataset.characters.length + getAllStarSaviorGuides().length;
   const maxDailyPv = Math.max(1, ...summary.dailySeries.map((d) => d.pageviews));
+  const isNeonStorage = summary.storageMode === 'neon';
+
+  const topRoadmapQueue = portalData.strategyWikis
+    .map((w) => {
+      const key = w.id || w.title;
+      const serverVotes = roadmapVoteSnap.counts[key] ?? 0;
+      return {
+        key,
+        title: w.title,
+        status: w.wikiStatus || (w.isInternal ? 'live' : 'planned'),
+        launchWindow: w.launchWindow || 'Expansion Queue',
+        serverVotes,
+        totalPriorityScore: (w.baseVotes || 0) + serverVotes,
+      };
+    })
+    .filter((w) => w.status !== 'live')
+    .sort((a, b) => b.serverVotes - a.serverVotes || b.totalPriorityScore - a.totalPriorityScore)
+    .slice(0, 8);
 
   const ga4Configured = Boolean(process.env.NEXT_PUBLIC_GA4_ID?.trim());
   const adsterraConfigured = Boolean(
@@ -28,9 +58,18 @@ export default async function FounderAnalyticsPage() {
         {/* Top Bar */}
         <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[#28354e] bg-[#111827] px-5 py-4">
           <div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <span className="rounded bg-[#2563eb] px-2 py-0.5 font-mono text-[11px] font-black text-white">
                 LIVE TELEMETRY
+              </span>
+              <span
+                className={`rounded px-2 py-0.5 font-mono text-[11px] font-black ${
+                  isNeonStorage
+                    ? 'bg-emerald-500/20 border border-emerald-500/40 text-emerald-300'
+                    : 'bg-amber-500/20 border border-amber-500/40 text-amber-300'
+                }`}
+              >
+                {isNeonStorage ? 'NEON DB' : 'MEMORY FALLBACK'}
               </span>
               <span className="font-mono text-[12px] text-[#c8d4e6]">UTC Day: {summary.todayUtc}</span>
             </div>
@@ -111,7 +150,7 @@ export default async function FounderAnalyticsPage() {
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
               Verification file <code className="text-[#93c5fd]">/google47558ceaecd0fcbe.html</code>,{' '}
-              <a href="/sitemap.xml" className="underline text-[#60a5fa]">/sitemap.xml</a> (157 URLs), and{' '}
+              <a href="/sitemap.xml" className="underline text-[#60a5fa]">/sitemap.xml</a> ({totalSitemapUrls} URLs), and{' '}
               <code className="text-[#93c5fd]">IndexNow</code> are live.
             </p>
           </div>
@@ -119,8 +158,18 @@ export default async function FounderAnalyticsPage() {
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4 space-y-1.5">
             <div className="flex items-center justify-between">
               <span className="text-[13.5px] font-extrabold text-white">Analytics Stack (Neon + GA4)</span>
-              <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2 py-0.5 font-mono text-[11px] font-black text-emerald-300">
-                {ga4Configured ? 'NEON + GA4 ACTIVE' : 'NEON ACTIVE'}
+              <span
+                className={`rounded px-2 py-0.5 font-mono text-[11px] font-black ${
+                  isNeonStorage
+                    ? 'bg-emerald-500/20 border border-emerald-500/40 text-emerald-300'
+                    : 'bg-amber-500/20 border border-amber-500/40 text-amber-300'
+                }`}
+              >
+                {isNeonStorage
+                  ? ga4Configured
+                    ? 'NEON DB + GA4'
+                    : 'NEON DB'
+                  : 'MEMORY FALLBACK'}
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
@@ -224,6 +273,42 @@ export default async function FounderAnalyticsPage() {
                 ))
               )}
             </div>
+          </div>
+        </div>
+
+        {/* Reader-Voted Next Wiki Priority (wiki-roadmap) */}
+        <div className="rounded-xl border border-[#28354e] bg-[#111827] overflow-hidden">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#243049] bg-[#162033] px-4 py-3">
+            <div className="text-[14px] font-extrabold text-white">
+              Reader-Voted Next Wiki Priority (<code className="text-[#93c5fd]">wiki-roadmap</code>)
+            </div>
+            <span className="text-[12px] font-bold text-[#c8d4e6]">
+              1 Live (Star Savior) · #2 Up Next: Silver Palace (Dec 14, 2026)
+            </span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:gap-px bg-[#1e293b]">
+            {topRoadmapQueue.map((item, idx) => (
+              <div key={item.key} className="bg-[#111827] p-3.5 space-y-1">
+                <div className="flex items-center justify-between gap-2">
+                  <span
+                    className={`rounded px-1.5 py-0.5 font-mono text-[10.5px] font-black ${
+                      item.status === 'next'
+                        ? 'bg-amber-400 text-slate-950'
+                        : 'bg-[#1e293b] text-[#93c5fd]'
+                    }`}
+                  >
+                    {item.status === 'next' ? 'NEXT #2' : `#${idx + 2} QUEUE`}
+                  </span>
+                  <span className="font-mono text-[11.5px] font-extrabold text-emerald-400">
+                    +{item.serverVotes} IP votes
+                  </span>
+                </div>
+                <div className="text-[13.5px] font-extrabold text-white truncate">{item.title}</div>
+                <div className="text-[11.5px] text-[#b8c7dc] truncate">
+                  {item.launchWindow} · Total demand: {item.totalPriorityScore.toLocaleString()}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

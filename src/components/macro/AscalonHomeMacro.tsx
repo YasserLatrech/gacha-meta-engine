@@ -6,6 +6,7 @@ import type {
   HomePortalData,
   HomeRecommendedGame,
   HomeFeaturedArticle,
+  HomeStrategyWiki,
 } from '@/domain/schemas';
 import {
   AppMediaH2,
@@ -187,17 +188,25 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
     targetRoute: '/starsavior',
   },
   '/banners/home/en_home_16.webp': {
-    category: 'Onimusha VR: Shadow Team · Omamori Equipment Guide',
+    category: 'Onimusha: Way of the Sword · Omamori Equipment Guide',
     summary:
-      'Complete Omamori (Amulet) equipment system guide for Onimusha VR: Shadow Team, covering slot unlocking, rarity scaling, and best-in-slot combat builds.',
+      'Complete Omamori (Talisman) equipment system guide for Onimusha: Way of the Sword, covering slot unlocking, rarity scaling, and best-in-slot combat builds.',
     keyPoints: [
       'Equipping matching Omamori sets activates passive Issen critical counter damage and soul absorption multipliers.',
       'Prioritize Attack Speed and Critical Window Expansion Omamori for boss time-attack stages.',
-      'Dismantle duplicate lower-rarity amulets to enhance your primary SSR Omamori to max rank.',
+      'Dismantle duplicate lower-rarity talismans to enhance your primary SSR Omamori to max rank.',
     ],
     targetRoute: '/starsavior',
   },
 };
+
+interface VoteStoreState {
+  counts: Record<string, number>;
+  myVoted: Record<string, boolean>;
+  pending: Record<string, boolean>;
+}
+
+const EMPTY_VOTE_STORE: VoteStoreState = { counts: {}, myVoted: {}, pending: {} };
 
 export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData }) {
   const {
@@ -210,6 +219,19 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
     featuredArticles,
   } = portalData;
 
+  const liveWiki = useMemo(
+    () => strategyWikis.find((w) => w.wikiStatus === 'live' || w.isInternal) ?? strategyWikis[0],
+    [strategyWikis]
+  );
+  const nextWiki = useMemo(
+    () => strategyWikis.find((w) => w.wikiStatus === 'next') ?? strategyWikis[1],
+    [strategyWikis]
+  );
+  const plannedWikisCount = useMemo(
+    () => strategyWikis.filter((w) => !w.isInternal && w.wikiStatus !== 'live').length,
+    [strategyWikis]
+  );
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedEval, setSelectedEval] = useState<'ALL' | '5' | '4.5'>('ALL');
   const [showAllRanked, setShowAllRanked] = useState(false);
@@ -218,101 +240,112 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
   const [sortUpcomingBy, setSortUpcomingBy] = useState<'schedule' | 'votes' | 'chronos'>('votes');
   const [showAllUpcoming, setShowAllUpcoming] = useState(false);
 
+  const [selectedRoadmapFilter, setSelectedRoadmapFilter] = useState<'ALL' | 'live' | 'next' | 'planned'>('ALL');
   const [selectedPlatform, setSelectedPlatform] = useState<'ALL' | 'Mobile App' | 'Console / PC'>('ALL');
 
-  // Server-backed 1-Vote-Per-IP state for Upcoming Games Calendar
-  const [serverVoteCounts, setServerVoteCounts] = useState<Record<string, number>>({});
-  const [myVotedIds, setMyVotedIds] = useState<Record<string, boolean>>({});
-  const [pendingVoteIds, setPendingVoteIds] = useState<Record<string, boolean>>({});
+  // Server-backed 1-Vote-Per-IP stores (upcoming calendar + wiki expansion roadmap)
+  const [upcomingVotes, setUpcomingVotes] = useState<VoteStoreState>(EMPTY_VOTE_STORE);
+  const [roadmapVotes, setRoadmapVotes] = useState<VoteStoreState>(EMPTY_VOTE_STORE);
   const [activeArticle, setActiveArticle] = useState<HomeFeaturedArticle | null>(null);
   const [activeGameReview, setActiveGameReview] = useState<HomeRecommendedGame | null>(null);
+  const [activeWikiPlan, setActiveWikiPlan] = useState<HomeStrategyWiki | null>(null);
 
   useEffect(() => {
     let cancelled = false;
-    fetch('/api/votes?scope=upcoming-games', { cache: 'no-store' })
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
+    const hydrateVoteScope = async (
+      scope: string,
+      setter: React.Dispatch<React.SetStateAction<VoteStoreState>>
+    ) => {
+      try {
+        const res = await fetch(`/api/votes?scope=${encodeURIComponent(scope)}`, { cache: 'no-store' });
+        if (!res.ok) return;
+        const data = await res.json();
         if (cancelled || !data) return;
-        if (data.counts && typeof data.counts === 'object') {
-          setServerVoteCounts(data.counts);
-        }
+        const nextVoted: Record<string, boolean> = {};
         if (Array.isArray(data.myVotes)) {
-          const nextVoted: Record<string, boolean> = {};
-          for (const id of data.myVotes) {
-            nextVoted[String(id)] = true;
-          }
-          setMyVotedIds(nextVoted);
+          for (const id of data.myVotes) nextVoted[String(id)] = true;
         }
-      })
-      .catch(() => {
+        setter({
+          counts: data.counts && typeof data.counts === 'object' ? data.counts : {},
+          myVoted: nextVoted,
+          pending: {},
+        });
+      } catch {
         // Keep static baseline counts if offline
-      });
+      }
+    };
+
+    void Promise.all([
+      hydrateVoteScope('upcoming-games', setUpcomingVotes),
+      hydrateVoteScope('wiki-roadmap', setRoadmapVotes),
+    ]);
     return () => {
       cancelled = true;
     };
   }, []);
 
-  const handleVoteUpcoming = async (gameId: string) => {
-    if (myVotedIds[gameId] || pendingVoteIds[gameId]) return;
+  const castVoteForScope = async (
+    scope: 'upcoming-games' | 'wiki-roadmap',
+    targetId: string,
+    store: VoteStoreState,
+    setter: React.Dispatch<React.SetStateAction<VoteStoreState>>
+  ) => {
+    if (store.myVoted[targetId] || store.pending[targetId]) return;
 
-    // Optimistic UI update
-    setPendingVoteIds((prev) => ({ ...prev, [gameId]: true }));
-    setMyVotedIds((prev) => ({ ...prev, [gameId]: true }));
-    setServerVoteCounts((prev) => ({ ...prev, [gameId]: (prev[gameId] || 0) + 1 }));
+    setter((prev) => ({
+      counts: { ...prev.counts, [targetId]: (prev.counts[targetId] || 0) + 1 },
+      myVoted: { ...prev.myVoted, [targetId]: true },
+      pending: { ...prev.pending, [targetId]: true },
+    }));
 
     try {
       const res = await fetch('/api/votes', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          scope: 'upcoming-games',
-          targetId: gameId,
-          mode: 'per-item',
-        }),
+        body: JSON.stringify({ scope, targetId, mode: 'per-item' }),
       });
       const data = await res.json().catch(() => null);
       if ((res.ok || res.status === 409) && data) {
-        if (data.counts && typeof data.counts === 'object') {
-          setServerVoteCounts(data.counts);
-        }
+        const syncedVoted: Record<string, boolean> = {};
         if (Array.isArray(data.myVotes)) {
-          const synced: Record<string, boolean> = {};
-          for (const id of data.myVotes) {
-            synced[String(id)] = true;
-          }
-          synced[gameId] = true;
-          setMyVotedIds(synced);
+          for (const id of data.myVotes) syncedVoted[String(id)] = true;
         }
-      } else {
-        // Rollback on rate-limit or validation error
-        setMyVotedIds((prev) => {
-          const copy = { ...prev };
-          delete copy[gameId];
-          return copy;
+        syncedVoted[targetId] = true;
+        setter((prev) => {
+          const nextPending = { ...prev.pending };
+          delete nextPending[targetId];
+          return {
+            counts: data.counts && typeof data.counts === 'object' ? data.counts : prev.counts,
+            myVoted: syncedVoted,
+            pending: nextPending,
+          };
         });
-        setServerVoteCounts((prev) => ({
-          ...prev,
-          [gameId]: Math.max(0, (prev[gameId] || 1) - 1),
-        }));
+        return;
       }
     } catch {
-      setMyVotedIds((prev) => {
-        const copy = { ...prev };
-        delete copy[gameId];
-        return copy;
-      });
-      setServerVoteCounts((prev) => ({
-        ...prev,
-        [gameId]: Math.max(0, (prev[gameId] || 1) - 1),
-      }));
-    } finally {
-      setPendingVoteIds((prev) => {
-        const copy = { ...prev };
-        delete copy[gameId];
-        return copy;
-      });
+      // Roll back below
     }
+
+    setter((prev) => {
+      const nextVoted = { ...prev.myVoted };
+      delete nextVoted[targetId];
+      const nextPending = { ...prev.pending };
+      delete nextPending[targetId];
+      return {
+        counts: { ...prev.counts, [targetId]: Math.max(0, (prev.counts[targetId] || 1) - 1) },
+        myVoted: nextVoted,
+        pending: nextPending,
+      };
+    });
   };
+
+  const serverVoteCounts = upcomingVotes.counts;
+  const myVotedIds = upcomingVotes.myVoted;
+  const pendingVoteIds = upcomingVotes.pending;
+  const handleVoteUpcoming = (gameId: string) =>
+    void castVoteForScope('upcoming-games', gameId, upcomingVotes, setUpcomingVotes);
+  const handleVoteRoadmap = (wikiKey: string) =>
+    void castVoteForScope('wiki-roadmap', wikiKey, roadmapVotes, setRoadmapVotes);
 
   // Filter Top 25 Recommended Mobile Games
   const filteredRecommended = useMemo(() => {
@@ -398,17 +431,20 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
   const displayedUpcoming = showAllUpcoming ? filteredUpcoming : filteredUpcoming.slice(0, 16);
 
-  // Filter Strategy Wikis
+  // Filter Strategy Wiki Expansion Roadmap
   const filteredWikis = useMemo(() => {
     return strategyWikis.filter((w) => {
-      if (selectedPlatform !== 'ALL' && w.platform !== selectedPlatform) return false;
+      const status = w.wikiStatus || (w.isInternal ? 'live' : 'planned');
+      if (selectedRoadmapFilter !== 'ALL' && status !== selectedRoadmapFilter) return false;
+      if (selectedPlatform === 'Mobile App' && !w.platform.includes('Mobile')) return false;
+      if (selectedPlatform === 'Console / PC' && !w.platform.includes('Console')) return false;
       if (searchQuery.trim() !== '') {
         const q = searchQuery.toLowerCase();
         if (!w.title.toLowerCase().includes(q) && !w.titleJa.toLowerCase().includes(q)) return false;
       }
       return true;
     });
-  }, [strategyWikis, selectedPlatform, searchQuery]);
+  }, [strategyWikis, selectedRoadmapFilter, selectedPlatform, searchQuery]);
 
   return (
     <div className="min-h-screen bg-[#090d16] text-[#e2e8f0]">
@@ -447,7 +483,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               App Store Rankings
             </a>
             <a href="#strategy-wikis" className="hover:text-[#60a5fa] transition-colors">
-              Strategy Wikis ({strategyWikis.length})
+              Wiki Roadmap (1 Live)
             </a>
             <a href="#featured-articles" className="hover:text-[#60a5fa] transition-colors">
               Featured Guides
@@ -502,7 +538,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               href="#strategy-wikis"
               className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
-              Wikis ({strategyWikis.length})
+              Wiki Roadmap
             </a>
             <a
               href="#featured-articles"
@@ -526,58 +562,103 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             className="w-full rounded-lg border border-[#243049] bg-[#111726] px-3.5 py-2.5 text-[13.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
           />
         </div>
-        {/* Clean AppMedia-Style Portal Header & Section Directory */}
+        {/* Portal Hero Header: 1 Live Wiki (Star Savior) + Next Wiki (Silver Palace) */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#1e293b] pb-4">
-            <div className="space-y-1.5">
-              <div className="flex flex-wrap items-center gap-2 text-[12.5px] font-bold text-[#c8d4e6]">
-                <span className="rounded bg-[#1e293b] border border-[#334155] px-2 py-0.5 text-[11.5px] font-extrabold text-[#93c5fd]">
-                  PORTAL INDEX
+          <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 border-b border-[#1e293b] pb-4">
+            <div className="space-y-2 min-w-0">
+              <div className="flex flex-wrap items-center gap-2 text-[12px] font-bold text-[#c8d4e6]">
+                <span className="inline-flex items-center gap-1.5 rounded bg-emerald-500/15 border border-emerald-500/40 px-2 py-0.5 font-extrabold text-emerald-300">
+                  <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  1 LIVE WIKI: STAR SAVIOR
                 </span>
-                <span>Last Updated: {updatedAt}</span>
-                <span>·</span>
-                <span>25 Ranked Titles · {upcomingGames.length} Upcoming Releases · {strategyWikis.length} Strategy Wikis</span>
+                <span className="rounded bg-amber-500/15 border border-amber-500/40 px-2 py-0.5 font-extrabold text-amber-300">
+                  NEXT WIKI: {nextWiki?.title?.toUpperCase() || 'SILVER PALACE'} (DEC 14)
+                </span>
+                <span className="text-[#b8c7dc]">
+                  Updated {updatedAt} · {upcomingGames.length} Upcoming Titles · {recommendedRanking.length} Ranked
+                </span>
               </div>
               <h1 className="text-lg sm:text-xl font-black text-white leading-snug">
-                Mobile Game Rankings, Upcoming Release Schedule & Strategy Wiki Directory
+                Mobile &amp; Gacha Game Rankings, Release Calendar &amp; English Strategy Wikis
               </h1>
+              <p className="text-[12.5px] sm:text-[13px] text-[#c8d4e6]">
+                <strong className="text-white">Star Savior</strong> is currently the only live full strategy wiki on Ascalon.fun.{' '}
+                <strong className="text-amber-300">{nextWiki?.title || 'Silver Palace'}</strong> (Dec 14, 2026 Global Launch) is up next in production.
+              </p>
             </div>
 
-            {/* Active Strategy Wiki Spotlight: Star Savior */}
-            <Link
-              href="/starsavior"
-              className="group flex items-center gap-3 rounded-lg border border-[#3b82f6] bg-[#141e33] px-3.5 py-2.5 hover:bg-[#192540] transition-colors shrink-0"
-            >
-              <img
-                src={strategyWikis[0]?.iconUrl || '/brand/ascalon-logo.png'}
-                alt="Star Savior"
-                className="h-12 w-12 rounded-lg border border-[#eab308]/80 object-cover shrink-0"
-              />
-              <div className="min-w-0">
-                <div className="flex items-center gap-2">
-                  <span className="rounded bg-[#2563eb] px-1.5 py-0.5 text-[11px] font-black text-white">
-                    FEATURED WIKI
-                  </span>
-                  <span className="text-[11.5px] font-bold text-[#93c5fd]">STUDIOBSIDE</span>
+            {/* Dual Spotlight Pair: ONLY Live Wiki Now + Next Wiki Coming Soon */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 xl:w-[570px] shrink-0">
+              {/* Card 1: ONLY LIVE WIKI */}
+              <Link
+                href="/starsavior"
+                className="group flex items-center gap-3 rounded-lg border border-emerald-500/60 bg-gradient-to-br from-[#0e2026] to-[#131d33] px-3.5 py-2.5 hover:border-emerald-400 hover:bg-[#172540] transition-colors active:scale-[0.99]"
+              >
+                <img
+                  src={liveWiki?.iconUrl || '/brand/ascalon-logo.png'}
+                  alt="Star Savior Strategy Wiki"
+                  className="h-12 w-12 rounded-lg border-2 border-emerald-400/80 object-cover shrink-0"
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="rounded bg-emerald-500 px-1.5 py-0.5 text-[10px] font-black text-slate-950">
+                      LIVE NOW
+                    </span>
+                    <span className="text-[10.5px] font-extrabold text-emerald-300">
+                      ONLY ACTIVE WIKI
+                    </span>
+                  </div>
+                  <div className="text-[14px] font-black text-white group-hover:text-emerald-300 truncate mt-0.5">
+                    Star Savior Wiki
+                  </div>
+                  <div className="text-[11.5px] text-[#e8eff8] truncate">
+                    59 Saviors · 85 Arcana · 86 Guides →
+                  </div>
                 </div>
-                <div className="text-[14.5px] font-black text-white group-hover:text-[#60a5fa] truncate mt-0.5">
-                  Star Savior Strategy Wiki
+              </Link>
+
+              {/* Card 2: NEXT UPCOMING WIKI */}
+              <a
+                href="#strategy-wikis"
+                className="group flex items-center gap-3 rounded-lg border border-amber-500/50 bg-gradient-to-br from-[#1f1912] to-[#131a2d] px-3.5 py-2.5 hover:border-amber-400 hover:bg-[#1b2238] transition-colors active:scale-[0.99]"
+              >
+                <img
+                  src={nextWiki?.iconUrl || '/banners/home/icons/portal_icon_087.webp'}
+                  alt={nextWiki?.title || 'Silver Palace'}
+                  className="h-12 w-12 rounded-lg border-2 border-amber-400/70 object-cover shrink-0"
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-1.5 flex-wrap">
+                    <span className="rounded bg-amber-400 px-1.5 py-0.5 text-[10px] font-black text-slate-950">
+                      NEXT WIKI (#2)
+                    </span>
+                    <span className="font-mono text-[10.5px] font-extrabold text-amber-300">
+                      DEC 14 GLOBAL
+                    </span>
+                  </div>
+                  <div className="text-[14px] font-black text-white group-hover:text-amber-300 truncate mt-0.5">
+                    {nextWiki?.title || 'Silver Palace'}
+                  </div>
+                  <div className="text-[11.5px] text-[#e8eff8] truncate">
+                    UE5 Open-World · Roadmap Queue →
+                  </div>
                 </div>
-                <div className="text-[11.5px] text-[#e8eff8]">
-                  Tier List · Reroll Guide · 59 Saviors · 85 Arcana →
-                </div>
-              </div>
-            </Link>
+              </a>
+            </div>
           </div>
 
-          {/* AppMedia Quick Section Navigation Table */}
+          {/* Portal Quick Section Navigation Table */}
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
             {[
               { href: '#recommended-ranking', label: 'Top 25 Mobile Games', sub: 'Editorial Star Ratings & Reviews' },
               { href: '#upcoming-calendar', label: 'New Game Release Calendar', sub: `${upcomingGames.length} Upcoming Titles & Votes` },
               { href: '#appstore-rankings', label: 'App Store Rankings', sub: 'Top Free & Top Grossing Charts' },
-              { href: '#strategy-wikis', label: 'Strategy Wiki Directory', sub: `${strategyWikis.length} Mobile & Console Wikis` },
-              { href: '#featured-articles', label: 'Featured Strategy Guides', sub: '16 Pickup Event & Reroll Guides' },
+              {
+                href: '#strategy-wikis',
+                label: 'Wiki Expansion Roadmap',
+                sub: `1 Live · Next: ${nextWiki?.title || 'Silver Palace'} (${plannedWikisCount} Queued)`,
+              },
+              { href: '#featured-articles', label: 'Featured Strategy Guides', sub: `${featuredArticles.length} Pickup Event & Reroll Guides` },
             ].map((item) => (
               <a
                 key={item.href}
@@ -1108,93 +1189,287 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </div>
         </section>
 
-        {/* 4. Strategy Wiki Directory (48 Active Wikis) */}
+        {/* 4. Ascalon.fun Strategy Wiki Hub & Expansion Roadmap */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <AppMediaH2 id="strategy-wikis" badge={`${strategyWikis.length} WIKIS`}>
-              Active Strategy Wikis Directory (Mobile & Console)
-            </AppMediaH2>
-            <div className="flex items-center gap-1.5">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div className="space-y-1.5 max-w-3xl">
+              <AppMediaH2 id="strategy-wikis" badge={`1 LIVE · ${plannedWikisCount} QUEUED`}>
+                Ascalon.fun Strategy Wiki Hub &amp; Expansion Roadmap
+              </AppMediaH2>
+              <p className="text-[13px] text-[#c8d4e6] leading-relaxed">
+                <strong className="text-emerald-300">Star Savior</strong> is currently the only live full strategy wiki on Ascalon.fun.{' '}
+                <strong className="text-amber-300">{nextWiki?.title || 'Silver Palace'}</strong> ({nextWiki?.launchWindow || 'Dec 14, 2026'} Global Launch) is Next Wiki #2 in production, followed step-by-step by the upcoming expansion queue below. Vote to prioritize which game gets full tier lists &amp; guides next.
+              </p>
+            </div>
+          </div>
+
+          {/* Spotlight Pair: ONLY Live Wiki vs Next Upcoming Wiki */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3.5">
+            {/* Spotlight 1: ONLY LIVE WIKI */}
+            <div className="rounded-xl border border-emerald-500/60 bg-gradient-to-br from-[#0e2026] to-[#101829] p-4 flex flex-col justify-between gap-3">
+              <div className="flex items-start gap-3.5">
+                <img
+                  src={liveWiki?.iconUrl || '/banners/home/icons/portal_icon_026.webp'}
+                  alt={liveWiki?.title || 'Star Savior'}
+                  className="h-16 w-16 rounded-xl border-2 border-emerald-400/80 object-cover bg-[#090d16] shrink-0"
+                />
+                <div className="min-w-0 flex-1 space-y-1">
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="inline-flex items-center gap-1.5 rounded bg-emerald-500 px-2 py-0.5 text-[10.5px] font-black text-slate-950">
+                      <span className="h-1.5 w-1.5 rounded-full bg-slate-950 animate-pulse" />
+                      LIVE NOW · ONLY ACTIVE WIKI
+                    </span>
+                    <span className="rounded border border-emerald-500/40 bg-emerald-950/60 px-2 py-0.5 text-[10.5px] font-extrabold text-emerald-300">
+                      {liveWiki?.publisher || 'STUDIOBSIDE'}
+                    </span>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-black text-white leading-tight">
+                    {liveWiki?.title || 'Star Savior'} Strategy Wiki
+                  </h3>
+                  <p className="text-[12.5px] text-[#dbe7f7] leading-relaxed">
+                    {liveWiki?.roadmapReason ||
+                      'Flagship active wiki on Ascalon.fun: 59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, and 86 strategy guides.'}
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-emerald-500/20">
+                <span className="text-[11.5px] font-bold text-emerald-300">
+                  All modules live · Daily Patch v2.4 updates
+                </span>
+                <Link
+                  href="/starsavior"
+                  className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 px-3.5 py-1.5 text-[12.5px] font-black text-slate-950 transition-colors"
+                >
+                  <span>Open Full Star Savior Wiki →</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Spotlight 2: NEXT WIKI (#2) */}
+            {(() => {
+              const nextKey = nextWiki?.id || 'silver-palace';
+              const nextVotes = (nextWiki?.baseVotes || 0) + (roadmapVotes.counts[nextKey] || 0);
+              const nextVoted = Boolean(roadmapVotes.myVoted[nextKey]);
+              const nextPending = Boolean(roadmapVotes.pending[nextKey]);
+
+              return (
+                <div className="rounded-xl border border-amber-500/55 bg-gradient-to-br from-[#1f1912] to-[#101829] p-4 flex flex-col justify-between gap-3">
+                  <div className="flex items-start gap-3.5">
+                    <img
+                      src={nextWiki?.iconUrl || '/banners/home/icons/portal_icon_087.webp'}
+                      alt={nextWiki?.title || 'Silver Palace'}
+                      className="h-16 w-16 rounded-xl border-2 border-amber-400/80 object-cover bg-[#090d16] shrink-0"
+                    />
+                    <div className="min-w-0 flex-1 space-y-1">
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="rounded bg-amber-400 px-2 py-0.5 text-[10.5px] font-black text-slate-950">
+                          NEXT WIKI (#2) · UP NEXT
+                        </span>
+                        <span className="rounded border border-amber-500/40 bg-amber-950/60 px-2 py-0.5 text-[10.5px] font-extrabold text-amber-300">
+                          {nextWiki?.launchWindow || 'Dec 14, 2026'}
+                        </span>
+                        <LiveJstCountdown
+                          targetIso={nextWiki?.launchIso || '2026-12-14T00:00:00+09:00'}
+                          prefix="Launch:"
+                          compact
+                        />
+                      </div>
+                      <h3 className="text-base sm:text-lg font-black text-white leading-tight">
+                        {nextWiki?.title || 'Silver Palace'} ({nextWiki?.publisher || 'Elementa / Silver Studio'})
+                      </h3>
+                      <p className="text-[12.5px] text-[#dbe7f7] leading-relaxed">
+                        {nextWiki?.roadmapReason ||
+                          'Selected as Wiki #2 for maximum Day-1 global traffic: simultaneous worldwide English launch on Dec 14, 2026 across PC, PS5, iOS & Android.'}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-amber-500/20">
+                    <span className="text-[11.5px] font-bold text-amber-200">
+                      {nextWiki?.platform || 'Console / PC · Mobile'} · High Global Traffic Pick
+                    </span>
+                    <div className="flex items-center gap-2">
+                      <button
+                        type="button"
+                        disabled={nextVoted || nextPending}
+                        onClick={() => handleVoteRoadmap(nextKey)}
+                        className={`inline-flex items-center gap-1.5 rounded-lg border px-3 py-1.5 text-[12px] font-black transition-colors ${
+                          nextVoted
+                            ? 'border-emerald-500/50 bg-emerald-500/20 text-emerald-300 cursor-default'
+                            : 'border-amber-400/60 bg-amber-500/15 text-amber-200 hover:bg-amber-400 hover:text-slate-950'
+                        }`}
+                      >
+                        <span>{nextVoted ? '✓ Prioritized' : '+1 Prioritize'}</span>
+                        <span className="font-mono text-[11.5px]">({nextVotes.toLocaleString()})</span>
+                      </button>
+                      {nextWiki && (
+                        <button
+                          type="button"
+                          onClick={() => setActiveWikiPlan(nextWiki)}
+                          className="rounded-lg border border-[#334155] bg-[#161f33] hover:border-amber-400/60 px-3 py-1.5 text-[12px] font-extrabold text-white transition-colors"
+                        >
+                          Launch Plan
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
+          </div>
+
+          {/* Roadmap Status + Platform Filter Controls */}
+          <div className="flex flex-wrap items-center justify-between gap-2.5 border-y border-[#1e293b] py-2.5">
+            <div className="flex flex-wrap items-center gap-1.5">
+              {(
+                [
+                  { id: 'ALL', label: `All Roadmap (${strategyWikis.length})` },
+                  { id: 'live', label: '1 Live Now' },
+                  { id: 'next', label: '1 Up Next (#2)' },
+                  { id: 'planned', label: `${Math.max(0, strategyWikis.length - 2)} Expansion Queue` },
+                ] as const
+              ).map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  onClick={() => setSelectedRoadmapFilter(tab.id)}
+                  className={`rounded-lg px-2.5 py-1 text-[12px] font-extrabold transition-colors ${
+                    selectedRoadmapFilter === tab.id
+                      ? 'bg-[#2563eb] text-white'
+                      : 'bg-[#161f33] text-[#e8eff8] hover:bg-[#1e293b]'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+            <div className="flex flex-wrap items-center gap-1.5">
               {(['ALL', 'Mobile App', 'Console / PC'] as const).map((plat) => (
                 <button
                   key={plat}
                   type="button"
                   onClick={() => setSelectedPlatform(plat)}
-                  className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                  className={`rounded-lg px-2.5 py-1 text-[12px] font-bold transition-colors ${
                     selectedPlatform === plat
-                      ? 'bg-[#2563eb] text-white'
-                      : 'bg-[#161f33] text-[#e8eff8]'
+                      ? 'bg-[#0ea5e9] text-slate-950 font-black'
+                      : 'bg-[#161f33] text-[#c8d4e6] hover:text-white'
                   }`}
                 >
-                  {plat === 'ALL' ? `All Platforms (${strategyWikis.length})` : plat}
+                  {plat === 'ALL' ? 'All Platforms' : plat}
                 </button>
               ))}
             </div>
           </div>
 
-          <div className="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-8 gap-2.5">
-            {filteredWikis.map((w, idx) => {
-              const content = (
-                <div
-                  className={`flex flex-col items-center rounded-lg border p-2.5 text-center transition-all h-full ${
-                    w.isInternal
-                      ? 'border-[#3b82f6] bg-[#172542] ring-1 ring-[#60a5fa]'
-                      : 'border-[#243049] bg-[#0f1626] hover:border-[#3b82f6]/60'
-                  }`}
-                >
-                  <div className="relative">
+          {/* Full Step-by-Step Game Expansion Queue */}
+          {filteredWikis.length === 0 ? (
+            <div className="rounded-lg border border-dashed border-[#334155] bg-[#0f1626] p-6 text-center text-[13px] text-[#c8d4e6]">
+              No titles match the current roadmap filter or search query.
+            </div>
+          ) : (
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2.5">
+              {filteredWikis.map((w, idx) => {
+                const status = w.wikiStatus || (w.isInternal ? 'live' : 'planned');
+                const wikiKey = w.id || w.title;
+                const roadmapIndex =
+                  strategyWikis.findIndex((item) => (item.id || item.title) === wikiKey) + 1 || idx + 1;
+                const voteTotal = (w.baseVotes || 0) + (roadmapVotes.counts[wikiKey] || 0);
+                const myVotedThis = Boolean(roadmapVotes.myVoted[wikiKey]);
+
+                const cardFrameStyle =
+                  status === 'live'
+                    ? 'border-emerald-500/80 bg-[#0e2026] ring-1 ring-emerald-400/50 hover:border-emerald-300'
+                    : status === 'next'
+                    ? 'border-amber-500/80 bg-[#1f1912] ring-1 ring-amber-400/40 hover:border-amber-300'
+                    : 'border-[#243049] bg-[#0f1626] hover:border-[#3b82f6]/70 hover:bg-[#141d31]';
+
+                const statusPill =
+                  status === 'live' ? (
+                    <span className="rounded bg-emerald-500 px-1.5 py-0.5 text-[9.5px] font-black text-slate-950">
+                      LIVE NOW
+                    </span>
+                  ) : status === 'next' ? (
+                    <span className="rounded bg-amber-400 px-1.5 py-0.5 text-[9.5px] font-black text-slate-950">
+                      NEXT #2
+                    </span>
+                  ) : (
+                    <span className="rounded border border-[#334155] bg-[#161f33] px-1.5 py-0.5 font-mono text-[9.5px] font-extrabold text-[#93c5fd]">
+                      QUEUE #{roadmapIndex}
+                    </span>
+                  );
+
+                const subLabel =
+                  status === 'live'
+                    ? 'Active Strategy Wiki'
+                    : w.launchWindow && w.launchWindow !== 'Expansion Queue'
+                    ? w.launchWindow
+                    : w.platform;
+
+                const content = (
+                  <div
+                    className={`flex flex-col items-center justify-between rounded-lg border p-2.5 text-center transition-all h-full gap-1.5 ${cardFrameStyle}`}
+                  >
+                    <div className="w-full flex items-center justify-between gap-1">
+                      {statusPill}
+                      {(voteTotal > 0 || myVotedThis) && (
+                        <span
+                          className={`rounded px-1 py-0.5 font-mono text-[9.5px] font-extrabold ${
+                            myVotedThis
+                              ? 'bg-emerald-500/20 text-emerald-300'
+                              : 'bg-[#161f33] text-[#c8d4e6]'
+                          }`}
+                        >
+                          ▲{voteTotal}
+                        </span>
+                      )}
+                    </div>
                     <img
                       src={w.iconUrl}
                       alt={w.title}
-                      className="h-14 w-14 rounded-xl border border-[#334155] object-cover bg-[#090d16]"
+                      className={`h-14 w-14 rounded-xl border object-cover bg-[#090d16] ${
+                        status === 'live'
+                          ? 'border-emerald-400'
+                          : status === 'next'
+                          ? 'border-amber-400'
+                          : 'border-[#334155]'
+                      }`}
                       loading="eager"
                     />
-                    {w.isInternal && (
-                      <span className="absolute -top-1.5 -right-2 rounded bg-[#2563eb] px-1 py-0.2 text-[8px] font-black text-white">
-                        WIKI
-                      </span>
-                    )}
+                    <div className="w-full space-y-0.5">
+                      <div className="text-[12.5px] font-bold text-white line-clamp-2 leading-tight">
+                        {w.title}
+                      </div>
+                      <div
+                        className={`text-[10.5px] font-semibold truncate ${
+                          status === 'live'
+                            ? 'text-emerald-300'
+                            : status === 'next'
+                            ? 'text-amber-300'
+                            : 'text-[#9fb3d1]'
+                        }`}
+                      >
+                        {subLabel}
+                      </div>
+                    </div>
                   </div>
-                  <span className="mt-1.5 text-[12.5px] font-bold text-white line-clamp-2 leading-tight">
-                    {w.title}
-                  </span>
-                </div>
-              );
+                );
 
-              return w.isInternal ? (
-                <Link key={`${w.href}-${idx}`} href={w.href}>
-                  {content}
-                </Link>
-              ) : (
-                <button
-                  key={`${w.href}-${idx}`}
-                  type="button"
-                  onClick={() =>
-                    setActiveGameReview({
-                      rank: idx + 1,
-                      id: `wiki-${idx}`,
-                      title: w.title,
-                      titleJa: w.titleJa,
-                      evaluation: '4.5',
-                      genre: `${w.platform} Strategy Wiki`,
-                      releaseDate: 'Active Title',
-                      outline: `${w.title} (${w.platform}) — Indexed in Strategy Wiki Directory.`,
-                      points: [
-                        `Platform Category: ${w.platform}`,
-                        'Full interactive Character, Arcana, Tier List, and Build calculator modules are currently active on the Star Savior Strategy Wiki (/starsavior).',
-                      ],
-                      iconUrl: w.iconUrl,
-                      iosUrl: '',
-                      androidUrl: '',
-                    })
-                  }
-                  className="text-left"
-                >
-                  {content}
-                </button>
-              );
-            })}
-          </div>
+                return status === 'live' ? (
+                  <Link key={`${wikiKey}-${idx}`} href={w.href}>
+                    {content}
+                  </Link>
+                ) : (
+                  <button
+                    key={`${wikiKey}-${idx}`}
+                    type="button"
+                    onClick={() => setActiveWikiPlan(w)}
+                    className="text-left h-full"
+                  >
+                    {content}
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </section>
 
         {/* 5. Featured Strategy Articles (100% Uncropped English Localized Banners) */}
@@ -1386,6 +1661,161 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </div>
         </div>
       )}
+
+      {/* Wiki Expansion Roadmap Plan Modal */}
+      {activeWikiPlan && (() => {
+        const planStatus = activeWikiPlan.wikiStatus || (activeWikiPlan.isInternal ? 'live' : 'planned');
+        const planKey = activeWikiPlan.id || activeWikiPlan.title;
+        const planVotes = (activeWikiPlan.baseVotes || 0) + (roadmapVotes.counts[planKey] || 0);
+        const planVoted = Boolean(roadmapVotes.myVoted[planKey]);
+        const planPending = Boolean(roadmapVotes.pending[planKey]);
+
+        const badgeClass =
+          planStatus === 'live'
+            ? 'bg-emerald-500 text-slate-950'
+            : planStatus === 'next'
+            ? 'bg-amber-400 text-slate-950'
+            : 'bg-[#2563eb] text-white';
+
+        const badgeText =
+          planStatus === 'live'
+            ? 'LIVE WIKI · ACTIVE NOW'
+            : planStatus === 'next'
+            ? 'NEXT WIKI (#2) · IN PRODUCTION'
+            : 'PLANNED EXPANSION WIKI';
+
+        const plannedModules = [
+          'Endgame & PvE/PvP Character Tier List + Synergy Breakdown',
+          'Starter Reroll Guide, Banner Value Evaluations & Pity Planning',
+          'Full Character / Equipment Database with Stat & Build Filters',
+          'Active Promo Codes, Maintenance Timers & Patch Note Trackers',
+        ];
+
+        return (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4"
+            onClick={() => setActiveWikiPlan(null)}
+          >
+            <div
+              className="max-w-lg w-full rounded-xl border border-[#334155] bg-[#0f1626] p-5 shadow-2xl space-y-4 max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex items-start justify-between gap-3 border-b border-[#1e293b] pb-3">
+                <div className="flex items-center gap-3">
+                  <img
+                    src={activeWikiPlan.iconUrl}
+                    alt={activeWikiPlan.title}
+                    className="h-14 w-14 rounded-xl border border-[#334155] object-cover shrink-0 bg-[#090d16]"
+                  />
+                  <div>
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <span className={`rounded px-2 py-0.5 text-[11px] font-black ${badgeClass}`}>
+                        {badgeText}
+                      </span>
+                      {activeWikiPlan.launchWindow && (
+                        <span className="rounded border border-[#334155] bg-[#161f33] px-2 py-0.5 font-mono text-[11px] font-bold text-[#c8d4e6]">
+                          {activeWikiPlan.launchWindow}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-base sm:text-lg font-black text-white mt-1">
+                      {activeWikiPlan.title}
+                    </h3>
+                    <div className="text-[12px] font-semibold text-[#93c5fd]">
+                      {activeWikiPlan.publisher || 'Featured Studio'} · {activeWikiPlan.platform}
+                    </div>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setActiveWikiPlan(null)}
+                  className="rounded-lg border border-[#334155] bg-[#1e293b] px-2.5 py-1 text-[12.5px] font-extrabold text-white hover:bg-[#334155]"
+                >
+                  ✕ Close
+                </button>
+              </div>
+
+              {activeWikiPlan.launchIso && (
+                <div className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-amber-500/40 bg-[#1a1510] px-3 py-2">
+                  <span className="text-[12px] font-extrabold text-amber-200">
+                    Tracked Global Launch Window
+                  </span>
+                  <LiveJstCountdown
+                    targetIso={activeWikiPlan.launchIso}
+                    prefix="Launches in"
+                  />
+                </div>
+              )}
+
+              <div className="rounded-lg border border-[#1e293b] bg-[#141c2e] p-3 text-[13px] font-medium text-[#e8eff8] leading-relaxed">
+                {activeWikiPlan.roadmapReason ||
+                  `${activeWikiPlan.title} is scheduled in the Ascalon.fun strategy wiki expansion queue. Reader votes help prioritize full interactive database & tier list coverage.`}
+              </div>
+
+              <div className="rounded-lg border border-[#243049] bg-[#0b1120] p-3.5 space-y-2">
+                <div className="text-[12px] font-extrabold text-[#93c5fd]">
+                  {planStatus === 'live'
+                    ? 'Active Strategy Wiki Modules'
+                    : 'Planned Strategy Wiki Modules (Added Incrementally)'}
+                </div>
+                <ul className="space-y-1.5 text-[12.5px] text-[#dbe7f7]">
+                  {plannedModules.map((mod) => (
+                    <li key={mod} className="flex items-start gap-2">
+                      <span className={planStatus === 'live' ? 'text-emerald-400 font-black' : 'text-amber-300 font-black'}>
+                        {planStatus === 'live' ? '✓' : '•'}
+                      </span>
+                      <span>{mod}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-between gap-2.5 pt-2 border-t border-[#1e293b]">
+                {planStatus === 'live' ? (
+                  <Link
+                    href="/starsavior"
+                    onClick={() => setActiveWikiPlan(null)}
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 px-4 py-2 text-[13px] font-black text-slate-950 transition-colors"
+                  >
+                    <span>Open Live Star Savior Wiki →</span>
+                  </Link>
+                ) : (
+                  <button
+                    type="button"
+                    disabled={planVoted || planPending}
+                    onClick={() => handleVoteRoadmap(planKey)}
+                    className={`inline-flex items-center gap-1.5 rounded-lg border px-3.5 py-2 text-[13px] font-black transition-colors ${
+                      planVoted
+                        ? 'border-emerald-500/50 bg-emerald-500/20 text-emerald-300 cursor-default'
+                        : 'border-amber-400/70 bg-amber-400 hover:bg-amber-300 text-slate-950'
+                    }`}
+                  >
+                    <span>{planVoted ? '✓ Voted for Next Wiki' : '+1 Vote to Prioritize This Wiki'}</span>
+                    <span className="font-mono text-[12px]">({planVotes.toLocaleString()})</span>
+                  </button>
+                )}
+
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="/starsavior"
+                    onClick={() => setActiveWikiPlan(null)}
+                    className="rounded-lg border border-[#3b82f6]/50 bg-[#172542] hover:bg-[#1e3257] px-3 py-1.5 text-[12px] font-extrabold text-[#93c5fd] hover:text-white transition-colors"
+                  >
+                    Explore Live Star Savior Wiki →
+                  </Link>
+                  <button
+                    type="button"
+                    onClick={() => setActiveWikiPlan(null)}
+                    className="rounded-lg border border-[#334155] bg-[#161f33] px-3 py-1.5 text-[12px] font-bold text-[#e8eff8] hover:text-white"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Footer */}
       <footer className="border-t border-[#1e293b] bg-[#070a12] py-6 text-center text-[12.5px] text-[#a8b8d0]">

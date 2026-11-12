@@ -480,13 +480,22 @@ export interface StarSaviorRankingGroups {
 /* ============================================================================
  * Home Portal Domain Types
  * ============================================================================ */
+export type WikiRoadmapStatus = 'live' | 'next' | 'planned';
+
 export interface HomeStrategyWiki {
+  readonly id?: string;
   readonly href: string;
   readonly title: string;
   readonly titleJa: string;
   readonly iconUrl: string;
   readonly platform: string;
   readonly isInternal: boolean;
+  readonly wikiStatus?: WikiRoadmapStatus;
+  readonly launchWindow?: string;
+  readonly launchIso?: string;
+  readonly publisher?: string;
+  readonly roadmapReason?: string;
+  readonly baseVotes?: number;
 }
 
 export interface HomeRecommendedGame {
@@ -661,6 +670,7 @@ export interface AnalyticsReferrerRank {
 }
 
 export interface AnalyticsSummary {
+  storageMode: 'neon' | 'memory';
   todayUtc: string;
   todayVisitors: number;
   todayPageviews: number;
