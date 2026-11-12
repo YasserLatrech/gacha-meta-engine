@@ -1,7 +1,11 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { getStarSaviorDataset } from '@/di/container';
-import { buildPageMetadata, buildStarSaviorHubJsonLd } from '@/application/seo.service';
+import {
+  buildPageMetadata,
+  buildStarSaviorHubJsonLd,
+  STAR_SAVIOR_CHARACTERS_FAQS,
+} from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { CharacterDatabaseMacro } from '@/components/macro/CharacterDatabaseMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
@@ -42,6 +46,7 @@ export default async function CharacterDatabasePage() {
           image: '/banners/starsavior/h2/h2_093_characters.webp',
           schemaType: 'CollectionPage',
           topCharacters: dataset.characters,
+          faqs: STAR_SAVIOR_CHARACTERS_FAQS,
         })}
       />
       <WikiShell

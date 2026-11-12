@@ -1,7 +1,11 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { getStarSaviorDataset } from '@/di/container';
-import { buildPageMetadata, buildStarSaviorHubJsonLd } from '@/application/seo.service';
+import {
+  buildPageMetadata,
+  buildStarSaviorHubJsonLd,
+  STAR_SAVIOR_ARCANA_FAQS,
+} from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { ArcanaTierListMacro } from '@/components/macro/ArcanaTierListMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
@@ -43,6 +47,7 @@ export default async function ArcanaTierListPage() {
           image: '/banners/starsavior/eyecatch/rank_arcana.webp',
           schemaType: 'CollectionPage',
           topArcana,
+          faqs: STAR_SAVIOR_ARCANA_FAQS,
         })}
       />
       <WikiShell

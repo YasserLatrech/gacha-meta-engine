@@ -1,24 +1,27 @@
-# Ascalon.fun — Mobile & Gacha Strategy Wiki Portal
+# Ascalon.fun — Ad-Free Mobile & Gacha Strategy Wiki Portal
 
-> Ascalon.fun is an English strategy wiki and mobile game data portal covering gacha rankings, upcoming game release calendars with 1-vote-per-IP reader polls, App Store grossing charts, and complete entity-verified strategy wikis.
+> Ascalon.fun is a fast, 100% ad-free English strategy wiki and mobile game data portal covering gacha rankings, upcoming global game release calendars with 1-vote-per-IP reader polls, App Store charts, and entity-verified strategy wikis.
+
+## Full AI & LLM Entity Knowledge Dump
+- [Complete Entity & Database Reference (llms-full.txt)](https://ascalon.fun/llms-full.txt): Complete structured index of all 59 Star Savior units (with Lv.200 stats, Tier, Attribute, Class, and canonical URLs), SSR/SR/R Arcana summary, active Promo Codes, Upcoming Gacha Release Calendar dates, and direct Strategy Guide URLs.
 
 ## Primary Portal Hubs
-- [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79+ tracked titles), reader expectation rankings, daily App Store sales & free charts, and featured strategy briefs.
+- [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79 tracked titles), reader expectation rankings, daily App Store Top Free & Top Grossing charts, Strategy Wiki Expansion Roadmap, and featured news briefs.
 - [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 151 static strategy wiki routes, character builds, and interactive tools.
 
 ## Wiki Expansion Roadmap
-- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, 86 Strategy Guides).
+- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](https://ascalon.fun/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, 86 Strategy Guides).
 - **Next Wiki (#2 — Up Next)**: **Silver Palace** (Elementa / Silver Studio) — Simultaneous Global English Launch scheduled for **December 14, 2026** (PC, PS5, iOS, Android).
-- **Planned Expansion Queue**: ANANTA (Jan 15, 2027 Global), Azur Promilia, Honkai: Nexus Anima, Limit Zero Breakers, and community-prioritized upcoming gacha titles ranked on the [Ascalon.fun Home Roadmap](https://ascalon.fun/#strategy-wikis).
+- **Planned Expansion Queue**: ANANTA (Jan 15, 2027 Global), Azur Promilia, Honkai: Nexus Anima, Limit Zero Breakers, and community-voted upcoming titles ranked on [Ascalon.fun](https://ascalon.fun/#strategy-wikis).
 
 ## Star Savior Complete English Strategy Wiki (Patch v2.4)
 Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, and Android combining Rescue Journey simulation, 85 Arcana training cards, and turn-based command battles.
 
 ### Core Ranking & Database Hubs
-- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview, active 1st Anniversary pickup banners (Witch of Favoritism, Guile, Maid Ceres, Frey: Noble Princess), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
+- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview, active pickup banners (Frey: Noble Princess until Nov 19 JST; Witch of Favoritism & Guile until Dec 4 JST), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
 - [Strongest Character Tier List](https://ascalon.fun/starsavior/tier-list): PvE & boss meta evaluation across all 59 Saviors (SSS Tier: Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, Smile: Sunshine Cat).
 - [Reroll Tier List & Stopping Line](https://ascalon.fun/starsavior/reroll): Best starting SSR Saviors & Power/Endurance Arcana cards, ~10-minute fast reroll method, and tutorial pull priorities.
-- [All 59 Characters Database](https://ascalon.fun/starsavior/characters): Filterable Lv.200 combat stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes (Striker, Assassin, Ranger, Caster, Supporter, Defender), Voice Actors (CV), and individual build pages at `/starsavior/characters/{slug}`.
+- [All 59 Characters Database](https://ascalon.fun/starsavior/characters): Filterable Lv.200 combat stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes (Striker, Assassin, Ranger, Caster, Supporter, Defender), Voice Actors (CV), and individual build pages at `https://ascalon.fun/starsavior/characters/{slug}`.
 - [Strongest Arcana Tier List & All 85 Cards](https://ascalon.fun/starsavior/arcana): Complete SSR (50), SR (15), and R (20) Arcana card encyclopedia with Stat Tags (Power, Health, Endurance, Focus, Protect), Special Potentials, and Savior Assist synergies.
 
 ### Interactive Tools & Key Strategy Guides

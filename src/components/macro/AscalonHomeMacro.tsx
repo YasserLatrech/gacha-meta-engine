@@ -19,7 +19,6 @@ import {
   parseUpcomingReleaseIso,
 } from '@/components/micro/LiveJstCountdown';
 import { GlobalOmniSearch } from '@/components/micro/GlobalOmniSearch';
-import { AdsterraSlot } from '@/components/micro/AnalyticsAndAds';
 
 const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; keyPoints: string[]; targetRoute: string }> = {
   '/banners/home/en_home_01.webp': {
@@ -637,8 +636,6 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </div>
         </section>
 
-        <AdsterraSlot variant="leaderboard" />
-
         {/* 1. Top 25 Recommended Mobile Games Ranking */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -1034,8 +1031,6 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             </div>
           )}
         </section>
-
-        <AdsterraSlot variant="native" />
 
         {/* 3. App Store Free & Sales Rankings */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">

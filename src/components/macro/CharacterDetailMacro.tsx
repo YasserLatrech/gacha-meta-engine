@@ -160,10 +160,19 @@ export function CharacterDetailMacro({
           Updated: 2026/11/10 · Star Savior Complete Character Build Guide
         </div>
         <h1 className="text-lg sm:text-xl font-black text-white">
-          [Star Savior] {character.name} — Recommended Equipment, Party Formations, Rescue Journey Training & Evaluation
+          [Star Savior] {character.name} — Recommended Equipment, Party Formations, Rescue Journey Training &amp; Evaluation
         </h1>
         <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
-          Complete strategy guide for <strong className="text-white">{character.name}</strong> in Star Savior. Covers {character.name}&apos;s performance evaluation, recommended equipment sets, 4-unit party formations, Rescue Journey Arcana decks, Limit Break (dupe) reliance, skill upgrade priority, Exclusive Curio, 10-stage Resonance materials, favorite affinity gifts, and Voice Actor (CV) profile.
+          <strong className="text-white">{character.name}</strong> ({character.title}) is an{' '}
+          <strong className="text-[#fbbf24]">{character.rarity}</strong>{' '}
+          <strong className="text-[#93c5fd]">{character.element}</strong>{' '}
+          <strong className="text-white">{character.role}</strong> ranked{' '}
+          <strong className="text-white">{sd?.appMediaTier || character.overallTier} Tier Overall</strong> and{' '}
+          <strong className="text-white">{sd?.appMediaRerollTier || character.rerollTier} Tier for Reroll</strong> in Star Savior (Patch v2.4), with max Lv.200 stats of{' '}
+          <span className="font-mono text-[#93c5fd]">
+            {character.baseStats.atk} ATK · {character.baseStats.hp} HP · {character.baseStats.def} DEF · {character.baseStats.spd} SPD
+          </span>
+          . Covers evaluation, recommended equipment sets, 4-unit party formations, Rescue Journey Arcana decks, Limit Break priority, Exclusive Curio, Resonance materials, affinity gifts, and Voice Actor (CV) profile.
         </p>
 
         <AppMediaTocBox items={tocItems} />

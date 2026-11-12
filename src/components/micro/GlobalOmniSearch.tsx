@@ -73,6 +73,15 @@ export function GlobalOmniSearch() {
   }, [open, openModal]);
 
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const initialQuery = params.get('q')?.trim();
+    if (initialQuery) {
+      setQuery(initialQuery.slice(0, 80));
+      openModal();
+    }
+  }, [openModal]);
+
+  useEffect(() => {
     if (!open) return undefined;
     const timer = window.setTimeout(() => {
       inputRef.current?.focus();

@@ -11,7 +11,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fu
 );
 
 export const SITE_NAME = 'Ascalon.fun';
-export const SITE_LASTMOD_ISO = '2026-11-12T00:00:00.000Z';
+export const SITE_LASTMOD_ISO = '2026-11-12T22:30:00.000Z';
 
 export interface BreadcrumbItemInput {
   name: string;
@@ -74,6 +74,8 @@ export function buildPageMetadata(input: PageMetadataInput): Metadata {
       images: [
         {
           url: imageUrl,
+          width: 1200,
+          height: 630,
           alt: imageAlt,
         },
       ],
@@ -99,12 +101,38 @@ export function buildBreadcrumbNode(items: BreadcrumbItemInput[]): Record<string
   };
 }
 
+export const HOME_PORTAL_FAQS: ReadonlyArray<{ q: string; a: string }> = [
+  {
+    q: 'What is Ascalon.fun?',
+    a: 'Ascalon.fun is an English mobile and gacha strategy wiki portal offering entity-verified tier lists, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store rankings.',
+  },
+  {
+    q: 'Which strategy wikis are live on Ascalon.fun right now?',
+    a: 'The flagship live wiki on Ascalon.fun is the complete English Star Savior Strategy Wiki (Patch v2.4), covering all 59 playable Saviors with Lv.200 stats, 85 Arcana cards, PvE and PvP Gauntlet tier lists, Reroll guides, Journey Event Choice Checker, and 86 strategy guides.',
+  },
+  {
+    q: 'Which strategy wiki is launching next on Ascalon.fun?',
+    a: 'Silver Palace (Elementa / Silver Studio) is queued as Next Wiki (#2) ahead of its simultaneous global launch on December 14, 2026 for PC, PS5, iOS, and Android, followed by ANANTA (January 15, 2027 Global) and Azur Promilia.',
+  },
+  {
+    q: 'Is Ascalon.fun free and ad-free to browse?',
+    a: 'Yes — Ascalon.fun operates as a 100% ad-free, fast static-cached knowledge base with zero display ad banners, popups, or intrusive ad trackers.',
+  },
+];
+
 export function buildPublisherReference(): Record<string, unknown> {
   return {
     '@type': 'Organization',
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
+    knowsAbout: [
+      'Star Savior Strategy Wiki',
+      'Gacha Game Tier Lists',
+      'Upcoming Gacha Release Calendar',
+      'Silver Palace',
+      'ANANTA',
+    ],
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/brand/ascalon-logo.png`,
@@ -126,6 +154,14 @@ export function buildHomePortalJsonLd(): Record<string, unknown> {
           'Mobile game rankings, upcoming gacha release calendar with reader votes, App Store grossing charts, and complete English strategy wikis.',
         inLanguage: 'en',
         publisher: { '@id': `${SITE_URL}/#organization` },
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: {
+            '@type': 'EntryPoint',
+            urlTemplate: `${SITE_URL}/?q={search_term_string}`,
+          },
+          'query-input': 'required name=search_term_string',
+        },
       },
       {
         '@type': 'CollectionPage',
@@ -175,6 +211,18 @@ export function buildHomePortalJsonLd(): Record<string, unknown> {
             url: `${SITE_URL}/starsavior/arcana`,
           },
         ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${SITE_URL}/#faq`,
+        mainEntity: HOME_PORTAL_FAQS.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.a,
+          },
+        })),
       },
     ],
   };
@@ -249,6 +297,60 @@ export function buildStarSaviorPortalJsonLd(patchVersion: string): Record<string
   };
 }
 
+export function buildFaqNode(
+  id: string,
+  faqs: ReadonlyArray<{ q: string; a: string }>,
+): Record<string, unknown> {
+  return {
+    '@type': 'FAQPage',
+    '@id': id,
+    mainEntity: faqs.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a,
+      },
+    })),
+  };
+}
+
+export const STAR_SAVIOR_TIER_LIST_FAQS: ReadonlyArray<{ q: string; a: string }> = [
+  {
+    q: 'Who are the strongest SSS Tier characters in Star Savior (Patch v2.4)?',
+    a: 'The top SSS Tier Saviors in Star Savior Patch v2.4 are Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat, dominating PvE campaign, Cube Palace bosses, and high-tier team compositions.',
+  },
+  {
+    q: 'How often is the Star Savior Tier List updated on Ascalon.fun?',
+    a: 'The Star Savior Tier List is continuously synced with live meta updates alongside new SSR pickups (such as Guile and Frey: Noble Princess) and Patch v2.4 boss rotations.',
+  },
+];
+
+export const STAR_SAVIOR_REROLL_FAQS: ReadonlyArray<{ q: string; a: string }> = [
+  {
+    q: 'How long does it take to reroll in Star Savior?',
+    a: 'A single reroll run in Star Savior takes roughly 10 minutes via the tutorial guest account flow before deciding whether to bind or reset.',
+  },
+  {
+    q: 'Which characters and Arcana should new players reroll for first?',
+    a: 'Prioritize SS/SSS reroll Saviors such as Carmen: Eternal Promise, Amora, or Bunnygirl Charlotte paired with high-value Power/Endurance SSR Arcana cards like The Indomitable Masterpiece or Customized Training to Cover Weaknesses.',
+  },
+];
+
+export const STAR_SAVIOR_CHARACTERS_FAQS: ReadonlyArray<{ q: string; a: string }> = [
+  {
+    q: 'How many playable Saviors are in the Star Savior database?',
+    a: 'Ascalon.fun indexes all 59 playable Star Savior units (51 SSR and 8 SR) with exact Lv.200 stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes, Resonance materials, and Voice Actors (CV).',
+  },
+];
+
+export const STAR_SAVIOR_ARCANA_FAQS: ReadonlyArray<{ q: string; a: string }> = [
+  {
+    q: 'How many Arcana cards exist in Star Savior and which stat tags matter most?',
+    a: 'There are 85 Arcana cards in Star Savior (50 SSR, 15 SR, and 20 R) categorized across Power, Health, Endurance, Focus, and Protect stat tags used to build Rescue Journey training decks.',
+  },
+];
+
 export function buildStarSaviorHubJsonLd(opts: {
   title: string;
   description: string;
@@ -258,6 +360,7 @@ export function buildStarSaviorHubJsonLd(opts: {
   schemaType?: 'Article' | 'CollectionPage';
   topCharacters?: CharacterEntity[];
   topArcana?: ArcanaEntity[];
+  faqs?: ReadonlyArray<{ q: string; a: string }>;
 }): Record<string, unknown> {
   const url = resolveAbsoluteUrl(opts.path);
   const graph: Array<Record<string, unknown>> = [
@@ -270,6 +373,7 @@ export function buildStarSaviorHubJsonLd(opts: {
     {
       '@type': opts.schemaType || 'Article',
       '@id': `${url}#primary`,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
       headline: opts.title,
       name: opts.title,
       description: truncateMetaDescription(opts.description, 220),
@@ -310,6 +414,10 @@ export function buildStarSaviorHubJsonLd(opts: {
         url: `${SITE_URL}/starsavior/arcana#${a.slug}`,
       })),
     });
+  }
+
+  if (opts.faqs && opts.faqs.length > 0) {
+    graph.push(buildFaqNode(`${url}#faq`, opts.faqs));
   }
 
   return {
@@ -371,6 +479,26 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
     });
   }
 
+  const topArcanaNames =
+    character.bestArcanaSlugs.length > 0
+      ? character.bestArcanaSlugs.slice(0, 3).map((s) => s.replace(/-/g, ' ')).join(', ')
+      : 'role-matched Power & Endurance SSR Arcana cards';
+
+  const characterFaqs: ReadonlyArray<{ q: string; a: string }> = [
+    {
+      q: `What tier is ${character.name} in Star Savior?`,
+      a: `${character.name} (${character.rarity} ${character.element} ${character.role}) is ranked ${displayTier} Tier Overall and ${rerollTier} Tier for Reroll in Star Savior Patch v2.4.`,
+    },
+    {
+      q: `What are ${character.name}'s max Lv.200 stats in Star Savior?`,
+      a: `At Lv.200, ${character.name} has ${character.baseStats.atk} ATK, ${character.baseStats.hp} HP, ${character.baseStats.def} DEF, and ${character.baseStats.spd} SPD.`,
+    },
+    {
+      q: `What are the best Arcana cards and build priority for ${character.name}?`,
+      a: `Top recommended Arcana synergies for ${character.name} include ${topArcanaNames}${character.recommendedDupes ? `, with recommended Limit Break investment at ${character.recommendedDupes}` : ''}.`,
+    },
+  ];
+
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -384,6 +512,7 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
       {
         '@type': 'Article',
         '@id': `${url}#article`,
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         headline: `${character.name} Build, Skills, Best Arcana & Tier Evaluation — Star Savior`,
         description: truncateMetaDescription(character.summary, 220),
         url,
@@ -397,12 +526,14 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
           '@type': 'Person',
           '@id': `${url}#character`,
           name: character.name,
+          ...(character.title ? { alternateName: [character.title] } : {}),
           description: character.summary,
           image,
           additionalProperty: properties,
         },
         isPartOf: { '@id': `${SITE_URL}/starsavior#videogame` },
       },
+      buildFaqNode(`${url}#faq`, characterFaqs),
     ],
   };
 }
@@ -450,6 +581,7 @@ export function buildGuideJsonLd(guide: StarSaviorGuideArticle): Record<string, 
       {
         '@type': 'Article',
         '@id': `${url}#article`,
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         headline: guide.title,
         articleSection: guide.category,
         description: truncateMetaDescription(guide.lead, 220),

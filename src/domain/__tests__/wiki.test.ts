@@ -872,4 +872,44 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     );
     expect(layoutSrc).toContain('<ScrollToTopButton />');
   });
+
+  it('enforces GEO richness (FAQPage, SearchAction, llms-full.txt) and strictly ad-free architecture', () => {
+    const homeGraph = buildHomePortalJsonLd()['@graph'] as Array<Record<string, unknown>>;
+    const websiteNode = homeGraph.find((n) => n['@type'] === 'WebSite');
+    expect(websiteNode?.potentialAction).toMatchObject({ '@type': 'SearchAction' });
+    const homeFaqNode = homeGraph.find((n) => n['@type'] === 'FAQPage');
+    expect((homeFaqNode?.mainEntity as unknown[]).length).toBeGreaterThanOrEqual(4);
+
+    const sampleChar = CharacterEntitySchema.parse({
+      id: 1,
+      ...STAR_SAVIOR_CHARACTERS_SEED[0],
+      score: Number(STAR_SAVIOR_CHARACTERS_SEED[0].score),
+    });
+    const charGraph = buildCharacterJsonLd(sampleChar)['@graph'] as Array<Record<string, unknown>>;
+    const charArticle = charGraph.find((n) => n['@type'] === 'Article');
+    expect(charArticle?.mainEntityOfPage).toBeDefined();
+    const charFaq = charGraph.find((n) => n['@type'] === 'FAQPage');
+    expect((charFaq?.mainEntity as unknown[]).length).toBe(3);
+
+    const llmsFullPath = path.resolve(__dirname, '../../../public/llms-full.txt');
+    expect(fs.existsSync(llmsFullPath)).toBe(true);
+    const llmsFull = fs.readFileSync(llmsFullPath, 'utf8');
+    expect(CJK_REGEX.test(llmsFull)).toBe(false);
+    for (const c of STAR_SAVIOR_CHARACTERS_SEED) {
+      expect(llmsFull).toContain(`https://ascalon.fun/starsavior/characters/${c.slug}`);
+    }
+
+    const rootDir = path.resolve(__dirname, '../../..');
+    for (const relFile of [
+      'next.config.ts',
+      'src/components/WikiShell.tsx',
+      'src/components/macro/AscalonHomeMacro.tsx',
+      'src/components/micro/AnalyticsAndAds.tsx',
+    ]) {
+      const content = fs.readFileSync(path.join(rootDir, relFile), 'utf8');
+      expect(content).not.toContain('Adsterra');
+      expect(content).not.toContain('highperformanceformat');
+      expect(content).not.toContain('effectivegatecpm');
+    }
+  });
 });

@@ -153,9 +153,17 @@ interface ReferrerRow {
   visits: number;
 }
 
+interface SummaryCacheEntry {
+  summary: AnalyticsSummary;
+  expiresAt: number;
+}
+
+const SUMMARY_L1_TTL_MS = 30_000;
+
 export class NeonAnalyticsRepository implements IAnalyticsRepository {
   private tableInitPromise: Promise<void> | null = null;
   private readonly fallback = new InMemoryAnalyticsRepository();
+  private readonly summaryCache = new Map<number, SummaryCacheEntry>();
 
   public async recordPageview(input: {
     dayUtc: string;
@@ -166,39 +174,46 @@ export class NeonAnalyticsRepository implements IAnalyticsRepository {
     try {
       await this.ensureTables();
 
-      const insertedVisitor = (await sqlClient`
-        INSERT INTO analytics_daily_visitors (day_utc, visitor_hash, referrer_host)
-        VALUES (${input.dayUtc}, ${input.visitorHash}, ${input.referrerHost})
-        ON CONFLICT (day_utc, visitor_hash) DO NOTHING
-        RETURNING day_utc
-      `) as Array<{ day_utc: string }>;
-
-      const countedUnique = insertedVisitor.length > 0;
-      const uvDelta = countedUnique ? 1 : 0;
-
-      await Promise.all([
-        sqlClient`
+      // Single atomic PostgreSQL CTE cuts Neon HTTP round-trips by 66% (3 queries -> 1)
+      const rows = (await sqlClient`
+        WITH ins_visitor AS (
+          INSERT INTO analytics_daily_visitors (day_utc, visitor_hash, referrer_host)
+          VALUES (${input.dayUtc}, ${input.visitorHash}, ${input.referrerHost})
+          ON CONFLICT (day_utc, visitor_hash) DO NOTHING
+          RETURNING 1 AS is_new
+        ),
+        delta AS (
+          SELECT COALESCE((SELECT is_new FROM ins_visitor LIMIT 1), 0) AS uv_delta
+        ),
+        up_totals AS (
           INSERT INTO analytics_daily_totals (day_utc, pageviews, unique_visitors)
-          VALUES (${input.dayUtc}, 1, ${uvDelta})
+          SELECT ${input.dayUtc}, 1, uv_delta FROM delta
           ON CONFLICT (day_utc) DO UPDATE SET
             pageviews = analytics_daily_totals.pageviews + 1,
-            unique_visitors = analytics_daily_totals.unique_visitors + ${uvDelta}
-        `,
-        sqlClient`
+            unique_visitors = analytics_daily_totals.unique_visitors + EXCLUDED.unique_visitors
+        ),
+        up_routes AS (
           INSERT INTO analytics_daily_routes (day_utc, route_path, pageviews)
           VALUES (${input.dayUtc}, ${input.path}, 1)
           ON CONFLICT (day_utc, route_path) DO UPDATE SET
             pageviews = analytics_daily_routes.pageviews + 1
-        `,
-      ]);
+        )
+        SELECT (uv_delta > 0) AS counted_unique FROM delta
+      `) as Array<{ counted_unique: boolean }>;
 
-      return { ok: true, countedUnique };
+      return { ok: true, countedUnique: Boolean(rows[0]?.counted_unique) };
     } catch {
       return this.fallback.recordPageview(input);
     }
   }
 
   public async getSummary(days: number): Promise<AnalyticsSummary> {
+    const now = Date.now();
+    const cached = this.summaryCache.get(days);
+    if (cached && cached.expiresAt > now) {
+      return cached.summary;
+    }
+
     try {
       await this.ensureTables();
       const dateRange = buildUtcDateRange(days);
@@ -271,7 +286,7 @@ export class NeonAnalyticsRepository implements IAnalyticsRepository {
         Number(((todayVisitors / AD_READINESS_DAILY_TARGET) * 100).toFixed(1))
       );
 
-      return {
+      const summary: AnalyticsSummary = {
         storageMode: 'neon',
         todayUtc,
         todayVisitors,
@@ -285,6 +300,13 @@ export class NeonAnalyticsRepository implements IAnalyticsRepository {
         topRoutes,
         topReferrers,
       };
+
+      this.summaryCache.set(days, {
+        summary,
+        expiresAt: Date.now() + SUMMARY_L1_TTL_MS,
+      });
+
+      return summary;
     } catch {
       return this.fallback.getSummary(days);
     }

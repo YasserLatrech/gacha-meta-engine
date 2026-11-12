@@ -1,7 +1,11 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import { getStarSaviorDataset } from '@/di/container';
-import { buildPageMetadata, buildStarSaviorHubJsonLd } from '@/application/seo.service';
+import {
+  buildPageMetadata,
+  buildStarSaviorHubJsonLd,
+  STAR_SAVIOR_TIER_LIST_FAQS,
+} from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { StrongestTierListMacro } from '@/components/macro/StrongestTierListMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
@@ -43,6 +47,7 @@ export default async function StrongestTierListPage() {
           image: '/banners/starsavior/eyecatch/rank_chars.webp',
           schemaType: 'Article',
           topCharacters: topUnits,
+          faqs: STAR_SAVIOR_TIER_LIST_FAQS,
         })}
       />
       <WikiShell

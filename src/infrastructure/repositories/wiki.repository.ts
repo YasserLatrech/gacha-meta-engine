@@ -40,7 +40,7 @@ interface L1CacheEntry {
   expiresAt: number;
 }
 
-const L1_TTL_MS = 60_000;
+const L1_TTL_MS = 300_000;
 const L1_MAX_ENTRIES = 8;
 
 export class NeonWikiRepository implements IWikiRepository {

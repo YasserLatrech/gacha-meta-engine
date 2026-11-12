@@ -82,13 +82,36 @@ interface SnapshotRow {
   voted_by_me: boolean;
 }
 
+interface ScopeCountsCacheEntry {
+  counts: Record<string, number>;
+  expiresAt: number;
+}
+
+const VOTE_COUNTS_L1_TTL_MS = 10_000;
+
 export class NeonVoteRepository implements IVoteRepository {
   private tableInitPromise: Promise<void> | null = null;
   private readonly fallback = new InMemoryVoteRepository();
+  private readonly countsCache = new Map<string, ScopeCountsCacheEntry>();
 
   public async getSnapshot(scope: string, ipHash: string): Promise<VotesSnapshot> {
     try {
       await this.ensureTable();
+
+      const now = Date.now();
+      const cachedCounts = this.countsCache.get(scope);
+      if (cachedCounts && cachedCounts.expiresAt > now) {
+        const myRows = (await sqlClient`
+          SELECT target_id
+          FROM ip_votes
+          WHERE scope = ${scope} AND ip_hash = ${ipHash}
+        `) as Array<{ target_id: string }>;
+        return {
+          counts: cachedCounts.counts,
+          myVotes: myRows.map((r) => r.target_id),
+        };
+      }
+
       // Single round-trip conditional aggregation query (zero N+1 / zero dual-query overhead)
       const rows = (await sqlClient`
         SELECT
@@ -108,6 +131,11 @@ export class NeonVoteRepository implements IVoteRepository {
           myVotes.push(row.target_id);
         }
       }
+
+      this.countsCache.set(scope, {
+        counts,
+        expiresAt: Date.now() + VOTE_COUNTS_L1_TTL_MS,
+      });
 
       return { counts, myVotes };
     } catch {
@@ -131,6 +159,9 @@ export class NeonVoteRepository implements IVoteRepository {
       `;
 
       const didInsert = Array.isArray(inserted) && inserted.length > 0;
+      if (didInsert) {
+        this.countsCache.delete(input.scope);
+      }
       const snap = await this.getSnapshot(input.scope, input.ipHash);
 
       return {
@@ -144,6 +175,7 @@ export class NeonVoteRepository implements IVoteRepository {
   }
 
   public resetMemoryFallback(): void {
+    this.countsCache.clear();
     this.fallback.resetMemoryFallback();
   }
 
@@ -163,6 +195,9 @@ export class NeonVoteRepository implements IVoteRepository {
         `;
         await sqlClient`
           CREATE INDEX IF NOT EXISTS ip_votes_scope_idx ON ip_votes (scope)
+        `;
+        await sqlClient`
+          CREATE INDEX IF NOT EXISTS ip_votes_scope_ip_idx ON ip_votes (scope, ip_hash)
         `;
       })().catch((err) => {
         this.tableInitPromise = null;

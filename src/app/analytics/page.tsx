@@ -12,7 +12,7 @@ import {
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: 'Live Traffic, Search & Adsterra Control Center',
+  title: 'Live Traffic, SEO/GEO & Scale Readiness Command Center',
   robots: { index: false, follow: false },
 };
 
@@ -45,12 +45,6 @@ export default async function FounderAnalyticsPage() {
     .slice(0, 8);
 
   const ga4Configured = Boolean(process.env.NEXT_PUBLIC_GA4_ID?.trim());
-  const adsterraConfigured = Boolean(
-    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_728_KEY?.trim() ||
-      process.env.NEXT_PUBLIC_ADSTERRA_BANNER_300_KEY?.trim() ||
-      process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY?.trim() ||
-      process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_SRC?.trim()
-  );
 
   return (
     <div className="min-h-screen bg-[#090d16] text-[#f8fafc] px-4 py-6 sm:px-6">
@@ -71,18 +65,21 @@ export default async function FounderAnalyticsPage() {
               >
                 {isNeonStorage ? 'NEON DB' : 'MEMORY FALLBACK'}
               </span>
+              <span className="rounded bg-emerald-500/15 border border-emerald-500/40 px-2 py-0.5 font-mono text-[11px] font-black text-emerald-300">
+                100% AD-FREE UX
+              </span>
               <span className="font-mono text-[12px] text-[#c8d4e6]">UTC Day: {summary.todayUtc}</span>
             </div>
             <h1 className="mt-1 text-xl sm:text-2xl font-black text-white">
-              Ascalon.fun — Search, Traffic &amp; Adsterra Command Center
+              Ascalon.fun — SEO/GEO, Traffic &amp; Scale Command Center
             </h1>
           </div>
           <div className="flex flex-wrap items-center gap-2">
             <Link
-              href="/?adpreview=1"
-              className="rounded-lg border border-amber-500/50 bg-amber-500/15 hover:bg-amber-500/25 px-3.5 py-2 text-[12.5px] font-extrabold text-amber-300"
+              href="/llms-full.txt"
+              className="rounded-lg border border-sky-500/50 bg-sky-500/15 hover:bg-sky-500/25 px-3.5 py-2 text-[12.5px] font-extrabold text-sky-300"
             >
-              Preview Adsterra Slots (?adpreview=1) ↗
+              Inspect llms-full.txt ↗
             </Link>
             <Link
               href="/"
@@ -121,12 +118,12 @@ export default async function FounderAnalyticsPage() {
               {summary.pagesPerVisitorToday}×
             </div>
             <div className="mt-1 text-[11.5px] text-[#b8c7dc]">
-              Higher pages/session = higher Adsterra RPM
+              Internal SEO depth &amp; reader retention
             </div>
           </div>
 
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4">
-            <div className="text-[12px] font-bold text-[#c8d4e6]">1,000 Daily Readers Gate</div>
+            <div className="text-[12px] font-bold text-[#c8d4e6]">1,000 Daily Readers Milestone</div>
             <div className="mt-1 font-mono text-3xl font-black text-white">
               {summary.adReadinessPercent}%
             </div>
@@ -139,19 +136,20 @@ export default async function FounderAnalyticsPage() {
           </div>
         </div>
 
-        {/* Integration Status Strip (Search Console + IndexNow + GA4 + Adsterra) */}
+        {/* Integration Status Strip (Search Console + IndexNow + GEO + Ad-Free Architecture) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4 space-y-1.5">
             <div className="flex items-center justify-between">
-              <span className="text-[13.5px] font-extrabold text-white">Google Search Console &amp; IndexNow</span>
+              <span className="text-[13.5px] font-extrabold text-white">Google Search Console, GEO &amp; IndexNow</span>
               <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2 py-0.5 font-mono text-[11px] font-black text-emerald-300">
                 READY
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
-              Verification file <code className="text-[#93c5fd]">/google47558ceaecd0fcbe.html</code>,{' '}
-              <a href="/sitemap.xml" className="underline text-[#60a5fa]">/sitemap.xml</a> ({totalSitemapUrls} URLs), and{' '}
-              <code className="text-[#93c5fd]">IndexNow</code> are live.
+              <a href="/sitemap.xml" className="underline text-[#60a5fa]">/sitemap.xml</a> ({totalSitemapUrls} URLs),{' '}
+              <a href="/llms.txt" className="underline text-[#60a5fa]">/llms.txt</a>,{' '}
+              <a href="/llms-full.txt" className="underline text-[#60a5fa]">/llms-full.txt</a>, and{' '}
+              <code className="text-[#93c5fd]">IndexNow</code> active.
             </p>
           </div>
 
@@ -173,28 +171,22 @@ export default async function FounderAnalyticsPage() {
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
-              Zero-cookie Neon PostgreSQL counter runs natively (bypassing adblockers).{' '}
+              Single-query CTE Neon PostgreSQL counter runs natively (zero third-party cookies).{' '}
               {ga4Configured
                 ? 'GA4 Measurement ID connected.'
-                : 'Optional: set NEXT_PUBLIC_GA4_ID in /etc/default/ascalon to also feed Google Analytics.'}
+                : 'Optional: set NEXT_PUBLIC_GA4_ID to stream to Google Analytics.'}
             </p>
           </div>
 
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4 space-y-1.5">
             <div className="flex items-center justify-between">
-              <span className="text-[13.5px] font-extrabold text-white">Adsterra Monetization Engine</span>
-              <span
-                className={`rounded px-2 py-0.5 font-mono text-[11px] font-black ${
-                  adsterraConfigured
-                    ? 'bg-emerald-500/20 border border-emerald-500/40 text-emerald-300'
-                    : 'bg-amber-500/20 border border-amber-500/40 text-amber-300'
-                }`}
-              >
-                {adsterraConfigured ? 'LIVE ADS' : 'AWAITING KEYS'}
+              <span className="text-[13.5px] font-extrabold text-white">Zero-Ads Speed &amp; Edge Policy</span>
+              <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2 py-0.5 font-mono text-[11px] font-black text-emerald-300">
+                AD-FREE FAST
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
-              Zero-CLS 728×90, 320×50, 300×250, Native 4:1, and Social Bar slots wired across Home &amp; Wiki.
+              100% ad-free UI with strict CSP blocking ad networks, Nginx proxy microcaching, and L1/ISR surge buffering.
             </p>
           </div>
         </div>

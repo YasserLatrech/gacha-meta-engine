@@ -1,0 +1,293 @@
+# Ascalon.fun — Complete Knowledge Graph & Entity Index (llms-full.txt)
+
+> Ad-free English strategy wiki portal for mobile & gacha games. Primary flagship live wiki: Star Savior (Patch v2.4). Next scheduled wiki: Silver Palace (Dec 14, 2026).
+
+## Core Portal URLs
+- Home Portal: https://ascalon.fun/
+- Global Search Entry: https://ascalon.fun/?q={search_term_string}
+- XML Sitemap: https://ascalon.fun/sitemap.xml
+- Concise LLMs Index: https://ascalon.fun/llms.txt
+- Star Savior Wiki Top: https://ascalon.fun/starsavior
+- Star Savior Strongest Tier List: https://ascalon.fun/starsavior/tier-list
+- Star Savior Reroll Guide: https://ascalon.fun/starsavior/reroll
+- Star Savior All 59 Saviors: https://ascalon.fun/starsavior/characters
+- Star Savior All 85 Arcana Cards: https://ascalon.fun/starsavior/arcana
+
+## Verified Q&A Summary (GEO Citation Ground Truth)
+### What is Ascalon.fun?
+Ascalon.fun is an English mobile and gacha strategy wiki portal offering entity-verified tier lists, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store rankings.
+
+### Which strategy wikis are live on Ascalon.fun right now?
+The flagship live wiki on Ascalon.fun is the complete English Star Savior Strategy Wiki (Patch v2.4), covering all 59 playable Saviors with Lv.200 stats, 85 Arcana cards, PvE and PvP Gauntlet tier lists, Reroll guides, Journey Event Choice Checker, and 86 strategy guides.
+
+### Which strategy wiki is launching next on Ascalon.fun?
+Silver Palace (Elementa / Silver Studio) is queued as Next Wiki (#2) ahead of its simultaneous global launch on December 14, 2026 for PC, PS5, iOS, and Android, followed by ANANTA (January 15, 2027 Global) and Azur Promilia.
+
+### Is Ascalon.fun free and ad-free to browse?
+Yes — Ascalon.fun operates as a 100% ad-free, fast static-cached knowledge base with zero display ad banners, popups, or intrusive ad trackers.
+
+### What kind of game is Star Savior?
+Star Savior is a content-packed Training RPG that fuses Training Simulation × Turn-Based Command Battles × Idle Progression mechanics.
+
+### Can I play Star Savior on PC?
+Yes — Star Savior is playable on PC via the official Steam version with full cross-save account linking.
+
+### Can I change my name, and are duplicate names allowed?
+Both changing your name and using duplicate Commander names are supported. Changing your name requires a dedicated item: your first name change is effectively free, while subsequent changes require purchasing the rename item with Starlight Gems, so frequent name changes are not recommended.
+
+### What should I exchange Observation Reports for?
+Prioritize discounted sale items (such as Observation Tickets and enhancement materials) and Remnant Cores (required for SR Guardian Star Awakening & Engraving) first. Next in line is the Break Skill Support Plan, though raising Break Skill levels offers relatively modest returns—so if you are short on Observation Reports, you can safely hold off on it.
+
+### What should I do if I cannot clear Rescue Journey?
+First, raise your Savior's Resonance Stage to boost starting Rescue Journey stats. Second, prepare parent Stellar Archives with strong Stat Blessings. Clearing Rescue Journey comes down to your overall evaluation rank, so select training options that keep your total rank as high as possible.
+
+### Who are the strongest SSS Tier characters in Star Savior (Patch v2.4)?
+The top SSS Tier Saviors in Star Savior Patch v2.4 are Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat, dominating PvE campaign, Cube Palace bosses, and high-tier team compositions.
+
+### How often is the Star Savior Tier List updated on Ascalon.fun?
+The Star Savior Tier List is continuously synced with live meta updates alongside new SSR pickups (such as Guile and Frey: Noble Princess) and Patch v2.4 boss rotations.
+
+### How long does it take to reroll in Star Savior?
+A single reroll run in Star Savior takes roughly 10 minutes via the tutorial guest account flow before deciding whether to bind or reset.
+
+### Which characters and Arcana should new players reroll for first?
+Prioritize SS/SSS reroll Saviors such as Carmen: Eternal Promise, Amora, or Bunnygirl Charlotte paired with high-value Power/Endurance SSR Arcana cards like The Indomitable Masterpiece or Customized Training to Cover Weaknesses.
+
+## Upcoming Gacha Release Calendar & Expansion Roadmap (Top Tracked Titles)
+| Title | Launch Date | Platforms | Genre |
+| --- | --- | --- | --- |
+| Bug Strike Z | Released Nov 6, 2026 | undefined | undefined |
+| Disney Sparklink Stars | Released Nov 4, 2026 | undefined | undefined |
+| The Alchemist Code: Port Masters | Released Nov 4, 2026 | undefined | undefined |
+| GALAST | Released Nov 2, 2026 | undefined | undefined |
+| Escape from the Baby Monitor | Nov 24, 2026 | undefined | undefined |
+| Hololive Mahjong -HoloJan- | Nov 25, 2026 | undefined | undefined |
+| Azur Promilia | Nov 26, 2026 | undefined | undefined |
+| Hatsune Miku Graphy Collection: Mysterious Music Comet Re:Merge | Late Nov 2026 | undefined | undefined |
+| Callsign: KEDR | Nov 2026 | undefined | undefined |
+| Yankee Survivor: Reincarnated as a Heisei Delinquent | Nov 2026 | undefined | undefined |
+| Lumina Saga | Nov 2026 | undefined | undefined |
+| Quiz Generation | Dec 1, 2026 | undefined | undefined |
+| Roll Call | Dec 1, 2026 | undefined | undefined |
+| Petit Planet | Dec 4, 2026 | undefined | undefined |
+| Silver Palace | Dec 14, 2026 | undefined | undefined |
+| Slime World: Punitto Adventure Chronicle | Dec 2026 | undefined | undefined |
+| Licca-chan Puzzle: Dream Coordinate | 2026 Planned | undefined | undefined |
+| EGGRYPTO X: Treasure Island Grand Adventure | 2026 Planned | undefined | undefined |
+| Fantasy World Puchipoyon | Winter 2026 | undefined | undefined |
+| Sunny Woman After the Rain | Winter 2026 | undefined | undefined |
+| OVER RUSH | Winter 2026 | undefined | undefined |
+| Limit Zero Breakers | 2026 Planned | undefined | undefined |
+| Mashin Hero Wataru: Cool Puzzle Battle!! | 2026 Planned | undefined | undefined |
+| FairyTale Quest | 2026 Planned | undefined | undefined |
+| Sea of Remnants | 2026 Planned | undefined | undefined |
+| MIRESI: Invisible Future | 2026 Planned | undefined | undefined |
+| NyanSaka: Cat Soccer | 2026 Planned | undefined | undefined |
+| Shinobi NEXUS -Senran Kagura- | 2026 Planned | undefined | undefined |
+| Star Party Time | 2026 Planned | undefined | undefined |
+| Star To You | 2026 Planned | undefined | undefined |
+
+## Star Savior — All 59 Saviors Directory (Patch v2.4)
+| Savior | Rarity | Attribute | Class | Overall | Reroll | Lv.200 ATK/HP/DEF/SPD | Canonical URL |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Asherah | SSR | Moon | Striker | B | C | 4223/20662/1600/100 | https://ascalon.fun/starsavior/characters/asherah |
+| Smile | SSR | Star | Ranger | S | A | 4223/21573/1600/100 | https://ascalon.fun/starsavior/characters/smile |
+| Luna | SSR | Order | Caster | S | A | 4312/20622/1596/93 | https://ascalon.fun/starsavior/characters/luna |
+| Charlotte | SSR | Sun | Striker | S | A | 4280/21573/1600/104 | https://ascalon.fun/starsavior/characters/charles |
+| Carmen | SSR | Moon | Defender | C | C | 3352/25109/1727/95 | https://ascalon.fun/starsavior/characters/carmen |
+| Frey | SSR | Star | Supporter | A | C | 3352/25109/1727/95 | https://ascalon.fun/starsavior/characters/frey |
+| Seira | SSR | Order | Striker | S | A | 4315/21743/1601/107 | https://ascalon.fun/starsavior/characters/seira |
+| Trish | SSR | Star | Assassin | A | B | 3827/20480/1594/90 | https://ascalon.fun/starsavior/characters/trish |
+| Haydee | SSR | Star | Defender | SS | S | 3352/22153/1922/95 | https://ascalon.fun/starsavior/characters/ede |
+| Serpang | SSR | Sun | Supporter | S | B | 3352/24753/1657/95 | https://ascalon.fun/starsavior/characters/serpang |
+| Dana | SSR | Star | Caster | SS | A | 4277/20480/1594/90 | https://ascalon.fun/starsavior/characters/dana |
+| Muriel | SSR | Sun | Caster | B | B | 3827/21080/1594/90 | https://ascalon.fun/starsavior/characters/muriel |
+| Elisa | SSR | Chaos | Supporter | B | C | 3369/25366/1729/98 | https://ascalon.fun/starsavior/characters/elisa |
+| Lugh | SSR | Moon | Ranger | S | B | 4223/20662/1600/104 | https://ascalon.fun/starsavior/characters/lu |
+| Epindel | SSR | Moon | Assassin | B | C | 4277/20480/1594/90 | https://ascalon.fun/starsavior/characters/epindel |
+| Lydia | SSR | Chaos | Ranger | A | B | 3808/23246/1601/107 | https://ascalon.fun/starsavior/characters/lydia |
+| Harley | SSR | Sun | Defender | B | C | 3352/25109/1657/99 | https://ascalon.fun/starsavior/characters/harley |
+| Petra | SSR | Sun | Ranger | C | C | 4223/20662/1600/104 | https://ascalon.fun/starsavior/characters/petra |
+| Lacy | SSR | Chaos | Ranger | S | A | 4082/20822/1601/115 | https://ascalon.fun/starsavior/characters/lacy |
+| Tanya | SSR | Star | Striker | A | B | 4223/21573/1669/100 | https://ascalon.fun/starsavior/characters/tanya |
+| Lily | SSR | Moon | Caster | B | C | 4277/21080/1594/90 | https://ascalon.fun/starsavior/characters/lily |
+| Kyra | SSR | Sun | Assassin | S | B | 4336/20480/1594/90 | https://ascalon.fun/starsavior/characters/kira |
+| Bunnygirl Scarlet | SSR | Sun | Ranger | A | B | 3778/21573/1600/100 | https://ascalon.fun/starsavior/characters/bunny-scarlet |
+| Bunnygirl Claire | SSR | Moon | Striker | SS | S | 4280/21573/1600/104 | https://ascalon.fun/starsavior/characters/bunny-claire |
+| Omega | SSR | Star | Caster | C | C | 4277/21380/1594/96 | https://ascalon.fun/starsavior/characters/omega |
+| Asherah: Waltz of Starlight | SSR | Order | Supporter | SS | S | 3369/25006/1729/104 | https://ascalon.fun/starsavior/characters/dress-asherah |
+| Bell Rhys | SSR | Star | Ranger | A | B | 4050/20662/1600/112 | https://ascalon.fun/starsavior/characters/bell-lease |
+| Emilly | SSR | Moon | Defender | SS | A | 3352/24753/1657/95 | https://ascalon.fun/starsavior/characters/emily |
+| Bunnygirl Charlotte | SSR | Sun | Assassin | SSS | SS | 4277/20480/1594/90 | https://ascalon.fun/starsavior/characters/bunny-charles |
+| Frey: Noble Princess | SSR | Moon | Caster | S | A | 4453/20480/1594/90 | https://ascalon.fun/starsavior/characters/bunny-frey |
+| Roberta | SSR | Star | Striker | S | B | 4395/21573/1600/100 | https://ascalon.fun/starsavior/characters/roberta |
+| Yoo Mina | SSR | Star | Ranger | A | B | 4310/20823/1612/100 | https://ascalon.fun/starsavior/characters/yanagi-mina |
+| Hilde | SSR | Sun | Defender | A | A | 3352/25109/1727/95 | https://ascalon.fun/starsavior/characters/hilde |
+| Rosaria | SSR | Chaos | Ranger | SS | S | 4315/20822/1601/109 | https://ascalon.fun/starsavior/characters/rosalia |
+| Lyn | SSR | Star | Striker | S | B | 4223/21573/1600/106 | https://ascalon.fun/starsavior/characters/rin |
+| Fei | SSR | Moon | Assassin | SS | S | 4453/20480/1594/90 | https://ascalon.fun/starsavior/characters/fei |
+| Tyria | SSR | Sun | Striker | SS | A | 4395/21573/1600/100 | https://ascalon.fun/starsavior/characters/tilia |
+| Carmen: Eternal Promise | SSR | Moon | Supporter | SSS | SS | 3352/25109/1727/95 | https://ascalon.fun/starsavior/characters/bride-carmen |
+| Epindel: Blessing in Bloom | SSR | Sun | Caster | SS | S | 4336/21080/1594/90 | https://ascalon.fun/starsavior/characters/bride-epindel |
+| Carnelia | SSR | Chaos | Caster | S | A | 4489/20622/1596/93 | https://ascalon.fun/starsavior/characters/carnelia |
+| Ceres | SSR | Moon | Striker | S | A | 4280/20662/1600/106 | https://ascalon.fun/starsavior/characters/ceres |
+| Luna: Summer Starlight | SSR | Sun | Defender | S | B | 3352/25109/1703/95 | https://ascalon.fun/starsavior/characters/swimsuit-luna |
+| Smile: Sunshine Cat | SSR | Star | Assassin | SSS | SS | 4277/20480/1594/96 | https://ascalon.fun/starsavior/characters/swimsuit-smile |
+| Cristelle | SSR | Sun | Ranger | SS | S | 4280/20662/1600/100 | https://ascalon.fun/starsavior/characters/christel |
+| Amora | SSR | Order | Assassin | SSS | SS | 4312/20622/1596/97 | https://ascalon.fun/starsavior/characters/amora |
+| Professor M | SSR | Moon | Ranger | SSS | SS | 4280/20662/1600/106 | https://ascalon.fun/starsavior/characters/professor-m |
+| Gwen | SSR | Star | Striker | S | A | 4395/21573/1600/100 | https://ascalon.fun/starsavior/characters/gwen |
+| Maid Lydia | SSR | Moon | Caster | S | B | 4336/21080/1594/90 | https://ascalon.fun/starsavior/characters/maid-lydia |
+| Maid Ceres | SSR | Sun | Supporter | SS | S | 3352/24753/1727/101 | https://ascalon.fun/starsavior/characters/maid-ceres |
+| Witch of Favoritism | SSR | Order | Striker | SSS | SS | 4432/20822/1601/109 | https://ascalon.fun/starsavior/characters/witch-of-favoritism |
+| Guile | SSR | Chaos | Caster | SS | S | 4489/20662/1596/93 | https://ascalon.fun/starsavior/characters/guile |
+| Besta | SR | Star | Defender | A | B | 3352/25109/1727/95 | https://ascalon.fun/starsavior/characters/vesta |
+| Annah | SR | Sun | Defender | S | B | 3352/25109/1727/95 | https://ascalon.fun/starsavior/characters/anna |
+| Marcille | SR | Sun | Assassin | A | B | 3827/20480/1594/94 | https://ascalon.fun/starsavior/characters/marcille |
+| Vera | SR | Moon | Supporter | A | B | 3352/24753/1703/95 | https://ascalon.fun/starsavior/characters/bella |
+| Naru | SR | Star | Ranger | A | B | 4223/21573/1600/100 | https://ascalon.fun/starsavior/characters/naru |
+| Claire | SR | Moon | Assassin | A | B | 4277/20480/1594/90 | https://ascalon.fun/starsavior/characters/claire |
+| Scarlet | SR | Sun | Striker | A | B | 3778/24096/1600/100 | https://ascalon.fun/starsavior/characters/scarlet |
+| Clarissa | SR | Star | Ranger | SS | B | 3778/20662/1600/100 | https://ascalon.fun/starsavior/characters/clarissa |
+
+## Star Savior — Top SSR Arcana Cards (SSR Index)
+| Arcana Card | Rarity | Stat Tag | Tier | Summary | Anchor URL |
+| --- | --- | --- | --- | --- | --- |
+| A Quiet Moment of Rest | SSR | Health | S | [Sense of protection] Effect RES increases by 10%. / [Sense of life] Maximum HP increases by 5%. / [Prudent tactics] At  | https://ascalon.fun/starsavior/arcana#arcana-79517741 |
+| A Knight's Oath | SSR | Health | S | [Stigmata of speed] Speed increases by 8. | https://ascalon.fun/starsavior/arcana#arcana-79517744 |
+| Night View Beyond the Window | SSR | Protect | B | [Generous response] When attacked by an enemy, if you are in Monastir's Discipline state, you will Revenge Attack at 25% | https://ascalon.fun/starsavior/arcana#arcana-79517747 |
+| The Princess Ascends the Throne | SSR | Health | B | [Blessings of starlight] At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times. | https://ascalon.fun/starsavior/arcana#arcana-79517750 |
+| Under the Glass Moon, Over the Pavilion | SSR | Power | A | [Sense of attack] Attack power increases by 5%. / [Stigmata of attack] Attack power increases by 8%. | https://ascalon.fun/starsavior/arcana#arcana-79517753 |
+| A Stroll with Friends | SSR | Power | B | [How to cast an emergency spell] At the start of the first battle, increase Crit Rate for 2 turns. | https://ascalon.fun/starsavior/arcana#arcana-79517756 |
+| Divine Judgement | SSR | Power | A | [Magic circle of target alignment] At the start of the turn, own Crit DMG increases by 10%. Repeats up to 3 times. | https://ascalon.fun/starsavior/arcana#arcana-79517759 |
+| Divine Trial | SSR | Endurance | B | [Sense of defense] Defense power increases by 5%. / [Sensory defense] Defense power increases by 8% and Effect RES incre | https://ascalon.fun/starsavior/arcana#arcana-79517762 |
+| An Unseen Place | SSR | Focus | B | [Sense of concentration] Effect Hit increases by 10%. / [First aid] When attacked, if your HP is below 25%, recover your | https://ascalon.fun/starsavior/arcana#arcana-79517765 |
+| Born to Be Wild | SSR | Endurance | A | [Defensive skill] Defense power increases by 2%. / [Second heart] Maximum Toughness value increases by 2. | https://ascalon.fun/starsavior/arcana#arcana-79517768 |
+| Made by Petra♡ | SSR | Focus | SS | [Sense of concentration] Effect Hit increases by 10%. / [Sense of attack] Attack power increases by 5%. / [Stigmata of i | https://ascalon.fun/starsavior/arcana#arcana-79517771 |
+| No Pain, No Gain | SSR | Power | S | [Sharp offensive] Attack power increases by 6% and Crit Rate increases by 6%. | https://ascalon.fun/starsavior/arcana#arcana-79517774 |
+| Master of Fried Food | SSR | Protect | B | [Sense of protection] Effect RES increases by 10%. / [Protection skills] Effect RES increases by 4%. / [Tempura party] A | https://ascalon.fun/starsavior/arcana#arcana-79517777 |
+| There's Only One Truth | SSR | Focus | B | [Concentration skills] Effect Hit increases by 4%. / [Resolute determination] After receiving an attack, if your HP is b | https://ascalon.fun/starsavior/arcana#arcana-79517780 |
+| As Cute as Kyra! | SSR | Power | S | [Elasticity/acceleration] At the start of your turn, your speed increases by 10. Can be stacked up to 3 times. | https://ascalon.fun/starsavior/arcana#arcana-79517783 |
+| A Satisfying Meal | SSR | Protect | B | [Sense of protection] Effect RES increases by 10%. / [Strong will] Maximum Toughness value increases by 2. When attacked | https://ascalon.fun/starsavior/arcana#arcana-79517786 |
+| Undercover Cop | SSR | Endurance | B | [Second heart] Maximum Toughness value increases by 2. | https://ascalon.fun/starsavior/arcana#arcana-79517789 |
+| More Than Professional | SSR | Health | B | [Blessings of starlight] At the start of each turn, the amount of recovery given increases by 3%. Repeats up to 5 times. | https://ascalon.fun/starsavior/arcana#arcana-79517792 |
+| Dreams Under the Stars | SSR | Focus | S | [Stigmata of insight] Crit Rate increases by 18%. | https://ascalon.fun/starsavior/arcana#arcana-79517795 |
+| The Great and Amazing Bunny Girl | SSR | Power | B | [Attack skill] Attack power increases by 2%. / [Get ready!] When using a skill, Effect Hit increases by 10% and Damage D | https://ascalon.fun/starsavior/arcana#arcana-79534220 |
+| The Perfect Bunny Girl | SSR | Health | SS | [Skill in life] Maximum HP increases by 2%. / [Sharp growth] Maximum HP increases by 6% and Crit Rate increases by 6%. / | https://ascalon.fun/starsavior/arcana#arcana-79534223 |
+| The Imaginary Pioneer | SSR | Power | A | [Sense of attack] Attack power increases by 5%. / [Stack trigger] After using a Special Skill, your own Special Skill da | https://ascalon.fun/starsavior/arcana#arcana-79576397 |
+| Young Lady of Stranis | SSR | Health | S | [Talent of speed] Speed increases by 3. / [Stigmata of life] Maximum HP increases by 8%. | https://ascalon.fun/starsavior/arcana#arcana-79606361 |
+| Deep Mourning | SSR | Focus | B | [Concentration skills] Effect Hit increases by 4%. / [The shadow of silkworm eating] When using Basic Skill, your Crit R | https://ascalon.fun/starsavior/arcana#arcana-79644746 |
+| A Clumsy Way to Relieve Desire | SSR | Power | B | [Speed prowess] Speed increases by 2. / [Double tap] After attacking with Basic Skill, if the enemy's Toughness is broke | https://ascalon.fun/starsavior/arcana#arcana-79717619 |
+| The Indomitable Masterpiece | SSR | Power | SS | [Sense of attack] Attack power increases by 5%. / [Attack skill] Attack power increases by 2%. / [Rugged destruction] Cr | https://ascalon.fun/starsavior/arcana#arcana-79766540 |
+| Responsibility Atop a Pile of Paperwork | SSR | Health | A | [Sense of speed] Increases speed by 5. / [Disaster response protocols] The maximum Toughness value increases by 1. When  | https://ascalon.fun/starsavior/arcana#arcana-79808948 |
+| Experienced Mercenary | SSR | Health | B | [Skill of destruction] Crit DMG increases by 4%. / [Catalyst] If a critical hit occurs after an attack, there is a 100%  | https://ascalon.fun/starsavior/arcana#arcana-79855448 |
+| Nostalgia Strikes Back | SSR | Endurance | A | [Sense of defense] Defense power increases by 5%. / [Shield of silence] Defend Forward occurrence probability increases  | https://ascalon.fun/starsavior/arcana#arcana-79855463 |
+| The End Wears the Face of a Girl | SSR | Power | S | [Talent of insight] Crit Rate increases by 4.5%. / [The sound of blood] After hitting a critical hit with an all-out att | https://ascalon.fun/starsavior/arcana#arcana-79865537 |
+| Forbidden Archive Vol. 1 | SSR | Health | B | Anyone can strengthen it up to level 50 by distribution. · Special Potential cannot be obtained even though it is SSR └E | https://ascalon.fun/starsavior/arcana#arcana-79893874 |
+| A White Moon Shines With the Sun's Warmth | SSR | Endurance | SS | [Stigmata of speed] Speed increases by 8. / [Offensive talent] Attack power increases by 3%. / [Talent of life] Maximum  | https://ascalon.fun/starsavior/arcana#arcana-79941760 |
+| Today's Step Forward | SSR | Health | A | [Sense of destruction] Crit DMG increases by 10%. / [Solitary seeker] The maximum Toughness value increases by 1. After  | https://ascalon.fun/starsavior/arcana#arcana-79983016 |
+| Customized Training to Cover Weaknesses | SSR | Power | SS | [Sharp offensive] Attack power increases by 6% and Crit Rate increases by 6%. | https://ascalon.fun/starsavior/arcana#arcana-80012824 |
+| A Drowsy Afternoon Interlude | SSR | Health | A | [Skill in life] Maximum HP increases by 2%. / [Sense of life] Maximum HP increases by 5%. / [March of love] The maximum  | https://ascalon.fun/starsavior/arcana#arcana-80041744 |
+| Till Death Do Us Part | SSR | Power | A | [Sense of speed] Increases speed by 5. / [Crimson Oath] After attacking all targets, generates a proof for 2 turns on yo | https://ascalon.fun/starsavior/arcana#arcana-80077855 |
+| Death for the Flowers | SSR | Endurance | SS | [Sense of destruction] Crit DMG increases by 10%. / [Skill of insight] Crit Rate increases by 3%. / [Skill of destructio | https://ascalon.fun/starsavior/arcana#arcana-80139832 |
+| Even If It's Poison | SSR | Power | A | [Flexible judgment] When attacking, if your HP is above 50%, Damage Dealt increases by 15%. When attacked, if your HP is | https://ascalon.fun/starsavior/arcana#arcana-80191501 |
+| Chase the Light! | SSR | Power | A | [Attack skill] Attack power increases by 2%. / [Path of destiny] When one of your allies starts their turn, say "Now!" t | https://ascalon.fun/starsavior/arcana#arcana-80210542 |
+| Summer Night Sky | SSR | Health | B | [Defensive skill] Defense power increases by 2%. / [Talent of concentration] Effect Hit increases by 6%. / [Solid trust] | https://ascalon.fun/starsavior/arcana#arcana-80231986 |
+| Vacation Prep Starts with Shopping! | SSR | Power | S | [Attack skill] Attack power increases by 2%. / [Laughter induction mechanism] When using Special Skill, own Damage Dealt | https://ascalon.fun/starsavior/arcana#arcana-80283517 |
+| Chains of Eternal Bondage | SSR | Focus | A | [Sense of attack] Attack power increases by 5%. / [Concentration skills] Effect Hit increases by 4%. / [Stigmata of atta | https://ascalon.fun/starsavior/arcana#arcana-80331877 |
+| Journey of No Return | SSR | Health | S | [Skill of destruction] Crit DMG increases by 4%. / [A refreshing scent] Increases damage by 10% when attacking a single  | https://ascalon.fun/starsavior/arcana#arcana-80363578 |
+| Solace of the Hedonist | SSR | Endurance | S | [Sense of concentration] Effect Hit increases by 10%. / [Speed prowess] Speed increases by 2. / [Skill of insight] Crit  | https://ascalon.fun/starsavior/arcana#arcana-80400913 |
+| Self-Proclaimed Veteran Detective's Methods | SSR | Power | A | [Sense of attack] Attack power increases by 5%. / [Attack skill] Attack power increases by 2%. / [Heat of battle] When a | https://ascalon.fun/starsavior/arcana#arcana-80444335 |
+| Wait, These Are... Clothes? | SSR | Power | S | [Attack skill] Attack power increases by 2%. / [Gesture of emptiness] Crit Rate increases by 20%. After attacking, own a | https://ascalon.fun/starsavior/arcana#arcana-80482327 |
+| Drowsy Day Out | SSR | Health | A | [Skill of insight] Crit Rate increases by 3%. / [Sense of destruction] Crit DMG increases by 10%. / [Butterfly lullaby]  | https://ascalon.fun/starsavior/arcana#arcana-80498278 |
+| Grueling Ordeal | SSR | Health | A | [Speed prowess] Speed increases by 2. / [Skill in life] Maximum HP increases by 2%. / [Skilled Acceleration] After using | https://ascalon.fun/starsavior/arcana#arcana-80521390 |
+| Endless Dance | SSR | Power | SS | [Sense of attack] Attack power increases by 5%. / [Insight proficiency] Crit Rate increases by 3%. / [Overwhelming Offen | https://ascalon.fun/starsavior/arcana#arcana-80556268 |
+| Faded Dream | SSR | Power | S | [Offensive prowess] Attack power increases by 2%. / [Insight proficiency] Crit Rate increases by 3%. / [Offensive talent | https://ascalon.fun/starsavior/arcana#arcana-80556271 |
+
+## Star Savior — Strategy Guides & Interactive Tools (86 Guides)
+- [Gauntlet (PvP) Strongest Characters Tier List](https://ascalon.fun/starsavior/guides/pvp-tier-list) (Rankings): Complete Gauntlet (PvP) tier list for Star Savior based on turn-1 initiative, AoE burst pressure, Immortality survival, Evade / Revenge Attack triggers, and buf
+- [Recommended SR Characters Tier List & Upgrade Priority](https://ascalon.fun/starsavior/guides/sr-characters) (Rankings): Which SR Saviors should you build first in Star Savior? Full breakdown of pre-Awakening SR performance, featuring Besta, Naru, Clarissa, Claire, Annah, Scarlet,
+- [Recommended SR Arcana Tier List & Upgrade Priority](https://ascalon.fun/starsavior/guides/sr-arcana) (Rankings): Best SR Arcana cards to level in Star Savior when filling missing SSR stat tags, maximizing Same-Character Bonuses, and stacking Vitality-restoring Journey Even
+- [Star Savior Character Tier Maker Tool](https://ascalon.fun/starsavior/guides/character-tier-maker) (Tools): Create and customize your own Star Savior Character Tier List across SSS to C ranks. Filter by class, load the AppMedia baseline preset, or reset to rank from s
+- [Star Savior Arcana Tier Maker Tool](https://ascalon.fun/starsavior/guides/arcana-tier-maker) (Tools): Build and share custom SSR & SR Arcana Tier Lists filtered by Rescue Journey tag (`Power`, `Health`, `Endurance`, `Focus`, `Protect`).
+- [Rescue Journey Event Choice Checker Tool](https://ascalon.fun/starsavior/guides/event-choice-checker) (Tools): Instant lookup tool for all Star Savior Rescue Journey dialogue choices — covering all 85 Arcana Events plus all 29 Shared Events across NOA, Aganon, Flora, and
+- [1st Anniversary Official Livestream Recap & Upcoming Characters](https://ascalon.fun/starsavior/guides/livestream-summary) (Events): Complete recap of the official Star Savior 1st Anniversary broadcast: Witch of Favoritism & free SSR Guile (Nov 12), December Dress Lacy & Dress Carnelia, 200+3
+- [Active Promo & Coupon Codes List and How to Redeem](https://ascalon.fun/starsavior/guides/promo-codes) (Strategy): All verified Star Savior coupon codes for free Starlight Gems, Focused Observation Tickets, Singularity Degeneration Reactors, and Skill Reset Codes.
+- [Should You Pull on the 1st Anniversary Gacha? Witch of Favoritism & Guile Priority](https://ascalon.fun/starsavior/guides/1st-anniversary-gacha) (Gacha): Complete AppMedia pull & Limit Break priority guide for the 1st Anniversary Observation banners: SSS Order Striker Witch of Favoritism, FREE Chaos Caster Guile,
+- [Should You Pull on the Maid Ceres & Grueling Ordeal Pickup Gacha?](https://ascalon.fun/starsavior/guides/maid-ceres-gacha) (Gacha): Detailed AppMedia pull evaluation for Sun Supporter Maid Ceres (SS Rank) and Health SSR Arcana "Grueling Ordeal" running until Nov 13, 04:00 JST.
+- [Should You Pull on the Frey: Noble Princess & The Indomitable Masterpiece Gacha?](https://ascalon.fun/starsavior/guides/frey-noble-princess-gacha) (Gacha): Pull analysis for Frey: Noble Princess and the Tier-0 Power SSR Arcana "The Indomitable Masterpiece" running until Nov 19, 04:00 JST.
+- [Which Gacha Banner Should You Pull Right Now? Priority Guide](https://ascalon.fun/starsavior/guides/which-gacha-to-pull) (Gacha): Complete comparison of the live 1st Anniversary Witch of Favoritism & Guile Pickups (~Dec 4), Maid Ceres Pickup (~Nov 13), Frey: Noble Princess / The Indomitabl
+- [Gacha Rates, Pity Ceiling & Mileage Exchange Explained](https://ascalon.fun/starsavior/guides/gacha-rates) (Gacha): Exact AppMedia breakdown of Star Savior Observation costs (200 Starlight Gems), 4.0% SSR drop rates, Order/Chaos vs Sun/Star/Moon rates, and 200-pull carry-over
+- [Gacha Animations & Guaranteed SSR Pull Tells Summary](https://ascalon.fun/starsavior/guides/gacha-animations) (Gacha): Exact visual tells during Character Observation and Arcana Observation sequences that confirm one or more SSRs, plus purple fake-out upgrades.
+- [Friendship Point Observation: 2% SSR Rate, Pool & Daily Cap](https://ascalon.fun/starsavior/guides/friendship-gacha) (Gacha): Complete guide to v2.0 Friendship Point Observation: 5 points per pull, 20 points/day cap, 2.0% SSR drop rate, and why the Arcana banner is top priority.
+- [Custom Observation Best Wishlist Characters & Arcanas](https://ascalon.fun/starsavior/guides/custom-observation) (Gacha): Exact AppMedia wishlist tier list for Cosmic Custom Observation & Standard Custom Observation — who to lock in for Cross Attack, PvP, and Rescue Journey.
+- [Valentine Revival ("Bittersweet! Golden Fantasia") Walkthrough & Shop Guide](https://ascalon.fun/starsavior/guides/valentine-event) (Events): Complete guide to the Revival Valentine Event "Bittersweet! Golden Fantasia" (~Nov 13, 04:00 JST): farming Deluxe Valentine Chocolates, 3 daily Event Raids, and
+- [Cosmo Gate Season P7 Boss Strategy (Belgras / Tyria / Carnelia)](https://ascalon.fun/starsavior/guides/cosmo-gate) (Events): High-score boss mechanics, Toughness Break burst windows, and top-scoring formations against Season P7 bosses Belgras, Tyria, and Carnelia (~Nov 12, 04:00 JST).
+- [Rescue Journey Normal Mode Walkthrough, Resonance Caps & Deck Ratios](https://ascalon.fun/starsavior/guides/rescue-journey-normal) (Rescue Journey): Unlocked at Operation Sector 8-26: how to clear Rescue Journey Normal consistently, Resonance-by-Level caps, and recommended Arcana tag decks until Sector 18-36
+- [Rescue Journey Hard Mode Walkthrough: Evidence Sets (AX–XX3) & Potentials](https://ascalon.fun/starsavior/guides/rescue-journey-hard) (Rescue Journey): Unlocked at Operation Sector 18-36: complete guide to Early-March Training Direction choices, Mid-March Evidence sets (AX through XX3), and Subjugation Loot sub
+- [Blessing Farming Guide: SG Rank (9,000+ Score) & Blessing Rerolls](https://ascalon.fun/starsavior/guides/blessing-farming) (Rescue Journey): Exact AppMedia Blessing (Inheritance) farming guide: hitting SG Rank (9,000+ pts) in Hard Mode, using the 5x Blessing Reroll feature, and picking innate Skill-p
+- [Rescue Journey Shared Events Complete Choice & Reward List](https://ascalon.fun/starsavior/guides/shared-events) (Rescue Journey): Verified AppMedia reference chart for Shared Rescue Journey Events across NOA, Aganon, Flora Beach Camp, and Kalide Hot Springs.
+- [How to Play Rescue Journey: Training, Condition & Schedule Guide](https://ascalon.fun/starsavior/guides/rescue-journey-guide) (Rescue Journey): Beginner-to-expert explanation of Rescue Journey mechanics: the 5 Journey Stats (`Power`, `Health`, `Endurance`, `Focus`, `Protect`), Condition stages, Ancient 
+- [What to Do When You Cannot Clear Rescue Journey / High-Rank Archive Tips](https://ascalon.fun/starsavior/guides/rescue-journey-tips) (Rescue Journey): Failing mid-run exams or stuck below SG Rank? Follow these 4 verified AppMedia steps to stabilize clears and push high-score Stellar Archives.
+- [Operation Sector 1-5 (NOA Commercial District) Boss Walkthrough](https://ascalon.fun/starsavior/guides/operation-1-5) (Operations): Sector 1-5 boss Void Harvester (Sun Striker, CP 1,850) walkthrough, enemy skills, recommended beginner team, and facilities unlocked upon clear.
+- [Operation Sector 2-12 (Fjord Lake) Boss Walkthrough](https://ascalon.fun/starsavior/guides/operation-2-12) (Operations): Sector 2-12 boss Void Raider (Sun Assassin, CP 3,950) walkthrough: Stealth + guaranteed Crit AoE Silence counterplay and Guild / Gauntlet unlocks.
+- [Operation Sector 3-15 (Underground Waterway) Boss Walkthrough](https://ascalon.fun/starsavior/guides/operation-3-15) (Operations): Sector 3-15 boss Void Fallen (Moon Striker, CP 5,288) walkthrough: breaking Void Shield, Star-attribute advantage (`Star -> Moon`), and unlocking Star Link & Fl
+- [Operations Walkthrough Summary, Re-Ignition Buff & Unlocked Features](https://ascalon.fun/starsavior/guides/operations-summary) (Operations): Complete AppMedia Sector unlock chart from Sector 1-5 through Sector 18-36 (Rescue Journey Hard), plus Re-Ignition Buff scaling (+3% to +25%) and NOA Support Fu
+- [Cube Palace Complete Walkthrough Summary & All 25 Cheat Codes](https://ascalon.fun/starsavior/guides/cube-palace) (Cube Palace): Complete guide to daily Cube Palace survival waves (5 sections × 15-turn limit, no HP carry-over healing), Auto Protocol, Cosmic Cube Shards, and the 5-Stage Ch
+- [Cube Palace STEP 1: Interface (Carmen & Charlotte) Walkthrough](https://ascalon.fun/starsavior/guides/cube-step-1) (Cube Palace): STEP 1 Interface boss guide: breaking Carmen & Charlotte's frequent Barriers within 15 turns using 1 Defender + 3 single-target Barrier-breaker Attackers.
+- [Cube Palace STEP 2: Kernel (Naru & Lugh) Walkthrough](https://ascalon.fun/starsavior/guides/cube-step-2) (Cube Palace): STEP 2 Kernel boss guide: cleansing Naru & Lugh's Freeze/SPD-Down debuffs and playing around Naru's Enhanced Counter stance.
+- [Cube Palace STEP 3: Assembler (Marcille & Tanya) Walkthrough](https://ascalon.fun/starsavior/guides/cube-step-3) (Cube Palace): STEP 3 Assembler boss guide: breaking Marcille & Tanya's counter-Barriers cleanly and avoiding Toughness Break stun traps.
+- [Cube Palace STEP 4: Firmware (Lydia & Ceres) Walkthrough](https://ascalon.fun/starsavior/guides/cube-step-4) (Cube Palace): STEP 4 Firmware boss guide: surviving Lydia's rapid-cooldown AoEs and cleansing Ceres's stacking Bleeds + Unhealable debuffs.
+- [Cube Palace STEP 5: Mechanics (Asherah & Luna) Walkthrough](https://ascalon.fun/starsavior/guides/cube-step-5) (Cube Palace): STEP 5 Mechanics boss guide: stripping Asherah & Luna's Crit buffs and dispellable Omega Guard while punishing AoE spam with Roberta.
+- [Cube Palace EXTRA 6: Linker (Bell Rhys & Emilly) Walkthrough](https://ascalon.fun/starsavior/guides/cube-extra-6) (Cube Palace): EXTRA 6 Linker high-difficulty guide: countering Bell Rhys & Emilly's mass Bleed stacks and reactive Barrier generation.
+- [Cube Palace EXTRA 7: Bootloader (Clarissa & Dana) Walkthrough](https://ascalon.fun/starsavior/guides/cube-extra-7) (Cube Palace): EXTRA 7 Bootloader high-difficulty guide: surviving Clarissa's highest-ATK Target lock and baiting Dana's 0-ATK Incapacitation debuff.
+- [Cube Palace EXTRA 8: Register (Rin & Fei) Stance-Switch Guide](https://ascalon.fun/starsavior/guides/cube-extra-8) (Cube Palace): EXTRA 8 Register apex guide: alternating Single-Target and AoE skills against Rin & Fei's Wind Tiger / Cloud Dragon stances.
+- [Best Party Formations & Team Building Guide (PvE / Boss / Evade)](https://ascalon.fun/starsavior/guides/party-formations) (Strategy): Exact AppMedia strongest 4-unit formations: Amora + Professor M Cross Attack team, Single-Target Boss nuke team, and 80%-Dodge Fei + Gwen Evade-Counter team.
+- [Best Arcana Deck Building & Stat Tag Ratios by Class](https://ascalon.fun/starsavior/guides/arcana-deck-guide) (Strategy): How to assemble the optimal 5-card + 1-Friend Rescue Journey Arcana deck for Attackers, Defenders, and Supporters.
+- [Quasar Core Priority Guide: Best Characters for Universal Limit Breaks](https://ascalon.fun/starsavior/guides/quasar-cores) (Strategy): Quasar Cores are ultra-rare universal SSR Character Limit Break (dupe) materials usable even on Cosmic & Limited Saviors! See the exact #1 LB1/LB3 priorities.
+- [Pulsar Core Priority Guide: Best SSR Arcanas for Universal Uncaps](https://ascalon.fun/starsavior/guides/pulsar-cores) (Strategy): Pulsar Cores are ultra-rare universal SSR Arcana Limit Break (dupe) materials! Discover which Tier-0 SSR Arcanas gain the biggest Training & Support Bonus jumps
+- [Best Break Skills Tier List: Planetary Purification & Star Piercer](https://ascalon.fun/starsavior/guides/break-skills) (Strategy): Complete AppMedia ranking of all 5 Tactical Analysis Break Skills (unlocked at Sector 5-20): exact multipliers, Domain buffs, and unlock conditions.
+- [Flashpoint Bosses Walkthrough & Best Guide Stones (Morning Star)](https://ascalon.fun/starsavior/guides/flashpoint) (Strategy): Unlocked at Sector 3-15 (Fixed Lv.200, zero CP deficit penalty!): how to farm Morning Star Awakening Stones, "A Knight's Oath", and Roberta Guide Stones.
+- [Interstellar Corridor & Attribute Towers Walkthrough (Depth 300+)](https://ascalon.fun/starsavior/guides/interstellar-corridor) (Strategy): Unlocked at Sector 6-20: Battle Skip tips, weekly 9-floor Attribute Corridors, manual Nova Burst boss clears, and Depth 220+ Combat Environment debuffs.
+- [SR Guardian Star Awakening Tier List: Clarissa (SS) & Priority Order](https://ascalon.fun/starsavior/guides/sr-awakening) (Strategy): Exact AppMedia SR Guardian Star Awakening tier list using Morning Star Awakening Stones & Remnant Cores — why Clarissa jumps straight to SS Rank!
+- [Precision Crafting Guide: Best Sets (Fighting Spirit) & SPD Necklaces](https://ascalon.fun/starsavior/guides/precision-crafting) (Strategy): Exact AppMedia Precision Crafting priority: why Fighting Spirit & Destruction Main-SPD Necklaces (with ATK% / Crit Rate / Crit DMG subs) give the highest fuel R
+- [Apocalypse Shop Best Exchange Priority (Cosmic Cube & Remnant Cores)](https://ascalon.fun/starsavior/guides/apocalypse-shop) (Strategy): Complete tab-by-tab AppMedia Apocalypse Shop guide: Observation Records, Observation Reports (Remnant Core #1!), Gauntlet Cosmic Cubes, and Precision Crafting F
+- [Best Value Paid Packs & Monthly Starlight Gem Pass Guide](https://ascalon.fun/starsavior/guides/paid-packs) (Strategy): Pull-per-dollar value comparison across Monthly Starlight Gem Passes, Season Passes, Quasar/Pulsar Core Special Bundles, and 1st Anniversary Packs.
+- [Latest Maintenance, Update & Balance Patch Notes Summary](https://ascalon.fun/starsavior/guides/patch-notes) (Strategy): Chronological AppMedia update log: Nov 4 Frey: Noble Princess & Cosmo Gate P7, Oct 29 Maid Ceres & Guild Defense, Oct 22 Server Merge, and Nov 12 1st Anniversar
+- [Cross Attack Mechanics Verification: Asherah: Waltz & Professor M](https://ascalon.fun/starsavior/guides/cross-attack) (Mechanics): Complete AppMedia verification of Cross Attack: exact holders (Asherah: Waltz of Starlight & Professor M), execution order, Extra-Basic exclusions, and Toughnes
+- [Revenge Attack (Counterattack) Verification & Trajectory XX (+20%)](https://ascalon.fun/starsavior/guides/revenge-attack) (Mechanics): AppMedia verification of Revenge Attack: fires Basic Skill on hit (even on Evade, Defend Forward & AoE!), ignores enemy Defend Forward, and stacks with Gauntlet
+- [Evade Mechanics Verification: 50% Damage Cut, Crit Negation & Debuff Immunity](https://ascalon.fun/starsavior/guides/evade) (Mechanics): Exact AppMedia verification of Evade: halves damage (never 0!), forces guaranteed non-crit, 100% blocks debuffs & Toughness loss, and stacks additively with Hit
+- [Defend Forward Verification: Hilde, Nostalgia Strikes Back & Counters](https://ascalon.fun/starsavior/guides/defend-forward) (Mechanics): AppMedia verification of Defend Forward: intercepting single-target hits for allies, exact providers (Hilde & Nostalgia Strikes Back), and Claire's ignore mecha
+- [Break Armor Destruction Cutscenes: Eligible Characters & Settings Toggle](https://ascalon.fun/starsavior/guides/armor-break) (Mechanics): Exact trigger condition (Toughness Break!), complete list of eligible Saviors, Extra Moment viewing, and how to toggle "Reduce Break Armor Destruction Cutscene"
+- [HP Recovery Verification: Exact Formula, Lifesteal Bypass & Regeneration](https://ascalon.fun/starsavior/guides/hp-recovery) (Mechanics): AppMedia formula verification: `floor(MaxHP × Multiplier × (1 + HealUp - HealDown))`, why Lifesteal bypasses Star Challenge Constraint: Creation, and Regenerati
+- [Beginner Early-Game Progression Roadmap: Sector 1-5 to Sector 18-36](https://ascalon.fun/starsavior/guides/beginner-progression) (Beginner & Systems): Clear Sector 1-5 (Shops/Events) -> Sector 2-12 (Guild/Gauntlet) -> Sector 3-15 (Star Link/Flashpoint) -> Sector 4-18 (Subjugation Gear) -> Sector 5-20 (Break Sk
+- [Fast Reroll Method (~10 Minutes): Server Account Reset & 10,000 Starlight Gems](https://ascalon.fun/starsavior/guides/how-to-reroll) (Beginner & Systems): Because new Guest account creation is suspended, log in on Mobile or Steam, complete the 3-turn Rescue Journey tutorial + skip 2 tutorials (~10 minutes total), 
+- [Daily Checklist: Everything To Complete Before 04:00 JST Reset](https://ascalon.fun/starsavior/guides/daily-routine) (Beginner & Systems): 1. Claim free Daily Apocalypse Shop + Cash Shop freebies. 2. Collect NOA Support Funds. 3. Send/receive 20 Friendship Points (4 free pulls at 2% SSR!). 4. Clear
+- [Equipment Guide: All 3 Subjugation Stages, Sets & Sector 14-36 T2 Gear](https://ascalon.fun/starsavior/guides/equipment-guide) (Beginner & Systems): Unlocked at Sector 4-18 (T2 Gear at Sector 14-36, max +15 with substat upgrades every +3; excess XP refunded). Twisted Emotion drops 4pc Attack (+20% ATK), Insi
+- [Recommended Shop Purchases: Apocalypse, Gauntlet, Guild & Cash Freebies](https://ascalon.fun/starsavior/guides/shop-priority) (Beginner & Systems): Claim daily free items in both Apocalypse Shop and Cash Shop first! Buy monthly Cosmic Cubes (Gauntlet Points), Remnant Cores (Observation Reports), Standard Ti
+- [Character Upgrade Systems Summary & Star Link Level Synchro Order](https://ascalon.fun/starsavior/guides/upgrade-systems) (Beginner & Systems): Focus levels on your top 4 Saviors and register everyone else into Star Link (unlocked at Sector 3-15) to share levels for free! Upgrade order: 1. Character Lev
+- [Battle System Explained: Action Gauge, Toughness Break & Nova Burst](https://ascalon.fun/starsavior/guides/battle-system) (Beginner & Systems): Depleting an enemy's Toughness bar triggers Toughness Break (stun + unable to recover Toughness + increased damage taken) and charges your Commander Break Skill
+- [Attribute Matchups Chart: Moon -> Sun -> Star -> Moon & Order <-> Chaos](https://ascalon.fun/starsavior/guides/attribute-matchups) (Beginner & Systems): Star Savior uses a 3-element triangle plus 2 mutual Cosmic attributes: Moon beats Sun, Sun beats Star, and Star beats Moon (`Moon -> Sun -> Star -> Moon`), whil
+- [What Are Cosmic Characters? Order & Chaos Rates, Dupes & Synergies](https://ascalon.fun/starsavior/guides/cosmic-attributes) (Beginner & Systems): Cosmic Saviors (Order & Chaos attributes such as Amora, Professor M, Carnelia, Rosaria, Asherah: Waltz of Starlight, Witch of Favoritism, and Guile) never suffe
+- [Character Stats Explained: Combat Parameters vs Rescue Journey Stats](https://ascalon.fun/starsavior/guides/character-stats) (Beginner & Systems): Complete dictionary of ATK, DEF, HP, SPD, Crit Rate, Crit DMG, Effect Hit, Effect Resistance, and Toughness, plus how Equipment Score weights Crit Rate & Crit D
+- [Stellar Archive Guide: Equipping Archives, SG Rank & Blessing Inheritance](https://ascalon.fun/starsavior/guides/stellar-archive) (Beginner & Systems): Every Rescue Journey save creates a Stellar Archive storing stats, Special/General Potentials, and Blessing stars. Remember: Special Potentials apply in combat 
+- [Daily Reset Time (04:00 JST) & Weekly / Monthly Refresh Schedule](https://ascalon.fun/starsavior/guides/daily-reset) (Beginner & Systems): Star Savior resets daily missions, Palace Access Cards, Event Raid tickets, Flashpoint entries, and daily free shop items at 04:00 JST every day; Attribute Corr
+- [Willpower (Stamina) Usage Priority & Moonlight Water Recovery](https://ascalon.fun/starsavior/guides/willpower) (Beginner & Systems): Spend daily Willpower on active Event stages, Exploration Requests (Resonance mats), and Subjugation Requests (Stage 7+ at Sector 14-36 for Tier 2 equipment); s
+- [Sweep Battle, Battle Skip (Sector 6-20) & Overlap Auto-Repeat Guide](https://ascalon.fun/starsavior/guides/sweep-overlap) (Beginner & Systems): Use Sweep Battle on cleared Subjugation/Exploration stages for instant drops, Battle Skip (unlocked at Sector 6-20) to fast-clear Operations Sectors 6–18 and In
+- [NOA Support Funds Guide: Leveling Every 5 Operation Stages & Fast Claim](https://ascalon.fun/starsavior/guides/noa-support-funds) (Beginner & Systems): NOA Support Funds accumulate idle Gold, EXP, and enhancement materials 24/7, leveling up every 5 Operation stage progress points. Always push Operations as far 
+- [NOA Headquarters & Candle Square Guide: Area Dispatch, Workshop & Tactical Analysis](https://ascalon.fun/starsavior/guides/rescue-hq) (Beginner & Systems): Manage Area Dispatch (1-5), Candle Square (1-5), Crafting Workshop (4-18, Lv.4 at 14-36 for T2 gear + Precision Crafting), and Tactical Analysis (5-20 for Break
+- [Profile Settings Guide: Support Arcana Loan, Representative Savior & UID](https://ascalon.fun/starsavior/guides/profile-settings) (Beginner & Systems): Pin your highest-Limit-Break meta SSR Arcana (such as Death for the Flowers, The Indomitable Masterpiece, or Customized Training to Cover Weaknesses) on your Pr
+- [Lobby Screen Customization: Live2D Saviors, Extra Moments & Ark Points](https://ascalon.fun/starsavior/guides/lobby-settings) (Beginner & Systems): Assign unlocked Live2D Savior lobbies, skins, Ark Point 2D illustrations, and 3D Extra Moments (including Break Armor Destruction variants on eligible Saviors) 
+- [How to Set Your Birthday & View All Savior Birthdays](https://ascalon.fun/starsavior/guides/birthday-settings) (Beginner & Systems): Register your birthday in Profile Settings to unlock special voiced Savior greetings, and check our Birthday Calendar Database for all 59 playable Saviors.
+- [How to Add Friends: 20 Daily Friendship Points & Lv.50 Arcana Rentals](https://ascalon.fun/starsavior/guides/friends-guide) (Beginner & Systems): Send requests to same-rank players via Friends -> Apply to quickly fill your list: receive up to 20 Friendship Points every day (4 pulls on the 2% SSR Friendshi
+- [Guild Guide (Unlocked at Sector 2-12): Check-In, Guild Defense & Rewards](https://ascalon.fun/starsavior/guides/guild-guide) (Beginner & Systems): Join an active Guild immediately after clearing Sector 2-12 to claim daily check-in rewards, participate in cooperative Guild Defense battles, and exchange guil
+- [How to Play Star Savior on PC (Steam) & Cross-Platform Account Sync](https://ascalon.fun/starsavior/guides/steam-pc) (Beginner & Systems): Install Star Savior on Steam for 60/120 FPS widescreen play and in-game coupon entry. Link your mobile account via Google/Apple BEFORE launching Steam so both d
+- [Account Linking & Server Account Reset Guide (iOS / Android / Steam)](https://ascalon.fun/starsavior/guides/account-linking) (Beginner & Systems): Bind your account under Settings -> Account via Google or Apple ID to safeguard progress across devices (note: "Reset Server Account" wipes server progress for 
+- [All Character Base Stats Comparison Table (Sortable)](https://ascalon.fun/starsavior/guides/character-stats-list) (Database): Sortable max base stats database for all 59 Star Savior characters — compare ATK, HP, DEF, SPD, and CRIT% across SSR and SR Saviors.
+- [Ark Point Memorial Illustrations & Extra Moments Guide](https://ascalon.fun/starsavior/guides/ark-point-list) (Database): Complete directory of Savior Ark Point memorial scenes and 3D Extra Moments earned via Affinity milestones and character unlocks.
+- [All Character Birthdays Calendar & Affiliations List](https://ascalon.fun/starsavior/guides/birthday-calendar) (Database): Complete birthday list, height, and faction directory for all 59 playable Saviors in Star Savior.
+- [Voice Actors (CV) Cast List for All 59 Characters](https://ascalon.fun/starsavior/guides/voice-actors) (Database): Complete voice cast (CV) directory for all 59 playable Saviors in Star Savior with direct links to each character profile.
+- [Character Skins & Alternate Costume Variants Catalog](https://ascalon.fun/starsavior/guides/skins-list) (Database): Visual showcase of all alternate-attire Saviors (Bunnygirl, Waltz of Starlight, Eternal Promise, Blessing in Bloom, Summer Starlight, Sunshine Cat, Maid) and an
+- [General Discussion & Strategy Q&A Bulletin Board](https://ascalon.fun/starsavior/guides/general-board) (Community): Ask party-building questions, share Rescue Journey SG-Rank Archive tips, and discuss 1st Anniversary banners with fellow English Commanders.
+- [Friend ID & Lv.50 Support Arcana Recruitment Board](https://ascalon.fun/starsavior/guides/friend-board) (Community): Share your Commander UID and your pinned Support Arcana (e.g., Lv.50 Death for the Flowers, The Indomitable Masterpiece, or Customized Training to Cover Weaknes
+- [Guild Recruitment & Competitive Cosmo Gate Alliance Board](https://ascalon.fun/starsavior/guides/guild-board) (Community): Recruit active members for your Rescue Corps Guild or find an English-speaking guild for daily check-in rewards, Guild Defense, and Cosmo Gate theorycrafting.
