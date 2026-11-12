@@ -82,14 +82,14 @@ export function WikiShell({
               />
               <div className="hidden xs:block sm:block">
                 <div className="flex items-center gap-1">
-                  <span className="text-[13px] sm:text-[15.5px] font-black tracking-wide text-white">
+                  <span className="text-[14.5px] sm:text-[15.5px] font-black tracking-wide text-white">
                     ASCALON
                   </span>
-                  <span className="rounded border border-[#3b82f6]/40 bg-[#3b82f6]/15 px-1 py-0.5 text-[10px] font-black text-[#60a5fa]">
+                  <span className="rounded border border-[#3b82f6]/40 bg-[#3b82f6]/15 px-1 py-0.5 text-[11.5px] font-black text-[#60a5fa]">
                     .FUN
                   </span>
                 </div>
-                <div className="hidden sm:block text-[10px] font-semibold text-[#8492a6]">
+                <div className="hidden sm:block text-[11.5px] font-semibold text-[#b8c7dc]">
                   Strategy Wiki Portal
                 </div>
               </div>
@@ -108,11 +108,11 @@ export function WikiShell({
                   <span className="truncate text-[13.5px] sm:text-[15.5px] font-extrabold tracking-tight text-[#f8fafc]">
                     {game.name} Wiki
                   </span>
-                  <span className="hidden md:inline-block shrink-0 rounded border border-[#3b82f6]/35 bg-[#3b82f6]/18 px-1.5 py-0.5 text-[10.5px] font-extrabold text-[#60a5fa]">
+                  <span className="hidden md:inline-block shrink-0 rounded border border-[#3b82f6]/35 bg-[#3b82f6]/18 px-1.5 py-0.5 text-[12px] font-extrabold text-[#60a5fa]">
                     {game.patchVersion}
                   </span>
                 </div>
-                <div className="truncate text-[10.5px] sm:text-[11px] text-[#8492a6]">
+                <div className="truncate text-[12px] sm:text-[12.5px] text-[#b8c7dc]">
                   59 Characters · 85 Arcana
                 </div>
               </div>
@@ -127,7 +127,7 @@ export function WikiShell({
                 <Link
                   key={item.key}
                   href={item.href}
-                  className={`rounded-md border px-3 py-1.5 text-[12.5px] font-bold transition-colors ${
+                  className={`rounded-md border px-3 py-1.5 text-[13.5px] font-bold transition-colors ${
                     isActive
                       ? 'border-[#3b82f6] bg-[#2563eb] text-white'
                       : 'border-[#1e2636] bg-[#21293a] text-[#c3cde0] hover:border-[#3b82f6]/60 hover:text-white'
@@ -159,10 +159,10 @@ export function WikiShell({
               <Link
                 key={item.key}
                 href={item.href}
-                className={`shrink-0 whitespace-nowrap rounded-md border px-2.5 py-1 text-[11.5px] font-bold active:scale-95 transition-all ${
+                className={`shrink-0 whitespace-nowrap rounded-md border px-2.5 py-1 text-[13px] font-bold active:scale-95 transition-all ${
                   isActive
                     ? 'border-[#3b82f6] bg-[#2563eb] text-white shadow-xs'
-                    : 'border-[#1e2636] bg-[#161e2e] text-[#cbd5e1] hover:text-white'
+                    : 'border-[#1e2636] bg-[#161e2e] text-[#e8eff8] hover:text-white'
                 }`}
               >
                 {item.label}
@@ -174,8 +174,8 @@ export function WikiShell({
 
       {/* Breadcrumb Bar */}
       <div className="border-b border-[#1e2636] bg-[#11151e]">
-        <div className="no-scrollbar mx-auto flex max-w-[1240px] items-center gap-1.5 overflow-x-auto whitespace-nowrap px-3 py-1.5 sm:px-4 text-[11.5px] text-[#8492a6]">
-          <Link href="/" className="shrink-0 font-bold text-[#94a3b8] hover:text-white">
+        <div className="no-scrollbar mx-auto flex max-w-[1240px] items-center gap-1.5 overflow-x-auto whitespace-nowrap px-3 py-1.5 sm:px-4 text-[13px] text-[#b8c7dc]">
+          <Link href="/" className="shrink-0 font-bold text-[#c8d4e6] hover:text-white">
             Ascalon.fun
           </Link>
           <span className="shrink-0">›</span>
@@ -217,7 +217,7 @@ export function WikiShell({
                 style={{
                   background: '#1c2333',
                   padding: '9px 12px',
-                  fontSize: '0.73rem',
+                  fontSize: '0.78rem',
                   fontWeight: 800,
                   letterSpacing: '0.06em',
                   color: '#93c5fd',
@@ -236,7 +236,7 @@ export function WikiShell({
                       href={ln.href}
                       style={{
                         padding: '10px 12px',
-                        fontSize: '0.83rem',
+                        fontSize: '0.88rem',
                         fontWeight: active ? 700 : 500,
                         color: active ? '#60a5fa' : 'var(--text-primary)',
                         background: active ? 'rgba(59, 130, 246, 0.1)' : 'transparent',
@@ -249,12 +249,12 @@ export function WikiShell({
                       <span>{ln.label}</span>
                       <span
                         style={{
-                          fontSize: '0.65rem',
+                          fontSize: '0.72rem',
                           fontWeight: 800,
                           padding: '1px 6px',
                           borderRadius: '3px',
                           background: active ? '#2563eb' : '#232a3b',
-                          color: active ? '#fff' : '#94a3b8',
+                          color: active ? '#fff' : '#c8d4e6',
                         }}
                       >
                         {ln.badge}
@@ -271,7 +271,7 @@ export function WikiShell({
             style={{
               background: '#1c2333',
               padding: '9px 12px',
-              fontSize: '0.73rem',
+              fontSize: '0.78rem',
               fontWeight: 800,
               letterSpacing: '0.06em',
               color: '#93c5fd',
@@ -299,7 +299,7 @@ export function WikiShell({
                 }}
               >
                 <img src={el.iconUrl} alt={el.label} width={26} height={26} style={{ width: '26px', height: '26px', objectFit: 'contain' }} />
-                <span style={{ fontSize: '0.62rem', fontWeight: 700, color: 'var(--text-secondary)' }}>{el.label}</span>
+                <span style={{ fontSize: '0.72rem', fontWeight: 700, color: 'var(--text-secondary)' }}>{el.label}</span>
               </Link>
             ))}
           </div>
@@ -309,7 +309,7 @@ export function WikiShell({
             style={{
               background: '#1c2333',
               padding: '9px 12px',
-              fontSize: '0.73rem',
+              fontSize: '0.78rem',
               fontWeight: 800,
               letterSpacing: '0.06em',
               color: '#93c5fd',
@@ -351,7 +351,7 @@ export function WikiShell({
                 <div style={{ minWidth: 0, flex: 1 }}>
                   <div
                     style={{
-                      fontSize: '0.8rem',
+                      fontSize: '0.86rem',
                       fontWeight: 700,
                       color: '#f1f5f9',
                       whiteSpace: 'nowrap',
@@ -361,7 +361,7 @@ export function WikiShell({
                   >
                     {unit.name}
                   </div>
-                  <div style={{ fontSize: '0.68rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', display: 'flex', alignItems: 'center', gap: '4px' }}>
                     {unit.staticData?.attributeIconUrl && (
                       <img src={unit.staticData.attributeIconUrl} alt={unit.element} width={14} height={14} style={{ width: '14px', height: '14px' }} />
                     )}
@@ -370,7 +370,7 @@ export function WikiShell({
                 </div>
                 <span
                   style={{
-                    fontSize: '0.68rem',
+                    fontSize: '0.75rem',
                     fontWeight: 800,
                     padding: '2px 6px',
                     borderRadius: '4px',
@@ -410,7 +410,7 @@ export function WikiShell({
             alignItems: 'center',
             flexWrap: 'wrap',
             gap: '12px',
-            fontSize: '0.76rem',
+            fontSize: '0.82rem',
             color: 'var(--text-muted)',
           }}
         >

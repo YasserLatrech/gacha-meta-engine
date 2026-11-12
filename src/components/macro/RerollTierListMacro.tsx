@@ -106,7 +106,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             loading="eager"
           />
           <div>
-            <div className="text-[11px] font-bold text-[#93c5fd]">
+            <div className="text-[12.5px] font-bold text-[#93c5fd]">
               Last Updated: 2026/11/10 · {game.patchVersion}
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
@@ -120,16 +120,16 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           alt="Star Savior Reroll Tier List & Stopping Line Guide"
         />
 
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
           This is the Star Savior Reroll Tier List. It covers the ideal reroll stopping line, recommended gacha banners, and detailed evaluations of the best starting SSR Characters and SSR Arcana cards.
         </p>
 
         {/* Early Game Recommended Articles Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
+          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[12.5px] font-extrabold text-[#f8fafc]">
             Early-Game Recommended Strategy Guides
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[11px] font-bold">
+          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[12.5px] font-bold">
             <a href="#reroll-ranking-section" className="bg-[#2563eb]/20 py-2 text-white">Reroll Tier List</a>
             <Link href="/starsavior/guides/how-to-reroll" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">How to Reroll</Link>
             <Link href="/starsavior/guides/beginner-progression" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Early-Game Guide</Link>
@@ -143,7 +143,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: Reroll Tier List (Characters) */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="reroll-ranking-section" badge="CHARACTERS & ARCANA">
           Reroll Tier List (Characters)
         </AppMediaH2>
@@ -184,7 +184,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
 
         <AppMediaH3 id="reroll-char-criteria">Character Reroll Evaluation Criteria Table</AppMediaH3>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <tbody className="divide-y divide-[#1e293b]">
               <tr>
                 <td className="w-24 p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="SS" size="sm" /></td>
@@ -194,14 +194,14 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="S" size="sm" /></td>
                 <td className="p-2.5">
                   <div>• Safe to finish if pulled alongside multiple SSRs</div>
-                  <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Prioritize SS-Rank characters whenever possible</div>
+                  <div className="pl-3 text-[12.5px] text-[#c8d4e6]">↳ Prioritize SS-Rank characters whenever possible</div>
                 </td>
               </tr>
               <tr>
                 <td className="p-2.5 text-center border-r border-[#1e293b]"><AppMediaRankIcon tier="A" size="sm" /></td>
                 <td className="p-2.5">
                   <div>• Great secondary pull alongside an SS-Rank unit</div>
-                  <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Keep rerolling if you only pulled an A-Rank unit alone</div>
+                  <div className="pl-3 text-[12.5px] text-[#c8d4e6]">↳ Keep rerolling if you only pulled an A-Rank unit alone</div>
                 </td>
               </tr>
               <tr>
@@ -340,7 +340,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: リセマラはするべき？ */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="should-you-reroll">Should You Reroll in Star Savior?</AppMediaH2>
         <AppMediaH3>Rerolling is Recommended!</AppMediaH3>
         <p>
@@ -357,7 +357,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: リセマラのやり方 */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="how-to-reroll">How to Reroll Step-by-Step (~10 Minutes)</AppMediaH2>
         <AppMediaH3>7-Step Fast Reroll Procedure</AppMediaH3>
         <ol className="list-decimal pl-5 space-y-1.5 text-[#e2e8f0]">
@@ -371,7 +371,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         </ol>
 
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <tbody className="divide-y divide-[#1e293b]">
               <tr>
                 <th className="w-44 bg-[#161f33] px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#243049]">Time Required</th>
@@ -383,7 +383,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
               </tr>
               <tr>
                 <th className="bg-[#161f33] px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#243049]">SR / R Rates</th>
-                <td className="px-3.5 py-2.5 text-[#cbd5e1]">SR: 43.0% · R: 53.0%</td>
+                <td className="px-3.5 py-2.5 text-[#e8eff8]">SR: 43.0% · R: 53.0%</td>
               </tr>
             </tbody>
           </table>
@@ -391,7 +391,7 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: Reroll Stopping Line & Banner Priority */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="reroll-stopping-line">Reroll Stopping Line & Banner Priority</AppMediaH2>
         <AppMediaH3>Aim for Multiple SS-Rank Characters & Arcana</AppMediaH3>
         <p>

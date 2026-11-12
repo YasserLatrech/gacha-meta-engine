@@ -79,7 +79,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#263450] bg-[#131c2e] p-3">
-        <div className="text-[12px] text-[#cbd5e1]">
+        <div className="text-[13.5px] text-[#e8eff8]">
           {selectedChar ? (
             <span>
               Selected: <strong className="text-[#fbbf24]">{selectedChar.name}</strong> — click any Tier row below to place!
@@ -92,21 +92,21 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
           <button
             type="button"
             onClick={loadAppMediaPreset}
-            className="rounded bg-[#1e293b] hover:bg-[#334155] border border-[#3b82f6]/50 px-2.5 py-1 text-[11px] font-bold text-[#93c5fd]"
+            className="rounded bg-[#1e293b] hover:bg-[#334155] border border-[#3b82f6]/50 px-2.5 py-1 text-[12.5px] font-bold text-[#93c5fd]"
           >
             Load AppMedia Preset
           </button>
           <button
             type="button"
             onClick={clearAllToPool}
-            className="rounded bg-[#1e293b] hover:bg-[#334155] border border-[#475569] px-2.5 py-1 text-[11px] font-bold text-[#cbd5e1]"
+            className="rounded bg-[#1e293b] hover:bg-[#334155] border border-[#475569] px-2.5 py-1 text-[12.5px] font-bold text-[#e8eff8]"
           >
             Reset All to Pool
           </button>
           <button
             type="button"
             onClick={copyTierSummary}
-            className="rounded bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 py-1 text-[11px] font-extrabold text-white"
+            className="rounded bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 py-1 text-[12.5px] font-extrabold text-white"
           >
             {copied ? 'Copied Text!' : 'Copy Tier Text'}
           </button>
@@ -129,7 +129,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
                   >
                     <AppMediaRankIcon tier={tier} size="md" />
                     {selectedSlug && (
-                      <span className="mt-1 block text-[9px] font-bold text-[#93c5fd]">+ Place Here</span>
+                      <span className="mt-1 block text-[11px] font-bold text-[#93c5fd]">+ Place Here</span>
                     )}
                   </td>
                   <td
@@ -139,7 +139,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
                     className="p-2.5 align-top"
                   >
                     {rowChars.length === 0 ? (
-                      <span className="text-[11px] italic text-[#64748b]">Empty tier — select a Savior and click here</span>
+                      <span className="text-[12.5px] italic text-[#a8b8d0]">Empty tier — select a Savior and click here</span>
                     ) : (
                       <div className="flex flex-wrap gap-2">
                         {rowChars.map((c) => {
@@ -167,7 +167,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
                               >
                                 <img src={c.imageUrl} alt={c.name} className="h-full w-full object-cover" />
                               </div>
-                              <span className="mt-1 line-clamp-1 w-full text-[10px] font-bold text-[#e2e8f0]">
+                              <span className="mt-1 line-clamp-1 w-full text-[11.5px] font-bold text-[#e2e8f0]">
                                 {c.name}
                               </span>
                             </button>
@@ -189,7 +189,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
           <button
             type="button"
             onClick={() => assignSelectedTo('POOL')}
-            className="text-[12px] font-extrabold text-[#93c5fd] hover:underline"
+            className="text-[13.5px] font-extrabold text-[#93c5fd] hover:underline"
           >
             Unranked Character Pool ({poolChars.length}) {selectedSlug ? '— Click to Move Selected Back to Pool' : ''}
           </button>
@@ -199,10 +199,10 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
                 key={r}
                 type="button"
                 onClick={() => setRoleFilter(r)}
-                className={`rounded px-2 py-0.5 text-[10px] font-bold ${
+                className={`rounded px-2 py-0.5 text-[11.5px] font-bold ${
                   roleFilter === r
                     ? 'bg-[#2563eb] text-white'
-                    : 'bg-[#1e293b] text-[#94a3b8] hover:text-white'
+                    : 'bg-[#1e293b] text-[#c8d4e6] hover:text-white'
                 }`}
               >
                 {r}
@@ -211,7 +211,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
           </div>
         </div>
         {poolChars.length === 0 ? (
-          <p className="text-[11px] text-[#64748b]">All matching Saviors are currently placed in the tier rows above.</p>
+          <p className="text-[12.5px] text-[#a8b8d0]">All matching Saviors are currently placed in the tier rows above.</p>
         ) : (
           <div className="flex flex-wrap gap-2">
             {poolChars.map((c) => {
@@ -230,7 +230,7 @@ export function CharacterTierMakerTool({ characters }: { characters: CharacterEn
                   >
                     <img src={c.imageUrl} alt={c.name} className="h-full w-full object-cover" />
                   </div>
-                  <span className="mt-1 line-clamp-1 w-full text-[10px] font-bold text-[#cbd5e1]">{c.name}</span>
+                  <span className="mt-1 line-clamp-1 w-full text-[11.5px] font-bold text-[#e8eff8]">{c.name}</span>
                 </button>
               );
             })}
@@ -278,7 +278,7 @@ export function ArcanaTierMakerTool({ arcana }: { arcana: ArcanaEntity[] }) {
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#263450] bg-[#131c2e] p-3">
-        <div className="text-[12px] text-[#cbd5e1]">
+        <div className="text-[13.5px] text-[#e8eff8]">
           {selectedArcana ? (
             <span>
               Selected Arcana: <strong className="text-[#fbbf24]">{selectedArcana.name}</strong> — click any Tier row below to place!
@@ -293,8 +293,8 @@ export function ArcanaTierMakerTool({ arcana }: { arcana: ArcanaEntity[] }) {
               key={tag}
               type="button"
               onClick={() => setTagFilter(tag)}
-              className={`rounded px-2 py-1 text-[11px] font-bold ${
-                tagFilter === tag ? 'bg-[#2563eb] text-white' : 'bg-[#1e293b] text-[#94a3b8] hover:text-white'
+              className={`rounded px-2 py-1 text-[12.5px] font-bold ${
+                tagFilter === tag ? 'bg-[#2563eb] text-white' : 'bg-[#1e293b] text-[#c8d4e6] hover:text-white'
               }`}
             >
               {tag}
@@ -307,7 +307,7 @@ export function ArcanaTierMakerTool({ arcana }: { arcana: ArcanaEntity[] }) {
               for (const a of ssrAndSr) reset[a.slug] = 'POOL';
               setPlacements(reset);
             }}
-            className="rounded bg-[#1e293b] border border-[#475569] px-2.5 py-1 text-[11px] font-bold text-[#cbd5e1]"
+            className="rounded bg-[#1e293b] border border-[#475569] px-2.5 py-1 text-[12.5px] font-bold text-[#e8eff8]"
           >
             Reset Pool
           </button>
@@ -338,7 +338,7 @@ export function ArcanaTierMakerTool({ arcana }: { arcana: ArcanaEntity[] }) {
                     className="p-2.5 align-top"
                   >
                     {rowItems.length === 0 ? (
-                      <span className="text-[11px] italic text-[#64748b]">No matching Arcanas in {tier}</span>
+                      <span className="text-[12.5px] italic text-[#a8b8d0]">No matching Arcanas in {tier}</span>
                     ) : (
                       <div className="flex flex-wrap gap-2">
                         {rowItems.map((a) => {
@@ -365,7 +365,7 @@ export function ArcanaTierMakerTool({ arcana }: { arcana: ArcanaEntity[] }) {
                               >
                                 <img src={a.imageUrl} alt={a.name} className="h-full w-full object-cover" />
                               </div>
-                              <span className="mt-1 line-clamp-2 w-full text-[10px] font-bold leading-tight text-[#e2e8f0]">
+                              <span className="mt-1 line-clamp-2 w-full text-[11.5px] font-bold leading-tight text-[#e2e8f0]">
                                 {a.name}
                               </span>
                             </button>
@@ -879,13 +879,13 @@ export function JourneyEventChoiceCheckerTool({ arcana }: { arcana: ArcanaEntity
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search event title, Arcana name, character, or reward (e.g. Vitality, Power, Charlotte, Indomitable)..."
-            className="flex-1 rounded border border-[#334155] bg-[#090d16] px-3 py-2 text-[13px] text-[#f8fafc] placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+            className="flex-1 rounded border border-[#334155] bg-[#090d16] px-3 py-2 text-[14.5px] text-[#f8fafc] placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
           />
           {query && (
             <button
               type="button"
               onClick={() => setQuery('')}
-              className="rounded bg-[#1e293b] px-3 py-2 text-[12px] font-bold text-[#cbd5e1] hover:bg-[#334155]"
+              className="rounded bg-[#1e293b] px-3 py-2 text-[13.5px] font-bold text-[#e8eff8] hover:bg-[#334155]"
             >
               Clear
             </button>
@@ -906,15 +906,15 @@ export function JourneyEventChoiceCheckerTool({ arcana }: { arcana: ArcanaEntity
                     setTagFilter(t);
                   }
                 }}
-                className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                  tagFilter === t ? 'bg-[#2563eb] text-white' : 'bg-[#1e293b] text-[#94a3b8] hover:text-white'
+                className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                  tagFilter === t ? 'bg-[#2563eb] text-white' : 'bg-[#1e293b] text-[#c8d4e6] hover:text-white'
                 }`}
               >
                 {t}
               </button>
             ))}
           </div>
-          <span className="text-[11px] font-bold text-[#94a3b8]">
+          <span className="text-[12.5px] font-bold text-[#c8d4e6]">
             Showing {Math.min(filtered.length, 60)} of {filtered.length} events
           </span>
         </div>
@@ -933,21 +933,21 @@ export function JourneyEventChoiceCheckerTool({ arcana }: { arcana: ArcanaEntity
                   />
                 )}
                 <div className="min-w-0">
-                  <div className="truncate text-[13px] font-extrabold text-[#f8fafc]">{ev.eventTitle}</div>
-                  <div className="truncate text-[11px] text-[#93c5fd]">
+                  <div className="truncate text-[14.5px] font-extrabold text-[#f8fafc]">{ev.eventTitle}</div>
+                  <div className="truncate text-[12.5px] text-[#93c5fd]">
                     {ev.sourceName} ({ev.sourceRarity})
                   </div>
                 </div>
               </div>
-              <span className="shrink-0 rounded bg-[#1e293b] border border-[#334155] px-2 py-0.5 text-[10px] font-bold text-[#fbbf24]">
+              <span className="shrink-0 rounded bg-[#1e293b] border border-[#334155] px-2 py-0.5 text-[11.5px] font-bold text-[#fbbf24]">
                 {ev.sourceTag}
               </span>
             </div>
             <div className="divide-y divide-[#1e293b]">
               {ev.choices.map((ch, idx) => (
-                <div key={idx} className="grid grid-cols-1 sm:grid-cols-12 gap-2 px-3 py-2 text-[12px]">
+                <div key={idx} className="grid grid-cols-1 sm:grid-cols-12 gap-2 px-3 py-2 text-[13.5px]">
                   <div className="sm:col-span-5 font-bold text-[#e2e8f0]">
-                    <span className="mr-1.5 inline-block rounded bg-[#2563eb]/30 px-1.5 py-0.2 text-[10px] text-[#93c5fd]">
+                    <span className="mr-1.5 inline-block rounded bg-[#2563eb]/30 px-1.5 py-0.2 text-[11.5px] text-[#93c5fd]">
                       Option {idx + 1}
                     </span>
                     {ch.choice}
@@ -956,7 +956,7 @@ export function JourneyEventChoiceCheckerTool({ arcana }: { arcana: ArcanaEntity
                     {ch.outcomes.map((out, oIdx) => (
                       <span
                         key={oIdx}
-                        className="inline-block rounded bg-[#132238] border border-[#2b4268] px-2 py-0.5 text-[11px] font-semibold text-[#86efac]"
+                        className="inline-block rounded bg-[#132238] border border-[#2b4268] px-2 py-0.5 text-[12.5px] font-semibold text-[#86efac]"
                       >
                         {out}
                       </span>
@@ -992,14 +992,14 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
     <div className="space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#263450] bg-[#131c2e] p-2.5">
         <div className="flex flex-wrap items-center gap-1.5">
-          <span className="text-[11px] font-bold text-[#94a3b8] mr-1">Rarity:</span>
+          <span className="text-[12.5px] font-bold text-[#c8d4e6] mr-1">Rarity:</span>
           {['ALL', 'SSR', 'SR'].map((r) => (
             <button
               key={r}
               type="button"
               onClick={() => setRarityFilter(r)}
-              className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                rarityFilter === r ? 'bg-[#2563eb] text-white' : 'bg-[#1e293b] text-[#cbd5e1]'
+              className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                rarityFilter === r ? 'bg-[#2563eb] text-white' : 'bg-[#1e293b] text-[#e8eff8]'
               }`}
             >
               {r}
@@ -1007,7 +1007,7 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
           ))}
         </div>
         <div className="flex flex-wrap items-center gap-1.5">
-          <span className="text-[11px] font-bold text-[#94a3b8] mr-1">Sort By:</span>
+          <span className="text-[12.5px] font-bold text-[#c8d4e6] mr-1">Sort By:</span>
           {(
             [
               ['atk', 'ATK'],
@@ -1021,8 +1021,8 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
               key={key}
               type="button"
               onClick={() => setSortBy(key)}
-              className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                sortBy === key ? 'bg-[#e86c58] text-white' : 'bg-[#1e293b] text-[#cbd5e1]'
+              className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                sortBy === key ? 'bg-[#e86c58] text-white' : 'bg-[#1e293b] text-[#e8eff8]'
               }`}
             >
               {label}
@@ -1032,7 +1032,7 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
       </div>
 
       <div className="overflow-x-auto rounded border border-[#263450] bg-[#0f1626]">
-        <table className="w-full min-w-[640px] border-collapse text-[12px]">
+        <table className="w-full min-w-[640px] border-collapse text-[13.5px]">
           <thead>
             <tr className="border-b border-[#263450] bg-[#162136] text-left font-extrabold text-[#dbeafe]">
               <th className="p-2.5">Savior</th>
@@ -1056,18 +1056,18 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
                     />
                     <div>
                       <div className="font-bold text-[#60a5fa] group-hover:underline">{c.name}</div>
-                      <div className="text-[10px] text-[#94a3b8]">{c.rarity}</div>
+                      <div className="text-[11.5px] text-[#c8d4e6]">{c.rarity}</div>
                     </div>
                   </Link>
                 </td>
-                <td className="p-2 text-center text-[11px] text-[#cbd5e1]">
+                <td className="p-2 text-center text-[12.5px] text-[#e8eff8]">
                   {c.element} / {c.role}
                 </td>
                 <td className="p-2 text-right font-mono font-bold text-[#f87171]">{c.baseStats.atk}</td>
                 <td className="p-2 text-right font-mono font-bold text-[#4ade80]">{c.baseStats.hp}</td>
                 <td className="p-2 text-right font-mono font-bold text-[#60a5fa]">{c.baseStats.def}</td>
                 <td className="p-2 text-right font-mono font-bold text-[#fbbf24]">{c.baseStats.spd}</td>
-                <td className="p-2 text-right font-mono text-[#cbd5e1]">{c.baseStats.crit}%</td>
+                <td className="p-2 text-right font-mono text-[#e8eff8]">{c.baseStats.crit}%</td>
               </tr>
             ))}
           </tbody>
@@ -1129,7 +1129,7 @@ export function CommunityBoardWidget({
         onSubmit={handleSubmit}
         className="rounded border border-[#263450] bg-[#131c2e] p-3.5 space-y-2.5"
       >
-        <div className="text-[13px] font-extrabold text-[#f8fafc]">Post to {boardTitle}</div>
+        <div className="text-[14.5px] font-extrabold text-[#f8fafc]">Post to {boardTitle}</div>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           <input
             type="text"
@@ -1137,12 +1137,12 @@ export function CommunityBoardWidget({
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
             placeholder="Commander Name (Optional)"
-            className="rounded border border-[#334155] bg-[#090d16] px-3 py-1.5 text-[12px] text-white placeholder-[#64748b]"
+            className="rounded border border-[#334155] bg-[#090d16] px-3 py-1.5 text-[13.5px] text-white placeholder-[#8c9db8]"
           />
           <select
             value={tag}
             onChange={(e) => setTag(e.target.value)}
-            className="rounded border border-[#334155] bg-[#090d16] px-3 py-1.5 text-[12px] text-white"
+            className="rounded border border-[#334155] bg-[#090d16] px-3 py-1.5 text-[13.5px] text-white"
           >
             <option value="Global / Steam">Global / Steam</option>
             <option value="JP Server (English)">JP Server (English)</option>
@@ -1156,11 +1156,11 @@ export function CommunityBoardWidget({
           value={body}
           onChange={(e) => setBody(e.target.value)}
           placeholder={placeholder}
-          className="w-full rounded border border-[#334155] bg-[#090d16] p-2.5 text-[12px] text-white placeholder-[#64748b]"
+          className="w-full rounded border border-[#334155] bg-[#090d16] p-2.5 text-[13.5px] text-white placeholder-[#8c9db8]"
         />
         <button
           type="submit"
-          className="rounded bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-1.5 text-[12px] font-extrabold text-white"
+          className="rounded bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-1.5 text-[13.5px] font-extrabold text-white"
         >
           Submit Post
         </button>
@@ -1169,16 +1169,16 @@ export function CommunityBoardWidget({
       <div className="space-y-2.5">
         {posts.map((p, idx) => (
           <div key={idx} className="rounded border border-[#263450] bg-[#0f1626] p-3">
-            <div className="flex items-center justify-between gap-2 text-[11px] text-[#94a3b8]">
+            <div className="flex items-center justify-between gap-2 text-[12.5px] text-[#c8d4e6]">
               <span className="font-bold text-[#93c5fd]">
                 {p.author}{' '}
-                <span className="ml-1.5 rounded bg-[#1e293b] px-1.5 py-0.5 text-[10px] text-[#fbbf24]">
+                <span className="ml-1.5 rounded bg-[#1e293b] px-1.5 py-0.5 text-[11.5px] text-[#fbbf24]">
                   {p.tag}
                 </span>
               </span>
               <span>{p.timestamp}</span>
             </div>
-            <p className="mt-1.5 text-[12.5px] leading-relaxed text-[#e2e8f0]">{p.body}</p>
+            <p className="mt-1.5 text-[13.5px] leading-relaxed text-[#e2e8f0]">{p.body}</p>
           </div>
         ))}
       </div>

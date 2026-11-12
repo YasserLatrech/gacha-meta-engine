@@ -56,7 +56,7 @@ export function LiveJstCountdown({
   if (nowMs === null) {
     return (
       <span
-        className={`inline-flex items-center gap-1 rounded border border-[#334155] bg-[#0b1120] px-2 py-0.5 font-mono text-[10.5px] font-bold text-[#94a3b8] ${className}`}
+        className={`inline-flex items-center gap-1 rounded border border-[#334155] bg-[#0b1120] px-2 py-0.5 font-mono text-[12px] font-bold text-[#c8d4e6] ${className}`}
       >
         <span className="h-1.5 w-1.5 rounded-full bg-[#60a5fa]" />
         <span>Syncing JST…</span>
@@ -71,7 +71,7 @@ export function LiveJstCountdown({
     if (parts.expired) {
       return (
         <span
-          className={`inline-flex items-center gap-1 rounded border border-slate-600/50 bg-slate-800/70 px-2 py-0.5 font-mono text-[10.5px] font-extrabold text-slate-400 ${className}`}
+          className={`inline-flex items-center gap-1 rounded border border-slate-600/50 bg-slate-800/70 px-2 py-0.5 font-mono text-[12px] font-extrabold text-[#c8d4e6] ${className}`}
         >
           <span>Ended</span>
         </span>
@@ -91,7 +91,7 @@ export function LiveJstCountdown({
     return (
       <span
         title={`Server Reset / Deadline: ${targetIso}`}
-        className={`inline-flex items-center gap-1.5 rounded border px-2 py-0.5 font-mono text-[10.5px] font-extrabold tabular-nums ${toneClasses} ${className}`}
+        className={`inline-flex items-center gap-1.5 rounded border px-2 py-0.5 font-mono text-[12px] font-extrabold tabular-nums ${toneClasses} ${className}`}
       >
         <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${dotColor}`} />
         <span>
@@ -108,7 +108,7 @@ export function LiveJstCountdown({
       const parts = computeCountdownParts(startMs, nowMs);
       return (
         <span
-          className={`inline-flex items-center gap-1.5 rounded border border-amber-500/45 bg-amber-950/50 px-2 py-0.5 font-mono text-[10.5px] font-extrabold tabular-nums text-amber-200 ${className}`}
+          className={`inline-flex items-center gap-1.5 rounded border border-amber-500/45 bg-amber-950/50 px-2 py-0.5 font-mono text-[12px] font-extrabold tabular-nums text-amber-200 ${className}`}
         >
           <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400 animate-pulse" />
           <span>
@@ -122,7 +122,7 @@ export function LiveJstCountdown({
     return (
       <span
         title={`Campaign / Release Started: ${startIso}`}
-        className={`inline-flex items-center gap-1.5 rounded border border-emerald-500/45 bg-emerald-950/45 px-2 py-0.5 font-mono text-[10.5px] font-extrabold tabular-nums text-emerald-200 ${className}`}
+        className={`inline-flex items-center gap-1.5 rounded border border-emerald-500/45 bg-emerald-950/45 px-2 py-0.5 font-mono text-[12px] font-extrabold tabular-nums text-emerald-200 ${className}`}
       >
         <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400 animate-pulse" />
         <span>
@@ -149,7 +149,7 @@ export function LiveJstWallClock({ className = '' }: { className?: string }) {
   return (
     <span
       title="Official Japan Standard Time (UTC+9) reference clock for all AppMedia release timers"
-      className={`inline-flex items-center gap-1.5 rounded-md border border-emerald-500/40 bg-[#0b1324] px-2.5 py-1 font-mono text-[11px] font-extrabold tabular-nums text-emerald-300 ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-md border border-emerald-500/40 bg-[#0b1324] px-2.5 py-1 font-mono text-[12.5px] font-extrabold tabular-nums text-emerald-300 ${className}`}
     >
       <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-400 animate-pulse" />
       <span>{nowMs === null ? 'Syncing JST (UTC+9)…' : `${formatJstWallClock(nowMs)} (UTC+9)`}</span>

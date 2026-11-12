@@ -15,7 +15,7 @@ export function AppMediaH2({ id, children, badge }: AppMediaH2Props) {
     >
       <span>{children}</span>
       {badge && (
-        <span className="ml-2 rounded bg-[#2563eb]/25 border border-[#3b82f6]/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#93c5fd]">
+        <span className="ml-2 rounded bg-[#2563eb]/25 border border-[#3b82f6]/40 px-2 py-0.5 text-[11.5px] font-bold uppercase tracking-wider text-[#93c5fd]">
           {badge}
         </span>
       )}
@@ -49,7 +49,7 @@ export function AppMediaH4({ id, children }: AppMediaH4Props) {
   return (
     <h4
       id={id}
-      className="scroll-mt-24 flex items-center gap-1.5 text-[13px] font-bold text-[#fbbf24] pt-1"
+      className="scroll-mt-24 flex items-center gap-1.5 text-[14.5px] font-bold text-[#fbbf24] pt-1"
     >
       <span className="text-[#3b82f6]">■</span>
       <span>{children}</span>
@@ -87,7 +87,7 @@ export function AppMediaBannerH2({
       <h2 className="flex items-center justify-between bg-[#1d283e] px-3.5 py-2.5 text-[15px] sm:text-[16px] font-extrabold tracking-tight text-[#f8fafc] border-b-[3px] border-[#e86c58] border-x border-t border-x-[#2a3958] border-t-[#2a3958] rounded-t-sm shadow-sm">
         <span>{children}</span>
         {badge && (
-          <span className="ml-2 rounded bg-[#2563eb]/25 border border-[#3b82f6]/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#93c5fd]">
+          <span className="ml-2 rounded bg-[#2563eb]/25 border border-[#3b82f6]/40 px-2 py-0.5 text-[11.5px] font-bold uppercase tracking-wider text-[#93c5fd]">
             {badge}
           </span>
         )}
@@ -157,7 +157,7 @@ export function AppMediaGraphicButtonGrid({
             <tr>
               <th
                 colSpan={2}
-                className="border-b border-[#28354e] bg-[#162136] px-3 py-2 text-center text-[12px] font-extrabold tracking-wide text-[#dbeafe]"
+                className="border-b border-[#28354e] bg-[#162136] px-3 py-2 text-center text-[13.5px] font-extrabold tracking-wide text-[#dbeafe]"
               >
                 {headerLabel}
               </th>
@@ -179,7 +179,7 @@ export function AppMediaGraphicButtonGrid({
                       loading="eager"
                     />
                   </div>
-                  <span className="mt-1.5 block text-[12px] sm:text-[13px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
+                  <span className="mt-1.5 block text-[13.5px] sm:text-[14.5px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
                     {left.label}
                   </span>
                 </Link>
@@ -197,7 +197,7 @@ export function AppMediaGraphicButtonGrid({
                         loading="eager"
                       />
                     </div>
-                    <span className="mt-1.5 block text-[12px] sm:text-[13px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
+                    <span className="mt-1.5 block text-[13.5px] sm:text-[14.5px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
                       {right.label}
                     </span>
                   </Link>
@@ -213,9 +213,9 @@ export function AppMediaGraphicButtonGrid({
                 <td colSpan={2} className="bg-[#131d31] hover:bg-[#1a2742] px-3 py-2.5 text-center transition-colors">
                   <Link
                     href={fl.href}
-                    className="inline-flex items-center justify-center gap-1.5 text-[12px] sm:text-[13px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
+                    className="inline-flex items-center justify-center gap-1.5 text-[13.5px] sm:text-[14.5px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
                   >
-                    <span className="text-[10px] text-[#3b82f6]">▶</span>
+                    <span className="text-[11.5px] text-[#3b82f6]">▶</span>
                     <span>{fl.label}</span>
                   </Link>
                 </td>
@@ -258,7 +258,7 @@ export function AppMediaRankIcon({
         loading="eager"
       />
       {subLabel && (
-        <span className="text-[9px] font-bold text-[#94a3b8] leading-none">{subLabel}</span>
+        <span className="text-[11px] font-bold text-[#c8d4e6] leading-none">{subLabel}</span>
       )}
     </div>
   );
@@ -270,8 +270,8 @@ export function AppMediaTierBadge({ tier, size = 'md' }: { tier: string; size?: 
     size === 'lg'
       ? 'px-3 py-1 text-[14px]'
       : size === 'sm'
-      ? 'px-1.5 py-0.5 text-[10px]'
-      : 'px-2.5 py-0.5 text-[12px]';
+      ? 'px-1.5 py-0.5 text-[11.5px]'
+      : 'px-2.5 py-0.5 text-[13.5px]';
   return (
     <span className={`inline-flex items-center justify-center rounded border font-black tracking-wider ${style.bg} ${style.text} ${sizeCls}`}>
       {tier}
@@ -283,14 +283,14 @@ export function AppMediaTableLink({ href, label, badge }: { href: string; label:
   return (
     <Link
       href={href}
-      className="group flex items-center justify-between gap-2 rounded bg-[#141c2e] hover:bg-[#1e293b] border border-[#243049] hover:border-[#3b82f6] px-3 py-2 text-[12px] font-bold text-[#60a5fa] hover:text-[#93c5fd] transition-colors"
+      className="group flex items-center justify-between gap-2 rounded bg-[#141c2e] hover:bg-[#1e293b] border border-[#243049] hover:border-[#3b82f6] px-3 py-2 text-[13.5px] font-bold text-[#60a5fa] hover:text-[#93c5fd] transition-colors"
     >
       <span className="flex items-center gap-1.5 truncate">
-        <span className="text-[10px] text-[#3b82f6] group-hover:translate-x-0.5 transition-transform">▶</span>
+        <span className="text-[11.5px] text-[#3b82f6] group-hover:translate-x-0.5 transition-transform">▶</span>
         <span className="truncate">{label}</span>
       </span>
       {badge && (
-        <span className="shrink-0 rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[9px] font-extrabold text-[#cbd5e1]">
+        <span className="shrink-0 rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[11px] font-extrabold text-[#e8eff8]">
           {badge}
         </span>
       )}
@@ -357,12 +357,12 @@ export function AppMediaIconCell({
           </span>
         )}
         {badgeText && (
-          <span className="absolute bottom-0 right-0 rounded-tl bg-black/90 px-1 py-0.2 text-[9px] font-black text-[#fbbf24] border-t border-l border-white/15">
+          <span className="absolute bottom-0 right-0 rounded-tl bg-black/90 px-1 py-0.2 text-[11px] font-black text-[#fbbf24] border-t border-l border-white/15">
             {badgeText}
           </span>
         )}
       </div>
-      <span className="mt-1 line-clamp-2 w-full text-[11px] font-bold leading-tight text-[#e2e8f0] group-hover:text-[#60a5fa]">
+      <span className="mt-1 line-clamp-2 w-full text-[12.5px] font-bold leading-tight text-[#e2e8f0] group-hover:text-[#60a5fa]">
         {name}
       </span>
     </Link>

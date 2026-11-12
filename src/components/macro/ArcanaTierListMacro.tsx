@@ -95,7 +95,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             loading="eager"
           />
           <div>
-            <div className="text-[11px] font-bold text-[#93c5fd]">
+            <div className="text-[12.5px] font-bold text-[#93c5fd]">
               Updated: 2026/11/12 · {game.patchVersion} · All 85 Arcana Cards
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
@@ -109,16 +109,16 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           alt="Star Savior Strongest Arcana Tier List & Rankings"
         />
 
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
           This page presents the Star Savior Strongest Arcana Ranking (Tier List) and complete 85-card encyclopedia. Use this guide to check the best SSR, SR, and R Arcana Special Potentials, Training Tag bonuses (Power, Health, Endurance, Focus, Protect), and Rescue Journey event effects.
         </p>
 
         {/* Top Ranking Switcher Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
+          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[12.5px] font-extrabold text-[#f8fafc]">
             Various Star Savior Rankings
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[12px] font-bold">
+          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[13.5px] font-bold">
             <Link href="/starsavior/tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest Characters
             </Link>
@@ -144,22 +144,22 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: Strongest Arcana Ranking (Tag-Split Tier Matrix) */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="arcana-tier-matrix" badge="50 SSR CARDS">
           Strongest Arcana Ranking (By Training Tag)
         </AppMediaH2>
 
         {/* Mobile View Switcher (< md): Compact Zero-Overflow Rows vs Full 5-Tag Matrix */}
         <div className="md:hidden flex items-center justify-between gap-2 rounded-lg border border-[#243049] bg-[#0f1626] px-3 py-2">
-          <span className="text-[11px] font-extrabold text-[#94a3b8]">Mobile Layout:</span>
+          <span className="text-[12.5px] font-extrabold text-[#c8d4e6]">Mobile Layout:</span>
           <div className="flex items-center gap-1.5">
             <button
               type="button"
               onClick={() => setMobileMatrixView(false)}
-              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+              className={`rounded px-2.5 py-1 text-[12.5px] font-extrabold transition-colors ${
                 !mobileMatrixView
                   ? 'bg-[#2563eb] text-white'
-                  : 'bg-[#161f33] text-[#cbd5e1]'
+                  : 'bg-[#161f33] text-[#e8eff8]'
               }`}
             >
               Compact Tiers
@@ -167,10 +167,10 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             <button
               type="button"
               onClick={() => setMobileMatrixView(true)}
-              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+              className={`rounded px-2.5 py-1 text-[12.5px] font-extrabold transition-colors ${
                 mobileMatrixView
                   ? 'bg-[#2563eb] text-white'
-                  : 'bg-[#161f33] text-[#cbd5e1]'
+                  : 'bg-[#161f33] text-[#e8eff8]'
               }`}
             >
               By Tag Matrix ↔
@@ -195,7 +195,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                       </td>
                       <td className="p-2.5">
                         {rowCards.length === 0 ? (
-                          <div className="py-3 text-center text-[11px] text-[#475569]">—</div>
+                          <div className="py-3 text-center text-[12.5px] text-[#475569]">—</div>
                         ) : (
                           <div className="flex flex-wrap gap-2">
                             {rowCards.map((a) => (
@@ -228,7 +228,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         >
           <table className="w-full min-w-[780px] border-collapse">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#cbd5e1]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#e8eff8]">
                 <th className="w-24 px-2 py-2.5 text-center border-r border-[#243049]">RANK</th>
                 {TAG_COLUMNS.map((tag) => (
                   <th key={tag} className="px-2.5 py-2.5 text-center border-r last:border-r-0 border-[#243049]">
@@ -251,7 +251,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                       return (
                         <td key={tag} className="p-2.5 align-top border-r last:border-r-0 border-[#1e293b]">
                           {cellCards.length === 0 ? (
-                            <div className="py-4 text-center text-[11px] text-[#475569]">—</div>
+                            <div className="py-4 text-center text-[12.5px] text-[#475569]">—</div>
                           ) : (
                             <div className="flex flex-wrap gap-2">
                               {cellCards.map((a) => (
@@ -301,7 +301,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: Strongest Arcana Latest Release Info */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="arcana-latest-news" badge="NEW">
           Strongest Arcana Latest Release Info
         </AppMediaH2>
@@ -345,8 +345,8 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 key={r}
                 type="button"
                 onClick={() => setSelectedRarity(r)}
-                className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                  selectedRarity === r ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+                className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                  selectedRarity === r ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
                 }`}
               >
                 {r === 'ALL' ? `All Rarities (${arcana.length})` : r}
@@ -356,8 +356,8 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             <button
               type="button"
               onClick={() => setSelectedTag('ALL')}
-              className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                selectedTag === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+              className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                selectedTag === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
               }`}
             >
               All Tags
@@ -367,8 +367,8 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 key={tag}
                 type="button"
                 onClick={() => setSelectedTag(tag === selectedTag ? 'ALL' : tag)}
-                className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                  selectedTag === tag ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+                className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                  selectedTag === tag ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
                 }`}
               >
                 {tag}
@@ -380,7 +380,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search Arcana, Savior, Potential..."
-            className="w-full sm:w-auto rounded border border-[#243049] bg-[#090d16] px-3 py-1.5 sm:py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+            className="w-full sm:w-auto rounded border border-[#243049] bg-[#090d16] px-3 py-1.5 sm:py-1 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
           />
         </div>
 
@@ -402,18 +402,18 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                 <div className="min-w-0 flex-1 space-y-1">
                   <div className="flex flex-wrap items-center gap-1.5">
                     <AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} />
-                    <span className="rounded bg-[#eab308]/15 border border-[#eab308]/50 px-1.5 py-0.5 text-[10px] font-black text-[#fbbf24]">
+                    <span className="rounded bg-[#eab308]/15 border border-[#eab308]/50 px-1.5 py-0.5 text-[11.5px] font-black text-[#fbbf24]">
                       {a.rarity}
                     </span>
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-1.5 py-0.5 text-[10px] font-bold text-white">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-1.5 py-0.5 text-[11.5px] font-bold text-white">
                       {a.staticData?.statTagIconUrl && (
                         <img src={a.staticData.statTagIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="lazy" />
                       )}
                       <span>{a.staticData?.statTag || 'Power'}</span>
                     </span>
                   </div>
-                  <div className="font-extrabold text-white text-[13px] leading-snug">{a.name}</div>
-                  <div className="text-[11px] font-semibold text-[#60a5fa]">
+                  <div className="font-extrabold text-white text-[14.5px] leading-snug">{a.name}</div>
+                  <div className="text-[12.5px] font-semibold text-[#60a5fa]">
                     {a.staticData?.classBonus || 'Universal Bonus'}
                     {a.staticData?.characterName && a.staticData.characterName !== '-'
                       ? ` · ${a.staticData.characterName}`
@@ -423,7 +423,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
               </div>
 
               {a.staticData?.uniqueEffect && (
-                <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-2.5 py-1.5 text-[11px]">
+                <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-2.5 py-1.5 text-[12.5px]">
                   <span className="font-extrabold text-[#fde047]">
                     Unique ({a.staticData.uniqueEffect.unlockLevel}):{' '}
                   </span>
@@ -434,18 +434,18 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
               {(a.staticData?.potentials || []).length > 0 ? (
                 <div className="space-y-1">
                   {a.staticData?.potentials?.map((p, i) => (
-                    <div key={i} className="text-[11px] text-[#e2e8f0]">
+                    <div key={i} className="text-[12.5px] text-[#e2e8f0]">
                       <span className="font-extrabold text-[#93c5fd]">[{p.name}]</span>{' '}
                       <span>{p.effect}</span>
                     </div>
                   ))}
                 </div>
               ) : (
-                <div className="text-[11px] text-[#cbd5e1]">{a.effectSummary}</div>
+                <div className="text-[12.5px] text-[#e8eff8]">{a.effectSummary}</div>
               )}
 
               {a.staticData?.journeyEvents && a.staticData.journeyEvents.length > 0 && (
-                <details className="rounded border border-[#1e293b] bg-[#0b101b] p-2 text-[11px]">
+                <details className="rounded border border-[#1e293b] bg-[#0b101b] p-2 text-[12.5px]">
                   <summary className="cursor-pointer font-extrabold text-[#60a5fa] select-none">
                     Rescue Journey Events & Choices ({a.staticData.journeyEvents.length})
                   </summary>
@@ -455,9 +455,9 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                         <div className="font-extrabold text-[#fbbf24]">{ev.eventTitle}</div>
                         <div className="space-y-1 pl-2 border-l-2 border-[#243049]">
                           {ev.choices.map((ch, cIdx) => (
-                            <div key={cIdx} className="text-[10px]">
+                            <div key={cIdx} className="text-[11.5px]">
                               <span className="font-bold text-[#93c5fd]">{ch.choice}: </span>
-                              <span className="text-[#cbd5e1]">{ch.outcomes.join(' / ')}</span>
+                              <span className="text-[#e8eff8]">{ch.outcomes.join(' / ')}</span>
                             </div>
                           ))}
                         </div>
@@ -471,9 +471,9 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
         </div>
 
         <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                 <th className="w-64 px-3.5 py-2.5 border-r border-[#243049]">Arcana Card ({filteredDatabase.length})</th>
                 <th className="w-24 px-3 py-2.5 text-center border-r border-[#243049]">Rarity / Rank</th>
                 <th className="w-40 px-3 py-2.5 border-r border-[#243049]">Tag & Savior</th>
@@ -492,12 +492,12 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                         loading="eager"
                       />
                       <div className="space-y-1">
-                        <div className="font-extrabold text-white text-[13px]">{a.name}</div>
-                        <div className="text-[11px] font-semibold text-[#60a5fa]">
+                        <div className="font-extrabold text-white text-[14.5px]">{a.name}</div>
+                        <div className="text-[12.5px] font-semibold text-[#60a5fa]">
                           {a.staticData?.classBonus || 'Universal Bonus'} · {a.staticData?.statBonusType || 'Stat Bonus'}
                         </div>
                         {a.staticData?.evalBullets && a.staticData.evalBullets.length > 0 && (
-                          <ul className="space-y-0.5 text-[10px] text-[#cbd5e1] pt-0.5">
+                          <ul className="space-y-0.5 text-[11.5px] text-[#e8eff8] pt-0.5">
                             {a.staticData.evalBullets.map((eb, idx) => (
                               <li key={idx}>• {eb}</li>
                             ))}
@@ -508,17 +508,17 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                   </td>
                   <td className="p-3 text-center border-r border-[#1e293b] space-y-1">
                     <div><AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} /></div>
-                    <div className="text-[11px] font-extrabold text-[#fbbf24]">{a.rarity}</div>
+                    <div className="text-[12.5px] font-extrabold text-[#fbbf24]">{a.rarity}</div>
                   </td>
                   <td className="p-3 border-r border-[#1e293b] space-y-1.5">
-                    <div className="inline-flex items-center gap-1.5 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-white">
+                    <div className="inline-flex items-center gap-1.5 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-white">
                       {a.staticData?.statTagIconUrl && (
                         <img src={a.staticData.statTagIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
                       )}
                       <span>{a.staticData?.statTag || 'Power'} Tag</span>
                     </div>
                     {a.staticData?.characterName && a.staticData.characterName !== '-' && (
-                      <div className="flex items-center gap-2 text-[11px] font-bold text-[#cbd5e1]">
+                      <div className="flex items-center gap-2 text-[12.5px] font-bold text-[#e8eff8]">
                         {a.staticData.characterIconUrl && (
                           <img src={a.staticData.characterIconUrl} alt="" className="h-6 w-6 rounded-full object-cover border border-[#334155]" loading="eager" />
                         )}
@@ -529,7 +529,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                   <td className="p-3 space-y-2">
                     {/* Unique Effect (固有効果) */}
                     {a.staticData?.uniqueEffect && (
-                      <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-2.5 py-1.5 text-[11px]">
+                      <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-2.5 py-1.5 text-[12.5px]">
                         <span className="font-extrabold text-[#fde047]">
                           Unique Effect (Unlock {a.staticData.uniqueEffect.unlockLevel}):{' '}
                         </span>
@@ -541,21 +541,21 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                     {(a.staticData?.potentials || []).length > 0 ? (
                       <div className="space-y-1">
                         {a.staticData?.potentials?.map((p, i) => (
-                          <div key={i} className="text-[11px] text-[#e2e8f0]">
+                          <div key={i} className="text-[12.5px] text-[#e2e8f0]">
                             <span className="font-extrabold text-[#93c5fd]">[{p.name}]</span>{' '}
                             <span>{p.effect}</span>
                           </div>
                         ))}
                       </div>
                     ) : (
-                      <div className="text-[11px] text-[#cbd5e1]">{a.effectSummary}</div>
+                      <div className="text-[12.5px] text-[#e8eff8]">{a.effectSummary}</div>
                     )}
 
                     {/* Support Bonuses (旅の効果) */}
                     {(a.staticData?.supportBonuses || []).length > 0 && (
                       <div className="flex flex-wrap gap-1.5 pt-0.5">
                         {a.staticData?.supportBonuses?.map((sb, i) => (
-                          <span key={i} className="rounded bg-[#161f33] border border-[#243049] px-1.5 py-0.5 text-[10px] text-[#94a3b8]">
+                          <span key={i} className="rounded bg-[#161f33] border border-[#243049] px-1.5 py-0.5 text-[11.5px] text-[#c8d4e6]">
                             {sb.label}: <strong className="text-white">{sb.value}</strong>
                           </span>
                         ))}
@@ -564,7 +564,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
 
                     {/* Journey Events & Choices (イベント効果と選択肢) */}
                     {a.staticData?.journeyEvents && a.staticData.journeyEvents.length > 0 && (
-                      <details className="rounded border border-[#1e293b] bg-[#0b101b] p-2 text-[11px]">
+                      <details className="rounded border border-[#1e293b] bg-[#0b101b] p-2 text-[12.5px]">
                         <summary className="cursor-pointer font-extrabold text-[#60a5fa] select-none">
                           Rescue Journey Events & Choices ({a.staticData.journeyEvents.length} Events)
                         </summary>
@@ -574,9 +574,9 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
                               <div className="font-extrabold text-[#fbbf24]">{ev.eventTitle}</div>
                               <div className="space-y-1 pl-2 border-l-2 border-[#243049]">
                                 {ev.choices.map((ch, cIdx) => (
-                                  <div key={cIdx} className="text-[10px]">
+                                  <div key={cIdx} className="text-[11.5px]">
                                     <span className="font-bold text-[#93c5fd]">{ch.choice}: </span>
-                                    <span className="text-[#cbd5e1]">{ch.outcomes.join(' / ')}</span>
+                                    <span className="text-[#e8eff8]">{ch.outcomes.join(' / ')}</span>
                                   </div>
                                 ))}
                               </div>
@@ -594,7 +594,7 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
       </section>
 
       {/* H2: Strongest Arcana Evaluation Criteria */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="arcana-evaluation-criteria">Strongest Arcana Evaluation Criteria</AppMediaH2>
         <AppMediaH3>Overall Adoption Rate Across Decks is the Core Metric</AppMediaH3>
         <p>

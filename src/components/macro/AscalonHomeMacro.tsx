@@ -424,17 +424,17 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 <span className="text-sm sm:text-base font-black tracking-tight text-white group-hover:text-[#60a5fa] transition-colors whitespace-nowrap">
                   ASCALON<span className="text-[#3b82f6]">.FUN</span>
                 </span>
-                <span className="hidden xs:inline-block rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[9px] font-extrabold text-[#93c5fd] whitespace-nowrap">
+                <span className="hidden xs:inline-block rounded bg-[#1e293b] border border-[#334155] px-1.5 py-0.5 text-[11px] font-extrabold text-[#93c5fd] whitespace-nowrap">
                   PORTAL
                 </span>
               </div>
-              <div className="hidden sm:block text-[10px] font-semibold text-[#94a3b8] truncate">
+              <div className="hidden sm:block text-[11.5px] font-semibold text-[#c8d4e6] truncate">
                 Mobile Game Rankings, Release Calendar & Strategy Wikis
               </div>
             </div>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-5 text-[12px] font-extrabold text-[#cbd5e1]">
+          <nav className="hidden lg:flex items-center gap-5 text-[13.5px] font-extrabold text-[#e8eff8]">
             <a href="#recommended-ranking" className="hover:text-[#60a5fa] transition-colors">
               Top 25 Mobile Games
             </a>
@@ -458,11 +458,11 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search games, studios, genres..."
-              className="hidden sm:block w-48 md:w-56 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+              className="hidden sm:block w-48 md:w-56 rounded-lg border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
             />
             <Link
               href="/starsavior"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 sm:px-3 py-1.5 text-[11px] font-black text-white shadow transition-colors whitespace-nowrap"
+              className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 sm:px-3 py-1.5 text-[12.5px] font-black text-white shadow transition-colors whitespace-nowrap"
             >
               <img
                 src={strategyWikis[0]?.iconUrl || '/brand/ascalon-logo.png'}
@@ -476,34 +476,34 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
         {/* Compact Mobile Horizontal Section Jump Bar */}
         <div className="lg:hidden border-t border-[#161f33] bg-[#090d16]/90 px-3 py-1.5">
-          <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto text-[11px] font-extrabold">
+          <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto text-[12.5px] font-extrabold">
             <a
               href="#recommended-ranking"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
               Top 25 Games
             </a>
             <a
               href="#upcoming-calendar"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
               Upcoming ({upcomingGames.length})
             </a>
             <a
               href="#appstore-rankings"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
               App Store
             </a>
             <a
               href="#strategy-wikis"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
               Wikis ({strategyWikis.length})
             </a>
             <a
               href="#featured-articles"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
               Guides
             </a>
@@ -520,15 +520,15 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search ranked games, upcoming releases, wikis..."
-            className="w-full rounded-lg border border-[#243049] bg-[#111726] px-3.5 py-2.5 text-[12px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+            className="w-full rounded-lg border border-[#243049] bg-[#111726] px-3.5 py-2.5 text-[13.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
           />
         </div>
         {/* Clean AppMedia-Style Portal Header & Section Directory */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-[#1e293b] pb-4">
             <div className="space-y-1.5">
-              <div className="flex flex-wrap items-center gap-2 text-[11px] font-bold text-[#94a3b8]">
-                <span className="rounded bg-[#1e293b] border border-[#334155] px-2 py-0.5 text-[10px] font-extrabold text-[#93c5fd]">
+              <div className="flex flex-wrap items-center gap-2 text-[12.5px] font-bold text-[#c8d4e6]">
+                <span className="rounded bg-[#1e293b] border border-[#334155] px-2 py-0.5 text-[11.5px] font-extrabold text-[#93c5fd]">
                   PORTAL INDEX
                 </span>
                 <span>Last Updated: {updatedAt}</span>
@@ -552,15 +552,15 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               />
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <span className="rounded bg-[#2563eb] px-1.5 py-0.5 text-[9px] font-black text-white">
+                  <span className="rounded bg-[#2563eb] px-1.5 py-0.5 text-[11px] font-black text-white">
                     FEATURED WIKI
                   </span>
-                  <span className="text-[10px] font-bold text-[#93c5fd]">STUDIOBSIDE</span>
+                  <span className="text-[11.5px] font-bold text-[#93c5fd]">STUDIOBSIDE</span>
                 </div>
-                <div className="text-[13px] font-black text-white group-hover:text-[#60a5fa] truncate mt-0.5">
+                <div className="text-[14.5px] font-black text-white group-hover:text-[#60a5fa] truncate mt-0.5">
                   Star Savior Strategy Wiki
                 </div>
-                <div className="text-[10px] text-[#cbd5e1]">
+                <div className="text-[11.5px] text-[#e8eff8]">
                   Tier List · Reroll Guide · 59 Saviors · 85 Arcana →
                 </div>
               </div>
@@ -581,8 +581,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 href={item.href}
                 className="rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] hover:bg-[#141d30] p-2.5 transition-colors"
               >
-                <div className="text-[12px] font-extrabold text-[#93c5fd]">{item.label}</div>
-                <div className="text-[10px] text-[#94a3b8] mt-0.5 truncate">{item.sub}</div>
+                <div className="text-[13.5px] font-extrabold text-[#93c5fd]">{item.label}</div>
+                <div className="text-[11.5px] text-[#c8d4e6] mt-0.5 truncate">{item.sub}</div>
               </a>
             ))}
           </div>
@@ -600,10 +600,10 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                   key={ev}
                   type="button"
                   onClick={() => setSelectedEval(ev)}
-                  className={`rounded-lg px-3 py-1 text-[11px] font-extrabold transition-colors ${
+                  className={`rounded-lg px-3 py-1 text-[12.5px] font-extrabold transition-colors ${
                     selectedEval === ev
                       ? 'bg-[#2563eb] text-white'
-                      : 'bg-[#161f33] text-[#cbd5e1] hover:text-white'
+                      : 'bg-[#161f33] text-[#e8eff8] hover:text-white'
                   }`}
                 >
                   {ev === 'ALL' ? `All Ranked (${recommendedRanking.length})` : `★ ${ev} Rated`}
@@ -612,7 +612,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             </div>
           </div>
 
-          <p className="text-[12px] text-[#cbd5e1]">
+          <p className="text-[13.5px] text-[#e8eff8]">
             Editorial ranking of the top 25 mobile games currently available on iOS and Android, evaluated by gameplay depth, gacha fairness, story production, and daily time commitment.
           </p>
 
@@ -643,40 +643,40 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                       />
                       <div className="min-w-0 flex-1 space-y-1">
                         <div className="flex flex-wrap items-center justify-between gap-1.5">
-                          <span className={`rounded px-2 py-0.5 text-[10px] font-black ${rankBadgeColor}`}>
+                          <span className={`rounded px-2 py-0.5 text-[11.5px] font-black ${rankBadgeColor}`}>
                             Rank #{game.rank}
                           </span>
-                          <div className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#243049] px-2 py-0.5 text-[11px] font-black text-[#fbbf24]">
+                          <div className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#243049] px-2 py-0.5 text-[12.5px] font-black text-[#fbbf24]">
                             <span>★ {game.evaluation}</span>
-                            <span className="text-[10px] text-[#94a3b8] font-bold">/ 5.0</span>
+                            <span className="text-[11.5px] text-[#c8d4e6] font-bold">/ 5.0</span>
                           </div>
                         </div>
                         <div className="text-[14px] font-black text-white leading-snug">
                           {game.title}
                         </div>
-                        <div className="flex flex-wrap items-center gap-2 text-[10px] font-bold text-[#93c5fd]">
+                        <div className="flex flex-wrap items-center gap-2 text-[11.5px] font-bold text-[#93c5fd]">
                           <span>{game.genre}</span>
                           {game.releaseDate && (
                             <>
                               <span>·</span>
-                              <span className="text-[#94a3b8]">Release: {game.releaseDate}</span>
+                              <span className="text-[#c8d4e6]">Release: {game.releaseDate}</span>
                             </>
                           )}
                         </div>
                       </div>
                     </div>
 
-                    <div className="rounded bg-[#141c2e] border border-[#1e293b] px-3 py-1.5 text-[11px] font-bold text-[#f8fafc]">
+                    <div className="rounded bg-[#141c2e] border border-[#1e293b] px-3 py-1.5 text-[12.5px] font-bold text-[#f8fafc]">
                       {game.outline}
                     </div>
 
                     {/* Editorial Recommendation Points */}
                     {game.points.length > 0 && (
                       <div className="rounded-lg border border-[#1e293b] bg-[#0b101b] p-2.5 space-y-1">
-                        <div className="text-[10px] font-extrabold uppercase tracking-wider text-[#fbbf24]">
+                        <div className="text-[11.5px] font-extrabold uppercase tracking-wider text-[#fbbf24]">
                           Key Review Highlights
                         </div>
-                        <ul className="space-y-1 text-[11px] text-[#cbd5e1]">
+                        <ul className="space-y-1 text-[12.5px] text-[#e8eff8]">
                           {game.points.map((pt, idx) => (
                             <li key={idx} className="flex items-start gap-1.5">
                               <span className="text-[#3b82f6] font-bold">•</span>
@@ -697,7 +697,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <button
                 type="button"
                 onClick={() => setShowAllRanked(!showAllRanked)}
-                className="rounded-lg border border-[#3b82f6]/60 bg-[#161f33] hover:bg-[#1e293b] px-5 py-2 text-[12px] font-extrabold text-[#93c5fd] transition-colors"
+                className="rounded-lg border border-[#3b82f6]/60 bg-[#161f33] hover:bg-[#1e293b] px-5 py-2 text-[13.5px] font-extrabold text-[#93c5fd] transition-colors"
               >
                 {showAllRanked
                   ? 'Show Top 10 Ranked Games'
@@ -714,15 +714,15 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               Upcoming Gacha & Mobile Game Release Calendar (With Reader Votes)
             </AppMediaH2>
 
-            <div className="flex flex-wrap items-center gap-1.5 text-[11px] font-extrabold">
-              <span className="text-[#94a3b8]">Sort by:</span>
+            <div className="flex flex-wrap items-center gap-1.5 text-[12.5px] font-extrabold">
+              <span className="text-[#c8d4e6]">Sort by:</span>
               <button
                 type="button"
                 onClick={() => setSortUpcomingBy('votes')}
                 className={`rounded px-2.5 py-1 transition-colors ${
                   sortUpcomingBy === 'votes'
                     ? 'bg-[#2563eb] text-white'
-                    : 'bg-[#161f33] text-[#cbd5e1] hover:text-white'
+                    : 'bg-[#161f33] text-[#e8eff8] hover:text-white'
                 }`}
               >
                 Reader Votes
@@ -745,7 +745,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 className={`rounded px-2.5 py-1 transition-colors ${
                   sortUpcomingBy === 'schedule'
                     ? 'bg-[#2563eb] text-white'
-                    : 'bg-[#161f33] text-[#cbd5e1] hover:text-white'
+                    : 'bg-[#161f33] text-[#e8eff8] hover:text-white'
                 }`}
               >
                 Release Schedule
@@ -754,7 +754,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 rounded-lg border border-[#1e293b] bg-[#0b101b] px-3 py-2">
-            <p className="text-[12px] text-[#cbd5e1]">
+            <p className="text-[13.5px] text-[#e8eff8]">
               Verified AppMedia release schedule for upcoming mobile &amp; cross-platform gacha RPGs, synchronized to Japan Standard Time (<strong className="text-[#93c5fd]">1 vote per game per IP</strong> · exact timers strictly for publisher-confirmed dates).
             </p>
             <LiveJstWallClock className="shrink-0 self-start sm:self-auto" />
@@ -767,10 +767,10 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 key={win}
                 type="button"
                 onClick={() => setSelectedWindow(win)}
-                className={`rounded px-2.5 py-1 text-[11px] font-bold transition-colors ${
+                className={`rounded px-2.5 py-1 text-[12.5px] font-bold transition-colors ${
                   selectedWindow === win
                     ? 'bg-[#2563eb] text-white'
-                    : 'bg-[#161f33] text-[#cbd5e1] hover:text-white'
+                    : 'bg-[#161f33] text-[#e8eff8] hover:text-white'
                 }`}
               >
                 {win === 'ALL' ? `All Windows (${upcomingGames.length})` : win}
@@ -801,11 +801,11 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     />
                     <div className="min-w-0 flex-1 space-y-1">
                       <div className="flex flex-wrap items-center gap-1.5">
-                        <span className="font-extrabold text-[#93c5fd] text-[11px]">
+                        <span className="font-extrabold text-[#93c5fd] text-[12.5px]">
                           {g.releaseDate}
                         </span>
                         <span
-                          className={`inline-block rounded px-1.5 py-0.5 text-[9px] font-black ${
+                          className={`inline-block rounded px-1.5 py-0.5 text-[11px] font-black ${
                             g.status === 'Released'
                               ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
                               : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
@@ -818,15 +818,15 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                         ) : releasedIso ? (
                           <LiveJstCountdown startIso={releasedIso} />
                         ) : (
-                          <span className="inline-flex items-center rounded border border-[#243049] bg-[#0b101b] px-1.5 py-0.5 font-mono text-[9.5px] font-bold text-[#64748b]">
+                          <span className="inline-flex items-center rounded border border-[#243049] bg-[#0b101b] px-1.5 py-0.5 font-mono text-[11px] font-bold text-[#a8b8d0]">
                             Exact Day TBA
                           </span>
                         )}
                       </div>
-                      <div className="font-extrabold text-white text-[13px] leading-snug">
+                      <div className="font-extrabold text-white text-[14.5px] leading-snug">
                         {g.title}
                       </div>
-                      <div className="flex flex-wrap items-center gap-2 text-[10px] font-bold text-[#94a3b8]">
+                      <div className="flex flex-wrap items-center gap-2 text-[11.5px] font-bold text-[#c8d4e6]">
                         <span>Publisher: {g.publisher || 'TBA'}</span>
                         <span>·</span>
                         <a
@@ -841,14 +841,14 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     </div>
                   </div>
 
-                  <p className="text-[11px] text-[#cbd5e1] leading-relaxed">
+                  <p className="text-[12.5px] text-[#e8eff8] leading-relaxed">
                     {g.description}
                   </p>
 
                   <div className="flex items-center justify-between gap-2 border-t border-[#1e293b] pt-2">
                     <div className="flex items-center gap-1.5">
-                      <span className="text-[11px] font-bold text-[#94a3b8]">Reader Votes:</span>
-                      <span className="text-[13px] font-black text-[#fbbf24] font-mono">
+                      <span className="text-[12.5px] font-bold text-[#c8d4e6]">Reader Votes:</span>
+                      <span className="text-[14.5px] font-black text-[#fbbf24] font-mono">
                         {totalVotes.toLocaleString()}
                       </span>
                     </div>
@@ -856,7 +856,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                       type="button"
                       disabled={hasVoted || isPending}
                       onClick={() => handleVoteUpcoming(g.id)}
-                      className={`min-h-[34px] rounded-lg px-3.5 py-1.5 text-[11px] font-extrabold transition-colors ${
+                      className={`min-h-[34px] rounded-lg px-3.5 py-1.5 text-[12.5px] font-extrabold transition-colors ${
                         hasVoted
                           ? 'bg-[#10b981]/20 text-[#34d399] border border-[#10b981]/40 cursor-default'
                           : 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white shadow-sm'
@@ -872,9 +872,9 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
           {/* Desktop Table Layout (>= md) */}
           <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-            <table className="w-full border-collapse text-left text-[12px]">
+            <table className="w-full border-collapse text-left text-[13.5px]">
               <thead>
-                <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                   <th className="w-52 px-3.5 py-2.5 border-r border-[#243049]">Release Window / Live JST Chrono</th>
                   <th className="px-3.5 py-2.5 border-r border-[#243049]">Upcoming Game & Description</th>
                   <th className="w-44 px-3.5 py-2.5 border-r border-[#243049]">Developer / Publisher</th>
@@ -892,9 +892,9 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     <tr key={g.id} className="hover:bg-[#141d30] transition-colors">
                       <td className="p-3 border-r border-[#1e293b] space-y-1.5">
                         <div className="flex flex-wrap items-center gap-1.5">
-                          <span className="font-extrabold text-[#93c5fd] text-[11px]">{g.releaseDate}</span>
+                          <span className="font-extrabold text-[#93c5fd] text-[12.5px]">{g.releaseDate}</span>
                           <span
-                            className={`inline-block rounded px-1.5 py-0.5 text-[9.5px] font-black ${
+                            className={`inline-block rounded px-1.5 py-0.5 text-[11px] font-black ${
                               g.status === 'Released'
                                 ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40'
                                 : 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
@@ -909,7 +909,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                           ) : releasedIso ? (
                             <LiveJstCountdown startIso={releasedIso} />
                           ) : (
-                            <span className="inline-flex items-center rounded border border-[#243049] bg-[#0b101b] px-2 py-0.5 font-mono text-[10px] font-bold text-[#64748b]">
+                            <span className="inline-flex items-center rounded border border-[#243049] bg-[#0b101b] px-2 py-0.5 font-mono text-[11.5px] font-bold text-[#a8b8d0]">
                               Exact Day TBA
                             </span>
                           )}
@@ -925,34 +925,34 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                           />
                           <div className="min-w-0">
                             <div className="flex flex-wrap items-center gap-2">
-                              <span className="font-extrabold text-white text-[13px]">{g.title}</span>
+                              <span className="font-extrabold text-white text-[14.5px]">{g.title}</span>
                               <a
                                 href={g.articleUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="rounded border border-[#243049] bg-[#141c2e] px-1.5 py-0.5 text-[9.5px] font-bold text-[#93c5fd] hover:border-[#3b82f6] hover:text-white transition-colors"
+                                className="rounded border border-[#243049] bg-[#141c2e] px-1.5 py-0.5 text-[11px] font-bold text-[#93c5fd] hover:border-[#3b82f6] hover:text-white transition-colors"
                                 title={`Verify ${g.title} release schedule on AppMedia`}
                               >
                                 AppMedia ↗
                               </a>
                             </div>
-                            <div className="text-[11px] text-[#cbd5e1] mt-0.5">{g.description}</div>
+                            <div className="text-[12.5px] text-[#e8eff8] mt-0.5">{g.description}</div>
                           </div>
                         </div>
                       </td>
-                      <td className="p-3 border-r border-[#1e293b] font-semibold text-[#94a3b8] text-[11px]">
+                      <td className="p-3 border-r border-[#1e293b] font-semibold text-[#c8d4e6] text-[12.5px]">
                         {g.publisher || 'TBA'}
                       </td>
                       <td className="p-3 text-center">
                         <div className="inline-flex flex-col items-center gap-1 rounded-lg border border-[#243049] bg-[#141c2e] px-2.5 py-1.5">
-                          <span className="text-[13px] font-black text-[#fbbf24] font-mono">
+                          <span className="text-[14.5px] font-black text-[#fbbf24] font-mono">
                             {totalVotes.toLocaleString()}
                           </span>
                           <button
                             type="button"
                             disabled={hasVoted || isPending}
                             onClick={() => handleVoteUpcoming(g.id)}
-                            className={`rounded px-2.5 py-1 text-[10px] font-extrabold transition-colors ${
+                            className={`rounded px-2.5 py-1 text-[11.5px] font-extrabold transition-colors ${
                               hasVoted
                                 ? 'bg-[#10b981]/20 text-[#34d399] border border-[#10b981]/40 cursor-default'
                                 : 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white'
@@ -974,7 +974,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <button
                 type="button"
                 onClick={() => setShowAllUpcoming(!showAllUpcoming)}
-                className="rounded-lg border border-[#3b82f6]/60 bg-[#161f33] hover:bg-[#1e293b] px-5 py-2 text-[12px] font-extrabold text-[#93c5fd] transition-colors"
+                className="rounded-lg border border-[#3b82f6]/60 bg-[#161f33] hover:bg-[#1e293b] px-5 py-2 text-[13.5px] font-extrabold text-[#93c5fd] transition-colors"
               >
                 {showAllUpcoming
                   ? 'Show Top 16 Upcoming Games'
@@ -1026,7 +1026,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                       }}
                       className="w-full text-left flex items-center gap-3 py-2.5 hover:bg-[#141d30] px-2 rounded transition-colors"
                     >
-                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2563eb] text-[11px] font-black text-white shrink-0">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#2563eb] text-[12.5px] font-black text-white shrink-0">
                         {app.rank}
                       </span>
                       <img
@@ -1036,8 +1036,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                         loading="lazy"
                       />
                       <div className="min-w-0 flex-1">
-                        <div className="font-extrabold text-white text-[12px] truncate">{app.title}</div>
-                        <div className="text-[10px] text-[#94a3b8]">App Store Top Free #{app.rank} · View Summary</div>
+                        <div className="font-extrabold text-white text-[13.5px] truncate">{app.title}</div>
+                        <div className="text-[11.5px] text-[#c8d4e6]">App Store Top Free #{app.rank} · View Summary</div>
                       </div>
                     </button>
                   );
@@ -1080,7 +1080,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                       }}
                       className="w-full text-left flex items-center gap-3 py-2.5 hover:bg-[#141d30] px-2 rounded transition-colors"
                     >
-                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#f59e0b] text-[11px] font-black text-slate-950 shrink-0">
+                      <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#f59e0b] text-[12.5px] font-black text-slate-950 shrink-0">
                         {app.rank}
                       </span>
                       <img
@@ -1090,8 +1090,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                         loading="lazy"
                       />
                       <div className="min-w-0 flex-1">
-                        <div className="font-extrabold text-white text-[12px] truncate">{app.title}</div>
-                        <div className="text-[10px] text-[#fbbf24]">App Store Top Sales #{app.rank} · View Summary</div>
+                        <div className="font-extrabold text-white text-[13.5px] truncate">{app.title}</div>
+                        <div className="text-[11.5px] text-[#fbbf24]">App Store Top Sales #{app.rank} · View Summary</div>
                       </div>
                     </button>
                   );
@@ -1113,10 +1113,10 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                   key={plat}
                   type="button"
                   onClick={() => setSelectedPlatform(plat)}
-                  className={`rounded px-2.5 py-1 text-[11px] font-bold ${
+                  className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
                     selectedPlatform === plat
                       ? 'bg-[#2563eb] text-white'
-                      : 'bg-[#161f33] text-[#cbd5e1]'
+                      : 'bg-[#161f33] text-[#e8eff8]'
                   }`}
                 >
                   {plat === 'ALL' ? `All Platforms (${strategyWikis.length})` : plat}
@@ -1148,7 +1148,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                       </span>
                     )}
                   </div>
-                  <span className="mt-1.5 text-[11px] font-bold text-white line-clamp-2 leading-tight">
+                  <span className="mt-1.5 text-[12.5px] font-bold text-white line-clamp-2 leading-tight">
                     {w.title}
                   </span>
                 </div>
@@ -1212,10 +1212,10 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                   />
                 </div>
                 <div className="p-3 flex-1 flex flex-col justify-between gap-2">
-                  <div className="text-[12px] font-bold text-white group-hover:text-[#60a5fa] leading-snug line-clamp-2">
+                  <div className="text-[13.5px] font-bold text-white group-hover:text-[#60a5fa] leading-snug line-clamp-2">
                     {art.title}
                   </div>
-                  <div className="text-[10px] font-extrabold text-[#93c5fd]">
+                  <div className="text-[11.5px] font-extrabold text-[#93c5fd]">
                     Read Strategy Summary →
                   </div>
                 </div>
@@ -1237,7 +1237,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           >
             <div className="flex items-start justify-between gap-3 border-b border-[#1e293b] pb-3">
               <div>
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-[#93c5fd]">
+                <div className="text-[11.5px] font-extrabold uppercase tracking-wider text-[#93c5fd]">
                   {ARTICLE_SUMMARIES[activeArticle.thumbUrl]?.category || 'Featured Strategy Guide'}
                 </div>
                 <h3 className="text-base sm:text-lg font-black text-white mt-0.5">
@@ -1247,7 +1247,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <button
                 type="button"
                 onClick={() => setActiveArticle(null)}
-                className="rounded-lg border border-[#334155] bg-[#1e293b] px-2.5 py-1 text-[11px] font-extrabold text-white hover:bg-[#334155]"
+                className="rounded-lg border border-[#334155] bg-[#1e293b] px-2.5 py-1 text-[12.5px] font-extrabold text-white hover:bg-[#334155]"
               >
                 ✕ Close
               </button>
@@ -1261,16 +1261,16 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               />
             </div>
 
-            <p className="text-[12px] sm:text-[13px] text-[#e2e8f0] leading-relaxed">
+            <p className="text-[13.5px] sm:text-[14.5px] text-[#e2e8f0] leading-relaxed">
               {ARTICLE_SUMMARIES[activeArticle.thumbUrl]?.summary}
             </p>
 
             {ARTICLE_SUMMARIES[activeArticle.thumbUrl]?.keyPoints && (
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-2">
-                <div className="text-[11px] font-extrabold text-[#fbbf24]">
+                <div className="text-[12.5px] font-extrabold text-[#fbbf24]">
                   Key Strategy Checkpoints
                 </div>
-                <ul className="space-y-1.5 text-[12px] text-[#cbd5e1]">
+                <ul className="space-y-1.5 text-[13.5px] text-[#e8eff8]">
                   {ARTICLE_SUMMARIES[activeArticle.thumbUrl].keyPoints.map((pt, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="text-[#3b82f6] font-black">•</span>
@@ -1285,14 +1285,14 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <Link
                 href={ARTICLE_SUMMARIES[activeArticle.thumbUrl]?.targetRoute || '/starsavior'}
                 onClick={() => setActiveArticle(null)}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[12px] font-black text-white transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[13.5px] font-black text-white transition-colors"
               >
                 <span>Open Star Savior Full Strategy Wiki →</span>
               </Link>
               <button
                 type="button"
                 onClick={() => setActiveArticle(null)}
-                className="rounded-lg border border-[#334155] bg-[#161f33] px-3.5 py-1.5 text-[11px] font-bold text-[#cbd5e1] hover:text-white"
+                className="rounded-lg border border-[#334155] bg-[#161f33] px-3.5 py-1.5 text-[12.5px] font-bold text-[#e8eff8] hover:text-white"
               >
                 Back to Portal
               </button>
@@ -1320,36 +1320,36 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 />
                 <div>
                   <div className="flex items-center gap-2">
-                    <span className="rounded bg-[#2563eb] px-2 py-0.5 text-[10px] font-black text-white">
+                    <span className="rounded bg-[#2563eb] px-2 py-0.5 text-[11.5px] font-black text-white">
                       Rank #{activeGameReview.rank}
                     </span>
-                    <span className="text-[11px] font-black text-[#fbbf24]">
+                    <span className="text-[12.5px] font-black text-[#fbbf24]">
                       ★ {activeGameReview.evaluation} / 5.0
                     </span>
                   </div>
                   <h3 className="text-base font-black text-white mt-1">{activeGameReview.title}</h3>
-                  <div className="text-[11px] text-[#93c5fd]">{activeGameReview.genre}</div>
+                  <div className="text-[12.5px] text-[#93c5fd]">{activeGameReview.genre}</div>
                 </div>
               </div>
               <button
                 type="button"
                 onClick={() => setActiveGameReview(null)}
-                className="rounded-lg border border-[#334155] bg-[#1e293b] px-2.5 py-1 text-[11px] font-extrabold text-white hover:bg-[#334155]"
+                className="rounded-lg border border-[#334155] bg-[#1e293b] px-2.5 py-1 text-[12.5px] font-extrabold text-white hover:bg-[#334155]"
               >
                 ✕ Close
               </button>
             </div>
 
-            <div className="rounded bg-[#141c2e] border border-[#1e293b] p-3 text-[12px] font-bold text-white">
+            <div className="rounded bg-[#141c2e] border border-[#1e293b] p-3 text-[13.5px] font-bold text-white">
               {activeGameReview.outline}
             </div>
 
             {activeGameReview.points.length > 0 && (
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-2">
-                <div className="text-[11px] font-extrabold text-[#fbbf24]">
+                <div className="text-[12.5px] font-extrabold text-[#fbbf24]">
                   Editorial Review Breakdown
                 </div>
-                <ul className="space-y-1.5 text-[12px] text-[#cbd5e1]">
+                <ul className="space-y-1.5 text-[13.5px] text-[#e8eff8]">
                   {activeGameReview.points.map((pt, i) => (
                     <li key={i} className="flex items-start gap-2">
                       <span className="text-[#3b82f6] font-black">•</span>
@@ -1364,14 +1364,14 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <Link
                 href="/starsavior"
                 onClick={() => setActiveGameReview(null)}
-                className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[12px] font-black text-white transition-colors"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[13.5px] font-black text-white transition-colors"
               >
                 <span>Explore Flagship Star Savior Wiki →</span>
               </Link>
               <button
                 type="button"
                 onClick={() => setActiveGameReview(null)}
-                className="rounded-lg border border-[#334155] bg-[#161f33] px-3.5 py-1.5 text-[11px] font-bold text-[#cbd5e1] hover:text-white"
+                className="rounded-lg border border-[#334155] bg-[#161f33] px-3.5 py-1.5 text-[12.5px] font-bold text-[#e8eff8] hover:text-white"
               >
                 Close
               </button>
@@ -1381,7 +1381,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
       )}
 
       {/* Footer */}
-      <footer className="border-t border-[#1e293b] bg-[#070a12] py-6 text-center text-[11px] text-[#64748b]">
+      <footer className="border-t border-[#1e293b] bg-[#070a12] py-6 text-center text-[12.5px] text-[#a8b8d0]">
         <div className="mx-auto max-w-[1280px] px-4 flex flex-col sm:flex-row items-center justify-between gap-2.5">
           <div>
             <strong className="text-white">Ascalon.fun</strong> · Mobile Game Rankings, Release Schedule & Strategy Wiki Portal

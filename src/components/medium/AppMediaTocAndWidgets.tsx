@@ -15,27 +15,27 @@ export function AppMediaTocBox({ items, title = 'Table of Contents' }: { items: 
   return (
     <div className="rounded-lg border border-[#243049] bg-[#0f1626] overflow-hidden">
       <div className="flex items-center justify-between border-b border-[#1e293b] bg-[#161f33] px-4 py-2.5">
-        <div className="flex items-center gap-2 text-[13px] font-extrabold text-[#f8fafc]">
+        <div className="flex items-center gap-2 text-[14.5px] font-extrabold text-[#f8fafc]">
           <span className="text-[#3b82f6]">☰</span>
           <span>{title}</span>
         </div>
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded border border-[#2e3d5c] bg-[#0f172a] px-2.5 py-0.5 text-[11px] font-bold text-[#93c5fd] hover:border-[#3b82f6]"
+          className="rounded border border-[#2e3d5c] bg-[#0f172a] px-2.5 py-0.5 text-[12.5px] font-bold text-[#93c5fd] hover:border-[#3b82f6]"
         >
           {open ? '[Hide]' : '[Show]'}
         </button>
       </div>
       {open && (
-        <ol className="p-3.5 space-y-2 text-[12px]">
+        <ol className="p-3.5 space-y-2 text-[13.5px]">
           {items.map((item, idx) => (
             <li key={item.id} className="space-y-1">
               <a
                 href={`#${item.id}`}
                 className="flex items-center gap-2 font-bold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
               >
-                <span className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded bg-[#1e293b] text-[10px] font-extrabold text-[#93c5fd]">
+                <span className="inline-flex h-4 w-4 shrink-0 items-center justify-center rounded bg-[#1e293b] text-[11.5px] font-extrabold text-[#93c5fd]">
                   {idx + 1}
                 </span>
                 <span>{item.label}</span>
@@ -46,7 +46,7 @@ export function AppMediaTocBox({ items, title = 'Table of Contents' }: { items: 
                     <li key={sub.id}>
                       <a
                         href={`#${sub.id}`}
-                        className="text-[11px] font-semibold text-[#94a3b8] hover:text-[#60a5fa] hover:underline"
+                        className="text-[12.5px] font-semibold text-[#c8d4e6] hover:text-[#60a5fa] hover:underline"
                       >
                         • {sub.label}
                       </a>
@@ -164,10 +164,10 @@ export function AppMediaLatestUpdatesTabs() {
               key={tab.key}
               type="button"
               onClick={() => setActiveKey(tab.key)}
-              className={`rounded border px-3 py-1.5 text-[11px] font-extrabold transition-colors ${
+              className={`rounded border px-3 py-1.5 text-[12.5px] font-extrabold transition-colors ${
                 isAct
                   ? 'border-[#3b82f6] bg-[#2563eb] text-white shadow-sm'
-                  : 'border-[#243049] bg-[#141c2e] text-[#cbd5e1] hover:border-[#3b82f6] hover:text-white'
+                  : 'border-[#243049] bg-[#141c2e] text-[#e8eff8] hover:border-[#3b82f6] hover:text-white'
               }`}
             >
               {tab.tabLabel}
@@ -178,18 +178,18 @@ export function AppMediaLatestUpdatesTabs() {
 
       <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-4 space-y-3">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="rounded bg-[#2563eb]/25 border border-[#3b82f6]/50 px-2 py-0.5 text-[10px] font-extrabold text-[#93c5fd]">
+          <span className="rounded bg-[#2563eb]/25 border border-[#3b82f6]/50 px-2 py-0.5 text-[11.5px] font-extrabold text-[#93c5fd]">
             {current.badge}
           </span>
           <h3 className="text-[14px] font-extrabold text-white">{current.title}</h3>
         </div>
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">{current.description}</p>
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">{current.description}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
           {current.links.map((lnk) => (
             <Link
               key={lnk.href + lnk.label}
               href={lnk.href}
-              className="flex items-center gap-1.5 rounded bg-[#161f33] hover:bg-[#1e293b] border border-[#263452] px-3 py-2 text-[12px] font-bold text-[#60a5fa]"
+              className="flex items-center gap-1.5 rounded bg-[#161f33] hover:bg-[#1e293b] border border-[#263452] px-3 py-2 text-[13.5px] font-bold text-[#60a5fa]"
             >
               <span>▶</span>
               <span>{lnk.label}</span>
@@ -313,11 +313,11 @@ export function AppMediaCommunityPoll({
     <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 sm:p-4 space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2.5">
         <div className="space-y-0.5">
-          <div className="text-[13px] font-extrabold text-white">{title}</div>
-          <p className="text-[11px] text-[#94a3b8]">{subtitle} · 1 vote per IP address</p>
+          <div className="text-[14.5px] font-extrabold text-white">{title}</div>
+          <p className="text-[12.5px] text-[#c8d4e6]">{subtitle} · 1 vote per IP address</p>
         </div>
         {votedSlug && (
-          <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2.5 py-1 text-[11px] font-bold text-emerald-300">
+          <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2.5 py-1 text-[12.5px] font-bold text-emerald-300">
             ✓ Vote Recorded (1 per IP)
           </span>
         )}
@@ -336,14 +336,14 @@ export function AppMediaCommunityPoll({
               }`}
             >
               <span
-                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded font-black text-[11px] ${
+                className={`flex h-6 w-6 shrink-0 items-center justify-center rounded font-black text-[12.5px] ${
                   opt.rank === 1
                     ? 'bg-[#eab308] text-black'
                     : opt.rank === 2
                     ? 'bg-[#94a3b8] text-black'
                     : opt.rank === 3
                     ? 'bg-[#b45309] text-white'
-                    : 'bg-[#1e293b] text-[#94a3b8]'
+                    : 'bg-[#1e293b] text-[#c8d4e6]'
                 }`}
               >
                 {opt.rank}
@@ -352,11 +352,11 @@ export function AppMediaCommunityPoll({
                 <img src={opt.imageUrl} alt={opt.name} className="h-full w-full object-cover" loading="eager" />
               </Link>
               <div className="min-w-0 flex-1">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 sm:gap-2 text-[12px] font-bold">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 sm:gap-2 text-[13.5px] font-bold">
                   <Link href={`/starsavior/characters/${opt.slug}`} className="text-white hover:text-[#60a5fa] leading-tight break-words">
                     {opt.name}
                   </Link>
-                  <span className="text-[11px] text-[#93c5fd] font-mono shrink-0">
+                  <span className="text-[12.5px] text-[#93c5fd] font-mono shrink-0">
                     {opt.votes} votes ({opt.percent}%)
                   </span>
                 </div>
@@ -371,11 +371,11 @@ export function AppMediaCommunityPoll({
                 type="button"
                 disabled={Boolean(votedSlug) || isSubmitting}
                 onClick={() => handleVote(opt.slug)}
-                className={`shrink-0 min-h-[34px] rounded px-3 py-1.5 text-[11px] font-extrabold transition-colors ${
+                className={`shrink-0 min-h-[34px] rounded px-3 py-1.5 text-[12.5px] font-extrabold transition-colors ${
                   isSelected
                     ? 'bg-[#2563eb] text-white'
                     : votedSlug
-                    ? 'bg-[#1e293b] text-[#64748b] cursor-default'
+                    ? 'bg-[#1e293b] text-[#a8b8d0] cursor-default'
                     : 'bg-[#1e293b] hover:bg-[#2563eb] text-[#93c5fd] hover:text-white border border-[#334155]'
                 }`}
               >

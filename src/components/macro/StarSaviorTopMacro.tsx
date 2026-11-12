@@ -64,9 +64,9 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
        * SECTION 0: INTRO HEADER + 6 QUICK SHORTCUTS + 18-CELL TOC
        * ===================================================================== */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-3.5">
-        <div className="flex items-center justify-between flex-wrap gap-2 text-[11px] text-[#94a3b8] border-b border-[#1e293b] pb-2">
+        <div className="flex items-center justify-between flex-wrap gap-2 text-[12.5px] text-[#c8d4e6] border-b border-[#1e293b] pb-2">
           <div className="flex items-center gap-2">
-            <span className="rounded bg-[#2563eb] px-2 py-0.5 text-[10px] font-extrabold text-white">
+            <span className="rounded bg-[#2563eb] px-2 py-0.5 text-[11.5px] font-extrabold text-white">
               STAR SAVIOR WIKI
             </span>
             <span>{game.patchVersion}</span>
@@ -85,7 +85,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             <h1 className="text-xl sm:text-2xl font-black tracking-tight text-white">
               Star Savior Strategy Wiki | Complete English Guide & Database
             </h1>
-            <p className="mt-1 text-[12px] text-[#cbd5e1] leading-relaxed">
+            <p className="mt-1 text-[13.5px] text-[#e8eff8] leading-relaxed">
               Complete Star Savior strategy wiki featuring Strongest Character & Arcana Tier Lists, Reroll Rankings, Journey Event Choice Checker, all 59 playable Saviors, and all 85 Arcana cards.
             </p>
           </div>
@@ -104,7 +104,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             <Link
               key={item.href}
               href={item.href}
-              className="flex items-center justify-center rounded border border-[#2d3e5e] bg-[#152036] hover:bg-[#1e2f4d] hover:border-[#60a5fa] px-2.5 py-2 text-center text-[12px] font-extrabold text-[#93c5fd] hover:text-white transition-colors"
+              className="flex items-center justify-center rounded border border-[#2d3e5e] bg-[#152036] hover:bg-[#1e2f4d] hover:border-[#60a5fa] px-2.5 py-2 text-center text-[13.5px] font-extrabold text-[#93c5fd] hover:text-white transition-colors"
             >
               {item.label}
             </Link>
@@ -113,7 +113,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
 
         {/* 18-Cell Top Page Index Table */}
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-          <div className="border-b border-[#28354e] bg-[#162136] px-3.5 py-2 text-center text-[12px] font-extrabold text-[#f8fafc]">
+          <div className="border-b border-[#28354e] bg-[#162136] px-3.5 py-2 text-center text-[13.5px] font-extrabold text-[#f8fafc]">
             Star Savior Wiki Table of Contents
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-6 divide-x divide-y divide-[#243049]">
@@ -121,7 +121,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               <a
                 key={cell.label}
                 href={cell.href}
-                className="flex items-center justify-center px-2 py-2 text-center text-[11px] font-bold text-[#60a5fa] hover:bg-[#17223b] hover:text-white transition-colors"
+                className="flex items-center justify-center px-2 py-2 text-center text-[12.5px] font-bold text-[#60a5fa] hover:bg-[#17223b] hover:text-white transition-colors"
               >
                 {cell.label}
               </a>
@@ -148,9 +148,9 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#131d31] px-3 py-2.5 text-center">
           <Link
             href="/starsavior/guides/patch-notes"
-            className="inline-flex items-center gap-1.5 text-[12px] sm:text-[13px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
+            className="inline-flex items-center gap-1.5 text-[13.5px] sm:text-[14.5px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
           >
-            <span className="text-[10px] text-[#3b82f6]">▶</span>
+            <span className="text-[11.5px] text-[#3b82f6]">▶</span>
             <span>Latest Update & Maintenance Summary</span>
           </Link>
         </div>
@@ -166,10 +166,10 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             loading="eager"
           />
           <div className="space-y-1 min-w-0 flex-1">
-            <div className="text-[13px] font-extrabold text-[#f8fafc]">
+            <div className="text-[14.5px] font-extrabold text-[#f8fafc]">
               Star Savior Strategy Team
             </div>
-            <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+            <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
               Delivering complete English Star Savior tier lists, in-game mechanics verification, Rescue Journey choice lookups, and Cosmo Gate boss formations!
             </p>
           </div>
@@ -275,7 +275,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         <AppMediaH3>Active Gacha Banners</AppMediaH3>
 
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-          <div className="border-b border-[#28354e] bg-[#162136] px-3 py-2 text-center text-[12px] font-extrabold text-[#dbeafe]">
+          <div className="border-b border-[#28354e] bg-[#162136] px-3 py-2 text-center text-[13.5px] font-extrabold text-[#dbeafe]">
             Currently Held Observation Gachas
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 divide-y divide-[#28354e]">
@@ -284,29 +284,29 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/1st-anniversary-gacha"
-                  className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
+                  className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
                 >
                   Witch of Favoritism Pickup Gacha
                 </Link>
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-bold text-amber-200">
+                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[11.5px] font-bold text-amber-200">
                     ~2026/12/04 (Fri) 04:00 JST
                   </span>
                   <LiveJstCountdown targetIso="2026-12-04T04:00:00+09:00" prefix="Ends in" />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
+              <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Character</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
                 </div>
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Arcana</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★☆</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★☆</div>
                 </div>
               </div>
               <div>
-                <div className="text-[11px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
                 <div className="flex items-center gap-4">
                   {witchOfFavoritism && (
                     <AppMediaIconCell
@@ -337,29 +337,29 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/1st-anniversary-gacha"
-                  className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
+                  className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
                 >
                   Guile Pickup Gacha
                 </Link>
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[10px] font-bold text-amber-200">
+                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[11.5px] font-bold text-amber-200">
                     ~2026/12/04 (Fri) 04:00 JST
                   </span>
                   <LiveJstCountdown targetIso="2026-12-04T04:00:00+09:00" prefix="Ends in" />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
+              <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Character</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
                 </div>
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Arcana</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
                 </div>
               </div>
               <div>
-                <div className="text-[11px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
                 <div className="flex items-center gap-4">
                   {guile && (
                     <AppMediaIconCell
@@ -390,29 +390,29 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/maid-ceres-gacha"
-                  className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
+                  className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
                 >
                   Maid Ceres Pickup Gacha
                 </Link>
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-red-600/25 border border-red-500/40 px-2 py-0.5 text-[10px] font-bold text-red-200">
+                  <span className="rounded bg-red-600/25 border border-red-500/40 px-2 py-0.5 text-[11.5px] font-bold text-red-200">
                     ~2026/11/13 (Fri) 04:00 JST
                   </span>
                   <LiveJstCountdown targetIso="2026-11-13T04:00:00+09:00" prefix="Ends in" />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
+              <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Character</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
                 </div>
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Arcana</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★☆</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★☆</div>
                 </div>
               </div>
               <div>
-                <div className="text-[11px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
                 <div className="flex items-center gap-4">
                   {maidCeres && (
                     <AppMediaIconCell
@@ -443,29 +443,29 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
                 <Link
                   href="/starsavior/guides/frey-noble-princess-gacha"
-                  className="text-[13px] font-extrabold text-[#60a5fa] hover:underline"
+                  className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
                 >
                   Frey: Noble Princess Gacha
                 </Link>
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-blue-600/25 border border-blue-500/40 px-2 py-0.5 text-[10px] font-bold text-blue-200">
+                  <span className="rounded bg-blue-600/25 border border-blue-500/40 px-2 py-0.5 text-[11.5px] font-bold text-blue-200">
                     ~2026/11/19 (Thu) 04:00 JST
                   </span>
                   <LiveJstCountdown targetIso="2026-11-19T04:00:00+09:00" prefix="Ends in" />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-[12px]">
+              <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Character</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★☆☆</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★☆☆</div>
                 </div>
                 <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[10px] font-bold text-[#94a3b8]">Arcana</div>
-                  <div className="mt-0.5 text-[13px] font-black text-[#fbbf24]">★★★★★</div>
+                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
+                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
                 </div>
               </div>
               <div>
-                <div className="text-[11px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
                 <div className="flex items-center gap-4">
                   {bunnyFrey && (
                     <AppMediaIconCell
@@ -494,9 +494,9 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           <div className="border-t border-[#28354e] bg-[#131d31] px-3 py-2.5 text-center">
             <Link
               href="/starsavior/guides/which-gacha-to-pull"
-              className="inline-flex items-center gap-1.5 text-[12px] sm:text-[13px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
+              className="inline-flex items-center gap-1.5 text-[13.5px] sm:text-[14.5px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
             >
-              <span className="text-[10px] text-[#3b82f6]">▶</span>
+              <span className="text-[11.5px] text-[#3b82f6]">▶</span>
               <span>Which Gacha Banner Should You Pull?</span>
             </Link>
           </div>
@@ -546,7 +546,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         <AppMediaH3>Active Events & Login Bonuses</AppMediaH3>
 
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-          <table className="w-full border-collapse text-[12px]">
+          <table className="w-full border-collapse text-[13.5px]">
             <thead>
               <tr className="border-b border-[#28354e] bg-[#162136] text-[#dbeafe] font-extrabold">
                 <th className="w-1/2 border-r border-[#28354e] px-3 py-2 text-center">Event</th>
@@ -563,7 +563,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                       className="mx-auto w-full max-w-[260px] h-auto rounded border border-[#2b3a57] group-hover:border-[#60a5fa]"
                       loading="eager"
                     />
-                    <span className="mt-1 block text-[12px] font-bold text-[#60a5fa] group-hover:underline">
+                    <span className="mt-1 block text-[13.5px] font-bold text-[#60a5fa] group-hover:underline">
                       Valentine Revival Event Guide
                     </span>
                   </Link>
@@ -584,7 +584,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                       className="mx-auto w-full max-w-[260px] h-auto rounded border border-[#2b3a57] group-hover:border-[#60a5fa]"
                       loading="eager"
                     />
-                    <span className="mt-1 block text-[12px] font-bold text-[#60a5fa] group-hover:underline">
+                    <span className="mt-1 block text-[13.5px] font-bold text-[#60a5fa] group-hover:underline">
                       Golden Fantasia Campaign
                     </span>
                   </Link>
@@ -605,7 +605,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           <LiveJstCountdown targetIso="2026-11-13T04:00:00+09:00" prefix="Reset ends in" />
         </div>
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-          <table className="w-full border-collapse text-[12px]">
+          <table className="w-full border-collapse text-[13.5px]">
             <thead>
               <tr className="border-b border-[#28354e] bg-[#162136] text-[#dbeafe] font-extrabold">
                 <th className="w-28 border-r border-[#28354e] px-3 py-2 text-center">Day</th>
@@ -1091,7 +1091,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         </AppMediaBannerH2>
 
         <div className="overflow-x-auto rounded border border-[#28354e] bg-[#0f1626]">
-          <table className="w-full border-collapse text-[12px]">
+          <table className="w-full border-collapse text-[13.5px]">
             <tbody className="divide-y divide-[#243049]">
               <tr>
                 <th className="w-32 bg-[#162136] px-3 py-2.5 text-center font-extrabold text-[#dbeafe] border-r border-[#28354e]">
@@ -1111,7 +1111,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                     <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#93c5fd]">
                       Limited
                     </Link>
-                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#cbd5e1]">
+                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#e8eff8]">
                       Standard
                     </Link>
                   </div>
@@ -1219,7 +1219,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         </AppMediaBannerH2>
 
         <div className="overflow-x-auto rounded border border-[#28354e] bg-[#0f1626]">
-          <table className="w-full border-collapse text-[12px]">
+          <table className="w-full border-collapse text-[13.5px]">
             <tbody className="divide-y divide-[#243049]">
               <tr>
                 <th className="w-32 bg-[#162136] px-3 py-2.5 text-center font-extrabold text-[#dbeafe] border-r border-[#28354e]">
@@ -1437,14 +1437,14 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             },
           ].map((item, idx) => (
             <div key={idx} className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-              <div className="border-b border-[#243049] bg-[#162136] px-3.5 py-2.5 text-[13px] font-extrabold text-[#f8fafc] flex items-center gap-2">
-                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[#2563eb] text-[11px] font-black text-white">
+              <div className="border-b border-[#243049] bg-[#162136] px-3.5 py-2.5 text-[14.5px] font-extrabold text-[#f8fafc] flex items-center gap-2">
+                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[#2563eb] text-[12.5px] font-black text-white">
                   Q
                 </span>
                 <span>{item.q}</span>
               </div>
-              <div className="px-3.5 py-3 text-[12.5px] leading-relaxed text-[#cbd5e1] flex items-start gap-2">
-                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[#e86c58] text-[11px] font-black text-white mt-0.5">
+              <div className="px-3.5 py-3 text-[13.5px] leading-relaxed text-[#e8eff8] flex items-start gap-2">
+                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded bg-[#e86c58] text-[12.5px] font-black text-white mt-0.5">
                   A
                 </span>
                 <span>{item.a}</span>
@@ -1468,7 +1468,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
 
         {/* Official Spec Table */}
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-          <table className="w-full border-collapse text-[12px]">
+          <table className="w-full border-collapse text-[13.5px]">
             <tbody className="divide-y divide-[#243049]">
               <tr>
                 <th className="w-36 bg-[#162136] px-3.5 py-2.5 text-left font-extrabold text-[#dbeafe] border-r border-[#28354e]">
@@ -1528,7 +1528,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 <th className="bg-[#162136] px-3.5 py-2.5 text-left font-extrabold text-[#dbeafe] border-r border-[#28354e]">
                   Copyright
                 </th>
-                <td className="px-3.5 py-2.5 text-[11px] text-[#94a3b8]">
+                <td className="px-3.5 py-2.5 text-[12.5px] text-[#c8d4e6]">
                   © 2025 STUDIOBSIDE Co. Ltd All Rights Reserved.
                 </td>
               </tr>
@@ -1538,7 +1538,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
 
         {/* Download Store Badges */}
         <div className="rounded border border-[#28354e] bg-[#0f1626] p-3.5 text-center space-y-2.5">
-          <div className="text-[13px] font-extrabold text-[#f8fafc]">Download Star Savior Here!</div>
+          <div className="text-[14.5px] font-extrabold text-[#f8fafc]">Download Star Savior Here!</div>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               href="https://apps.apple.com"
@@ -1574,7 +1574,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         </div>
 
         {/* 4 Official Feature Subsections + 3 Localized Showcase Banners */}
-        <div className="space-y-4 text-[12.5px] leading-relaxed text-[#cbd5e1]">
+        <div className="space-y-4 text-[13.5px] leading-relaxed text-[#e8eff8]">
           <div className="space-y-2">
             <AppMediaH3>A Training RPG Adventure to Save Stars Losing Their Light</AppMediaH3>
             <p>

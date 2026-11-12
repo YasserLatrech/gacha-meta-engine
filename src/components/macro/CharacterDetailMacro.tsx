@@ -129,7 +129,7 @@ export function CharacterDetailMacro({
       {/* Top Variant Switcher Table if multiple versions exist (e.g., Asherah / Dress Asherah) */}
       {variants.length > 1 && (
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#111726]">
-          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
+          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[12.5px] font-extrabold text-[#f8fafc]">
             {baseRootName} Character Versions
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-[#1e293b]">
@@ -139,7 +139,7 @@ export function CharacterDetailMacro({
                 <Link
                   key={v.slug}
                   href={`/starsavior/characters/${v.slug}`}
-                  className={`flex items-center justify-center gap-2.5 p-2.5 text-[12px] font-bold transition-colors ${
+                  className={`flex items-center justify-center gap-2.5 p-2.5 text-[13.5px] font-bold transition-colors ${
                     isCurrent
                       ? 'bg-[#2563eb]/25 text-white'
                       : 'text-[#60a5fa] hover:bg-[#17223b] hover:text-white'
@@ -156,13 +156,13 @@ export function CharacterDetailMacro({
 
       {/* H1 Article Header + Intro + TOC */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-3">
-        <div className="text-[11px] font-bold text-[#93c5fd]">
+        <div className="text-[12.5px] font-bold text-[#93c5fd]">
           Updated: 2026/11/10 · Star Savior Complete Character Build Guide
         </div>
         <h1 className="text-lg sm:text-xl font-black text-white">
           [Star Savior] {character.name} — Recommended Equipment, Party Formations, Rescue Journey Training & Evaluation
         </h1>
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
           Complete strategy guide for <strong className="text-white">{character.name}</strong> in Star Savior. Covers {character.name}&apos;s performance evaluation, recommended equipment sets, 4-unit party formations, Rescue Journey Arcana decks, Limit Break (dupe) reliance, skill upgrade priority, Exclusive Curio, 10-stage Resonance materials, favorite affinity gifts, and Voice Actor (CV) profile.
         </p>
 
@@ -194,8 +194,8 @@ export function CharacterDetailMacro({
                 loading="eager"
               />
               <div className="min-w-0">
-                <div className="text-[13px] font-black text-white truncate">{character.name}</div>
-                <div className="text-[11px] font-semibold text-[#93c5fd] truncate">
+                <div className="text-[14.5px] font-black text-white truncate">{character.name}</div>
+                <div className="text-[12.5px] font-semibold text-[#93c5fd] truncate">
                   {sd?.profile?.affiliation || 'Voyager Rescue Squad'}
                 </div>
               </div>
@@ -204,7 +204,7 @@ export function CharacterDetailMacro({
 
           {/* Basic Spec & Tier Table */}
           <div className="md:col-span-7 space-y-3">
-            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 text-[12px]">
+            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 text-[13.5px]">
               <div className="flex items-center border-b border-[#1e293b] sm:border-r sm:border-[#243049]">
                 <div className="w-28 shrink-0 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">
                   Rarity / Pool
@@ -243,12 +243,12 @@ export function CharacterDetailMacro({
                 <div className="w-28 shrink-0 bg-[#161f33] px-3 py-2 font-extrabold text-[#93c5fd] border-r border-[#243049]">
                   Attack Type
                 </div>
-                <div className="px-3 py-2 font-bold text-[#cbd5e1]">{sd?.attackType || 'Slash Damage'}</div>
+                <div className="px-3 py-2 font-bold text-[#e8eff8]">{sd?.attackType || 'Slash Damage'}</div>
               </div>
             </div>
 
             {/* AppMedia Authentic Tier Ratings Grid (3x2 on mobile, 6x1 on >= sm) */}
-            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-3 sm:grid-cols-6 divide-x divide-y sm:divide-y-0 divide-[#243049] text-center text-[12px]">
+            <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-3 sm:grid-cols-6 divide-x divide-y sm:divide-y-0 divide-[#243049] text-center text-[13.5px]">
               {[
                 { label: 'Overall', val: <AppMediaTierBadge tier={sd?.appMediaTier || character.overallTier} /> },
                 { label: 'General PvE', val: <AppMediaTierBadge tier={sd?.pveTier || sd?.appMediaTier || character.overallTier} /> },
@@ -258,7 +258,7 @@ export function CharacterDetailMacro({
                 { label: 'Dupe Priority', val: <span className="font-black text-[#fbbf24]">{sd?.dupeRating || '—'}</span> },
               ].map((cell) => (
                 <div key={cell.label} className="flex flex-col">
-                  <div className="border-b border-[#243049] bg-[#161f33] px-1.5 py-1.5 text-[10px] font-extrabold uppercase text-[#94a3b8] truncate">
+                  <div className="border-b border-[#243049] bg-[#161f33] px-1.5 py-1.5 text-[11.5px] font-extrabold uppercase text-[#c8d4e6] truncate">
                     {cell.label}
                   </div>
                   <div className="flex-1 flex items-center justify-center py-2.5">
@@ -270,14 +270,14 @@ export function CharacterDetailMacro({
 
             {/* Quick Summary & Strengths Bullet Box */}
             <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5">
-              <div className="text-[11px] font-extrabold text-[#93c5fd]">
+              <div className="text-[12.5px] font-extrabold text-[#93c5fd]">
                 [{character.name} Performance Summary]
               </div>
-              <ul className="space-y-1 text-[12px] text-[#e2e8f0] leading-relaxed">
+              <ul className="space-y-1 text-[13.5px] text-[#e2e8f0] leading-relaxed">
                 {evalBullets.map((b, i) => {
                   const isSub = b.startsWith('↳');
                   return (
-                    <li key={i} className={isSub ? 'pl-4 text-[11px] text-[#94a3b8]' : 'flex items-start gap-1.5'}>
+                    <li key={i} className={isSub ? 'pl-4 text-[12.5px] text-[#c8d4e6]' : 'flex items-start gap-1.5'}>
                       {!isSub && <span className="text-[#3b82f6] font-bold">•</span>}
                       <span>{b}</span>
                     </li>
@@ -294,9 +294,9 @@ export function CharacterDetailMacro({
         <AppMediaH2 id="recommended-equipment">{character.name}&apos;s Recommended Equipment Builds</AppMediaH2>
 
         <AppMediaH3 id="equip-sets">Recommended Equipment Sets (PvE & PvP)</AppMediaH3>
-        <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#243049] text-[12px]">
+        <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#243049] text-[13.5px]">
           <div>
-            <div className="border-b border-[#243049] bg-[#161f33] px-3.5 py-2 text-[11px] font-extrabold text-[#94a3b8]">
+            <div className="border-b border-[#243049] bg-[#161f33] px-3.5 py-2 text-[12.5px] font-extrabold text-[#c8d4e6]">
               Recommended PvE Equipment Sets
             </div>
             <div className="p-3.5 space-y-2 text-[#e2e8f0]">
@@ -308,8 +308,8 @@ export function CharacterDetailMacro({
                         <img src={s.iconUrl} alt={s.name} className="h-10 w-10 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
                       )}
                       <div>
-                        <div className="font-extrabold text-white text-[12px]">{s.name} Set</div>
-                        {s.effect && <div className="text-[11px] font-semibold text-[#fbbf24]">{s.effect}</div>}
+                        <div className="font-extrabold text-white text-[13.5px]">{s.name} Set</div>
+                        {s.effect && <div className="text-[12.5px] font-semibold text-[#fbbf24]">{s.effect}</div>}
                       </div>
                     </div>
                   ))}
@@ -323,7 +323,7 @@ export function CharacterDetailMacro({
           </div>
 
           <div>
-            <div className="border-b border-[#243049] bg-[#161f33] px-3.5 py-2 text-[11px] font-extrabold text-[#94a3b8]">
+            <div className="border-b border-[#243049] bg-[#161f33] px-3.5 py-2 text-[12.5px] font-extrabold text-[#c8d4e6]">
               Recommended PvP (Gauntlet) Equipment Sets
             </div>
             <div className="p-3.5 space-y-2 text-[#e2e8f0]">
@@ -335,8 +335,8 @@ export function CharacterDetailMacro({
                         <img src={s.iconUrl} alt={s.name} className="h-10 w-10 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
                       )}
                       <div>
-                        <div className="font-extrabold text-white text-[12px]">{s.name} Set</div>
-                        {s.effect && <div className="text-[11px] font-semibold text-[#fbbf24]">{s.effect}</div>}
+                        <div className="font-extrabold text-white text-[13.5px]">{s.name} Set</div>
+                        {s.effect && <div className="text-[12.5px] font-semibold text-[#fbbf24]">{s.effect}</div>}
                       </div>
                     </div>
                   ))}
@@ -352,7 +352,7 @@ export function CharacterDetailMacro({
 
         <AppMediaH3 id="equip-stats">Recommended Main Stats & Substat Priority</AppMediaH3>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <tbody className="divide-y divide-[#1e293b]">
               <tr>
                 <th className="w-48 bg-[#161f33] px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#243049]">
@@ -402,7 +402,7 @@ export function CharacterDetailMacro({
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 place-items-center">
               {partyPartners.map((p, idx) => (
                 <div key={`${p.unit.slug}-${idx}`} className="flex flex-col items-center text-center space-y-1">
-                  <span className="rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[10px] font-extrabold text-[#93c5fd]">
+                  <span className="rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11.5px] font-extrabold text-[#93c5fd]">
                     {p.position} · {p.unit.role}
                   </span>
                   <AppMediaIconCell
@@ -418,7 +418,7 @@ export function CharacterDetailMacro({
               ))}
             </div>
             {sd?.partyNotes && sd.partyNotes.length > 0 && (
-              <div className="border-t border-[#1e293b] pt-2.5 space-y-1.5 text-[12px] text-[#cbd5e1] leading-relaxed">
+              <div className="border-t border-[#1e293b] pt-2.5 space-y-1.5 text-[13.5px] text-[#e8eff8] leading-relaxed">
                 {sd.partyNotes.map((note, idx) => (
                   <p key={idx}>• {note}</p>
                 ))}
@@ -454,18 +454,18 @@ export function CharacterDetailMacro({
               />
               <div className="min-w-0 flex-1 space-y-1">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-extrabold text-[12px] text-white group-hover:text-[#60a5fa] truncate">
+                  <span className="font-extrabold text-[13.5px] text-white group-hover:text-[#60a5fa] truncate">
                     {a.name}
                   </span>
                   <AppMediaTierBadge tier={a.staticData?.appMediaTier || a.tier} size="sm" />
                 </div>
-                <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-[#93c5fd]">
+                <div className="inline-flex items-center gap-1.5 text-[12.5px] font-bold text-[#93c5fd]">
                   {a.staticData?.statTagIconUrl && (
                     <img src={a.staticData.statTagIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="eager" />
                   )}
                   <span>{a.staticData?.statTag || 'Power'} · {a.staticData?.classBonus || 'Universal Bonus'}</span>
                 </div>
-                <p className="text-[11px] text-[#cbd5e1] line-clamp-2">{a.effectSummary}</p>
+                <p className="text-[12.5px] text-[#e8eff8] line-clamp-2">{a.effectSummary}</p>
               </div>
             </Link>
           ))}
@@ -474,10 +474,10 @@ export function CharacterDetailMacro({
         {/* AppMedia Training Point Bullets (ポイント) */}
         {sd?.journeyTrainingPoints && sd.journeyTrainingPoints.length > 0 && (
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-1.5">
-            <div className="text-[11px] font-extrabold text-[#fbbf24]">
+            <div className="text-[12.5px] font-extrabold text-[#fbbf24]">
               [Key Arcana Deck & Rescue Journey Points]
             </div>
-            <ul className="space-y-1 text-[12px] text-[#e2e8f0] leading-relaxed">
+            <ul className="space-y-1 text-[13.5px] text-[#e2e8f0] leading-relaxed">
               {sd.journeyTrainingPoints.map((pt, idx) => (
                 <li key={idx} className="flex items-start gap-1.5">
                   <span className="text-[#3b82f6] font-bold">•</span>
@@ -499,7 +499,7 @@ export function CharacterDetailMacro({
                     key={idx}
                     className="flex flex-col items-center rounded-lg border border-[#1e293b] bg-[#111827] p-2.5 space-y-1.5"
                   >
-                    <span className="text-[10px] font-bold text-[#94a3b8]">Target SSR</span>
+                    <span className="text-[11.5px] font-bold text-[#c8d4e6]">Target SSR</span>
                     <AppMediaIconCell
                       href={`/starsavior/arcana#${col.targetSlug}`}
                       name={col.targetName}
@@ -508,7 +508,7 @@ export function CharacterDetailMacro({
                       size="sm"
                     />
                     <span className="text-sm font-black text-[#60a5fa]">↓</span>
-                    <span className="text-[10px] font-bold text-[#fbbf24]">Substitutes</span>
+                    <span className="text-[11.5px] font-bold text-[#fbbf24]">Substitutes</span>
                     <div className="flex flex-col items-center gap-1.5 w-full">
                       {col.substitutes.map((sub, sIdx) => (
                         <AppMediaIconCell
@@ -533,9 +533,9 @@ export function CharacterDetailMacro({
           <>
             <AppMediaH3 id="hard-potential">Recommended Rescue Journey Hard Potential</AppMediaH3>
             <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-left text-[12px]">
+              <table className="w-full border-collapse text-left text-[13.5px]">
                 <thead>
-                  <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                  <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                     <th className="w-64 px-3.5 py-2 border-r border-[#243049]">Recommended Hard Potential</th>
                     <th className="px-3.5 py-2">Potential Effect</th>
                   </tr>
@@ -570,7 +570,7 @@ export function CharacterDetailMacro({
           <>
             <AppMediaH3 id="training-stat-policy">Rescue Journey Training Stat Priority Policy</AppMediaH3>
             <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-left text-[12px]">
+              <table className="w-full border-collapse text-left text-[13.5px]">
                 <tbody className="divide-y divide-[#1e293b]">
                   {sd.statPriorityMeters.map((m, idx) => (
                     <tr key={idx}>
@@ -596,7 +596,7 @@ export function CharacterDetailMacro({
                               />
                             ))}
                           </div>
-                          <span className="text-[11px] font-black text-[#fbbf24]">
+                          <span className="text-[12.5px] font-black text-[#fbbf24]">
                             {m.segmentsOn} / 5
                           </span>
                         </div>
@@ -612,7 +612,7 @@ export function CharacterDetailMacro({
 
       {/* 5. H2: 強さと使い道 (Strengths & How to Use — 100% Real AppMedia Analysis Sections & Banners) */}
       {sd?.strengthsSections && sd.strengthsSections.length > 0 && (
-        <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
+        <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[13.5px] text-[#e8eff8] leading-relaxed">
           <AppMediaH2 id="strengths-usage">{character.name}&apos;s Strengths & How to Use</AppMediaH2>
           {sd.strengthsSections.map((sec, idx) => (
             <div key={idx} className="space-y-2.5">
@@ -636,7 +636,7 @@ export function CharacterDetailMacro({
       {/* 6. H2: 凸依存度 (Limit Break Dupe Reliance) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
         <AppMediaH2 id="dupe-reliance">{character.name}&apos;s Limit Break (Dupe) Reliance</AppMediaH2>
-        <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-1.5 text-[12px]">
+        <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-1.5 text-[13.5px]">
           <div className="flex items-center justify-between">
             <span className="font-extrabold text-[#93c5fd]">{character.name} Limit Break Priority Rating</span>
             <span className="font-black text-[#fbbf24] text-[14px]">
@@ -654,9 +654,9 @@ export function CharacterDetailMacro({
           <>
             <AppMediaH3>Unique Passive Progression by Limit Break Stage</AppMediaH3>
             <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-left text-[12px]">
+              <table className="w-full border-collapse text-left text-[13.5px]">
                 <thead>
-                  <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                  <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                     <th className="w-36 px-3.5 py-2 border-r border-[#243049]">Limit Break Stage</th>
                     <th className="px-3.5 py-2">Unique Passive Enhancement Effect</th>
                   </tr>
@@ -689,9 +689,9 @@ export function CharacterDetailMacro({
             <>
               <AppMediaH3>Skill Upgrade Priority & Target Levels</AppMediaH3>
               <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-                <table className="w-full border-collapse text-center text-[12px]">
+                <table className="w-full border-collapse text-center text-[13.5px]">
                   <thead>
-                    <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                    <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                       <th className="px-3 py-2 border-r border-[#243049]">Skill Slot</th>
                       <th className="px-3 py-2 border-r border-[#243049]">Upgrade Priority</th>
                       <th className="px-3 py-2">Recommended Level</th>
@@ -716,15 +716,15 @@ export function CharacterDetailMacro({
               <AppMediaH3>Skill Level Enhancement Effects (Lv.2 – Lv.10)</AppMediaH3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-                  <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-[11px] font-extrabold text-[#93c5fd]">
+                  <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-[12.5px] font-extrabold text-[#93c5fd]">
                     Basic Attack (Lv.2–10)
                   </div>
-                  <table className="w-full border-collapse text-left text-[11px]">
+                  <table className="w-full border-collapse text-left text-[12.5px]">
                     <tbody className="divide-y divide-[#1e293b]">
                       {sd.skillLevelProgression.basic.map((row) => (
                         <tr key={row.level}>
                           <td className="w-16 px-2.5 py-1.5 font-bold text-white border-r border-[#1e293b]">{row.level}</td>
-                          <td className="px-2.5 py-1.5 text-[#cbd5e1]">{row.effect}</td>
+                          <td className="px-2.5 py-1.5 text-[#e8eff8]">{row.effect}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -732,15 +732,15 @@ export function CharacterDetailMacro({
                 </div>
 
                 <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-                  <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-[11px] font-extrabold text-[#93c5fd]">
+                  <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-[12.5px] font-extrabold text-[#93c5fd]">
                     Special Skill (Lv.2–10)
                   </div>
-                  <table className="w-full border-collapse text-left text-[11px]">
+                  <table className="w-full border-collapse text-left text-[12.5px]">
                     <tbody className="divide-y divide-[#1e293b]">
                       {sd.skillLevelProgression.special.map((row) => (
                         <tr key={row.level}>
                           <td className="w-16 px-2.5 py-1.5 font-bold text-white border-r border-[#1e293b]">{row.level}</td>
-                          <td className={`px-2.5 py-1.5 ${row.effect.includes('Cooldown') ? 'font-extrabold text-[#fbbf24]' : 'text-[#cbd5e1]'}`}>
+                          <td className={`px-2.5 py-1.5 ${row.effect.includes('Cooldown') ? 'font-extrabold text-[#fbbf24]' : 'text-[#e8eff8]'}`}>
                             {row.effect}
                           </td>
                         </tr>
@@ -750,15 +750,15 @@ export function CharacterDetailMacro({
                 </div>
 
                 <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-                  <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-[11px] font-extrabold text-[#93c5fd]">
+                  <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-[12.5px] font-extrabold text-[#93c5fd]">
                     Ultimate Skill (Lv.2–10)
                   </div>
-                  <table className="w-full border-collapse text-left text-[11px]">
+                  <table className="w-full border-collapse text-left text-[12.5px]">
                     <tbody className="divide-y divide-[#1e293b]">
                       {sd.skillLevelProgression.ultimate.map((row) => (
                         <tr key={row.level}>
                           <td className="w-16 px-2.5 py-1.5 font-bold text-white border-r border-[#1e293b]">{row.level}</td>
-                          <td className={`px-2.5 py-1.5 ${row.effect.includes('Cooldown') ? 'font-extrabold text-[#fbbf24]' : 'text-[#cbd5e1]'}`}>
+                          <td className={`px-2.5 py-1.5 ${row.effect.includes('Cooldown') ? 'font-extrabold text-[#fbbf24]' : 'text-[#e8eff8]'}`}>
                             {row.effect}
                           </td>
                         </tr>
@@ -777,14 +777,14 @@ export function CharacterDetailMacro({
         <div className="flex flex-wrap items-center justify-between gap-2">
           <AppMediaH2 id="character-skills">{character.name}&apos;s Skills & Nova Burst</AppMediaH2>
           {hasPreAwakening && (
-            <div className="inline-flex rounded-lg border border-[#243049] bg-[#0b101b] p-1 text-[11px] font-extrabold">
+            <div className="inline-flex rounded-lg border border-[#243049] bg-[#0b101b] p-1 text-[12.5px] font-extrabold">
               <button
                 type="button"
                 onClick={() => setSkillTab('post')}
                 className={`rounded-md px-3 py-1 transition-colors ${
                   skillTab === 'post'
                     ? 'bg-[#2563eb] text-white'
-                    : 'text-[#94a3b8] hover:text-white'
+                    : 'text-[#c8d4e6] hover:text-white'
                 }`}
               >
                 Post-Awakening
@@ -795,7 +795,7 @@ export function CharacterDetailMacro({
                 className={`rounded-md px-3 py-1 transition-colors ${
                   skillTab === 'pre'
                     ? 'bg-[#2563eb] text-white'
-                    : 'text-[#94a3b8] hover:text-white'
+                    : 'text-[#c8d4e6] hover:text-white'
                 }`}
               >
                 Pre-Awakening
@@ -819,17 +819,17 @@ export function CharacterDetailMacro({
                   )}
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="rounded bg-[#2563eb]/25 border border-[#3b82f6]/50 px-2 py-0.5 text-[10px] font-extrabold text-[#93c5fd]">
+                      <span className="rounded bg-[#2563eb]/25 border border-[#3b82f6]/50 px-2 py-0.5 text-[11.5px] font-extrabold text-[#93c5fd]">
                         {sk.type}
                       </span>
                       <span className="text-[14px] font-black text-white">{sk.name}</span>
                     </div>
-                    <div className="mt-1 text-[11px] font-semibold text-[#60a5fa]">
+                    <div className="mt-1 text-[12.5px] font-semibold text-[#60a5fa]">
                       {sk.target || 'Active Skill'}
                     </div>
                   </div>
                 </div>
-                <div className="text-[11px] font-bold text-[#cbd5e1]">
+                <div className="text-[12.5px] font-bold text-[#e8eff8]">
                   {sk.spOrEnergyCost} · <span className="text-[#fbbf24]">{sk.multiplierSummary}</span>
                 </div>
               </div>
@@ -840,7 +840,7 @@ export function CharacterDetailMacro({
                   {sk.scalingRows.map((row, rIdx) => (
                     <div
                       key={rIdx}
-                      className="inline-flex flex-wrap items-center gap-2 rounded border border-[#243049] bg-[#141c2e] px-2.5 py-1 text-[11px]"
+                      className="inline-flex flex-wrap items-center gap-2 rounded border border-[#243049] bg-[#141c2e] px-2.5 py-1 text-[12.5px]"
                     >
                       {row.category && <span className="font-bold text-[#93c5fd]">{row.category}:</span>}
                       {row.items.map((item, iIdx) => (
@@ -856,12 +856,12 @@ export function CharacterDetailMacro({
                 </div>
               )}
 
-              <p className="text-[12px] text-[#e2e8f0] whitespace-pre-line leading-relaxed">
+              <p className="text-[13.5px] text-[#e2e8f0] whitespace-pre-line leading-relaxed">
                 {sk.exactDescription}
               </p>
 
               {sk.novaBurst && (
-                <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-3 py-2 text-[11px] text-[#fde047]">
+                <div className="rounded border border-[#eab308]/40 bg-[#eab308]/10 px-3 py-2 text-[12.5px] text-[#fde047]">
                   <strong className="font-extrabold">Nova Burst:</strong> {sk.novaBurst}
                 </div>
               )}
@@ -869,14 +869,14 @@ export function CharacterDetailMacro({
               {/* Exact AppMedia Buff/Debuff Effect Tooltips (data-tippy_tag) */}
               {sk.tooltips && sk.tooltips.length > 0 && (
                 <div className="rounded-lg border border-[#1e293b] bg-[#0b101b] p-2.5 space-y-1.5">
-                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-[#94a3b8]">
+                  <div className="text-[11.5px] font-extrabold uppercase tracking-wider text-[#c8d4e6]">
                     Skill Buff / Debuff Definitions
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {sk.tooltips.map((tt, tIdx) => (
-                      <div key={tIdx} className="rounded border border-[#1e293b] bg-[#111726] px-2.5 py-1.5 text-[11px]">
+                      <div key={tIdx} className="rounded border border-[#1e293b] bg-[#111726] px-2.5 py-1.5 text-[12.5px]">
                         <div className="font-extrabold text-[#60a5fa]">{tt.title}</div>
-                        <div className="text-[#cbd5e1] leading-snug">{tt.detail}</div>
+                        <div className="text-[#e8eff8] leading-snug">{tt.detail}</div>
                       </div>
                     ))}
                   </div>
@@ -896,9 +896,9 @@ export function CharacterDetailMacro({
         <AppMediaH3>General Combat Stats & Server Ranking (/ {totalUnits} Saviors)</AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5">
-            <div className="flex items-center justify-between text-[11px] font-bold text-[#94a3b8]">
+            <div className="flex items-center justify-between text-[12.5px] font-bold text-[#c8d4e6]">
               <span>Attack (ATK)</span>
-              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[10px] font-bold text-[#93c5fd]">
+              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[11.5px] font-bold text-[#93c5fd]">
                 {atkRankLabel}
               </span>
             </div>
@@ -912,9 +912,9 @@ export function CharacterDetailMacro({
           </div>
 
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5">
-            <div className="flex items-center justify-between text-[11px] font-bold text-[#94a3b8]">
+            <div className="flex items-center justify-between text-[12.5px] font-bold text-[#c8d4e6]">
               <span>Max HP</span>
-              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[10px] font-bold text-[#93c5fd]">
+              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[11.5px] font-bold text-[#93c5fd]">
                 {hpRankLabel}
               </span>
             </div>
@@ -928,9 +928,9 @@ export function CharacterDetailMacro({
           </div>
 
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5">
-            <div className="flex items-center justify-between text-[11px] font-bold text-[#94a3b8]">
+            <div className="flex items-center justify-between text-[12.5px] font-bold text-[#c8d4e6]">
               <span>Defense (DEF)</span>
-              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[10px] font-bold text-[#93c5fd]">
+              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[11.5px] font-bold text-[#93c5fd]">
                 {defRankLabel}
               </span>
             </div>
@@ -944,9 +944,9 @@ export function CharacterDetailMacro({
           </div>
 
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5">
-            <div className="flex items-center justify-between text-[11px] font-bold text-[#94a3b8]">
+            <div className="flex items-center justify-between text-[12.5px] font-bold text-[#c8d4e6]">
               <span>Speed (SPD)</span>
-              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[10px] font-bold text-[#93c5fd]">
+              <span className="rounded bg-[#161f33] px-2 py-0.5 text-[11.5px] font-bold text-[#93c5fd]">
                 {spdRankLabel}
               </span>
             </div>
@@ -960,21 +960,21 @@ export function CharacterDetailMacro({
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-center text-[12px]">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-center text-[13.5px]">
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-            <div className="text-[10px] font-bold text-[#94a3b8]">Crit Rate</div>
+            <div className="text-[11.5px] font-bold text-[#c8d4e6]">Crit Rate</div>
             <div className="mt-0.5 font-black text-white">{character.baseStats.critRate || '15%'}</div>
           </div>
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-            <div className="text-[10px] font-bold text-[#94a3b8]">Crit DMG</div>
+            <div className="text-[11.5px] font-bold text-[#c8d4e6]">Crit DMG</div>
             <div className="mt-0.5 font-black text-white">{character.baseStats.critDmg || '50%'}</div>
           </div>
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-            <div className="text-[10px] font-bold text-[#94a3b8]">Effect Hit</div>
+            <div className="text-[11.5px] font-bold text-[#c8d4e6]">Effect Hit</div>
             <div className="mt-0.5 font-black text-white">{character.baseStats.effHit || '0%'}</div>
           </div>
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-            <div className="text-[10px] font-bold text-[#94a3b8]">Effect RES</div>
+            <div className="text-[11.5px] font-bold text-[#c8d4e6]">Effect RES</div>
             <div className="mt-0.5 font-black text-white">{character.baseStats.effRes || '0%'}</div>
           </div>
         </div>
@@ -982,25 +982,25 @@ export function CharacterDetailMacro({
         {sd?.journeyStats && (
           <>
             <AppMediaH3>Rescue Journey Base Aptitudes</AppMediaH3>
-            <div className="grid grid-cols-5 gap-2 text-center text-[12px]">
+            <div className="grid grid-cols-5 gap-2 text-center text-[13.5px]">
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Power</div>
+                <div className="text-[11.5px] font-bold text-[#c8d4e6]">Power</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.power}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Health</div>
+                <div className="text-[11.5px] font-bold text-[#c8d4e6]">Health</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.vitality}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Endurance</div>
+                <div className="text-[11.5px] font-bold text-[#c8d4e6]">Endurance</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.endurance}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Focus</div>
+                <div className="text-[11.5px] font-bold text-[#c8d4e6]">Focus</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.focus}</div>
               </div>
               <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-2.5">
-                <div className="text-[10px] font-bold text-[#94a3b8]">Protect</div>
+                <div className="text-[11.5px] font-bold text-[#c8d4e6]">Protect</div>
                 <div className="mt-0.5 font-black text-white">{sd.journeyStats.protection}</div>
               </div>
             </div>
@@ -1011,11 +1011,11 @@ export function CharacterDetailMacro({
           {sd?.curio && (
             <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-2">
               <div className="flex items-center justify-between">
-                <span className="text-[11px] font-extrabold text-[#fbbf24] uppercase">
+                <span className="text-[12.5px] font-extrabold text-[#fbbf24] uppercase">
                   Exclusive Curio · Rank {sd.curio.rank}
                 </span>
                 {sd.curio.rankNote && (
-                  <span className="text-[10px] font-semibold text-[#94a3b8]">
+                  <span className="text-[11.5px] font-semibold text-[#c8d4e6]">
                     {sd.curio.rankNote}
                   </span>
                 )}
@@ -1031,7 +1031,7 @@ export function CharacterDetailMacro({
                 )}
                 <div>
                   <div className="text-[14px] font-black text-white">{sd.curio.name}</div>
-                  <p className="mt-1 text-[12px] text-[#cbd5e1] leading-relaxed">{sd.curio.effect}</p>
+                  <p className="mt-1 text-[13.5px] text-[#e8eff8] leading-relaxed">{sd.curio.effect}</p>
                 </div>
               </div>
             </div>
@@ -1039,10 +1039,10 @@ export function CharacterDetailMacro({
 
           {(sd?.resonancePotentials || []).length > 0 && (
             <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-2">
-              <div className="text-[11px] font-extrabold text-[#93c5fd] uppercase">
+              <div className="text-[12.5px] font-extrabold text-[#93c5fd] uppercase">
                 Resonance Potentials
               </div>
-              <div className="space-y-1.5 text-[12px]">
+              <div className="space-y-1.5 text-[13.5px]">
                 {sd?.resonancePotentials?.map((rp, i) => (
                   <div key={i} className="text-[#e2e8f0]">
                     <strong className="text-white">{rp.name}:</strong> {rp.effect}
@@ -1064,9 +1064,9 @@ export function CharacterDetailMacro({
           <>
             <AppMediaH3>Resonance Stage 1–10 Effects & Material Requirements</AppMediaH3>
             <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-left text-[12px]">
+              <table className="w-full border-collapse text-left text-[13.5px]">
                 <thead>
-                  <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                  <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                     <th className="w-16 px-3 py-2 text-center border-r border-[#243049]">Stage</th>
                     <th className="px-3 py-2 border-r border-[#243049]">Journey Stat Bonus</th>
                     <th className="px-3 py-2 border-r border-[#243049]">Combat Stat Bonus</th>
@@ -1090,7 +1090,7 @@ export function CharacterDetailMacro({
                           {st.materials.map((m, mIdx) => (
                             <div
                               key={mIdx}
-                              className="inline-flex items-center gap-1.5 rounded border border-[#243049] bg-[#141c2e] px-2 py-1 text-[11px]"
+                              className="inline-flex items-center gap-1.5 rounded border border-[#243049] bg-[#141c2e] px-2 py-1 text-[12.5px]"
                             >
                               {m.iconUrl && (
                                 <img src={m.iconUrl} alt={m.name} className="h-5 w-5 object-contain shrink-0" loading="lazy" />
@@ -1112,7 +1112,7 @@ export function CharacterDetailMacro({
         {sd?.resonanceTotalMaterials && sd.resonanceTotalMaterials.length > 0 && (
           <>
             <AppMediaH3>Total Materials Required for Full Resonance (Stages 1–10)</AppMediaH3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-[12px]">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-[13.5px]">
               {sd.resonanceTotalMaterials.map((mat, idx) => (
                 <div
                   key={idx}
@@ -1122,7 +1122,7 @@ export function CharacterDetailMacro({
                     {mat.iconUrl && (
                       <img src={mat.iconUrl} alt={mat.name} className="h-8 w-8 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="lazy" />
                     )}
-                    <span className="font-bold text-[#cbd5e1] truncate">{mat.name}</span>
+                    <span className="font-bold text-[#e8eff8] truncate">{mat.name}</span>
                   </div>
                   <span className="font-black text-[#fbbf24] shrink-0">×{mat.count}</span>
                 </div>
@@ -1160,7 +1160,7 @@ export function CharacterDetailMacro({
                       className="h-14 w-14 rounded-lg border border-[#334155] bg-[#090d16] p-1 object-contain"
                       loading="lazy"
                     />
-                    <span className="mt-1.5 text-[11px] font-bold text-[#fde047] leading-tight">{g.name}</span>
+                    <span className="mt-1.5 text-[12.5px] font-bold text-[#fde047] leading-tight">{g.name}</span>
                   </div>
                 ))}
               </div>
@@ -1190,7 +1190,7 @@ export function CharacterDetailMacro({
                       className="h-14 w-14 rounded-lg border border-[#334155] bg-[#090d16] p-1 object-contain"
                       loading="lazy"
                     />
-                    <span className="mt-1.5 text-[11px] font-bold text-[#e2e8f0] leading-tight">{g.name}</span>
+                    <span className="mt-1.5 text-[12.5px] font-bold text-[#e2e8f0] leading-tight">{g.name}</span>
                   </div>
                 ))}
               </div>
@@ -1221,7 +1221,7 @@ export function CharacterDetailMacro({
             {character.name}&apos;s Voice Actor (CV), How to Obtain & Profile
           </AppMediaH2>
           <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-            <table className="w-full border-collapse text-left text-[12px]">
+            <table className="w-full border-collapse text-left text-[13.5px]">
               <tbody className="divide-y divide-[#1e293b]">
                 <tr>
                   <th className="w-40 bg-[#161f33] px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#243049]">Voice Actor (CV)</th>
@@ -1249,7 +1249,7 @@ export function CharacterDetailMacro({
                 </tr>
                 <tr>
                   <th className="bg-[#161f33] px-3.5 py-2.5 font-extrabold text-[#93c5fd] border-r border-[#243049]">Character Lore</th>
-                  <td className="px-3.5 py-2.5 text-[#cbd5e1] leading-relaxed">{sd.profile.bio}</td>
+                  <td className="px-3.5 py-2.5 text-[#e8eff8] leading-relaxed">{sd.profile.bio}</td>
                 </tr>
               </tbody>
             </table>

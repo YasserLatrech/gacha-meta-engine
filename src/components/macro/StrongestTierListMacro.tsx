@@ -163,7 +163,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
             loading="eager"
           />
           <div>
-            <div className="text-[11px] font-bold text-[#93c5fd]">
+            <div className="text-[12.5px] font-bold text-[#93c5fd]">
               Last Updated: 2026/11/12 · {game.patchVersion}
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
@@ -177,16 +177,16 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
           alt="Star Savior Strongest Character Ranking & Tier List"
         />
 
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
           This is the Star Savior Strongest Character Ranking (Tier List). It covers the latest character evaluations, the complete SSS–C tier matrix by role, and detailed breakdowns of the strongest SSR and SR Saviors in Star Savior.
         </p>
 
         {/* Top Ranking Switcher Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">
-          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[11px] font-extrabold text-[#f8fafc]">
+          <div className="border-b border-[#243049] bg-[#161f33] px-3 py-1.5 text-center text-[12.5px] font-extrabold text-[#f8fafc]">
             Various Star Savior Rankings
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[12px] font-bold">
+          <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[13.5px] font-bold">
             <Link href="/starsavior/tier-list" className="bg-[#2563eb]/25 py-2.5 text-white">
               Strongest Characters
             </Link>
@@ -220,12 +220,12 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         {/* Interactive Filter Controls */}
         <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-2.5">
           <div className="flex flex-wrap items-center gap-1.5">
-            <span className="text-[11px] font-extrabold text-[#94a3b8] mr-1">Attribute:</span>
+            <span className="text-[12.5px] font-extrabold text-[#c8d4e6] mr-1">Attribute:</span>
             <button
               type="button"
               onClick={() => setSelectedElement('ALL')}
-              className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                selectedElement === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1] hover:bg-[#1e293b]'
+              className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                selectedElement === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8] hover:bg-[#1e293b]'
               }`}
             >
               All ({characters.length})
@@ -235,10 +235,10 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 key={el.key}
                 type="button"
                 onClick={() => setSelectedElement(el.key === selectedElement ? 'ALL' : el.key)}
-                className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[11px] font-bold border ${
+                className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[12.5px] font-bold border ${
                   selectedElement === el.key
                     ? 'border-[#3b82f6] bg-[#2563eb] text-white'
-                    : 'border-[#243049] bg-[#161f33] text-[#cbd5e1] hover:bg-[#1e293b]'
+                    : 'border-[#243049] bg-[#161f33] text-[#e8eff8] hover:bg-[#1e293b]'
                 }`}
               >
                 <img src={el.iconUrl} alt={el.label} className="h-3.5 w-3.5 object-contain" loading="eager" />
@@ -249,12 +249,12 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
           <div className="flex flex-wrap items-center justify-between gap-2">
             <div className="flex flex-wrap items-center gap-1.5">
-              <span className="text-[11px] font-extrabold text-[#94a3b8] mr-1">Class:</span>
+              <span className="text-[12.5px] font-extrabold text-[#c8d4e6] mr-1">Class:</span>
               <button
                 type="button"
                 onClick={() => setSelectedRole('ALL')}
-                className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                  selectedRole === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1] hover:bg-[#1e293b]'
+                className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                  selectedRole === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8] hover:bg-[#1e293b]'
                 }`}
               >
                 All Classes
@@ -264,10 +264,10 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                   key={rl.key}
                   type="button"
                   onClick={() => setSelectedRole(rl.key === selectedRole ? 'ALL' : rl.key)}
-                  className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[11px] font-bold border ${
+                  className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[12.5px] font-bold border ${
                     selectedRole === rl.key
                       ? 'border-[#3b82f6] bg-[#2563eb] text-white'
-                      : 'border-[#243049] bg-[#161f33] text-[#cbd5e1] hover:bg-[#1e293b]'
+                      : 'border-[#243049] bg-[#161f33] text-[#e8eff8] hover:bg-[#1e293b]'
                   }`}
                 >
                   <img src={rl.iconUrl} alt={rl.label} className="h-3.5 w-3.5 object-contain" loading="eager" />
@@ -282,8 +282,8 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                   key={r}
                   type="button"
                   onClick={() => setSelectedRarity(r)}
-                  className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                    selectedRarity === r ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+                  className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                    selectedRarity === r ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
                   }`}
                 >
                   {r === 'ALL' ? 'All Rarities' : r}
@@ -294,7 +294,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search Savior..."
-                className="flex-1 sm:flex-none rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+                className="flex-1 sm:flex-none rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
               />
             </div>
           </div>
@@ -302,15 +302,15 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         {/* Mobile View Switcher (< md): Compact Zero-Overflow Rows vs Full 5-Role Matrix */}
         <div className="md:hidden flex items-center justify-between gap-2 rounded-lg border border-[#243049] bg-[#0f1626] px-3 py-2">
-          <span className="text-[11px] font-extrabold text-[#94a3b8]">Mobile Layout:</span>
+          <span className="text-[12.5px] font-extrabold text-[#c8d4e6]">Mobile Layout:</span>
           <div className="flex items-center gap-1.5">
             <button
               type="button"
               onClick={() => setMobileMatrixView(false)}
-              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+              className={`rounded px-2.5 py-1 text-[12.5px] font-extrabold transition-colors ${
                 !mobileMatrixView
                   ? 'bg-[#2563eb] text-white'
-                  : 'bg-[#161f33] text-[#cbd5e1]'
+                  : 'bg-[#161f33] text-[#e8eff8]'
               }`}
             >
               Compact Tiers
@@ -318,10 +318,10 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
             <button
               type="button"
               onClick={() => setMobileMatrixView(true)}
-              className={`rounded px-2.5 py-1 text-[11px] font-extrabold transition-colors ${
+              className={`rounded px-2.5 py-1 text-[12.5px] font-extrabold transition-colors ${
                 mobileMatrixView
                   ? 'bg-[#2563eb] text-white'
-                  : 'bg-[#161f33] text-[#cbd5e1]'
+                  : 'bg-[#161f33] text-[#e8eff8]'
               }`}
             >
               By Role Matrix ↔
@@ -344,7 +344,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                       </td>
                       <td className="p-2.5">
                         {rowChars.length === 0 ? (
-                          <div className="py-3 text-center text-[11px] text-[#475569]">—</div>
+                          <div className="py-3 text-center text-[12.5px] text-[#475569]">—</div>
                         ) : (
                           <div className="flex flex-wrap gap-2">
                             {rowChars.map((c) => (
@@ -379,7 +379,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         >
           <table className="w-full min-w-[780px] border-collapse">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#cbd5e1]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#e8eff8]">
                 <th className="w-24 px-2 py-2.5 text-center border-r border-[#243049]">RANK</th>
                 {ROLE_COLUMNS.map((col) => (
                   <th key={col.key} className="px-2.5 py-2.5 text-center border-r last:border-r-0 border-[#243049]">
@@ -405,7 +405,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                           className="p-2.5 align-top border-r last:border-r-0 border-[#1e293b]"
                         >
                           {cellChars.length === 0 ? (
-                            <div className="py-4 text-center text-[11px] text-[#475569]">—</div>
+                            <div className="py-4 text-center text-[12.5px] text-[#475569]">—</div>
                           ) : (
                             <div className="flex flex-wrap gap-2">
                               {cellChars.map((c) => (
@@ -436,9 +436,9 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
         {/* H3: Rank Evaluation Criteria Quick Reference Table */}
         <AppMediaH3 id="rank-criteria-quick-table">Rank Evaluation Criteria Quick Reference Table</AppMediaH3>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                 <th className="w-24 px-3 py-2 text-center border-r border-[#243049]">Rank</th>
                 <th className="px-3.5 py-2">Evaluation Criteria Explanation</th>
               </tr>
@@ -451,7 +451,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Practically mandatory performance across endgame PvE content</div>
                   <div>• Single-target boss performance is heavily prioritized</div>
-                  <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Most modes such as Cosmo Gate end immediately once the boss is defeated</div>
+                  <div className="pl-3 text-[12.5px] text-[#c8d4e6]">↳ Most modes such as Cosmo Gate end immediately once the boss is defeated</div>
                 </td>
               </tr>
               <tr>
@@ -470,7 +470,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Very strong when stage mechanics or attribute advantages align</div>
-                  <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Outside their niche, deployment flexibility is slightly narrower</div>
+                  <div className="pl-3 text-[12.5px] text-[#c8d4e6]">↳ Outside their niche, deployment flexibility is slightly narrower</div>
                   <div>• Performs above average across general content</div>
                 </td>
               </tr>
@@ -498,7 +498,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                 </td>
                 <td className="p-2.5 text-[#e2e8f0] space-y-0.5">
                   <div>• Needs future balance adjustments to compete</div>
-                  <div className="pl-3 text-[11px] text-[#94a3b8]">↳ Difficult to recommend as a priority substitute right now</div>
+                  <div className="pl-3 text-[12.5px] text-[#c8d4e6]">↳ Difficult to recommend as a priority substitute right now</div>
                 </td>
               </tr>
             </tbody>
@@ -507,7 +507,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
       </section>
 
       {/* H2: Strongest Character Ranking Analysis */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="tier-ranking-analysis">Strongest Character Ranking Analysis</AppMediaH2>
 
         <div className="space-y-2">
@@ -576,7 +576,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
       </section>
 
       {/* H2: 最強キャラランキングの更新情報 */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="tier-latest-updates" badge="NEW">
           Strongest Character Ranking Latest Update Info
         </AppMediaH2>
@@ -587,9 +587,9 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         {(witchOfFavoritism || guile) && (
           <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-            <table className="w-full border-collapse text-center text-[12px]">
+            <table className="w-full border-collapse text-center text-[13.5px]">
               <thead>
-                <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                   <th className="px-3 py-2 border-r border-[#243049]">Character</th>
                   <th className="px-3 py-2 border-r border-[#243049]">Overall Rank</th>
                   <th className="px-3 py-2 border-r border-[#243049]">Reroll</th>
@@ -659,9 +659,9 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         {maidCeres && (
           <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-            <table className="w-full border-collapse text-center text-[12px]">
+            <table className="w-full border-collapse text-center text-[13.5px]">
               <thead>
-                <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+                <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                   <th className="px-3 py-2 border-r border-[#243049]">Character</th>
                   <th className="px-3 py-2 border-r border-[#243049]">Overall Rank</th>
                   <th className="px-3 py-2 border-r border-[#243049]">Reroll</th>
@@ -729,7 +729,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
       </section>
 
       {/* H2: 最強キャラの評価基準 */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[12px] text-[#cbd5e1] leading-relaxed">
+      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[13.5px] text-[#e8eff8] leading-relaxed">
         <AppMediaH2 id="tier-evaluation-criteria">Strongest Character Evaluation Criteria</AppMediaH2>
 
         <AppMediaH3 id="criteria-pve">PvE Performance is the Main Evaluation Axis</AppMediaH3>
@@ -759,9 +759,9 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         <AppMediaH3 id="criteria-class-table">Evaluation Criteria Table for Each Class</AppMediaH3>
         <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                 <th className="w-36 px-3.5 py-2 border-r border-[#243049]">Class</th>
                 <th className="px-3.5 py-2">Key Evaluation Points</th>
               </tr>

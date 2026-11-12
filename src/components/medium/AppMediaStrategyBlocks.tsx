@@ -13,7 +13,7 @@ export function AppMediaDetailedCharEvalTable({
     <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
       <table className="w-full border-collapse text-left">
         <thead>
-          <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold uppercase tracking-wider text-[#94a3b8]">
+          <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold uppercase tracking-wider text-[#c8d4e6]">
             <th className="w-[96px] sm:w-[140px] px-2 sm:px-3 py-2.5 text-center border-r border-[#243049]">Character</th>
             <th className="px-3 sm:px-3.5 py-2.5">Quick Evaluation & Performance Breakdown</th>
           </tr>
@@ -41,36 +41,36 @@ export function AppMediaDetailedCharEvalTable({
                     />
                   </div>
                 </td>
-                <td className="p-2.5 sm:p-3.5 align-top space-y-2 text-[12px]">
+                <td className="p-2.5 sm:p-3.5 align-top space-y-2 text-[13.5px]">
                   <div className="flex flex-wrap items-center gap-2 border-b border-[#1e293b] pb-1.5">
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#e2e8f0]">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#e2e8f0]">
                       <span className="text-[#93c5fd]">[Attribute]</span>
                       {c.staticData?.attributeIconUrl && (
                         <img src={c.staticData.attributeIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="eager" />
                       )}
                       <span>{c.element} Attribute</span>
                     </span>
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#e2e8f0]">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#e2e8f0]">
                       <span className="text-[#93c5fd]">[Class]</span>
                       {c.staticData?.classIconUrl && (
                         <img src={c.staticData.classIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="eager" />
                       )}
                       <span>{c.role}</span>
                     </span>
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#cbd5e1]">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#e8eff8]">
                       <span className="text-[#93c5fd]">[Damage]</span>
                       <span>{c.staticData?.attackType || 'Slash Damage'}</span>
                     </span>
                   </div>
                   <div className="space-y-1">
-                    <div className="text-[11px] font-extrabold text-[#93c5fd]">[Analysis]</div>
-                    <ul className="space-y-1 text-[12px] text-[#e2e8f0] leading-relaxed">
+                    <div className="text-[12.5px] font-extrabold text-[#93c5fd]">[Analysis]</div>
+                    <ul className="space-y-1 text-[13.5px] text-[#e2e8f0] leading-relaxed">
                       {bullets.map((b, idx) => {
                         const isSub = b.startsWith('↳');
                         return (
                           <li
                             key={idx}
-                            className={isSub ? 'pl-4 text-[11px] text-[#94a3b8]' : 'flex items-start gap-1.5'}
+                            className={isSub ? 'pl-4 text-[12.5px] text-[#c8d4e6]' : 'flex items-start gap-1.5'}
                           >
                             {!isSub && <span className="text-[#3b82f6] font-bold">•</span>}
                             <span>{b}</span>
@@ -98,7 +98,7 @@ export function AppMediaDetailedArcanaEvalTable({
     <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
       <table className="w-full border-collapse text-left">
         <thead>
-          <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold uppercase tracking-wider text-[#94a3b8]">
+          <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold uppercase tracking-wider text-[#c8d4e6]">
             <th className="w-[96px] sm:w-[150px] px-2 sm:px-3 py-2.5 text-center border-r border-[#243049]">Arcana Card</th>
             <th className="px-3 sm:px-3.5 py-2.5">Quick Evaluation & Potential Breakdown</th>
           </tr>
@@ -126,25 +126,25 @@ export function AppMediaDetailedArcanaEvalTable({
                     />
                   </div>
                 </td>
-                <td className="p-2.5 sm:p-3.5 align-top space-y-2 text-[12px]">
+                <td className="p-2.5 sm:p-3.5 align-top space-y-2 text-[13.5px]">
                   <div className="flex flex-wrap items-center gap-2 border-b border-[#1e293b] pb-1.5">
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#e2e8f0]">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#e2e8f0]">
                       <span className="text-[#93c5fd]">[Tag]</span>
                       {a.staticData?.statTagIconUrl && (
                         <img src={a.staticData.statTagIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="eager" />
                       )}
                       <span>{a.staticData?.statTag || 'Power'}</span>
                     </span>
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#e2e8f0]">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#e2e8f0]">
                       <span className="text-[#93c5fd]">[Stat Bonus]</span>
                       <span>{a.staticData?.statBonusType || 'Special Effect Bonus'}</span>
                     </span>
-                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#cbd5e1]">
+                    <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#e8eff8]">
                       <span className="text-[#93c5fd]">[Class]</span>
                       <span>{a.staticData?.classBonus || 'Universal Bonus'}</span>
                     </span>
                     {a.staticData?.characterName && a.staticData.characterName !== '-' && (
-                      <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[11px] font-bold text-[#fbbf24]">
+                      <span className="inline-flex items-center gap-1 rounded bg-[#161f33] border border-[#263452] px-2 py-0.5 text-[12.5px] font-bold text-[#fbbf24]">
                         {a.staticData.characterIconUrl && (
                           <img src={a.staticData.characterIconUrl} alt="" className="h-4 w-4 rounded-full object-cover" loading="eager" />
                         )}
@@ -153,14 +153,14 @@ export function AppMediaDetailedArcanaEvalTable({
                     )}
                   </div>
                   <div className="space-y-1">
-                    <div className="text-[11px] font-extrabold text-[#93c5fd]">[Analysis & Potentials]</div>
-                    <ul className="space-y-1 text-[12px] text-[#e2e8f0] leading-relaxed">
+                    <div className="text-[12.5px] font-extrabold text-[#93c5fd]">[Analysis & Potentials]</div>
+                    <ul className="space-y-1 text-[13.5px] text-[#e2e8f0] leading-relaxed">
                       {bullets.map((b, idx) => {
                         const isSub = b.startsWith('↳');
                         return (
                           <li
                             key={idx}
-                            className={isSub ? 'pl-4 text-[11px] text-[#94a3b8]' : 'flex items-start gap-1.5'}
+                            className={isSub ? 'pl-4 text-[12.5px] text-[#c8d4e6]' : 'flex items-start gap-1.5'}
                           >
                             {!isSub && <span className="text-[#3b82f6] font-bold">•</span>}
                             <span>{b}</span>
@@ -376,8 +376,8 @@ export function AppMediaStrategyFooter({
             loading="eager"
           />
           <div className="space-y-1">
-            <div className="text-[13px] font-extrabold text-white">Star Savior Strategy Editorial Team</div>
-            <p className="text-[12px] text-[#94a3b8] leading-relaxed">
+            <div className="text-[14.5px] font-extrabold text-white">Star Savior Strategy Editorial Team</div>
+            <p className="text-[13.5px] text-[#c8d4e6] leading-relaxed">
               Dedicated Star Savior verification & meta research team covering all 59 playable Saviors, 85 Arcana cards, Rescue Journey Hard Mode potentials, Cosmo Gate boss clear lineups, and Gauntlet PvP rankings.
             </p>
           </div>
@@ -395,9 +395,9 @@ export function AppMediaStrategyFooter({
               value={commentAuthor}
               onChange={(e) => setCommentAuthor(e.target.value)}
               placeholder="Name (optional, default: Reader)"
-              className="w-full sm:w-56 rounded border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+              className="w-full sm:w-56 rounded border border-[#243049] bg-[#090d16] px-3 py-1.5 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
             />
-            <span className="text-[11px] text-[#94a3b8] self-center">
+            <span className="text-[12.5px] text-[#c8d4e6] self-center">
               Share party setups, boss clear tips, or questions regarding this guide.
             </span>
           </div>
@@ -406,12 +406,12 @@ export function AppMediaStrategyFooter({
             value={commentText}
             onChange={(e) => setCommentText(e.target.value)}
             placeholder="Write your strategy comment or question..."
-            className="w-full rounded border border-[#243049] bg-[#090d16] p-2.5 text-[12px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+            className="w-full rounded border border-[#243049] bg-[#090d16] p-2.5 text-[13.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
           />
           <div className="flex justify-end">
             <button
               type="submit"
-              className="rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-1.5 text-[11px] font-black text-white transition-colors"
+              className="rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-1.5 text-[12.5px] font-black text-white transition-colors"
             >
               Post Comment
             </button>
@@ -422,7 +422,7 @@ export function AppMediaStrategyFooter({
           <div className="space-y-2">
             {comments.map((c) => (
               <div key={c.id} className="rounded-lg border border-[#1e293b] bg-[#0f1626] p-3 space-y-1">
-                <div className="flex items-center justify-between text-[11px] text-[#64748b]">
+                <div className="flex items-center justify-between text-[12.5px] text-[#a8b8d0]">
                   <span className="font-bold text-[#93c5fd]">{c.author}</span>
                   <div className="flex items-center gap-2">
                     <span>{c.createdAt}</span>
@@ -430,22 +430,22 @@ export function AppMediaStrategyFooter({
                       type="button"
                       disabled={Boolean(likedCommentIds[c.id])}
                       onClick={() => handleLikeComment(c.id)}
-                      className={`rounded border px-2 py-0.5 text-[10px] font-bold transition-colors ${
+                      className={`rounded border px-2 py-0.5 text-[11.5px] font-bold transition-colors ${
                         likedCommentIds[c.id]
                           ? 'border-emerald-500/40 bg-emerald-500/20 text-emerald-300 cursor-default'
-                          : 'border-[#243049] bg-[#161f33] hover:border-[#3b82f6] text-[#cbd5e1]'
+                          : 'border-[#243049] bg-[#161f33] hover:border-[#3b82f6] text-[#e8eff8]'
                       }`}
                     >
                       {likedCommentIds[c.id] ? '✓ ' : ''}Good ({Math.max(c.likes, serverCommentLikes[c.id] || 0)})
                     </button>
                   </div>
                 </div>
-                <p className="text-[12px] text-[#e2e8f0] whitespace-pre-line">{c.body}</p>
+                <p className="text-[13.5px] text-[#e2e8f0] whitespace-pre-line">{c.body}</p>
               </div>
             ))}
           </div>
         ) : (
-          <div className="rounded-lg border border-[#1e293b] bg-[#0f1626] p-3 text-center text-[11px] text-[#94a3b8]">
+          <div className="rounded-lg border border-[#1e293b] bg-[#0f1626] p-3 text-center text-[12.5px] text-[#c8d4e6]">
             No comments posted on this article yet. Be the first to share a strategy tip or question above.
           </div>
         )}

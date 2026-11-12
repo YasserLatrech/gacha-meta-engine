@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme inline {
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--font-space), var(--font-jakarta), -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
 :root,
 [data-theme="dark"] {
   color-scheme: dark;
@@ -12,14 +18,14 @@
   --bg-header: #080a0f;
 
   /* Crisp 1px Structural Hairlines */
-  --border-main: #283246;
-  --border-subtle: #1e2636;
-  --border-strong: #3b4861;
+  --border-main: #2c384e;
+  --border-subtle: #212b3d;
+  --border-strong: #41506b;
 
-  /* High-Contrast Typography */
-  --text-main: #f3f6fc;
-  --text-secondary: #c3cde0;
-  --text-muted: #8492a6;
+  /* WCAG AAA High-Contrast Typography */
+  --text-main: #f8fafc;
+  --text-secondary: #e2e8f0;
+  --text-muted: #b4c3d8;
 
   /* AppMedia Tier & Brand Accents */
   --accent-primary: #38bdf8;
@@ -88,16 +94,43 @@
   }
 }
 
+html {
+  font-size: 15.5px;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
 html,
 body {
   color-scheme: dark;
   background: var(--bg-page);
   color: var(--text-main);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.55;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.005em;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.wiki-section-header {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+  line-height: 1.28;
+}
+
+table th,
+table td {
+  line-height: 1.52;
 }
 
 a {
@@ -144,8 +177,11 @@ select:focus {
   border-color: var(--accent-primary);
 }
 
-.mono {
-  font-family: "JetBrains Mono", "Consolas", monospace;
+.mono,
+.font-mono,
+code,
+kbd {
+  font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
 }
 

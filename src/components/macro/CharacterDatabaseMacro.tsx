@@ -52,7 +52,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
             loading="eager"
           />
           <div>
-            <div className="text-[11px] font-bold text-[#93c5fd]">
+            <div className="text-[12.5px] font-bold text-[#93c5fd]">
               Updated: 2026/11/12 · {game.patchVersion} · All 59 Saviors
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
@@ -60,7 +60,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
             </h1>
           </div>
         </div>
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
           Complete database of all 59 playable SSR and SR characters in Star Savior. Filter by Attribute, Class, Rarity, or Gacha Pool to inspect Lv.200 combat stats, Rescue Journey training aptitudes, Voice Actors (CV), and build guides.
         </p>
       </section>
@@ -77,8 +77,8 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
             <button
               type="button"
               onClick={() => setSelectedElement('ALL')}
-              className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                selectedElement === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+              className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                selectedElement === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
               }`}
             >
               All Attributes ({characters.length})
@@ -88,10 +88,10 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                 key={el.key}
                 type="button"
                 onClick={() => setSelectedElement(el.key === selectedElement ? 'ALL' : el.key)}
-                className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[11px] font-bold border ${
+                className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[12.5px] font-bold border ${
                   selectedElement === el.key
                     ? 'border-[#3b82f6] bg-[#2563eb] text-white'
-                    : 'border-[#243049] bg-[#161f33] text-[#cbd5e1]'
+                    : 'border-[#243049] bg-[#161f33] text-[#e8eff8]'
                 }`}
               >
                 <img src={el.iconUrl} alt={el.label} className="h-3.5 w-3.5 object-contain" loading="eager" />
@@ -105,8 +105,8 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
               <button
                 type="button"
                 onClick={() => setSelectedRole('ALL')}
-                className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                  selectedRole === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+                className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                  selectedRole === 'ALL' ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
                 }`}
               >
                 All Classes
@@ -116,10 +116,10 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                   key={rl.key}
                   type="button"
                   onClick={() => setSelectedRole(rl.key === selectedRole ? 'ALL' : rl.key)}
-                  className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[11px] font-bold border ${
+                  className={`inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-[12.5px] font-bold border ${
                     selectedRole === rl.key
                       ? 'border-[#3b82f6] bg-[#2563eb] text-white'
-                      : 'border-[#243049] bg-[#161f33] text-[#cbd5e1]'
+                      : 'border-[#243049] bg-[#161f33] text-[#e8eff8]'
                   }`}
                 >
                   <img src={rl.iconUrl} alt={rl.label} className="h-3.5 w-3.5 object-contain" loading="eager" />
@@ -134,8 +134,8 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                   key={r}
                   type="button"
                   onClick={() => setSelectedRarity(r)}
-                  className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                    selectedRarity === r ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+                  className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                    selectedRarity === r ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
                   }`}
                 >
                   {r === 'ALL' ? 'All Rarities' : r}
@@ -146,8 +146,8 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                   key={p}
                   type="button"
                   onClick={() => setSelectedPool(p)}
-                  className={`rounded px-2.5 py-1 text-[11px] font-bold ${
-                    selectedPool === p ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#cbd5e1]'
+                  className={`rounded px-2.5 py-1 text-[12.5px] font-bold ${
+                    selectedPool === p ? 'bg-[#2563eb] text-white' : 'bg-[#161f33] text-[#e8eff8]'
                   }`}
                 >
                   {p === 'ALL' ? 'All Pools' : p}
@@ -158,7 +158,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search name or CV..."
-                className="flex-1 sm:flex-none rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[11px] text-white placeholder-[#64748b] focus:border-[#3b82f6] focus:outline-none"
+                className="flex-1 sm:flex-none rounded border border-[#243049] bg-[#090d16] px-2.5 py-1 text-[12.5px] text-white placeholder-[#8c9db8] focus:border-[#3b82f6] focus:outline-none"
               />
             </div>
           </div>
@@ -232,34 +232,34 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                   <div className="min-w-0 flex-1 space-y-1">
                     <div className="flex flex-wrap items-center gap-1.5">
                       <AppMediaTierBadge tier={c.staticData?.appMediaTier || c.overallTier} />
-                      <span className="rounded border border-[#eab308]/60 bg-[#eab308]/15 px-1.5 py-0.5 text-[10px] font-black text-[#fde047]">
+                      <span className="rounded border border-[#eab308]/60 bg-[#eab308]/15 px-1.5 py-0.5 text-[11.5px] font-black text-[#fde047]">
                         {c.rarity}
                       </span>
-                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-white">
+                      <span className="inline-flex items-center gap-1 text-[12.5px] font-bold text-white">
                         {c.staticData?.attributeIconUrl && (
                           <img src={c.staticData.attributeIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="lazy" />
                         )}
                         <span>{c.element}</span>
                       </span>
-                      <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#cbd5e1]">
+                      <span className="inline-flex items-center gap-1 text-[12.5px] font-bold text-[#e8eff8]">
                         {c.staticData?.classIconUrl && (
                           <img src={c.staticData.classIconUrl} alt="" className="h-3.5 w-3.5 object-contain" loading="lazy" />
                         )}
                         <span>{c.role}</span>
                       </span>
                     </div>
-                    <div className="text-[13px] font-extrabold text-[#60a5fa] leading-snug">{c.name}</div>
-                    <div className="text-[10px] font-semibold text-[#94a3b8]">
+                    <div className="text-[14.5px] font-extrabold text-[#60a5fa] leading-snug">{c.name}</div>
+                    <div className="text-[11.5px] font-semibold text-[#c8d4e6]">
                       {c.staticData?.pool || 'Standard'} · Reroll: {c.staticData?.appMediaRerollTier || c.rerollTier}
                     </div>
                   </div>
                 </div>
 
-                <div className="rounded bg-[#141c2e] border border-[#1e293b] px-2.5 py-1.5 font-mono text-[11px] font-extrabold text-white">
+                <div className="rounded bg-[#141c2e] border border-[#1e293b] px-2.5 py-1.5 font-mono text-[12.5px] font-extrabold text-white">
                   HP {c.baseStats.hp.toLocaleString()} · ATK {c.baseStats.atk.toLocaleString()} · DEF {c.baseStats.def.toLocaleString()} · SPD {c.baseStats.spd}
                 </div>
                 {js && (
-                  <div className="text-[10px] font-semibold text-[#94a3b8]">
+                  <div className="text-[11.5px] font-semibold text-[#c8d4e6]">
                     Journey: POW {js.power} / HLT {js.vitality} / END {js.endurance} / FOC {js.focus} / PRO {js.protection}
                   </div>
                 )}
@@ -269,9 +269,9 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
         </div>
 
         <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                 <th className="px-3.5 py-2.5 border-r border-[#243049]">Character ({filtered.length})</th>
                 <th className="w-28 px-3 py-2.5 text-center border-r border-[#243049]">Rarity / Pool</th>
                 <th className="w-40 px-3 py-2.5 border-r border-[#243049]">Attribute & Class</th>
@@ -294,14 +294,14 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                           loading="eager"
                         />
                         <div>
-                          <div className="text-[13px] font-extrabold text-[#60a5fa] group-hover:text-white">
+                          <div className="text-[14.5px] font-extrabold text-[#60a5fa] group-hover:text-white">
                             {c.name}
                           </div>
-                          <div className="text-[11px] font-semibold text-[#cbd5e1]">
+                          <div className="text-[12.5px] font-semibold text-[#e8eff8]">
                             {c.staticData?.attackType || 'Slash Damage'}
                           </div>
                           {c.staticData?.profile?.cv && (
-                            <div className="text-[10px] text-[#94a3b8]">
+                            <div className="text-[11.5px] text-[#c8d4e6]">
                               CV: {c.staticData.profile.cv}
                             </div>
                           )}
@@ -309,21 +309,21 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                       </Link>
                     </td>
                     <td className="p-3 text-center border-r border-[#1e293b] space-y-1">
-                      <span className="inline-block rounded border border-[#eab308]/60 bg-[#eab308]/15 px-2 py-0.5 text-[11px] font-black text-[#fde047]">
+                      <span className="inline-block rounded border border-[#eab308]/60 bg-[#eab308]/15 px-2 py-0.5 text-[12.5px] font-black text-[#fde047]">
                         {c.rarity}
                       </span>
-                      <div className="text-[10px] font-bold text-[#94a3b8]">
+                      <div className="text-[11.5px] font-bold text-[#c8d4e6]">
                         {c.staticData?.pool || 'Standard'}
                       </div>
                     </td>
                     <td className="p-3 border-r border-[#1e293b] space-y-1.5">
-                      <div className="flex items-center gap-1.5 text-[11px] font-bold text-white">
+                      <div className="flex items-center gap-1.5 text-[12.5px] font-bold text-white">
                         {c.staticData?.attributeIconUrl && (
                           <img src={c.staticData.attributeIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
                         )}
                         <span>{c.element}</span>
                       </div>
-                      <div className="flex items-center gap-1.5 text-[11px] font-bold text-[#cbd5e1]">
+                      <div className="flex items-center gap-1.5 text-[12.5px] font-bold text-[#e8eff8]">
                         {c.staticData?.classIconUrl && (
                           <img src={c.staticData.classIconUrl} alt="" className="h-4 w-4 object-contain" loading="eager" />
                         )}
@@ -337,11 +337,11 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                       <AppMediaTierBadge tier={c.staticData?.appMediaRerollTier || c.rerollTier} />
                     </td>
                     <td className="p-3 space-y-1">
-                      <div className="font-mono text-[12px] font-extrabold text-white">
+                      <div className="font-mono text-[13.5px] font-extrabold text-white">
                         HP {c.baseStats.hp.toLocaleString()} · ATK {c.baseStats.atk.toLocaleString()} · DEF {c.baseStats.def.toLocaleString()} · SPD {c.baseStats.spd}
                       </div>
                       {js && (
-                        <div className="text-[11px] font-semibold text-[#94a3b8]">
+                        <div className="text-[12.5px] font-semibold text-[#c8d4e6]">
                           Journey: POW {js.power} / HLT {js.vitality} / END {js.endurance} / FOC {js.focus} / PRO {js.protection}
                         </div>
                       )}
@@ -359,7 +359,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
         <AppMediaH2 id="profile-cv-database" badge="PROFILES & CV">
           Voice Actors (CV), Affiliations, Birthdays & Heights List ({filtered.length} Saviors)
         </AppMediaH2>
-        <p className="text-[12px] text-[#cbd5e1] leading-relaxed">
+        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
           Complete character profile registry for all playable Saviors, including Japanese Voice Actors (CV), Starlight Squad / faction affiliations, birthdays, heights, character titles, and acquisition methods.
         </p>
 
@@ -381,11 +381,11 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                     loading="lazy"
                   />
                   <div className="min-w-0 flex-1">
-                    <div className="font-extrabold text-[#60a5fa] text-[12px] truncate">{c.name}</div>
-                    <div className="text-[11px] font-bold text-white truncate">CV: {prof?.cv || 'TBA'}</div>
+                    <div className="font-extrabold text-[#60a5fa] text-[13.5px] truncate">{c.name}</div>
+                    <div className="text-[12.5px] font-bold text-white truncate">CV: {prof?.cv || 'TBA'}</div>
                   </div>
                 </div>
-                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[10px] text-[#cbd5e1] border-t border-[#1e293b] pt-1.5">
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11.5px] text-[#e8eff8] border-t border-[#1e293b] pt-1.5">
                   <span>Faction: <strong className="text-white">{prof?.affiliation || 'Voyager Guild'}</strong></span>
                   {prof?.birthday && <span>Birthday: <strong className="text-[#93c5fd]">{prof.birthday}</strong></span>}
                   {prof?.height && <span>Height: <strong className="text-white">{prof.height}</strong></span>}
@@ -396,9 +396,9 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
         </div>
 
         <div className="hidden md:block overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-          <table className="w-full border-collapse text-left text-[12px]">
+          <table className="w-full border-collapse text-left text-[13.5px]">
             <thead>
-              <tr className="border-b border-[#243049] bg-[#161f33] text-[11px] font-extrabold text-[#94a3b8]">
+              <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
                 <th className="px-3.5 py-2.5 border-r border-[#243049]">Character</th>
                 <th className="px-3.5 py-2.5 border-r border-[#243049]">Voice Actor (CV)</th>
                 <th className="px-3.5 py-2.5 border-r border-[#243049]">Affiliation / Faction</th>
@@ -421,30 +421,30 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                           loading="lazy"
                         />
                         <div>
-                          <div className="font-extrabold text-[#60a5fa] group-hover:text-white text-[12px]">
+                          <div className="font-extrabold text-[#60a5fa] group-hover:text-white text-[13.5px]">
                             {c.name}
                           </div>
-                          <div className="text-[10px] text-[#94a3b8] font-bold">{c.rarity} · {c.element}</div>
+                          <div className="text-[11.5px] text-[#c8d4e6] font-bold">{c.rarity} · {c.element}</div>
                         </div>
                       </Link>
                     </td>
                     <td className="p-3 border-r border-[#1e293b] font-bold text-white">
                       {prof?.cv || 'TBA'}
                     </td>
-                    <td className="p-3 border-r border-[#1e293b] text-[#cbd5e1] font-semibold">
+                    <td className="p-3 border-r border-[#1e293b] text-[#e8eff8] font-semibold">
                       {prof?.affiliation || 'Voyager Guild'}
                     </td>
                     <td className="p-3 text-center border-r border-[#1e293b] text-[#93c5fd] font-bold">
                       {prof?.birthday || '—'}
                     </td>
-                    <td className="p-3 text-center border-r border-[#1e293b] text-[#cbd5e1] font-mono">
+                    <td className="p-3 text-center border-r border-[#1e293b] text-[#e8eff8] font-mono">
                       {prof?.height || '—'}
                     </td>
                     <td className="p-3 space-y-0.5">
                       {prof?.origin && (
-                        <div className="text-[11px] font-extrabold text-[#fbbf24]">{prof.origin}</div>
+                        <div className="text-[12.5px] font-extrabold text-[#fbbf24]">{prof.origin}</div>
                       )}
-                      <div className="text-[11px] text-[#94a3b8]">
+                      <div className="text-[12.5px] text-[#c8d4e6]">
                         {prof?.obtain || c.staticData?.pool || 'Standard Gacha'}
                       </div>
                     </td>
