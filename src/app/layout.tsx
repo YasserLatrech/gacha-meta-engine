@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next';
 import { Plus_Jakarta_Sans, Space_Grotesk, JetBrains_Mono } from 'next/font/google';
 import { SITE_NAME, SITE_URL } from '@/application/seo.service';
 import { AnalyticsTelemetry } from '@/components/micro/AnalyticsAndAds';
+import { ScrollToTopButton } from '@/components/micro/ScrollToTopButton';
 import './globals.css';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -104,6 +105,7 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased">
         {children}
+        <ScrollToTopButton />
         <AnalyticsTelemetry />
       </body>
     </html>

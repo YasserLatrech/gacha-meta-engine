@@ -64,6 +64,7 @@ import {
 import { InMemoryAnalyticsRepository } from '../../infrastructure/repositories/analytics.repository';
 import { StaticPortalRepository } from '../../infrastructure/repositories/portal.repository';
 import { buildCuratedStrategyWikiRoadmap } from '../wiki-roadmap';
+import { computeScrollMetrics } from '../scroll-metrics';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -834,5 +835,41 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     );
     expect(homeMacroSrc).toContain('Onimusha: Way of the Sword');
     expect(homeMacroSrc).not.toContain('Onimusha VR');
+  });
+
+  it('computes Back-to-Top scroll visibility and progress ring metrics across viewport heights', () => {
+    // Non-scrollable short document stays hidden
+    expect(computeScrollMetrics(0, 800, 800)).toEqual({ visible: false, progress: 0 });
+
+    // Top of long page stays hidden until scrolled down
+    expect(computeScrollMetrics(100, 4000, 800)).toEqual({
+      visible: false,
+      progress: 100 / 3200,
+    });
+
+    // Mid-scroll down shows button with accurate ratio
+    expect(computeScrollMetrics(640, 4000, 800)).toEqual({
+      visible: true,
+      progress: 0.2,
+    });
+
+    // Bottom of page clamps progress to 1 and remains visible
+    expect(computeScrollMetrics(3500, 4000, 800)).toEqual({
+      visible: true,
+      progress: 1,
+    });
+
+    // Short-medium scrollable page shows when reaching bottom
+    expect(computeScrollMetrics(200, 1020, 800)).toEqual({
+      visible: true,
+      progress: 200 / 220,
+    });
+
+    // Layout mounts global ScrollToTopButton across all routes
+    const layoutSrc = fs.readFileSync(
+      path.resolve(process.cwd(), 'src/app/layout.tsx'),
+      'utf8'
+    );
+    expect(layoutSrc).toContain('<ScrollToTopButton />');
   });
 });

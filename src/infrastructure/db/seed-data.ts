@@ -61787,8 +61787,8 @@ export const STAR_SAVIOR_BANNERS_SEED = [
     "title": "Maid Ceres Pickup Observation",
     "bannerType": "Character ★★★★★ · Arcana ★★★★☆",
     "imageUrl": "https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/ARCANA_SAINTESS_DEMON_SSR_01.webp",
-    "periodLabel": "Active Until Nov 13 (Fri)",
-    "verdict": "MUST PULL",
+    "periodLabel": "Concluded Nov 13 (Fri) 04:00 JST",
+    "verdict": "CONCLUDED",
     "reasoning": "Features Maid Ceres (Sun Supporter with dual AoE heals, Regeneration, and team-wide ATK Up Ultimate) alongside SSR Arcana \"Grueling Ordeal\".",
     "featuredCharacterSlugs": [
       "maid-ceres",

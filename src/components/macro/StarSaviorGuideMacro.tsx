@@ -24,22 +24,28 @@ import {
 } from '../micro/StarSaviorInteractiveTools';
 import { LiveJstCountdown } from '../micro/LiveJstCountdown';
 
-const GUIDE_LIVE_DEADLINES: Record<string, { label: string; targetIso: string }> = {
+interface GuideDeadlineEntry {
+  readonly label: string;
+  readonly targetIso?: string;
+  readonly concludedText?: string;
+}
+
+const GUIDE_LIVE_DEADLINES: Record<string, GuideDeadlineEntry> = {
   'maid-ceres-gacha': {
-    label: 'Maid Ceres & Grueling Ordeal Banner (~2026/11/13 04:00 JST)',
-    targetIso: '2026-11-13T04:00:00+09:00',
+    label: 'Maid Ceres & Grueling Ordeal Banner (Concluded 2026/11/13 04:00 JST)',
+    concludedText: 'Ended · Nov 13 JST',
   },
   'frey-noble-princess-gacha': {
     label: 'Frey: Noble Princess & Indomitable Masterpiece Banner (~2026/11/19 04:00 JST)',
     targetIso: '2026-11-19T04:00:00+09:00',
   },
   'valentine-event': {
-    label: 'Valentine Revival Event Period (~2026/11/13 03:59:59 JST)',
-    targetIso: '2026-11-13T03:59:59+09:00',
+    label: 'Valentine Revival Event Period (Concluded 2026/11/13 03:59:59 JST)',
+    concludedText: 'Ended · Nov 13 JST',
   },
   'which-gacha-to-pull': {
-    label: 'Current Pickup Banner Rotation (~2026/11/13 04:00 JST)',
-    targetIso: '2026-11-13T04:00:00+09:00',
+    label: 'Current Pickup Banner Rotation (~2026/11/19 04:00 JST)',
+    targetIso: '2026-11-19T04:00:00+09:00',
   },
 };
 
@@ -74,17 +80,22 @@ export function StarSaviorGuideMacro({
           {guide.title}
         </h1>
 
-        {GUIDE_LIVE_DEADLINES[guide.slug] && (
-          <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#28354e] bg-[#0d1424] px-3 py-2 text-[13px]">
-            <span className="font-bold text-[#e8eff8]">
-              {GUIDE_LIVE_DEADLINES[guide.slug].label}
-            </span>
-            <LiveJstCountdown
-              targetIso={GUIDE_LIVE_DEADLINES[guide.slug].targetIso}
-              prefix="Ends in"
-            />
-          </div>
-        )}
+        {(() => {
+          const deadline = GUIDE_LIVE_DEADLINES[guide.slug];
+          if (!deadline) return null;
+          return (
+            <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#28354e] bg-[#0d1424] px-3 py-2 text-[13px]">
+              <span className="font-bold text-[#e8eff8]">{deadline.label}</span>
+              {deadline.targetIso ? (
+                <LiveJstCountdown targetIso={deadline.targetIso} prefix="Ends in" />
+              ) : (
+                <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
+                  {deadline.concludedText ?? 'Ended'}
+                </span>
+              )}
+            </div>
+          );
+        })()}
 
         {guide.eyecatchSrc && (
           <AppMediaEyecatchBanner src={guide.eyecatchSrc} alt={guide.title} />

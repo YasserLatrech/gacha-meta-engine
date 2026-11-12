@@ -395,10 +395,12 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                   Maid Ceres Pickup Gacha
                 </Link>
                 <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-red-600/25 border border-red-500/40 px-2 py-0.5 text-[11.5px] font-bold text-red-200">
-                    ~2026/11/13 (Fri) 04:00 JST
+                  <span className="rounded bg-slate-700/60 border border-slate-500/40 px-2 py-0.5 text-[11.5px] font-bold text-slate-200">
+                    Concluded 2026/11/13 (Fri) 04:00 JST
                   </span>
-                  <LiveJstCountdown targetIso="2026-11-13T04:00:00+09:00" prefix="Ends in" />
+                  <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
+                    ENDED
+                  </span>
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
@@ -570,8 +572,10 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 </td>
                 <td className="p-2.5 text-center align-middle text-[#e2e8f0] font-semibold">
                   <div className="flex flex-col items-center gap-1.5">
-                    <span>Until 2026/11/13 03:59:59 JST</span>
-                    <LiveJstCountdown targetIso="2026-11-13T03:59:59+09:00" prefix="Ends in" />
+                    <span className="text-slate-300">Concluded 2026/11/13 03:59:59 JST</span>
+                    <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
+                      ENDED · ARCHIVE GUIDE
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -601,8 +605,10 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         </div>
 
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <AppMediaH4>Login Bonus (Held Period: ~Nov 13 [Fri] 04:00 JST)</AppMediaH4>
-          <LiveJstCountdown targetIso="2026-11-13T04:00:00+09:00" prefix="Reset ends in" />
+          <AppMediaH4>Login Bonus (Period Concluded: Nov 13 [Fri] 04:00 JST)</AppMediaH4>
+          <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
+            ROTATION ENDED
+          </span>
         </div>
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
           <table className="w-full border-collapse text-[13.5px]">
