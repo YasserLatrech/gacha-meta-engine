@@ -256,7 +256,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                 </div>
 
                 <div className="rounded bg-[#141c2e] border border-[#1e293b] px-2.5 py-1.5 font-mono text-[12.5px] font-extrabold text-white">
-                  HP {c.baseStats.hp.toLocaleString()} · ATK {c.baseStats.atk.toLocaleString()} · DEF {c.baseStats.def.toLocaleString()} · SPD {c.baseStats.spd}
+                  HP {c.baseStats.hp.toLocaleString('en-US')} · ATK {c.baseStats.atk.toLocaleString('en-US')} · DEF {c.baseStats.def.toLocaleString('en-US')} · SPD {c.baseStats.spd}
                 </div>
                 {js && (
                   <div className="text-[11.5px] font-semibold text-[#c8d4e6]">
@@ -338,7 +338,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                     </td>
                     <td className="p-3 space-y-1">
                       <div className="font-mono text-[13.5px] font-extrabold text-white">
-                        HP {c.baseStats.hp.toLocaleString()} · ATK {c.baseStats.atk.toLocaleString()} · DEF {c.baseStats.def.toLocaleString()} · SPD {c.baseStats.spd}
+                        HP {c.baseStats.hp.toLocaleString('en-US')} · ATK {c.baseStats.atk.toLocaleString('en-US')} · DEF {c.baseStats.def.toLocaleString('en-US')} · SPD {c.baseStats.spd}
                       </div>
                       {js && (
                         <div className="text-[12.5px] font-semibold text-[#c8d4e6]">

@@ -902,7 +902,7 @@ export function CharacterDetailMacro({
                 {atkRankLabel}
               </span>
             </div>
-            <div className="text-lg font-black text-rose-400">{character.baseStats.atk.toLocaleString()}</div>
+            <div className="text-lg font-black text-rose-400">{character.baseStats.atk.toLocaleString('en-US')}</div>
             <div className="h-1.5 w-full rounded-full bg-[#1e293b] overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-amber-500 to-rose-500"
@@ -918,7 +918,7 @@ export function CharacterDetailMacro({
                 {hpRankLabel}
               </span>
             </div>
-            <div className="text-lg font-black text-emerald-400">{character.baseStats.hp.toLocaleString()}</div>
+            <div className="text-lg font-black text-emerald-400">{character.baseStats.hp.toLocaleString('en-US')}</div>
             <div className="h-1.5 w-full rounded-full bg-[#1e293b] overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-emerald-500 to-teal-400"
@@ -934,7 +934,7 @@ export function CharacterDetailMacro({
                 {defRankLabel}
               </span>
             </div>
-            <div className="text-lg font-black text-sky-400">{character.baseStats.def.toLocaleString()}</div>
+            <div className="text-lg font-black text-sky-400">{character.baseStats.def.toLocaleString('en-US')}</div>
             <div className="h-1.5 w-full rounded-full bg-[#1e293b] overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-sky-500 to-blue-400"

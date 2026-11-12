@@ -935,7 +935,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     <div className="flex items-center gap-1.5">
                       <span className="text-[12.5px] font-bold text-[#c8d4e6]">Reader Votes:</span>
                       <span className="text-[14.5px] font-black text-[#fbbf24] font-mono">
-                        {totalVotes.toLocaleString()}
+                        {totalVotes.toLocaleString('en-US')}
                       </span>
                     </div>
                     <button
@@ -1032,7 +1032,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                       <td className="p-3 text-center">
                         <div className="inline-flex flex-col items-center gap-1 rounded-lg border border-[#243049] bg-[#141c2e] px-2.5 py-1.5">
                           <span className="text-[14.5px] font-black text-[#fbbf24] font-mono">
-                            {totalVotes.toLocaleString()}
+                            {totalVotes.toLocaleString('en-US')}
                           </span>
                           <button
                             type="button"
@@ -1299,7 +1299,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                         }`}
                       >
                         <span>{nextVoted ? '✓ Prioritized' : '+1 Prioritize'}</span>
-                        <span className="font-mono text-[11.5px]">({nextVotes.toLocaleString()})</span>
+                        <span className="font-mono text-[11.5px]">({nextVotes.toLocaleString('en-US')})</span>
                       </button>
                       {nextWiki && (
                         <button
@@ -1791,7 +1791,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     }`}
                   >
                     <span>{planVoted ? '✓ Voted for Next Wiki' : '+1 Vote to Prioritize This Wiki'}</span>
-                    <span className="font-mono text-[12px]">({planVotes.toLocaleString()})</span>
+                    <span className="font-mono text-[12px]">({planVotes.toLocaleString('en-US')})</span>
                   </button>
                 )}
 

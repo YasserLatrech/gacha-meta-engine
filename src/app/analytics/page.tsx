@@ -98,20 +98,20 @@ export default async function FounderAnalyticsPage() {
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4">
             <div className="text-[12px] font-bold text-[#c8d4e6]">Unique Visitors (Today)</div>
             <div className="mt-1 font-mono text-3xl font-black text-[#60a5fa]">
-              {summary.todayVisitors.toLocaleString()}
+              {summary.todayVisitors.toLocaleString('en-US')}
             </div>
             <div className="mt-1 text-[11.5px] text-[#b8c7dc]">
-              14d Total: {summary.totalUniqueVisitorsWindow.toLocaleString()} visitors
+              14d Total: {summary.totalUniqueVisitorsWindow.toLocaleString('en-US')} visitors
             </div>
           </div>
 
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4">
             <div className="text-[12px] font-bold text-[#c8d4e6]">Pageviews (Today)</div>
             <div className="mt-1 font-mono text-3xl font-black text-emerald-400">
-              {summary.todayPageviews.toLocaleString()}
+              {summary.todayPageviews.toLocaleString('en-US')}
             </div>
             <div className="mt-1 text-[11.5px] text-[#b8c7dc]">
-              14d Total: {summary.totalPageviewsWindow.toLocaleString()} views
+              14d Total: {summary.totalPageviewsWindow.toLocaleString('en-US')} views
             </div>
           </div>
 
@@ -247,7 +247,7 @@ export default async function FounderAnalyticsPage() {
                       </Link>
                     </div>
                     <span className="font-mono font-extrabold text-emerald-400">
-                      {r.pageviews.toLocaleString()} views
+                      {r.pageviews.toLocaleString('en-US')} views
                     </span>
                   </div>
                 ))
@@ -267,7 +267,7 @@ export default async function FounderAnalyticsPage() {
                   <div key={ref.referrerHost} className="flex items-center justify-between px-4 py-2.5 text-[13px]">
                     <span className="font-semibold text-[#e2e8f0] truncate">{ref.referrerHost}</span>
                     <span className="font-mono font-extrabold text-[#93c5fd]">
-                      {ref.visits.toLocaleString()}
+                      {ref.visits.toLocaleString('en-US')}
                     </span>
                   </div>
                 ))
@@ -297,7 +297,7 @@ export default async function FounderAnalyticsPage() {
                         : 'bg-[#1e293b] text-[#93c5fd]'
                     }`}
                   >
-                    {item.status === 'next' ? 'NEXT #2' : `#${idx + 2} QUEUE`}
+                    {item.status === 'next' ? 'NEXT #2' : `#${idx + 1} DEMAND`}
                   </span>
                   <span className="font-mono text-[11.5px] font-extrabold text-emerald-400">
                     +{item.serverVotes} IP votes
@@ -305,7 +305,7 @@ export default async function FounderAnalyticsPage() {
                 </div>
                 <div className="text-[13.5px] font-extrabold text-white truncate">{item.title}</div>
                 <div className="text-[11.5px] text-[#b8c7dc] truncate">
-                  {item.launchWindow} · Total demand: {item.totalPriorityScore.toLocaleString()}
+                  {item.launchWindow} · Total demand: {item.totalPriorityScore.toLocaleString('en-US')}
                 </div>
               </div>
             ))}
