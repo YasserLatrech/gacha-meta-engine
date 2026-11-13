@@ -2,7 +2,7 @@
 // ZERO INVENTED STATISTICS OR FALLBACKS
 
 export const APPMEDIA_HOME_PORTAL_DATA = {
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "strategyWikis": [
     {
       "href": "/starsavior",
@@ -1000,6 +1000,20 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "articleUrl": "https://appmedia.jp/newgame/80557555"
     },
     {
+      "id": "三國志 戦棋版",
+      "votes": 2,
+      "category": "December 2026",
+      "categoryJa": "2026年12月",
+      "status": "Upcoming",
+      "releaseDate": "Dec 1, 2026",
+      "title": "Romance of the Three Kingdoms: War Chess",
+      "titleJa": "三國志 戦棋版",
+      "description": "Officially licensed Romance of the Three Kingdoms 14 tactical SRPG × SLG",
+      "publisher": "Qookka Games",
+      "iconUrl": "/banners/home/icons/portal_icon_153.webp",
+      "articleUrl": "https://appmedia.jp/newgame/80384494"
+    },
+    {
       "id": "プチプラネット",
       "votes": 212,
       "category": "December 2026",
@@ -1516,6 +1530,20 @@ export const APPMEDIA_HOME_PORTAL_DATA = {
       "publisher": "TIKITAKA STUDIO",
       "iconUrl": "/banners/home/icons/portal_icon_123.jpg",
       "articleUrl": "https://appmedia.jp/newgame/80517964"
+    },
+    {
+      "id": "ラグナロク：ニューワールド",
+      "votes": 0,
+      "category": "Within 2027",
+      "categoryJa": "2027年中",
+      "status": "Upcoming",
+      "releaseDate": "H1 2027",
+      "title": "Ragnarok: New World",
+      "titleJa": "ラグナロク：ニューワールド",
+      "description": "First open-world MMORPG set in the Ragnarok Online universe",
+      "publisher": "GungHo",
+      "iconUrl": "/banners/home/icons/portal_icon_154.webp",
+      "articleUrl": "https://appmedia.jp/newgame/80560939"
     },
     {
       "id": "ゴジラ ディフェンス フォース：X",
