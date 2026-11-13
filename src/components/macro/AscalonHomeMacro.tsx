@@ -758,6 +758,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           )}
         </section>
 
+        <AdsterraSlot variant="midbanner" />
+
         {/* 2. Upcoming Game Release Calendar */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
@@ -1154,6 +1156,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           </div>
         </section>
 
+        <AdsterraSlot variant="duo-box" />
+
         {/* 4. Ascalon.fun Strategy Wiki Hub & Expansion Roadmap */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <div className="flex flex-wrap items-start justify-between gap-3">
@@ -1437,6 +1441,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
           )}
         </section>
 
+        <AdsterraSlot variant="leaderboard" />
+
         {/* 5. Featured Strategy Articles (100% Uncropped English Localized Banners) */}
         <section className="rounded-xl border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-4">
           <AppMediaH2 id="featured-articles" badge="PICKUP GUIDES">
@@ -1470,7 +1476,22 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             ))}
           </div>
         </section>
+
+        <AdsterraSlot variant="duo-box" />
       </main>
+
+      {/* Ultrawide Desktop Sticky Skyscrapers (>=1640px, zero content overlap) */}
+      <aside
+        aria-label="Sponsored side rails"
+        className="pointer-events-none fixed inset-x-0 top-24 z-30 hidden min-[1640px]:flex justify-between px-3"
+      >
+        <div className="pointer-events-auto w-[172px]">
+          <AdsterraSlot variant="skyscraper" minViewportWidth={1640} />
+        </div>
+        <div className="pointer-events-auto w-[172px]">
+          <AdsterraSlot variant="half-skyscraper" minViewportWidth={1640} />
+        </div>
+      </aside>
 
       {/* English Strategy Article Summary Modal */}
       {activeArticle && (

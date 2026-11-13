@@ -3,13 +3,13 @@ import path from 'path';
 
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
-  // Adsterra anti-adblock/creative loaders (bauval.org) evaluate dynamic wrappers in production.
-  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.google-analytics.com https://bauval.org https://*.bauval.org https://cdn.cloudvideosa.com https://*.cloudvideosa.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com",
+  // Adsterra Anti-Adblock loaders (bauval.org, abscloud.org) rotate creative/script CDN hosts and invoke dynamic eval wrappers.
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.google-analytics.com https://bauval.org https://*.bauval.org https://abscloud.org https://*.abscloud.org https://cdn.cloudvideosa.com https://*.cloudvideosa.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com https:",
   "style-src 'self' 'unsafe-inline' https:",
   "img-src 'self' data: blob: https:",
   "media-src 'self' https://tool.matomeroyal.com https://appmedia.jp https://cdn.cloudvideosa.com https://*.cloudvideosa.com https:",
-  "font-src 'self' data:",
-  "connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://bauval.org https://*.bauval.org https://cdn.cloudvideosa.com https://*.cloudvideosa.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com",
+  "font-src 'self' data: https:",
+  "connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://bauval.org https://*.bauval.org https://abscloud.org https://*.abscloud.org https://cdn.cloudvideosa.com https://*.cloudvideosa.com https:",
   "frame-src 'self' https:",
   "object-src 'none'",
   "base-uri 'self'",

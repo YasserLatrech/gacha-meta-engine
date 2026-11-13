@@ -902,6 +902,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     const rootDir = path.resolve(__dirname, '../../..');
     const nextConfigSrc = fs.readFileSync(path.join(rootDir, 'next.config.ts'), 'utf8');
     expect(nextConfigSrc).toContain('https://bauval.org');
+    expect(nextConfigSrc).toContain('https://abscloud.org');
     expect(nextConfigSrc).toContain('https://www.googletagmanager.com');
     expect(nextConfigSrc).toContain("object-src 'none'");
     expect(nextConfigSrc).toContain("frame-ancestors 'none'");
@@ -911,18 +912,26 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
       'utf8'
     );
     expect(adsSrc).toContain('AdsterraSlot');
+    expect(adsSrc).toContain('ADSTERRA_POPUNDER_SRC');
+    expect(adsSrc).toContain('ADSTERRA_SOCIAL_BAR_SRC');
+    expect(adsSrc).toContain('minViewportWidth');
     expect(adsSrc).toContain('sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"');
 
     const shellSrc = fs.readFileSync(path.join(rootDir, 'src/components/WikiShell.tsx'), 'utf8');
     expect(shellSrc).toContain('<AdsterraSlot variant="sidebar" />');
+    expect(shellSrc).toContain('<AdsterraSlot variant="skyscraper"');
     expect(shellSrc).toContain('<AdsterraSlot variant="leaderboard" />');
+    expect(shellSrc).toContain('<AdsterraSlot variant="midbanner" />');
     expect(shellSrc).toContain('<AdsterraSlot variant="native" />');
+    expect(shellSrc).toContain('<AdsterraSlot variant="duo-box" />');
 
     const homeSrc = fs.readFileSync(
       path.join(rootDir, 'src/components/macro/AscalonHomeMacro.tsx'),
       'utf8'
     );
     expect(homeSrc).toContain('<AdsterraSlot variant="leaderboard" />');
+    expect(homeSrc).toContain('<AdsterraSlot variant="midbanner" />');
     expect(homeSrc).toContain('<AdsterraSlot variant="native" />');
+    expect(homeSrc).toContain('<AdsterraSlot variant="duo-box" />');
   });
 });

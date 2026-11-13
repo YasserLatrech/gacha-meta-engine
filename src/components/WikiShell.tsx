@@ -393,8 +393,9 @@ export function WikiShell({
             ))}
           </div>
 
-          <div style={{ padding: '5px' }}>
+          <div style={{ padding: '5px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
             <AdsterraSlot variant="sidebar" />
+            <AdsterraSlot variant="skyscraper" minViewportWidth={1024} />
           </div>
         </aside>
 
@@ -402,7 +403,9 @@ export function WikiShell({
         <main className="wiki-main" style={{ display: 'flex', flexDirection: 'column', gap: '16px', minWidth: 0 }}>
           <AdsterraSlot variant="leaderboard" />
           {children}
+          <AdsterraSlot variant="midbanner" />
           <AdsterraSlot variant="native" />
+          <AdsterraSlot variant="duo-box" />
         </main>
       </div>
 

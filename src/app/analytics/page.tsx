@@ -45,10 +45,18 @@ export default async function FounderAnalyticsPage() {
     .slice(0, 8);
 
   const ga4Configured = Boolean(process.env.NEXT_PUBLIC_GA4_ID?.trim());
-  const adsterraConfigured = Boolean(
-    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_728_KEY?.trim() &&
-      process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY?.trim()
-  );
+  const activeAdUnits = [
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_728_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_320_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_300_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_468_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_160_600_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_160_300_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY,
+    process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC,
+    process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_SRC,
+  ].filter((v) => Boolean(v?.trim())).length;
+  const adsterraConfigured = activeAdUnits > 0;
 
   return (
     <div className="min-h-screen bg-[#090d16] text-[#f8fafc] px-4 py-6 sm:px-6">
@@ -184,7 +192,7 @@ export default async function FounderAnalyticsPage() {
 
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4 space-y-1.5">
             <div className="flex items-center justify-between">
-              <span className="text-[13.5px] font-extrabold text-white">Adsterra Monetization (4 Units)</span>
+              <span className="text-[13.5px] font-extrabold text-white">Adsterra Tier-1 Monetization</span>
               <span
                 className={`rounded px-2 py-0.5 font-mono text-[11px] font-black ${
                   adsterraConfigured
@@ -192,11 +200,11 @@ export default async function FounderAnalyticsPage() {
                     : 'bg-amber-500/20 border border-amber-500/40 text-amber-300'
                 }`}
               >
-                {adsterraConfigured ? 'ACTIVE (4 SLOTS)' : 'STANDBY'}
+                {adsterraConfigured ? `ACTIVE (${activeAdUnits} UNITS · ANTI-ADBLOCK)` : 'STANDBY'}
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
-              Zero-CLS sandboxed Adsterra banners (728x90, 320x50, 300x250) + Native Banner under Nginx microcaching.
+              Full 9-unit stack (Popunder, Social Bar, Native, 728x90, 468x60, 320x50, 300x250, 160x600, 160x300) with Anti-Adblock active.
             </p>
           </div>
         </div>
