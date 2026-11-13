@@ -45,6 +45,10 @@ export default async function FounderAnalyticsPage() {
     .slice(0, 8);
 
   const ga4Configured = Boolean(process.env.NEXT_PUBLIC_GA4_ID?.trim());
+  const adsterraConfigured = Boolean(
+    process.env.NEXT_PUBLIC_ADSTERRA_BANNER_728_KEY?.trim() &&
+      process.env.NEXT_PUBLIC_ADSTERRA_NATIVE_KEY?.trim()
+  );
 
   return (
     <div className="min-h-screen bg-[#090d16] text-[#f8fafc] px-4 py-6 sm:px-6">
@@ -180,13 +184,19 @@ export default async function FounderAnalyticsPage() {
 
           <div className="rounded-xl border border-[#28354e] bg-[#111827] p-4 space-y-1.5">
             <div className="flex items-center justify-between">
-              <span className="text-[13.5px] font-extrabold text-white">Zero-Ads Speed &amp; Edge Policy</span>
-              <span className="rounded bg-emerald-500/20 border border-emerald-500/40 px-2 py-0.5 font-mono text-[11px] font-black text-emerald-300">
-                AD-FREE FAST
+              <span className="text-[13.5px] font-extrabold text-white">Adsterra Monetization (4 Units)</span>
+              <span
+                className={`rounded px-2 py-0.5 font-mono text-[11px] font-black ${
+                  adsterraConfigured
+                    ? 'bg-emerald-500/20 border border-emerald-500/40 text-emerald-300'
+                    : 'bg-amber-500/20 border border-amber-500/40 text-amber-300'
+                }`}
+              >
+                {adsterraConfigured ? 'ACTIVE (4 SLOTS)' : 'STANDBY'}
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
-              100% ad-free UI with strict CSP blocking ad networks, Nginx proxy microcaching, and L1/ISR surge buffering.
+              Zero-CLS sandboxed Adsterra banners (728x90, 320x50, 300x250) + Native Banner under Nginx microcaching.
             </p>
           </div>
         </div>

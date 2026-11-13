@@ -873,7 +873,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(layoutSrc).toContain('<ScrollToTopButton />');
   });
 
-  it('enforces GEO richness (FAQPage, SearchAction, llms-full.txt) and strictly ad-free architecture', () => {
+  it('enforces GEO richness (FAQPage, SearchAction, llms-full.txt) and Zero-CLS Adsterra monetization architecture', () => {
     const homeGraph = buildHomePortalJsonLd()['@graph'] as Array<Record<string, unknown>>;
     const websiteNode = homeGraph.find((n) => n['@type'] === 'WebSite');
     expect(websiteNode?.potentialAction).toMatchObject({ '@type': 'SearchAction' });
@@ -900,16 +900,29 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     }
 
     const rootDir = path.resolve(__dirname, '../../..');
-    for (const relFile of [
-      'next.config.ts',
-      'src/components/WikiShell.tsx',
-      'src/components/macro/AscalonHomeMacro.tsx',
-      'src/components/micro/AnalyticsAndAds.tsx',
-    ]) {
-      const content = fs.readFileSync(path.join(rootDir, relFile), 'utf8');
-      expect(content).not.toContain('Adsterra');
-      expect(content).not.toContain('highperformanceformat');
-      expect(content).not.toContain('effectivegatecpm');
-    }
+    const nextConfigSrc = fs.readFileSync(path.join(rootDir, 'next.config.ts'), 'utf8');
+    expect(nextConfigSrc).toContain('https://bauval.org');
+    expect(nextConfigSrc).toContain('https://www.googletagmanager.com');
+    expect(nextConfigSrc).toContain("object-src 'none'");
+    expect(nextConfigSrc).toContain("frame-ancestors 'none'");
+
+    const adsSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/micro/AnalyticsAndAds.tsx'),
+      'utf8'
+    );
+    expect(adsSrc).toContain('AdsterraSlot');
+    expect(adsSrc).toContain('sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin"');
+
+    const shellSrc = fs.readFileSync(path.join(rootDir, 'src/components/WikiShell.tsx'), 'utf8');
+    expect(shellSrc).toContain('<AdsterraSlot variant="sidebar" />');
+    expect(shellSrc).toContain('<AdsterraSlot variant="leaderboard" />');
+    expect(shellSrc).toContain('<AdsterraSlot variant="native" />');
+
+    const homeSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/macro/AscalonHomeMacro.tsx'),
+      'utf8'
+    );
+    expect(homeSrc).toContain('<AdsterraSlot variant="leaderboard" />');
+    expect(homeSrc).toContain('<AdsterraSlot variant="native" />');
   });
 });
