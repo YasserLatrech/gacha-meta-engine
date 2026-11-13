@@ -199,7 +199,7 @@ export function WikiShell({
         </div>
       </div>
 
-      {/* Main 2-Column AppMedia Layout (312px Left Menu + 1fr Article Column) */}
+      {/* Main 2-Column AppMedia Layout (316px Left Menu + 1fr Article Column) */}
       <div
         className="wiki-layout-grid px-2.5 py-3 sm:p-4"
         style={{

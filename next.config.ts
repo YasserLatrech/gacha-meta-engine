@@ -1,11 +1,10 @@
 import type { NextConfig } from 'next';
 import path from 'path';
 
-const isDev = process.env.NODE_ENV === 'development';
-
 const CONTENT_SECURITY_POLICY = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://www.googletagmanager.com https://*.google-analytics.com https://bauval.org https://*.bauval.org https://cdn.cloudvideosa.com https://*.cloudvideosa.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com`,
+  // Adsterra anti-adblock/creative loaders (bauval.org) evaluate dynamic wrappers in production.
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.google-analytics.com https://bauval.org https://*.bauval.org https://cdn.cloudvideosa.com https://*.cloudvideosa.com https://*.highperformanceformat.com https://*.effectivegatecpm.com https://*.profitablecpmrate.com https://*.topcreativeformat.com https://*.adsterratech.com",
   "style-src 'self' 'unsafe-inline' https:",
   "img-src 'self' data: blob: https:",
   "media-src 'self' https://tool.matomeroyal.com https://appmedia.jp https://cdn.cloudvideosa.com https://*.cloudvideosa.com https:",
