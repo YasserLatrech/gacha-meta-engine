@@ -83,6 +83,7 @@ const loadedIds = new Set<string>();
 const populatedSlotIds = new Set<string>();
 const emptySlotIds = new Set<string>();
 let storeBraveBrowser = false;
+let storeAutomatedClient = false;
 let storeHasTimedOut = false;
 let storeDismissedNotice = false;
 const storeListeners = new Set<() => void>();
@@ -96,6 +97,7 @@ function recomputeAndNotify(): void {
     emptySlotCount: emptySlotIds.size,
     isBraveBrowser: storeBraveBrowser,
     hasTimedOut: storeHasTimedOut,
+    isAutomatedClient: storeAutomatedClient,
   });
   const client = resolveAdBlockerClient(status, storeBraveBrowser);
 
@@ -147,6 +149,12 @@ function reportSlotEmptyAfterTimeout(id: string): void {
 function markBraveBrowser(detected: boolean): void {
   if (storeBraveBrowser === detected) return;
   storeBraveBrowser = detected;
+  recomputeAndNotify();
+}
+
+function markAutomatedClient(detected: boolean): void {
+  if (storeAutomatedClient === detected) return;
+  storeAutomatedClient = detected;
   recomputeAndNotify();
 }
 
@@ -220,7 +228,7 @@ function AdRecoveryNotice({ snapshot }: { snapshot: AdShieldStoreSnapshot }) {
     <aside
       role="status"
       aria-live="polite"
-      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-4 z-40 w-[calc(100vw-2rem)] max-w-md rounded-xl border border-[var(--accent-border)] bg-[var(--bg-surface)]/95 p-3.5 shadow-2xl backdrop-blur-md"
+      className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] left-4 z-40 w-[calc(100vw-2rem)] max-w-sm rounded-xl border border-[var(--accent-border)] bg-[var(--bg-surface)]/95 p-3 shadow-[0_14px_40px_rgba(0,0,0,0.82)] backdrop-blur-md"
     >
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
@@ -281,6 +289,12 @@ export function AnalyticsTelemetry() {
     }
 
     const nav = navigator as NavigatorWithBrave;
+    const automated =
+      Boolean(navigator.webdriver) ||
+      /HeadlessChrome|Googlebot|Bingbot|PerplexityBot|GPTBot|ClaudeBot/i.test(
+        navigator.userAgent,
+      );
+    markAutomatedClient(automated);
     if (typeof nav.brave?.isBrave === 'function') {
       nav.brave
         .isBrave()

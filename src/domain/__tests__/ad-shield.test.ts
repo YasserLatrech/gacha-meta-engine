@@ -46,6 +46,19 @@ describe('AdShield & Brave/AdBlocker Recovery Domain', () => {
         hasTimedOut: true,
       }),
     ).toBe('delivered');
+
+    // Never flag Googlebot / headless crawlers when scripts return 200 OK without network blocks
+    expect(
+      evaluateAdShieldOutcome({
+        erroredCount: 0,
+        loadedCount: 3,
+        populatedSlotCount: 0,
+        emptySlotCount: 4,
+        isBraveBrowser: false,
+        hasTimedOut: true,
+        isAutomatedClient: true,
+      }),
+    ).toBe('delivered');
   });
 
   it('distinguishes Brave Shields vs extension blockers accurately', () => {

@@ -9,6 +9,7 @@ export interface AdShieldEvaluationInput {
   readonly emptySlotCount: number;
   readonly isBraveBrowser: boolean;
   readonly hasTimedOut: boolean;
+  readonly isAutomatedClient?: boolean;
 }
 
 export interface AdRecoveryCopy {
@@ -35,6 +36,11 @@ export function evaluateAdShieldOutcome(
 ): AdShieldStatus {
   if (input.erroredCount > 0) {
     return 'blocked';
+  }
+
+  // Ad networks return 0-byte responses to Googlebot/HeadlessChrome UAs; never flag crawlers as adblockers.
+  if (input.isAutomatedClient) {
+    return input.loadedCount > 0 || input.hasTimedOut ? 'delivered' : 'checking';
   }
 
   // Only classify noopjs/scriptlet silent blocking when every measured container stayed empty and none populated.
