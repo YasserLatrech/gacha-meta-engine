@@ -116,4 +116,15 @@ describe('AdShield & Brave/AdBlocker Recovery Domain', () => {
     expect(adsSrc).toContain('AdRecoveryNotice');
     expect(adsSrc).toContain('ad_shield_status');
   });
+
+  it('retains first-party /api/analytics pageview beacon wiring inside AnalyticsTelemetry', () => {
+    const rootDir = path.resolve(__dirname, '../../..');
+    const adsSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/micro/AnalyticsAndAds.tsx'),
+      'utf8',
+    );
+    expect(adsSrc).toContain("fetch('/api/analytics'");
+    expect(adsSrc).toContain('extractReferrerHost');
+    expect(adsSrc).toContain('referrerHost');
+  });
 });

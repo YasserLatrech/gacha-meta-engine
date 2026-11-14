@@ -270,12 +270,50 @@ function AdRecoveryNotice({ snapshot }: { snapshot: AdShieldStoreSnapshot }) {
   );
 }
 
+function extractReferrerHost(): string {
+  if (typeof document === 'undefined' || !document.referrer) return 'direct';
+  try {
+    const parsed = new URL(document.referrer);
+    const host = parsed.hostname.toLowerCase().replace(/^www\./, '');
+    if (!host || host === window.location.hostname.replace(/^www\./, '')) {
+      return 'direct';
+    }
+    return host.slice(0, 100);
+  } catch {
+    return 'direct';
+  }
+}
+
 /** Global GA4 + Adsterra Popunder/Social Bar loader + Brave/AdBlocker Delivery Telemetry. */
 export function AnalyticsTelemetry() {
   const pathname = usePathname();
   const isFounderDashboard = Boolean(pathname?.startsWith('/analytics'));
   const snapshot = useAdShieldSnapshot();
   const gaReportedRef = useRef<string | null>(null);
+  const lastTrackedPathRef = useRef<string | null>(null);
+
+  // Record first-party pageviews into Neon DB via /api/analytics (independent of third-party scripts).
+  useEffect(() => {
+    if (isFounderDashboard || !pathname) return;
+    if (
+      storeAutomatedClient ||
+      (typeof navigator !== 'undefined' && navigator.webdriver)
+    ) {
+      return;
+    }
+    if (lastTrackedPathRef.current === pathname) return;
+    lastTrackedPathRef.current = pathname;
+
+    void fetch('/api/analytics', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        path: pathname,
+        referrerHost: extractReferrerHost(),
+      }),
+      keepalive: true,
+    }).catch(() => {});
+  }, [isFounderDashboard, pathname]);
 
   useEffect(() => {
     if (isFounderDashboard) return;
