@@ -32,7 +32,7 @@ const PRIORITY_ROADMAP_BLUEPRINTS: ReadonlyArray<RoadmapBlueprint> = [
     launchWindow: 'LIVE NOW',
     publisher: 'STUDIOBSIDE',
     roadmapReason:
-      'Flagship active wiki on Ascalon.fun: 59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, and 86 strategy guides.',
+      'Flagship active wiki on Ascalon.fun: 59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, promo codes, Event Checker, and verified strategy guides.',
   },
   {
     id: 'silver-palace',

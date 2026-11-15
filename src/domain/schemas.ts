@@ -459,6 +459,7 @@ export interface StarSaviorGuideArticle {
   buttonBannerSrc?: string;
   lead: string;
   specialKind?: StarSaviorGuideSpecialKind;
+  noIndex?: boolean;
   boardSeedPosts?: SeedBoardPost[];
   sections: GuideSection[];
 }

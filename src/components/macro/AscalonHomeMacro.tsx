@@ -1197,7 +1197,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                   </h3>
                   <p className="text-[12.5px] text-[#dbe7f7] leading-relaxed">
                     {liveWiki?.roadmapReason ||
-                      'Flagship active wiki on Ascalon.fun: 59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, and 86 strategy guides.'}
+                      'Flagship active wiki on Ascalon.fun: 59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, promo codes, Event Checker, and verified strategy guides.'}
                   </p>
                 </div>
               </div>
@@ -1849,13 +1849,13 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <div className="flex flex-wrap gap-x-4 gap-y-1.5">
                 <Link href="/starsavior/guides/promo-codes" className="text-[#93c5fd] hover:underline">Coupon Codes</Link>
                 <Link href="/starsavior/guides/cube-palace" className="text-[#93c5fd] hover:underline">Cube Palace</Link>
-                <Link href="/starsavior/guides/rescue-journey-guide" className="text-[#93c5fd] hover:underline">Rescue Journey</Link>
-                <Link href="/starsavior/guides/beginner-progression" className="text-[#93c5fd] hover:underline">Beginner Guide</Link>
+                <Link href="/starsavior/guides/rescue-journey-hard" className="text-[#93c5fd] hover:underline">Rescue Journey Hard</Link>
+                <Link href="/starsavior/guides/which-gacha-to-pull" className="text-[#93c5fd] hover:underline">Banner Pull Guide</Link>
                 <Link href="/starsavior/guides/event-choice-checker" className="text-[#93c5fd] hover:underline">Event Checker</Link>
                 <Link href="/starsavior/guides/gacha-rates" className="text-[#93c5fd] hover:underline">Gacha Rates</Link>
                 <Link href="/starsavior/guides/blessing-farming" className="text-[#93c5fd] hover:underline">Blessing Farming</Link>
                 <Link href="/starsavior/guides/character-stats-list" className="text-[#93c5fd] hover:underline">Lv.200 Stats</Link>
-                <Link href="/starsavior/guides/character-tier-maker" className="text-[#93c5fd] hover:underline">Tier Maker</Link>
+                <Link href="/starsavior/guides/voice-actors" className="text-[#93c5fd] hover:underline">Voice Actors (CV)</Link>
               </div>
             </div>
 

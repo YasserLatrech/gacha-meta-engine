@@ -27,7 +27,7 @@ const TOP_INDEX_CELLS = [
   { label: 'Characters (59)', href: '#characters-section' },
   { label: 'Arcana (85)', href: '#arcana-section' },
   { label: 'Database', href: '#database-section' },
-  { label: 'Bulletin Boards', href: '#bulletin-boards' },
+  { label: 'Coupon Codes', href: '/starsavior/guides/promo-codes' },
   { label: 'FAQ', href: '#faq-section' },
   { label: 'Game Info', href: '#basic-game-info' },
   { label: 'Comments', href: '#reader-comments' },
@@ -117,15 +117,25 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             Star Savior Wiki Table of Contents
           </div>
           <div className="grid grid-cols-3 sm:grid-cols-6 divide-x divide-y divide-[#243049]">
-            {TOP_INDEX_CELLS.map((cell) => (
-              <a
-                key={cell.label}
-                href={cell.href}
-                className="flex items-center justify-center px-2 py-2 text-center text-[12.5px] font-bold text-[#60a5fa] hover:bg-[#17223b] hover:text-white transition-colors"
-              >
-                {cell.label}
-              </a>
-            ))}
+            {TOP_INDEX_CELLS.map((cell) =>
+              cell.href.startsWith('/') ? (
+                <Link
+                  key={cell.label}
+                  href={cell.href}
+                  className="flex items-center justify-center px-2 py-2 text-center text-[12.5px] font-bold text-[#60a5fa] hover:bg-[#17223b] hover:text-white transition-colors"
+                >
+                  {cell.label}
+                </Link>
+              ) : (
+                <a
+                  key={cell.label}
+                  href={cell.href}
+                  className="flex items-center justify-center px-2 py-2 text-center text-[12.5px] font-bold text-[#60a5fa] hover:bg-[#17223b] hover:text-white transition-colors"
+                >
+                  {cell.label}
+                </a>
+              )
+            )}
           </div>
         </div>
       </section>
@@ -1369,39 +1379,6 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               href: '/starsavior/guides/skins-list',
               label: 'Skins List',
               bannerSrc: '/banners/starsavior/buttons/btn_113.webp',
-            },
-          ]}
-        />
-      </section>
-
-      {/* =====================================================================
-       * SECTION 15: BULLETIN BOARDS (h2_114_forums.webp + btn_115..117)
-       * ===================================================================== */}
-      <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3.5">
-        <AppMediaBannerH2
-          id="bulletin-boards"
-          bannerSrc="/banners/starsavior/h2/h2_114_forums.webp"
-          bannerAlt="Star Savior Bulletin Boards"
-        >
-          Star Savior Bulletin Boards
-        </AppMediaBannerH2>
-
-        <AppMediaGraphicButtonGrid
-          items={[
-            {
-              href: '/starsavior/guides/general-board',
-              label: 'General Chat & Questions',
-              bannerSrc: '/banners/starsavior/buttons/btn_115.webp',
-            },
-            {
-              href: '/starsavior/guides/friend-board',
-              label: 'Friend Recruitment',
-              bannerSrc: '/banners/starsavior/buttons/btn_116.webp',
-            },
-            {
-              href: '/starsavior/guides/guild-board',
-              label: 'Guild Recruitment',
-              bannerSrc: '/banners/starsavior/buttons/btn_117.webp',
             },
           ]}
         />
