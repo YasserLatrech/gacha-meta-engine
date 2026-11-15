@@ -2,7 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import type { ElementOption, CharacterEntity } from '@/domain/schemas';
+import type { ElementOption } from '@/domain/schemas';
+
+export interface DrawerUnitSummary {
+  slug: string;
+  name: string;
+  imageUrl: string;
+  element: string;
+  role: string;
+  tierLabel: string;
+}
 
 interface NavGroup {
   heading: string;
@@ -23,7 +32,7 @@ export function MobileWikiDrawer({
   navGroups: NavGroup[];
   activeNav: string;
   elementsConfig: ElementOption[];
-  topCharacters: CharacterEntity[];
+  topCharacters: DrawerUnitSummary[];
 }) {
   const [open, setOpen] = useState(false);
 
@@ -156,7 +165,7 @@ export function MobileWikiDrawer({
                       </div>
                     </div>
                     <span className="rounded border border-rose-500/40 bg-rose-500/20 px-1.5 py-0.5 text-[11.5px] font-extrabold text-rose-300">
-                      {unit.staticData?.appMediaTier || unit.overallTier}
+                      {unit.tierLabel}
                     </span>
                   </Link>
                 ))}

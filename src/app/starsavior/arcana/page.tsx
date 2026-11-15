@@ -8,6 +8,7 @@ import {
 } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { ArcanaTierListMacro } from '@/components/macro/ArcanaTierListMacro';
+import { toArcanaClientDataset } from '@/application/client-dataset';
 import { JsonLd } from '@/components/micro/JsonLd';
 
 export const revalidate = 300;
@@ -56,7 +57,7 @@ export default async function ArcanaTierListPage() {
         activeNav="arcana"
         breadcrumbLabel="Strongest Arcana Tier List (85 Cards)"
       >
-        <ArcanaTierListMacro dataset={dataset} />
+        <ArcanaTierListMacro dataset={toArcanaClientDataset(dataset)} />
       </WikiShell>
     </>
   );
