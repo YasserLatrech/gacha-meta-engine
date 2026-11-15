@@ -1,18 +1,17 @@
-# Ascalon.fun — Ad-Free Mobile & Gacha Strategy Wiki Portal
+# Ascalon.fun — English Mobile & Gacha Strategy Wiki Portal
 
-> Ascalon.fun is a fast, 100% ad-free English strategy wiki and mobile game data portal covering gacha rankings, upcoming global game release calendars with 1-vote-per-IP reader polls, App Store charts, and entity-verified strategy wikis.
+> Ascalon.fun is a fast, free English strategy wiki and mobile game data portal covering tier lists, coupon codes, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store charts.
 
 ## Full AI & LLM Entity Knowledge Dump
-- [Complete Entity & Database Reference (llms-full.txt)](https://ascalon.fun/llms-full.txt): Complete structured index of all 59 Star Savior units (with Lv.200 stats, Tier, Attribute, Class, and canonical URLs), SSR/SR/R Arcana summary, active Promo Codes, Upcoming Gacha Release Calendar dates, and direct Strategy Guide URLs.
+- [Complete Entity & Database Reference (llms-full.txt)](https://ascalon.fun/llms-full.txt): Structured index of all 59 Star Savior units (with Lv.200 stats, Tier, Attribute, Class, and canonical URLs), SSR/SR/R Arcana summary, active Promo Codes, Upcoming Gacha Release Calendar dates, and indexed Strategy Guide URLs.
 
 ## Primary Portal Hubs
 - [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79 tracked titles), reader expectation rankings, daily App Store Top Free & Top Grossing charts, Strategy Wiki Expansion Roadmap, and featured news briefs.
-- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 151 static strategy wiki routes, character builds, and interactive tools.
+- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 103 static indexable strategy wiki routes, character builds, and database tools.
 
 ## Wiki Expansion Roadmap
-- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](https://ascalon.fun/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Event Checker, 86 Strategy Guides).
-- **Next Wiki (#2 — Up Next)**: **Silver Palace** (Elementa / Silver Studio) — Simultaneous Global English Launch scheduled for **December 14, 2026** (PC, PS5, iOS, Android).
-- **Planned Expansion Queue**: ANANTA (Jan 15, 2027 Global), Azur Promilia, Honkai: Nexus Anima, Limit Zero Breakers, and community-voted upcoming titles ranked on [Ascalon.fun](https://ascalon.fun/#strategy-wikis).
+- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](https://ascalon.fun/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Promo Codes, Event Checker, and 38 curated Strategy Guides).
+- **Upcoming Pipeline**: Tracking Silver Palace (Dec 14, 2026), ANANTA (Jan 15, 2027 Global), Azur Promilia, Limit Zero Breakers, and community-voted titles on [Ascalon.fun](https://ascalon.fun/#strategy-wikis) for expansion after active wikis establish organic search coverage.
 
 ## Star Savior Complete English Strategy Wiki (Patch v2.4)
 Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, and Android combining Rescue Journey simulation, 85 Arcana training cards, and turn-based command battles.
@@ -25,8 +24,8 @@ Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, 
 - [Strongest Arcana Tier List & All 85 Cards](https://ascalon.fun/starsavior/arcana): Complete SSR (50), SR (15), and R (20) Arcana card encyclopedia with Stat Tags (Power, Health, Endurance, Focus, Protect), Special Potentials, and Savior Assist synergies.
 
 ### Interactive Tools & Key Strategy Guides
-- [Journey Event Choice Checker](https://ascalon.fun/starsavior/guides/event-choice-checker): Exact reward outcomes for all 29 Rescue Journey Shared Events.
+- [Active Coupon & Promo Codes](https://ascalon.fun/starsavior/guides/promo-codes): Verified redeemable codes (`GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV`) and redemption steps.
+- [Journey Event Choice Checker](https://ascalon.fun/starsavior/guides/event-choice-checker): Exact reward outcomes for all 85 Arcana Events and 29 Rescue Journey Shared Events.
 - [Gauntlet (PvP) Tier List](https://ascalon.fun/starsavior/guides/pvp-tier-list): Turn-1 speed, AoE pressure, and defensive counter rankings for PvP Gauntlet.
 - [Recommended SR Characters](https://ascalon.fun/starsavior/guides/sr-characters) & [Recommended SR Arcana](https://ascalon.fun/starsavior/guides/sr-arcana): Best low-rarity investments for early progression and Rescue Journey decks.
-- [Active Coupon & Promo Codes](https://ascalon.fun/starsavior/guides/promo-codes): Verified redeemable codes (`GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV`) and redemption steps.
 - [Gacha Rates & Pity System](https://ascalon.fun/starsavior/guides/gacha-rates): 4.0% SSR rate (1.0% rate-up), 200-pull exchange pity, and Starlight Gem economy.

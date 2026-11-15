@@ -38,6 +38,8 @@ import {
   buildCharacterJsonLd,
   buildGuideMetadata,
   buildGuideJsonLd,
+  getIndexableStarSaviorGuides,
+  isGuideIndexable,
   serializeJsonLd,
 } from '../../application/seo.service';
 import {
@@ -1002,5 +1004,83 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(charDbSlim.characters[0]?.skills).toHaveLength(0);
     expect(charDbSlim.characters[0]?.baseStats.atk).toBeGreaterThan(0);
     expect(JSON.stringify(charDbSlim).length).toBeLessThan(fullBytes * 0.25);
+  });
+
+  it('prevents thin/filler/fake-board index bloat across guides, metadata robots, home links, and llms-full.txt', () => {
+    const indexable = getIndexableStarSaviorGuides(STAR_SAVIOR_GUIDES);
+    const indexableSlugs = new Set(indexable.map((g) => g.slug));
+
+    // Substantive search-intent guides & rich DBs stay indexable
+    for (const mustIndex of [
+      'promo-codes',
+      'pvp-tier-list',
+      'sr-characters',
+      'sr-arcana',
+      'event-choice-checker',
+      'character-stats-list',
+      'voice-actors',
+      'birthday-calendar',
+      'cube-palace',
+      'operations-summary',
+      'gacha-rates',
+      'which-gacha-to-pull',
+      'livestream-summary',
+    ]) {
+      expect(indexableSlugs.has(mustIndex)).toBe(true);
+      const guide = getStarSaviorGuideBySlug(mustIndex)!;
+      const meta = buildGuideMetadata(guide);
+      expect(meta.robots).toBeUndefined();
+    }
+
+    // Fake community boards, thin settings stubs, galleries & single-stage stubs are noindex, follow
+    for (const mustNoIndex of [
+      'general-board',
+      'friend-board',
+      'guild-board',
+      'birthday-settings',
+      'lobby-settings',
+      'profile-settings',
+      'ark-point-list',
+      'skins-list',
+      'character-tier-maker',
+      'arcana-tier-maker',
+      'cube-step-1',
+      'cube-extra-6',
+      'operation-1-5',
+      'operation-3-15',
+    ]) {
+      expect(indexableSlugs.has(mustNoIndex)).toBe(false);
+      const guide = getStarSaviorGuideBySlug(mustNoIndex)!;
+      expect(isGuideIndexable(guide)).toBe(false);
+      const meta = buildGuideMetadata(guide);
+      expect(meta.robots).toEqual({
+        index: false,
+        follow: true,
+        googleBot: { index: false, follow: true },
+      });
+    }
+
+    // Home page links only to indexable guides and Star Savior top portal drops fake Bulletin Boards
+    const rootDir = process.cwd();
+    const homeSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/macro/AscalonHomeMacro.tsx'),
+      'utf8'
+    );
+    const homeGuideMatches = [...homeSrc.matchAll(/\/starsavior\/guides\/([a-z0-9-]+)/g)];
+    expect(homeGuideMatches.length).toBeGreaterThanOrEqual(8);
+    for (const [, slug] of homeGuideMatches) {
+      expect(indexableSlugs.has(slug)).toBe(true);
+    }
+
+    const portalSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/macro/StarSaviorTopMacro.tsx'),
+      'utf8'
+    );
+    expect(portalSrc).not.toContain('bulletin-boards');
+
+    const llmsFull = fs.readFileSync(path.join(rootDir, 'public/llms-full.txt'), 'utf8');
+    expect(llmsFull).not.toContain('| undefined |');
+    expect(llmsFull).not.toContain('/guides/guild-board');
+    expect(llmsFull).not.toContain('/guides/birthday-settings');
   });
 });

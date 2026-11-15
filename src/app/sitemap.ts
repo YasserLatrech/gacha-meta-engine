@@ -3,6 +3,7 @@ import { getStarSaviorWikiData, getAllStarSaviorGuides } from '@/di/container';
 import {
   SITE_LASTMOD_ISO,
   SITE_URL,
+  getIndexableStarSaviorGuides,
   resolveAbsoluteUrl,
 } from '@/application/seo.service';
 
@@ -10,7 +11,7 @@ export const revalidate = 3600;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const dataset = await getStarSaviorWikiData();
-  const guides = getAllStarSaviorGuides();
+  const guides = getIndexableStarSaviorGuides(getAllStarSaviorGuides());
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
