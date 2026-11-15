@@ -8,6 +8,7 @@ import {
 } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { StrongestTierListMacro } from '@/components/macro/StrongestTierListMacro';
+import { toTierListClientDataset } from '@/application/client-dataset';
 import { JsonLd } from '@/components/micro/JsonLd';
 
 export const revalidate = 300;
@@ -56,7 +57,7 @@ export default async function StrongestTierListPage() {
         activeNav="tier-list"
         breadcrumbLabel="Strongest Character Tier List"
       >
-        <StrongestTierListMacro dataset={dataset} />
+        <StrongestTierListMacro dataset={toTierListClientDataset(dataset)} />
       </WikiShell>
     </>
   );

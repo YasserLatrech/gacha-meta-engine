@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import type { GameConfigEntity, CharacterEntity } from '../domain/schemas';
-import { MobileWikiDrawer } from './micro/MobileWikiDrawer';
+import { MobileWikiDrawer, type DrawerUnitSummary } from './micro/MobileWikiDrawer';
 import { GlobalOmniSearch } from './micro/GlobalOmniSearch';
 import { AdsterraSlot } from './micro/AnalyticsAndAds';
 
@@ -62,6 +62,15 @@ export function WikiShell({
     { key: 'characters', label: 'Characters', count: '59', href: '/starsavior/characters' },
     { key: 'arcana', label: 'Arcana', count: '85', href: '/starsavior/arcana' },
   ];
+
+  const drawerTopUnits: DrawerUnitSummary[] = topCharacters.slice(0, 10).map((unit) => ({
+    slug: unit.slug,
+    name: unit.name,
+    imageUrl: unit.imageUrl,
+    element: unit.element,
+    role: unit.role,
+    tierLabel: unit.staticData?.appMediaTier || unit.overallTier,
+  }));
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', background: 'var(--bg-canvas)' }}>
@@ -151,7 +160,7 @@ export function WikiShell({
               navGroups={navGroups}
               activeNav={activeNav}
               elementsConfig={game.elementsConfig}
-              topCharacters={topCharacters}
+              topCharacters={drawerTopUnits}
             />
           </div>
         </div>
