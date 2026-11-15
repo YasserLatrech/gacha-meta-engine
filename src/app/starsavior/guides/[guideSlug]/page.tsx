@@ -7,7 +7,7 @@ import {
   getStarSaviorGuideBySlug,
   getStarSaviorRankingGroups,
 } from '@/di/container';
-import { buildGuideJsonLd, buildGuideMetadata } from '@/application/seo.service';
+import { buildGuideJsonLd, buildGuideMetadata, isGuideIndexable } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { StarSaviorGuideMacro } from '@/components/macro/StarSaviorGuideMacro';
 import { JsonLd } from '@/components/micro/JsonLd';
@@ -59,9 +59,11 @@ export default async function StarSaviorGuidePage({
       ? 'characters'
       : 'portal';
 
+  const indexable = isGuideIndexable(guide);
+
   return (
     <>
-      <JsonLd data={buildGuideJsonLd(guide)} />
+      {indexable && <JsonLd data={buildGuideJsonLd(guide)} />}
       <WikiShell
         game={dataset.game}
         topCharacters={topUnits}

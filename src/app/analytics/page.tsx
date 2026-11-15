@@ -8,6 +8,7 @@ import {
   portalService,
   voteService,
 } from '@/di/container';
+import { getIndexableStarSaviorGuides } from '@/application/seo.service';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,7 +24,8 @@ export default async function FounderAnalyticsPage() {
     voteService.getVotesSnapshot('wiki-roadmap', 'founder-dashboard'),
   ]);
   const portalData = portalService.getHomePortalData();
-  const totalSitemapUrls = 6 + dataset.characters.length + getAllStarSaviorGuides().length;
+  const totalSitemapUrls =
+    6 + dataset.characters.length + getIndexableStarSaviorGuides(getAllStarSaviorGuides()).length;
   const maxDailyPv = Math.max(1, ...summary.dailySeries.map((d) => d.pageviews));
   const isNeonStorage = summary.storageMode === 'neon';
 
@@ -78,7 +80,7 @@ export default async function FounderAnalyticsPage() {
                 {isNeonStorage ? 'NEON DB' : 'MEMORY FALLBACK'}
               </span>
               <span className="rounded bg-emerald-500/15 border border-emerald-500/40 px-2 py-0.5 font-mono text-[11px] font-black text-emerald-300">
-                100% AD-FREE UX
+                ZERO-CLS MONETIZED
               </span>
               <span className="font-mono text-[12px] text-[#c8d4e6]">UTC Day: {summary.todayUtc}</span>
             </div>

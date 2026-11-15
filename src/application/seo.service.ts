@@ -3,6 +3,7 @@ import type {
   CharacterEntity,
   ArcanaEntity,
   StarSaviorGuideArticle,
+  StarSaviorGuideSpecialKind,
 } from '@/domain/schemas';
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fun').replace(
@@ -11,7 +12,69 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fu
 );
 
 export const SITE_NAME = 'Ascalon.fun';
-export const SITE_LASTMOD_ISO = '2026-11-15T03:00:00.000Z';
+export const SITE_LASTMOD_ISO = '2026-11-15T04:00:00.000Z';
+
+export const MIN_INDEXABLE_GUIDE_UNIQUE_WORDS = 130;
+
+const INDEXABLE_SPECIAL_KINDS: ReadonlySet<StarSaviorGuideSpecialKind> = new Set([
+  'pvp-ranking',
+  'sr-char-ranking',
+  'sr-arcana-ranking',
+  'event-checker',
+  'char-stats-table',
+  'voice-actors-db',
+  'birthday-db',
+]);
+
+const SUB_STAGE_STUB_PATTERN = /^(?:operation-\d|cube-(?:step|extra)-)/i;
+
+function countWords(text: string): number {
+  const trimmed = text.trim();
+  return trimmed ? trimmed.split(/\s+/).length : 0;
+}
+
+/** Counts unique editorial words across a guide's lead and sections (excluding duplicated lead stubs). */
+export function computeGuideUniqueWordCount(guide: StarSaviorGuideArticle): number {
+  const leadTrimmed = guide.lead.trim();
+  const sectionText = guide.sections
+    .flatMap((sec) => [
+      sec.heading,
+      ...sec.paragraphs.filter(
+        (p) =>
+          p.trim() !== leadTrimmed &&
+          !p.startsWith('Use the related rankings and database links below')
+      ),
+      ...(sec.bullets ?? []),
+      ...(sec.table ? [...sec.table.headers, ...sec.table.rows.flat()] : []),
+    ])
+    .join(' ');
+
+  return countWords(`${leadTrimmed} ${sectionText}`);
+}
+
+/**
+ * Determines whether a guide page is substantive and unique enough for Google indexation.
+ * Thin single-sentence stubs, consolidated micro stage walkthroughs, fake community boards,
+ * and client-only widget pages are marked noindex, follow to prevent index bloat.
+ */
+export function isGuideIndexable(guide: StarSaviorGuideArticle): boolean {
+  if (guide.noIndex) return false;
+  if (guide.category === 'Community') return false;
+  if (SUB_STAGE_STUB_PATTERN.test(guide.slug)) return false;
+
+  if (guide.specialKind) {
+    return INDEXABLE_SPECIAL_KINDS.has(guide.specialKind);
+  }
+
+  return computeGuideUniqueWordCount(guide) >= MIN_INDEXABLE_GUIDE_UNIQUE_WORDS;
+}
+
+/** Filters guides down to the canonical search-indexable subset (used by sitemap and GEO manifests). */
+export function getIndexableStarSaviorGuides(
+  guides: ReadonlyArray<StarSaviorGuideArticle>
+): StarSaviorGuideArticle[] {
+  return guides.filter(isGuideIndexable);
+}
 
 export interface BreadcrumbItemInput {
   name: string;
@@ -27,6 +90,7 @@ export interface PageMetadataInput {
   ogImageAlt?: string;
   type?: 'website' | 'article';
   keywords?: string[];
+  noIndex?: boolean;
 }
 
 export function resolveAbsoluteUrl(urlOrPath: string): string {
@@ -61,6 +125,18 @@ export function buildPageMetadata(input: PageMetadataInput): Metadata {
     title: input.absoluteTitle ? { absolute: input.title } : input.title,
     description,
     ...(input.keywords && input.keywords.length > 0 ? { keywords: input.keywords } : {}),
+    ...(input.noIndex
+      ? {
+          robots: {
+            index: false,
+            follow: true,
+            googleBot: {
+              index: false,
+              follow: true,
+            },
+          },
+        }
+      : {}),
     alternates: {
       canonical: canonicalUrl,
     },
@@ -104,15 +180,15 @@ export function buildBreadcrumbNode(items: BreadcrumbItemInput[]): Record<string
 export const HOME_PORTAL_FAQS: ReadonlyArray<{ q: string; a: string }> = [
   {
     q: 'What is Ascalon.fun?',
-    a: 'Ascalon.fun is an English mobile and gacha strategy wiki portal offering entity-verified tier lists, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store rankings.',
+    a: 'Ascalon.fun is an English mobile and gacha strategy wiki portal offering entity-verified tier lists, coupon codes, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store rankings.',
   },
   {
     q: 'Which strategy wikis are live on Ascalon.fun right now?',
-    a: 'The flagship live wiki on Ascalon.fun is the complete English Star Savior Strategy Wiki (Patch v2.4), covering all 59 playable Saviors with Lv.200 stats, 85 Arcana cards, PvE and PvP Gauntlet tier lists, Reroll guides, Journey Event Choice Checker, and 86 strategy guides.',
+    a: 'The flagship live wiki on Ascalon.fun is the complete English Star Savior Strategy Wiki (Patch v2.4), covering all 59 playable Saviors with Lv.200 stats, 85 Arcana cards, PvE and PvP Gauntlet tier lists, Reroll guides, active promo codes, Journey Event Choice Checker, and verified strategy guides.',
   },
   {
     q: 'Which strategy wiki is launching next on Ascalon.fun?',
-    a: 'Silver Palace (Elementa / Silver Studio) is queued as Next Wiki (#2) ahead of its simultaneous global launch on December 14, 2026 for PC, PS5, iOS, and Android, followed by ANANTA (January 15, 2027 Global) and Azur Promilia.',
+    a: 'Upcoming global releases such as Azur Promilia, Silver Palace, and ANANTA (January 15, 2027 Global) are tracked on the release calendar and queued for full strategy wikis once active titles establish organic search coverage.',
   },
   {
     q: 'Is Ascalon.fun free to browse without registration?',
@@ -552,6 +628,7 @@ export function buildGuideMetadata(guide: StarSaviorGuideArticle): Metadata {
     ogImage,
     ogImageAlt: guide.title,
     type: 'article',
+    noIndex: !isGuideIndexable(guide),
     keywords: [
       guide.title,
       'Star Savior',
