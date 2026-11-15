@@ -11,7 +11,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fu
 );
 
 export const SITE_NAME = 'Ascalon.fun';
-export const SITE_LASTMOD_ISO = '2026-11-12T22:30:00.000Z';
+export const SITE_LASTMOD_ISO = '2026-11-15T03:00:00.000Z';
 
 export interface BreadcrumbItemInput {
   name: string;
@@ -115,8 +115,8 @@ export const HOME_PORTAL_FAQS: ReadonlyArray<{ q: string; a: string }> = [
     a: 'Silver Palace (Elementa / Silver Studio) is queued as Next Wiki (#2) ahead of its simultaneous global launch on December 14, 2026 for PC, PS5, iOS, and Android, followed by ANANTA (January 15, 2027 Global) and Azur Promilia.',
   },
   {
-    q: 'Is Ascalon.fun free and ad-free to browse?',
-    a: 'Yes — Ascalon.fun operates as a 100% ad-free, fast static-cached knowledge base with zero display ad banners, popups, or intrusive ad trackers.',
+    q: 'Is Ascalon.fun free to browse without registration?',
+    a: 'Yes — Ascalon.fun operates as a 100% free, fast static-cached strategy wiki and tier list database with zero paywalls or mandatory registration.',
   },
 ];
 
@@ -130,7 +130,6 @@ export function buildPublisherReference(): Record<string, unknown> {
       'Star Savior Strategy Wiki',
       'Gacha Game Tier Lists',
       'Upcoming Gacha Release Calendar',
-      'Silver Palace',
       'ANANTA',
     ],
     logo: {

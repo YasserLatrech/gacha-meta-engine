@@ -65,6 +65,11 @@ import { InMemoryAnalyticsRepository } from '../../infrastructure/repositories/a
 import { StaticPortalRepository } from '../../infrastructure/repositories/portal.repository';
 import { buildCuratedStrategyWikiRoadmap } from '../wiki-roadmap';
 import { computeScrollMetrics } from '../scroll-metrics';
+import {
+  toTierListClientDataset,
+  toArcanaClientDataset,
+  toCharacterDbClientDataset,
+} from '../../application/client-dataset';
 
 const CJK_REGEX = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uff66-\uff9f\uac00-\ud7af]/;
 
@@ -933,5 +938,69 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(homeSrc).toContain('<AdsterraSlot variant="midbanner" />');
     expect(homeSrc).toContain('<AdsterraSlot variant="native" />');
     expect(homeSrc).toContain('<AdsterraSlot variant="duo-box" />');
+  });
+
+  it('keeps heavy strategy macros as Server Components and maintains slim MobileWikiDrawer DTOs + crawlable home footer links', () => {
+    const rootDir = process.cwd();
+    const serverMacros = [
+      'src/components/medium/AppMediaStrategyBlocks.tsx',
+      'src/components/macro/CharacterDetailMacro.tsx',
+      'src/components/macro/RerollTierListMacro.tsx',
+    ];
+    for (const relPath of serverMacros) {
+      const src = fs.readFileSync(path.join(rootDir, relPath), 'utf8');
+      expect(src).not.toContain("'use client'");
+      expect(src).not.toContain('"use client"');
+    }
+
+    const drawerSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/micro/MobileWikiDrawer.tsx'),
+      'utf8'
+    );
+    expect(drawerSrc).toContain('DrawerUnitSummary');
+
+    const shellSrc = fs.readFileSync(path.join(rootDir, 'src/components/WikiShell.tsx'), 'utf8');
+    expect(shellSrc).toContain('DrawerUnitSummary');
+    expect(shellSrc).toContain('drawerTopUnits');
+
+    const homeSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/macro/AscalonHomeMacro.tsx'),
+      'utf8'
+    );
+    expect(homeSrc).toContain('/starsavior/guides/promo-codes');
+    expect(homeSrc).toContain('/starsavior/guides/cube-palace');
+    expect(homeSrc).toContain('/starsavior/characters/amora');
+
+    const fullDataset = {
+      game: STAR_SAVIOR_GAME_SEED,
+      characters: STAR_SAVIOR_CHARACTERS_SEED.map((c, idx) => ({
+        ...c,
+        id: idx + 1,
+        score: Number(c.score),
+      })),
+      arcana: STAR_SAVIOR_ARCANA_SEED.map((a, idx) => ({
+        ...a,
+        id: idx + 1,
+        score: Number(a.score),
+      })),
+      banners: STAR_SAVIOR_BANNERS_SEED.map((b, idx) => ({ ...b, id: idx + 1 })),
+    };
+    const fullBytes = JSON.stringify(fullDataset).length;
+    const tierSlim = toTierListClientDataset(fullDataset);
+    const arcanaSlim = toArcanaClientDataset(fullDataset);
+    const charDbSlim = toCharacterDbClientDataset(fullDataset);
+
+    expect(tierSlim.arcana).toHaveLength(0);
+    expect(tierSlim.characters[0]?.skills).toHaveLength(0);
+    expect(JSON.stringify(tierSlim).length).toBeLessThan(fullBytes * 0.25);
+
+    expect(arcanaSlim.arcana.length).toBe(fullDataset.arcana.length);
+    expect(arcanaSlim.characters[0]?.skills).toHaveLength(0);
+    expect(JSON.stringify(arcanaSlim).length).toBeLessThan(fullBytes * 0.45);
+
+    expect(charDbSlim.arcana).toHaveLength(0);
+    expect(charDbSlim.characters[0]?.skills).toHaveLength(0);
+    expect(charDbSlim.characters[0]?.baseStats.atk).toBeGreaterThan(0);
+    expect(JSON.stringify(charDbSlim).length).toBeLessThan(fullBytes * 0.25);
   });
 });

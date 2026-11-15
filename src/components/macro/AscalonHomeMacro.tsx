@@ -1449,31 +1449,50 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             Featured Strategy Articles & Event Guides
           </AppMediaH2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            {featuredArticles.map((art, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => setActiveArticle(art)}
-                className="group text-left flex flex-col overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] transition-colors"
-              >
-                <div className="w-full overflow-hidden bg-[#090d16] border-b border-[#1e293b]">
-                  <img
-                    src={art.thumbUrl}
-                    alt={art.title}
-                    className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform"
-                    loading="eager"
-                  />
-                </div>
-                <div className="p-3 flex-1 flex flex-col justify-between gap-2">
-                  <div className="text-[13.5px] font-bold text-white group-hover:text-[#60a5fa] leading-snug line-clamp-2">
-                    {art.title}
+            {featuredArticles.map((art, idx) => {
+              const guideHref = ARTICLE_SUMMARIES[art.thumbUrl]?.targetRoute || '/starsavior';
+              return (
+                <div
+                  key={idx}
+                  className="group text-left flex flex-col overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] transition-colors"
+                >
+                  <Link
+                    href={guideHref}
+                    className="w-full overflow-hidden bg-[#090d16] border-b border-[#1e293b] block"
+                  >
+                    <img
+                      src={art.thumbUrl}
+                      alt={art.title}
+                      className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform"
+                      loading="eager"
+                    />
+                  </Link>
+                  <div className="p-3 flex-1 flex flex-col justify-between gap-2.5">
+                    <Link
+                      href={guideHref}
+                      className="text-[13.5px] font-bold text-white group-hover:text-[#60a5fa] leading-snug line-clamp-2"
+                    >
+                      {art.title}
+                    </Link>
+                    <div className="flex items-center justify-between gap-2 pt-0.5">
+                      <Link
+                        href={guideHref}
+                        className="text-[11.5px] font-extrabold text-[#93c5fd] hover:text-white hover:underline"
+                      >
+                        Read Full Guide →
+                      </Link>
+                      <button
+                        type="button"
+                        onClick={() => setActiveArticle(art)}
+                        className="rounded border border-[#243049] bg-[#161f33] px-2 py-0.5 text-[11px] font-bold text-[#c8d4e6] hover:border-[#3b82f6] hover:text-white transition-colors"
+                      >
+                        Quick Summary
+                      </button>
+                    </div>
                   </div>
-                  <div className="text-[11.5px] font-extrabold text-[#93c5fd]">
-                    Read Strategy Summary →
-                  </div>
                 </div>
-              </button>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -1803,25 +1822,80 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
         );
       })()}
 
-      {/* Footer */}
-      <footer className="border-t border-[#1e293b] bg-[#070a12] py-6 text-center text-[12.5px] text-[#a8b8d0]">
-        <div className="mx-auto max-w-[1280px] px-4 flex flex-col sm:flex-row items-center justify-between gap-2.5">
-          <div>
-            <strong className="text-white">Ascalon.fun</strong> · Mobile Game Rankings, Release Schedule & Strategy Wiki Portal
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
-            <Link href="/starsavior" className="text-[#93c5fd] hover:underline">
-              Star Savior Strategy Wiki
-            </Link>
-            <Link href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">
-              Star Savior Tier List
-            </Link>
-            <Link href="/starsavior/characters" className="text-[#93c5fd] hover:underline">
-              59 Characters Database
-            </Link>
-            <Link href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">
-              85 Arcana Encyclopedia
-            </Link>
+      {/* Footer & Direct SEO Strategy Directory */}
+      <footer className="border-t border-[#1e293b] bg-[#070a12] py-8 text-[12.5px] text-[#a8b8d0]">
+        <div className="mx-auto max-w-[1280px] px-4 space-y-6">
+          <nav aria-label="Star Savior Strategy Guides & Top Builds Directory" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 border-b border-[#1e293b] pb-6 text-left">
+            <div className="space-y-2">
+              <div className="text-[11.5px] font-black uppercase tracking-wider text-white">
+                Star Savior Tier Lists &amp; Databases
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+                <Link href="/starsavior" className="text-[#93c5fd] hover:underline">Wiki Portal</Link>
+                <Link href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">PvE Tier List</Link>
+                <Link href="/starsavior/reroll" className="text-[#93c5fd] hover:underline">Reroll Guide</Link>
+                <Link href="/starsavior/guides/pvp-tier-list" className="text-[#93c5fd] hover:underline">PvP Tier List</Link>
+                <Link href="/starsavior/characters" className="text-[#93c5fd] hover:underline">59 Characters</Link>
+                <Link href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">85 Arcana</Link>
+                <Link href="/starsavior/guides/sr-characters" className="text-[#93c5fd] hover:underline">Best SR Units</Link>
+                <Link href="/starsavior/guides/sr-arcana" className="text-[#93c5fd] hover:underline">Best SR Arcana</Link>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <div className="text-[11.5px] font-black uppercase tracking-wider text-white">
+                Codes, Boss Guides &amp; Tools
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+                <Link href="/starsavior/guides/promo-codes" className="text-[#93c5fd] hover:underline">Coupon Codes</Link>
+                <Link href="/starsavior/guides/cube-palace" className="text-[#93c5fd] hover:underline">Cube Palace</Link>
+                <Link href="/starsavior/guides/rescue-journey-guide" className="text-[#93c5fd] hover:underline">Rescue Journey</Link>
+                <Link href="/starsavior/guides/beginner-progression" className="text-[#93c5fd] hover:underline">Beginner Guide</Link>
+                <Link href="/starsavior/guides/event-choice-checker" className="text-[#93c5fd] hover:underline">Event Checker</Link>
+                <Link href="/starsavior/guides/gacha-rates" className="text-[#93c5fd] hover:underline">Gacha Rates</Link>
+                <Link href="/starsavior/guides/blessing-farming" className="text-[#93c5fd] hover:underline">Blessing Farming</Link>
+                <Link href="/starsavior/guides/character-stats-list" className="text-[#93c5fd] hover:underline">Lv.200 Stats</Link>
+                <Link href="/starsavior/guides/character-tier-maker" className="text-[#93c5fd] hover:underline">Tier Maker</Link>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <div className="text-[11.5px] font-black uppercase tracking-wider text-white">
+                Top SS Savior Builds
+              </div>
+              <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+                <Link href="/starsavior/characters/amora" className="text-[#93c5fd] hover:underline">Amora</Link>
+                <Link href="/starsavior/characters/witch-of-favoritism" className="text-[#93c5fd] hover:underline">Witch of Favoritism</Link>
+                <Link href="/starsavior/characters/guile" className="text-[#93c5fd] hover:underline">Guile</Link>
+                <Link href="/starsavior/characters/bride-carmen" className="text-[#93c5fd] hover:underline">Bride Carmen</Link>
+                <Link href="/starsavior/characters/maid-ceres" className="text-[#93c5fd] hover:underline">Maid Ceres</Link>
+                <Link href="/starsavior/characters/bunny-charles" className="text-[#93c5fd] hover:underline">Bunnygirl Charlotte</Link>
+                <Link href="/starsavior/characters/professor-m" className="text-[#93c5fd] hover:underline">Professor M</Link>
+                <Link href="/starsavior/characters/swimsuit-smile" className="text-[#93c5fd] hover:underline">Smile: Sunshine Cat</Link>
+                <Link href="/starsavior/characters/dress-asherah" className="text-[#93c5fd] hover:underline">Dress Asherah</Link>
+                <Link href="/starsavior/characters/dana" className="text-[#93c5fd] hover:underline">Dana</Link>
+              </div>
+            </div>
+          </nav>
+
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 text-center sm:text-left">
+            <div>
+              <strong className="text-white">Ascalon.fun</strong> · Mobile Game Rankings, Release Schedule &amp; Strategy Wiki Portal
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
+              <Link href="/starsavior" className="text-[#93c5fd] hover:underline">
+                Star Savior Strategy Wiki
+              </Link>
+              <Link href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">
+                Star Savior Tier List
+              </Link>
+              <Link href="/starsavior/characters" className="text-[#93c5fd] hover:underline">
+                59 Characters Database
+              </Link>
+              <Link href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">
+                85 Arcana Encyclopedia
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

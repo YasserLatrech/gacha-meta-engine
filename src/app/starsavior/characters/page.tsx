@@ -8,6 +8,7 @@ import {
 } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { CharacterDatabaseMacro } from '@/components/macro/CharacterDatabaseMacro';
+import { toCharacterDbClientDataset } from '@/application/client-dataset';
 import { JsonLd } from '@/components/micro/JsonLd';
 
 export const revalidate = 300;
@@ -55,7 +56,7 @@ export default async function CharacterDatabasePage() {
         activeNav="characters"
         breadcrumbLabel="All 59 Characters List"
       >
-        <CharacterDatabaseMacro dataset={dataset} />
+        <CharacterDatabaseMacro dataset={toCharacterDbClientDataset(dataset)} />
       </WikiShell>
     </>
   );

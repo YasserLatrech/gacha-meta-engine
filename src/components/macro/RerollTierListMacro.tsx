@@ -1,6 +1,4 @@
-'use client';
-
-import React, { useMemo } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import type { GameWikiDataset } from '@/domain/schemas';
 import {
@@ -68,31 +66,28 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
     ['dress-asherah', 'bride-carmen', 'maid-ceres'].includes(c.slug)
   );
 
-  const pollOptions = useMemo(() => {
-    const list = [
-      { slug: 'bunny-charles', name: 'Bunnygirl Charlotte', votes: 13, percent: 12.2 },
-      { slug: 'bell-lease', name: 'Bell Rhys', votes: 12, percent: 11.3 },
-      { slug: 'bride-carmen', name: 'Carmen: Eternal Promise', votes: 7, percent: 6.6 },
-      { slug: 'bunny-frey', name: 'Frey: Noble Princess', votes: 6, percent: 5.6 },
-      { slug: 'tanya', name: 'Tanya', votes: 5, percent: 4.7 },
-      { slug: 'dress-asherah', name: 'Asherah: Waltz of Starlight', votes: 5, percent: 4.7 },
-      { slug: 'rin', name: 'Lyn', votes: 4, percent: 3.7 },
-      { slug: 'bride-epindel', name: 'Epindel: Blessing in Bloom', votes: 4, percent: 3.7 },
-      { slug: 'professor-m', name: 'Professor M', votes: 4, percent: 3.7 },
-      { slug: 'amora', name: 'Amora', votes: 4, percent: 3.7 },
-    ];
-    return list.map((item, idx) => {
-      const found = characters.find((c) => c.slug === item.slug);
-      return {
-        rank: idx + 1,
-        slug: item.slug,
-        name: found?.name || item.name,
-        imageUrl: found?.imageUrl || 'https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_AMORA_icon.webp',
-        votes: item.votes,
-        percent: item.percent,
-      };
-    });
-  }, [characters]);
+  const pollOptions = [
+    { slug: 'bunny-charles', name: 'Bunnygirl Charlotte', votes: 13, percent: 12.2 },
+    { slug: 'bell-lease', name: 'Bell Rhys', votes: 12, percent: 11.3 },
+    { slug: 'bride-carmen', name: 'Carmen: Eternal Promise', votes: 7, percent: 6.6 },
+    { slug: 'bunny-frey', name: 'Frey: Noble Princess', votes: 6, percent: 5.6 },
+    { slug: 'tanya', name: 'Tanya', votes: 5, percent: 4.7 },
+    { slug: 'dress-asherah', name: 'Asherah: Waltz of Starlight', votes: 5, percent: 4.7 },
+    { slug: 'rin', name: 'Lyn', votes: 4, percent: 3.7 },
+    { slug: 'bride-epindel', name: 'Epindel: Blessing in Bloom', votes: 4, percent: 3.7 },
+    { slug: 'professor-m', name: 'Professor M', votes: 4, percent: 3.7 },
+    { slug: 'amora', name: 'Amora', votes: 4, percent: 3.7 },
+  ].map((item, idx) => {
+    const found = characters.find((c) => c.slug === item.slug);
+    return {
+      rank: idx + 1,
+      slug: item.slug,
+      name: found?.name || item.name,
+      imageUrl: found?.imageUrl || 'https://appmedia.jp/wp-content/themes/appmedia/lib/starsavior/img/VOYAGER_AMORA_icon.webp',
+      votes: item.votes,
+      percent: item.percent,
+    };
+  });
 
   return (
     <div className="space-y-6">
