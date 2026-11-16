@@ -1082,5 +1082,13 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(llmsFull).not.toContain('| undefined |');
     expect(llmsFull).not.toContain('/guides/guild-board');
     expect(llmsFull).not.toContain('/guides/birthday-settings');
+
+    // Home page avoids cross-game doorway links and exposes above-the-fold Star Savior hubs
+    expect(homeSrc).not.toContain('targetRoute');
+    expect(homeSrc).not.toContain('86 Guides');
+    expect(homeSrc).toContain('Star Savior Quick Access:');
+
+    const robotsSrc = fs.readFileSync(path.join(rootDir, 'src/app/robots.ts'), 'utf8');
+    expect(robotsSrc).not.toContain('host:');
   });
 });
