@@ -12,7 +12,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fu
 );
 
 export const SITE_NAME = 'Ascalon.fun';
-export const SITE_LASTMOD_ISO = '2026-11-15T04:00:00.000Z';
+export const SITE_LASTMOD_ISO = '2026-11-16T14:20:00.000Z';
 
 export const MIN_INDEXABLE_GUIDE_UNIQUE_WORDS = 130;
 
