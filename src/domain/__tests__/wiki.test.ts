@@ -1090,5 +1090,18 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
 
     const robotsSrc = fs.readFileSync(path.join(rootDir, 'src/app/robots.ts'), 'utf8');
     expect(robotsSrc).not.toContain('host:');
+
+    // Content freshness & Nov 16 2026 live parity checks
+    const patchGuide = getStarSaviorGuideBySlug('patch-notes');
+    expect(patchGuide?.updatedAt).toBe('Nov 16, 2026');
+    expect(JSON.stringify(patchGuide)).toContain('Overload Cube');
+    expect(JSON.stringify(patchGuide)).toContain('Intense Battle Requests');
+    expect(JSON.stringify(patchGuide)).not.toContain('Upcoming 1st Anniversary');
+
+    const whichGacha = JSON.stringify(getStarSaviorGuideBySlug('which-gacha-to-pull'));
+    expect(whichGacha).not.toContain('before Nov 13');
+    expect(whichGacha).toContain('Updated through Gwen');
+
+    expect(APPMEDIA_HOME_PORTAL_DATA.updatedAt).toBe('2026-11-16');
   });
 });

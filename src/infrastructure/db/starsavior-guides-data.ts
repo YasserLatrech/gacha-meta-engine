@@ -129,7 +129,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'pvp-tier-list',
     title: 'Gauntlet (PvP) Strongest Characters Tier List',
     category: 'Rankings',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     eyecatchSrc: '/banners/starsavior/eyecatch/rank_pvp.webp',
     lead: 'Complete Gauntlet (PvP) tier list for Star Savior based on turn-1 initiative, AoE burst pressure, Immortality survival, Evade / Revenge Attack triggers, and buff strip / Silence control.',
     specialKind: 'pvp-ranking',
@@ -167,7 +167,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'sr-characters',
     title: 'Recommended SR Characters Tier List & Upgrade Priority',
     category: 'Rankings',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     eyecatchSrc: '/banners/starsavior/eyecatch/rank_sr_chars.webp',
     lead: 'Which SR Saviors should you build first in Star Savior? Full breakdown of pre-Awakening SR performance, featuring Besta, Naru, Clarissa, Claire, Annah, Scarlet, Marcille, and Vera.',
     specialKind: 'sr-char-ranking',
@@ -199,7 +199,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'sr-arcana',
     title: 'Recommended SR Arcana Tier List & Upgrade Priority',
     category: 'Rankings',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     eyecatchSrc: '/banners/starsavior/eyecatch/rank_sr_arcana.webp',
     lead: 'Best SR Arcana cards to level in Star Savior when filling missing SSR stat tags, maximizing Same-Character Bonuses, and stacking Vitality-restoring Journey Events.',
     specialKind: 'sr-arcana-ranking',
@@ -274,7 +274,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'event-choice-checker',
     title: 'Rescue Journey Event Choice Checker Tool',
     category: 'Tools',
-    updatedAt: 'Nov 12, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_013.webp',
     lead: 'Instant lookup tool for all Star Savior Rescue Journey dialogue choices — covering all 85 Arcana Events plus all 29 Shared Events across NOA, Aganon, Flora, and Kalide.',
     specialKind: 'event-checker',
@@ -294,7 +294,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'livestream-summary',
     title: '1st Anniversary Official Livestream Recap & Upcoming Characters',
     category: 'Events',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     lead: 'Complete recap of the official Star Savior 1st Anniversary broadcast: Witch of Favoritism & free SSR Guile (Nov 12), December Dress Lacy & Dress Carnelia, 200+300 free pulls, and coupon codes.',
     sections: [
       {
@@ -329,9 +329,9 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'promo-codes',
     title: 'Active Promo & Coupon Codes List and How to Redeem',
     category: 'Strategy',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_060.webp',
-    lead: 'All verified Star Savior coupon codes for free Starlight Gems, Focused Observation Tickets, Singularity Degeneration Reactors, and Skill Reset Codes.',
+    lead: 'All verified Star Savior coupon codes for free Starlight Gems, Focused Observation Tickets, Singularity Degeneration Reactors, and Skill Reset Codes (verified active Nov 16, 2026).',
     sections: [
       {
         id: 'active-codes',
@@ -373,7 +373,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: '1st-anniversary-gacha',
     title: 'Should You Pull on the 1st Anniversary Gacha? Witch of Favoritism & Guile Priority',
     category: 'Gacha',
-    updatedAt: 'Nov 12, 2026',
+    updatedAt: 'Nov 16, 2026',
     lead: 'Complete AppMedia pull & Limit Break priority guide for the 1st Anniversary Observation banners: SSS Order Striker Witch of Favoritism, FREE Chaos Caster Guile, Endless Dance, and Faded Dream (~Dec 4, 04:00 JST).',
     sections: [
       {
@@ -402,15 +402,15 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'maid-ceres-gacha',
     title: 'Should You Pull on the Maid Ceres & Grueling Ordeal Pickup Gacha?',
     category: 'Gacha',
-    updatedAt: 'Nov 10, 2026',
-    lead: 'Detailed AppMedia pull evaluation for Sun Supporter Maid Ceres (SS Rank) and Health SSR Arcana "Grueling Ordeal" running until Nov 13, 04:00 JST.',
+    updatedAt: 'Nov 16, 2026',
+    lead: 'AppMedia pull & rerun evaluation for Sun Supporter Maid Ceres (SS Rank) and Health SSR Arcana "Grueling Ordeal" (pickup concluded Nov 13, 04:00 JST).',
     sections: [
       {
         id: 'verdict',
-        heading: 'Pull Verdict: Secure 1 Copy of Maid Ceres (0 Dupes Needed)',
+        heading: 'Pull Verdict: High-Priority 1-Copy Supporter (0 Dupes Needed)',
         paragraphs: [
-          'Maid Ceres (Sun / Supporter, Slash DMG) is a must-have 1-copy pickup: she is the first Supporter in Star Savior capable of granting a party-wide ATK Up buff on her Ultimate while providing two AoE heals, Regeneration (`Refreshing Mood`), and 1–2 debuff cleanses when her Special Skill (`Hospitality Cleaning`) extra-triggers at 5+ `Dust Capture` stacks.',
-          'Limit Breaks only raise Max HP and AoE-hit Action Gauge gain without changing her core rotation, so stop at 1 copy and save remaining Starlight Gems for the Nov 12 1st Anniversary banners.',
+          'Maid Ceres (Sun / Supporter, Slash DMG) is a top-value 1-copy pickup whenever featured or available via Standard Custom Observation: she is the first Supporter in Star Savior capable of granting a party-wide ATK Up buff on her Ultimate while providing two AoE heals, Regeneration (`Refreshing Mood`), and 1–2 debuff cleanses when her Special Skill (`Hospitality Cleaning`) extra-triggers at 5+ `Dust Capture` stacks.',
+          'Limit Breaks only raise Max HP and AoE-hit Action Gauge gain without changing her core rotation, so stopping at 1 base copy leaves your Starlight Gems ready for active 1st Anniversary banners.',
         ],
         bullets: [
           'SSR Arcana "Grueling Ordeal" (Health Tag, Supporter-Only): Grants +4 SPD whenever the user casts a non-attack Special Skill (stacks up to 5x = +20 SPD). Great for Maid Ceres and Carmen: Eternal Promise in Operations and Interstellar Corridor, though note Asherah: Waltz of Starlight cannot trigger it because her Special is an attack.',
@@ -424,7 +424,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'frey-noble-princess-gacha',
     title: 'Should You Pull on the Frey: Noble Princess & The Indomitable Masterpiece Gacha?',
     category: 'Gacha',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     lead: 'Pull analysis for Frey: Noble Princess and the Tier-0 Power SSR Arcana "The Indomitable Masterpiece" running until Nov 19, 04:00 JST.',
     sections: [
       {
@@ -442,23 +442,23 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'which-gacha-to-pull',
     title: 'Which Gacha Banner Should You Pull Right Now? Priority Guide',
     category: 'Gacha',
-    updatedAt: 'Nov 12, 2026',
-    lead: 'Complete comparison of the live 1st Anniversary Witch of Favoritism & Guile Pickups (~Dec 4), Maid Ceres Pickup (~Nov 13), Frey: Noble Princess / The Indomitable Masterpiece Pickup (~Nov 19), and Custom Observation.',
+    updatedAt: 'Nov 16, 2026',
+    lead: 'Complete Nov 16 comparison of live 1st Anniversary Witch of Favoritism & Guile Pickups (~Dec 4), Frey: Noble Princess / The Indomitable Masterpiece Pickup (~Nov 19), and Custom Observation.',
     sections: [
       {
         id: 'banner-comparison',
         heading: 'Active Observation Banner Priority',
         paragraphs: [
-          'Focused Observation Records (mileage) carry over across Pickup banners! Prioritize securing 1 base copy of SSS Order Striker Witch of Favoritism (since Guile + Endless Dance are free at 1 copy!), 1 copy of Maid Ceres before Nov 13 04:00 JST, and "The Indomitable Masterpiece" while keeping reserves for Limited Dress Lacy on Dec 3.',
+          'Focused Observation Records (mileage) carry over across Pickup banners! As of Nov 16, prioritize securing 1 base copy of SSS Order Striker Witch of Favoritism (while 1 copy of Guile + Endless Dance is FREE!) and "The Indomitable Masterpiece" before its Nov 19 expiry, while saving reserves for Limited Dress Lacy in December (Maid Ceres Pickup concluded Nov 13).',
         ],
         table: {
           headers: ['Banner Name', 'End Date (JST)', 'Featured Target', 'Recommendation'],
           rows: [
             ['Witch of Favoritism Pickup', 'Dec 4, 04:00', 'Witch of Favoritism (SSS Order Striker)', 'Top priority: pull 1 base copy to pair with free SSR Guile'],
             ['Guile & Endless Dance Pickup', 'Dec 4, 04:00', 'Guile (SS Chaos Caster) & Endless Dance', '1 copy of both is FREE; pull dupes for 30% team Break DMG & MLB Arcana'],
-            ['Maid Ceres Pickup', 'Nov 13, 04:00', 'Maid Ceres (SS Sun Supporter)', 'Pull 1 copy before expiry (first ATK-buffing AoE Healer/Cleanser)'],
-            ['The Indomitable Masterpiece PU', 'Nov 19, 04:00', 'The Indomitable Masterpiece (SSR Power)', 'Tier-0 Power Arcana (+12% Crit DMG / +4% HP Universal)'],
-            ['Standard / Custom Observation', 'Permanent', 'Wishlist SSRs (Asherah: Waltz, etc.)', 'Spend Standard Tickets only — never spend Starlight Gems'],
+            ['The Indomitable Masterpiece PU', 'Nov 19, 04:00', 'The Indomitable Masterpiece (SSR Power)', 'Ending soon: Tier-0 Power Arcana (+12% Crit DMG / +4% HP Universal)'],
+            ['Custom / Standard Observation', 'Permanent', 'Wishlist SSRs (Asherah: Waltz, Gwen, etc.)', 'Updated through Gwen — spend Standard Tickets only, save Gems'],
+            ['Maid Ceres Pickup (Ended)', 'Ended Nov 13', 'Maid Ceres (SS Sun Supporter)', 'Concluded Nov 13 — target via reruns or Standard Custom pool later'],
           ],
         },
       },
@@ -560,15 +560,15 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'custom-observation',
     title: 'Custom Observation Best Wishlist Characters & Arcanas',
     category: 'Gacha',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_018.webp',
-    lead: 'Exact AppMedia wishlist tier list for Cosmic Custom Observation & Standard Custom Observation — who to lock in for Cross Attack, PvP, and Rescue Journey.',
+    lead: 'Exact AppMedia wishlist tier list for Cosmic Custom Observation & Standard Custom Observation (updated through Gwen) — who to lock in for Cross Attack, PvP, and Rescue Journey.',
     sections: [
       {
         id: 'wishlist-picks',
         heading: 'Best Wishlist Targets (Characters & SSR Arcanas)',
         paragraphs: [
-          'Fill every wishlist slot before pulling Custom Observation, prioritizing Limit Break 1+ on Asherah: Waltz of Starlight and universal Tier-0 SSR Arcanas:',
+          'Fill every wishlist slot before pulling Custom Observation (now covering standard SSRs through Gwen alongside Cosmic Saviors!), prioritizing Limit Break 1+ on Asherah: Waltz of Starlight and universal Tier-0 SSR Arcanas:',
         ],
         bullets: [
           'SSS (Tier 0) Character Pick: Asherah: Waltz of Starlight (Order Supporter — LB1 unlocks passive Cross Attack on ally Basic Skills; LB3 reaches 100% proc rate!).',
@@ -587,15 +587,15 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'valentine-event',
     title: 'Valentine Revival ("Bittersweet! Golden Fantasia") Walkthrough & Shop Guide',
     category: 'Events',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     eyecatchSrc: '/banners/starsavior/eyecatch/valentine_event.webp',
-    lead: 'Complete guide to the Revival Valentine Event "Bittersweet! Golden Fantasia" (~Nov 13, 04:00 JST): farming Deluxe Valentine Chocolates, 3 daily Event Raids, and shop buyout priority.',
+    lead: 'Archive guide for the Revival Valentine Event "Bittersweet! Golden Fantasia" (concluded Nov 13, 04:00 JST): Deluxe Valentine Chocolate shop buyout order and Event Recollection summary.',
     sections: [
       {
         id: 'event-farming',
-        heading: 'Deluxe Valentine Chocolate Farming & Exchange Priority',
+        heading: 'Deluxe Valentine Chocolate Farming & Exchange Priority (Concluded Nov 13)',
         paragraphs: [
-          'Complete daily event missions and clear your 3 daily Event Raid entries (tickets cap at 3 held — never let them overflow!) to farm Deluxe Valentine Chocolates before November 13, 04:00 JST.',
+          'The Revival Valentine Event concluded on November 13, 04:00 JST. Reference the shop priority and 5-day reward breakdown below for Event Recollection archives and future event revivals:',
         ],
         bullets: [
           'Tier 1 Must-Buy (150 Chocolates each): Focused Observation Ticket ×5, Savior Standard Observation Ticket ×5, and Arcana Standard Observation Ticket ×5.',
@@ -609,8 +609,8 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'cosmo-gate',
     title: 'Cosmo Gate Season P7 Boss Strategy (Belgras / Tyria / Carnelia)',
     category: 'Events',
-    updatedAt: 'Nov 10, 2026',
-    lead: 'High-score boss mechanics, Toughness Break burst windows, and top-scoring formations against Season P7 bosses Belgras, Tyria, and Carnelia (~Nov 12, 04:00 JST).',
+    updatedAt: 'Nov 16, 2026',
+    lead: 'Archive boss strategy for Cosmo Gate Season P7 (concluded Nov 12, 04:00 JST): Toughness Break burst windows and top-scoring formations against Belgras, Tyria, and Carnelia.',
     sections: [
       {
         id: 'cosmo-strategy',
@@ -1359,21 +1359,21 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'patch-notes',
     title: 'Latest Maintenance, Update & Balance Patch Notes Summary',
     category: 'Strategy',
-    updatedAt: 'Nov 10, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_061.webp',
-    lead: 'Chronological AppMedia update log: Nov 4 Frey: Noble Princess & Cosmo Gate P7, Oct 29 Maid Ceres & Guild Defense, Oct 22 Server Merge, and Nov 12 1st Anniversary preview.',
+    lead: 'Chronological AppMedia update log through Nov 16, 2026: Live 1st Anniversary EP8 Update (Nov 12), Overload Cube, Intense Battle Requests, Gwen permanent pool, QoL changes & maintenance rewards.',
     sections: [
       {
         id: 'recent-updates',
         heading: 'October – November 2026 Official Update Log',
         paragraphs: [
-          'Recent Star Savior maintenance deployments and upcoming scheduled patches:',
+          'Verified Star Savior live maintenance deployments, new events, and system improvements through Nov 16, 2026:',
         ],
         bullets: [
-          'Nov 12, 2026 (Upcoming 1st Anniversary & EP8): Witch of Favoritism (Order Striker) & free Guile (Chaos Caster + free SSR Arcana), Auto Journey (Deepening Mode), Event Recollection, and coupon TOGETHER1STANNIV.',
-          'Nov 4, 2026 Update: Frey: Noble Princess & Tier-0 Power SSR Arcana "The Indomitable Masterpiece" revival pickup, Cosmo Gate Season P7 (Belgras / Tyria / Carnelia), Gauntlet Pre-Season (Nov 9), Bunny Revival, and 100 Starlight Gems + 2 Standard Tickets maintenance compensation.',
-          'Oct 29, 2026 Update: New Sun Supporter Maid Ceres & SSR Arcana "Grueling Ordeal" pickup, Revival Valentine Event ("Bittersweet! Golden Fantasia"), and Guild Defense battle updates.',
-          'Oct 22 & Oct 15, 2026 Updates: Seira SSR Arcana ("Drowsy Day Out"), Server Merge completion, and Maid Lydia ("Wait, These Are... Clothes?") implementation.',
+          'Nov 12–16, 2026 (LIVE — 1st Anniversary & Main Story EP8): Deployed Witch of Favoritism (SSS Order Striker) & FREE Guile + Endless Dance SSR Arcana, Gwen added to Standard & Custom Observation pools, Main Story EP8 (Season 1 Finale) + temporary Database story unlock, Guile Path of Return Event, Overload Cube, Intense Battle Requests (until Dec 3), Auto Rescue Journey (Deepening Mode), Event Recollection, Apocalypse Shop overhaul, and maintenance apology (Starlight Gems ×100 + Standard Savior Tickets ×6).',
+          'Nov 12 QoL & Feature Changes: Added Singularity Degeneration Reactor (Star Link slot expander, redeemable via coupon TOGETHER1STANNIV), expanded Arcana & Lobby presets, Battle Skip in Interstellar/Infinite Corridor, visible Barrier numeric totals in combat, Savior preferred-gift tags, new Equipment Set Workshop blueprints, and 04:00 JST daily session boundary enforcement.',
+          'Nov 4, 2026 Update (Concluded): Frey: Noble Princess & Tier-0 Power SSR Arcana "The Indomitable Masterpiece" revival pickup (ends Nov 19, 04:00 JST), Cosmo Gate Season P7 (concluded Nov 12), Gauntlet Pre-Season, and 100 Starlight Gems + 2 Standard Tickets maintenance compensation.',
+          'Oct 29 & Oct 22, 2026 Updates (Concluded): Sun Supporter Maid Ceres & SSR Arcana "Grueling Ordeal" pickup, Revival Valentine Event (concluded Nov 13), Guild Defense updates, and Server Merge completion.',
         ],
       },
     ],
@@ -1689,7 +1689,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'character-stats-list',
     title: 'All Character Base Stats Comparison Table (Sortable)',
     category: 'Database',
-    updatedAt: 'Nov 12, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_108.webp',
     lead: 'Sortable max base stats database for all 59 Star Savior characters — compare ATK, HP, DEF, SPD, and CRIT% across SSR and SR Saviors.',
     specialKind: 'char-stats-table',
@@ -1709,7 +1709,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'birthday-calendar',
     title: 'All Character Birthdays Calendar & Affiliations List',
     category: 'Database',
-    updatedAt: 'Nov 12, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_111.webp',
     lead: 'Complete birthday list, height, and faction directory for all 59 playable Saviors in Star Savior.',
     specialKind: 'birthday-db',
@@ -1719,7 +1719,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'voice-actors',
     title: 'Voice Actors (CV) Cast List for All 59 Characters',
     category: 'Database',
-    updatedAt: 'Nov 12, 2026',
+    updatedAt: 'Nov 16, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_112.webp',
     lead: 'Complete voice cast (CV) directory for all 59 playable Saviors in Star Savior with direct links to each character profile.',
     specialKind: 'voice-actors-db',
