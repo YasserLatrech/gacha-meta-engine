@@ -89,51 +89,39 @@ const LATEST_UPDATE_TABS = [
     ],
   },
   {
-    key: 'maid-ceres',
-    tabLabel: 'Maid Ceres Released',
-    title: 'New Sun Supporter "Maid Ceres" & SSR Arcana "Grueling Ordeal" Pickup (~Nov 13, 04:00)',
-    badge: 'GACHA',
-    description:
-      'Maid Ceres is a Sun Supporter equipped with two AoE healing skills, an extra-trigger Special Skill that grants Regeneration, team-wide debuff cleansing, and an AoE ATK buff Ultimate Skill.',
-    links: [
-      { label: 'Should You Pull Maid Ceres Gacha?', href: '/starsavior/guides/maid-ceres-gacha' },
-      { label: 'Maid Ceres Build, Skills & Evaluation', href: '/starsavior/characters/maid-ceres' },
-    ],
-  },
-  {
     key: 'bunny-frey',
-    tabLabel: 'Frey: Noble Princess PU',
+    tabLabel: 'Frey PU (Ends Nov 19)',
     title: 'Frey: Noble Princess & Tier-0 SSR Arcana "The Indomitable Masterpiece" (~Nov 19, 04:00)',
     badge: 'GACHA',
     description:
-      'Frey: Noble Princess returns alongside the Tier-0 Power SSR Arcana "The Indomitable Masterpiece", granting +12% Crit DMG and +4% Max HP as a Universal Special Potential.',
+      'Final days (ends Nov 19 JST): Frey: Noble Princess returns alongside the Tier-0 Power SSR Arcana "The Indomitable Masterpiece", granting +12% Crit DMG and +4% Max HP as a Universal Special Potential.',
     links: [
-      { label: 'Should You Pull Frey: Noble Princess Gacha?', href: '/starsavior/guides/frey-noble-princess-gacha' },
+      { label: 'Active Gacha Priority Comparison', href: '/starsavior/guides/which-gacha-to-pull' },
       { label: 'Strongest Arcana Tier List & Rankings', href: '/starsavior/arcana' },
     ],
   },
   {
-    key: 'cosmo-gate',
-    tabLabel: 'Cosmo Gate P7',
-    title: 'Cosmo Gate Season P7 (Belgras, Tyria & Carnelia) Boss Strategy (~Nov 12, 04:00)',
+    key: 'ep8-overload',
+    tabLabel: 'EP8 & Overload Cube',
+    title: '1st Anniv Events Live (~Dec 3): Main Story EP8, Intense Battle Requests & Overload Cube!',
     badge: 'EVENT',
     description:
-      'Single-target Toughness break and Cross Attack formations pairing Professor M and Asherah: Waltz of Starlight with Amora, Smile: Sunshine Cat, and Carmen: Eternal Promise dominate Season P7.',
+      'Complete Main Story EP8 (Season 1 Finale), challenge 3 Intense Battle Request stages, farm Precision gear in Guile\'s Path of Return event, and clear Overload Cube alongside Auto Rescue Journey.',
     links: [
-      { label: 'Cosmo Gate Strategy & Recommended Teams', href: '/starsavior/guides/cosmo-gate' },
-      { label: 'Professor M Build & Cross Attack Guide', href: '/starsavior/characters/professor-m' },
+      { label: 'Latest Nov 12–16 Patch Notes & QoL Summary', href: '/starsavior/guides/patch-notes' },
+      { label: 'All 59 Playable Characters Database', href: '/starsavior/characters' },
     ],
   },
   {
-    key: 'valentine',
-    tabLabel: 'Valentine Revival',
-    title: 'Revival Valentine Event "Bittersweet! Golden Fantasia" (~Nov 13, 04:00)',
-    badge: 'EVENT',
+    key: 'custom-wishlist',
+    tabLabel: 'Custom Wishlist (+Gwen)',
+    title: 'Cosmic & Standard Custom Observation Updated (Gwen Added to Pool!)',
+    badge: 'GACHA',
     description:
-      'Clear daily event missions and all 3 daily Event Raids to farm Deluxe Valentine Chocolates for Focused / Standard Observation Tickets, Master Cube, Moonlight Water, and Polaris Support Boxes.',
+      'Gwen has joined the Standard & Custom Observation pool as of the 1st Anniversary update! Lock in LB1+ Asherah: Waltz of Starlight alongside top Cosmic & standard SSRs using Standard Tickets.',
     links: [
-      { label: 'Valentine Event Walkthrough Here', href: '/starsavior/guides/valentine-event' },
-      { label: 'All 59 Playable Characters Database', href: '/starsavior/characters' },
+      { label: 'Custom Observation Wishlist Priority', href: '/starsavior/guides/custom-observation' },
+      { label: 'Reroll Tier List & Stopping Line', href: '/starsavior/reroll' },
     ],
   },
   {

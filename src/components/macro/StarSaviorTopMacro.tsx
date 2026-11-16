@@ -71,7 +71,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             </span>
             <span>{game.patchVersion}</span>
           </div>
-          <span>Last Updated: Nov 12, 2026 21:30 JST</span>
+          <span>Last Updated: Nov 16, 2026 23:00 JST</span>
         </div>
 
         <div className="flex items-center gap-3.5">
@@ -591,22 +591,22 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
               </tr>
               <tr>
                 <td className="border-r border-[#28354e] p-2.5 text-center">
-                  <Link href="/starsavior/guides/valentine-event" className="group inline-block">
+                  <Link href="/starsavior/guides/1st-anniversary-gacha" className="group inline-block">
                     <img
                       src="/banners/starsavior/eyecatch/golden_fantasia.webp"
-                      alt="Golden Fantasia Event"
+                      alt="1st Anniversary Event, EP8 & Intense Battle Requests"
                       className="mx-auto w-full max-w-[260px] h-auto rounded border border-[#2b3a57] group-hover:border-[#60a5fa]"
                       loading="eager"
                     />
                     <span className="mt-1 block text-[13.5px] font-bold text-[#60a5fa] group-hover:underline">
-                      Golden Fantasia Campaign
+                      1st Anniv Event, EP8 &amp; Intense Requests
                     </span>
                   </Link>
                 </td>
                 <td className="p-2.5 text-center align-middle text-[#e2e8f0] font-semibold">
                   <div className="flex flex-col items-center gap-1.5">
-                    <span>Started 2026/11/05 12:00:00 JST</span>
-                    <LiveJstCountdown startIso="2026-11-05T12:00:00+09:00" />
+                    <span>Active Until 2026/12/03 (Thu) 04:00 JST</span>
+                    <LiveJstCountdown targetIso="2026-12-03T04:00:00+09:00" prefix="Ends in" />
                   </div>
                 </td>
               </tr>
