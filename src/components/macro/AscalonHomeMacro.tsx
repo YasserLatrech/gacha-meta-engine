@@ -21,7 +21,7 @@ import {
 import { GlobalOmniSearch } from '@/components/micro/GlobalOmniSearch';
 import { AdsterraSlot } from '@/components/micro/AnalyticsAndAds';
 
-const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; keyPoints: string[]; targetRoute: string }> = {
+const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; keyPoints: string[] }> = {
   '/banners/home/en_home_01.webp': {
     category: 'Fate/Grand Order · Campaign Guide',
     summary:
@@ -31,7 +31,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Half-AP Main Quest progression and 2x Great/Super Success rates during Servant & Craft Essence enhancement.',
       'Recommended low-AP Free Quests in Fuyuki and Orleans to finish trait-specific mission requirements in under 15 minutes.',
     ],
-    targetRoute: '/starsavior',
   },
   '/banners/home/en_home_02.webp': {
     category: 'Fate/Grand Order · SSR Ticket Priority',
@@ -42,7 +41,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Story-Locked Priority: Cu Chulainn (Alter), Medb, and Sitonai offer the highest value for Masters who rarely roll Story Summon.',
       'Fulfill the Ascension + Bond Level 3 permanent condition immediately using Ember stockpiles to permanently keep your exchanged SSR.',
     ],
-    targetRoute: '/starsavior/tier-list',
   },
   '/banners/home/en_home_03.webp': {
     category: 'Fate/Grand Order · Gacha Banner Evaluation',
@@ -53,7 +51,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Check NP level breakpoints: NP1 suffices for utility supports, while primary loopers strongly benefit from NP2+.',
       'Save at least 900 Saint Quartz if targeting a guaranteed pity ceiling on upcoming seasonal banners.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_04.webp': {
     category: 'Fate/Grand Order · Overall Tier List',
@@ -64,7 +61,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Multi-core DPS Servants with party-wide attack/NP damage buffs outperform selfish single-core loopers in 90++ irregular nodes.',
       'Single-target Berserkers and Avengers dominate boss break-bar phases.',
     ],
-    targetRoute: '/starsavior/tier-list',
   },
   '/banners/home/en_home_05.webp': {
     category: 'Fate/Grand Order · Event Walkthrough',
@@ -75,7 +71,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Level up GUDAGUDA series bonus Servants ahead of launch for +20% to +100% event damage and bond point bonuses.',
       'Prioritize Event Damage Craft Essences from the shop first to clear Raid and 90++ farming stages efficiently.',
     ],
-    targetRoute: '/starsavior',
   },
   '/banners/home/en_home_06.webp': {
     category: 'Sparklink Stars · Reroll Tier List',
@@ -86,7 +81,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Score Boost + Combo Support SSR cards hold the longest shelf life across all music and training attributes.',
       'Avoid stopping on pure stamina-recovery SSRs, as high-difficulty scoring requires raw appeal multipliers.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_07.webp': {
     category: 'Sparklink Stars · Fast Reroll Guide',
@@ -97,7 +91,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Claim all Pre-Registration Campaign gems from the Present Box before rolling the Pickup Banner.',
       'Do not delete and reinstall the app—use Title Screen -> Menu -> Delete User Data to bypass redownloading assets.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_08.webp': {
     category: 'Sparklink Stars · Strongest Character Tier List',
@@ -108,7 +101,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Pair matching attribute SSRs with SR sub-members that trigger skill activation rate buffs.',
       'Unlock card story nodes early to gain flat parameter bonuses across all three vocal/dance/visual stats.',
     ],
-    targetRoute: '/starsavior/tier-list',
   },
   '/banners/home/en_home_09.webp': {
     category: 'Sparklink Stars · Account Linking Guide',
@@ -119,7 +111,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Paid currency remains platform-specific when transferring between iOS and Android devices.',
       'Keep a backup screenshot of your Player ID on the title screen in case of device loss.',
     ],
-    targetRoute: '/starsavior',
   },
   '/banners/home/en_home_10.webp': {
     category: 'Sparklink Stars · Gacha Animations & SSR Tells',
@@ -130,7 +121,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Special character voice cut-ins during the summon sequence confirm a featured rate-up SSR.',
       'Fake-out upgrades can occur on the final 10th slot even if the initial stage lights appear blue or gold.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_11.webp': {
     category: 'BLEACH Mirrors High · Reroll Tier List',
@@ -141,7 +131,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Aim for 1 SS-Tier Main DPS + 1 S-Tier Support or Sub-DPS within your opening 30 pulls.',
       'Check attribute coverage so your starting trio is not blocked by single-attribute story bosses.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_12.webp': {
     category: 'BLEACH Mirrors High · Fast Reroll Method',
@@ -152,7 +141,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Roll the Limited Pickup Banner with your mailbox gems first, then use the Redraw Gacha to fill the missing role.',
       'Save your transfer code immediately once you secure a double-SSR opening roll.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_13.webp': {
     category: 'BLEACH Mirrors High · Strongest Tier List',
@@ -163,7 +151,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Full-screen AoE ultimate skills dominate Arena PvP turn-1 initiative.',
       'Invest limit-break materials into your primary carry to Level 80 before spreading resources across sub-units.',
     ],
-    targetRoute: '/starsavior/tier-list',
   },
   '/banners/home/en_home_14.webp': {
     category: 'BLEACH Mirrors High · Redraw Gacha Guide',
@@ -174,7 +161,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Roll your regular Pickup Gacha tickets first so you do not pick a duplicate from the Redraw Gacha.',
       'Byakuya Kuchiki and Toshiro Hitsugaya are top Redraw selections for balanced wave clear and crowd control.',
     ],
-    targetRoute: '/starsavior/reroll',
   },
   '/banners/home/en_home_15.webp': {
     category: 'BLEACH Mirrors High · Friend Invite Code Board',
@@ -185,7 +171,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Earn additional milestone rewards as invited friends clear Main Story Chapter 1 through Chapter 3.',
       'Up to 5 invited player milestones count toward the maximum campaign reward cap.',
     ],
-    targetRoute: '/starsavior',
   },
   '/banners/home/en_home_16.webp': {
     category: 'Onimusha: Way of the Sword · Omamori Equipment Guide',
@@ -196,7 +181,6 @@ const ARTICLE_SUMMARIES: Record<string, { category: string; summary: string; key
       'Prioritize Attack Speed and Critical Window Expansion Omamori for boss time-attack stages.',
       'Dismantle duplicate lower-rarity talismans to enhance your primary SSR Omamori to max rank.',
     ],
-    targetRoute: '/starsavior',
   },
 };
 
@@ -577,7 +561,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     Star Savior Wiki
                   </div>
                   <div className="text-[11.5px] text-[#e8eff8] truncate">
-                    59 Saviors · 85 Arcana · 86 Guides →
+                    59 Saviors · 85 Arcana · 38 Guides →
                   </div>
                 </div>
               </Link>
@@ -610,6 +594,30 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 </div>
               </a>
             </div>
+          </div>
+
+          {/* Above-the-Fold Star Savior Pillar Hubs (Direct Crawlable Entry Points) */}
+          <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+            <span className="text-[11px] font-extrabold uppercase tracking-wider text-emerald-300 mr-1">
+              Star Savior Quick Access:
+            </span>
+            {[
+              { href: '/starsavior/tier-list', label: 'Tier List' },
+              { href: '/starsavior/guides/promo-codes', label: 'Promo & Coupon Codes' },
+              { href: '/starsavior/reroll', label: 'Reroll Guide' },
+              { href: '/starsavior/characters', label: 'All 59 Characters' },
+              { href: '/starsavior/arcana', label: 'All 85 Arcana' },
+              { href: '/starsavior/guides/pvp-tier-list', label: 'PvP Tier List' },
+              { href: '/starsavior/guides/event-choice-checker', label: 'Event Choice Checker' },
+            ].map((hub) => (
+              <Link
+                key={hub.href}
+                href={hub.href}
+                className="rounded-md border border-[#2a3b5c] bg-[#0f1626] hover:border-emerald-400 hover:text-emerald-300 px-2.5 py-1 text-[12px] font-bold text-[#dbeafe] transition-colors"
+              >
+                {hub.label}
+              </Link>
+            ))}
           </div>
 
           {/* Portal Quick Section Navigation Table */}
@@ -1449,50 +1457,33 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             Featured Strategy Articles & Event Guides
           </AppMediaH2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
-            {featuredArticles.map((art, idx) => {
-              const guideHref = ARTICLE_SUMMARIES[art.thumbUrl]?.targetRoute || '/starsavior';
-              return (
-                <div
-                  key={idx}
-                  className="group text-left flex flex-col overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] transition-colors"
-                >
-                  <Link
-                    href={guideHref}
-                    className="w-full overflow-hidden bg-[#090d16] border-b border-[#1e293b] block"
-                  >
-                    <img
-                      src={art.thumbUrl}
-                      alt={art.title}
-                      className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform"
-                      loading="eager"
-                    />
-                  </Link>
-                  <div className="p-3 flex-1 flex flex-col justify-between gap-2.5">
-                    <Link
-                      href={guideHref}
-                      className="text-[13.5px] font-bold text-white group-hover:text-[#60a5fa] leading-snug line-clamp-2"
-                    >
-                      {art.title}
-                    </Link>
-                    <div className="flex items-center justify-between gap-2 pt-0.5">
-                      <Link
-                        href={guideHref}
-                        className="text-[11.5px] font-extrabold text-[#93c5fd] hover:text-white hover:underline"
-                      >
-                        Read Full Guide →
-                      </Link>
-                      <button
-                        type="button"
-                        onClick={() => setActiveArticle(art)}
-                        className="rounded border border-[#243049] bg-[#161f33] px-2 py-0.5 text-[11px] font-bold text-[#c8d4e6] hover:border-[#3b82f6] hover:text-white transition-colors"
-                      >
-                        Quick Summary
-                      </button>
-                    </div>
+            {featuredArticles.map((art, idx) => (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setActiveArticle(art)}
+                className="group text-left flex flex-col overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] transition-colors"
+              >
+                <div className="w-full overflow-hidden bg-[#090d16] border-b border-[#1e293b]">
+                  <img
+                    src={art.thumbUrl}
+                    alt={art.title}
+                    className="w-full h-auto object-contain block group-hover:scale-[1.02] transition-transform"
+                    loading="eager"
+                  />
+                </div>
+                <div className="p-3 flex-1 flex flex-col justify-between gap-2.5">
+                  <div className="text-[13.5px] font-bold text-white group-hover:text-[#60a5fa] leading-snug line-clamp-2">
+                    {art.title}
+                  </div>
+                  <div className="flex items-center justify-between gap-2 pt-0.5">
+                    <span className="text-[11.5px] font-extrabold text-[#93c5fd] group-hover:text-white">
+                      Read Summary →
+                    </span>
                   </div>
                 </div>
-              );
-            })}
+              </button>
+            ))}
           </div>
         </section>
 
@@ -1570,11 +1561,11 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
             <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-[#1e293b]">
               <Link
-                href={ARTICLE_SUMMARIES[activeArticle.thumbUrl]?.targetRoute || '/starsavior'}
+                href="/starsavior"
                 onClick={() => setActiveArticle(null)}
                 className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[13.5px] font-black text-white transition-colors"
               >
-                <span>Open Star Savior Full Strategy Wiki →</span>
+                <span>Browse Star Savior Strategy Wiki →</span>
               </Link>
               <button
                 type="button"
