@@ -14,6 +14,8 @@ import {
 } from '@/domain/ad-shield';
 
 const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID ?? 'G-MPFLWWY7TP';
+const ADSTERRA_BANNERS_ENABLED = process.env.NEXT_PUBLIC_ADSTERRA_ENABLED === '1';
+const ADSTERRA_INTRUSIVE_ENABLED = process.env.NEXT_PUBLIC_ADSTERRA_ENABLE_INTRUSIVE === '1';
 const ADSTERRA_BANNER_BASE_URL =
   process.env.NEXT_PUBLIC_ADSTERRA_BANNER_BASE_URL ?? 'https://bauval.org/22';
 const ADSTERRA_POPUNDER_SRC =
@@ -410,7 +412,7 @@ export function AnalyticsTelemetry() {
         </>
       ) : null}
 
-      {ADSTERRA_POPUNDER_SRC ? (
+      {ADSTERRA_INTRUSIVE_ENABLED && ADSTERRA_POPUNDER_SRC ? (
         <Script
           id="ascalon-popunder-loader"
           src={ADSTERRA_POPUNDER_SRC}
@@ -421,7 +423,7 @@ export function AnalyticsTelemetry() {
         />
       ) : null}
 
-      {ADSTERRA_SOCIAL_BAR_SRC ? (
+      {ADSTERRA_INTRUSIVE_ENABLED && ADSTERRA_SOCIAL_BAR_SRC ? (
         <Script
           id="ascalon-social-bar-loader"
           src={ADSTERRA_SOCIAL_BAR_SRC}
@@ -432,7 +434,7 @@ export function AnalyticsTelemetry() {
         />
       ) : null}
 
-      <AdRecoveryNotice snapshot={snapshot} />
+      {ADSTERRA_INTRUSIVE_ENABLED ? <AdRecoveryNotice snapshot={snapshot} /> : null}
     </>
   );
 }
@@ -765,7 +767,7 @@ export function AdsterraSlot({
     return () => mq.removeEventListener('change', update);
   }, [minViewportWidth]);
 
-  if (!viewportEligible) {
+  if (!ADSTERRA_BANNERS_ENABLED || !viewportEligible) {
     return null;
   }
 

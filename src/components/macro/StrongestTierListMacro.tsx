@@ -187,22 +187,22 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
             Various Star Savior Rankings
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[13.5px] font-bold">
-            <Link href="/starsavior/tier-list" className="bg-[#2563eb]/25 py-2.5 text-white">
+            <Link prefetch={false} href="/starsavior/tier-list" className="bg-[#2563eb]/25 py-2.5 text-white">
               Strongest Characters
             </Link>
-            <Link href="/starsavior/arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest Arcana
             </Link>
-            <Link href="/starsavior/guides/pvp-tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/guides/pvp-tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest PvP Characters
             </Link>
-            <Link href="/starsavior/reroll" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/reroll" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Reroll Rankings
             </Link>
-            <Link href="/starsavior/guides/sr-characters" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/guides/sr-characters" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Recommended SR Chars
             </Link>
-            <Link href="/starsavior/guides/sr-arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/guides/sr-arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Recommended SR Arcana
             </Link>
           </div>
@@ -331,16 +331,26 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         {/* Mobile Compact Tier Rows (< md, when !mobileMatrixView) */}
         {!mobileMatrixView && (
-          <div className="md:hidden overflow-hidden rounded-lg border border-[#243049] bg-[#0b101b]">
+          <div className="md:hidden overflow-x-clip rounded-lg border border-[#243049] bg-[#0b101b]">
             <table className="w-full border-collapse">
               <tbody>
                 {tiersOrder.map((tierKey) => {
                   const rowChars = filteredCharacters.filter((c) => resolveDisplayTier(c) === tierKey);
                   const tStyle = TIER_COLOR_STYLES[tierKey];
+                  const roleShortBadge: Record<string, string> = {
+                    Striker: 'STR',
+                    Assassin: 'ASN',
+                    Ranger: 'RNG',
+                    Caster: 'CST',
+                    Supporter: 'SUP',
+                    Defender: 'DEF',
+                  };
                   return (
                     <tr key={tierKey} className="border-b last:border-b-0 border-[#1e293b]">
-                      <td className={`w-20 p-2 text-center align-middle border-r border-[#243049] ${tStyle.bg}/20`}>
-                        <AppMediaRankIcon tier={tierKey} size="sm" subLabel={tStyle.label} />
+                      <td className={`w-16 sm:w-20 p-2 pt-3 text-center align-top border-r border-[#243049] ${tStyle.bg}/20`}>
+                        <div className="sticky top-24">
+                          <AppMediaRankIcon tier={tierKey} size="sm" subLabel={tStyle.label} />
+                        </div>
                       </td>
                       <td className="p-2.5">
                         {rowChars.length === 0 ? (
@@ -356,7 +366,7 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                                 rarity={c.rarity}
                                 topLeftIconUrl={c.staticData?.attributeIconUrl}
                                 topRightIconUrl={c.staticData?.classIconUrl}
-                                badgeText={c.role.slice(0, 3).toUpperCase()}
+                                badgeText={roleShortBadge[c.role] || c.role.slice(0, 3).toUpperCase()}
                                 size="sm"
                               />
                             ))}
@@ -587,21 +597,21 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         {(witchOfFavoritism || guile) && (
           <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-            <table className="w-full border-collapse text-center text-[13.5px]">
+            <table className="w-full border-collapse text-center text-[12px] sm:text-[13.5px]">
               <thead>
-                <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
-                  <th className="px-3 py-2 border-r border-[#243049]">Character</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">Overall Rank</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">Reroll</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">General PvE</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">Vs. Boss</th>
-                  <th className="px-3 py-2">Gauntlet PvP</th>
+                <tr className="border-b border-[#243049] bg-[#161f33] text-[10.5px] sm:text-[12.5px] font-extrabold text-[#c8d4e6]">
+                  <th className="px-1.5 sm:px-3 py-2 border-r border-[#243049]">Savior</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">Overall</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">Reroll</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">PvE</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">Boss</th>
+                  <th className="px-1 sm:px-3 py-2">PvP</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#1e293b]">
                 {witchOfFavoritism && (
                   <tr>
-                    <td className="p-2.5 border-r border-[#1e293b]">
+                    <td className="p-1.5 sm:p-2.5 border-r border-[#1e293b]">
                       <div className="flex justify-center">
                         <AppMediaIconCell
                           href={`/starsavior/characters/${witchOfFavoritism.slug}`}
@@ -614,16 +624,16 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                         />
                       </div>
                     </td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SSS" /></td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SSS" /></td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                    <td className="p-2.5"><AppMediaTierBadge tier="SSS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SSS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SSS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-1 sm:p-2.5"><AppMediaTierBadge tier="SSS" /></td>
                   </tr>
                 )}
                 {guile && (
                   <tr>
-                    <td className="p-2.5 border-r border-[#1e293b]">
+                    <td className="p-1.5 sm:p-2.5 border-r border-[#1e293b]">
                       <div className="flex justify-center">
                         <AppMediaIconCell
                           href={`/starsavior/characters/${guile.slug}`}
@@ -636,11 +646,11 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                         />
                       </div>
                     </td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="S" /></td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                    <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                    <td className="p-2.5"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="S" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                    <td className="p-1 sm:p-2.5"><AppMediaTierBadge tier="SS" /></td>
                   </tr>
                 )}
               </tbody>
@@ -659,20 +669,20 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
 
         {maidCeres && (
           <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-            <table className="w-full border-collapse text-center text-[13.5px]">
+            <table className="w-full border-collapse text-center text-[12px] sm:text-[13.5px]">
               <thead>
-                <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
-                  <th className="px-3 py-2 border-r border-[#243049]">Character</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">Overall Rank</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">Reroll</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">General PvE</th>
-                  <th className="px-3 py-2 border-r border-[#243049]">Vs. Boss</th>
-                  <th className="px-3 py-2">Gauntlet PvP</th>
+                <tr className="border-b border-[#243049] bg-[#161f33] text-[10.5px] sm:text-[12.5px] font-extrabold text-[#c8d4e6]">
+                  <th className="px-1.5 sm:px-3 py-2 border-r border-[#243049]">Savior</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">Overall</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">Reroll</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">PvE</th>
+                  <th className="px-1 sm:px-3 py-2 border-r border-[#243049]">Boss</th>
+                  <th className="px-1 sm:px-3 py-2">PvP</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="p-2.5 border-r border-[#1e293b]">
+                  <td className="p-1.5 sm:p-2.5 border-r border-[#1e293b]">
                     <div className="flex justify-center">
                       <AppMediaIconCell
                         href={`/starsavior/characters/${maidCeres.slug}`}
@@ -685,11 +695,11 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
                       />
                     </div>
                   </td>
-                  <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                  <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="S" /></td>
-                  <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
-                  <td className="p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="A" /></td>
-                  <td className="p-2.5"><AppMediaTierBadge tier="S" /></td>
+                  <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                  <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="S" /></td>
+                  <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="SS" /></td>
+                  <td className="p-1 sm:p-2.5 border-r border-[#1e293b]"><AppMediaTierBadge tier="A" /></td>
+                  <td className="p-1 sm:p-2.5"><AppMediaTierBadge tier="S" /></td>
                 </tr>
               </tbody>
             </table>

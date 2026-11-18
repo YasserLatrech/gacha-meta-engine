@@ -127,7 +127,7 @@ export function CharacterDetailMacro({
             {variants.map((v) => {
               const isCurrent = v.slug === character.slug;
               return (
-                <Link
+                <Link prefetch={false}
                   key={v.slug}
                   href={`/starsavior/characters/${v.slug}`}
                   className={`flex items-center justify-center gap-2.5 p-2.5 text-[13.5px] font-bold transition-colors ${
@@ -172,7 +172,7 @@ export function CharacterDetailMacro({
       {/* 1. H2: 評価と性能 (Evaluation & Performance) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
         <AppMediaH2 id="eval-performance" badge={sd?.appMediaTier || character.overallTier}>
-          {character.name}&apos;s Evaluation & Performance
+          {`${character.name}'s Evaluation & Performance`}
         </AppMediaH2>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start">
@@ -258,7 +258,7 @@ export function CharacterDetailMacro({
                 { label: 'Dupe Priority', val: <span className="font-black text-[#fbbf24]">{sd?.dupeRating || '—'}</span> },
               ].map((cell) => (
                 <div key={cell.label} className="flex flex-col">
-                  <div className="border-b border-[#243049] bg-[#161f33] px-1.5 py-1.5 text-[11.5px] font-extrabold uppercase text-[#c8d4e6] truncate">
+                  <div className="border-b border-[#243049] bg-[#161f33] px-1 py-1.5 text-[10.5px] sm:text-[11px] font-extrabold uppercase leading-tight tracking-tight text-[#c8d4e6]">
                     {cell.label}
                   </div>
                   <div className="flex-1 flex items-center justify-center py-2.5">
@@ -291,7 +291,7 @@ export function CharacterDetailMacro({
 
       {/* 2. H2: 装備おすすめ (Recommended Equipment) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
-        <AppMediaH2 id="recommended-equipment">{character.name}&apos;s Recommended Equipment Builds</AppMediaH2>
+        <AppMediaH2 id="recommended-equipment">{`${character.name}'s Recommended Equipment Builds`}</AppMediaH2>
 
         <AppMediaH3 id="equip-sets">Recommended Equipment Sets (PvE & PvP)</AppMediaH3>
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626] grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-[#243049] text-[13.5px]">
@@ -308,7 +308,9 @@ export function CharacterDetailMacro({
                         <img src={s.iconUrl} alt={s.name} className="h-10 w-10 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
                       )}
                       <div>
-                        <div className="font-extrabold text-white text-[13.5px]">{s.name} Set</div>
+                        <div className="font-extrabold text-white text-[13.5px]">
+                          {/\bSet\b/i.test(s.name) ? s.name : `${s.name} Set`}
+                        </div>
                         {s.effect && <div className="text-[12.5px] font-semibold text-[#fbbf24]">{s.effect}</div>}
                       </div>
                     </div>
@@ -335,7 +337,9 @@ export function CharacterDetailMacro({
                         <img src={s.iconUrl} alt={s.name} className="h-10 w-10 rounded border border-[#334155] bg-[#090d16] p-0.5 object-contain shrink-0" loading="eager" />
                       )}
                       <div>
-                        <div className="font-extrabold text-white text-[13.5px]">{s.name} Set</div>
+                        <div className="font-extrabold text-white text-[13.5px]">
+                          {/\bSet\b/i.test(s.name) ? s.name : `${s.name} Set`}
+                        </div>
                         {s.effect && <div className="text-[12.5px] font-semibold text-[#fbbf24]">{s.effect}</div>}
                       </div>
                     </div>
@@ -396,7 +400,7 @@ export function CharacterDetailMacro({
       {/* 3. H2: 編成おすすめ (Recommended 4-Unit Party Formations — Rendered when present on AppMedia) */}
       {partyPartners.length > 0 && (
         <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
-          <AppMediaH2 id="recommended-party">{character.name}&apos;s Recommended Party Formations</AppMediaH2>
+          <AppMediaH2 id="recommended-party">{`${character.name}'s Recommended Party Formations`}</AppMediaH2>
           <AppMediaH3>{sd?.partyTitle || 'Recommended 4-Unit Synergy Lineup'}</AppMediaH3>
           <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-4 space-y-3">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 place-items-center">
@@ -431,7 +435,7 @@ export function CharacterDetailMacro({
       {/* 4. H2: 旅育成・アルカナおすすめ (Rescue Journey Training & Arcana Deck) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
         <AppMediaH2 id="journey-arcana-guide">
-          {character.name}&apos;s Rescue Journey Training & Recommended Arcana
+          {`${character.name}'s Rescue Journey Training & Recommended Arcana`}
         </AppMediaH2>
 
         <AppMediaH3>
@@ -441,7 +445,7 @@ export function CharacterDetailMacro({
         </AppMediaH3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {recArcana.map((a) => (
-            <Link
+            <Link prefetch={false}
               key={a.slug}
               href={`/starsavior/arcana#${a.slug}`}
               className="group flex items-start gap-3 rounded-lg border border-[#243049] bg-[#0f1626] p-3 hover:border-[#3b82f6] transition-colors"
@@ -613,7 +617,7 @@ export function CharacterDetailMacro({
       {/* 5. H2: 強さと使い道 (Strengths & How to Use — 100% Real AppMedia Analysis Sections & Banners) */}
       {sd?.strengthsSections && sd.strengthsSections.length > 0 && (
         <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4 text-[13.5px] text-[#e8eff8] leading-relaxed">
-          <AppMediaH2 id="strengths-usage">{character.name}&apos;s Strengths & How to Use</AppMediaH2>
+          <AppMediaH2 id="strengths-usage">{`${character.name}'s Strengths & How to Use`}</AppMediaH2>
           {sd.strengthsSections.map((sec, idx) => (
             <div key={idx} className="space-y-2.5">
               {sec.level === 'h4' ? (
@@ -635,7 +639,7 @@ export function CharacterDetailMacro({
 
       {/* 6. H2: 凸依存度 (Limit Break Dupe Reliance) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
-        <AppMediaH2 id="dupe-reliance">{character.name}&apos;s Limit Break (Dupe) Reliance</AppMediaH2>
+        <AppMediaH2 id="dupe-reliance">{`${character.name}'s Limit Break (Dupe) Reliance`}</AppMediaH2>
         <div className="rounded-lg border border-[#243049] bg-[#0f1626] p-3.5 space-y-1.5 text-[13.5px]">
           <div className="flex items-center justify-between">
             <span className="font-extrabold text-[#93c5fd]">{character.name} Limit Break Priority Rating</span>
@@ -682,7 +686,7 @@ export function CharacterDetailMacro({
         (sd?.skillLevelProgression?.basic && sd.skillLevelProgression.basic.length > 0)) && (
         <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
           <AppMediaH2 id="skill-priority">
-            {character.name}&apos;s Skill Upgrade Priority & Level Effects
+            {`${character.name}'s Skill Upgrade Priority & Level Effects`}
           </AppMediaH2>
 
           {(sd?.skillPriority || []).length > 0 && (
@@ -782,7 +786,7 @@ export function CharacterDetailMacro({
       {/* 9. H2: ステータスと旅能力 (Combat Stats, Journey Aptitudes, Exclusive Curio & Resonance Potentials) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
         <AppMediaH2 id="stats-journey-curio">
-          {character.name}&apos;s Combat Stats (Lv.200) & Rescue Journey Capabilities
+          {`${character.name}'s Combat Stats (Lv.200) & Rescue Journey Capabilities`}
         </AppMediaH2>
 
         <AppMediaH3>General Combat Stats & Server Ranking (/ {totalUnits} Saviors)</AppMediaH3>
@@ -949,43 +953,43 @@ export function CharacterDetailMacro({
       {/* 10. H2: 共鳴効果/必要素材一覧 (10-Stage Resonance Progression & Total Materials with Official Icons) */}
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
         <AppMediaH2 id="resonance-materials">
-          {character.name}&apos;s Resonance Stages (1–10) & Required Materials
+          {`${character.name}'s Resonance Stages (1–10) & Required Materials`}
         </AppMediaH2>
 
         {sd?.resonanceStages && sd.resonanceStages.length > 0 && (
           <>
             <AppMediaH3>Resonance Stage 1–10 Effects & Material Requirements</AppMediaH3>
             <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
-              <table className="w-full border-collapse text-left text-[13.5px]">
+              <table className="w-full border-collapse text-left text-[11.5px] sm:text-[13.5px]">
                 <thead>
-                  <tr className="border-b border-[#243049] bg-[#161f33] text-[12.5px] font-extrabold text-[#c8d4e6]">
-                    <th className="w-16 px-3 py-2 text-center border-r border-[#243049]">Stage</th>
-                    <th className="px-3 py-2 border-r border-[#243049]">Journey Stat Bonus</th>
-                    <th className="px-3 py-2 border-r border-[#243049]">Combat Stat Bonus</th>
-                    <th className="px-3 py-2">Required Materials</th>
+                  <tr className="border-b border-[#243049] bg-[#161f33] text-[10.5px] sm:text-[12.5px] font-extrabold text-[#c8d4e6]">
+                    <th className="w-12 sm:w-16 px-1.5 sm:px-3 py-2 text-center border-r border-[#243049]">Stage</th>
+                    <th className="px-1.5 sm:px-3 py-2 border-r border-[#243049]">Journey</th>
+                    <th className="px-1.5 sm:px-3 py-2 border-r border-[#243049]">Combat</th>
+                    <th className="px-1.5 sm:px-3 py-2">Materials</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#1e293b]">
                   {sd.resonanceStages.map((st) => (
                     <tr key={st.stage}>
-                      <td className="px-3 py-2 text-center font-black text-[#fbbf24] border-r border-[#1e293b]">
-                        Stage {st.stage}
+                      <td className="px-1.5 sm:px-3 py-2 text-center font-black text-[#fbbf24] border-r border-[#1e293b] whitespace-nowrap">
+                        Lv.{st.stage}
                       </td>
-                      <td className="px-3 py-2 font-semibold text-[#93c5fd] border-r border-[#1e293b]">
+                      <td className="px-1.5 sm:px-3 py-2 font-semibold text-[#93c5fd] border-r border-[#1e293b]">
                         {st.journeyBonus}
                       </td>
-                      <td className="px-3 py-2 font-bold text-white border-r border-[#1e293b]">
+                      <td className="px-1.5 sm:px-3 py-2 font-bold text-white border-r border-[#1e293b]">
                         {st.combatBonus}
                       </td>
-                      <td className="px-3 py-2">
-                        <div className="flex flex-wrap gap-2">
+                      <td className="px-1.5 sm:px-3 py-2">
+                        <div className="flex flex-wrap gap-1.5 sm:gap-2">
                           {st.materials.map((m, mIdx) => (
                             <div
                               key={mIdx}
-                              className="inline-flex items-center gap-1.5 rounded border border-[#243049] bg-[#141c2e] px-2 py-1 text-[12.5px]"
+                              className="inline-flex items-center gap-1 rounded border border-[#243049] bg-[#141c2e] px-1.5 sm:px-2 py-0.5 sm:py-1 text-[11px] sm:text-[12.5px]"
                             >
                               {m.iconUrl && (
-                                <img src={m.iconUrl} alt={m.name} className="h-5 w-5 object-contain shrink-0" loading="lazy" />
+                                <img src={m.iconUrl} alt={m.name} className="h-4 w-4 sm:h-5 sm:w-5 object-contain shrink-0" loading="lazy" decoding="async" />
                               )}
                               <span className="text-[#e2e8f0] font-semibold">{m.name}</span>
                               <span className="font-black text-[#fbbf24]">×{m.count}</span>
@@ -1027,7 +1031,7 @@ export function CharacterDetailMacro({
       {/* 11. H2: プレゼント・好感度ギフト (Favorite & Liked Affinity Gifts) */}
       {allGifts.length > 0 && (
         <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-4">
-          <AppMediaH2 id="favorite-gifts">{character.name}&apos;s Presents & Affinity Gifts</AppMediaH2>
+          <AppMediaH2 id="favorite-gifts">{`${character.name}'s Presents & Affinity Gifts`}</AppMediaH2>
 
           {favoriteGifts.length > 0 && (
             <div className="space-y-2">
@@ -1094,7 +1098,7 @@ export function CharacterDetailMacro({
       {/* 12. H2: アークポイントイラスト (Ark Point Official Illustration) */}
       {sd?.arkPointUrl && (
         <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
-          <AppMediaH2 id="ark-point">{character.name}&apos;s Ark Point Illustration</AppMediaH2>
+          <AppMediaH2 id="ark-point">{`${character.name}'s Ark Point Illustration`}</AppMediaH2>
           <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#090d16] max-w-xl">
             <img
               src={sd.arkPointUrl}
@@ -1110,7 +1114,7 @@ export function CharacterDetailMacro({
       {sd?.profile && (
         <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 space-y-3">
           <AppMediaH2 id="profile-cv-lore">
-            {character.name}&apos;s Voice Actor (CV), How to Obtain & Profile
+            {`${character.name}'s Voice Actor (CV), How to Obtain & Profile`}
           </AppMediaH2>
           <div className="overflow-x-auto rounded-lg border border-[#243049] bg-[#0f1626]">
             <table className="w-full border-collapse text-left text-[13.5px]">

@@ -168,7 +168,7 @@ export function AppMediaGraphicButtonGrid({
           {rows.map(([left, right], rowIdx) => (
             <tr key={rowIdx} className="border-b border-[#28354e] last:border-b-0">
               <td className="w-1/2 border-r border-[#28354e] p-2 sm:p-2.5 align-top bg-[#0f1626] hover:bg-[#162036] transition-colors">
-                <Link href={left.href} className="group block text-center">
+                <Link href={left.href} prefetch={false} className="group block text-center">
                   <div className="overflow-hidden rounded-[6px] border border-[#2b3a57] group-hover:border-[#60a5fa] bg-[#0b101c] shadow-sm transition-colors">
                     <img
                       src={left.bannerSrc}
@@ -176,7 +176,8 @@ export function AppMediaGraphicButtonGrid({
                       width={400}
                       height={126}
                       className="w-full h-auto block object-cover transition-transform duration-150 group-hover:scale-[1.015]"
-                      loading="eager"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <span className="mt-1.5 block text-[13.5px] sm:text-[14.5px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
@@ -186,7 +187,7 @@ export function AppMediaGraphicButtonGrid({
               </td>
               {right ? (
                 <td className="w-1/2 p-2 sm:p-2.5 align-top bg-[#0f1626] hover:bg-[#162036] transition-colors">
-                  <Link href={right.href} className="group block text-center">
+                  <Link href={right.href} prefetch={false} className="group block text-center">
                     <div className="overflow-hidden rounded-[6px] border border-[#2b3a57] group-hover:border-[#60a5fa] bg-[#0b101c] shadow-sm transition-colors">
                       <img
                         src={right.bannerSrc}
@@ -194,7 +195,8 @@ export function AppMediaGraphicButtonGrid({
                         width={400}
                         height={126}
                         className="w-full h-auto block object-cover transition-transform duration-150 group-hover:scale-[1.015]"
-                        loading="eager"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <span className="mt-1.5 block text-[13.5px] sm:text-[14.5px] font-bold leading-snug text-[#60a5fa] group-hover:text-[#93c5fd] group-hover:underline">
@@ -213,6 +215,7 @@ export function AppMediaGraphicButtonGrid({
                 <td colSpan={2} className="bg-[#131d31] hover:bg-[#1a2742] px-3 py-2.5 text-center transition-colors">
                   <Link
                     href={fl.href}
+                    prefetch={false}
                     className="inline-flex items-center justify-center gap-1.5 text-[13.5px] sm:text-[14.5px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
                   >
                     <span className="text-[11.5px] text-[#3b82f6]">▶</span>
@@ -281,7 +284,7 @@ export function AppMediaTierBadge({ tier, size = 'md' }: { tier: string; size?: 
 
 export function AppMediaTableLink({ href, label, badge }: { href: string; label: string; badge?: string }) {
   return (
-    <Link
+    <Link prefetch={false}
       href={href}
       className="group flex items-center justify-between gap-2 rounded bg-[#141c2e] hover:bg-[#1e293b] border border-[#243049] hover:border-[#3b82f6] px-3 py-2 text-[13.5px] font-bold text-[#60a5fa] hover:text-[#93c5fd] transition-colors"
     >
@@ -336,6 +339,7 @@ export function AppMediaIconCell({
   return (
     <Link
       href={href}
+      prefetch={false}
       className={`group flex flex-col items-center ${maxW} text-center transition-transform hover:-translate-y-0.5`}
       title={name}
     >
@@ -344,16 +348,17 @@ export function AppMediaIconCell({
           src={imageUrl}
           alt={name}
           className="h-full w-full object-cover"
-          loading="eager"
+          loading="lazy"
+          decoding="async"
         />
         {topLeftIconUrl && (
           <span className="absolute top-0.5 left-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-black/85 p-0.5 border border-white/15">
-            <img src={topLeftIconUrl} alt="" className="h-full w-full object-contain" loading="eager" />
+            <img src={topLeftIconUrl} alt="" className="h-full w-full object-contain" loading="lazy" decoding="async" />
           </span>
         )}
         {topRightIconUrl && (
           <span className="absolute top-0.5 right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-black/85 p-0.5 border border-white/15">
-            <img src={topRightIconUrl} alt="" className="h-full w-full object-contain" loading="eager" />
+            <img src={topRightIconUrl} alt="" className="h-full w-full object-contain" loading="lazy" decoding="async" />
           </span>
         )}
         {badgeText && (

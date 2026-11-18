@@ -79,7 +79,7 @@ export function WikiShell({
         <div className="mx-auto flex max-w-[1240px] items-center justify-between gap-2 sm:gap-3 px-3 py-2 sm:px-4 sm:py-2.5">
           {/* Brand Pair */}
           <div className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-3">
-            <Link
+            <Link prefetch={false}
               href="/"
               title="Ascalon.fun Home"
               className="flex shrink-0 items-center gap-2 border-r border-[#1e2636] pr-2 sm:pr-3"
@@ -106,7 +106,7 @@ export function WikiShell({
               </div>
             </Link>
 
-            <Link href="/starsavior" className="flex min-w-0 shrink-0 items-center gap-2">
+            <Link prefetch={false} href="/starsavior" className="flex min-w-0 shrink-0 items-center gap-2">
               <img
                 src={game.iconUrl}
                 alt={game.name}
@@ -135,7 +135,7 @@ export function WikiShell({
             {quickTopNav.map((item) => {
               const isActive = activeNav === item.key;
               return (
-                <Link
+                <Link prefetch={false}
                   key={item.key}
                   href={item.href}
                   className={`shrink-0 whitespace-nowrap rounded-lg border px-2.5 xl:px-3 py-1.5 text-[13px] font-bold transition-colors ${
@@ -168,21 +168,26 @@ export function WikiShell({
         {/* Mobile / Tablet Single-Line Horizontal Quick Nav Strip */}
         <nav
           aria-label="Star Savior Quick Navigation"
-          className="no-scrollbar lg:hidden flex items-center gap-1.5 overflow-x-auto border-t border-[#1e2636] bg-[#0b0f19] px-3 py-1.5"
+          className="no-scrollbar lg:hidden flex items-center justify-between gap-1 overflow-x-auto border-t border-[#1e2636] bg-[#0b0f19] px-2.5 py-1.5"
         >
           {quickTopNav.map((item) => {
             const isActive = activeNav === item.key;
+            const shortLabel = item.label === 'Wiki Top' ? 'Wiki' : item.label;
             return (
               <Link
                 key={item.key}
                 href={item.href}
-                className={`shrink-0 whitespace-nowrap rounded-md border px-2.5 py-1 text-[13px] font-bold active:scale-95 transition-all ${
+                prefetch={false}
+                className={`shrink-0 whitespace-nowrap rounded-md border px-2 py-1 text-[11.5px] sm:text-[13px] font-bold active:scale-95 transition-all ${
                   isActive
                     ? 'border-[#3b82f6] bg-[#2563eb] text-white shadow-xs'
                     : 'border-[#1e2636] bg-[#161e2e] text-[#e8eff8] hover:text-white'
                 }`}
               >
-                {item.count ? `${item.label} (${item.count})` : item.label}
+                <span className="sm:hidden">{shortLabel}</span>
+                <span className="hidden sm:inline">
+                  {item.count ? `${item.label} (${item.count})` : item.label}
+                </span>
               </Link>
             );
           })}
@@ -192,11 +197,11 @@ export function WikiShell({
       {/* Breadcrumb Bar */}
       <div className="border-b border-[#1e2636] bg-[#11151e]">
         <div className="no-scrollbar mx-auto flex max-w-[1240px] items-center gap-1.5 overflow-x-auto whitespace-nowrap px-3 py-1.5 sm:px-4 text-[13px] text-[#b8c7dc]">
-          <Link href="/" className="shrink-0 font-bold text-[#c8d4e6] hover:text-white">
+          <Link prefetch={false} href="/" className="shrink-0 font-bold text-[#c8d4e6] hover:text-white">
             Ascalon.fun
           </Link>
           <span className="shrink-0">›</span>
-          <Link href="/starsavior" className="shrink-0 font-semibold text-[#60a5fa] hover:underline">
+          <Link prefetch={false} href="/starsavior" className="shrink-0 font-semibold text-[#60a5fa] hover:underline">
             Star Savior Wiki
           </Link>
           {breadcrumbLabel && (
@@ -251,6 +256,7 @@ export function WikiShell({
                     <Link
                       key={ln.href}
                       href={ln.href}
+                      prefetch={false}
                       style={{
                         padding: '10px 12px',
                         fontSize: '0.88rem',
@@ -300,7 +306,7 @@ export function WikiShell({
           </div>
           <div style={{ padding: '10px', display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '6px', borderBottom: '1px solid var(--border-subtle)' }}>
             {game.elementsConfig.map((el) => (
-              <Link
+              <Link prefetch={false}
                 key={el.key}
                 href="/starsavior/characters"
                 title={el.label}
@@ -338,7 +344,7 @@ export function WikiShell({
           </div>
           <div style={{ padding: '8px', display: 'flex', flexDirection: 'column', gap: '5px' }}>
             {topCharacters.slice(0, 10).map((unit) => (
-              <Link
+              <Link prefetch={false}
                 key={unit.slug}
                 href={`/starsavior/characters/${unit.slug}`}
                 style={{
@@ -453,12 +459,12 @@ export function WikiShell({
             </span>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', columnGap: '14px', rowGap: '8px' }}>
-            <Link href="/">Ascalon Home</Link>
-            <Link href="/starsavior">Star Savior Wiki</Link>
-            <Link href="/starsavior/tier-list">Tier List</Link>
-            <Link href="/starsavior/reroll">Reroll Guide</Link>
-            <Link href="/starsavior/characters">Characters (59)</Link>
-            <Link href="/starsavior/arcana">Arcana (85)</Link>
+            <Link prefetch={false} href="/">Ascalon Home</Link>
+            <Link prefetch={false} href="/starsavior">Star Savior Wiki</Link>
+            <Link prefetch={false} href="/starsavior/tier-list">Tier List</Link>
+            <Link prefetch={false} href="/starsavior/reroll">Reroll Guide</Link>
+            <Link prefetch={false} href="/starsavior/characters">Characters (59)</Link>
+            <Link prefetch={false} href="/starsavior/arcana">Arcana (85)</Link>
           </div>
         </div>
       </footer>

@@ -1134,5 +1134,35 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
       { loc: 'https://ascalon.fun/a&b?x=1', lastmod: '2026-11-16' },
     ]);
     expect(escapedXml).toContain('<loc>https://ascalon.fun/a&amp;b?x=1</loc>');
+
+    // Site-wide technical, UX & visual quality guards
+    expect(fs.existsSync(path.join(rootDir, 'src/app/favicon.ico'))).toBe(true);
+
+    const tierSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/macro/StrongestTierListMacro.tsx'),
+      'utf8'
+    );
+    expect(tierSrc).toContain("Assassin: 'ASN'");
+    expect(tierSrc).toContain('sticky top-24');
+
+    const adsSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/micro/AnalyticsAndAds.tsx'),
+      'utf8'
+    );
+    expect(adsSrc).toContain('ADSTERRA_BANNERS_ENABLED');
+    expect(adsSrc).toContain('ADSTERRA_INTRUSIVE_ENABLED');
+
+    const detailSrc = fs.readFileSync(
+      path.join(rootDir, 'src/components/macro/CharacterDetailMacro.tsx'),
+      'utf8'
+    );
+    expect(detailSrc).not.toContain('{character.name}&apos;s');
+
+    const roadmap = buildCuratedStrategyWikiRoadmap(
+      APPMEDIA_HOME_PORTAL_DATA.strategyWikis,
+      APPMEDIA_HOME_PORTAL_DATA.upcomingGames
+    );
+    const yokai = roadmap.find((w) => w.title === 'Yo-kai Watch 1 Mobile');
+    expect(yokai?.platform).toBe('Mobile App');
   });
 });

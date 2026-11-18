@@ -277,7 +277,7 @@ export function StarSaviorGuideMacro({
                 {dataset.characters.map((c) => (
                   <tr key={c.slug} className="hover:bg-[#162036]">
                     <td className="p-2">
-                      <Link href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-2 font-bold text-[#60a5fa] hover:underline">
+                      <Link prefetch={false} href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-2 font-bold text-[#60a5fa] hover:underline">
                         <img src={c.imageUrl} alt={c.name} className="h-8 w-8 rounded border border-[#334155] object-cover" />
                         <span>{c.name}</span>
                       </Link>
@@ -309,7 +309,7 @@ export function StarSaviorGuideMacro({
                 {dataset.characters.map((c) => (
                   <tr key={c.slug} className="hover:bg-[#162036]">
                     <td className="p-2">
-                      <Link href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-2 font-bold text-[#60a5fa] hover:underline">
+                      <Link prefetch={false} href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-2 font-bold text-[#60a5fa] hover:underline">
                         <img src={c.imageUrl} alt={c.name} className="h-8 w-8 rounded border border-[#334155] object-cover" />
                         <span>{c.name}</span>
                       </Link>
@@ -332,7 +332,7 @@ export function StarSaviorGuideMacro({
             {dataset.characters
               .filter((c) => Boolean(c.staticData?.arkPointUrl || c.staticData?.illustUrl))
               .map((c) => (
-                <Link
+                <Link prefetch={false}
                   key={c.slug}
                   href={`/starsavior/characters/${c.slug}`}
                   className="group overflow-hidden rounded border border-[#263450] bg-[#0f1626] hover:border-[#60a5fa]"
@@ -365,7 +365,7 @@ export function StarSaviorGuideMacro({
                 /^(Bunnygirl|Maid)\s+|:/i.test(c.name)
               )
               .map((c) => (
-                <Link
+                <Link prefetch={false}
                   key={c.slug}
                   href={`/starsavior/characters/${c.slug}`}
                   className="group overflow-hidden rounded border border-[#263450] bg-[#0f1626] hover:border-[#60a5fa] p-2.5 text-center space-y-2"
