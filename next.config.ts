@@ -69,7 +69,7 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/:path*',
+        source: '/((?!sitemap\\.xml$|robots\\.txt$).*)',
         headers: SECURITY_HEADERS,
       },
       {
@@ -128,8 +128,16 @@ const nextConfig: NextConfig = {
         source: '/sitemap.xml',
         headers: [
           {
+            key: 'Content-Type',
+            value: 'application/xml; charset=utf-8',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
             key: 'Cache-Control',
-            value: 'public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400',
+            value: 'public, max-age=3600, s-maxage=3600',
           },
         ],
       },
