@@ -1111,6 +1111,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     // Clean UTF-8 XML sitemap generator without legacy app/sitemap.ts route conflict
     expect(fs.existsSync(path.join(rootDir, 'src/app/sitemap.ts'))).toBe(false);
     expect(fs.existsSync(path.join(rootDir, 'src/app/sitemap.xml/route.ts'))).toBe(true);
+    expect(fs.existsSync(path.join(rootDir, 'src/app/sitemap-v2.xml/route.ts'))).toBe(true);
 
     const sitemapEntries = buildStarSaviorSitemapEntries(
       STAR_SAVIOR_CHARACTERS_SEED.map((c) => c.slug),
