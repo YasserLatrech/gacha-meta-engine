@@ -67,9 +67,24 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
+    const sitemapXmlHeaders = [
+      {
+        key: 'Content-Type',
+        value: 'application/xml; charset=utf-8',
+      },
+      {
+        key: 'X-Content-Type-Options',
+        value: 'nosniff',
+      },
+      {
+        key: 'Cache-Control',
+        value: 'public, max-age=3600, s-maxage=3600',
+      },
+    ];
+
     return [
       {
-        source: '/((?!sitemap\\.xml$|robots\\.txt$).*)',
+        source: '/((?!sitemap\\.xml$|sitemap-v2\\.xml$|robots\\.txt$).*)',
         headers: SECURITY_HEADERS,
       },
       {
@@ -124,23 +139,10 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      {
-        source: '/sitemap.xml',
-        headers: [
-          {
-            key: 'Content-Type',
-            value: 'application/xml; charset=utf-8',
-          },
-          {
-            key: 'X-Content-Type-Options',
-            value: 'nosniff',
-          },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=3600, s-maxage=3600',
-          },
-        ],
-      },
+      ...['/sitemap.xml', '/sitemap-v2.xml'].map((source) => ({
+        source,
+        headers: sitemapXmlHeaders,
+      })),
       {
         source: '/robots.txt',
         headers: [
