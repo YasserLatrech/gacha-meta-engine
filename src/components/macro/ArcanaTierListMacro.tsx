@@ -119,22 +119,22 @@ export function ArcanaTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
             Various Star Savior Rankings
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[13.5px] font-bold">
-            <Link href="/starsavior/tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest Characters
             </Link>
-            <Link href="/starsavior/arcana" className="bg-[#2563eb]/25 py-2.5 text-white">
+            <Link prefetch={false} href="/starsavior/arcana" className="bg-[#2563eb]/25 py-2.5 text-white">
               Strongest Arcana
             </Link>
-            <Link href="/starsavior/guides/pvp-tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/guides/pvp-tier-list" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Strongest PvP Characters
             </Link>
-            <Link href="/starsavior/reroll" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/reroll" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Reroll Rankings
             </Link>
-            <Link href="/starsavior/guides/sr-characters" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/guides/sr-characters" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Recommended SR Chars
             </Link>
-            <Link href="/starsavior/guides/sr-arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
+            <Link prefetch={false} href="/starsavior/guides/sr-arcana" className="py-2.5 text-[#60a5fa] hover:bg-[#17223b]">
               Recommended SR Arcana
             </Link>
           </div>

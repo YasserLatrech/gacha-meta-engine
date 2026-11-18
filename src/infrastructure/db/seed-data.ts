@@ -127,7 +127,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "B",
     "rerollTier": "B",
     "score": "0",
-    "summary": "As a critical attacker, you can prepare a large amount of buffs by yourself\n└Crit DMG60% + Damage Dealt buff 30% · It is easy to take advantage of the above effects with an unconditional Crit Rate of 30%. · There is no need for additional work such as increasing the Action Gauge, so I would like support for that.",
+    "summary": "As a critical attacker, you can prepare a large amount of buffs by yourself\n└Crit DMG +60% + Damage Dealt buff 30% · It is easy to take advantage of the above effects with an unconditional Crit Rate of 30%. · There is no need for additional work such as increasing the Action Gauge, so I would like support for that.",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 20662,
@@ -292,7 +292,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaTier": "B",
       "appMediaRerollTier": "C",
       "evalBullets": [
-        "As a critical attacker, you can prepare a large amount of buffs by yourself\n└Crit DMG60% + Damage Dealt buff 30%",
+        "As a critical attacker, you can prepare a large amount of buffs by yourself\n└Crit DMG +60% + Damage Dealt buff 30%",
         "It is easy to take advantage of the above effects with an unconditional Crit Rate of 30%.",
         "There is no need for additional work such as increasing the Action Gauge, so I would like support for that."
       ],
@@ -470,7 +470,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "strengthsSections": [
         {
           "level": "h3",
-          "title": "Unconditional Crit Rate30%",
+          "title": "Unconditional Crit Rate +30%",
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2025/11/185730_48tid.webp",
           "paragraphs": [
             "Due to balance adjustments, the 30% increase in Crit Rate given by Ultimate Skill has been sublimated to a passive effect, and now you have an unconditional Crit Rate of 30%.",
@@ -711,7 +711,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Attack power increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -779,7 +779,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -822,7 +822,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "ATK 4%",
           "materials": [
             {
@@ -867,7 +867,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -911,7 +911,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of destruction",
-          "combatBonus": "Crit DMG18%",
+          "combatBonus": "Crit DMG +18%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -2597,7 +2597,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit DMG6%",
+          "combatBonus": "Crit DMG +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -2685,7 +2685,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit DMG12%",
+          "combatBonus": "Crit DMG +12%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -2729,7 +2729,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -7146,7 +7146,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -9858,7 +9858,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit DMG6%",
+          "combatBonus": "Crit DMG +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -9946,7 +9946,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit DMG12%",
+          "combatBonus": "Crit DMG +12%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -9990,7 +9990,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -13521,7 +13521,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -19560,7 +19560,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Attack power increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -19628,7 +19628,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -19671,8 +19671,8 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
-          "combatBonus": "Crit DMG12%",
+          "journeyBonus": "Sense of Insight",
+          "combatBonus": "Crit DMG +12%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -19716,7 +19716,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -25176,7 +25176,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Maximum HP increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -25244,7 +25244,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Health +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -25287,7 +25287,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "HP4%",
           "materials": [
             {
@@ -25332,7 +25332,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Health +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -25376,7 +25376,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of destruction",
-          "combatBonus": "Crit DMG18%",
+          "combatBonus": "Crit DMG +18%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -26079,7 +26079,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "resonancePotentials": [
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -26112,7 +26112,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 2,
           "journeyBonus": "Protect +45",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -26128,7 +26128,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 3,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "ATK +125 DEF +50",
           "materials": [
             {
@@ -26195,7 +26195,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 6,
           "journeyBonus": "Sense of attack",
-          "combatBonus": "Crit DMG12%",
+          "combatBonus": "Crit DMG +12%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -26283,7 +26283,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -27075,7 +27075,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit DMG6%",
+          "combatBonus": "Crit DMG +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -27163,7 +27163,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit DMG12%",
+          "combatBonus": "Crit DMG +12%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -28970,7 +28970,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 6,
           "journeyBonus": "Sense of concentration",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -30879,7 +30879,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 6,
           "journeyBonus": "Sense of speed",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -35317,7 +35317,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Attack power increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -35385,7 +35385,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -35428,7 +35428,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "HP4%",
           "materials": [
             {
@@ -35473,7 +35473,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -36220,7 +36220,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Attack power increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -36288,7 +36288,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -36331,7 +36331,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "ATK 4%",
           "materials": [
             {
@@ -36376,7 +36376,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -39959,7 +39959,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 6,
           "journeyBonus": "Sense of concentration",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -40184,7 +40184,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
     "overallTier": "SS",
     "rerollTier": "SS",
     "score": "0",
-    "summary": "A high-speed attacker who fights using Special Skills that can be used frequently and increased Action Gauge. · When it is not weakened, the damage dealt increases, and the weakening can be removed by yourself, so you can manage it alone\n└Weak to debuffs that cannot be removed · The unique buff \"Night Blooming Flower\" can be applied when the insight stack is at its maximum, but you must receive a debuff to accumulate the insight stack. · Although the compatibility with ↑ is delicate, reducing the hit rate itself is a very powerful effect\n└ Can indirectly support allies' durability by nullifying critical points and debuffs · CT6's Ultimate Skill requires additional turns and a lot of steps to begin with, so you can experience it faster.\nI'm concerned about the fact that buff turns are consumed quickly.",
+    "summary": "A high-speed attacker who fights using Special Skills that can be used frequently and increased Action Gauge. · When not debuffed, the damage dealt increases, and the weakening can be removed by yourself, so you can manage it alone\n└Weak to debuffs that cannot be removed · The unique buff \"Night Blooming Flower\" can be applied when the insight stack is at its maximum, but you must receive a debuff to accumulate the insight stack. · Although the compatibility with ↑ is delicate, reducing the hit rate itself is a very powerful effect\n└ Can indirectly support allies' durability by nullifying critical points and debuffs · CT6's Ultimate Skill requires additional turns and a lot of steps to begin with, so you can experience it faster.\nI'm concerned about the fact that buff turns are consumed quickly.",
     "recommendedDupes": "★★☆ (LB1)",
     "baseStats": {
       "hp": 20622,
@@ -40383,7 +40383,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       "appMediaRerollTier": "SS",
       "evalBullets": [
         "A high-speed attacker who fights using Special Skills that can be used frequently and increased Action Gauge.",
-        "When it is not weakened, the damage dealt increases, and the weakening can be removed by yourself, so you can manage it alone\n└Weak to debuffs that cannot be removed",
+        "When not debuffed, the damage dealt increases, and the weakening can be removed by yourself, so you can manage it alone\n└Weak to debuffs that cannot be removed",
         "The unique buff \"Night Blooming Flower\" can be applied when the insight stack is at its maximum, but you must receive a debuff to accumulate the insight stack.",
         "Although the compatibility with ↑ is delicate, reducing the hit rate itself is a very powerful effect\n└ Can indirectly support allies' durability by nullifying critical points and debuffs",
         "CT6's Ultimate Skill requires additional turns and a lot of steps to begin with, so you can experience it faster.\nI'm concerned about the fact that buff turns are consumed quickly."
@@ -40424,7 +40424,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         "In addition to the high firepower of Amora's Basic Skill, she can also deal high damage with her Special Skill, making her an excellent compatibility with Professor M.",
         "Two people can provide more than enough firepower, so I want to use the other two as supporters to support the two attackers so they don't get destroyed.",
         "In particular, these two supporters can also provide indirect firepower support by increasing their Action Gauge, so overall it can be said that this is a powerful party that requires a lot of work.",
-        "Strategy formation without wife Carmen.",
+        "Strategy Formation Without Bride Carmen.",
         "You'll need defenders, so hire defenders like Haydee and Emilly who can maintain a solid front line.",
         "Also, the firepower and durability will be slightly lower, so it is recommended to use Blooming Clarissa to inhibit her actions while producing firepower.",
         "A formation that combines Fei, which increases evasion rate by 50%, and Amora, which can repeatedly decrease accuracy rate by 30%.",
@@ -40434,7 +40434,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       ],
       "arcanaDeckTitle": "Assassin (Special Skill) formation",
       "journeyTrainingPoints": [
-        "My strength is surprisingly low, so I want to prioritize strength when training.",
+        "Base defensive durability is relatively low, so I want to prioritize strength when training.",
         "Potential Points also tend to be short, so use Concentration and Protection when you have time.",
         "There is no problem with blessing with strength and stamina, but if you don't have enough strength, you can use strength x 2",
         "Potential is the highest priority for Crit Rate, followed by Crit DMG, speed, and attack type."
@@ -40605,7 +40605,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "imageUrl": "https://appmedia.jp/wp-content/uploads/2026/08/141131_wtn5c.webp",
           "paragraphs": [
             "Amora's strength is that she can remove debuffs on her own, which is why the increased damage she deals when she is not weakened is powerful, but be careful as you cannot remove debuffs that cannot be removed.",
-            "If you are given a debuff that cannot be removed, the damage deal will no longer increase and your firepower will drop suddenly, but the good news is that this does not cause any problems with the operation itself.",
+            "If you are given a debuff that cannot be removed, damage dealt will no longer scale further and your firepower will drop suddenly, but the good news is that this does not cause any problems with the operation itself.",
             "I hope that in future character implementation, there will be characters who can give buffs that can deal with debuffs that cannot be removed."
           ]
         }
@@ -40811,7 +40811,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "resonancePotentials": [
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -40844,7 +40844,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 2,
           "journeyBonus": "Focus +45",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -40860,7 +40860,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 3,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "ATK +125 DEF +50",
           "materials": [
             {
@@ -41015,7 +41015,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -43719,7 +43719,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Attack power increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -43787,7 +43787,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -43830,7 +43830,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "HP4%",
           "materials": [
             {
@@ -43875,7 +43875,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -48102,7 +48102,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
       },
       "resonancePotentials": [
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -48135,7 +48135,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 2,
           "journeyBonus": "Focus +45",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -48151,7 +48151,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 3,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "ATK +125 DEF +50",
           "materials": [
             {
@@ -48306,7 +48306,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of insight",
-          "combatBonus": "Crit Rate9%",
+          "combatBonus": "Crit Rate +9%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -50708,7 +50708,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of destruction",
-          "combatBonus": "Crit DMG18%",
+          "combatBonus": "Crit DMG +18%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -52168,7 +52168,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
           "effect": "Attack power increases by 5%."
         },
         {
-          "name": "Sense of insight",
+          "name": "Sense of Insight",
           "effect": "Crit Rate increases by 5%."
         },
         {
@@ -52236,7 +52236,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 4,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate3%",
+          "combatBonus": "Crit Rate +3%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -52279,7 +52279,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         },
         {
           "stage": 6,
-          "journeyBonus": "Sense of insight",
+          "journeyBonus": "Sense of Insight",
           "combatBonus": "ATK 4%",
           "materials": [
             {
@@ -52324,7 +52324,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 8,
           "journeyBonus": "Power +40",
-          "combatBonus": "Crit Rate6%",
+          "combatBonus": "Crit Rate +6%",
           "materials": [
             {
               "name": "Ether Dust",
@@ -52368,7 +52368,7 @@ export const STAR_SAVIOR_CHARACTERS_SEED = ([
         {
           "stage": 10,
           "journeyBonus": "Skill of destruction",
-          "combatBonus": "Crit DMG18%",
+          "combatBonus": "Crit DMG +18%",
           "materials": [
             {
               "name": "Ether Dust",

@@ -217,7 +217,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
           {filtered.map((c) => {
             const js = c.staticData?.journeyStats;
             return (
-              <Link
+              <Link prefetch={false}
                 key={`mob-stat-${c.slug}`}
                 href={`/starsavior/characters/${c.slug}`}
                 className="block rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-2 hover:border-[#3b82f6]/60 transition-colors"
@@ -286,7 +286,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                 return (
                   <tr key={c.slug} className="hover:bg-[#141d30] transition-colors">
                     <td className="p-3 border-r border-[#1e293b]">
-                      <Link href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-3 group">
+                      <Link prefetch={false} href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-3 group">
                         <img
                           src={c.imageUrl}
                           alt={c.name}
@@ -368,7 +368,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
           {filtered.map((c) => {
             const prof = c.staticData?.profile;
             return (
-              <Link
+              <Link prefetch={false}
                 key={`mob-prof-${c.slug}`}
                 href={`/starsavior/characters/${c.slug}#profile-cv-lore`}
                 className="rounded-lg border border-[#243049] bg-[#0f1626] p-3 space-y-1.5 hover:border-[#3b82f6]/60 transition-colors"
@@ -413,7 +413,7 @@ export function CharacterDatabaseMacro({ dataset }: { dataset: GameWikiDataset }
                 return (
                   <tr key={`prof-${c.slug}`} className="hover:bg-[#141d30] transition-colors">
                     <td className="p-3 border-r border-[#1e293b]">
-                      <Link href={`/starsavior/characters/${c.slug}#profile`} className="flex items-center gap-2.5 group">
+                      <Link prefetch={false} href={`/starsavior/characters/${c.slug}#profile`} className="flex items-center gap-2.5 group">
                         <img
                           src={c.imageUrl}
                           alt={c.name}

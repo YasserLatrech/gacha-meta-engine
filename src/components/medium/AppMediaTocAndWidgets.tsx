@@ -90,11 +90,11 @@ const LATEST_UPDATE_TABS = [
   },
   {
     key: 'bunny-frey',
-    tabLabel: 'Frey PU (Ends Nov 19)',
-    title: 'Frey: Noble Princess & Tier-0 SSR Arcana "The Indomitable Masterpiece" (~Nov 19, 04:00)',
-    badge: 'GACHA',
+    tabLabel: 'Frey PU (Ended)',
+    title: 'Frey: Noble Princess & "The Indomitable Masterpiece" Pickup (Concluded Nov 19 JST)',
+    badge: 'ARCHIVE',
     description:
-      'Final days (ends Nov 19 JST): Frey: Noble Princess returns alongside the Tier-0 Power SSR Arcana "The Indomitable Masterpiece", granting +12% Crit DMG and +4% Max HP as a Universal Special Potential.',
+      'Pickup rotation concluded Nov 19 04:00 JST. Focus current 1st Anniversary pulls on Witch of Favoritism (SSS) and Guile (SS) before Dec 4 JST, or target Masterpiece on future Arcana Custom Observation.',
     links: [
       { label: 'Active Gacha Priority Comparison', href: '/starsavior/guides/which-gacha-to-pull' },
       { label: 'Strongest Arcana Tier List & Rankings', href: '/starsavior/arcana' },
@@ -174,7 +174,7 @@ export function AppMediaLatestUpdatesTabs() {
         <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">{current.description}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
           {current.links.map((lnk) => (
-            <Link
+            <Link prefetch={false}
               key={lnk.href + lnk.label}
               href={lnk.href}
               className="flex items-center gap-1.5 rounded bg-[#161f33] hover:bg-[#1e293b] border border-[#263452] px-3 py-2 text-[13.5px] font-bold text-[#60a5fa]"
@@ -336,12 +336,12 @@ export function AppMediaCommunityPoll({
               >
                 {opt.rank}
               </span>
-              <Link href={`/starsavior/characters/${opt.slug}`} className="h-10 w-10 shrink-0 rounded overflow-hidden border border-[#334155] bg-[#090d16]">
+              <Link prefetch={false} href={`/starsavior/characters/${opt.slug}`} className="h-10 w-10 shrink-0 rounded overflow-hidden border border-[#334155] bg-[#090d16]">
                 <img src={opt.imageUrl} alt={opt.name} className="h-full w-full object-cover" loading="eager" />
               </Link>
               <div className="min-w-0 flex-1">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-0.5 sm:gap-2 text-[13.5px] font-bold">
-                  <Link href={`/starsavior/characters/${opt.slug}`} className="text-white hover:text-[#60a5fa] leading-tight break-words">
+                  <Link prefetch={false} href={`/starsavior/characters/${opt.slug}`} className="text-white hover:text-[#60a5fa] leading-tight break-words">
                     {opt.name}
                   </Link>
                   <span className="text-[12.5px] text-[#93c5fd] font-mono shrink-0">

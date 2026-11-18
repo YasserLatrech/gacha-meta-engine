@@ -58,7 +58,8 @@ export default async function FounderAnalyticsPage() {
     process.env.NEXT_PUBLIC_ADSTERRA_POPUNDER_SRC,
     process.env.NEXT_PUBLIC_ADSTERRA_SOCIAL_BAR_SRC,
   ].filter((v) => Boolean(v?.trim())).length;
-  const adsterraConfigured = activeAdUnits > 0;
+  const adsEnabled = process.env.NEXT_PUBLIC_ADSTERRA_ENABLED === '1';
+  const adsterraConfigured = adsEnabled && activeAdUnits > 0;
 
   return (
     <div className="min-h-screen bg-[#090d16] text-[#f8fafc] px-4 py-6 sm:px-6">
@@ -202,11 +203,15 @@ export default async function FounderAnalyticsPage() {
                     : 'bg-amber-500/20 border border-amber-500/40 text-amber-300'
                 }`}
               >
-                {adsterraConfigured ? `ACTIVE (${activeAdUnits} UNITS · ANTI-ADBLOCK)` : 'STANDBY'}
+                {adsterraConfigured
+                  ? `ACTIVE (${activeAdUnits} UNITS · ANTI-ADBLOCK)`
+                  : 'CLEAN GROWTH MODE (ADS PAUSED)'}
               </span>
             </div>
             <p className="text-[12.5px] text-[#c8d4e6]">
-              Full 9-unit stack (Popunder, Social Bar, Native, 728x90, 468x60, 320x50, 300x250, 160x600, 160x300) with Anti-Adblock active.
+              {adsterraConfigured
+                ? 'Adsterra display units active with Anti-Adblock telemetry.'
+                : 'Intrusive popunders, social bar overlays, and ad boxes are paused during early SEO indexing for maximum UX & zero Google Safe Browsing risk. Set NEXT_PUBLIC_ADSTERRA_ENABLED=1 when ready.'}
             </p>
           </div>
         </div>

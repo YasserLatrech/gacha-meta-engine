@@ -4,7 +4,6 @@ import type { GameWikiDataset } from '@/domain/schemas';
 import {
   AppMediaBannerH2,
   AppMediaH3,
-  AppMediaH4,
   AppMediaGraphicButtonGrid,
   AppMediaIconCell,
 } from '@/components/micro/AppMediaHeadings';
@@ -71,7 +70,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             </span>
             <span>{game.patchVersion}</span>
           </div>
-          <span>Last Updated: Nov 16, 2026 23:00 JST</span>
+          <span>Last Updated: Nov 19, 2026 09:00 JST</span>
         </div>
 
         <div className="flex items-center gap-3.5">
@@ -101,7 +100,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             { href: '/starsavior/guides/party-formations', label: 'Strongest Party Formations' },
             { href: '/starsavior/arcana', label: 'Strongest Arcana Ranking' },
           ].map((item) => (
-            <Link
+            <Link prefetch={false}
               key={item.href}
               href={item.href}
               className="flex items-center justify-center rounded border border-[#2d3e5e] bg-[#152036] hover:bg-[#1e2f4d] hover:border-[#60a5fa] px-2.5 py-2 text-center text-[13.5px] font-extrabold text-[#93c5fd] hover:text-white transition-colors"
@@ -119,7 +118,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           <div className="grid grid-cols-3 sm:grid-cols-6 divide-x divide-y divide-[#243049]">
             {TOP_INDEX_CELLS.map((cell) =>
               cell.href.startsWith('/') ? (
-                <Link
+                <Link prefetch={false}
                   key={cell.label}
                   href={cell.href}
                   className="flex items-center justify-center px-2 py-2 text-center text-[12.5px] font-bold text-[#60a5fa] hover:bg-[#17223b] hover:text-white transition-colors"
@@ -156,7 +155,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
         <AppMediaLatestUpdatesTabs />
 
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#131d31] px-3 py-2.5 text-center">
-          <Link
+          <Link prefetch={false}
             href="/starsavior/guides/patch-notes"
             className="inline-flex items-center gap-1.5 text-[13.5px] sm:text-[14.5px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
           >
@@ -292,7 +291,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             {/* 1st Anniv: Witch of Favoritism Gacha */}
             <div className="p-3.5 space-y-3 md:border-r md:border-[#28354e]">
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
-                <Link
+                <Link prefetch={false}
                   href="/starsavior/guides/1st-anniversary-gacha"
                   className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
                 >
@@ -345,7 +344,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             {/* 1st Anniv: Guile Gacha */}
             <div className="p-3.5 space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
-                <Link
+                <Link prefetch={false}
                   href="/starsavior/guides/1st-anniversary-gacha"
                   className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
                 >
@@ -394,117 +393,9 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 </div>
               </div>
             </div>
-
-            {/* Maid Ceres Gacha */}
-            <div className="p-3.5 space-y-3 md:border-r md:border-[#28354e]">
-              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
-                <Link
-                  href="/starsavior/guides/maid-ceres-gacha"
-                  className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
-                >
-                  Maid Ceres Pickup Gacha
-                </Link>
-                <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-slate-700/60 border border-slate-500/40 px-2 py-0.5 text-[11.5px] font-bold text-slate-200">
-                    Concluded 2026/11/13 (Fri) 04:00 JST
-                  </span>
-                  <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
-                    ENDED
-                  </span>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
-                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
-                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
-                </div>
-                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
-                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★☆</div>
-                </div>
-              </div>
-              <div>
-                <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
-                <div className="flex items-center gap-4">
-                  {maidCeres && (
-                    <AppMediaIconCell
-                      href={`/starsavior/characters/${maidCeres.slug}`}
-                      name={maidCeres.name}
-                      imageUrl={maidCeres.imageUrl}
-                      rarity="SSR"
-                      topLeftIconUrl={maidCeres.staticData?.attributeIconUrl}
-                      topRightIconUrl={maidCeres.staticData?.classIconUrl}
-                    />
-                  )}
-                  {gruelingOrdeal && (
-                    <AppMediaIconCell
-                      href={`/starsavior/arcana#${gruelingOrdeal.slug}`}
-                      name={gruelingOrdeal.name}
-                      imageUrl={gruelingOrdeal.imageUrl}
-                      rarity="SSR"
-                      topLeftIconUrl={gruelingOrdeal.staticData?.statTagIconUrl}
-                      badgeText="SSR"
-                    />
-                  )}
-                </div>
-              </div>
-            </div>
-
-            {/* Frey: Noble Princess Gacha */}
-            <div className="p-3.5 space-y-3">
-              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
-                <Link
-                  href="/starsavior/guides/frey-noble-princess-gacha"
-                  className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
-                >
-                  Frey: Noble Princess Gacha
-                </Link>
-                <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="rounded bg-blue-600/25 border border-blue-500/40 px-2 py-0.5 text-[11.5px] font-bold text-blue-200">
-                    ~2026/11/19 (Thu) 04:00 JST
-                  </span>
-                  <LiveJstCountdown targetIso="2026-11-19T04:00:00+09:00" prefix="Ends in" />
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
-                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
-                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★☆☆</div>
-                </div>
-                <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
-                  <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
-                  <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★★★★</div>
-                </div>
-              </div>
-              <div>
-                <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
-                <div className="flex items-center gap-4">
-                  {bunnyFrey && (
-                    <AppMediaIconCell
-                      href={`/starsavior/characters/${bunnyFrey.slug}`}
-                      name={bunnyFrey.name}
-                      imageUrl={bunnyFrey.imageUrl}
-                      rarity="SSR"
-                      topLeftIconUrl={bunnyFrey.staticData?.attributeIconUrl}
-                      topRightIconUrl={bunnyFrey.staticData?.classIconUrl}
-                    />
-                  )}
-                  {masterpiece && (
-                    <AppMediaIconCell
-                      href={`/starsavior/arcana#${masterpiece.slug}`}
-                      name={masterpiece.name}
-                      imageUrl={masterpiece.imageUrl}
-                      rarity="SSR"
-                      topLeftIconUrl={masterpiece.staticData?.statTagIconUrl}
-                      badgeText="SSR"
-                    />
-                  )}
-                </div>
-              </div>
-            </div>
           </div>
           <div className="border-t border-[#28354e] bg-[#131d31] px-3 py-2.5 text-center">
-            <Link
+            <Link prefetch={false}
               href="/starsavior/guides/which-gacha-to-pull"
               className="inline-flex items-center gap-1.5 text-[13.5px] sm:text-[14.5px] font-extrabold text-[#60a5fa] hover:text-[#93c5fd] hover:underline"
             >
@@ -513,6 +404,101 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             </Link>
           </div>
         </div>
+
+        {/* Concluded Pickup Gachas Archive (Collapsed by Default so Active Section Stays Fresh) */}
+        <details className="overflow-hidden rounded border border-[#243049] bg-[#0c1220]">
+          <summary className="cursor-pointer select-none px-3.5 py-2.5 text-[12.5px] font-extrabold text-[#9fb3d1] hover:text-white flex items-center justify-between gap-2">
+            <span>Recently Concluded Gacha Banners (Archive — Frey &amp; Maid Ceres)</span>
+            <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[10.5px] font-extrabold uppercase text-slate-300">
+              2 ENDED
+            </span>
+          </summary>
+          <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 border-t border-[#243049] divide-[#28354e]">
+            {/* Frey: Noble Princess Gacha (Concluded Nov 19 JST) */}
+            <div className="p-3.5 space-y-3 md:border-r md:border-[#28354e]">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
+                <Link prefetch={false}
+                  href="/starsavior/guides/frey-noble-princess-gacha"
+                  className="text-[14px] font-extrabold text-[#60a5fa] hover:underline"
+                >
+                  Frey: Noble Princess Gacha
+                </Link>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-slate-700/60 border border-slate-500/40 px-2 py-0.5 text-[11px] font-bold text-slate-200">
+                    Concluded 2026/11/19 04:00 JST
+                  </span>
+                  <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[10.5px] font-extrabold uppercase text-slate-300">
+                    ENDED
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                {bunnyFrey && (
+                  <AppMediaIconCell
+                    href={`/starsavior/characters/${bunnyFrey.slug}`}
+                    name={bunnyFrey.name}
+                    imageUrl={bunnyFrey.imageUrl}
+                    rarity="SSR"
+                    topLeftIconUrl={bunnyFrey.staticData?.attributeIconUrl}
+                    topRightIconUrl={bunnyFrey.staticData?.classIconUrl}
+                  />
+                )}
+                {masterpiece && (
+                  <AppMediaIconCell
+                    href={`/starsavior/arcana#${masterpiece.slug}`}
+                    name={masterpiece.name}
+                    imageUrl={masterpiece.imageUrl}
+                    rarity="SSR"
+                    topLeftIconUrl={masterpiece.staticData?.statTagIconUrl}
+                    badgeText="SSR"
+                  />
+                )}
+              </div>
+            </div>
+
+            {/* Maid Ceres Gacha (Concluded Nov 13 JST) */}
+            <div className="p-3.5 space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
+                <Link prefetch={false}
+                  href="/starsavior/guides/maid-ceres-gacha"
+                  className="text-[14px] font-extrabold text-[#60a5fa] hover:underline"
+                >
+                  Maid Ceres Pickup Gacha
+                </Link>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-slate-700/60 border border-slate-500/40 px-2 py-0.5 text-[11px] font-bold text-slate-200">
+                    Concluded 2026/11/13 04:00 JST
+                  </span>
+                  <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[10.5px] font-extrabold uppercase text-slate-300">
+                    ENDED
+                  </span>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                {maidCeres && (
+                  <AppMediaIconCell
+                    href={`/starsavior/characters/${maidCeres.slug}`}
+                    name={maidCeres.name}
+                    imageUrl={maidCeres.imageUrl}
+                    rarity="SSR"
+                    topLeftIconUrl={maidCeres.staticData?.attributeIconUrl}
+                    topRightIconUrl={maidCeres.staticData?.classIconUrl}
+                  />
+                )}
+                {gruelingOrdeal && (
+                  <AppMediaIconCell
+                    href={`/starsavior/arcana#${gruelingOrdeal.slug}`}
+                    name={gruelingOrdeal.name}
+                    imageUrl={gruelingOrdeal.imageUrl}
+                    rarity="SSR"
+                    topLeftIconUrl={gruelingOrdeal.staticData?.statTagIconUrl}
+                    badgeText="SSR"
+                  />
+                )}
+              </div>
+            </div>
+          </div>
+        </details>
 
         <AppMediaH3>Related Gacha Articles</AppMediaH3>
 
@@ -555,7 +541,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           Star Savior Events
         </AppMediaBannerH2>
 
-        <AppMediaH3>Active Events & Login Bonuses</AppMediaH3>
+        <AppMediaH3>Active Events</AppMediaH3>
 
         <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
           <table className="w-full border-collapse text-[13.5px]">
@@ -568,35 +554,13 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             <tbody className="divide-y divide-[#28354e]">
               <tr>
                 <td className="border-r border-[#28354e] p-2.5 text-center">
-                  <Link href="/starsavior/guides/valentine-event" className="group inline-block">
-                    <img
-                      src="/banners/starsavior/eyecatch/valentine_event.webp"
-                      alt="Valentine Revival Event"
-                      className="mx-auto w-full max-w-[260px] h-auto rounded border border-[#2b3a57] group-hover:border-[#60a5fa]"
-                      loading="eager"
-                    />
-                    <span className="mt-1 block text-[13.5px] font-bold text-[#60a5fa] group-hover:underline">
-                      Valentine Revival Event Guide
-                    </span>
-                  </Link>
-                </td>
-                <td className="p-2.5 text-center align-middle text-[#e2e8f0] font-semibold">
-                  <div className="flex flex-col items-center gap-1.5">
-                    <span className="text-slate-300">Concluded 2026/11/13 03:59:59 JST</span>
-                    <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
-                      ENDED · ARCHIVE GUIDE
-                    </span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td className="border-r border-[#28354e] p-2.5 text-center">
-                  <Link href="/starsavior/guides/1st-anniversary-gacha" className="group inline-block">
+                  <Link prefetch={false} href="/starsavior/guides/1st-anniversary-gacha" className="group inline-block">
                     <img
                       src="/banners/starsavior/eyecatch/golden_fantasia.webp"
                       alt="1st Anniversary Event, EP8 & Intense Battle Requests"
                       className="mx-auto w-full max-w-[260px] h-auto rounded border border-[#2b3a57] group-hover:border-[#60a5fa]"
-                      loading="eager"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span className="mt-1 block text-[13.5px] font-bold text-[#60a5fa] group-hover:underline">
                       1st Anniv Event, EP8 &amp; Intense Requests
@@ -614,43 +578,53 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
           </table>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <AppMediaH4>Login Bonus (Period Concluded: Nov 13 [Fri] 04:00 JST)</AppMediaH4>
-          <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wide text-slate-300">
-            ROTATION ENDED
-          </span>
-        </div>
-        <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
-          <table className="w-full border-collapse text-[13.5px]">
-            <thead>
-              <tr className="border-b border-[#28354e] bg-[#162136] text-[#dbeafe] font-extrabold">
-                <th className="w-28 border-r border-[#28354e] px-3 py-2 text-center">Day</th>
-                <th className="px-3 py-2 text-left">Reward</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[#243049]">
-              {[
-                { day: 'Day 1', icon: '/banners/starsavior/icons/icon_022.webp', item: 'Cafe Invitation Ticket ×10' },
-                { day: 'Day 2', icon: '/banners/starsavior/icons/icon_023.webp', item: 'Moonlight Water ×30,000' },
-                { day: 'Day 3', icon: '/banners/starsavior/icons/icon_024.webp', item: 'Polaris Support Box ×3' },
-                { day: 'Day 4', icon: '/banners/starsavior/icons/icon_025.webp', item: 'Standard Observation Ticket Envelope ×3' },
-                { day: 'Day 5', icon: '/banners/starsavior/icons/icon_026.webp', item: 'Cosmic Cube ×1' },
-              ].map((r) => (
-                <tr key={r.day}>
-                  <td className="border-r border-[#243049] px-3 py-2 text-center font-bold text-[#93c5fd]">
-                    {r.day}
-                  </td>
-                  <td className="px-3 py-2">
-                    <div className="flex items-center gap-2.5 font-semibold text-[#e2e8f0]">
-                      <img src={r.icon} alt={r.item} width={30} height={30} className="h-7 w-7 rounded object-contain" loading="eager" />
-                      <span>{r.item}</span>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <details className="overflow-hidden rounded border border-[#243049] bg-[#0c1220]">
+          <summary className="cursor-pointer select-none px-3.5 py-2.5 text-[12.5px] font-extrabold text-[#9fb3d1] hover:text-white flex items-center justify-between gap-2">
+            <span>Recently Concluded Events &amp; Login Bonuses (Archive)</span>
+            <span className="rounded bg-slate-800/80 border border-slate-600/50 px-2 py-0.5 text-[10.5px] font-extrabold uppercase text-slate-300">
+              CONCLUDED NOV 13
+            </span>
+          </summary>
+          <div className="border-t border-[#243049] p-3 space-y-3">
+            <div className="flex flex-wrap items-center justify-between gap-2 rounded border border-[#28354e] bg-[#0f1626] p-2.5">
+              <Link prefetch={false} href="/starsavior/guides/valentine-event" className="text-[13.5px] font-bold text-[#60a5fa] hover:underline">
+                Valentine Revival Event Archive Guide
+              </Link>
+              <span className="text-[12px] text-slate-300">Concluded 2026/11/13 03:59 JST</span>
+            </div>
+            <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
+              <table className="w-full border-collapse text-[13px]">
+                <thead>
+                  <tr className="border-b border-[#28354e] bg-[#162136] text-[#dbeafe] font-extrabold">
+                    <th className="w-24 border-r border-[#28354e] px-3 py-1.5 text-center">Day</th>
+                    <th className="px-3 py-1.5 text-left">Past Login Bonus Reward (Ended Nov 13)</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-[#243049]">
+                  {[
+                    { day: 'Day 1', icon: '/banners/starsavior/icons/icon_022.webp', item: 'Cafe Invitation Ticket ×10' },
+                    { day: 'Day 2', icon: '/banners/starsavior/icons/icon_023.webp', item: 'Moonlight Water ×30,000' },
+                    { day: 'Day 3', icon: '/banners/starsavior/icons/icon_024.webp', item: 'Polaris Support Box ×3' },
+                    { day: 'Day 4', icon: '/banners/starsavior/icons/icon_025.webp', item: 'Standard Observation Ticket Envelope ×3' },
+                    { day: 'Day 5', icon: '/banners/starsavior/icons/icon_026.webp', item: 'Cosmic Cube ×1' },
+                  ].map((r) => (
+                    <tr key={r.day}>
+                      <td className="border-r border-[#243049] px-3 py-1.5 text-center font-bold text-[#93c5fd]">
+                        {r.day}
+                      </td>
+                      <td className="px-3 py-1.5">
+                        <div className="flex items-center gap-2 font-semibold text-[#e2e8f0]">
+                          <img src={r.icon} alt={r.item} width={26} height={26} className="h-6 w-6 rounded object-contain" loading="lazy" decoding="async" />
+                          <span>{r.item}</span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </details>
       </section>
 
       {/* =====================================================================
@@ -1115,19 +1089,19 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 </th>
                 <td className="p-2.5">
                   <div className="flex flex-wrap items-center gap-2">
-                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-white">
+                    <Link prefetch={false} href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-white">
                       Character List ({characters.length})
                     </Link>
-                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#fbbf24]">
+                    <Link prefetch={false} href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#fbbf24]">
                       SSR ({ssrChars.length})
                     </Link>
-                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#d8b4fe]">
+                    <Link prefetch={false} href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#d8b4fe]">
                       SR ({srChars.length})
                     </Link>
-                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#93c5fd]">
+                    <Link prefetch={false} href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#93c5fd]">
                       Limited
                     </Link>
-                    <Link href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#e8eff8]">
+                    <Link prefetch={false} href="/starsavior/characters" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#e8eff8]">
                       Standard
                     </Link>
                   </div>
@@ -1146,7 +1120,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                       { label: 'Order', icon: '/banners/starsavior/icons/icon_097.webp' },
                       { label: 'Chaos', icon: '/banners/starsavior/icons/icon_098.webp' },
                     ].map((attr) => (
-                      <Link
+                      <Link prefetch={false}
                         key={attr.label}
                         href="/starsavior/characters"
                         className="inline-flex items-center gap-1.5 rounded bg-[#161f33] hover:bg-[#1e293b] border border-[#263452] px-2.5 py-1 font-bold text-[#e2e8f0]"
@@ -1172,7 +1146,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                       { label: 'Assassin', icon: '/banners/starsavior/icons/icon_103.webp' },
                       { label: 'Supporter', icon: '/banners/starsavior/icons/icon_104.webp' },
                     ].map((cls) => (
-                      <Link
+                      <Link prefetch={false}
                         key={cls.label}
                         href="/starsavior/characters"
                         className="inline-flex items-center gap-1.5 rounded bg-[#161f33] hover:bg-[#1e293b] border border-[#263452] px-2.5 py-1 font-bold text-[#e2e8f0]"
@@ -1243,16 +1217,16 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 </th>
                 <td className="p-2.5">
                   <div className="flex flex-wrap items-center gap-2">
-                    <Link href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-white">
+                    <Link prefetch={false} href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-white">
                       Arcana List ({arcana.length})
                     </Link>
-                    <Link href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#fbbf24]">
+                    <Link prefetch={false} href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#fbbf24]">
                       SSR ({ssrArcana.length})
                     </Link>
-                    <Link href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#d8b4fe]">
+                    <Link prefetch={false} href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#d8b4fe]">
                       SR ({srArcana.length})
                     </Link>
-                    <Link href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#7dd3fc]">
+                    <Link prefetch={false} href="/starsavior/arcana" className="rounded bg-[#1e293b] hover:bg-[#2563eb] px-2.5 py-1 font-bold text-[#7dd3fc]">
                       R ({rArcana.length})
                     </Link>
                   </div>
@@ -1265,7 +1239,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 <td className="p-2.5">
                   <div className="flex flex-wrap items-center gap-2">
                     {['Power', 'Health', 'Endurance', 'Focus', 'Protect'].map((tag) => (
-                      <Link
+                      <Link prefetch={false}
                         key={tag}
                         href="/starsavior/arcana"
                         className="rounded bg-[#161f33] hover:bg-[#1e293b] border border-[#263452] px-2.5 py-1 font-bold text-[#e2e8f0]"
