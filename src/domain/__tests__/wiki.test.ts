@@ -43,6 +43,10 @@ import {
   serializeJsonLd,
 } from '../../application/seo.service';
 import {
+  buildStarSaviorSitemapEntries,
+  renderSitemapXml,
+} from '../../application/sitemap.service';
+import {
   computeCountdownParts,
   computeElapsedParts,
   formatJstWallClock,
@@ -1103,5 +1107,31 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(whichGacha).toContain('Updated through Gwen');
 
     expect(APPMEDIA_HOME_PORTAL_DATA.updatedAt).toBe('2026-11-16');
+
+    // Clean UTF-8 XML sitemap generator without legacy app/sitemap.ts route conflict
+    expect(fs.existsSync(path.join(rootDir, 'src/app/sitemap.ts'))).toBe(false);
+    expect(fs.existsSync(path.join(rootDir, 'src/app/sitemap.xml/route.ts'))).toBe(true);
+
+    const sitemapEntries = buildStarSaviorSitemapEntries(
+      STAR_SAVIOR_CHARACTERS_SEED.map((c) => c.slug),
+      indexable.map((g) => g.slug)
+    );
+    expect(sitemapEntries.length).toBe(103);
+
+    const xml = renderSitemapXml(sitemapEntries);
+    expect(xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')).toBe(true);
+    expect(xml).toContain('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">');
+    expect(xml).not.toContain('image:image');
+    expect(xml).not.toContain('changefreq');
+    expect(xml).not.toContain('/guides/guild-board');
+    expect(xml).toContain('<loc>https://ascalon.fun/</loc>');
+    expect(xml).toContain('<loc>https://ascalon.fun/starsavior/tier-list</loc>');
+    expect(xml).toContain('<lastmod>2026-11-16</lastmod>');
+    expect([...xml.matchAll(/<loc>/g)].length).toBe(103);
+
+    const escapedXml = renderSitemapXml([
+      { loc: 'https://ascalon.fun/a&b?x=1', lastmod: '2026-11-16' },
+    ]);
+    expect(escapedXml).toContain('<loc>https://ascalon.fun/a&amp;b?x=1</loc>');
   });
 });
