@@ -284,13 +284,18 @@ export function buildCuratedStrategyWikiRoadmap(
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/(^-|-$)/g, '') || 'queued-game';
 
+    const normalizedPlatform =
+      /\b(mobile|ios|android|pocket)\b/i.test(w.title) && w.platform === 'Console / PC'
+        ? 'Mobile App'
+        : w.platform;
+
     result.push({
       id: slugId,
       href: '/#strategy-wikis',
       title: w.title,
       titleJa: w.titleJa,
       iconUrl: w.iconUrl,
-      platform: w.platform,
+      platform: normalizedPlatform,
       isInternal: false,
       wikiStatus: 'planned',
       launchWindow: upMatch?.releaseDate || 'Expansion Queue',
@@ -298,7 +303,7 @@ export function buildCuratedStrategyWikiRoadmap(
         ? parseUpcomingReleaseIso(upMatch.releaseDate, upMatch.status) ?? undefined
         : undefined,
       publisher: upMatch?.publisher || 'Featured Franchise',
-      roadmapReason: `${w.title} (${w.platform}) is tracked in the Ascalon expansion backlog. Reader votes accelerate full tier list & character database production.`,
+      roadmapReason: `${w.title} (${normalizedPlatform}) is tracked in the Ascalon expansion backlog. Reader votes accelerate full tier list & character database production.`,
       baseVotes: upMatch?.votes ?? 0,
     });
   }

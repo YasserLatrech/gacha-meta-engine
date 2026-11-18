@@ -98,7 +98,7 @@ export function MobileWikiDrawer({
                     {group.links.map((ln) => {
                       const active = activeNav === ln.key;
                       return (
-                        <Link
+                        <Link prefetch={false}
                           key={ln.href}
                           href={ln.href}
                           onClick={() => setOpen(false)}
@@ -129,7 +129,7 @@ export function MobileWikiDrawer({
               </div>
               <div className="grid grid-cols-5 gap-1.5 p-2.5 border-b border-[#1e293b]">
                 {elementsConfig.map((el) => (
-                  <Link
+                  <Link prefetch={false}
                     key={el.key}
                     href="/starsavior/characters"
                     onClick={() => setOpen(false)}
@@ -147,7 +147,7 @@ export function MobileWikiDrawer({
               </div>
               <div className="p-2.5 space-y-1.5">
                 {topCharacters.slice(0, 8).map((unit) => (
-                  <Link
+                  <Link prefetch={false}
                     key={unit.slug}
                     href={`/starsavior/characters/${unit.slug}`}
                     onClick={() => setOpen(false)}

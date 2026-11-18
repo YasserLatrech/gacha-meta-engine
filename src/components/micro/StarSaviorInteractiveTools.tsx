@@ -1048,7 +1048,7 @@ export function CharacterStatsTableInteractive({ characters }: { characters: Cha
             {sorted.map((c) => (
               <tr key={c.slug} className="hover:bg-[#162036]">
                 <td className="p-2">
-                  <Link href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-2.5 group">
+                  <Link prefetch={false} href={`/starsavior/characters/${c.slug}`} className="flex items-center gap-2.5 group">
                     <img
                       src={c.imageUrl}
                       alt={c.name}

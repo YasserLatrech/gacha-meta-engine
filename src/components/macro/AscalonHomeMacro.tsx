@@ -416,7 +416,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
       {/* Sticky Top Global Header */}
       <header className="sticky top-0 z-40 border-b border-[#1e293b] bg-[#0b101b]/95 backdrop-blur">
         <div className="mx-auto flex max-w-[1280px] items-center justify-between gap-2 sm:gap-3 px-3 sm:px-4 py-2 sm:py-2.5">
-          <Link href="/" className="flex shrink-0 items-center gap-2 sm:gap-2.5 group min-w-0">
+          <Link prefetch={false} href="/" className="flex shrink-0 items-center gap-2 sm:gap-2.5 group min-w-0">
             <img
               src="/brand/ascalon-logo.png"
               alt="Ascalon.fun"
@@ -457,7 +457,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
           <div className="flex items-center gap-2 shrink-0">
             <GlobalOmniSearch />
-            <Link
+            <Link prefetch={false}
               href="/starsavior"
               className="inline-flex shrink-0 whitespace-nowrap items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-2.5 sm:px-3 py-1.5 text-[12.5px] font-black text-white shadow transition-colors"
             >
@@ -473,35 +473,35 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
         </div>
 
         {/* Compact Mobile Horizontal Section Jump Bar */}
-        <div className="lg:hidden border-t border-[#161f33] bg-[#090d16]/90 px-3 py-1.5">
-          <div className="no-scrollbar flex items-center gap-1.5 overflow-x-auto text-[12.5px] font-extrabold">
+        <div className="lg:hidden border-t border-[#161f33] bg-[#090d16]/90 px-2.5 py-1.5">
+          <div className="no-scrollbar flex items-center justify-between gap-1 overflow-x-auto text-[11.5px] sm:text-[12.5px] font-extrabold">
             <a
               href="#recommended-ranking"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
-              Top 25 Games
+              Top 25
             </a>
             <a
               href="#upcoming-calendar"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
-              Upcoming ({upcomingGames.length})
+              Upcoming
             </a>
             <a
               href="#appstore-rankings"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
-              App Store
+              Charts
             </a>
             <a
               href="#strategy-wikis"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
-              Wiki Roadmap
+              Roadmap
             </a>
             <a
               href="#featured-articles"
-              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2.5 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
+              className="shrink-0 rounded-full border border-[#243049] bg-[#141c2e] px-2 py-0.5 text-[#e8eff8] hover:border-[#3b82f6] hover:text-white"
             >
               Guides
             </a>
@@ -539,7 +539,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             {/* Dual Spotlight Pair: ONLY Live Wiki Now + Next Wiki Coming Soon */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 xl:w-[570px] shrink-0">
               {/* Card 1: ONLY LIVE WIKI */}
-              <Link
+              <Link prefetch={false}
                 href="/starsavior"
                 className="group flex items-center gap-3 rounded-lg border border-emerald-500/60 bg-gradient-to-br from-[#0e2026] to-[#131d33] px-3.5 py-2.5 hover:border-emerald-400 hover:bg-[#172540] transition-colors active:scale-[0.99]"
               >
@@ -610,7 +610,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               { href: '/starsavior/guides/pvp-tier-list', label: 'PvP Tier List' },
               { href: '/starsavior/guides/event-choice-checker', label: 'Event Choice Checker' },
             ].map((hub) => (
-              <Link
+              <Link prefetch={false}
                 key={hub.href}
                 href={hub.href}
                 className="rounded-md border border-[#2a3b5c] bg-[#0f1626] hover:border-emerald-400 hover:text-emerald-300 px-2.5 py-1 text-[12px] font-bold text-[#dbeafe] transition-colors"
@@ -639,7 +639,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 className="rounded-lg border border-[#243049] bg-[#0f1626] hover:border-[#3b82f6] hover:bg-[#141d30] p-2.5 transition-colors"
               >
                 <div className="text-[13.5px] font-extrabold text-[#93c5fd]">{item.label}</div>
-                <div className="text-[11.5px] text-[#c8d4e6] mt-0.5 truncate">{item.sub}</div>
+                <div className="text-[11.5px] text-[#c8d4e6] mt-0.5 leading-snug line-clamp-2">{item.sub}</div>
               </a>
             ))}
           </div>
@@ -1213,7 +1213,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 <span className="text-[11.5px] font-bold text-emerald-300">
                   All modules live · Daily Patch v2.4 updates
                 </span>
-                <Link
+                <Link prefetch={false}
                   href="/starsavior"
                   className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 px-3.5 py-1.5 text-[12.5px] font-black text-slate-950 transition-colors"
                 >
@@ -1409,7 +1409,8 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                           ? 'border-amber-400'
                           : 'border-[#334155]'
                       }`}
-                      loading="eager"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="w-full space-y-0.5">
                       <div className="text-[12.5px] font-bold text-white line-clamp-2 leading-tight">
@@ -1431,7 +1432,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 );
 
                 return status === 'live' ? (
-                  <Link key={`${wikiKey}-${idx}`} href={w.href}>
+                  <Link prefetch={false} key={`${wikiKey}-${idx}`} href={w.href}>
                     {content}
                   </Link>
                 ) : (
@@ -1560,7 +1561,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             )}
 
             <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-[#1e293b]">
-              <Link
+              <Link prefetch={false}
                 href="/starsavior"
                 onClick={() => setActiveArticle(null)}
                 className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[13.5px] font-black text-white transition-colors"
@@ -1639,7 +1640,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
             )}
 
             <div className="flex items-center justify-between gap-3 pt-2 border-t border-[#1e293b]">
-              <Link
+              <Link prefetch={false}
                 href="/starsavior"
                 onClick={() => setActiveGameReview(null)}
                 className="inline-flex items-center gap-1.5 rounded-lg bg-[#2563eb] hover:bg-[#1d4ed8] px-4 py-2 text-[13.5px] font-black text-white transition-colors"
@@ -1768,7 +1769,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
 
               <div className="flex flex-wrap items-center justify-between gap-2.5 pt-2 border-t border-[#1e293b]">
                 {planStatus === 'live' ? (
-                  <Link
+                  <Link prefetch={false}
                     href="/starsavior"
                     onClick={() => setActiveWikiPlan(null)}
                     className="inline-flex items-center gap-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 px-4 py-2 text-[13px] font-black text-slate-950 transition-colors"
@@ -1792,7 +1793,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 )}
 
                 <div className="flex items-center gap-2">
-                  <Link
+                  <Link prefetch={false}
                     href="/starsavior"
                     onClick={() => setActiveWikiPlan(null)}
                     className="rounded-lg border border-[#3b82f6]/50 bg-[#172542] hover:bg-[#1e3257] px-3 py-1.5 text-[12px] font-extrabold text-[#93c5fd] hover:text-white transition-colors"
@@ -1822,14 +1823,14 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 Star Savior Tier Lists &amp; Databases
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-1.5">
-                <Link href="/starsavior" className="text-[#93c5fd] hover:underline">Wiki Portal</Link>
-                <Link href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">PvE Tier List</Link>
-                <Link href="/starsavior/reroll" className="text-[#93c5fd] hover:underline">Reroll Guide</Link>
-                <Link href="/starsavior/guides/pvp-tier-list" className="text-[#93c5fd] hover:underline">PvP Tier List</Link>
-                <Link href="/starsavior/characters" className="text-[#93c5fd] hover:underline">59 Characters</Link>
-                <Link href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">85 Arcana</Link>
-                <Link href="/starsavior/guides/sr-characters" className="text-[#93c5fd] hover:underline">Best SR Units</Link>
-                <Link href="/starsavior/guides/sr-arcana" className="text-[#93c5fd] hover:underline">Best SR Arcana</Link>
+                <Link prefetch={false} href="/starsavior" className="text-[#93c5fd] hover:underline">Wiki Portal</Link>
+                <Link prefetch={false} href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">PvE Tier List</Link>
+                <Link prefetch={false} href="/starsavior/reroll" className="text-[#93c5fd] hover:underline">Reroll Guide</Link>
+                <Link prefetch={false} href="/starsavior/guides/pvp-tier-list" className="text-[#93c5fd] hover:underline">PvP Tier List</Link>
+                <Link prefetch={false} href="/starsavior/characters" className="text-[#93c5fd] hover:underline">59 Characters</Link>
+                <Link prefetch={false} href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">85 Arcana</Link>
+                <Link prefetch={false} href="/starsavior/guides/sr-characters" className="text-[#93c5fd] hover:underline">Best SR Units</Link>
+                <Link prefetch={false} href="/starsavior/guides/sr-arcana" className="text-[#93c5fd] hover:underline">Best SR Arcana</Link>
               </div>
             </div>
 
@@ -1838,15 +1839,15 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 Codes, Boss Guides &amp; Tools
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-1.5">
-                <Link href="/starsavior/guides/promo-codes" className="text-[#93c5fd] hover:underline">Coupon Codes</Link>
-                <Link href="/starsavior/guides/cube-palace" className="text-[#93c5fd] hover:underline">Cube Palace</Link>
-                <Link href="/starsavior/guides/rescue-journey-hard" className="text-[#93c5fd] hover:underline">Rescue Journey Hard</Link>
-                <Link href="/starsavior/guides/which-gacha-to-pull" className="text-[#93c5fd] hover:underline">Banner Pull Guide</Link>
-                <Link href="/starsavior/guides/event-choice-checker" className="text-[#93c5fd] hover:underline">Event Checker</Link>
-                <Link href="/starsavior/guides/gacha-rates" className="text-[#93c5fd] hover:underline">Gacha Rates</Link>
-                <Link href="/starsavior/guides/blessing-farming" className="text-[#93c5fd] hover:underline">Blessing Farming</Link>
-                <Link href="/starsavior/guides/character-stats-list" className="text-[#93c5fd] hover:underline">Lv.200 Stats</Link>
-                <Link href="/starsavior/guides/voice-actors" className="text-[#93c5fd] hover:underline">Voice Actors (CV)</Link>
+                <Link prefetch={false} href="/starsavior/guides/promo-codes" className="text-[#93c5fd] hover:underline">Coupon Codes</Link>
+                <Link prefetch={false} href="/starsavior/guides/cube-palace" className="text-[#93c5fd] hover:underline">Cube Palace</Link>
+                <Link prefetch={false} href="/starsavior/guides/rescue-journey-hard" className="text-[#93c5fd] hover:underline">Rescue Journey Hard</Link>
+                <Link prefetch={false} href="/starsavior/guides/which-gacha-to-pull" className="text-[#93c5fd] hover:underline">Banner Pull Guide</Link>
+                <Link prefetch={false} href="/starsavior/guides/event-choice-checker" className="text-[#93c5fd] hover:underline">Event Checker</Link>
+                <Link prefetch={false} href="/starsavior/guides/gacha-rates" className="text-[#93c5fd] hover:underline">Gacha Rates</Link>
+                <Link prefetch={false} href="/starsavior/guides/blessing-farming" className="text-[#93c5fd] hover:underline">Blessing Farming</Link>
+                <Link prefetch={false} href="/starsavior/guides/character-stats-list" className="text-[#93c5fd] hover:underline">Lv.200 Stats</Link>
+                <Link prefetch={false} href="/starsavior/guides/voice-actors" className="text-[#93c5fd] hover:underline">Voice Actors (CV)</Link>
               </div>
             </div>
 
@@ -1855,16 +1856,16 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                 Top SS Savior Builds
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-1.5">
-                <Link href="/starsavior/characters/amora" className="text-[#93c5fd] hover:underline">Amora</Link>
-                <Link href="/starsavior/characters/witch-of-favoritism" className="text-[#93c5fd] hover:underline">Witch of Favoritism</Link>
-                <Link href="/starsavior/characters/guile" className="text-[#93c5fd] hover:underline">Guile</Link>
-                <Link href="/starsavior/characters/bride-carmen" className="text-[#93c5fd] hover:underline">Bride Carmen</Link>
-                <Link href="/starsavior/characters/maid-ceres" className="text-[#93c5fd] hover:underline">Maid Ceres</Link>
-                <Link href="/starsavior/characters/bunny-charles" className="text-[#93c5fd] hover:underline">Bunnygirl Charlotte</Link>
-                <Link href="/starsavior/characters/professor-m" className="text-[#93c5fd] hover:underline">Professor M</Link>
-                <Link href="/starsavior/characters/swimsuit-smile" className="text-[#93c5fd] hover:underline">Smile: Sunshine Cat</Link>
-                <Link href="/starsavior/characters/dress-asherah" className="text-[#93c5fd] hover:underline">Dress Asherah</Link>
-                <Link href="/starsavior/characters/dana" className="text-[#93c5fd] hover:underline">Dana</Link>
+                <Link prefetch={false} href="/starsavior/characters/amora" className="text-[#93c5fd] hover:underline">Amora</Link>
+                <Link prefetch={false} href="/starsavior/characters/witch-of-favoritism" className="text-[#93c5fd] hover:underline">Witch of Favoritism</Link>
+                <Link prefetch={false} href="/starsavior/characters/guile" className="text-[#93c5fd] hover:underline">Guile</Link>
+                <Link prefetch={false} href="/starsavior/characters/bride-carmen" className="text-[#93c5fd] hover:underline">Bride Carmen</Link>
+                <Link prefetch={false} href="/starsavior/characters/maid-ceres" className="text-[#93c5fd] hover:underline">Maid Ceres</Link>
+                <Link prefetch={false} href="/starsavior/characters/bunny-charles" className="text-[#93c5fd] hover:underline">Bunnygirl Charlotte</Link>
+                <Link prefetch={false} href="/starsavior/characters/professor-m" className="text-[#93c5fd] hover:underline">Professor M</Link>
+                <Link prefetch={false} href="/starsavior/characters/swimsuit-smile" className="text-[#93c5fd] hover:underline">Smile: Sunshine Cat</Link>
+                <Link prefetch={false} href="/starsavior/characters/dress-asherah" className="text-[#93c5fd] hover:underline">Dress Asherah</Link>
+                <Link prefetch={false} href="/starsavior/characters/dana" className="text-[#93c5fd] hover:underline">Dana</Link>
               </div>
             </div>
           </nav>
@@ -1874,16 +1875,16 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               <strong className="text-white">Ascalon.fun</strong> · Mobile Game Rankings, Release Schedule &amp; Strategy Wiki Portal
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5">
-              <Link href="/starsavior" className="text-[#93c5fd] hover:underline">
+              <Link prefetch={false} href="/starsavior" className="text-[#93c5fd] hover:underline">
                 Star Savior Strategy Wiki
               </Link>
-              <Link href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">
+              <Link prefetch={false} href="/starsavior/tier-list" className="text-[#93c5fd] hover:underline">
                 Star Savior Tier List
               </Link>
-              <Link href="/starsavior/characters" className="text-[#93c5fd] hover:underline">
+              <Link prefetch={false} href="/starsavior/characters" className="text-[#93c5fd] hover:underline">
                 59 Characters Database
               </Link>
-              <Link href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">
+              <Link prefetch={false} href="/starsavior/arcana" className="text-[#93c5fd] hover:underline">
                 85 Arcana Encyclopedia
               </Link>
             </div>

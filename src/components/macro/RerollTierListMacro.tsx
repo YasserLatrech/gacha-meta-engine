@@ -126,11 +126,11 @@ export function RerollTierListMacro({ dataset }: { dataset: GameWikiDataset }) {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 divide-x divide-y divide-[#1e293b] text-center text-[12.5px] font-bold">
             <a href="#reroll-ranking-section" className="bg-[#2563eb]/20 py-2 text-white">Reroll Tier List</a>
-            <Link href="/starsavior/guides/how-to-reroll" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">How to Reroll</Link>
-            <Link href="/starsavior/guides/beginner-progression" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Early-Game Guide</Link>
-            <Link href="/starsavior/guides/daily-routine" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Daily Checklist</Link>
-            <Link href="/starsavior/guides/rescue-journey-guide" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Rescue Journey Guide</Link>
-            <Link href="/starsavior/guides/party-formations" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Best Party Formations</Link>
+            <Link prefetch={false} href="/starsavior/guides/how-to-reroll" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">How to Reroll</Link>
+            <Link prefetch={false} href="/starsavior/guides/beginner-progression" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Early-Game Guide</Link>
+            <Link prefetch={false} href="/starsavior/guides/daily-routine" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Daily Checklist</Link>
+            <Link prefetch={false} href="/starsavior/guides/rescue-journey-guide" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Rescue Journey Guide</Link>
+            <Link prefetch={false} href="/starsavior/guides/party-formations" className="py-2 text-[#60a5fa] hover:bg-[#17223b]">Best Party Formations</Link>
           </div>
         </div>
 
