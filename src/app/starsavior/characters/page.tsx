@@ -48,6 +48,22 @@ export default async function CharacterDatabasePage() {
           schemaType: 'CollectionPage',
           topCharacters: dataset.characters,
           faqs: STAR_SAVIOR_CHARACTERS_FAQS,
+          datasetSchema: {
+            name: 'Star Savior All 59 Playable Characters Lv.200 Stats Dataset',
+            description:
+              'Complete structured character stat, tier rating, attribute, class, Resonance material, and Voice Actor dataset for all 59 Star Savior units.',
+            variableMeasured: [
+              'Lv.200 ATK',
+              'Lv.200 HP',
+              'Lv.200 DEF',
+              'Lv.200 SPD',
+              'Overall Tier',
+              'Reroll Tier',
+              'Attribute',
+              'Class',
+              'Voice Actor (CV)',
+            ],
+          },
         })}
       />
       <WikiShell

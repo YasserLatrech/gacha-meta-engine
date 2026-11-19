@@ -45,6 +45,18 @@ export const metadata: Metadata = {
   applicationName: SITE_NAME,
   alternates: {
     canonical: `${SITE_URL}/`,
+    languages: {
+      en: `${SITE_URL}/`,
+      'x-default': `${SITE_URL}/`,
+    },
+    types: {
+      'application/rss+xml': [
+        {
+          url: `${SITE_URL}/feed.xml`,
+          title: 'Ascalon.fun — Star Savior Strategy Wiki & Meta Updates RSS',
+        },
+      ],
+    },
   },
   robots: {
     index: true,
@@ -81,10 +93,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: '/favicon.ico', sizes: 'any' },
       { url: '/brand/ascalon-favicon.png', sizes: '64x64', type: 'image/png' },
       { url: '/brand/ascalon-logo.png', sizes: '256x256', type: 'image/png' },
     ],
-    shortcut: '/brand/ascalon-favicon.png',
+    shortcut: '/favicon.ico',
     apple: '/brand/ascalon-logo.png',
   },
   verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION

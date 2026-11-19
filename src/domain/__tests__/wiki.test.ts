@@ -44,6 +44,7 @@ import {
 } from '../../application/seo.service';
 import {
   buildStarSaviorSitemapEntries,
+  renderRssFeedXml,
   renderSitemapXml,
 } from '../../application/sitemap.service';
 import {
@@ -1127,13 +1128,47 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(xml).not.toContain('/guides/guild-board');
     expect(xml).toContain('<loc>https://ascalon.fun/</loc>');
     expect(xml).toContain('<loc>https://ascalon.fun/starsavior/tier-list</loc>');
-    expect(xml).toContain('<lastmod>2026-11-16</lastmod>');
+    expect(xml).toContain('<lastmod>2026-11-19</lastmod>');
     expect([...xml.matchAll(/<loc>/g)].length).toBe(103);
 
     const escapedXml = renderSitemapXml([
-      { loc: 'https://ascalon.fun/a&b?x=1', lastmod: '2026-11-16' },
+      { loc: 'https://ascalon.fun/a&b?x=1', lastmod: '2026-11-19' },
     ]);
     expect(escapedXml).toContain('<loc>https://ascalon.fun/a&amp;b?x=1</loc>');
+
+    // RSS 2.0 Feed + Max SEO/GEO schema & discovery guards
+    expect(fs.existsSync(path.join(rootDir, 'src/app/feed.xml/route.ts'))).toBe(true);
+    const rssXml = renderRssFeedXml([
+      {
+        title: 'Star Savior Tier List & Promo Codes',
+        link: 'https://ascalon.fun/starsavior/tier-list',
+        description: 'Top 6 SSS Saviors & active codes.',
+        category: 'Tier List',
+      },
+    ]);
+    expect(rssXml).toContain('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">');
+    expect(rssXml).toContain('<title>Star Savior Tier List &amp; Promo Codes</title>');
+    expect(rssXml).toContain('<atom:link href="https://ascalon.fun/feed.xml"');
+
+    const promoGuide = getStarSaviorGuideBySlug('promo-codes')!;
+    const promoLd = serializeJsonLd(buildGuideJsonLd(promoGuide));
+    expect(promoLd).toContain('"@type":"FAQPage"');
+    expect(promoLd).toContain('"@type":"HowTo"');
+    expect(promoLd).toContain('"@type":"SpeakableSpecification"');
+
+    const bunnyChar = STAR_SAVIOR_CHARACTERS_SEED.find((c) => c.slug === 'bunny-charles')!;
+    const bunnyLd = serializeJsonLd(
+      buildCharacterJsonLd({
+        id: 1,
+        ...bunnyChar,
+        score: Number(bunnyChar.score),
+      })
+    );
+    expect(bunnyLd).toContain('Bunny Charles');
+    expect(bunnyLd).toContain('"@type":"SpeakableSpecification"');
+
+    expect(llmsFull).not.toContain('{search_term_string}');
+    expect(llmsFull).toContain('https://ascalon.fun/feed.xml');
 
     // Site-wide technical, UX & visual quality guards
     expect(fs.existsSync(path.join(rootDir, 'src/app/favicon.ico'))).toBe(true);

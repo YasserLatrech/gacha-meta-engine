@@ -4,8 +4,8 @@
 
 ## Core Portal URLs
 - Home Portal: https://ascalon.fun/
-- Global Search Entry: https://ascalon.fun/?q={search_term_string}
 - XML Sitemap: https://ascalon.fun/sitemap.xml
+- RSS 2.0 Updates Feed: https://ascalon.fun/feed.xml
 - Concise LLMs Index: https://ascalon.fun/llms.txt
 - Star Savior Wiki Top: https://ascalon.fun/starsavior
 - Star Savior Strongest Tier List: https://ascalon.fun/starsavior/tier-list
@@ -33,16 +33,16 @@ Star Savior is a content-packed Training RPG that fuses Training Simulation × T
 Yes — Star Savior is playable on PC via the official Steam version with full cross-save account linking.
 
 ### Can I change my name, and are duplicate names allowed?
-Yes — you can freely change your Commander name via Settings with zero cooldowns or Ruby cost, and duplicate names are permitted via unique Member Numbers.
+Both changing your name and using duplicate Commander names are supported. Your first name change is effectively free, while subsequent changes require purchasing a rename item with Starlight Gems.
 
 ### Where is Star Savior official support & feedback handled?
 Bug reports and account support are handled via the official STUDIOBSIDE Inquiry Portal and official Discord channels.
 
 ### What are the top Tier Saviors in Star Savior?
-The top SSS Tier Saviors in Star Savior Patch v2.4 are Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat, dominating PvE campaign, Cube Palace bosses, and high-tier team compositions.
+The top 6 SSS Tier (Tier 0) Saviors in Star Savior Patch v2.4 are Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise (Bride Carmen), Bunnygirl Charlotte (Bunny Charles), and Smile: Sunshine Cat (Swimsuit Smile), dominating PvE campaign, Cube Palace bosses, and high-tier team compositions.
 
 ### How often is the Star Savior Tier List updated on Ascalon.fun?
-The Star Savior Tier List is continuously synced with live meta updates alongside new SSR pickups (such as Guile and Frey: Noble Princess) and Patch v2.4 boss rotations.
+The Star Savior Tier List is continuously synced with live meta updates alongside active 1st Anniversary SSR pickups (Witch of Favoritism and Guile through Dec 4, 2026 JST; Frey: Noble Princess concluded Nov 19 JST) and Patch v2.4 boss rotations.
 
 ### How long does it take to reroll in Star Savior?
 A single reroll run in Star Savior takes roughly 10 minutes via the tutorial server-reset flow before deciding whether to bind or reset.

@@ -36,16 +36,16 @@ const GUIDE_LIVE_DEADLINES: Record<string, GuideDeadlineEntry> = {
     concludedText: 'Ended · Nov 13 JST',
   },
   'frey-noble-princess-gacha': {
-    label: 'Frey: Noble Princess & Indomitable Masterpiece Banner (~2026/11/19 04:00 JST)',
-    targetIso: '2026-11-19T04:00:00+09:00',
+    label: 'Frey: Noble Princess & Indomitable Masterpiece Banner (Concluded 2026/11/19 04:00 JST)',
+    concludedText: 'Ended · Nov 19 JST',
   },
   'valentine-event': {
     label: 'Valentine Revival Event Period (Concluded 2026/11/13 03:59:59 JST)',
     concludedText: 'Ended · Nov 13 JST',
   },
   'which-gacha-to-pull': {
-    label: 'Current Pickup Banner Rotation (~2026/11/19 04:00 JST)',
-    targetIso: '2026-11-19T04:00:00+09:00',
+    label: '1st Anniversary Pickup Rotation: Witch of Favoritism & Guile (~2026/12/04 04:00 JST)',
+    targetIso: '2026-12-04T04:00:00+09:00',
   },
 };
 
@@ -73,7 +73,9 @@ export function StarSaviorGuideMacro({
           <span className="inline-flex items-center gap-1.5 rounded bg-[#1e293b] border border-[#334155] px-2 py-0.5 font-bold text-[#93c5fd]">
             Star Savior {guide.category}
           </span>
-          <span>Last Updated: {guide.updatedAt}</span>
+          <span>
+            Last Updated: <time dateTime="2026-11-19T00:00:00Z">{guide.updatedAt}</time>
+          </span>
         </div>
 
         <h1 className="text-[19px] sm:text-[22px] font-black tracking-tight text-[#f8fafc] leading-snug">
@@ -113,7 +115,7 @@ export function StarSaviorGuideMacro({
           </div>
         )}
 
-        <p className="text-[14.5px] leading-relaxed text-[#e8eff8] border-l-2 border-[#3b82f6] pl-3">
+        <p className="geo-summary text-[14.5px] leading-relaxed text-[#e8eff8] border-l-2 border-[#3b82f6] pl-3">
           {guide.lead}
         </p>
       </header>
