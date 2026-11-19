@@ -12,7 +12,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fu
 );
 
 export const SITE_NAME = 'Ascalon.fun';
-export const SITE_LASTMOD_ISO = '2026-11-19T00:00:00.000Z';
+export const SITE_LASTMOD_ISO = '2026-11-19T12:15:00.000Z';
 
 export const MIN_INDEXABLE_GUIDE_UNIQUE_WORDS = 130;
 
@@ -429,7 +429,7 @@ export const STAR_SAVIOR_REROLL_HOWTO_STEPS: ReadonlyArray<{ name: string; text:
   },
   {
     name: 'Claim Mailbox Rewards and Active Coupon Codes',
-    text: 'Collect pre-registration/anniversary mailbox pulls and redeem active coupon codes (GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, TOGETHER1STANNIV) for bonus tickets and 2,000 Starlight Gems.',
+    text: 'Collect pre-registration/anniversary mailbox pulls and redeem all 4 active coupon codes (26THXCAPTAIN1ST, GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, TOGETHER1STANNIV) for 20 Focused Tickets, 3,120 Starlight Gems, and 300 1st Anniversary Special Coins.',
   },
   {
     name: 'Pull on Featured 1st Anniversary Banner & Check Stopping Line',
@@ -469,7 +469,7 @@ const GUIDE_SPECIFIC_FAQS: Record<string, ReadonlyArray<{ q: string; a: string }
   'promo-codes': [
     {
       q: 'What are the active Star Savior coupon codes in November 2026?',
-      a: 'Active verified Star Savior codes are GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, until Nov 27 JST), ENDOFTHEJOURNEY (2,000 Starlight Gems, until Dec 4 JST), and TOGETHER1STANNIV (3x Singularity Degeneration Reactor + 1x Skill Reset Code, until Dec 10 JST).',
+      a: 'All 4 verified active Star Savior codes (Nov 19, 2026) are 26THXCAPTAIN1ST (1,120 Starlight Gems + 300 1st Anniv Special Coins, until Jan 13, 2027 JST), GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, until Nov 27 JST), ENDOFTHEJOURNEY (2,000 Starlight Gems, until Dec 4 JST), and TOGETHER1STANNIV (3x Singularity Degeneration Reactor + 1x Skill Reset Code, until Dec 10 JST).',
     },
     {
       q: 'How do I redeem Star Savior promo codes on Steam PC, Android, and iOS?',
@@ -491,7 +491,13 @@ const GUIDE_SPECIFIC_FAQS: Record<string, ReadonlyArray<{ q: string; a: string }
   'which-gacha-to-pull': [
     {
       q: 'Which Star Savior gacha banner should I pull right now?',
-      a: 'Prioritize the 1st Anniversary Witch of Favoritism banner (active until Dec 4, 2026 04:00 JST) as she is an SSS Tier Order Striker. Guile is obtainable free from 1st Anniversary login events, while Frey: Noble Princess concluded on Nov 19 JST.',
+      a: 'Prioritize the 1st Anniversary Witch of Favoritism banner (active until Dec 4, 2026 04:00 JST) as she is an SSS Tier Order Striker, followed by Guile dupes (base copy is FREE). Skip the Nov 19 Bunnygirl Scarlet rerun (~Dec 3, rated 2/5) and save Starlight Gems for Limited Sun Assassin Dress Lacy launching Dec 3, 2026.',
+    },
+  ],
+  'cosmo-gate': [
+    {
+      q: 'Who are the bosses in Cosmo Gate Season P8 (Nov 19–26, 2026)?',
+      a: 'Cosmo Gate Season P8 features Immortal King Mogulus (bring Barriers like Carmen: Eternal Promise or Emilly), Beast of the Baskervilles (stack 2+ buffs on DPS and bring cleanse against Bleed), and Manifestation of Divergence (use high single-hit nukers like Amora or Witch of Favoritism). Best Star Challenge EX score-efficiency stages are 2, 5, 8, 11, 14, and 17.',
     },
   ],
   'event-choice-checker': [
@@ -513,7 +519,7 @@ const PROMO_CODES_HOWTO_STEPS: ReadonlyArray<{ name: string; text: string }> = [
   },
   {
     name: 'Paste Uppercase Code & Claim Mailbox',
-    text: 'Enter active uppercase codes such as GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, or TOGETHER1STANNIV, confirm redemption, and collect rewards from your in-game Mailbox.',
+    text: 'Enter active uppercase codes such as 26THXCAPTAIN1ST, GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, or TOGETHER1STANNIV, confirm redemption, and collect rewards from your in-game Mailbox.',
   },
 ];
 
@@ -804,7 +810,15 @@ export function buildGuideMetadata(guide: StarSaviorGuideArticle): Metadata {
       `Star Savior ${guide.category}`,
       'Star Savior guide',
       ...(guide.slug === 'promo-codes'
-        ? ['Star Savior codes 2026', 'Star Savior coupon codes', 'GIFTREADYANNIV1ST', 'ENDOFTHEJOURNEY']
+        ? [
+            'Star Savior codes 2026',
+            'Star Savior coupon codes',
+            '26THXCAPTAIN1ST',
+            'GIFTREADYANNIV1ST',
+            'ENDOFTHEJOURNEY',
+          ]
+        : guide.slug === 'cosmo-gate'
+        ? ['Star Savior Cosmo Gate P8', 'Immortal King Mogulus', 'Beast of the Baskervilles']
         : []),
     ],
   });

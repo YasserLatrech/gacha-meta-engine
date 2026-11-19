@@ -31,6 +31,18 @@ interface GuideDeadlineEntry {
 }
 
 const GUIDE_LIVE_DEADLINES: Record<string, GuideDeadlineEntry> = {
+  'promo-codes': {
+    label: 'Next Expiring Code: GIFTREADYANNIV1ST (20 Focused Tickets — Ends 2026/11/27 04:00 JST)',
+    targetIso: '2026-11-27T04:00:00+09:00',
+  },
+  '1st-anniversary-gacha': {
+    label: '1st Anniversary Banners: Witch of Favoritism & Guile (~2026/12/04 04:00 JST)',
+    targetIso: '2026-12-04T04:00:00+09:00',
+  },
+  'cosmo-gate': {
+    label: 'Cosmo Gate Season P8 Active Window: Mogulus / Baskervilles / Divergence (~2026/11/26 04:00 JST)',
+    targetIso: '2026-11-26T04:00:00+09:00',
+  },
   'maid-ceres-gacha': {
     label: 'Maid Ceres & Grueling Ordeal Banner (Concluded 2026/11/13 04:00 JST)',
     concludedText: 'Ended · Nov 13 JST',
@@ -44,8 +56,8 @@ const GUIDE_LIVE_DEADLINES: Record<string, GuideDeadlineEntry> = {
     concludedText: 'Ended · Nov 13 JST',
   },
   'which-gacha-to-pull': {
-    label: '1st Anniversary Pickup Rotation: Witch of Favoritism & Guile (~2026/12/04 04:00 JST)',
-    targetIso: '2026-12-04T04:00:00+09:00',
+    label: '3 Live Banners: Witch of Favoritism & Guile (~Dec 4) · Bunnygirl Scarlet (~Dec 3 04:00 JST)',
+    targetIso: '2026-12-03T04:00:00+09:00',
   },
 };
 

@@ -64,12 +64,24 @@ export function AppMediaTocBox({ items, title = 'Table of Contents' }: { items: 
 
 const LATEST_UPDATE_TABS = [
   {
+    key: 'coupons',
+    tabLabel: 'New Code: 26THX!',
+    title: 'NEW Active Code: 26THXCAPTAIN1ST (+3 More Live Codes = 3,120 Gems + 20 Tickets!)',
+    badge: 'NEW · NOV 19',
+    description:
+      'NEW Nov 19 code 26THXCAPTAIN1ST grants Starlight Gems ×1,120 + 1st Anniv Special Coin ×300 (~Jan 13, 2027)! Also active: GIFTREADYANNIV1ST (20 Focused Tickets, ~Nov 27), ENDOFTHEJOURNEY (2,000 Gems, ~Dec 4), and TOGETHER1STANNIV (~Dec 10).',
+    links: [
+      { label: 'All 4 Active Coupon Codes & Redeem Guide', href: '/starsavior/guides/promo-codes' },
+      { label: 'How to Reroll Fast Guide', href: '/starsavior/guides/how-to-reroll' },
+    ],
+  },
+  {
     key: 'livestream',
     tabLabel: '1st Anniv Live!',
-    title: '1st Anniversary Live: SSS Witch of Favoritism & FREE SSR Guile (~Dec 4, 04:00)!',
+    title: '1st Anniversary Live: SSS Witch of Favoritism, FREE Guile & 70 Free PU Tickets (~Dec 4)!',
     badge: 'RECOMMENDED',
     description:
-      '1st Anniversary Pickup banners are LIVE until Dec 4, 04:00 JST! Claim FREE Chaos Caster Guile (Day 1 Login) + FREE Power SSR Arcana "Endless Dance" (Sector 6), and pull Order Striker Witch of Favoritism!',
+      '1st Anniversary Pickup banners are LIVE until Dec 4, 04:00 JST! Claim FREE Chaos Caster Guile (Day 1 Login) + FREE Power SSR Arcana "Endless Dance" (Sector 6) + 70 free anniversary PU tickets from the 7-day Special Login Bonus (~Dec 3).',
     links: [
       { label: 'Should You Pull 1st Anniversary Gacha?', href: '/starsavior/guides/1st-anniversary-gacha' },
       { label: 'Witch of Favoritism Build & Evaluation', href: '/starsavior/characters/witch-of-favoritism' },
@@ -77,39 +89,27 @@ const LATEST_UPDATE_TABS = [
     ],
   },
   {
-    key: 'coupons',
-    tabLabel: 'Coupon Codes Released',
-    title: 'Active Codes: GIFTREADYANNIV1ST, ENDOFTHEJOURNEY & TOGETHER1STANNIV',
-    badge: 'RECOMMENDED',
+    key: 'bunny-scarlet',
+    tabLabel: 'Bunny Scarlet PU',
+    title: 'Nov 19 Rerun: Bunnygirl Scarlet & "The Great and Amazing Bunny Girl" (~Dec 3, Skip!)',
+    badge: 'GACHA · NOV 19',
     description:
-      'Redeem GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, ~Nov 27 04:00), ENDOFTHEJOURNEY (2,000 Starlight Gems, ~Dec 4 23:59), and TOGETHER1STANNIV (3x Singularity Degeneration Reactor + 1x Skill Reset Code, Nov 12 – Dec 10).',
+      'Bunnygirl Scarlet Pickup (Char ★★☆☆☆ / Arcana ★★☆☆☆) runs Nov 19 – Dec 3, 04:00 JST (replacing Frey: Noble Princess). Both are easy skips — prioritize Witch of Favoritism / Guile or save gems for Limited Dress Lacy releasing Dec 3!',
     links: [
-      { label: 'Coupon Codes List & How to Redeem', href: '/starsavior/guides/promo-codes' },
-      { label: 'How to Reroll Fast Guide', href: '/starsavior/guides/how-to-reroll' },
+      { label: 'Active Gacha Priority Comparison (3 Live Banners)', href: '/starsavior/guides/which-gacha-to-pull' },
+      { label: 'Bunnygirl Scarlet Build & Evaluation', href: '/starsavior/characters/bunny-scarlet' },
     ],
   },
   {
-    key: 'bunny-frey',
-    tabLabel: 'Frey PU (Ended)',
-    title: 'Frey: Noble Princess & "The Indomitable Masterpiece" Pickup (Concluded Nov 19 JST)',
-    badge: 'ARCHIVE',
+    key: 'cosmo-p8',
+    tabLabel: 'Cosmo Gate P8 & Patch',
+    title: 'Nov 19 Patch Live: Cosmo Gate P8, Overload Cube Expansion & Ruins Boost (~Nov 26)!',
+    badge: 'EVENT · NOV 19',
     description:
-      'Pickup rotation concluded Nov 19 04:00 JST. Focus current 1st Anniversary pulls on Witch of Favoritism (SSS) and Guile (SS) before Dec 4 JST, or target Masterpiece on future Arcana Custom Observation.',
+      'Claim Nov 19 maintenance compensation (100 Starlight Gems + 2 Standard Tickets)! Cosmo Gate Season P8 (Mogulus / Baskervilles / Divergence) and Ruins Exploration Boost Mission run through Nov 26, alongside EP8 & Intense Requests (~Dec 3).',
     links: [
-      { label: 'Active Gacha Priority Comparison', href: '/starsavior/guides/which-gacha-to-pull' },
-      { label: 'Strongest Arcana Tier List & Rankings', href: '/starsavior/arcana' },
-    ],
-  },
-  {
-    key: 'ep8-overload',
-    tabLabel: 'EP8 & Overload Cube',
-    title: '1st Anniv Events Live (~Dec 3): Main Story EP8, Intense Battle Requests & Overload Cube!',
-    badge: 'EVENT',
-    description:
-      'Complete Main Story EP8 (Season 1 Finale), challenge 3 Intense Battle Request stages, farm Precision gear in Guile\'s Path of Return event, and clear Overload Cube alongside Auto Rescue Journey.',
-    links: [
-      { label: 'Latest Nov 12–16 Patch Notes & QoL Summary', href: '/starsavior/guides/patch-notes' },
-      { label: 'All 59 Playable Characters Database', href: '/starsavior/characters' },
+      { label: 'Cosmo Gate P8 Boss Guide & EX Breakpoints', href: '/starsavior/guides/cosmo-gate' },
+      { label: 'Nov 19 Patch Notes, Refunds & Bug Fixes', href: '/starsavior/guides/patch-notes' },
     ],
   },
   {
@@ -118,7 +118,7 @@ const LATEST_UPDATE_TABS = [
     title: 'Cosmic & Standard Custom Observation Updated (Gwen Added to Pool!)',
     badge: 'GACHA',
     description:
-      'Gwen has joined the Standard & Custom Observation pool as of the 1st Anniversary update! Lock in LB1+ Asherah: Waltz of Starlight alongside top Cosmic & standard SSRs using Standard Tickets.',
+      'Gwen has joined the Standard & Custom Observation pool! Lock in LB1+ Asherah: Waltz of Starlight alongside top Cosmic & standard SSRs using Standard Tickets (and wishlist Bunnygirl Scarlet here rather than pulling her PU).',
     links: [
       { label: 'Custom Observation Wishlist Priority', href: '/starsavior/guides/custom-observation' },
       { label: 'Reroll Tier List & Stopping Line', href: '/starsavior/reroll' },
@@ -126,11 +126,11 @@ const LATEST_UPDATE_TABS = [
   },
   {
     key: 'tier-update',
-    tabLabel: 'Strongest Ranking Updated!',
-    title: 'Strongest Tier List Updated — Witch of Favoritism (SSS) & Guile (SS) Debut!',
+    tabLabel: 'Strongest Ranking!',
+    title: 'Strongest Tier List (Nov 19 Verified) — Witch of Favoritism (SSS) & Guile (SS)!',
     badge: 'RECOMMENDED',
     description:
-      'Order Striker Witch of Favoritism debuts in Tier-0 SSS alongside Amora, Professor M, and Carmen: Eternal Promise, while free Cosmic Caster Guile and Maid Ceres enter SS Rank!',
+      'Order Striker Witch of Favoritism holds Tier-0 SSS alongside Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat, while free Cosmic Caster Guile and Maid Ceres hold SS Rank!',
     links: [
       { label: 'Strongest Character Ranking', href: '/starsavior/tier-list' },
       { label: 'Gauntlet (PvP) Strongest Ranking', href: '/starsavior/guides/pvp-tier-list' },
