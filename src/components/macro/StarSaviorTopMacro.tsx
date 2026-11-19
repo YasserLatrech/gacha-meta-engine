@@ -42,12 +42,17 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
 
   const witchOfFavoritism = characters.find((c) => c.slug === 'witch-of-favoritism');
   const guile = characters.find((c) => c.slug === 'guile');
+  const bunnyScarlet = characters.find((c) => c.slug === 'bunny-scarlet');
   const maidCeres = characters.find((c) => c.slug === 'maid-ceres');
   const bunnyFrey = characters.find((c) => c.slug === 'bunny-frey');
   const endlessDance =
     arcana.find((a) => a.slug === 'arcana-80556268' || a.name === 'Endless Dance') || ssrArcana[0];
   const fadedDream =
     arcana.find((a) => a.slug === 'arcana-80556271' || a.name === 'Faded Dream') || ssrArcana[0];
+  const boldBunnyGirl =
+    arcana.find(
+      (a) => a.slug === 'arcana-79534220' || a.name === 'The Great and Amazing Bunny Girl'
+    ) || ssrArcana[0];
   const gruelingOrdeal =
     arcana.find(
       (a) =>
@@ -70,7 +75,7 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
             </span>
             <span>{game.patchVersion}</span>
           </div>
-          <span>Last Updated: Nov 19, 2026 09:00 JST</span>
+          <span>Last Updated: Nov 19, 2026 18:10 JST</span>
         </div>
 
         <div className="flex items-center gap-3.5">
@@ -393,6 +398,66 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                 </div>
               </div>
             </div>
+
+            {/* Nov 19 Rerun: Bunnygirl Scarlet Pickup Gacha */}
+            <div className="p-3.5 space-y-3 md:col-span-2 border-t border-[#28354e] bg-[#0e1524]">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#1e293b] pb-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <Link prefetch={false}
+                    href="/starsavior/guides/which-gacha-to-pull"
+                    className="text-[14.5px] font-extrabold text-[#60a5fa] hover:underline"
+                  >
+                    Bunnygirl Scarlet Pickup Gacha (Rerun)
+                  </Link>
+                  <span className="rounded bg-slate-700/70 border border-slate-500/50 px-2 py-0.5 text-[10.5px] font-extrabold uppercase text-slate-200">
+                    EASY SKIP · SAVE FOR DEC 3 DRESS LACY
+                  </span>
+                </div>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <span className="rounded bg-amber-500/20 border border-amber-400/40 px-2 py-0.5 text-[11.5px] font-bold text-amber-200">
+                    ~2026/12/03 (Thu) 04:00 JST
+                  </span>
+                  <LiveJstCountdown targetIso="2026-12-03T04:00:00+09:00" prefix="Ends in" />
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 items-center">
+                <div className="grid grid-cols-2 gap-2 text-center text-[13.5px]">
+                  <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
+                    <div className="text-[11.5px] font-bold text-[#c8d4e6]">Character</div>
+                    <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★☆☆☆</div>
+                  </div>
+                  <div className="rounded border border-[#243049] bg-[#131c2e] p-2">
+                    <div className="text-[11.5px] font-bold text-[#c8d4e6]">Arcana</div>
+                    <div className="mt-0.5 text-[14.5px] font-black text-[#fbbf24]">★★☆☆☆</div>
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[12.5px] font-bold text-[#93c5fd] mb-2">Pickup Targets:</div>
+                  <div className="flex items-center gap-4">
+                    {bunnyScarlet && (
+                      <AppMediaIconCell
+                        href={`/starsavior/characters/${bunnyScarlet.slug}`}
+                        name={bunnyScarlet.name}
+                        imageUrl={bunnyScarlet.imageUrl}
+                        rarity="SSR"
+                        topLeftIconUrl={bunnyScarlet.staticData?.attributeIconUrl}
+                        topRightIconUrl={bunnyScarlet.staticData?.classIconUrl}
+                      />
+                    )}
+                    {boldBunnyGirl && (
+                      <AppMediaIconCell
+                        href={`/starsavior/arcana#${boldBunnyGirl.slug}`}
+                        name={boldBunnyGirl.name}
+                        imageUrl={boldBunnyGirl.imageUrl}
+                        rarity="SSR"
+                        topLeftIconUrl={boldBunnyGirl.staticData?.statTagIconUrl}
+                        badgeText="SSR"
+                      />
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="border-t border-[#28354e] bg-[#131d31] px-3 py-2.5 text-center">
             <Link prefetch={false}
@@ -574,8 +639,69 @@ export function StarSaviorTopMacro({ dataset }: { dataset: GameWikiDataset }) {
                   </div>
                 </td>
               </tr>
+              <tr>
+                <td className="border-r border-[#28354e] p-2.5 text-center">
+                  <Link prefetch={false} href="/starsavior/guides/cosmo-gate" className="group inline-block space-y-1">
+                    <span className="inline-block rounded bg-blue-500/20 border border-blue-400/40 px-2 py-0.5 text-[11px] font-extrabold text-blue-200">
+                      LIVE · NOV 19
+                    </span>
+                    <span className="block text-[13.5px] font-bold text-[#60a5fa] group-hover:underline">
+                      Cosmo Gate Season P8 &amp; Ruins Exploration Boost Mission
+                    </span>
+                    <span className="block text-[12px] text-[#c8d4e6]">
+                      Bosses: Mogulus · Beast of the Baskervilles · Divergence
+                    </span>
+                  </Link>
+                </td>
+                <td className="p-2.5 text-center align-middle text-[#e2e8f0] font-semibold">
+                  <div className="flex flex-col items-center gap-1.5">
+                    <span>Active Until 2026/11/26 (Thu) 04:00 JST</span>
+                    <LiveJstCountdown targetIso="2026-11-26T04:00:00+09:00" prefix="Ends in" />
+                  </div>
+                </td>
+              </tr>
             </tbody>
           </table>
+        </div>
+
+        <AppMediaH3>Active 1st Anniversary Special Login Bonus (70 Free PU Tickets)</AppMediaH3>
+
+        <div className="overflow-hidden rounded border border-[#28354e] bg-[#0f1626]">
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#28354e] bg-[#162136] px-3 py-2 text-[13px] font-extrabold text-[#dbeafe]">
+            <span>1st Anniversary Special Login Bonus (40× Witch + 30× Guile PU Tickets)</span>
+            <div className="flex items-center gap-1.5">
+              <span className="text-[11.5px] font-bold text-amber-200">~2026/12/03 (Thu) 04:00 JST</span>
+              <LiveJstCountdown targetIso="2026-12-03T04:00:00+09:00" prefix="Ends in" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-[#243049] text-[13px]">
+            <div className="divide-y divide-[#243049]">
+              {[
+                { day: 'Day 1', reward: 'Witch of Favoritism PU Gacha Ticket ×10' },
+                { day: 'Day 2', reward: 'Guile PU Gacha Ticket ×10' },
+                { day: 'Day 3', reward: 'Witch of Favoritism PU Gacha Ticket ×10' },
+                { day: 'Day 4', reward: 'Guile PU Gacha Ticket ×10' },
+              ].map((r) => (
+                <div key={r.day} className="flex items-center gap-3 px-3 py-2">
+                  <span className="w-14 shrink-0 font-extrabold text-[#93c5fd]">{r.day}</span>
+                  <span className="font-semibold text-[#e2e8f0]">{r.reward}</span>
+                </div>
+              ))}
+            </div>
+            <div className="divide-y divide-[#243049]">
+              {[
+                { day: 'Day 5', reward: 'Witch of Favoritism PU Gacha Ticket ×10' },
+                { day: 'Day 6', reward: 'Guile PU Gacha Ticket ×10' },
+                { day: 'Day 7', reward: 'Witch of Favoritism PU Gacha Ticket ×10' },
+                { day: 'Event Log', reward: '15-Day Event Login Bonus (~Dec 4 04:00 JST: Cubes, Support Boxes & Wallpaper)' },
+              ].map((r) => (
+                <div key={r.day} className="flex items-center gap-3 px-3 py-2">
+                  <span className="w-16 shrink-0 font-extrabold text-[#93c5fd]">{r.day}</span>
+                  <span className="font-semibold text-[#e2e8f0]">{r.reward}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <details className="overflow-hidden rounded border border-[#243049] bg-[#0c1220]">

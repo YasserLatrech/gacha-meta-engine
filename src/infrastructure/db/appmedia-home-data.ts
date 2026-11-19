@@ -2,7 +2,7 @@
 // ZERO INVENTED STATISTICS OR FALLBACKS
 
 export const APPMEDIA_HOME_PORTAL_DATA = {
-  "updatedAt": "2026-11-16",
+  "updatedAt": "2026-11-19",
   "strategyWikis": [
     {
       "href": "/starsavior",

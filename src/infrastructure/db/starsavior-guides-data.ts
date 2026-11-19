@@ -294,20 +294,20 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'livestream-summary',
     title: '1st Anniversary Official Livestream Recap & Upcoming Characters',
     category: 'Events',
-    updatedAt: 'Nov 16, 2026',
-    lead: 'Complete recap of the official Star Savior 1st Anniversary broadcast: Witch of Favoritism & free SSR Guile (Nov 12), December Dress Lacy & Dress Carnelia, 200+300 free pulls, and coupon codes.',
+    updatedAt: 'Nov 19, 2026',
+    lead: 'Complete recap of the official Star Savior 1st Anniversary broadcast: Witch of Favoritism & free SSR Guile (live ~Dec 4), Dec 3 Limited Dress Lacy & Dec 17 Dress Carnelia, 200+300 free pulls, and active codes.',
     sections: [
       {
         id: 'new-saviors',
         heading: '1st Anniversary & December New Year Playable Saviors',
         paragraphs: [
-          'Main Story EP8 and the 1st Anniversary update launch on November 12, 2026 with a 3-week Pickup window, followed by December New Year variants:',
+          'Main Story EP8 and the 1st Anniversary update launched on November 12, 2026 with a 3-week Pickup window (running through Dec 4, 04:00 JST), followed by confirmed December New Year releases:',
         ],
         bullets: [
-          'Witch of Favoritism (Order / Striker — Nov 12, 3-Week Pickup): Cosmic Striker (non-limited; added to standard pool later) built for massive Break-state burst damage and standalone high DPS comparable to Amora.',
-          'Guile (Chaos / Caster — Nov 12, FREE Character + FREE SSR Arcana!): Cosmic Caster (non-limited) specializing in rapid Toughness Break and ally buffs. Everyone receives 1 copy of Guile AND Guile\'s universal SSR Arcana for free!',
-          'Dress Lacy (Sun / Assassin — December Week 1 Limited SSR): Team-wide buffer who stacks unique self-buffs for permanent scaling, combining traits of Bunnygirl Charlotte and Emilly.',
-          'Dress Carnelia (Moon / Striker — December Week 3 Non-Limited SSR): Spends unique resources to rapid-fire skills continuously, similar to Smile: Sunshine Cat and Frey: Noble Princess.',
+          'Witch of Favoritism (Order / Striker — LIVE ~Dec 4, 04:00 JST): Cosmic Striker (non-limited; added to standard pool later) built for massive Break-state burst damage and standalone high DPS in SSS Tier 0.',
+          'Guile (Chaos / Caster — LIVE ~Dec 4, 04:00 JST, FREE Character + FREE SSR Arcana!): Cosmic Caster (non-limited) specializing in rapid Toughness Break and permanent team Break DMG aura. Everyone receives 1 copy of Guile AND her universal SSR Power Arcana "Endless Dance" for free!',
+          'Dress Lacy (Sun / Assassin — Dec 3, 2026 Limited SSR): Only the 2nd Limited Savior since Carmen: Eternal Promise! Team-wide buffer who stacks unique self-buffs for permanent scaling, combining traits of Bunnygirl Charlotte and Emilly.',
+          'Dress Carnelia (Moon / Striker — Dec 17, 2026 Non-Limited SSR): Spends unique resources to rapid-fire skills continuously, similar to Smile: Sunshine Cat and Frey: Noble Princess. Followed by the Orbital Search Squad Event rerun on Dec 24.',
           'Break Armor Destruction Cutscenes: Confirmed for all 4 newly announced Saviors, including Limited characters. Note that Witch of Favoritism and Guile are the final units with 2D Ark Points, as future originals transition to 3D Extra Moments.',
         ],
       },
@@ -315,12 +315,12 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
         id: 'anniv-rewards-qol',
         heading: '200 + 300 Free Pulls, Coupon Codes & System Updates',
         paragraphs: [
-          'Massive pull distributions and major quality-of-life upgrades were confirmed across November and December:',
+          'Massive pull distributions and major quality-of-life upgrades are live across November and December:',
         ],
         bullets: [
-          'Massive Pull Giveaways: 200 pulls + Free Guile & Guile SSR Arcana during the 1st Anniversary (Nov 12), plus 300 pulls during the December New Year event!',
-          'New Coupon Codes: Redeem ENDOFTHEJOURNEY (Starlight Gems ×2,000, until Dec 4) and TOGETHER1STANNIV (live Nov 12 – Dec 10: Singularity Degeneration Reactor ×3 to expand Star Link slots + Skill Reset Code ×1), alongside GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, until Nov 27).',
-          '1st Anniversary Events & QoL: Main Story EP8 (unconditionally readable in Database during campaign), Guile Side Story (Precision Set special gear), Fierce Battle Request (Destruction Set), Auto Journey (Deepening Mode), Event Story Recollection, Lobby & Arcana Preset expansions, and Shop Renewal.',
+          'Massive Pull Giveaways: Up to 200 free pulls (including 40× Witch of Favoritism + 30× Guile PU Tickets via the 7-day Special Login Bonus through Dec 3) + Free Guile & Endless Dance during the 1st Anniversary, plus 300 pulls during the December New Year event!',
+          'Active Coupon Codes: Redeem 26THXCAPTAIN1ST (Starlight Gems ×1,120 + 1st Anniv Special Coin ×300, until Jan 13, 2027), GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, until Nov 27), ENDOFTHEJOURNEY (Starlight Gems ×2,000, until Dec 4), and TOGETHER1STANNIV (Singularity Degeneration Reactor ×3 + Skill Reset Code ×1, until Dec 10).',
+          '1st Anniversary Events & QoL: Main Story EP8 (unconditionally readable in Database during campaign), Guile Path of Return Event (Precision Set special gear), Intense Battle Requests (Destruction Set), Overload Cube expansion, Auto Rescue Journey (Deepening Mode), Event Story Recollection, Lobby & Arcana Preset expansions, and Shop Renewal.',
         ],
       },
     ],
@@ -329,19 +329,24 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'promo-codes',
     title: 'Active Promo & Coupon Codes List and How to Redeem',
     category: 'Strategy',
-    updatedAt: 'Nov 16, 2026',
+    updatedAt: 'Nov 19, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_060.webp',
-    lead: 'All verified Star Savior coupon codes for free Starlight Gems, Focused Observation Tickets, Singularity Degeneration Reactors, and Skill Reset Codes (verified active Nov 16, 2026).',
+    lead: 'All 4 verified active Star Savior coupon codes (updated Nov 19, 2026): redeem 26THXCAPTAIN1ST, GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, and TOGETHER1STANNIV for 3,120 Starlight Gems, 20 Focused Tickets & 300 Anniversary Coins.',
     sections: [
       {
         id: 'active-codes',
-        heading: 'Currently Active & Anniversary Star Savior Coupon Codes',
+        heading: 'Currently Active & 1st Anniversary Star Savior Coupon Codes (4 Live)',
         paragraphs: [
-          'Copy and redeem each uppercase coupon code below within its exact JST validity window:',
+          'Copy and redeem each uppercase coupon code below within its exact JST validity window (total live value: 3,120 Starlight Gems, 20 Focused Observation Tickets, 300 1st Anniversary Special Coins, 3 Star Link Expansion Reactors, and 1 Skill Reset Code):',
         ],
         table: {
           headers: ['Coupon Code', 'Exact Rewards', 'Validity Period (JST)'],
           rows: [
+            [
+              '26THXCAPTAIN1ST',
+              'Starlight Gems ×1,120 + 1st Anniversary Special Coin ×300',
+              'NEW! Until Jan 13, 2027 04:00',
+            ],
             [
               'GIFTREADYANNIV1ST',
               'Focused Observation Ticket ×10 + Arcana Focused Observation Ticket ×10',
@@ -373,15 +378,15 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: '1st-anniversary-gacha',
     title: 'Should You Pull on the 1st Anniversary Gacha? Witch of Favoritism & Guile Priority',
     category: 'Gacha',
-    updatedAt: 'Nov 16, 2026',
+    updatedAt: 'Nov 19, 2026',
     lead: 'Complete AppMedia pull & Limit Break priority guide for the 1st Anniversary Observation banners: SSS Order Striker Witch of Favoritism, FREE Chaos Caster Guile, Endless Dance, and Faded Dream (~Dec 4, 04:00 JST).',
     sections: [
       {
         id: 'priority-order',
         heading: 'Recommended 1st Anniversary Pull & Limit Break Order',
         paragraphs: [
-          'Guile (Day 1 Login) and her SSR Power Arcana "Endless Dance" (clear Operation Sector 6) are both distributed FREE at 1 copy during the 1st Anniversary campaign! Because of that, securing 1 base copy of Order Striker Witch of Favoritism is the #1 gacha priority.',
-          'Note that Limited Assassin Dress Lacy is scheduled to replace both banners on December 3 (with full kit details expected around December 2), so consider holding deep Limit Break pulls until Dress Lacy is revealed unless pushing Gauntlet PvP or Break boss scores.',
+          'Guile (Day 1 Login) and her SSR Power Arcana "Endless Dance" (clear Operation Sector 6) are both distributed FREE at 1 copy during the 1st Anniversary campaign, alongside 40× Witch of Favoritism PU Tickets and 30× Guile PU Tickets from the 7-day 1st Anniversary Special Login Bonus (~Dec 3, 04:00 JST)! Because of that, securing 1 base copy of Order Striker Witch of Favoritism is the #1 gacha priority.',
+          'Skip the Nov 19 Bunnygirl Scarlet rerun (~Dec 3) completely, and note that Limited Sun Assassin Dress Lacy launches on December 3 (with full kit details expected around December 2) followed by Moon Striker Dress Carnelia on December 17 — hold deep Limit Break reserves until Dress Lacy is revealed unless pushing Gauntlet PvP or Cosmo Gate P8 scores.',
         ],
         table: {
           headers: ['Priority', 'Target', 'Recommended Goal', 'Key Reasoning'],
@@ -390,7 +395,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
             ['#2 (High)', 'Guile (Limit Breaks)', 'LB1 – LB3 Dupes', 'Base copy is FREE via login; Limit Breaks triple her permanent team Break DMG aura from 10% -> 30%'],
             ['#3 (High)', 'Endless Dance (Limit Breaks)', 'MLB Dupes', '1 copy FREE at Sector 6; universal Power SSR (+6% ATK / +6% Crit DMG + Power Bonus +4 +2 Potential Pts)'],
             ['#4', 'Faded Dream (Base)', '1 Base Copy', 'Stacks up to +25% ATK when hitting Broken enemies — tailor-made for Witch of Favoritism'],
-            ['#5', 'Witch of Favoritism / Faded Dream Dupes', 'Optional Luxury', 'Wait for Dec 2 Limited Dress Lacy reveal before committing deep Starlight Gems'],
+            ['#5', 'Witch of Favoritism Dupes / Wait for Dress Lacy', 'Save Reserves', 'Wait for Dec 3 Limited Sun Assassin Dress Lacy before committing deep Starlight Gems; skip Bunnygirl Scarlet rerun'],
           ],
         },
         featuredCharSlugs: ['witch-of-favoritism', 'guile', 'ede', 'professor-m'],
@@ -424,14 +429,14 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'frey-noble-princess-gacha',
     title: 'Should You Pull on the Frey: Noble Princess & The Indomitable Masterpiece Gacha?',
     category: 'Gacha',
-    updatedAt: 'Nov 16, 2026',
-    lead: 'Pull analysis for Frey: Noble Princess and the Tier-0 Power SSR Arcana "The Indomitable Masterpiece" running until Nov 19, 04:00 JST.',
+    updatedAt: 'Nov 19, 2026',
+    lead: 'Archive pull evaluation for Frey: Noble Princess and the Tier-0 Power SSR Arcana "The Indomitable Masterpiece" (revival pickup concluded Nov 19, 04:00 JST).',
     sections: [
       {
         id: 'verdict',
-        heading: 'Pull Verdict: Must-Pull Tier-0 Power SSR Arcana',
+        heading: 'Archive Verdict: Must-Target Tier-0 Power SSR Arcana on Reruns',
         paragraphs: [
-          'While Frey: Noble Princess is a strong S-Rank attacker, her featured Power SSR Arcana "The Indomitable Masterpiece" is a universal Tier-0 staple granting +12% Crit DMG and +4% Max HP as a Universal Special Potential across almost every DPS Rescue Journey deck.',
+          'This revival pickup concluded on November 19, 04:00 JST. While Frey: Noble Princess is a strong S-Rank Moon Caster, her featured Power SSR Arcana "The Indomitable Masterpiece" remains a universal Tier-0 staple (+12% Crit DMG and +4% Max HP Universal Special Potential) worth targeting whenever it returns on Arcana Custom Observation.',
         ],
         featuredCharSlugs: ['bunny-frey', 'frey'],
         featuredArcanaSlugs: ['arcana-79766540'],
@@ -442,25 +447,28 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'which-gacha-to-pull',
     title: 'Which Gacha Banner Should You Pull Right Now? Priority Guide',
     category: 'Gacha',
-    updatedAt: 'Nov 16, 2026',
-    lead: 'Complete Nov 16 comparison of live 1st Anniversary Witch of Favoritism & Guile Pickups (~Dec 4), Frey: Noble Princess / The Indomitable Masterpiece Pickup (~Nov 19), and Custom Observation.',
+    updatedAt: 'Nov 19, 2026',
+    lead: 'Complete Nov 19 comparison of all 3 live banners: 1st Anniversary Witch of Favoritism & Guile Pickups (~Dec 4), Bunnygirl Scarlet Rerun (~Dec 3 — Skip), and Custom Observation (updated through Gwen).',
     sections: [
       {
         id: 'banner-comparison',
-        heading: 'Active Observation Banner Priority',
+        heading: 'Active Observation Banner Priority (Updated Nov 19, 2026)',
         paragraphs: [
-          'Focused Observation Records (mileage) carry over across Pickup banners! As of Nov 16, prioritize securing 1 base copy of SSS Order Striker Witch of Favoritism (while 1 copy of Guile + Endless Dance is FREE!) and "The Indomitable Masterpiece" before its Nov 19 expiry, while saving reserves for Limited Dress Lacy in December (Maid Ceres Pickup concluded Nov 13).',
+          'Focused Observation Records (mileage) carry over across Pickup banners! As of the Nov 19 maintenance, three Pickup banners are active simultaneously: Witch of Favoritism (~Dec 4), Guile (~Dec 4), and the Bunnygirl Scarlet rerun (~Dec 3). Prioritize securing 1 base copy of SSS Order Striker Witch of Favoritism first (since 1 copy of Guile + Endless Dance is FREE and the 7-day Special Login Bonus gives 70 free anniversary PU tickets!), then aim for Guile LB1–LB3 and Endless Dance dupes.',
+          'Skip the Bunnygirl Scarlet & "The Great and Amazing Bunny Girl" rerun completely: both are rated ★★☆☆☆ and non-essential (her Pinball Time RNG kit lags behind meta DPS, and her Power Arcana\'s Effect Hit niche is easily replaced). Even if you love Bunnygirl Scarlet, wishlist her in Custom Observation for milestone bonuses instead — and save your Starlight Gems for Limited Sun Assassin Dress Lacy releasing December 3, 2026!',
         ],
         table: {
-          headers: ['Banner Name', 'End Date (JST)', 'Featured Target', 'Recommendation'],
+          headers: ['Banner Name', 'End Date (JST)', 'AppMedia Rating', 'Recommendation'],
           rows: [
-            ['Witch of Favoritism Pickup', 'Dec 4, 04:00', 'Witch of Favoritism (SSS Order Striker)', 'Top priority: pull 1 base copy to pair with free SSR Guile'],
-            ['Guile & Endless Dance Pickup', 'Dec 4, 04:00', 'Guile (SS Chaos Caster) & Endless Dance', '1 copy of both is FREE; pull dupes for 30% team Break DMG & MLB Arcana'],
-            ['The Indomitable Masterpiece PU', 'Nov 19, 04:00', 'The Indomitable Masterpiece (SSR Power)', 'Ending soon: Tier-0 Power Arcana (+12% Crit DMG / +4% HP Universal)'],
-            ['Custom / Standard Observation', 'Permanent', 'Wishlist SSRs (Asherah: Waltz, Gwen, etc.)', 'Updated through Gwen — spend Standard Tickets only, save Gems'],
-            ['Maid Ceres Pickup (Ended)', 'Ended Nov 13', 'Maid Ceres (SS Sun Supporter)', 'Concluded Nov 13 — target via reruns or Standard Custom pool later'],
+            ['Witch of Favoritism Pickup', 'Dec 4, 04:00', 'Char ★★★★★ / Arcana ★★★★☆', '#1 Top Priority: secure 1 base copy of SSS Order Striker to pair with free SSR Guile; Faded Dream 1 copy'],
+            ['Guile & Endless Dance Pickup', 'Dec 4, 04:00', 'Char ★★★★★ / Arcana ★★★★★', '#2 Priority: 1 copy of both is FREE; pull dupes for Guile LB3 (30% team Break DMG) & MLB Endless Dance'],
+            ['Bunnygirl Scarlet Pickup (Rerun)', 'Dec 3, 04:00', 'Char ★★☆☆☆ / Arcana ★★☆☆☆', 'Easy Skip: RNG-heavy A-Tier Ranger & niche Effect Hit Arcana; save gems for Dec 3 Limited Dress Lacy'],
+            ['Custom / Standard Observation', 'Permanent', 'Wishlist Standard + Cosmic', 'Updated through Gwen — spend Standard Tickets only, save Starlight Gems'],
+            ['Frey: Noble Princess & Maid Ceres', 'Ended Nov 19 / Nov 13', 'Archive', 'Both pickups concluded — target The Indomitable Masterpiece or Maid Ceres on future Custom rotations'],
           ],
         },
+        featuredCharSlugs: ['witch-of-favoritism', 'guile', 'bunny-scarlet'],
+        featuredArcanaSlugs: ['arcana-80556268', 'arcana-80556271', 'arcana-79534220'],
       },
     ],
   },
@@ -607,19 +615,46 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
   },
   {
     slug: 'cosmo-gate',
-    title: 'Cosmo Gate Season P7 Boss Strategy (Belgras / Tyria / Carnelia)',
+    title: 'Cosmo Gate Season P8 Boss Strategy (Mogulus / Baskervilles / Divergence)',
     category: 'Events',
-    updatedAt: 'Nov 16, 2026',
-    lead: 'Archive boss strategy for Cosmo Gate Season P7 (concluded Nov 12, 04:00 JST): Toughness Break burst windows and top-scoring formations against Belgras, Tyria, and Carnelia.',
+    updatedAt: 'Nov 19, 2026',
+    lead: 'Complete Nov 19 live boss strategy for Cosmo Gate Season P8 (active until Nov 26, 04:00 JST): Star Challenge EX gimmick breakpoints and top-scoring formations against Immortal King Mogulus, Beast of the Baskervilles, and Manifestation of Divergence.',
     sections: [
       {
-        id: 'cosmo-strategy',
-        heading: 'Cosmo Gate P7 Boss Mechanics & High-Score Teams',
+        id: 'cosmo-p8-bosses',
+        heading: 'Cosmo Gate P8 Live Rotation & Star Challenge EX Gimmicks (~Nov 26 JST)',
         paragraphs: [
-          'Cosmo Gate P7 features rotating boss encounters against Belgras, Tyria, and Carnelia, scoring total damage dealt within strict turn limits with massive multipliers during Toughness Break.',
-          'Pair Cross Attack units (Professor M and LB1+ Asherah: Waltz of Starlight) with top single-target carries (Amora, Smile: Sunshine Cat, Bunnygirl Charlotte) and Carmen: Eternal Promise (+ATK buff onto your highest-ATK carry) while timing Planetary Purification or Star Piercer Break Skills right as Toughness hits zero.',
+          'Launched with the November 19, 2026 maintenance (running through November 26, 04:00 JST), Cosmo Gate Season P8 features three rotating bosses — Immortal King Mogulus, Beast of the Baskervilles, and Manifestation of Divergence — each with boss-specific Star Challenge EX modifiers every 3 stages.',
+          'Because defeating the boss awards a major Kill Bonus, prioritize selecting the highest stage you can reliably clear rather than over-stacking modifiers and failing to kill. The most score-efficient breakpoints sit right before new gimmick tiers kick in (Stages 2, 5, 8, 11, 14, and 17).',
         ],
-        featuredCharSlugs: ['professor-m', 'amora', 'swimsuit-smile', 'bride-carmen', 'dress-asherah', 'bunny-charles'],
+        table: {
+          headers: ['P8 Boss', 'Key Star Challenge EX Gimmicks (Stages 3–18)', 'Recommended Counter Strategy'],
+          rows: [
+            [
+              'Immortal King Mogulus',
+              'Stg 3: -5% attacker Max HP (10×) | Stg 6: +20% DMG vs unshielded | Stg 9: +30% SPD | Stg 12: +5 Max Toughness | Stg 15: AoE Chain DMG after Basic if target has no Barrier | Stg 18: Strips 1 buff ignoring Effect RES',
+              'Maintain continuous team Barriers with Carmen: Eternal Promise, Emilly, or Haydee to negate Stage 6 & Stage 15 punish mechanics while burning through Toughness with Witch of Favoritism + Guile.',
+            ],
+            [
+              'Beast of the Baskervilles',
+              'Stg 3: +5% Boss DMG per skill (10×) | Stg 6: +30% SPD | Stg 9: +5 Max Toughness | Stg 12: +1 Toughness DMG | Stg 15: 100% Bleed (2T) on attack | Stg 18: -30% DMG taken if attacker has <=1 buff',
+              'Keep 2+ active buffs on your main DPS (Carmen: Eternal Promise, Maid Ceres, or Asherah: Waltz) to bypass Stage 18 mitigation, and pack cleansing or Regeneration against Stage 15 Bleed.',
+            ],
+            [
+              'Manifestation of Divergence',
+              'Stg 3: -5% attacker Max HP (10×) | Stg 6: +10% DMG per debuff on boss (10×) | Stg 9: +30% SPD | Stg 12: +5 Max Toughness | Stg 15: +1T target Ultimate CD | Stg 18: +5% Boss Action Gauge per hit',
+              'Favor hard-hitting single-strike nukers (Amora, Witch of Favoritism, Bunnygirl Charlotte) over low-multiplier multi-hitters to avoid feeding Stage 18 Action Gauge, and avoid spamming non-essential debuffs.',
+            ],
+          ],
+        },
+      },
+      {
+        id: 'cosmo-teams',
+        heading: 'Top-Scoring Cosmo Gate P8 Team Cores & Break Timing',
+        paragraphs: [
+          'Pair 1st Anniversary Break specialists (Witch of Favoritism + free SSR Guile) or Cross Attack engines (Professor M + LB1+ Asherah: Waltz of Starlight) with top single-target carries (Amora, Smile: Sunshine Cat, Bunnygirl Charlotte) and Barrier/ATK buffers (Carmen: Eternal Promise, Emilly). Time Planetary Purification or Star Piercer Break Skills immediately as Toughness hits zero to maximize chain damage.',
+        ],
+        featuredCharSlugs: ['witch-of-favoritism', 'guile', 'professor-m', 'amora', 'bride-carmen', 'swimsuit-smile', 'dress-asherah', 'bunny-charles', 'emily'],
       },
     ],
   },
@@ -1359,21 +1394,23 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
     slug: 'patch-notes',
     title: 'Latest Maintenance, Update & Balance Patch Notes Summary',
     category: 'Strategy',
-    updatedAt: 'Nov 16, 2026',
+    updatedAt: 'Nov 19, 2026',
     buttonBannerSrc: '/banners/starsavior/buttons/btn_061.webp',
-    lead: 'Chronological AppMedia update log through Nov 16, 2026: Live 1st Anniversary EP8 Update (Nov 12), Overload Cube, Intense Battle Requests, Gwen permanent pool, QoL changes & maintenance rewards.',
+    lead: 'Chronological AppMedia update log through Nov 19, 2026: Nov 19 Maintenance (Bunnygirl Scarlet PU, Cosmo Gate P8, Overload Cube expansion, Ruins Boost Mission, Dirac\'s Well PvP map & T2 Wendigo refund) plus 1st Anniversary EP8.',
     sections: [
       {
         id: 'recent-updates',
-        heading: 'October – November 2026 Official Update Log',
+        heading: 'October – November 2026 Official Update & Maintenance Log',
         paragraphs: [
-          'Verified Star Savior live maintenance deployments, new events, and system improvements through Nov 16, 2026:',
+          'Verified Star Savior live maintenance deployments, new events, compensation rewards, and bug fixes through November 19, 2026 (10:00–12:00 JST):',
         ],
         bullets: [
-          'Nov 12–16, 2026 (LIVE — 1st Anniversary & Main Story EP8): Deployed Witch of Favoritism (SSS Order Striker) & FREE Guile + Endless Dance SSR Arcana, Gwen added to Standard & Custom Observation pools, Main Story EP8 (Season 1 Finale) + temporary Database story unlock, Guile Path of Return Event, Overload Cube, Intense Battle Requests (until Dec 3), Auto Rescue Journey (Deepening Mode), Event Recollection, Apocalypse Shop overhaul, and maintenance apology (Starlight Gems ×100 + Standard Savior Tickets ×6).',
+          'Nov 19, 2026 Maintenance (10:00–12:00 JST · LIVE): Compensation: Starlight Gems ×100 + Standard Savior Observation Tickets ×2. Deployed Bunnygirl Scarlet & "The Great and Amazing Bunny Girl" Pickup Rerun (~Dec 3, 04:00 JST), Cosmo Gate Season P8 (Immortal King Mogulus / Beast of the Baskervilles / Manifestation of Divergence, ~Nov 26), Overload Cube new content expansion, Ruins Exploration Boost Mission (~Nov 26), and new Cash Packs. Also released new active coupon code 26THXCAPTAIN1ST (1,120 Starlight Gems + 300 1st Anniv Special Coins, until Jan 13, 2027).',
+          'Nov 19 Bug Fixes & Improvements: Refunded materials affected by the T2 Wendigo Equipment Mold bug; switched Ranked Match & Friendly Match PvP arena map to Dirac\'s Well; upgraded combat/break animations and models for Witch of Favoritism, Despair of Night, and Guile; fixed Arcana rental list/count mismatch ("Rental Complete" bug), missing bottom-left Difficulty/Resonance/Record display on Rescue Journey Savior Selection, Void Pilgrim passive localization, and Raby Star Premium Pass red-dot / text-clipping issues.',
+          'Nov 12, 2026 (LIVE — 1st Anniversary & Main Story EP8): Deployed Witch of Favoritism (SSS Order Striker) & FREE Guile + Endless Dance SSR Arcana (~Dec 4), 7-day 1st Anniv Special Login Bonus (40× Witch of Favoritism + 30× Guile PU Tickets, ~Dec 3), Gwen added to Standard & Custom Observation pools, Main Story EP8 (Season 1 Finale), Guile Path of Return Event, Intense Battle Requests (~Dec 3), Auto Rescue Journey (Deepening Mode), Event Recollection, Apocalypse Shop overhaul, and maintenance apology (Starlight Gems ×100 + Standard Savior Tickets ×6).',
           'Nov 12 QoL & Feature Changes: Added Singularity Degeneration Reactor (Star Link slot expander, redeemable via coupon TOGETHER1STANNIV), expanded Arcana & Lobby presets, Battle Skip in Interstellar/Infinite Corridor, visible Barrier numeric totals in combat, Savior preferred-gift tags, new Equipment Set Workshop blueprints, and 04:00 JST daily session boundary enforcement.',
-          'Nov 4, 2026 Update (Concluded): Frey: Noble Princess & Tier-0 Power SSR Arcana "The Indomitable Masterpiece" revival pickup (ends Nov 19, 04:00 JST), Cosmo Gate Season P7 (concluded Nov 12), Gauntlet Pre-Season, and 100 Starlight Gems + 2 Standard Tickets maintenance compensation.',
-          'Oct 29 & Oct 22, 2026 Updates (Concluded): Sun Supporter Maid Ceres & SSR Arcana "Grueling Ordeal" pickup, Revival Valentine Event (concluded Nov 13), Guild Defense updates, and Server Merge completion.',
+          'Nov 5, 2026 Update (Concluded): Frey: Noble Princess & Tier-0 Power SSR Arcana "The Indomitable Masterpiece" revival pickup (concluded Nov 19, 04:00 JST), Cosmo Gate Season P7 (concluded Nov 12), Gauntlet Pre-Season, and 100 Starlight Gems + 2 Standard Tickets maintenance compensation.',
+          'Oct 29 & Oct 22, 2026 Updates (Concluded): Sun Supporter Maid Ceres & SSR Arcana "Grueling Ordeal" pickup (concluded Nov 13), Revival Valentine Event (concluded Nov 13), Guild Defense updates, and Server Merge completion.',
         ],
       },
     ],
@@ -1756,7 +1793,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
         author: 'NoaTactician',
         tag: 'JP Server (English)',
         timestamp: '1 hour ago',
-        body: 'Reminder to redeem GIFTREADYANNIV1ST (20 Focused Tickets!) before Nov 27 04:00 and ENDOFTHEJOURNEY (2,000 Starlight Gems) — plus TOGETHER1STANNIV goes live Nov 12 at 10:00!',
+        body: 'Reminder to redeem new Nov 19 code 26THXCAPTAIN1ST (1,120 Starlight Gems + 300 1st Anniv Coins!) alongside GIFTREADYANNIV1ST (20 Focused Tickets before Nov 27 04:00), ENDOFTHEJOURNEY (2,000 Gems), and TOGETHER1STANNIV!',
       },
       {
         author: 'PolarisRunner',
@@ -1804,7 +1841,7 @@ export const STAR_SAVIOR_GUIDES: StarSaviorGuideArticle[] = [
         author: 'Guild: PolarisEN',
         tag: 'Global / Steam',
         timestamp: '42 mins ago',
-        body: '[PolarisEN] Lv.8 English Guild recruiting 3 daily check-in members! Casual-competitive Cosmo Gate P7 & Guild Defense active. Apply in-game!',
+        body: '[PolarisEN] Lv.8 English Guild recruiting 3 daily check-in members! Casual-competitive Cosmo Gate P8 & Guild Defense active. Apply in-game!',
       },
       {
         author: 'Guild: AstralVanguard',

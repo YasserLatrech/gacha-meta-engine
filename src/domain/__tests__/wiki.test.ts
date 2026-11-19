@@ -208,6 +208,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
 
     // Specific AppMedia Ground-Truth Invariants
     const promo = JSON.stringify(getStarSaviorGuideBySlug('promo-codes'));
+    expect(promo).toContain('26THXCAPTAIN1ST');
     expect(promo).toContain('GIFTREADYANNIV1ST');
     expect(promo).toContain('ENDOFTHEJOURNEY');
     expect(promo).toContain('TOGETHER1STANNIV');
@@ -1096,18 +1097,35 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     const robotsSrc = fs.readFileSync(path.join(rootDir, 'src/app/robots.ts'), 'utf8');
     expect(robotsSrc).not.toContain('host:');
 
-    // Content freshness & Nov 16 2026 live parity checks
+    // Content freshness & Nov 19 2026 live parity checks
     const patchGuide = getStarSaviorGuideBySlug('patch-notes');
-    expect(patchGuide?.updatedAt).toBe('Nov 16, 2026');
+    expect(patchGuide?.updatedAt).toBe('Nov 19, 2026');
     expect(JSON.stringify(patchGuide)).toContain('Overload Cube');
     expect(JSON.stringify(patchGuide)).toContain('Intense Battle Requests');
+    expect(JSON.stringify(patchGuide)).toContain('26THXCAPTAIN1ST');
+    expect(JSON.stringify(patchGuide)).toContain('Cosmo Gate Season P8');
+    expect(JSON.stringify(patchGuide)).toContain('Bunnygirl Scarlet');
     expect(JSON.stringify(patchGuide)).not.toContain('Upcoming 1st Anniversary');
+
+    const cosmoGuide = getStarSaviorGuideBySlug('cosmo-gate');
+    expect(cosmoGuide?.updatedAt).toBe('Nov 19, 2026');
+    expect(indexableSlugs.has('cosmo-gate')).toBe(true);
+    expect(JSON.stringify(cosmoGuide)).toContain('Immortal King Mogulus');
+    expect(JSON.stringify(cosmoGuide)).toContain('Beast of the Baskervilles');
+    expect(JSON.stringify(cosmoGuide)).toContain('Manifestation of Divergence');
 
     const whichGacha = JSON.stringify(getStarSaviorGuideBySlug('which-gacha-to-pull'));
     expect(whichGacha).not.toContain('before Nov 13');
     expect(whichGacha).toContain('Updated through Gwen');
+    expect(whichGacha).toContain('Bunnygirl Scarlet');
 
-    expect(APPMEDIA_HOME_PORTAL_DATA.updatedAt).toBe('2026-11-16');
+    expect(APPMEDIA_HOME_PORTAL_DATA.updatedAt).toBe('2026-11-19');
+
+    const llmsTxt = fs.readFileSync(path.join(rootDir, 'public/llms.txt'), 'utf8');
+    expect(llmsTxt).toContain('26THXCAPTAIN1ST');
+    expect(llmsTxt).toContain('Cosmo Gate');
+    expect(llmsFull).toContain('26THXCAPTAIN1ST');
+    expect(llmsFull).toContain('Immortal King Mogulus');
 
     // Clean UTF-8 XML sitemap generator without legacy app/sitemap.ts route conflict
     expect(fs.existsSync(path.join(rootDir, 'src/app/sitemap.ts'))).toBe(false);
@@ -1118,7 +1136,7 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
       STAR_SAVIOR_CHARACTERS_SEED.map((c) => c.slug),
       indexable.map((g) => g.slug)
     );
-    expect(sitemapEntries.length).toBe(103);
+    expect(sitemapEntries.length).toBe(104);
 
     const xml = renderSitemapXml(sitemapEntries);
     expect(xml.startsWith('<?xml version="1.0" encoding="UTF-8"?>')).toBe(true);
@@ -1128,8 +1146,9 @@ describe('Star Savior AppMedia-Style Wiki Domain & Seed Verification', () => {
     expect(xml).not.toContain('/guides/guild-board');
     expect(xml).toContain('<loc>https://ascalon.fun/</loc>');
     expect(xml).toContain('<loc>https://ascalon.fun/starsavior/tier-list</loc>');
+    expect(xml).toContain('<loc>https://ascalon.fun/starsavior/guides/cosmo-gate</loc>');
     expect(xml).toContain('<lastmod>2026-11-19</lastmod>');
-    expect([...xml.matchAll(/<loc>/g)].length).toBe(103);
+    expect([...xml.matchAll(/<loc>/g)].length).toBe(104);
 
     const escapedXml = renderSitemapXml([
       { loc: 'https://ascalon.fun/a&b?x=1', lastmod: '2026-11-19' },
