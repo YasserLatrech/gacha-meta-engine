@@ -1,9 +1,10 @@
-# Ascalon.fun — English Mobile & Gacha Strategy Wiki Portal
+# Ascalon.fun — Mobile & Gacha Strategy Wiki Portal
 
-> Ascalon.fun is a fast, free English strategy wiki and mobile game data portal covering tier lists, coupon codes, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store charts.
+> Ascalon.fun is an English strategy wiki and mobile game data portal covering tier lists, coupon codes, reroll guides, character build databases, upcoming global release calendars with 1-vote-per-IP reader polls, and daily App Store charts.
 
 ## Full AI & LLM Entity Knowledge Dump
 - [Complete Entity & Database Reference (llms-full.txt)](https://ascalon.fun/llms-full.txt): Structured index of all 59 Star Savior units (with Lv.200 stats, Tier, Attribute, Class, and canonical URLs), SSR/SR/R Arcana summary, active Promo Codes, Upcoming Gacha Release Calendar dates, and indexed Strategy Guide URLs.
+- [RSS 2.0 Updates Feed (feed.xml)](https://ascalon.fun/feed.xml): Live syndication of core Star Savior hubs, tier list updates, coupon codes, and top meta character builds.
 
 ## Primary Portal Hubs
 - [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79 tracked titles), reader expectation rankings, daily App Store Top Free & Top Grossing charts, Strategy Wiki Expansion Roadmap, and featured news briefs.
@@ -17,11 +18,18 @@
 Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, and Android combining Rescue Journey simulation, 85 Arcana training cards, and turn-based command battles.
 
 ### Core Ranking & Database Hubs
-- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview, active pickup banners (Frey: Noble Princess until Nov 19 JST; Witch of Favoritism & Guile until Dec 4 JST), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
-- [Strongest Character Tier List](https://ascalon.fun/starsavior/tier-list): PvE & boss meta evaluation across all 59 Saviors (SSS Tier: Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, Smile: Sunshine Cat).
+- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview, active 1st Anniversary pickup banners (Witch of Favoritism & Guile until Dec 4, 2026 04:00 JST; Frey: Noble Princess concluded Nov 19 JST), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
+- [Strongest Character Tier List](https://ascalon.fun/starsavior/tier-list): PvE & boss meta evaluation across all 59 Saviors (SSS Tier 0: Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, Smile: Sunshine Cat).
 - [Reroll Tier List & Stopping Line](https://ascalon.fun/starsavior/reroll): Best starting SSR Saviors & Power/Endurance Arcana cards, ~10-minute fast reroll method, and tutorial pull priorities.
 - [All 59 Characters Database](https://ascalon.fun/starsavior/characters): Filterable Lv.200 combat stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes (Striker, Assassin, Ranger, Caster, Supporter, Defender), Voice Actors (CV), and individual build pages at `https://ascalon.fun/starsavior/characters/{slug}`.
 - [Strongest Arcana Tier List & All 85 Cards](https://ascalon.fun/starsavior/arcana): Complete SSR (50), SR (15), and R (20) Arcana card encyclopedia with Stat Tags (Power, Health, Endurance, Focus, Protect), Special Potentials, and Savior Assist synergies.
+
+### Global English vs Community Alias Mapping
+- `Bunnygirl Charlotte` = `Bunny Charles` (`/starsavior/characters/bunny-charles`)
+- `Carmen: Eternal Promise` = `Bride Carmen` (`/starsavior/characters/bride-carmen`)
+- `Asherah: Waltz of Starlight` = `Dress Asherah` (`/starsavior/characters/dress-asherah`)
+- `Smile: Sunshine Cat` = `Swimsuit Smile` (`/starsavior/characters/swimsuit-smile`)
+- `Frey: Noble Princess` = `Bunny Frey` (`/starsavior/characters/bunny-frey`)
 
 ### Interactive Tools & Key Strategy Guides
 - [Active Coupon & Promo Codes](https://ascalon.fun/starsavior/guides/promo-codes): Verified redeemable codes (`GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV`) and redemption steps.

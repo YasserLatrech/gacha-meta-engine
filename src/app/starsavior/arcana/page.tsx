@@ -49,6 +49,18 @@ export default async function ArcanaTierListPage() {
           schemaType: 'CollectionPage',
           topArcana,
           faqs: STAR_SAVIOR_ARCANA_FAQS,
+          datasetSchema: {
+            name: 'Star Savior All 85 Arcana Cards Dataset',
+            description:
+              'Complete 85-card SSR, SR, and R Star Savior Arcana database covering Stat Tags (Power, Health, Endurance, Focus, Protect), tier rankings, and Special Potentials.',
+            variableMeasured: [
+              'Arcana Tier',
+              'Rarity',
+              'Stat Tag',
+              'Special Potential',
+              'Savior Assist Synergy',
+            ],
+          },
         })}
       />
       <WikiShell

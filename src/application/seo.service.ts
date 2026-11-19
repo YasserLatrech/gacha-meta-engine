@@ -12,7 +12,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://ascalon.fu
 );
 
 export const SITE_NAME = 'Ascalon.fun';
-export const SITE_LASTMOD_ISO = '2026-11-16T14:20:00.000Z';
+export const SITE_LASTMOD_ISO = '2026-11-19T00:00:00.000Z';
 
 export const MIN_INDEXABLE_GUIDE_UNIQUE_WORDS = 130;
 
@@ -139,6 +139,10 @@ export function buildPageMetadata(input: PageMetadataInput): Metadata {
       : {}),
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        en: canonicalUrl,
+        'x-default': canonicalUrl,
+      },
     },
     openGraph: {
       title: input.absoluteTitle ? input.title : `${input.title} | ${SITE_NAME}`,
@@ -204,10 +208,12 @@ export function buildPublisherReference(): Record<string, unknown> {
     url: SITE_URL,
     knowsAbout: [
       'Star Savior Strategy Wiki',
+      'Star Savior Tier List',
+      'Star Savior Coupon Codes',
       'Gacha Game Tier Lists',
       'Upcoming Gacha Release Calendar',
-      'ANANTA',
     ],
+    sameAs: [`${SITE_URL}/llms.txt`, `${SITE_URL}/feed.xml`],
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/brand/ascalon-logo.png`,
@@ -393,22 +399,121 @@ export function buildFaqNode(
 export const STAR_SAVIOR_TIER_LIST_FAQS: ReadonlyArray<{ q: string; a: string }> = [
   {
     q: 'Who are the strongest SSS Tier characters in Star Savior (Patch v2.4)?',
-    a: 'The top SSS Tier Saviors in Star Savior Patch v2.4 are Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat, dominating PvE campaign, Cube Palace bosses, and high-tier team compositions.',
+    a: 'The top 6 SSS Tier (Tier 0) Saviors in Star Savior Patch v2.4 are Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, and Smile: Sunshine Cat, dominating PvE campaign, Cube Palace bosses, and high-tier team compositions.',
   },
   {
     q: 'How often is the Star Savior Tier List updated on Ascalon.fun?',
-    a: 'The Star Savior Tier List is continuously synced with live meta updates alongside new SSR pickups (such as Guile and Frey: Noble Princess) and Patch v2.4 boss rotations.',
+    a: 'The Star Savior Tier List is continuously synced with live meta updates alongside new SSR pickups (such as 1st Anniversary Witch of Favoritism and Guile through Dec 4 JST) and Patch v2.4 boss rotations.',
+  },
+  {
+    q: 'Who is the best free-to-play or 1st Anniversary banner target in Star Savior right now?',
+    a: 'Witch of Favoritism (Order Striker, SSS Tier) is the #1 1st Anniversary pickup target until Dec 4 JST thanks to defense-ignoring Boss Chain fixed damage, while Guile (Chaos Caster, SS Tier) is distributed free via 1st Anniversary login events.',
   },
 ];
 
 export const STAR_SAVIOR_REROLL_FAQS: ReadonlyArray<{ q: string; a: string }> = [
   {
     q: 'How long does it take to reroll in Star Savior?',
-    a: 'A single reroll run in Star Savior takes roughly 10 minutes via the tutorial guest account flow before deciding whether to bind or reset.',
+    a: 'A single reroll run in Star Savior takes roughly 10 minutes via the tutorial guest account reset flow before deciding whether to bind your account.',
   },
   {
     q: 'Which characters and Arcana should new players reroll for first?',
-    a: 'Prioritize SS/SSS reroll Saviors such as Carmen: Eternal Promise, Amora, or Bunnygirl Charlotte paired with high-value Power/Endurance SSR Arcana cards like The Indomitable Masterpiece or Customized Training to Cover Weaknesses.',
+    a: 'Prioritize SS/SSS reroll Saviors such as Carmen: Eternal Promise, Amora, Witch of Favoritism, or Bunnygirl Charlotte paired with high-value Power/Endurance SSR Arcana cards like The Indomitable Masterpiece or Customized Training to Cover Weaknesses.',
+  },
+];
+
+export const STAR_SAVIOR_REROLL_HOWTO_STEPS: ReadonlyArray<{ name: string; text: string }> = [
+  {
+    name: 'Start as Guest and Skip Story Cutscenes',
+    text: 'Launch Star Savior as a Guest account and use Skip on early dialogue scenes to reach the first Observation summon unlock in under 8 minutes.',
+  },
+  {
+    name: 'Claim Mailbox Rewards and Active Coupon Codes',
+    text: 'Collect pre-registration/anniversary mailbox pulls and redeem active coupon codes (GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, TOGETHER1STANNIV) for bonus tickets and 2,000 Starlight Gems.',
+  },
+  {
+    name: 'Pull on Featured 1st Anniversary Banner & Check Stopping Line',
+    text: 'Aim for at least one SSS/SS carry (Witch of Favoritism, Amora, Carmen: Eternal Promise, or Bunnygirl Charlotte) plus a top Power or Endurance SSR Arcana.',
+  },
+  {
+    name: 'Bind Good Accounts or Reset via Settings',
+    text: 'If your pulls miss target units, open Settings -> Account -> Account Reset to wipe guest data and start a fresh 10-minute reroll without reinstalling.',
+  },
+];
+
+const TIER_SORT_WEIGHT: Record<string, number> = {
+  SSS: 0,
+  SS: 1,
+  S: 2,
+  A: 3,
+  B: 4,
+  C: 5,
+  D: 6,
+};
+
+const CHARACTER_SEARCH_ALIASES: Record<string, readonly string[]> = {
+  'bunny-charles': ['Bunny Charles', 'Bunnygirl Charlotte'],
+  'bride-carmen': ['Bride Carmen', 'Carmen: Eternal Promise'],
+  'dress-asherah': ['Dress Asherah', 'Asherah: Waltz of Starlight'],
+  'swimsuit-smile': ['Swimsuit Smile', 'Smile: Sunshine Cat'],
+  'bunny-frey': ['Bunny Frey', 'Frey: Noble Princess'],
+  'bride-epindel': ['Bride Epindel', 'Epindel: Blessing of the Stars'],
+  'bunny-claire': ['Bunny Claire', 'Bunnygirl Claire'],
+  frey: ['Frey', 'Fei'],
+  emily: ['Emily', 'Emilly'],
+  haidee: ['Haidee', 'Haydee'],
+  lacy: ['Lacy', 'Racy'],
+};
+
+const GUIDE_SPECIFIC_FAQS: Record<string, ReadonlyArray<{ q: string; a: string }>> = {
+  'promo-codes': [
+    {
+      q: 'What are the active Star Savior coupon codes in November 2026?',
+      a: 'Active verified Star Savior codes are GIFTREADYANNIV1ST (10 Savior + 10 Arcana Focused Tickets, until Nov 27 JST), ENDOFTHEJOURNEY (2,000 Starlight Gems, until Dec 4 JST), and TOGETHER1STANNIV (3x Singularity Degeneration Reactor + 1x Skill Reset Code, until Dec 10 JST).',
+    },
+    {
+      q: 'How do I redeem Star Savior promo codes on Steam PC, Android, and iOS?',
+      a: 'On Steam PC and Android, go to Menu (top-right) -> Settings -> Account -> Redeem Coupon Code. On iOS, copy your Member Number/UID from Settings -> Account and enter it with the code on the official STUDIOBSIDE redemption page.',
+    },
+  ],
+  'pvp-tier-list': [
+    {
+      q: 'Who are the best Gauntlet PvP characters in Star Savior?',
+      a: 'Top Gauntlet PvP Saviors combine high Turn-1 Speed, action-gauge manipulation, barriers, and burst pressure — led by Witch of Favoritism, Bunnygirl Charlotte, Carmen: Eternal Promise, Amora, and Emilly.',
+    },
+  ],
+  'gacha-rates': [
+    {
+      q: 'What is the SSR drop rate and pity ceiling in Star Savior?',
+      a: 'Standard and Pickup Observation banners feature a 4.0% total SSR rate (1.0% featured pickup rate) with a 200-pull mileage exchange ceiling that carries over across Pickup banners.',
+    },
+  ],
+  'which-gacha-to-pull': [
+    {
+      q: 'Which Star Savior gacha banner should I pull right now?',
+      a: 'Prioritize the 1st Anniversary Witch of Favoritism banner (active until Dec 4, 2026 04:00 JST) as she is an SSS Tier Order Striker. Guile is obtainable free from 1st Anniversary login events, while Frey: Noble Princess concluded on Nov 19 JST.',
+    },
+  ],
+  'event-choice-checker': [
+    {
+      q: 'How does the Star Savior Journey Event Choice Checker work?',
+      a: 'Search any of the 85 Arcana Events or 29 Rescue Journey Shared Events by title or card name to see exact stat gains, stamina costs, and skill hints for every dialogue choice before clicking in-game.',
+    },
+  ],
+};
+
+const PROMO_CODES_HOWTO_STEPS: ReadonlyArray<{ name: string; text: string }> = [
+  {
+    name: 'Open In-Game Settings Menu',
+    text: 'Tap the Menu icon (three lines) in the top-right corner of the Star Savior lobby and open Settings.',
+  },
+  {
+    name: 'Navigate to Account -> Enter Coupon',
+    text: 'Switch to the Account tab and click Redeem Coupon Code (on iOS, copy your Member Number/UID and open the official STUDIOBSIDE web redemption page).',
+  },
+  {
+    name: 'Paste Uppercase Code & Claim Mailbox',
+    text: 'Enter active uppercase codes such as GIFTREADYANNIV1ST, ENDOFTHEJOURNEY, or TOGETHER1STANNIV, confirm redemption, and collect rewards from your in-game Mailbox.',
   },
 ];
 
@@ -436,6 +541,8 @@ export function buildStarSaviorHubJsonLd(opts: {
   topCharacters?: CharacterEntity[];
   topArcana?: ArcanaEntity[];
   faqs?: ReadonlyArray<{ q: string; a: string }>;
+  howTo?: { name: string; steps: ReadonlyArray<{ name: string; text: string }> };
+  datasetSchema?: { name: string; description: string; variableMeasured: readonly string[] };
 }): Record<string, unknown> {
   const url = resolveAbsoluteUrl(opts.path);
   const graph: Array<Record<string, unknown>> = [
@@ -454,24 +561,35 @@ export function buildStarSaviorHubJsonLd(opts: {
       description: truncateMetaDescription(opts.description, 220),
       url,
       image: [resolveAbsoluteUrl(opts.image)],
-      inLanguage: 'en',
-      datePublished: SITE_LASTMOD_ISO,
+      inLanguage: 'en-US',
+      datePublished: '2026-11-12T00:00:00.000Z',
       dateModified: SITE_LASTMOD_ISO,
       author: { '@id': `${SITE_URL}/#organization` },
       publisher: { '@id': `${SITE_URL}/#organization` },
       about: { '@id': `${SITE_URL}/starsavior#videogame` },
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.geo-summary'],
+      },
     },
   ];
 
   if (opts.topCharacters && opts.topCharacters.length > 0) {
+    const rankedChars = [...opts.topCharacters].sort((a, b) => {
+      const tierA = TIER_SORT_WEIGHT[a.staticData?.appMediaTier || a.overallTier] ?? 9;
+      const tierB = TIER_SORT_WEIGHT[b.staticData?.appMediaTier || b.overallTier] ?? 9;
+      if (tierA !== tierB) return tierA - tierB;
+      return b.score - a.score;
+    });
     graph.push({
       '@type': 'ItemList',
       name: `${opts.breadcrumbLabel} — Top Ranked Saviors`,
-      numberOfItems: opts.topCharacters.length,
-      itemListElement: opts.topCharacters.slice(0, 15).map((c, idx) => ({
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      numberOfItems: rankedChars.length,
+      itemListElement: rankedChars.slice(0, 15).map((c, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
-        name: `${c.name} (${c.rarity} ${c.element} ${c.role})`,
+        name: `${c.name} (${c.staticData?.appMediaTier || c.overallTier} · ${c.rarity} ${c.element} ${c.role})`,
         url: `${SITE_URL}/starsavior/characters/${c.slug}`,
       })),
     });
@@ -481,12 +599,49 @@ export function buildStarSaviorHubJsonLd(opts: {
     graph.push({
       '@type': 'ItemList',
       name: `${opts.breadcrumbLabel} — Top SSR Arcana Cards`,
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
       numberOfItems: opts.topArcana.length,
       itemListElement: opts.topArcana.slice(0, 15).map((a, idx) => ({
         '@type': 'ListItem',
         position: idx + 1,
         name: `${a.name} (${a.rarity} ${a.staticData?.statTag || 'Arcana'})`,
         url: `${SITE_URL}/starsavior/arcana#${a.slug}`,
+      })),
+    });
+  }
+
+  if (opts.datasetSchema) {
+    graph.push({
+      '@type': 'Dataset',
+      '@id': `${url}#dataset`,
+      name: opts.datasetSchema.name,
+      description: opts.datasetSchema.description,
+      url,
+      inLanguage: 'en-US',
+      creator: { '@id': `${SITE_URL}/#organization` },
+      dateModified: SITE_LASTMOD_ISO,
+      isAccessibleForFree: true,
+      variableMeasured: [...opts.datasetSchema.variableMeasured],
+      distribution: [
+        {
+          '@type': 'DataDownload',
+          encodingFormat: 'text/markdown',
+          contentUrl: `${SITE_URL}/llms-full.txt`,
+        },
+      ],
+    });
+  }
+
+  if (opts.howTo && opts.howTo.steps.length > 0) {
+    graph.push({
+      '@type': 'HowTo',
+      '@id': `${url}#howto`,
+      name: opts.howTo.name,
+      step: opts.howTo.steps.map((step, idx) => ({
+        '@type': 'HowToStep',
+        position: idx + 1,
+        name: step.name,
+        text: step.text,
       })),
     });
   }
@@ -593,15 +748,26 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
         url,
         image: [image],
         inLanguage: 'en',
-        datePublished: SITE_LASTMOD_ISO,
+        datePublished: '2026-11-12T00:00:00.000Z',
         dateModified: SITE_LASTMOD_ISO,
         author: { '@id': `${SITE_URL}/#organization` },
         publisher: { '@id': `${SITE_URL}/#organization` },
+        speakable: {
+          '@type': 'SpeakableSpecification',
+          cssSelector: ['h1', '.geo-summary'],
+        },
         about: {
           '@type': 'Person',
           '@id': `${url}#character`,
           name: character.name,
-          ...(character.title ? { alternateName: [character.title] } : {}),
+          ...(() => {
+            const altSet = new Set<string>();
+            if (character.title && character.title !== character.name) altSet.add(character.title);
+            for (const alias of CHARACTER_SEARCH_ALIASES[character.slug] || []) {
+              if (alias !== character.name) altSet.add(alias);
+            }
+            return altSet.size > 0 ? { alternateName: [...altSet] } : {};
+          })(),
           description: character.summary,
           image,
           additionalProperty: properties,
@@ -615,9 +781,12 @@ export function buildCharacterJsonLd(character: CharacterEntity): Record<string,
 
 export function buildGuideMetadata(guide: StarSaviorGuideArticle): Metadata {
   const hasGamePrefix = /star\s*savior/i.test(guide.title);
-  const cleanTitle = hasGamePrefix
-    ? `${guide.title} — Strategy Wiki`
-    : `${guide.title} — Star Savior Wiki`;
+  const cleanTitle =
+    guide.slug === 'promo-codes'
+      ? 'Star Savior Promo & Coupon Codes (Nov 2026) — Active List & Redeem Guide'
+      : hasGamePrefix
+      ? `${guide.title} — Strategy Wiki`
+      : `${guide.title} — Star Savior Wiki`;
   const ogImage =
     guide.eyecatchSrc || guide.buttonBannerSrc || '/banners/starsavior/eyecatch/rank_chars.webp';
 
@@ -634,6 +803,9 @@ export function buildGuideMetadata(guide: StarSaviorGuideArticle): Metadata {
       'Star Savior',
       `Star Savior ${guide.category}`,
       'Star Savior guide',
+      ...(guide.slug === 'promo-codes'
+        ? ['Star Savior codes 2026', 'Star Savior coupon codes', 'GIFTREADYANNIV1ST', 'ENDOFTHEJOURNEY']
+        : []),
     ],
   });
 }
@@ -644,32 +816,56 @@ export function buildGuideJsonLd(guide: StarSaviorGuideArticle): Record<string, 
   const image = resolveAbsoluteUrl(
     guide.eyecatchSrc || guide.buttonBannerSrc || '/banners/starsavior/eyecatch/rank_chars.webp'
   );
+  const graph: Array<Record<string, unknown>> = [
+    buildPublisherReference(),
+    buildBreadcrumbNode([
+      { name: 'Ascalon.fun Home', path: '/' },
+      { name: 'Star Savior Wiki', path: '/starsavior' },
+      { name: guide.title, path },
+    ]),
+    {
+      '@type': 'Article',
+      '@id': `${url}#article`,
+      mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+      headline: guide.title,
+      articleSection: guide.category,
+      description: truncateMetaDescription(guide.lead, 220),
+      url,
+      image: [image],
+      inLanguage: 'en-US',
+      datePublished: '2026-11-12T00:00:00.000Z',
+      dateModified: SITE_LASTMOD_ISO,
+      author: { '@id': `${SITE_URL}/#organization` },
+      publisher: { '@id': `${SITE_URL}/#organization` },
+      about: { '@id': `${SITE_URL}/starsavior#videogame` },
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.geo-summary'],
+      },
+    },
+  ];
+
+  const guideFaqs = GUIDE_SPECIFIC_FAQS[guide.slug];
+  if (guideFaqs && guideFaqs.length > 0) {
+    graph.push(buildFaqNode(`${url}#faq`, guideFaqs));
+  }
+
+  if (guide.slug === 'promo-codes') {
+    graph.push({
+      '@type': 'HowTo',
+      '@id': `${url}#howto`,
+      name: 'How to Redeem Star Savior Promo & Coupon Codes',
+      step: PROMO_CODES_HOWTO_STEPS.map((step, idx) => ({
+        '@type': 'HowToStep',
+        position: idx + 1,
+        name: step.name,
+        text: step.text,
+      })),
+    });
+  }
 
   return {
     '@context': 'https://schema.org',
-    '@graph': [
-      buildPublisherReference(),
-      buildBreadcrumbNode([
-        { name: 'Ascalon.fun Home', path: '/' },
-        { name: 'Star Savior Wiki', path: '/starsavior' },
-        { name: guide.title, path },
-      ]),
-      {
-        '@type': 'Article',
-        '@id': `${url}#article`,
-        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-        headline: guide.title,
-        articleSection: guide.category,
-        description: truncateMetaDescription(guide.lead, 220),
-        url,
-        image: [image],
-        inLanguage: 'en',
-        datePublished: SITE_LASTMOD_ISO,
-        dateModified: SITE_LASTMOD_ISO,
-        author: { '@id': `${SITE_URL}/#organization` },
-        publisher: { '@id': `${SITE_URL}/#organization` },
-        about: { '@id': `${SITE_URL}/starsavior#videogame` },
-      },
-    ],
+    '@graph': graph,
   };
 }

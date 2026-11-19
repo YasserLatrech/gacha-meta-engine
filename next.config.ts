@@ -84,7 +84,7 @@ const nextConfig: NextConfig = {
 
     return [
       {
-        source: '/((?!sitemap\\.xml$|sitemap-v2\\.xml$|robots\\.txt$).*)',
+        source: '/((?!sitemap\\.xml$|sitemap-v2\\.xml$|feed\\.xml$|robots\\.txt$).*)',
         headers: SECURITY_HEADERS,
       },
       {
@@ -144,8 +144,33 @@ const nextConfig: NextConfig = {
         headers: sitemapXmlHeaders,
       })),
       {
+        source: '/feed.xml',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/rss+xml; charset=utf-8',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, s-maxage=3600',
+          },
+        ],
+      },
+      {
         source: '/robots.txt',
         headers: [
+          {
+            key: 'Content-Type',
+            value: 'text/plain; charset=utf-8',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
           {
             key: 'Cache-Control',
             value: 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800',
