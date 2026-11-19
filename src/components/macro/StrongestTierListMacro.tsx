@@ -157,17 +157,18 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
       <section className="rounded-lg border border-[#243049] bg-[#111726] p-4 sm:p-5 space-y-3">
         <div className="flex items-center gap-3.5">
           <img
-            src="https://appmedia.jp/wp-content/uploads/2026/09/205900_h5bcs.webp"
+            src={game.iconUrl}
             alt="Strongest Character Tier List"
             className="h-14 w-14 rounded-lg border border-[#3b82f6]/50 object-cover shrink-0"
             loading="eager"
           />
           <div>
             <div className="text-[12.5px] font-bold text-[#93c5fd]">
-              Last Updated: 2026/11/12 · {game.patchVersion}
+              Last Updated:{' '}
+              <time dateTime="2026-11-19T00:00:00Z">Nov 19, 2026</time> · {game.patchVersion}
             </div>
             <h1 className="mt-0.5 text-lg sm:text-xl font-black text-white">
-              [Star Savior] Strongest Character Ranking & Tier List
+              Star Savior Strongest Character Ranking &amp; Tier List (v2.4)
             </h1>
           </div>
         </div>
@@ -177,9 +178,17 @@ export function StrongestTierListMacro({ dataset }: { dataset: GameWikiDataset }
           alt="Star Savior Strongest Character Ranking & Tier List"
         />
 
-        <p className="text-[13.5px] text-[#e8eff8] leading-relaxed">
-          This is the Star Savior Strongest Character Ranking (Tier List). It covers the latest character evaluations, the complete SSS–C tier matrix by role, and detailed breakdowns of the strongest SSR and SR Saviors in Star Savior.
-        </p>
+        <div className="geo-summary rounded-lg border border-[#2b3f66] bg-[#0d1526] p-3 text-[13.5px] text-[#e8eff8] leading-relaxed">
+          <strong className="text-[#93c5fd]">Patch v2.4 Meta Verdict:</strong> All{' '}
+          <strong className="text-white">59 playable Star Savior units</strong> ranked across SSS–C tiers for PvE story, Cube Palace bosses, and Gauntlet PvP. The 6{' '}
+          <strong className="text-[#fbbf24]">SSS (Tier 0)</strong> Saviors are{' '}
+          <strong className="text-white">Witch of Favoritism</strong>,{' '}
+          <strong className="text-white">Amora</strong>,{' '}
+          <strong className="text-white">Professor M</strong>,{' '}
+          <strong className="text-white">Carmen: Eternal Promise</strong>,{' '}
+          <strong className="text-white">Bunnygirl Charlotte</strong>, and{' '}
+          <strong className="text-white">Smile: Sunshine Cat</strong>.
+        </div>
 
         {/* Top Ranking Switcher Table */}
         <div className="overflow-hidden rounded-lg border border-[#243049] bg-[#0f1626]">

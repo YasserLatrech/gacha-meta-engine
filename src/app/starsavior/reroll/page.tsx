@@ -5,6 +5,7 @@ import {
   buildPageMetadata,
   buildStarSaviorHubJsonLd,
   STAR_SAVIOR_REROLL_FAQS,
+  STAR_SAVIOR_REROLL_HOWTO_STEPS,
 } from '@/application/seo.service';
 import { WikiShell } from '@/components/WikiShell';
 import { RerollTierListMacro } from '@/components/macro/RerollTierListMacro';
@@ -48,6 +49,10 @@ export default async function RerollTierListPage() {
           schemaType: 'Article',
           topCharacters: rerollTop,
           faqs: STAR_SAVIOR_REROLL_FAQS,
+          howTo: {
+            name: 'How to Reroll Fast in Star Savior (10-Minute Guide)',
+            steps: STAR_SAVIOR_REROLL_HOWTO_STEPS,
+          },
         })}
       />
       <WikiShell

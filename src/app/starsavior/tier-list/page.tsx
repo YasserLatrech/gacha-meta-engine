@@ -13,9 +13,9 @@ import { JsonLd } from '@/components/micro/JsonLd';
 
 export const revalidate = 300;
 
-const PAGE_TITLE = 'Star Savior Tier List — Strongest Characters Ranking (v2.4)';
+const PAGE_TITLE = 'Star Savior Tier List (Nov 2026 · v2.4) — All 59 Saviors Ranked';
 const PAGE_DESC =
-  'Star Savior Strongest Character Tier List (v2.4) ranking all 59 SSR & SR Saviors across SSS–C tiers by Attacker, Debuffer, Supporter & Defender roles.';
+  'Updated Nov 2026 Star Savior Tier List (Patch v2.4): all 59 SSR & SR Saviors ranked SSS–C. SSS Tier 0 led by Witch of Favoritism, Amora, Professor M & Carmen.';
 
 export const metadata: Metadata = buildPageMetadata({
   title: PAGE_TITLE,
@@ -47,7 +47,7 @@ export default async function StrongestTierListPage() {
           breadcrumbLabel: 'Strongest Character Tier List',
           image: '/banners/starsavior/eyecatch/rank_chars.webp',
           schemaType: 'Article',
-          topCharacters: topUnits,
+          topCharacters: dataset.characters,
           faqs: STAR_SAVIOR_TIER_LIST_FAQS,
         })}
       />
