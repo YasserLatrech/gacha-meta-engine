@@ -84,7 +84,7 @@ const nextConfig: NextConfig = {
 
     return [
       {
-        source: '/((?!sitemap\\.xml$|sitemap-v2\\.xml$|feed\\.xml$|robots\\.txt$).*)',
+        source: '/((?!sitemap\\.xml$|feed\\.xml$|robots\\.txt$).*)',
         headers: SECURITY_HEADERS,
       },
       {
@@ -139,10 +139,10 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      ...['/sitemap.xml', '/sitemap-v2.xml'].map((source) => ({
-        source,
+      {
+        source: '/sitemap.xml',
         headers: sitemapXmlHeaders,
-      })),
+      },
       {
         source: '/feed.xml',
         headers: [
