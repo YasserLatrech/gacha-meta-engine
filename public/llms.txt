@@ -8,17 +8,17 @@
 
 ## Primary Portal Hubs
 - [Ascalon.fun Home Portal](https://ascalon.fun/): Upcoming gacha game release calendar (79 tracked titles), reader expectation rankings, daily App Store Top Free & Top Grossing charts, Strategy Wiki Expansion Roadmap, and featured news briefs.
-- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 103 static indexable strategy wiki routes, character builds, and database tools.
+- [XML Sitemap](https://ascalon.fun/sitemap.xml): Canonical index of all 104 static indexable strategy wiki routes, character builds, and database tools.
 
 ## Wiki Expansion Roadmap
-- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](https://ascalon.fun/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Promo Codes, Event Checker, and 38 curated Strategy Guides).
+- **Active Live Wiki (1)**: [Star Savior English Strategy Wiki](https://ascalon.fun/starsavior) — Complete Patch v2.4 database (59 Saviors, 85 Arcana cards, Tier List, Reroll Guide, Promo Codes, Cosmo Gate P8 Boss Guide, Event Checker, and 39 curated Strategy Guides).
 - **Upcoming Pipeline**: Tracking Silver Palace (Dec 14, 2026), ANANTA (Jan 15, 2027 Global), Azur Promilia, Limit Zero Breakers, and community-voted titles on [Ascalon.fun](https://ascalon.fun/#strategy-wikis) for expansion after active wikis establish organic search coverage.
 
 ## Star Savior Complete English Strategy Wiki (Patch v2.4)
 Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, and Android combining Rescue Journey simulation, 85 Arcana training cards, and turn-based command battles.
 
 ### Core Ranking & Database Hubs
-- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview, active 1st Anniversary pickup banners (Witch of Favoritism & Guile until Dec 4, 2026 04:00 JST; Frey: Noble Princess concluded Nov 19 JST), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
+- [Star Savior Wiki Top](https://ascalon.fun/starsavior): Patch v2.4 overview (updated Nov 19, 2026), 3 active pickup banners (Witch of Favoritism & Guile until Dec 4, 2026 04:00 JST; Bunnygirl Scarlet rerun until Dec 3 JST — Skip), Cosmo Gate P8 (~Nov 26 JST), 1st Anniv Special Login Bonus (70 free PU tickets), Rescue Journey mechanics, Cube Palace bosses, and FAQ.
 - [Strongest Character Tier List](https://ascalon.fun/starsavior/tier-list): PvE & boss meta evaluation across all 59 Saviors (SSS Tier 0: Witch of Favoritism, Amora, Professor M, Carmen: Eternal Promise, Bunnygirl Charlotte, Smile: Sunshine Cat).
 - [Reroll Tier List & Stopping Line](https://ascalon.fun/starsavior/reroll): Best starting SSR Saviors & Power/Endurance Arcana cards, ~10-minute fast reroll method, and tutorial pull priorities.
 - [All 59 Characters Database](https://ascalon.fun/starsavior/characters): Filterable Lv.200 combat stats (ATK, HP, DEF, SPD), Attributes (Sun, Moon, Star, Order, Chaos), Classes (Striker, Assassin, Ranger, Caster, Supporter, Defender), Voice Actors (CV), and individual build pages at `https://ascalon.fun/starsavior/characters/{slug}`.
@@ -32,7 +32,8 @@ Star Savior (`スターセイヴァー`) is a Training RPG for PC (Steam), iOS, 
 - `Frey: Noble Princess` = `Bunny Frey` (`/starsavior/characters/bunny-frey`)
 
 ### Interactive Tools & Key Strategy Guides
-- [Active Coupon & Promo Codes](https://ascalon.fun/starsavior/guides/promo-codes): Verified redeemable codes (`GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV`) and redemption steps.
+- [Active Coupon & Promo Codes](https://ascalon.fun/starsavior/guides/promo-codes): 4 verified active codes (`26THXCAPTAIN1ST`, `GIFTREADYANNIV1ST`, `ENDOFTHEJOURNEY`, `TOGETHER1STANNIV` — 3,120 Starlight Gems + 20 Focused Tickets + 300 1st Anniv Coins) and redemption steps.
+- [Cosmo Gate Season P8 Boss Guide](https://ascalon.fun/starsavior/guides/cosmo-gate): Live Nov 19–26 Star Challenge EX gimmicks and teams for Immortal King Mogulus, Beast of the Baskervilles, and Manifestation of Divergence.
 - [Journey Event Choice Checker](https://ascalon.fun/starsavior/guides/event-choice-checker): Exact reward outcomes for all 85 Arcana Events and 29 Rescue Journey Shared Events.
 - [Gauntlet (PvP) Tier List](https://ascalon.fun/starsavior/guides/pvp-tier-list): Turn-1 speed, AoE pressure, and defensive counter rankings for PvP Gauntlet.
 - [Recommended SR Characters](https://ascalon.fun/starsavior/guides/sr-characters) & [Recommended SR Arcana](https://ascalon.fun/starsavior/guides/sr-arcana): Best low-rarity investments for early progression and Rescue Journey decks.

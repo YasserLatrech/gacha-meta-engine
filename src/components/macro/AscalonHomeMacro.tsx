@@ -561,7 +561,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
                     Star Savior Wiki
                   </div>
                   <div className="text-[11.5px] text-[#e8eff8] truncate">
-                    59 Saviors · 85 Arcana · 38 Guides →
+                    59 Saviors · 85 Arcana · 39 Guides →
                   </div>
                 </div>
               </Link>
@@ -1840,6 +1840,7 @@ export function AscalonHomeMacro({ portalData }: { portalData: HomePortalData })
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-1.5">
                 <Link prefetch={false} href="/starsavior/guides/promo-codes" className="text-[#93c5fd] hover:underline">Coupon Codes</Link>
+                <Link prefetch={false} href="/starsavior/guides/cosmo-gate" className="text-[#93c5fd] hover:underline">Cosmo Gate P8</Link>
                 <Link prefetch={false} href="/starsavior/guides/cube-palace" className="text-[#93c5fd] hover:underline">Cube Palace</Link>
                 <Link prefetch={false} href="/starsavior/guides/rescue-journey-hard" className="text-[#93c5fd] hover:underline">Rescue Journey Hard</Link>
                 <Link prefetch={false} href="/starsavior/guides/which-gacha-to-pull" className="text-[#93c5fd] hover:underline">Banner Pull Guide</Link>
